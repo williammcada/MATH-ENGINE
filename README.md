@@ -15,3 +15,7 @@ Status: **implementation checkpoint**, package 0.1.0-baseline.1. This is a prese
 312 selectable skills; the compared GitHub Mega Man bundle has 240. All 240 older IDs remain. Browser global: SharedMath. Existing generation uses Math.random; a seeded generation API is not yet implemented. Run npm test for limited baseline smoke checks.
 
 The snapshot preserves the existing settings and generic practice/session code together with the catalog and answer checking. It excludes the emulator, ROM, Mega Man host controls and stage/death/boss trigger hooks. Source-module recovery and separating reusable core from optional practice UI are future work. Existing games have not been migrated or redeployed.
+
+## Custom Grade 5 coverage map
+
+[Coverage audit v0.1](curriculum/mcada-g5/v0.1/README.md) covers all 331 supplied outcomes, including all 57 GradeCam codes. Domain segments remain metadata and are ignored for matching. Includes CSV, JSON and generator evidence. This is a design audit, not independent mathematical verification.

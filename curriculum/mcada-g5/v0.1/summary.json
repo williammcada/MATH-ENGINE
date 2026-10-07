@@ -1,0 +1,19 @@
+{
+  "outcomes": 331,
+  "distinct_aliases": 331,
+  "coverage": {
+    "Missing": 168,
+    "Partial": 121,
+    "Direct": 42
+  },
+  "gradecam_outcomes": 57,
+  "gradecam_matches": 57,
+  "priority_coverage": {
+    "Missing": 20,
+    "Partial": 22,
+    "Direct": 15
+  },
+  "source_sha256": "5496f2d2c0841241c284a694482f8409e0acdb5c5a53280f9c8bd3f3af9e84ae",
+  "engine_sha256": "78841274e50b07c6640913bb84fdd821247ed47030b575feb27760d35fcff1a0",
+  "referenced_outcomes": 22
+}

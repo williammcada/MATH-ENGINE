@@ -1,0 +1,716 @@
+{
+  "N05": {
+    "id": "N05",
+    "name": "Addition and subtraction stories · Olivia",
+    "grade": 2,
+    "source": "() => {\n    const bank = factBank(id), p = bank[r3(0, bank.length - 1)];\n    if (p.kind === \"quantity\") return item(`0 + ${p.answer} = ?`, p.answer);\n    let prompt = [p.story, p.prompt].filter(Boolean).join(\" \"), answer2 = p.answer, type = \"number\";\n    if (id === \"N03\" && p.choices && p.prompt.includes(\"in order\")) {\n      const values = [p.a, p.b, p.a + 20];\n      return item(`Put these numbers in order, smallest first: ${values.join(\", \")}. Separate answers with commas; do not use thousands separators.`, values.sort((a, b) => a - b).join(\", \"), \"sequence\");\n    }\n    if (p.choices) {\n      answer2 = p.choices[p.answer];\n      type = [\"<\", \">\", \"=\"].includes(String(answer2)) ? \"comparison\" : String(answer2).includes(\"/\") ? \"fraction\" : \"number\";\n      prompt += \" Enter your answer.\";\n    }\n    return item(prompt, answer2, type);\n  }"
+  },
+  "g1-stories": {
+    "id": "g1-stories",
+    "name": "Change and comparison stories within 20",
+    "grade": 1,
+    "source": "() => {\n    const a = r3(1, 10), b = r3(1, 10);\n    return r3(0, 1) ? item(`Mia has ${a + b} cards. Ben has ${a}. How many more cards does Mia have?`, b) : item(`You had some cards. You gave away ${b}. You have ${a} left. How many did you start with?`, a + b);\n  }"
+  },
+  "g3-addmissing": {
+    "id": "g3-addmissing",
+    "name": "Missing addends",
+    "grade": 3,
+    "source": "() => {\n      let a = r4(10, 500), b = r4(10, 400);\n      return q(\"x + \" + a + \" = \" + (a + b) + \". Find x.\", b);\n    }"
+  },
+  "g3-associate": {
+    "id": "g3-associate",
+    "name": "Group three factors",
+    "grade": 3,
+    "source": "() => {\n      let a = r4(1, 4), b = r4(1, 4), c = r4(1, 5);\n      return calc2(\"(\" + a + \" \\xD7 \" + b + \") \\xD7 \" + c, a * b * c);\n    }"
+  },
+  "g3-commute": {
+    "id": "g3-commute",
+    "name": "Multiplication in either order",
+    "grade": 3,
+    "source": "() => {\n      let a = r4(1, 9), b = r4(1, 9);\n      return q(a + \" \\xD7 \" + b + \" = \" + b + \" \\xD7 x. Find x.\", a);\n    }"
+  },
+  "g3-distribute": {
+    "id": "g3-distribute",
+    "name": "Break apart multiplication",
+    "grade": 3,
+    "source": "() => {\n      let a = r4(2, 9), b = r4(2, 5), c = r4(1, 4);\n      return q(a + \" \\xD7 \" + (b + c) + \" = \" + a + \" \\xD7 \" + b + \" + \" + a + \" \\xD7 x. Find x.\", c);\n    }"
+  },
+  "g3-dividend": {
+    "id": "g3-dividend",
+    "name": "Missing dividend",
+    "grade": 3,
+    "source": "() => {\n      let divisor = r4(2, 9), quotient = g3divisionQuotient();\n      return q(\"x \\xF7 \" + divisor + \" = \" + quotient + \". Find x.\", divisor * quotient);\n    }"
+  },
+  "g3-divisor": {
+    "id": "g3-divisor",
+    "name": "Missing divisor",
+    "grade": 3,
+    "source": "() => {\n      let quotient = g3divisionQuotient(), divisor = r4(2, 9);\n      return q(divisor * quotient + \" \\xF7 x = \" + quotient + \". Find x.\", divisor);\n    }"
+  },
+  "g3-elapsed": {
+    "id": "g3-elapsed",
+    "name": "Elapsed minutes: AM/PM",
+    "grade": 3,
+    "source": "() => {\n      let start = r4(420, 1020), d = r4(5, 60);\n      return q(\"Start at \" + ampm(start) + \". Finish at \" + ampm(start + d) + \" the same day. How many minutes pass?\", d);\n    }"
+  },
+  "g3-factor": {
+    "id": "g3-factor",
+    "name": "Missing multiplication factors",
+    "grade": 3,
+    "source": "() => {\n      let a = r4(1, 9), b = r4(0, 9);\n      return q(a + \" \\xD7 x = \" + a * b + \". Find x.\", b);\n    }"
+  },
+  "g3-fraction": {
+    "id": "g3-fraction",
+    "name": "Several equal parts as a fraction",
+    "grade": 3,
+    "source": "() => {\n      let d = g3den(), n = r4(1, d);\n      return f(\"One whole is split into \" + d + \" equal parts. What fraction is \" + n + \" of those parts?\", n, d);\n    }"
+  },
+  "g3-geo-quadrilateral-perimeter": {
+    "id": "g3-geo-quadrilateral-perimeter",
+    "name": "Quadrilateral: find perimeter",
+    "grade": 3,
+    "source": "() => {\n      let b = r(4, 15), left = r(3, 12), right = r(Math.abs(b - left) + 1, b + left - 1), top = r(3, 12);\n      if (shape === \"parallelogram\") {\n        right = left;\n        top = b;\n      }\n      if (shape === \"rhombus\") left = right = top = b;\n      if (shape === \"trapezoid\") {\n        const k = r(1, 4);\n        top = r(3, 12);\n        b = top + 6 * k;\n        left = right = 5 * k;\n      }\n      if (shape === \"quadrilateral\") {\n        b = r(5, 12);\n        left = r(5, 12);\n        right = r(5, 12);\n        top = r(5, 12);\n      }\n      const sides = shape === \"triangle\" ? [b, left, right] : [b, left, right, top], P = sides.reduce((a, c) => a + c, 0);\n      const labels = { base: missing ? \"?\" : `${b} cm`, left: `${left} cm`, right: `${right} cm`, top: `${top} cm` };\n      if (missing && shape === \"parallelogram\") labels.top = \"?\";\n      if (missing && shape === \"rhombus\") labels.left = labels.right = labels.top = \"?\";\n      const known = shape === \"rhombus\" ? missing ? \"all sides equal\" : `side ${b} cm` : shape === \"parallelogram\" ? missing ? `one adjacent side ${left} cm` : `adjacent sides ${b} cm and ${left} cm` : missing ? `other sides ${sides.slice(1).join(\", \")} cm` : `sides ${sides.join(\", \")} cm`;\n      return answer(shape, \"perimeter\", labels, `${title}: ${missing ? `perimeter ${P} cm; ` : \"\"}${known}. ${missing ? \"Find the side marked ? in cm.\" : \"Find the perimeter in cm.\"}${shape === \"parallelogram\" ? \" Opposite sides are equal.\" : \"\"}`, missing ? b : P);\n    }"
+  },
+  "g3-geo-rectangle-area": {
+    "id": "g3-geo-rectangle-area",
+    "name": "Rectangle: find area",
+    "grade": 3,
+    "source": "() => {\n        const b = r(3, 18), h = shape === \"square\" ? b : r(2, 12), A = b * h, P = 2 * (b + h), missing = task.startsWith(\"missing\");\n        const labels = { base: missing ? \"?\" : `${b} cm`, height: shape === \"square\" && missing ? \"?\" : `${h} cm` };\n        const prompt = task === \"area\" ? `${title}: ${shape === \"square\" ? `side ${b} cm` : `length ${b} cm, width ${h} cm`}. Find the area in cm^2. A = length \\xD7 width.` : task === \"perimeter\" ? `${title}: ${shape === \"square\" ? `side ${b} cm` : `length ${b} cm, width ${h} cm`}. Find the perimeter in cm. Perimeter is the sum of outside sides.` : task === \"missing-area\" ? `${title}: area ${A} cm^2${shape === \"square\" ? \"\" : `, width ${h} cm`}. Find the missing ${shape === \"square\" ? \"side\" : \"length\"} in cm. A = length \\xD7 width.` : `${title}: perimeter ${P} cm${shape === \"square\" ? \"\" : `, width ${h} cm`}. Find the missing ${shape === \"square\" ? \"side\" : \"length\"} in cm.`;\n        return answer(shape, task.includes(\"perimeter\") ? \"perimeter\" : \"area\", labels, prompt, missing ? b : task === \"area\" ? A : P);\n      }"
+  },
+  "g3-geo-square-area": {
+    "id": "g3-geo-square-area",
+    "name": "Square: find area",
+    "grade": 3,
+    "source": "() => {\n        const b = r(3, 18), h = shape === \"square\" ? b : r(2, 12), A = b * h, P = 2 * (b + h), missing = task.startsWith(\"missing\");\n        const labels = { base: missing ? \"?\" : `${b} cm`, height: shape === \"square\" && missing ? \"?\" : `${h} cm` };\n        const prompt = task === \"area\" ? `${title}: ${shape === \"square\" ? `side ${b} cm` : `length ${b} cm, width ${h} cm`}. Find the area in cm^2. A = length \\xD7 width.` : task === \"perimeter\" ? `${title}: ${shape === \"square\" ? `side ${b} cm` : `length ${b} cm, width ${h} cm`}. Find the perimeter in cm. Perimeter is the sum of outside sides.` : task === \"missing-area\" ? `${title}: area ${A} cm^2${shape === \"square\" ? \"\" : `, width ${h} cm`}. Find the missing ${shape === \"square\" ? \"side\" : \"length\"} in cm. A = length \\xD7 width.` : `${title}: perimeter ${P} cm${shape === \"square\" ? \"\" : `, width ${h} cm`}. Find the missing ${shape === \"square\" ? \"side\" : \"length\"} in cm.`;\n        return answer(shape, task.includes(\"perimeter\") ? \"perimeter\" : \"area\", labels, prompt, missing ? b : task === \"area\" ? A : P);\n      }"
+  },
+  "g3-geo-triangle-perimeter": {
+    "id": "g3-geo-triangle-perimeter",
+    "name": "Triangle: find perimeter",
+    "grade": 3,
+    "source": "() => {\n      let b = r(4, 15), left = r(3, 12), right = r(Math.abs(b - left) + 1, b + left - 1), top = r(3, 12);\n      if (shape === \"parallelogram\") {\n        right = left;\n        top = b;\n      }\n      if (shape === \"rhombus\") left = right = top = b;\n      if (shape === \"trapezoid\") {\n        const k = r(1, 4);\n        top = r(3, 12);\n        b = top + 6 * k;\n        left = right = 5 * k;\n      }\n      if (shape === \"quadrilateral\") {\n        b = r(5, 12);\n        left = r(5, 12);\n        right = r(5, 12);\n        top = r(5, 12);\n      }\n      const sides = shape === \"triangle\" ? [b, left, right] : [b, left, right, top], P = sides.reduce((a, c) => a + c, 0);\n      const labels = { base: missing ? \"?\" : `${b} cm`, left: `${left} cm`, right: `${right} cm`, top: `${top} cm` };\n      if (missing && shape === \"parallelogram\") labels.top = \"?\";\n      if (missing && shape === \"rhombus\") labels.left = labels.right = labels.top = \"?\";\n      const known = shape === \"rhombus\" ? missing ? \"all sides equal\" : `side ${b} cm` : shape === \"parallelogram\" ? missing ? `one adjacent side ${left} cm` : `adjacent sides ${b} cm and ${left} cm` : missing ? `other sides ${sides.slice(1).join(\", \")} cm` : `sides ${sides.join(\", \")} cm`;\n      return answer(shape, \"perimeter\", labels, `${title}: ${missing ? `perimeter ${P} cm; ` : \"\"}${known}. ${missing ? \"Find the side marked ? in cm.\" : \"Find the perimeter in cm.\"}${shape === \"parallelogram\" ? \" Opposite sides are equal.\" : \"\"}`, missing ? b : P);\n    }"
+  },
+  "g3-groupcount": {
+    "id": "g3-groupcount",
+    "name": "How many groups?",
+    "grade": 3,
+    "source": "() => {\n      let a = r4(2, 9), b = r4(2, 9);\n      return q(a * b + \" pencils are packed \" + a + \" per box. How many boxes?\", b);\n    }"
+  },
+  "g3-groups": {
+    "id": "g3-groups",
+    "name": "Equal groups: multiplication stories",
+    "grade": 3,
+    "source": "() => {\n      let a = r4(2, 9), b = r4(2, 9);\n      return q(a + \" bags have \" + b + \" marbles each. How many marbles altogether?\", a * b);\n    }"
+  },
+  "g3-pattern": {
+    "id": "g3-pattern",
+    "name": "Arithmetic patterns",
+    "grade": 3,
+    "source": "() => {\n      let start = r4(1, 20), step = r4(2, 9);\n      return q(\"Each number increases by \" + step + \": \" + [start, start + step, start + 2 * step].join(\", \") + \", ___. What comes next?\", start + 3 * step);\n    }"
+  },
+  "g3-round10": {
+    "id": "g3-round10",
+    "name": "Round to the nearest ten",
+    "grade": 3,
+    "source": "() => {\n      let n = r4(1, 999);\n      return q(\"Round \" + n + \" to the nearest ten. If halfway, round up.\", Math.round(n / 10) * 10);\n    }"
+  },
+  "g3-round100": {
+    "id": "g3-round100",
+    "name": "Round to the nearest hundred",
+    "grade": 3,
+    "source": "() => {\n      let n = r4(100, 999);\n      return q(\"Round \" + n + \" to the nearest hundred. If halfway, round up.\", Math.round(n / 100) * 100);\n    }"
+  },
+  "g3-sharing": {
+    "id": "g3-sharing",
+    "name": "Equal sharing: division stories",
+    "grade": 3,
+    "source": "() => {\n      let a = r4(2, 9), b = r4(2, 9);\n      return q(a * b + \" stickers are shared equally among \" + a + \" children. How many stickers per child?\", b);\n    }"
+  },
+  "g3-submissing": {
+    "id": "g3-submissing",
+    "name": "Missing subtraction values",
+    "grade": 3,
+    "source": "() => {\n      let a = r4(20, 500), b = r4(10, 400), first = r4(0, 1);\n      return q(first ? \"x \\u2212 \" + a + \" = \" + b + \". Find x.\" : a + b + \" \\u2212 x = \" + a + \". Find x.\", first ? a + b : b);\n    }"
+  },
+  "g3-time-addsubtract": {
+    "id": "g3-time-addsubtract",
+    "name": "Basic elapsed time: hours and 5-minute steps",
+    "grade": 3,
+    "source": "() => {\n      let start = r4(420, 1080), hours = r4(1, 3), minutes = 5 * r4(1, 11), duration = hours * 60 + minutes, end = start + duration, forward = r4(0, 1);\n      return forward ? q(\"An activity starts at \" + ampm(start) + \" and lasts \" + hours + \" hour\" + (hours === 1 ? \"\" : \"s\") + \" and \" + minutes + \" minutes. What time does it end? Enter h:mm AM or PM.\", ampm(end), \"time12\") : q(\"An activity ends at \" + ampm(end) + \" and lasts \" + hours + \" hour\" + (hours === 1 ? \"\" : \"s\") + \" and \" + minutes + \" minutes. What time did it start? Enter h:mm AM or PM.\", ampm(start), \"time12\");\n    }"
+  },
+  "g3-timeend": {
+    "id": "g3-timeend",
+    "name": "Find an ending time: AM/PM",
+    "grade": 3,
+    "source": "() => {\n      let start = r4(420, 1020), d = r4(5, 60);\n      return q(\"Start at \" + ampm(start) + \" and work for \" + d + \" minutes. What time do you finish? Enter h:mm AM or PM.\", ampm(start + d), \"time12\");\n    }"
+  },
+  "g3-timestart": {
+    "id": "g3-timestart",
+    "name": "Find a starting time: AM/PM",
+    "grade": 3,
+    "source": "() => {\n      let start = r4(420, 1020), d = r4(5, 60);\n      return q(\"A \" + d + \"-minute activity ends at \" + ampm(start + d) + \". When did it start? Enter h:mm AM or PM.\", ampm(start), \"time12\");\n    }"
+  },
+  "g3-two-step": {
+    "id": "g3-two-step",
+    "name": "Two-step whole-number stories",
+    "grade": 3,
+    "source": "() => {\n      let a = r4(2, 9), b = r4(2, 9), c = r4(1, a * b);\n      return q(\"You buy \" + a + \" packs of \" + b + \" cards. You give away \" + c + \" cards. How many remain?\", a * b - c);\n    }"
+  },
+  "g3-wholefraction": {
+    "id": "g3-wholefraction",
+    "name": "Fractions equal to whole numbers",
+    "grade": 3,
+    "source": "() => {\n      let d = g3den(), n = r4(1, 4);\n      return q(\"What whole number equals \" + n * d + \"/\" + d + \"?\", n);\n    }"
+  },
+  "g4-compare": {
+    "id": "g4-compare",
+    "name": "Whole-number comparison",
+    "grade": 4,
+    "source": "() => comparison(r4(1e4, 999999), r4(1e4, 999999))"
+  },
+  "g4-convert": {
+    "id": "g4-convert",
+    "name": "Larger to smaller units",
+    "grade": 4,
+    "source": "() => {\n      let [a, b, k] = pick(units), n = r4(2, 20);\n      return q(n + \" \" + a + \" = how many \" + b + \"? (1 \" + a + \" = \" + k + \" \" + b + \".)\", n * k);\n    }"
+  },
+  "g4-deccompare": {
+    "id": "g4-deccompare",
+    "name": "Compare decimals to hundredths",
+    "grade": 4,
+    "source": "() => comparison(decimal(r4(1, 999)), decimal(r4(1, 999)))"
+  },
+  "g4-decimal": {
+    "id": "g4-decimal",
+    "name": "Fractions to decimals",
+    "grade": 4,
+    "source": "() => {\n      let d = pick([10, 100]), a = r4(1, d * 3);\n      return q(\"Write \" + a + \"/\" + d + \" as a decimal.\", decimal(a, d), \"decimal\");\n    }"
+  },
+  "g4-dectofrac": {
+    "id": "g4-dectofrac",
+    "name": "Decimals to reduced fractions",
+    "grade": 4,
+    "source": "() => {\n      let a = r4(1, 299);\n      return f(\"Write \" + decimal(a) + \" as a reduced fraction.\", a, 100);\n    }"
+  },
+  "g4-div-3by1-remainder": {
+    "id": "g4-div-3by1-remainder",
+    "name": "Division: 3-digit ÷ 1-digit, quotient and remainder",
+    "grade": 4,
+    "source": "() => division(a, b, rem)"
+  },
+  "g4-equivalent": {
+    "id": "g4-equivalent",
+    "name": "Reduce fractions",
+    "grade": 4,
+    "source": "() => {\n      let d = den(), a = r4(1, d - 1), m = r4(2, 6);\n      return f(\"Reduce \" + a * m + \"/\" + d * m + \".\", a, d);\n    }"
+  },
+  "g4-expand": {
+    "id": "g4-expand",
+    "name": "Expanded form to a number",
+    "grade": 4,
+    "source": "() => {\n      let a = r4(1, 9), b = r4(1, 9), c = r4(1, 9);\n      return calc2(a * 1e4 + \" + \" + b * 100 + \" + \" + c, a * 1e4 + b * 100 + c);\n    }"
+  },
+  "g4-fcompare": {
+    "id": "g4-fcompare",
+    "name": "Compare fractions",
+    "grade": 4,
+    "source": "() => {\n      let d = den(), e = den();\n      return comparison(r4(1, d) + \"/\" + d, r4(1, e) + \"/\" + e);\n    }"
+  },
+  "g4-fraction": {
+    "id": "g4-fraction",
+    "name": "Add like-denominator fractions",
+    "grade": 4,
+    "source": "() => {\n      let d = den(), a = r4(1, d), b = r4(1, d);\n      return f(a + \"/\" + d + \" + \" + b + \"/\" + d, a + b, d);\n    }"
+  },
+  "g4-fsub": {
+    "id": "g4-fsub",
+    "name": "Subtract like-denominator fractions",
+    "grade": 4,
+    "source": "() => {\n      let d = den(), a = r4(2, d * 2), b = r4(1, a);\n      return f(a + \"/\" + d + \" \\u2212 \" + b + \"/\" + d, a - b, d);\n    }"
+  },
+  "g4-geo-rectangle-missing-area": {
+    "id": "g4-geo-rectangle-missing-area",
+    "name": "Rectangle: find side from area",
+    "grade": 4,
+    "source": "() => {\n        const b = r(3, 18), h = shape === \"square\" ? b : r(2, 12), A = b * h, P = 2 * (b + h), missing = task.startsWith(\"missing\");\n        const labels = { base: missing ? \"?\" : `${b} cm`, height: shape === \"square\" && missing ? \"?\" : `${h} cm` };\n        const prompt = task === \"area\" ? `${title}: ${shape === \"square\" ? `side ${b} cm` : `length ${b} cm, width ${h} cm`}. Find the area in cm^2. A = length \\xD7 width.` : task === \"perimeter\" ? `${title}: ${shape === \"square\" ? `side ${b} cm` : `length ${b} cm, width ${h} cm`}. Find the perimeter in cm. Perimeter is the sum of outside sides.` : task === \"missing-area\" ? `${title}: area ${A} cm^2${shape === \"square\" ? \"\" : `, width ${h} cm`}. Find the missing ${shape === \"square\" ? \"side\" : \"length\"} in cm. A = length \\xD7 width.` : `${title}: perimeter ${P} cm${shape === \"square\" ? \"\" : `, width ${h} cm`}. Find the missing ${shape === \"square\" ? \"side\" : \"length\"} in cm.`;\n        return answer(shape, task.includes(\"perimeter\") ? \"perimeter\" : \"area\", labels, prompt, missing ? b : task === \"area\" ? A : P);\n      }"
+  },
+  "g4-geo-rectangle-missing-perimeter": {
+    "id": "g4-geo-rectangle-missing-perimeter",
+    "name": "Rectangle: find side from perimeter",
+    "grade": 4,
+    "source": "() => {\n        const b = r(3, 18), h = shape === \"square\" ? b : r(2, 12), A = b * h, P = 2 * (b + h), missing = task.startsWith(\"missing\");\n        const labels = { base: missing ? \"?\" : `${b} cm`, height: shape === \"square\" && missing ? \"?\" : `${h} cm` };\n        const prompt = task === \"area\" ? `${title}: ${shape === \"square\" ? `side ${b} cm` : `length ${b} cm, width ${h} cm`}. Find the area in cm^2. A = length \\xD7 width.` : task === \"perimeter\" ? `${title}: ${shape === \"square\" ? `side ${b} cm` : `length ${b} cm, width ${h} cm`}. Find the perimeter in cm. Perimeter is the sum of outside sides.` : task === \"missing-area\" ? `${title}: area ${A} cm^2${shape === \"square\" ? \"\" : `, width ${h} cm`}. Find the missing ${shape === \"square\" ? \"side\" : \"length\"} in cm. A = length \\xD7 width.` : `${title}: perimeter ${P} cm${shape === \"square\" ? \"\" : `, width ${h} cm`}. Find the missing ${shape === \"square\" ? \"side\" : \"length\"} in cm.`;\n        return answer(shape, task.includes(\"perimeter\") ? \"perimeter\" : \"area\", labels, prompt, missing ? b : task === \"area\" ? A : P);\n      }"
+  },
+  "g4-geo-square-missing-area": {
+    "id": "g4-geo-square-missing-area",
+    "name": "Square: find side from area",
+    "grade": 4,
+    "source": "() => {\n        const b = r(3, 18), h = shape === \"square\" ? b : r(2, 12), A = b * h, P = 2 * (b + h), missing = task.startsWith(\"missing\");\n        const labels = { base: missing ? \"?\" : `${b} cm`, height: shape === \"square\" && missing ? \"?\" : `${h} cm` };\n        const prompt = task === \"area\" ? `${title}: ${shape === \"square\" ? `side ${b} cm` : `length ${b} cm, width ${h} cm`}. Find the area in cm^2. A = length \\xD7 width.` : task === \"perimeter\" ? `${title}: ${shape === \"square\" ? `side ${b} cm` : `length ${b} cm, width ${h} cm`}. Find the perimeter in cm. Perimeter is the sum of outside sides.` : task === \"missing-area\" ? `${title}: area ${A} cm^2${shape === \"square\" ? \"\" : `, width ${h} cm`}. Find the missing ${shape === \"square\" ? \"side\" : \"length\"} in cm. A = length \\xD7 width.` : `${title}: perimeter ${P} cm${shape === \"square\" ? \"\" : `, width ${h} cm`}. Find the missing ${shape === \"square\" ? \"side\" : \"length\"} in cm.`;\n        return answer(shape, task.includes(\"perimeter\") ? \"perimeter\" : \"area\", labels, prompt, missing ? b : task === \"area\" ? A : P);\n      }"
+  },
+  "g4-geo-square-missing-perimeter": {
+    "id": "g4-geo-square-missing-perimeter",
+    "name": "Square: find side from perimeter",
+    "grade": 4,
+    "source": "() => {\n        const b = r(3, 18), h = shape === \"square\" ? b : r(2, 12), A = b * h, P = 2 * (b + h), missing = task.startsWith(\"missing\");\n        const labels = { base: missing ? \"?\" : `${b} cm`, height: shape === \"square\" && missing ? \"?\" : `${h} cm` };\n        const prompt = task === \"area\" ? `${title}: ${shape === \"square\" ? `side ${b} cm` : `length ${b} cm, width ${h} cm`}. Find the area in cm^2. A = length \\xD7 width.` : task === \"perimeter\" ? `${title}: ${shape === \"square\" ? `side ${b} cm` : `length ${b} cm, width ${h} cm`}. Find the perimeter in cm. Perimeter is the sum of outside sides.` : task === \"missing-area\" ? `${title}: area ${A} cm^2${shape === \"square\" ? \"\" : `, width ${h} cm`}. Find the missing ${shape === \"square\" ? \"side\" : \"length\"} in cm. A = length \\xD7 width.` : `${title}: perimeter ${P} cm${shape === \"square\" ? \"\" : `, width ${h} cm`}. Find the missing ${shape === \"square\" ? \"side\" : \"length\"} in cm.`;\n        return answer(shape, task.includes(\"perimeter\") ? \"perimeter\" : \"area\", labels, prompt, missing ? b : task === \"area\" ? A : P);\n      }"
+  },
+  "g4-missingfraction": {
+    "id": "g4-missingfraction",
+    "name": "Equivalent fractions: missing numerator",
+    "grade": 4,
+    "source": "() => {\n      let d = den(), a = r4(1, d - 1), m = r4(2, 5);\n      return q(a + \"/\" + d + \" = x/\" + d * m + \". Find x.\", a * m);\n    }"
+  },
+  "g4-mixed": {
+    "id": "g4-mixed",
+    "name": "Mixed-number addition and subtraction",
+    "grade": 4,
+    "source": "() => {\n      let d = den(), a = r4(3, 8), b = r4(1, 2), n = r4(1, d - 1), m = r4(1, d - 1), sg = pick([1, -1]);\n      return f(a + \" \" + n + \"/\" + d + (sg === 1 ? \" + \" : \" \\u2212 \") + b + \" \" + m + \"/\" + d, a * d + n + sg * (b * d + m), d);\n    }"
+  },
+  "g4-mul": {
+    "id": "g4-mul",
+    "name": "Whole-number multiplication (mixed review)",
+    "grade": 4,
+    "source": "() => {\n      let a = r4(0, 1) ? r4(100, 9999) : r4(12, 99), b = a > 99 ? r4(2, 9) : r4(12, 99);\n      return calc2(a + \" \\xD7 \" + b, a * b);\n    }"
+  },
+  "g4-multiples": {
+    "id": "g4-multiples",
+    "name": "Multiples",
+    "grade": 4,
+    "source": "() => {\n      let n = r4(2, 12), k = r4(3, 8);\n      return q(\"What is the \" + k + \"th positive multiple of \" + n + \"?\", n * k);\n    }"
+  },
+  "g4-multistep": {
+    "id": "g4-multistep",
+    "name": "Multistep whole-number word problems",
+    "grade": 4,
+    "source": "() => {\n      let a = r4(3, 9), b = r4(10, 30), c = r4(1, b), d = r4(2, 6);\n      return q(\"A club buys \" + a + \" packs of \" + b + \" tickets, then gives away \" + c + \" tickets. It later buys \" + d + \" more tickets. How many now?\", a * b - c + d);\n    }"
+  },
+  "g4-pattern": {
+    "id": "g4-pattern",
+    "name": "Number patterns",
+    "grade": 4,
+    "source": "() => {\n      let a = r4(1, 20), b = r4(2, 9);\n      return q(\"Start at \" + a + \". Add \" + b + \" each time. What is the fifth term (count \" + a + \" as term 1)?\", a + 4 * b);\n    }"
+  },
+  "g4-place": {
+    "id": "g4-place",
+    "name": "Whole-number place value",
+    "grade": 4,
+    "source": "() => {\n      let n = r4(1e5, 999999), p = pick([10, 100, 1e3, 1e4, 1e5]);\n      return q(\"In \" + n + \", what is the value of the digit in the \" + { 10: \"tens\", 100: \"hundreds\", 1e3: \"thousands\", 1e4: \"ten-thousands\", 1e5: \"hundred-thousands\" }[p] + \" place?\", Math.floor(n / p) % 10 * p);\n    }"
+  },
+  "g4-prime": {
+    "id": "g4-prime",
+    "name": "Prime and composite numbers",
+    "grade": 4,
+    "source": "() => {\n      let n = r4(2, 100);\n      return q(\"How many positive factors does \" + n + \" have? A prime has exactly two.\", Array.from({ length: n }, (_, i) => i + 1).filter((d) => n % d === 0).length);\n    }"
+  },
+  "g4-word": {
+    "id": "g4-word",
+    "name": "Equal-groups word problems",
+    "grade": 4,
+    "source": "() => {\n      let a = r4(3, 12), b = r4(4, 15);\n      return q(a + \" boxes hold \" + b + \" pencils each. How many pencils altogether?\", a * b);\n    }"
+  },
+  "g5-convert": {
+    "id": "g5-convert",
+    "name": "Conversions in both directions",
+    "grade": 5,
+    "source": "() => {\n      let [a, b, k] = pick(units), n = r4(1, 100), div = r4(0, 1);\n      return q(n + \" \" + (div ? b : a) + \" = how many \" + (div ? a : b) + \"? (1 \" + a + \" = \" + k + \" \" + b + \".) Give an exact value; fractions are allowed.\", div ? frac(n, k) : n * k);\n    }"
+  },
+  "g5-decadd": {
+    "id": "g5-decadd",
+    "name": "Decimal addition",
+    "grade": 5,
+    "source": "() => {\n      let a = r4(100, 999), b = r4(10, 99);\n      if (op === \"\\xF7\") return calc2(decimal(a * b, 1e3) + \" \\xF7 \" + decimal(b, 10), a / 100);\n      return calc2(decimal(a) + \" \" + op + \" \" + decimal(b), op === \"+\" ? (a + b) / 100 : op === \"\\u2212\" ? (a - b) / 100 : a * b / 1e4);\n    }"
+  },
+  "g5-deccompare": {
+    "id": "g5-deccompare",
+    "name": "Compare decimals to thousandths",
+    "grade": 5,
+    "source": "() => comparison(decimal(r4(1, 9999), 1e3), decimal(r4(1, 9999), 1e3))"
+  },
+  "g5-decdiv": {
+    "id": "g5-decdiv",
+    "name": "Decimal division",
+    "grade": 5,
+    "source": "() => {\n      let a = r4(100, 999), b = r4(10, 99);\n      if (op === \"\\xF7\") return calc2(decimal(a * b, 1e3) + \" \\xF7 \" + decimal(b, 10), a / 100);\n      return calc2(decimal(a) + \" \" + op + \" \" + decimal(b), op === \"+\" ? (a + b) / 100 : op === \"\\u2212\" ? (a - b) / 100 : a * b / 1e4);\n    }"
+  },
+  "g5-decmul": {
+    "id": "g5-decmul",
+    "name": "Decimal multiplication",
+    "grade": 5,
+    "source": "() => {\n      let a = r4(100, 999), b = r4(10, 99);\n      if (op === \"\\xF7\") return calc2(decimal(a * b, 1e3) + \" \\xF7 \" + decimal(b, 10), a / 100);\n      return calc2(decimal(a) + \" \" + op + \" \" + decimal(b), op === \"+\" ? (a + b) / 100 : op === \"\\u2212\" ? (a - b) / 100 : a * b / 1e4);\n    }"
+  },
+  "g5-decsub": {
+    "id": "g5-decsub",
+    "name": "Decimal subtraction",
+    "grade": 5,
+    "source": "() => {\n      let a = r4(100, 999), b = r4(10, 99);\n      if (op === \"\\xF7\") return calc2(decimal(a * b, 1e3) + \" \\xF7 \" + decimal(b, 10), a / 100);\n      return calc2(decimal(a) + \" \" + op + \" \" + decimal(b), op === \"+\" ? (a + b) / 100 : op === \"\\u2212\" ? (a - b) / 100 : a * b / 1e4);\n    }"
+  },
+  "g5-divfrac": {
+    "id": "g5-divfrac",
+    "name": "Whole number ÷ unit fraction",
+    "grade": 5,
+    "source": "() => {\n      let a = r4(2, 12), b = den();\n      return calc2(a + \" \\xF7 (1/\" + b + \")\", a * b);\n    }"
+  },
+  "g5-fadd": {
+    "id": "g5-fadd",
+    "name": "Unlike-denominator fraction addition",
+    "grade": 5,
+    "source": "() => {\n      let d = den(), e = pick([2, 3, 4, 5, 6, 8, 10, 12].filter((v) => v !== d)), a = r4(1, d), b = r4(1, e);\n      return f(a + \"/\" + d + \" + \" + b + \"/\" + e, a * e + b * d, d * e);\n    }"
+  },
+  "g5-festimate": {
+    "id": "g5-festimate",
+    "name": "Estimate fraction sums",
+    "grade": 5,
+    "source": "() => {\n      let d = den(), e = den(), a = r4(1, d - 1), b = r4(1, e - 1);\n      return q(\"Estimate \" + a + \"/\" + d + \" + \" + b + \"/\" + e + \" by rounding EACH fraction to the nearest whole number first (half up). Enter the estimated sum.\", Math.round(a / d) + Math.round(b / e));\n    }"
+  },
+  "g5-fmul": {
+    "id": "g5-fmul",
+    "name": "Fraction multiplication",
+    "grade": 5,
+    "source": "() => {\n      let d = den(), e = den(), a = r4(1, d + 2), b = r4(1, e + 2);\n      return f(a + \"/\" + d + \" \\xD7 \" + b + \"/\" + e, a * b, d * e);\n    }"
+  },
+  "g5-fmulword": {
+    "id": "g5-fmulword",
+    "name": "Fraction multiplication word problems",
+    "grade": 5,
+    "source": "() => {\n      let d = den(), a = r4(1, d - 1), b = r4(2, 12);\n      return f(\"You use \" + a + \"/\" + d + \" of \" + b + \" kg of flour. How many kilograms do you use?\", a * b, d);\n    }"
+  },
+  "g5-fsub": {
+    "id": "g5-fsub",
+    "name": "Unlike-denominator fraction subtraction",
+    "grade": 5,
+    "source": "() => {\n      let d = den(), e = pick([2, 3, 4, 5, 6, 8, 10, 12].filter((v) => v !== d)), a = r4(1, d), b = r4(1, e);\n      if (a * e < b * d) [a, b, d, e] = [b, a, e, d];\n      return f(a + \"/\" + d + \" \\u2212 \" + b + \"/\" + e, a * e - b * d, d * e);\n    }"
+  },
+  "g5-mixed": {
+    "id": "g5-mixed",
+    "name": "Mixed numbers with unlike denominators",
+    "grade": 5,
+    "source": "() => {\n      let d = den(), e = den(), a = r4(3, 7), b = r4(1, 2), n = r4(1, d - 1), m = r4(1, e - 1), sg = pick([1, -1]);\n      return f(a + \" \" + n + \"/\" + d + (sg === 1 ? \" + \" : \" \\u2212 \") + b + \" \" + m + \"/\" + e, (a * d + n) * e + sg * (b * e + m) * d, d * e);\n    }"
+  },
+  "g5-mul": {
+    "id": "g5-mul",
+    "name": "Multi-digit multiplication (mixed review)",
+    "grade": 5,
+    "source": "() => {\n      let a = r4(100, 999), b = r4(12, 999);\n      return calc2(a + \" \\xD7 \" + b, a * b);\n    }"
+  },
+  "g5-order": {
+    "id": "g5-order",
+    "name": "Order of operations: parentheses, no exponents",
+    "grade": 5,
+    "source": "() => {\n      let a = r4(2, 12), b = r4(2, 9), c = r4(2, 9), d = r4(1, 9);\n      return r4(0, 1) ? calc2(\"(\" + a + \" + \" + b + \") \\xD7 \" + c + \" \\u2212 \" + d * c + \" \\xF7 \" + c, (a + b) * c - d) : calc2(a * b + \" \\xF7 \" + b + \" \\xD7 \" + c + \" + (\" + d + \" \\u2212 1)\", a * c + d - 1);\n    }"
+  },
+  "g5-pattern": {
+    "id": "g5-pattern",
+    "name": "Related numerical patterns",
+    "grade": 5,
+    "source": "() => {\n      let a = r4(2, 6), b = r4(7, 12), n = r4(3, 9);\n      return q(\"Two patterns start at 0. A adds \" + a + \" each step; B adds \" + b + \". After \" + n + \" steps, how much greater is B than A?\", (b - a) * n);\n    }"
+  },
+  "g5-place": {
+    "id": "g5-place",
+    "name": "Decimal place value",
+    "grade": 5,
+    "source": "() => {\n      let a = r4(1001, 9999), p = pick([10, 100, 1e3]);\n      return q(\"In \" + decimal(a, 1e3) + \", what is the value of the \" + { 10: \"tenths\", 100: \"hundredths\", 1e3: \"thousandths\" }[p] + \" digit?\", Math.floor(a / (1e3 / p)) % 10 / p);\n    }"
+  },
+  "g5-powers10": {
+    "id": "g5-powers10",
+    "name": "Powers of ten and decimal shifts",
+    "grade": 5,
+    "source": "() => {\n      let a = r4(1, 9999), n = r4(1, 3), div = r4(0, 1);\n      return calc2(decimal(a) + \" \" + (div ? \"\\xF7\" : \"\\xD7\") + \" 10^\" + n, div ? a / 100 / 10 ** n : a / 100 * 10 ** n);\n    }"
+  },
+  "g5-quotient": {
+    "id": "g5-quotient",
+    "name": "Fractions as quotients",
+    "grade": 5,
+    "source": "() => {\n      let a = r4(2, 12), b = r4(2, 12);\n      return f(a + \" loaves are shared equally by \" + b + \" people. How many loaves per person?\", a, b);\n    }"
+  },
+  "g5-round": {
+    "id": "g5-round",
+    "name": "Round decimals",
+    "grade": 5,
+    "source": "() => {\n      let a = r4(1, 99999), p = pick([1, 10, 100]), step = 1e3 / p;\n      return q(\"Round \" + decimal(a, 1e3) + \" to the nearest \" + { 1: \"whole number\", 10: \"tenth\", 100: \"hundredth\" }[p] + \". If halfway, round up.\", Math.floor((a + step / 2) / step) / p);\n    }"
+  },
+  "g5-unitdiv": {
+    "id": "g5-unitdiv",
+    "name": "Unit fraction ÷ whole number",
+    "grade": 5,
+    "source": "() => {\n      let a = r4(2, 12), b = den();\n      return f(\"(1/\" + b + \") \\xF7 \" + a, 1, a * b);\n    }"
+  },
+  "g6-absolute": {
+    "id": "g6-absolute",
+    "name": "Absolute value",
+    "grade": 6,
+    "source": "() => {\n      let n = r4(-100, 100);\n      return calc2(\"|\" + n + \"|\", Math.abs(n));\n    }"
+  },
+  "g6-combine": {
+    "id": "g6-combine",
+    "name": "Combine like terms",
+    "grade": 6,
+    "source": "() => {\n      let a = r4(2, 9), b = r4(2, 9), c = r4(1, 12);\n      return q(\"Simplify \" + a + \"x + \" + b + \"x + \" + c + \". Write ax + b form.\", a + b + \"x+\" + c, \"linear\");\n    }"
+  },
+  "g6-compare": {
+    "id": "g6-compare",
+    "name": "Compare signed rational numbers",
+    "grade": 6,
+    "source": "() => comparison(frac(r4(-20, 20), den()), frac(r4(-20, 20), den()))"
+  },
+  "g6-distribute": {
+    "id": "g6-distribute",
+    "name": "Distributive property",
+    "grade": 6,
+    "source": "() => {\n      let a = r4(2, 9), b = r4(1, 12);\n      return q(\"Expand \" + a + \"(x + \" + b + \"). Give the expression without parentheses.\", a + \"x+\" + a * b, \"expanded\");\n    }"
+  },
+  "g6-eq": {
+    "id": "g6-eq",
+    "name": "One-step equations",
+    "grade": 6,
+    "source": "() => {\n      let x = r4(1, 30), b = r4(2, 20), k = r4(0, 3);\n      return q(\"Solve \" + [\"x + \" + b + \" = \" + (x + b), \"x \\u2212 \" + b + \" = \" + (x - b), b + \"x = \" + b * x, \"x \\xF7 \" + b + \" = \" + frac(x, b)][k] + \". Enter x.\", x);\n    }"
+  },
+  "g6-eval": {
+    "id": "g6-eval",
+    "name": "Evaluate expressions",
+    "grade": 6,
+    "source": "() => {\n      let a = r4(2, 9), x = r4(2, 12), b = r4(1, 15);\n      return q(\"Evaluate \" + a + \"x + \" + b + \" when x = \" + x + \".\", a * x + b);\n    }"
+  },
+  "g6-exponents": {
+    "id": "g6-exponents",
+    "name": "Whole-number exponents",
+    "grade": 6,
+    "source": "() => {\n      let a = r4(2, 9), b = r4(2, 4);\n      return calc2(a + \"^\" + b, a ** b);\n    }"
+  },
+  "g6-fdiv": {
+    "id": "g6-fdiv",
+    "name": "Fraction division",
+    "grade": 6,
+    "source": "() => {\n      let a = r4(1, 9), b = den(), c = r4(1, 9), d = den();\n      return f(\"(\" + a + \"/\" + b + \") \\xF7 (\" + c + \"/\" + d + \")\", a * d, b * c);\n    }"
+  },
+  "g6-gcf": {
+    "id": "g6-gcf",
+    "name": "Greatest common factor",
+    "grade": 6,
+    "source": "() => {\n      let a = r4(2, 100), b = r4(2, 100);\n      return q(\"Find the greatest common factor of \" + a + \" and \" + b + \".\", gcd(a, b));\n    }"
+  },
+  "g6-geo-parallelogram-area": {
+    "id": "g6-geo-parallelogram-area",
+    "name": "Parallelogram: find area",
+    "grade": 6,
+    "source": "() => {\n      let b = r(3, 15) * 2, h = r(2, 12), top = r(2, 8) * 2;\n      if (shape === \"rhombus\") {\n        b = r(2, 6) * 5;\n        h = b * 4 / 5;\n      }\n      if (shape === \"trapezoid\") {\n        h = r(1, 4) * 4;\n        b = top + 6 * (h / 4);\n      }\n      const A = shape === \"triangle\" ? b * h / 2 : shape === \"trapezoid\" ? (b + top) * h / 2 : b * h;\n      const formula = shape === \"triangle\" ? \"A = base \\xD7 perpendicular height \\xF7 2.\" : shape === \"trapezoid\" ? \"A = (lower base + upper base) \\xD7 perpendicular height \\xF7 2.\" : \"A = base \\xD7 perpendicular height.\";\n      const labels = { base: task === \"base\" ? \"?\" : `${b} cm`, height: task === \"height\" ? \"?\" : `${h} cm` };\n      if (shape === \"trapezoid\") labels.top = task === \"other-base\" ? \"?\" : `${top} cm`;\n      const known = [task !== \"base\" ? `base ${b} cm` : \"\", task !== \"height\" ? `perpendicular height ${h} cm` : \"\", shape === \"trapezoid\" && task !== \"other-base\" ? `upper base ${top} cm` : \"\"].filter(Boolean).join(\", \");\n      const prompt = task === \"area\" ? `${title}: ${known}. Find area in cm^2. ${formula}` : `${title}: area ${A} cm^2, ${known}. Find the missing ${task === \"other-base\" ? \"upper base\" : task === \"height\" ? \"perpendicular height\" : \"base\"} in cm. ${formula}`;\n      return answer(shape, \"area\", labels, prompt, task === \"area\" ? A : task === \"height\" ? h : task === \"other-base\" ? top : b);\n    }"
+  },
+  "g6-geo-rhombus-missing-perimeter": {
+    "id": "g6-geo-rhombus-missing-perimeter",
+    "name": "Rhombus: find missing side from perimeter",
+    "grade": 6,
+    "source": "() => {\n      let b = r(4, 15), left = r(3, 12), right = r(Math.abs(b - left) + 1, b + left - 1), top = r(3, 12);\n      if (shape === \"parallelogram\") {\n        right = left;\n        top = b;\n      }\n      if (shape === \"rhombus\") left = right = top = b;\n      if (shape === \"trapezoid\") {\n        const k = r(1, 4);\n        top = r(3, 12);\n        b = top + 6 * k;\n        left = right = 5 * k;\n      }\n      if (shape === \"quadrilateral\") {\n        b = r(5, 12);\n        left = r(5, 12);\n        right = r(5, 12);\n        top = r(5, 12);\n      }\n      const sides = shape === \"triangle\" ? [b, left, right] : [b, left, right, top], P = sides.reduce((a, c) => a + c, 0);\n      const labels = { base: missing ? \"?\" : `${b} cm`, left: `${left} cm`, right: `${right} cm`, top: `${top} cm` };\n      if (missing && shape === \"parallelogram\") labels.top = \"?\";\n      if (missing && shape === \"rhombus\") labels.left = labels.right = labels.top = \"?\";\n      const known = shape === \"rhombus\" ? missing ? \"all sides equal\" : `side ${b} cm` : shape === \"parallelogram\" ? missing ? `one adjacent side ${left} cm` : `adjacent sides ${b} cm and ${left} cm` : missing ? `other sides ${sides.slice(1).join(\", \")} cm` : `sides ${sides.join(\", \")} cm`;\n      return answer(shape, \"perimeter\", labels, `${title}: ${missing ? `perimeter ${P} cm; ` : \"\"}${known}. ${missing ? \"Find the side marked ? in cm.\" : \"Find the perimeter in cm.\"}${shape === \"parallelogram\" ? \" Opposite sides are equal.\" : \"\"}`, missing ? b : P);\n    }"
+  },
+  "g6-geo-trapezoid-area": {
+    "id": "g6-geo-trapezoid-area",
+    "name": "Trapezoid: find area",
+    "grade": 6,
+    "source": "() => {\n      let b = r(3, 15) * 2, h = r(2, 12), top = r(2, 8) * 2;\n      if (shape === \"rhombus\") {\n        b = r(2, 6) * 5;\n        h = b * 4 / 5;\n      }\n      if (shape === \"trapezoid\") {\n        h = r(1, 4) * 4;\n        b = top + 6 * (h / 4);\n      }\n      const A = shape === \"triangle\" ? b * h / 2 : shape === \"trapezoid\" ? (b + top) * h / 2 : b * h;\n      const formula = shape === \"triangle\" ? \"A = base \\xD7 perpendicular height \\xF7 2.\" : shape === \"trapezoid\" ? \"A = (lower base + upper base) \\xD7 perpendicular height \\xF7 2.\" : \"A = base \\xD7 perpendicular height.\";\n      const labels = { base: task === \"base\" ? \"?\" : `${b} cm`, height: task === \"height\" ? \"?\" : `${h} cm` };\n      if (shape === \"trapezoid\") labels.top = task === \"other-base\" ? \"?\" : `${top} cm`;\n      const known = [task !== \"base\" ? `base ${b} cm` : \"\", task !== \"height\" ? `perpendicular height ${h} cm` : \"\", shape === \"trapezoid\" && task !== \"other-base\" ? `upper base ${top} cm` : \"\"].filter(Boolean).join(\", \");\n      const prompt = task === \"area\" ? `${title}: ${known}. Find area in cm^2. ${formula}` : `${title}: area ${A} cm^2, ${known}. Find the missing ${task === \"other-base\" ? \"upper base\" : task === \"height\" ? \"perpendicular height\" : \"base\"} in cm. ${formula}`;\n      return answer(shape, \"area\", labels, prompt, task === \"area\" ? A : task === \"height\" ? h : task === \"other-base\" ? top : b);\n    }"
+  },
+  "g6-geo-trapezoid-perimeter": {
+    "id": "g6-geo-trapezoid-perimeter",
+    "name": "Trapezoid: find perimeter",
+    "grade": 6,
+    "source": "() => {\n      let b = r(4, 15), left = r(3, 12), right = r(Math.abs(b - left) + 1, b + left - 1), top = r(3, 12);\n      if (shape === \"parallelogram\") {\n        right = left;\n        top = b;\n      }\n      if (shape === \"rhombus\") left = right = top = b;\n      if (shape === \"trapezoid\") {\n        const k = r(1, 4);\n        top = r(3, 12);\n        b = top + 6 * k;\n        left = right = 5 * k;\n      }\n      if (shape === \"quadrilateral\") {\n        b = r(5, 12);\n        left = r(5, 12);\n        right = r(5, 12);\n        top = r(5, 12);\n      }\n      const sides = shape === \"triangle\" ? [b, left, right] : [b, left, right, top], P = sides.reduce((a, c) => a + c, 0);\n      const labels = { base: missing ? \"?\" : `${b} cm`, left: `${left} cm`, right: `${right} cm`, top: `${top} cm` };\n      if (missing && shape === \"parallelogram\") labels.top = \"?\";\n      if (missing && shape === \"rhombus\") labels.left = labels.right = labels.top = \"?\";\n      const known = shape === \"rhombus\" ? missing ? \"all sides equal\" : `side ${b} cm` : shape === \"parallelogram\" ? missing ? `one adjacent side ${left} cm` : `adjacent sides ${b} cm and ${left} cm` : missing ? `other sides ${sides.slice(1).join(\", \")} cm` : `sides ${sides.join(\", \")} cm`;\n      return answer(shape, \"perimeter\", labels, `${title}: ${missing ? `perimeter ${P} cm; ` : \"\"}${known}. ${missing ? \"Find the side marked ? in cm.\" : \"Find the perimeter in cm.\"}${shape === \"parallelogram\" ? \" Opposite sides are equal.\" : \"\"}`, missing ? b : P);\n    }"
+  },
+  "g6-geo-triangle-area": {
+    "id": "g6-geo-triangle-area",
+    "name": "Triangle: find area",
+    "grade": 6,
+    "source": "() => {\n      let b = r(3, 15) * 2, h = r(2, 12), top = r(2, 8) * 2;\n      if (shape === \"rhombus\") {\n        b = r(2, 6) * 5;\n        h = b * 4 / 5;\n      }\n      if (shape === \"trapezoid\") {\n        h = r(1, 4) * 4;\n        b = top + 6 * (h / 4);\n      }\n      const A = shape === \"triangle\" ? b * h / 2 : shape === \"trapezoid\" ? (b + top) * h / 2 : b * h;\n      const formula = shape === \"triangle\" ? \"A = base \\xD7 perpendicular height \\xF7 2.\" : shape === \"trapezoid\" ? \"A = (lower base + upper base) \\xD7 perpendicular height \\xF7 2.\" : \"A = base \\xD7 perpendicular height.\";\n      const labels = { base: task === \"base\" ? \"?\" : `${b} cm`, height: task === \"height\" ? \"?\" : `${h} cm` };\n      if (shape === \"trapezoid\") labels.top = task === \"other-base\" ? \"?\" : `${top} cm`;\n      const known = [task !== \"base\" ? `base ${b} cm` : \"\", task !== \"height\" ? `perpendicular height ${h} cm` : \"\", shape === \"trapezoid\" && task !== \"other-base\" ? `upper base ${top} cm` : \"\"].filter(Boolean).join(\", \");\n      const prompt = task === \"area\" ? `${title}: ${known}. Find area in cm^2. ${formula}` : `${title}: area ${A} cm^2, ${known}. Find the missing ${task === \"other-base\" ? \"upper base\" : task === \"height\" ? \"perpendicular height\" : \"base\"} in cm. ${formula}`;\n      return answer(shape, \"area\", labels, prompt, task === \"area\" ? A : task === \"height\" ? h : task === \"other-base\" ? top : b);\n    }"
+  },
+  "g6-lcm": {
+    "id": "g6-lcm",
+    "name": "Least common multiple",
+    "grade": 6,
+    "source": "() => {\n      let a = r4(2, 12), b = r4(2, 12);\n      return q(\"Find the least common multiple of \" + a + \" and \" + b + \".\", a * b / gcd(a, b));\n    }"
+  },
+  "g6-longdiv": {
+    "id": "g6-longdiv",
+    "name": "Multi-digit division",
+    "grade": 6,
+    "source": "() => {\n      let b = r4(12, 199), a = r4(12, 199);\n      return calc2(a * b + \" \\xF7 \" + b, a);\n    }"
+  },
+  "g6-order": {
+    "id": "g6-order",
+    "name": "Order of operations: parentheses and exponents",
+    "grade": 6,
+    "source": "() => {\n      let a = r4(2, 7), b = r4(2, 4), c = r4(2, 6), d = r4(2, 9), e = r4(1, 9);\n      return r4(0, 1) ? calc2(\"(\" + a + \" + \" + b + \")^2 \\u2212 \" + c * d + \" \\xF7 \" + c + \" + \" + e + \" \\xD7 2\", (a + b) ** 2 - d + e * 2) : calc2(a * d + \" \\xF7 \" + d + \" \\xD7 \" + c + \" + (\" + b + \" + \" + e + \")^2\", a * c + (b + e) ** 2);\n    }"
+  },
+  "g6-ordering": {
+    "id": "g6-ordering",
+    "name": "Order rational numbers without a number line",
+    "grade": 6,
+    "source": "() => {\n      let a = frac(r4(-20, 20), den()), b = frac(r4(-20, 20), den()), c = decimal(r4(-99, 99), 10);\n      return q(\"What is the least of \" + a + \", \" + b + \" and \" + c + \"? Give an exact value.\", [a, b, c].sort((x, y) => value(x) - value(y))[0]);\n    }"
+  },
+  "g6-percent": {
+    "id": "g6-percent",
+    "name": "Percent of a quantity",
+    "grade": 6,
+    "source": "() => {\n      let p = r4(1, 99), n = r4(1, 20) * 100;\n      return calc2(p + \"% of \" + n, p * n / 100);\n    }"
+  },
+  "g6-percentrate": {
+    "id": "g6-percentrate",
+    "name": "Find the percentage",
+    "grade": 6,
+    "source": "() => {\n      let p = r4(1, 99), n = r4(1, 10) * 100;\n      return q(p * n / 100 + \" is what percent of \" + n + \"? Enter the number without %.\", p);\n    }"
+  },
+  "g6-percentwhole": {
+    "id": "g6-percentwhole",
+    "name": "Find the whole from a percent",
+    "grade": 6,
+    "source": "() => {\n      let p = r4(1, 19) * 5, n = r4(1, 20) * 100;\n      return q(p + \"% of a number is \" + p * n / 100 + \". Find the number.\", n);\n    }"
+  },
+  "g6-rate": {
+    "id": "g6-rate",
+    "name": "Unit rates",
+    "grade": 6,
+    "source": "() => {\n      let n = r4(2, 9), v = r4(3, 15);\n      return q(n + \" kg costs $\" + n * v + \". What is the cost in dollars per kg?\", v);\n    }"
+  },
+  "g6-ratio": {
+    "id": "g6-ratio",
+    "name": "Equivalent ratios: missing value",
+    "grade": 6,
+    "source": "() => {\n      let a = r4(2, 9), b = r4(2, 9), m = r4(2, 8);\n      return q(\"Red:blue = \" + a + \":\" + b + \". If there are \" + a * m + \" red beads, how many blue beads?\", b * m);\n    }"
+  },
+  "g6-relation": {
+    "id": "g6-relation",
+    "name": "Dependent quantities from a rule",
+    "grade": 6,
+    "source": "() => {\n      let a = r4(2, 12), b = r4(1, 10), x = r4(2, 20);\n      return q(\"Cost y is \" + a + \"x + \" + b + \" dollars for x rides. Find y for \" + x + \" rides.\", a * x + b);\n    }"
+  },
+  "g6-represent": {
+    "id": "g6-represent",
+    "name": "Fraction, decimal and percent conversions",
+    "grade": 6,
+    "source": "() => {\n      let a = r4(1, 99), v = r4(0, 2);\n      return v === 0 ? f(\"Write \" + a + \"% as a fraction.\", a, 100) : v === 1 ? q(\"Write \" + a + \"% as a decimal.\", a / 100, \"decimal\") : q(\"Write \" + decimal(a) + \" as a percent. Enter the number without %.\", a);\n    }"
+  },
+  "g6-word": {
+    "id": "g6-word",
+    "name": "Ratio word problems",
+    "grade": 6,
+    "source": "() => {\n      let a = r4(2, 5), b = r4(6, 9), m = r4(2, 8);\n      return q(\"A recipe uses \" + a + \" cups of flour for \" + b + \" servings. Cups for \" + b * m + \" servings?\", a * m);\n    }"
+  },
+  "g6-write": {
+    "id": "g6-write",
+    "name": "Write algebraic expressions",
+    "grade": 6,
+    "source": "() => {\n      let a = r4(2, 9), b = r4(1, 20);\n      return q(\"Write an expression: \" + b + \" more than \" + a + \" times x.\", a + \"x+\" + b, \"expression\");\n    }"
+  },
+  "g7-change": {
+    "id": "g7-change",
+    "name": "Percent change",
+    "grade": 7,
+    "source": "() => {\n      let n = r4(1, 20) * 100, p = r4(1, 50), sg = pick([1, -1]);\n      return q(\"A price changes from $\" + n + \" to $\" + n * (100 + sg * p) / 100 + \". What is the percent \" + (sg > 0 ? \"increase\" : \"decrease\") + \"? Enter the number without %.\", p);\n    }"
+  },
+  "g7-decimal": {
+    "id": "g7-decimal",
+    "name": "Rational numbers as decimals",
+    "grade": 7,
+    "source": "() => {\n      let d = pick([2, 4, 5, 8, 10, 20, 25]), n = r4(-30, 30);\n      return q(\"Write \" + n + \"/\" + d + \" as a decimal.\", n / d, \"decimal\");\n    }"
+  },
+  "g7-distribute": {
+    "id": "g7-distribute",
+    "name": "Expand signed expressions",
+    "grade": 7,
+    "source": "() => {\n      let a = r4(-9, -2), b = r4(1, 12);\n      return q(\"Expand \" + a + \"(x \\u2212 \" + b + \"). Give the expression without parentheses.\", a + \"x+\" + -a * b, \"expanded\");\n    }"
+  },
+  "g7-eq": {
+    "id": "g7-eq",
+    "name": "Two-step equations",
+    "grade": 7,
+    "source": "() => {\n      let a = pick([-9, -5, -2, 2, 4, 7]), b = r4(-20, 20), x = r4(-10, 10);\n      return q(\"Solve \" + a + \"x + (\" + b + \") = \" + (a * x + b) + \". Enter x.\", x);\n    }"
+  },
+  "g7-eqgroup": {
+    "id": "g7-eqgroup",
+    "name": "Equations with parentheses",
+    "grade": 7,
+    "source": "() => {\n      let a = pick([-6, -3, 2, 5]), b = r4(-9, 9), x = r4(-10, 10);\n      return q(\"Solve \" + a + \"(x + (\" + b + \")) = \" + a * (x + b) + \". Enter x.\", x);\n    }"
+  },
+  "g7-eval": {
+    "id": "g7-eval",
+    "name": "Evaluate signed rational expressions",
+    "grade": 7,
+    "source": "() => {\n      let x = r4(-9, -1), a = r4(2, 5), b = r4(-10, 10);\n      return q(\"Evaluate \" + a + \"x^2 + (\" + b + \") when x = \" + x + \".\", a * x * x + b);\n    }"
+  },
+  "g7-expression": {
+    "id": "g7-expression",
+    "name": "Combine signed rational like terms",
+    "grade": 7,
+    "source": "() => {\n      let a = r4(-9, -1), b = r4(2, 12), c = r4(-10, 10);\n      return q(\"Simplify \" + a + \"x + \" + b + \"x + (\" + c + \"). Write ax + b form.\", a + b + \"x\" + (c >= 0 ? \"+\" : \"\") + c, \"linear\");\n    }"
+  },
+  "g7-fraceq": {
+    "id": "g7-fraceq",
+    "name": "Equations with fractional coefficients",
+    "grade": 7,
+    "source": "() => {\n      let a = r4(2, 7), b = den(), x = r4(-6, 6) * b, c = r4(-9, 9);\n      return q(\"Solve (\" + frac(a, b) + \")x + (\" + c + \") = \" + (a * x / b + c) + \". Enter x.\", x);\n    }"
+  },
+  "g7-fracrate": {
+    "id": "g7-fracrate",
+    "name": "Unit rates with fractions",
+    "grade": 7,
+    "source": "() => {\n      let a = r4(1, 9), b = den(), c = r4(1, 9), d = den();\n      return f(\"Travel \" + a + \"/\" + b + \" km in \" + c + \"/\" + d + \" hour. What is the speed in km per hour?\", a * d, b * c);\n    }"
+  },
+  "g7-increase": {
+    "id": "g7-increase",
+    "name": "Tax, tips and markup",
+    "grade": 7,
+    "source": "() => {\n      let p = r4(1, 20), n = r4(2, 40) * 10;\n      return q(\"A $\" + n + \" bill has \" + p + \"% \" + pick([\"tax\", \"tip\"]) + \" added. Total in dollars?\", n * (100 + p) / 100);\n    }"
+  },
+  "g7-inequality": {
+    "id": "g7-inequality",
+    "name": "Solve two-step inequalities",
+    "grade": 7,
+    "source": "() => {\n      let a = pick([-5, -3, 2, 4]), b = r4(-10, 10), x = r4(-10, 10), op = pick([\"<\", \">\", \"\\u2264\", \"\\u2265\"]), flip = { \"<\": \">\", \">\": \"<\", \"\\u2264\": \"\\u2265\", \"\\u2265\": \"\\u2264\" };\n      return q(\"Solve \" + a + \"x + (\" + b + \") \" + op + \" \" + (a * x + b) + \". Give the solution as an inequality in x.\", \"x\" + (a < 0 ? flip[op] : op) + x, \"inequality\");\n    }"
+  },
+  "g7-intadd": {
+    "id": "g7-intadd",
+    "name": "Signed-number addition",
+    "grade": 7,
+    "source": "() => {\n      let a = r4(-30, 30), b = pick([-12, -9, -6, -3, 2, 4, 7, 10]);\n      return op === \"\\xF7\" ? calc2(a * b + \" \\xF7 (\" + b + \")\", a) : calc2(a + \" \" + op + \" (\" + b + \")\", op === \"+\" ? a + b : op === \"\\u2212\" ? a - b : a * b);\n    }"
+  },
+  "g7-intdiv": {
+    "id": "g7-intdiv",
+    "name": "Signed-number division",
+    "grade": 7,
+    "source": "() => {\n      let a = r4(-30, 30), b = pick([-12, -9, -6, -3, 2, 4, 7, 10]);\n      return op === \"\\xF7\" ? calc2(a * b + \" \\xF7 (\" + b + \")\", a) : calc2(a + \" \" + op + \" (\" + b + \")\", op === \"+\" ? a + b : op === \"\\u2212\" ? a - b : a * b);\n    }"
+  },
+  "g7-intmul": {
+    "id": "g7-intmul",
+    "name": "Signed-number multiplication",
+    "grade": 7,
+    "source": "() => {\n      let a = r4(-30, 30), b = pick([-12, -9, -6, -3, 2, 4, 7, 10]);\n      return op === \"\\xF7\" ? calc2(a * b + \" \\xF7 (\" + b + \")\", a) : calc2(a + \" \" + op + \" (\" + b + \")\", op === \"+\" ? a + b : op === \"\\u2212\" ? a - b : a * b);\n    }"
+  },
+  "g7-intsub": {
+    "id": "g7-intsub",
+    "name": "Signed-number subtraction",
+    "grade": 7,
+    "source": "() => {\n      let a = r4(-30, 30), b = pick([-12, -9, -6, -3, 2, 4, 7, 10]);\n      return op === \"\\xF7\" ? calc2(a * b + \" \\xF7 (\" + b + \")\", a) : calc2(a + \" \" + op + \" (\" + b + \")\", op === \"+\" ? a + b : op === \"\\u2212\" ? a - b : a * b);\n    }"
+  },
+  "g7-proportion": {
+    "id": "g7-proportion",
+    "name": "Proportional constants",
+    "grade": 7,
+    "source": "() => {\n      let k = r4(2, 20), x = r4(2, 10);\n      return q(\"y is proportional to x. When x = \" + x + \", y = \" + x * k + \". Find k in y = kx.\", k);\n    }"
+  },
+  "g7-propword": {
+    "id": "g7-propword",
+    "name": "Proportion word problems",
+    "grade": 7,
+    "source": "() => {\n      let a = r4(2, 9), b = r4(2, 15), c = r4(2, 12);\n      return q(a + \" tickets cost $\" + a * b + \". At that rate, what do \" + c + \" tickets cost in dollars?\", b * c);\n    }"
+  },
+  "g7-rationalword": {
+    "id": "g7-rationalword",
+    "name": "Multistep rational-number word problems",
+    "grade": 7,
+    "source": "() => {\n      let a = r4(-200, 200), b = r4(10, 90), n = r4(2, 5);\n      return q(\"Your account balance is $\" + a + \". You make \" + n + \" purchases of $\" + decimal(b, 10) + \" each. What is the signed new balance in dollars?\", a - n * b / 10);\n    }"
+  },
+  "g7-repeat": {
+    "id": "g7-repeat",
+    "name": "Repeating decimal notation",
+    "grade": 7,
+    "source": "() => {\n      let n = pick([1, 2, 4, 5, 7, 8]);\n      return q(\"Write \" + n + \"/9 as a repeating decimal. Put the repeating digit in parentheses, such as 0.(3).\", \"0.(\" + n + \")\", \"repeating\");\n    }"
+  },
+  "g7-signeddec": {
+    "id": "g7-signeddec",
+    "name": "Signed decimal operations",
+    "grade": 7,
+    "source": "() => {\n      let a = r4(-999, 999), b = pick([-12, -5, -2, 3, 7, 11]), op = pick([\"+\", \"\\u2212\", \"\\xD7\", \"\\xF7\"]);\n      return op === \"\\xF7\" ? calc2(decimal(a * b) + \" \\xF7 (\" + b + \")\", a / 100) : calc2(decimal(a) + \" \" + op + \" (\" + decimal(b, 10) + \")\", op === \"+\" ? (a + 10 * b) / 100 : op === \"\\u2212\" ? (a - 10 * b) / 100 : a * b / 1e3);\n    }"
+  }
+}
