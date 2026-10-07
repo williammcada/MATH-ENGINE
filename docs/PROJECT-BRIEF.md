@@ -1,3 +1,7 @@
+# Current baseline decision — 2026-10-08
+
+The owner approved adopting the current Mega Man v0.7 mathematics as the official baseline. The unchanged extracted bundle is preserved under baselines/megaman-v0.7; see its provenance manifest and docs/change-specs/v0.1.0-megaman-baseline.md. MATH-ENGINE is the canonical destination for future shared mathematics development. Existing host repositories are unchanged. This is an implementation checkpoint, not a verified release. It contains 312 skills, uses Math.random, and retains the existing shared settings/practice layer pending separation. The original design below is historical where it says no implementation is present or the baseline is undecided.
+
 # Math Engine — project brief
 
 ## Identity and baseline

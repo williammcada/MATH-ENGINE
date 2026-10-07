@@ -2,12 +2,16 @@
 
 A WILLIAM MCADA PRODUCT
 
-Shared procedural mathematics generation for educational applications. Canonical repository: https://github.com/williammcada/MATH-ENGINE.
+## Official current baseline
+Owner-approved on 2026-10-08: the mathematics bundle extracted unchanged from **Mega-Man-2-Math-Mode-v0.7.html** is the official starting baseline. MATH-ENGINE is the canonical repository for future shared mathematics development.
 
-Status: design baseline only; no runnable engine has been migrated here.
+Status: **implementation checkpoint**, package 0.1.0-baseline.1. This is a preserved compiled baseline, not a fully verified release or a completed reusable-package refactor.
 
+- [Preserved bundle](baselines/megaman-v0.7/shared-math.js)
+- [Provenance and SHA-256](baselines/megaman-v0.7/provenance.json)
+- [Baseline decision and comparison](docs/change-specs/v0.1.0-megaman-baseline.md)
 - [Project brief](docs/PROJECT-BRIEF.md)
-- [v0.1 design draft](docs/change-specs/v0.1.0-design-draft.md)
-- Consumer: [Test and Practice Studio](https://github.com/williammcada/test-and-practice-studio)
 
-The engine owns mathematical generation, answers and curriculum mappings. Consumer applications own their workflows, student data and presentation.
+312 selectable skills; the compared GitHub Mega Man bundle has 240. All 240 older IDs remain. Browser global: SharedMath. Existing generation uses Math.random; a seeded generation API is not yet implemented. Run npm test for limited baseline smoke checks.
+
+The snapshot preserves the existing settings and generic practice/session code together with the catalog and answer checking. It excludes the emulator, ROM, Mega Man host controls and stage/death/boss trigger hooks. Source-module recovery and separating reusable core from optional practice UI are future work. Existing games have not been migrated or redeployed.
