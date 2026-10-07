@@ -1,0 +1,5536 @@
+{
+  "course": "Saxon 8/7",
+  "local_grade": 5,
+  "source_file": "Saxon_87_Generator_Scope_Recovery.xlsx",
+  "source_sha256": "b5970a66cb62e5ec6cd6ea224e48943f164791893a27756f2e9e3c19e28b95d9",
+  "source_sheet": "Item Evidence",
+  "scope_nodes": 133,
+  "item_count": 789,
+  "test_count": 24,
+  "test_reference_count": 496,
+  "items": [
+    {
+      "source_id": "SN870001",
+      "scope_label": "Lesson 1",
+      "workbook_row": 4,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870002",
+      "scope_label": "Lesson 1",
+      "workbook_row": 5,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870017",
+      "scope_label": "Lesson 1",
+      "workbook_row": 6,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870018",
+      "scope_label": "Lesson 1",
+      "workbook_row": 7,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870004",
+      "scope_label": "Lesson 1",
+      "workbook_row": 8,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870005",
+      "scope_label": "Lesson 1",
+      "workbook_row": 9,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870181",
+      "scope_label": "Lesson 1",
+      "workbook_row": 10,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870006",
+      "scope_label": "Lesson 1",
+      "workbook_row": 11,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "AXG80153",
+      "scope_label": "Lesson 1",
+      "workbook_row": 12,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870024",
+      "scope_label": "Lesson 2",
+      "workbook_row": 13,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870153",
+      "scope_label": "Lesson 2",
+      "workbook_row": 14,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870025",
+      "scope_label": "Lesson 2",
+      "workbook_row": 15,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870008",
+      "scope_label": "Lesson 2",
+      "workbook_row": 16,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870478",
+      "scope_label": "Lesson 2",
+      "workbook_row": 17,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX650024",
+      "scope_label": "Lesson 2",
+      "workbook_row": 18,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870011",
+      "scope_label": "Lesson 2",
+      "workbook_row": 19,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870010",
+      "scope_label": "Lesson 2",
+      "workbook_row": 20,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870012",
+      "scope_label": "Lesson 3",
+      "workbook_row": 21,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870013",
+      "scope_label": "Lesson 3",
+      "workbook_row": 22,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870014",
+      "scope_label": "Lesson 3",
+      "workbook_row": 23,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870015",
+      "scope_label": "Lesson 3",
+      "workbook_row": 24,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870040",
+      "scope_label": "Lesson 3",
+      "workbook_row": 25,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870115",
+      "scope_label": "Lesson 4",
+      "workbook_row": 26,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870033",
+      "scope_label": "Lesson 4",
+      "workbook_row": 27,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870017",
+      "scope_label": "Lesson 4",
+      "workbook_row": 28,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870156",
+      "scope_label": "Lesson 4",
+      "workbook_row": 29,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870122",
+      "scope_label": "Lesson 5",
+      "workbook_row": 30,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870023",
+      "scope_label": "Lesson 5",
+      "workbook_row": 31,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "AHG50141",
+      "scope_label": "Lesson 5",
+      "workbook_row": 32,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870117",
+      "scope_label": "Lesson 5",
+      "workbook_row": 33,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870001",
+      "scope_label": "Lesson 5",
+      "workbook_row": 34,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX650185",
+      "scope_label": "Lesson 5",
+      "workbook_row": 35,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870020",
+      "scope_label": "Lesson 5",
+      "workbook_row": 36,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870118",
+      "scope_label": "Lesson 5",
+      "workbook_row": 37,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "NAV40385",
+      "scope_label": "Lesson 6",
+      "workbook_row": 38,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870041",
+      "scope_label": "Lesson 6",
+      "workbook_row": 39,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870025",
+      "scope_label": "Lesson 6",
+      "workbook_row": 40,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870026",
+      "scope_label": "Lesson 6",
+      "workbook_row": 41,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870158",
+      "scope_label": "Lesson 6",
+      "workbook_row": 42,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX760040",
+      "scope_label": "Lesson 6",
+      "workbook_row": 43,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870027",
+      "scope_label": "Lesson 6",
+      "workbook_row": 44,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870179",
+      "scope_label": "Lesson 6",
+      "workbook_row": 45,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870119",
+      "scope_label": "Lesson 7",
+      "workbook_row": 46,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870029",
+      "scope_label": "Lesson 7",
+      "workbook_row": 47,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870592",
+      "scope_label": "Lesson 7",
+      "workbook_row": 48,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870591",
+      "scope_label": "Lesson 7",
+      "workbook_row": 49,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870188",
+      "scope_label": "Lesson 8",
+      "workbook_row": 50,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870358",
+      "scope_label": "Lesson 8",
+      "workbook_row": 51,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870031",
+      "scope_label": "Lesson 8",
+      "workbook_row": 52,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870161",
+      "scope_label": "Lesson 8",
+      "workbook_row": 53,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870190",
+      "scope_label": "Lesson 8",
+      "workbook_row": 54,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870160",
+      "scope_label": "Lesson 8",
+      "workbook_row": 55,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870048",
+      "scope_label": "Lesson 8",
+      "workbook_row": 56,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870032",
+      "scope_label": "Lesson 8",
+      "workbook_row": 57,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870183",
+      "scope_label": "Lesson 8",
+      "workbook_row": 58,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SAX70390",
+      "scope_label": "Lesson 8",
+      "workbook_row": 59,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870037",
+      "scope_label": "Lesson 9",
+      "workbook_row": 60,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870035",
+      "scope_label": "Lesson 9",
+      "workbook_row": 61,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870036",
+      "scope_label": "Lesson 9",
+      "workbook_row": 62,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870134",
+      "scope_label": "Lesson 9",
+      "workbook_row": 63,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870824",
+      "scope_label": "Lesson 9",
+      "workbook_row": 64,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870049",
+      "scope_label": "Lesson 9",
+      "workbook_row": 65,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870034",
+      "scope_label": "Lesson 9",
+      "workbook_row": 66,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870039",
+      "scope_label": "Lesson 9",
+      "workbook_row": 67,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870052",
+      "scope_label": "Lesson 10",
+      "workbook_row": 68,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870053",
+      "scope_label": "Lesson 10",
+      "workbook_row": 69,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870040",
+      "scope_label": "Lesson 10",
+      "workbook_row": 70,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX760043",
+      "scope_label": "Lesson 10",
+      "workbook_row": 71,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870123",
+      "scope_label": "Lesson 10",
+      "workbook_row": 72,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "DBFF0203",
+      "scope_label": "Lesson 10",
+      "workbook_row": 73,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870043",
+      "scope_label": "Lesson 10",
+      "workbook_row": 74,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX540337",
+      "scope_label": "Lesson 10",
+      "workbook_row": 75,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870047",
+      "scope_label": "Lesson 11",
+      "workbook_row": 76,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "AXG80180",
+      "scope_label": "Lesson 11",
+      "workbook_row": 77,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870055",
+      "scope_label": "Lesson 11",
+      "workbook_row": 78,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870046",
+      "scope_label": "Lesson 11",
+      "workbook_row": 79,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870049",
+      "scope_label": "Lesson 11",
+      "workbook_row": 80,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX760005",
+      "scope_label": "Lesson 11",
+      "workbook_row": 81,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870056",
+      "scope_label": "Lesson 11",
+      "workbook_row": 82,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870052",
+      "scope_label": "Lesson 11",
+      "workbook_row": 83,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870050",
+      "scope_label": "Lesson 11",
+      "workbook_row": 84,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870061",
+      "scope_label": "Lesson 12",
+      "workbook_row": 85,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX650137",
+      "scope_label": "Lesson 12",
+      "workbook_row": 86,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870479",
+      "scope_label": "Lesson 12",
+      "workbook_row": 87,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870480",
+      "scope_label": "Lesson 12",
+      "workbook_row": 88,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870058",
+      "scope_label": "Lesson 12",
+      "workbook_row": 89,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870178",
+      "scope_label": "Lesson 12",
+      "workbook_row": 90,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870056",
+      "scope_label": "Lesson 12",
+      "workbook_row": 91,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870057",
+      "scope_label": "Lesson 12",
+      "workbook_row": 92,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870060",
+      "scope_label": "Lesson 13",
+      "workbook_row": 93,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870062",
+      "scope_label": "Lesson 13",
+      "workbook_row": 94,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870162",
+      "scope_label": "Lesson 13",
+      "workbook_row": 95,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870063",
+      "scope_label": "Lesson 13",
+      "workbook_row": 96,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870164",
+      "scope_label": "Lesson 13",
+      "workbook_row": 97,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870163",
+      "scope_label": "Lesson 13",
+      "workbook_row": 98,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870064",
+      "scope_label": "Lesson 14",
+      "workbook_row": 99,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870064",
+      "scope_label": "Lesson 14",
+      "workbook_row": 100,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870359",
+      "scope_label": "Lesson 14",
+      "workbook_row": 101,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870065",
+      "scope_label": "Lesson 14",
+      "workbook_row": 102,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870136",
+      "scope_label": "Lesson 15",
+      "workbook_row": 103,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870067",
+      "scope_label": "Lesson 15",
+      "workbook_row": 104,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870165",
+      "scope_label": "Lesson 15",
+      "workbook_row": 105,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870066",
+      "scope_label": "Lesson 15",
+      "workbook_row": 106,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870066",
+      "scope_label": "Lesson 15",
+      "workbook_row": 107,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870069",
+      "scope_label": "Lesson 15",
+      "workbook_row": 108,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870068",
+      "scope_label": "Lesson 15",
+      "workbook_row": 109,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870070",
+      "scope_label": "Lesson 15",
+      "workbook_row": 110,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870069",
+      "scope_label": "Lesson 16",
+      "workbook_row": 111,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870070",
+      "scope_label": "Lesson 16",
+      "workbook_row": 112,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870073",
+      "scope_label": "Lesson 16",
+      "workbook_row": 113,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870071",
+      "scope_label": "Lesson 16",
+      "workbook_row": 114,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870184",
+      "scope_label": "Lesson 17",
+      "workbook_row": 115,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870079",
+      "scope_label": "Lesson 17",
+      "workbook_row": 116,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870075",
+      "scope_label": "Lesson 17",
+      "workbook_row": 117,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SMAH0328",
+      "scope_label": "Lesson 17",
+      "workbook_row": 118,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870594",
+      "scope_label": "Lesson 18",
+      "workbook_row": 119,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870077",
+      "scope_label": "Lesson 18",
+      "workbook_row": 120,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870078",
+      "scope_label": "Lesson 18",
+      "workbook_row": 121,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870186",
+      "scope_label": "Lesson 18",
+      "workbook_row": 122,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SAX70303",
+      "scope_label": "Lesson 18",
+      "workbook_row": 123,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870596",
+      "scope_label": "Lesson 18",
+      "workbook_row": 124,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870593",
+      "scope_label": "Lesson 18",
+      "workbook_row": 125,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "AHG60626",
+      "scope_label": "Lesson 18",
+      "workbook_row": 126,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870072",
+      "scope_label": "Lesson 19",
+      "workbook_row": 127,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870313",
+      "scope_label": "Lesson 19",
+      "workbook_row": 128,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870074",
+      "scope_label": "Lesson 19",
+      "workbook_row": 129,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870082",
+      "scope_label": "Lesson 19",
+      "workbook_row": 130,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870080",
+      "scope_label": "Lesson 19",
+      "workbook_row": 131,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870139",
+      "scope_label": "Lesson 20",
+      "workbook_row": 132,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870075",
+      "scope_label": "Lesson 20",
+      "workbook_row": 133,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870125",
+      "scope_label": "Lesson 20",
+      "workbook_row": 134,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870086",
+      "scope_label": "Lesson 20",
+      "workbook_row": 135,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX760149",
+      "scope_label": "Lesson 20",
+      "workbook_row": 136,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SXA10055",
+      "scope_label": "Lesson 20",
+      "workbook_row": 137,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX650319",
+      "scope_label": "Lesson 20",
+      "workbook_row": 138,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870073",
+      "scope_label": "Lesson 20",
+      "workbook_row": 139,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870089",
+      "scope_label": "Lesson 20",
+      "workbook_row": 140,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870076",
+      "scope_label": "Lesson 20",
+      "workbook_row": 141,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870126",
+      "scope_label": "Lesson 20",
+      "workbook_row": 142,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870077",
+      "scope_label": "Lesson 20",
+      "workbook_row": 143,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870078",
+      "scope_label": "Lesson 20",
+      "workbook_row": 144,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870080",
+      "scope_label": "Lesson 20",
+      "workbook_row": 145,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870093",
+      "scope_label": "Lesson 20",
+      "workbook_row": 146,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870166",
+      "scope_label": "Lesson 21",
+      "workbook_row": 147,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "OTG50028",
+      "scope_label": "Lesson 21",
+      "workbook_row": 148,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870192",
+      "scope_label": "Lesson 21",
+      "workbook_row": 149,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870302",
+      "scope_label": "Lesson 21",
+      "workbook_row": 150,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870082",
+      "scope_label": "Lesson 21",
+      "workbook_row": 151,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870081",
+      "scope_label": "Lesson 21",
+      "workbook_row": 152,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870168",
+      "scope_label": "Lesson 21",
+      "workbook_row": 153,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "NC070005",
+      "scope_label": "Lesson 21",
+      "workbook_row": 154,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870090",
+      "scope_label": "Lesson 22",
+      "workbook_row": 155,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870092",
+      "scope_label": "Lesson 22",
+      "workbook_row": 156,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870095",
+      "scope_label": "Lesson 22",
+      "workbook_row": 157,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870096",
+      "scope_label": "Lesson 22",
+      "workbook_row": 158,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870140",
+      "scope_label": "Lesson 23",
+      "workbook_row": 159,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870141",
+      "scope_label": "Lesson 23",
+      "workbook_row": 160,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870100",
+      "scope_label": "Lesson 23",
+      "workbook_row": 161,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870098",
+      "scope_label": "Lesson 23",
+      "workbook_row": 162,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870095",
+      "scope_label": "Lesson 24",
+      "workbook_row": 163,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870097",
+      "scope_label": "Lesson 24",
+      "workbook_row": 164,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870103",
+      "scope_label": "Lesson 24",
+      "workbook_row": 165,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870102",
+      "scope_label": "Lesson 24",
+      "workbook_row": 166,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870143",
+      "scope_label": "Lesson 25",
+      "workbook_row": 167,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870105",
+      "scope_label": "Lesson 25",
+      "workbook_row": 168,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870194",
+      "scope_label": "Lesson 25",
+      "workbook_row": 169,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870144",
+      "scope_label": "Lesson 25",
+      "workbook_row": 170,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870103",
+      "scope_label": "Lesson 26",
+      "workbook_row": 171,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870104",
+      "scope_label": "Lesson 26",
+      "workbook_row": 172,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870108",
+      "scope_label": "Lesson 26",
+      "workbook_row": 173,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870109",
+      "scope_label": "Lesson 26",
+      "workbook_row": 174,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870107",
+      "scope_label": "Lesson 26",
+      "workbook_row": 175,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "AMBM0055",
+      "scope_label": "Lesson 27",
+      "workbook_row": 176,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "AHG50515",
+      "scope_label": "Lesson 27",
+      "workbook_row": 177,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "NUY40257",
+      "scope_label": "Lesson 27",
+      "workbook_row": 178,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "AMP40086",
+      "scope_label": "Lesson 27",
+      "workbook_row": 179,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SAX70082",
+      "scope_label": "Lesson 27",
+      "workbook_row": 180,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SAX70083",
+      "scope_label": "Lesson 27",
+      "workbook_row": 181,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870112",
+      "scope_label": "Lesson 27",
+      "workbook_row": 182,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870110",
+      "scope_label": "Lesson 27",
+      "workbook_row": 183,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870122",
+      "scope_label": "Lesson 27",
+      "workbook_row": 184,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870124",
+      "scope_label": "Lesson 27",
+      "workbook_row": 185,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870126",
+      "scope_label": "Lesson 27",
+      "workbook_row": 186,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870121",
+      "scope_label": "Lesson 27",
+      "workbook_row": 187,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870149",
+      "scope_label": "Lesson 28",
+      "workbook_row": 188,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870151",
+      "scope_label": "Lesson 28",
+      "workbook_row": 189,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870152",
+      "scope_label": "Lesson 28",
+      "workbook_row": 190,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870116",
+      "scope_label": "Lesson 28",
+      "workbook_row": 191,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870114",
+      "scope_label": "Lesson 28",
+      "workbook_row": 192,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870110",
+      "scope_label": "Lesson 28",
+      "workbook_row": 193,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870111",
+      "scope_label": "Lesson 28",
+      "workbook_row": 194,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870112",
+      "scope_label": "Lesson 28",
+      "workbook_row": 195,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870120",
+      "scope_label": "Lesson 28",
+      "workbook_row": 196,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870118",
+      "scope_label": "Lesson 28",
+      "workbook_row": 197,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870153",
+      "scope_label": "Lesson 29",
+      "workbook_row": 198,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870128",
+      "scope_label": "Lesson 29",
+      "workbook_row": 199,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870129",
+      "scope_label": "Lesson 29",
+      "workbook_row": 200,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870127",
+      "scope_label": "Lesson 29",
+      "workbook_row": 201,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "AMPA0048",
+      "scope_label": "Lesson 29",
+      "workbook_row": 202,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870131",
+      "scope_label": "Lesson 29",
+      "workbook_row": 203,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870185",
+      "scope_label": "Lesson 29",
+      "workbook_row": 204,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870362",
+      "scope_label": "Lesson 29",
+      "workbook_row": 205,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870303",
+      "scope_label": "Lesson 29",
+      "workbook_row": 206,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870133",
+      "scope_label": "Lesson 29",
+      "workbook_row": 207,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870134",
+      "scope_label": "Lesson 29",
+      "workbook_row": 208,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870175",
+      "scope_label": "Lesson 29",
+      "workbook_row": 209,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870154",
+      "scope_label": "Lesson 30",
+      "workbook_row": 210,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870172",
+      "scope_label": "Lesson 30",
+      "workbook_row": 211,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870170",
+      "scope_label": "Lesson 30",
+      "workbook_row": 212,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870155",
+      "scope_label": "Lesson 30",
+      "workbook_row": 213,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870164",
+      "scope_label": "Lesson 30",
+      "workbook_row": 214,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870265",
+      "scope_label": "Lesson 30",
+      "workbook_row": 215,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870137",
+      "scope_label": "Lesson 30",
+      "workbook_row": 216,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870135",
+      "scope_label": "Lesson 30",
+      "workbook_row": 217,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870166",
+      "scope_label": "Lesson 31",
+      "workbook_row": 218,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870207",
+      "scope_label": "Lesson 31",
+      "workbook_row": 219,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870140",
+      "scope_label": "Lesson 31",
+      "workbook_row": 220,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870139",
+      "scope_label": "Lesson 31",
+      "workbook_row": 221,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870200",
+      "scope_label": "Lesson 32",
+      "workbook_row": 222,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870167",
+      "scope_label": "Lesson 32",
+      "workbook_row": 223,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870143",
+      "scope_label": "Lesson 32",
+      "workbook_row": 224,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870141",
+      "scope_label": "Lesson 32",
+      "workbook_row": 225,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870307",
+      "scope_label": "Lesson 33",
+      "workbook_row": 226,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870145",
+      "scope_label": "Lesson 33",
+      "workbook_row": 227,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870146",
+      "scope_label": "Lesson 33",
+      "workbook_row": 228,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870305",
+      "scope_label": "Lesson 33",
+      "workbook_row": 229,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870201",
+      "scope_label": "Lesson 33",
+      "workbook_row": 230,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870168",
+      "scope_label": "Lesson 33",
+      "workbook_row": 231,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870149",
+      "scope_label": "Lesson 33",
+      "workbook_row": 232,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870148",
+      "scope_label": "Lesson 33",
+      "workbook_row": 233,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870170",
+      "scope_label": "Lesson 34",
+      "workbook_row": 234,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870194",
+      "scope_label": "Lesson 34",
+      "workbook_row": 235,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870306",
+      "scope_label": "Lesson 34",
+      "workbook_row": 236,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870151",
+      "scope_label": "Lesson 34",
+      "workbook_row": 237,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870171",
+      "scope_label": "Lesson 35",
+      "workbook_row": 238,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870172",
+      "scope_label": "Lesson 35",
+      "workbook_row": 239,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870182",
+      "scope_label": "Lesson 35",
+      "workbook_row": 240,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870189",
+      "scope_label": "Lesson 35",
+      "workbook_row": 241,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870193",
+      "scope_label": "Lesson 35",
+      "workbook_row": 242,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870195",
+      "scope_label": "Lesson 36",
+      "workbook_row": 243,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870196",
+      "scope_label": "Lesson 36",
+      "workbook_row": 244,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870089",
+      "scope_label": "Lesson 36",
+      "workbook_row": 245,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870199",
+      "scope_label": "Lesson 36",
+      "workbook_row": 246,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870197",
+      "scope_label": "Lesson 36",
+      "workbook_row": 247,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870200",
+      "scope_label": "Lesson 36",
+      "workbook_row": 248,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX650321",
+      "scope_label": "Lesson 36",
+      "workbook_row": 249,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870202",
+      "scope_label": "Lesson 36",
+      "workbook_row": 250,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870346",
+      "scope_label": "Lesson 36",
+      "workbook_row": 251,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870309",
+      "scope_label": "Lesson 37",
+      "workbook_row": 252,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870198",
+      "scope_label": "Lesson 37",
+      "workbook_row": 253,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870315",
+      "scope_label": "Lesson 37",
+      "workbook_row": 254,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870314",
+      "scope_label": "Lesson 37",
+      "workbook_row": 255,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870310",
+      "scope_label": "Lesson 37",
+      "workbook_row": 256,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870312",
+      "scope_label": "Lesson 37",
+      "workbook_row": 257,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870199",
+      "scope_label": "Lesson 37",
+      "workbook_row": 258,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870205",
+      "scope_label": "Lesson 37",
+      "workbook_row": 259,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870208",
+      "scope_label": "Lesson 38",
+      "workbook_row": 260,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870341",
+      "scope_label": "Lesson 38",
+      "workbook_row": 261,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870345",
+      "scope_label": "Lesson 38",
+      "workbook_row": 262,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870344",
+      "scope_label": "Lesson 38",
+      "workbook_row": 263,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870374",
+      "scope_label": "Lesson 39",
+      "workbook_row": 264,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870375",
+      "scope_label": "Lesson 39",
+      "workbook_row": 265,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870202",
+      "scope_label": "Lesson 39",
+      "workbook_row": 266,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870376",
+      "scope_label": "Lesson 39",
+      "workbook_row": 267,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870377",
+      "scope_label": "Lesson 39",
+      "workbook_row": 268,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870590",
+      "scope_label": "Lesson 40",
+      "workbook_row": 269,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "AXG80499",
+      "scope_label": "Lesson 40",
+      "workbook_row": 270,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870809",
+      "scope_label": "Lesson 40",
+      "workbook_row": 271,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870804",
+      "scope_label": "Lesson 40",
+      "workbook_row": 272,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870203",
+      "scope_label": "Lesson 40",
+      "workbook_row": 273,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870204",
+      "scope_label": "Lesson 40",
+      "workbook_row": 274,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870205",
+      "scope_label": "Lesson 40",
+      "workbook_row": 275,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870206",
+      "scope_label": "Lesson 40",
+      "workbook_row": 276,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870214",
+      "scope_label": "Lesson 40",
+      "workbook_row": 277,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870316",
+      "scope_label": "Lesson 40",
+      "workbook_row": 278,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870215",
+      "scope_label": "Lesson 41",
+      "workbook_row": 279,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870216",
+      "scope_label": "Lesson 41",
+      "workbook_row": 280,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870347",
+      "scope_label": "Lesson 41",
+      "workbook_row": 281,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870618",
+      "scope_label": "Lesson 41",
+      "workbook_row": 282,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870217",
+      "scope_label": "Lesson 41",
+      "workbook_row": 283,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870218",
+      "scope_label": "Lesson 41",
+      "workbook_row": 284,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870349",
+      "scope_label": "Lesson 41",
+      "workbook_row": 285,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870348",
+      "scope_label": "Lesson 41",
+      "workbook_row": 286,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870219",
+      "scope_label": "Lesson 42",
+      "workbook_row": 287,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870220",
+      "scope_label": "Lesson 42",
+      "workbook_row": 288,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870220",
+      "scope_label": "Lesson 42",
+      "workbook_row": 289,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870597",
+      "scope_label": "Lesson 42",
+      "workbook_row": 290,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870224",
+      "scope_label": "Lesson 43",
+      "workbook_row": 291,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SNAH0101",
+      "scope_label": "Lesson 43",
+      "workbook_row": 292,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SMAH0068",
+      "scope_label": "Lesson 43",
+      "workbook_row": 293,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SMAH0596",
+      "scope_label": "Lesson 43",
+      "workbook_row": 294,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SNAH0208",
+      "scope_label": "Lesson 43",
+      "workbook_row": 295,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870366",
+      "scope_label": "Lesson 43",
+      "workbook_row": 296,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870604",
+      "scope_label": "Lesson 43",
+      "workbook_row": 297,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870606",
+      "scope_label": "Lesson 43",
+      "workbook_row": 298,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870605",
+      "scope_label": "Lesson 43",
+      "workbook_row": 299,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870224",
+      "scope_label": "Lesson 43",
+      "workbook_row": 300,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870229",
+      "scope_label": "Lesson 43",
+      "workbook_row": 301,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870230",
+      "scope_label": "Lesson 43",
+      "workbook_row": 302,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870609",
+      "scope_label": "Lesson 43",
+      "workbook_row": 303,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870226",
+      "scope_label": "Lesson 44",
+      "workbook_row": 304,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870232",
+      "scope_label": "Lesson 44",
+      "workbook_row": 305,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870319",
+      "scope_label": "Lesson 44",
+      "workbook_row": 306,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870318",
+      "scope_label": "Lesson 44",
+      "workbook_row": 307,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870227",
+      "scope_label": "Lesson 45",
+      "workbook_row": 308,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870228",
+      "scope_label": "Lesson 45",
+      "workbook_row": 309,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870229",
+      "scope_label": "Lesson 45",
+      "workbook_row": 310,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870237",
+      "scope_label": "Lesson 45",
+      "workbook_row": 311,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870230",
+      "scope_label": "Lesson 45",
+      "workbook_row": 312,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870236",
+      "scope_label": "Lesson 45",
+      "workbook_row": 313,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870148",
+      "scope_label": "Lesson 46",
+      "workbook_row": 314,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870150",
+      "scope_label": "Lesson 46",
+      "workbook_row": 315,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870368",
+      "scope_label": "Lesson 46",
+      "workbook_row": 316,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870241",
+      "scope_label": "Lesson 46",
+      "workbook_row": 317,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870611",
+      "scope_label": "Lesson 46",
+      "workbook_row": 318,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870232",
+      "scope_label": "Lesson 46",
+      "workbook_row": 319,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870233",
+      "scope_label": "Lesson 46",
+      "workbook_row": 320,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870244",
+      "scope_label": "Lesson 46",
+      "workbook_row": 321,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "MOT70264",
+      "scope_label": "Lesson 46",
+      "workbook_row": 322,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870234",
+      "scope_label": "Lesson 46",
+      "workbook_row": 323,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870238",
+      "scope_label": "Lesson 46",
+      "workbook_row": 324,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870247",
+      "scope_label": "Lesson 46",
+      "workbook_row": 325,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870612",
+      "scope_label": "Lesson 46",
+      "workbook_row": 326,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870248",
+      "scope_label": "Lesson 47",
+      "workbook_row": 327,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870250",
+      "scope_label": "Lesson 47",
+      "workbook_row": 328,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870251",
+      "scope_label": "Lesson 47",
+      "workbook_row": 329,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870369",
+      "scope_label": "Lesson 47",
+      "workbook_row": 330,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870245",
+      "scope_label": "Lesson 48",
+      "workbook_row": 331,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870246",
+      "scope_label": "Lesson 48",
+      "workbook_row": 332,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870247",
+      "scope_label": "Lesson 48",
+      "workbook_row": 333,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870254",
+      "scope_label": "Lesson 48",
+      "workbook_row": 334,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870253",
+      "scope_label": "Lesson 49",
+      "workbook_row": 335,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870254",
+      "scope_label": "Lesson 49",
+      "workbook_row": 336,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870255",
+      "scope_label": "Lesson 49",
+      "workbook_row": 337,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870259",
+      "scope_label": "Lesson 49",
+      "workbook_row": 338,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870256",
+      "scope_label": "Lesson 49",
+      "workbook_row": 339,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870264",
+      "scope_label": "Lesson 50",
+      "workbook_row": 340,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870269",
+      "scope_label": "Lesson 50",
+      "workbook_row": 341,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870262",
+      "scope_label": "Lesson 50",
+      "workbook_row": 342,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870598",
+      "scope_label": "Lesson 50",
+      "workbook_row": 343,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870261",
+      "scope_label": "Lesson 51",
+      "workbook_row": 344,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870321",
+      "scope_label": "Lesson 51",
+      "workbook_row": 345,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870322",
+      "scope_label": "Lesson 51",
+      "workbook_row": 346,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870350",
+      "scope_label": "Lesson 51",
+      "workbook_row": 347,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870263",
+      "scope_label": "Lesson 52",
+      "workbook_row": 348,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870320",
+      "scope_label": "Lesson 52",
+      "workbook_row": 349,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870301",
+      "scope_label": "Lesson 52",
+      "workbook_row": 350,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870266",
+      "scope_label": "Lesson 52",
+      "workbook_row": 351,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870332",
+      "scope_label": "Lesson 52",
+      "workbook_row": 352,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870275",
+      "scope_label": "Lesson 53",
+      "workbook_row": 353,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870276",
+      "scope_label": "Lesson 53",
+      "workbook_row": 354,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870279",
+      "scope_label": "Lesson 53",
+      "workbook_row": 355,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870269",
+      "scope_label": "Lesson 53",
+      "workbook_row": 356,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870280",
+      "scope_label": "Lesson 53",
+      "workbook_row": 357,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SXA10204",
+      "scope_label": "Lesson 54",
+      "workbook_row": 358,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870277",
+      "scope_label": "Lesson 54",
+      "workbook_row": 359,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870281",
+      "scope_label": "Lesson 54",
+      "workbook_row": 360,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870274",
+      "scope_label": "Lesson 54",
+      "workbook_row": 361,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870599",
+      "scope_label": "Lesson 54",
+      "workbook_row": 362,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870283",
+      "scope_label": "Lesson 55",
+      "workbook_row": 363,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870284",
+      "scope_label": "Lesson 55",
+      "workbook_row": 364,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870286",
+      "scope_label": "Lesson 55",
+      "workbook_row": 365,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870278",
+      "scope_label": "Lesson 55",
+      "workbook_row": 366,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870285",
+      "scope_label": "Lesson 55",
+      "workbook_row": 367,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870287",
+      "scope_label": "Lesson 56",
+      "workbook_row": 368,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870280",
+      "scope_label": "Lesson 56",
+      "workbook_row": 369,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870282",
+      "scope_label": "Lesson 56",
+      "workbook_row": 370,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870281",
+      "scope_label": "Lesson 56",
+      "workbook_row": 371,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870334",
+      "scope_label": "Lesson 57",
+      "workbook_row": 372,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870615",
+      "scope_label": "Lesson 57",
+      "workbook_row": 373,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "BMPA0207",
+      "scope_label": "Lesson 57",
+      "workbook_row": 374,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "BMPA0124",
+      "scope_label": "Lesson 57",
+      "workbook_row": 375,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870290",
+      "scope_label": "Lesson 57",
+      "workbook_row": 376,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870289",
+      "scope_label": "Lesson 57",
+      "workbook_row": 377,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870286",
+      "scope_label": "Lesson 57",
+      "workbook_row": 378,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870499",
+      "scope_label": "Lesson 57",
+      "workbook_row": 379,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870293",
+      "scope_label": "Lesson 58",
+      "workbook_row": 380,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870288",
+      "scope_label": "Lesson 58",
+      "workbook_row": 381,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870289",
+      "scope_label": "Lesson 58",
+      "workbook_row": 382,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870337",
+      "scope_label": "Lesson 58",
+      "workbook_row": 383,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870291",
+      "scope_label": "Lesson 58",
+      "workbook_row": 384,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870617",
+      "scope_label": "Lesson 58",
+      "workbook_row": 385,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870351",
+      "scope_label": "Lesson 58",
+      "workbook_row": 386,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870290",
+      "scope_label": "Lesson 58",
+      "workbook_row": 387,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870501",
+      "scope_label": "Lesson 59",
+      "workbook_row": 388,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870353",
+      "scope_label": "Lesson 59",
+      "workbook_row": 389,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870324",
+      "scope_label": "Lesson 59",
+      "workbook_row": 390,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870323",
+      "scope_label": "Lesson 59",
+      "workbook_row": 391,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX650094",
+      "scope_label": "Lesson 60",
+      "workbook_row": 392,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870292",
+      "scope_label": "Lesson 60",
+      "workbook_row": 393,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870326",
+      "scope_label": "Lesson 60",
+      "workbook_row": 394,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870325",
+      "scope_label": "Lesson 60",
+      "workbook_row": 395,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870370",
+      "scope_label": "Lesson 60",
+      "workbook_row": 396,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX760175",
+      "scope_label": "Lesson 60",
+      "workbook_row": 397,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870372",
+      "scope_label": "Lesson 60",
+      "workbook_row": 398,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870294",
+      "scope_label": "Lesson 60",
+      "workbook_row": 399,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870519",
+      "scope_label": "Lesson 61",
+      "workbook_row": 400,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870327",
+      "scope_label": "Lesson 61",
+      "workbook_row": 401,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870297",
+      "scope_label": "Lesson 61",
+      "workbook_row": 402,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870328",
+      "scope_label": "Lesson 61",
+      "workbook_row": 403,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870317",
+      "scope_label": "Lesson 61",
+      "workbook_row": 404,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870602",
+      "scope_label": "Lesson 61",
+      "workbook_row": 405,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870355",
+      "scope_label": "Lesson 61",
+      "workbook_row": 406,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870354",
+      "scope_label": "Lesson 61",
+      "workbook_row": 407,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SMAH0349",
+      "scope_label": "Lesson 62",
+      "workbook_row": 408,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870299",
+      "scope_label": "Lesson 62",
+      "workbook_row": 409,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870339",
+      "scope_label": "Lesson 62",
+      "workbook_row": 410,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870338",
+      "scope_label": "Lesson 62",
+      "workbook_row": 411,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870321",
+      "scope_label": "Lesson 63",
+      "workbook_row": 412,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870322",
+      "scope_label": "Lesson 63",
+      "workbook_row": 413,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870323",
+      "scope_label": "Lesson 63",
+      "workbook_row": 414,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870303",
+      "scope_label": "Lesson 63",
+      "workbook_row": 415,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870329",
+      "scope_label": "Lesson 63",
+      "workbook_row": 416,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870328",
+      "scope_label": "Lesson 64",
+      "workbook_row": 417,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870305",
+      "scope_label": "Lesson 64",
+      "workbook_row": 418,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870331",
+      "scope_label": "Lesson 64",
+      "workbook_row": 419,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870330",
+      "scope_label": "Lesson 64",
+      "workbook_row": 420,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870324",
+      "scope_label": "Lesson 65",
+      "workbook_row": 421,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870325",
+      "scope_label": "Lesson 65",
+      "workbook_row": 422,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870330",
+      "scope_label": "Lesson 65",
+      "workbook_row": 423,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870309",
+      "scope_label": "Lesson 65",
+      "workbook_row": 424,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SXA10209",
+      "scope_label": "Lesson 65",
+      "workbook_row": 425,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870332",
+      "scope_label": "Lesson 66",
+      "workbook_row": 426,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870333",
+      "scope_label": "Lesson 66",
+      "workbook_row": 427,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870334",
+      "scope_label": "Lesson 66",
+      "workbook_row": 428,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870311",
+      "scope_label": "Lesson 66",
+      "workbook_row": 429,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870327",
+      "scope_label": "Lesson 67",
+      "workbook_row": 430,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870313",
+      "scope_label": "Lesson 67",
+      "workbook_row": 431,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870610",
+      "scope_label": "Lesson 67",
+      "workbook_row": 432,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870608",
+      "scope_label": "Lesson 67",
+      "workbook_row": 433,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870366",
+      "scope_label": "Lesson 68",
+      "workbook_row": 434,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870367",
+      "scope_label": "Lesson 68",
+      "workbook_row": 435,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870363",
+      "scope_label": "Lesson 68",
+      "workbook_row": 436,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870368",
+      "scope_label": "Lesson 68",
+      "workbook_row": 437,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870337",
+      "scope_label": "Lesson 69",
+      "workbook_row": 438,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870384",
+      "scope_label": "Lesson 69",
+      "workbook_row": 439,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870386",
+      "scope_label": "Lesson 69",
+      "workbook_row": 440,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870385",
+      "scope_label": "Lesson 69",
+      "workbook_row": 441,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870540",
+      "scope_label": "Lesson 70",
+      "workbook_row": 442,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870377",
+      "scope_label": "Lesson 70",
+      "workbook_row": 443,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870379",
+      "scope_label": "Lesson 70",
+      "workbook_row": 444,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870378",
+      "scope_label": "Lesson 70",
+      "workbook_row": 445,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870381",
+      "scope_label": "Lesson 71",
+      "workbook_row": 446,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870372",
+      "scope_label": "Lesson 71",
+      "workbook_row": 447,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870375",
+      "scope_label": "Lesson 71",
+      "workbook_row": 448,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870373",
+      "scope_label": "Lesson 71",
+      "workbook_row": 449,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870392",
+      "scope_label": "Lesson 72",
+      "workbook_row": 450,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870393",
+      "scope_label": "Lesson 72",
+      "workbook_row": 451,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870389",
+      "scope_label": "Lesson 72",
+      "workbook_row": 452,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870388",
+      "scope_label": "Lesson 72",
+      "workbook_row": 453,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870437",
+      "scope_label": "Lesson 73",
+      "workbook_row": 454,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870438",
+      "scope_label": "Lesson 73",
+      "workbook_row": 455,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870344",
+      "scope_label": "Lesson 73",
+      "workbook_row": 456,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870448",
+      "scope_label": "Lesson 73",
+      "workbook_row": 457,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870349",
+      "scope_label": "Lesson 74",
+      "workbook_row": 458,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870348",
+      "scope_label": "Lesson 74",
+      "workbook_row": 459,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870460",
+      "scope_label": "Lesson 74",
+      "workbook_row": 460,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870464",
+      "scope_label": "Lesson 74",
+      "workbook_row": 461,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870466",
+      "scope_label": "Lesson 74",
+      "workbook_row": 462,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870465",
+      "scope_label": "Lesson 74",
+      "workbook_row": 463,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870352",
+      "scope_label": "Lesson 75",
+      "workbook_row": 464,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870468",
+      "scope_label": "Lesson 75",
+      "workbook_row": 465,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870471",
+      "scope_label": "Lesson 75",
+      "workbook_row": 466,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870470",
+      "scope_label": "Lesson 75",
+      "workbook_row": 467,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870351",
+      "scope_label": "Lesson 75",
+      "workbook_row": 468,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870443",
+      "scope_label": "Lesson 75",
+      "workbook_row": 469,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870476",
+      "scope_label": "Lesson 75",
+      "workbook_row": 470,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870474",
+      "scope_label": "Lesson 75",
+      "workbook_row": 471,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870355",
+      "scope_label": "Lesson 76",
+      "workbook_row": 472,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870481",
+      "scope_label": "Lesson 76",
+      "workbook_row": 473,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870483",
+      "scope_label": "Lesson 76",
+      "workbook_row": 474,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870482",
+      "scope_label": "Lesson 76",
+      "workbook_row": 475,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870485",
+      "scope_label": "Lesson 77",
+      "workbook_row": 476,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870486",
+      "scope_label": "Lesson 77",
+      "workbook_row": 477,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870487",
+      "scope_label": "Lesson 77",
+      "workbook_row": 478,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870577",
+      "scope_label": "Lesson 77",
+      "workbook_row": 479,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870497",
+      "scope_label": "Lesson 78",
+      "workbook_row": 480,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870500",
+      "scope_label": "Lesson 78",
+      "workbook_row": 481,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870510",
+      "scope_label": "Lesson 78",
+      "workbook_row": 482,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870498",
+      "scope_label": "Lesson 78",
+      "workbook_row": 483,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870537",
+      "scope_label": "Lesson 79",
+      "workbook_row": 484,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870539",
+      "scope_label": "Lesson 79",
+      "workbook_row": 485,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870796",
+      "scope_label": "Lesson 79",
+      "workbook_row": 486,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870795",
+      "scope_label": "Lesson 79",
+      "workbook_row": 487,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870363",
+      "scope_label": "Lesson 79",
+      "workbook_row": 488,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870364",
+      "scope_label": "Lesson 79",
+      "workbook_row": 489,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870535",
+      "scope_label": "Lesson 79",
+      "workbook_row": 490,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870523",
+      "scope_label": "Lesson 79",
+      "workbook_row": 491,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870554",
+      "scope_label": "Lesson 80",
+      "workbook_row": 492,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870555",
+      "scope_label": "Lesson 80",
+      "workbook_row": 493,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870547",
+      "scope_label": "Lesson 80",
+      "workbook_row": 494,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870556",
+      "scope_label": "Lesson 80",
+      "workbook_row": 495,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870390",
+      "scope_label": "Lesson 81",
+      "workbook_row": 496,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870391",
+      "scope_label": "Lesson 81",
+      "workbook_row": 497,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870526",
+      "scope_label": "Lesson 81",
+      "workbook_row": 498,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870392",
+      "scope_label": "Lesson 81",
+      "workbook_row": 499,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870528",
+      "scope_label": "Lesson 82",
+      "workbook_row": 500,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870529",
+      "scope_label": "Lesson 82",
+      "workbook_row": 501,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870533",
+      "scope_label": "Lesson 82",
+      "workbook_row": 502,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870530",
+      "scope_label": "Lesson 82",
+      "workbook_row": 503,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870415",
+      "scope_label": "Lesson 83",
+      "workbook_row": 504,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870419",
+      "scope_label": "Lesson 83",
+      "workbook_row": 505,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870422",
+      "scope_label": "Lesson 83",
+      "workbook_row": 506,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870420",
+      "scope_label": "Lesson 83",
+      "workbook_row": 507,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870434",
+      "scope_label": "Lesson 83",
+      "workbook_row": 508,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870432",
+      "scope_label": "Lesson 83",
+      "workbook_row": 509,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870429",
+      "scope_label": "Lesson 83",
+      "workbook_row": 510,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870425",
+      "scope_label": "Lesson 83",
+      "workbook_row": 511,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870798",
+      "scope_label": "Lesson 84",
+      "workbook_row": 512,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870441",
+      "scope_label": "Lesson 84",
+      "workbook_row": 513,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870449",
+      "scope_label": "Lesson 84",
+      "workbook_row": 514,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870447",
+      "scope_label": "Lesson 84",
+      "workbook_row": 515,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870455",
+      "scope_label": "Lesson 85",
+      "workbook_row": 516,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870397",
+      "scope_label": "Lesson 85",
+      "workbook_row": 517,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870459",
+      "scope_label": "Lesson 85",
+      "workbook_row": 518,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870458",
+      "scope_label": "Lesson 85",
+      "workbook_row": 519,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870473",
+      "scope_label": "Lesson 85",
+      "workbook_row": 520,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870400",
+      "scope_label": "Lesson 85",
+      "workbook_row": 521,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870463",
+      "scope_label": "Lesson 85",
+      "workbook_row": 522,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870462",
+      "scope_label": "Lesson 85",
+      "workbook_row": 523,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870477",
+      "scope_label": "Lesson 86",
+      "workbook_row": 524,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870403",
+      "scope_label": "Lesson 86",
+      "workbook_row": 525,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870402",
+      "scope_label": "Lesson 86",
+      "workbook_row": 526,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870484",
+      "scope_label": "Lesson 86",
+      "workbook_row": 527,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870405",
+      "scope_label": "Lesson 87",
+      "workbook_row": 528,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870406",
+      "scope_label": "Lesson 87",
+      "workbook_row": 529,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870396",
+      "scope_label": "Lesson 87",
+      "workbook_row": 530,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870407",
+      "scope_label": "Lesson 87",
+      "workbook_row": 531,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870408",
+      "scope_label": "Lesson 88",
+      "workbook_row": 532,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870410",
+      "scope_label": "Lesson 88",
+      "workbook_row": 533,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870412",
+      "scope_label": "Lesson 88",
+      "workbook_row": 534,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870411",
+      "scope_label": "Lesson 88",
+      "workbook_row": 535,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870408",
+      "scope_label": "Lesson 88",
+      "workbook_row": 536,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870411",
+      "scope_label": "Lesson 88",
+      "workbook_row": 537,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870405",
+      "scope_label": "Lesson 88",
+      "workbook_row": 538,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870412",
+      "scope_label": "Lesson 88",
+      "workbook_row": 539,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870413",
+      "scope_label": "Lesson 89",
+      "workbook_row": 540,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870414",
+      "scope_label": "Lesson 89",
+      "workbook_row": 541,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870566",
+      "scope_label": "Lesson 89",
+      "workbook_row": 542,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870565",
+      "scope_label": "Lesson 89",
+      "workbook_row": 543,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870417",
+      "scope_label": "Lesson 89",
+      "workbook_row": 544,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870424",
+      "scope_label": "Lesson 89",
+      "workbook_row": 545,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870445",
+      "scope_label": "Lesson 89",
+      "workbook_row": 546,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870444",
+      "scope_label": "Lesson 89",
+      "workbook_row": 547,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870428",
+      "scope_label": "Lesson 89",
+      "workbook_row": 548,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870427",
+      "scope_label": "Lesson 89",
+      "workbook_row": 549,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870451",
+      "scope_label": "Lesson 89",
+      "workbook_row": 550,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870450",
+      "scope_label": "Lesson 89",
+      "workbook_row": 551,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870384",
+      "scope_label": "Lesson 90",
+      "workbook_row": 552,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870585",
+      "scope_label": "Lesson 90",
+      "workbook_row": 553,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870491",
+      "scope_label": "Lesson 90",
+      "workbook_row": 554,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870490",
+      "scope_label": "Lesson 90",
+      "workbook_row": 555,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870492",
+      "scope_label": "Lesson 90",
+      "workbook_row": 556,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870416",
+      "scope_label": "Lesson 90",
+      "workbook_row": 557,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870494",
+      "scope_label": "Lesson 90",
+      "workbook_row": 558,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870417",
+      "scope_label": "Lesson 90",
+      "workbook_row": 559,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870419",
+      "scope_label": "Lesson 91",
+      "workbook_row": 560,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870501",
+      "scope_label": "Lesson 91",
+      "workbook_row": 561,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870499",
+      "scope_label": "Lesson 91",
+      "workbook_row": 562,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870502",
+      "scope_label": "Lesson 91",
+      "workbook_row": 563,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870504",
+      "scope_label": "Lesson 91",
+      "workbook_row": 564,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870508",
+      "scope_label": "Lesson 91",
+      "workbook_row": 565,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870509",
+      "scope_label": "Lesson 91",
+      "workbook_row": 566,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870505",
+      "scope_label": "Lesson 91",
+      "workbook_row": 567,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870427",
+      "scope_label": "Lesson 92",
+      "workbook_row": 568,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870430",
+      "scope_label": "Lesson 92",
+      "workbook_row": 569,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870513",
+      "scope_label": "Lesson 92",
+      "workbook_row": 570,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870511",
+      "scope_label": "Lesson 92",
+      "workbook_row": 571,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870517",
+      "scope_label": "Lesson 93",
+      "workbook_row": 572,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870518",
+      "scope_label": "Lesson 93",
+      "workbook_row": 573,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870516",
+      "scope_label": "Lesson 93",
+      "workbook_row": 574,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870519",
+      "scope_label": "Lesson 93",
+      "workbook_row": 575,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX760141",
+      "scope_label": "Lesson 94",
+      "workbook_row": 576,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870438",
+      "scope_label": "Lesson 94",
+      "workbook_row": 577,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870522",
+      "scope_label": "Lesson 94",
+      "workbook_row": 578,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870437",
+      "scope_label": "Lesson 94",
+      "workbook_row": 579,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870546",
+      "scope_label": "Lesson 95",
+      "workbook_row": 580,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870542",
+      "scope_label": "Lesson 95",
+      "workbook_row": 581,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870544",
+      "scope_label": "Lesson 95",
+      "workbook_row": 582,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870545",
+      "scope_label": "Lesson 95",
+      "workbook_row": 583,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870562",
+      "scope_label": "Lesson 96",
+      "workbook_row": 584,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870563",
+      "scope_label": "Lesson 96",
+      "workbook_row": 585,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870564",
+      "scope_label": "Lesson 96",
+      "workbook_row": 586,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870800",
+      "scope_label": "Lesson 96",
+      "workbook_row": 587,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870551",
+      "scope_label": "Lesson 96",
+      "workbook_row": 588,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870550",
+      "scope_label": "Lesson 96",
+      "workbook_row": 589,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870560",
+      "scope_label": "Lesson 96",
+      "workbook_row": 590,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870561",
+      "scope_label": "Lesson 96",
+      "workbook_row": 591,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870369",
+      "scope_label": "Lesson 97",
+      "workbook_row": 592,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870580",
+      "scope_label": "Lesson 97",
+      "workbook_row": 593,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870567",
+      "scope_label": "Lesson 97",
+      "workbook_row": 594,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870568",
+      "scope_label": "Lesson 97",
+      "workbook_row": 595,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870370",
+      "scope_label": "Lesson 97",
+      "workbook_row": 596,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870571",
+      "scope_label": "Lesson 97",
+      "workbook_row": 597,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870371",
+      "scope_label": "Lesson 97",
+      "workbook_row": 598,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870572",
+      "scope_label": "Lesson 97",
+      "workbook_row": 599,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870574",
+      "scope_label": "Lesson 98",
+      "workbook_row": 600,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870576",
+      "scope_label": "Lesson 98",
+      "workbook_row": 601,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870398",
+      "scope_label": "Lesson 98",
+      "workbook_row": 602,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870397",
+      "scope_label": "Lesson 98",
+      "workbook_row": 603,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870587",
+      "scope_label": "Lesson 98",
+      "workbook_row": 604,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870401",
+      "scope_label": "Lesson 98",
+      "workbook_row": 605,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870402",
+      "scope_label": "Lesson 98",
+      "workbook_row": 606,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN760588",
+      "scope_label": "Lesson 98",
+      "workbook_row": 607,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870506",
+      "scope_label": "Lesson 99",
+      "workbook_row": 608,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "AXG80580",
+      "scope_label": "Lesson 99",
+      "workbook_row": 609,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870430",
+      "scope_label": "Lesson 99",
+      "workbook_row": 610,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870440",
+      "scope_label": "Lesson 99",
+      "workbook_row": 611,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870823",
+      "scope_label": "Lesson 100",
+      "workbook_row": 612,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870452",
+      "scope_label": "Lesson 100",
+      "workbook_row": 613,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870454",
+      "scope_label": "Lesson 100",
+      "workbook_row": 614,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870453",
+      "scope_label": "Lesson 100",
+      "workbook_row": 615,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870548",
+      "scope_label": "Lesson 100",
+      "workbook_row": 616,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870552",
+      "scope_label": "Lesson 100",
+      "workbook_row": 617,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870583",
+      "scope_label": "Lesson 100",
+      "workbook_row": 618,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870588",
+      "scope_label": "Lesson 100",
+      "workbook_row": 619,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870620",
+      "scope_label": "Lesson 101",
+      "workbook_row": 620,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870622",
+      "scope_label": "Lesson 101",
+      "workbook_row": 621,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870624",
+      "scope_label": "Lesson 101",
+      "workbook_row": 622,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870623",
+      "scope_label": "Lesson 101",
+      "workbook_row": 623,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870636",
+      "scope_label": "Lesson 102",
+      "workbook_row": 624,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870633",
+      "scope_label": "Lesson 102",
+      "workbook_row": 625,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870638",
+      "scope_label": "Lesson 102",
+      "workbook_row": 626,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870637",
+      "scope_label": "Lesson 102",
+      "workbook_row": 627,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870627",
+      "scope_label": "Lesson 102",
+      "workbook_row": 628,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870626",
+      "scope_label": "Lesson 102",
+      "workbook_row": 629,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870635",
+      "scope_label": "Lesson 102",
+      "workbook_row": 630,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870629",
+      "scope_label": "Lesson 102",
+      "workbook_row": 631,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870628",
+      "scope_label": "Lesson 102",
+      "workbook_row": 632,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870642",
+      "scope_label": "Lesson 103",
+      "workbook_row": 633,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870643",
+      "scope_label": "Lesson 103",
+      "workbook_row": 634,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870644",
+      "scope_label": "Lesson 103",
+      "workbook_row": 635,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870639",
+      "scope_label": "Lesson 103",
+      "workbook_row": 636,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870648",
+      "scope_label": "Lesson 103",
+      "workbook_row": 637,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870449",
+      "scope_label": "Lesson 103",
+      "workbook_row": 638,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870650",
+      "scope_label": "Lesson 103",
+      "workbook_row": 639,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870450",
+      "scope_label": "Lesson 103",
+      "workbook_row": 640,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870452",
+      "scope_label": "Lesson 104",
+      "workbook_row": 641,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870656",
+      "scope_label": "Lesson 104",
+      "workbook_row": 642,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870651",
+      "scope_label": "Lesson 104",
+      "workbook_row": 643,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870652",
+      "scope_label": "Lesson 104",
+      "workbook_row": 644,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870654",
+      "scope_label": "Lesson 104",
+      "workbook_row": 645,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870653",
+      "scope_label": "Lesson 104",
+      "workbook_row": 646,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870672",
+      "scope_label": "Lesson 105",
+      "workbook_row": 647,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SXA10099",
+      "scope_label": "Lesson 105",
+      "workbook_row": 648,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870671",
+      "scope_label": "Lesson 105",
+      "workbook_row": 649,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870667",
+      "scope_label": "Lesson 105",
+      "workbook_row": 650,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870664",
+      "scope_label": "Lesson 105",
+      "workbook_row": 651,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870665",
+      "scope_label": "Lesson 105",
+      "workbook_row": 652,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870666",
+      "scope_label": "Lesson 105",
+      "workbook_row": 653,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870663",
+      "scope_label": "Lesson 105",
+      "workbook_row": 654,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870456",
+      "scope_label": "Lesson 105",
+      "workbook_row": 655,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870659",
+      "scope_label": "Lesson 105",
+      "workbook_row": 656,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870660",
+      "scope_label": "Lesson 105",
+      "workbook_row": 657,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870658",
+      "scope_label": "Lesson 105",
+      "workbook_row": 658,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870675",
+      "scope_label": "Lesson 106",
+      "workbook_row": 659,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870676",
+      "scope_label": "Lesson 106",
+      "workbook_row": 660,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "MOOR0907",
+      "scope_label": "Lesson 106",
+      "workbook_row": 661,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870677",
+      "scope_label": "Lesson 106",
+      "workbook_row": 662,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870681",
+      "scope_label": "Lesson 106",
+      "workbook_row": 663,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870682",
+      "scope_label": "Lesson 106",
+      "workbook_row": 664,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870683",
+      "scope_label": "Lesson 106",
+      "workbook_row": 665,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870680",
+      "scope_label": "Lesson 106",
+      "workbook_row": 666,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870687",
+      "scope_label": "Lesson 107",
+      "workbook_row": 667,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870685",
+      "scope_label": "Lesson 107",
+      "workbook_row": 668,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870686",
+      "scope_label": "Lesson 107",
+      "workbook_row": 669,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870684",
+      "scope_label": "Lesson 107",
+      "workbook_row": 670,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870692",
+      "scope_label": "Lesson 108",
+      "workbook_row": 671,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870460",
+      "scope_label": "Lesson 108",
+      "workbook_row": 672,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870690",
+      "scope_label": "Lesson 108",
+      "workbook_row": 673,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870689",
+      "scope_label": "Lesson 108",
+      "workbook_row": 674,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870694",
+      "scope_label": "Lesson 109",
+      "workbook_row": 675,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870698",
+      "scope_label": "Lesson 109",
+      "workbook_row": 676,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870699",
+      "scope_label": "Lesson 109",
+      "workbook_row": 677,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870700",
+      "scope_label": "Lesson 109",
+      "workbook_row": 678,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870696",
+      "scope_label": "Lesson 109",
+      "workbook_row": 679,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870463",
+      "scope_label": "Lesson 110",
+      "workbook_row": 680,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870703",
+      "scope_label": "Lesson 110",
+      "workbook_row": 681,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870704",
+      "scope_label": "Lesson 110",
+      "workbook_row": 682,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870826",
+      "scope_label": "Lesson 110",
+      "workbook_row": 683,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870825",
+      "scope_label": "Lesson 110",
+      "workbook_row": 684,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870705",
+      "scope_label": "Lesson 110",
+      "workbook_row": 685,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870706",
+      "scope_label": "Lesson 110",
+      "workbook_row": 686,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870828",
+      "scope_label": "Lesson 110",
+      "workbook_row": 687,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870827",
+      "scope_label": "Lesson 110",
+      "workbook_row": 688,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870468",
+      "scope_label": "Lesson 111",
+      "workbook_row": 689,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870709",
+      "scope_label": "Lesson 111",
+      "workbook_row": 690,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870710",
+      "scope_label": "Lesson 111",
+      "workbook_row": 691,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870708",
+      "scope_label": "Lesson 111",
+      "workbook_row": 692,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870712",
+      "scope_label": "Lesson 112",
+      "workbook_row": 693,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870716",
+      "scope_label": "Lesson 112",
+      "workbook_row": 694,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870717",
+      "scope_label": "Lesson 112",
+      "workbook_row": 695,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870714",
+      "scope_label": "Lesson 112",
+      "workbook_row": 696,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870721",
+      "scope_label": "Lesson 113",
+      "workbook_row": 697,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870722",
+      "scope_label": "Lesson 113",
+      "workbook_row": 698,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870723",
+      "scope_label": "Lesson 113",
+      "workbook_row": 699,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870724",
+      "scope_label": "Lesson 113",
+      "workbook_row": 700,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870720",
+      "scope_label": "Lesson 113",
+      "workbook_row": 701,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870739",
+      "scope_label": "Lesson 114",
+      "workbook_row": 702,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870740",
+      "scope_label": "Lesson 114",
+      "workbook_row": 703,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870741",
+      "scope_label": "Lesson 114",
+      "workbook_row": 704,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870738",
+      "scope_label": "Lesson 114",
+      "workbook_row": 705,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870475",
+      "scope_label": "Lesson 115",
+      "workbook_row": 706,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870731",
+      "scope_label": "Lesson 115",
+      "workbook_row": 707,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870726",
+      "scope_label": "Lesson 115",
+      "workbook_row": 708,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870476",
+      "scope_label": "Lesson 115",
+      "workbook_row": 709,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870758",
+      "scope_label": "Lesson 116",
+      "workbook_row": 710,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870481",
+      "scope_label": "Lesson 116",
+      "workbook_row": 711,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870765",
+      "scope_label": "Lesson 116",
+      "workbook_row": 712,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870482",
+      "scope_label": "Lesson 116",
+      "workbook_row": 713,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870766",
+      "scope_label": "Lesson 117",
+      "workbook_row": 714,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870767",
+      "scope_label": "Lesson 117",
+      "workbook_row": 715,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870768",
+      "scope_label": "Lesson 117",
+      "workbook_row": 716,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870761",
+      "scope_label": "Lesson 117",
+      "workbook_row": 717,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870483",
+      "scope_label": "Lesson 118",
+      "workbook_row": 718,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870802",
+      "scope_label": "Lesson 118",
+      "workbook_row": 719,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870484",
+      "scope_label": "Lesson 118",
+      "workbook_row": 720,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870789",
+      "scope_label": "Lesson 118",
+      "workbook_row": 721,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870794",
+      "scope_label": "Lesson 119",
+      "workbook_row": 722,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870792",
+      "scope_label": "Lesson 119",
+      "workbook_row": 723,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870790",
+      "scope_label": "Lesson 119",
+      "workbook_row": 724,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870786",
+      "scope_label": "Lesson 119",
+      "workbook_row": 725,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870486",
+      "scope_label": "Lesson 119",
+      "workbook_row": 726,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870783",
+      "scope_label": "Lesson 120",
+      "workbook_row": 727,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870781",
+      "scope_label": "Lesson 120",
+      "workbook_row": 728,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870785",
+      "scope_label": "Lesson 120",
+      "workbook_row": 729,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870489",
+      "scope_label": "Lesson 120",
+      "workbook_row": 730,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870315",
+      "scope_label": "Investigation 1",
+      "workbook_row": 731,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX760042",
+      "scope_label": "Investigation 1",
+      "workbook_row": 732,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870730",
+      "scope_label": "Investigation 1",
+      "workbook_row": 733,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX650140",
+      "scope_label": "Investigation 1",
+      "workbook_row": 734,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870105",
+      "scope_label": "Investigation 2",
+      "workbook_row": 735,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870106",
+      "scope_label": "Investigation 2",
+      "workbook_row": 736,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870734",
+      "scope_label": "Investigation 2",
+      "workbook_row": 737,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870733",
+      "scope_label": "Investigation 2",
+      "workbook_row": 738,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870108",
+      "scope_label": "Investigation 3",
+      "workbook_row": 739,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870805",
+      "scope_label": "Investigation 3",
+      "workbook_row": 740,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "AXA10097",
+      "scope_label": "Investigation 3",
+      "workbook_row": 741,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870829",
+      "scope_label": "Investigation 3",
+      "workbook_row": 742,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870810",
+      "scope_label": "Investigation 4",
+      "workbook_row": 743,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870742",
+      "scope_label": "Investigation 4",
+      "workbook_row": 744,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870812",
+      "scope_label": "Investigation 4",
+      "workbook_row": 745,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870811",
+      "scope_label": "Investigation 4",
+      "workbook_row": 746,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870838",
+      "scope_label": "Investigation 4",
+      "workbook_row": 747,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870744",
+      "scope_label": "Investigation 4",
+      "workbook_row": 748,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870806",
+      "scope_label": "Investigation 4",
+      "workbook_row": 749,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870745",
+      "scope_label": "Investigation 4",
+      "workbook_row": 750,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870831",
+      "scope_label": "Investigation 5",
+      "workbook_row": 751,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870833",
+      "scope_label": "Investigation 5",
+      "workbook_row": 752,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "AXG70450",
+      "scope_label": "Investigation 5",
+      "workbook_row": 753,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "AXG70449",
+      "scope_label": "Investigation 5",
+      "workbook_row": 754,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870477",
+      "scope_label": "Investigation 6",
+      "workbook_row": 755,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870296",
+      "scope_label": "Investigation 6",
+      "workbook_row": 756,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870748",
+      "scope_label": "Investigation 6",
+      "workbook_row": 757,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870814",
+      "scope_label": "Investigation 6",
+      "workbook_row": 758,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870378",
+      "scope_label": "Investigation 7",
+      "workbook_row": 759,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870379",
+      "scope_label": "Investigation 7",
+      "workbook_row": 760,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870380",
+      "scope_label": "Investigation 7",
+      "workbook_row": 761,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870752",
+      "scope_label": "Investigation 7",
+      "workbook_row": 762,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870753",
+      "scope_label": "Investigation 8",
+      "workbook_row": 763,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870841",
+      "scope_label": "Investigation 8",
+      "workbook_row": 764,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870770",
+      "scope_label": "Investigation 8",
+      "workbook_row": 765,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870771",
+      "scope_label": "Investigation 8",
+      "workbook_row": 766,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870769",
+      "scope_label": "Investigation 8",
+      "workbook_row": 767,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870808",
+      "scope_label": "Investigation 9",
+      "workbook_row": 768,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870763",
+      "scope_label": "Investigation 9",
+      "workbook_row": 769,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870772",
+      "scope_label": "Investigation 9",
+      "workbook_row": 770,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870807",
+      "scope_label": "Investigation 9",
+      "workbook_row": 771,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX760144",
+      "scope_label": "Investigation 10",
+      "workbook_row": 772,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870774",
+      "scope_label": "Investigation 10",
+      "workbook_row": 773,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870834",
+      "scope_label": "Investigation 10",
+      "workbook_row": 774,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870816",
+      "scope_label": "Investigation 10",
+      "workbook_row": 775,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870815",
+      "scope_label": "Investigation 10",
+      "workbook_row": 776,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870775",
+      "scope_label": "Investigation 11",
+      "workbook_row": 777,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SX870466",
+      "scope_label": "Investigation 11",
+      "workbook_row": 778,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870818",
+      "scope_label": "Investigation 11",
+      "workbook_row": 779,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870817",
+      "scope_label": "Investigation 11",
+      "workbook_row": 780,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870778",
+      "scope_label": "Investigation 12",
+      "workbook_row": 781,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SMAH0406",
+      "scope_label": "Investigation 12",
+      "workbook_row": 782,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SN870780",
+      "scope_label": "Investigation 12",
+      "workbook_row": 783,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SMAH0407",
+      "scope_label": "Investigation 12",
+      "workbook_row": 784,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SMAH0535",
+      "scope_label": "Appendix Topic A",
+      "workbook_row": 785,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SMAH0446",
+      "scope_label": "Appendix Topic A",
+      "workbook_row": 786,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SMAH0451",
+      "scope_label": "Appendix Topic A",
+      "workbook_row": 787,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SNAH0645",
+      "scope_label": "Appendix Topic A",
+      "workbook_row": 788,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SMAH0365",
+      "scope_label": "Appendix Topic A",
+      "workbook_row": 789,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SMAH0367",
+      "scope_label": "Appendix Topic A",
+      "workbook_row": 790,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SMAH0366",
+      "scope_label": "Appendix Topic A",
+      "workbook_row": 791,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    },
+    {
+      "source_id": "SNAH0575",
+      "scope_label": "Appendix Topic A",
+      "workbook_row": 792,
+      "has_script": true,
+      "semantic_alignment": "not_reviewed"
+    }
+  ]
+}
