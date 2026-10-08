@@ -1,0 +1,98 @@
+{
+  "version": "0.2.0-rc.1",
+  "tested_implementation_commit": "8ab901b2c864623ecddc4356aa5549961d04e43c",
+  "date": "2026-10-08",
+  "verification_record": "docs/GRADE5-VERIFICATION.md",
+  "automatic_assignment_ready": false,
+  "full_curriculum_coverage_verified": false,
+  "families": [
+    {
+      "family_id": "g5.square-area-from-perimeter",
+      "standard": "PS.MAT.G5.MD.20.11",
+      "alias": "PS.MAT.G5.20.11",
+      "implementation": "implemented",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed",
+      "scope": "Recovered side range 4–26; four length units.",
+      "teacher_work_review": false,
+      "full_outcome_coverage_verified": false,
+      "automatic_assignment_ready": false
+    },
+    {
+      "family_id": "g5.fraction-expression-precedence",
+      "standard": "PS.MAT.G5.NF.9.6",
+      "alias": "PS.MAT.G5.9.6",
+      "implementation": "implemented",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed",
+      "scope": "Proposed four proper fractions, denominators 2–12, three operation patterns.",
+      "teacher_work_review": false,
+      "full_outcome_coverage_verified": false,
+      "automatic_assignment_ready": false
+    },
+    {
+      "family_id": "g5.same-base-exponent-product",
+      "standard": "PS.MAT.G5.EE.20.9",
+      "alias": "PS.MAT.G5.20.9",
+      "implementation": "implemented",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed",
+      "scope": "Proposed numeric bases 2–10 and exponents 1–6; symbolic bases are not included.",
+      "teacher_work_review": false,
+      "full_outcome_coverage_verified": false,
+      "automatic_assignment_ready": false
+    },
+    {
+      "family_id": "g5.same-base-exponent-quotient",
+      "standard": "PS.MAT.G5.EE.20.10",
+      "alias": "PS.MAT.G5.20.10",
+      "implementation": "implemented",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed",
+      "scope": "Proposed numeric bases 2–10, exponents 1–6, nonnegative exponent difference.",
+      "teacher_work_review": false,
+      "full_outcome_coverage_verified": false,
+      "automatic_assignment_ready": false
+    },
+    {
+      "family_id": "g5.rational-perfect-square-root",
+      "standard": "PS.MAT.G5.NS.20.12",
+      "alias": "PS.MAT.G5.20.12",
+      "implementation": "implemented",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed",
+      "scope": "Proposed coprime roots 1–12, denominator root greater than one.",
+      "teacher_work_review": false,
+      "full_outcome_coverage_verified": false,
+      "automatic_assignment_ready": false
+    },
+    {
+      "family_id": "g5.rectangular-prism-net-area",
+      "standard": "PS.MAT.G5.MD.67.5",
+      "alias": "PS.MAT.G5.67.5",
+      "implementation": "implemented",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed",
+      "scope": "Recovered dimensions 1 ≤ c < b < a ≤ 25; new net representation.",
+      "teacher_work_review": true,
+      "full_outcome_coverage_verified": false,
+      "automatic_assignment_ready": false
+    },
+    {
+      "family_id": "g5.lcm-listing",
+      "standard": "PS.MAT.G5.OA.27.3",
+      "alias": "PS.MAT.G5.27.3",
+      "implementation": "implemented",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed",
+      "scope": "Proposed two/three distinct inputs 2–12, at most 12 listed multiples per input.",
+      "teacher_work_review": true,
+      "full_outcome_coverage_verified": false,
+      "automatic_assignment_ready": false
+    },
+    {
+      "family_id": "g5.lcm-prime-factorization",
+      "standard": "PS.MAT.G5.OA.27.4",
+      "alias": "PS.MAT.G5.27.4",
+      "implementation": "implemented",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed",
+      "scope": "Proposed two/three distinct inputs 2–12; independent of source lookup triples.",
+      "teacher_work_review": true,
+      "full_outcome_coverage_verified": false,
+      "automatic_assignment_ready": false
+    }
+  ]
+}

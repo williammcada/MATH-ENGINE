@@ -1,6 +1,6 @@
 # Current implementation candidate — 0.2.0-rc.1
 
-The first eight Grade 5 families are implemented as a seeded, stateless provider in src/grade5.js. See [API and scope](GRADE5-API.md) and [implementation specification](change-specs/v0.2.0-grade5-generators.md). The browser review page exercises generation, answer checks and teacher solutions; it is not the Studio packet application. Preserve the Mega Man v0.7 snapshot and existing hosts. Full curriculum coverage, physical-device verification and Word/PDF export remain pending. No automatic-assignment flag is promoted by this implementation.
+The first eight Grade 5 families are implemented as a seeded, stateless provider in src/grade5.js. See [API and scope](GRADE5-API.md) and [implementation specification](change-specs/v0.2.0-grade5-generators.md). The browser review page exercises generation, answer checks and teacher solutions; it is not the Studio packet application. Preserve the Mega Man v0.7 snapshot and existing hosts. The exact implementation checkpoint passed the [recorded engine and local-browser checks](GRADE5-VERIFICATION.md). Full curriculum coverage, physical-device verification and Word/PDF export remain pending. No automatic-assignment flag is promoted by this implementation.
 
 # Current coverage checkpoint — 2026-10-08
 

@@ -4,7 +4,7 @@
 
 Eight seeded Grade 5 task families now implement the first saved contracts, with exact answers, worked solutions, representation/unit checks and teacher work criteria. [API and scope](docs/GRADE5-API.md) · [Browser review page source](review/grade5.html) · [Implementation specification](docs/change-specs/v0.2.0-grade5-generators.md).
 
-Download the repository and open `review/grade5.html` to try it locally. This is an additive provider; the preserved game bundle and existing game hosts are unchanged. No GradeCam packet workflow, Word/PDF export, automatic assignment, release or deployment is claimed. Verification results are recorded separately against the implementation checkpoint.
+Download the repository and open `review/grade5.html` to try it locally. This is an additive provider; the preserved game bundle and existing game hosts are unchanged. No GradeCam packet workflow, Word/PDF export, automatic assignment, release or deployment is claimed. [Verification results](docs/GRADE5-VERIFICATION.md) record 8,000 independently checked generated questions and the local Chromium review workflow against the exact tested checkpoint. Physical-device checks and consumer integration remain pending.
 
 A WILLIAM MCADA PRODUCT
 
