@@ -11,6 +11,15 @@ def ev(n,x=None):
  if t=='neg':return -ev(n['arg'],x)
  a,b=ev(n['left'],x),ev(n['right'],x)
  return {'add':lambda:a+b,'sub':lambda:a-b,'mul':lambda:a*b,'div':lambda:a/b}[t]()
+templates={r['sourceId']:r['template'] for r in json.load(open(root/'curriculum/source-mappings/examview-arithmetic-v0.1.json'))}
+def checkshape(n,t):
+ assert n['type']==t['type']
+ if t['type']=='number':
+  r=t['range'];v=F(n['value']);assert r['min']<=v<r['max']+1;assert (v*10**r['places']).denominator==1
+ elif t['type']=='variable':assert n['name']==t['name']
+ else:
+  for k in ['left','right','arg']:
+   if k in t:checkshape(n[k],t[k])
 count=0;ids=set()
 for line in p.stdout:
  q=json.loads(line);tree=q['givens']['expression'];answer=F(int(q['answer']['numerator']),int(q['answer']['denominator']))
@@ -18,6 +27,14 @@ for line in p.stdout:
   assert ev(tree['left'],answer)==ev(tree['right'],answer)
   assert ev(tree['left'],answer+1)!=ev(tree['right'],answer+1)
  else:assert ev(tree)==answer
+ template=templates[q['sourceId']]
+ if template['kind']=='equation':
+  checkshape(tree['left'] if template['variableOnLeft'] else tree['right'],template['expression'])
+  r=template['answerRange'];assert r['min']<=answer<r['max']+1
+ elif 'quotientRange' in template:
+  checkshape(tree['right'],template['expression']['right']);assert answer not in [0,1]
+ else:checkshape(tree,template['expression'])
+ if template['nonnegative']:assert answer>=0
  if q['answer']['mode']=='integer':assert answer.denominator==1
  if q['answer']['mode']=='money':assert (answer*100).denominator==1
  ids.add(q['sourceId']);count+=1
