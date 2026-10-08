@@ -1,4 +1,4 @@
-# Lessons 1–6 foundations — Engine v0.19.0-rc.1 / Studio v0.20.0-rc.1
+# Lessons 1–6 foundations — Engine v0.19.0-rc.2 / Studio v0.20.0-rc.2
 
 2026-10-08, approved 8/7-first work. Baselines Engine 9636482d63da7a92ca70e9f9d90014cb9151eae3 / Studio 1ef9413ee1a725ee48bcdf3574f24a6a33355210. Local tracked artifacts compared byte-for-byte with both fetched main commits before modification. Handbook AI-START-HERE, UNIVERSAL-RULES and CONDITIONAL-STANDARDS S-02/S-04 at fd4330863f4cc0812180fbf1de122970a42c7885 consulted.
 
@@ -11,3 +11,5 @@ Use exact rational arithmetic, deterministic seeded variants and explicit respon
 Studio adds authored entries to existing lesson groups from the Engine catalog, preserves the immutable 5,425 legacy metadata records, and keeps source-content imports validating against legacy records only. Search supports outcome codes, drafts preserve new IDs and seed/index, and preview describes provenance honestly. New standalone HTML version and identical index/download bytes required.
 
 Verification: independent math and input-format checks across branches and boundaries; 15-digit word/expanded conversions, zero places, operator counterexamples, correct number-line endpoint/direction, deterministic replay; legacy math regression at the dispatch boundary; actual Studio preview/check/select/save/open and source-import compatibility; narrow-screen diagram/label inspection; exact vendor hashes and delivery parity. Preserve implementation before extended tests, then verified candidate. No print/export, hosted deployment or full 331-outcome completion claim.
+
+RC2 adds explicit zero cases to all five place-value/word/expanded tasks and singular-cent wording. RC1 is preserved as an earlier candidate, not the current delivery.
