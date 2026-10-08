@@ -1,3 +1,7 @@
+# Current candidate — v0.9.0-rc.1
+
+26 new measurement, rate and financial-arithmetic entries bring coverage to 245 / 5,425 English records; 5,180 unintegrated. Introduction to PreAlgebra (8/7) now has 60 working entries. Exact arithmetic and explicit final cent rounding. [Specification](docs/change-specs/v0.9.0-measurement.md) · [Verification](docs/verification/v0.9.0-measurement.md). Passed recorded checks; verified implementation only, no release/deployment. Grade 5 differentiation scope retained. Historical states follow.
+
 # Current candidate — v0.8.0-rc.2
 
 38 new fraction, ratio and percent entries bring coverage to 219 / 5,425 English records; 5,206 unintegrated. Introduction to PreAlgebra (8/7) now has 44 working entries. Required answer forms are enforced; recurring percentages use exact values. Passed recorded arithmetic and browser checks. [Specification](docs/change-specs/v0.8.0-proportions.md) · [Verification](docs/verification/v0.8.0-proportions.md). Verified implementation only; no release/deployment. Grade 5 differentiation scope retained. Historical states follow.

@@ -1,12 +1,12 @@
 {
-  "version": "0.8.0-rc.2",
+  "version": "0.9.0-rc.1",
   "sourceRecords": 5425,
-  "implemented": 219,
-  "unintegrated": 5206,
+  "implemented": 245,
+  "unintegrated": 5180,
   "byCourse": {
-    "Introduction to PreAlgebra (8/7)": 44,
+    "Introduction to PreAlgebra (8/7)": 60,
     "Algebra 1": 41,
-    "Algebra 1/2": 23,
+    "Algebra 1/2": 33,
     "Algebra 2": 9,
     "Course 1": 30,
     "Intermediate 4": 72
@@ -1323,6 +1323,162 @@
     {
       "sourceId": "algebra-half-en:node:607",
       "family": "structured-proportion",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870149",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870152",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870116",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870148",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870244",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870247",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870264",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870275",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870286",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870372",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870375",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870393",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870427",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870463",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870703",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870466",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:197",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:198",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:199",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:200",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:201",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:206",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:207",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:402",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:403",
+      "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:730",
+      "family": "structured-measurement",
       "status": "implemented-source-informed-adaptation",
       "exactLegacyReproduction": false
     }

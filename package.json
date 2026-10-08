@@ -11,6 +11,7 @@
     "test:linear": "node tests/linear-equations.cjs && python3 tests/linear-bank-audit.py",
     "test:quadratic": "node tests/quadratic-math.cjs && python3 tests/quadratic-bank-audit.py",
     "test:domain": "node tests/domain-equations.cjs && python3 tests/domain-bank-audit.py",
-    "test:proportions": "node tests/proportional-bank.cjs && python3 tests/proportional-bank-audit.py"
+    "test:proportions": "node tests/proportional-bank.cjs && python3 tests/proportional-bank-audit.py",
+    "test:measurement": "node tests/measurement-bank.cjs && python3 tests/measurement-bank-audit.py"
   }
 }
