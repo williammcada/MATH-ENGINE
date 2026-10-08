@@ -1,0 +1,724 @@
+{
+  "version": "0.4.0-rc.1",
+  "sourceRecords": 5425,
+  "implemented": 118,
+  "unintegrated": 5307,
+  "byCourse": {
+    "8/7": 13,
+    "Algebra 1": 1,
+    "Algebra 1/2": 1,
+    "Algebra 2": 1,
+    "Course 1": 30,
+    "Intermediate 4": 72
+  },
+  "records": [
+    {
+      "sourceId": "course-87-en:item:SN870001",
+      "family": "whole-division-remainder",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:4",
+      "family": "mixed-number-addition",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:4",
+      "family": "three-place-values",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:5",
+      "family": "segment-difference",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00093",
+      "family": "three-whole-number-sum",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00113",
+      "family": "missing-addend",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870017",
+      "family": "whole-product",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870018",
+      "family": "money-product",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870004",
+      "family": "money-product",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870478",
+      "family": "sequence-small",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX650024",
+      "family": "sequence-large",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870010",
+      "family": "sequence-large",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870011",
+      "family": "sequence-short",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870012",
+      "family": "missing-subtraction",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870013",
+      "family": "missing-large-addend",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870014",
+      "family": "missing-factor",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870017",
+      "family": "integer-compare",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:NAV40385",
+      "family": "factor-check",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00085",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00100",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00101",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00112",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00113",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00114",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00118",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00132",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00133",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00134",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00137",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00138",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00139",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00072",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00074",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00076",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00077",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00078",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00080",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00081",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00123",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00076",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00077",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00078",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00105",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00077",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00068",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section11:item:C1_S11_00060",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section11:item:C1_S11_00074",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00075",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00076",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00077",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00078",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00104",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00110",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00111",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00145",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00071",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00072",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00073",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00074",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00075",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00076",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00078",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00079",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00081",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00121",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00123",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00124",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00125",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00130",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00072",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00074",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00080",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00122",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00068",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00069",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00071",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00079",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00088",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00089",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00091",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00092",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00099",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00100",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00101",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00103",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00106",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00110",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00111",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00112",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00115",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00116",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00137",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00139",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00141",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00142",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00143",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00144",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00145",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00146",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00147",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00148",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00072",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00074",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00102",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00109",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086",
+      "family": "structured-equation",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00077",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00079",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00080",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00081",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00082",
+      "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    }
+  ]
+}
