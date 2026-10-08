@@ -21,7 +21,7 @@ $('version').textContent=engine.version;
 engine.catalog.forEach(f=>{const option=document.createElement('option');option.value=f.id;option.textContent=f.title+' — '+f.standard;$('family').append(option);});
 function generate(){try{const item=engine.generate($('family').value,{seed:$('seed').value,index:Number($('index').value)});current=item;$('question').innerHTML=engine.renderQuestion(item);$('solution').innerHTML=engine.renderSolution(item);$('metadata').textContent=item.standard+' · Item '+item.index;$('answer').value='';$('feedback').textContent='';$('teacher').open=false;$('error').textContent='';}catch(e){$('error').textContent=e.message;}}
 $('settings').addEventListener('submit',e=>{e.preventDefault();generate();});
-$('next').addEventListener('click',()=>{const n=Number($('index').value);if(!Number.isSafeInteger(n)||n<0||n===Number.MAX_SAFE_INTEGER){$('error').textContent='Enter a nonnegative item number smaller than the maximum safe integer.';return;}$('index').value=n+1;generate();});
+$('next').addEventListener('click',()=>{const raw=$('index').value,n=Number(raw);if(!raw.trim()||!Number.isSafeInteger(n)||n<0||n===Number.MAX_SAFE_INTEGER){$('error').textContent='Enter a nonnegative item number smaller than the maximum safe integer.';return;}if(!$('seed').value.trim()){$('error').textContent='Enter a nonempty seed.';return;}$('index').value=n+1;generate();});
 $('answerForm').addEventListener('submit',e=>{e.preventDefault();if(current)$('feedback').textContent=engine.checkAnswer(current,$('answer').value).feedback;});
 $('print').addEventListener('click',()=>window.print());generate();
 </script></body></html>

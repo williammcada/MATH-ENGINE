@@ -4,7 +4,7 @@ const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const assert=require('node:assert/strict'),path=require('node:path'),fs=require('node:fs');
 const {pathToFileURL}=require('node:url');
 (async()=>{
-  const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1280,height:900}}),errors=[];
+  const browser=await chromium.launch({headless:true,executablePath:process.env.CHROMIUM_EXECUTABLE_PATH||undefined}),page=await browser.newPage({viewport:{width:1280,height:900}}),errors=[];
   const artifacts=process.env.REVIEW_ARTIFACTS||path.resolve('artifacts/review');fs.mkdirSync(artifacts,{recursive:true});
   page.on('pageerror',e=>errors.push(String(e)));
   try{
