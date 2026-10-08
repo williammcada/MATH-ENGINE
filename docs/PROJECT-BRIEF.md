@@ -1,3 +1,7 @@
+# Current candidate — v0.11.0-rc.3
+
+27 new geometry entries and shared SVG rendering bring coverage to 310 / 5,425 English records; 5,115 unintegrated. Introduction to PreAlgebra (8/7) now has 90 working entries. Diagrams include solids, polygons, circles, compound figures and coordinate point grids. [Specification](change-specs/v0.11.0-geometry.md) · [Verification](verification/v0.11.0-geometry.md). Recorded math, browser and label-layout checks passed. Verified implementation only; no release or deployment. Standards-driven differentiation remains Grade 5 only. Historical states follow.
+
 # Current candidate — v0.10.0-rc.1
 
 38 new statistics and probability entries bring coverage to 283 / 5,425 English records; 5,142 unintegrated. Introduction to PreAlgebra (8/7) now has 72 working entries. Exact arithmetic, explicit rounding, ordered multi-part answers and corrected card-event order. [Specification](change-specs/v0.10.0-statistics.md) · [Verification](verification/v0.10.0-statistics.md). Passed recorded checks; verified implementation only, no release/deployment. Grade 5 differentiation scope retained. Historical states follow.

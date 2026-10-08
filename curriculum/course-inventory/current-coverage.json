@@ -1,12 +1,12 @@
 {
-  "version": "0.10.0-rc.1",
+  "version": "0.11.0-rc.3",
   "sourceRecords": 5425,
-  "implemented": 283,
-  "unintegrated": 5142,
+  "implemented": 310,
+  "unintegrated": 5115,
   "byCourse": {
-    "Introduction to PreAlgebra (8/7)": 72,
+    "Introduction to PreAlgebra (8/7)": 90,
     "Algebra 1": 57,
-    "Algebra 1/2": 43,
+    "Algebra 1/2": 52,
     "Algebra 2": 9,
     "Course 1": 30,
     "Intermediate 4": 72
@@ -1707,6 +1707,168 @@
     {
       "sourceId": "algebra-1-en:node:737",
       "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870031",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870190",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX650319",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870309",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870310",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870199",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870327",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870332",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870379",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870351",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870528",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870414",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870424",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870451",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870542",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870430",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870672",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870108",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:104",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:210",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:221",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:222",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:354",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:409",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:410",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:475",
+      "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:712",
+      "family": "structured-geometry",
       "status": "implemented-source-informed-adaptation",
       "exactLegacyReproduction": false
     }
