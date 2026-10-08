@@ -1,3 +1,7 @@
+# Current candidate — v0.13.0-rc.2
+
+23 additional Algebra 2 tasks bring coverage to 418 / 5,425 English source records; 5,007 remain unintegrated. Algebra 2 has 65 working entries. [Specification](change-specs/v0.13.0-advanced-breadth.md) · [Verification](verification/v0.13.0-advanced-breadth.md). Math, source-link and browser checks passed. Broader step 1 remains open. Verified implementation only; no release/deployment. Grade 5-only differentiation retained. Historical states follow.
+
 # Current candidate — v0.12.0-rc.3
 
 85 new entries across all six banks bring coverage to 395 / 5,425 English records; 5,030 remain unintegrated. Algebra 2 increases from 9 to 42 working entries. Shared generators add systems, complex numbers, functions with domains, number theory, graph choices, clocks and other reviewed tasks. [Specification](change-specs/v0.12.0-breadth.md) · [Verification](verification/v0.12.0-breadth.md). The recorded math/browser checks passed. The broader step-1 task-type expansion remains open; this checkpoint does not claim all distinct types are covered. Verified implementation only; no release/deployment. Grade 5-only differentiation retained. [Breadth and remaining gaps](BREADTH-COVERAGE-v0.12.0.md). Historical states follow.
