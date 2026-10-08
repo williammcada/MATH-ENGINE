@@ -1,15 +1,15 @@
 {
-  "version": "0.13.0-rc.2",
+  "version": "0.14.0-rc.1",
   "sourceRecords": 5425,
-  "implemented": 418,
-  "unintegrated": 5007,
+  "implemented": 445,
+  "unintegrated": 4980,
   "byCourse": {
-    "Introduction to PreAlgebra (8/7)": 97,
+    "Introduction to PreAlgebra (8/7)": 113,
     "Algebra 1": 69,
     "Algebra 1/2": 62,
     "Algebra 2": 65,
-    "Course 1": 41,
-    "Intermediate 4": 84
+    "Course 1": 45,
+    "Intermediate 4": 91
   },
   "records": [
     {
@@ -2517,6 +2517,168 @@
     {
       "sourceId": "algebra-2-en:node:841",
       "family": "structured-advanced",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870001",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX650185",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870166",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870029",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870341",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870345",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870590",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870293",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870299",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870556",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870555",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870554",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870417",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870428",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870566",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870079",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00165",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00166",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00082",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00147",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00078",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00093",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00021",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00063",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00061",
+      "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00079",
+      "family": "structured-representations",
       "status": "implemented-source-informed-adaptation",
       "exactLegacyReproduction": false
     }

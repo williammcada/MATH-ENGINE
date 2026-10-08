@@ -1,3 +1,7 @@
+# Current candidate — v0.14.0-rc.1
+
+27 more adaptations bring coverage to 445 / 5,425 English source records; 4,980 remain unintegrated. Added charts, number representations, geometric classification and transformations. [Specification](change-specs/v0.14.0-representations.md) · [Verification](verification/v0.14.0-representations.md). Math, provenance, layout and all-entry UI checks passed. Broader step 1 remains open. Verified implementation only; no release/deployment. Grade 5-only differentiation retained. Historical states follow.
+
 # Current candidate — v0.13.0-rc.2
 
 23 additional Algebra 2 tasks bring coverage to 418 / 5,425 English source records; 5,007 remain unintegrated. Algebra 2 has 65 working entries. [Specification](change-specs/v0.13.0-advanced-breadth.md) · [Verification](verification/v0.13.0-advanced-breadth.md). Math, source-link and browser checks passed. Broader step 1 remains open. Verified implementation only; no release/deployment. Grade 5-only differentiation retained. Historical states follow.
