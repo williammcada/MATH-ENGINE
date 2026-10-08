@@ -1,3 +1,7 @@
+# Active priority — finish Introduction to PreAlgebra (8/7)
+
+Owner approved 2026-10-08. Pause new content expansion of the other five courses; preserve their selectable banks. Complete the 331 Grade 5 outcomes and necessary lesson mappings before resuming broad expansion. [Approved scope and sequence](docs/change-specs/grade5-first-v0.1.md). Runtime remains Engine v0.18.0-rc.1 / Studio v0.19.0-rc.1. Prior breadth checkpoints below are historical; none establishes full step-1 completion.
+
 # Current candidate — v0.18.0-rc.1
 
 16 more adaptations bring coverage to 521 / 5,425 English source records; 4,904 remain unintegrated. Added complex roots, polar coordinates, compound inequalities, symbolic formulas and protractor reading. [Specification](docs/change-specs/v0.18.0-algebra-review.md) · [Verification](docs/verification/v0.18.0-algebra-review.md). Independent math, source links, layout and all-entry UI checks passed. Broader step 1 remains open. Verified implementation only; no release/deployment. Grade 5-only differentiation retained. Historical states follow.
