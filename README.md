@@ -1,6 +1,6 @@
 # Current candidate — v0.6.0-rc.1
 
-16 additional quadratic tasks bring coverage to 163 implemented source-informed entries / 5,425 English records; 5,262 unintegrated. Exact real-root sets, repeated roots, radical equivalence, factoring/completing-square/formula steps and discriminant classification. [Specification](docs/change-specs/v0.6.0-quadratics.md). Implementation awaiting verification; no release or deployment. Course name, IDs and Grade 5-only differentiation remain unchanged. Historical states follow.
+16 additional quadratic tasks bring coverage to 163 implemented source-informed entries / 5,425 English records; 5,262 unintegrated. Exact real-root sets, repeated roots, radical equivalence, factoring/completing-square/formula steps and discriminant classification. [Specification](docs/change-specs/v0.6.0-quadratics.md). Passed the recorded quadratic verification; no release or deployment. Course name, IDs and Grade 5-only differentiation remain unchanged. Historical states follow.
 
 # Current candidate v0.5.0-rc.1
 

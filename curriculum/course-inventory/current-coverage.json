@@ -1,13 +1,13 @@
 {
-  "version": "0.5.0-rc.1",
+  "version": "0.6.0-rc.1",
   "sourceRecords": 5425,
-  "implemented": 147,
-  "unintegrated": 5278,
+  "implemented": 163,
+  "unintegrated": 5262,
   "byCourse": {
     "Introduction to PreAlgebra (8/7)": 13,
-    "Algebra 1": 16,
-    "Algebra 1/2": 15,
-    "Algebra 2": 1,
+    "Algebra 1": 26,
+    "Algebra 1/2": 16,
+    "Algebra 2": 6,
     "Course 1": 30,
     "Intermediate 4": 72
   },
@@ -891,6 +891,102 @@
     {
       "sourceId": "algebra-half-en:node:584",
       "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:836",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:837",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:838",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:839",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:840",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:841",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:842",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:1021",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:1026",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:1027",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:718",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:329",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:407",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:408",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:738",
+      "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:668",
+      "family": "structured-quadratic",
       "status": "implemented-source-informed-adaptation",
       "exactLegacyReproduction": false
     }
