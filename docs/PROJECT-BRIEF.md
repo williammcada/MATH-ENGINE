@@ -1,3 +1,7 @@
+# Current implementation candidate — 0.4.0-rc.1
+
+Shared exact arithmetic/MathML templates add 100 source mappings; 118 total adaptations, 5,307 unintegrated. See [specification](change-specs/v0.4.0-structured-math.md). Historical inventory below remains a dated baseline.
+
 # Full-bank inventory — v0.1
 
 All 5,425 English source records have provisional task/rendering classifications. See [inventory](../curriculum/course-inventory/v0.1/README.md). This adds no usable questions; 18 adaptations remain implemented. Topic-only/multiple candidates require semantic review before implementation. Historical states follow.
