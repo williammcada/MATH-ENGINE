@@ -1,13 +1,13 @@
 {
-  "version": "0.15.0-rc.1",
+  "version": "0.16.0-rc.2",
   "sourceRecords": 5425,
-  "implemented": 472,
-  "unintegrated": 4953,
+  "implemented": 489,
+  "unintegrated": 4936,
   "byCourse": {
     "Introduction to PreAlgebra (8/7)": 124,
     "Algebra 1": 69,
-    "Algebra 1/2": 62,
-    "Algebra 2": 80,
+    "Algebra 1/2": 63,
+    "Algebra 2": 96,
     "Course 1": 45,
     "Intermediate 4": 92
   },
@@ -2841,6 +2841,108 @@
     {
       "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054",
       "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:777",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:778",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:786",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:821",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:822",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:823",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:824",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:340",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:873",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:887",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:921",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:852",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:660",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:701",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:704",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:860",
+      "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:766",
+      "family": "structured-relations",
       "status": "implemented-source-informed-adaptation",
       "exactLegacyReproduction": false
     }
