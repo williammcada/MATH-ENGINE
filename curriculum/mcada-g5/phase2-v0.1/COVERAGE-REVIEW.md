@@ -320,7 +320,7 @@ Reviewed 370 authored tasks; 331 coded outcomes. 66 task families expanded. Shar
 | PS.MAT.G5.G.INV3.3 | Accepted at documented scope | mcada87:INV3.3 | 92 / teacher |
 | PS.MAT.G5.SP.INV4.1 | Accepted at documented scope | mcada87:INV4.1 | 60 / teacher |
 | PS.MAT.G5.SP.INV4.2 | Accepted at documented scope | mcada87:INV4.2 | 56 / numbers |
-| PS.MAT.G5.SP.INV4.3 | Accepted at documented scope | mcada87:INV4.3 | 56 / teacher |
+| PS.MAT.G5.SP.INV4.3 | Accepted at documented scope | mcada87:INV4.3 | 56 / text |
 | PS.MAT.G5.SP.INV4.4 | Accepted at documented scope | mcada87:INV4.4 | 59 / numbers |
 | PS.MAT.G5.SP.INV4.5 | Accepted at documented scope | mcada87:INV4.5 | 62 / teacher |
 | PS.MAT.G5.SP.INV4.6 | Accepted at documented scope | mcada87:INV4.6 | 59 / numbers |

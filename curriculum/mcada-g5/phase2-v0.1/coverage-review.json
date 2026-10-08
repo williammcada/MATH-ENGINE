@@ -12895,22 +12895,18 @@
           3
         ],
         "responseKinds": [
-          "teacher"
+          "text"
         ],
-        "teacherReview": true,
+        "teacherReview": false,
         "hasDiagram": false,
         "phase2Extended": true
       },
       "example": {
         "seed": "phase2-review",
         "index": 0,
-        "prompt": "Find all modes, range and median of 39, 37, 35, 32, 29, 29, 27, 25. If no value repeats, state no mode. Complete the requested work on paper; this task requires teacher review.",
-        "reference": "Modes: 29; range 14; median 30.5.",
-        "rubric": [
-          "Sorts before locating middle value(s).",
-          "Lists every most frequent value, or no mode when all values are distinct.",
-          "Range is maximum minus minimum."
-        ]
+        "prompt": "Find all modes, range and median of 39, 37, 35, 32, 29, 29, 27, 25. Enter modes; range; median. List modes in increasing order separated by commas, or write none if no value repeats.",
+        "reference": "29; 14; 30.5",
+        "rubric": []
       },
       "reviewLimit": "Finite representative curriculum scope; not all possible numeric ranges, all publisher items, automatic grading of written work, or proof of learner mastery."
     },

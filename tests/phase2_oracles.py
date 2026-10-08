@@ -43,6 +43,8 @@ def numeric(r,p):
  raise AssertionError('Missing phase2 numeric oracle: '+r)
 
 def textual(r,p):
+ if r=='INV4.3':
+  v=sorted(p.v);counts={x:v.count(x) for x in set(v)};m=max(counts.values());modes=sorted(x for x,n in counts.items() if n==m) if m>1 else [];modes=', '.join(map(str,modes)) if modes else 'none';middle=median(v);middle=str(int(middle)) if int(middle)==middle else str(middle);return f'{modes}; {max(v)-min(v)}; {middle}'
  if r=='15.3':return 'ABC'[next(i for i,x in enumerate(p.options) if F(x)!=F(p.a,p.d))]
  if r=='18.6':return ['true','false','true','false','false','true'][p.branch]
  if r=='62.2':return '; '.join(['BC','AC','AB'][i] for i in sorted(range(3),key=lambda i:p.angles[i]))
