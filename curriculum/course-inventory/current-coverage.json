@@ -1,13 +1,13 @@
 {
-  "version": "0.6.0-rc.1",
+  "version": "0.7.0-rc.1",
   "sourceRecords": 5425,
-  "implemented": 163,
-  "unintegrated": 5262,
+  "implemented": 181,
+  "unintegrated": 5244,
   "byCourse": {
     "Introduction to PreAlgebra (8/7)": 13,
-    "Algebra 1": 26,
+    "Algebra 1": 41,
     "Algebra 1/2": 16,
-    "Algebra 2": 6,
+    "Algebra 2": 9,
     "Course 1": 30,
     "Intermediate 4": 72
   },
@@ -895,6 +895,78 @@
       "exactLegacyReproduction": false
     },
     {
+      "sourceId": "algebra-1-en:node:768",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:769",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:770",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:771",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:209",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:210",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:357",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:360",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:361",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:362",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:363",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:364",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
       "sourceId": "algebra-1-en:node:836",
       "family": "structured-quadratic",
       "status": "implemented-source-informed-adaptation",
@@ -987,6 +1059,42 @@
     {
       "sourceId": "algebra-2-en:node:668",
       "family": "structured-quadratic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:928",
+      "family": "structured-domain",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:929",
+      "family": "structured-domain",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:930",
+      "family": "structured-domain",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:960",
+      "family": "structured-domain",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:962",
+      "family": "structured-domain",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:570",
+      "family": "structured-domain",
       "status": "implemented-source-informed-adaptation",
       "exactLegacyReproduction": false
     }
