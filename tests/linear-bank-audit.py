@@ -1,19 +1,23 @@
 """Independent exact audit of all authored linear templates; no source script execution."""
 import fractions,json,pathlib,subprocess,ast
 F=fractions.Fraction;root=pathlib.Path(__file__).resolve().parents[1]
-rows={r['sourceId']:r for r in json.load(open(root/'curriculum/source-mappings/linear-equations-v0.1.json'))}
+rows={r['sourceId']:r for r in json.load(open(root/'curriculum/source-mappings/linear-equations-v0.2.json'))}
 code="const E=require('./src/course-banks.js');for(const c of E.catalog.filter(x=>x.family==='structured-linear'))for(let i=0;i<2000;i++){const q=E.generate(c.sourceId,{seed:'linear-audit',index:i});if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'linear-audit',index:i})))throw Error('Replay');const a=q.answer;if(!E.checkAnswer(q,E.answerText(q)).answerCorrect||!E.checkAnswer(q,(BigInt(a.numerator)*2n)+'/'+(BigInt(a.denominator)*2n)).answerCorrect||E.checkAnswer(q,'nonsense').answerCorrect)throw Error('Checker');console.log(JSON.stringify(q));}"
 p=subprocess.Popen(['node','-e',code],cwd=root,stdout=subprocess.PIPE,text=True)
 def ev(n,x):
  if n['type']=='number':return F(n['value'])
  if n['type']=='variable':assert n['name']=='x';return x
  if n['type']=='neg':return -ev(n['arg'],x)
+ if n['type']=='abs':return abs(ev(n['arg'],x))
+ if n['type']=='power':return ev(n['base'],x)**int(ev(n['exponent'],x))
  a,b=ev(n['left'],x),ev(n['right'],x)
  return {'add':lambda:a+b,'sub':lambda:a-b,'mul':lambda:a*b,'div':lambda:a/b}[n['type']]()
 def formula(n,values,x):
  if isinstance(n,ast.Constant):return F(str(n.value))
  if isinstance(n,ast.Name):return x if n.id=='x' else values[n.id]
  if isinstance(n,ast.UnaryOp):return -formula(n.operand,values,x)
+ if isinstance(n,ast.Call):assert n.func.id=='abs';return abs(formula(n.args[0],values,x))
+ if isinstance(n,ast.BinOp) and isinstance(n.op,ast.Pow):return formula(n.left,values,x)**int(formula(n.right,values,x))
  a,b=formula(n.left,values,x),formula(n.right,values,x)
  return {ast.Add:lambda:a+b,ast.Sub:lambda:a-b,ast.Mult:lambda:a*b,ast.Div:lambda:a/b}[type(n.op)]()
 count=0;seen=set()

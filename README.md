@@ -1,3 +1,7 @@
+# Current candidate — v0.7.0-rc.1
+
+18 new source-informed equation entries (12 affine, 6 domain-aware rational/radical) bring coverage to 181 / 5,425 English records; 5,244 unintegrated. Exact checks reject excluded denominators and extraneous roots; no-real-solution answer sets are explicit. [Specification](docs/change-specs/v0.7.0-domain-equations.md). Implementation awaiting verification; no release/deployment. Existing course identity, IDs and Grade 5 differentiation scope retained. Historical states follow.
+
 # Current candidate — v0.6.0-rc.1
 
 16 additional quadratic tasks bring coverage to 163 implemented source-informed entries / 5,425 English records; 5,262 unintegrated. Exact real-root sets, repeated roots, radical equivalence, factoring/completing-square/formula steps and discriminant classification. [Specification](docs/change-specs/v0.6.0-quadratics.md). Passed the recorded quadratic verification; no release or deployment. Course name, IDs and Grade 5-only differentiation remain unchanged. Historical states follow.

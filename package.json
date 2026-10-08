@@ -1,6 +1,6 @@
 {
   "name": "mcada-math-engine",
-  "version": "0.6.0-rc.1",
+  "version": "0.7.0-rc.1",
   "private": true,
   "main": "src/grade5.js",
   "scripts": {
@@ -9,6 +9,7 @@
     "test:banks": "node tests/course-banks.cjs",
     "test:structured": "node tests/structured-math.cjs && python3 tests/structured-bank-audit.py",
     "test:linear": "node tests/linear-equations.cjs && python3 tests/linear-bank-audit.py",
-    "test:quadratic": "node tests/quadratic-math.cjs && python3 tests/quadratic-bank-audit.py"
+    "test:quadratic": "node tests/quadratic-math.cjs && python3 tests/quadratic-bank-audit.py",
+    "test:domain": "node tests/domain-equations.cjs && python3 tests/domain-bank-audit.py"
   }
 }

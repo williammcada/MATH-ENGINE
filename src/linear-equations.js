@@ -4,6 +4,7 @@ const M=typeof module!=='undefined'&&module.exports?require('./structured-math.j
 const catalog=typeof module!=='undefined'&&module.exports?require('./linear-bank-map.js'):root.MathLinearBankMap;
 const zero=()=>M.rat(0),one=()=>M.rat(1),nonzero=a=>a.n!==0n;
 function affine(n,variable='x',depth=0){if(depth>32||!n||typeof n!=='object')throw Error('Invalid linear expression');const f=x=>affine(x,variable,depth+1),constant=b=>({a:zero(),b});
+ if(n.type==='power'||n.type==='abs'){function hasVariable(v){return v&&typeof v==='object'&&(v.type==='variable'||Object.values(v).some(hasVariable));}if(hasVariable(n))throw Error('Variable in constant operation');return constant(M.evaluate(n));}
  if(n.type==='number')return constant(M.evaluate(n));
  if(n.type==='variable'){if(n.name!==variable||!/^[a-z]$/i.test(variable))throw Error('Unexpected variable');return{a:one(),b:zero()};}
  if(n.type==='neg'){const v=f(n.arg);return{a:M.op('sub',zero(),v.a),b:M.op('sub',zero(),v.b)};}

@@ -1,0 +1,8 @@
+const assert=require('node:assert/strict'),D=require('../src/domain-bank.js'),M=require('../src/structured-math.js'),L=require('../src/linear-equations.js');
+const N=v=>({type:'number',value:String(v)}),x={type:'variable',name:'x'},o=(type,left,right)=>({type,left,right}),sqrt=arg=>({type:'sqrt',arg});
+let checks=D.verifyCandidates(o('equation',o('div',x,x),N(1)),[M.rat(0),M.rat(1),M.rat(1)]);assert.equal(checks.length,2);assert.equal(checks[0].accepted,false);assert.match(checks[0].reason,/denominator zero/);assert.equal(checks[1].accepted,true);
+checks=D.verifyCandidates(o('equation',o('add',sqrt(o('add',x,N(4))),N(2)),x),[M.rat(0),M.rat(5)]);assert.deepEqual(checks.map(v=>v.accepted),[false,true]);
+checks=D.verifyCandidates(o('equation',sqrt(x),N(-2)),[M.rat(4)]);assert.equal(checks[0].accepted,false);
+const abs={type:'abs',arg:N(-3)};assert.equal(M.format(M.evaluate(abs)),'3');assert.match(M.render(abs),/<mo>\|<\/mo>/);assert.equal(M.format(L.affine(abs).b),'3');assert.throws(()=>L.affine({type:'abs',arg:x}),/Variable/);assert.throws(()=>L.affine({type:'power',base:x,exponent:N(2)}),/Variable/);
+const q={answer:{roots:[M.serialize(M.rat(1,2)),M.serialize(M.rat(3))]}};assert.ok(D.check(q,'3; 2/4').answerCorrect);for(const s of ['1/2','1/2;1/2','1/2;3;4','1/0;3','no real solution','<img>;3'])assert.ok(!D.check(q,s).answerCorrect);assert.ok(D.check({answer:{roots:[]}},'no real solution').answerCorrect);assert.ok(!D.check({answer:{roots:[]}},'0').answerCorrect);
+console.log('Denominator exclusions, principal-root checks, extraneous roots, deduplication, constant abs/powers and answer sets passed');
