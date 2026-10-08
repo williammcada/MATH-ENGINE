@@ -1,10 +1,11 @@
 {
   "name": "mcada-math-engine",
-  "version": "0.2.0-rc.1",
+  "version": "0.3.0-rc.1",
   "private": true,
   "main": "src/grade5.js",
   "scripts": {
-    "test": "node tests/baseline.cjs && node --test tests/grade5.test.cjs",
-    "test:g5": "node --test tests/grade5.test.cjs"
+    "test": "node tests/baseline.cjs && node --test tests/grade5.test.cjs && node tests/course-banks.cjs",
+    "test:g5": "node --test tests/grade5.test.cjs",
+    "test:banks": "node tests/course-banks.cjs"
   }
 }
