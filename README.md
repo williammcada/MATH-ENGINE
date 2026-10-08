@@ -1,3 +1,13 @@
+# Phase 2 complete — v0.21.0-rc.2
+
+All 331 custom 8/7 outcomes have passed the documented curriculum breadth/variation review; all 39 uncoded tasks were also reviewed. Expanded 66 task families and added canonical assessment facets with explicit duplicate/partial-overlap detection. Original codes, aliases and lesson history remain. Engine owns all mathematics and mapping; Studio flags shared coverage without changing selections.
+
+502 working 8/7 entries, 891 across the six English banks, and all 133 8/7 sections remain. Acceptance is at the [documented representative scope](https://github.com/williammcada/MATH-ENGINE/blob/main/curriculum/mcada-g5/phase2-v0.1/COVERAGE-REVIEW.md), not exhaustive publisher reconstruction or learner mastery. [Verification](docs/verification/phase2-87-v0.1.md) records independent math, exact Studio browser workflows and layout checks. Automatic assignment remains gated until phase 3. Other-course expansion remains paused.
+
+Next: phase 3 teacher packets/keys, GradeCam targeting and printing/Word/PDF. No hosted deployment or physical-device certification is claimed. Resume from the saved phase-2 progress record; do not restart the content phase.
+
+Historical checkpoints follow.
+
 # Phase 1 complete — v0.20.0-rc.2
 
 Introduction to PreAlgebra (8/7) now has 502 working entries: 132 source adaptations plus 370 authored curriculum tasks. All 331 coded outcomes have an explicit bounded task; 39 additional tasks cover the uncoded later lessons, investigations and appendix. All 133 course sections are represented. Math Engine owns the implementation; Studio provides selection and preview. Six English banks total 891 working entries.

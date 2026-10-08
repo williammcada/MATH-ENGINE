@@ -1,0 +1,151 @@
+{
+  "phase": 2,
+  "result": "passed",
+  "date": "2026-10-09",
+  "engineVersion": "0.21.0-rc.2",
+  "studioVersion": "0.22.0-rc.2",
+  "engineImplementationCommit": "de4a89a89c1355d8abf0b7b702c1921693ab753d",
+  "studioImplementationCommit": "e987ad1dab02854c5f12b89cf84d586206c003c5",
+  "engineTree": "8734324a572a0a34e35c72544db8ae0907be4e9a",
+  "studioTree": "f39449f76313fc55121f5bd65c6a6006ab377b75",
+  "environment": {
+    "node": "24.19.0",
+    "browser": "Chromium 153.0.8010.0",
+    "delivery": "local file, desktop and 390px emulated viewport",
+    "physicalDevices": "not run",
+    "hostedDeployment": "not run"
+  },
+  "checks": {
+    "phase2Review": {
+      "result": "passed",
+      "codedRows": 331,
+      "uncodedRows": 39,
+      "branchFamiliesExplicitlyAsserted": 38,
+      "extendedFamilies": 66,
+      "canonicalFacets": 366,
+      "sharedFacets": 19
+    },
+    "curriculumIndependent": {
+      "result": "passed",
+      "tasks": 340,
+      "instances": 57120,
+      "numericOracles": 30576,
+      "textInstances": 7140,
+      "teacherReviewBoundaryInstances": 19404,
+      "parseableSVGs": 13188
+    },
+    "foundationsIndependent": {
+      "result": "passed",
+      "instances": 5400,
+      "parsedNumberLines": 360
+    },
+    "engineRetained": {
+      "result": "passed",
+      "grade5Independent": 8000,
+      "originalSourceIndependent": 18000,
+      "baselineSelfConsistency": 6240
+    },
+    "studioDelivery": {
+      "result": "passed",
+      "authoredTasks": 370,
+      "legacyBankPreviews": 6,
+      "draftReplay": true,
+      "sourceImport": "synthetic 789-record identity validation; external recovered source bodies not reloaded in this turn"
+    },
+    "studioLayout": {
+      "result": "passed",
+      "curriculumLayouts": 4080,
+      "foundationLayouts": 900,
+      "pageOverflow": 0,
+      "svgLabelCollision": 0
+    },
+    "phase2UI": {
+      "result": "passed",
+      "browser": "153.0.8010.0",
+      "version": "0.22.0-rc.2",
+      "checks": "shared and partial overlap notices; removal updates; unchanged selections; distinct methods retained; curriculum details; modes auto-check; narrow preview screenshots; no page errors"
+    },
+    "visualReview": {
+      "result": "passed",
+      "file": "phase2-visual.png",
+      "sha256": "a7f1678d40c791a4249f23d98fd5323013c0a3c8d87ec4600a18a905ccb8a866",
+      "samples": [
+        "obtuse triangle external altitude",
+        "vertical angle diagram",
+        "square pyramid",
+        "triangular prism",
+        "diagonal-line reflection",
+        "varied box plot"
+      ]
+    }
+  },
+  "delivery": {
+    "path": "downloads/Test-and-Practice-Studio-v0.22.0-rc.2.html",
+    "bytes": 1301942,
+    "sha256": "36ec1dc1bf79c887250303a5628b68067f1ad0a1261ff5a9b32fcc5e4ad48090",
+    "matchesIndex": true
+  },
+  "verifiedInputs": {
+    "src/linear-equations.js": "3d896aa51221cd2cacbf347e1389afb55284f00aac7b635526b27b0a6c8a31d6",
+    "src/curriculum87-map.js": "b80506d7022659c0e02c2d877e65b50c062de50b62e0b60116d99eb8417a7690",
+    "src/measurement-bank-map.js": "7c99b3cd42a37428faa447817babf353e1d679a68bc0706f06f53871f74cd837",
+    "src/measurement-bank.js": "723755626a5647e5d431b588cbd3cf46c28a6d769535f216a7fb2ee6bae7c601",
+    "src/statistics-bank.js": "0084a5df0fcadf1793304874b46e645ec07e206a52ff636f2cf2a388c9a39dbd",
+    "src/solids-svg.js": "d85a70898fcacc1dd68eee5d34e5ea9daa9e81a8a7a8413fb53e0f20c010fdb7",
+    "src/breadth-bank-map.js": "9aaf2cae4d8daa59eacbec83cb36dd827a89d83ec2be6ea035e4527d8b112329",
+    "src/domain-bank-map.js": "02a9c8b3738b69335304318216ca35f008d679e398b442f3cc3e3ada010c269e",
+    "src/relations-bank-map.js": "20f87bcf3daff898e25bacf2e064d764cce6d86375edb44c7177cf6c09aab41a",
+    "src/linear-bank-map.js": "91d420894c42127cb34e783543e199cd11d0130393c2e5a50ff953c3a8635496",
+    "src/geometry-bank.js": "5a22a190f7400f315447a36231ce93111460a4f2af06d2bd102d14966cac2646",
+    "src/quadratic-math.js": "6a01325b54d0b3126bd8309b1598b28f23bd6a4e5f6de53cd3aa3b23b42b80cb",
+    "src/foundations87.js": "32d5002f6384dee18b314727c090e48dbebf1c7ac3cfcaa8a43286eb8cd68819",
+    "src/reasoning-bank.js": "39d7b4494eb1e57b822fc4bb9293d18f835d6854ef09f3aab56acf82991d48f4",
+    "src/proportional-bank.js": "7260be3bcd035aa81a330732fdabdcd6cc656b000ac6b67ee2e58ebd0f9d9479",
+    "src/representations-bank.js": "1fcf65a23a14efdec1e3fcd4c1044495ff9700923e4c6b3f4c9d134a6b32ae02",
+    "src/protractor-svg.js": "4fdc32f74ee91f795f93cb9040e4a4ae51a89ee581eca93a7453c60a4605556f",
+    "src/curriculum87-early.js": "e94651a4568a6f76079e344d21a0ba1c9b6521a33be70c227b4d89b448e4c657",
+    "src/curriculum87-common.js": "22edd2bedd63ab3269468bc714a0efd4c58f6f5aefe8e707dbefe6358ea19d00",
+    "src/quadratic-bank-map.js": "378ecae4e6be7720b5094df01423676610cea30a84516fe6a28b5ed36d682df8",
+    "src/curriculum87-late.js": "7994c39ee7905b8f675981cbed5b63222c9eba9b5d74cf5bf14d187ecd9f0295",
+    "src/curriculum87-extra.js": "274306c2d145438ca5a61a5584857ffb9e35f6628940450423097ea1460cc1cc",
+    "src/curriculum87-middle.js": "c1d8585b3a3599412f081c5a24ce9daa87b7339e3549272452cad13cfc9a7ff7",
+    "src/structured-bank-map.js": "7bd11d38a3d9e16b288c19dc3125899a4c53ca7a5199f6ab8295aa7d3f0fccf4",
+    "src/representations-svg.js": "54274baefa3ec85f57d537bc64998362e8ce0bfd6e901677f8953924c6aae3d4",
+    "src/algebra-review-bank-map.js": "2074fe4863fefc7b9f6fa60ed4bceb39f200c072a7a208b0c7c2ac470eb8c246",
+    "src/structured-math.js": "8dc0870dbc5f9f7fc93db454d8bd8d22f8fa13dfeeff13a71d4592692bc16087",
+    "src/geometry-bank-map.js": "ed8a8980a8b0bb2f9d06fa5c72d9ceaeff7a960033678a43f37b277ae65c48b5",
+    "src/solids-bank-map.js": "d0392c99f98a5f634fe638c50826c8609a41354dcdcffeea41e89e0c3daadfad",
+    "src/curriculum87-assessment-map.js": "e74379e486e4b8a5ee774e886f2ad65a467a0ef2f9a962d07b28fdf7ed29645f",
+    "src/curriculum87-investigations.js": "24f2a1256ecd641a302b9eae9719fde15321b2b6ffafee8460998d23e78b55ee",
+    "src/course-banks.js": "7e0d7b7d1d2f31402e2174058fe91438c7cc7a66749d6cb86bbef14ee3d8ed32",
+    "src/foundations87-map.js": "7920a7dcd322dbc687381fe23aa7e779fb96c09008bf51983dbf7861eabcb8e5",
+    "src/graph-svg.js": "02d5c8333c647d93d954ef84bcfdd37e51bdfe1598ab63ba283292066cb58490",
+    "src/solids-bank.js": "7516a8091979f2af33cc5ab30960d3e1200b72fe0d150a1a3f8e9f797e83d48b",
+    "src/geometry-svg.js": "5852b91996d4a30b862a032ae38dc31c67b1a3a00daed8eb4bef7f476585baf5",
+    "src/grade5.js": "e3c41dc8af4cf44f036c55e77e3d44fb6848a65bc0ce6ab8c7cb23f1959481b2",
+    "src/proportional-bank-map.js": "88d6ac100f072a49d644a03f7af01f0ed0b81ea9f4bdc360e6324a54e2472af6",
+    "src/statistics-bank-map.js": "253d6af26f250450650e2d7c864c45d237c9bfe906b295b99bb348ba2bab5208",
+    "src/curriculum87-phase2.js": "92164f149985673fc16c9098f9df0fb8fb734dada601061754f73e58ce1e7195",
+    "src/representations-bank-map.js": "35298feb285de5b70842f37fe8f4f1df126fa3c77e65daa3515b48dcd97999aa",
+    "src/curriculum87.js": "124e4eb11ea6d107a4e98cf812d46119386a461e348fd503895623ca0a5cebc2",
+    "src/relations-bank.js": "97db97aedf915a0969da7aa1fb5f0cbb61e96a9c04a58af3d2742ed1f91558f6",
+    "src/advanced-bank-map.js": "b0c440f2db50f7a716674e6dbf90bd1d02e36c2f31e746a340d8200951fa3abf",
+    "src/curriculum87-assessment.js": "8a1b4410d93a939612534549a4f7af1dde6dd086955aef2d907ed2dc7b211203",
+    "src/quadratic-bank.js": "6f0e85138f7c98888bbbc428f9166871a9849070dd24b73f57f8a25c1b10ac2d",
+    "src/structured-bank.js": "075320d71981a3e7ed9f167a4c2bfc466deb6f015b04bbe585f16e2ff5d47f63",
+    "src/relations-svg.js": "4d8be036fd960d13501f70280d08572c909e42f10ea17df41766c3c6b3473293",
+    "src/reasoning-bank-map.js": "f7461fc1c611efb199537cd0300b3bff84afb7e188968311b1bba4b1d50fa33b",
+    "src/advanced-bank.js": "1d01f1388a710254108df9f3a958168d0a0734e192ca4c6821afe727e09372d2",
+    "src/breadth-bank.js": "d298aeedc57f7b0d90c0b5d93382467eb44ff6156c226a0f2449adbdf0f2f02d",
+    "src/algebra-review-bank.js": "c6a563b9727049c5c94f44d37cd1d8f76c486c36547db6fa838f21297dc02851",
+    "src/domain-bank.js": "0db728cb2c45f8f847893142060598a6d2be7ecb1281c7a1fd2ff61573b42467",
+    "scripts/build-phase2-review.py": "3cad237c9165f64a3094ad308a9c27063be376dcf1bfbaed67bb71847112c178",
+    "curriculum/mcada-g5/phase2-v0.1/review-scopes.tsv": "311b91da20a07b0679e5848e0bc37d49e5bd386d6e40c3706f588b0362245c5a",
+    "curriculum/mcada-g5/v0.2/coverage-map.json": "6fac8028ff14dfac876aafffe127dc34c187d4b752b811bb3257d21417bc5ca6"
+  },
+  "limits": [
+    "Representative documented curriculum scope, not exhaustive publisher reconstruction or every possible number range.",
+    "Teacher-reviewed drawings, explanations and required methods are not automatically certified.",
+    "Automatic assignment, learner mastery, print/Word/PDF packets and deployment remain outside phase 2."
+  ]
+}

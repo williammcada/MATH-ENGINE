@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "date": "2026-10-09",
   "phase": 2,
-  "status": "reviewed-candidate-awaiting-verification",
+  "status": "complete",
   "handbookCommit": "fd4330863f4cc0812180fbf1de122970a42c7885",
   "baselineEngineCommit": "09103c407081b73e7642606c1d685862869a3bae",
   "baselineStudioCommit": "f4d60ded9c9acfd2d291c468de6c727502569c13",
@@ -18821,5 +18821,6 @@
         "PS.MAT.G5.NBT.1.6"
       ]
     }
-  ]
+  ],
+  "verification": "docs/verification/phase2-results.json"
 }
