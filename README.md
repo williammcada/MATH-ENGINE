@@ -1,3 +1,13 @@
+# Phase 1 complete — v0.20.0-rc.2
+
+Introduction to PreAlgebra (8/7) now has 502 working entries: 132 source adaptations plus 370 authored curriculum tasks. All 331 coded outcomes have an explicit bounded task; 39 additional tasks cover the uncoded later lessons, investigations and appendix. All 133 course sections are represented. Math Engine owns the implementation; Studio provides selection and preview. Six English banks total 891 working entries.
+
+[Phase 1 verification](docs/verification/phase1-87-v0.1.md) records exact-math, response-contract, browser and layout checks. Phase 2 remains the comprehensive breadth/variation/deduplication review; phase 3 remains finished teacher output. Full-outcome and automatic-assignment flags are not promoted. Grade 5-only standards-driven differentiation and the pause on other-course expansion remain.
+
+[Current coverage map](curriculum/mcada-g5/focus-v0.3/COVERAGE-AUDIT.md).
+
+Historical checkpoints follow.
+
 # Current 8/7-first candidate — v0.19.0-rc.2
 
 Added 30 authored curriculum tasks for the Lessons 1–6 outcomes. Introduction to PreAlgebra (8/7) now has 162 working bank entries: 132 imported-source adaptations plus 30 original tasks. All banks total 551 working entries; other-course expansion remains paused. [Specification](docs/change-specs/foundations87-v0.1.md) · [Verification](docs/verification/foundations87-v0.1.md). The 331-outcome inventory has 151 rows with working components/candidates and 180 without a linked task; these are not full coverage counts. Next: Lessons 7–10. No release/deployment or packet-output completion claim.

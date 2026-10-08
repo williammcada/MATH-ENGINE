@@ -93,4 +93,4 @@ for line in lines:
   svgs+=1
 assert not missing,sorted(missing)
 assert len(seen)==340
-print(json.dumps(dict(result='passed',contracts=len(seen),instances=len(lines),numericOracles=numeric,textChecks=texts,teacherContracts=teachers,svgModels=svgs)))
+print(json.dumps(dict(result='passed',contracts=len(seen),instances=len(lines),numericOracles=numeric,textResponseInstances=texts,teacherReviewInstances=teachers,svgModels=svgs)))
