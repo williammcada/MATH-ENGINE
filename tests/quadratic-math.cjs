@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict'),Q=require('../src/quadratic-math.js');
-const same=(a,b)=>assert.ok(Q.same(Q.parse(a),Q.parse(b)),roots=(a,b,c)=>Q.solve(a,b,c).roots.map(Q.serialize);
+const same=(a,b)=>assert.ok(Q.same(Q.parse(a),Q.parse(b))),roots=(a,b,c)=>Q.solve(a,b,c).roots.map(Q.serialize);
 same('sqrt(12)','2*sqrt(3)');same('(1+sqrt(5))/2','1/2+sqrt(20)/4');same('1/(1+sqrt(2))','sqrt(2)-1');same('-1 1/2','-3/2');same('sqrt(0)','0');same('sqrt(1)','1');same('sqrt(1000000)','1000');same('sqrt(2)*sqrt(2)','2');same('(1-sqrt(5))/(2)','1/2-1/2*sqrt(5)');
 const r=roots(1,-1,-1);assert.ok(Q.checkRoots(r,'(1-sqrt(5))/2;(1+sqrt(5))/2'));assert.ok(!Q.checkRoots(r,'(1+sqrt(5))/2'));assert.ok(!Q.checkRoots(r,'(1+sqrt(5))/2;(1+sqrt(5))/2'));assert.ok(!Q.checkRoots(r,'1.61803399;-0.61803399'));assert.ok(!Q.checkRoots(r,'(1+sqrt(5))/2;(1-sqrt(5))/2;0'));
 assert.ok(Q.checkRoots(roots(2,-4,2),'1'));assert.ok(!Q.checkRoots(roots(2,-4,2),'1;1'));assert.equal(Q.solve(1,0,1).classification,'two nonreal complex solutions');assert.equal(Q.solve(1,0,0).classification,'one real solution');assert.equal(Q.solve(1,0,-1).classification,'two real solutions');assert.throws(()=>Q.solve(0,1,1));
