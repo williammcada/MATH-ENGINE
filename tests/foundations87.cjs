@@ -1,6 +1,6 @@
 const assert=require('node:assert/strict'),E=require('../src/course-banks'),F=require('../src/foundations87'),fs=require('node:fs');
 const q=(r,index=0)=>E.generate('course-87-en:authored:MCADA-'+r,{seed:'boundaries',index}),ok=(q,s)=>E.checkAnswer(q,s).answerCorrect;
-assert.equal(F.catalog.length,30);assert.equal(E.catalog.length,551);assert.equal(new Set(E.catalog.map(c=>c.sourceId)).size,551);
+assert.equal(F.catalog.length,30);assert.equal(E.catalog.length,891);assert.equal(new Set(E.catalog.map(c=>c.sourceId)).size,891);
 for(const c of F.catalog){const z=q(c.recipe);assert.ok(Object.isFrozen(z)&&Object.isFrozen(z.answer));for(const s of ['',null,'<script>','NaN','Infinity','1e9','0'.repeat(700)])assert.equal(ok(z,s),false,c.recipe+': '+s);}
 for(let i=0;i<30;i++){
  const z=q('1.8',i);assert.ok(ok(z,E.answerText(z)));assert.equal(ok(z,String(z.answer.quotient)),false);if(z.answer.kind==='mixed-division'){const a=z.answer;assert.equal(ok(z,`${a.quotient} ${2*a.remainder}/${2*a.divisor}`),false);}
