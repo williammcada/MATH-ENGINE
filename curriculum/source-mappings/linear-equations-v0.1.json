@@ -1,0 +1,2271 @@
+[
+  {
+    "sourceId": "algebra-1-en:node:293",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with fractions",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:23",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "539ec5224db8bb0e64c03e31e073423df8885d1ee75d1c9715a5fa30b8a0c203",
+      "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2",
+      "fcdb400d5eb0ba4770f9a13c2bfd0fa85d9e7f17f77d37540c5c820e78086d4c"
+    ],
+    "reviewedShape": "x+a=b",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "variable",
+            "name": "x"
+          },
+          "right": {
+            "type": "parameter",
+            "name": "a"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "b"
+        }
+      },
+      "parameters": {
+        "a": [
+          3,
+          17,
+          3,
+          true
+        ],
+        "b": [
+          13,
+          39,
+          6
+        ]
+      },
+      "mode": "rational",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-1-en:node:297",
+    "family": "structured-linear",
+    "title": "Solve a linear equation",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:24",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "a3e58d90c5e6fc1f69a6bacf07fba4a2de8b558e90737236a142dafdc88e38ae",
+      "4d468862ae25ee53e23db376e0e1b8ec0a067f77cd078c44cca7a13781a82ba4",
+      "038ebf93940c6c1410de8454c10c28a285d7eb40ba67c9f9013812693e54f4df"
+    ],
+    "reviewedShape": "x/a=b",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "div",
+          "left": {
+            "type": "variable",
+            "name": "x"
+          },
+          "right": {
+            "type": "parameter",
+            "name": "a"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "b"
+        }
+      },
+      "parameters": {
+        "a": [
+          3,
+          9,
+          1
+        ],
+        "b": [
+          4,
+          10,
+          1
+        ]
+      },
+      "mode": "integer",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-1-en:node:298",
+    "family": "structured-linear",
+    "title": "Solve a linear equation",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:24",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "6cc6c0c58cd5c456226bdda0295cebc7af865f2fe9ef2a1ba46dc2b559eae916",
+      "c8f19ac348bdeedfc0d28a66cc706b80901ace69b5effcb03b7290c7d52e5b6a",
+      "659a28e96f400fd1b96aaf32fe3f8c2765d48121eae3dc4b12af1f63b57756df"
+    ],
+    "reviewedShape": "a=b*x",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "parameter",
+          "name": "a"
+        },
+        "right": {
+          "type": "mul",
+          "left": {
+            "type": "parameter",
+            "name": "b"
+          },
+          "right": {
+            "type": "variable",
+            "name": "x"
+          }
+        }
+      },
+      "parameters": {
+        "a": [
+          6,
+          81,
+          1
+        ],
+        "b": [
+          3,
+          9,
+          1
+        ]
+      },
+      "mode": "integer",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-1-en:node:302",
+    "family": "structured-linear",
+    "title": "Solve a linear equation",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:25",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "48bb9fbab16721ba5e2370500284f1ddebd6752463e1d71466bf4e56672529ad",
+      "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2",
+      "04fa4c9ab59a58589ed1a02dd3b43dd423fccac98f88e9efb9230f4274ee66b2"
+    ],
+    "reviewedShape": "a*x+b=c",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "a"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "b"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "c"
+        }
+      },
+      "parameters": {
+        "a": [
+          2,
+          5,
+          1
+        ],
+        "b": [
+          1,
+          7,
+          1,
+          true
+        ],
+        "c": [
+          2,
+          42,
+          1
+        ]
+      },
+      "mode": "integer",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-1-en:node:303",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with fractions",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:25",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "94ce3513a04890dfc115f0c908b962186b11a89361496d6cd7cc7a36c974492e",
+      "c2dc48afca638568259447c486a64502d9525fd205c85340467a730939868228",
+      "815676ce68a11a5161f0a25aeb0ecd31080d0226638654063078badde5b368ed"
+    ],
+    "reviewedShape": "a*x+b=c",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "a"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "b"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "c"
+        }
+      },
+      "parameters": {
+        "a": [
+          1,
+          11,
+          12,
+          true
+        ],
+        "b": [
+          1,
+          11,
+          12,
+          true
+        ],
+        "c": [
+          1,
+          11,
+          12,
+          true
+        ]
+      },
+      "mode": "rational",
+      "positiveAnswer": false,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-1-en:node:304",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with fractions",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:25",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "81b227c3a740f2fa5b521fb08a8b9e77662bd3db4d7b72b935723f1be18faf78",
+      "c2dc48afca638568259447c486a64502d9525fd205c85340467a730939868228",
+      "644ff5a882eec8991685d6850efcca8949480efaa86d674d9e5b876958d0706c"
+    ],
+    "reviewedShape": "a+b*x=c",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "parameter",
+            "name": "a"
+          },
+          "right": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "b"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "c"
+        }
+      },
+      "parameters": {
+        "a": [
+          7,
+          23,
+          6,
+          true
+        ],
+        "b": [
+          7,
+          23,
+          6,
+          true
+        ],
+        "c": [
+          7,
+          23,
+          6,
+          true
+        ]
+      },
+      "mode": "rational",
+      "positiveAnswer": false,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-1-en:node:305",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with fractions",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:25",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "0c2e4eb59ceed8cb27e82446accb5a9aa24ee21c71127fbfc175b3d06b9d1ec0",
+      "c2dc48afca638568259447c486a64502d9525fd205c85340467a730939868228",
+      "6c0affba6d890fd0444d41ec5f195e068d5336e5728a4ac28927c86f9d811f64"
+    ],
+    "reviewedShape": "a*x+b+c*x=d",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "add",
+            "left": {
+              "type": "mul",
+              "left": {
+                "type": "parameter",
+                "name": "a"
+              },
+              "right": {
+                "type": "variable",
+                "name": "x"
+              }
+            },
+            "right": {
+              "type": "parameter",
+              "name": "b"
+            }
+          },
+          "right": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "c"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "d"
+        }
+      },
+      "parameters": {
+        "a": [
+          7,
+          23,
+          6,
+          true
+        ],
+        "b": [
+          7,
+          23,
+          6,
+          true
+        ],
+        "c": [
+          1,
+          1,
+          3
+        ],
+        "d": [
+          7,
+          23,
+          6,
+          true
+        ]
+      },
+      "mode": "rational",
+      "positiveAnswer": false,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-1-en:node:309",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with fractions",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:26",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "850f8b50adaa9c176a1d6989e998fc63bc661ad0420c6cd1caa488db3be573a0",
+      "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2",
+      "b2d554f550a66a76e8ace3ec000f0fc6ff3ef7d391f18dd6ea38025c880c98f0"
+    ],
+    "reviewedShape": "a*x+b+c*x+d=e+f*x+g*x+h",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "add",
+            "left": {
+              "type": "add",
+              "left": {
+                "type": "mul",
+                "left": {
+                  "type": "parameter",
+                  "name": "a"
+                },
+                "right": {
+                  "type": "variable",
+                  "name": "x"
+                }
+              },
+              "right": {
+                "type": "parameter",
+                "name": "b"
+              }
+            },
+            "right": {
+              "type": "mul",
+              "left": {
+                "type": "parameter",
+                "name": "c"
+              },
+              "right": {
+                "type": "variable",
+                "name": "x"
+              }
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "d"
+          }
+        },
+        "right": {
+          "type": "add",
+          "left": {
+            "type": "add",
+            "left": {
+              "type": "add",
+              "left": {
+                "type": "parameter",
+                "name": "e"
+              },
+              "right": {
+                "type": "mul",
+                "left": {
+                  "type": "parameter",
+                  "name": "f"
+                },
+                "right": {
+                  "type": "variable",
+                  "name": "x"
+                }
+              }
+            },
+            "right": {
+              "type": "mul",
+              "left": {
+                "type": "parameter",
+                "name": "g"
+              },
+              "right": {
+                "type": "variable",
+                "name": "x"
+              }
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "h"
+          }
+        }
+      },
+      "parameters": {
+        "a": [
+          1,
+          6,
+          1,
+          true
+        ],
+        "b": [
+          1,
+          5,
+          1,
+          true
+        ],
+        "c": [
+          1,
+          6,
+          1,
+          true
+        ],
+        "d": [
+          1,
+          5,
+          1,
+          true
+        ],
+        "e": [
+          1,
+          5,
+          1,
+          true
+        ],
+        "f": [
+          1,
+          4,
+          1,
+          true
+        ],
+        "g": [
+          1,
+          4,
+          1,
+          true
+        ],
+        "h": [
+          1,
+          5,
+          1,
+          true
+        ]
+      },
+      "mode": "rational",
+      "positiveAnswer": false,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-1-en:node:316",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with decimals",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:27",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "7340757e968e7b99bf72c53ce8d5b5f672f590c80564119ec880614458d5fd66",
+      "3c0700ac95d3c90308d87cd1be4e938110c02270939c4b63090010d7724cc110",
+      "45934ad4208f1ec4360588e7bc1fb03710adb9bedfc901f1213da47bf2d97fe3"
+    ],
+    "reviewedShape": "a*x+b=c",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "a"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "b"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "c"
+        }
+      },
+      "parameters": {
+        "a": [
+          21,
+          59,
+          10
+        ],
+        "b": [
+          2,
+          19,
+          10,
+          true
+        ],
+        "c": [
+          2,
+          600,
+          100
+        ]
+      },
+      "mode": "decimal",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-1-en:node:317",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with decimals",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:27",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "850f8b50adaa9c176a1d6989e998fc63bc661ad0420c6cd1caa488db3be573a0",
+      "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2",
+      "ab20ac3e23517ffca54593bc0a2aabba2bbbbb0644ba655c2c70a0490aa8df08"
+    ],
+    "reviewedShape": "a*x-b+c*x=d",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "sub",
+            "left": {
+              "type": "mul",
+              "left": {
+                "type": "parameter",
+                "name": "a"
+              },
+              "right": {
+                "type": "variable",
+                "name": "x"
+              }
+            },
+            "right": {
+              "type": "parameter",
+              "name": "b"
+            }
+          },
+          "right": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "c"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "d"
+        }
+      },
+      "parameters": {
+        "a": [
+          1,
+          6,
+          10
+        ],
+        "b": [
+          2,
+          7,
+          100
+        ],
+        "c": [
+          1,
+          6,
+          10
+        ],
+        "d": [
+          1,
+          800,
+          100
+        ]
+      },
+      "mode": "decimal",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-1-en:node:354",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with fractions",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:31",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "850f8b50adaa9c176a1d6989e998fc63bc661ad0420c6cd1caa488db3be573a0",
+      "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2",
+      "453d1fa0f66e2f084a42d129b52d44ac64de546c08abc307f51e86cdfc3a88de"
+    ],
+    "reviewedShape": "a*x-b*(c*x+d)=e*x+f",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "sub",
+          "left": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "a"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          },
+          "right": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "b"
+            },
+            "right": {
+              "type": "add",
+              "left": {
+                "type": "mul",
+                "left": {
+                  "type": "parameter",
+                  "name": "c"
+                },
+                "right": {
+                  "type": "variable",
+                  "name": "x"
+                }
+              },
+              "right": {
+                "type": "parameter",
+                "name": "d"
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "add",
+          "left": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "e"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "f"
+          }
+        }
+      },
+      "parameters": {
+        "a": [
+          2,
+          5,
+          1
+        ],
+        "b": [
+          2,
+          5,
+          1
+        ],
+        "c": [
+          2,
+          5,
+          1
+        ],
+        "d": [
+          2,
+          5,
+          1
+        ],
+        "e": [
+          2,
+          5,
+          1
+        ],
+        "f": [
+          2,
+          5,
+          1
+        ]
+      },
+      "mode": "rational",
+      "positiveAnswer": false,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-1-en:node:355",
+    "family": "structured-linear",
+    "title": "Solve a linear equation",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:31",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "850f8b50adaa9c176a1d6989e998fc63bc661ad0420c6cd1caa488db3be573a0",
+      "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2",
+      "a896c856ee0235255d0e32fc91cb0a9f2bbd334d5677131b1a86e9dc74599237"
+    ],
+    "reviewedShape": "x-a*(x-b)=f-(d*x+e)",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "sub",
+          "left": {
+            "type": "variable",
+            "name": "x"
+          },
+          "right": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "a"
+            },
+            "right": {
+              "type": "sub",
+              "left": {
+                "type": "variable",
+                "name": "x"
+              },
+              "right": {
+                "type": "parameter",
+                "name": "b"
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "sub",
+          "left": {
+            "type": "parameter",
+            "name": "f"
+          },
+          "right": {
+            "type": "add",
+            "left": {
+              "type": "mul",
+              "left": {
+                "type": "parameter",
+                "name": "d"
+              },
+              "right": {
+                "type": "variable",
+                "name": "x"
+              }
+            },
+            "right": {
+              "type": "parameter",
+              "name": "e"
+            }
+          }
+        }
+      },
+      "parameters": {
+        "a": [
+          2,
+          6,
+          1
+        ],
+        "b": [
+          2,
+          6,
+          1
+        ],
+        "d": [
+          2,
+          6,
+          1
+        ],
+        "e": [
+          2,
+          6,
+          1
+        ],
+        "f": [
+          1,
+          10,
+          1,
+          true
+        ]
+      },
+      "mode": "integer",
+      "positiveAnswer": false,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-1-en:node:356",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with fractions",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:31",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "850f8b50adaa9c176a1d6989e998fc63bc661ad0420c6cd1caa488db3be573a0",
+      "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2",
+      "6d250cec9696fd3d6ed4c60933a9a25e157fc769c32aa30e8c39baaab9d235ad"
+    ],
+    "reviewedShape": "a*(b-x)-(-c)*(x-d)=-(e*x-f)",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "sub",
+          "left": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "a"
+            },
+            "right": {
+              "type": "sub",
+              "left": {
+                "type": "parameter",
+                "name": "b"
+              },
+              "right": {
+                "type": "variable",
+                "name": "x"
+              }
+            }
+          },
+          "right": {
+            "type": "mul",
+            "left": {
+              "type": "neg",
+              "arg": {
+                "type": "parameter",
+                "name": "c"
+              }
+            },
+            "right": {
+              "type": "sub",
+              "left": {
+                "type": "variable",
+                "name": "x"
+              },
+              "right": {
+                "type": "parameter",
+                "name": "d"
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "neg",
+          "arg": {
+            "type": "sub",
+            "left": {
+              "type": "mul",
+              "left": {
+                "type": "parameter",
+                "name": "e"
+              },
+              "right": {
+                "type": "variable",
+                "name": "x"
+              }
+            },
+            "right": {
+              "type": "parameter",
+              "name": "f"
+            }
+          }
+        }
+      },
+      "parameters": {
+        "a": [
+          2,
+          5,
+          1
+        ],
+        "b": [
+          2,
+          5,
+          1
+        ],
+        "c": [
+          2,
+          5,
+          1
+        ],
+        "d": [
+          2,
+          5,
+          1
+        ],
+        "e": [
+          2,
+          5,
+          1
+        ],
+        "f": [
+          2,
+          5,
+          1
+        ]
+      },
+      "mode": "rational",
+      "positiveAnswer": false,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-1-en:node:358",
+    "family": "structured-linear",
+    "title": "Solve a linear equation",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:31",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "48bb9fbab16721ba5e2370500284f1ddebd6752463e1d71466bf4e56672529ad",
+      "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2",
+      "05d81f9874d6afc52deb292c0582aebcb0af2d92710c0b2cd817ccd2b3dd77cf"
+    ],
+    "reviewedShape": "-(x+a)+b*(x+c)=d",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "neg",
+            "arg": {
+              "type": "add",
+              "left": {
+                "type": "variable",
+                "name": "x"
+              },
+              "right": {
+                "type": "parameter",
+                "name": "a"
+              }
+            }
+          },
+          "right": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "b"
+            },
+            "right": {
+              "type": "add",
+              "left": {
+                "type": "variable",
+                "name": "x"
+              },
+              "right": {
+                "type": "parameter",
+                "name": "c"
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "d"
+        }
+      },
+      "parameters": {
+        "a": [
+          -5,
+          -1,
+          1
+        ],
+        "b": [
+          -5,
+          -1,
+          1
+        ],
+        "c": [
+          -5,
+          -1,
+          1
+        ],
+        "d": [
+          -80,
+          80,
+          1
+        ]
+      },
+      "mode": "integer",
+      "positiveAnswer": false,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-1-en:node:359",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with decimals",
+    "course": "Algebra 1",
+    "lessonId": "algebra-1-en:scope:31",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "aaf68e086ebac7b975d05e08556f0e56dd1e503bc5bde9ef54e879a74ac4b878",
+      "850f8b50adaa9c176a1d6989e998fc63bc661ad0420c6cd1caa488db3be573a0",
+      "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2",
+      "5569d49ca84b4b7e8216e5f57dc12334885fb20616270a6e8c2ce9b97916d688"
+    ],
+    "reviewedShape": "a*x+b=c*(-x+d)",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "a"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "b"
+          }
+        },
+        "right": {
+          "type": "mul",
+          "left": {
+            "type": "parameter",
+            "name": "c"
+          },
+          "right": {
+            "type": "add",
+            "left": {
+              "type": "neg",
+              "arg": {
+                "type": "variable",
+                "name": "x"
+              }
+            },
+            "right": {
+              "type": "parameter",
+              "name": "d"
+            }
+          }
+        }
+      },
+      "parameters": {
+        "a": [
+          1,
+          9,
+          10
+        ],
+        "b": [
+          -100,
+          100,
+          100
+        ],
+        "c": [
+          2,
+          5,
+          1
+        ],
+        "d": [
+          2,
+          8,
+          10
+        ]
+      },
+      "mode": "decimal",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-half-en:node:276",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with decimals",
+    "course": "Algebra 1/2",
+    "lessonId": "algebra-half-en:scope:37",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "c12daa5aefcd00d755bdcbbf1c18a0e0e83a8a4b54eab14afec7bc17f50e7baa",
+      "83f0a54c7dddf9502c674baff281d4fc75b7d24ee0162edbf8c8cbd84dfcf19b",
+      "2a6a4d4373acb50d9574d1e6150a45c716b7d6768063a6f89ec4f31fa1b2d7f3",
+      "9b2f85697295be2561e0244d26993d2b51fb034e00508a4f2378e4a2593efb08"
+    ],
+    "reviewedShape": "x+a=b",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "variable",
+            "name": "x"
+          },
+          "right": {
+            "type": "parameter",
+            "name": "a"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "b"
+        }
+      },
+      "parameters": {
+        "a": [
+          2,
+          999,
+          10000,
+          true
+        ],
+        "b": [
+          1110002,
+          9550999,
+          10000
+        ]
+      },
+      "mode": "decimal",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-half-en:node:277",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with fractions",
+    "course": "Algebra 1/2",
+    "lessonId": "algebra-half-en:scope:37",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "31409e7ef9b8f058b3d3bc459ecb1eb1b9b32c5c09827c829e76ec524a2ba806",
+      "6c41b8addc311339793fa2b0ae13b5a6ef7fccc56454c3841abd165fc443a5a9",
+      "3b7ea2d0e2dc301c4dd2561e95f4e8a590bf620ef44b6dab3fb47c4a882baacf",
+      "d886fa774e18f7a765d26ec031a2b9257c80b1241787c318ca6736e46cc0841b"
+    ],
+    "reviewedShape": "a+x=b",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "parameter",
+            "name": "a"
+          },
+          "right": {
+            "type": "variable",
+            "name": "x"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "b"
+        }
+      },
+      "parameters": {
+        "a": [
+          1,
+          11,
+          12
+        ],
+        "b": [
+          13,
+          47,
+          12
+        ]
+      },
+      "mode": "rational",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-half-en:node:287",
+    "family": "structured-linear",
+    "title": "Solve a linear equation",
+    "course": "Algebra 1/2",
+    "lessonId": "algebra-half-en:scope:39",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "eb5f69a0f5414405b890816d330d1350287ae73fe085f051dedcecfb62f22eaa",
+      "cf8ec1f1fc60ae6331b5f908aef82c35096c9174dd4dc376551da8afc670e9ca",
+      "947044b9f4ef149fbb8296d40a73b92173bd9c30112abf2ac688ccef3baa63fd",
+      "554e5fea8a22c026be2755ee7c805b5864c9caab1878fb132ce47600ab551ce7"
+    ],
+    "reviewedShape": "x-b=a",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "sub",
+          "left": {
+            "type": "variable",
+            "name": "x"
+          },
+          "right": {
+            "type": "parameter",
+            "name": "b"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "a"
+        }
+      },
+      "parameters": {
+        "a": [
+          10,
+          30,
+          1
+        ],
+        "b": [
+          1,
+          7,
+          1
+        ]
+      },
+      "mode": "integer",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-half-en:node:288",
+    "family": "structured-linear",
+    "title": "Solve a linear equation",
+    "course": "Algebra 1/2",
+    "lessonId": "algebra-half-en:scope:39",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "eb5f69a0f5414405b890816d330d1350287ae73fe085f051dedcecfb62f22eaa",
+      "cf8ec1f1fc60ae6331b5f908aef82c35096c9174dd4dc376551da8afc670e9ca",
+      "947044b9f4ef149fbb8296d40a73b92173bd9c30112abf2ac688ccef3baa63fd",
+      "3e97024b3e2e998f0226d03d6a41cd307762f233edfcffb0ac9f81a453fa5814"
+    ],
+    "reviewedShape": "x+b=a",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "variable",
+            "name": "x"
+          },
+          "right": {
+            "type": "parameter",
+            "name": "b"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "a"
+        }
+      },
+      "parameters": {
+        "a": [
+          10,
+          30,
+          1
+        ],
+        "b": [
+          1,
+          7,
+          1
+        ]
+      },
+      "mode": "integer",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-half-en:node:297",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with fractions",
+    "course": "Algebra 1/2",
+    "lessonId": "algebra-half-en:scope:40",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "6edd7b8a4fc0cf13c1f1611605189834c4c6b209af67a240c1da0c604e1dfb50",
+      "3a1005e6a34156360b541659fb7b67f5f039bee9e8cb297245e93dadd400f272",
+      "3d84e371bc2b3e9f5dde73922a349f8b67e1f14b65ad1143997f77efe3cffb18",
+      "42b90624e6d9116228e191c55457866413ff74d245f323ae73805c615f2cd108"
+    ],
+    "reviewedShape": "a*x=b",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "mul",
+          "left": {
+            "type": "parameter",
+            "name": "a"
+          },
+          "right": {
+            "type": "variable",
+            "name": "x"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "b"
+        }
+      },
+      "parameters": {
+        "a": [
+          1,
+          9,
+          10
+        ],
+        "b": [
+          1,
+          9,
+          10
+        ]
+      },
+      "mode": "rational",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-half-en:node:413",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with fractions",
+    "course": "Algebra 1/2",
+    "lessonId": "algebra-half-en:scope:61",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "f58bb1d508a0b3552d78fd8842a1a20b694a6e74f747f9c71b208c6dfb660239",
+      "28f2e4b75ba1e0fbc011fb9d31819b204126482a25ef1c31911cb6035ff10016",
+      "d2c6bedaeab00667da8365192bbea45a8414c36e56628ad1fddf3206acc6645b",
+      "660ceae43024046965fb03d686a3c435785d04ee1eff4fef32862e13c198fdf5"
+    ],
+    "reviewedShape": "a*x+b=c",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "a"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "b"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "c"
+        }
+      },
+      "parameters": {
+        "a": [
+          10,
+          18,
+          1
+        ],
+        "b": [
+          2,
+          12,
+          1,
+          true
+        ],
+        "c": [
+          2,
+          16,
+          1
+        ]
+      },
+      "mode": "rational",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-half-en:node:414",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with fractions",
+    "course": "Algebra 1/2",
+    "lessonId": "algebra-half-en:scope:61",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "f9b4959a3d2e037e46e9d291b02743991cf88b820a8a2d173e13d43e8a6d9412",
+      "f3308edc9e71f22da1d9d017ddcff9b301d12ad62a2dfe30f398838cd36d8657",
+      "70373fec93cf4671f3c79e4a130ad10bf37bcfe1a1e6f9a753dd29ffc8328ecf",
+      "908fa9774dea871d0e1b1ee2aee606b059a1d70667179ec61e958665c1874b59"
+    ],
+    "reviewedShape": "a*x-b=c",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "sub",
+          "left": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "a"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "b"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "c"
+        }
+      },
+      "parameters": {
+        "a": [
+          1,
+          5,
+          6
+        ],
+        "b": [
+          1,
+          3,
+          6
+        ],
+        "c": [
+          1,
+          25,
+          6
+        ]
+      },
+      "mode": "rational",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-half-en:node:415",
+    "family": "structured-linear",
+    "title": "Solve a linear equation",
+    "course": "Algebra 1/2",
+    "lessonId": "algebra-half-en:scope:61",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "f9b4959a3d2e037e46e9d291b02743991cf88b820a8a2d173e13d43e8a6d9412",
+      "54b5e6b77d7cd36e84fb275a41404d9acfcb65288419590b11816960ed4e0282",
+      "70373fec93cf4671f3c79e4a130ad10bf37bcfe1a1e6f9a753dd29ffc8328ecf",
+      "9a4c9f69f49dec69b301e3461f89ff32f02fd30699bcf4966fe7b868a87cfa54"
+    ],
+    "reviewedShape": "a*x+b=c",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "a"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "b"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "c"
+        }
+      },
+      "parameters": {
+        "a": [
+          2,
+          25,
+          1
+        ],
+        "b": [
+          2,
+          58,
+          1,
+          true
+        ],
+        "c": [
+          2,
+          200,
+          1
+        ]
+      },
+      "mode": "integer",
+      "positiveAnswer": true,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-half-en:node:531",
+    "family": "structured-linear",
+    "title": "Solve a linear equation",
+    "course": "Algebra 1/2",
+    "lessonId": "algebra-half-en:scope:84",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "de0e3ea967f8dc0ead1def31dd634d1d9f05a85194ffd38e52bee57a15a52829",
+      "a7f30189cc81e7ccc30e690160c51d9e878ce4713af16d768a2772aeb6c7a29b",
+      "2a6a4d4373acb50d9574d1e6150a45c716b7d6768063a6f89ec4f31fa1b2d7f3",
+      "1d24b2e27b62c704b8c20ea149373d5c33bbcb0d4f700a4cd3c44b9afbe44dfe"
+    ],
+    "reviewedShape": "a*x=b",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "mul",
+          "left": {
+            "type": "parameter",
+            "name": "a"
+          },
+          "right": {
+            "type": "variable",
+            "name": "x"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "b"
+        }
+      },
+      "parameters": {
+        "a": [
+          -9,
+          -2,
+          1
+        ],
+        "b": [
+          6,
+          81,
+          1,
+          true
+        ]
+      },
+      "mode": "integer",
+      "positiveAnswer": false,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-half-en:node:532",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with fractions",
+    "course": "Algebra 1/2",
+    "lessonId": "algebra-half-en:scope:84",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "de0e3ea967f8dc0ead1def31dd634d1d9f05a85194ffd38e52bee57a15a52829",
+      "a7f30189cc81e7ccc30e690160c51d9e878ce4713af16d768a2772aeb6c7a29b",
+      "2a6a4d4373acb50d9574d1e6150a45c716b7d6768063a6f89ec4f31fa1b2d7f3",
+      "3159f44965dec15ce42c8c7b9097d5a5724d2c768788f64afa854fa5822bcee3"
+    ],
+    "reviewedShape": "a*x+b=c",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "a"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "b"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "c"
+        }
+      },
+      "parameters": {
+        "a": [
+          2,
+          15,
+          1,
+          true
+        ],
+        "b": [
+          4,
+          15,
+          1,
+          true
+        ],
+        "c": [
+          -40,
+          40,
+          1
+        ]
+      },
+      "mode": "rational",
+      "positiveAnswer": false,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-half-en:node:533",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with fractions",
+    "course": "Algebra 1/2",
+    "lessonId": "algebra-half-en:scope:84",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "20709004e1e9c527649a7cc097f8acfcf8cded28c599792da52321d2a762f479",
+      "a7f30189cc81e7ccc30e690160c51d9e878ce4713af16d768a2772aeb6c7a29b",
+      "2a6a4d4373acb50d9574d1e6150a45c716b7d6768063a6f89ec4f31fa1b2d7f3",
+      "d7bdb3c79009bf3d478685a9d72f8f8b8e4153d4d26a862ab2e70bdf13f13854"
+    ],
+    "reviewedShape": "a*x+b=c",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "a"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "b"
+          }
+        },
+        "right": {
+          "type": "parameter",
+          "name": "c"
+        }
+      },
+      "parameters": {
+        "a": [
+          7,
+          13,
+          6,
+          true
+        ],
+        "b": [
+          7,
+          17,
+          6,
+          true
+        ],
+        "c": [
+          37,
+          179,
+          36,
+          true
+        ]
+      },
+      "mode": "rational",
+      "positiveAnswer": false,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-half-en:node:580",
+    "family": "structured-linear",
+    "title": "Solve a linear equation",
+    "course": "Algebra 1/2",
+    "lessonId": "algebra-half-en:scope:95",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "28fb71b0aa45f5d3435857cda86a5306a1357c9c343eaf50ba5c12b4ffc668d7",
+      "df3422b9d25ef3a45faaf8baf7d0e8545898723f559f941440102af3640b938c",
+      "528096841ed6b3e780258b24ddcdeb301de54d18de1d267ec0475e58885aebde",
+      "95a3eaf890d8e52b59528fd3d91582b836c41893d709f488bd1537748f1db863"
+    ],
+    "reviewedShape": "a*x+b=c*x+d",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "a"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "b"
+          }
+        },
+        "right": {
+          "type": "add",
+          "left": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "c"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "d"
+          }
+        }
+      },
+      "parameters": {
+        "a": [
+          1,
+          6,
+          1,
+          true
+        ],
+        "b": [
+          1,
+          5,
+          1,
+          true
+        ],
+        "c": [
+          1,
+          6,
+          1,
+          true
+        ],
+        "d": [
+          1,
+          5,
+          1,
+          true
+        ]
+      },
+      "mode": "integer",
+      "positiveAnswer": false,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-half-en:node:583",
+    "family": "structured-linear",
+    "title": "Solve a linear equation",
+    "course": "Algebra 1/2",
+    "lessonId": "algebra-half-en:scope:96",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "91dafe566b6b224f9b28a664a0ae89ffb0360eda2d4b234e378bf5f810beb1cd",
+      "c8ff51a13d2901dbd93ed83857e09e986a21de93a0584f518db2f50676289f28",
+      "f8e98b4f603121071bc3a73241a8faebf9ef84650593f8b068ee6b4e66bd670e",
+      "ac168d96209b9ec7200f4f96e5baceb65663c8bf2c8ab6be612658e938c8e7c3"
+    ],
+    "reviewedShape": "a*x+b+c*x+d=e+f*x",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "add",
+            "left": {
+              "type": "add",
+              "left": {
+                "type": "mul",
+                "left": {
+                  "type": "parameter",
+                  "name": "a"
+                },
+                "right": {
+                  "type": "variable",
+                  "name": "x"
+                }
+              },
+              "right": {
+                "type": "parameter",
+                "name": "b"
+              }
+            },
+            "right": {
+              "type": "mul",
+              "left": {
+                "type": "parameter",
+                "name": "c"
+              },
+              "right": {
+                "type": "variable",
+                "name": "x"
+              }
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "d"
+          }
+        },
+        "right": {
+          "type": "add",
+          "left": {
+            "type": "parameter",
+            "name": "e"
+          },
+          "right": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "f"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          }
+        }
+      },
+      "parameters": {
+        "a": [
+          1,
+          7,
+          1,
+          true
+        ],
+        "b": [
+          1,
+          36,
+          1,
+          true
+        ],
+        "c": [
+          1,
+          7,
+          1,
+          true
+        ],
+        "d": [
+          1,
+          36,
+          1,
+          true
+        ],
+        "e": [
+          1,
+          36,
+          1,
+          true
+        ],
+        "f": [
+          1,
+          7,
+          1,
+          true
+        ]
+      },
+      "mode": "integer",
+      "positiveAnswer": false,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  },
+  {
+    "sourceId": "algebra-half-en:node:584",
+    "family": "structured-linear",
+    "title": "Solve a linear equation with fractions",
+    "course": "Algebra 1/2",
+    "lessonId": "algebra-half-en:scope:96",
+    "relationship": "original source-informed adaptation",
+    "sourceBlockSha256": [
+      "91dafe566b6b224f9b28a664a0ae89ffb0360eda2d4b234e378bf5f810beb1cd",
+      "c8ff51a13d2901dbd93ed83857e09e986a21de93a0584f518db2f50676289f28",
+      "f8e98b4f603121071bc3a73241a8faebf9ef84650593f8b068ee6b4e66bd670e",
+      "af01779f4e3ce1a8b37010e6e6f1d3304014093208bc64bc02976cc07f843b92"
+    ],
+    "reviewedShape": "a*x+b+c*x=d*x+e+f*x+g",
+    "template": {
+      "kind": "linear",
+      "expression": {
+        "type": "equation",
+        "left": {
+          "type": "add",
+          "left": {
+            "type": "add",
+            "left": {
+              "type": "mul",
+              "left": {
+                "type": "parameter",
+                "name": "a"
+              },
+              "right": {
+                "type": "variable",
+                "name": "x"
+              }
+            },
+            "right": {
+              "type": "parameter",
+              "name": "b"
+            }
+          },
+          "right": {
+            "type": "mul",
+            "left": {
+              "type": "parameter",
+              "name": "c"
+            },
+            "right": {
+              "type": "variable",
+              "name": "x"
+            }
+          }
+        },
+        "right": {
+          "type": "add",
+          "left": {
+            "type": "add",
+            "left": {
+              "type": "add",
+              "left": {
+                "type": "mul",
+                "left": {
+                  "type": "parameter",
+                  "name": "d"
+                },
+                "right": {
+                  "type": "variable",
+                  "name": "x"
+                }
+              },
+              "right": {
+                "type": "parameter",
+                "name": "e"
+              }
+            },
+            "right": {
+              "type": "mul",
+              "left": {
+                "type": "parameter",
+                "name": "f"
+              },
+              "right": {
+                "type": "variable",
+                "name": "x"
+              }
+            }
+          },
+          "right": {
+            "type": "parameter",
+            "name": "g"
+          }
+        }
+      },
+      "parameters": {
+        "a": [
+          1,
+          15,
+          1,
+          true
+        ],
+        "b": [
+          1,
+          15,
+          1,
+          true
+        ],
+        "c": [
+          1,
+          15,
+          1,
+          true
+        ],
+        "d": [
+          1,
+          15,
+          1,
+          true
+        ],
+        "e": [
+          1,
+          15,
+          1,
+          true
+        ],
+        "f": [
+          1,
+          15,
+          1,
+          true
+        ],
+        "g": [
+          1,
+          15,
+          1,
+          true
+        ]
+      },
+      "mode": "rational",
+      "positiveAnswer": false,
+      "variable": "x",
+      "maxAnswer": 10000
+    },
+    "adaptation": "Author-selected bounded ranges; independent sampling replaces source case tables and dependent construction. Fraction layout and variable letter standardized. Source scripts not executed."
+  }
+]

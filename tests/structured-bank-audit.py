@@ -2,7 +2,7 @@
 import fractions,json,pathlib,subprocess
 F=fractions.Fraction
 root=pathlib.Path(__file__).resolve().parents[1]
-code="const E=require('./src/course-banks.js');for(const c of E.catalog.filter(x=>x.family.startsWith('structured-')))for(let i=0;i<1000;i++){const q=E.generate(c.sourceId,{seed:'independent-python',index:i});if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'independent-python',index:i})))throw Error('Replay');if(!E.checkAnswer(q,E.answerText(q)).answerCorrect||E.checkAnswer(q,'nonsense').answerCorrect)throw Error('Answer check');console.log(JSON.stringify(q));}"
+code="const E=require('./src/course-banks.js');for(const c of E.catalog.filter(x=>['structured-arithmetic','structured-equation'].includes(x.family)))for(let i=0;i<1000;i++){const q=E.generate(c.sourceId,{seed:'independent-python',index:i});if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'independent-python',index:i})))throw Error('Replay');if(!E.checkAnswer(q,E.answerText(q)).answerCorrect||E.checkAnswer(q,'nonsense').answerCorrect)throw Error('Answer check');console.log(JSON.stringify(q));}"
 p=subprocess.Popen(['node','-e',code],cwd=root,stdout=subprocess.PIPE,text=True)
 def ev(n,x=None):
  t=n['type']
