@@ -1,3 +1,7 @@
+# Current candidate — v0.18.0-rc.1
+
+16 more adaptations bring coverage to 521 / 5,425 English source records; 4,904 remain unintegrated. Added complex roots, polar coordinates, compound inequalities, symbolic formulas and protractor reading. [Specification](change-specs/v0.18.0-algebra-review.md) · [Verification](verification/v0.18.0-algebra-review.md). Independent math, source links, layout and all-entry UI checks passed. Broader step 1 remains open. Verified implementation only; no release/deployment. Grade 5-only differentiation retained. Historical states follow.
+
 # Current candidate — v0.17.0-rc.1
 
 16 more adaptations bring coverage to 505 / 5,425 English source records; 4,920 remain unintegrated. Added solid measurements, scales and number-representation arithmetic. [Specification](change-specs/v0.17.0-solids.md) · [Verification](verification/v0.17.0-solids.md). Independent math, source links, layout and all-entry UI checks passed. Broader step 1 remains open. Verified implementation only; no release/deployment. Grade 5-only differentiation retained. Historical states follow.
