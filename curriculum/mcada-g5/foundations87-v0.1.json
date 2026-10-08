@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "status": "implementation-contracts",
+  "status": "verified-bounded-task-contracts",
   "tasks": [
     {
       "sourceId": "course-87-en:authored:MCADA-1.1",
@@ -15,7 +15,9 @@
       "objective": "Distinguish between counting (natural) numbers and whole numbers.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Zero, positive integers, negative integers and positive half-integers. Counting starts at 1; classify membership in both sets.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-1.2",
@@ -30,7 +32,9 @@
       "objective": "Identify four fundamental operations of arithmetic.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "All four operations, one per variant; enter its name.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-1.3",
@@ -45,7 +49,9 @@
       "objective": "Identify and name the parts of addition, subtraction, multiplication, and division problems.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "All operand/result positions for all four operations, including repeated addend/factor roles.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-1.4",
@@ -60,7 +66,9 @@
       "objective": "Express dollars and cents correctly.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Whole-cent amounts from 1 to 99,999 cents, including single-digit cents; dollars require $ and exactly two decimal places, cents require ¢.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-1.5",
@@ -75,7 +83,9 @@
       "objective": "Evaluate an expression with variables when the variables are assigned specific values.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Three expression forms over x=2–12, y=2–9, z=2–8; includes grouping, multiple variables and exact fractional results.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-1.6",
@@ -90,7 +100,9 @@
       "objective": "Multiply with whole and decimal numbers.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Whole 12–999 times 12–99; exact hundredths amount 0.11–9.99 times tenths amount 1.1–9.9. Decimal-only response for decimal multiplication.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-1.7",
@@ -105,7 +117,9 @@
       "objective": "Divide with whole number divisors and decimal number dividends.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Whole divisors 2–25; nonintegral decimal dividends constructed from exact thousandths quotients. Exact decimal answer.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-1.8",
@@ -120,7 +134,9 @@
       "objective": "Divide with whole number divisors and dividends where the quotient requires a remainder or fraction.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Divisors 3–19 and quotients 2–99, nonzero remainder below divisor; alternating quotient-R-remainder and reduced mixed-number response.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-2.1",
@@ -135,7 +151,9 @@
       "objective": "Identify the properties of operations.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Commutative and associative addition/multiplication, distributive multiplication over addition, additive/multiplicative identity and zero multiplication; identify the property.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-2.2",
@@ -150,7 +168,9 @@
       "objective": "Illustrate the properties of operations.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Same property roster; write a complete numeric equality with given digits/order. Both equality directions accepted; bounded grammar, not unrestricted symbolic equivalence.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-2.3",
@@ -165,7 +185,9 @@
       "objective": "Determine a pattern or rule for a sequence and then apply the rule to continue the sequence.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Increasing/decreasing constant-step sequences; report the signed step and next three terms.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-2.4",
@@ -180,7 +202,9 @@
       "objective": "Illustrate the commutative property of addition or multiplication by giving an example involving specified digits.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Commutative addition/multiplication with two distinct specified digits; write a complete equality.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-2.5",
@@ -195,7 +219,9 @@
       "objective": "Illustrate the associative property of addition or multiplication by giving an example involving specified digits.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Associative addition/multiplication with three distinct specified digits, preserving their order; write a complete equality.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-2.6",
@@ -210,7 +236,9 @@
       "objective": "Illustrate why the associative and commutative properties do not apply to the operations of subtraction or division.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Evaluate both sides of four counterexample forms: subtraction/division, commutative/associative; unequal results illustrate failure. Worked solution explains the conclusion.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-3.1",
@@ -225,7 +253,9 @@
       "objective": "Find the value of a variable in addition, subtraction, multiplication, and division equations.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "All four operations, either operand unknown; positive integer operands and results, nontrivial multiplication/division.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-3.2",
@@ -240,7 +270,9 @@
       "objective": "Find a missing addend in an equation or number sentence.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Unknown addend in either position, exact integer answer.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-3.3",
@@ -255,7 +287,9 @@
       "objective": "Find a missing factor in an equation or number sentence.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Unknown factor in either position, factors at least 2.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-3.4",
@@ -270,7 +304,9 @@
       "objective": "Find a missing minuend or subtrahend in an equation or number sentence.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Both missing minuend and missing subtrahend, positive integer differences.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-3.5",
@@ -285,7 +321,9 @@
       "objective": "Find a missing divisor or dividend in an equation or number sentence.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Both missing dividend and missing divisor, quotient at least 2.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-4.1",
@@ -300,7 +338,9 @@
       "objective": "Compare and order numbers on a number line.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Read three marked integer points on a -10 to 10 number line; order all three and compare A with B.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-4.2",
@@ -315,7 +355,9 @@
       "objective": "Use comparison symbols to compare numbers.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Integers from -100 to 100, including negatives, zero and explicit equality branches; enter <, > or =.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-4.3",
@@ -330,7 +372,9 @@
       "objective": "Add and subtract integers on a number line.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Start -5 to 5; add/subtract positive or negative 1–5 with plotted start, directional arrow and ticks. Result stays within -10 to 10.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-5.1",
@@ -345,7 +389,9 @@
       "objective": "Identify the place value of digits in whole numbers to hundred trillions.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "All 15 place positions through hundred trillions, repeated/zero digits and explicit standalone zero; target digit identified by position from the left.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-5.2",
@@ -360,7 +406,9 @@
       "objective": "Write whole numbers in expanded notation.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Whole numbers through 999,999,999,999,999, including zero places and standalone zero; descending nonzero place-value sum, or 0.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-5.3",
@@ -375,7 +423,9 @@
       "objective": "Read and write whole numbers through hundred trillions in word form.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Whole numbers through 999,999,999,999,999 and zero; write English words, accepting hyphens and optional and.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-5.4",
@@ -390,7 +440,9 @@
       "objective": "Use digits to express numbers through hundred trillions.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "The same range in words; write digits with optional correctly grouped commas.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-5.5",
@@ -405,7 +457,9 @@
       "objective": "Identify the value of a digit in a given place value by multiplying the digit by its place value.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Digit value = digit × positional multiplier across all 15 positions; zeros explicitly included.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-6.1",
@@ -420,7 +474,9 @@
       "objective": "Identify all the factors of a number.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Every positive factor of integers 1–120; ordered list including 1, primes, composites and squares.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-6.2",
@@ -435,7 +491,9 @@
       "objective": "Identify the greatest common factor (GCF) of two numbers.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "GCF of two integers 2–120, including equal inputs and relatively prime pairs.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     },
     {
       "sourceId": "course-87-en:authored:MCADA-6.3",
@@ -450,7 +508,12 @@
       "objective": "Test for the divisibility of 2, 3, 4, 5, 6, 8, 9, and 10 without performing the division.",
       "origin": "original-curriculum-task",
       "exactLegacyReproduction": false,
-      "fullOutcomeVerified": false
+      "fullOutcomeVerified": false,
+      "scope": "Numbers 1,000–999,999 and all divisors 2,3,4,5,6,8,9,10; yes/no plus last digit, last two/three digits or digit sum; divisor 6 requires both last digit and digit sum.",
+      "verification": "independent_sampled_math_and_local_browser_checks_passed"
     }
-  ]
+  ],
+  "tested_engine_commit": "219d13b547d5c40c8594565306ee102e38908408",
+  "tested_studio_commit": "11d61ec049df6bde304f117409149462ad860a22",
+  "automatic_assignment_ready": false
 }

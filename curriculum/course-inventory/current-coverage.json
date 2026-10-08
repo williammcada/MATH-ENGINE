@@ -1,9 +1,19 @@
 {
-  "version": "0.18.0-rc.1",
+  "version": "0.19.0-rc.2",
   "sourceRecords": 5425,
-  "implemented": 521,
+  "implemented": 551,
+  "implementedSourceRecords": 521,
+  "authoredCurriculumTasks": 30,
   "unintegrated": 4904,
   "byCourse": {
+    "Introduction to PreAlgebra (8/7)": 162,
+    "Algebra 1": 69,
+    "Algebra 1/2": 72,
+    "Algebra 2": 111,
+    "Course 1": 45,
+    "Intermediate 4": 92
+  },
+  "sourceAdaptationsByCourse": {
     "Introduction to PreAlgebra (8/7)": 132,
     "Algebra 1": 69,
     "Algebra 1/2": 72,
@@ -3136,6 +3146,186 @@
       "sourceId": "course-87-en:item:SN870075",
       "family": "structured-algebra-review",
       "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-1.1",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-1.2",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-1.3",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-1.4",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-1.5",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-1.6",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-1.7",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-1.8",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-2.1",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-2.2",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-2.3",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-2.4",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-2.5",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-2.6",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-3.1",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-3.2",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-3.3",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-3.4",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-3.5",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-4.1",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-4.2",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-4.3",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-5.1",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-5.2",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-5.3",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-5.4",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-5.5",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-6.1",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-6.2",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:authored:MCADA-6.3",
+      "family": "structured-foundations87",
+      "status": "implemented-authored-curriculum-task",
       "exactLegacyReproduction": false
     }
   ]

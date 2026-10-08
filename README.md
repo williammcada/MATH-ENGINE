@@ -1,3 +1,9 @@
+# Current 8/7-first candidate — v0.19.0-rc.2
+
+Added 30 authored curriculum tasks for the Lessons 1–6 outcomes. Introduction to PreAlgebra (8/7) now has 162 working bank entries: 132 imported-source adaptations plus 30 original tasks. All banks total 551 working entries; other-course expansion remains paused. [Specification](docs/change-specs/foundations87-v0.1.md) · [Verification](docs/verification/foundations87-v0.1.md). The 331-outcome inventory has 151 rows with working components/candidates and 180 without a linked task; these are not full coverage counts. Next: Lessons 7–10. No release/deployment or packet-output completion claim.
+
+Historical checkpoints follow.
+
 # Active priority — finish Introduction to PreAlgebra (8/7)
 
 Owner approved 2026-10-08. Pause new content expansion of the other five courses; preserve their selectable banks. Complete the 331 Grade 5 outcomes and necessary lesson mappings before resuming broad expansion. [Approved scope and sequence](docs/change-specs/grade5-first-v0.1.md). Runtime remains Engine v0.18.0-rc.1 / Studio v0.19.0-rc.1. Prior breadth checkpoints below are historical; none establishes full step-1 completion.
