@@ -1,3 +1,7 @@
+# Current candidate — v0.6.0-rc.1
+
+16 additional quadratic tasks bring coverage to 163 implemented source-informed entries / 5,425 English records; 5,262 unintegrated. Exact real-root sets, repeated roots, radical equivalence, factoring/completing-square/formula steps and discriminant classification. [Specification](docs/change-specs/v0.6.0-quadratics.md). Implementation awaiting verification; no release or deployment. Course name, IDs and Grade 5-only differentiation remain unchanged. Historical states follow.
+
 # Current candidate v0.5.0-rc.1
 
 Course display: **Introduction to PreAlgebra (8/7)**. 29 additional linear-equation adaptations bring working source entries to 147 of 5,425. Fractional coefficients, decimals, brackets and variables on both sides use exact rational solutions. See docs/change-specs/v0.5.0-linear-equations.md. Checks passed; see docs/verification/v0.5.0-linear-equations.md. Prior states below are historical.
