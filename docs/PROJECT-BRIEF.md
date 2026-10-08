@@ -1,3 +1,7 @@
+# Current candidate — 0.3.1-rc.1
+
+Eighteen mapped course-bank entries, including thirteen in 8/7; 5,407 source records remain unintegrated. See [scope](change-specs/v0.3.1-early-87-expansion.md). Earlier states below are historical.
+
 # English bank integration — 0.3.0-rc.1
 
 Spanish is removed from active scope. Six English banks contain 5,425 source records. src/course-banks.js implements the first six source-informed generator families, one per course; 5,419 records remain unsupported by this provider. See [specification](change-specs/v0.3-english-bank-generators.md). Existing eight Grade 5 families and Mega Man baseline remain unchanged. These are original adaptations with explicit scope limits, not reconstructed full banks. Studio consumes a pinned copy of this canonical module. Handbook revision 8fc5e3b6cd163278dd618081333f2264bf392db6 applies. This is an implementation checkpoint awaiting verification.
