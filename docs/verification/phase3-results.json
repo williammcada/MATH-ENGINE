@@ -1,0 +1,133 @@
+{
+  "phase": 3,
+  "status": "complete",
+  "stage": "verified checkpoint",
+  "date": "2026-10-09",
+  "timezone": "Asia/Shanghai",
+  "studioVersion": "0.23.0-rc.6",
+  "engineVersion": "0.21.0-rc.2",
+  "handbook": "fd4330863f4cc0812180fbf1de122970a42c7885",
+  "studioImplementationCommit": "6c3f512589804d92187b69f4fbfd342484b18a8a",
+  "engineVendorRuntimeCommit": "de4a89a89c1355d8abf0b7b702c1921693ab753d",
+  "environment": {
+    "browser": "Chromium 153.0.8010.0",
+    "node": "24.19.0",
+    "workflow": "local standalone HTML, desktop and 390px emulated viewport",
+    "wordRendering": "bundled LibreOffice via render_docx.py"
+  },
+  "checks": {
+    "core": "passed; 331 aliases/codes; zero/missing/scale/invalid/duplicate/cap/replay/source boundaries",
+    "xlsx": "passed; synthetic XLSX, formulas rejected, leading-zero string IDs retained, output escaped, no HTTP requests",
+    "suppliedWorkbook": {
+      "result": "passed",
+      "students": 69,
+      "mappedStandards": 57,
+      "numericScores": 3872,
+      "hyphens": 61,
+      "independentAggregateMatch": true
+    },
+    "browser": "passed; manual and individualized batches, student/key isolation, allocations, file download/reopen, clear/cancel/undo, source selection retained",
+    "authoredLayouts": {
+      "result": "passed",
+      "tasks": 370,
+      "combinationsPerTask": 12,
+      "layouts": 4440,
+      "boundsFailures": 0,
+      "paper": [
+        "A4",
+        "Letter"
+      ],
+      "columns": [
+        1,
+        2
+      ],
+      "modes": [
+        "student",
+        "key",
+        "study"
+      ]
+    },
+    "exports": {
+      "result": "passed",
+      "manualCourses": 6,
+      "docxFiles": 4,
+      "pdfFiles": 4,
+      "wordPagesVisuallyReviewed": 14,
+      "browserPDFPagesVisuallyReviewed": 17,
+      "nativeEquationAndTableAudit": "passed",
+      "blankSpilloverPages": 0
+    },
+    "retainedPhase2UI": "passed; overlaps, distinct methods, response check, narrow preview",
+    "vendorParity": {
+      "result": "passed",
+      "unchangedEngineModules": 52
+    }
+  },
+  "delivery": {
+    "path": "downloads/Test-and-Practice-Studio-v0.23.0-rc.6.html",
+    "bytes": 1444688,
+    "sha256": "3bd64270485d5a2c0c0573759bb5f906f20c9d865f0efa707f6d017871980d2d",
+    "matchesIndex": true
+  },
+  "verifiedInputs": {
+    "src/studio.css": "87722c522010d201e968f50d6c6b1a6b8018931a916af2c569c1832a6e2d18b8",
+    "src/app.js": "2cc9c4264b07b8fdadf2f5b028b6e8ce9ad1aedc1990433b960790466a7707b0",
+    "src/packet-ui.js": "0758b35f80fbe3bb1d7d228422c7ea9fd417cb3240d25ea4b8fed81c58c1bad9",
+    "src/packet-core.js": "a48ee4af809e41f45228729899226743a25df55605b692539ae414e03fb86690",
+    "src/packet-io.js": "43b625d21dca679a921b65a92225fb863d8ad1e51496325b954de9a76237a46e",
+    "src/index.template.html": "4d4a4cc3cc4aa6b4202659d422c5a05ae3d34789c0fa1158598675b020b792e3",
+    "src/core.js": "26d59ca23716bf524c6dba2e57192cf61fb189a709fd3f98c4e0e18dd726be56",
+    "package.json": "c94245254f36ff2a7f9879d3ba18ccb300c4687d627f1e87acc42d2c2879ff07",
+    "scripts/build-studio.py": "9b1b89130e2bae40d5842b7d1324d128547820f71ab045f8ae2bc1abf2c0cb08",
+    "vendor/third-party/jszip-3.10.1.min.js": "acc7e41455a80765b5fd9c7ee1b8078a6d160bbbca455aeae854de65c947d59e",
+    "vendor/math-engine-provenance.json": "424a95779fa2cfc821c38879b1241b6456109b10b27ee7000c87ae3279054927"
+  },
+  "exportEvidence": {
+    "A4-1-student.docx": {
+      "sha256": "b1f7b6cfbe57aa0a55bec4a73e438cc8db48e28895d85274dc51ca715673d6ca",
+      "bytes": 54743
+    },
+    "A4-1-student.pdf": {
+      "sha256": "d334ef8b831b9315b1ea3db51f3d1848f09caf4557146852d255ec574c165042",
+      "bytes": 37849
+    },
+    "A4-1-key.docx": {
+      "sha256": "d87420cc327e8b764237ab7c4b7db6c080ac6617ef71db97fbb27479c6f6c220",
+      "bytes": 67922
+    },
+    "A4-1-key.pdf": {
+      "sha256": "fada30c97edc73f60cd4fecbf4cdb65593e18d32ebe3e67a20126601d9bf97a3",
+      "bytes": 47926
+    },
+    "Letter-2-student.docx": {
+      "sha256": "32c2d020aa39125f1b03f73d8d10f1677c0f32bb78a06fb00fa79378695dee3d",
+      "bytes": 51078
+    },
+    "Letter-2-student.pdf": {
+      "sha256": "579e06f483f28ee1b560ba40f5df7f0e2142cc3118edca94e4ff3672e6b761f1",
+      "bytes": 36022
+    },
+    "Letter-2-key.docx": {
+      "sha256": "e8676840e8b41a010df639c6ab9595732101e53c3a9da97fe921eb0ae0b76c31",
+      "bytes": 64254
+    },
+    "Letter-2-key.pdf": {
+      "sha256": "3dbc98326c7015743182e71b2d580e389ce34678638d40d09d9ec13912a8ae3d",
+      "bytes": 44318
+    }
+  },
+  "notRun": [
+    "Physical Windows Chrome/Edge",
+    "Microsoft Word on user hardware",
+    "Physical printer output",
+    "Physical iPad/iPhone",
+    "Hosted deployment"
+  ],
+  "limits": [
+    "Finite representative generator coverage inherited from phase 2; unfinished publisher source previews remain non-exportable.",
+    "GradeCam is a local targeting input only; no scanner format certification, account integration or mastery inference.",
+    "Native Word page flow can differ from browser PDF; math and diagrams are preserved from the same generated snapshots.",
+    "No automatic browser persistence; session downloads omit raw imported score tables."
+  ],
+  "studioImplementationTree": "58a0487be0f08766d5a7c1ad99ddfcf7dbfad031"
+}

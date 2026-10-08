@@ -1,3 +1,13 @@
+# Phase 3 complete — Studio v0.23.0-rc.6
+
+Teacher packets, answer keys and study guides now support local GradeCam targeting, Word export, browser printing/Save as PDF and downloadable teacher sessions. The verified checkpoint passed 4,440 authored layout checks and review of 17 PDF pages plus 14 rendered Word pages. Engine runtime remains v0.21.0-rc.2 with all 52 vendored modules unchanged.
+
+[Download Studio](https://github.com/williammcada/test-and-practice-studio/blob/main/downloads/Test-and-Practice-Studio-v0.23.0-rc.6.html) · [Quickstart](https://github.com/williammcada/test-and-practice-studio/blob/main/docs/PHASE3-QUICKSTART.md) · [Verification](https://github.com/williammcada/test-and-practice-studio/blob/main/docs/verification/phase3-87-v0.1.md).
+
+Next: teacher acceptance on Windows, Microsoft Word and the intended printer. No deployment or physical-device certification is claimed. Other-course expansion remains paused. Earlier phase restrictions and next steps below are historical; resume from phase3-progress.json and the current quickstart.
+
+Historical checkpoints follow.
+
 # Phase 2 complete — v0.21.0-rc.2
 
 All 331 custom 8/7 outcomes have passed the documented curriculum breadth/variation review; all 39 uncoded tasks were also reviewed. Expanded 66 task families and added canonical assessment facets with explicit duplicate/partial-overlap detection. Original codes, aliases and lesson history remain. Engine owns all mathematics and mapping; Studio flags shared coverage without changing selections.
