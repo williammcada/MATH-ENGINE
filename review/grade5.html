@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Math Engine — Grade 5 review</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f1f4f8;color:#172b4d;font:18px/1.5 system-ui,sans-serif}main{max-width:1000px;margin:30px auto;padding:24px}h1{margin:0}header p{margin:6px 0}small{font-size:14px}form,.card{background:white;padding:24px;margin-top:20px;border:1px solid #ccd7e6;border-radius:12px}.grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px}label{display:block;font-weight:600}input,select,button{font:inherit;max-width:100%;padding:10px;border:1px solid #8696ad;border-radius:6px}input,select{width:100%;margin-top:5px}button{cursor:pointer;background:#163f73;color:white;margin:12px 8px 0 0}button.secondary{background:white;color:#163f73}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #db8800;outline-offset:3px}.help{display:inline;margin-left:8px}.help summary{display:inline-block;border:1px solid #8696ad;border-radius:50%;padding:0 7px;cursor:pointer;font-size:14px}.help p{font-weight:400;font-size:16px}.muted{color:#53647b}.status{min-height:28px;font-weight:600}math{font-size:1.7em;margin:24px 0}svg{display:block;width:100%;max-width:700px;margin:auto}.answer-row{display:flex;gap:10px;align-items:end}.answer-row label{flex:1}.answer-row button{margin-bottom:0}li{margin:9px 0}.work-space{height:100px;border-bottom:1px solid #99a8bd;margin:14px 0}#metadata{overflow-wrap:anywhere}#error{color:#a1132e}details>summary{cursor:pointer} @media(max-width:650px){main{padding:12px;margin:12px auto}.grid{grid-template-columns:1fr}.answer-row{display:block}.card,form{padding:16px}}@media print{body{background:white}main{margin:0;padding:0;max-width:none}form,.controls,#answerForm,#error{display:none}header small{display:none}.card{border:0;padding:0}#teacher:not([open]){display:none}.work-space{height:120px}}
+</style></head><body><main>
+<header><h1>Math Engine</h1><p>Grade 5 generator review <span id="version"></span></p><small>A WILLIAM MCADA PRODUCT</small><p class="muted">Review candidate · eight task families · teacher work review where required</p></header>
+<form id="settings"><div class="grid">
+<label>Task family<select id="family"></select></label>
+<div><label for="seed">Seed</label><input id="seed" value="class-review" maxlength="256" required><details class="help"><summary aria-label="About seeds">?</summary><p>The same task, seed and item number reproduce the same question in this engine version.</p></details></div>
+<div><label for="index">Item number</label><input id="index" type="number" value="0" min="0" step="1" required><details class="help"><summary aria-label="About item numbers">?</summary><p>Change the number to get another reproducible question. Numbering starts at zero.</p></details></div>
+</div><button type="submit">Generate question</button><button type="button" id="next" class="secondary">Next question</button></form>
+<p id="error" role="alert"></p>
+<section class="card"><p id="metadata" class="muted"></p><div id="question"></div><p>Answer and working:</p><div class="work-space"></div>
+<form id="answerForm"><div class="answer-row"><label>Final answer<input id="answer" autocomplete="off" placeholder="For example: 3/4, 2 1/3, 5^4, or 36 cm²"></label><button>Check answer</button></div><p class="muted">The checker reviews the final answer. Required methods and face-area work need teacher review.</p><p id="feedback" class="status" role="status" aria-live="polite"></p></form>
+<details id="teacher"><summary>Show teacher solution and work criteria</summary><div id="solution"></div></details></section>
+<div class="controls"><button id="print" class="secondary">Print current view</button><p class="muted">Close the teacher solution before printing a student copy. This review page does not save student answers.</p></div>
+</main><script src="../src/grade5.js"></script><script>
+'use strict';const engine=MathEngineG5,$=id=>document.getElementById(id);let current;
+$('version').textContent=engine.version;
+engine.catalog.forEach(f=>{const option=document.createElement('option');option.value=f.id;option.textContent=f.title+' — '+f.standard;$('family').append(option);});
+function generate(){try{const item=engine.generate($('family').value,{seed:$('seed').value,index:Number($('index').value)});current=item;$('question').innerHTML=engine.renderQuestion(item);$('solution').innerHTML=engine.renderSolution(item);$('metadata').textContent=item.standard+' · Item '+item.index;$('answer').value='';$('feedback').textContent='';$('teacher').open=false;$('error').textContent='';}catch(e){$('error').textContent=e.message;}}
+$('settings').addEventListener('submit',e=>{e.preventDefault();generate();});
+$('next').addEventListener('click',()=>{const n=Number($('index').value);if(!Number.isSafeInteger(n)||n<0||n===Number.MAX_SAFE_INTEGER){$('error').textContent='Enter a nonnegative item number smaller than the maximum safe integer.';return;}$('index').value=n+1;generate();});
+$('answerForm').addEventListener('submit',e=>{e.preventDefault();if(current)$('feedback').textContent=engine.checkAnswer(current,$('answer').value).feedback;});
+$('print').addEventListener('click',()=>window.print());generate();
+</script></body></html>

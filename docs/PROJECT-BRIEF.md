@@ -1,3 +1,7 @@
+# Current implementation candidate — 0.2.0-rc.1
+
+The first eight Grade 5 families are implemented as a seeded, stateless provider in src/grade5.js. See [API and scope](GRADE5-API.md) and [implementation specification](change-specs/v0.2.0-grade5-generators.md). The browser review page exercises generation, answer checks and teacher solutions; it is not the Studio packet application. Preserve the Mega Man v0.7 snapshot and existing hosts. Full curriculum coverage, physical-device verification and Word/PDF export remain pending. No automatic-assignment flag is promoted by this implementation.
+
 # Current coverage checkpoint — 2026-10-08
 
 [Source-alignment map v0.2](../curriculum/mcada-g5/v0.2/README.md) reviews all 331 Grade 5 outcomes and keeps source evidence separate from existing engine coverage. [Change specification](change-specs/v0.2-grade5-source-alignment.md) records this design/data checkpoint. Six initial generator design groups cover eight external outcomes, with recovered constraints distinguished from proposed extensions. Full numerical audits, new runtime implementation and end-to-end packet verification remain pending.
