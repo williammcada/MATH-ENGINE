@@ -11,6 +11,6 @@ return{version,sourceId:c.sourceId,family:c.family,seed:String(seed),index,prove
 }catch(e){if(attempt===999)throw e;}}
 throw Error('No valid variant within the template constraints');}
 function check(q,s){return{answerCorrect:M.check(M.from(q.answer),s,q.answer.mode),fullOutcomeVerified:false};}
-function render(q){const p=q.prompt.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));return'<div class="engine-question"><p>'+p+'</p>'+M.render(q.givens.expression)+'</div>';}
+function render(q){const p=q.prompt.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));return'<div class="engine-question"><p>'+p+'</p><div class="math-scroll" tabindex="0" role="region" aria-label="Equation; scroll horizontally if needed">'+M.render(q.givens.expression)+'</div></div>';}
 const api={catalog,generate,check,render,answerText:q=>M.format(M.from(q.answer),q.answer.mode)};if(typeof module!=='undefined'&&module.exports)module.exports=api;root.MathStructuredBank=api;
 })(typeof globalThis!=='undefined'?globalThis:this);
