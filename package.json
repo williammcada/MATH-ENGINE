@@ -1,6 +1,6 @@
 {
   "name": "mcada-math-engine",
-  "version": "0.14.0-rc.1",
+  "version": "0.15.0-rc.1",
   "private": true,
   "main": "src/grade5.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "test:geometry": "node tests/geometry-bank.cjs && python3 tests/geometry-bank-audit.py",
     "test:breadth": "node tests/breadth-bank.cjs && python3 tests/breadth-bank-audit.py",
     "test:advanced": "node tests/advanced-bank.cjs && python3 tests/advanced-bank-audit.py",
-    "test:representations": "node tests/representations-bank.cjs && python3 tests/representations-bank-audit.py"
+    "test:representations": "node tests/representations-bank.cjs && python3 tests/representations-bank-audit.py",
+    "test:reasoning": "node tests/reasoning-bank.cjs && python3 tests/reasoning-bank-audit.py"
   }
 }
