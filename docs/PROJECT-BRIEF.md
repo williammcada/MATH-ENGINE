@@ -1,3 +1,7 @@
+# Current coverage checkpoint — 2026-10-08
+
+[Source-alignment map v0.2](../curriculum/mcada-g5/v0.2/README.md) reviews all 331 Grade 5 outcomes and keeps source evidence separate from existing engine coverage. [Change specification](change-specs/v0.2-grade5-source-alignment.md) records this design/data checkpoint. Six initial generator design groups cover eight external outcomes, with recovered constraints distinguished from proposed extensions. Full numerical audits, new runtime implementation and end-to-end packet verification remain pending.
+
 # Current curriculum scope
 
 See [Confirmed curriculum and packet scope](CURRICULUM-SCOPE.md). GradeCam-driven differentiated packets are Grade 5 only; the 331 custom outcomes belong only to that curriculum. Engine expansion includes all supplied courses. The 57 observed standards are a growing Q1 snapshot, not a fixed scope.

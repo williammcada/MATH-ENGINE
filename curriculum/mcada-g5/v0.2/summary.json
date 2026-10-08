@@ -1,0 +1,21 @@
+{
+  "outcomes": 331,
+  "source_alignment": {
+    "no_match_established": 11,
+    "adaptation_required": 134,
+    "task_evidence": 142,
+    "unresolved_source": 44
+  },
+  "baseline_engine_coverage": {
+    "Missing": 168,
+    "Partial": 121,
+    "Direct": 42
+  },
+  "source_references": 556,
+  "distinct_referenced_source_ids": 413,
+  "first_slice_outcomes": 8,
+  "automatic_assignment_ready": 0,
+  "structural_checks": "passed",
+  "mathematical_generator_verification": "not_run_no_new_generator_implementation",
+  "legacy_visual_reconstruction": "not_run"
+}
