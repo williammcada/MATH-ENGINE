@@ -1,3 +1,7 @@
+# Manual banks — confirmed requirement, 2026-10-08
+
+All supplied courses must be available as selectable banks for teacher-built tests and practice by lesson and question. Missing standards must not gate this workflow. Only standards-driven differentiation remains Grade 5 restricted. See [manual bank specification](change-specs/manual-course-banks.md) for source readiness and acceptance criteria.
+
 # Current implementation candidate — 0.2.0-rc.1
 
 The first eight Grade 5 families are implemented as a seeded, stateless provider in src/grade5.js. See [API and scope](GRADE5-API.md) and [implementation specification](change-specs/v0.2.0-grade5-generators.md). The browser review page exercises generation, answer checks and teacher solutions; it is not the Studio packet application. Preserve the Mega Man v0.7 snapshot and existing hosts. The exact implementation checkpoint passed the [recorded engine and local-browser checks](GRADE5-VERIFICATION.md). Full curriculum coverage, physical-device verification and Word/PDF export remain pending. No automatic-assignment flag is promoted by this implementation.
