@@ -1,3 +1,7 @@
+# Current candidate — v0.12.0-rc.3
+
+85 new entries across all six banks bring coverage to 395 / 5,425 English records; 5,030 remain unintegrated. Algebra 2 increases from 9 to 42 working entries. Shared generators add systems, complex numbers, functions with domains, number theory, graph choices, clocks and other reviewed tasks. [Specification](docs/change-specs/v0.12.0-breadth.md) · [Verification](docs/verification/v0.12.0-breadth.md). The recorded math/browser checks passed. The broader step-1 task-type expansion remains open; this checkpoint does not claim all distinct types are covered. Verified implementation only; no release/deployment. Grade 5-only differentiation retained. [Breadth and remaining gaps](docs/BREADTH-COVERAGE-v0.12.0.md). Historical states follow.
+
 # Current candidate — v0.11.0-rc.3
 
 27 new geometry entries and shared SVG rendering bring coverage to 310 / 5,425 English records; 5,115 unintegrated. Introduction to PreAlgebra (8/7) now has 90 working entries. Diagrams include solids, polygons, circles, compound figures and coordinate point grids. [Specification](docs/change-specs/v0.11.0-geometry.md) · [Verification](docs/verification/v0.11.0-geometry.md). Recorded math, browser and label-layout checks passed. Verified implementation only; no release or deployment. Standards-driven differentiation remains Grade 5 only. Historical states follow.

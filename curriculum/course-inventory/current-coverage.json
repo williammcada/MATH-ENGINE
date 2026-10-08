@@ -1,15 +1,15 @@
 {
-  "version": "0.11.0-rc.3",
+  "version": "0.12.0-rc.3",
   "sourceRecords": 5425,
-  "implemented": 310,
-  "unintegrated": 5115,
+  "implemented": 395,
+  "unintegrated": 5030,
   "byCourse": {
-    "Introduction to PreAlgebra (8/7)": 90,
-    "Algebra 1": 57,
-    "Algebra 1/2": 52,
-    "Algebra 2": 9,
-    "Course 1": 30,
-    "Intermediate 4": 72
+    "Introduction to PreAlgebra (8/7)": 97,
+    "Algebra 1": 69,
+    "Algebra 1/2": 62,
+    "Algebra 2": 42,
+    "Course 1": 41,
+    "Intermediate 4": 84
   },
   "records": [
     {
@@ -1869,6 +1869,516 @@
     {
       "sourceId": "algebra-half-en:node:712",
       "family": "structured-geometry",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:57",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:74",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:77",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:115",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:142",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:152",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:159",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:188",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:228",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:267",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:270",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:362",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:422",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:487",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:506",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:589",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:597",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:614",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:652",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:675",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:678",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:686",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:695",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:718",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:722",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:735",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:771",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:790",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:797",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:803",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:845",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:849",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:119",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:242",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:250",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:376",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:570",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:690",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:742",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:752",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:820",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:859",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:905",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:948",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:955",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:117",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:118",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:121",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:126",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:180",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:181",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:656",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:657",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:791",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:795",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870025",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870166",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870082",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SAX70082",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SAX70083",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870128",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870076",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00077",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00055",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00067",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00097",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00087",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00123",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00047",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00048",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00083",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section12:item:C1_S12_00042",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-1-en:bank:C1_Section12:item:C1_S12_00056",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00152",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00155",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00005",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00088",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00090",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00094",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00099",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00054",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00071",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00072",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00068",
+      "family": "structured-breadth",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00057",
+      "family": "structured-breadth",
       "status": "implemented-source-informed-adaptation",
       "exactLegacyReproduction": false
     }
