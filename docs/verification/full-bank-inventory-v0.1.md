@@ -1,0 +1,5 @@
+# Full English inventory verification
+
+Candidate a7e571f200556b941430fa4149e0dd95a2be7ab6. Verified 2026-10-08: exact one-to-one coverage of 5,425 unique source IDs across six English banks; recovered source SHA256 and lesson-ID parity; exact 18 implemented mapping parity; every record has provisional classification and sourceRenderingVerified=false; evidence counts partition the full set; fresh regeneration of every JSON file is byte-identical. No source body or raw script fields are included in inventory records.
+
+This verifies inventory integrity and reproducibility, not correctness of all task inferences. 3,107 records have question-wording evidence, two use directly reviewed trigonometry scripts, and 2,316 rely only on topics. 3,373 have multiple task candidates. These are implementation review queues, not approved standards mappings. Renderer flags are minimum evidence and overlap; 3,042 records contain unresolved object placeholders. Shared-script/normalized-stem groups are candidates for reuse only. No app code or HTML changed.
