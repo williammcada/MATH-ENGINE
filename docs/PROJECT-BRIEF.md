@@ -1,3 +1,7 @@
+# Full-bank inventory — v0.1
+
+All 5,425 English source records have provisional task/rendering classifications. See [inventory](../curriculum/course-inventory/v0.1/README.md). This adds no usable questions; 18 adaptations remain implemented. Topic-only/multiple candidates require semantic review before implementation. Historical states follow.
+
 # Current candidate — 0.3.1-rc.1
 
 Eighteen mapped course-bank entries, including thirteen in 8/7; 5,407 source records remain unintegrated. See [scope](change-specs/v0.3.1-early-87-expansion.md). Earlier states below are historical.
