@@ -1,6 +1,6 @@
 {
   "name": "mcada-math-engine",
-  "version": "0.20.0-rc.2",
+  "version": "0.21.0-rc.1",
   "private": true,
   "main": "src/grade5.js",
   "scripts": {
@@ -23,6 +23,7 @@
     "test:solids": "node tests/solids-bank.cjs && python3 tests/solids-bank-audit.py",
     "test:algebra-review": "node tests/algebra-review-bank.cjs && python3 tests/algebra-review-bank-audit.py",
     "test:foundations87": "node tests/foundations87.cjs && python3 tests/foundations87-audit.py",
-    "test:curriculum87": "node tests/curriculum87.cjs && python3 tests/curriculum87-audit.py"
+    "test:curriculum87": "node tests/curriculum87.cjs && python3 tests/curriculum87-audit.py",
+    "test:phase2": "node tests/phase2-review.cjs && python3 tests/phase2-audit.py"
   }
 }

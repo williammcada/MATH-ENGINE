@@ -7,8 +7,9 @@ from fractions import Fraction as F
 from decimal import Decimal, ROUND_HALF_UP, localcontext
 from types import SimpleNamespace as NS
 import subprocess,json,math,xml.etree.ElementTree as ET
+from phase2_oracles import numeric as phase2_numeric, textual as phase2_textual
 E=Path(__file__).resolve().parents[1]
-js=r"""const E=require('./src/course-banks'),C=require('./src/curriculum87-map');for(const c of C)for(let index=0;index<80;index++){const options={seed:'independent-phase1',index},q=E.generate(c.sourceId,options),answer=E.answerText(q),checked=E.checkAnswer(q,answer);if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,options)))throw Error('Replay '+c.recipe);if(q.answer.kind==='teacher'){if(checked.answerCorrect!==null||!checked.requiresTeacherReview||E.checkAnswer(q,'anything').answerCorrect!==null)throw Error('False auto grading');}else if(!checked.answerCorrect||E.checkAnswer(q,'not an answer').answerCorrect)throw Error('Checker '+c.recipe);console.log(JSON.stringify(q));}"""
+js=r"""const E=require('./src/course-banks'),C=require('./src/curriculum87-map');for(const c of C)for(let index=0;index<Number(process.env.MATH_AUDIT_VARIANTS||80);index++){const options={seed:process.env.MATH_AUDIT_SEED||'independent-phase1',index},q=E.generate(c.sourceId,options),answer=E.answerText(q),checked=E.checkAnswer(q,answer);if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,options)))throw Error('Replay '+c.recipe);if(q.answer.kind==='teacher'){if(checked.answerCorrect!==null||!checked.requiresTeacherReview||E.checkAnswer(q,'anything').answerCorrect!==null)throw Error('False auto grading');}else if(!checked.answerCorrect||E.checkAnswer(q,'not an answer').answerCorrect)throw Error('Checker '+c.recipe);console.log(JSON.stringify(q));}"""
 lines=subprocess.check_output(['node','-e',js],cwd=E,text=True).splitlines()
 def rounded(value,places):
  with localcontext() as c:
@@ -59,7 +60,7 @@ for line in lines:
  q=json.loads(line);r=q['givens']['recipe'];p=NS(**q['givens']['parameters']);a=q['answer'];seen.add(r)
  if 'values' in a:
   if r not in calc:missing.add(r);continue
-  want=calc[r](p);want=want if isinstance(want,list) else [want];got=[F(int(x['numerator']),int(x['denominator'])) for x in a['values']]
+  want=phase2_numeric(r,p) if getattr(p,"phase2",False) else calc[r](p);want=want if isinstance(want,list) else [want];got=[F(int(x['numerator']),int(x['denominator'])) for x in a['values']]
   assert got==want,(r,p,got,want);numeric+=1
  elif a['kind']=='teacher':
   assert len(a['rubric'])>=2 and len(a['reference'])>2 and 'teacher review' in q['prompt'] and 'Review:' in q['solution'],r
@@ -68,7 +69,8 @@ for line in lines:
  elif a['kind']=='text':
   # Independent checks for data-dependent comparisons, classification and conversions.
   want=None
-  if r in ['21.1','21.2']:want='; '.join(str(x) for x in range(p.start+1,p.end) if prime(x) if r=='21.1') if r=='21.1' else '; '.join(str(x) for x in range(p.start+1,p.end) if x>1 and not prime(x))
+  if getattr(p,'phase2',False):want=phase2_textual(r,p)
+  elif r in ['21.1','21.2']:want='; '.join(str(x) for x in range(p.start+1,p.end) if prime(x) if r=='21.1') if r=='21.1' else '; '.join(str(x) for x in range(p.start+1,p.end) if x>1 and not prime(x))
   elif r=='30.2':want='<' if F(p.x)<F(p.y) else '>' if F(p.x)>F(p.y) else '='
   elif r=='33.1':want='<' if p.a<p.b else '>' if p.a>p.b else '='
   elif r=='57.4':

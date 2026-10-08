@@ -1,6 +1,6 @@
 /* Original source-informed generators. Legacy scripts are not executed. */
 (function(root){'use strict';
-const version='0.20.0-rc.2';
+const version='0.21.0-rc.1';
 const S=typeof module!=='undefined'&&module.exports?require('./structured-bank.js'):root.MathStructuredBank;
 const L=typeof module!=='undefined'&&module.exports?require('./linear-equations.js'):root.MathLinearEquations;
 const Q=typeof module!=='undefined'&&module.exports?require('./quadratic-bank.js'):root.MathQuadraticBank;
@@ -18,6 +18,7 @@ const AB=typeof module!=='undefined'&&module.exports?require('./solids-bank.js')
 const AC=typeof module!=='undefined'&&module.exports?require('./algebra-review-bank.js'):root.MathAlgebraReviewBank;
 const AD=typeof module!=='undefined'&&module.exports?require('./foundations87.js'):root.MathFoundations87;
 const AE=typeof module!=='undefined'&&module.exports?require('./curriculum87.js'):root.MathCurriculum87;
+const assessment=typeof module!=='undefined'&&module.exports?require('./curriculum87-assessment'):root.MathCurriculum87Assessment;
 const catalog=[
 {sourceId:'course-87-en:item:SN870001',family:'whole-division-remainder',title:'Whole-number division with optional remainder',course:'Introduction to PreAlgebra (8/7)'},
 {sourceId:'algebra-1-en:node:4',family:'mixed-number-addition',title:'Add two mixed numbers',course:'Algebra 1'},
@@ -65,5 +66,5 @@ return {answerCorrect:correct,fullOutcomeVerified:false};}
 function renderQuestion(q){if(q.family==='structured-curriculum87')return AE.render(q);if(q.family==='structured-foundations87')return AD.render(q);if(q.family==='structured-algebra-review')return AC.render(q);if(q.family==='structured-solids')return AB.render(q);if(q.family==='structured-relations')return AA.render(q);if(q.family==='structured-reasoning')return Z.render(q);if(q.family==='structured-representations')return Y.render(q);if(q.family==='structured-advanced')return X.render(q);if(q.family==='structured-breadth')return W.render(q);if(q.family==='structured-geometry')return V.render(q);if(q.family==='structured-statistics')return U.render(q);if(q.family==='structured-measurement')return T.render(q);if(q.family==='structured-proportion')return P.render(q);if(q.family.startsWith('structured-'))return S.render(q);let extra='';if(q.family==='mixed-number-addition'){const mixed=x=>`<mrow><mn>${x.whole}</mn><mfrac><mn>${x.numerator}</mn><mn>${x.denominator}</mn></mfrac></mrow>`;extra=`<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="${escape(q.givens.left.whole+' '+q.givens.left.numerator+'/'+q.givens.left.denominator+' plus '+q.givens.right.whole+' '+q.givens.right.numerator+'/'+q.givens.right.denominator)}"><mrow>${mixed(q.givens.left)}<mo>+</mo>${mixed(q.givens.right)}</mrow></math>`;}
 if(q.family==='segment-difference'){const x=35+230*q.givens.abCents/q.givens.acCents;extra=`<svg viewBox="0 0 300 90" role="img" aria-label="Segment AC with B between A and C"><line x1="35" y1="35" x2="265" y2="35" stroke="currentColor" stroke-width="2"/>${[[35,'A'],[x,'B'],[265,'C']].map(([p,l])=>`<circle cx="${p}" cy="35" r="3" fill="currentColor"/><text x="${p}" y="60" text-anchor="middle" font-size="16">${l}</text>`).join('')}</svg>`;}
 return `<div class="engine-question"><p>${escape(q.prompt)}</p>${extra}</div>`;}
-const api=freeze({version,catalog,generate,checkAnswer,answerText,renderQuestion});if(typeof module!=='undefined'&&module.exports)module.exports=api;root.MathEngineBanks=api;
+const api=freeze({version,catalog,generate,checkAnswer,answerText,renderQuestion,assessment});if(typeof module!=='undefined'&&module.exports)module.exports=api;root.MathEngineBanks=api;
 })(typeof globalThis!=='undefined'?globalThis:this);
