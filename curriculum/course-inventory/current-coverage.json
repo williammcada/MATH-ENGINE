@@ -1,12 +1,12 @@
 {
-  "version": "0.9.0-rc.1",
+  "version": "0.10.0-rc.1",
   "sourceRecords": 5425,
-  "implemented": 245,
-  "unintegrated": 5180,
+  "implemented": 283,
+  "unintegrated": 5142,
   "byCourse": {
-    "Introduction to PreAlgebra (8/7)": 60,
-    "Algebra 1": 41,
-    "Algebra 1/2": 33,
+    "Introduction to PreAlgebra (8/7)": 72,
+    "Algebra 1": 57,
+    "Algebra 1/2": 43,
     "Algebra 2": 9,
     "Course 1": 30,
     "Intermediate 4": 72
@@ -1479,6 +1479,234 @@
     {
       "sourceId": "algebra-half-en:node:730",
       "family": "structured-measurement",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870060",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870112",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870226",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870283",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870278",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX650321",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX760141",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870522",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX760144",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870774",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870834",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870816",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:185",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:186",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:187",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:217",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:218",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:687",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:699",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:700",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:701",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:702",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:493",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:494",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:495",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:496",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:551",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:552",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:661",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:662",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:696",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:697",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:698",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:699",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:702",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:735",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:736",
+      "family": "structured-statistics",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:737",
+      "family": "structured-statistics",
       "status": "implemented-source-informed-adaptation",
       "exactLegacyReproduction": false
     }

@@ -1,3 +1,7 @@
+# Current candidate — v0.10.0-rc.1
+
+38 new statistics and probability entries bring coverage to 283 / 5,425 English records; 5,142 unintegrated. Introduction to PreAlgebra (8/7) now has 72 working entries. Exact arithmetic, explicit rounding, ordered multi-part answers and corrected card-event order. [Specification](change-specs/v0.10.0-statistics.md) · [Verification](verification/v0.10.0-statistics.md). Passed recorded checks; verified implementation only, no release/deployment. Grade 5 differentiation scope retained. Historical states follow.
+
 # Current candidate — v0.9.0-rc.1
 
 26 new measurement, rate and financial-arithmetic entries bring coverage to 245 / 5,425 English records; 5,180 unintegrated. Introduction to PreAlgebra (8/7) now has 60 working entries. Exact arithmetic and explicit final cent rounding. [Specification](change-specs/v0.9.0-measurement.md) · [Verification](verification/v0.9.0-measurement.md). Passed recorded checks; verified implementation only, no release/deployment. Grade 5 differentiation scope retained. Historical states follow.
