@@ -1,12 +1,12 @@
 {
-  "version": "0.16.0-rc.2",
+  "version": "0.17.0-rc.1",
   "sourceRecords": 5425,
-  "implemented": 489,
-  "unintegrated": 4936,
+  "implemented": 505,
+  "unintegrated": 4920,
   "byCourse": {
-    "Introduction to PreAlgebra (8/7)": 124,
+    "Introduction to PreAlgebra (8/7)": 131,
     "Algebra 1": 69,
-    "Algebra 1/2": 63,
+    "Algebra 1/2": 72,
     "Algebra 2": 96,
     "Course 1": 45,
     "Intermediate 4": 92
@@ -2943,6 +2943,102 @@
     {
       "sourceId": "algebra-half-en:node:766",
       "family": "structured-relations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870721",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870664",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870048",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870408",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870434",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870468",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870681",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:737",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:738",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:741",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:742",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:691",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:694",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:799",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:803",
+      "family": "structured-solids",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:806",
+      "family": "structured-solids",
       "status": "implemented-source-informed-adaptation",
       "exactLegacyReproduction": false
     }
