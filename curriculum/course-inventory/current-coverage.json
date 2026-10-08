@@ -1,15 +1,15 @@
 {
-  "version": "0.14.0-rc.1",
+  "version": "0.15.0-rc.1",
   "sourceRecords": 5425,
-  "implemented": 445,
-  "unintegrated": 4980,
+  "implemented": 472,
+  "unintegrated": 4953,
   "byCourse": {
-    "Introduction to PreAlgebra (8/7)": 113,
+    "Introduction to PreAlgebra (8/7)": 124,
     "Algebra 1": 69,
     "Algebra 1/2": 62,
-    "Algebra 2": 65,
+    "Algebra 2": 80,
     "Course 1": 45,
-    "Intermediate 4": 91
+    "Intermediate 4": 92
   },
   "records": [
     {
@@ -2679,6 +2679,168 @@
     {
       "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00079",
       "family": "structured-representations",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:81",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:184",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:185",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:186",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:236",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:412",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:521",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:548",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:770",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:773",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:774",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:789",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:791",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:842",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-2-en:node:843",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870024",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SX870025",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SAX70303",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870539",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870810",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870742",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870812",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870838",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870744",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870806",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "course-87-en:item:SN870560",
+      "family": "structured-reasoning",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054",
+      "family": "structured-reasoning",
       "status": "implemented-source-informed-adaptation",
       "exactLegacyReproduction": false
     }

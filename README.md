@@ -1,3 +1,7 @@
+# Current candidate — v0.15.0-rc.1
+
+27 more adaptations bring coverage to 472 / 5,425 English source records; 4,953 remain unintegrated. Added radicals, logarithms, statistical displays and reasoning. [Specification](docs/change-specs/v0.15.0-reasoning.md) · [Verification](docs/verification/v0.15.0-reasoning.md). Independent math, source-link, layout and all-entry UI checks passed. Broader step 1 remains open. Verified implementation only; no release/deployment. Grade 5-only differentiation retained. Historical states follow.
+
 # Current candidate — v0.14.0-rc.1
 
 27 more adaptations bring coverage to 445 / 5,425 English source records; 4,980 remain unintegrated. Added charts, number representations, geometric classification and transformations. [Specification](docs/change-specs/v0.14.0-representations.md) · [Verification](docs/verification/v0.14.0-representations.md). Math, provenance, layout and all-entry UI checks passed. Broader step 1 remains open. Verified implementation only; no release/deployment. Grade 5-only differentiation retained. Historical states follow.
