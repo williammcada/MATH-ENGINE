@@ -1,12 +1,12 @@
 {
-  "version": "0.4.0-rc.1",
+  "version": "0.5.0-rc.1",
   "sourceRecords": 5425,
-  "implemented": 118,
-  "unintegrated": 5307,
+  "implemented": 147,
+  "unintegrated": 5278,
   "byCourse": {
-    "8/7": 13,
-    "Algebra 1": 1,
-    "Algebra 1/2": 1,
+    "Introduction to PreAlgebra (8/7)": 13,
+    "Algebra 1": 16,
+    "Algebra 1/2": 15,
     "Algebra 2": 1,
     "Course 1": 30,
     "Intermediate 4": 72
@@ -717,6 +717,180 @@
     {
       "sourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00082",
       "family": "structured-arithmetic",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:293",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:297",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:298",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:302",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:303",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:304",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:305",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:309",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:316",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:317",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:354",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:355",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:356",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:358",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-1-en:node:359",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:276",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:277",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:287",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:288",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:297",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:413",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:414",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:415",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:531",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:532",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:533",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:580",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:583",
+      "family": "structured-linear",
+      "status": "implemented-source-informed-adaptation",
+      "exactLegacyReproduction": false
+    },
+    {
+      "sourceId": "algebra-half-en:node:584",
+      "family": "structured-linear",
       "status": "implemented-source-informed-adaptation",
       "exactLegacyReproduction": false
     }

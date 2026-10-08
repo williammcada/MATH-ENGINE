@@ -1,6 +1,6 @@
 # Current candidate v0.5.0-rc.1
 
-Course display: **Introduction to PreAlgebra (8/7)**. 29 additional linear-equation adaptations bring working source entries to 147 of 5,425. Fractional coefficients, decimals, brackets and variables on both sides use exact rational solutions. See docs/change-specs/v0.5.0-linear-equations.md. Prior states below are historical.
+Course display: **Introduction to PreAlgebra (8/7)**. 29 additional linear-equation adaptations bring working source entries to 147 of 5,425. Fractional coefficients, decimals, brackets and variables on both sides use exact rational solutions. See docs/change-specs/v0.5.0-linear-equations.md. Checks passed; see docs/verification/v0.5.0-linear-equations.md. Prior states below are historical.
 
 # Math Engine
 

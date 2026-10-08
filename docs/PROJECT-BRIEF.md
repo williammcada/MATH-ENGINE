@@ -1,6 +1,6 @@
 # Current candidate — v0.5.0-rc.1
 
-Course 8/7 is now **Introduction to PreAlgebra (8/7)** with unchanged IDs and Grade 5 designation. Added 29 reviewed linear-equation adaptations: 15 Algebra 1 and 14 Algebra 1/2. 147 working entries; 5,278 remain unintegrated. Exact affine solving and MathML share the Engine implementation. Handbook fd4330863f4cc0812180fbf1de122970a42c7885. Implementation awaiting verification; no release or deployment. Historical entries follow.
+Course 8/7 is now **Introduction to PreAlgebra (8/7)** with unchanged IDs and Grade 5 designation. Added 29 reviewed linear-equation adaptations: 15 Algebra 1 and 14 Algebra 1/2. 147 working entries; 5,278 remain unintegrated. Exact affine solving and MathML share the Engine implementation. Handbook fd4330863f4cc0812180fbf1de122970a42c7885. Passed the [recorded verification](verification/v0.5.0-linear-equations.md); no release or deployment. Historical entries follow.
 
 # Current implementation candidate — 0.4.0-rc.1
 
