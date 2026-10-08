@@ -1,3 +1,7 @@
+# Current candidate — v0.8.0-rc.2
+
+38 new fraction, ratio and percent entries bring coverage to 219 / 5,425 English records; 5,206 unintegrated. Introduction to PreAlgebra (8/7) now has 44 working entries. Required answer forms are enforced; recurring percentages use exact values. Passed recorded arithmetic and browser checks. [Specification](docs/change-specs/v0.8.0-proportions.md) · [Verification](docs/verification/v0.8.0-proportions.md). Verified implementation only; no release/deployment. Grade 5 differentiation scope retained. Historical states follow.
+
 # Current candidate — v0.7.0-rc.1
 
 18 new source-informed equation entries (12 affine, 6 domain-aware rational/radical) bring coverage to 181 / 5,425 English records; 5,244 unintegrated. Exact checks reject excluded denominators and extraneous roots; no-real-solution answer sets are explicit. [Specification](docs/change-specs/v0.7.0-domain-equations.md). Passed the recorded domain-equation verification; no release/deployment. Existing course identity, IDs and Grade 5 differentiation scope retained. Historical states follow.
