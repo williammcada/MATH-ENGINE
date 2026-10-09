@@ -164,7 +164,7 @@ for bridge in bridges:
 labels={t:t.replace('-',' ').capitalize()for t in sorted({p['topic']for p in profiles})}
 labels.update({'fraction-decimal-percent':'Fractions, decimals and percents','pythagorean':'Pythagorean theorem','whole-arithmetic':'Whole-number arithmetic','number-representation':'Place value and number notation','polar-vectors':'Polar coordinates and vectors','gas-laws':'Gas-law models','proof':'Geometric proof','function-graphs':'Graphs of functions'})
 topics=[dict(id=t,label=label,entryCount=sum(p['topic']==t for p in profiles),trackIds=[tr['id']for tr in tracks.values()if tr['topic']==t])for t,label in labels.items()]
-data=dict(version='6.0.0',coursePlacement=placement['courses'],scope='teacher-directed original curriculum connections; no mastery or placement inference',profiles=profiles,topics=topics,tracks=list(tracks.values()),bridges=bridges,reuseGroups=reuse)
+data=dict(version='6.0.1',coursePlacement=placement['courses'],scope='teacher-directed original curriculum connections; no mastery or placement inference',profiles=profiles,topics=topics,tracks=list(tracks.values()),bridges=bridges,reuseGroups=reuse)
 (R/'src/cross-course-map.js').write_text('(function(root){const data='+json.dumps(data,separators=(',',':'))+';if(typeof module!=="undefined"&&module.exports)module.exports=data;root.MathCrossCourseMap=data;})(typeof globalThis!=="undefined"?globalThis:this);\n')
 (out/'analysis-profiles.json').write_text(json.dumps([dict(**p,samplePrompt=samples[p['sourceId']]['prompt'])for p in profiles],indent=2)+'\n')
 (out/'progressions.json').write_text(json.dumps(data['tracks'],indent=2)+'\n');(out/'reuse-review.json').write_text(json.dumps(reuse,indent=2)+'\n')

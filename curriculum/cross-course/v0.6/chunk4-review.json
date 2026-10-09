@@ -4539,12 +4539,9 @@
     "disposition": "retained within-course directions",
     "reason": "Within-course directions remain useful but do not count as cross-course coverage. Do not invent a cross-course anchor to improve the count.",
     "trackIds": [
-      "percent-complement",
-      "c4-percent-to-probability-complement-from"
+      "percent-complement"
     ],
-    "newLinkIds": [
-      "percent-to-probability-complement"
-    ],
+    "newLinkIds": [],
     "crossCourseCandidates": {
       "related": [
         "algebra-half-en:node:448",
@@ -4573,8 +4570,7 @@
     },
     "conflictingCandidates": [],
     "withinCourseDirectionalCandidates": [
-      "course-87-en:item:SX870391",
-      "course-87-en:item:SX760144"
+      "course-87-en:item:SX870391"
     ],
     "retainedEvidenceReference": "chunk4-contract-groups.json#course-87-en:item:SX870064",
     "providerContractSha256": "89fb9f757253c037c9a3142a4a62801fc1551cdd2b68136a6deadbd3b19e95b2"
@@ -5700,12 +5696,9 @@
     "disposition": "retained within-course directions",
     "reason": "Within-course directions remain useful but do not count as cross-course coverage. Do not invent a cross-course anchor to improve the count.",
     "trackIds": [
-      "probability-complement-work",
-      "c4-percent-to-probability-complement-to"
+      "probability-complement-work"
     ],
-    "newLinkIds": [
-      "percent-to-probability-complement"
-    ],
+    "newLinkIds": [],
     "crossCourseCandidates": {
       "related": [
         "algebra-half-en:node:687",
@@ -5740,7 +5733,6 @@
     },
     "conflictingCandidates": [],
     "withinCourseDirectionalCandidates": [
-      "course-87-en:item:SX870064",
       "course-87-en:authored:COURSE210.2"
     ],
     "retainedEvidenceReference": "chunk4-contract-groups.json#course-87-en:item:SX760144",

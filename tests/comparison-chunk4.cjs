@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path'),E=require('../src/course-banks'),C=E.connections,D=require('../src/cross-course-map');
-assert.equal(E.catalog.length,2184);assert.equal(C.profiles.length,2184);assert.equal(C.tracks.length,416);assert.equal(C.topics.length,66);
+assert.equal(E.catalog.length,2184);assert.equal(C.profiles.length,2184);assert.equal(C.tracks.length,414);assert.equal(C.topics.length,66);
 const placements=require('../curriculum/course-placement.json').courses;
 assert.deepEqual(C.coursePlacement,placements);
 const grades={'intermediate-4-en':3,'course-1-en':4,'course-87-en':5,'algebra-half-en':null,'algebra-1-en':null,'algebra-2-en':null};
@@ -71,7 +71,7 @@ const changed=[];for(const name of fs.readdirSync(baseline)){if(!name.endsWith('
 assert.equal(E.assessment.outcomes.filter(o=>o.standard).length,331);
 
 const reconciliation=require('../curriculum/cross-course/v0.6/chunk4-review'),frozenScope=require('../curriculum/cross-course/v0.6/chunk4-scope'),links=require('../curriculum/cross-course/v0.6/chunk4-links');
-assert.equal(reconciliation.length,749);assert.deepEqual(reconciliation.map(r=>r.sourceId),frozenScope.map(r=>r.sourceId));assert.equal(C.version,'6.0.0');
+assert.equal(reconciliation.length,749);assert.deepEqual(reconciliation.map(r=>r.sourceId),frozenScope.map(r=>r.sourceId));assert.equal(C.version,'6.0.1');
 let linkPairs=0;
 for(const link of links){for(const [file,hash] of Object.entries(link.evidenceSha256))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(__dirname,'..',file))).digest('hex'),hash);for(const a of link.fromProviders)for(const b of link.toProviders){assert.equal(C.compare(a,b).type,'extension',link.id+' '+a+' / '+b);assert.equal(C.compare(b,a).type,'prerequisite');linkPairs++;}}
 let gained=0;
@@ -79,4 +79,4 @@ for(const r of reconciliation){const p=C.lookup(r.sourceId);assert.equal(r.statu
 const reconciliationSummary=require('../curriculum/cross-course/v0.6/chunk4-summary'),residual=require('../curriculum/cross-course/v0.6/reviewed-residuals');assert.equal(gained,reconciliationSummary.entriesGainingCrossCourseDirection);assert.equal(residual.length,749-gained);assert.equal(require('../curriculum/cross-course/v0.6/remaining-review').length,residual.length);assert.equal(residual.filter(r=>!C.lookup(r.sourceId).memberships.length).length,26);
 assert.equal(require('../curriculum/cross-course/v0.6/directional-coverage').entriesWithCrossCourseDirectionalRelation,1435+gained);
 
-const result={result:'passed',linkPairs,gained,reviewedResiduals:residual.length,chunk4Reconciled:749,newPrerequisiteLinks:12,reviewedRelatedOnly:26,preservedDirections,entries:E.catalog.length,tracks:C.tracks.length,pairs:pairs.size,conservativeConflicts:conflicts,generationParityCases:retained,changedModules:changed,gradeCamOutcomes:331};fs.writeFileSync('/tmp/comparison-chunk4-engine-results.json',JSON.stringify(result,null,2));console.log(result);
+const result={result:'passed',linkPairs,gained,reviewedResiduals:residual.length,chunk4Reconciled:749,newPrerequisiteLinks:11,reviewedRelatedOnly:26,preservedDirections,entries:E.catalog.length,tracks:C.tracks.length,pairs:pairs.size,conservativeConflicts:conflicts,generationParityCases:retained,changedModules:changed,gradeCamOutcomes:331};fs.writeFileSync('/tmp/comparison-chunk4-engine-results.json',JSON.stringify(result,null,2));console.log(result);

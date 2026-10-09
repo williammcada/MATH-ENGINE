@@ -16224,44 +16224,6 @@
     "relationMode": "related"
   },
   {
-    "id": "c4-percent-to-probability-complement-from",
-    "label": "C4 percent to probability complement from",
-    "topic": "probability",
-    "stages": [
-      {
-        "level": 1,
-        "demand": "Find the percent remaining from a whole",
-        "prerequisites": "Subtracting from 100 percent supports a probability complement; the extension interprets the two complementary events as exhaustive and disjoint.",
-        "selectors": [
-          "=/course-87-en:item:SX870064"
-        ],
-        "sourceIds": [
-          "course-87-en:item:SX870064"
-        ]
-      }
-    ],
-    "relationMode": "related"
-  },
-  {
-    "id": "c4-percent-to-probability-complement-to",
-    "label": "C4 percent to probability complement to",
-    "topic": "probability",
-    "stages": [
-      {
-        "level": 1,
-        "demand": "Find the probability of the complementary event",
-        "prerequisites": "Subtracting from 100 percent supports a probability complement; the extension interprets the two complementary events as exhaustive and disjoint.",
-        "selectors": [
-          "=/course-87-en:item:SX760144"
-        ],
-        "sourceIds": [
-          "course-87-en:item:SX760144"
-        ]
-      }
-    ],
-    "relationMode": "related"
-  },
-  {
     "id": "c4-prime-factors-to-gcf-from",
     "label": "C4 prime factors to gcf from",
     "topic": "number-theory",

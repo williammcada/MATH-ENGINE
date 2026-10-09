@@ -194,24 +194,6 @@
     }
   },
   {
-    "id": "percent-to-probability-complement",
-    "topic": "probability",
-    "fromProviders": [
-      "course-87-en:item:SX870064"
-    ],
-    "toProviders": [
-      "course-87-en:item:SX760144"
-    ],
-    "fromDemand": "Find the percent remaining from a whole",
-    "toDemand": "Find the probability of the complementary event",
-    "reason": "Subtracting from 100 percent supports a probability complement; the extension interprets the two complementary events as exhaustive and disjoint.",
-    "limits": "This is the same numerical operation in a probability model, not harder arithmetic. The rain contract includes probability 100 percent and hence a zero-percent complement.",
-    "evidenceSha256": {
-      "src/proportional-bank.js": "7260be3bcd035aa81a330732fdabdcd6cc656b000ac6b67ee2e58ebd0f9d9479",
-      "src/statistics-bank.js": "0084a5df0fcadf1793304874b46e645ec07e206a52ff636f2cf2a388c9a39dbd"
-    }
-  },
-  {
     "id": "prime-factors-to-gcf",
     "topic": "number-theory",
     "fromProviders": [
