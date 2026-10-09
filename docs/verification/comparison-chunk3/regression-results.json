@@ -1,0 +1,10 @@
+{
+  "result": "passed",
+  "checks": {
+    "studio-core": "draft validation and missing-object markers",
+    "phase3-core": "331 mappings; zero/missing scores; scales; invalid/duplicate input; cap review; replay; source boundaries",
+    "phase3-import": "XLSX import; leading-zero identifiers; formula rejection; escaped output; local-only requests",
+    "rebuild": "build-cross-course.py and analyze-cross-course.cjs reproduce tracked outputs without changes"
+  },
+  "environmentRecovery": "Initial browser launch failed because /tmp/chromium was empty. Playwright CDN download was unusable; installed @sparticuz/chromium 153.0.0 in scratch and reran browser tests successfully. No application code changed."
+}
