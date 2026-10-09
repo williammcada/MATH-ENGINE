@@ -1,8 +1,8 @@
 # Comparison review v0.5 — Chunk 3
 
-All 295 frozen geometry, measurement, data and applied entries have source-backed decisions in 217 provider/recipe groups. 287 gained paths; eight remain explicitly reviewed topic-only. This checkpoint is awaiting exact-artifact verification; no deployment is authorized.
+All 295 frozen geometry, measurement, data and applied entries have source-backed decisions in 217 provider/recipe groups. 287 gained paths; eight remain explicitly reviewed topic-only. Exact-artifact verification is complete; see the verification record below. No deployment was performed.
 
-| Measure | After Chunk 2 | Chunk 3 candidate |
+| Measure | After Chunk 2 | After Chunk 3 |
 |---|---:|---:|
 | Working entries | 2,184 | 2,184 |
 | Reviewed paths | 298 | 392 |
@@ -24,6 +24,6 @@ All previous selectors, grades and original identities remain. Intermediate 4 = 
 
 ## Verification and continuation
 
-Engine target 0.31.0-rc.1; Studio target 0.33.0-rc.1. See the root change specification and forthcoming COMPARISON-CHUNK3-VERIFICATION.md for checkpoints and test evidence.
+Verified Engine 0.31.0-rc.2 (`4bcff91ead79967f08635fb86d62b637c7800dc1`); Studio 0.33.0-rc.2 (`48a80bc85e306d827e6848e136f03f49763a69ca`). See [COMPARISON-CHUNK3-VERIFICATION.md](../../../docs/COMPARISON-CHUNK3-VERIFICATION.md) for checkpoints and test evidence. All 295 scoped records, 26,208 retained generations, the exact downloadable HTML, mixed-bank workflows and representative Word/PDF exports passed the documented checks.
 
 Chunk 4 is frozen in `chunk4-scope.json`, identical to the recomputed `remaining-review.json`: 749 entries still lack an actual cross-course direction, comprising 723 path-linked and 26 reviewed topic-only entries. The original already-path-linked Chunk 4 population was 375; the queue now transparently includes residuals from all review chunks. Every entry has been reviewed at topic/path or provider-contract scope; this final pass looks for defensible cross-course counterparts, not compulsory rankings. Chunk 4 has not started. No hosted deployment or physical-device certification is claimed.
