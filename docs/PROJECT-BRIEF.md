@@ -1,3 +1,9 @@
+# Remaining curricula — Milestone 1 audit complete
+
+2026-10-09: audited all five remaining English banks: 4,636 source records, 652 indexed scope rows (650 populated), and 389 working entries. Saved demand/source ledgers, reuse candidates, source uncertainties, internal batches and completion criteria. [Audit and backlog](https://github.com/williammcada/MATH-ENGINE/blob/main/curriculum/remaining-courses/milestone1-v0.1/REVIEW.md). [Milestone specification](https://github.com/williammcada/MATH-ENGINE/blob/main/docs/change-specs/remaining-curricula-milestones-v0.1.md).
+
+Next proposed milestone: finish Intermediate 4 and Course 1. Only Milestone 1 was authorized; implementation expansion remains paused. Engine 0.21.0-rc.2 and Studio 0.23.0-rc.6 are unchanged. Earlier checkpoints follow.
+
 # Phase 3 complete — Studio v0.23.0-rc.6
 
 Teacher packets, answer keys and study guides now support local GradeCam targeting, Word export, browser printing/Save as PDF and downloadable teacher sessions. The verified checkpoint passed 4,440 authored layout checks and review of 17 PDF pages plus 14 rendered Word pages. Engine runtime remains v0.21.0-rc.2 with all 52 vendored modules unchanged.

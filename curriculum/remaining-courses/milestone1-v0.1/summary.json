@@ -1,0 +1,216 @@
+{
+  "schema": "1.0",
+  "stage": "milestone-1-audit",
+  "engineBaseline": "6524895e099c3f088b6bdc894d22234163f32e60",
+  "studioBaseline": "f5402984035831863831003b63b920f9d5582d21",
+  "handbook": "fd4330863f4cc0812180fbf1de122970a42c7885",
+  "courses": [
+    {
+      "course": "intermediate-4-en",
+      "milestone": 2,
+      "indexedScopeRows": 136,
+      "populatedScopeRows": 136,
+      "sourceRecords": 1388,
+      "workingEntries": 92,
+      "scopesWithWorkingEntries": 33,
+      "unportedSourceRecords": 1296
+    },
+    {
+      "course": "course-1-en",
+      "milestone": 2,
+      "indexedScopeRows": 133,
+      "populatedScopeRows": 132,
+      "sourceRecords": 1353,
+      "workingEntries": 45,
+      "scopesWithWorkingEntries": 22,
+      "unportedSourceRecords": 1308
+    },
+    {
+      "course": "algebra-half-en",
+      "milestone": 3,
+      "indexedScopeRows": 133,
+      "populatedScopeRows": 133,
+      "sourceRecords": 624,
+      "workingEntries": 72,
+      "scopesWithWorkingEntries": 39,
+      "unportedSourceRecords": 552
+    },
+    {
+      "course": "algebra-1-en",
+      "milestone": 4,
+      "indexedScopeRows": 120,
+      "populatedScopeRows": 120,
+      "sourceRecords": 679,
+      "workingEntries": 69,
+      "scopesWithWorkingEntries": 29,
+      "unportedSourceRecords": 610
+    },
+    {
+      "course": "algebra-2-en",
+      "milestone": 5,
+      "indexedScopeRows": 130,
+      "populatedScopeRows": 129,
+      "sourceRecords": 592,
+      "workingEntries": 111,
+      "scopesWithWorkingEntries": 68,
+      "unportedSourceRecords": 481
+    }
+  ],
+  "sourceHashes": {
+    "studio/data/course-banks/v0.1/intermediate-4-en.json": "4e0825438a4abd6b6d0cabd747c233de424719f067d80ef3951ea7570576d2f3",
+    "recovery/intermediate-4-en.json": "65a8dd36ef6d0e886d40e8d9a45956526292105cc8e8466c4d2587e485df5ca2",
+    "studio/data/course-banks/v0.1/course-1-en.json": "533623822ae24539635b84a69b35e22f8faba04658c3e7135287adeb0f2d9b7f",
+    "recovery/course-1-en.json": "dbd424dee1e11af5ece8b22033f382105b0fc10d334cc055a724a44bf4960b58",
+    "studio/data/course-banks/v0.1/algebra-half-en.json": "9e79723ce03678d92a2464cfcbcb851d513e6b5306a163b0d39146367fa7ad64",
+    "recovery/algebra-half-en.json": "f027d1365d1c4ca46b3853c40667ebc20d499f221d6526ab133f0c1c33450d79",
+    "studio/data/course-banks/v0.1/algebra-1-en.json": "c44920881dbddfe8fe76470099ea3503cdec8eb97c85c9852d1bc8123e101043",
+    "recovery/algebra-1-en.json": "42256920869ed8dcf6eb0b85dae92b55ac7edf645313151e197851aec2e4fdc0",
+    "studio/data/course-banks/v0.1/algebra-2-en.json": "0f24c25b4ba676dd2723075d7cae8efc55f8c1f0e016f4a98e7ac149c790c025",
+    "recovery/algebra-2-en.json": "74f906a099b81370ce366167ff3c51f9523edd19b3539c074be204df3fe71be8"
+  },
+  "limits": [
+    "Automated lexical reuse suggestions are candidates, not verified semantic coverage.",
+    "Equal prompt hashes identify review groups, not proven interchangeable questions; diagrams, scripts and keys may differ.",
+    "No source publisher text or scripts are executed or republished in this audit.",
+    "Lesson demand facets retain compound labels where splitting would invent an unsupported distinction."
+  ],
+  "packages": [
+    {
+      "id": "01",
+      "title": "Number notation and place value",
+      "candidateModules": "Representations, breadth, curriculum87",
+      "acceptance": "Preserve magnitude limits, zero positions, words/digits direction, bases and Roman numeral range.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "02",
+      "title": "Whole arithmetic and missing numbers",
+      "candidateModules": "Structured math, breadth, curriculum87",
+      "acceptance": "Separate operation, digit lengths, carrying/borrowing, zero-in-quotient, exact/remainder and missing-position variants.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "03",
+      "title": "Fractions and mixed numbers",
+      "candidateModules": "Structured math, proportional, reasoning, algebra-review, curriculum87",
+      "acceptance": "Separate numerical from symbolic fractions; preserve common/unlike denominators, regrouping, reduction, restrictions and specified methods.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "04",
+      "title": "Decimals money and estimation",
+      "candidateModules": "Structured math, representations, curriculum87",
+      "acceptance": "Set precision and rounding stage; test decimal alignment, zero placeholders, repeaters and money conventions.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "05",
+      "title": "Number theory and sequences",
+      "candidateModules": "Breadth, quadratic, curriculum87",
+      "acceptance": "Separate numerical factors from polynomial factoring; preserve sequence rule, factor-tree and primality demands.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "06",
+      "title": "Ratio percent and finance",
+      "candidateModules": "Proportional, measurement, curriculum87",
+      "acceptance": "Distinguish part/whole/rate unknowns, totals, percent change, fractional percents, repeated growth and context.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "07",
+      "title": "Units time and applications",
+      "candidateModules": "Measurement, breadth, curriculum87",
+      "acceptance": "Preserve units and supplied relationships as appropriate; model equal/unequal distances, remainders in context, calendars and multi-step unknowns.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "08",
+      "title": "Expressions powers and roots",
+      "candidateModules": "Domain, advanced, reasoning, algebra-review, curriculum87",
+      "acceptance": "Preserve exact form, signs and grouping; test domain restrictions, zero/negative/fractional powers and radical equivalence.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "09",
+      "title": "Equations and symbolic reasoning",
+      "candidateModules": "Linear, quadratic, breadth, algebra-review",
+      "acceptance": "Differentiate numerical/literal, linear/quadratic/rational/radical, required method, extraneous roots and exceptional solution sets.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "10",
+      "title": "Polynomials and rational algebra",
+      "candidateModules": "Quadratic, breadth, advanced, reasoning, algebra-review",
+      "acceptance": "Check nonmonic/grouping/cubes, quotient and remainder, cancellation restrictions and abstract coefficients.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "11",
+      "title": "Inequalities logic and sets",
+      "candidateModules": "Domain, advanced, relations, algebra-review",
+      "acceptance": "Require complete real solution sets and graphs where demanded; bounded integer recognition is not full real-interval solving.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "12",
+      "title": "Coordinates functions and graphs",
+      "candidateModules": "Breadth, relations, graph SVG, curriculum87",
+      "acceptance": "Separate plotting from recognition, domain/range, transformations and parameters; cover special slopes and nonlinear families.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "13",
+      "title": "Plane geometry and angles",
+      "candidateModules": "Geometry, representations, relations, curriculum87",
+      "acceptance": "Correct figure geometry, labels, orientation and markings; separate identify/measure/calculate/draw/justify.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "14",
+      "title": "Area perimeter and solids",
+      "candidateModules": "Geometry, solids, curriculum87",
+      "acceptance": "Include composite/estimated/missing-dimension forms and nets; distinguish surface area, lateral area, height and slant height.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "15",
+      "title": "Construction proof and investigations",
+      "candidateModules": "Relations, curriculum87 investigations",
+      "acceptance": "Retain production and reasoning: student drawing/construction/proof with rubric, not only choosing a prewritten justification.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "16",
+      "title": "Data statistics and probability",
+      "candidateModules": "Statistics, breadth, relations, curriculum87",
+      "acceptance": "Separate create/read/interpret, weighted/overall means, sampling and normal/SD computations; preserve replacement and order.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "17",
+      "title": "Trigonometry vectors and complex numbers",
+      "candidateModules": "Advanced, breadth, algebra-review",
+      "acceptance": "State angle units and quadrants; preserve exact/specified rounded values, resultant direction and complex root behavior.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "18",
+      "title": "Advanced applications and logarithms",
+      "candidateModules": "Reasoning, relations, algebra-review, measurement",
+      "acceptance": "Check domain/extraneous roots and log laws; model mixtures, PV=nRT, relative motion and ages explicitly.",
+      "scope": "Routing package; overlapping membership deliberately retained."
+    },
+    {
+      "id": "19",
+      "title": "Source-specific residual demands",
+      "candidateModules": "Resolve from exact source item and lesson",
+      "acceptance": "Inspect source scripts/rich blocks; retain unfamiliar constructs explicitly, without guessed curriculum equivalence."
+    }
+  ],
+  "recoveryArchive": {
+    "filename": "Course-Bank-Content-Recovery-v0.2.zip",
+    "libraryFileId": "libfile_f5c6dba38aa4819198e2d5e4d1c76d1d",
+    "sha256": "f64a35dc9197da639ca28d354f299812cb9d7f6ebcb64134a73c33b2c52682b5"
+  }
+}
