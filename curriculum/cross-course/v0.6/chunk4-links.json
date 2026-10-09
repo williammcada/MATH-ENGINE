@@ -1,0 +1,256 @@
+[
+  {
+    "id": "gcf-to-monomial",
+    "topic": "factoring",
+    "fromProviders": [
+      "algebra-half-en:node:126",
+      "course-87-en:item:SN870025",
+      "course-1-en:bank:C1_Section02:item:C1_S02_00077",
+      "course-1-en:bank:C1_Section02:item:C1_S02_00055",
+      "course-87-en:authored:MCADA-6.2",
+      "course-87-en:authored:MCADA-24.2"
+    ],
+    "toProviders": [
+      "algebra-1-en:authored:M4-35-1",
+      "course-87-en:authored:COURSE116.2"
+    ],
+    "fromDemand": "Find a numerical greatest common factor",
+    "toDemand": "Extract a greatest common monomial factor",
+    "reason": "Numerical GCF supplies the common coefficient; monomial factoring also selects the lowest shared variable exponents and verifies the remaining polynomial by distribution.",
+    "limits": "Two- and three-input numerical GCF contracts are retained without ranking them. Target a/factor:gcf uses two variables; COURSE116.2 uses one. Both require coefficient GCF, but their symbolic demands are not equated.",
+    "evidenceSha256": {
+      "src/breadth-bank.js": "d298aeedc57f7b0d90c0b5d93382467eb44ff6156c226a0f2449adbdf0f2f02d",
+      "src/foundations87.js": "32d5002f6384dee18b314727c090e48dbebf1c7ac3cfcaa8a43286eb8cd68819",
+      "src/curriculum87-early.js": "e94651a4568a6f76079e344d21a0ba1c9b6521a33be70c227b4d89b448e4c657",
+      "src/algebra-one.js": "37368d7711151215ba7a86331dd95c3a11a282367d4a816d4be84f2c4647291b",
+      "src/curriculum87-extra.js": "274306c2d145438ca5a61a5584857ffb9e35f6628940450423097ea1460cc1cc"
+    }
+  },
+  {
+    "id": "binomials-to-complex",
+    "topic": "complex-numbers",
+    "fromProviders": [
+      "algebra-half-en:authored:M3-206-2"
+    ],
+    "toProviders": [
+      "algebra-2-en:node:506"
+    ],
+    "fromDemand": "Multiply two binomials by distribution",
+    "toDemand": "Multiply two complex numbers in real-imaginary form",
+    "reason": "Binomial distribution supplies the four products; complex multiplication adds i squared equals negative one and collection into real and imaginary parts.",
+    "limits": "The anchor includes one- and two-variable binomials. This is a transferable distribution prerequisite, not a claim that every complex product is harder than every symbolic product. Signed coefficients are preserved.",
+    "evidenceSha256": {
+      "src/algebra-half.js": "0c7e31dfa7de5b401b0ed16f14b1b9e724d6c0b7e2692319c94811bff57bbd2e",
+      "src/breadth-bank.js": "d298aeedc57f7b0d90c0b5d93382467eb44ff6156c226a0f2449adbdf0f2f02d"
+    }
+  },
+  {
+    "id": "powers-to-logarithms",
+    "topic": "logarithms",
+    "fromProviders": [
+      "algebra-1-en:node:242",
+      "algebra-2-en:node:57",
+      "course-87-en:authored:MCADA-57.1"
+    ],
+    "toProviders": [
+      "algebra-2-en:authored:M5-log-convert",
+      "algebra-2-en:authored:M5-log-antilog",
+      "algebra-2-en:node:771"
+    ],
+    "fromDemand": "Evaluate positive zero or negative integer powers",
+    "toDemand": "Interpret a logarithm as an exponent",
+    "reason": "Integer powers and reciprocals support the inverse relationship between logarithms and exponentials; logarithms add positive-argument and valid-base restrictions.",
+    "limits": "Targets include base 2, 3 or 5 with exponents -2 through 2 and base-ten logarithms of powers from -6 through 6 excluding -1, 0 and 1. No calculator-log, logarithm-law or equation-domain branch is swept into this link.",
+    "evidenceSha256": {
+      "src/breadth-bank.js": "d298aeedc57f7b0d90c0b5d93382467eb44ff6156c226a0f2449adbdf0f2f02d",
+      "src/algebra-two.js": "02d2973b969b5dcf66c008b8897d354a997230b9b92feef94e238a0e5cd6325b",
+      "src/curriculum87-middle.js": "c1d8585b3a3599412f081c5a24ce9daa87b7339e3549272452cad13cfc9a7ff7"
+    }
+  },
+  {
+    "id": "point-slope-to-parallel",
+    "topic": "lines-slope",
+    "fromProviders": [
+      "algebra-1-en:node:955"
+    ],
+    "toProviders": [
+      "algebra-2-en:node:188",
+      "algebra-1-en:authored:M4-107-1"
+    ],
+    "fromDemand": "Find a line from a point and slope",
+    "toDemand": "Find a parallel line through a point",
+    "reason": "The point-and-slope equation method supports parallel-line construction; the added fact is that distinct parallel lines share a slope.",
+    "limits": "Both endpoints use finite nonzero slopes. This does not rank vertical-line reasoning or two-point slope calculation against parallelism. Numeric and teacher-reviewed symbolic response contracts remain distinct.",
+    "evidenceSha256": {
+      "src/breadth-bank.js": "d298aeedc57f7b0d90c0b5d93382467eb44ff6156c226a0f2449adbdf0f2f02d",
+      "src/algebra-one.js": "37368d7711151215ba7a86331dd95c3a11a282367d4a816d4be84f2c4647291b"
+    }
+  },
+  {
+    "id": "circle-base-to-cylinder",
+    "topic": "volume",
+    "fromProviders": [
+      "course-87-en:authored:MCADA-82.1",
+      "course-87-en:item:SN870528"
+    ],
+    "toProviders": [
+      "course-87-en:item:SN870542",
+      "algebra-half-en:node:475",
+      "course-1-en:bank:C1_Section12:item:C1_S12_00042",
+      "course-1-en:authored:M2-d6a57c1e9476-5",
+      "course-1-en:authored:M2-30a1a2f60398-1",
+      "course-87-en:authored:MCADA-95.1"
+    ],
+    "fromDemand": "Find the area of a circle from its radius",
+    "toDemand": "Find right circular cylinder volume",
+    "reason": "Circle area supplies the base area; cylinder volume multiplies that area by perpendicular height and changes square units to cubic units.",
+    "limits": "Radius is supplied at every endpoint. Circle-area contracts use either 3.14 or 22/7; cylinder contracts use 3.14. Follow each stated pi convention; this is a formula extension rather than a numerical-difficulty ordering.",
+    "evidenceSha256": {
+      "src/curriculum87-late.js": "7994c39ee7905b8f675981cbed5b63222c9eba9b5d74cf5bf14d187ecd9f0295",
+      "src/geometry-bank.js": "5a22a190f7400f315447a36231ce93111460a4f2af06d2bd102d14966cac2646",
+      "src/breadth-bank.js": "d298aeedc57f7b0d90c0b5d93382467eb44ff6156c226a0f2449adbdf0f2f02d",
+      "src/foundational-courses.js": "130992c408c5917ee9516ca4e37dd2ab05e67a4d990eea17670e2ef4747b651b"
+    }
+  },
+  {
+    "id": "rectangle-to-prism-surface",
+    "topic": "surface-area",
+    "fromProviders": [
+      "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00093",
+      "course-87-en:authored:MCADA-20.6"
+    ],
+    "toProviders": [
+      "course-87-en:item:SN870672",
+      "algebra-half-en:node:354",
+      "course-1-en:bank:C1_Section12:item:C1_S12_00056"
+    ],
+    "fromDemand": "Calculate rectangle area",
+    "toDemand": "Sum the six faces of a rectangular prism",
+    "reason": "Rectangle area supports calculating the three pairs of congruent faces; prism surface area adds face identification and the sum of their areas.",
+    "limits": "The supplied three perpendicular dimensions determine all six rectangles. Preserve square units. This link excludes mixed sphere/cone surface formulas and physical net drawing.",
+    "evidenceSha256": {
+      "src/representations-bank.js": "1fcf65a23a14efdec1e3fcd4c1044495ff9700923e4c6b3f4c9d134a6b32ae02",
+      "src/curriculum87-early.js": "e94651a4568a6f76079e344d21a0ba1c9b6521a33be70c227b4d89b448e4c657",
+      "src/geometry-bank.js": "5a22a190f7400f315447a36231ce93111460a4f2af06d2bd102d14966cac2646",
+      "src/breadth-bank.js": "d298aeedc57f7b0d90c0b5d93382467eb44ff6156c226a0f2449adbdf0f2f02d"
+    }
+  },
+  {
+    "id": "rectangle-to-pyramid",
+    "topic": "volume",
+    "fromProviders": [
+      "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00093",
+      "course-87-en:authored:MCADA-20.6"
+    ],
+    "toProviders": [
+      "algebra-half-en:node:737"
+    ],
+    "fromDemand": "Calculate rectangle or square base area",
+    "toDemand": "Calculate a square pyramid volume",
+    "reason": "Base area is a prerequisite quantity for one third of base area times perpendicular height; a pyramid adds the one-third volume factor and cubic units.",
+    "limits": "The dedicated pyramid contract has a square base and supplied perpendicular height with an exact rational answer. Mixed solid-volume recipes and inverse-solid branches are excluded.",
+    "evidenceSha256": {
+      "src/representations-bank.js": "1fcf65a23a14efdec1e3fcd4c1044495ff9700923e4c6b3f4c9d134a6b32ae02",
+      "src/curriculum87-early.js": "e94651a4568a6f76079e344d21a0ba1c9b6521a33be70c227b4d89b448e4c657",
+      "src/solids-bank.js": "7516a8091979f2af33cc5ab30960d3e1200b72fe0d150a1a3f8e9f797e83d48b"
+    }
+  },
+  {
+    "id": "ratio-to-trigonometry",
+    "topic": "trigonometry",
+    "fromProviders": [
+      "course-87-en:item:SN870460"
+    ],
+    "toProviders": [
+      "algebra-2-en:node:362",
+      "algebra-half-en:authored:M3-210-1"
+    ],
+    "fromDemand": "Express one positive quantity as a fraction of another",
+    "toDemand": "Form sine cosine and tangent ratios in a right triangle",
+    "reason": "Reduced numerical ratios support trigonometric ratios; the added construct is identifying opposite adjacent and hypotenuse relative to a chosen acute angle.",
+    "limits": "The numerical ratio need not be less than one, as tangent also need not be. Trigonometric targets use given Pythagorean triples and three exact reduced fractions. No angle inversion or calculator application is included.",
+    "evidenceSha256": {
+      "src/proportional-bank.js": "7260be3bcd035aa81a330732fdabdcd6cc656b000ac6b67ee2e58ebd0f9d9479",
+      "src/breadth-bank.js": "d298aeedc57f7b0d90c0b5d93382467eb44ff6156c226a0f2449adbdf0f2f02d",
+      "src/algebra-half.js": "0c7e31dfa7de5b401b0ed16f14b1b9e724d6c0b7e2692319c94811bff57bbd2e"
+    }
+  },
+  {
+    "id": "right-triangle-to-distance",
+    "topic": "coordinate-geometry",
+    "fromProviders": [
+      "course-87-en:authored:MCADA-99.1"
+    ],
+    "toProviders": [
+      "algebra-2-en:node:635"
+    ],
+    "fromDemand": "Calculate a missing right-triangle side",
+    "toDemand": "Calculate exact distance between two coordinates",
+    "reason": "The Pythagorean theorem supports coordinate distance; coordinate differences supply the legs and the target additionally simplifies the resulting square root.",
+    "limits": "The coordinate target permits equal x or equal y and excludes coincident points. The prerequisite is the squared-length identity, including its zero-leg limit in an axis-aligned distance, not a claim of uniform difficulty.",
+    "evidenceSha256": {
+      "src/curriculum87-late.js": "7994c39ee7905b8f675981cbed5b63222c9eba9b5d74cf5bf14d187ecd9f0295",
+      "src/algebra-review-bank.js": "c6a563b9727049c5c94f44d37cd1d8f76c486c36547db6fa838f21297dc02851"
+    }
+  },
+  {
+    "id": "percent-to-probability-complement",
+    "topic": "probability",
+    "fromProviders": [
+      "course-87-en:item:SX870064"
+    ],
+    "toProviders": [
+      "course-87-en:item:SX760144"
+    ],
+    "fromDemand": "Find the percent remaining from a whole",
+    "toDemand": "Find the probability of the complementary event",
+    "reason": "Subtracting from 100 percent supports a probability complement; the extension interprets the two complementary events as exhaustive and disjoint.",
+    "limits": "This is the same numerical operation in a probability model, not harder arithmetic. The rain contract includes probability 100 percent and hence a zero-percent complement.",
+    "evidenceSha256": {
+      "src/proportional-bank.js": "7260be3bcd035aa81a330732fdabdcd6cc656b000ac6b67ee2e58ebd0f9d9479",
+      "src/statistics-bank.js": "0084a5df0fcadf1793304874b46e645ec07e206a52ff636f2cf2a388c9a39dbd"
+    }
+  },
+  {
+    "id": "prime-factors-to-gcf",
+    "topic": "number-theory",
+    "fromProviders": [
+      "course-87-en:authored:MCADA-21.4",
+      "course-87-en:authored:MCADA-21.5"
+    ],
+    "toProviders": [
+      "algebra-half-en:node:126",
+      "course-87-en:item:SN870025",
+      "course-1-en:bank:C1_Section02:item:C1_S02_00077",
+      "course-1-en:bank:C1_Section02:item:C1_S02_00055"
+    ],
+    "fromDemand": "Produce a complete prime factorization",
+    "toDemand": "Find a common divisor of several integers",
+    "reason": "Prime decomposition supports a method for GCF: compare the input factorizations and retain shared primes with the smallest exponents.",
+    "limits": "Factor-tree and successive-prime-division anchors have required methods. Numerical GCF accepts any valid method; the bridge offers a supporting strategy rather than imposing prime factorization or ranking those methods. Two and three input GCFs remain unranked within this endpoint group.",
+    "evidenceSha256": {
+      "src/curriculum87-early.js": "e94651a4568a6f76079e344d21a0ba1c9b6521a33be70c227b4d89b448e4c657",
+      "src/breadth-bank.js": "d298aeedc57f7b0d90c0b5d93382467eb44ff6156c226a0f2449adbdf0f2f02d"
+    }
+  },
+  {
+    "id": "square-to-converse",
+    "topic": "pythagorean",
+    "fromProviders": [
+      "algebra-1-en:node:242",
+      "course-87-en:authored:MCADA-20.3"
+    ],
+    "toProviders": [
+      "course-87-en:authored:COURSE112.2"
+    ],
+    "fromDemand": "Evaluate a whole-number power",
+    "toDemand": "Test the converse of the Pythagorean theorem",
+    "reason": "Squaring numerical lengths supports the test a squared plus b squared equals c squared; the new construct is deciding whether the largest side makes a right triangle.",
+    "limits": "The converse contract alternates right and non-right triples. General positive-power practice contains squares as well as other powers, so this is prerequisite support rather than same-skill difficulty.",
+    "evidenceSha256": {
+      "src/breadth-bank.js": "d298aeedc57f7b0d90c0b5d93382467eb44ff6156c226a0f2449adbdf0f2f02d",
+      "src/curriculum87-early.js": "e94651a4568a6f76079e344d21a0ba1c9b6521a33be70c227b4d89b448e4c657",
+      "src/curriculum87-extra.js": "274306c2d145438ca5a61a5584857ffb9e35f6628940450423097ea1460cc1cc"
+    }
+  }
+]

@@ -1,0 +1,1816 @@
+[
+  {
+    "index": 0,
+    "key": "structured-measurement/lap-seconds",
+    "entries": [
+      "course-87-en:item:SX870149"
+    ],
+    "contract": "Convert a one-minute-plus-seconds lap to seconds, then subtract a faster-runner difference crossing the minute boundary. Keep calendar/elapsed-time interpretation, not a speed model."
+  },
+  {
+    "index": 1,
+    "key": "structured-measurement/price-per-pound",
+    "entries": [
+      "course-87-en:item:SN870116"
+    ],
+    "contract": "Recover purchase cost from amount paid and change, then divide by weight to obtain price per pound. Two contextual operations precede the unit rate."
+  },
+  {
+    "index": 2,
+    "key": "structured-measurement/compare-unit-price",
+    "entries": [
+      "course-87-en:item:SX870148"
+    ],
+    "contract": "Find cents per ounce for A, add B's unit-price premium, scale to the requested ounces and convert cents to dollars. Preserve the full operation chain."
+  },
+  {
+    "index": 3,
+    "key": "structured-measurement/nightly-rate",
+    "entries": [
+      "course-87-en:item:SN870244"
+    ],
+    "contract": "Divide total lodging cost by a positive whole number of nights; the generated nightly rate is integral."
+  },
+  {
+    "index": 4,
+    "key": "structured-measurement/yards-feet",
+    "entries": [
+      "course-87-en:item:SX870264",
+      "algebra-half-en:node:197"
+    ],
+    "contract": "Convert large whole-number yards to feet with factor 3. Number-size practice, not a distinct dimension or a course-based rank."
+  },
+  {
+    "index": 5,
+    "key": "structured-measurement/seed-cost",
+    "entries": [
+      "course-87-en:item:SX870275"
+    ],
+    "contract": "Scale a seed price proportionally and round only the final money amount to cents, halfway upward; do not round the intermediate unit rate."
+  },
+  {
+    "index": 6,
+    "key": "structured-measurement/weighted-wage",
+    "entries": [
+      "course-87-en:item:SX870286"
+    ],
+    "contract": "Divide total earnings from two different hour/rate groups by total hours. Unequal weights prohibit taking the simple mean of the two rates."
+  },
+  {
+    "index": 7,
+    "key": "structured-measurement/grape-cost",
+    "entries": [
+      "course-87-en:item:SN870393"
+    ],
+    "contract": "Scale a grape price proportionally and round only the final cost to cents, halfway upward. Preserve exact intermediate ratios."
+  },
+  {
+    "index": 8,
+    "key": "structured-measurement/cube-volume-ratio",
+    "entries": [
+      "course-87-en:item:SX870466"
+    ],
+    "contract": "Cube an integer side-length ratio from 2 through 5 to obtain the ratio of cube volumes. No area ratio or inverse-root branch occurs here."
+  },
+  {
+    "index": 9,
+    "key": "structured-measurement/feet-yards",
+    "entries": [
+      "algebra-half-en:node:198"
+    ],
+    "contract": "Convert feet to yards by division by 3; the generated whole-number amount is a multiple of 30."
+  },
+  {
+    "index": 10,
+    "key": "structured-measurement/inches-feet",
+    "entries": [
+      "algebra-half-en:node:199"
+    ],
+    "contract": "Convert a whole-number multiple of 12 inches to an integral number of feet."
+  },
+  {
+    "index": 11,
+    "key": "structured-measurement/feet-inches",
+    "entries": [
+      "algebra-half-en:node:200"
+    ],
+    "contract": "Convert whole-number feet to inches by multiplying by 12."
+  },
+  {
+    "index": 12,
+    "key": "structured-measurement/feet-miles",
+    "entries": [
+      "algebra-half-en:node:201"
+    ],
+    "contract": "Convert multiples of 528 feet to tenths of a mile using 5280 feet per mile; the output need not be integral."
+  },
+  {
+    "index": 13,
+    "key": "structured-measurement/centimeters-meters",
+    "entries": [
+      "algebra-half-en:node:206"
+    ],
+    "contract": "Convert 101 through 990 centimeters to meters, retaining hundredths where needed."
+  },
+  {
+    "index": 14,
+    "key": "structured-measurement/grams-kilograms",
+    "entries": [
+      "algebra-half-en:node:207"
+    ],
+    "contract": "Convert grams to kilograms; generated amounts give exact whole kilograms."
+  },
+  {
+    "index": 15,
+    "key": "structured-measurement/rate-difference",
+    "entries": [
+      "algebra-half-en:node:402"
+    ],
+    "contract": "Calculate two distance/time rates in the same units and subtract their exact rational values. There is no hours-to-minutes conversion."
+  },
+  {
+    "index": 16,
+    "key": "structured-measurement/milliliters-liters",
+    "entries": [
+      "algebra-half-en:node:730"
+    ],
+    "contract": "Convert multiples of 100 milliliters to liters, retaining a tenths-place result."
+  },
+  {
+    "index": 17,
+    "key": "structured-statistics/yield-mean",
+    "entries": [
+      "course-87-en:item:SX870060"
+    ],
+    "contract": "Interpret bushels per acre as total yield divided by acreage. This is a unit rate, not an unweighted mean of field yields."
+  },
+  {
+    "index": 18,
+    "key": "structured-statistics/grocery-mean",
+    "entries": [
+      "course-87-en:item:SX870112"
+    ],
+    "contract": "Average four money bills; generated cent totals are divisible by four. Preserve decimal money notation."
+  },
+  {
+    "index": 19,
+    "key": "structured-statistics/batting-average",
+    "entries": [
+      "course-87-en:item:SX870226"
+    ],
+    "contract": "Use the supplied hits/at-bats formula and round the final batting average to the nearest thousandth. This is a contextual rate, not a list mean."
+  },
+  {
+    "index": 20,
+    "key": "structured-statistics/test-group-mean",
+    "entries": [
+      "course-87-en:item:SX870283"
+    ],
+    "contract": "Combine two groups using their unequal counts and means, then round the final result to hundredths."
+  },
+  {
+    "index": 21,
+    "key": "structured-statistics/target-mean",
+    "entries": [
+      "course-87-en:item:SN870278"
+    ],
+    "contract": "Recover the total required for an overall target mean, subtract the existing total, and divide by five future quizzes. Existing group size varies from three to seven."
+  },
+  {
+    "index": 22,
+    "key": "structured-statistics/die-event",
+    "entries": [
+      "course-87-en:item:SX650321"
+    ],
+    "contract": "Count fair-die outcomes for equality, less-than, greater-than or different-from events. Strict bounds and the different-from values above six allow certain or impossible events."
+  },
+  {
+    "index": 23,
+    "key": "structured-statistics/coin-run",
+    "entries": [
+      "course-87-en:item:SX760141",
+      "algebra-half-en:node:699"
+    ],
+    "contract": "Find the probability of a specified run of two through five identical fair-coin faces; independence gives one divided by two to the run length."
+  },
+  {
+    "index": 24,
+    "key": "structured-statistics/cards-unordered",
+    "entries": [
+      "course-87-en:item:SN870522"
+    ],
+    "contract": "Two-card sampling without replacement includes same-suit, neither-face, both-face, same-color and face-plus-specified-rank in either order. Only the last branch adds the reverse order; no uniform rank against ordered cards is claimed."
+  },
+  {
+    "index": 25,
+    "key": "structured-statistics/rain-complement",
+    "entries": [
+      "course-87-en:item:SX760144"
+    ],
+    "contract": "Find the rain complement by subtracting a stated percentage from 100 percent."
+  },
+  {
+    "index": 26,
+    "key": "structured-statistics/odds-same-event",
+    "entries": [
+      "course-87-en:item:SN870774"
+    ],
+    "contract": "Convert favorable-to-unfavorable odds a:b to a/(a+b) for the same named event, which may itself be not-winning. Do not automatically complement the named event."
+  },
+  {
+    "index": 27,
+    "key": "structured-statistics/odds-complement",
+    "entries": [
+      "course-87-en:item:SN870834"
+    ],
+    "contract": "Given winning odds, answer either winning or not-winning according to the branch. The complement branch is optional, so do not assert a uniform extra-step difficulty over same-event odds."
+  },
+  {
+    "index": 28,
+    "key": "structured-statistics/four-mean",
+    "entries": [
+      "algebra-half-en:node:185"
+    ],
+    "contract": "Average four whole numbers of varying digit lengths by sum divided by four."
+  },
+  {
+    "index": 29,
+    "key": "structured-statistics/missing-price",
+    "entries": [
+      "algebra-half-en:node:187"
+    ],
+    "contract": "Recover an unknown shop price from the stated mean and five through seven shops; subtract all known prices from the target total."
+  },
+  {
+    "index": 30,
+    "key": "structured-statistics/mass-mean",
+    "entries": [
+      "algebra-half-en:node:217"
+    ],
+    "contract": "Average three masses with three decimal places; the generated sum is divisible by three in thousandths."
+  },
+  {
+    "index": 31,
+    "key": "structured-statistics/length-mean",
+    "entries": [
+      "algebra-half-en:node:218"
+    ],
+    "contract": "Average two lengths with three decimal places; retain an exact decimal mean."
+  },
+  {
+    "index": 32,
+    "key": "structured-statistics/marble-union",
+    "entries": [
+      "algebra-half-en:node:687"
+    ],
+    "contract": "For one marble draw, add the counts of two distinct colors; the events are disjoint, so there is no intersection correction."
+  },
+  {
+    "index": 33,
+    "key": "structured-statistics/die-history",
+    "entries": [
+      "algebra-half-en:node:700",
+      "algebra-1-en:node:697"
+    ],
+    "contract": "Previous independent die results are irrelevant to the next less-than or greater-than event. Count strict bounds, including impossible/certain cases."
+  },
+  {
+    "index": 34,
+    "key": "structured-statistics/marble-repeat",
+    "entries": [
+      "algebra-half-en:node:701"
+    ],
+    "contract": "For two same-color draws with replacement, multiply k/n by k/n. Both numerator and denominator reset."
+  },
+  {
+    "index": 35,
+    "key": "structured-statistics/cards-ordered",
+    "entries": [
+      "algebra-half-en:node:702"
+    ],
+    "contract": "Two-card sampling without replacement includes five event branches, with face-then-specified-rank ordered in the last branch. Other branches overlap the either-order recipe; retain related-only ordering between these two mixed recipes."
+  },
+  {
+    "index": 36,
+    "key": "structured-statistics/data-statistics",
+    "entries": [
+      "algebra-1-en:node:493",
+      "algebra-1-en:authored:M4-45-1"
+    ],
+    "contract": "Find range, mean, median and mode of eight through eleven values. The unique mode occurs three times; even/odd counts change the median operation."
+  },
+  {
+    "index": 37,
+    "key": "structured-statistics/weight-statistics",
+    "entries": [
+      "algebra-1-en:node:494"
+    ],
+    "contract": "Find range, mean, median and mode of weight data with eight through eleven values, a unique triple mode, and both even/odd median branches."
+  },
+  {
+    "index": 38,
+    "key": "structured-statistics/score-statistics",
+    "entries": [
+      "algebra-1-en:node:495"
+    ],
+    "contract": "Find range, mean, median and mode of score data with eight through eleven values, a unique triple mode, and both even/odd median branches."
+  },
+  {
+    "index": 39,
+    "key": "structured-statistics/mean-from-total",
+    "entries": [
+      "algebra-1-en:node:496",
+      "algebra-1-en:authored:M4-45-2"
+    ],
+    "contract": "Recover the mean of four values from their supplied total; two supplied individual values are irrelevant."
+  },
+  {
+    "index": 40,
+    "key": "structured-statistics/two-group-mean",
+    "entries": [
+      "algebra-1-en:node:551",
+      "algebra-1-en:authored:M4-52-2"
+    ],
+    "contract": "Combine two groups from their counts and means; compute the exact weighted total divided by combined count."
+  },
+  {
+    "index": 41,
+    "key": "structured-statistics/three-group-mean",
+    "entries": [
+      "algebra-1-en:node:552"
+    ],
+    "contract": "Combine three groups from their counts and means; retain all three weights and the exact combined mean."
+  },
+  {
+    "index": 42,
+    "key": "structured-statistics/weighted-percent",
+    "entries": [
+      "algebra-1-en:node:662"
+    ],
+    "contract": "Compute a weighted score from two given percentage weights totaling 100; do not substitute group counts or assume equal weights."
+  },
+  {
+    "index": 43,
+    "key": "structured-statistics/dice-sum",
+    "entries": [
+      "algebra-1-en:node:696",
+      "algebra-1-en:authored:M4-70-1"
+    ],
+    "contract": "Count the ordered two-dice outcomes with a specified sum from one through twelve. Sum one is impossible; the sample space has 36 outcomes."
+  },
+  {
+    "index": 44,
+    "key": "structured-statistics/die-next-value",
+    "entries": [
+      "algebra-1-en:node:698"
+    ],
+    "contract": "Ignore earlier repetitions and give the probability of a specified face on the next fair-die roll."
+  },
+  {
+    "index": 45,
+    "key": "structured-statistics/marble-next",
+    "entries": [
+      "algebra-1-en:node:699"
+    ],
+    "contract": "Earlier marbles were replaced; ignore those results when calculating the probability of the next specified color."
+  },
+  {
+    "index": 46,
+    "key": "structured-statistics/coin-sequence",
+    "entries": [
+      "algebra-1-en:node:702",
+      "algebra-1-en:authored:M4-70-2"
+    ],
+    "contract": "Calculate the probability of one exact ordered three- or four-toss coin sequence. All-heads is a possible branch; no permutation factor is needed."
+  },
+  {
+    "index": 47,
+    "key": "structured-statistics/marble-without",
+    "entries": [
+      "algebra-1-en:node:735",
+      "algebra-1-en:authored:M4-73-2"
+    ],
+    "contract": "For different colors without replacement, retain the second color count but reduce the total by one."
+  },
+  {
+    "index": 48,
+    "key": "structured-statistics/compare-different",
+    "entries": [
+      "algebra-1-en:node:736"
+    ],
+    "contract": "Calculate both with-replacement and without-replacement probabilities for two different colors, preserving the requested answer order."
+  },
+  {
+    "index": 49,
+    "key": "structured-statistics/compare-same",
+    "entries": [
+      "algebra-1-en:node:737"
+    ],
+    "contract": "Calculate both without-replacement and with-replacement probabilities for the same color. Without replacement decreases both its numerator and the total."
+  },
+  {
+    "index": 50,
+    "key": "structured-geometry/rectangle-pa",
+    "entries": [
+      "course-87-en:item:SX650319"
+    ],
+    "contract": "From labeled whole-number rectangle sides, calculate both perimeter and area; distinguish linear and square units."
+  },
+  {
+    "index": 51,
+    "key": "structured-geometry/right-triangle-area",
+    "entries": [
+      "course-87-en:item:SX870309"
+    ],
+    "contract": "Find right-triangle area from the two perpendicular legs. The labeled hypotenuse is a distractor, not an altitude requirement."
+  },
+  {
+    "index": 52,
+    "key": "structured-geometry/square-triangle-area",
+    "entries": [
+      "course-87-en:item:SX870199"
+    ],
+    "contract": "Combine a square and right triangle; infer the triangular base as total length minus square side, then sum component areas."
+  },
+  {
+    "index": 53,
+    "key": "structured-geometry/parallelogram-area",
+    "entries": [
+      "course-87-en:item:SN870327",
+      "algebra-half-en:node:712"
+    ],
+    "contract": "Find parallelogram area from base and perpendicular height; the slanted side is irrelevant."
+  },
+  {
+    "index": 54,
+    "key": "structured-geometry/circle-circumference",
+    "entries": [
+      "course-87-en:item:SX870332"
+    ],
+    "contract": "Find circumference from radius using pi=22/7; radii are multiples of seven, so the result is exact."
+  },
+  {
+    "index": 55,
+    "key": "structured-geometry/prism-volume",
+    "entries": [
+      "course-87-en:item:SN870379"
+    ],
+    "contract": "Find rectangular prism volume from three labeled perpendicular dimensions."
+  },
+  {
+    "index": 56,
+    "key": "structured-geometry/trapezoid-area",
+    "entries": [
+      "course-87-en:item:SX870351",
+      "algebra-half-en:node:222"
+    ],
+    "contract": "Find a right-trapezoid area from two parallel bases and its perpendicular height; use half the base sum times height."
+  },
+  {
+    "index": 57,
+    "key": "structured-geometry/polygon-triangles",
+    "entries": [
+      "course-87-en:item:SN870414"
+    ],
+    "contract": "A convex n-gon triangulates from one vertex into n-2 triangles; n ranges from five through ten."
+  },
+  {
+    "index": 58,
+    "key": "structured-geometry/polygon-angle-sum",
+    "entries": [
+      "course-87-en:item:SN870424"
+    ],
+    "contract": "Calculate a convex polygon's interior-angle sum as (n-2) times 180 degrees."
+  },
+  {
+    "index": 59,
+    "key": "structured-geometry/polygon-exterior",
+    "entries": [
+      "course-87-en:item:SN870451"
+    ],
+    "contract": "Calculate a regular polygon's exterior angle as 360/n; the side count divides 360 exactly."
+  },
+  {
+    "index": 60,
+    "key": "structured-geometry/cylinder-volume",
+    "entries": [
+      "course-87-en:item:SN870542",
+      "algebra-half-en:node:475",
+      "algebra-1-en:authored:M4-20-3",
+      "algebra-1-en:authored:M4-60-4"
+    ],
+    "contract": "Find cylinder volume for radius two through five and height seven through thirteen, using pi=3.14 exactly and perpendicular height."
+  },
+  {
+    "index": 61,
+    "key": "structured-geometry/triangle-area-hypotenuse",
+    "entries": [
+      "course-87-en:item:SN870430"
+    ],
+    "contract": "From a right triangle with Pythagorean-triple legs, find both its area and missing hypotenuse. This adds a second geometric construct to area calculation."
+  },
+  {
+    "index": 62,
+    "key": "structured-geometry/prism-surface",
+    "entries": [
+      "course-87-en:item:SN870672",
+      "algebra-half-en:node:354"
+    ],
+    "contract": "Calculate rectangular prism surface area by summing three pairs of equal rectangular faces."
+  },
+  {
+    "index": 63,
+    "key": "structured-geometry/coordinate-missing",
+    "entries": [
+      "course-87-en:item:SX870108"
+    ],
+    "contract": "Complete an axis-aligned rectangle from three consecutive signed-coordinate vertices, across four vertex-order variants, and calculate its area from coordinate differences."
+  },
+  {
+    "index": 64,
+    "key": "structured-geometry/oblique-triangle-area",
+    "entries": [
+      "algebra-half-en:node:221"
+    ],
+    "contract": "Find oblique-triangle area from a supplied external perpendicular altitude and base; do not use a slanted side."
+  },
+  {
+    "index": 65,
+    "key": "structured-geometry/circle-radius-ca",
+    "entries": [
+      "algebra-half-en:node:409"
+    ],
+    "contract": "From radius, find both circumference and area with pi=3.14 exactly."
+  },
+  {
+    "index": 66,
+    "key": "structured-geometry/circle-diameter-rca",
+    "entries": [
+      "algebra-half-en:node:410"
+    ],
+    "contract": "From diameter, first recover radius, then give radius, circumference and area with pi=3.14 exactly; half-integer radii can occur."
+  },
+  {
+    "index": 67,
+    "key": "structured-breadth/line-graph-choice",
+    "entries": [
+      "algebra-2-en:node:119",
+      "algebra-1-en:node:752"
+    ],
+    "contract": "Select the graph matching y=mx+b among four sign variations; slope is nonzero rational and intercept is nonzero signed. Selection does not require authoring a graph."
+  },
+  {
+    "index": 68,
+    "key": "structured-breadth/bar-graph-choice",
+    "entries": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00083"
+    ],
+    "contract": "Select the bar graph matching all six table frequencies assigned to grades; comparing one bar alone is insufficient."
+  },
+  {
+    "index": 69,
+    "key": "structured-breadth/cylinder-volume",
+    "entries": [
+      "course-1-en:bank:C1_Section12:item:C1_S12_00042"
+    ],
+    "contract": "Find cylinder volume for radius two through eight and height three through fifteen, using pi=3.14 exactly. Same formula, broader bounded arithmetic than the other cylinder recipe."
+  },
+  {
+    "index": 70,
+    "key": "structured-breadth/prism-surface",
+    "entries": [
+      "course-1-en:bank:C1_Section12:item:C1_S12_00056"
+    ],
+    "contract": "Find rectangular prism surface area from three positive integer dimensions. Sum all six faces, not volume or lateral area alone."
+  },
+  {
+    "index": 71,
+    "key": "structured-breadth/mean-three",
+    "entries": [
+      "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00071"
+    ],
+    "contract": "Average three scores, each a multiple of five."
+  },
+  {
+    "index": 72,
+    "key": "structured-breadth/median-five",
+    "entries": [
+      "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00072"
+    ],
+    "contract": "Sort five values and report the middle value; duplicates are permitted."
+  },
+  {
+    "index": 73,
+    "key": "structured-advanced/sphere-volume",
+    "entries": [
+      "algebra-2-en:node:31"
+    ],
+    "contract": "Find sphere volume for radius two through fifteen with pi=3.14; round only the final result to hundredths, halfway upward."
+  },
+  {
+    "index": 74,
+    "key": "structured-advanced/arc-length",
+    "entries": [
+      "algebra-2-en:node:38"
+    ],
+    "contract": "Scale circle circumference by a central-angle fraction for radius three through nine and angles 6,12,18,24,30 or 60 degrees; final hundredths rounding is required and no diagram is supplied."
+  },
+  {
+    "index": 75,
+    "key": "structured-representations/line-kind",
+    "entries": [
+      "course-87-en:item:SN870029"
+    ],
+    "contract": "Recognize segment, ray, line, angle, parallel lines or intersecting lines from endpoint/arrow conventions in a supplied drawing."
+  },
+  {
+    "index": 76,
+    "key": "structured-representations/histogram-read",
+    "entries": [
+      "course-87-en:item:SN870341"
+    ],
+    "contract": "Read one histogram-bin frequency from five intervals with frequencies two through ten; do not interpret a bar as one raw observation."
+  },
+  {
+    "index": 77,
+    "key": "structured-representations/pie-read",
+    "entries": [
+      "course-87-en:item:SN870345"
+    ],
+    "contract": "Convert a labeled circle-graph percentage into a voter count; the voter total is a multiple of 100."
+  },
+  {
+    "index": 78,
+    "key": "structured-representations/y-symmetry",
+    "entries": [
+      "course-87-en:item:SX870293"
+    ],
+    "contract": "Recover an off-axis point reflected across the y-axis while an on-axis point stays fixed; output the missing coordinate pair."
+  },
+  {
+    "index": 79,
+    "key": "structured-representations/triangle-kind",
+    "entries": [
+      "course-87-en:item:SN870299"
+    ],
+    "contract": "Classify a labeled triangle by the most specific side category: equilateral, exactly-two-equal isosceles, or scalene."
+  },
+  {
+    "index": 80,
+    "key": "structured-representations/rotation",
+    "entries": [
+      "course-87-en:item:SN870556"
+    ],
+    "contract": "Select the image of a rectangle after 90-degree counterclockwise, 180-degree, or 90-degree clockwise rotation about the origin; no drawing is requested."
+  },
+  {
+    "index": 81,
+    "key": "structured-representations/reflection",
+    "entries": [
+      "course-87-en:item:SN870555"
+    ],
+    "contract": "Reflect all three triangle vertices across the x-axis and supply six coordinate values."
+  },
+  {
+    "index": 82,
+    "key": "structured-representations/translation",
+    "entries": [
+      "course-87-en:item:SN870554"
+    ],
+    "contract": "Translate four rectangle vertices by a signed vector and supply eight coordinate values."
+  },
+  {
+    "index": 83,
+    "key": "structured-representations/polygon-interior",
+    "entries": [
+      "course-87-en:item:SN870417"
+    ],
+    "contract": "Calculate one interior angle of a regular polygon as 180-360/n."
+  },
+  {
+    "index": 84,
+    "key": "structured-representations/polygon-exterior",
+    "entries": [
+      "course-87-en:item:SN870428"
+    ],
+    "contract": "Calculate one exterior angle of a regular polygon as 360/n."
+  },
+  {
+    "index": 85,
+    "key": "structured-representations/diagonals",
+    "entries": [
+      "course-87-en:item:SN870566"
+    ],
+    "contract": "Count diagonals from one vertex as n-3, not all n(n-3)/2 polygon diagonals."
+  },
+  {
+    "index": 86,
+    "key": "structured-representations/angle-kind",
+    "entries": [
+      "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076",
+      "course-1-en:bank:C1_Section03:item:C1_S03_00061"
+    ],
+    "contract": "Classify a displayed angle from 30 through 180 degrees as acute, right, obtuse or straight."
+  },
+  {
+    "index": 87,
+    "key": "structured-representations/right-angle",
+    "entries": [
+      "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00078"
+    ],
+    "contract": "Recognize the right angle among four supplied diagrams; this is a single-class selection task."
+  },
+  {
+    "index": 88,
+    "key": "structured-representations/histogram-choice",
+    "entries": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00021"
+    ],
+    "contract": "Select the histogram matching all five interval frequencies in a table, rather than reading one frequency."
+  },
+  {
+    "index": 89,
+    "key": "structured-representations/clock-angle",
+    "entries": [
+      "course-1-en:bank:C1_Section03:item:C1_S03_00063"
+    ],
+    "contract": "Classify the smaller clock-hand angle at a whole hour from one through eleven; use 30-degree steps and the smaller angle."
+  },
+  {
+    "index": 90,
+    "key": "structured-representations/diameter",
+    "entries": [
+      "course-1-en:bank:C1_Section03:item:C1_S03_00079"
+    ],
+    "contract": "Identify the segment passing through the circle center with both endpoints on the circumference; rotation of the drawing does not change diameter."
+  },
+  {
+    "index": 91,
+    "key": "structured-reasoning/similar-truth",
+    "entries": [
+      "course-87-en:item:SAX70303"
+    ],
+    "contract": "Evaluate six similarity statements, including squares versus arbitrary rectangles, corresponding angles, possible unequal size and non-required equal area or side lengths. True/false recognition is not justification."
+  },
+  {
+    "index": 92,
+    "key": "structured-reasoning/missing-information",
+    "entries": [
+      "course-87-en:item:SN870539"
+    ],
+    "contract": "Select the missing information needed to recover Lee's April hours from the given comparison; do not invent a quantity."
+  },
+  {
+    "index": 93,
+    "key": "structured-reasoning/stem-build",
+    "entries": [
+      "course-87-en:item:SN870810"
+    ],
+    "contract": "Organize fifteen two-digit values into the supplied stems two through five with sorted leaves and duplicates; the stems and key are already provided."
+  },
+  {
+    "index": 94,
+    "key": "structured-reasoning/stem-read",
+    "entries": [
+      "course-87-en:item:SN870742"
+    ],
+    "contract": "Read and sort all fifteen observations from a stem-and-leaf display, retaining duplicate leaves and the supplied key."
+  },
+  {
+    "index": 95,
+    "key": "structured-reasoning/stem-statistics",
+    "entries": [
+      "course-87-en:item:SN870812"
+    ],
+    "contract": "From a stem-and-leaf display of nine values with one triple mode, calculate median, mode and range."
+  },
+  {
+    "index": 96,
+    "key": "structured-reasoning/box-choice",
+    "entries": [
+      "course-87-en:item:SN870838"
+    ],
+    "contract": "Select the correct box plot for nine strictly increasing observations; exclude the overall median when finding quartiles."
+  },
+  {
+    "index": 97,
+    "key": "structured-reasoning/box-range",
+    "entries": [
+      "course-87-en:item:SN870744"
+    ],
+    "contract": "Read range and interquartile range from a supplied box plot by two differences."
+  },
+  {
+    "index": 98,
+    "key": "structured-reasoning/box-summary",
+    "entries": [
+      "course-87-en:item:SN870806"
+    ],
+    "contract": "Read minimum, maximum, first quartile, third quartile and median from a box plot in the explicitly requested order."
+  },
+  {
+    "index": 99,
+    "key": "structured-reasoning/calendar-month",
+    "entries": [
+      "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054"
+    ],
+    "contract": "Name the month between two stated months in the same year; this recipe never crosses December."
+  },
+  {
+    "index": 100,
+    "key": "structured-relations/parallelogram-reason",
+    "entries": [
+      "algebra-2-en:node:340"
+    ],
+    "contract": "Judge whether one of five conditions establishes a parallelogram. Both opposite pairs equal or diagonals bisecting are sufficient; a kite condition or one equal opposite pair is not."
+  },
+  {
+    "index": 101,
+    "key": "structured-relations/triangle-proof",
+    "entries": [
+      "algebra-2-en:node:873"
+    ],
+    "contract": "Identify SAS then CPCTC for the supplied split-triangle diagram with equal halves and a common perpendicular side. Abbreviations alone are requested, not a complete proof."
+  },
+  {
+    "index": 102,
+    "key": "structured-relations/normal-parameters",
+    "entries": [
+      "algebra-2-en:node:921"
+    ],
+    "contract": "Read the mean at the center and the standard deviation from label spacing on a normal curve; mean 63-69 and standard deviation 3 or 4."
+  },
+  {
+    "index": 103,
+    "key": "structured-relations/copy-construction",
+    "entries": [
+      "algebra-2-en:node:860"
+    ],
+    "contract": "Select the compass chord-transfer step for copying an angle after equal-radius arcs are already given; do not equate this with constructing the whole copy."
+  },
+  {
+    "index": 104,
+    "key": "structured-relations/bisector-construction",
+    "entries": [
+      "algebra-half-en:node:766"
+    ],
+    "contract": "Select the final straightedge step for an angle bisector after equal-radius intersecting arcs are supplied."
+  },
+  {
+    "index": 105,
+    "key": "structured-solids/solid-volume",
+    "entries": [
+      "course-87-en:item:SN870721"
+    ],
+    "contract": "The generator alternates pyramid, cone and sphere volume; sphere has no perpendicular-height input and cone/sphere require final hundredths rounding. Keep these mixed demands related rather than imposing one uniform rank."
+  },
+  {
+    "index": 106,
+    "key": "structured-solids/sphere-surface",
+    "entries": [
+      "course-87-en:item:SN870664"
+    ],
+    "contract": "Calculate sphere surface area as four pi r squared with pi=3.14 exactly."
+  },
+  {
+    "index": 107,
+    "key": "structured-solids/ruler-difference",
+    "entries": [
+      "course-87-en:item:SX870048"
+    ],
+    "contract": "Read AB and nonzero-start BC on an eighth-inch ruler and subtract their lengths. Preserve the distinction between a tick coordinate and a segment length."
+  },
+  {
+    "index": 108,
+    "key": "structured-solids/pyramid-volume",
+    "entries": [
+      "algebra-half-en:node:737"
+    ],
+    "contract": "Find square-pyramid volume from square side and perpendicular height, divided by three. Slant height is not given or needed."
+  },
+  {
+    "index": 109,
+    "key": "structured-solids/cone-volume",
+    "entries": [
+      "algebra-half-en:node:738"
+    ],
+    "contract": "Find cone volume from radius and perpendicular height in millimeters, pi=3.14, rounded only at the end to hundredths."
+  },
+  {
+    "index": 110,
+    "key": "structured-solids/pyramid-surface",
+    "entries": [
+      "algebra-half-en:node:741"
+    ],
+    "contract": "Find square-pyramid surface area from square base side and supplied slant height; sum base plus four triangular faces."
+  },
+  {
+    "index": 111,
+    "key": "structured-solids/cone-surface",
+    "entries": [
+      "algebra-half-en:node:742"
+    ],
+    "contract": "Find cone total surface area including the base from radius and supplied slant height, using pi=3.14 exactly."
+  },
+  {
+    "index": 112,
+    "key": "structured-solids/inch-read",
+    "entries": [
+      "algebra-half-en:node:691"
+    ],
+    "contract": "Read a zero-origin inch ruler at sixteenth-inch ticks from 2 through 61 and give the reduced fractional length; no physical drawing is required."
+  },
+  {
+    "index": 113,
+    "key": "structured-solids/metric-read",
+    "entries": [
+      "algebra-half-en:node:694"
+    ],
+    "contract": "Read a metric ruler at tenths of a centimeter from 1.5 through 4.7 centimeters; no physical drawing is required."
+  },
+  {
+    "index": 114,
+    "key": "structured-algebra-review/point-distance",
+    "entries": [
+      "algebra-2-en:node:635"
+    ],
+    "contract": "Find distance between distinct signed-coordinate points from -8 through 8, reporting an exact simplified radical or integer when the radicand is a square."
+  },
+  {
+    "index": 115,
+    "key": "structured-algebra-review/protractor-read",
+    "entries": [
+      "course-87-en:item:SN870075"
+    ],
+    "contract": "Read a protractor with baseline zero or 180 degrees; choose the scale aligned with the baseline and give the smaller angle."
+  },
+  {
+    "index": 116,
+    "key": "structured-curriculum87/7.1",
+    "entries": [
+      "course-87-en:authored:MCADA-7.1"
+    ],
+    "contract": "Report the dimension count of a point, line, rectangle or rectangular prism, including zero dimensions for a point."
+  },
+  {
+    "index": 117,
+    "key": "structured-curriculum87/7.3",
+    "entries": [
+      "course-87-en:authored:MCADA-7.3"
+    ],
+    "contract": "Classify supplied lines as parallel, perpendicular or oblique; the oblique branch intersects but not at right angles."
+  },
+  {
+    "index": 118,
+    "key": "structured-curriculum87/7.4",
+    "entries": [
+      "course-87-en:authored:MCADA-7.4",
+      "intermediate-4-en:authored:M2-ddfbb17b8be0-2",
+      "course-1-en:authored:M2-865122776ab4-1",
+      "algebra-half-en:authored:M3-9-2",
+      "algebra-1-en:authored:M4-2-1"
+    ],
+    "contract": "Classify angles with numerical degree labels among acute/right/obtuse/straight, including 90 and 180 degrees."
+  },
+  {
+    "index": 119,
+    "key": "structured-curriculum87/8.6",
+    "entries": [
+      "course-87-en:authored:MCADA-8.6"
+    ],
+    "contract": "For an inch divided into 2,4,8 or 16 intervals, state the smallest graduation 1/n inch. Graduation is not an accuracy or error-bound claim."
+  },
+  {
+    "index": 120,
+    "key": "structured-curriculum87/16.2",
+    "entries": [
+      "course-87-en:authored:MCADA-16.2"
+    ],
+    "contract": "Choose a plausible everyday length, capacity, mass or temperature estimate from three alternatives. These different attributes do not support one uniform numerical difficulty rank."
+  },
+  {
+    "index": 121,
+    "key": "structured-curriculum87/16.3",
+    "entries": [
+      "course-87-en:authored:MCADA-16.3",
+      "algebra-half-en:authored:M3-53-2"
+    ],
+    "contract": "Using one of seven US unit equivalences, express one smaller unit as a percentage of a larger unit, including fractional percentages."
+  },
+  {
+    "index": 122,
+    "key": "structured-curriculum87/17.2",
+    "entries": [
+      "course-87-en:authored:MCADA-17.2"
+    ],
+    "contract": "Classify a numerically labeled angle, including acute/right/obtuse/straight boundary values. Same executable body as lesson 7.4, original identity retained."
+  },
+  {
+    "index": 123,
+    "key": "structured-curriculum87/17.4",
+    "entries": [
+      "course-87-en:authored:MCADA-17.4"
+    ],
+    "contract": "Convert a proper fraction of a circle into both numerical percent and central-angle degrees; denominators vary from 2 to 12 among specified choices."
+  },
+  {
+    "index": 124,
+    "key": "structured-curriculum87/18.1",
+    "entries": [
+      "course-87-en:authored:MCADA-18.1",
+      "intermediate-4-en:authored:M2-538a2ea0417a-1",
+      "course-1-en:authored:M2-75eb2aeb1566-1",
+      "algebra-half-en:authored:M3-115-1",
+      "algebra-1-en:authored:M4-2-2"
+    ],
+    "contract": "Name a three-, four-, five-, six-, eight- or ten-sided polygon from its diagram and side count."
+  },
+  {
+    "index": 125,
+    "key": "structured-curriculum87/18.2",
+    "entries": [
+      "course-87-en:authored:MCADA-18.2",
+      "course-1-en:authored:M2-75eb2aeb1566-2"
+    ],
+    "contract": "Name all vertices of a polygon consecutively, permitting cyclic shifts and reversal but not diagonal jumps; teacher-reviewed response."
+  },
+  {
+    "index": 126,
+    "key": "structured-curriculum87/18.3",
+    "entries": [
+      "course-87-en:authored:MCADA-18.3",
+      "algebra-1-en:authored:M4-2-3",
+      "algebra-2-en:authored:M6-1-1"
+    ],
+    "contract": "Distinguish regular and irregular three-, five- or six-sided polygons from a to-scale drawing; regularity needs equal sides and angles."
+  },
+  {
+    "index": 127,
+    "key": "structured-curriculum87/18.4",
+    "entries": [
+      "course-87-en:authored:MCADA-18.4",
+      "intermediate-4-en:authored:M2-08d5c41e08cb-1",
+      "course-1-en:authored:M2-9996ee79c132-1",
+      "algebra-half-en:authored:M3-115-2"
+    ],
+    "contract": "Compare rectangles or triangles for similarity in the phase-2 override, including a deliberately altered corresponding side. Justify corresponding ratios and angles; a yes/no response alone is insufficient."
+  },
+  {
+    "index": 128,
+    "key": "structured-curriculum87/18.5",
+    "entries": [
+      "course-87-en:authored:MCADA-18.5",
+      "intermediate-4-en:authored:M2-08d5c41e08cb-2",
+      "algebra-half-en:authored:M3-115-3"
+    ],
+    "contract": "Compare rectangles or triangles for congruence in the phase-2 override, including equal and scaled cases. Justify equal corresponding parts, not just shape."
+  },
+  {
+    "index": 129,
+    "key": "structured-curriculum87/18.6",
+    "entries": [
+      "course-87-en:authored:MCADA-18.6"
+    ],
+    "contract": "Evaluate six phase-2 statements distinguishing similarity and congruence; true/false recognition does not constitute a proof."
+  },
+  {
+    "index": 130,
+    "key": "structured-curriculum87/19.2",
+    "entries": [
+      "course-87-en:authored:MCADA-19.2",
+      "algebra-1-en:authored:M4-3-2"
+    ],
+    "contract": "Divide a regular polygon's perimeter by its three, four, five, six or eight equal sides to recover one side length."
+  },
+  {
+    "index": 131,
+    "key": "structured-curriculum87/20.5",
+    "entries": [
+      "course-87-en:authored:MCADA-20.5"
+    ],
+    "contract": "Distinguish linear centimeters from square centimeters as length versus area units. This is dimensional vocabulary, not formula calculation."
+  },
+  {
+    "index": 132,
+    "key": "structured-curriculum87/20.7",
+    "entries": [
+      "course-87-en:authored:MCADA-20.7"
+    ],
+    "contract": "Recover a square side from a supplied perfect-square area; take the positive root."
+  },
+  {
+    "index": 133,
+    "key": "structured-curriculum87/20.11",
+    "entries": [
+      "course-87-en:authored:MCADA-20.11"
+    ],
+    "contract": "Recover a square side from its perimeter, then square it to find area. This combines two measure formulas."
+  },
+  {
+    "index": 134,
+    "key": "structured-curriculum87/32.1",
+    "entries": [
+      "course-87-en:authored:MCADA-32.1"
+    ],
+    "contract": "Explain why metric relationships use powers of ten and supply a correct factor-10,100 or1000 example with units; teacher-reviewed explanation."
+  },
+  {
+    "index": 135,
+    "key": "structured-curriculum87/32.4",
+    "entries": [
+      "course-87-en:authored:MCADA-32.4"
+    ],
+    "contract": "Compare Celsius and Fahrenheit temperatures using the supplied affine conversion, including equal cases and negative Celsius values. The comparison, not just substitution, is required."
+  },
+  {
+    "index": 136,
+    "key": "structured-curriculum87/40.1",
+    "entries": [
+      "course-87-en:authored:MCADA-40.1"
+    ],
+    "contract": "Physically draw/cut a triangle's corners and arrange them on a straight line to demonstrate the 180-degree sum; measurement demonstration is not a formal general proof."
+  },
+  {
+    "index": 137,
+    "key": "structured-curriculum87/40.3",
+    "entries": [
+      "course-87-en:authored:MCADA-40.3",
+      "algebra-half-en:authored:M3-98-1"
+    ],
+    "contract": "Name complementary, supplementary, adjacent or vertical angles from definitions; adjacency alone does not specify a numerical sum."
+  },
+  {
+    "index": 138,
+    "key": "structured-curriculum87/40.4",
+    "entries": [
+      "course-87-en:authored:MCADA-40.4",
+      "course-1-en:authored:M2-4f893f9e8209-2",
+      "algebra-half-en:authored:M3-98-2",
+      "algebra-1-en:authored:M4-97-2"
+    ],
+    "contract": "Find an unknown numerical complementary, supplementary or vertical angle in the phase-2 branches. The vertical branch copies the value rather than subtracting."
+  },
+  {
+    "index": 139,
+    "key": "structured-curriculum87/50.1",
+    "entries": [
+      "course-87-en:authored:MCADA-50.1",
+      "course-1-en:authored:M2-7ee5e3a62a7a-1",
+      "algebra-half-en:authored:M3-23-2",
+      "algebra-2-en:authored:M6-41-1"
+    ],
+    "contract": "Write both reciprocal unit multipliers for a stated equivalence and explain why each is one. No numerical conversion result is requested."
+  },
+  {
+    "index": 140,
+    "key": "structured-curriculum87/53.1",
+    "entries": [
+      "course-87-en:authored:MCADA-53.1"
+    ],
+    "contract": "Express a constant travel rate in both distance/time and reciprocal time/distance with correct units; teacher review checks the reciprocal interpretation."
+  },
+  {
+    "index": 141,
+    "key": "structured-curriculum87/58.1",
+    "entries": [
+      "course-87-en:authored:MCADA-58.1",
+      "intermediate-4-en:authored:M2-87908ef73c84-1",
+      "course-1-en:authored:M2-3c1582763e12-1",
+      "algebra-half-en:authored:M3-121-3"
+    ],
+    "contract": "Draw every and only symmetry line of an equilateral/scalene triangle or square/nonsquare rectangle in the phase-2 override; zero, two, three and four lines can occur."
+  },
+  {
+    "index": 142,
+    "key": "structured-curriculum87/61.2",
+    "entries": [
+      "course-87-en:authored:MCADA-61.2",
+      "course-1-en:authored:M2-5e0ce2596e35-2"
+    ],
+    "contract": "Find the other three angles of a parallelogram using equal opposite and supplementary adjacent angles."
+  },
+  {
+    "index": 143,
+    "key": "structured-curriculum87/66.1",
+    "entries": [
+      "course-87-en:authored:MCADA-66.1"
+    ],
+    "contract": "Measure three real circular objects, tabulate circumference/diameter ratios and discuss measurement error when estimating pi. No fabricated observations; distinct experimental demand stays unranked."
+  },
+  {
+    "index": 144,
+    "key": "structured-curriculum87/66.3",
+    "entries": [
+      "course-87-en:authored:MCADA-66.3",
+      "course-1-en:authored:M2-fc5a10837abc-2"
+    ],
+    "contract": "Give decimal and fractional approximations to pi and explain neither is exactly pi. This is conceptual explanation, not a calculation hierarchy."
+  },
+  {
+    "index": 145,
+    "key": "structured-curriculum87/67.1",
+    "entries": [
+      "course-87-en:authored:MCADA-67.1",
+      "intermediate-4-en:authored:M2-ec616ec4d1a2-1",
+      "course-1-en:authored:M2-23b803fc7d4e-1",
+      "algebra-1-en:authored:M4-60-1"
+    ],
+    "contract": "Name six solid diagrams in the phase-2 override: rectangular prism, cylinder, sphere, cone, square pyramid and triangular prism."
+  },
+  {
+    "index": 146,
+    "key": "structured-curriculum87/67.2",
+    "entries": [
+      "course-87-en:authored:MCADA-67.2",
+      "intermediate-4-en:authored:M2-ec616ec4d1a2-2",
+      "course-1-en:authored:M2-23b803fc7d4e-2",
+      "algebra-1-en:authored:M4-60-2"
+    ],
+    "contract": "Count faces, edges and vertices of either an n-gonal prism or pyramid for n=3,4,5,6 in the phase-2 override; formulas differ by solid type."
+  },
+  {
+    "index": 147,
+    "key": "structured-curriculum87/67.3",
+    "entries": [
+      "course-87-en:authored:MCADA-67.3",
+      "algebra-half-en:authored:M3-121-1"
+    ],
+    "contract": "Draw an n-gonal prism in perspective for n=3,4,5; label its two congruent parallel bases and show hidden edges with dashed lines."
+  },
+  {
+    "index": 148,
+    "key": "structured-curriculum87/89.1",
+    "entries": [
+      "course-87-en:authored:MCADA-89.1"
+    ],
+    "contract": "Draw every diagonal of a convex four-, five-, six- or eight-sided polygon and report n(n-3)/2. Count each nonadjacent vertex pair once."
+  },
+  {
+    "index": 149,
+    "key": "structured-curriculum87/96.1",
+    "entries": [
+      "course-87-en:authored:MCADA-96.1"
+    ],
+    "contract": "Estimate a displayed angle within ten degrees without a protractor and justify familiar benchmarks; do not treat an exact measurement answer as meeting this method."
+  },
+  {
+    "index": 150,
+    "key": "structured-curriculum87/102.2",
+    "entries": [
+      "course-87-en:authored:MCADA-102.2",
+      "course-1-en:authored:M2-e9c8b69493c0-2",
+      "algebra-half-en:authored:M3-204-2",
+      "algebra-2-en:authored:M6-1-4",
+      "algebra-2-en:authored:M6-30-4"
+    ],
+    "contract": "Identify corresponding, alternate-interior, same-side-interior or vertical angle pairs by their positions on a transversal diagram."
+  },
+  {
+    "index": 151,
+    "key": "structured-curriculum87/104.1",
+    "entries": [
+      "course-87-en:authored:MCADA-104.1",
+      "algebra-half-en:authored:M3-64-1"
+    ],
+    "contract": "Calculate both curved semicircle arc length, excluding diameter, and semicircle area with pi=3.14. The two-output demand differs from arc-only tasks."
+  },
+  {
+    "index": 152,
+    "key": "structured-curriculum87/105.2",
+    "entries": [
+      "course-87-en:authored:MCADA-105.2"
+    ],
+    "contract": "Find sphere surface area from a labeled radius with pi=3.14 exactly."
+  },
+  {
+    "index": 153,
+    "key": "structured-curriculum87/INV2.1",
+    "entries": [
+      "course-87-en:authored:MCADA-INV2.1"
+    ],
+    "contract": "Physically construct two concentric circles with different given radii, keep a fixed compass center and label that center."
+  },
+  {
+    "index": 154,
+    "key": "structured-curriculum87/INV2.2",
+    "entries": [
+      "course-87-en:authored:MCADA-INV2.2"
+    ],
+    "contract": "Inscribe a regular hexagon by stepping a compass radius, then join alternate vertices for an equilateral triangle; retain construction arcs."
+  },
+  {
+    "index": 155,
+    "key": "structured-curriculum87/INV2.3",
+    "entries": [
+      "course-87-en:authored:MCADA-INV2.3"
+    ],
+    "contract": "Construct four, six or eight equal circle sectors in the phase-2 override using compass and straightedge, retain arcs and explain equal angles."
+  },
+  {
+    "index": 156,
+    "key": "structured-curriculum87/INV2.4",
+    "entries": [
+      "course-87-en:authored:MCADA-INV2.4"
+    ],
+    "contract": "Measure a central and corresponding inscribed angle on a supplied drawing within three degrees and compare the 2:1 relationship; measurement is not a general theorem proof."
+  },
+  {
+    "index": 157,
+    "key": "structured-curriculum87/INV2.5",
+    "entries": [
+      "course-87-en:authored:MCADA-INV2.5"
+    ],
+    "contract": "Name radius, diameter, chord or arc from a verbal definition; a diameter is a special chord, not any center-to-circle segment."
+  },
+  {
+    "index": 158,
+    "key": "structured-curriculum87/INV3.1",
+    "entries": [
+      "course-87-en:authored:MCADA-INV3.1",
+      "course-1-en:authored:M2-335fb8ceaa11-1",
+      "algebra-half-en:authored:M3-38-1"
+    ],
+    "contract": "Identify all four quadrants, the axes or the origin from signed coordinate pairs in seven phase-2 branches."
+  },
+  {
+    "index": 159,
+    "key": "structured-curriculum87/INV5.2",
+    "entries": [
+      "course-87-en:authored:MCADA-INV5.2"
+    ],
+    "contract": "Draw a double-line graph for four days of scores for each of two teams; shared uniform axes, ordered segments and a distinguishing key are required."
+  },
+  {
+    "index": 160,
+    "key": "structured-curriculum87/INV5.3",
+    "entries": [
+      "course-87-en:authored:MCADA-INV5.3"
+    ],
+    "contract": "Construct a circle graph from counts using a protractor in the phase-2 override, with totals eight or twelve, complete labels and angle tolerance three degrees."
+  },
+  {
+    "index": 161,
+    "key": "structured-curriculum87/INV6.3",
+    "entries": [
+      "course-87-en:authored:MCADA-INV6.3"
+    ],
+    "contract": "Draw all symmetry lines of a square, nonsquare rectangle or nonsquare rhombus, including the no-diagonal symmetry of a nonsquare rectangle."
+  },
+  {
+    "index": 162,
+    "key": "structured-curriculum87/INV6.4",
+    "entries": [
+      "course-87-en:authored:MCADA-INV6.4"
+    ],
+    "contract": "Locate the fixed parallelogram's diagonal midpoint and justify point symmetry by a 180-degree rotation; no variable family of centers is generated."
+  },
+  {
+    "index": 163,
+    "key": "structured-curriculum87/COURSE108.2",
+    "entries": [
+      "course-87-en:authored:COURSE108.2",
+      "course-1-en:authored:M2-5a92e1ff2ff9-2"
+    ],
+    "contract": "Write formulas for rectangle perimeter and area, evaluate both, and distinguish linear from square units; teacher-reviewed formula production adds to numerical calculation."
+  },
+  {
+    "index": 164,
+    "key": "structured-curriculum87/COURSE112.2",
+    "entries": [
+      "course-87-en:authored:COURSE112.2",
+      "algebra-1-en:authored:M4-97-4"
+    ],
+    "contract": "Check whether three lengths form a right triangle by comparing squares; branches are scaled 3-4-5 triples or a longest side increased by one."
+  },
+  {
+    "index": 165,
+    "key": "structured-curriculum87/COURSE113.3",
+    "entries": [
+      "course-87-en:authored:COURSE113.3",
+      "algebra-half-en:authored:M3-120-3",
+      "algebra-1-en:authored:M4-91-2"
+    ],
+    "contract": "Calculate sphere volume with pi=3.14 for radii that are multiples of three, yielding an exact finite decimal rather than requiring final rounding."
+  },
+  {
+    "index": 166,
+    "key": "structured-curriculum87/COURSE115.1",
+    "entries": [
+      "course-87-en:authored:COURSE115.1",
+      "algebra-half-en:authored:M3-119-1",
+      "algebra-2-en:authored:M6-79-2"
+    ],
+    "contract": "Convert cubic centimeters to both milliliters and liters using the stated capacity equivalences; dimensional interpretation is part of the context."
+  },
+  {
+    "index": 167,
+    "key": "structured-curriculum87/COURSE115.2",
+    "entries": [
+      "course-87-en:authored:COURSE115.2",
+      "algebra-half-en:authored:M3-119-2"
+    ],
+    "contract": "Use the explicitly assumed water density exactly 1 g/cm3 to convert milliliters to both grams and kilograms. Do not generalize this density to all substances or conditions."
+  },
+  {
+    "index": 168,
+    "key": "structured-curriculum87/COURSE119.1",
+    "entries": [
+      "course-87-en:authored:COURSE119.1",
+      "algebra-1-en:authored:M4-10-1"
+    ],
+    "contract": "Distinguish zero divided by a nonzero number from division by zero, including 0/0 being undefined due to no unique quotient."
+  },
+  {
+    "index": 169,
+    "key": "structured-curriculum87/COURSE119.2",
+    "entries": [
+      "course-87-en:authored:COURSE119.2"
+    ],
+    "contract": "Find the excluded x for 5/(x-a) from a signed integer shift; the denominator must not be zero."
+  },
+  {
+    "index": 170,
+    "key": "structured-curriculum87/COURSE210.2",
+    "entries": [
+      "course-87-en:authored:COURSE210.2"
+    ],
+    "contract": "From favorable odds a:b, give both the event and complement probabilities in that order."
+  },
+  {
+    "index": 171,
+    "key": "structured-foundational-courses/months",
+    "entries": [
+      "intermediate-4-en:authored:M2-3f5b0aee3781-2"
+    ],
+    "contract": "Name the preceding or following month, including December/January wraparound; preserve both index branches."
+  },
+  {
+    "index": 172,
+    "key": "structured-foundational-courses/temperature",
+    "entries": [
+      "intermediate-4-en:authored:M2-5c0fe4f1443f-1"
+    ],
+    "contract": "Read a Celsius thermometer from zero through forty in five-degree graduations."
+  },
+  {
+    "index": 173,
+    "key": "structured-foundational-courses/shapes",
+    "entries": [
+      "intermediate-4-en:authored:M2-8249b642047f-1"
+    ],
+    "contract": "Name triangle, rectangle, square or circle using the most specific name; the nonsquare rectangle has unequal adjacent lengths."
+  },
+  {
+    "index": 174,
+    "key": "structured-foundational-courses/bar-create",
+    "entries": [
+      "intermediate-4-en:authored:M2-874aeaab47bb-1",
+      "course-1-en:authored:M2-1586a2a40f39-2"
+    ],
+    "contract": "From twelve raw observations, tally three explicit interval categories then draw separated bars with labeled axes and a uniform scale."
+  },
+  {
+    "index": 175,
+    "key": "structured-foundational-courses/calendar",
+    "entries": [
+      "intermediate-4-en:authored:M2-dbd5635b2478-1"
+    ],
+    "contract": "Calculate a date after a stated number of days; branches include within-month arithmetic and crossing a month/year boundary, with leap-year February. Do not rank this entire mixed recipe as always harder than same-month tasks."
+  },
+  {
+    "index": 176,
+    "key": "structured-foundational-courses/survey",
+    "entries": [
+      "intermediate-4-en:authored:M2-131c71fc944c-1",
+      "course-1-en:authored:M2-c4f194fd4dd9-3"
+    ],
+    "contract": "Design a neutral preference survey, choose respondents, prepare a tally table and state a generalization limit; collect no invented results. No numerical mean or graph ranking is implied."
+  },
+  {
+    "index": 177,
+    "key": "structured-foundational-courses/information",
+    "entries": [
+      "intermediate-4-en:authored:M2-763509187d44-1"
+    ],
+    "contract": "Determine whether price and count suffice for total cost; explain the missing count or calculate when present. Both sufficient/insufficient branches matter."
+  },
+  {
+    "index": 178,
+    "key": "structured-foundational-courses/turns",
+    "entries": [
+      "intermediate-4-en:authored:M2-9a770361a5f0-1",
+      "course-1-en:authored:M2-8e79c4526873-1"
+    ],
+    "contract": "Convert one through four quarter-turns into clockwise degrees, including a full revolution."
+  },
+  {
+    "index": 179,
+    "key": "structured-foundational-courses/tessellation",
+    "entries": [
+      "intermediate-4-en:authored:M2-2c12df5cf209-1"
+    ],
+    "contract": "Draw at least six congruent square or equilateral-triangle tiles and explain a 360-degree vertex sum with no gaps/overlaps; distinct construction/reasoning demand."
+  },
+  {
+    "index": 180,
+    "key": "structured-foundational-courses/estimate-measure",
+    "entries": [
+      "intermediate-4-en:authored:M2-9423110916cd-1"
+    ],
+    "contract": "Estimate rectangle perimeter, rectangle area or rectangular prism volume after rounding each dimension to tens. The mixed-dimensional branches stay related, not uniformly ranked against an exact formula task."
+  },
+  {
+    "index": 181,
+    "key": "structured-foundational-courses/scales",
+    "entries": [
+      "course-1-en:authored:M2-5609fb540126-2"
+    ],
+    "contract": "Infer a uniform scale step of 2,5,10 or20 and calculate the value at a stated interval from zero; this is scale reading without a supplied diagram."
+  },
+  {
+    "index": 182,
+    "key": "structured-foundational-courses/bisect-angle",
+    "entries": [
+      "course-1-en:authored:M2-5c4fa8e00372-2",
+      "algebra-half-en:authored:M3-98-3"
+    ],
+    "contract": "Draw a given angle using a protractor, then bisect it with compass and straightedge, retain arcs and state each half-angle. The full construction is teacher-reviewed."
+  },
+  {
+    "index": 183,
+    "key": "structured-algebra-half/reference-number",
+    "entries": [
+      "algebra-half-en:authored:M3-55-2"
+    ],
+    "contract": "Choose the closest benchmark 0,1/2 or1 for one of five twentieths values, including 21/20; compare distances without rounding to an unrestricted half-integer."
+  },
+  {
+    "index": 184,
+    "key": "structured-algebra-half/english-volume",
+    "entries": [
+      "algebra-half-en:authored:M3-118-1"
+    ],
+    "contract": "Convert whole cubic feet to cubic inches by cubing 12, not multiplying by 12 once."
+  },
+  {
+    "index": 185,
+    "key": "structured-algebra-half/volume-multipliers",
+    "entries": [
+      "algebra-half-en:authored:M3-118-2",
+      "algebra-1-en:authored:M4-53-2"
+    ],
+    "contract": "Show three or six unit multipliers for cubic feet/yards/miles to cubic inches or the reverse. Accept exact products/fractions and reverse every factor; mixed lengths of chain preclude a uniform one-step-versus-six-step rank."
+  },
+  {
+    "index": 186,
+    "key": "structured-algebra-half/metric-cube",
+    "entries": [
+      "algebra-half-en:authored:M3-119-3",
+      "algebra-2-en:authored:M6-79-1"
+    ],
+    "contract": "Convert a multiple of 1000 cm3 to both m3 and liters, distinguishing the cubed length factor from the capacity factor."
+  },
+  {
+    "index": 187,
+    "key": "structured-algebra-half/construction-tools",
+    "entries": [
+      "algebra-half-en:authored:M3-201-6"
+    ],
+    "contract": "Name compass and unmarked straightedge as the permitted tools for classical construction; naming tools alone does not demonstrate their use."
+  },
+  {
+    "index": 188,
+    "key": "structured-algebra-half/histogram-read",
+    "entries": [
+      "algebra-half-en:authored:M3-202-7"
+    ],
+    "contract": "Read two adjacent histogram frequencies from a four-bin display and add them, including possible zero counts."
+  },
+  {
+    "index": 189,
+    "key": "structured-algebra-one/coordinate-pairs",
+    "entries": [
+      "algebra-1-en:authored:M4-50-2"
+    ],
+    "contract": "Plot P(x,y), Q(y,x), R(0,x), identify quadrants/axis and explain swapped pairs coincide exactly when x=y. Retain signed nonzero x,y and the required explanation."
+  },
+  {
+    "index": 190,
+    "key": "structured-algebra-one/domain",
+    "entries": [
+      "algebra-1-en:authored:M4-64-1"
+    ],
+    "contract": "Alternate real-domain tasks: a principal square root needs a nonnegative radicand; a rational expression retains all original exclusions even after cancellation. Keep mixed branch demands related, not uniformly above one denominator exclusion."
+  },
+  {
+    "index": 191,
+    "key": "structured-algebra-one/motion:sum",
+    "entries": [
+      "algebra-1-en:authored:M4-94-1",
+      "algebra-2-en:authored:M6-29-1"
+    ],
+    "contract": "Model simultaneous opposite-direction travel by adding both distances, write the equation and solve the common elapsed time; there is no delayed departure in this sum recipe."
+  },
+  {
+    "index": 192,
+    "key": "structured-algebra-two/space:lines-planes",
+    "entries": [
+      "algebra-2-en:authored:M5-space-lines-planes"
+    ],
+    "contract": "Give parallel, intersecting and skew prism-edge examples and the intersection of two planes, explaining noncoplanarity for skew lines. Spatial reasoning is not ordered by course title."
+  },
+  {
+    "index": 193,
+    "key": "structured-algebra-two/statistics:population",
+    "entries": [
+      "algebra-2-en:authored:M5-statistics-population"
+    ],
+    "contract": "Compute population standard deviation of five signed values using denominator N=5, not N-1, including constant data with zero deviation; round only final sigma to hundredths."
+  },
+  {
+    "index": 194,
+    "key": "structured-algebra-two/statistics:normal",
+    "entries": [
+      "algebra-2-en:authored:M5-statistics-normal"
+    ],
+    "contract": "From a given normal mean and standard deviation, find endpoints within one,two or three standard deviations and the corresponding approximate 68/95/99.7 percentage."
+  },
+  {
+    "index": 195,
+    "key": "structured-algebra-two-completion/review:notation",
+    "entries": [
+      "algebra-2-en:authored:M6-0-1"
+    ],
+    "contract": "Draw and label line, ray and segment with correct arrows, endpoint counts and finite/infinite length descriptions. This is production, not visual recognition."
+  },
+  {
+    "index": 196,
+    "key": "structured-algebra-two-completion/review:area",
+    "entries": [
+      "algebra-2-en:authored:M6-0-2"
+    ],
+    "contract": "Draw a rectangle with an interior circular hole and calculate remaining area using pi=3.14; subtract the hole exactly once."
+  },
+  {
+    "index": 197,
+    "key": "structured-algebra-two-completion/review:solid",
+    "entries": [
+      "algebra-2-en:authored:M6-0-3"
+    ],
+    "contract": "Given base area and perpendicular height, find cone or cylinder volume, with the one-third factor only for the cone. Mixed solid types are related to dimensional-formula tasks, not universally easier."
+  },
+  {
+    "index": 198,
+    "key": "structured-algebra-two-completion/review:angles",
+    "entries": [
+      "algebra-2-en:authored:M6-0-4",
+      "algebra-2-en:authored:M6-17-2"
+    ],
+    "contract": "For two intersecting lines, find the other three angles in cyclic order using both supplementary and vertical relationships."
+  },
+  {
+    "index": 199,
+    "key": "structured-algebra-two-completion/review:inverse-solid",
+    "entries": [
+      "algebra-2-en:authored:M6-0-10"
+    ],
+    "contract": "Alternate inverse-solid tasks: recover sphere diameter from symbolic-pi surface area, or cylinder height from symbolic-pi volume. Different inverse operations prevent one uniform difficulty stage."
+  },
+  {
+    "index": 200,
+    "key": "structured-algebra-two-completion/review:surface",
+    "entries": [
+      "algebra-2-en:authored:M6-0-12"
+    ],
+    "contract": "Find total surface area of a right triangular prism with a scaled 3-4-5 base: two triangles plus three rectangles."
+  },
+  {
+    "index": 201,
+    "key": "structured-algebra-two-completion/geometry:circle-parts",
+    "entries": [
+      "algebra-2-en:authored:M6-2-4",
+      "algebra-2-en:authored:M6-56-1"
+    ],
+    "contract": "Draw and label a circle's radius, diameter, non-diameter chord, minor/major arc and central/inscribed angles; preserve point and arc distinctions."
+  },
+  {
+    "index": 202,
+    "key": "structured-algebra-two-completion/proof:deduction",
+    "entries": [
+      "algebra-2-en:authored:M6-30-1"
+    ],
+    "contract": "Compose two stated implications about rectangles and parallelograms, and provide a counterexample to the converse. Deduction/converse reasoning is distinct from numerical geometry."
+  },
+  {
+    "index": 203,
+    "key": "structured-algebra-two-completion/proof:euclid",
+    "entries": [
+      "algebra-2-en:authored:M6-30-2"
+    ],
+    "contract": "State the Euclidean parallel postulate in point-off-line form and apply its uniqueness to rule out two distinct parallels; conceptual justification, not a construction."
+  },
+  {
+    "index": 204,
+    "key": "structured-algebra-two-completion/geometry:exterior",
+    "entries": [
+      "algebra-2-en:authored:M6-31-3"
+    ],
+    "contract": "Find a triangle exterior angle by adding its two remote interior angles; do not apply a regular-polygon 360/n formula."
+  },
+  {
+    "index": 205,
+    "key": "structured-algebra-two-completion/geometry:cyclic",
+    "entries": [
+      "algebra-2-en:authored:M6-35-2"
+    ],
+    "contract": "Find two missing cyclic-quadrilateral angles using supplementary opposite angles, not the parallelogram equal-opposite rule."
+  },
+  {
+    "index": 206,
+    "key": "structured-algebra-two-completion/geometry:rhombus",
+    "entries": [
+      "algebra-2-en:authored:M6-39-5"
+    ],
+    "contract": "Find an adjacent rhombus angle, a bisected vertex angle and a diagonal intersection angle; three properties are required."
+  },
+  {
+    "index": 207,
+    "key": "structured-algebra-two-completion/units:rate",
+    "entries": [
+      "algebra-2-en:authored:M6-47-1"
+    ],
+    "contract": "Convert miles/hour to feet/second with two oppositely oriented unit factors and round the final result to hundredths."
+  },
+  {
+    "index": 208,
+    "key": "structured-algebra-two-completion/units:metric-chain",
+    "entries": [
+      "algebra-2-en:authored:M6-53-3"
+    ],
+    "contract": "Convert yards to meters with three exact length factors, preserving unit cancellation."
+  },
+  {
+    "index": 209,
+    "key": "structured-algebra-two-completion/units:area-chain",
+    "entries": [
+      "algebra-2-en:authored:M6-53-4"
+    ],
+    "contract": "Convert square yards to square meters with four explicit factors using the derived exact feet-to-meters factor; square the complete length conversion."
+  },
+  {
+    "index": 210,
+    "key": "structured-algebra-two-completion/gas:significant-pressure",
+    "entries": [
+      "algebra-2-en:authored:M6-57-2"
+    ],
+    "contract": "At fixed gas temperature, compute pressure from P1 V1/V2 and report two significant figures in scientific notation, retaining trailing zeros and rounding only at the end."
+  },
+  {
+    "index": 211,
+    "key": "structured-algebra-two-completion/gas:significant-volume",
+    "entries": [
+      "algebra-2-en:authored:M6-57-3"
+    ],
+    "contract": "At fixed gas temperature, compute volume from P1 V1/P2 and report three significant figures in scientific notation, retaining trailing zeros and rounding only at the end."
+  },
+  {
+    "index": 212,
+    "key": "structured-algebra-two-completion/motion:two-distances",
+    "entries": [
+      "algebra-2-en:authored:M6-74-1"
+    ],
+    "contract": "Model two unequal travel distances with a speed multiple and two-hour time difference; find both speeds and times, preserving which trip takes longer."
+  },
+  {
+    "index": 213,
+    "key": "structured-algebra-two-completion/motion:return",
+    "entries": [
+      "algebra-2-en:authored:M6-74-2"
+    ],
+    "contract": "Model an equal-distance out-and-back trip with a return-speed multiple and total time; find both speeds rather than assuming average speed is the arithmetic mean."
+  },
+  {
+    "index": 214,
+    "key": "structured-algebra-two-completion/gas:moles",
+    "entries": [
+      "algebra-2-en:authored:M6-88-2"
+    ],
+    "contract": "Rearrange PV=nRT for moles with the supplied gas constant and compatible units; final three-decimal rounding only."
+  },
+  {
+    "index": 215,
+    "key": "structured-algebra-two-completion/gas:ideal-volume",
+    "entries": [
+      "algebra-2-en:authored:M6-88-3"
+    ],
+    "contract": "Rearrange PV=nRT for volume with the supplied gas constant and compatible units; final three-decimal rounding only."
+  },
+  {
+    "index": 216,
+    "key": "structured-algebra-two-completion/geometry:distance-line",
+    "entries": [
+      "algebra-2-en:authored:M6-125-1"
+    ],
+    "contract": "Find perpendicular distance from a signed-coordinate point to a horizontal line; it is the absolute vertical-coordinate difference, not a general oblique-line distance formula."
+  }
+]

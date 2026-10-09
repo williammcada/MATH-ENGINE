@@ -1,7 +1,7 @@
 """Build explicit concept analysis and reviewed progressions; never rank by grade or title."""
 import json,subprocess,hashlib,fnmatch
 from pathlib import Path
-R=Path(__file__).resolve().parents[1];out=R/'curriculum/cross-course/v0.5'
+R=Path(__file__).resolve().parents[1];out=R/'curriculum/cross-course/v0.6'
 placement=json.loads((R/'curriculum/course-placement.json').read_text());coursePlacement={c['bankId']:c for c in placement['courses']}
 cat=json.loads(subprocess.check_output(['node','-e',"console.log(JSON.stringify(require('./src/course-banks').catalog))"],cwd=R,text=True));ids={c['sourceId']:c for c in cat}
 alias=dict(f='structured-foundational-courses',h='structured-algebra-half',a='structured-algebra-one',m='structured-algebra-two',z='structured-algebra-two-completion',q='structured-quadratic',d='structured-domain',p='structured-proportion',t='structured-measurement',s='structured-statistics',g='structured-geometry',b='structured-breadth',v='structured-advanced',r='structured-representations',n='structured-reasoning',l='structured-relations',o='structured-solids',w='structured-algebra-review',x='structured-cross-course',c='structured-curriculum87',e='structured-foundations87')
@@ -136,6 +136,12 @@ for chunk,size in [(1,303),(2,289),(3,295)]:
    if not p['memberships']:p['comparisonStatus']='reviewed related-only; no ranked counterpart validated'
  (out/f'chunk{chunk}-review.json').write_text(json.dumps(reviews,indent=2,ensure_ascii=False)+'\n')
  chunkReviews[chunk]=reviews
+if (out/'chunk4-review.json').exists():
+ reviews=json.loads((out/'chunk4-review.json').read_text());assert len(reviews)==749
+ byId={r['sourceId']:r for r in reviews}
+ for p in profiles:
+  if p['sourceId'] in byId:
+   r=byId[p['sourceId']];p['crossCourseReview']={'chunk':4,'status':'reconciled','disposition':r['disposition']}
 # Exact duplicate evidence is explicit reuse, not title equality or seeded prompt matching.
 reuse={}
 for p in profiles:reuse.setdefault(p['providerSourceId'],[]).append(p['sourceId'])
@@ -152,12 +158,13 @@ bridges=[
 
 ]
 bridges=[dict(fromTrack=a,fromLevel=b,toTrack=c,toLevel=d,reason=e)for a,b,c,d,e in bridges]
+bridges+=json.loads((out/'additional-bridges.json').read_text())
 for bridge in bridges:
  for side in ['from','to']:assert any(s['level']==bridge[side+'Level']for s in tracks[bridge[side+'Track']]['stages'])
 labels={t:t.replace('-',' ').capitalize()for t in sorted({p['topic']for p in profiles})}
 labels.update({'fraction-decimal-percent':'Fractions, decimals and percents','pythagorean':'Pythagorean theorem','whole-arithmetic':'Whole-number arithmetic','number-representation':'Place value and number notation','polar-vectors':'Polar coordinates and vectors','gas-laws':'Gas-law models','proof':'Geometric proof','function-graphs':'Graphs of functions'})
 topics=[dict(id=t,label=label,entryCount=sum(p['topic']==t for p in profiles),trackIds=[tr['id']for tr in tracks.values()if tr['topic']==t])for t,label in labels.items()]
-data=dict(version='5.0.0',coursePlacement=placement['courses'],scope='teacher-directed original curriculum connections; no mastery or placement inference',profiles=profiles,topics=topics,tracks=list(tracks.values()),bridges=bridges,reuseGroups=reuse)
+data=dict(version='6.0.0',coursePlacement=placement['courses'],scope='teacher-directed original curriculum connections; no mastery or placement inference',profiles=profiles,topics=topics,tracks=list(tracks.values()),bridges=bridges,reuseGroups=reuse)
 (R/'src/cross-course-map.js').write_text('(function(root){const data='+json.dumps(data,separators=(',',':'))+';if(typeof module!=="undefined"&&module.exports)module.exports=data;root.MathCrossCourseMap=data;})(typeof globalThis!=="undefined"?globalThis:this);\n')
 (out/'analysis-profiles.json').write_text(json.dumps([dict(**p,samplePrompt=samples[p['sourceId']]['prompt'])for p in profiles],indent=2)+'\n')
 (out/'progressions.json').write_text(json.dumps(data['tracks'],indent=2)+'\n');(out/'reuse-review.json').write_text(json.dumps(reuse,indent=2)+'\n')
