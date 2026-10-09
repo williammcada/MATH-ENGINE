@@ -1,0 +1,8 @@
+const E=require('../src/course-banks'),assert=require('node:assert/strict'),fs=require('node:fs');
+const cs=E.catalog.filter(c=>c.family==='structured-algebra-two'),contracts=require('../curriculum/remaining-courses/milestone5-v0.1/contracts.json');assert.equal(cs.length,73);assert.equal(E.catalog.length,1910);assert.deepEqual(cs,contracts);assert.equal(new Set(E.catalog.map(c=>c.sourceId)).size,E.catalog.length);
+let teacher=0;const samples=[];for(const c of cs){for(const seed of ['x'.repeat(200),42])assert(E.generate(c.sourceId,{seed,index:5}));const prompts=new Set();for(let index=0;index<96;index++){
+ const q=E.generate(c.sourceId,{seed:'milestone5-independent',index});assert.deepEqual(q,E.generate(c.sourceId,{seed:'milestone5-independent',index}));assert(Object.isFrozen(q)&&Object.isFrozen(q.answer));assert(E.renderQuestion(q).includes('engine-question'));assert(!/NaN|Infinity|undefined/.test(JSON.stringify(q)));assert.equal(q.provenance.exactLegacyReproduction,false);prompts.add(q.prompt);
+ if(q.answer.kind==='teacher'){assert(q.answer.rubric.length>=2);assert.equal(E.checkAnswer(q,'anything').answerCorrect,null);teacher++;}else{assert(E.checkAnswer(q,E.answerText(q)).answerCorrect,c.recipe);assert.equal(E.checkAnswer(q,'not an answer').answerCorrect,false);}
+ samples.push({recipe:c.recipe,q});
+}if(!['proof:vertical','proof:isosceles','proof:parallelogram','proof:chord','proof:tangent','space:lines-planes'].includes(c.recipe))assert(prompts.size>1,'variation '+c.recipe);}
+fs.writeFileSync(process.env.M5_SAMPLES||'/tmp/m5-samples.json',JSON.stringify(samples));console.log(JSON.stringify({generated:samples.length,teacher,recipes:cs.length,result:'passed'}));
