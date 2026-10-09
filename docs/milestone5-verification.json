@@ -1,0 +1,70 @@
+{
+  "milestone": 5,
+  "status": "complete",
+  "date": "2026-10-09",
+  "scope": "Remaining Algebra 2 generator families at bounded representative scope; full lesson closure is M6",
+  "handbookRevision": "fd4330863f4cc0812180fbf1de122970a42c7885",
+  "baselines": {
+    "engine": "37ecb9b62dd48518c49c3c75e372b6dd3a4b8f06",
+    "studio": "02246d2676fcbd840be359b4ddfe6df4201de2ce"
+  },
+  "testedImplementation": {
+    "engine": "3a6f83c347961ed7ab52a9699147cc3d733e427c",
+    "engineVersion": "0.25.0-rc.2",
+    "studio": "8e4a9ca58098edd4d0b6af32b0f05f216ca436ee",
+    "studioVersion": "0.27.0-rc.2"
+  },
+  "counts": {
+    "addedFamilyAnchors": 73,
+    "retainedAlgebra2Entries": 111,
+    "algebra2Working": 184,
+    "allWorking": 1910,
+    "allAuthored": 1389,
+    "retainedLegacyPreviews": 5425
+  },
+  "checks": {
+    "generatedCases": 7008,
+    "variantsPerEntry": 96,
+    "teacherCases": 4803,
+    "independentNumericCases": 2205,
+    "symbolicOrModelCases": 3459,
+    "productionContractCases": 1344,
+    "retainedEntries": 1837,
+    "retainedParityCases": 5511,
+    "layoutCases": 16668,
+    "layoutFailures": 0,
+    "pdfPagesReviewed": 7,
+    "wordPagesReviewed": 6,
+    "vendoredModuleCount": 60
+  },
+  "delivery": {
+    "path": "downloads/Test-and-Practice-Studio-v0.27.0-rc.2.html",
+    "bytes": 2093114,
+    "sha256": "9b36154f5a458a570499b87262862988dc190656fa4776b3c3e1e11f8b047ccb"
+  },
+  "limits": [
+    "Not full Algebra 2 lesson coverage",
+    "No exact publisher reconstruction",
+    "Finite seeds; no exhaustive domain claim",
+    "No physical iPad, native Windows Word or printer certification",
+    "No deployment"
+  ],
+  "qaArtifacts": {
+    "A4-student.pdf": {
+      "bytes": 32903,
+      "sha256": "53250fd96913c1dd1d45a142019ab41750e9d8b325d28e191c0949cab8edc1b3"
+    },
+    "Letter-key.pdf": {
+      "bytes": 63507,
+      "sha256": "1eb125d083a84db3b3ad54c6f38eb6cffd96bd30c313ab4630435890911af0c1"
+    },
+    "A4-student.docx": {
+      "bytes": 4163,
+      "sha256": "8ba500ed6c2fd4a164fbb8e1bedf97cb14970496f58fa84b437074b1f4d0adac"
+    },
+    "Letter-key.docx": {
+      "bytes": 33509,
+      "sha256": "8256cffe6797f2fb124c15740137dcde01cf8dda8e32c97c633eb29a2fb86151"
+    }
+  }
+}

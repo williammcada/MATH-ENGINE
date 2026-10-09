@@ -1,12 +1,12 @@
 {
-  "milestone": 4,
+  "milestone": 5,
   "status": "complete",
   "stage": "verified implementation checkpoint",
   "auditRepository": "williammcada/MATH-ENGINE",
-  "auditPath": "curriculum/remaining-courses/milestone4-v0.1",
-  "nextMilestone": 5,
-  "nextMilestoneTitle": "Remaining Algebra 2 generator families",
+  "auditPath": "curriculum/remaining-courses/milestone5-v0.1",
+  "nextMilestone": 6,
+  "nextMilestoneTitle": "Algebra 2 lesson and source-demand closure",
   "nextMilestoneStarted": false,
-  "resume": "Read Milestone 4 verification and the Milestone 1 Algebra 2 backlog. Preserve all 1,837 working entries. Milestone 5 builds remaining Algebra 2 families; Milestone 6 closes all Algebra 2 lesson demands.",
+  "resume": "Read MILESTONE5-VERIFICATION.md, the M5 family contracts/reuse review and the M1 Algebra 2 ledger. Preserve all 1,910 entries. Integrate all 592 records/130 scope rows; complete residual methods/representations (including gas significant figures/scientific notation and full source-specific proofs), author Lesson 128 from scope, then perform course-wide QA.",
   "futureCrossGradeFeature": "Milestone 7: systematic cross-grade connections and teacher-directed easier/harder suggestions; planned, not implemented."
 }
