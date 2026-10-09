@@ -1,0 +1,3100 @@
+[
+  {
+    "id": "whole-addition",
+    "label": "Whole addition",
+    "topic": "whole-arithmetic",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Add two-digit whole numbers, regrouping when needed",
+        "prerequisites": "Place value and regrouping",
+        "selectors": [
+          "f/add:2",
+          "f/add:2:carry"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-62bb99055304-1",
+          "intermediate-4-en:authored:M2-a63a0f112d80-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Add five- or six-digit whole numbers",
+        "prerequisites": "Maintain alignment across more places",
+        "selectors": [
+          "f/add:5",
+          "f/add:6"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-0f2f4924eb36-1",
+          "course-1-en:authored:M2-6868ecaffe61-1",
+          "algebra-half-en:authored:M3-1-5"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "whole-subtraction",
+    "label": "Whole subtraction",
+    "topic": "whole-arithmetic",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Subtract two-digit whole numbers regrouping when needed",
+        "prerequisites": "Place value",
+        "selectors": [
+          "f/sub:2",
+          "f/sub:2:borrow"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-337e920e68ca-1",
+          "intermediate-4-en:authored:M2-829f1668d73c-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Subtract three-digit numbers with regrouping",
+        "prerequisites": "Regroup tens and ones",
+        "selectors": [
+          "f/sub:3:borrow",
+          "f/sub:3:zero"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-452d6a4482a2-1",
+          "intermediate-4-en:authored:M2-961d4aea7fe8-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "whole-multiplication",
+    "label": "Whole multiplication",
+    "topic": "whole-arithmetic",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Multiply two digits by one digit",
+        "prerequisites": "Multiplication facts and regrouping",
+        "selectors": [
+          "f/mul:2:1"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-53314f64e804-1",
+          "intermediate-4-en:authored:M2-c5eda3ee42f1-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Multiply three digits by one digit",
+        "prerequisites": "Track more places and regrouping",
+        "selectors": [
+          "f/mul:3:1"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-a9b06890fde7-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Multiply two digits by two digits",
+        "prerequisites": "Two partial products and place-value shift",
+        "selectors": [
+          "f/mul:2:2"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-4a6360e9ec04-1",
+          "intermediate-4-en:authored:M2-6b179e375306-1"
+        ]
+      },
+      {
+        "level": 4,
+        "demand": "Multiply three digits by two digits",
+        "prerequisites": "Combine longer partial products",
+        "selectors": [
+          "f/mul:3:2"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-6261e82af489-1",
+          "course-1-en:authored:M2-e2dd66f0d06d-1",
+          "algebra-half-en:authored:M3-4-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "division-exact",
+    "label": "Division exact",
+    "topic": "whole-arithmetic",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Divide with a two-digit whole-number quotient",
+        "prerequisites": "Division facts and place value",
+        "selectors": [
+          "f/div:2:exact"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-bcab9c646695-1",
+          "intermediate-4-en:authored:M2-4cb0dc2a6ead-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Divide with a three-digit whole-number quotient",
+        "prerequisites": "Track an additional quotient place",
+        "selectors": [
+          "f/div:3:exact",
+          "f/div:3:insidezero"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-2d9a8de0021f-1",
+          "intermediate-4-en:authored:M2-b79527ff2946-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "place-values",
+    "label": "Place values",
+    "topic": "number-representation",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Identify a digit and its value through thousands",
+        "prerequisites": "Ones, tens, hundreds and thousands",
+        "selectors": [
+          "f/place:4"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-0faa8be94286-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Identify a digit and its value through trillions",
+        "prerequisites": "Large-number periods",
+        "selectors": [
+          "f/place:13"
+        ],
+        "sourceIds": [
+          "course-1-en:authored:M2-d8536a67a44d-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "fraction-add-subtract",
+    "label": "Fraction add subtract",
+    "topic": "fractions",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Add or subtract fractions with a shared denominator",
+        "prerequisites": "Numerators count equal parts",
+        "selectors": [
+          "f/fraction-same"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-ff6d68f495a0-1",
+          "course-1-en:authored:M2-c545969a46ec-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Add or subtract fractions with different denominators",
+        "prerequisites": "Equivalent fractions and common denominators",
+        "selectors": [
+          "f/fraction-unlike",
+          "c/30.3"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-30.3",
+          "intermediate-4-en:authored:M2-5c12a4e5f17d-1",
+          "algebra-half-en:authored:M3-30-4",
+          "algebra-1-en:authored:M4-1-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Add or subtract mixed numbers with different denominators",
+        "prerequisites": "Combine whole and fractional parts; regroup if needed",
+        "selectors": [
+          "f/mixed-unlike"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-4816384d7b52-1",
+          "algebra-half-en:authored:M3-34-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "fraction-product-chain",
+    "label": "Fraction product chain",
+    "topic": "fractions",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Multiply two fractions",
+        "prerequisites": "Multiply numerators and denominators; simplify",
+        "selectors": [
+          "c/9.3"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-9.3",
+          "course-1-en:authored:M2-54236ffb40e4-1",
+          "algebra-half-en:authored:M3-18-1",
+          "algebra-half-en:authored:M3-19-1",
+          "algebra-1-en:authored:M4-4-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Multiply three fractions and simplify",
+        "prerequisites": "Coordinate cancellation across three factors",
+        "selectors": [
+          "f/fraction-three-product"
+        ],
+        "sourceIds": [
+          "course-1-en:authored:M2-bbebcdfa6e0c-2"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "fraction-multiply",
+    "label": "Fraction multiply",
+    "topic": "fractions",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Multiply two fractions",
+        "prerequisites": "Multiply numerators and denominators; simplify",
+        "selectors": [
+          "c/9.3"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-9.3",
+          "course-1-en:authored:M2-54236ffb40e4-1",
+          "algebra-half-en:authored:M3-18-1",
+          "algebra-half-en:authored:M3-19-1",
+          "algebra-1-en:authored:M4-4-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Multiply mixed numbers",
+        "prerequisites": "Convert mixed numbers to improper fractions",
+        "selectors": [
+          "f/mixed:mul"
+        ],
+        "sourceIds": [
+          "course-1-en:authored:M2-f38ba3256fb3-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "perimeter",
+    "label": "Perimeter",
+    "topic": "perimeter",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find a square or rectangle perimeter",
+        "prerequisites": "Add sides or use repeated equal lengths",
+        "selectors": [
+          "b/square-perimeter",
+          "b/rectangle-perimeter",
+          "x/perimeter-rectangle"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00094",
+          "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00099",
+          "course-1-en:authored:M7-perimeter-rectangle"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find perimeter of an irregular quadrilateral or a labelled polygon",
+        "prerequisites": "Track each labelled boundary side rather than assuming equal sides",
+        "selectors": [
+          "x/perimeter-irregular",
+          "c/19.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-19.1",
+          "intermediate-4-en:authored:M2-7e1f14941402-3",
+          "course-1-en:authored:M2-6b5a412edfe8-1",
+          "algebra-half-en:authored:M3-9-3",
+          "algebra-1-en:authored:M4-3-1",
+          "algebra-2-en:authored:M6-0-8",
+          "course-87-en:authored:M7-perimeter-irregular"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Find an L-shaped boundary perimeter with implied sides",
+        "prerequisites": "Infer missing lengths and follow the complete boundary",
+        "selectors": [
+          "f/compound-perimeter",
+          "g/compound-perimeter"
+        ],
+        "sourceIds": [
+          "algebra-half-en:node:104",
+          "course-1-en:authored:M2-d99cc82f80a0-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "area-rectilinear",
+    "label": "Area rectilinear",
+    "topic": "area",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find rectangle area from length and width",
+        "prerequisites": "Multiply perpendicular side lengths",
+        "selectors": [
+          "r/rectangle-area",
+          "c/20.6"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00093",
+          "course-87-en:authored:MCADA-20.6",
+          "course-1-en:authored:M2-0cda283fd77c-1",
+          "algebra-half-en:authored:M3-17-1",
+          "algebra-1-en:authored:M4-8-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find an area by decomposing a compound figure into rectangles",
+        "prerequisites": "Partition without overlap and add component areas",
+        "selectors": [
+          "c/37.3",
+          "g/compound-area"
+        ],
+        "sourceIds": [
+          "course-87-en:item:SX870310",
+          "algebra-half-en:node:210",
+          "course-87-en:authored:MCADA-37.3",
+          "course-1-en:authored:M2-25f6440ff45b-1",
+          "algebra-1-en:authored:M4-8-3"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Find area of a figure combining rectangular and triangular regions",
+        "prerequisites": "Triangle area and decomposition",
+        "selectors": [
+          "c/75.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-75.1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "circle-area",
+    "label": "Circle area",
+    "topic": "circle-measurement",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find circle area from a radius",
+        "prerequisites": "Square the radius and apply the stated pi convention",
+        "selectors": [
+          "c/82.1",
+          "g/circle-area"
+        ],
+        "sourceIds": [
+          "course-87-en:item:SN870528",
+          "course-87-en:authored:MCADA-82.1",
+          "course-1-en:authored:M2-cdb181eb60ec-1",
+          "algebra-half-en:authored:M3-60-2",
+          "algebra-1-en:authored:M4-8-6"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find sector area",
+        "prerequisites": "Use the angle fraction of a whole circle",
+        "selectors": [
+          "c/104.3",
+          "v/sector-area"
+        ],
+        "sourceIds": [
+          "algebra-2-en:node:39",
+          "course-87-en:authored:MCADA-104.3"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "unit-conversion",
+    "label": "Unit conversion",
+    "topic": "measurement",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Convert between two metric units",
+        "prerequisites": "Metric place-value factors",
+        "selectors": [
+          "c/32.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-32.2",
+          "algebra-half-en:authored:M3-24-2",
+          "algebra-2-en:authored:M6-53-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Convert with more than one unit multiplier",
+        "prerequisites": "Cancel intermediate units in a chain",
+        "selectors": [
+          "c/88.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-88.1",
+          "algebra-half-en:authored:M3-33-1",
+          "algebra-2-en:authored:M6-41-2"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Convert square units",
+        "prerequisites": "Square the linear conversion factor",
+        "selectors": [
+          "c/88.2",
+          "o/area-units"
+        ],
+        "sourceIds": [
+          "course-87-en:item:SX870408",
+          "course-87-en:authored:MCADA-88.2",
+          "algebra-half-en:authored:M3-33-2",
+          "algebra-1-en:authored:M4-10-3",
+          "algebra-2-en:authored:M6-53-2"
+        ]
+      },
+      {
+        "level": 4,
+        "demand": "Convert cubic units with six unit multipliers",
+        "prerequisites": "Cube linear factors and preserve dimensional cancellation",
+        "selectors": [
+          "z/units:volume-chain"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-53-5"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "linear-equations",
+    "label": "Linear equations",
+    "topic": "equations",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Solve a one-operation equation",
+        "prerequisites": "Inverse operations",
+        "selectors": [
+          "e/3.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-3.1",
+          "algebra-half-en:authored:M3-37-1",
+          "algebra-half-en:authored:M3-40-3"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Solve a two-step equation",
+        "prerequisites": "Undo addition and multiplication in reverse order",
+        "selectors": [
+          "c/93.1",
+          "f/two-step-positive"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-93.1",
+          "intermediate-4-en:authored:M2-4078157a9e82-2",
+          "course-1-en:authored:M2-2dd602a051fb-1",
+          "algebra-half-en:authored:M3-61-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Solve an equation with parentheses",
+        "prerequisites": "Distribute and collect before isolating the variable",
+        "selectors": [
+          "a/equation:parentheses"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-31-1",
+          "algebra-2-en:authored:M6-4-2"
+        ]
+      },
+      {
+        "level": 4,
+        "demand": "Solve an equation with multiple subtracted groups",
+        "prerequisites": "Resolve multiple subtracted groups while preserving equality",
+        "selectors": [
+          "a/equation:nested"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-26-1",
+          "algebra-1-en:authored:M4-31-2",
+          "algebra-2-en:authored:M6-4-3"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "quadratic-formula",
+    "label": "Quadratic formula",
+    "topic": "quadratics",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Use the quadratic formula for real roots",
+        "prerequisites": "Discriminant, radicals and both signs",
+        "selectors": [
+          "a/quadratic:formula"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-119-1",
+          "algebra-2-en:authored:M6-71-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Use the quadratic formula for complex roots",
+        "prerequisites": "Principal imaginary roots and i squared equals negative one",
+        "selectors": [
+          "m/quadratic:complex-formula"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-quadratic-complex-formula",
+          "algebra-2-en:authored:M6-71-2"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "complete-square",
+    "label": "Complete square",
+    "topic": "quadratics",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Complete the square for a monic quadratic",
+        "prerequisites": "Half the linear coefficient and preserve equality",
+        "selectors": [
+          "a/quadratic:complete"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-118-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Complete the square for a nonmonic quadratic with irrational roots",
+        "prerequisites": "Divide by the leading coefficient and simplify radicals",
+        "selectors": [
+          "z/quadratic:nonmonic"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-50-2",
+          "algebra-2-en:authored:M6-58-2"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "systems-elimination",
+    "label": "Systems elimination",
+    "topic": "systems",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Solve a two-variable system by elimination",
+        "prerequisites": "Equivalent equations and cancellation",
+        "selectors": [
+          "a/system:elimination"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-67-1",
+          "algebra-2-en:authored:M6-15-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Solve a two-variable system with fractional coefficients",
+        "prerequisites": "Clear denominators before elimination",
+        "selectors": [
+          "a/system:fraction"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-87-1",
+          "algebra-2-en:authored:M6-24-1",
+          "algebra-2-en:authored:M6-59-2"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Solve a three-variable linear system",
+        "prerequisites": "Eliminate in stages and back-substitute",
+        "selectors": [
+          "m/three:unique",
+          "z/system:cyclic-three"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-three-unique",
+          "algebra-2-en:authored:M6-106-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "rational-equations",
+    "label": "Rational equations",
+    "topic": "rational-equations",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Solve a rational equation reducible to a linear equation",
+        "prerequisites": "Clear denominators and retain exclusions",
+        "selectors": [
+          "a/rational-equation:linear"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-78-1",
+          "algebra-2-en:authored:M6-24-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Solve a rational equation that can produce an excluded candidate",
+        "prerequisites": "Check each candidate in the original denominators",
+        "selectors": [
+          "a/rational-equation:excluded"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-103-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Solve a rational equation leading to a quadratic",
+        "prerequisites": "Quadratic solution plus original-domain checks",
+        "selectors": [
+          "a/rational-equation:quadratic"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-103-2"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "radical-equations",
+    "label": "Radical equations",
+    "topic": "radical-equations",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Solve an equation with one radical",
+        "prerequisites": "Isolate, square and check the original equation",
+        "selectors": [
+          "a/radical-equation"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-108-2",
+          "algebra-2-en:authored:M6-48-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Solve an equation with two radicals",
+        "prerequisites": "Repeated isolation and squaring with final checks",
+        "selectors": [
+          "m/radical:two"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-radical-two"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "expression-evaluation",
+    "label": "Expression evaluation",
+    "topic": "expressions",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Evaluate a variable expression with positive values",
+        "prerequisites": "Substitution and operation order",
+        "selectors": [
+          "e/1.5"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-1.5",
+          "algebra-half-en:authored:M3-32-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Evaluate with negative substituted values",
+        "prerequisites": "Signed arithmetic and parentheses",
+        "selectors": [
+          "c/91.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-91.1",
+          "algebra-half-en:authored:M3-82-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Evaluate a more complex signed expression",
+        "prerequisites": "Fraction bars, powers and signed arithmetic",
+        "selectors": [
+          "a/evaluate-hard"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-16-1",
+          "algebra-2-en:authored:M6-3-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "integer-arithmetic",
+    "label": "Integer arithmetic",
+    "topic": "integers",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Add and subtract on a number line",
+        "prerequisites": "Signed position and direction",
+        "selectors": [
+          "e/4.3"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-4.3",
+          "course-1-en:authored:M2-a004ec80dabe-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Add signed numbers without a number-line model",
+        "prerequisites": "Magnitude and sign rules",
+        "selectors": [
+          "c/64.1",
+          "a/signed-sum"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-64.1",
+          "course-1-en:authored:M2-6cb2c36c81b8-1",
+          "algebra-half-en:authored:M3-70-1",
+          "algebra-1-en:authored:M4-5-4",
+          "algebra-1-en:authored:M4-6-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Simplify signed arithmetic with nested grouping",
+        "prerequisites": "Distribute negative signs through groups",
+        "selectors": [
+          "a/signed-nesting"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-7-2"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "fraction-equivalence",
+    "label": "Fraction equivalence",
+    "topic": "fraction-equivalence",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Reduce by common factors without a model",
+        "prerequisites": "Find and cancel a common factor",
+        "selectors": [
+          "f/reduce",
+          "c/15.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-15.2",
+          "intermediate-4-en:authored:M2-ffe658a96ce4-1",
+          "course-1-en:authored:M2-54236ffb40e4-2",
+          "course-1-en:authored:M2-289b94018ef7-2",
+          "algebra-half-en:authored:M3-14-3"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Reduce using prime factorization",
+        "prerequisites": "Prime-factor representation and cancellation",
+        "selectors": [
+          "c/24.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-24.1",
+          "course-1-en:authored:M2-4dbcda9e76f8-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "percent-unknown",
+    "label": "Percent unknown",
+    "topic": "percent",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find a percent of a known whole",
+        "prerequisites": "Convert a percent to a fraction or decimal",
+        "selectors": [
+          "f/percent-of"
+        ],
+        "sourceIds": [
+          "course-1-en:authored:M2-4a5dc2d6e728-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Solve a percent problem by forming an equation",
+        "prerequisites": "Distinguish the whole, part and rate",
+        "selectors": [
+          "c/77.1",
+          "a/word:percent"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-77.1",
+          "course-1-en:authored:M2-297bdb9f52d9-1",
+          "algebra-1-en:authored:M4-47-1",
+          "algebra-1-en:authored:M4-58-1",
+          "algebra-2-en:authored:M6-7-1",
+          "algebra-2-en:authored:M6-9-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Recover an original amount before a percent increase",
+        "prerequisites": "Model the final amount as a multiplier of the original",
+        "selectors": [
+          "p/reverse-increase"
+        ],
+        "sourceIds": [
+          "course-87-en:item:SX870430"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "ratio-total",
+    "label": "Ratio total",
+    "topic": "ratio-proportion",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find a missing term in a proportion",
+        "prerequisites": "Equivalent ratios and cross products",
+        "selectors": [
+          "c/39.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-39.2",
+          "course-1-en:authored:M2-6ccc4bc345a7-2",
+          "algebra-half-en:authored:M3-54-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Divide a total according to a ratio",
+        "prerequisites": "Add ratio parts before scaling",
+        "selectors": [
+          "c/65.2",
+          "p/ratio-total-large"
+        ],
+        "sourceIds": [
+          "course-87-en:item:SN870309",
+          "algebra-half-en:node:607",
+          "course-87-en:authored:MCADA-65.2",
+          "course-1-en:authored:M2-1ad47e8007f2-2",
+          "algebra-half-en:authored:M3-66-2",
+          "algebra-half-en:authored:M3-100-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Connect quantities through two ratios",
+        "prerequisites": "Match and scale a shared quantity",
+        "selectors": [
+          "p/ratio-chain"
+        ],
+        "sourceIds": [
+          "course-87-en:item:SX870281"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "average",
+    "label": "Average",
+    "topic": "statistics",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find the arithmetic mean of a list",
+        "prerequisites": "Add values and divide by count",
+        "selectors": [
+          "c/28.2",
+          "f/mean-small"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-28.2",
+          "intermediate-4-en:authored:M2-1ce82540ba6b-1",
+          "course-1-en:authored:M2-1e4115418038-1",
+          "algebra-half-en:authored:M3-21-1",
+          "algebra-half-en:authored:M3-26-2",
+          "algebra-2-en:authored:M6-129-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find a missing value given the mean",
+        "prerequisites": "Recover the required total",
+        "selectors": [
+          "c/55.2",
+          "s/missing-value"
+        ],
+        "sourceIds": [
+          "algebra-half-en:node:186",
+          "course-87-en:authored:MCADA-55.2",
+          "algebra-half-en:authored:M3-21-3",
+          "algebra-half-en:authored:M3-26-3"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Find a combined or weighted average",
+        "prerequisites": "Weight each group by its size",
+        "selectors": [
+          "c/55.3",
+          "s/weighted-scores"
+        ],
+        "sourceIds": [
+          "algebra-1-en:node:661",
+          "course-87-en:authored:MCADA-55.3",
+          "algebra-half-en:authored:M3-41-1",
+          "algebra-1-en:authored:M4-65-2"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "probability-events",
+    "label": "Probability events",
+    "topic": "probability",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find probability of one event",
+        "prerequisites": "Count favorable and total outcomes",
+        "selectors": [
+          "c/36.3",
+          "s/marble-single"
+        ],
+        "sourceIds": [
+          "course-87-en:item:SN870816",
+          "course-87-en:authored:MCADA-36.3",
+          "intermediate-4-en:authored:M2-e5a763f5acab-1",
+          "course-1-en:authored:M2-a08bfbb4a69d-1",
+          "algebra-half-en:authored:M3-112-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find probability of ordered independent events",
+        "prerequisites": "Multiply independent probabilities",
+        "selectors": [
+          "c/94.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-94.2",
+          "course-1-en:authored:M2-4dea1de3dcfa-2",
+          "algebra-half-en:authored:M3-114-2",
+          "algebra-2-en:authored:M6-116-4"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Find probability without replacement",
+        "prerequisites": "Update the sample space after the first draw",
+        "selectors": [
+          "c/94.3",
+          "m/counting:probability"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-94.3",
+          "algebra-2-en:authored:M5-counting-probability"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "powers",
+    "label": "Powers",
+    "topic": "powers-roots",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Evaluate a positive whole-number power",
+        "prerequisites": "Repeated multiplication",
+        "selectors": [
+          "c/20.3",
+          "b/positive-power"
+        ],
+        "sourceIds": [
+          "algebra-1-en:node:242",
+          "course-87-en:authored:MCADA-20.3",
+          "course-1-en:authored:M2-e40d641cb9a0-2",
+          "algebra-half-en:authored:M3-16-3"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Evaluate zero and negative exponents",
+        "prerequisites": "Reciprocal rule and nonzero-base restriction",
+        "selectors": [
+          "c/57.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-57.1",
+          "algebra-half-en:authored:M3-106-2"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Evaluate negative bases with rational exponents",
+        "prerequisites": "Real odd roots and exponent restrictions",
+        "selectors": [
+          "m/fractional:negative"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-fractional-negative",
+          "algebra-2-en:authored:M6-35-3"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "scientific-notation",
+    "label": "Scientific notation",
+    "topic": "scientific-notation",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Convert between large numbers and scientific notation",
+        "prerequisites": "Powers of ten and a normalized coefficient",
+        "selectors": [
+          "c/51.1",
+          "c/51.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-51.1",
+          "course-87-en:authored:MCADA-51.2",
+          "algebra-half-en:authored:M3-50-1",
+          "algebra-half-en:authored:M3-50-2",
+          "algebra-1-en:authored:M4-74-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Convert small numbers using negative powers of ten",
+        "prerequisites": "Decimal place value and negative exponents",
+        "selectors": [
+          "c/57.2",
+          "c/57.3"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-57.2",
+          "course-87-en:authored:MCADA-57.3",
+          "algebra-half-en:authored:M3-50-3",
+          "algebra-half-en:authored:M3-50-4",
+          "algebra-1-en:authored:M4-74-2"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Multiply scientific-notation numbers",
+        "prerequisites": "Multiply coefficients, add exponents and normalize",
+        "selectors": [
+          "c/83.2",
+          "o/scientific-product"
+        ],
+        "sourceIds": [
+          "course-87-en:item:SN870434",
+          "course-87-en:authored:MCADA-83.2",
+          "algebra-half-en:authored:M3-76-1",
+          "algebra-1-en:authored:M4-80-1",
+          "algebra-2-en:authored:M6-21-1",
+          "algebra-2-en:authored:M6-68-2"
+        ]
+      },
+      {
+        "level": 4,
+        "demand": "Add scientific-notation numbers",
+        "prerequisites": "Align powers of ten before adding coefficients",
+        "selectors": [
+          "a/scientific:add"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-80-3"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "exponent-laws",
+    "label": "Exponent laws",
+    "topic": "exponent-laws",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Apply product and quotient laws to powers",
+        "prerequisites": "Add or subtract integer exponents",
+        "selectors": [
+          "c/20.9",
+          "c/20.10"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-20.9",
+          "course-87-en:authored:MCADA-20.10"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Apply laws to powers with negative exponents",
+        "prerequisites": "Reciprocals and nonzero-base restrictions",
+        "selectors": [
+          "a/exponents:negative"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-29-2",
+          "algebra-1-en:authored:M4-36-2",
+          "algebra-2-en:authored:M6-2-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Simplify powers with fractional variable exponents",
+        "prerequisites": "Rational exponent arithmetic and positive-variable domains",
+        "selectors": [
+          "m/fractional:variables",
+          "z/exponent:variables-product"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-fractional-variables",
+          "algebra-2-en:authored:M6-47-2",
+          "algebra-2-en:authored:M6-83-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "factoring",
+    "label": "Factoring",
+    "topic": "factoring",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Factor out a common monomial",
+        "prerequisites": "GCF of coefficients and variables",
+        "selectors": [
+          "a/factor:gcf"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-35-1",
+          "algebra-2-en:authored:M6-25-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Factor a monic quadratic trinomial",
+        "prerequisites": "Find numbers with specified product and sum",
+        "selectors": [
+          "a/factor:monic"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-69-1",
+          "algebra-2-en:authored:M6-26-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Factor a nonmonic quadratic trinomial",
+        "prerequisites": "Split or group a nonunit leading coefficient",
+        "selectors": [
+          "a/factor:nonmonic"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-109-1",
+          "algebra-2-en:authored:M6-26-2",
+          "algebra-2-en:authored:M6-105-3"
+        ]
+      },
+      {
+        "level": 4,
+        "demand": "Factor a quartic through a quadratic substitution",
+        "prerequisites": "Recognize repeated powers then factor further",
+        "selectors": [
+          "m/factor:quartic"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-factor-quartic"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "polynomial-products",
+    "label": "Polynomial products",
+    "topic": "polynomials",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Multiply two polynomials",
+        "prerequisites": "Distribute and collect like terms",
+        "selectors": [
+          "h/polynomial:mul"
+        ],
+        "sourceIds": [
+          "algebra-half-en:authored:M3-206-2",
+          "algebra-1-en:authored:M4-49-1",
+          "algebra-2-en:authored:M6-16-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Expand the cube of a binomial",
+        "prerequisites": "Repeated distribution and cubic coefficients",
+        "selectors": [
+          "z/algebra:binomial"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-38-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "polynomial-division",
+    "label": "Polynomial division",
+    "topic": "polynomials",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Divide a polynomial by a linear divisor",
+        "prerequisites": "Polynomial long division",
+        "selectors": [
+          "a/polynomial-division"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-86-1",
+          "algebra-2-en:authored:M6-16-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Divide a polynomial by a quadratic divisor",
+        "prerequisites": "Track more divisor terms and a remainder",
+        "selectors": [
+          "m/division:quadratic"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-division-quadratic"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "rational-sums",
+    "label": "Rational sums",
+    "topic": "rational-expressions",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Add rational expressions with the same denominator",
+        "prerequisites": "Combine numerators and retain exclusions",
+        "selectors": [
+          "a/rational:equal"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-44-1",
+          "algebra-2-en:authored:M6-27-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Add rational expressions with different denominators",
+        "prerequisites": "Find a common polynomial denominator",
+        "selectors": [
+          "a/rational:unequal"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-44-2",
+          "algebra-1-en:authored:M4-52-1",
+          "algebra-2-en:authored:M6-27-2"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Add expressions with oppositely oriented factors",
+        "prerequisites": "Control denominator signs before combining",
+        "selectors": [
+          "z/rational:sign"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-66-1",
+          "algebra-2-en:authored:M6-75-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "radical-simplification",
+    "label": "Radical simplification",
+    "topic": "radicals",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Combine like radicals",
+        "prerequisites": "Recognize equal radicands",
+        "selectors": [
+          "a/radical:sum"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-65-1",
+          "algebra-2-en:authored:M6-20-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Expand products of radical binomials",
+        "prerequisites": "Distribution, simplification and combining terms",
+        "selectors": [
+          "a/radical:binomial"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-112-1",
+          "algebra-2-en:authored:M6-46-2",
+          "algebra-2-en:authored:M6-82-2"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "linear-inequalities",
+    "label": "Linear inequalities",
+    "topic": "inequalities",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Graph a stated inequality on a number line",
+        "prerequisites": "Open/closed endpoints and shading direction",
+        "selectors": [
+          "c/78.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-78.2",
+          "algebra-half-en:authored:M3-72-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Solve a two-step linear inequality",
+        "prerequisites": "Inverse operations and boundary inclusion",
+        "selectors": [
+          "c/93.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-93.2"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Solve a compound intersection or union",
+        "prerequisites": "Combine two solution sets correctly",
+        "selectors": [
+          "a/compound:and",
+          "a/compound:or"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-46-1",
+          "algebra-1-en:authored:M4-111-1",
+          "algebra-1-en:authored:M4-111-2",
+          "algebra-2-en:authored:M6-89-1",
+          "algebra-2-en:authored:M6-89-2"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "line-slope",
+    "label": "Line slope",
+    "topic": "lines-slope",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find slope from two points",
+        "prerequisites": "Change in y divided by change in x",
+        "selectors": [
+          "c/COURSE107.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:COURSE107.1",
+          "algebra-half-en:authored:M3-209-1",
+          "algebra-1-en:authored:M4-98-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find a line equation from two points",
+        "prerequisites": "Slope and point substitution",
+        "selectors": [
+          "a/line:two-points"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-106-1",
+          "algebra-2-en:authored:M6-12-2",
+          "algebra-2-en:authored:M6-14-1"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "function-evaluation",
+    "label": "Function evaluation",
+    "topic": "functions",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Use a given rule to complete a function table",
+        "prerequisites": "Substitute the input",
+        "selectors": [
+          "c/85.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-85.2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Evaluate a function written in function notation",
+        "prerequisites": "Interpret argument and output notation",
+        "selectors": [
+          "a/function:evaluate"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-28-2",
+          "algebra-1-en:authored:M4-82-1",
+          "algebra-2-en:authored:M6-94-4"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Find the sum or product of functions and its domain",
+        "prerequisites": "Intersect domains before evaluating",
+        "selectors": [
+          "z/function:sum",
+          "z/function:product"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-102-1",
+          "algebra-2-en:authored:M6-102-2"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "trigonometry",
+    "label": "Trigonometry",
+    "topic": "trigonometry",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Form sine, cosine and tangent ratios",
+        "prerequisites": "Identify opposite, adjacent and hypotenuse",
+        "selectors": [
+          "h/trig-ratio"
+        ],
+        "sourceIds": [
+          "algebra-half-en:authored:M3-210-1",
+          "algebra-2-en:authored:M6-43-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find a side using a trig ratio",
+        "prerequisites": "Select a ratio and rearrange it",
+        "selectors": [
+          "m/trig:triangle"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-trig-triangle"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Find an angle with inverse trigonometry",
+        "prerequisites": "Choose an inverse trig function and round at the end",
+        "selectors": [
+          "m/trig:inverse"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-trig-inverse"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "vectors",
+    "label": "Vectors",
+    "topic": "polar-vectors",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Convert a polar point to rectangular coordinates",
+        "prerequisites": "Sine, cosine and quadrant signs",
+        "selectors": [
+          "m/polar:rectangular"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-polar-rectangular"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Add two vectors through rectangular components",
+        "prerequisites": "Resolve and add x and y components",
+        "selectors": [
+          "z/vector:rectangular"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-63-2"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Add vectors including a negative radius",
+        "prerequisites": "Reverse the signed vector before adding components",
+        "selectors": [
+          "z/vector:negative-rectangular"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-76-2"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "log-equations",
+    "label": "Log equations",
+    "topic": "logarithms",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Convert between exponential and logarithmic forms",
+        "prerequisites": "Definition of a logarithm",
+        "selectors": [
+          "m/log:convert"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-log-convert"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Solve an equation with a sum or difference of logarithms",
+        "prerequisites": "Log laws and positive-argument restrictions",
+        "selectors": [
+          "m/log:sum",
+          "m/log:difference"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-log-sum",
+          "algebra-2-en:authored:M5-log-difference"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Solve a logarithmic equation with an extraneous candidate",
+        "prerequisites": "Check candidate arguments in the original equation",
+        "selectors": [
+          "m/log:extraneous"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-log-extraneous"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "variation",
+    "label": "Variation",
+    "topic": "variation",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Solve a direct-variation model",
+        "prerequisites": "Find a constant of proportionality",
+        "selectors": [
+          "a/variation:direct"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-113-1",
+          "algebra-2-en:authored:M6-60-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Solve a joint-variation model",
+        "prerequisites": "Relate one output to a product of inputs",
+        "selectors": [
+          "m/variation:joint"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-variation-joint"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Solve a combined-variation model",
+        "prerequisites": "Track both direct and inverse factors",
+        "selectors": [
+          "m/variation:combined"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-variation-combined"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "motion",
+    "label": "Motion",
+    "topic": "rates",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Solve a distance-rate-time problem",
+        "prerequisites": "Use consistent units and d equals rt",
+        "selectors": [
+          "t/distance-rate"
+        ],
+        "sourceIds": [
+          "algebra-half-en:node:403"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Solve a round-trip model with unequal speeds",
+        "prerequisites": "Express each travel time using the shared distance",
+        "selectors": [
+          "a/motion:equal"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-92-1",
+          "algebra-2-en:authored:M6-22-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Solve a delayed-start motion model",
+        "prerequisites": "Distinguish the two travel times",
+        "selectors": [
+          "a/motion:delayed-sum"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-94-2",
+          "algebra-2-en:authored:M6-29-2"
+        ]
+      },
+      {
+        "level": 4,
+        "demand": "Solve a river-current motion model",
+        "prerequisites": "Use upstream and downstream effective speeds",
+        "selectors": [
+          "m/motion:river"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-motion-river"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "binary",
+    "label": "Binary",
+    "topic": "numeral-systems",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Convert between base two and base ten",
+        "prerequisites": "Powers of two and place value",
+        "selectors": [
+          "c/COURSE213.1",
+          "c/COURSE213.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:COURSE213.1",
+          "course-87-en:authored:COURSE213.2",
+          "algebra-half-en:authored:M3-203-1",
+          "algebra-half-en:authored:M3-203-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Add whole binary numbers",
+        "prerequisites": "Carry in base two",
+        "selectors": [
+          "h/binary:add"
+        ],
+        "sourceIds": [
+          "algebra-half-en:authored:M3-203-5"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Add binary fractions",
+        "prerequisites": "Negative powers of two and aligned binary points",
+        "selectors": [
+          "h/binary:fraction-add"
+        ],
+        "sourceIds": [
+          "algebra-half-en:authored:M3-203-6"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "angle-measures",
+    "label": "Angle measures",
+    "topic": "angles",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find the third angle of a triangle",
+        "prerequisites": "Triangle angle sum",
+        "selectors": [
+          "c/40.2",
+          "r/triangle-angle"
+        ],
+        "sourceIds": [
+          "course-87-en:item:SN870590",
+          "course-87-en:authored:MCADA-40.2",
+          "course-1-en:authored:M2-dafca6ffd897-1",
+          "algebra-half-en:authored:M3-104-3",
+          "algebra-1-en:authored:M4-97-1",
+          "algebra-2-en:authored:M6-1-2",
+          "algebra-2-en:authored:M6-30-5"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find angles formed by parallel lines and a transversal",
+        "prerequisites": "Corresponding, alternate and supplementary angles",
+        "selectors": [
+          "c/102.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-102.1",
+          "course-1-en:authored:M2-e9c8b69493c0-1",
+          "algebra-half-en:authored:M3-204-1",
+          "algebra-2-en:authored:M6-1-3",
+          "algebra-2-en:authored:M6-25-3",
+          "algebra-2-en:authored:M6-49-2"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "clock-time",
+    "label": "Clock time",
+    "topic": "calendar-time",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Read an analog clock",
+        "prerequisites": "Hour and minute hands",
+        "selectors": [
+          "b/clock-read"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00005"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Calculate elapsed time",
+        "prerequisites": "Count across hour boundaries",
+        "selectors": [
+          "c/12.4"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-12.4"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Calculate elapsed time across midnight",
+        "prerequisites": "Track the date boundary",
+        "selectors": [
+          "b/elapsed-overnight"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00054"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "complex-operations",
+    "label": "Complex operations",
+    "topic": "complex-numbers",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Add complex numbers",
+        "prerequisites": "Combine real and imaginary components",
+        "selectors": [
+          "b/complex-add"
+        ],
+        "sourceIds": [
+          "algebra-2-en:node:422"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Multiply complex numbers",
+        "prerequisites": "Distribution and i squared equals negative one",
+        "selectors": [
+          "b/complex-multiply"
+        ],
+        "sourceIds": [
+          "algebra-2-en:node:506",
+          "algebra-2-en:authored:M6-104-2"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Divide complex numbers",
+        "prerequisites": "Use the conjugate and simplify",
+        "selectors": [
+          "m/complex:divide"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-complex-divide",
+          "algebra-2-en:authored:M6-81-4"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "compass-constructions",
+    "label": "Compass constructions",
+    "topic": "constructions",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Construct a perpendicular bisector",
+        "prerequisites": "Equal-radius arcs from endpoints",
+        "selectors": [
+          "m/construct:bisector"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-construct-bisector"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Construct a parallel through an external point",
+        "prerequisites": "Two justified perpendicular constructions",
+        "selectors": [
+          "z/construct:parallel"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-123-8"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Construct the incircle of a right triangle",
+        "prerequisites": "Angle bisectors and equal distances to three sides",
+        "selectors": [
+          "z/circle:incircle"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-128-4"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "coordinate-distance",
+    "label": "Coordinate distance",
+    "topic": "coordinate-geometry",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Read coordinates of a point",
+        "prerequisites": "Signed horizontal and vertical coordinates",
+        "selectors": [
+          "c/INV3.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-INV3.2",
+          "course-1-en:authored:M2-335fb8ceaa11-2",
+          "algebra-half-en:authored:M3-38-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find distance between two points",
+        "prerequisites": "Coordinate differences and Pythagorean theorem",
+        "selectors": [
+          "a/distance-points"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-98-1",
+          "algebra-2-en:authored:M6-88-1"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "counting-outcomes",
+    "label": "Counting outcomes",
+    "topic": "counting",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Count outcomes with repeated choices",
+        "prerequisites": "Multiplication principle",
+        "selectors": [
+          "b/counting-power"
+        ],
+        "sourceIds": [
+          "algebra-2-en:node:803"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Count ordered arrangements without repetition",
+        "prerequisites": "Decreasing choices and order",
+        "selectors": [
+          "b/permutations",
+          "h/permutation"
+        ],
+        "sourceIds": [
+          "algebra-2-en:node:797",
+          "algebra-half-en:authored:M3-122-1"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "statistical-displays",
+    "label": "Statistical displays",
+    "topic": "data-displays",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Read a stem-and-leaf display",
+        "prerequisites": "Place value, key and ordered observations",
+        "selectors": [
+          "c/INV4.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-INV4.2",
+          "algebra-half-en:authored:M3-202-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Construct a stem-and-leaf display",
+        "prerequisites": "Organize raw observations and provide a key",
+        "selectors": [
+          "c/INV4.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-INV4.1",
+          "course-1-en:authored:M2-987e818adcf1-1",
+          "algebra-half-en:authored:M3-202-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Construct a box plot",
+        "prerequisites": "Median, quartiles and extremes",
+        "selectors": [
+          "a/boxplot:draw"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-120-1"
+        ]
+      }
+    ],
+    "relationMode": "related"
+  },
+  {
+    "id": "experimental-data",
+    "label": "Experimental data",
+    "topic": "data-displays",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Plot a given linear equation",
+        "prerequisites": "Coordinate plotting and line features",
+        "selectors": [
+          "a/line:graph"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-51-1",
+          "algebra-1-en:authored:M4-75-2",
+          "algebra-2-en:authored:M6-8-3"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Estimate a linear model from experimental data",
+        "prerequisites": "Choose a trend and distinguish estimate from interpolation",
+        "selectors": [
+          "z/data:graph",
+          "z/data:table"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-59-1",
+          "algebra-2-en:authored:M6-72-1"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "decimal-operations",
+    "label": "Decimal operations",
+    "topic": "decimal-arithmetic",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Add or subtract decimals",
+        "prerequisites": "Align decimal places",
+        "selectors": [
+          "f/decimal:add",
+          "f/decimal:sub"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-69f9dc04c5d2-1",
+          "intermediate-4-en:authored:M2-d4c3d8bb9813-1",
+          "course-1-en:authored:M2-a5950f13937f-1",
+          "course-1-en:authored:M2-a5950f13937f-2",
+          "course-1-en:authored:M2-f58728a8465e-1",
+          "course-1-en:authored:M2-f58728a8465e-2",
+          "algebra-half-en:authored:M3-6-3",
+          "algebra-half-en:authored:M3-6-4",
+          "algebra-1-en:authored:M4-4-3",
+          "algebra-1-en:authored:M4-4-4"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Multiply decimals",
+        "prerequisites": "Place-value scaling in a product",
+        "selectors": [
+          "f/decimal:mul"
+        ],
+        "sourceIds": [
+          "course-1-en:authored:M2-d16989c45698-1"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "fraction-conversions",
+    "label": "Fraction conversions",
+    "topic": "fraction-decimal-percent",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Write a terminating decimal as a simplified fraction",
+        "prerequisites": "Decimal place values and fraction reduction",
+        "selectors": [
+          "c/31.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-31.2",
+          "course-1-en:authored:M2-9b4f3daaed5f-1",
+          "course-1-en:authored:M2-e40d641cb9a0-3"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Convert among fractions, decimals and percents",
+        "prerequisites": "Equivalent forms and division",
+        "selectors": [
+          "c/43.4"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-43.4",
+          "course-1-en:authored:M2-b6ac2d168ebc-1",
+          "course-1-en:authored:M2-0c7fb7100860-1",
+          "algebra-half-en:authored:M3-55-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Convert a repeating decimal to an exact fraction",
+        "prerequisites": "Scale and subtract the repeated part",
+        "selectors": [
+          "a/repeating-decimal"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-63-2",
+          "algebra-2-en:authored:M6-104-4"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "exponential-models",
+    "label": "Exponential models",
+    "topic": "exponential",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Calculate simple exponential growth",
+        "prerequisites": "Repeated multiplication by a growth factor",
+        "selectors": [
+          "a/exponential:growth"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-114-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Calculate compound interest with several periods per year",
+        "prerequisites": "Periodic rate and total number of periods",
+        "selectors": [
+          "m/exponential:interest"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-exponential-interest"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Solve for an exponent using logarithms",
+        "prerequisites": "Inverse relation between exponentials and logarithms",
+        "selectors": [
+          "m/exponential:solve"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-exponential-solve"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "quadratic-graphs",
+    "label": "Quadratic graphs",
+    "topic": "function-graphs",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Complete the square and identify a parabola",
+        "prerequisites": "Match vertex form to a graph",
+        "selectors": [
+          "v/parabola-choice"
+        ],
+        "sourceIds": [
+          "algebra-2-en:node:710"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Graph a shifted parabola",
+        "prerequisites": "Translate the vertex and preserve shape",
+        "selectors": [
+          "h/parabola:shift"
+        ],
+        "sourceIds": [
+          "algebra-half-en:authored:M3-208-2"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Graph a quadratic by completing the square",
+        "prerequisites": "Find vertex form before plotting",
+        "selectors": [
+          "z/graph:complete-square"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-100-1"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "gas-models",
+    "label": "Gas models",
+    "topic": "gas-laws",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Apply pressure-volume variation at constant temperature",
+        "prerequisites": "Rearrange a product equation",
+        "selectors": [
+          "m/gas:pressure",
+          "m/gas:volume"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-gas-pressure",
+          "algebra-2-en:authored:M5-gas-volume"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Apply a combined pressure-volume-temperature law",
+        "prerequisites": "Use absolute temperature and isolate the requested variable",
+        "selectors": [
+          "m/gas:combined-pressure",
+          "m/gas:combined-temperature"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-gas-combined-pressure",
+          "algebra-2-en:authored:M5-gas-combined-temperature"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Apply the combined law using scientific notation",
+        "prerequisites": "Track powers of ten and final significant figures",
+        "selectors": [
+          "z/gas:scientific-pressure",
+          "z/gas:scientific-temperature"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-69-1",
+          "algebra-2-en:authored:M6-69-2"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "geometry-vocabulary",
+    "label": "Geometry vocabulary",
+    "topic": "geometry-properties",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Identify points, lines, rays, segments and angles",
+        "prerequisites": "Definitions and geometric notation",
+        "selectors": [
+          "c/7.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-7.2",
+          "intermediate-4-en:authored:M2-ddfbb17b8be0-1",
+          "intermediate-4-en:authored:M2-eaafaab5d8a5-2",
+          "course-1-en:authored:M2-733cdfd45860-1",
+          "algebra-half-en:authored:M3-9-1",
+          "algebra-1-en:authored:M4-1-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Identify corresponding parts of congruent triangles",
+        "prerequisites": "Match vertex order",
+        "selectors": [
+          "z/geometry:correspondence"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-32-2"
+        ]
+      }
+    ],
+    "relationMode": "related"
+  },
+  {
+    "id": "literal-formulas",
+    "label": "Literal formulas",
+    "topic": "literal-equations",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Rearrange a linear formula",
+        "prerequisites": "Inverse operations with letter coefficients",
+        "selectors": [
+          "a/literal:linear"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-42-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Rearrange a rational formula",
+        "prerequisites": "Clear denominators and preserve restrictions",
+        "selectors": [
+          "a/literal:rational"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-104-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Rearrange a formula with exceptional parameter cases",
+        "prerequisites": "Distinguish unique, impossible and nonunique cases",
+        "selectors": [
+          "m/literal:exception"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-literal-exception"
+        ]
+      }
+    ],
+    "relationMode": "related"
+  },
+  {
+    "id": "locus-constructions",
+    "label": "Locus constructions",
+    "topic": "locus",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Describe a locus equidistant from two points",
+        "prerequisites": "Perpendicular-bisector theorem",
+        "selectors": [
+          "l/equidistant-locus"
+        ],
+        "sourceIds": [
+          "algebra-2-en:node:887"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Combine two distance conditions",
+        "prerequisites": "Intersect two loci and count possible points",
+        "selectors": [
+          "m/locus:two"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-locus-two",
+          "algebra-2-en:authored:M6-125-2"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "mixture-models",
+    "label": "Mixture models",
+    "topic": "mixtures",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Mix two stocks to a target concentration",
+        "prerequisites": "Conservation of total substance",
+        "selectors": [
+          "m/mixture:final"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-mixture-final"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Replace part of a mixture with a new stock",
+        "prerequisites": "Subtract removed substance before adding replacement",
+        "selectors": [
+          "m/mixture:replace"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-mixture-replace"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "nonlinear-intersections",
+    "label": "Nonlinear intersections",
+    "topic": "nonlinear-systems",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find intersections of a line and parabola",
+        "prerequisites": "Substitute a linear relation into a quadratic",
+        "selectors": [
+          "m/nonlinear:line-parabola"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-nonlinear-line-parabola"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find intersections of a circle and parabola",
+        "prerequisites": "Substitution, multiple roots and all real ordered pairs",
+        "selectors": [
+          "z/system:circle-parabola"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-95-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "ordering-numbers",
+    "label": "Ordering numbers",
+    "topic": "number-order",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Compare decimal numbers",
+        "prerequisites": "Align place values",
+        "selectors": [
+          "c/33.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-33.1",
+          "course-1-en:authored:M2-921eee1b99fa-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Compare fractions with different denominators",
+        "prerequisites": "Use equivalent fractions or cross products",
+        "selectors": [
+          "c/30.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-30.2"
+        ]
+      }
+    ],
+    "relationMode": "related"
+  },
+  {
+    "id": "prime-factorization",
+    "label": "Prime factorization",
+    "topic": "number-theory",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "List all factors of a whole number",
+        "prerequisites": "Factor pairs and completeness",
+        "selectors": [
+          "e/6.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-6.1",
+          "course-1-en:authored:M2-8b90adcef0b4-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Write a prime factorization",
+        "prerequisites": "Break composite factors into primes",
+        "selectors": [
+          "c/21.3"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-21.3",
+          "course-1-en:authored:M2-785ae7bc0db4-1",
+          "algebra-half-en:authored:M3-12-3",
+          "algebra-1-en:authored:M4-33-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Find the LCM through prime factors",
+        "prerequisites": "Take each prime to its largest required power",
+        "selectors": [
+          "c/27.4"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-27.4",
+          "algebra-1-en:authored:M4-43-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "geometric-proof",
+    "label": "Geometric proof",
+    "topic": "proof",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Prove vertical angles are equal",
+        "prerequisites": "Supplementary angles and subtraction of equals",
+        "selectors": [
+          "m/proof:vertical"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-proof-vertical"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Prove equality using triangle congruence",
+        "prerequisites": "Match givens to a congruence criterion",
+        "selectors": [
+          "m/proof:congruence"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-proof-congruence"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Prove a general theorem by area decomposition",
+        "prerequisites": "Justify the diagram and connect geometry to algebra",
+        "selectors": [
+          "z/proof:pythagoras"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-128-5"
+        ]
+      }
+    ],
+    "relationMode": "related"
+  },
+  {
+    "id": "right-triangles",
+    "label": "Right triangles",
+    "topic": "pythagorean",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find a missing side in a right triangle",
+        "prerequisites": "Squares and square roots",
+        "selectors": [
+          "c/99.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-99.1",
+          "algebra-half-en:authored:M3-117-2",
+          "algebra-1-en:authored:M4-97-3",
+          "algebra-2-en:authored:M6-10-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Apply the right-triangle theorem in a context",
+        "prerequisites": "Identify the hidden right triangle",
+        "selectors": [
+          "c/COURSE112.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:COURSE112.1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "information-sufficiency",
+    "label": "Information sufficiency",
+    "topic": "reasoning",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Decide whether information determines an answer",
+        "prerequisites": "Identify the required quantities",
+        "selectors": [
+          "c/79.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-79.1",
+          "course-1-en:authored:M2-909b2e76dee2-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Assess whether a comparison is determined",
+        "prerequisites": "Consider more than one admissible case",
+        "selectors": [
+          "c/79.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-79.2"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "rounding",
+    "label": "Rounding",
+    "topic": "rounding-estimation",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Round whole numbers to a specified place",
+        "prerequisites": "Nearest place-value interval",
+        "selectors": [
+          "f/round:3"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:authored:M2-70362691e66a-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Round decimals to a specified place",
+        "prerequisites": "Decimal place-value intervals",
+        "selectors": [
+          "c/33.3"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-33.3",
+          "course-1-en:authored:M2-4cfb41f913ad-1",
+          "algebra-half-en:authored:M3-6-5",
+          "algebra-1-en:authored:M4-100-2"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Estimate a product in scientific notation",
+        "prerequisites": "Round factors first and normalize the estimate",
+        "selectors": [
+          "z/scientific:estimate"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-42-1"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "segments",
+    "label": "Segments",
+    "topic": "segments",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find a missing segment with whole-number lengths",
+        "prerequisites": "Part plus part equals whole",
+        "selectors": [
+          "f/segment-length"
+        ],
+        "sourceIds": [
+          "course-1-en:authored:M2-4f893f9e8209-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find a missing segment with decimal measurements",
+        "prerequisites": "Subtract decimal parts from the whole",
+        "selectors": [
+          "@/algebra-2-en:node:5"
+        ],
+        "sourceIds": [
+          "algebra-2-en:node:5"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "sequences",
+    "label": "Sequences",
+    "topic": "sequences",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Continue a constant-step sequence",
+        "prerequisites": "Identify the common difference",
+        "selectors": [
+          "b/sequence-next"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00152"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find a missing internal term",
+        "prerequisites": "Apply the pattern in both directions",
+        "selectors": [
+          "b/sequence-missing"
+        ],
+        "sourceIds": [
+          "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00155"
+        ]
+      }
+    ],
+    "relationMode": "difficulty"
+  },
+  {
+    "id": "set-relations",
+    "label": "Set relations",
+    "topic": "sets",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Classify counting, whole, integer and rational numbers",
+        "prerequisites": "Definitions and containment",
+        "selectors": [
+          "c/86.1",
+          "c/86.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-86.1",
+          "course-87-en:authored:MCADA-86.2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find unions and intersections of stated sets",
+        "prerequisites": "Membership conditions and set operations",
+        "selectors": [
+          "b/set-union",
+          "b/set-intersection"
+        ],
+        "sourceIds": [
+          "algebra-2-en:node:845",
+          "algebra-2-en:node:849"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Calculate regions in a two-set Venn diagram",
+        "prerequisites": "Account for the intersection, union and neither region",
+        "selectors": [
+          "m/sets:venn"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M5-sets-venn"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "similar-figures",
+    "label": "Similar figures",
+    "topic": "similarity-scale",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find a missing corresponding side of similar triangles",
+        "prerequisites": "Use a scale factor with matched sides",
+        "selectors": [
+          "c/97.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-97.2",
+          "course-1-en:authored:M2-9996ee79c132-3",
+          "algebra-half-en:authored:M3-65-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find a height by indirect measurement",
+        "prerequisites": "Translate a context into similar triangles",
+        "selectors": [
+          "c/97.3"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-97.3"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Connect length, area and volume ratios of similar solids",
+        "prerequisites": "Square or cube a linear scale factor, or recover it from a ratio",
+        "selectors": [
+          "c/COURSE211.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:COURSE211.2"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "solid-surface",
+    "label": "Solid surface",
+    "topic": "surface-area",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find surface area of a rectangular prism",
+        "prerequisites": "Sum the areas of six faces",
+        "selectors": [
+          "c/67.5"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-67.5",
+          "course-1-en:authored:M2-d6a57c1e9476-6",
+          "algebra-half-en:authored:M3-49-1",
+          "algebra-1-en:authored:M4-15-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find surface area of a cylinder",
+        "prerequisites": "Combine curved area and circular bases",
+        "selectors": [
+          "v/cylinder-surface"
+        ],
+        "sourceIds": [
+          "algebra-2-en:node:34"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Find surface area of a cone or pyramid",
+        "prerequisites": "Use slant height in lateral areas",
+        "selectors": [
+          "h/cone-area",
+          "h/pyramid-area"
+        ],
+        "sourceIds": [
+          "algebra-half-en:authored:M3-120-4",
+          "algebra-half-en:authored:M3-120-5",
+          "algebra-1-en:authored:M4-15-2",
+          "algebra-1-en:authored:M4-15-3"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "transformations",
+    "label": "Transformations",
+    "topic": "transformations",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Translate a figure on a coordinate plane",
+        "prerequisites": "Apply a fixed displacement to every vertex",
+        "selectors": [
+          "c/80.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-80.2",
+          "intermediate-4-en:authored:M2-fb8d054bd38a-2",
+          "course-1-en:authored:M2-a9e3c6cb0366-2",
+          "algebra-half-en:authored:M3-115-5",
+          "algebra-half-en:authored:M3-207-2"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Reflect a figure on a coordinate plane",
+        "prerequisites": "Reverse position across the stated line",
+        "selectors": [
+          "c/80.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-80.1",
+          "intermediate-4-en:authored:M2-fb8d054bd38a-1",
+          "course-1-en:authored:M2-a9e3c6cb0366-1",
+          "algebra-half-en:authored:M3-115-4",
+          "algebra-half-en:authored:M3-207-1"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Transform a graph using function notation",
+        "prerequisites": "Connect changes in the formula to shifts and reflections",
+        "selectors": [
+          "a/transform:quadratic"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-110-1"
+        ]
+      }
+    ],
+    "relationMode": "related"
+  },
+  {
+    "id": "solid-volume",
+    "label": "Solid volume",
+    "topic": "volume",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Find volume of a rectangular prism",
+        "prerequisites": "Multiply length, width and height",
+        "selectors": [
+          "c/70.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-70.1",
+          "course-1-en:authored:M2-52b648583671-1",
+          "course-1-en:authored:M2-d6a57c1e9476-1",
+          "algebra-half-en:authored:M3-45-1",
+          "algebra-1-en:authored:M4-20-1"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Find volume of a triangular prism",
+        "prerequisites": "Find a triangular base area before multiplying by length",
+        "selectors": [
+          "c/70.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-70.2",
+          "course-1-en:authored:M2-d6a57c1e9476-2",
+          "algebra-half-en:authored:M3-45-2",
+          "algebra-1-en:authored:M4-20-2",
+          "algebra-1-en:authored:M4-60-3"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Find volume of a pyramid or cone",
+        "prerequisites": "Apply one third of base area times height",
+        "selectors": [
+          "c/COURSE113.1",
+          "c/COURSE113.2"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:COURSE113.1",
+          "course-87-en:authored:COURSE113.2",
+          "course-1-en:authored:M2-d6a57c1e9476-3",
+          "course-1-en:authored:M2-d6a57c1e9476-4",
+          "algebra-half-en:authored:M3-120-1",
+          "algebra-half-en:authored:M3-120-2",
+          "algebra-1-en:authored:M4-72-2",
+          "algebra-1-en:authored:M4-72-3"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  },
+  {
+    "id": "contextual-equations",
+    "label": "Contextual equations",
+    "topic": "word-equations",
+    "stages": [
+      {
+        "level": 1,
+        "demand": "Translate and solve a one-step comparison story",
+        "prerequisites": "Represent a difference between quantities",
+        "selectors": [
+          "c/12.1"
+        ],
+        "sourceIds": [
+          "course-87-en:authored:MCADA-12.1",
+          "intermediate-4-en:authored:M2-3948dfffdc03-1",
+          "course-1-en:authored:M2-4fd044fe56d6-1",
+          "course-1-en:authored:M2-4f3e9ac74f94-1",
+          "algebra-half-en:authored:M3-5-3"
+        ]
+      },
+      {
+        "level": 2,
+        "demand": "Model consecutive integers with a linear equation",
+        "prerequisites": "Represent related unknowns in one variable",
+        "selectors": [
+          "a/word:consecutive"
+        ],
+        "sourceIds": [
+          "algebra-1-en:authored:M4-76-1",
+          "algebra-2-en:authored:M6-6-2"
+        ]
+      },
+      {
+        "level": 3,
+        "demand": "Model consecutive integers with a quadratic equation",
+        "prerequisites": "Represent a product and reject inadmissible roots",
+        "selectors": [
+          "z/word:quadratic"
+        ],
+        "sourceIds": [
+          "algebra-2-en:authored:M6-55-2"
+        ]
+      }
+    ],
+    "relationMode": "extension"
+  }
+]

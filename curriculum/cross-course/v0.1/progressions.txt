@@ -1,0 +1,200 @@
+# track | topic | stage | explicit demand | added prerequisites | family/recipe selectors
+whole-addition|whole-arithmetic|1|Add two-digit whole numbers, regrouping when needed|Place value and regrouping|f/add:2 f/add:2:carry
+whole-addition|whole-arithmetic|2|Add five- or six-digit whole numbers|Maintain alignment across more places|f/add:5 f/add:6
+whole-subtraction|whole-arithmetic|1|Subtract two-digit whole numbers regrouping when needed|Place value|f/sub:2 f/sub:2:borrow
+whole-subtraction|whole-arithmetic|2|Subtract three-digit numbers with regrouping|Regroup tens and ones|f/sub:3:borrow f/sub:3:zero
+whole-multiplication|whole-arithmetic|1|Multiply two digits by one digit|Multiplication facts and regrouping|f/mul:2:1
+whole-multiplication|whole-arithmetic|2|Multiply three digits by one digit|Track more places and regrouping|f/mul:3:1
+whole-multiplication|whole-arithmetic|3|Multiply two digits by two digits|Two partial products and place-value shift|f/mul:2:2
+whole-multiplication|whole-arithmetic|4|Multiply three digits by two digits|Combine longer partial products|f/mul:3:2
+division-exact|whole-arithmetic|1|Divide with a two-digit whole-number quotient|Division facts and place value|f/div:2:exact
+division-exact|whole-arithmetic|2|Divide with a three-digit whole-number quotient|Track an additional quotient place|f/div:3:exact f/div:3:insidezero
+place-values|number-representation|1|Identify a digit and its value through thousands|Ones, tens, hundreds and thousands|f/place:4
+place-values|number-representation|2|Identify a digit and its value through trillions|Large-number periods|f/place:13
+fraction-add-subtract|fractions|1|Add or subtract fractions with a shared denominator|Numerators count equal parts|f/fraction-same
+fraction-add-subtract|fractions|2|Add or subtract fractions with different denominators|Equivalent fractions and common denominators|f/fraction-unlike c/30.3
+fraction-add-subtract|fractions|3|Add or subtract mixed numbers with different denominators|Combine whole and fractional parts; regroup if needed|f/mixed-unlike
+fraction-product-chain|fractions|1|Multiply two fractions|Multiply numerators and denominators; simplify|c/9.3
+fraction-multiply|fractions|1|Multiply two fractions|Multiply numerators and denominators; simplify|c/9.3
+fraction-multiply|fractions|2|Multiply mixed numbers|Convert mixed numbers to improper fractions|f/mixed:mul
+fraction-product-chain|fractions|2|Multiply three fractions and simplify|Coordinate cancellation across three factors|f/fraction-three-product
+perimeter|perimeter|1|Find a square or rectangle perimeter|Add sides or use repeated equal lengths|b/square-perimeter b/rectangle-perimeter x/perimeter-rectangle
+perimeter|perimeter|2|Find perimeter of an irregular quadrilateral or a labelled polygon|Track each labelled boundary side rather than assuming equal sides|x/perimeter-irregular c/19.1
+perimeter|perimeter|3|Find an L-shaped boundary perimeter with implied sides|Infer missing lengths and follow the complete boundary|f/compound-perimeter g/compound-perimeter
+area-rectilinear|area|1|Find rectangle area from length and width|Multiply perpendicular side lengths|r/rectangle-area c/20.6
+area-rectilinear|area|2|Find an area by decomposing a compound figure into rectangles|Partition without overlap and add component areas|c/37.3 g/compound-area
+area-rectilinear|area|3|Find area of a figure combining rectangular and triangular regions|Triangle area and decomposition|c/75.1
+circle-area|circle-measurement|1|Find circle area from a radius|Square the radius and apply the stated pi convention|c/82.1 g/circle-area
+circle-area|circle-measurement|2|Find sector area|Use the angle fraction of a whole circle|c/104.3 v/sector-area
+unit-conversion|measurement|1|Convert between two metric units|Metric place-value factors|c/32.2
+unit-conversion|measurement|2|Convert with more than one unit multiplier|Cancel intermediate units in a chain|c/88.1
+unit-conversion|measurement|3|Convert square units|Square the linear conversion factor|c/88.2 o/area-units
+unit-conversion|measurement|4|Convert cubic units with six unit multipliers|Cube linear factors and preserve dimensional cancellation|z/units:volume-chain
+linear-equations|equations|1|Solve a one-operation equation|Inverse operations|e/3.1
+linear-equations|equations|2|Solve a two-step equation|Undo addition and multiplication in reverse order|c/93.1 f/two-step-positive
+linear-equations|equations|3|Solve an equation with parentheses|Distribute and collect before isolating the variable|a/equation:parentheses
+linear-equations|equations|4|Solve an equation with multiple subtracted groups|Resolve multiple subtracted groups while preserving equality|a/equation:nested
+quadratic-formula|quadratics|1|Use the quadratic formula for real roots|Discriminant, radicals and both signs|a/quadratic:formula
+quadratic-formula|quadratics|2|Use the quadratic formula for complex roots|Principal imaginary roots and i squared equals negative one|m/quadratic:complex-formula
+complete-square|quadratics|1|Complete the square for a monic quadratic|Half the linear coefficient and preserve equality|a/quadratic:complete
+complete-square|quadratics|2|Complete the square for a nonmonic quadratic with irrational roots|Divide by the leading coefficient and simplify radicals|z/quadratic:nonmonic
+systems-elimination|systems|1|Solve a two-variable system by elimination|Equivalent equations and cancellation|a/system:elimination
+systems-elimination|systems|2|Solve a two-variable system with fractional coefficients|Clear denominators before elimination|a/system:fraction
+systems-elimination|systems|3|Solve a three-variable linear system|Eliminate in stages and back-substitute|m/three:unique z/system:cyclic-three
+rational-equations|rational-equations|1|Solve a rational equation reducible to a linear equation|Clear denominators and retain exclusions|a/rational-equation:linear
+rational-equations|rational-equations|2|Solve a rational equation that can produce an excluded candidate|Check each candidate in the original denominators|a/rational-equation:excluded
+rational-equations|rational-equations|3|Solve a rational equation leading to a quadratic|Quadratic solution plus original-domain checks|a/rational-equation:quadratic
+radical-equations|radical-equations|1|Solve an equation with one radical|Isolate, square and check the original equation|a/radical-equation
+radical-equations|radical-equations|2|Solve an equation with two radicals|Repeated isolation and squaring with final checks|m/radical:two
+expression-evaluation|expressions|1|Evaluate a variable expression with positive values|Substitution and operation order|e/1.5
+expression-evaluation|expressions|2|Evaluate with negative substituted values|Signed arithmetic and parentheses|c/91.1
+expression-evaluation|expressions|3|Evaluate a more complex signed expression|Fraction bars, powers and signed arithmetic|a/evaluate-hard
+integer-arithmetic|integers|1|Add and subtract on a number line|Signed position and direction|e/4.3
+integer-arithmetic|integers|2|Add signed numbers without a number-line model|Magnitude and sign rules|c/64.1 a/signed-sum
+integer-arithmetic|integers|3|Simplify signed arithmetic with nested grouping|Distribute negative signs through groups|a/signed-nesting
+fraction-equivalence|fraction-equivalence|1|Reduce by common factors without a model|Find and cancel a common factor|f/reduce c/15.2
+fraction-equivalence|fraction-equivalence|2|Reduce using prime factorization|Prime-factor representation and cancellation|c/24.1
+percent-unknown|percent|1|Find a percent of a known whole|Convert a percent to a fraction or decimal|f/percent-of
+percent-unknown|percent|2|Solve a percent problem by forming an equation|Distinguish the whole, part and rate|c/77.1 a/word:percent
+percent-unknown|percent|3|Recover an original amount before a percent increase|Model the final amount as a multiplier of the original|p/reverse-increase
+ratio-total|ratio-proportion|1|Find a missing term in a proportion|Equivalent ratios and cross products|c/39.2
+ratio-total|ratio-proportion|2|Divide a total according to a ratio|Add ratio parts before scaling|c/65.2 p/ratio-total-large
+ratio-total|ratio-proportion|3|Connect quantities through two ratios|Match and scale a shared quantity|p/ratio-chain
+average|statistics|1|Find the arithmetic mean of a list|Add values and divide by count|c/28.2 f/mean-small
+average|statistics|2|Find a missing value given the mean|Recover the required total|c/55.2 s/missing-value
+average|statistics|3|Find a combined or weighted average|Weight each group by its size|c/55.3 s/weighted-scores
+probability-events|probability|1|Find probability of one event|Count favorable and total outcomes|c/36.3 s/marble-single
+probability-events|probability|2|Find probability of ordered independent events|Multiply independent probabilities|c/94.2
+probability-events|probability|3|Find probability without replacement|Update the sample space after the first draw|c/94.3 m/counting:probability
+powers|powers-roots|1|Evaluate a positive whole-number power|Repeated multiplication|c/20.3 b/positive-power
+powers|powers-roots|2|Evaluate zero and negative exponents|Reciprocal rule and nonzero-base restriction|c/57.1
+powers|powers-roots|3|Evaluate negative bases with rational exponents|Real odd roots and exponent restrictions|m/fractional:negative
+scientific-notation|scientific-notation|1|Convert between large numbers and scientific notation|Powers of ten and a normalized coefficient|c/51.1 c/51.2
+scientific-notation|scientific-notation|2|Convert small numbers using negative powers of ten|Decimal place value and negative exponents|c/57.2 c/57.3
+scientific-notation|scientific-notation|3|Multiply scientific-notation numbers|Multiply coefficients, add exponents and normalize|c/83.2 o/scientific-product
+scientific-notation|scientific-notation|4|Add scientific-notation numbers|Align powers of ten before adding coefficients|a/scientific:add
+exponent-laws|exponent-laws|1|Apply product and quotient laws to powers|Add or subtract integer exponents|c/20.9 c/20.10
+exponent-laws|exponent-laws|2|Apply laws to powers with negative exponents|Reciprocals and nonzero-base restrictions|a/exponents:negative
+exponent-laws|exponent-laws|3|Simplify powers with fractional variable exponents|Rational exponent arithmetic and positive-variable domains|m/fractional:variables z/exponent:variables-product
+factoring|factoring|1|Factor out a common monomial|GCF of coefficients and variables|a/factor:gcf
+factoring|factoring|2|Factor a monic quadratic trinomial|Find numbers with specified product and sum|a/factor:monic
+factoring|factoring|3|Factor a nonmonic quadratic trinomial|Split or group a nonunit leading coefficient|a/factor:nonmonic
+factoring|factoring|4|Factor a quartic through a quadratic substitution|Recognize repeated powers then factor further|m/factor:quartic
+polynomial-products|polynomials|1|Multiply two polynomials|Distribute and collect like terms|h/polynomial:mul
+polynomial-products|polynomials|2|Expand the cube of a binomial|Repeated distribution and cubic coefficients|z/algebra:binomial
+polynomial-division|polynomials|1|Divide a polynomial by a linear divisor|Polynomial long division|a/polynomial-division
+polynomial-division|polynomials|2|Divide a polynomial by a quadratic divisor|Track more divisor terms and a remainder|m/division:quadratic
+rational-sums|rational-expressions|1|Add rational expressions with the same denominator|Combine numerators and retain exclusions|a/rational:equal
+rational-sums|rational-expressions|2|Add rational expressions with different denominators|Find a common polynomial denominator|a/rational:unequal
+rational-sums|rational-expressions|3|Add expressions with oppositely oriented factors|Control denominator signs before combining|z/rational:sign
+radical-simplification|radicals|1|Combine like radicals|Recognize equal radicands|a/radical:sum
+radical-simplification|radicals|2|Expand products of radical binomials|Distribution, simplification and combining terms|a/radical:binomial
+linear-inequalities|inequalities|1|Graph a stated inequality on a number line|Open/closed endpoints and shading direction|c/78.2
+linear-inequalities|inequalities|2|Solve a two-step linear inequality|Inverse operations and boundary inclusion|c/93.2
+linear-inequalities|inequalities|3|Solve a compound intersection or union|Combine two solution sets correctly|a/compound:and a/compound:or
+line-slope|lines-slope|1|Find slope from two points|Change in y divided by change in x|c/COURSE107.1
+line-slope|lines-slope|2|Find a line equation from two points|Slope and point substitution|a/line:two-points
+function-evaluation|functions|1|Use a given rule to complete a function table|Substitute the input|c/85.2
+function-evaluation|functions|2|Evaluate a function written in function notation|Interpret argument and output notation|a/function:evaluate
+function-evaluation|functions|3|Find the sum or product of functions and its domain|Intersect domains before evaluating|z/function:sum z/function:product
+trigonometry|trigonometry|1|Form sine, cosine and tangent ratios|Identify opposite, adjacent and hypotenuse|h/trig-ratio
+trigonometry|trigonometry|2|Find a side using a trig ratio|Select a ratio and rearrange it|m/trig:triangle
+trigonometry|trigonometry|3|Find an angle with inverse trigonometry|Choose an inverse trig function and round at the end|m/trig:inverse
+vectors|polar-vectors|1|Convert a polar point to rectangular coordinates|Sine, cosine and quadrant signs|m/polar:rectangular
+vectors|polar-vectors|2|Add two vectors through rectangular components|Resolve and add x and y components|z/vector:rectangular
+vectors|polar-vectors|3|Add vectors including a negative radius|Reverse the signed vector before adding components|z/vector:negative-rectangular
+log-equations|logarithms|1|Convert between exponential and logarithmic forms|Definition of a logarithm|m/log:convert
+log-equations|logarithms|2|Solve an equation with a sum or difference of logarithms|Log laws and positive-argument restrictions|m/log:sum m/log:difference
+log-equations|logarithms|3|Solve a logarithmic equation with an extraneous candidate|Check candidate arguments in the original equation|m/log:extraneous
+variation|variation|1|Solve a direct-variation model|Find a constant of proportionality|a/variation:direct
+variation|variation|2|Solve a joint-variation model|Relate one output to a product of inputs|m/variation:joint
+variation|variation|3|Solve a combined-variation model|Track both direct and inverse factors|m/variation:combined
+motion|rates|1|Solve a distance-rate-time problem|Use consistent units and d equals rt|t/distance-rate
+motion|rates|2|Solve a round-trip model with unequal speeds|Express each travel time using the shared distance|a/motion:equal
+motion|rates|3|Solve a delayed-start motion model|Distinguish the two travel times|a/motion:delayed-sum
+motion|rates|4|Solve a river-current motion model|Use upstream and downstream effective speeds|m/motion:river
+binary|numeral-systems|1|Convert between base two and base ten|Powers of two and place value|c/COURSE213.1 c/COURSE213.2
+binary|numeral-systems|2|Add whole binary numbers|Carry in base two|h/binary:add
+binary|numeral-systems|3|Add binary fractions|Negative powers of two and aligned binary points|h/binary:fraction-add
+angle-measures|angles|1|Find the third angle of a triangle|Triangle angle sum|c/40.2 r/triangle-angle
+angle-measures|angles|2|Find angles formed by parallel lines and a transversal|Corresponding, alternate and supplementary angles|c/102.1
+clock-time|calendar-time|1|Read an analog clock|Hour and minute hands|b/clock-read
+clock-time|calendar-time|2|Calculate elapsed time|Count across hour boundaries|c/12.4
+clock-time|calendar-time|3|Calculate elapsed time across midnight|Track the date boundary|b/elapsed-overnight
+complex-operations|complex-numbers|1|Add complex numbers|Combine real and imaginary components|b/complex-add
+complex-operations|complex-numbers|2|Multiply complex numbers|Distribution and i squared equals negative one|b/complex-multiply
+complex-operations|complex-numbers|3|Divide complex numbers|Use the conjugate and simplify|m/complex:divide
+compass-constructions|constructions|1|Construct a perpendicular bisector|Equal-radius arcs from endpoints|m/construct:bisector
+compass-constructions|constructions|2|Construct a parallel through an external point|Two justified perpendicular constructions|z/construct:parallel
+compass-constructions|constructions|3|Construct the incircle of a right triangle|Angle bisectors and equal distances to three sides|z/circle:incircle
+coordinate-distance|coordinate-geometry|1|Read coordinates of a point|Signed horizontal and vertical coordinates|c/INV3.2
+coordinate-distance|coordinate-geometry|2|Find distance between two points|Coordinate differences and Pythagorean theorem|a/distance-points
+counting-outcomes|counting|1|Count outcomes with repeated choices|Multiplication principle|b/counting-power
+counting-outcomes|counting|2|Count ordered arrangements without repetition|Decreasing choices and order|b/permutations h/permutation
+statistical-displays|data-displays|1|Read a stem-and-leaf display|Place value, key and ordered observations|c/INV4.2
+statistical-displays|data-displays|2|Construct a stem-and-leaf display|Organize raw observations and provide a key|c/INV4.1
+statistical-displays|data-displays|3|Construct a box plot|Median, quartiles and extremes|a/boxplot:draw
+experimental-data|data-displays|1|Plot a given linear equation|Coordinate plotting and line features|a/line:graph
+experimental-data|data-displays|2|Estimate a linear model from experimental data|Choose a trend and distinguish estimate from interpolation|z/data:graph z/data:table
+decimal-operations|decimal-arithmetic|1|Add or subtract decimals|Align decimal places|f/decimal:add f/decimal:sub
+decimal-operations|decimal-arithmetic|2|Multiply decimals|Place-value scaling in a product|f/decimal:mul
+fraction-conversions|fraction-decimal-percent|1|Write a terminating decimal as a simplified fraction|Decimal place values and fraction reduction|c/31.2
+fraction-conversions|fraction-decimal-percent|2|Convert among fractions, decimals and percents|Equivalent forms and division|c/43.4
+fraction-conversions|fraction-decimal-percent|3|Convert a repeating decimal to an exact fraction|Scale and subtract the repeated part|a/repeating-decimal
+exponential-models|exponential|1|Calculate simple exponential growth|Repeated multiplication by a growth factor|a/exponential:growth
+exponential-models|exponential|2|Calculate compound interest with several periods per year|Periodic rate and total number of periods|m/exponential:interest
+exponential-models|exponential|3|Solve for an exponent using logarithms|Inverse relation between exponentials and logarithms|m/exponential:solve
+quadratic-graphs|function-graphs|1|Complete the square and identify a parabola|Match vertex form to a graph|v/parabola-choice
+quadratic-graphs|function-graphs|2|Graph a shifted parabola|Translate the vertex and preserve shape|h/parabola:shift
+quadratic-graphs|function-graphs|3|Graph a quadratic by completing the square|Find vertex form before plotting|z/graph:complete-square
+gas-models|gas-laws|1|Apply pressure-volume variation at constant temperature|Rearrange a product equation|m/gas:pressure m/gas:volume
+gas-models|gas-laws|2|Apply a combined pressure-volume-temperature law|Use absolute temperature and isolate the requested variable|m/gas:combined-pressure m/gas:combined-temperature
+gas-models|gas-laws|3|Apply the combined law using scientific notation|Track powers of ten and final significant figures|z/gas:scientific-pressure z/gas:scientific-temperature
+geometry-vocabulary|geometry-properties|1|Identify points, lines, rays, segments and angles|Definitions and geometric notation|c/7.2
+geometry-vocabulary|geometry-properties|2|Identify corresponding parts of congruent triangles|Match vertex order|z/geometry:correspondence
+literal-formulas|literal-equations|1|Rearrange a linear formula|Inverse operations with letter coefficients|a/literal:linear
+literal-formulas|literal-equations|2|Rearrange a rational formula|Clear denominators and preserve restrictions|a/literal:rational
+literal-formulas|literal-equations|3|Rearrange a formula with exceptional parameter cases|Distinguish unique, impossible and nonunique cases|m/literal:exception
+locus-constructions|locus|1|Describe a locus equidistant from two points|Perpendicular-bisector theorem|l/equidistant-locus
+locus-constructions|locus|2|Combine two distance conditions|Intersect two loci and count possible points|m/locus:two
+mixture-models|mixtures|1|Mix two stocks to a target concentration|Conservation of total substance|m/mixture:final
+mixture-models|mixtures|2|Replace part of a mixture with a new stock|Subtract removed substance before adding replacement|m/mixture:replace
+nonlinear-intersections|nonlinear-systems|1|Find intersections of a line and parabola|Substitute a linear relation into a quadratic|m/nonlinear:line-parabola
+nonlinear-intersections|nonlinear-systems|2|Find intersections of a circle and parabola|Substitution, multiple roots and all real ordered pairs|z/system:circle-parabola
+ordering-numbers|number-order|1|Compare decimal numbers|Align place values|c/33.1
+ordering-numbers|number-order|2|Compare fractions with different denominators|Use equivalent fractions or cross products|c/30.2
+prime-factorization|number-theory|1|List all factors of a whole number|Factor pairs and completeness|e/6.1
+prime-factorization|number-theory|2|Write a prime factorization|Break composite factors into primes|c/21.3
+prime-factorization|number-theory|3|Find the LCM through prime factors|Take each prime to its largest required power|c/27.4
+geometric-proof|proof|1|Prove vertical angles are equal|Supplementary angles and subtraction of equals|m/proof:vertical
+geometric-proof|proof|2|Prove equality using triangle congruence|Match givens to a congruence criterion|m/proof:congruence
+geometric-proof|proof|3|Prove a general theorem by area decomposition|Justify the diagram and connect geometry to algebra|z/proof:pythagoras
+right-triangles|pythagorean|1|Find a missing side in a right triangle|Squares and square roots|c/99.1
+right-triangles|pythagorean|2|Apply the right-triangle theorem in a context|Identify the hidden right triangle|c/COURSE112.1
+information-sufficiency|reasoning|1|Decide whether information determines an answer|Identify the required quantities|c/79.1
+information-sufficiency|reasoning|2|Assess whether a comparison is determined|Consider more than one admissible case|c/79.2
+rounding|rounding-estimation|1|Round whole numbers to a specified place|Nearest place-value interval|f/round:3
+rounding|rounding-estimation|2|Round decimals to a specified place|Decimal place-value intervals|c/33.3
+rounding|rounding-estimation|3|Estimate a product in scientific notation|Round factors first and normalize the estimate|z/scientific:estimate
+segments|segments|2|Find a missing segment with decimal measurements|Subtract decimal parts from the whole|@/algebra-2-en:node:5
+segments|segments|1|Find a missing segment with whole-number lengths|Part plus part equals whole|f/segment-length
+sequences|sequences|1|Continue a constant-step sequence|Identify the common difference|b/sequence-next
+sequences|sequences|2|Find a missing internal term|Apply the pattern in both directions|b/sequence-missing
+set-relations|sets|1|Classify counting, whole, integer and rational numbers|Definitions and containment|c/86.1 c/86.2
+set-relations|sets|2|Find unions and intersections of stated sets|Membership conditions and set operations|b/set-union b/set-intersection
+set-relations|sets|3|Calculate regions in a two-set Venn diagram|Account for the intersection, union and neither region|m/sets:venn
+similar-figures|similarity-scale|1|Find a missing corresponding side of similar triangles|Use a scale factor with matched sides|c/97.2
+similar-figures|similarity-scale|2|Find a height by indirect measurement|Translate a context into similar triangles|c/97.3
+similar-figures|similarity-scale|3|Connect length, area and volume ratios of similar solids|Square or cube a linear scale factor, or recover it from a ratio|c/COURSE211.2
+solid-surface|surface-area|1|Find surface area of a rectangular prism|Sum the areas of six faces|c/67.5
+solid-surface|surface-area|2|Find surface area of a cylinder|Combine curved area and circular bases|v/cylinder-surface
+solid-surface|surface-area|3|Find surface area of a cone or pyramid|Use slant height in lateral areas|h/cone-area h/pyramid-area
+transformations|transformations|1|Translate a figure on a coordinate plane|Apply a fixed displacement to every vertex|c/80.2
+transformations|transformations|2|Reflect a figure on a coordinate plane|Reverse position across the stated line|c/80.1
+transformations|transformations|3|Transform a graph using function notation|Connect changes in the formula to shifts and reflections|a/transform:quadratic
+solid-volume|volume|1|Find volume of a rectangular prism|Multiply length, width and height|c/70.1
+solid-volume|volume|2|Find volume of a triangular prism|Find a triangular base area before multiplying by length|c/70.2
+solid-volume|volume|3|Find volume of a pyramid or cone|Apply one third of base area times height|c/COURSE113.1 c/COURSE113.2
+contextual-equations|word-equations|1|Translate and solve a one-step comparison story|Represent a difference between quantities|c/12.1
+contextual-equations|word-equations|2|Model consecutive integers with a linear equation|Represent related unknowns in one variable|a/word:consecutive
+contextual-equations|word-equations|3|Model consecutive integers with a quadratic equation|Represent a product and reject inadmissible roots|z/word:quadratic
