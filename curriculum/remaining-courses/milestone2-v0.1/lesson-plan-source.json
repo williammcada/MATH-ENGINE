@@ -1,0 +1,33 @@
+{
+  "intermediate4": "\n1 add:2\n2 r:3.2\n3 sequence digit\n4 place:4\n5 ordinal months\n6 sub:2\n7 words:3\n8 money:add\n9 add:2:carry\n10 parity\n11 missing-story:add\n12 r:3.4\n13 add:3\n14 sub:3 missing:2\n15 sub:2:borrow\n16 expanded:4 r:3.4\n17 columns\n18 temperature\n19 clock-elapsed\n20 round:3\n21 shapes\n22 fraction-name money:add\n23 r:7.2 r:7.4\n24 fact-family\n25 missing-story:sub\n26 fraction-draw\n27 repeated clock-elapsed\n28 times-table\n29 facts:easy\n30 sub:3:borrow\n31 r:12.1\n32 facts:nine\n33 words:6\n34 words:9\n35 mixed-money\n36 dollar-fraction\n37 r:8.3\n38 facts:hard\n39 ruler-quarter\n40 capacity\n41 sub:3:zero r:3.3\n42 estimate:add\n43 decimal:add\n44 mul:2:1\n45 associative r:7.2\n46 fact-family\n47 fact-family\n48 mul:2:1\n49 equal-groups\n50 decimal:sub\n51 add:5 division-check\n52 sub:5 equal-groups\n53 div:1:remainder\n54 calendar round:4\n55 prime-small\n56 fraction-model-compare\n57 rate\n58 mul:3:1\n59 estimate:mixed\n60 rate-total\n61 remaining r:93.1\n62 factors power-small\n63 r:18.1\n64 div:2:exact\n65 div:2:exact\n66 r:18.4 r:18.5\n67 mul-ten\n68 div:2:remainder\n69 metric-ruler\n70 r:22.1\n71 div:2:endzero\n72 information\n73 r:80.1 r:80.2 r:80.3\n74 r:22.1\n75 turns\n76 div:3:exact\n77 mass\n78 r:62.1 r:62.3\n79 r:58.1\n80 div:3:insidezero\n81 r:17.1\n82 tessellation\n83 r:46.3\n84 decimal-place\n85 ten-power:mul\n86 mul-ten\n87 mul:2:2\n88 remainder-context\n89 r:10.3 r:10.4\n90 mul:2:2\n91 decimal-place\n92 r:INV6.1\n93 estimate:product\n94 r:28.1\n95 fraction-two-step\n96 mean-small\n97 stats-small\n98 r:67.1 r:67.2\n99 net-prism\n100 net-pyramid\n101 schedule\n102 decimal-line\n103 fraction-benchmarks\n104 r:10.3\n105 ten-power:div\n106 evaluation\n107 fraction-same\n108 formula distributive\n109 r:15.1\n110 div-ten\n111 estimate-measure\n112 reduce\n113 mul:3:2\n114 fraction-simplify\n115 fraction-rename\n116 r:30.1\n117 round:9\n118 div-two\n119 fraction-unlike\n120 mixed-unlike\n",
+  "course1": "\n1 add:6 sub:6 money:add money:sub fact-family\n2 mul:3:2 div-two money:mul money:div fact-family\n3 r:3.2 r:3.4\n4 r:3.3 r:3.5\n5 r:52.1\n6 fraction-name\n7 r:7.2 ruler-quarter metric-ruler\n8 r:19.1\n9 r:4.1\n10 sequence scales\n11 r:12.1 r:11.4\n12 place:13 r:28.1\n13 r:12.1 clock-elapsed\n14 r:4.2 r:4.3\n15 equal-groups\n16 round:9 estimate:mixed\n17 r:8.3\n18 r:28.2 r:38.3\n19 r:6.1 prime-small\n20 r:6.2\n21 r:6.3\n22 fraction-equal-groups\n23 r:36.1 rate\n24 fraction-same\n25 r:10.1 r:27.1\n26 fraction-reduce-model mixed-same\n27 circle-measures\n28 r:7.4 r:17.1\n29 r:9.3 r:15.2\n30 r:27.3 r:9.4\n31 r:20.6\n32 expanded:13 clock-elapsed\n33 percent-fraction\n34 decimal-place\n35 r:31.2 r:31.4\n36 r:23.2\n37 decimal:add decimal:sub\n38 decimal:add decimal:sub power-small r:20.8\n39 decimal:mul\n40 decimal-zero r:38.4\n41 percent-of\n42 r:15.1\n43 r:27.5 fraction-unknown\n44 decimal-zero r:33.1\n45 decimal:divwhole\n46 decimal-expanded ten-power:mul\n47 r:66.2 r:66.3\n48 r:23.1\n49 r:45.1\n50 decimal-line r:25.2 r:25.3\n51 r:33.3\n52 ten-power:div\n53 decimal-chart reduce\n54 cancel-factors r:25.3\n55 r:30.1\n56 r:30.1\n57 fraction-unlike-method\n58 r:36.3\n59 mixed-same\n60 r:18.1 r:18.2\n61 fraction-three\n62 r:10.4\n63 r:23.1\n64 r:INV6.1\n65 r:21.3 r:21.4 r:21.5\n66 mixed:mul\n67 r:24.1\n68 mixed:div\n69 segment-length r:40.4\n70 cancel-product\n71 r:61.1 r:61.2\n72 fraction-chart fraction-three-product\n73 r:20.1 r:20.3 r:31.2\n74 r:43.2 ratio-decimal\n75 r:43.4\n76 compare-decimal-method\n77 r:79.1 fraction-two-step\n78 capacity\n79 r:37.1 r:37.2\n80 ratio-factor\n81 r:49.1 r:56.1\n82 r:70.1\n83 r:39.1 r:39.2\n84 r:63.2\n85 cross-products\n86 r:82.1\n87 r:3.3 fraction-unknown\n88 r:54.2\n89 r:100.1 r:100.2\n90 turns\n91 formula r:COURSE108.2\n92 r:47.2 r:52.1\n93 r:62.1 r:62.3\n94 r:43.4\n95 rate-reduce\n96 r:58.2 r:58.3 r:INV9.3\n97 r:102.1 r:102.2\n98 r:40.2 r:89.2\n99 r:48.2\n100 r:64.1\n101 r:65.1 r:65.2\n102 mass\n103 compound-perimeter\n104 integer-model\n105 r:81.1\n106 r:93.1\n107 r:37.3 r:37.4\n108 r:80.1 r:80.2 r:80.3\n109 r:18.4 r:97.1 r:97.2\n110 r:58.1\n111 remainder-context\n112 r:73.1 r:73.2\n113 r:49.1 r:56.1 ten-power:mul\n114 r:50.1 r:50.2\n115 percent-fraction\n116 r:COURSE110.2\n117 r:71.1 r:71.2\n118 estimate-area\n119 r:77.1\n120 cylinder-volume\n",
+  "investigationsI": {
+    "1": "numberline",
+    "2": "ruler-quarter metric-ruler r:19.1",
+    "3": "array-area times-table power-small r:20.8",
+    "4A": "decimal-grid",
+    "4B": "decimal-fraction-model",
+    "5": "percent-model",
+    "6": "bar-create r:38.1 r:38.2 r:38.3",
+    "7": "survey",
+    "8": "function-graph",
+    "9": "fraction-model-compare fraction-reduce-model",
+    "10": "r:36.3 experiment",
+    "11": "cube-volume",
+    "12": "balance-equation"
+  },
+  "investigationsC": {
+    "1": "frequency histogram survey",
+    "2": "fraction-circles",
+    "3": "r:17.3",
+    "4": "frequency bar-create r:38.2",
+    "5": "r:INV4.1 r:INV4.5 r:INV5.1",
+    "6": "r:67.1 r:67.2 r:67.4",
+    "7": "r:INV3.1 r:INV3.2 r:INV3.3",
+    "8": "bisect-segment bisect-angle",
+    "9": "r:COURSE210.1 experiment",
+    "10": "r:94.1 r:94.2",
+    "11": "r:98.1 r:98.2 scale-draw",
+    "12": "r:70.1 r:70.2 r:COURSE113.1 r:COURSE113.2 cylinder-volume r:67.5 cylinder-area"
+  }
+}
