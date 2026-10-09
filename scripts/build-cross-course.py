@@ -1,7 +1,7 @@
 """Build explicit concept analysis and reviewed progressions; never rank by grade or title."""
 import json,subprocess,hashlib,fnmatch
 from pathlib import Path
-R=Path(__file__).resolve().parents[1];out=R/'curriculum/cross-course/v0.3'
+R=Path(__file__).resolve().parents[1];out=R/'curriculum/cross-course/v0.4'
 placement=json.loads((R/'curriculum/course-placement.json').read_text());coursePlacement={c['bankId']:c for c in placement['courses']}
 cat=json.loads(subprocess.check_output(['node','-e',"console.log(JSON.stringify(require('./src/course-banks').catalog))"],cwd=R,text=True));ids={c['sourceId']:c for c in cat}
 alias=dict(f='structured-foundational-courses',h='structured-algebra-half',a='structured-algebra-one',m='structured-algebra-two',z='structured-algebra-two-completion',q='structured-quadratic',d='structured-domain',p='structured-proportion',t='structured-measurement',s='structured-statistics',g='structured-geometry',b='structured-breadth',v='structured-advanced',r='structured-representations',n='structured-reasoning',l='structured-relations',o='structured-solids',w='structured-algebra-review',x='structured-cross-course',c='structured-curriculum87',e='structured-foundations87')
@@ -101,10 +101,10 @@ tracks={};memberships={c['sourceId']:[]for c in cat}
 for line in (out/'progressions.txt').read_text().splitlines():
  if not line or line.startswith('#'):continue
  track,topic,level,demand,prerequisites,selectors=line.split('|');stage=dict(level=int(level),demand=demand,prerequisites=prerequisites,selectors=selectors.split(),sourceIds=[])
- chosen=[]
+ chosen=[];exact=[]
  for selector in stage['selectors']:
-  f,recipe=selector.split('/',1);selected=[ids[recipe]] if f=='@' else [c for c in cat if c['family']==alias[f]and c.get('recipe')==recipe];assert selected,selector;chosen.extend(selected)
- roots={provider(c)['sourceId'] for c in chosen}
+  f,recipe=selector.split('/',1);selected=[ids[recipe]] if f in ['@','='] else [c for c in cat if c['family']==alias[f]and c.get('recipe')==recipe];assert selected,selector;(exact if f=='=' else chosen).extend(selected)
+ roots={provider(c)['sourceId'] for c in chosen+exact}
  # Match the same executable recipe in other lessons, but retain root identity for exact reuse.
  contracts={(provider(c)['family'],provider(c).get('recipe'))for c in chosen if provider(c).get('recipe')}
  for c in cat:
@@ -124,15 +124,18 @@ legacyLessons=json.loads((out/'legacy-lesson-links.json').read_text())
 for p in profiles:
  c=ids[p['sourceId']];p.update(title=c['title'],course=c['course'],localGrade=coursePlacement[p['bankId']]['localGrade'],placement=coursePlacement[p['bankId']]['placement'],lessonId=c.get('lessonId') or legacyLessons[c['sourceId']],standard=c.get('standard'),alias=c.get('alias'),memberships=memberships[p['sourceId']],answerKinds=samples[p['sourceId']]['answerKinds'],representations=samples[p['sourceId']]['representations'])
  p['comparisonStatus']='reviewed progression' if p['memberships'] else 'topic reviewed; no validated harder/easier comparison'
-reviews=json.loads((out/'chunk1-review.json').read_text());reviewById={r['sourceId']:r for r in reviews}
-assert len(reviewById)==303 and set(reviewById)=={r['sourceId'] for r in json.loads((out/'chunk1-scope.json').read_text())}
-for p in profiles:
- if p['sourceId'] in reviewById:
-  r=reviewById[p['sourceId']];p['review']={'chunk':1,'status':'reviewed','reason':r['reason']}
-  r['trackIds']=[m['trackId'] for m in p['memberships']]
-  r['disposition']='reviewed path' if p['memberships'] else 'reviewed related-only; no ranked counterpart validated'
-  if not p['memberships']:p['comparisonStatus']='reviewed related-only; no ranked counterpart validated'
-(out/'chunk1-review.json').write_text(json.dumps(reviews,indent=2,ensure_ascii=False)+'\n')
+chunkReviews={}
+for chunk,size in [(1,303),(2,289)]:
+ reviews=json.loads((out/f'chunk{chunk}-review.json').read_text());reviewById={r['sourceId']:r for r in reviews}
+ assert len(reviewById)==size and set(reviewById)=={r['sourceId'] for r in json.loads((out/f'chunk{chunk}-scope.json').read_text())}
+ for p in profiles:
+  if p['sourceId'] in reviewById:
+   r=reviewById[p['sourceId']];p['review']={'chunk':chunk,'status':'reviewed','reason':r['reason']}
+   r['trackIds']=[m['trackId'] for m in p['memberships']]
+   r['disposition']='reviewed path' if p['memberships'] else 'reviewed related-only; no ranked counterpart validated'
+   if not p['memberships']:p['comparisonStatus']='reviewed related-only; no ranked counterpart validated'
+ (out/f'chunk{chunk}-review.json').write_text(json.dumps(reviews,indent=2,ensure_ascii=False)+'\n')
+ chunkReviews[chunk]=reviews
 # Exact duplicate evidence is explicit reuse, not title equality or seeded prompt matching.
 reuse={}
 for p in profiles:reuse.setdefault(p['providerSourceId'],[]).append(p['sourceId'])
@@ -154,10 +157,10 @@ for bridge in bridges:
 labels={t:t.replace('-',' ').capitalize()for t in sorted({p['topic']for p in profiles})}
 labels.update({'fraction-decimal-percent':'Fractions, decimals and percents','pythagorean':'Pythagorean theorem','whole-arithmetic':'Whole-number arithmetic','number-representation':'Place value and number notation','polar-vectors':'Polar coordinates and vectors','gas-laws':'Gas-law models','proof':'Geometric proof','function-graphs':'Graphs of functions'})
 topics=[dict(id=t,label=label,entryCount=sum(p['topic']==t for p in profiles),trackIds=[tr['id']for tr in tracks.values()if tr['topic']==t])for t,label in labels.items()]
-data=dict(version='3.0.0',coursePlacement=placement['courses'],scope='teacher-directed original curriculum connections; no mastery or placement inference',profiles=profiles,topics=topics,tracks=list(tracks.values()),bridges=bridges,reuseGroups=reuse)
+data=dict(version='4.0.0',coursePlacement=placement['courses'],scope='teacher-directed original curriculum connections; no mastery or placement inference',profiles=profiles,topics=topics,tracks=list(tracks.values()),bridges=bridges,reuseGroups=reuse)
 (R/'src/cross-course-map.js').write_text('(function(root){const data='+json.dumps(data,separators=(',',':'))+';if(typeof module!=="undefined"&&module.exports)module.exports=data;root.MathCrossCourseMap=data;})(typeof globalThis!=="undefined"?globalThis:this);\n')
 (out/'analysis-profiles.json').write_text(json.dumps([dict(**p,samplePrompt=samples[p['sourceId']]['prompt'])for p in profiles],indent=2)+'\n')
 (out/'progressions.json').write_text(json.dumps(data['tracks'],indent=2)+'\n');(out/'reuse-review.json').write_text(json.dumps(reuse,indent=2)+'\n')
 summary=dict(entries=len(profiles),topics=len(topics),tracks=len(tracks),reviewedProgressionEntries=sum(bool(p['memberships'])for p in profiles),topicOnlyEntries=sum(not p['memberships']for p in profiles),explicitReuseGroups=len(reuse),explicitReuseEntries=sum(len(g['sourceIds'])for g in reuse),banks={b:dict(total=sum(p['bankId']==b for p in profiles),progression=sum(p['bankId']==b and bool(p['memberships'])for p in profiles))for b in sorted({p['bankId']for p in profiles})},unrankedTopics=[t['id']for t in topics if not t['trackIds']])
-summary.update(chunk1ReviewedEntries=len(reviews),chunk1PathEntries=sum(bool(r['trackIds']) for r in reviews),reviewedTopicOnlyEntries=sum(not p['memberships'] and bool(p.get('review')) for p in profiles),unreviewedTopicOnlyEntries=sum(not p['memberships'] and not p.get('review') for p in profiles))
+summary.update(chunk1ReviewedEntries=len(chunkReviews[1]),chunk1PathEntries=sum(bool(r['trackIds']) for r in chunkReviews[1]),chunk2ReviewedEntries=len(chunkReviews[2]),chunk2PathEntries=sum(bool(r['trackIds']) for r in chunkReviews[2]),reviewedTopicOnlyEntries=sum(not p['memberships'] and bool(p.get('review')) for p in profiles),unreviewedTopicOnlyEntries=sum(not p['memberships'] and not p.get('review') for p in profiles))
 (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary))
