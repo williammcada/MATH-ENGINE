@@ -1,0 +1,76 @@
+{
+  "entries": 2184,
+  "reviewedPathEntries": 1297,
+  "topicOnlyEntries": 887,
+  "entriesWithCrossCourseEasierOrHarder": 487,
+  "entriesWithCrossCourseDirectionalRelation": 922,
+  "entriesWithoutCrossCourseDirectionalRelation": 1262,
+  "crossBankCandidatePairs": 5707,
+  "pairTypes": {
+    "easier": 1190,
+    "same-scope": 1220,
+    "shared-provider": 791,
+    "harder": 513,
+    "prerequisite": 685,
+    "extension": 433,
+    "related": 875
+  },
+  "conflictingCrossCoursePairs": 3,
+  "banks": [
+    {
+      "bankId": "intermediate-4-en",
+      "localGrade": 3,
+      "placement": "grade-assigned",
+      "total": 260,
+      "reviewedPathEntries": 121,
+      "difficultyEntries": 47,
+      "directionalEntries": 78
+    },
+    {
+      "bankId": "course-1-en",
+      "localGrade": 4,
+      "placement": "grade-assigned",
+      "total": 278,
+      "reviewedPathEntries": 187,
+      "difficultyEntries": 86,
+      "directionalEntries": 150
+    },
+    {
+      "bankId": "course-87-en",
+      "localGrade": 5,
+      "placement": "grade-assigned",
+      "total": 503,
+      "reviewedPathEntries": 263,
+      "difficultyEntries": 104,
+      "directionalEntries": 198
+    },
+    {
+      "bankId": "algebra-half-en",
+      "localGrade": null,
+      "placement": "tracked-not-grade-locked",
+      "total": 378,
+      "reviewedPathEntries": 248,
+      "difficultyEntries": 95,
+      "directionalEntries": 190
+    },
+    {
+      "bankId": "algebra-1-en",
+      "localGrade": null,
+      "placement": "tracked-not-grade-locked",
+      "total": 309,
+      "reviewedPathEntries": 191,
+      "difficultyEntries": 81,
+      "directionalEntries": 143
+    },
+    {
+      "bankId": "algebra-2-en",
+      "localGrade": null,
+      "placement": "tracked-not-grade-locked",
+      "total": 456,
+      "reviewedPathEntries": 287,
+      "difficultyEntries": 74,
+      "directionalEntries": 163
+    }
+  ],
+  "limits": "Unordered pairs; same-bank pairs excluded. Directional includes easier/harder and prerequisite/extension. Counts include original lesson entries, not unique question providers. Difficulty is reviewed task demand, not measured student difficulty."
+}

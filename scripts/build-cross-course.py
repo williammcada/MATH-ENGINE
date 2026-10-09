@@ -1,7 +1,8 @@
 """Build explicit concept analysis and reviewed progressions; never rank by grade or title."""
 import json,subprocess,hashlib,fnmatch
 from pathlib import Path
-R=Path(__file__).resolve().parents[1];out=R/'curriculum/cross-course/v0.1'
+R=Path(__file__).resolve().parents[1];out=R/'curriculum/cross-course/v0.2'
+placement=json.loads((R/'curriculum/course-placement.json').read_text());coursePlacement={c['bankId']:c for c in placement['courses']}
 cat=json.loads(subprocess.check_output(['node','-e',"console.log(JSON.stringify(require('./src/course-banks').catalog))"],cwd=R,text=True));ids={c['sourceId']:c for c in cat}
 alias=dict(f='structured-foundational-courses',h='structured-algebra-half',a='structured-algebra-one',m='structured-algebra-two',z='structured-algebra-two-completion',q='structured-quadratic',d='structured-domain',p='structured-proportion',t='structured-measurement',s='structured-statistics',g='structured-geometry',b='structured-breadth',v='structured-advanced',r='structured-representations',n='structured-reasoning',l='structured-relations',o='structured-solids',w='structured-algebra-review',x='structured-cross-course',c='structured-curriculum87',e='structured-foundations87')
 rules=[]
@@ -115,11 +116,13 @@ for line in (out/'progressions.txt').read_text().splitlines():
 for t in tracks.values():
  t['stages'].sort(key=lambda s:s['level']);assert len({s['level']for s in t['stages']})==len(t['stages'])
  t['relationMode']='related' if t['id'] in ['geometry-vocabulary','geometric-proof','transformations','ordering-numbers','literal-formulas','statistical-displays'] else 'extension' if t['id']in ['circle-area','unit-conversion','function-evaluation','trigonometry','vectors','log-equations','variation','motion','line-slope','compass-constructions','coordinate-distance','counting-outcomes','statistical-displays','experimental-data','decimal-operations','exponential-models','geometry-vocabulary','locus-constructions','ordering-numbers','geometric-proof','information-sufficiency','set-relations','similar-figures','solid-surface','transformations','solid-volume','contextual-equations','quadratic-graphs','literal-formulas'] else 'difficulty'
+for key,mode in json.loads((out/'relation-modes.json').read_text()).items():
+ assert mode in ['difficulty','extension','related'];tracks[key]['relationMode']=mode
 # Parse fixture prompts and representations from the executable module, never publisher source bodies.
 samples=json.loads(subprocess.check_output(['node','-e',"const E=require('./src/course-banks');console.log(JSON.stringify(E.catalog.map(c=>{const qs=[0,1,2].map(index=>E.generate(c.sourceId,{seed:'cross-course-contract',index}));return {id:c.sourceId,prompt:qs[0].prompt,answerKinds:[...new Set(qs.map(q=>q.answer.kind))],representations:[...new Set(qs.map(q=>q.givens?.svg||q.diagram?'diagram and text':q.teacherSvg?'text with teacher diagram':'text or symbolic expression'))]}})))"],cwd=R,text=True));samples={s['id']:s for s in samples}
 legacyLessons=json.loads((out/'legacy-lesson-links.json').read_text())
 for p in profiles:
- c=ids[p['sourceId']];p.update(title=c['title'],course=c['course'],localGrade=5 if p['bankId']=='course-87-en'else None,lessonId=c.get('lessonId') or legacyLessons[c['sourceId']],standard=c.get('standard'),alias=c.get('alias'),memberships=memberships[p['sourceId']],answerKinds=samples[p['sourceId']]['answerKinds'],representations=samples[p['sourceId']]['representations'])
+ c=ids[p['sourceId']];p.update(title=c['title'],course=c['course'],localGrade=coursePlacement[p['bankId']]['localGrade'],placement=coursePlacement[p['bankId']]['placement'],lessonId=c.get('lessonId') or legacyLessons[c['sourceId']],standard=c.get('standard'),alias=c.get('alias'),memberships=memberships[p['sourceId']],answerKinds=samples[p['sourceId']]['answerKinds'],representations=samples[p['sourceId']]['representations'])
  p['comparisonStatus']='reviewed progression' if p['memberships'] else 'topic reviewed; no validated harder/easier comparison'
 # Exact duplicate evidence is explicit reuse, not title equality or seeded prompt matching.
 reuse={}
@@ -142,7 +145,7 @@ for bridge in bridges:
 labels={t:t.replace('-',' ').capitalize()for t in sorted({p['topic']for p in profiles})}
 labels.update({'fraction-decimal-percent':'Fractions, decimals and percents','pythagorean':'Pythagorean theorem','whole-arithmetic':'Whole-number arithmetic','number-representation':'Place value and number notation','polar-vectors':'Polar coordinates and vectors','gas-laws':'Gas-law models','proof':'Geometric proof','function-graphs':'Graphs of functions'})
 topics=[dict(id=t,label=label,entryCount=sum(p['topic']==t for p in profiles),trackIds=[tr['id']for tr in tracks.values()if tr['topic']==t])for t,label in labels.items()]
-data=dict(version='1.0.0',scope='teacher-directed original curriculum connections; no mastery or placement inference',profiles=profiles,topics=topics,tracks=list(tracks.values()),bridges=bridges,reuseGroups=reuse)
+data=dict(version='2.0.0',coursePlacement=placement['courses'],scope='teacher-directed original curriculum connections; no mastery or placement inference',profiles=profiles,topics=topics,tracks=list(tracks.values()),bridges=bridges,reuseGroups=reuse)
 (R/'src/cross-course-map.js').write_text('(function(root){const data='+json.dumps(data,separators=(',',':'))+';if(typeof module!=="undefined"&&module.exports)module.exports=data;root.MathCrossCourseMap=data;})(typeof globalThis!=="undefined"?globalThis:this);\n')
 (out/'analysis-profiles.json').write_text(json.dumps([dict(**p,samplePrompt=samples[p['sourceId']]['prompt'])for p in profiles],indent=2)+'\n')
 (out/'progressions.json').write_text(json.dumps(data['tracks'],indent=2)+'\n');(out/'reuse-review.json').write_text(json.dumps(reuse,indent=2)+'\n')

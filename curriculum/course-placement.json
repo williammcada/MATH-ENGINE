@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "confirmedBy": "William McAda",
+  "confirmedOn": "2026-10-09",
+  "scope": "School course placement, independent of task difficulty and standards eligibility",
+  "evidence": "User: Intermediate 4 (grade 3), Course 1 (grade 4). Tracking occurs after Saxon 8/7; Algebra 1/2, Algebra 1 and Algebra 2 are not grade-locked. Existing confirmed 8/7 = Grade 5 retained.",
+  "courses": [
+    {
+      "bankId": "intermediate-4-en",
+      "localGrade": 3,
+      "placement": "grade-assigned"
+    },
+    {
+      "bankId": "course-1-en",
+      "localGrade": 4,
+      "placement": "grade-assigned"
+    },
+    {
+      "bankId": "course-87-en",
+      "localGrade": 5,
+      "placement": "grade-assigned"
+    },
+    {
+      "bankId": "algebra-half-en",
+      "localGrade": null,
+      "placement": "tracked-not-grade-locked"
+    },
+    {
+      "bankId": "algebra-1-en",
+      "localGrade": null,
+      "placement": "tracked-not-grade-locked"
+    },
+    {
+      "bankId": "algebra-2-en",
+      "localGrade": null,
+      "placement": "tracked-not-grade-locked"
+    }
+  ]
+}
