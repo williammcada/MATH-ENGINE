@@ -1,0 +1,1150 @@
+[
+  {
+    "from": "number-representation",
+    "to": "whole-arithmetic",
+    "kind": "supporting",
+    "reason": "Place value explains alignment, regrouping and powers-of-ten operations.",
+    "limit": "Numeral naming alone does not practice an arithmetic algorithm."
+  },
+  {
+    "from": "number-representation",
+    "to": "decimal-arithmetic",
+    "kind": "representation",
+    "reason": "Decimal places extend the base-ten representation used in whole-number work.",
+    "limit": "Check the places and operation in each preview."
+  },
+  {
+    "from": "number-representation",
+    "to": "numeral-systems",
+    "kind": "representation",
+    "reason": "Positional notation can be compared across bases; Roman notation supplies a contrasting nonpositional system.",
+    "limit": "Roman rules do not follow binary place-value arithmetic."
+  },
+  {
+    "from": "number-representation",
+    "to": "rounding-estimation",
+    "kind": "supporting",
+    "reason": "Rounding chooses a place and uses neighboring place values.",
+    "limit": "Estimation tasks may also require an operation or reasonableness judgment."
+  },
+  {
+    "from": "number-order",
+    "to": "rounding-estimation",
+    "kind": "supporting",
+    "reason": "Ordering and bounding values supports choosing a nearest benchmark.",
+    "limit": "A comparison task need not ask for a rounded answer."
+  },
+  {
+    "from": "number-order",
+    "to": "integers",
+    "kind": "representation",
+    "reason": "Signed numbers can be compared and located on an ordered number line.",
+    "limit": "Keep the number domain shown in the task."
+  },
+  {
+    "from": "whole-arithmetic",
+    "to": "fractions",
+    "kind": "representation",
+    "reason": "Equal groups and inverse operations connect whole arithmetic to fractional operations.",
+    "limit": "Fraction operations require their own unit and denominator interpretations."
+  },
+  {
+    "from": "whole-arithmetic",
+    "to": "decimal-arithmetic",
+    "kind": "representation",
+    "reason": "The four arithmetic operations recur in decimal form with place-value scaling.",
+    "limit": "Decimal placement is an additional demand."
+  },
+  {
+    "from": "whole-arithmetic",
+    "to": "number-theory",
+    "kind": "supporting",
+    "reason": "Multiplication and division expose factors, multiples and divisibility.",
+    "limit": "Not every arithmetic task asks for factor structure."
+  },
+  {
+    "from": "fractions",
+    "to": "fraction-equivalence",
+    "kind": "supporting",
+    "reason": "Equivalent forms allow fractions to be simplified and expressed with shared denominators.",
+    "limit": "Some fraction models or products do not require common denominators."
+  },
+  {
+    "from": "fraction-equivalence",
+    "to": "number-theory",
+    "kind": "supporting",
+    "reason": "Factors and common multiples support reduction and common-denominator forms.",
+    "limit": "Check whether the task uses GCF, LCM or prime factors."
+  },
+  {
+    "from": "fractions",
+    "to": "fraction-decimal-percent",
+    "kind": "representation",
+    "reason": "The same rational quantity can be expressed as a fraction, decimal or percent.",
+    "limit": "Repeating values and rounding require the displayed conventions."
+  },
+  {
+    "from": "fraction-equivalence",
+    "to": "fraction-decimal-percent",
+    "kind": "representation",
+    "reason": "Simplifying fractional forms preserves the value represented in a conversion.",
+    "limit": "Conversions may include repeating decimals."
+  },
+  {
+    "from": "fraction-decimal-percent",
+    "to": "percent",
+    "kind": "application",
+    "reason": "Equivalent forms let a percent be used to describe or calculate a part and whole.",
+    "limit": "Percent change uses a reference amount and is not just a conversion."
+  },
+  {
+    "from": "fraction-decimal-percent",
+    "to": "ratio-proportion",
+    "kind": "representation",
+    "reason": "Fractions and decimals can express ordered part-to-part or part-to-whole comparisons.",
+    "limit": "Identify the reference quantities before treating a ratio as a fractional share."
+  },
+  {
+    "from": "ratio-proportion",
+    "to": "rates",
+    "kind": "application",
+    "reason": "A rate compares quantities with units and can be scaled proportionally.",
+    "limit": "Multi-leg motion may require several rates rather than one proportion."
+  },
+  {
+    "from": "ratio-proportion",
+    "to": "percent",
+    "kind": "representation",
+    "reason": "A percent is a ratio with reference value one hundred.",
+    "limit": "Preserve the original whole in percent-change contexts."
+  },
+  {
+    "from": "ratio-proportion",
+    "to": "similarity-scale",
+    "kind": "application",
+    "reason": "Corresponding lengths and scale factors use proportional relationships.",
+    "limit": "Area and volume ratios use squares and cubes of a length scale."
+  },
+  {
+    "from": "ratio-proportion",
+    "to": "variation",
+    "kind": "application",
+    "reason": "Proportional relationships lead to direct variation and contrast with inverse or combined variation.",
+    "limit": "Inverse and joint variation are different model types."
+  },
+  {
+    "from": "ratio-proportion",
+    "to": "mixtures",
+    "kind": "application",
+    "reason": "Concentrations compare a component quantity with the total mixture.",
+    "limit": "Replacement and removal require tracking which quantities change."
+  },
+  {
+    "from": "ratio-proportion",
+    "to": "gas-laws",
+    "kind": "application",
+    "reason": "Gas models relate changing pressure, volume and temperature through ratios.",
+    "limit": "Physical conditions and temperature units must be retained."
+  },
+  {
+    "from": "percent",
+    "to": "exponential",
+    "kind": "application",
+    "reason": "Repeated percentage changes give multiplicative growth and compound interest.",
+    "limit": "Simple interest and repeated growth are different models."
+  },
+  {
+    "from": "percent",
+    "to": "probability",
+    "kind": "representation",
+    "reason": "Event probabilities and their complements can be expressed as percentages.",
+    "limit": "A percent of a population is not automatically a probability model."
+  },
+  {
+    "from": "counting",
+    "to": "probability",
+    "kind": "supporting",
+    "reason": "Counting possible and favorable outcomes supports finite probability calculations.",
+    "limit": "Equal likelihood, order and replacement must be checked."
+  },
+  {
+    "from": "counting",
+    "to": "sets",
+    "kind": "representation",
+    "reason": "Sets and outcome lists provide ways to organize possibilities.",
+    "limit": "Set membership tasks may be conceptual rather than counting calculations."
+  },
+  {
+    "from": "probability",
+    "to": "statistics",
+    "kind": "application",
+    "reason": "Observed frequencies connect probability experiments with data summaries.",
+    "limit": "Descriptive statistics do not by themselves establish a probability law."
+  },
+  {
+    "from": "statistics",
+    "to": "data-displays",
+    "kind": "representation",
+    "reason": "Data displays make summaries and distribution features visible.",
+    "limit": "Choose the display and summary appropriate to the variable."
+  },
+  {
+    "from": "sequences",
+    "to": "functions",
+    "kind": "representation",
+    "reason": "A numerical sequence can be viewed as an input-output rule on discrete inputs.",
+    "limit": "Current sequence tasks need not require formal function notation."
+  },
+  {
+    "from": "sequences",
+    "to": "whole-arithmetic",
+    "kind": "supporting",
+    "reason": "Constant-step sequences use repeated addition or subtraction.",
+    "limit": "A sequence rule must be identified, not assumed from grade level."
+  },
+  {
+    "from": "expressions",
+    "to": "equations",
+    "kind": "supporting",
+    "reason": "Expression structure and simplification support solving equalities.",
+    "limit": "An expression has no solution set until a condition is imposed."
+  },
+  {
+    "from": "expressions",
+    "to": "polynomials",
+    "kind": "application",
+    "reason": "Like terms and distribution operate on polynomial expressions.",
+    "limit": "Variable powers and term structure matter."
+  },
+  {
+    "from": "expressions",
+    "to": "powers-roots",
+    "kind": "supporting",
+    "reason": "Powers and roots can appear within order-of-operations expressions.",
+    "limit": "Keep parentheses and principal-root conventions."
+  },
+  {
+    "from": "expressions",
+    "to": "integers",
+    "kind": "supporting",
+    "reason": "Signed arithmetic supports substitution and simplification.",
+    "limit": "Not every expression contains negative values."
+  },
+  {
+    "from": "equations",
+    "to": "word-equations",
+    "kind": "representation",
+    "reason": "A verbal relationship can be modeled by an equation and interpreted in context.",
+    "limit": "Keep the meaning and feasible values of the unknown."
+  },
+  {
+    "from": "equations",
+    "to": "literal-equations",
+    "kind": "representation",
+    "reason": "Equality-preserving operations also rearrange symbolic formulas.",
+    "limit": "Parameters can introduce zero or exceptional cases."
+  },
+  {
+    "from": "equations",
+    "to": "inequalities",
+    "kind": "representation",
+    "reason": "Equations and inequalities describe different conditions on unknown quantities.",
+    "limit": "Negative multiplication reverses inequalities; solution sets differ."
+  },
+  {
+    "from": "equations",
+    "to": "systems",
+    "kind": "application",
+    "reason": "Several simultaneous conditions require solving equations together.",
+    "limit": "Independent, dependent and inconsistent cases must be distinguished."
+  },
+  {
+    "from": "word-equations",
+    "to": "systems",
+    "kind": "application",
+    "reason": "Count, value and comparison stories may impose multiple simultaneous conditions.",
+    "limit": "Not every story requires a system."
+  },
+  {
+    "from": "word-equations",
+    "to": "rates",
+    "kind": "application",
+    "reason": "Motion and work contexts translate rates and totals into equations.",
+    "limit": "Different intervals or rates need distinct terms."
+  },
+  {
+    "from": "word-equations",
+    "to": "mixtures",
+    "kind": "application",
+    "reason": "Mixture quantities can be translated into conservation equations.",
+    "limit": "Check uniform mixing and the quantity removed."
+  },
+  {
+    "from": "functions",
+    "to": "function-graphs",
+    "kind": "representation",
+    "reason": "Tables, formulas and graphs represent input-output relationships.",
+    "limit": "Domain and range may change with the chosen function."
+  },
+  {
+    "from": "functions",
+    "to": "lines-slope",
+    "kind": "representation",
+    "reason": "Linear functions connect input-output tables to slope and intercept.",
+    "limit": "Vertical lines are not functions of x."
+  },
+  {
+    "from": "functions",
+    "to": "sets",
+    "kind": "supporting",
+    "reason": "Domains and ranges are sets of allowed inputs and outputs.",
+    "limit": "A set alone does not define a function rule."
+  },
+  {
+    "from": "lines-slope",
+    "to": "coordinate-geometry",
+    "kind": "representation",
+    "reason": "Coordinates support line equations, slopes and distances.",
+    "limit": "Distance and slope measure different properties."
+  },
+  {
+    "from": "lines-slope",
+    "to": "systems",
+    "kind": "representation",
+    "reason": "An intersection represents simultaneous linear equations.",
+    "limit": "Parallel and coincident lines need separate interpretation."
+  },
+  {
+    "from": "function-graphs",
+    "to": "quadratics",
+    "kind": "representation",
+    "reason": "Quadratic expressions and equations connect to parabola features and zeros.",
+    "limit": "A graphing task may require domain, window or transformation details."
+  },
+  {
+    "from": "function-graphs",
+    "to": "transformations",
+    "kind": "representation",
+    "reason": "Shifts, reflections and scaling change the graph of a function.",
+    "limit": "Transforming a geometric figure and a function use different notation."
+  },
+  {
+    "from": "function-graphs",
+    "to": "nonlinear-systems",
+    "kind": "application",
+    "reason": "Intersections of nonlinear graphs solve simultaneous conditions.",
+    "limit": "All real intersections must be considered."
+  },
+  {
+    "from": "systems",
+    "to": "nonlinear-systems",
+    "kind": "application",
+    "reason": "Simultaneous conditions extend from lines to curves.",
+    "limit": "Nonlinear systems can have several real solutions."
+  },
+  {
+    "from": "polynomials",
+    "to": "factoring",
+    "kind": "representation",
+    "reason": "Expansion and factoring are opposite descriptions of polynomial structure.",
+    "limit": "Factoring methods depend on the expression form."
+  },
+  {
+    "from": "factoring",
+    "to": "quadratics",
+    "kind": "supporting",
+    "reason": "Factored quadratics expose zeros through the zero-product property.",
+    "limit": "Irreducible or non-real cases require other methods."
+  },
+  {
+    "from": "factoring",
+    "to": "rational-expressions",
+    "kind": "supporting",
+    "reason": "Factoring exposes cancellable factors and common denominators.",
+    "limit": "Original denominator exclusions remain after cancellation."
+  },
+  {
+    "from": "fractions",
+    "to": "rational-expressions",
+    "kind": "representation",
+    "reason": "Fraction operations extend to algebraic numerators and denominators.",
+    "limit": "Variable restrictions introduce additional obligations."
+  },
+  {
+    "from": "rational-expressions",
+    "to": "rational-equations",
+    "kind": "application",
+    "reason": "An equality involving rational expressions requires denominator restrictions and solution checks.",
+    "limit": "Simplifying an expression and solving an equation are distinct tasks."
+  },
+  {
+    "from": "rational-equations",
+    "to": "equations",
+    "kind": "supporting",
+    "reason": "Clearing allowed denominators can reduce a rational equation to a polynomial equation.",
+    "limit": "Excluded values must still be rejected."
+  },
+  {
+    "from": "exponent-laws",
+    "to": "powers-roots",
+    "kind": "representation",
+    "reason": "Numerical powers and roots illustrate symbolic exponent laws.",
+    "limit": "Real-domain restrictions matter for fractional powers."
+  },
+  {
+    "from": "exponent-laws",
+    "to": "scientific-notation",
+    "kind": "application",
+    "reason": "Powers of ten and exponent laws support scientific-notation operations.",
+    "limit": "Normalize coefficients and follow stated rounding."
+  },
+  {
+    "from": "exponent-laws",
+    "to": "polynomials",
+    "kind": "supporting",
+    "reason": "Monomial products and quotients use exponent laws.",
+    "limit": "Adding terms does not add their exponents."
+  },
+  {
+    "from": "scientific-notation",
+    "to": "rounding-estimation",
+    "kind": "application",
+    "reason": "Scientific notation makes magnitude comparisons and significant-figure estimates explicit.",
+    "limit": "Use the requested precision, not an inferred tolerance."
+  },
+  {
+    "from": "scientific-notation",
+    "to": "gas-laws",
+    "kind": "application",
+    "reason": "Gas calculations can involve very large or small measured quantities.",
+    "limit": "Unit consistency and reporting precision remain separate checks."
+  },
+  {
+    "from": "logarithms",
+    "to": "exponential",
+    "kind": "representation",
+    "reason": "Logarithms invert exponential relationships and recover unknown exponents.",
+    "limit": "Log arguments must be positive in real-number tasks."
+  },
+  {
+    "from": "logarithms",
+    "to": "powers-roots",
+    "kind": "representation",
+    "reason": "A logarithm names an exponent in a specified base.",
+    "limit": "Keep base restrictions and distinguish exact from approximate values."
+  },
+  {
+    "from": "radicals",
+    "to": "powers-roots",
+    "kind": "representation",
+    "reason": "Radical notation expresses roots and permits exact simplified forms.",
+    "limit": "Principal roots and variable signs must be retained."
+  },
+  {
+    "from": "radicals",
+    "to": "radical-equations",
+    "kind": "application",
+    "reason": "Equations containing radicals use root properties and solution validation.",
+    "limit": "Squaring may introduce extraneous candidates."
+  },
+  {
+    "from": "radicals",
+    "to": "complex-numbers",
+    "kind": "representation",
+    "reason": "Negative real radicands motivate the imaginary unit and complex roots.",
+    "limit": "Real radical product laws do not apply unchanged to negative radicands."
+  },
+  {
+    "from": "complex-numbers",
+    "to": "quadratics",
+    "kind": "application",
+    "reason": "Quadratics with negative discriminants have complex roots.",
+    "limit": "Complex-root tasks require both conjugate roots where appropriate."
+  },
+  {
+    "from": "complex-numbers",
+    "to": "polar-vectors",
+    "kind": "representation",
+    "reason": "Rectangular components and polar magnitude-angle forms describe related two-dimensional quantities.",
+    "limit": "Complex operations and vector operations are not interchangeable in every context."
+  },
+  {
+    "from": "coordinate-geometry",
+    "to": "polar-vectors",
+    "kind": "representation",
+    "reason": "Cartesian coordinates and polar coordinates locate points in a plane.",
+    "limit": "Angle convention, radius sign and quadrant must be checked."
+  },
+  {
+    "from": "trigonometry",
+    "to": "polar-vectors",
+    "kind": "application",
+    "reason": "Sine and cosine resolve magnitude-angle information into components.",
+    "limit": "Signed components and quadrant conventions matter."
+  },
+  {
+    "from": "trigonometry",
+    "to": "similarity-scale",
+    "kind": "supporting",
+    "reason": "Similar right triangles preserve ratios of corresponding sides.",
+    "limit": "Choose sides relative to the named angle."
+  },
+  {
+    "from": "pythagorean",
+    "to": "trigonometry",
+    "kind": "supporting",
+    "reason": "Right-triangle side relations and angle ratios describe the same triangle from different information.",
+    "limit": "Pythagorean tasks require a right angle; trig tasks specify the reference angle."
+  },
+  {
+    "from": "pythagorean",
+    "to": "coordinate-geometry",
+    "kind": "application",
+    "reason": "Horizontal and vertical coordinate differences form a right triangle for distance.",
+    "limit": "Coordinate reading alone does not apply the distance theorem."
+  },
+  {
+    "from": "pythagorean",
+    "to": "radicals",
+    "kind": "representation",
+    "reason": "Right-triangle lengths may be expressed as exact radicals or approximations.",
+    "limit": "Follow the answer form requested by the task."
+  },
+  {
+    "from": "area",
+    "to": "perimeter",
+    "kind": "representation",
+    "reason": "Area measures a region while perimeter measures its boundary.",
+    "limit": "Linear and square units are different; equal perimeters need not give equal areas."
+  },
+  {
+    "from": "area",
+    "to": "surface-area",
+    "kind": "application",
+    "reason": "Solid surface area sums areas of exposed faces.",
+    "limit": "Include only the faces required by the task."
+  },
+  {
+    "from": "area",
+    "to": "volume",
+    "kind": "application",
+    "reason": "Prism and cylinder volume use base area and perpendicular height.",
+    "limit": "Pyramids and cones introduce a one-third factor."
+  },
+  {
+    "from": "circle-measurement",
+    "to": "area",
+    "kind": "application",
+    "reason": "Circle and sector formulas extend area measurement to curved regions.",
+    "limit": "Circle formulas use radius and the stated value of pi."
+  },
+  {
+    "from": "circle-measurement",
+    "to": "perimeter",
+    "kind": "application",
+    "reason": "Circumference and arc length measure curved boundaries.",
+    "limit": "A semicircle perimeter includes its diameter if the full boundary is requested."
+  },
+  {
+    "from": "circle-measurement",
+    "to": "volume",
+    "kind": "application",
+    "reason": "Circular base area supports cylinder and cone volume.",
+    "limit": "Sphere volume is a different formula."
+  },
+  {
+    "from": "surface-area",
+    "to": "volume",
+    "kind": "representation",
+    "reason": "The same solid can be measured by its outside area or enclosed volume.",
+    "limit": "Surface area and volume use different dimensions and units."
+  },
+  {
+    "from": "measurement",
+    "to": "calendar-time",
+    "kind": "application",
+    "reason": "Time measurements use unit conversion and elapsed intervals.",
+    "limit": "Month lengths and midnight boundaries are not decimal place-value changes."
+  },
+  {
+    "from": "measurement",
+    "to": "rates",
+    "kind": "supporting",
+    "reason": "Rates require compatible units in numerator and denominator.",
+    "limit": "Convert each quantity in the required direction."
+  },
+  {
+    "from": "measurement",
+    "to": "area",
+    "kind": "supporting",
+    "reason": "Area calculations require compatible lengths and square units.",
+    "limit": "Square-unit conversion squares the length factor."
+  },
+  {
+    "from": "measurement",
+    "to": "volume",
+    "kind": "supporting",
+    "reason": "Volume uses compatible lengths, cubic units and capacity relationships.",
+    "limit": "Cube the linear conversion factor where appropriate."
+  },
+  {
+    "from": "measurement",
+    "to": "segments",
+    "kind": "application",
+    "reason": "Segment lengths can be read and combined using measurement units.",
+    "limit": "A nonzero ruler start requires subtraction."
+  },
+  {
+    "from": "segments",
+    "to": "geometry-properties",
+    "kind": "supporting",
+    "reason": "Segments and endpoints are basic parts of geometric figures.",
+    "limit": "A vocabulary task does not establish a measurement relationship."
+  },
+  {
+    "from": "angles",
+    "to": "geometry-properties",
+    "kind": "supporting",
+    "reason": "Angle relationships help identify and analyze geometric figures.",
+    "limit": "Not every named figure supports every angle theorem."
+  },
+  {
+    "from": "angles",
+    "to": "constructions",
+    "kind": "application",
+    "reason": "Geometric constructions can copy, bisect or create specified angles.",
+    "limit": "Compass-and-straightedge requirements differ from protractor drawing."
+  },
+  {
+    "from": "constructions",
+    "to": "locus",
+    "kind": "representation",
+    "reason": "Many constructions locate points satisfying equal-distance conditions.",
+    "limit": "Keep both distance conditions when finding intersections of loci."
+  },
+  {
+    "from": "locus",
+    "to": "coordinate-geometry",
+    "kind": "representation",
+    "reason": "Distance conditions can be described geometrically or in coordinates.",
+    "limit": "Current locus tasks may require a construction rather than an equation."
+  },
+  {
+    "from": "geometry-properties",
+    "to": "transformations",
+    "kind": "representation",
+    "reason": "Rigid transformations preserve lengths and angles of a figure.",
+    "limit": "Similarity scaling changes lengths while preserving angle measures."
+  },
+  {
+    "from": "geometry-properties",
+    "to": "similarity-scale",
+    "kind": "supporting",
+    "reason": "Corresponding sides and angles support judgments of congruence and similarity.",
+    "limit": "Matching appearance alone is insufficient evidence."
+  },
+  {
+    "from": "geometry-properties",
+    "to": "proof",
+    "kind": "supporting",
+    "reason": "Definitions and geometric properties supply reasons in proofs.",
+    "limit": "A recognition answer is not a complete justification."
+  },
+  {
+    "from": "angles",
+    "to": "proof",
+    "kind": "supporting",
+    "reason": "Angle facts can be conclusions or reasons in a geometric proof.",
+    "limit": "Only use hypotheses actually supplied."
+  },
+  {
+    "from": "sets",
+    "to": "inequalities",
+    "kind": "representation",
+    "reason": "Inequalities define sets that can be expressed with intervals and number-line graphs.",
+    "limit": "Integer and real domains produce different sets."
+  },
+  {
+    "from": "reasoning",
+    "to": "word-equations",
+    "kind": "supporting",
+    "reason": "Checking information sufficiency helps decide whether a story determines an answer.",
+    "limit": "More calculation cannot repair missing information."
+  },
+  {
+    "from": "reasoning",
+    "to": "proof",
+    "kind": "representation",
+    "reason": "Both require explaining what follows from stated information.",
+    "limit": "Numerical sufficiency and formal geometric proof are distinct contracts."
+  },
+  {
+    "from": "literal-equations",
+    "to": "measurement",
+    "kind": "application",
+    "reason": "Measurement formulas can be rearranged to recover an unknown quantity.",
+    "limit": "Keep positive-length and nonzero-parameter assumptions."
+  },
+  {
+    "from": "focus:triangle-properties",
+    "to": "focus:right-triangles",
+    "kind": "supporting",
+    "reason": "Triangle sides and angles identify the right-triangle setting used by the Pythagorean theorem.",
+    "limit": "Only the right-triangle branch uses a² + b² = c²; general triangle classification is related preparation."
+  },
+  {
+    "from": "focus:triangle-properties",
+    "to": "focus:triangle-length-reasoning",
+    "kind": "supporting",
+    "reason": "Triangle sides and angles identify the right-triangle setting used by the Pythagorean theorem.",
+    "limit": "Only the right-triangle branch uses a² + b² = c²; general triangle classification is related preparation."
+  },
+  {
+    "from": "focus:triangle-properties",
+    "to": "focus:right-triangle-converse",
+    "kind": "supporting",
+    "reason": "Triangle sides and angles identify the right-triangle setting used by the Pythagorean theorem.",
+    "limit": "Only the right-triangle branch uses a² + b² = c²; general triangle classification is related preparation."
+  },
+  {
+    "from": "focus:triangle-side-classification",
+    "to": "focus:right-triangles",
+    "kind": "supporting",
+    "reason": "Triangle sides and angles identify the right-triangle setting used by the Pythagorean theorem.",
+    "limit": "Only the right-triangle branch uses a² + b² = c²; general triangle classification is related preparation."
+  },
+  {
+    "from": "focus:triangle-side-classification",
+    "to": "focus:triangle-length-reasoning",
+    "kind": "supporting",
+    "reason": "Triangle sides and angles identify the right-triangle setting used by the Pythagorean theorem.",
+    "limit": "Only the right-triangle branch uses a² + b² = c²; general triangle classification is related preparation."
+  },
+  {
+    "from": "focus:triangle-side-classification",
+    "to": "focus:right-triangle-converse",
+    "kind": "supporting",
+    "reason": "Triangle sides and angles identify the right-triangle setting used by the Pythagorean theorem.",
+    "limit": "Only the right-triangle branch uses a² + b² = c²; general triangle classification is related preparation."
+  },
+  {
+    "from": "focus:triangle-angle-interpretations",
+    "to": "focus:right-triangles",
+    "kind": "supporting",
+    "reason": "Triangle sides and angles identify the right-triangle setting used by the Pythagorean theorem.",
+    "limit": "Only the right-triangle branch uses a² + b² = c²; general triangle classification is related preparation."
+  },
+  {
+    "from": "focus:triangle-angle-interpretations",
+    "to": "focus:triangle-length-reasoning",
+    "kind": "supporting",
+    "reason": "Triangle sides and angles identify the right-triangle setting used by the Pythagorean theorem.",
+    "limit": "Only the right-triangle branch uses a² + b² = c²; general triangle classification is related preparation."
+  },
+  {
+    "from": "focus:triangle-angle-interpretations",
+    "to": "focus:right-triangle-converse",
+    "kind": "supporting",
+    "reason": "Triangle sides and angles identify the right-triangle setting used by the Pythagorean theorem.",
+    "limit": "Only the right-triangle branch uses a² + b² = c²; general triangle classification is related preparation."
+  },
+  {
+    "from": "focus:angle-measures",
+    "to": "focus:right-triangles",
+    "kind": "supporting",
+    "reason": "Triangle sides and angles identify the right-triangle setting used by the Pythagorean theorem.",
+    "limit": "Only the right-triangle branch uses a² + b² = c²; general triangle classification is related preparation."
+  },
+  {
+    "from": "focus:angle-measures",
+    "to": "focus:triangle-length-reasoning",
+    "kind": "supporting",
+    "reason": "Triangle sides and angles identify the right-triangle setting used by the Pythagorean theorem.",
+    "limit": "Only the right-triangle branch uses a² + b² = c²; general triangle classification is related preparation."
+  },
+  {
+    "from": "focus:angle-measures",
+    "to": "focus:right-triangle-converse",
+    "kind": "supporting",
+    "reason": "Triangle sides and angles identify the right-triangle setting used by the Pythagorean theorem.",
+    "limit": "Only the right-triangle branch uses a² + b² = c²; general triangle classification is related preparation."
+  },
+  {
+    "from": "focus:triangle-area-method",
+    "to": "focus:right-triangles",
+    "kind": "application",
+    "reason": "A perpendicular altitude creates right triangles and can connect side lengths with triangle area.",
+    "limit": "The selected area variant may supply its height directly; preview before combining tasks."
+  },
+  {
+    "from": "focus:triangle-area-method",
+    "to": "focus:triangle-length-reasoning",
+    "kind": "application",
+    "reason": "A perpendicular altitude creates right triangles and can connect side lengths with triangle area.",
+    "limit": "The selected area variant may supply its height directly; preview before combining tasks."
+  },
+  {
+    "from": "focus:triangle-area-production",
+    "to": "focus:right-triangles",
+    "kind": "application",
+    "reason": "A perpendicular altitude creates right triangles and can connect side lengths with triangle area.",
+    "limit": "The selected area variant may supply its height directly; preview before combining tasks."
+  },
+  {
+    "from": "focus:triangle-area-production",
+    "to": "focus:triangle-length-reasoning",
+    "kind": "application",
+    "reason": "A perpendicular altitude creates right triangles and can connect side lengths with triangle area.",
+    "limit": "The selected area variant may supply its height directly; preview before combining tasks."
+  },
+  {
+    "from": "focus:prime-factorization",
+    "to": "focus:factoring",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:prime-factorization",
+    "to": "focus:factoring-structure",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:prime-factorization",
+    "to": "focus:factor-then-trinomial",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:prime-factorization",
+    "to": "focus:monomial-common-multiple",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:prime-factor-methods",
+    "to": "focus:factoring",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:prime-factor-methods",
+    "to": "focus:factoring-structure",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:prime-factor-methods",
+    "to": "focus:factor-then-trinomial",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:prime-factor-methods",
+    "to": "focus:monomial-common-multiple",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:prime-decomposition",
+    "to": "focus:factoring",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:prime-decomposition",
+    "to": "focus:factoring-structure",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:prime-decomposition",
+    "to": "focus:factor-then-trinomial",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:prime-decomposition",
+    "to": "focus:monomial-common-multiple",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:common-factors-multiples",
+    "to": "focus:factoring",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:common-factors-multiples",
+    "to": "focus:factoring-structure",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:common-factors-multiples",
+    "to": "focus:factor-then-trinomial",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:common-factors-multiples",
+    "to": "focus:monomial-common-multiple",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:factor-testing",
+    "to": "focus:factoring",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:factor-testing",
+    "to": "focus:factoring-structure",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:factor-testing",
+    "to": "focus:factor-then-trinomial",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:factor-testing",
+    "to": "focus:monomial-common-multiple",
+    "kind": "supporting",
+    "reason": "Numerical factors and common factors connect to extracting or recognizing algebraic factors.",
+    "limit": "Polynomial identities and trinomial methods add structure beyond numerical prime factorization."
+  },
+  {
+    "from": "focus:prime-factor-methods",
+    "to": "focus:common-factors-multiples",
+    "kind": "application",
+    "reason": "Comparing prime decompositions supports finding common factors and common multiples.",
+    "limit": "Minimum powers give a GCF and maximum powers an LCM; they answer different questions."
+  },
+  {
+    "from": "focus:prime-decomposition",
+    "to": "focus:common-factors-multiples",
+    "kind": "application",
+    "reason": "Comparing prime decompositions supports finding common factors and common multiples.",
+    "limit": "Minimum powers give a GCF and maximum powers an LCM; they answer different questions."
+  },
+  {
+    "from": "focus:fraction-equivalence",
+    "to": "focus:common-factors-multiples",
+    "kind": "supporting",
+    "reason": "Common factors reduce fractions and common multiples provide denominator choices.",
+    "limit": "Reduction and denominator conversion have different goals."
+  },
+  {
+    "from": "focus:fraction-equivalence",
+    "to": "focus:prime-factorization",
+    "kind": "supporting",
+    "reason": "Common factors reduce fractions and common multiples provide denominator choices.",
+    "limit": "Reduction and denominator conversion have different goals."
+  },
+  {
+    "from": "focus:fraction-equivalence-models",
+    "to": "focus:common-factors-multiples",
+    "kind": "supporting",
+    "reason": "Common factors reduce fractions and common multiples provide denominator choices.",
+    "limit": "Reduction and denominator conversion have different goals."
+  },
+  {
+    "from": "focus:fraction-equivalence-models",
+    "to": "focus:prime-factorization",
+    "kind": "supporting",
+    "reason": "Common factors reduce fractions and common multiples provide denominator choices.",
+    "limit": "Reduction and denominator conversion have different goals."
+  },
+  {
+    "from": "focus:right-triangles",
+    "to": "focus:coordinate-distance",
+    "kind": "application",
+    "reason": "Coordinate differences give perpendicular legs for a distance calculation.",
+    "limit": "Distance-to-line and coordinate-reading variants may not require two-dimensional Pythagorean calculation."
+  },
+  {
+    "from": "focus:right-triangles",
+    "to": "focus:coordinate-distance-practice",
+    "kind": "application",
+    "reason": "Coordinate differences give perpendicular legs for a distance calculation.",
+    "limit": "Distance-to-line and coordinate-reading variants may not require two-dimensional Pythagorean calculation."
+  },
+  {
+    "from": "focus:triangle-length-reasoning",
+    "to": "focus:coordinate-distance",
+    "kind": "application",
+    "reason": "Coordinate differences give perpendicular legs for a distance calculation.",
+    "limit": "Distance-to-line and coordinate-reading variants may not require two-dimensional Pythagorean calculation."
+  },
+  {
+    "from": "focus:triangle-length-reasoning",
+    "to": "focus:coordinate-distance-practice",
+    "kind": "application",
+    "reason": "Coordinate differences give perpendicular legs for a distance calculation.",
+    "limit": "Distance-to-line and coordinate-reading variants may not require two-dimensional Pythagorean calculation."
+  },
+  {
+    "from": "focus:right-triangles",
+    "to": "focus:powers",
+    "kind": "supporting",
+    "reason": "Squaring and square roots are the numerical operations in right-triangle side calculations.",
+    "limit": "A powers provider may include non-square branches; choose the desired preview."
+  },
+  {
+    "from": "focus:right-triangles",
+    "to": "focus:root-evaluation",
+    "kind": "supporting",
+    "reason": "Squaring and square roots are the numerical operations in right-triangle side calculations.",
+    "limit": "A powers provider may include non-square branches; choose the desired preview."
+  },
+  {
+    "from": "focus:right-triangles",
+    "to": "focus:power-root-inverses",
+    "kind": "supporting",
+    "reason": "Squaring and square roots are the numerical operations in right-triangle side calculations.",
+    "limit": "A powers provider may include non-square branches; choose the desired preview."
+  },
+  {
+    "from": "focus:right-triangle-converse",
+    "to": "focus:powers",
+    "kind": "supporting",
+    "reason": "Squaring and square roots are the numerical operations in right-triangle side calculations.",
+    "limit": "A powers provider may include non-square branches; choose the desired preview."
+  },
+  {
+    "from": "focus:right-triangle-converse",
+    "to": "focus:root-evaluation",
+    "kind": "supporting",
+    "reason": "Squaring and square roots are the numerical operations in right-triangle side calculations.",
+    "limit": "A powers provider may include non-square branches; choose the desired preview."
+  },
+  {
+    "from": "focus:right-triangle-converse",
+    "to": "focus:power-root-inverses",
+    "kind": "supporting",
+    "reason": "Squaring and square roots are the numerical operations in right-triangle side calculations.",
+    "limit": "A powers provider may include non-square branches; choose the desired preview."
+  },
+  {
+    "from": "focus:trigonometry",
+    "to": "focus:triangle-properties",
+    "kind": "supporting",
+    "reason": "Triangle angle and side language identifies opposite, adjacent and hypotenuse relationships.",
+    "limit": "Trigonometric ratios use a specified acute angle in a right triangle."
+  },
+  {
+    "from": "focus:trigonometry",
+    "to": "focus:triangle-angle-interpretations",
+    "kind": "supporting",
+    "reason": "Triangle angle and side language identifies opposite, adjacent and hypotenuse relationships.",
+    "limit": "Trigonometric ratios use a specified acute angle in a right triangle."
+  },
+  {
+    "from": "focus:special-right-triangle-ratios",
+    "to": "focus:triangle-properties",
+    "kind": "supporting",
+    "reason": "Triangle angle and side language identifies opposite, adjacent and hypotenuse relationships.",
+    "limit": "Trigonometric ratios use a specified acute angle in a right triangle."
+  },
+  {
+    "from": "focus:special-right-triangle-ratios",
+    "to": "focus:triangle-angle-interpretations",
+    "kind": "supporting",
+    "reason": "Triangle angle and side language identifies opposite, adjacent and hypotenuse relationships.",
+    "limit": "Trigonometric ratios use a specified acute angle in a right triangle."
+  },
+  {
+    "from": "focus:line-table-graph",
+    "to": "focus:graph-selection-production",
+    "kind": "representation",
+    "reason": "Tables, line equations and plotted coordinates express a linear relationship.",
+    "limit": "Measured-data models are estimates, not exact identities."
+  },
+  {
+    "from": "focus:line-table-graph",
+    "to": "focus:experimental-data",
+    "kind": "representation",
+    "reason": "Tables, line equations and plotted coordinates express a linear relationship.",
+    "limit": "Measured-data models are estimates, not exact identities."
+  },
+  {
+    "from": "focus:line-graph-methods",
+    "to": "focus:graph-selection-production",
+    "kind": "representation",
+    "reason": "Tables, line equations and plotted coordinates express a linear relationship.",
+    "limit": "Measured-data models are estimates, not exact identities."
+  },
+  {
+    "from": "focus:line-graph-methods",
+    "to": "focus:experimental-data",
+    "kind": "representation",
+    "reason": "Tables, line equations and plotted coordinates express a linear relationship.",
+    "limit": "Measured-data models are estimates, not exact identities."
+  },
+  {
+    "from": "focus:rectangle-measure-production",
+    "to": "focus:rectangular-volume-practice",
+    "kind": "application",
+    "reason": "Rectangle area becomes a prism base or one of its faces.",
+    "limit": "Check whether the task asks for enclosed volume or total surface area."
+  },
+  {
+    "from": "focus:rectangle-measure-production",
+    "to": "focus:solid-surface",
+    "kind": "application",
+    "reason": "Rectangle area becomes a prism base or one of its faces.",
+    "limit": "Check whether the task asks for enclosed volume or total surface area."
+  },
+  {
+    "from": "focus:area-rectilinear",
+    "to": "focus:rectangular-volume-practice",
+    "kind": "application",
+    "reason": "Rectangle area becomes a prism base or one of its faces.",
+    "limit": "Check whether the task asks for enclosed volume or total surface area."
+  },
+  {
+    "from": "focus:area-rectilinear",
+    "to": "focus:solid-surface",
+    "kind": "application",
+    "reason": "Rectangle area becomes a prism base or one of its faces.",
+    "limit": "Check whether the task asks for enclosed volume or total surface area."
+  },
+  {
+    "from": "focus:unit-dimensions",
+    "to": "focus:unit-language",
+    "kind": "representation",
+    "reason": "Squared and cubed unit notation records two- and three-dimensional measurement.",
+    "limit": "Naming units does not by itself practice conversion."
+  },
+  {
+    "from": "focus:cubic-unit-models",
+    "to": "focus:unit-language",
+    "kind": "representation",
+    "reason": "Squared and cubed unit notation records two- and three-dimensional measurement.",
+    "limit": "Naming units does not by itself practice conversion."
+  }
+]
