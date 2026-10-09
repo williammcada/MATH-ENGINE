@@ -1,0 +1,190 @@
+{
+  "result": "passed",
+  "date": "2026-10-09",
+  "engineImplementationCommit": "4bcff91ead79967f08635fb86d62b637c7800dc1",
+  "studioImplementationCommit": "48a80bc85e306d827e6848e136f03f49763a69ca",
+  "browser": "Chromium 153.0.8010.0 on Linux",
+  "wordRenderer": "Bundled LibreOffice via documents/render_docx.py",
+  "pdfPagesInspected": 20,
+  "wordPagesInspected": 15,
+  "checks": [
+    "All pages visually inspected: question numbering, diagrams, units, answer separation, headers/footers, clipping, overlap and page breaks.",
+    "All three DOCX packages contain 12 questions and seven diagram images; student output contains no answer blocks; keys contain 12 answer blocks.",
+    "Comparison UI and 390-pixel viewport inspected; viewport emulation is not physical-device verification."
+  ],
+  "limits": [
+    "Representative export fixture, not all possible packets.",
+    "No physical Windows, Microsoft Word, printer, iPad or school-network verification.",
+    "No hosted deployment performed.",
+    "Word and browser print pagination differ."
+  ],
+  "exports": [
+    {
+      "name": "A4-student",
+      "docxSha256": "80259a84b9d85a9a26772721ee1e9822d67440b3b5b3c775cd593dcc8c054c2f",
+      "pdfSha256": "4e491802975afda8b9ed903e847476ca35fd17cc4d4c3ff02e497687d2927221",
+      "pdfPages": [
+        {
+          "page": 1,
+          "pngSha256": "d8a0aaa596123a504f08d53d936713279fa77b49fe8757ee3429ab0395404be7"
+        },
+        {
+          "page": 2,
+          "pngSha256": "de24814c77575c6ef05766f129c8dfb008d6f67084c12dcbbe3f980a39b089be"
+        },
+        {
+          "page": 3,
+          "pngSha256": "e77c28091cce5ff8d37a91cc6d93aafa2bc0eb875fd182c22e38cd2932ca4516"
+        },
+        {
+          "page": 4,
+          "pngSha256": "b60a3ab6c85686149dc1a92db15da3168b598cd6955abc77773dda62e11f0931"
+        },
+        {
+          "page": 5,
+          "pngSha256": "2697cd461c7b65d03061b46bead6f426f8e8bac3438e78e72541a349fcc06079"
+        },
+        {
+          "page": 6,
+          "pngSha256": "21805c6308cd75159191356f17722723ff3f23fa225bb7dbd5362bb3af3081b2"
+        },
+        {
+          "page": 7,
+          "pngSha256": "8c3add16d8e8474acb844f885db37985375568ea981c2f1878ebbc4e65c35642"
+        },
+        {
+          "page": 8,
+          "pngSha256": "e0ceb97208f26cf8791699c838afee97311255aac0cbb0bc43f8c84e9032a199"
+        }
+      ],
+      "wordPages": [
+        {
+          "page": 1,
+          "pngSha256": "67cbb62a081eaa13480779fc1410e373218fa70dde30531b8f076a6e7afe6b3f"
+        },
+        {
+          "page": 2,
+          "pngSha256": "341c1213581bdc28fe70fb02c794819996a83752ec3ca51abab4e7d260c2f066"
+        },
+        {
+          "page": 3,
+          "pngSha256": "ae07291acffefe67ee5bde000a2834780d08994e7358794914df1dba43befa23"
+        },
+        {
+          "page": 4,
+          "pngSha256": "68aa99db360db9f435c9060f5a502613ec01ad084af1dbe43bc78f1b87424d28"
+        },
+        {
+          "page": 5,
+          "pngSha256": "5cc9ee55585105d667cf7ce30316cfcebab2bdbd726e356e4a12ddc92448c296"
+        },
+        {
+          "page": 6,
+          "pngSha256": "1036a4b9cf63ad7b15b17d546b9fee9bca413e07a7de2aac7fdf518fdb8ad4de"
+        }
+      ]
+    },
+    {
+      "name": "Letter-key",
+      "docxSha256": "dab55c32dd67dd587439f322da420ff26845d9f61bafd8d59d169db49b4aaa73",
+      "pdfSha256": "2e96bd215dc000b8ea804282ee86320054b25b317251b8bf43f69101c37c4063",
+      "pdfPages": [
+        {
+          "page": 1,
+          "pngSha256": "dd70fcd98725603caee8b950224b6692cb94fdc7c78ed76d4f45d9dede11c36f"
+        },
+        {
+          "page": 2,
+          "pngSha256": "0fe31d32cf780059869cdb5601433cb1b6624b3b132d48fa2fef0b29c1e49d28"
+        },
+        {
+          "page": 3,
+          "pngSha256": "af9c455ddea017d07d08b797106436df3750b6b87e25e155d21551221d5d0110"
+        },
+        {
+          "page": 4,
+          "pngSha256": "80a3eafdc687b40ff641d356b85d377347356ab129a9c80c649676bbe661c08c"
+        },
+        {
+          "page": 5,
+          "pngSha256": "b7ed97e3dac97d40d3b375e3dd7f686ce21d651ba1f6442c6f01ca65483eabfc"
+        },
+        {
+          "page": 6,
+          "pngSha256": "492e6199e583d73e2e93dfef9f73bf92daa8c9a6613b4562fe0eef87816333da"
+        },
+        {
+          "page": 7,
+          "pngSha256": "c98a2d8de0aa438941f83810a74531bfcf26c6154c7bf1911762e71246691266"
+        }
+      ],
+      "wordPages": [
+        {
+          "page": 1,
+          "pngSha256": "dfaa3bda29bb8c6d08b5ee6f6be4ca393bb3c2f3099f7e8462aa43ff27b8dc3e"
+        },
+        {
+          "page": 2,
+          "pngSha256": "8fbf5eaff89e7852e8b1fcbad7c178ba61664ed074b90212294767092b17a769"
+        },
+        {
+          "page": 3,
+          "pngSha256": "566425027e2a5a23622755b4cc5c7e40fd462bd401de6317dc5ad15bc995ee6f"
+        },
+        {
+          "page": 4,
+          "pngSha256": "aa66eef2dfbed772087eaa4beab7e0669b53a8a76a52fc9f8e2f857f51bd0788"
+        },
+        {
+          "page": 5,
+          "pngSha256": "0e839825e2979785faf209c16f3157f87095111bf5dfb22256d100090684d623"
+        },
+        {
+          "page": 6,
+          "pngSha256": "21f4cda6830c49973bd92f499f31a11313d2ecbde97d6a8b4f3e1d7f16969929"
+        }
+      ]
+    },
+    {
+      "name": "Letter-key-compact",
+      "docxSha256": "4f18d9b4fe82fbad90e825e4d71f054954e7d72fa858b0618db3eb0c014db104",
+      "pdfSha256": "6b672b139873208b0ccf2c35c50c9729759e4331cfcdd1091268e2577585071d",
+      "pdfPages": [
+        {
+          "page": 1,
+          "pngSha256": "3e88cf70bf3800eba293e82915d0cb666e9e35b3e69169754e66ff088819413c"
+        },
+        {
+          "page": 2,
+          "pngSha256": "9988fc58c50491fc779d48dd12e463738acdf8d63dfdf4d0dc7a5abb3b8bb114"
+        },
+        {
+          "page": 3,
+          "pngSha256": "93d4a6c2d4b95e9d240ae4e4ffb07ceeb84ef0796e6c10638f4aa5b19d3e5163"
+        },
+        {
+          "page": 4,
+          "pngSha256": "5dc3a77d5d3534f37b9a264dc1fdfc1b24eaeb3633296b983d87aadc1f1448f8"
+        },
+        {
+          "page": 5,
+          "pngSha256": "398392c2bd6e946b265da6a5cb5ce80d77b7241edbb4639bece3c983822a31c1"
+        }
+      ],
+      "wordPages": [
+        {
+          "page": 1,
+          "pngSha256": "6474612ee56a3b65e747533aef392266eac891526ed411254aa760d9eab04895"
+        },
+        {
+          "page": 2,
+          "pngSha256": "19f7163c5b0eba365cf9878d0ca5e2ddea67c116bdccf9f8358bfcf1fcbd3e97"
+        },
+        {
+          "page": 3,
+          "pngSha256": "2990d39d44d35800257929ed89a15fde69a7f02ead0b45be20c4952b80ebf380"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "fromTrack": "c4-gcf-to-monomial-from",
+    "fromLevel": 1,
+    "toTrack": "c4-gcf-to-monomial-to",
+    "toLevel": 1,
+    "reason": "Numerical GCF supplies the common coefficient; monomial factoring also selects the lowest shared variable exponents and verifies the remaining polynomial by distribution."
+  },
+  {
+    "fromTrack": "c4-binomials-to-complex-from",
+    "fromLevel": 1,
+    "toTrack": "c4-binomials-to-complex-to",
+    "toLevel": 1,
+    "reason": "Binomial distribution supplies the four products; complex multiplication adds i squared equals negative one and collection into real and imaginary parts."
+  },
+  {
+    "fromTrack": "c4-powers-to-logarithms-from",
+    "fromLevel": 1,
+    "toTrack": "c4-powers-to-logarithms-to",
+    "toLevel": 1,
+    "reason": "Integer powers and reciprocals support the inverse relationship between logarithms and exponentials; logarithms add positive-argument and valid-base restrictions."
+  },
+  {
+    "fromTrack": "c4-point-slope-to-parallel-from",
+    "fromLevel": 1,
+    "toTrack": "c4-point-slope-to-parallel-to",
+    "toLevel": 1,
+    "reason": "The point-and-slope equation method supports parallel-line construction; the added fact is that distinct parallel lines share a slope."
+  },
+  {
+    "fromTrack": "c4-circle-base-to-cylinder-from",
+    "fromLevel": 1,
+    "toTrack": "c4-circle-base-to-cylinder-to",
+    "toLevel": 1,
+    "reason": "Circle area supplies the base area; cylinder volume multiplies that area by perpendicular height and changes square units to cubic units."
+  },
+  {
+    "fromTrack": "c4-rectangle-to-prism-surface-from",
+    "fromLevel": 1,
+    "toTrack": "c4-rectangle-to-prism-surface-to",
+    "toLevel": 1,
+    "reason": "Rectangle area supports calculating the three pairs of congruent faces; prism surface area adds face identification and the sum of their areas."
+  },
+  {
+    "fromTrack": "c4-rectangle-to-pyramid-from",
+    "fromLevel": 1,
+    "toTrack": "c4-rectangle-to-pyramid-to",
+    "toLevel": 1,
+    "reason": "Base area is a prerequisite quantity for one third of base area times perpendicular height; a pyramid adds the one-third volume factor and cubic units."
+  },
+  {
+    "fromTrack": "c4-ratio-to-trigonometry-from",
+    "fromLevel": 1,
+    "toTrack": "c4-ratio-to-trigonometry-to",
+    "toLevel": 1,
+    "reason": "Reduced numerical ratios support trigonometric ratios; the added construct is identifying opposite adjacent and hypotenuse relative to a chosen acute angle."
+  },
+  {
+    "fromTrack": "c4-right-triangle-to-distance-from",
+    "fromLevel": 1,
+    "toTrack": "c4-right-triangle-to-distance-to",
+    "toLevel": 1,
+    "reason": "The Pythagorean theorem supports coordinate distance; coordinate differences supply the legs and the target additionally simplifies the resulting square root."
+  },
+  {
+    "fromTrack": "c4-prime-factors-to-gcf-from",
+    "fromLevel": 1,
+    "toTrack": "c4-prime-factors-to-gcf-to",
+    "toLevel": 1,
+    "reason": "Prime decomposition supports a method for GCF: compare the input factorizations and retain shared primes with the smallest exponents."
+  },
+  {
+    "fromTrack": "c4-square-to-converse-from",
+    "fromLevel": 1,
+    "toTrack": "c4-square-to-converse-to",
+    "toLevel": 1,
+    "reason": "Squaring numerical lengths supports the test a squared plus b squared equals c squared; the new construct is deciding whether the largest side makes a right triangle."
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "entries": 2184,
+  "reviewedPathEntries": 2158,
+  "topicOnlyEntries": 26,
+  "entriesWithCrossCourseEasierOrHarder": 657,
+  "entriesWithCrossCourseDirectionalRelation": 1474,
+  "entriesWithoutCrossCourseDirectionalRelation": 710,
+  "crossBankCandidatePairs": 11225,
+  "pairTypes": {
+    "easier": 2232,
+    "same-scope": 3218,
+    "shared-provider": 954,
+    "harder": 783,
+    "prerequisite": 1485,
+    "extension": 825,
+    "related": 1728
+  },
+  "conflictingCrossCoursePairs": 3,
+  "banks": [
+    {
+      "bankId": "intermediate-4-en",
+      "localGrade": 3,
+      "placement": "grade-assigned",
+      "total": 260,
+      "reviewedPathEntries": 256,
+      "difficultyEntries": 84,
+      "directionalEntries": 158
+    },
+    {
+      "bankId": "course-1-en",
+      "localGrade": 4,
+      "placement": "grade-assigned",
+      "total": 278,
+      "reviewedPathEntries": 276,
+      "difficultyEntries": 110,
+      "directionalEntries": 224
+    },
+    {
+      "bankId": "course-87-en",
+      "localGrade": 5,
+      "placement": "grade-assigned",
+      "total": 503,
+      "reviewedPathEntries": 497,
+      "difficultyEntries": 135,
+      "directionalEntries": 339
+    },
+    {
+      "bankId": "algebra-half-en",
+      "localGrade": null,
+      "placement": "tracked-not-grade-locked",
+      "total": 378,
+      "reviewedPathEntries": 375,
+      "difficultyEntries": 119,
+      "directionalEntries": 282
+    },
+    {
+      "bankId": "algebra-1-en",
+      "localGrade": null,
+      "placement": "tracked-not-grade-locked",
+      "total": 309,
+      "reviewedPathEntries": 305,
+      "difficultyEntries": 110,
+      "directionalEntries": 228
+    },
+    {
+      "bankId": "algebra-2-en",
+      "localGrade": null,
+      "placement": "tracked-not-grade-locked",
+      "total": 456,
+      "reviewedPathEntries": 449,
+      "difficultyEntries": 99,
+      "directionalEntries": 243
+    }
+  ],
+  "chunk2ReviewedEntries": 289,
+  "chunk1ReviewedEntries": 303,
+  "reviewedTopicOnlyEntries": 26,
+  "unreviewedTopicOnlyEntries": 0,
+  "limits": "Unordered pairs; same-bank pairs excluded. Directional includes easier/harder and prerequisite/extension. Counts include original lesson entries, not unique question providers. Difficulty is reviewed task demand, not measured student difficulty.",
+  "chunk3ReviewedEntries": 295
+}

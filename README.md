@@ -1,3 +1,13 @@
+## Current checkpoint — Chunk 4 verified (2026-10-09)
+
+Engine 0.32.0-rc.2 / Studio 0.34.0-rc.2: all 749 frozen entries reconciled, 39 new cross-course directional entries, 710 reviewed residuals. All 2,184 working entries and 331 Grade 5 codes preserved. Exact download, browser, generation and Word/PDF checks passed. Saved on review branches; no merge or deployment.
+
+See [verification](docs/COMPARISON-CHUNK4-VERIFICATION.md), [teacher handoff](docs/COMPARISON-CHUNK4-QUICKSTART.md) and [next related-concepts scope](docs/RELATED-CONCEPTS-NEXT.md). Next feature has not started. Earlier checkpoints below are historical.
+
+> Current checkpoint (2026-10-09): Comparison Chunk 3 complete and verified at documented scope. Engine 0.31.0-rc.2 / Studio 0.33.0-rc.2. All 295 scoped geometry/measurement/data/applied entries reviewed: 287 gained paths and eight remain explicitly reviewed topic-only. Overall: 2,158 path entries, 26 reviewed topic-only, zero unreviewed topic-only; 1,435 entries have cross-course directions, including 657 with easier/harder links. Next: Chunk 4, the frozen 749-entry directional-gap queue. Earlier checkpoints below are historical. No deployment performed.
+
+[Download Studio v0.33.0-rc.2](https://github.com/williammcada/test-and-practice-studio/blob/main/downloads/Test-and-Practice-Studio-v0.33.0-rc.2.html) · [Verification](docs/COMPARISON-CHUNK3-VERIFICATION.md) · [Quickstart](docs/COMPARISON-CHUNK3-QUICKSTART.md) · [Review and continuation](https://github.com/williammcada/MATH-ENGINE/blob/main/curriculum/cross-course/v0.5/REVIEW.md).
+
 > Current checkpoint (2026-10-09): Comparison Chunk 3 implementation candidate, awaiting verification. Engine 0.31.0-rc.1 / Studio target 0.33.0-rc.1. All 295 entries reviewed: 287 gained paths, 8 retained as reviewed topic-only. Candidate totals: 2,158 path-linked; 1,435 cross-course directional; 657 easier/harder. Chunk 4 frozen at 749 directional gaps. Earlier checkpoints below are historical.
 
 > Current checkpoint (2026-10-09): Comparison Chunk 2 complete and verified. Engine 0.30.0-rc.1 / Studio 0.32.0-rc.2. All 289 scoped algebra/function entries reviewed: 278 added to paths and 11 retained as reviewed topic-only. Total path coverage 1,871; cross-course directional coverage 1,286, including 655 easier/harder. Unreviewed topic-only queue: 295. Next: Chunk 3, geometry/measurement/data/applied comparisons. Earlier checkpoints below are historical.

@@ -1,0 +1,29 @@
+{
+  "result": "passed",
+  "version": "0.34.0-rc.2",
+  "bridgeFlows": 11,
+  "selected": 12,
+  "banks": 6,
+  "exports": [
+    {
+      "name": "A4-student",
+      "pages": 6,
+      "items": 12,
+      "columns": 1
+    },
+    {
+      "name": "Letter-key",
+      "pages": 5,
+      "items": 12,
+      "columns": 1
+    },
+    {
+      "name": "Letter-key-compact",
+      "pages": 4,
+      "items": 12,
+      "columns": 2
+    }
+  ],
+  "browser": "153.0.8010.0",
+  "checks": "All 11 Chunk 4 bridges upward/downward with mathematical reason displayed; exact download; retained perimeter and histogram upward/downward; confirmed Grade 3/4/5 and tracked-course labels; mixed packet includes bar construction, numerical GCF, monomial factoring, complex multiplication, logarithm conversion, cylinder volume, prism surface area and perimeter; preview preserves comparison origin; mixed-bank add/remove/undo; empty/unranked filters; shared-provider warning; draft download; packet/session replay; narrow viewport; actual Word/PDF exports"
+}
