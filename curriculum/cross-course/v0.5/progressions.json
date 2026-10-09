@@ -12470,7 +12470,7 @@
       {
         "level": 1,
         "demand": "Convert a mixed minute-second lap and calculate a difference",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Minutes contain 60 seconds; subtract times in consistent units",
         "selectors": [
           "=/course-87-en:item:SX870149"
         ],
@@ -12481,7 +12481,7 @@
       {
         "level": 2,
         "demand": "Compute elapsed clock time with hour boundaries",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Minutes contain 60 seconds; subtract times in consistent units",
         "selectors": [
           "=/course-87-en:authored:MCADA-12.4"
         ],
@@ -12500,7 +12500,7 @@
       {
         "level": 1,
         "demand": "Divide a total by its count or measure",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Identify total cost, quantity and the unit being priced",
         "selectors": [
           "=/course-87-en:item:SN870244",
           "=/course-87-en:item:SX870060",
@@ -12517,7 +12517,7 @@
       {
         "level": 2,
         "demand": "Recover net cost before calculating a unit price",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Identify total cost, quantity and the unit being priced",
         "selectors": [
           "=/course-87-en:item:SN870116"
         ],
@@ -12528,7 +12528,7 @@
       {
         "level": 3,
         "demand": "Compare a premium unit price and scale to a purchase",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Identify total cost, quantity and the unit being priced",
         "selectors": [
           "=/course-87-en:item:SX870148"
         ],
@@ -12547,7 +12547,7 @@
       {
         "level": 1,
         "demand": "Calculate a unit rate from corresponding totals",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use equivalent ratios and round money only at the end",
         "selectors": [
           "=/course-87-en:item:SN870244",
           "=/course-87-en:item:SX870060",
@@ -12564,7 +12564,7 @@
       {
         "level": 2,
         "demand": "Scale proportional cost and round only the final money amount",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use equivalent ratios and round money only at the end",
         "selectors": [
           "=/course-87-en:item:SX870275",
           "=/course-87-en:item:SN870393"
@@ -12585,7 +12585,7 @@
       {
         "level": 1,
         "demand": "Calculate a contextual quotient or reciprocal pair",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Interpret the numerator and denominator of a rate with units",
         "selectors": [
           "=/course-87-en:item:SX870226",
           "=/course-87-en:authored:MCADA-53.1"
@@ -12598,7 +12598,7 @@
       {
         "level": 2,
         "demand": "Compare two independently calculated exact rates",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Interpret the numerator and denominator of a rate with units",
         "selectors": [
           "=/algebra-half-en:node:402"
         ],
@@ -12617,7 +12617,7 @@
       {
         "level": 1,
         "demand": "Apply one length mass or capacity equivalence",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use equal measures and orient conversion factors to cancel units",
         "selectors": [
           "=/course-87-en:item:SX870264",
           "=/algebra-half-en:node:197",
@@ -12651,7 +12651,7 @@
       {
         "level": 2,
         "demand": "Show a chain of unit cancellations",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use equal measures and orient conversion factors to cancel units",
         "selectors": [
           "=/algebra-2-en:authored:M6-53-3",
           "=/course-87-en:authored:MCADA-88.1"
@@ -12674,7 +12674,7 @@
       {
         "level": 1,
         "demand": "Convert an exact length through three factors",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Apply one length factor for each dimension of the measure",
         "selectors": [
           "=/algebra-2-en:authored:M6-53-3"
         ],
@@ -12685,7 +12685,7 @@
       {
         "level": 2,
         "demand": "Convert square units dimension by dimension",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Apply one length factor for each dimension of the measure",
         "selectors": [
           "=/algebra-2-en:authored:M6-53-4"
         ],
@@ -12696,7 +12696,7 @@
       {
         "level": 3,
         "demand": "Convert cubic units dimension by dimension",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Apply one length factor for each dimension of the measure",
         "selectors": [
           "=/algebra-2-en:authored:M6-53-5"
         ],
@@ -12715,7 +12715,7 @@
       {
         "level": 1,
         "demand": "Explain metric powers or reciprocal unit multipliers",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Equal measures have ratio one; metric prefixes use powers of ten",
         "selectors": [
           "=/course-87-en:authored:MCADA-32.1",
           "=/course-87-en:authored:MCADA-50.1"
@@ -12731,7 +12731,7 @@
       {
         "level": 2,
         "demand": "Interpret a unit as a percentage of a larger unit",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Equal measures have ratio one; metric prefixes use powers of ten",
         "selectors": [
           "=/course-87-en:authored:MCADA-16.3"
         ],
@@ -12751,7 +12751,7 @@
       {
         "level": 1,
         "demand": "Cube the feet-to-inches factor",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Cube length factors and distinguish cubic length from capacity units",
         "selectors": [
           "=/algebra-half-en:authored:M3-118-1"
         ],
@@ -12762,7 +12762,7 @@
       {
         "level": 2,
         "demand": "Show forward or reverse cubic conversion chains",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Cube length factors and distinguish cubic length from capacity units",
         "selectors": [
           "=/algebra-half-en:authored:M3-118-2"
         ],
@@ -12774,7 +12774,7 @@
       {
         "level": 3,
         "demand": "Connect cubic length and capacity units",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Cube length factors and distinguish cubic length from capacity units",
         "selectors": [
           "=/algebra-half-en:authored:M3-119-3",
           "=/course-87-en:authored:COURSE115.1",
@@ -12801,7 +12801,7 @@
       {
         "level": 1,
         "demand": "Calculate a distance per time with compatible units",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Convert both distance and time while canceling the starting units",
         "selectors": [
           "=/algebra-half-en:node:403"
         ],
@@ -12812,7 +12812,7 @@
       {
         "level": 2,
         "demand": "Convert units in both numerator and denominator",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Convert both distance and time while canceling the starting units",
         "selectors": [
           "=/algebra-2-en:authored:M6-47-1"
         ],
@@ -12831,7 +12831,7 @@
       {
         "level": 1,
         "demand": "Compute a mean of a supplied list or total",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Total equals mean times count; retain decimal place values",
         "selectors": [
           "=/course-87-en:item:SX870112",
           "=/algebra-half-en:node:185",
@@ -12855,7 +12855,7 @@
       {
         "level": 2,
         "demand": "Recover a missing observation from the required total",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Total equals mean times count; retain decimal place values",
         "selectors": [
           "=/algebra-half-en:node:187",
           "=/algebra-half-en:node:186"
@@ -12876,7 +12876,7 @@
       {
         "level": 1,
         "demand": "Compute an arithmetic list mean",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Weight each group by its count or stated percentage before combining",
         "selectors": [
           "=/course-87-en:item:SX870112",
           "=/algebra-half-en:node:185",
@@ -12900,7 +12900,7 @@
       {
         "level": 2,
         "demand": "Combine group means or rates with their weights",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Weight each group by its count or stated percentage before combining",
         "selectors": [
           "=/course-87-en:item:SX870286",
           "=/course-87-en:item:SX870283",
@@ -12921,7 +12921,7 @@
       {
         "level": 3,
         "demand": "Recover a required future-group mean",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Weight each group by its count or stated percentage before combining",
         "selectors": [
           "=/course-87-en:item:SN870278",
           "=/algebra-1-en:authored:M4-52-3"
@@ -12942,7 +12942,7 @@
       {
         "level": 1,
         "demand": "Combine two exact count-weighted means",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Multiply each mean by its group count and divide by the combined count",
         "selectors": [
           "=/algebra-1-en:node:551"
         ],
@@ -12954,7 +12954,7 @@
       {
         "level": 2,
         "demand": "Combine three exact count-weighted means",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Multiply each mean by its group count and divide by the combined count",
         "selectors": [
           "=/algebra-1-en:node:552"
         ],
@@ -12973,7 +12973,7 @@
       {
         "level": 1,
         "demand": "Sort five values and find their median",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Sort observations, distinguish summary measures and use the specified population convention",
         "selectors": [
           "=/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00072"
         ],
@@ -12984,7 +12984,7 @@
       {
         "level": 2,
         "demand": "Calculate mean median mode and range",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Sort observations, distinguish summary measures and use the specified population convention",
         "selectors": [
           "=/algebra-1-en:node:493",
           "=/algebra-1-en:node:494",
@@ -13002,7 +13002,7 @@
       {
         "level": 3,
         "demand": "Calculate population standard deviation with N denominator",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Sort observations, distinguish summary measures and use the specified population convention",
         "selectors": [
           "=/algebra-2-en:authored:M5-statistics-population"
         ],
@@ -13021,7 +13021,7 @@
       {
         "level": 1,
         "demand": "Read mean and standard deviation from the curve scale",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Interpret mean and standard deviation on a symmetric normal model",
         "selectors": [
           "=/algebra-2-en:node:921"
         ],
@@ -13032,7 +13032,7 @@
       {
         "level": 2,
         "demand": "Calculate normal-model bands and empirical-rule percentages",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Interpret mean and standard deviation on a symmetric normal model",
         "selectors": [
           "=/algebra-2-en:authored:M5-statistics-normal"
         ],
@@ -13051,7 +13051,7 @@
       {
         "level": 1,
         "demand": "Count outcomes for one fair-die event",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Count favorable outcomes; independent previous results do not change the next trial",
         "selectors": [
           "=/course-87-en:item:SX650321"
         ],
@@ -13062,7 +13062,7 @@
       {
         "level": 2,
         "demand": "Ignore independent past die or replaced-marble results",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Count favorable outcomes; independent previous results do not change the next trial",
         "selectors": [
           "=/algebra-half-en:node:700",
           "=/algebra-1-en:node:697",
@@ -13087,7 +13087,7 @@
       {
         "level": 1,
         "demand": "Find probability of a specified run or exact sequence",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Multiply probabilities for independent trials and distinguish a sequence from any order",
         "selectors": [
           "=/course-87-en:item:SX760141",
           "=/algebra-half-en:node:699",
@@ -13103,7 +13103,7 @@
       {
         "level": 2,
         "demand": "Find probability of mixed independent events",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Multiply probabilities for independent trials and distinguish a sequence from any order",
         "selectors": [
           "=/course-87-en:authored:MCADA-94.2"
         ],
@@ -13125,7 +13125,7 @@
       {
         "level": 1,
         "demand": "Calculate one disjoint-color event",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Track color counts and whether a drawn marble is replaced",
         "selectors": [
           "=/algebra-half-en:node:687",
           "=/course-87-en:item:SN870816"
@@ -13138,7 +13138,7 @@
       {
         "level": 2,
         "demand": "Calculate two ordered draws using the stated replacement rule",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Track color counts and whether a drawn marble is replaced",
         "selectors": [
           "=/algebra-half-en:node:701",
           "=/algebra-1-en:node:735"
@@ -13152,7 +13152,7 @@
       {
         "level": 3,
         "demand": "Calculate and contrast both replacement models",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Track color counts and whether a drawn marble is replaced",
         "selectors": [
           "=/algebra-1-en:node:736",
           "=/algebra-1-en:node:737"
@@ -13173,7 +13173,7 @@
       {
         "level": 1,
         "demand": "Calculate mixed ordered card events without replacement",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Count the remaining cards, preserve event order and avoid double counting",
         "selectors": [
           "=/algebra-half-en:node:702"
         ],
@@ -13184,7 +13184,7 @@
       {
         "level": 2,
         "demand": "Calculate mixed card events including an either-order branch",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Count the remaining cards, preserve event order and avoid double counting",
         "selectors": [
           "=/course-87-en:item:SN870522"
         ],
@@ -13203,7 +13203,7 @@
       {
         "level": 1,
         "demand": "Convert odds to the probability of the same named event",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Odds compare favorable to unfavorable counts; probability uses the total",
         "selectors": [
           "=/course-87-en:item:SN870774"
         ],
@@ -13214,7 +13214,7 @@
       {
         "level": 2,
         "demand": "Give both event and complement probabilities",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Odds compare favorable to unfavorable counts; probability uses the total",
         "selectors": [
           "=/course-87-en:authored:COURSE210.2"
         ],
@@ -13233,7 +13233,7 @@
       {
         "level": 1,
         "demand": "Interpret the named event in given odds",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Identify the exact event named in the odds before choosing its probability",
         "selectors": [
           "=/course-87-en:item:SN870774",
           "=/course-87-en:item:SN870834"
@@ -13254,7 +13254,7 @@
       {
         "level": 1,
         "demand": "Find a complementary percentage",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "An event and its complement have probabilities summing to one",
         "selectors": [
           "=/course-87-en:item:SX760144"
         ],
@@ -13265,7 +13265,7 @@
       {
         "level": 2,
         "demand": "Convert odds and give the event plus its complement",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "An event and its complement have probabilities summing to one",
         "selectors": [
           "=/course-87-en:authored:COURSE210.2"
         ],
@@ -13284,7 +13284,7 @@
       {
         "level": 1,
         "demand": "Count one-die outcomes for a stated condition",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Two dice have 36 equally likely ordered outcomes",
         "selectors": [
           "=/course-87-en:item:SX650321",
           "=/algebra-half-en:node:700",
@@ -13299,7 +13299,7 @@
       {
         "level": 2,
         "demand": "Enumerate ordered two-dice outcomes with a target sum",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Two dice have 36 equally likely ordered outcomes",
         "selectors": [
           "=/algebra-1-en:node:696"
         ],
@@ -13319,7 +13319,7 @@
       {
         "level": 1,
         "demand": "Calculate rectangle perimeter and area",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Perimeter adds boundary lengths; area counts square units",
         "selectors": [
           "=/course-87-en:item:SX650319"
         ],
@@ -13330,7 +13330,7 @@
       {
         "level": 2,
         "demand": "Write both formulas and evaluate with correct units",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Perimeter adds boundary lengths; area counts square units",
         "selectors": [
           "=/course-87-en:authored:COURSE108.2"
         ],
@@ -13350,7 +13350,7 @@
       {
         "level": 1,
         "demand": "Identify a base and perpendicular altitude",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use a perpendicular altitude, including one outside the triangle",
         "selectors": [
           "=/course-87-en:authored:MCADA-37.1"
         ],
@@ -13363,7 +13363,7 @@
       {
         "level": 2,
         "demand": "Calculate area with interior or external height",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use a perpendicular altitude, including one outside the triangle",
         "selectors": [
           "=/course-87-en:item:SX870309",
           "=/algebra-half-en:node:221",
@@ -13381,7 +13381,7 @@
       {
         "level": 3,
         "demand": "Calculate area and a missing right-triangle hypotenuse",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use a perpendicular altitude, including one outside the triangle",
         "selectors": [
           "=/course-87-en:item:SN870430"
         ],
@@ -13400,7 +13400,7 @@
       {
         "level": 1,
         "demand": "Combine a square and triangle with an inferred base",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Partition or subtract nonoverlapping regions and infer only justified lengths",
         "selectors": [
           "=/course-87-en:item:SX870199",
           "=/course-87-en:authored:MCADA-75.1"
@@ -13413,7 +13413,7 @@
       {
         "level": 2,
         "demand": "Subtract a circular hole and draw the remaining region",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Partition or subtract nonoverlapping regions and infer only justified lengths",
         "selectors": [
           "=/algebra-2-en:authored:M6-0-2"
         ],
@@ -13432,7 +13432,7 @@
       {
         "level": 1,
         "demand": "Use parallelogram base and perpendicular height",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distinguish bases, perpendicular heights and slanted sides",
         "selectors": [
           "=/course-87-en:item:SN870327",
           "=/algebra-half-en:node:712",
@@ -13450,7 +13450,7 @@
       {
         "level": 2,
         "demand": "Use two trapezoid bases and perpendicular height",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distinguish bases, perpendicular heights and slanted sides",
         "selectors": [
           "=/course-87-en:item:SX870351",
           "=/algebra-half-en:node:222",
@@ -13475,7 +13475,7 @@
       {
         "level": 1,
         "demand": "Find circumference from radius with stated pi",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Diameter is twice radius; apply the stated pi convention",
         "selectors": [
           "=/course-87-en:item:SX870332"
         ],
@@ -13486,7 +13486,7 @@
       {
         "level": 2,
         "demand": "Find circumference and area from radius",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Diameter is twice radius; apply the stated pi convention",
         "selectors": [
           "=/algebra-half-en:node:409"
         ],
@@ -13497,7 +13497,7 @@
       {
         "level": 3,
         "demand": "Recover radius from diameter and find circumference and area",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Diameter is twice radius; apply the stated pi convention",
         "selectors": [
           "=/algebra-half-en:node:410"
         ],
@@ -13516,7 +13516,7 @@
       {
         "level": 1,
         "demand": "Calculate circumference and area",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Scale the correct whole-circle measure by the angle fraction",
         "selectors": [
           "=/algebra-half-en:node:409"
         ],
@@ -13527,7 +13527,7 @@
       {
         "level": 2,
         "demand": "Calculate semicircle arc and area or an arbitrary arc",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Scale the correct whole-circle measure by the angle fraction",
         "selectors": [
           "=/course-87-en:authored:MCADA-104.1",
           "=/algebra-2-en:node:38",
@@ -13551,7 +13551,7 @@
       {
         "level": 1,
         "demand": "Find rectangular prism volume from dimensions",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Volume equals base area times perpendicular height",
         "selectors": [
           "=/course-87-en:item:SN870379",
           "=/course-87-en:authored:MCADA-70.1"
@@ -13568,7 +13568,7 @@
       {
         "level": 2,
         "demand": "Find triangular prism volume via base area",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Volume equals base area times perpendicular height",
         "selectors": [
           "=/course-87-en:authored:MCADA-70.2"
         ],
@@ -13591,7 +13591,7 @@
       {
         "level": 1,
         "demand": "Calculate cylinder volume with given radius and height",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Choose the formula for the actual solid and retain the stated rounding rule",
         "selectors": [
           "=/course-87-en:item:SN870542",
           "=/algebra-half-en:node:475",
@@ -13613,7 +13613,7 @@
       {
         "level": 2,
         "demand": "Calculate cone pyramid or sphere volume with their rounding rules",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Choose the formula for the actual solid and retain the stated rounding rule",
         "selectors": [
           "=/algebra-2-en:node:31",
           "=/course-87-en:item:SN870721",
@@ -13644,7 +13644,7 @@
       {
         "level": 1,
         "demand": "Cube a known side ratio for cube volumes",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Similar volumes scale by the cube of the linear ratio",
         "selectors": [
           "=/course-87-en:item:SX870466"
         ],
@@ -13655,7 +13655,7 @@
       {
         "level": 2,
         "demand": "Connect forward and inverse length area and volume ratios",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Similar volumes scale by the cube of the linear ratio",
         "selectors": [
           "=/course-87-en:authored:COURSE211.2"
         ],
@@ -13674,7 +13674,7 @@
       {
         "level": 1,
         "demand": "Find rectangular or triangular prism total surface area",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Sum all exposed faces and distinguish slant height from perpendicular height",
         "selectors": [
           "=/course-87-en:item:SN870672",
           "=/algebra-half-en:node:354",
@@ -13691,7 +13691,7 @@
       {
         "level": 2,
         "demand": "Find cone or square-pyramid surface area using slant height",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Sum all exposed faces and distinguish slant height from perpendicular height",
         "selectors": [
           "=/algebra-half-en:node:741",
           "=/algebra-half-en:node:742",
@@ -13710,7 +13710,7 @@
       {
         "level": 3,
         "demand": "Find sphere surface area from radius",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Sum all exposed faces and distinguish slant height from perpendicular height",
         "selectors": [
           "=/course-87-en:item:SN870664",
           "=/course-87-en:authored:MCADA-105.2"
@@ -13731,7 +13731,7 @@
       {
         "level": 1,
         "demand": "Count triangles from one vertex of a convex polygon",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "A convex n-gon splits from one vertex into n minus 2 triangles",
         "selectors": [
           "=/course-87-en:item:SN870414"
         ],
@@ -13742,7 +13742,7 @@
       {
         "level": 2,
         "demand": "Calculate the interior-angle sum",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "A convex n-gon splits from one vertex into n minus 2 triangles",
         "selectors": [
           "=/course-87-en:item:SN870424"
         ],
@@ -13753,7 +13753,7 @@
       {
         "level": 3,
         "demand": "Draw the triangulation and give both count and sum",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "A convex n-gon splits from one vertex into n minus 2 triangles",
         "selectors": [
           "=/algebra-2-en:authored:M6-35-1"
         ],
@@ -13772,7 +13772,7 @@
       {
         "level": 1,
         "demand": "Calculate a regular exterior angle",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Exterior angles total 360 degrees; interior and exterior angles supplement",
         "selectors": [
           "=/course-87-en:item:SN870451",
           "=/course-87-en:item:SN870428"
@@ -13785,7 +13785,7 @@
       {
         "level": 2,
         "demand": "Calculate a regular interior angle",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Exterior angles total 360 degrees; interior and exterior angles supplement",
         "selectors": [
           "=/course-87-en:item:SN870417"
         ],
@@ -13804,7 +13804,7 @@
       {
         "level": 1,
         "demand": "Count diagonals from one vertex",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Diagonals join nonadjacent vertices; count each unordered pair once",
         "selectors": [
           "=/course-87-en:item:SN870566"
         ],
@@ -13815,7 +13815,7 @@
       {
         "level": 2,
         "demand": "Draw and count every diagonal exactly once",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Diagonals join nonadjacent vertices; count each unordered pair once",
         "selectors": [
           "=/course-87-en:authored:MCADA-89.1"
         ],
@@ -13834,7 +13834,7 @@
       {
         "level": 1,
         "demand": "Read or plot signed coordinate pairs",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use signed coordinates, parallel sides and coordinate differences",
         "selectors": [
           "=/course-87-en:authored:MCADA-INV3.2",
           "=/course-87-en:authored:MCADA-INV3.3"
@@ -13851,7 +13851,7 @@
       {
         "level": 2,
         "demand": "Complete a rectangle and calculate coordinate-difference area",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use signed coordinates, parallel sides and coordinate differences",
         "selectors": [
           "=/course-87-en:item:SX870108"
         ],
@@ -13870,7 +13870,7 @@
       {
         "level": 1,
         "demand": "Identify quadrant axis or origin from signs",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Order coordinates as horizontal then vertical; axes have a zero coordinate",
         "selectors": [
           "=/course-87-en:authored:MCADA-INV3.1"
         ],
@@ -13883,7 +13883,7 @@
       {
         "level": 2,
         "demand": "Plot swapped pairs and explain coincidence",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Order coordinates as horizontal then vertical; axes have a zero coordinate",
         "selectors": [
           "=/algebra-1-en:authored:M4-50-2"
         ],
@@ -13902,7 +13902,7 @@
       {
         "level": 1,
         "demand": "Find distance to a horizontal line",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use perpendicular coordinate differences and simplify square roots exactly",
         "selectors": [
           "=/algebra-2-en:authored:M6-125-1"
         ],
@@ -13913,7 +13913,7 @@
       {
         "level": 2,
         "demand": "Find exact distance between arbitrary signed-coordinate points",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use perpendicular coordinate differences and simplify square roots exactly",
         "selectors": [
           "=/algebra-2-en:node:635",
           "=/algebra-1-en:authored:M4-98-1"
@@ -13935,7 +13935,7 @@
       {
         "level": 1,
         "demand": "Select a line graph matching a signed rational slope and intercept",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Interpret slope and intercept with signed coordinates",
         "selectors": [
           "=/algebra-2-en:node:119",
           "=/algebra-1-en:node:752"
@@ -13948,7 +13948,7 @@
       {
         "level": 2,
         "demand": "Construct a line graph from its equation",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Interpret slope and intercept with signed coordinates",
         "selectors": [
           "=/algebra-1-en:authored:M4-51-1",
           "=/algebra-1-en:authored:M4-75-2"
@@ -13970,7 +13970,7 @@
       {
         "level": 1,
         "demand": "Match all given table frequencies to a bar graph",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Count each observation once and use a consistent frequency scale",
         "selectors": [
           "=/course-1-en:bank:C1_Section01:item:C1_S01_00083"
         ],
@@ -13981,7 +13981,7 @@
       {
         "level": 2,
         "demand": "Tally raw observations and construct a bar graph",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Count each observation once and use a consistent frequency scale",
         "selectors": [
           "=/intermediate-4-en:authored:M2-874aeaab47bb-1",
           "=/course-1-en:authored:M2-1586a2a40f39-2"
@@ -14002,7 +14002,7 @@
       {
         "level": 1,
         "demand": "Read one histogram interval frequency",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Read interval frequencies from the vertical scale and add the requested bins",
         "selectors": [
           "=/course-87-en:item:SN870341"
         ],
@@ -14013,7 +14013,7 @@
       {
         "level": 2,
         "demand": "Read and add two interval frequencies",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Read interval frequencies from the vertical scale and add the requested bins",
         "selectors": [
           "=/algebra-half-en:authored:M3-202-7"
         ],
@@ -14032,7 +14032,7 @@
       {
         "level": 1,
         "demand": "Match all table frequencies to a histogram",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Match interval boundaries and frequencies; histogram bars touch",
         "selectors": [
           "=/course-1-en:bank:C1_Section01:item:C1_S01_00021"
         ],
@@ -14043,7 +14043,7 @@
       {
         "level": 2,
         "demand": "Tally raw observations and construct a histogram",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Match interval boundaries and frequencies; histogram bars touch",
         "selectors": [
           "=/algebra-half-en:authored:M3-202-6",
           "=/course-1-en:authored:M2-c4f194fd4dd9-2"
@@ -14065,7 +14065,7 @@
       {
         "level": 1,
         "demand": "Calculate a count from a labeled circle-graph percentage",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Parts of a whole correspond to percentages and angles totaling 360 degrees",
         "selectors": [
           "=/course-87-en:item:SN870345"
         ],
@@ -14076,7 +14076,7 @@
       {
         "level": 2,
         "demand": "Construct and label a circle graph from counts",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Parts of a whole correspond to percentages and angles totaling 360 degrees",
         "selectors": [
           "=/course-87-en:authored:MCADA-INV5.3"
         ],
@@ -14095,7 +14095,7 @@
       {
         "level": 1,
         "demand": "Read a line graph and its changes",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use uniform axes, ordered time points and a key for multiple series",
         "selectors": [
           "=/course-87-en:authored:MCADA-38.3"
         ],
@@ -14109,7 +14109,7 @@
       {
         "level": 2,
         "demand": "Construct two series on shared axes with a key",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use uniform axes, ordered time points and a key for multiple series",
         "selectors": [
           "=/course-87-en:authored:MCADA-INV5.2"
         ],
@@ -14128,7 +14128,7 @@
       {
         "level": 1,
         "demand": "Read ordered observations retaining repeated leaves",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Apply the stem-and-leaf key and retain repeated observations",
         "selectors": [
           "=/course-87-en:item:SN870742"
         ],
@@ -14139,7 +14139,7 @@
       {
         "level": 2,
         "demand": "Calculate median mode and range from the display",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Apply the stem-and-leaf key and retain repeated observations",
         "selectors": [
           "=/course-87-en:item:SN870812"
         ],
@@ -14158,7 +14158,7 @@
       {
         "level": 1,
         "demand": "Fill supplied stems with sorted leaves",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Split place values into stems and ordered leaves and supply a key",
         "selectors": [
           "=/course-87-en:item:SN870810"
         ],
@@ -14169,7 +14169,7 @@
       {
         "level": 2,
         "demand": "Construct the complete stem-and-leaf display with key",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Split place values into stems and ordered leaves and supply a key",
         "selectors": [
           "=/algebra-1-en:authored:M4-85-1",
           "=/course-87-en:authored:MCADA-INV4.1"
@@ -14193,7 +14193,7 @@
       {
         "level": 1,
         "demand": "Read the five marked summary values",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distinguish extremes, quartiles and median; spread measures are differences",
         "selectors": [
           "=/course-87-en:item:SN870806"
         ],
@@ -14204,7 +14204,7 @@
       {
         "level": 2,
         "demand": "Calculate range and interquartile range",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distinguish extremes, quartiles and median; spread measures are differences",
         "selectors": [
           "=/course-87-en:item:SN870744"
         ],
@@ -14223,7 +14223,7 @@
       {
         "level": 1,
         "demand": "Calculate quartiles and select the matching box plot",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Sort data and use the stated convention when splitting the halves",
         "selectors": [
           "=/course-87-en:item:SN870838"
         ],
@@ -14234,7 +14234,7 @@
       {
         "level": 2,
         "demand": "Construct a box plot from raw observations",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Sort data and use the stated convention when splitting the halves",
         "selectors": [
           "=/algebra-1-en:authored:M4-120-1",
           "=/course-87-en:authored:MCADA-INV4.5"
@@ -14257,7 +14257,7 @@
       {
         "level": 1,
         "demand": "Recognize primitive figures and arrow conventions",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Arrowheads and endpoints distinguish a line, ray and segment",
         "selectors": [
           "=/course-87-en:item:SN870029"
         ],
@@ -14268,7 +14268,7 @@
       {
         "level": 2,
         "demand": "Draw name and describe geometric primitives",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Arrowheads and endpoints distinguish a line, ray and segment",
         "selectors": [
           "=/algebra-2-en:authored:M6-0-1",
           "=/course-87-en:authored:MCADA-7.2"
@@ -14294,7 +14294,7 @@
       {
         "level": 1,
         "demand": "Name planar shapes and polygon types",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Count sides and follow consecutive vertices; regularity needs equal sides and angles",
         "selectors": [
           "=/intermediate-4-en:authored:M2-8249b642047f-1",
           "=/course-87-en:authored:MCADA-18.1"
@@ -14311,7 +14311,7 @@
       {
         "level": 2,
         "demand": "Identify regularity or consecutive vertex naming",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Count sides and follow consecutive vertices; regularity needs equal sides and angles",
         "selectors": [
           "=/course-87-en:authored:MCADA-18.3",
           "=/course-87-en:authored:MCADA-18.2"
@@ -14335,7 +14335,7 @@
       {
         "level": 1,
         "demand": "Identify dimension counts and linear versus square units",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distinguish point, length, area and solid dimensions",
         "selectors": [
           "=/course-87-en:authored:MCADA-7.1",
           "=/course-87-en:authored:MCADA-20.5"
@@ -14348,7 +14348,7 @@
       {
         "level": 2,
         "demand": "Name six types of solid",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distinguish point, length, area and solid dimensions",
         "selectors": [
           "=/course-87-en:authored:MCADA-67.1"
         ],
@@ -14370,7 +14370,7 @@
       {
         "level": 1,
         "demand": "Classify parallel perpendicular or oblique planar lines",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Parallel lines are coplanar; skew lines do not meet and are not coplanar",
         "selectors": [
           "=/course-87-en:authored:MCADA-7.3"
         ],
@@ -14381,7 +14381,7 @@
       {
         "level": 2,
         "demand": "Identify parallel intersecting and skew edges and plane intersections",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Parallel lines are coplanar; skew lines do not meet and are not coplanar",
         "selectors": [
           "=/algebra-2-en:authored:M5-space-lines-planes"
         ],
@@ -14400,7 +14400,7 @@
       {
         "level": 1,
         "demand": "Classify sides by the most specific triangle category",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Compare side lengths and choose the most specific category",
         "selectors": [
           "=/course-87-en:item:SN870299",
           "=/course-87-en:authored:MCADA-62.3"
@@ -14425,7 +14425,7 @@
       {
         "level": 1,
         "demand": "Recognize a right angle in a selection",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Compare angles with the 90-degree and 180-degree benchmarks",
         "selectors": [
           "=/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00078"
         ],
@@ -14436,7 +14436,7 @@
       {
         "level": 2,
         "demand": "Classify acute right obtuse or straight angles",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Compare angles with the 90-degree and 180-degree benchmarks",
         "selectors": [
           "=/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076",
           "=/course-1-en:bank:C1_Section03:item:C1_S03_00061",
@@ -14465,7 +14465,7 @@
       {
         "level": 1,
         "demand": "Convert quarter revolutions to degrees",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "A full revolution is 360 degrees; choose the smaller clock-hand angle",
         "selectors": [
           "=/intermediate-4-en:authored:M2-9a770361a5f0-1",
           "=/course-1-en:authored:M2-8e79c4526873-1"
@@ -14478,7 +14478,7 @@
       {
         "level": 2,
         "demand": "Classify the smaller whole-hour clock-hand angle",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "A full revolution is 360 degrees; choose the smaller clock-hand angle",
         "selectors": [
           "=/course-1-en:bank:C1_Section03:item:C1_S03_00063"
         ],
@@ -14497,7 +14497,7 @@
       {
         "level": 1,
         "demand": "Name complementary supplementary adjacent or vertical relationships",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distinguish angle position from complementary or supplementary sums",
         "selectors": [
           "=/course-87-en:authored:MCADA-40.3"
         ],
@@ -14509,7 +14509,7 @@
       {
         "level": 2,
         "demand": "Use a complementary supplementary or vertical relationship numerically",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distinguish angle position from complementary or supplementary sums",
         "selectors": [
           "=/course-87-en:authored:MCADA-40.4"
         ],
@@ -14531,7 +14531,7 @@
       {
         "level": 1,
         "demand": "Find one complementary supplementary or vertical angle",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Vertical angles are equal and adjacent linear-pair angles sum to 180 degrees",
         "selectors": [
           "=/course-87-en:authored:MCADA-40.4"
         ],
@@ -14545,7 +14545,7 @@
       {
         "level": 2,
         "demand": "Find all three remaining angles of two intersecting lines",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Vertical angles are equal and adjacent linear-pair angles sum to 180 degrees",
         "selectors": [
           "=/algebra-2-en:authored:M6-0-4",
           "=/algebra-2-en:authored:M6-17-2"
@@ -14566,7 +14566,7 @@
       {
         "level": 1,
         "demand": "Identify angle-pair positions on a transversal",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use angle positions and the stated parallel-line assumptions",
         "selectors": [
           "=/course-87-en:authored:MCADA-102.2"
         ],
@@ -14581,7 +14581,7 @@
       {
         "level": 2,
         "demand": "Find angles on parallel lines with a transversal",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use angle positions and the stated parallel-line assumptions",
         "selectors": [
           "=/course-87-en:authored:MCADA-102.1"
         ],
@@ -14605,7 +14605,7 @@
       {
         "level": 1,
         "demand": "Use parallelogram opposite and adjacent angle properties",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use the properties of the specified quadrilateral, not a look-alike diagram",
         "selectors": [
           "=/course-87-en:authored:MCADA-61.2"
         ],
@@ -14617,7 +14617,7 @@
       {
         "level": 2,
         "demand": "Use cyclic-quadrilateral opposite supplements",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use the properties of the specified quadrilateral, not a look-alike diagram",
         "selectors": [
           "=/algebra-2-en:authored:M6-35-2"
         ],
@@ -14636,7 +14636,7 @@
       {
         "level": 1,
         "demand": "Find parallelogram angles",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use supplementary adjacent angles, angle bisectors and perpendicular diagonals",
         "selectors": [
           "=/course-87-en:authored:MCADA-61.2"
         ],
@@ -14648,7 +14648,7 @@
       {
         "level": 2,
         "demand": "Use rhombus angle bisection and perpendicular diagonals too",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use supplementary adjacent angles, angle bisectors and perpendicular diagonals",
         "selectors": [
           "=/algebra-2-en:authored:M6-39-5"
         ],
@@ -14667,7 +14667,7 @@
       {
         "level": 1,
         "demand": "Find a third interior or exterior angle",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Triangle interior angles sum to 180 degrees; distinguish demonstration from proof",
         "selectors": [
           "=/algebra-2-en:authored:M6-31-3",
           "=/course-87-en:authored:MCADA-40.2"
@@ -14685,7 +14685,7 @@
       {
         "level": 2,
         "demand": "Demonstrate the triangle sum with cut corners",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Triangle interior angles sum to 180 degrees; distinguish demonstration from proof",
         "selectors": [
           "=/course-87-en:authored:MCADA-40.1"
         ],
@@ -14704,7 +14704,7 @@
       {
         "level": 1,
         "demand": "Draw every line of reflection symmetry",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "A reflection fixes a symmetry line; point symmetry is a half-turn",
         "selectors": [
           "=/course-87-en:authored:MCADA-58.1",
           "=/course-87-en:authored:MCADA-INV6.3"
@@ -14720,7 +14720,7 @@
       {
         "level": 2,
         "demand": "Explain point symmetry from diagonal midpoints",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "A reflection fixes a symmetry line; point symmetry is a half-turn",
         "selectors": [
           "=/course-87-en:authored:MCADA-INV6.4"
         ],
@@ -14739,7 +14739,7 @@
       {
         "level": 1,
         "demand": "Recover one point after a y-axis reflection",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "A coordinate-axis reflection changes the perpendicular coordinate sign",
         "selectors": [
           "=/course-87-en:item:SX870293"
         ],
@@ -14750,7 +14750,7 @@
       {
         "level": 2,
         "demand": "Reflect all three triangle points across the x-axis",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "A coordinate-axis reflection changes the perpendicular coordinate sign",
         "selectors": [
           "=/course-87-en:item:SN870555"
         ],
@@ -14769,7 +14769,7 @@
       {
         "level": 1,
         "demand": "Select a rotated rectangle",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Apply the stated center, axis or vector to every vertex",
         "selectors": [
           "=/course-87-en:item:SN870556"
         ],
@@ -14780,7 +14780,7 @@
       {
         "level": 2,
         "demand": "Supply reflected or translated coordinates",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Apply the stated center, axis or vector to every vertex",
         "selectors": [
           "=/course-87-en:item:SN870555",
           "=/course-87-en:item:SN870554"
@@ -14793,7 +14793,7 @@
       {
         "level": 3,
         "demand": "Draw the transformed coordinate figure",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Apply the stated center, axis or vector to every vertex",
         "selectors": [
           "=/course-87-en:authored:MCADA-80.1",
           "=/course-87-en:authored:MCADA-80.2",
@@ -14828,7 +14828,7 @@
       {
         "level": 1,
         "demand": "Judge statements about similarity or congruence",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Compare corresponding angles and side ratios; congruence additionally preserves size",
         "selectors": [
           "=/course-87-en:item:SAX70303",
           "=/course-87-en:authored:MCADA-18.6"
@@ -14841,7 +14841,7 @@
       {
         "level": 2,
         "demand": "Justify similarity or congruence from corresponding parts",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Compare corresponding angles and side ratios; congruence additionally preserves size",
         "selectors": [
           "=/course-87-en:authored:MCADA-18.4",
           "=/course-87-en:authored:MCADA-18.5"
@@ -14867,7 +14867,7 @@
       {
         "level": 1,
         "demand": "Identify diameter or name radius diameter chord and arc",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distinguish center-to-circle radii, chords, diameters, arcs and angle vertices",
         "selectors": [
           "=/course-1-en:bank:C1_Section03:item:C1_S03_00079",
           "=/course-87-en:authored:MCADA-INV2.5"
@@ -14880,7 +14880,7 @@
       {
         "level": 2,
         "demand": "Draw and label circle parts including major arcs and inscribed angles",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distinguish center-to-circle radii, chords, diameters, arcs and angle vertices",
         "selectors": [
           "=/algebra-2-en:authored:M6-2-4",
           "=/algebra-2-en:authored:M6-56-1"
@@ -14901,7 +14901,7 @@
       {
         "level": 1,
         "demand": "Recognize an angle-copy or angle-bisector construction step",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Equal compass radii transfer distances; keep the construction arcs",
         "selectors": [
           "=/algebra-2-en:node:860",
           "=/algebra-half-en:node:766"
@@ -14914,7 +14914,7 @@
       {
         "level": 2,
         "demand": "Carry out and justify the full corresponding construction",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Equal compass radii transfer distances; keep the construction arcs",
         "selectors": [
           "=/course-1-en:authored:M2-5c4fa8e00372-2",
           "=/course-87-en:authored:COURSE118.1",
@@ -14939,7 +14939,7 @@
       {
         "level": 1,
         "demand": "Name the permitted classical construction tools",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use a compass for circles and distance transfer and an unmarked straightedge for lines",
         "selectors": [
           "=/algebra-half-en:authored:M3-201-6"
         ],
@@ -14950,7 +14950,7 @@
       {
         "level": 2,
         "demand": "Construct concentric circles with measured radii",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use a compass for circles and distance transfer and an unmarked straightedge for lines",
         "selectors": [
           "=/course-87-en:authored:MCADA-INV2.1"
         ],
@@ -14961,7 +14961,7 @@
       {
         "level": 3,
         "demand": "Construct a regular hexagon and its alternate-vertex triangle",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use a compass for circles and distance transfer and an unmarked straightedge for lines",
         "selectors": [
           "=/course-87-en:authored:MCADA-INV2.2"
         ],
@@ -14980,7 +14980,7 @@
       {
         "level": 1,
         "demand": "Construct equal circle sectors by the required compass method",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use equal-radius arcs and justify equal central angles",
         "selectors": [
           "=/course-87-en:authored:MCADA-INV2.3"
         ],
@@ -14991,7 +14991,7 @@
       {
         "level": 2,
         "demand": "Construct an inscribed hexagon and triangle",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use equal-radius arcs and justify equal central angles",
         "selectors": [
           "=/course-87-en:authored:MCADA-INV2.2"
         ],
@@ -15010,7 +15010,7 @@
       {
         "level": 1,
         "demand": "Measure and compare central and inscribed angles",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Compare angles intercepting the same arc; measurements do not prove a general theorem",
         "selectors": [
           "=/course-87-en:authored:MCADA-INV2.4"
         ],
@@ -15021,7 +15021,7 @@
       {
         "level": 2,
         "demand": "Calculate using the central-inscribed relationship",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Compare angles intercepting the same arc; measurements do not prove a general theorem",
         "selectors": [
           "=/algebra-half-en:authored:M3-204-3"
         ],
@@ -15043,7 +15043,7 @@
       {
         "level": 1,
         "demand": "Identify SAS and CPCTC in a supplied diagram",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Match triangle vertices and justify a congruence criterion before using corresponding parts",
         "selectors": [
           "=/algebra-2-en:node:873"
         ],
@@ -15054,7 +15054,7 @@
       {
         "level": 2,
         "demand": "Write a statement-reason triangle-congruence proof",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Match triangle vertices and justify a congruence criterion before using corresponding parts",
         "selectors": [
           "=/algebra-2-en:authored:M5-proof-congruence"
         ],
@@ -15073,7 +15073,7 @@
       {
         "level": 1,
         "demand": "Judge sufficient and insufficient parallelogram conditions",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Separate sufficient conditions from examples and test the converse with a counterexample",
         "selectors": [
           "=/algebra-2-en:node:340"
         ],
@@ -15084,7 +15084,7 @@
       {
         "level": 2,
         "demand": "Explain deduction and a failed converse",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Separate sufficient conditions from examples and test the converse with a counterexample",
         "selectors": [
           "=/algebra-2-en:authored:M6-30-1"
         ],
@@ -15103,7 +15103,7 @@
       {
         "level": 1,
         "demand": "Name solid types",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distinguish bases, faces, edges, vertices and hidden edges",
         "selectors": [
           "=/course-87-en:authored:MCADA-67.1"
         ],
@@ -15117,7 +15117,7 @@
       {
         "level": 2,
         "demand": "Count prism or pyramid faces edges and vertices",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distinguish bases, faces, edges, vertices and hidden edges",
         "selectors": [
           "=/course-87-en:authored:MCADA-67.2"
         ],
@@ -15131,7 +15131,7 @@
       {
         "level": 3,
         "demand": "Draw a prism with correct hidden edges and labeled bases",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distinguish bases, faces, edges, vertices and hidden edges",
         "selectors": [
           "=/course-87-en:authored:MCADA-67.3"
         ],
@@ -15151,7 +15151,7 @@
       {
         "level": 1,
         "demand": "Recover side from perfect-square area or regular perimeter",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Equal sides connect perimeter to side length; area is the square of the side",
         "selectors": [
           "=/course-87-en:authored:MCADA-20.7",
           "=/course-87-en:authored:MCADA-19.2"
@@ -15165,7 +15165,7 @@
       {
         "level": 2,
         "demand": "Recover area from square perimeter",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Equal sides connect perimeter to side length; area is the square of the side",
         "selectors": [
           "=/course-87-en:authored:MCADA-20.11"
         ],
@@ -15184,7 +15184,7 @@
       {
         "level": 1,
         "demand": "Calculate a missing right-triangle side",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Compare the largest-side square with the sum of the other two squares",
         "selectors": [
           "=/course-87-en:authored:MCADA-99.1"
         ],
@@ -15198,7 +15198,7 @@
       {
         "level": 2,
         "demand": "Test whether given lengths form a right triangle",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Compare the largest-side square with the sum of the other two squares",
         "selectors": [
           "=/course-87-en:authored:COURSE112.2"
         ],
@@ -15218,7 +15218,7 @@
       {
         "level": 1,
         "demand": "Read a sixteenth-inch ruler",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Read from zero, count subdivisions and reduce fractional lengths",
         "selectors": [
           "=/algebra-half-en:node:691"
         ],
@@ -15229,7 +15229,7 @@
       {
         "level": 2,
         "demand": "Read and physically draw the sixteenth-inch length",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Read from zero, count subdivisions and reduce fractional lengths",
         "selectors": [
           "=/course-87-en:authored:MCADA-8.5"
         ],
@@ -15249,7 +15249,7 @@
       {
         "level": 1,
         "demand": "Read a fractional inch coordinate from zero",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "A segment length is the difference of its endpoint readings",
         "selectors": [
           "=/algebra-half-en:node:691"
         ],
@@ -15260,7 +15260,7 @@
       {
         "level": 2,
         "demand": "Read and subtract two ruler segment lengths including a nonzero start",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "A segment length is the difference of its endpoint readings",
         "selectors": [
           "=/course-87-en:item:SX870048"
         ],
@@ -15279,7 +15279,7 @@
       {
         "level": 1,
         "demand": "Read a tenths-centimeter ruler",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Ten millimeters make one centimeter; preserve the ruler graduation",
         "selectors": [
           "=/algebra-half-en:node:694"
         ],
@@ -15290,7 +15290,7 @@
       {
         "level": 2,
         "demand": "Read and draw metric lengths",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Ten millimeters make one centimeter; preserve the ruler graduation",
         "selectors": [
           "=/intermediate-4-en:authored:M2-7e1f14941402-2",
           "=/intermediate-4-en:authored:M2-ba9deaf822ca-1",
@@ -15313,7 +15313,7 @@
       {
         "level": 1,
         "demand": "Infer a scale interval or smallest graduation",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Equal intervals represent equal changes; distinguish graduation from accuracy",
         "selectors": [
           "=/course-1-en:authored:M2-5609fb540126-2",
           "=/course-87-en:authored:MCADA-8.6"
@@ -15326,7 +15326,7 @@
       {
         "level": 2,
         "demand": "Read a thermometer scale",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Equal intervals represent equal changes; distinguish graduation from accuracy",
         "selectors": [
           "=/intermediate-4-en:authored:M2-5c0fe4f1443f-1"
         ],
@@ -15345,7 +15345,7 @@
       {
         "level": 1,
         "demand": "Read a Celsius thermometer",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use the given Celsius-Fahrenheit formula before comparing unlike scales",
         "selectors": [
           "=/intermediate-4-en:authored:M2-5c0fe4f1443f-1"
         ],
@@ -15356,7 +15356,7 @@
       {
         "level": 2,
         "demand": "Convert and compare Celsius and Fahrenheit values",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use the given Celsius-Fahrenheit formula before comparing unlike scales",
         "selectors": [
           "=/course-87-en:authored:MCADA-32.4"
         ],
@@ -15375,7 +15375,7 @@
       {
         "level": 1,
         "demand": "Read the correctly aligned protractor scale",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Align the vertex and choose the scale whose zero is on the starting ray",
         "selectors": [
           "=/course-87-en:item:SN870075",
           "=/course-87-en:authored:MCADA-17.1"
@@ -15390,7 +15390,7 @@
       {
         "level": 2,
         "demand": "Read and physically construct the requested angle",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Align the vertex and choose the scale whose zero is on the starting ray",
         "selectors": [
           "=/course-87-en:authored:MCADA-17.3"
         ],
@@ -15410,7 +15410,7 @@
       {
         "level": 1,
         "demand": "Read an exact supplied protractor",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use familiar angle benchmarks and follow the requested measurement or estimation method",
         "selectors": [
           "=/course-87-en:item:SN870075"
         ],
@@ -15421,7 +15421,7 @@
       {
         "level": 2,
         "demand": "Estimate without an instrument and justify benchmarks",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use familiar angle benchmarks and follow the requested measurement or estimation method",
         "selectors": [
           "=/course-87-en:authored:MCADA-96.1"
         ],
@@ -15440,7 +15440,7 @@
       {
         "level": 1,
         "demand": "Name the intermediate month without wraparound",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Months follow a repeating twelve-month cycle",
         "selectors": [
           "=/intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054"
         ],
@@ -15451,7 +15451,7 @@
       {
         "level": 2,
         "demand": "Name previous or next months including year wraparound",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Months follow a repeating twelve-month cycle",
         "selectors": [
           "=/intermediate-4-en:authored:M2-3f5b0aee3781-2"
         ],
@@ -15470,7 +15470,7 @@
       {
         "level": 1,
         "demand": "Interpret cyclic month order",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use actual month lengths, leap-year February and the stated elapsed-day convention",
         "selectors": [
           "=/intermediate-4-en:authored:M2-3f5b0aee3781-2"
         ],
@@ -15481,7 +15481,7 @@
       {
         "level": 2,
         "demand": "Calculate within-month and across-boundary dates",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Use actual month lengths, leap-year February and the stated elapsed-day convention",
         "selectors": [
           "=/intermediate-4-en:authored:M2-dbd5635b2478-1"
         ],
@@ -15500,7 +15500,7 @@
       {
         "level": 1,
         "demand": "Select the missing quantity needed for an answer",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Identify every quantity required and do not invent missing information",
         "selectors": [
           "=/course-87-en:item:SN870539"
         ],
@@ -15511,7 +15511,7 @@
       {
         "level": 2,
         "demand": "Explain sufficiency or insufficiency and calculate when possible",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Identify every quantity required and do not invent missing information",
         "selectors": [
           "=/intermediate-4-en:authored:M2-763509187d44-1",
           "=/course-87-en:authored:MCADA-79.1"
@@ -15533,7 +15533,7 @@
       {
         "level": 1,
         "demand": "Choose a reasonable everyday quantity",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Choose appropriate units and round dimensions before using the stated formula",
         "selectors": [
           "=/course-87-en:authored:MCADA-16.2"
         ],
@@ -15544,7 +15544,7 @@
       {
         "level": 2,
         "demand": "Estimate perimeter area or volume after rounding dimensions",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Choose appropriate units and round dimensions before using the stated formula",
         "selectors": [
           "=/intermediate-4-en:authored:M2-9423110916cd-1"
         ],
@@ -15563,7 +15563,7 @@
       {
         "level": 1,
         "demand": "Choose the nearest zero half or one benchmark",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Compare distances to the specified reference values",
         "selectors": [
           "=/algebra-half-en:authored:M3-55-2"
         ],
@@ -15574,7 +15574,7 @@
       {
         "level": 2,
         "demand": "Round a mixed number to its nearest whole",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Compare distances to the specified reference values",
         "selectors": [
           "=/course-87-en:authored:MCADA-29.2"
         ],
@@ -15593,7 +15593,7 @@
       {
         "level": 1,
         "demand": "Convert a fraction of a revolution to degrees",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "One complete turn is 360 degrees and one whole is 100 percent",
         "selectors": [
           "=/intermediate-4-en:authored:M2-9a770361a5f0-1",
           "=/course-1-en:authored:M2-8e79c4526873-1"
@@ -15606,7 +15606,7 @@
       {
         "level": 2,
         "demand": "Give both circle percentage and angle from a proper fraction",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "One complete turn is 360 degrees and one whole is 100 percent",
         "selectors": [
           "=/course-87-en:authored:MCADA-17.4"
         ],
@@ -15625,7 +15625,7 @@
       {
         "level": 1,
         "demand": "Distinguish zero quotient and undefined division",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "A denominator cannot be zero, including after a factor is canceled",
         "selectors": [
           "=/course-87-en:authored:COURSE119.1"
         ],
@@ -15637,7 +15637,7 @@
       {
         "level": 2,
         "demand": "Find the excluded input of a shifted linear denominator",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "A denominator cannot be zero, including after a factor is canceled",
         "selectors": [
           "=/course-87-en:authored:COURSE119.2"
         ],
@@ -15656,7 +15656,7 @@
       {
         "level": 1,
         "demand": "Interpret a shifted linear denominator exclusion",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Retain original denominator exclusions and principal-root radicand restrictions",
         "selectors": [
           "=/course-87-en:authored:COURSE119.2"
         ],
@@ -15667,7 +15667,7 @@
       {
         "level": 2,
         "demand": "Explain a canceled rational or principal-root domain",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Retain original denominator exclusions and principal-root radicand restrictions",
         "selectors": [
           "=/algebra-1-en:authored:M4-64-1"
         ],
@@ -15686,7 +15686,7 @@
       {
         "level": 1,
         "demand": "Model simultaneous opposite-direction travel",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distance equals rate times the elapsed time for each traveler",
         "selectors": [
           "=/algebra-1-en:authored:M4-94-1"
         ],
@@ -15698,7 +15698,7 @@
       {
         "level": 2,
         "demand": "Model opposite-direction travel with delayed departure",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Distance equals rate times the elapsed time for each traveler",
         "selectors": [
           "=/algebra-1-en:authored:M4-94-2"
         ],
@@ -15718,7 +15718,7 @@
       {
         "level": 1,
         "demand": "Model speed multiples on an equal-distance round trip",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Express each travel time separately and preserve the given speed relationship",
         "selectors": [
           "=/algebra-2-en:authored:M6-74-2",
           "=/algebra-1-en:authored:M4-92-1"
@@ -15732,7 +15732,7 @@
       {
         "level": 2,
         "demand": "Model unequal distances and a departure-time relation",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Express each travel time separately and preserve the given speed relationship",
         "selectors": [
           "=/algebra-2-en:authored:M6-74-1",
           "=/algebra-1-en:authored:M4-99-1"
@@ -15754,7 +15754,7 @@
       {
         "level": 1,
         "demand": "Calculate a constant-temperature pressure or volume",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "At fixed temperature pressure times volume is constant; round only the final result",
         "selectors": [
           "=/algebra-2-en:authored:M5-gas-pressure",
           "=/algebra-2-en:authored:M5-gas-volume"
@@ -15767,7 +15767,7 @@
       {
         "level": 2,
         "demand": "Report the result with specified significant figures in scientific notation",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "At fixed temperature pressure times volume is constant; round only the final result",
         "selectors": [
           "=/algebra-2-en:authored:M6-57-2",
           "=/algebra-2-en:authored:M6-57-3"
@@ -15788,7 +15788,7 @@
       {
         "level": 1,
         "demand": "Isolate pressure in the ideal gas equation",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Rearrange PV equals nRT and use units compatible with the supplied gas constant",
         "selectors": [
           "=/algebra-2-en:authored:M5-gas-ideal"
         ],
@@ -15799,7 +15799,7 @@
       {
         "level": 2,
         "demand": "Isolate moles or volume with consistent units",
-        "prerequisites": "See the per-provider source contract in chunk3-review.json",
+        "prerequisites": "Rearrange PV equals nRT and use units compatible with the supplied gas constant",
         "selectors": [
           "=/algebra-2-en:authored:M6-88-2",
           "=/algebra-2-en:authored:M6-88-3"
