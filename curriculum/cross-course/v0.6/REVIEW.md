@@ -1,8 +1,8 @@
 # Comparison review v0.6 — Chunk 4
 
-Implementation candidate, awaiting verification. Engine 0.32.0-rc.2, map 6.0.1; Studio target 0.34.0-rc.2. No release or deployment.
+Complete and verified 2026-10-09. Engine 0.32.0-rc.2, map 6.0.1; Studio 0.34.0-rc.2. No release or deployment.
 
-All 749 frozen directional-gap entries (590 canonical providers) have evidence-reconciliation records. Eleven nominated prerequisite bridges add 22 related-only endpoint groups. Candidate coverage rises from 1,435 to 1,474 entries with cross-course directions; 39 frozen entries gain a direction. Explicit easier/harder coverage remains 657. All 2,184 entries and 66 topics remain; 2,158 have paths and 26 retain their specific reviewed topic-only boundaries.
+All 749 frozen directional-gap entries (590 canonical providers) have evidence-reconciliation records. Eleven nominated prerequisite bridges add 22 related-only endpoint groups. Verified coverage rises from 1,435 to 1,474 entries with cross-course directions; 39 frozen entries gain a direction. Explicit easier/harder coverage remains 657. All 2,184 entries and 66 topics remain; 2,158 have paths and 26 retain their specific reviewed topic-only boundaries.
 
 The 710 reviewed residuals consist of 454 related-only, 71 similar-demand, 138 with directions confined to their own course, 21 with only repeated-provider evidence across courses, and 26 reviewed topic-only entries. These are retained judgments, not compulsory ranking work. New evidence can reopen them.
 
@@ -10,4 +10,4 @@ The 710 reviewed residuals consist of 454 related-only, 71 similar-demand, 138 w
 
 New bridges connect numerical GCF to monomial factoring, binomial distribution to complex multiplication, integer powers to logarithm definitions, point-slope equations to parallel lines, circle area to cylinder volume, rectangle area to prism surface area and pyramid volume, numerical ratios to trigonometric ratios, the Pythagorean theorem to coordinate distance, prime factor methods to GCF, and numerical powers to the right-triangle converse. Each is prerequisite/extension, not measured difficulty. Endpoint groups stay related-only to preserve previously reviewed within-group differences.
 
-Original grades, lesson identities, teacher review, provider precedence and conservative conflicts remain. Mathematics generators and the comparison algorithm are unchanged. See the [change specification](../../../docs/change-specs/comparison-chunk4-v0.6.md). Final verification and continuation will be recorded after exact-source and exact-download checks.
+Original grades, lesson identities, teacher review, provider precedence and conservative conflicts remain. Mathematics generators and the comparison algorithm are unchanged. See the [change specification](../../../../docs/change-specs/comparison-chunk4-v0.6.md). Exact-source, exact-download, browser and Word/PDF checks passed. See [verification](../../../../docs/COMPARISON-CHUNK4-VERIFICATION.md) and [next scope](../../../../docs/RELATED-CONCEPTS-NEXT.md).

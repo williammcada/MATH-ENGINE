@@ -17,3 +17,7 @@ Preserve 2,184 working entries, 5,425 legacy previews, 331 coded Grade 5 outcome
 Save implementation before testing. Validate all 749 dispositions, evidence hashes, exact selectors, inverse symmetry, grade/order independence, every old directional pair and every new link. Compare all-entry generation with the retained baseline and confirm only the map and runtime version changed. Recompute directional coverage independently of membership.
 
 After Engine verification, vendor the canonical committed source, build and checkpoint the versioned HTML. Verify that exact download, all-entry browser/Node parity, representative new-link selection and mixed-bank add/remove/undo/replay. Check existing Studio/packet/GradeCam gates and representative Word/PDF output. Since no renderer or generator changes are planned, reuse prior visual evidence for unchanged rendering and inspect a representative new mixed packet. Record exact hashes, tests, limits and continuation in both repositories. Save reviewable GitHub branches/PRs; no Windows/physical-printer certification or hosted deployment claim.
+
+## Verified closeout — 2026-10-09
+
+Final versions: Engine 0.32.0-rc.2 / map 6.0.1 and Studio 0.34.0-rc.2. Eleven prerequisite bridges retained after removing the rc.1 same-course-only bridge. All 749 entries reconciled, 39 gained cross-course directions, 710 reviewed residuals. Technical verification is complete, including exact downloadable HTML and all representative Word/PDF pages. See ../COMPARISON-CHUNK4-VERIFICATION.md. No main merge or deployment.

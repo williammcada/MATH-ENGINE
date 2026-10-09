@@ -1,3 +1,9 @@
+## Current checkpoint — Chunk 4 verified (2026-10-09)
+
+Engine 0.32.0-rc.2 / Studio 0.34.0-rc.2: all 749 frozen entries reconciled, 39 new cross-course directional entries, 710 reviewed residuals. All 2,184 working entries and 331 Grade 5 codes preserved. Exact download, browser, generation and Word/PDF checks passed. Saved on review branches; no merge or deployment.
+
+See [verification](docs/COMPARISON-CHUNK4-VERIFICATION.md), [teacher handoff](docs/COMPARISON-CHUNK4-QUICKSTART.md) and [next related-concepts scope](docs/RELATED-CONCEPTS-NEXT.md). Next feature has not started. Earlier checkpoints below are historical.
+
 > Current checkpoint (2026-10-09): Comparison Chunk 3 complete and verified at documented scope. Engine 0.31.0-rc.2 / Studio 0.33.0-rc.2. All 295 scoped geometry/measurement/data/applied entries reviewed: 287 gained paths and eight remain explicitly reviewed topic-only. Overall: 2,158 path entries, 26 reviewed topic-only, zero unreviewed topic-only; 1,435 entries have cross-course directions, including 657 with easier/harder links. Next: Chunk 4, the frozen 749-entry directional-gap queue. Earlier checkpoints below are historical. No deployment performed.
 
 [Download Studio v0.33.0-rc.2](https://github.com/williammcada/test-and-practice-studio/blob/main/downloads/Test-and-Practice-Studio-v0.33.0-rc.2.html) · [Verification](docs/COMPARISON-CHUNK3-VERIFICATION.md) · [Quickstart](docs/COMPARISON-CHUNK3-QUICKSTART.md) · [Review and continuation](https://github.com/williammcada/MATH-ENGINE/blob/main/curriculum/cross-course/v0.5/REVIEW.md).

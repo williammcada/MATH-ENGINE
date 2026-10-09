@@ -1,24 +1,24 @@
 {
   "milestone": 7,
   "status": "complete at documented representative curriculum and reviewed-connection scope",
-  "stage": "Comparison Chunk 3 complete and verified",
-  "engineVersion": "0.31.0-rc.2",
-  "studioVersion": "0.33.0-rc.2",
+  "stage": "Comparison Chunk 4 complete and verified",
+  "engineVersion": "0.32.0-rc.2",
+  "studioVersion": "0.34.0-rc.2",
   "auditRepository": "williammcada/MATH-ENGINE",
-  "auditPath": "curriculum/cross-course/v0.5",
-  "nextMilestone": null,
+  "auditPath": "curriculum/cross-course/v0.6",
+  "nextMilestone": "Whole-curriculum related concepts finder",
   "nextMilestoneStarted": false,
   "futureCrossGradeFeature": "Implemented: canonical topic analysis, reviewed relationships, teacher preview and mixed-bank selection.",
-  "resume": "Chunks 1–3 complete. All 295 Chunk 3 entries reviewed: 287 gained paths; eight retained with explicit topic-only reasons. No unreviewed topic-only entries remain. Next: frozen Chunk 4 queue of 749 entries in v0.5/chunk4-scope.json (723 path-linked, 26 reviewed topic-only) lacking supported cross-course direction. Preserve 2184 entries, 331 Grade 5 coded outcomes, teacher review and prior downloads. Read COMPARISON-CHUNK3-VERIFICATION.md. No deployment performed.",
+  "resume": "Chunks 1–4 complete and verified. All 749 Chunk 4 entries reconciled; 39 gained directions; 710 reviewed residuals retain explicit dispositions. Next: RELATED-CONCEPTS-NEXT.md, not implemented. Preserve 2184 entries, all 331 Grade 5 codes and existing directions. Read COMPARISON-CHUNK4-VERIFICATION.md. Review branches only; no merge or deployment.",
   "comparisonExpansion": {
-    "reviewedPaths": 392,
+    "reviewedPaths": 414,
     "reviewedPathEntries": 2158,
     "topicOnlyEntries": 26,
     "reviewedTopicOnlyEntries": 26,
     "unreviewedTopicOnlyEntries": 0,
     "crossCourseDifficultyEntries": 657,
-    "crossCourseDirectionalEntries": 1435,
-    "withoutCrossCourseDirectionalRelation": 749
+    "crossCourseDirectionalEntries": 1474,
+    "withoutCrossCourseDirectionalRelation": 710
   },
   "schoolPlacement": "Confirmed: Intermediate 4 Grade 3; Course 1 Grade 4; 8/7 Grade 5. Algebra 1/2, Algebra 1 and Algebra 2 tracked, not grade-locked.",
   "comparisonChunks": [
@@ -46,18 +46,22 @@
     {
       "chunk": 4,
       "originalAlreadyPathLinkedGaps": 375,
-      "status": "pending; queue frozen after Chunk 3",
+      "status": "complete and verified",
       "currentAlreadyPathLinkedGaps": 723,
       "entries": 749,
       "reviewedTopicOnlyEntries": 26,
-      "scope": "curriculum/cross-course/v0.5/chunk4-scope.json"
+      "scope": "curriculum/cross-course/v0.5/chunk4-scope.json",
+      "reviewPath": "curriculum/cross-course/v0.6",
+      "gainedCrossCourseDirections": 39,
+      "reviewedResiduals": 710,
+      "newPrerequisiteLinks": 11
     }
   ],
   "delivery": {
-    "file": "downloads/Test-and-Practice-Studio-v0.33.0-rc.2.html",
-    "bytes": 4358687,
-    "sha256": "034104c14dc2dbd3135f4dfadff5c5e98ffaefee855fc7cc026d59670679ff3b",
-    "engineImplementationCommit": "4bcff91ead79967f08635fb86d62b637c7800dc1",
-    "studioImplementationCommit": "48a80bc85e306d827e6848e136f03f49763a69ca"
+    "file": "downloads/Test-and-Practice-Studio-v0.34.0-rc.2.html",
+    "bytes": 4462312,
+    "sha256": "3e692de1c05ce06f68545258daa1590483dd937f2e2dad93e12a7237038725d9",
+    "engineImplementationCommit": "78ac654252c808f825c1ca60409f0be215420674",
+    "studioImplementationCommit": "85fa017c61427b394887addac001ce60288e2ad4"
   }
 }

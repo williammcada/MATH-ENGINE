@@ -1,0 +1,66 @@
+{
+  "result": "passed",
+  "reviewDate": "2026-10-09",
+  "pdfPagesInspected": 15,
+  "wordPagesInspected": 11,
+  "renderers": [
+    "Chromium 153.0.8010.0",
+    "bundled LibreOffice via render_docx.py"
+  ],
+  "notes": "Every page inspected: readable diagrams, numbering and answers; no clipping; student output excludes answers. No Windows Word or physical-printer certification.",
+  "exports": [
+    {
+      "name": "A4-student",
+      "pdfSha256": "6bba94ad7e179b56666b020a8d6d78a36c773f72f4b2a016610d78205e20df22",
+      "docxSha256": "3910e2b0aa4cf0fad0b107e319da6ec037e0e94be47e16fa96c98c7e23c7de48",
+      "pdfPages": 6,
+      "wordPages": 4,
+      "inspectedImages": {
+        "pdf-A4-student/check-1.png": "8a5a7fabf990cc24fab778fb6a864bde2a61326c31f2aed9e48401124364ca14",
+        "pdf-A4-student/check-2.png": "80f0c157c7ab9a07fb6ea2be0a684a5e7e96ae7ab2d88c07d38e0bc4ded99123",
+        "pdf-A4-student/check-3.png": "771c0fdc434568760288051c7c5a521245fde46edaa14a5ad72a0e9bbf5f929f",
+        "pdf-A4-student/check-4.png": "fd2b4272f5eec50d20016503701ef139725794aa91d54d5a5d1a852b4f78d2a3",
+        "pdf-A4-student/check-5.png": "7edebfe80ad54196d4b4932d58a19516e2ecd20be2bc3d081e878251d859333d",
+        "pdf-A4-student/check-6.png": "04cc566fe54348aa974d40342b2c49b4f2592f447dd70eaa9364f1b2e2e76b43",
+        "word-A4-student/check-1.png": "408852a85082b26a66c204eee9f7750fec735d2443d54f973dd516792e7c0b2b",
+        "word-A4-student/check-2.png": "62331b6c76862b69c76b1cf6fa466ce191acceca545b24fd0373045956f1b97f",
+        "word-A4-student/check-3.png": "39534515a2ceba6fa6108744e176e5ddddd6e1d3de59e71a92270f5db5bae255",
+        "word-A4-student/check-4.png": "33d63a3d40f23b5cc2666b0044e854b1ac7e9752b5f4394bf6f3f92cd455d4d7"
+      }
+    },
+    {
+      "name": "Letter-key",
+      "pdfSha256": "b302591be972f07819635c906aa7a4f60a5ca7c1987e4251a008e11d6aec65ee",
+      "docxSha256": "49ac51ac954cc4a8788534956f6cb1ad595d1888fc3df5f2859e74f4f7a19a70",
+      "pdfPages": 5,
+      "wordPages": 4,
+      "inspectedImages": {
+        "pdf-Letter-key/check-1.png": "a98a7fdd1d52cdcaf2915a3887397bf48c6f6f40d7795bc85db1f8b079cd524d",
+        "pdf-Letter-key/check-2.png": "44fc5991c6cd841f29377336d8912015e2a8e3da80310677d7a729a9136c1359",
+        "pdf-Letter-key/check-3.png": "8e5db2a96bdf2b030cb782d4cdc2fec888b01775bd4a535676230fc1ab4c08f2",
+        "pdf-Letter-key/check-4.png": "4bbc437f27a9f4671b8e5704d487ad37fb42fa0de371fb0a973bc87259807b0b",
+        "pdf-Letter-key/check-5.png": "ebd86b6ede58abb72cf1f70d2529fd7aad863f76fcca1c653f7b7588b7d60079",
+        "word-Letter-key/check-1.png": "2316c662b43bf339303120e528e528d3a8c41604076f6f1b2818793e4123550b",
+        "word-Letter-key/check-2.png": "b9df36858f9c600e00f89e8b07f32f349746e96938befd081c89f5f5e252b038",
+        "word-Letter-key/check-3.png": "4db78f5bfb4b6ba773a99533eb7687cc2cfb33602a2941e8b97330e45eedad2a",
+        "word-Letter-key/check-4.png": "674fb54cf83c9c3c80260e11b33e5e54f41edd77b40855e19806f28be6f680db"
+      }
+    },
+    {
+      "name": "Letter-key-compact",
+      "pdfSha256": "787680c1f2eb75be76e7305bf1b5798c086dbd714ad56927a0603c2e83afe99b",
+      "docxSha256": "285cefab1b40f06992f5f262fa7b46baa73f627eccd0a0bc1c10d209fb0bf5a2",
+      "pdfPages": 4,
+      "wordPages": 3,
+      "inspectedImages": {
+        "pdf-Letter-key-compact/check-1.png": "199967f9f6ab6b62eb732ddf4ef23d2f77c5a43a6017810d284860473dc0b3cd",
+        "pdf-Letter-key-compact/check-2.png": "145be1b0739c4338a9f92a6abea360791e3c578df5d8401737cb2f6e8fbc863a",
+        "pdf-Letter-key-compact/check-3.png": "2f6e4409c148327bffb06e0c1d81ff3cc66c80bd37422b07ea397a0689fde116",
+        "pdf-Letter-key-compact/check-4.png": "fb6b373e7a8e33cda978900e38634d5d520a34459a5619332cc6dab08d573480",
+        "word-Letter-key-compact/check-1.png": "2a9e070fa4d1620eb3a59c525108009dacd5a46726034f0736dbed4ff05ff901",
+        "word-Letter-key-compact/check-2.png": "53a1eb5bab9a994274f0d30d7d318ebb7568b4f1c0e82f71a88639f996e3fe11",
+        "word-Letter-key-compact/check-3.png": "09b2b9314d1593c4001d1096a336faa755d6fdbdcc1e32ae380bcdf317655e36"
+      }
+    }
+  ]
+}
