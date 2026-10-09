@@ -1,0 +1,9 @@
+{
+  "result": "passed",
+  "checks": [
+    "studio-core.cjs: draft validation and missing-object markers",
+    "phase3-core.cjs: 331 mappings, zero/missing/scales, invalid/duplicate input, caps, replay and source boundaries",
+    "phase3-import.cjs: actual XLSX, leading-zero IDs, formula rejection, escaped output and local-only requests"
+  ],
+  "environment": "Chromium 153.0.8010.0 via explicit executable path; default browser cache unavailable on initial attempt; explicit-path run passed"
+}

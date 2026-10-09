@@ -1,0 +1,28 @@
+{
+  "result": "passed",
+  "version": "0.32.0-rc.2",
+  "selected": 12,
+  "banks": 6,
+  "exports": [
+    {
+      "name": "A4-student",
+      "pages": 8,
+      "items": 12,
+      "columns": 1
+    },
+    {
+      "name": "Letter-key",
+      "pages": 8,
+      "items": 12,
+      "columns": 1
+    },
+    {
+      "name": "Letter-key-compact",
+      "pages": 3,
+      "items": 9,
+      "columns": 2
+    }
+  ],
+  "browser": "153.0.8010.0",
+  "checks": "Exact download; perimeter upward/downward; confirmed Grade 3/4/5 and tracked-course labels; newly reviewed missing-addend, square-equation, rational-domain, rational-inequality, log-equation, complex-quadratic, reciprocal-graph and linear-inequality tasks; new affine path upward/downward; preview without changing comparison origin; mixed-bank add/remove/undo; empty/unranked filters; shared-provider warning; draft download; packet/session replay; narrow viewport; actual Word/PDF exports"
+}
