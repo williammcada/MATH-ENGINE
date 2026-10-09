@@ -1,4 +1,6 @@
-> Current checkpoint (2026-10-09): Milestone 2 authorized by “Complete milestone 2” and completed. Intermediate 4: 260 working entries; Course 1: 277; 8/7: 502 retained. Engine 0.22.0-rc.2 / Studio 0.24.0-rc.2. See docs/MILESTONE2-VERIFICATION.md (or MILESTONE2-VERIFICATION.md from this docs folder). Next: Milestone 3, Algebra 1/2, not started. Earlier status sections below are historical.
+> Current checkpoint (2026-10-09): Milestone 3 complete at documented representative scope. Algebra 1/2: 378 working entries (+306), Lessons 1–123 and Topics A–J; all banks: 1,597. Engine 0.23.0-rc.4 / Studio 0.25.0-rc.4. Next: Milestone 4, Algebra 1, not started. Earlier checkpoint sections below are historical.
+
+[Download Studio v0.25.0-rc.4](https://github.com/williammcada/test-and-practice-studio/blob/main/downloads/Test-and-Practice-Studio-v0.25.0-rc.4.html) · [Verification](https://github.com/williammcada/MATH-ENGINE/blob/main/docs/MILESTONE3-VERIFICATION.md) · [Quickstart](https://github.com/williammcada/test-and-practice-studio/blob/main/docs/MILESTONE3-QUICKSTART.md).
 
 # Remaining curricula — Milestone 1 audit complete
 
