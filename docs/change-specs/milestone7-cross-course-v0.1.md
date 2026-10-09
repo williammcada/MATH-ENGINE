@@ -25,3 +25,7 @@ This is teacher-directed curriculum navigation, not psychometric calibration, au
 ## Perimeter source finding
 
 The G5 perimeter family generates triangles, pentagons and L-shaped polygons; it has no explicit irregular quadrilateral variant. Add one original G5 irregular-quadrilateral task at Lesson 19 and one Course 1 binding to the existing rectangle provider, so the requested rectangle-to-G5-quadrilateral path is concrete. Both are manual-selection tasks with no new standards codes. Total becomes 2,184; existing 2,182 entries are unchanged. Verify the new quadrilateral by independent side-sum and polygon-geometry checks.
+
+## Verified delivery
+
+Completed as Engine 0.27.0-rc.2 / Studio 0.29.0-rc.2. Visual review found a clipped perimeter side label in rc.1; the corrected diagram passed final Word/PDF review and label-bounds checks. See ../MILESTONE7-VERIFICATION.md and ../milestone7-verification.json.

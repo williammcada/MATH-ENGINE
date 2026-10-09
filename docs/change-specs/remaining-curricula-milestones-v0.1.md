@@ -27,3 +27,7 @@ Canonical audit: [REVIEW.md](https://github.com/williammcada/MATH-ENGINE/blob/ma
 One milestone authorization includes implementation, internal checkpoint saves, correction and verification, and a final verified checkpoint. No recurring proceed prompts for internal batches. A real blocking source decision or execution limit gets an explicit checkpoint and precise resume location. Runtime mathematics stays in Engine; Studio consumes pinned modules. GradeCam remains Grade 5 only. Preserve all 2,182 current entries and completed 8/7 behavior. New HTML bytes require a new version. Release and deployment are separate from implementation verification.
 
 Milestone completion requires demand-level coverage, not a target number of ports. Lexical candidate matches and identical source prompts never certify semantic equivalence. No obligation to recreate every repetitive publisher item, and no silent omission of distinct mathematical actions, methods, representations or source ambiguities.
+
+## Completion checkpoint 2026-10-09
+
+Milestones 1–7 are complete at their recorded representative curriculum and reviewed-connection scope. Current runtime: Engine 0.27.0-rc.2 / Studio 0.29.0-rc.2. See ../MILESTONE7-VERIFICATION.md for final all-bank counts, relationship limits, QA and optional follow-up. No next milestone is queued.

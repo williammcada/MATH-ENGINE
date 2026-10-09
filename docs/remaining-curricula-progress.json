@@ -1,12 +1,13 @@
 {
-  "milestone": 6,
-  "status": "complete",
+  "milestone": 7,
+  "status": "complete at documented representative curriculum and reviewed-connection scope",
   "stage": "verified implementation checkpoint",
+  "engineVersion": "0.27.0-rc.2",
+  "studioVersion": "0.29.0-rc.2",
   "auditRepository": "williammcada/MATH-ENGINE",
-  "auditPath": "curriculum/remaining-courses/milestone6-v0.1",
-  "nextMilestone": 7,
-  "nextMilestoneTitle": "Cross-course verification, deduplication and cross-grade connections",
+  "auditPath": "curriculum/cross-course/v0.1",
+  "nextMilestone": null,
   "nextMilestoneStarted": false,
-  "resume": "Read MILESTONE6-VERIFICATION.md, M6 coverage/source ledger and cross-grade-connections-v0.1.md. Preserve all 2,182 working entries and 331 Grade 5 mappings. Analyze shared concepts and semantic overlap across all completed banks; implement teacher-directed easier/harder suggestions with explanations, preserving bank identity and Grade 5-only GradeCam targeting. Finish consolidated QA and delivery.",
-  "futureCrossGradeFeature": "Milestone 7: systematic cross-grade connections and teacher-directed easier/harder suggestions; planned, not implemented."
+  "futureCrossGradeFeature": "Implemented: canonical topic analysis, reviewed relationships, teacher preview and mixed-bank selection.",
+  "resume": "Milestones 1\u20137 are complete at their recorded scope. Read MILESTONE7-VERIFICATION.md and MILESTONE7-QUICKSTART.md. Preserve all 2184 working entries, 331 Grade 5 mappings, and prior downloads. Future optional work: owner-supplied school-grade labels for five courses; extend reviewed paths from the 1720 related-only entries; teacher acceptance on intended Word/browser/printer; hosted deployment only when requested."
 }

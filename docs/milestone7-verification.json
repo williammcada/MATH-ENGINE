@@ -1,0 +1,125 @@
+{
+  "milestone": 7,
+  "status": "complete at documented reviewed-connection scope",
+  "date": "2026-10-09",
+  "stage": "verified implementation checkpoint; downloadable release candidate; not deployed",
+  "handbookRevision": "fd4330863f4cc0812180fbf1de122970a42c7885",
+  "baselines": {
+    "engine": "d27304d3f7efeb3cdbc9fc70b20fad8182534078",
+    "studio": "fd3a162865d67c84f4a365dca62058e53712feda"
+  },
+  "testedImplementation": {
+    "engine": "6ed7f95e640a3d23e9f922c6e07c70f1789008bb",
+    "engineVersion": "0.27.0-rc.2",
+    "studio": "14c332f3127e4f17dcfedbcf44bc2f2476713168",
+    "studioVersion": "0.29.0-rc.2"
+  },
+  "counts": {
+    "entries": 2184,
+    "topics": 66,
+    "tracks": 74,
+    "reviewedProgressionEntries": 464,
+    "topicOnlyEntries": 1720,
+    "explicitReuseGroups": 381,
+    "explicitReuseEntries": 1026,
+    "banks": {
+      "algebra-1-en": {
+        "total": 309,
+        "progression": 79
+      },
+      "algebra-2-en": {
+        "total": 456,
+        "progression": 125
+      },
+      "algebra-half-en": {
+        "total": 378,
+        "progression": 76
+      },
+      "course-1-en": {
+        "total": 278,
+        "progression": 58
+      },
+      "course-87-en": {
+        "total": 503,
+        "progression": 85
+      },
+      "intermediate-4-en": {
+        "total": 260,
+        "progression": 41
+      }
+    },
+    "unrankedTopics": []
+  },
+  "checks": {
+    "retainedParityCases": 6546,
+    "retainedEntries": 2182,
+    "newMathCases": 256,
+    "relationshipComparisons": 3406,
+    "layoutCases": 19956,
+    "layoutFailures": 0,
+    "pdfPagesReviewed": 9,
+    "wordPagesReviewed": 6,
+    "coreRegression": "passed",
+    "gradeCamRegression": "passed; 331 mappings, Grade 5 only",
+    "browser": {
+      "result": "passed",
+      "version": "0.29.0-rc.2",
+      "selected": 12,
+      "banks": 6,
+      "exports": [
+        {
+          "name": "A4-student",
+          "pages": 5
+        },
+        {
+          "name": "Letter-key",
+          "pages": 4
+        }
+      ],
+      "browser": "153.0.8010.0",
+      "checks": "Exact download; perimeter upward/downward; confirmed Grade 5 label; preview without changing comparison origin; mixed-bank add/remove/undo; empty/unranked filters; shared-provider warning; draft download; packet/session replay; narrow viewport; actual Word/PDF exports"
+    },
+    "delivery": {
+      "result": "passed",
+      "version": "0.29.0-rc.2",
+      "exactDownloadMatches": 2184,
+      "comparisonNote": "SVG decimal coordinates normalized to 9 decimal places for browser/Node libm rounding; all other fields exact",
+      "labelBoundsChecked": 256,
+      "vendoredModules": 65,
+      "bytes": 3727661,
+      "sha256": "d7cd04e26872a904ac3266e69ef984bad983de3b71fe3c09b6fb78182b1f3f9c",
+      "priorDownloadUnchanged": true
+    }
+  },
+  "delivery": {
+    "path": "downloads/Test-and-Practice-Studio-v0.29.0-rc.2.html",
+    "bytes": 3727661,
+    "sha256": "d7cd04e26872a904ac3266e69ef984bad983de3b71fe3c09b6fb78182b1f3f9c"
+  },
+  "qaArtifacts": {
+    "A4-student.pdf": {
+      "bytes": 47270,
+      "sha256": "f1a3a8312ddd6b5e12d174680cab652c1fb87faebc339bd682070c489b7f6382"
+    },
+    "Letter-key.pdf": {
+      "bytes": 56167,
+      "sha256": "481455142a6f86d00233c06dea3867fce6d549dbb8b6d8e02d50806d590d74ec"
+    },
+    "A4-student.docx": {
+      "bytes": 49387,
+      "sha256": "378ea7d23c8053e4b344ee4fb1f032b5b033ba5b80cfb734aa3b225734b46ea3"
+    },
+    "Letter-key.docx": {
+      "bytes": 37851,
+      "sha256": "8e03e9f5723d69b47d58b7b217f4e156879800e3086b2ec4814cc6064d064740"
+    }
+  },
+  "limits": [
+    "All entries analyzed by topic; 464 entries in reviewed paths, including related-only and extension paths; 1720 have no validated pairwise difficulty ordering.",
+    "Instructional demand judgments, not psychometric difficulty, student placement, or exhaustive variant ranking.",
+    "Original representative curriculum coverage, not complete publisher reconstruction; fullOutcomeVerified and exactLegacyReproduction remain false.",
+    "Only 8/7 has confirmed school Grade 5 assignment; other school grades remain unassigned.",
+    "Proofs, constructions, graphing and symbolic methods retain teacher review.",
+    "No native Windows Word, physical iPad or printer certification; no hosted deployment."
+  ]
+}

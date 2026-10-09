@@ -1,6 +1,6 @@
 # Cross-grade connections and differentiation — feature note v0.1
 
-Requested by Will on 2026-10-09. Status: recorded future requirement; analysis and implementation have not started. Schedule at the end of the curriculum-bank project, within Milestone 7, after the remaining banks are completed.
+Requested by Will on 2026-10-09. Status: implemented and verified in Milestone 7, Engine 0.27.0-rc.2 / Studio 0.29.0-rc.2. See ../MILESTONE7-VERIFICATION.md. The original requirement and baseline follow for traceability.
 
 ## Goal
 
@@ -22,7 +22,7 @@ Math Engine owns the reusable concept links, task relationships and recommendati
 
 The final milestone should produce a reviewed cross-bank connection map, document topics with no suitable connections or unresolved links, and verify upward and downward selection through worksheet/key export. Include the perimeter example plus representative topics from across the banks; do not claim comprehensive analysis from isolated demonstrations.
 
-This is a future teacher-directed feature. It does not expand the current Grade 5-only GradeCam targeting workflow or imply automated student placement. A detailed implementation specification will be prepared when this final milestone is undertaken.
+This is a teacher-directed feature. It does not expand the current Grade 5-only GradeCam targeting workflow or imply automated student placement. The implementation specification is milestone7-cross-course-v0.1.md.
 
 ## Record baseline
 
