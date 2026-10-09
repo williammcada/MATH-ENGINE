@@ -1,0 +1,38 @@
+{
+  "result": "passed",
+  "environment": [
+    "Chromium 153.0.8010.0",
+    "bundled LibreOffice via render_docx.py"
+  ],
+  "pdfPagesInspected": 4,
+  "wordPagesInspected": 4,
+  "interfaceViews": [
+    "1440px desktop concept finder",
+    "390px narrow viewport and legible detail"
+  ],
+  "notes": "All representative student/key pages inspected; no clipped diagram labels, missing glyphs or overlapping text. Student pages exclude answers. Existing renderer unchanged. Physical iPad, Windows Word and physical printer not tested.",
+  "hashes": {
+    "desktop.png": "5a6679ec66af355fe3dc12bb00d7cfd613b0ccf49857f4b92c8b1003f9f5c9ee",
+    "key-page-1.png": "bdec2d9d68919939f4df8adb15ad086f13ec3792c3825463882084172465ebb3",
+    "key-page-2.png": "4a3c929b9aa3d1bafd607d028252e873f6c8e9f8a0bf6f51fdc1270255821657",
+    "key.docx": "b03a512b3029365c35d8ea60668ad019043566ce60093cde2e1806b23ab4d8fe",
+    "key.pdf": "bf3066f10337b7df84a6d2fb64df7e611bd2ae31de7546a61dbf27cdab55bc46",
+    "mobile-detail.png": "2c62532a7fd251bb77a5ab828f55cb41ac1d3b69da6dc3250193549dd9db7fb2",
+    "mobile.png": "711a9f9ed22af84997e2a31112f0df4f534645665a17a2459bfe1bb351deb526",
+    "student-page-1.png": "a3189bc0710c5b457dae13a4d826271d312245ec5b36987fc9a28984dad21d18",
+    "student-page-2.png": "8a6ae42e2c074c99bfd218aec5531399e153d382d8c1521866c4642c8762427d",
+    "student.docx": "39bc828960afe7bd9770b0a461efb4332fbcfb244395d25a534934df4fd88c8c",
+    "student.pdf": "ea15ca348dda84d8db9335c0011dc543a7934bf7a1e94a0b4e23e5f1dad6d39c",
+    "word-key/key.pdf": "cf3de2261f3bca1428e64f63512fcfacbf5c961750e5c3ab6e75d7ecc70522b7",
+    "word-key/page-1.png": "9a9d769b4862a8f8c29fefde11ec8dcc5167750a339d7fa85d52a7e1bc53bc38",
+    "word-key/page-2.png": "f7461f719892a16c8e94691ff5db121ff1cd7ddf8a2214afd98a930408a47254",
+    "word-student/page-1.png": "14c06cb3f70fbeb03a233eb4a8263574221ac8862c5e2ae94ee317e521d3ee0e",
+    "word-student/page-2.png": "8fbbbe8f6fbcb2042cb5be201986b5bb698db37b12093f697e0e2e6cf09fac99",
+    "word-student/student.pdf": "e542f7c1560fd5d1527cc0ff455346debf6596171ba2e5fb96180c0adf6e25ba"
+  },
+  "docxStructure": {
+    "questionsPerExport": 6,
+    "studentAnswers": 0,
+    "keyAnswers": 6
+  }
+}

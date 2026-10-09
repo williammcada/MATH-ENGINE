@@ -25,3 +25,7 @@ Retain preview origin, use-as-starting-task, add/remove/undo and existing export
 ## Verification and checkpoint
 
 Preserve design, implementation and exact verified candidates on GitHub review branches, without default-branch merge or deployment. Audit every entry/provider and all six course counts; no orphan concept/edge/reference; symmetric discovery, correct course scope, complete pagination and repeated-provider grouping. Regression-check prior map bytes, catalog, code mappings and generation parity against Chunk 4. Test GCF/prime factorization and Grade 5 Pythagorean-to-triangle discovery in earlier/later courses, negative/unrelated cases, filter/search, preview, multiselect, draft undo and packet replay/export on the exact versioned download. Inspect desktop and narrow layouts; existing renderer remains unchanged so representative new export checks suffice. Record actual environments and unrun physical-device checks. Save progress and handoff in both repositories.
+
+## Verified checkpoint — 2026-10-09
+
+Implemented at the versions above. All 2,184 entries mapped; 475 concepts and 164 explicit links. Coverage, symmetry, generation, teacher finder and representative Word/PDF verification passed. See ../RELATED-CONCEPTS-VERIFICATION.md for exact candidates, evidence and limits. No main merge or deployment.
