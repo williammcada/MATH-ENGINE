@@ -1,3 +1,5 @@
+> Current checkpoint (2026-10-09): Milestone 2 authorized by “Complete milestone 2” and completed. Intermediate 4: 260 working entries; Course 1: 277; 8/7: 502 retained. Engine 0.22.0-rc.2 / Studio 0.24.0-rc.2. See docs/MILESTONE2-VERIFICATION.md (or MILESTONE2-VERIFICATION.md from this docs folder). Next: Milestone 3, Algebra 1/2, not started. Earlier status sections below are historical.
+
 # Remaining curricula — Milestone 1 audit complete
 
 2026-10-09: audited all five remaining English banks: 4,636 source records, 652 indexed scope rows (650 populated), and 389 working entries. Saved demand/source ledgers, reuse candidates, source uncertainties, internal batches and completion criteria. [Audit and backlog](https://github.com/williammcada/MATH-ENGINE/blob/main/curriculum/remaining-courses/milestone1-v0.1/REVIEW.md). [Milestone specification](https://github.com/williammcada/MATH-ENGINE/blob/main/docs/change-specs/remaining-curricula-milestones-v0.1.md).

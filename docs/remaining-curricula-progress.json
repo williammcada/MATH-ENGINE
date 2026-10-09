@@ -1,11 +1,11 @@
 {
-  "milestone": 1,
+  "milestone": 2,
   "status": "complete",
-  "stage": "source audit and planning checkpoint",
+  "stage": "verified implementation checkpoint",
   "auditRepository": "williammcada/MATH-ENGINE",
-  "auditPath": "curriculum/remaining-courses/milestone1-v0.1",
-  "nextMilestone": 2,
-  "implementationAuthorized": false,
-  "runtimeUnchanged": true,
-  "resume": "Read audit REVIEW.md, per-course indexes and gzipped demand/source ledgers; retrieve source archive using saved identity and match hashes. Do not restart 8/7 or treat lexical matches as coverage."
+  "auditPath": "curriculum/remaining-courses/milestone2-v0.1",
+  "nextMilestone": 3,
+  "nextMilestoneTitle": "Algebra 1/2",
+  "nextMilestoneStarted": false,
+  "resume": "Use final milestone 2 verification and mapping; preserve both completed foundational banks and 8/7. Read Milestone 1 Algebra 1/2 backlog before the next authorized implementation."
 }

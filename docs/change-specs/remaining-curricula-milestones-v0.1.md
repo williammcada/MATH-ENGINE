@@ -1,3 +1,5 @@
+> Current checkpoint (2026-10-09): Milestone 2 authorized by “Complete milestone 2” and completed. Intermediate 4: 260 working entries; Course 1: 277; 8/7: 502 retained. Engine 0.22.0-rc.2 / Studio 0.24.0-rc.2. See docs/MILESTONE2-VERIFICATION.md (or MILESTONE2-VERIFICATION.md from this docs folder). Next: Milestone 3, Algebra 1/2, not started. Earlier status sections below are historical.
+
 # Remaining curriculum completion — milestone plan v0.1
 
 Will authorized completion of Milestone 1 on 2026-10-09. Status: audit complete; milestones 2–7 remain proposed, not authorized for implementation. This supersedes the other-course pause for auditing only. No runtime, release or deployment change.
