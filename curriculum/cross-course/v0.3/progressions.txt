@@ -498,8 +498,8 @@ money-purchase-change|decimal-arithmetic|1|Multiply unit price by count|Convert 
 money-purchase-change|decimal-arithmetic|2|Find change after purchasing multiple items|Calculate cost before subtracting from tendered amount|t/purchase-change
 interest-time-conversion|percent|1|Calculate simple interest in whole years|Use principal times annual rate times years|c/COURSE110.1
 interest-time-conversion|percent|2|Calculate simple interest for a number of months|Convert months to a fraction of a year and round cents|t/simple-interest
-fraction-between-bounds|number-order|1|Give a fraction strictly between positive whole-number endpoints|Tenths suffice; endpoints excluded|b/fraction-between
-fraction-between-bounds|number-order|2|Give a fraction strictly between signed rational endpoints|Compare signed rationals and choose a sufficiently fine denominator|z/number:fraction-between
+fraction-between-bounds|number-order|1|Find a supplied fractional position between positive whole-number endpoints|Take the given tenths share of the difference and add the start; these endpoints yield whole-number answers|b/fraction-between
+fraction-between-bounds|number-order|2|Find a supplied fractional position between signed rational endpoints|Use the given fraction of the difference then add the start with exact signed rational arithmetic|z/number:fraction-between
 prime-decomposition|number-theory|1|List all whole-number factors|Factor pairs|e/6.1
 prime-decomposition|number-theory|2|Write a prime factorization|Continue splitting until every factor is prime|b/prime-factorization
 prime-decomposition|number-theory|3|Write a prime factorization using exponents|Compress repeated prime factors into powers|c/21.3

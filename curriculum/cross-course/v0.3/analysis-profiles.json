@@ -9741,7 +9741,7 @@
     "review": {
       "chunk": 1,
       "status": "reviewed",
-      "reason": "difficulty: Give a fraction strictly between positive whole-number endpoints. Tenths suffice; endpoints excluded."
+      "reason": "difficulty: Find the supplied 1/10, 3/10, 7/10 or 9/10 position between positive endpoints that are multiples of ten. Compute start + fraction \u00d7 (end \u2212 start); answers are whole numbers. The signed-rational counterpart extends the same interpolation method to signed fractional endpoints. This is not an open-ended choose-any-number task."
     },
     "samplePrompt": "Find the number 9/10 of the way from 50 to 80. Use exact fractions or terminating decimals, without units."
   },
@@ -63894,7 +63894,7 @@
     "review": {
       "chunk": 1,
       "status": "reviewed",
-      "reason": "difficulty: Give a fraction strictly between signed rational endpoints. Compare signed rationals and choose a sufficiently fine denominator."
+      "reason": "difficulty: Compute the supplied 1/k position from a negative rational endpoint to a positive rational endpoint. Start + fraction \u00d7 (end \u2212 start) requires exact signed fraction subtraction, multiplication and addition. This extends the positive whole-endpoint interpolation contract; the requested position is unique, not any intermediate fraction."
     },
     "samplePrompt": "Find the number 1/2 of the way from -2/5 to 1. Enter a fraction in lowest terms (or an integer)."
   },

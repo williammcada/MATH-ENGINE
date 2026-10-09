@@ -3362,10 +3362,10 @@
     "review": {
       "chunk": 1,
       "status": "reviewed",
-      "reason": "difficulty: Give a fraction strictly between positive whole-number endpoints. Tenths suffice; endpoints excluded."
+      "reason": "difficulty: Find the supplied 1/10, 3/10, 7/10 or 9/10 position between positive endpoints that are multiples of ten. Compute start + fraction × (end − start); answers are whole numbers. The signed-rational counterpart extends the same interpolation method to signed fractional endpoints. This is not an open-ended choose-any-number task."
     },
     "disposition": "reviewed path; no cross-course directional result",
-    "reason": "difficulty: Give a fraction strictly between positive whole-number endpoints. Tenths suffice; endpoints excluded.",
+    "reason": "difficulty: Find the supplied 1/10, 3/10, 7/10 or 9/10 position between positive endpoints that are multiples of ten. Compute start + fraction × (end − start); answers are whole numbers. The signed-rational counterpart extends the same interpolation method to signed fractional endpoints. This is not an open-ended choose-any-number task.",
     "nextAction": "Inspect available cross-course counterparts; retain related-only status if a direction cannot be justified."
   },
   {
@@ -16270,10 +16270,10 @@
     "review": {
       "chunk": 1,
       "status": "reviewed",
-      "reason": "difficulty: Give a fraction strictly between signed rational endpoints. Compare signed rationals and choose a sufficiently fine denominator."
+      "reason": "difficulty: Compute the supplied 1/k position from a negative rational endpoint to a positive rational endpoint. Start + fraction × (end − start) requires exact signed fraction subtraction, multiplication and addition. This extends the positive whole-endpoint interpolation contract; the requested position is unique, not any intermediate fraction."
     },
     "disposition": "reviewed path; no cross-course directional result",
-    "reason": "difficulty: Give a fraction strictly between signed rational endpoints. Compare signed rationals and choose a sufficiently fine denominator.",
+    "reason": "difficulty: Compute the supplied 1/k position from a negative rational endpoint to a positive rational endpoint. Start + fraction × (end − start) requires exact signed fraction subtraction, multiplication and addition. This extends the positive whole-endpoint interpolation contract; the requested position is unique, not any intermediate fraction.",
     "nextAction": "Inspect available cross-course counterparts; retain related-only status if a direction cannot be justified."
   },
   {

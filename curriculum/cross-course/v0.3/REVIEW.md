@@ -1,6 +1,6 @@
 # Chunk 1 — number skills and proportional reasoning
 
-Implementation checkpoint; release verification is pending. Engine 0.29.0-rc.2 / Studio target 0.31.0-rc.2.
+Implementation checkpoint; release verification is pending. Engine 0.29.0-rc.3 / Studio target 0.31.0-rc.3.
 
 The frozen scope contains 303 previously topic-only entries. Every entry now has an individual review record in `chunk1-review.json`, with provider contract, configuration, source evidence hashes, reasoning and disposition. The 238 source/recipe review groups include configuration variants; these are not 238 identical contracts. AST ranges were read with their actual generator semantics: fractional `min=max=0` ranges remain variable and `quotientRange` synthesizes dividends. Curriculum87 phase2 overrides take precedence over base recipes.
 
@@ -19,4 +19,6 @@ Relationships describe task demands, not empirical student difficulty or school 
 
 The full `remaining-review.json` is a directional-gap queue (1,085 entries), not a list of unreviewed entries. It explicitly marks completed Chunk 1 decisions. `directional-coverage.json` counts actual API results across distinct banks; exact provider copies are excluded from directional claims. Historical v0.1 and v0.2 evidence is preserved.
 
-Release correction: the new grouped-subtraction path originally put two-digit and three-digit anchors at one shared level. This conflicted with their established harder relationship. Restricting the anchor to two-digit subtraction preserves the existing comparison; a regression assertion now protects it. Pre-correction Studio 0.31.0-rc.1 is retained as a checkpoint; deliver 0.31.0-rc.2 after verification.
+Release correction: the new grouped-subtraction path originally put two-digit and three-digit anchors at one shared level. This conflicted with their established harder relationship. Restricting the anchor to two-digit subtraction preserves the existing comparison; a regression assertion now protects it. Pre-correction Studio 0.31.0-rc.1 is retained as a checkpoint; deliver 0.31.0-rc.3 after verification.
+
+Final wording correction: both fraction-between recipes calculate a specified fractional position, rather than accepting any intermediate value. Their reviewed difficulty direction remains: positive multiples-of-ten endpoints to signed rational endpoints. The whole-endpoint generator produces whole-number answers. Engine 0.29.0-rc.3 / Studio 0.31.0-rc.3 carries the precise demand descriptions.

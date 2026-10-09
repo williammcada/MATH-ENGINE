@@ -1,6 +1,6 @@
 # Comparison review Chunk 1 v0.3
 
-Authorized 2026-10-09: complete Chunk 1 of the four proposed remaining-comparison chunks. Baselines: Engine e8f084babe8b3f7194b363e6641a9a2f6b82c082 (0.28.0-rc.1), Studio 4aa526bf4cf60f6b58d2d4d7c2ac0fc8dc7d7921 (0.30.0-rc.1). Target Engine 0.29.0-rc.2 / Studio 0.31.0-rc.2.
+Authorized 2026-10-09: complete Chunk 1 of the four proposed remaining-comparison chunks. Baselines: Engine e8f084babe8b3f7194b363e6641a9a2f6b82c082 (0.28.0-rc.1), Studio 4aa526bf4cf60f6b58d2d4d7c2ac0fc8dc7d7921 (0.30.0-rc.1). Target Engine 0.29.0-rc.3 / Studio 0.31.0-rc.3.
 
 Consulted AI-START-HERE.md, UNIVERSAL-RULES.md, CONDITIONAL-STANDARDS.md S-02/S-04 and RELEASE-CHECKLIST.md at fd4330863f4cc0812180fbf1de122970a42c7885. Versioning, mathematics, retained behavior, evidence and distribution apply; game controls/story rules do not. No conflict.
 

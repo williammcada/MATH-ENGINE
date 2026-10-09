@@ -8877,8 +8877,8 @@
     "stages": [
       {
         "level": 1,
-        "demand": "Give a fraction strictly between positive whole-number endpoints",
-        "prerequisites": "Tenths suffice; endpoints excluded",
+        "demand": "Find a supplied fractional position between positive whole-number endpoints",
+        "prerequisites": "Take the given tenths share of the difference and add the start; these endpoints yield whole-number answers",
         "selectors": [
           "b/fraction-between"
         ],
@@ -8888,8 +8888,8 @@
       },
       {
         "level": 2,
-        "demand": "Give a fraction strictly between signed rational endpoints",
-        "prerequisites": "Compare signed rationals and choose a sufficiently fine denominator",
+        "demand": "Find a supplied fractional position between signed rational endpoints",
+        "prerequisites": "Use the given fraction of the difference then add the start with exact signed rational arithmetic",
         "selectors": [
           "z/number:fraction-between"
         ],
