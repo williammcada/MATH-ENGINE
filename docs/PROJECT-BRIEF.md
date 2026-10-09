@@ -1,3 +1,7 @@
+> Current checkpoint (2026-10-09): Cross-course expansion v0.2 verified. Engine 0.28.0-rc.1 / Studio 0.30.0-rc.1. Reviewed paths now include 1,297 entries (up 833); 887 retain topic-only links. Actual cross-course directional recommendations cover 922 entries, including 487 with easier/harder results. Intermediate 4 = Grade 3; Course 1 = Grade 4; 8/7 = Grade 5. Algebra 1/2, Algebra 1 and Algebra 2 are tracked, not grade-locked. All 2,184 working entries remain. Earlier checkpoints below are historical.
+
+[Download Studio v0.30.0-rc.1](https://github.com/williammcada/test-and-practice-studio/blob/main/downloads/Test-and-Practice-Studio-v0.30.0-rc.1.html) · [Verification](CROSS-COURSE-V2-VERIFICATION.md) · [Quickstart](https://github.com/williammcada/test-and-practice-studio/blob/main/docs/CROSS-COURSE-V2-QUICKSTART.md) · [Remaining comparison review](https://github.com/williammcada/MATH-ENGINE/blob/main/curriculum/cross-course/v0.2/remaining-review.json).
+
 ## Current status 2026-10-09
 
 Milestone 7 is complete. Engine 0.27.0-rc.2 / Studio 0.29.0-rc.2: 2,184 working entries, 66 topics, 74 reviewed paths, mixed-bank differentiation and export. Read MILESTONE7-VERIFICATION.md for exact coverage and limits. Milestones 1–7 are complete at documented representative scope. Earlier design baselines below are historical. No deployment has been performed.

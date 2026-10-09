@@ -1,0 +1,253 @@
+{
+  "status": "verified comparison expansion and confirmed placement labels; remaining comparison queue retained",
+  "date": "2026-10-09",
+  "handbookRevision": "fd4330863f4cc0812180fbf1de122970a42c7885",
+  "baselines": {
+    "engine": "0c639590a8250b0b4cdcaf545efbe1aba7ce81e0",
+    "studio": "cd3fcbf9a9ad4c65707d852213a554e2a4fd5569"
+  },
+  "testedImplementation": {
+    "engine": "a33f07f5dbc836faa6c1f3f82758619be9f5ca3e",
+    "engineVersion": "0.28.0-rc.1",
+    "studio": "20d6219dbac9219b91aac76879f34503631bb049",
+    "studioVersion": "0.30.0-rc.1"
+  },
+  "counts": {
+    "entries": 2184,
+    "topics": 66,
+    "tracks": 186,
+    "reviewedProgressionEntries": 1297,
+    "topicOnlyEntries": 887,
+    "explicitReuseGroups": 381,
+    "explicitReuseEntries": 1026,
+    "banks": {
+      "algebra-1-en": {
+        "total": 309,
+        "progression": 191
+      },
+      "algebra-2-en": {
+        "total": 456,
+        "progression": 287
+      },
+      "algebra-half-en": {
+        "total": 378,
+        "progression": 248
+      },
+      "course-1-en": {
+        "total": 278,
+        "progression": 187
+      },
+      "course-87-en": {
+        "total": 503,
+        "progression": 263
+      },
+      "intermediate-4-en": {
+        "total": 260,
+        "progression": 121
+      }
+    },
+    "unrankedTopics": []
+  },
+  "directionalCoverage": {
+    "entries": 2184,
+    "reviewedPathEntries": 1297,
+    "topicOnlyEntries": 887,
+    "entriesWithCrossCourseEasierOrHarder": 487,
+    "entriesWithCrossCourseDirectionalRelation": 922,
+    "entriesWithoutCrossCourseDirectionalRelation": 1262,
+    "crossBankCandidatePairs": 5707,
+    "pairTypes": {
+      "easier": 1190,
+      "same-scope": 1220,
+      "shared-provider": 791,
+      "harder": 513,
+      "prerequisite": 685,
+      "extension": 433,
+      "related": 875
+    },
+    "conflictingCrossCoursePairs": 3,
+    "banks": [
+      {
+        "bankId": "intermediate-4-en",
+        "localGrade": 3,
+        "placement": "grade-assigned",
+        "total": 260,
+        "reviewedPathEntries": 121,
+        "difficultyEntries": 47,
+        "directionalEntries": 78
+      },
+      {
+        "bankId": "course-1-en",
+        "localGrade": 4,
+        "placement": "grade-assigned",
+        "total": 278,
+        "reviewedPathEntries": 187,
+        "difficultyEntries": 86,
+        "directionalEntries": 150
+      },
+      {
+        "bankId": "course-87-en",
+        "localGrade": 5,
+        "placement": "grade-assigned",
+        "total": 503,
+        "reviewedPathEntries": 263,
+        "difficultyEntries": 104,
+        "directionalEntries": 198
+      },
+      {
+        "bankId": "algebra-half-en",
+        "localGrade": null,
+        "placement": "tracked-not-grade-locked",
+        "total": 378,
+        "reviewedPathEntries": 248,
+        "difficultyEntries": 95,
+        "directionalEntries": 190
+      },
+      {
+        "bankId": "algebra-1-en",
+        "localGrade": null,
+        "placement": "tracked-not-grade-locked",
+        "total": 309,
+        "reviewedPathEntries": 191,
+        "difficultyEntries": 81,
+        "directionalEntries": 143
+      },
+      {
+        "bankId": "algebra-2-en",
+        "localGrade": null,
+        "placement": "tracked-not-grade-locked",
+        "total": 456,
+        "reviewedPathEntries": 287,
+        "difficultyEntries": 74,
+        "directionalEntries": 163
+      }
+    ],
+    "limits": "Unordered pairs; same-bank pairs excluded. Directional includes easier/harder and prerequisite/extension. Counts include original lesson entries, not unique question providers. Difficulty is reviewed task demand, not measured student difficulty."
+  },
+  "coursePlacement": {
+    "version": "1.0.0",
+    "confirmedBy": "William McAda",
+    "confirmedOn": "2026-10-09",
+    "scope": "School course placement, independent of task difficulty and standards eligibility",
+    "evidence": "User: Intermediate 4 (grade 3), Course 1 (grade 4). Tracking occurs after Saxon 8/7; Algebra 1/2, Algebra 1 and Algebra 2 are not grade-locked. Existing confirmed 8/7 = Grade 5 retained.",
+    "courses": [
+      {
+        "bankId": "intermediate-4-en",
+        "localGrade": 3,
+        "placement": "grade-assigned"
+      },
+      {
+        "bankId": "course-1-en",
+        "localGrade": 4,
+        "placement": "grade-assigned"
+      },
+      {
+        "bankId": "course-87-en",
+        "localGrade": 5,
+        "placement": "grade-assigned"
+      },
+      {
+        "bankId": "algebra-half-en",
+        "localGrade": null,
+        "placement": "tracked-not-grade-locked"
+      },
+      {
+        "bankId": "algebra-1-en",
+        "localGrade": null,
+        "placement": "tracked-not-grade-locked"
+      },
+      {
+        "bankId": "algebra-2-en",
+        "localGrade": null,
+        "placement": "tracked-not-grade-locked"
+      }
+    ]
+  },
+  "checks": {
+    "engine": {
+      "result": "passed",
+      "entries": 2184,
+      "tracks": 186,
+      "pairs": 7820,
+      "conservativeConflicts": 7,
+      "generationParityCases": 26208,
+      "changedModules": [
+        "course-banks.js",
+        "cross-course-map.js",
+        "cross-course.js"
+      ],
+      "gradeCamOutcomes": 331
+    },
+    "browser": {
+      "result": "passed",
+      "version": "0.30.0-rc.1",
+      "selected": 12,
+      "banks": 6,
+      "exports": [
+        {
+          "name": "A4-student",
+          "pages": 4
+        },
+        {
+          "name": "Letter-key",
+          "pages": 3
+        }
+      ],
+      "browser": "153.0.8010.0",
+      "checks": "Exact download; perimeter upward/downward; confirmed Grade 3/4/5 and tracked-course labels; newly linked division, line, root, rational-expression and proof tasks; preview without changing comparison origin; mixed-bank add/remove/undo; empty/unranked filters; shared-provider warning; draft download; packet/session replay; narrow viewport; actual Word/PDF exports"
+    },
+    "delivery": {
+      "result": "passed",
+      "version": "0.30.0-rc.1",
+      "exactDownloadMatches": 2184,
+      "comparisonNote": "SVG decimal coordinates normalized to 9 decimal places for browser/Node libm rounding; all other fields exact",
+      "labelBoundsChecked": 256,
+      "vendoredModules": 65,
+      "bytes": 3931418,
+      "sha256": "d4ef791335ce9535829ec608061aad318708725b197ecd8108b31c31e8064319",
+      "priorDownloadUnchanged": true
+    },
+    "coreRegression": "passed",
+    "gradeCamRegression": "passed: 331 coded outcomes; Grade 5 only",
+    "xlsxImport": "passed: leading-zero identifiers, formulas, escaped output, local processing",
+    "milestone7Regression": "passed: 16,702 comparisons and 256 perimeter cases",
+    "pdfPagesReviewed": 7,
+    "wordPagesReviewed": 5
+  },
+  "delivery": {
+    "path": "downloads/Test-and-Practice-Studio-v0.30.0-rc.1.html",
+    "bytes": 3931418,
+    "sha256": "d4ef791335ce9535829ec608061aad318708725b197ecd8108b31c31e8064319"
+  },
+  "qaArtifacts": {
+    "A4-student.pdf": {
+      "bytes": 44201,
+      "sha256": "d3bb87539e76b46d59f9d47a93613da5e1d4049bc89d89d961356912a3767d51"
+    },
+    "Letter-key.pdf": {
+      "bytes": 53945,
+      "sha256": "6fb4412658e2651bf6b9d0b3371692fc74a9d52fde02c96a5ac9c5de83d3e9e0"
+    },
+    "A4-student.docx": {
+      "bytes": 48776,
+      "sha256": "0ccbf0c2c5915523f6ad27b21258c030171d0ad9a5528d8bcc748a2ab4f931e5"
+    },
+    "Letter-key.docx": {
+      "bytes": 37261,
+      "sha256": "8d81fc95fb2c779c893c5149174af3512aac7b424912998e809582f850ab59c6"
+    },
+    "mixed-bank-draft.json": {
+      "bytes": 783,
+      "sha256": "70fbe733c0057a94190a3e23fa90e88ab98241164ed0cb03323231412e1e505a"
+    }
+  },
+  "limits": [
+    "887 entries retain topic-only discovery and await pairwise contract review.",
+    "1297 path entries include same-scope and related-only paths. 922 have a cross-course directional relation, including 487 with easier/harder.",
+    "1262 entries have no cross-course directional result; see remaining-review.json for individual actions and dispositions.",
+    "Instructional demands are not psychometric difficulty or a learner placement assessment.",
+    "Original representative curriculum scope remains; this is not exhaustive publisher reconstruction.",
+    "Proofs, constructions, graphing and symbolic methods retain teacher review.",
+    "Native Windows Word, physical-device and printer acceptance remain; no deployment performed."
+  ]
+}
