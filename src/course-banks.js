@@ -1,6 +1,6 @@
 /* Original source-informed generators. Legacy scripts are not executed. */
 (function(root){'use strict';
-const version='0.24.0-rc.1';
+const version='0.24.0-rc.2';
 const S=typeof module!=='undefined'&&module.exports?require('./structured-bank.js'):root.MathStructuredBank;
 const L=typeof module!=='undefined'&&module.exports?require('./linear-equations.js'):root.MathLinearEquations;
 const Q=typeof module!=='undefined'&&module.exports?require('./quadratic-bank.js'):root.MathQuadraticBank;
