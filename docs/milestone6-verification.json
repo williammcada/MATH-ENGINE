@@ -1,0 +1,78 @@
+{
+  "milestone": 6,
+  "status": "complete",
+  "date": "2026-10-09",
+  "scope": "Algebra 2 lesson-demand closure at documented representative original-task scope",
+  "handbookRevision": "fd4330863f4cc0812180fbf1de122970a42c7885",
+  "baselines": {
+    "engine": "68146db074860c5733cde13571c45cf7a336a420",
+    "studio": "669c71d5643a27d559a5abba0f3c7d698e5aa56f"
+  },
+  "testedImplementation": {
+    "engine": "8ce9434493c69c76ce5e8609efebe4e6d53e5a46",
+    "engineVersion": "0.26.0-rc.2",
+    "studio": "cbfb0783208aafc611fc15223d8558cfe4109f7e",
+    "studioVersion": "0.28.0-rc.2"
+  },
+  "counts": {
+    "lessonScopes": 130,
+    "demandRoutes": 260,
+    "recoveredSourceRecords": 592,
+    "newBindings": 272,
+    "reusedProviderBindings": 143,
+    "customBindings": 129,
+    "customRecipes": 115,
+    "algebra2Working": 456,
+    "allWorking": 2182,
+    "allAuthored": 1661,
+    "retainedLegacyPreviews": 5425
+  },
+  "checks": {
+    "generatedCases": 17408,
+    "variantsPerNewBinding": 64,
+    "teacherCases": 13632,
+    "customSamples": 8256,
+    "independentNumericCases": 1472,
+    "symbolicOrModelCases": 3072,
+    "productionContractCases": 3712,
+    "retainedEntries": 1910,
+    "retainedParityCases": 5730,
+    "layoutCases": 19932,
+    "layoutFailures": 0,
+    "pdfPagesReviewed": 9,
+    "wordPagesReviewed": 7,
+    "vendoredModuleCount": 62,
+    "exactDownloadMatches": 456
+  },
+  "delivery": {
+    "path": "downloads/Test-and-Practice-Studio-v0.28.0-rc.2.html",
+    "bytes": 2255104,
+    "sha256": "bdcfd79112fafdfdd117626ffb8789db015c376290a0944aa99337177c925ef8"
+  },
+  "limits": [
+    "Original representative scope, not every publisher question or exact diagram",
+    "Proofs, constructions, graphs and symbolic methods require teacher review",
+    "Finite seed checks, not exhaustive domains or student mastery",
+    "No physical iPad, native Windows Word or printer certification",
+    "No deployment",
+    "Cross-grade suggestions and final cross-course consolidation remain M7"
+  ],
+  "qaArtifacts": {
+    "A4-student.pdf": {
+      "bytes": 35533,
+      "sha256": "b723a3beb7d59b0d628d1b6bf4efadffc79440addf1a40a06fe8f1089619abbe"
+    },
+    "Letter-key.pdf": {
+      "bytes": 54026,
+      "sha256": "99a001a3019b0f9f5a1ce9cab3a4c87db42a211a3461719a25d33b401b0a12da"
+    },
+    "A4-student.docx": {
+      "bytes": 81252,
+      "sha256": "a7012887ac8a8292da5892ff938349ab726047ee869b54b9e6cafe778c92d4c9"
+    },
+    "Letter-key.docx": {
+      "bytes": 85640,
+      "sha256": "0accf9c93376567c38cc05cb3fd34609991d0fe837602e7d260769bf28248f9b"
+    }
+  }
+}

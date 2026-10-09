@@ -1,12 +1,12 @@
 {
-  "milestone": 5,
+  "milestone": 6,
   "status": "complete",
   "stage": "verified implementation checkpoint",
   "auditRepository": "williammcada/MATH-ENGINE",
-  "auditPath": "curriculum/remaining-courses/milestone5-v0.1",
-  "nextMilestone": 6,
-  "nextMilestoneTitle": "Algebra 2 lesson and source-demand closure",
+  "auditPath": "curriculum/remaining-courses/milestone6-v0.1",
+  "nextMilestone": 7,
+  "nextMilestoneTitle": "Cross-course verification, deduplication and cross-grade connections",
   "nextMilestoneStarted": false,
-  "resume": "Read MILESTONE5-VERIFICATION.md, the M5 family contracts/reuse review and the M1 Algebra 2 ledger. Preserve all 1,910 entries. Integrate all 592 records/130 scope rows; complete residual methods/representations (including gas significant figures/scientific notation and full source-specific proofs), author Lesson 128 from scope, then perform course-wide QA.",
+  "resume": "Read MILESTONE6-VERIFICATION.md, M6 coverage/source ledger and cross-grade-connections-v0.1.md. Preserve all 2,182 working entries and 331 Grade 5 mappings. Analyze shared concepts and semantic overlap across all completed banks; implement teacher-directed easier/harder suggestions with explanations, preserving bank identity and Grade 5-only GradeCam targeting. Finish consolidated QA and delivery.",
   "futureCrossGradeFeature": "Milestone 7: systematic cross-grade connections and teacher-directed easier/harder suggestions; planned, not implemented."
 }

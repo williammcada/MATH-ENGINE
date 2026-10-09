@@ -1,3 +1,7 @@
+> Current checkpoint (2026-10-09): Milestone 6 complete at documented representative curriculum scope. Algebra 2: 456 working entries across all 130 lesson scopes, including original Lesson 128 coverage; all banks: 2,182. Engine 0.26.0-rc.2 / Studio 0.28.0-rc.2. Next: Milestone 7, cross-course consolidation and harder/easier cross-grade suggestions. Earlier checkpoints below are historical.
+
+[Download Studio v0.28.0-rc.2](https://github.com/williammcada/test-and-practice-studio/blob/main/downloads/Test-and-Practice-Studio-v0.28.0-rc.2.html) · [Verification](https://github.com/williammcada/MATH-ENGINE/blob/main/docs/MILESTONE6-VERIFICATION.md) · [Quickstart](https://github.com/williammcada/test-and-practice-studio/blob/main/docs/MILESTONE6-QUICKSTART.md).
+
 > Current checkpoint (2026-10-09): Milestone 5 complete at documented family scope. Added 73 Algebra 2 task families; Algebra 2 now has 184 working entries, all banks 1,910. Engine 0.25.0-rc.2 / Studio 0.27.0-rc.2. Next: Milestone 6, complete Algebra 2 lesson/source-demand integration and residual variants, including Lesson 128. Earlier checkpoints below are historical.
 
 [Download Studio v0.27.0-rc.2](https://github.com/williammcada/test-and-practice-studio/blob/main/downloads/Test-and-Practice-Studio-v0.27.0-rc.2.html) · [Verification](https://github.com/williammcada/MATH-ENGINE/blob/main/docs/MILESTONE5-VERIFICATION.md) · [Quickstart](https://github.com/williammcada/test-and-practice-studio/blob/main/docs/MILESTONE5-QUICKSTART.md).

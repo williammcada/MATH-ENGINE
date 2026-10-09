@@ -23,7 +23,7 @@ for l in lessons:
    if reuse:row['reuseSourceId']=reuse
    entries.append(row)
   lookup[token]=sid
- coverage.append(dict(lessonId=l['id'],title=l['title'],sourceRecordCount=l['sourceRecordCount'],entries=list(lookup.values()),demandRoutes=[dict(text=d['text'],entries=[lookup[t] for t in g],scope='bounded original curriculum coverage; not exact publisher reproduction') for d,g in zip(l['demands'],groups)],disposition='implementation-pending-verification'))
+ coverage.append(dict(lessonId=l['id'],title=l['title'],sourceRecordCount=l['sourceRecordCount'],entries=list(lookup.values()),demandRoutes=[dict(text=d['text'],entries=[lookup[t] for t in g],scope='bounded original curriculum coverage; not exact publisher reproduction') for d,g in zip(l['demands'],groups)],disposition='verified representative curriculum coverage; see docs/MILESTONE6-VERIFICATION.md'))
 (root/'src/algebra-two-completion-map.js').write_text('(function(root){const data='+json.dumps(entries,separators=(',',':'))+';if(typeof module!=="undefined"&&module.exports)module.exports=data;root.MathAlgebraTwoCompletionMap=data;})(typeof globalThis!=="undefined"?globalThis:this);\n')
 (out/'coverage.json').write_text(json.dumps(coverage,indent=2)+'\n')
 print('new bindings',len(entries),'reuse',sum('reuseSourceId'in x for x in entries),'custom recipes',len(set(x['recipe']for x in entries if 'reuseSourceId'not in x)))
