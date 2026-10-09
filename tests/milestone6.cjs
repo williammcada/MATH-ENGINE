@@ -1,0 +1,11 @@
+const E=require('../src/course-banks'),assert=require('node:assert/strict'),fs=require('node:fs');
+const cs=E.catalog.filter(c=>c.family==='structured-algebra-two-completion'),coverage=require('../curriculum/remaining-courses/milestone6-v0.1/coverage.json'),ledger=require('../curriculum/remaining-courses/milestone6-v0.1/source-ledger.json');
+assert.equal(cs.length,272);assert.equal(E.catalog.length,2182);assert.equal(E.catalog.filter(c=>c.bankId==='algebra-2-en').length,456);assert.equal(new Set(E.catalog.map(c=>c.sourceId)).size,2182);assert.equal(coverage.length,130);assert.equal(ledger.length,592);assert.equal(new Set(ledger.map(c=>c.sourceId)).size,592);
+const ids=new Set(E.catalog.map(c=>c.sourceId));for(const row of coverage){assert(row.demandRoutes.length);for(const d of row.demandRoutes){assert(d.entries.length);for(const id of d.entries)assert(ids.has(id),id);}assert.equal(ledger.filter(x=>x.lessonId===row.lessonId).length,row.sourceRecordCount);}
+for(const row of ledger){const demand=coverage.find(x=>x.lessonId===row.lessonId).demandRoutes.find(x=>x.text===row.demand);assert.deepEqual(row.entries,demand.entries);}
+let teacher=0;const samples=[];for(const c of cs){for(const seed of ['x'.repeat(200),42])assert(E.generate(c.sourceId,{seed,index:5}));for(let index=0;index<64;index++){
+ const q=E.generate(c.sourceId,{seed:'milestone6-independent',index});assert.deepEqual(q,E.generate(c.sourceId,{seed:'milestone6-independent',index}));assert(Object.isFrozen(q)&&Object.isFrozen(q.answer));assert(E.renderQuestion(q).includes('engine-question'));assert(!/NaN|Infinity|:undefined/.test(JSON.stringify(q)));assert.equal(q.provenance.exactLegacyReproduction,false);
+ if(q.answer.kind==='teacher'){assert(q.answer.rubric.length>=2);assert.equal(E.checkAnswer(q,'anything').answerCorrect,null);teacher++;}else{assert(E.checkAnswer(q,E.answerText(q)).answerCorrect,c.recipe);assert.equal(E.checkAnswer(q,'not an answer').answerCorrect,false);}
+ if(!c.reuseSourceId)samples.push({recipe:c.recipe,q});
+}}
+fs.writeFileSync(process.env.M6_SAMPLES||'/tmp/m6-samples.json',JSON.stringify(samples));console.log(JSON.stringify({generated:cs.length*64,teacher,customSamples:samples.length,bindings:cs.length,sourceRecords:ledger.length,lessonScopes:coverage.length,result:'passed'}));
