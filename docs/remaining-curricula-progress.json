@@ -1,7 +1,7 @@
 {
   "milestone": 7,
   "status": "complete at documented representative curriculum and reviewed-connection scope",
-  "stage": "Chunk 1 implementation checkpoint; verification pending",
+  "stage": "Comparison Chunk 1 complete and verified",
   "engineVersion": "0.29.0-rc.3",
   "studioVersion": "0.31.0-rc.3",
   "auditRepository": "williammcada/MATH-ENGINE",
@@ -9,7 +9,7 @@
   "nextMilestone": null,
   "nextMilestoneStarted": false,
   "futureCrossGradeFeature": "Implemented: canonical topic analysis, reviewed relationships, teacher preview and mixed-bank selection.",
-  "resume": "Complete Chunk 1 verification and delivery. All 303 scoped entries reviewed; 296 now in paths, 7 reviewed related-only. Then Chunk 2: 289 algebra/function entries; Chunk 3: 295 geometry/measurement/data/applied entries; Chunk 4: recomputed cross-course directional gaps. Preserve all 2184 entries, 331 coded Grade 5 outcomes and prior downloads. No deployment requested.",
+  "resume": "Chunk 1 complete: all 303 number/proportional entries reviewed, 296 now in paths and 7 reviewed topic-only. Next Chunk 2: exact 289-entry queue in v0.3/chunk2-scope.json; then Chunk 3: exact 295-entry queue in v0.3/chunk3-scope.json. Chunk 4 recomputes cross-course directional gaps. Preserve all 2184 working entries, 331 coded Grade 5 outcomes, teacher review and previous downloads. Read COMPARISON-CHUNK1-VERIFICATION.md. No deployment performed.",
   "comparisonExpansion": {
     "reviewedPaths": 245,
     "reviewedPathEntries": 1593,
@@ -25,22 +25,32 @@
     {
       "chunk": 1,
       "entries": 303,
-      "status": "review complete; verification pending"
+      "status": "complete and verified"
     },
     {
       "chunk": 2,
       "entries": 289,
-      "status": "pending"
+      "status": "pending",
+      "scope": "curriculum/cross-course/v0.3/chunk2-scope.json"
     },
     {
       "chunk": 3,
       "entries": 295,
-      "status": "pending"
+      "status": "pending",
+      "scope": "curriculum/cross-course/v0.3/chunk3-scope.json"
     },
     {
       "chunk": 4,
       "originalAlreadyPathLinkedGaps": 375,
-      "status": "pending; recompute after chunks 2 and 3"
+      "status": "pending; recompute after chunks 2 and 3",
+      "currentAlreadyPathLinkedGaps": 494
     }
-  ]
+  ],
+  "delivery": {
+    "file": "downloads/Test-and-Practice-Studio-v0.31.0-rc.3.html",
+    "bytes": 4051445,
+    "sha256": "cca65b21a3a6dc2906c510e784cd1be03bbba8f5e254784e1f624692f187c2bd",
+    "engineImplementationCommit": "e9422030bdb9d84fdd88612828b96333f9b67f5f",
+    "studioImplementationCommit": "58ad6584b651472da7f923a1e9e81b265c7406c3"
+  }
 }

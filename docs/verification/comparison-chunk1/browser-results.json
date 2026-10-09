@@ -1,0 +1,18 @@
+{
+  "result": "passed",
+  "version": "0.31.0-rc.3",
+  "selected": 12,
+  "banks": 6,
+  "exports": [
+    {
+      "name": "A4-student",
+      "pages": 4
+    },
+    {
+      "name": "Letter-key",
+      "pages": 3
+    }
+  ],
+  "browser": "153.0.8010.0",
+  "checks": "Exact download; perimeter upward/downward; confirmed Grade 3/4/5 and tracked-course labels; newly reviewed ordinal, mixed fractions, percent, monthly interest, number-line, root-operation, absolute-value and rational-bound tasks; preview without changing comparison origin; mixed-bank add/remove/undo; empty/unranked filters; shared-provider warning; draft download; packet/session replay; narrow viewport; actual Word/PDF exports"
+}

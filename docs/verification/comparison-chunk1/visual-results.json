@@ -1,0 +1,27 @@
+{
+  "result": "passed",
+  "studioVersion": "0.31.0-rc.3",
+  "pdfPages": 7,
+  "wordPages": 5,
+  "checks": "All 12 pages visually inspected; final-version rerenders match inspected page PNG hashes exactly. Fractions, signs, diagrams, labels, teacher-review wording, answers and page boundaries legible; no clipping or missing content.",
+  "pageSha256": {
+    "pdf-key/page-3.png": "096ecbc0866c376b32012cc18ad5df48e39a3cbc8de15cb9a7da22453cf6fe43",
+    "pdf-key/page-1.png": "7036f114d0c8141dc0d5822070ed2d177196568796e5ee176146c5d2a52ba6a6",
+    "pdf-key/page-2.png": "bf42a8c2943cb829c110b2be5672367e424f514e35939c648b53c5c3fbfc4d83",
+    "pdf-student/page-3.png": "67ff34c4e981f133973ddd1bcb9f343459f7e99ad63eaf34a9270bb0231d57f6",
+    "pdf-student/page-1.png": "cc715331bd84d9dde5a05f7893c6bac8094d22e4ac4634f7c2cac49200a52bd6",
+    "pdf-student/page-2.png": "e0f7fe0ac692d345dc68c9a6beefa26f295a703e0539ff903ac747c586bbed52",
+    "pdf-student/page-4.png": "4339b7e5b4fe4ec3fdfb0d5af0c4205c392f3af2e6717bbcea6af0d1d8605e7d",
+    "word-key/page-1.png": "70dfc4c79d47639d5c2e4d08325c6bff8144bd76be5b733fcfdc3eb945d20ad8",
+    "word-key/page-2.png": "beb8fe29e0603dbf8a9082b9e5c113d71fb2e8bc2e63341b48c24b7aee4c2577",
+    "word-student/page-3.png": "eaa36db31a858f74786cfa2c1918f821694247ff634ff569a39ccd08704ae3d1",
+    "word-student/page-1.png": "7a6b90fd32b5fee303239d91965a27cbcc19cf757331bcb0b6b2ec608e630bcf",
+    "word-student/page-2.png": "6c7bfeb978e9f66219b713160e8a0c1575e1e31ed4a2a543fb89bdad744d6fe0"
+  },
+  "exportSha256": {
+    "Letter-key.docx": "10101019610b7ff202a33e85b2f71bd814ac69128ae97f36319c619e9ca9a3f0",
+    "Letter-key.pdf": "d3586e6220359b0064e3ca419eb9127b585a3b9af659a10eae7e60641395eb7f",
+    "A4-student.pdf": "3159ef5434a45147bc5dfbaff7adee2056c3fab17df2ab78cf77ed2bf1f56186",
+    "A4-student.docx": "e0c33a1efb463eb29d6ba15655890bc61979f29d976f8411738db1c5e417a56a"
+  }
+}

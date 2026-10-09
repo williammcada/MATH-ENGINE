@@ -1,0 +1,2067 @@
+[
+  {
+    "sourceId": "course-87-en:item:SX870149",
+    "providerSourceId": "course-87-en:item:SX870149",
+    "topic": "calendar-time",
+    "family": "structured-measurement",
+    "recipe": "lap-seconds"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870116",
+    "providerSourceId": "course-87-en:item:SN870116",
+    "topic": "rates",
+    "family": "structured-measurement",
+    "recipe": "price-per-pound"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870148",
+    "providerSourceId": "course-87-en:item:SX870148",
+    "topic": "rates",
+    "family": "structured-measurement",
+    "recipe": "compare-unit-price"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870244",
+    "providerSourceId": "course-87-en:item:SN870244",
+    "topic": "rates",
+    "family": "structured-measurement",
+    "recipe": "nightly-rate"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870264",
+    "providerSourceId": "course-87-en:item:SX870264",
+    "topic": "measurement",
+    "family": "structured-measurement",
+    "recipe": "yards-feet"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870275",
+    "providerSourceId": "course-87-en:item:SX870275",
+    "topic": "rates",
+    "family": "structured-measurement",
+    "recipe": "seed-cost"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870286",
+    "providerSourceId": "course-87-en:item:SX870286",
+    "topic": "rates",
+    "family": "structured-measurement",
+    "recipe": "weighted-wage"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870393",
+    "providerSourceId": "course-87-en:item:SN870393",
+    "topic": "rates",
+    "family": "structured-measurement",
+    "recipe": "grape-cost"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870466",
+    "providerSourceId": "course-87-en:item:SX870466",
+    "topic": "similarity-scale",
+    "family": "structured-measurement",
+    "recipe": "cube-volume-ratio"
+  },
+  {
+    "sourceId": "algebra-half-en:node:197",
+    "providerSourceId": "algebra-half-en:node:197",
+    "topic": "measurement",
+    "family": "structured-measurement",
+    "recipe": "yards-feet"
+  },
+  {
+    "sourceId": "algebra-half-en:node:198",
+    "providerSourceId": "algebra-half-en:node:198",
+    "topic": "measurement",
+    "family": "structured-measurement",
+    "recipe": "feet-yards"
+  },
+  {
+    "sourceId": "algebra-half-en:node:199",
+    "providerSourceId": "algebra-half-en:node:199",
+    "topic": "measurement",
+    "family": "structured-measurement",
+    "recipe": "inches-feet"
+  },
+  {
+    "sourceId": "algebra-half-en:node:200",
+    "providerSourceId": "algebra-half-en:node:200",
+    "topic": "measurement",
+    "family": "structured-measurement",
+    "recipe": "feet-inches"
+  },
+  {
+    "sourceId": "algebra-half-en:node:201",
+    "providerSourceId": "algebra-half-en:node:201",
+    "topic": "measurement",
+    "family": "structured-measurement",
+    "recipe": "feet-miles"
+  },
+  {
+    "sourceId": "algebra-half-en:node:206",
+    "providerSourceId": "algebra-half-en:node:206",
+    "topic": "measurement",
+    "family": "structured-measurement",
+    "recipe": "centimeters-meters"
+  },
+  {
+    "sourceId": "algebra-half-en:node:207",
+    "providerSourceId": "algebra-half-en:node:207",
+    "topic": "measurement",
+    "family": "structured-measurement",
+    "recipe": "grams-kilograms"
+  },
+  {
+    "sourceId": "algebra-half-en:node:402",
+    "providerSourceId": "algebra-half-en:node:402",
+    "topic": "rates",
+    "family": "structured-measurement",
+    "recipe": "rate-difference"
+  },
+  {
+    "sourceId": "algebra-half-en:node:730",
+    "providerSourceId": "algebra-half-en:node:730",
+    "topic": "measurement",
+    "family": "structured-measurement",
+    "recipe": "milliliters-liters"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870060",
+    "providerSourceId": "course-87-en:item:SX870060",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "yield-mean"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870112",
+    "providerSourceId": "course-87-en:item:SX870112",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "grocery-mean"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870226",
+    "providerSourceId": "course-87-en:item:SX870226",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "batting-average"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870283",
+    "providerSourceId": "course-87-en:item:SX870283",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "test-group-mean"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870278",
+    "providerSourceId": "course-87-en:item:SN870278",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "target-mean"
+  },
+  {
+    "sourceId": "course-87-en:item:SX650321",
+    "providerSourceId": "course-87-en:item:SX650321",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "die-event"
+  },
+  {
+    "sourceId": "course-87-en:item:SX760141",
+    "providerSourceId": "course-87-en:item:SX760141",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "coin-run"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870522",
+    "providerSourceId": "course-87-en:item:SN870522",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "cards-unordered"
+  },
+  {
+    "sourceId": "course-87-en:item:SX760144",
+    "providerSourceId": "course-87-en:item:SX760144",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "rain-complement"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870774",
+    "providerSourceId": "course-87-en:item:SN870774",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "odds-same-event"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870834",
+    "providerSourceId": "course-87-en:item:SN870834",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "odds-complement"
+  },
+  {
+    "sourceId": "algebra-half-en:node:185",
+    "providerSourceId": "algebra-half-en:node:185",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "four-mean"
+  },
+  {
+    "sourceId": "algebra-half-en:node:187",
+    "providerSourceId": "algebra-half-en:node:187",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "missing-price"
+  },
+  {
+    "sourceId": "algebra-half-en:node:217",
+    "providerSourceId": "algebra-half-en:node:217",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "mass-mean"
+  },
+  {
+    "sourceId": "algebra-half-en:node:218",
+    "providerSourceId": "algebra-half-en:node:218",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "length-mean"
+  },
+  {
+    "sourceId": "algebra-half-en:node:687",
+    "providerSourceId": "algebra-half-en:node:687",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "marble-union"
+  },
+  {
+    "sourceId": "algebra-half-en:node:699",
+    "providerSourceId": "algebra-half-en:node:699",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "coin-run"
+  },
+  {
+    "sourceId": "algebra-half-en:node:700",
+    "providerSourceId": "algebra-half-en:node:700",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "die-history"
+  },
+  {
+    "sourceId": "algebra-half-en:node:701",
+    "providerSourceId": "algebra-half-en:node:701",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "marble-repeat"
+  },
+  {
+    "sourceId": "algebra-half-en:node:702",
+    "providerSourceId": "algebra-half-en:node:702",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "cards-ordered"
+  },
+  {
+    "sourceId": "algebra-1-en:node:493",
+    "providerSourceId": "algebra-1-en:node:493",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "data-statistics"
+  },
+  {
+    "sourceId": "algebra-1-en:node:494",
+    "providerSourceId": "algebra-1-en:node:494",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "weight-statistics"
+  },
+  {
+    "sourceId": "algebra-1-en:node:495",
+    "providerSourceId": "algebra-1-en:node:495",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "score-statistics"
+  },
+  {
+    "sourceId": "algebra-1-en:node:496",
+    "providerSourceId": "algebra-1-en:node:496",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "mean-from-total"
+  },
+  {
+    "sourceId": "algebra-1-en:node:551",
+    "providerSourceId": "algebra-1-en:node:551",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "two-group-mean"
+  },
+  {
+    "sourceId": "algebra-1-en:node:552",
+    "providerSourceId": "algebra-1-en:node:552",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "three-group-mean"
+  },
+  {
+    "sourceId": "algebra-1-en:node:662",
+    "providerSourceId": "algebra-1-en:node:662",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "weighted-percent"
+  },
+  {
+    "sourceId": "algebra-1-en:node:696",
+    "providerSourceId": "algebra-1-en:node:696",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "dice-sum"
+  },
+  {
+    "sourceId": "algebra-1-en:node:697",
+    "providerSourceId": "algebra-1-en:node:697",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "die-history"
+  },
+  {
+    "sourceId": "algebra-1-en:node:698",
+    "providerSourceId": "algebra-1-en:node:698",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "die-next-value"
+  },
+  {
+    "sourceId": "algebra-1-en:node:699",
+    "providerSourceId": "algebra-1-en:node:699",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "marble-next"
+  },
+  {
+    "sourceId": "algebra-1-en:node:702",
+    "providerSourceId": "algebra-1-en:node:702",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "coin-sequence"
+  },
+  {
+    "sourceId": "algebra-1-en:node:735",
+    "providerSourceId": "algebra-1-en:node:735",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "marble-without"
+  },
+  {
+    "sourceId": "algebra-1-en:node:736",
+    "providerSourceId": "algebra-1-en:node:736",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "compare-different"
+  },
+  {
+    "sourceId": "algebra-1-en:node:737",
+    "providerSourceId": "algebra-1-en:node:737",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "compare-same"
+  },
+  {
+    "sourceId": "course-87-en:item:SX650319",
+    "providerSourceId": "course-87-en:item:SX650319",
+    "topic": "area",
+    "family": "structured-geometry",
+    "recipe": "rectangle-pa"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870309",
+    "providerSourceId": "course-87-en:item:SX870309",
+    "topic": "area",
+    "family": "structured-geometry",
+    "recipe": "right-triangle-area"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870199",
+    "providerSourceId": "course-87-en:item:SX870199",
+    "topic": "area",
+    "family": "structured-geometry",
+    "recipe": "square-triangle-area"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870327",
+    "providerSourceId": "course-87-en:item:SN870327",
+    "topic": "area",
+    "family": "structured-geometry",
+    "recipe": "parallelogram-area"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870332",
+    "providerSourceId": "course-87-en:item:SX870332",
+    "topic": "circle-measurement",
+    "family": "structured-geometry",
+    "recipe": "circle-circumference"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870379",
+    "providerSourceId": "course-87-en:item:SN870379",
+    "topic": "volume",
+    "family": "structured-geometry",
+    "recipe": "prism-volume"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870351",
+    "providerSourceId": "course-87-en:item:SX870351",
+    "topic": "area",
+    "family": "structured-geometry",
+    "recipe": "trapezoid-area"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870414",
+    "providerSourceId": "course-87-en:item:SN870414",
+    "topic": "angles",
+    "family": "structured-geometry",
+    "recipe": "polygon-triangles"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870424",
+    "providerSourceId": "course-87-en:item:SN870424",
+    "topic": "angles",
+    "family": "structured-geometry",
+    "recipe": "polygon-angle-sum"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870451",
+    "providerSourceId": "course-87-en:item:SN870451",
+    "topic": "angles",
+    "family": "structured-geometry",
+    "recipe": "polygon-exterior"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870542",
+    "providerSourceId": "course-87-en:item:SN870542",
+    "topic": "volume",
+    "family": "structured-geometry",
+    "recipe": "cylinder-volume"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870430",
+    "providerSourceId": "course-87-en:item:SN870430",
+    "topic": "area",
+    "family": "structured-geometry",
+    "recipe": "triangle-area-hypotenuse"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870672",
+    "providerSourceId": "course-87-en:item:SN870672",
+    "topic": "surface-area",
+    "family": "structured-geometry",
+    "recipe": "prism-surface"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870108",
+    "providerSourceId": "course-87-en:item:SX870108",
+    "topic": "coordinate-geometry",
+    "family": "structured-geometry",
+    "recipe": "coordinate-missing"
+  },
+  {
+    "sourceId": "algebra-half-en:node:221",
+    "providerSourceId": "algebra-half-en:node:221",
+    "topic": "area",
+    "family": "structured-geometry",
+    "recipe": "oblique-triangle-area"
+  },
+  {
+    "sourceId": "algebra-half-en:node:222",
+    "providerSourceId": "algebra-half-en:node:222",
+    "topic": "area",
+    "family": "structured-geometry",
+    "recipe": "trapezoid-area"
+  },
+  {
+    "sourceId": "algebra-half-en:node:354",
+    "providerSourceId": "algebra-half-en:node:354",
+    "topic": "surface-area",
+    "family": "structured-geometry",
+    "recipe": "prism-surface"
+  },
+  {
+    "sourceId": "algebra-half-en:node:409",
+    "providerSourceId": "algebra-half-en:node:409",
+    "topic": "circle-measurement",
+    "family": "structured-geometry",
+    "recipe": "circle-radius-ca"
+  },
+  {
+    "sourceId": "algebra-half-en:node:410",
+    "providerSourceId": "algebra-half-en:node:410",
+    "topic": "circle-measurement",
+    "family": "structured-geometry",
+    "recipe": "circle-diameter-rca"
+  },
+  {
+    "sourceId": "algebra-half-en:node:475",
+    "providerSourceId": "algebra-half-en:node:475",
+    "topic": "volume",
+    "family": "structured-geometry",
+    "recipe": "cylinder-volume"
+  },
+  {
+    "sourceId": "algebra-half-en:node:712",
+    "providerSourceId": "algebra-half-en:node:712",
+    "topic": "area",
+    "family": "structured-geometry",
+    "recipe": "parallelogram-area"
+  },
+  {
+    "sourceId": "algebra-2-en:node:119",
+    "providerSourceId": "algebra-2-en:node:119",
+    "topic": "data-displays",
+    "family": "structured-breadth",
+    "recipe": "line-graph-choice"
+  },
+  {
+    "sourceId": "algebra-1-en:node:752",
+    "providerSourceId": "algebra-1-en:node:752",
+    "topic": "data-displays",
+    "family": "structured-breadth",
+    "recipe": "line-graph-choice"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00083",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00083",
+    "topic": "data-displays",
+    "family": "structured-breadth",
+    "recipe": "bar-graph-choice"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section12:item:C1_S12_00042",
+    "providerSourceId": "course-1-en:bank:C1_Section12:item:C1_S12_00042",
+    "topic": "volume",
+    "family": "structured-breadth",
+    "recipe": "cylinder-volume"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section12:item:C1_S12_00056",
+    "providerSourceId": "course-1-en:bank:C1_Section12:item:C1_S12_00056",
+    "topic": "surface-area",
+    "family": "structured-breadth",
+    "recipe": "prism-surface"
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00071",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00071",
+    "topic": "statistics",
+    "family": "structured-breadth",
+    "recipe": "mean-three"
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00072",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00072",
+    "topic": "statistics",
+    "family": "structured-breadth",
+    "recipe": "median-five"
+  },
+  {
+    "sourceId": "algebra-2-en:node:31",
+    "providerSourceId": "algebra-2-en:node:31",
+    "topic": "volume",
+    "family": "structured-advanced",
+    "recipe": "sphere-volume"
+  },
+  {
+    "sourceId": "algebra-2-en:node:38",
+    "providerSourceId": "algebra-2-en:node:38",
+    "topic": "circle-measurement",
+    "family": "structured-advanced",
+    "recipe": "arc-length"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870029",
+    "providerSourceId": "course-87-en:item:SN870029",
+    "topic": "geometry-properties",
+    "family": "structured-representations",
+    "recipe": "line-kind"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870341",
+    "providerSourceId": "course-87-en:item:SN870341",
+    "topic": "data-displays",
+    "family": "structured-representations",
+    "recipe": "histogram-read"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870345",
+    "providerSourceId": "course-87-en:item:SN870345",
+    "topic": "data-displays",
+    "family": "structured-representations",
+    "recipe": "pie-read"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870293",
+    "providerSourceId": "course-87-en:item:SX870293",
+    "topic": "transformations",
+    "family": "structured-representations",
+    "recipe": "y-symmetry"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870299",
+    "providerSourceId": "course-87-en:item:SN870299",
+    "topic": "geometry-properties",
+    "family": "structured-representations",
+    "recipe": "triangle-kind"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870556",
+    "providerSourceId": "course-87-en:item:SN870556",
+    "topic": "transformations",
+    "family": "structured-representations",
+    "recipe": "rotation"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870555",
+    "providerSourceId": "course-87-en:item:SN870555",
+    "topic": "transformations",
+    "family": "structured-representations",
+    "recipe": "reflection"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870554",
+    "providerSourceId": "course-87-en:item:SN870554",
+    "topic": "transformations",
+    "family": "structured-representations",
+    "recipe": "translation"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870417",
+    "providerSourceId": "course-87-en:item:SN870417",
+    "topic": "angles",
+    "family": "structured-representations",
+    "recipe": "polygon-interior"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870428",
+    "providerSourceId": "course-87-en:item:SN870428",
+    "topic": "angles",
+    "family": "structured-representations",
+    "recipe": "polygon-exterior"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870566",
+    "providerSourceId": "course-87-en:item:SN870566",
+    "topic": "angles",
+    "family": "structured-representations",
+    "recipe": "diagonals"
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076",
+    "topic": "angles",
+    "family": "structured-representations",
+    "recipe": "angle-kind"
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00078",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00078",
+    "topic": "angles",
+    "family": "structured-representations",
+    "recipe": "right-angle"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00021",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00021",
+    "topic": "data-displays",
+    "family": "structured-representations",
+    "recipe": "histogram-choice"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00063",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00063",
+    "topic": "angles",
+    "family": "structured-representations",
+    "recipe": "clock-angle"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00061",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00061",
+    "topic": "angles",
+    "family": "structured-representations",
+    "recipe": "angle-kind"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00079",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00079",
+    "topic": "circle-measurement",
+    "family": "structured-representations",
+    "recipe": "diameter"
+  },
+  {
+    "sourceId": "course-87-en:item:SAX70303",
+    "providerSourceId": "course-87-en:item:SAX70303",
+    "topic": "similarity-scale",
+    "family": "structured-reasoning",
+    "recipe": "similar-truth"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870539",
+    "providerSourceId": "course-87-en:item:SN870539",
+    "topic": "reasoning",
+    "family": "structured-reasoning",
+    "recipe": "missing-information"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870810",
+    "providerSourceId": "course-87-en:item:SN870810",
+    "topic": "data-displays",
+    "family": "structured-reasoning",
+    "recipe": "stem-build"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870742",
+    "providerSourceId": "course-87-en:item:SN870742",
+    "topic": "data-displays",
+    "family": "structured-reasoning",
+    "recipe": "stem-read"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870812",
+    "providerSourceId": "course-87-en:item:SN870812",
+    "topic": "data-displays",
+    "family": "structured-reasoning",
+    "recipe": "stem-statistics"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870838",
+    "providerSourceId": "course-87-en:item:SN870838",
+    "topic": "data-displays",
+    "family": "structured-reasoning",
+    "recipe": "box-choice"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870744",
+    "providerSourceId": "course-87-en:item:SN870744",
+    "topic": "data-displays",
+    "family": "structured-reasoning",
+    "recipe": "box-range"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870806",
+    "providerSourceId": "course-87-en:item:SN870806",
+    "topic": "data-displays",
+    "family": "structured-reasoning",
+    "recipe": "box-summary"
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054",
+    "topic": "calendar-time",
+    "family": "structured-reasoning",
+    "recipe": "calendar-month"
+  },
+  {
+    "sourceId": "algebra-2-en:node:340",
+    "providerSourceId": "algebra-2-en:node:340",
+    "topic": "proof",
+    "family": "structured-relations",
+    "recipe": "parallelogram-reason"
+  },
+  {
+    "sourceId": "algebra-2-en:node:873",
+    "providerSourceId": "algebra-2-en:node:873",
+    "topic": "proof",
+    "family": "structured-relations",
+    "recipe": "triangle-proof"
+  },
+  {
+    "sourceId": "algebra-2-en:node:921",
+    "providerSourceId": "algebra-2-en:node:921",
+    "topic": "statistics",
+    "family": "structured-relations",
+    "recipe": "normal-parameters"
+  },
+  {
+    "sourceId": "algebra-2-en:node:860",
+    "providerSourceId": "algebra-2-en:node:860",
+    "topic": "constructions",
+    "family": "structured-relations",
+    "recipe": "copy-construction"
+  },
+  {
+    "sourceId": "algebra-half-en:node:766",
+    "providerSourceId": "algebra-half-en:node:766",
+    "topic": "constructions",
+    "family": "structured-relations",
+    "recipe": "bisector-construction"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870721",
+    "providerSourceId": "course-87-en:item:SN870721",
+    "topic": "volume",
+    "family": "structured-solids",
+    "recipe": "solid-volume"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870664",
+    "providerSourceId": "course-87-en:item:SN870664",
+    "topic": "surface-area",
+    "family": "structured-solids",
+    "recipe": "sphere-surface"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870048",
+    "providerSourceId": "course-87-en:item:SX870048",
+    "topic": "measurement",
+    "family": "structured-solids",
+    "recipe": "ruler-difference"
+  },
+  {
+    "sourceId": "algebra-half-en:node:737",
+    "providerSourceId": "algebra-half-en:node:737",
+    "topic": "volume",
+    "family": "structured-solids",
+    "recipe": "pyramid-volume"
+  },
+  {
+    "sourceId": "algebra-half-en:node:738",
+    "providerSourceId": "algebra-half-en:node:738",
+    "topic": "volume",
+    "family": "structured-solids",
+    "recipe": "cone-volume"
+  },
+  {
+    "sourceId": "algebra-half-en:node:741",
+    "providerSourceId": "algebra-half-en:node:741",
+    "topic": "surface-area",
+    "family": "structured-solids",
+    "recipe": "pyramid-surface"
+  },
+  {
+    "sourceId": "algebra-half-en:node:742",
+    "providerSourceId": "algebra-half-en:node:742",
+    "topic": "surface-area",
+    "family": "structured-solids",
+    "recipe": "cone-surface"
+  },
+  {
+    "sourceId": "algebra-half-en:node:691",
+    "providerSourceId": "algebra-half-en:node:691",
+    "topic": "measurement",
+    "family": "structured-solids",
+    "recipe": "inch-read"
+  },
+  {
+    "sourceId": "algebra-half-en:node:694",
+    "providerSourceId": "algebra-half-en:node:694",
+    "topic": "measurement",
+    "family": "structured-solids",
+    "recipe": "metric-read"
+  },
+  {
+    "sourceId": "algebra-2-en:node:635",
+    "providerSourceId": "algebra-2-en:node:635",
+    "topic": "coordinate-geometry",
+    "family": "structured-algebra-review",
+    "recipe": "point-distance"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870075",
+    "providerSourceId": "course-87-en:item:SN870075",
+    "topic": "angles",
+    "family": "structured-algebra-review",
+    "recipe": "protractor-read"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-7.1",
+    "providerSourceId": "course-87-en:authored:MCADA-7.1",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "7.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-7.3",
+    "providerSourceId": "course-87-en:authored:MCADA-7.3",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "7.3"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-7.4",
+    "providerSourceId": "course-87-en:authored:MCADA-7.4",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "7.4"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-8.6",
+    "providerSourceId": "course-87-en:authored:MCADA-8.6",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "8.6"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-16.2",
+    "providerSourceId": "course-87-en:authored:MCADA-16.2",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "16.2"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-16.3",
+    "providerSourceId": "course-87-en:authored:MCADA-16.3",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "16.3"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-17.2",
+    "providerSourceId": "course-87-en:authored:MCADA-17.2",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "17.2"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-17.4",
+    "providerSourceId": "course-87-en:authored:MCADA-17.4",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "17.4"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-18.1",
+    "providerSourceId": "course-87-en:authored:MCADA-18.1",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "18.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-18.2",
+    "providerSourceId": "course-87-en:authored:MCADA-18.2",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "18.2"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-18.3",
+    "providerSourceId": "course-87-en:authored:MCADA-18.3",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "18.3"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-18.4",
+    "providerSourceId": "course-87-en:authored:MCADA-18.4",
+    "topic": "similarity-scale",
+    "family": "structured-curriculum87",
+    "recipe": "18.4"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-18.5",
+    "providerSourceId": "course-87-en:authored:MCADA-18.5",
+    "topic": "similarity-scale",
+    "family": "structured-curriculum87",
+    "recipe": "18.5"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-18.6",
+    "providerSourceId": "course-87-en:authored:MCADA-18.6",
+    "topic": "similarity-scale",
+    "family": "structured-curriculum87",
+    "recipe": "18.6"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-19.2",
+    "providerSourceId": "course-87-en:authored:MCADA-19.2",
+    "topic": "perimeter",
+    "family": "structured-curriculum87",
+    "recipe": "19.2"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-20.5",
+    "providerSourceId": "course-87-en:authored:MCADA-20.5",
+    "topic": "area",
+    "family": "structured-curriculum87",
+    "recipe": "20.5"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-20.7",
+    "providerSourceId": "course-87-en:authored:MCADA-20.7",
+    "topic": "area",
+    "family": "structured-curriculum87",
+    "recipe": "20.7"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-20.11",
+    "providerSourceId": "course-87-en:authored:MCADA-20.11",
+    "topic": "area",
+    "family": "structured-curriculum87",
+    "recipe": "20.11"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-32.1",
+    "providerSourceId": "course-87-en:authored:MCADA-32.1",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "32.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-32.4",
+    "providerSourceId": "course-87-en:authored:MCADA-32.4",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "32.4"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-40.1",
+    "providerSourceId": "course-87-en:authored:MCADA-40.1",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "40.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-40.3",
+    "providerSourceId": "course-87-en:authored:MCADA-40.3",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "40.3"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-40.4",
+    "providerSourceId": "course-87-en:authored:MCADA-40.4",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "40.4"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-50.1",
+    "providerSourceId": "course-87-en:authored:MCADA-50.1",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "50.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-53.1",
+    "providerSourceId": "course-87-en:authored:MCADA-53.1",
+    "topic": "rates",
+    "family": "structured-curriculum87",
+    "recipe": "53.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-58.1",
+    "providerSourceId": "course-87-en:authored:MCADA-58.1",
+    "topic": "transformations",
+    "family": "structured-curriculum87",
+    "recipe": "58.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-61.2",
+    "providerSourceId": "course-87-en:authored:MCADA-61.2",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "61.2"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-66.1",
+    "providerSourceId": "course-87-en:authored:MCADA-66.1",
+    "topic": "circle-measurement",
+    "family": "structured-curriculum87",
+    "recipe": "66.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-66.3",
+    "providerSourceId": "course-87-en:authored:MCADA-66.3",
+    "topic": "circle-measurement",
+    "family": "structured-curriculum87",
+    "recipe": "66.3"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-67.1",
+    "providerSourceId": "course-87-en:authored:MCADA-67.1",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "67.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-67.2",
+    "providerSourceId": "course-87-en:authored:MCADA-67.2",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "67.2"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-67.3",
+    "providerSourceId": "course-87-en:authored:MCADA-67.3",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "67.3"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-89.1",
+    "providerSourceId": "course-87-en:authored:MCADA-89.1",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "89.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-96.1",
+    "providerSourceId": "course-87-en:authored:MCADA-96.1",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "96.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-102.2",
+    "providerSourceId": "course-87-en:authored:MCADA-102.2",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "102.2"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-104.1",
+    "providerSourceId": "course-87-en:authored:MCADA-104.1",
+    "topic": "circle-measurement",
+    "family": "structured-curriculum87",
+    "recipe": "104.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-105.2",
+    "providerSourceId": "course-87-en:authored:MCADA-105.2",
+    "topic": "surface-area",
+    "family": "structured-curriculum87",
+    "recipe": "105.2"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-INV2.1",
+    "providerSourceId": "course-87-en:authored:MCADA-INV2.1",
+    "topic": "constructions",
+    "family": "structured-curriculum87",
+    "recipe": "INV2.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-INV2.2",
+    "providerSourceId": "course-87-en:authored:MCADA-INV2.2",
+    "topic": "constructions",
+    "family": "structured-curriculum87",
+    "recipe": "INV2.2"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-INV2.3",
+    "providerSourceId": "course-87-en:authored:MCADA-INV2.3",
+    "topic": "constructions",
+    "family": "structured-curriculum87",
+    "recipe": "INV2.3"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-INV2.4",
+    "providerSourceId": "course-87-en:authored:MCADA-INV2.4",
+    "topic": "constructions",
+    "family": "structured-curriculum87",
+    "recipe": "INV2.4"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-INV2.5",
+    "providerSourceId": "course-87-en:authored:MCADA-INV2.5",
+    "topic": "constructions",
+    "family": "structured-curriculum87",
+    "recipe": "INV2.5"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-INV3.1",
+    "providerSourceId": "course-87-en:authored:MCADA-INV3.1",
+    "topic": "coordinate-geometry",
+    "family": "structured-curriculum87",
+    "recipe": "INV3.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-INV5.2",
+    "providerSourceId": "course-87-en:authored:MCADA-INV5.2",
+    "topic": "data-displays",
+    "family": "structured-curriculum87",
+    "recipe": "INV5.2"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-INV5.3",
+    "providerSourceId": "course-87-en:authored:MCADA-INV5.3",
+    "topic": "data-displays",
+    "family": "structured-curriculum87",
+    "recipe": "INV5.3"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-INV6.3",
+    "providerSourceId": "course-87-en:authored:MCADA-INV6.3",
+    "topic": "transformations",
+    "family": "structured-curriculum87",
+    "recipe": "INV6.3"
+  },
+  {
+    "sourceId": "course-87-en:authored:MCADA-INV6.4",
+    "providerSourceId": "course-87-en:authored:MCADA-INV6.4",
+    "topic": "transformations",
+    "family": "structured-curriculum87",
+    "recipe": "INV6.4"
+  },
+  {
+    "sourceId": "course-87-en:authored:COURSE108.2",
+    "providerSourceId": "course-87-en:authored:COURSE108.2",
+    "topic": "reasoning",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE108.2"
+  },
+  {
+    "sourceId": "course-87-en:authored:COURSE112.2",
+    "providerSourceId": "course-87-en:authored:COURSE112.2",
+    "topic": "pythagorean",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE112.2"
+  },
+  {
+    "sourceId": "course-87-en:authored:COURSE113.3",
+    "providerSourceId": "course-87-en:authored:COURSE113.3",
+    "topic": "volume",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE113.3"
+  },
+  {
+    "sourceId": "course-87-en:authored:COURSE115.1",
+    "providerSourceId": "course-87-en:authored:COURSE115.1",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE115.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:COURSE115.2",
+    "providerSourceId": "course-87-en:authored:COURSE115.2",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE115.2"
+  },
+  {
+    "sourceId": "course-87-en:authored:COURSE119.1",
+    "providerSourceId": "course-87-en:authored:COURSE119.1",
+    "topic": "reasoning",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE119.1"
+  },
+  {
+    "sourceId": "course-87-en:authored:COURSE119.2",
+    "providerSourceId": "course-87-en:authored:COURSE119.2",
+    "topic": "reasoning",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE119.2"
+  },
+  {
+    "sourceId": "course-87-en:authored:COURSE210.2",
+    "providerSourceId": "course-87-en:authored:COURSE210.2",
+    "topic": "probability",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE210.2"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-3f5b0aee3781-2",
+    "providerSourceId": "intermediate-4-en:authored:M2-3f5b0aee3781-2",
+    "topic": "calendar-time",
+    "family": "structured-foundational-courses",
+    "recipe": "months"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-5c0fe4f1443f-1",
+    "providerSourceId": "intermediate-4-en:authored:M2-5c0fe4f1443f-1",
+    "topic": "measurement",
+    "family": "structured-foundational-courses",
+    "recipe": "temperature"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-8249b642047f-1",
+    "providerSourceId": "intermediate-4-en:authored:M2-8249b642047f-1",
+    "topic": "geometry-properties",
+    "family": "structured-foundational-courses",
+    "recipe": "shapes"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-ddfbb17b8be0-2",
+    "providerSourceId": "course-87-en:authored:MCADA-7.4",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "7.4"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-874aeaab47bb-1",
+    "providerSourceId": "intermediate-4-en:authored:M2-874aeaab47bb-1",
+    "topic": "data-displays",
+    "family": "structured-foundational-courses",
+    "recipe": "bar-create"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-dbd5635b2478-1",
+    "providerSourceId": "intermediate-4-en:authored:M2-dbd5635b2478-1",
+    "topic": "calendar-time",
+    "family": "structured-foundational-courses",
+    "recipe": "calendar"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-131c71fc944c-1",
+    "providerSourceId": "intermediate-4-en:authored:M2-131c71fc944c-1",
+    "topic": "data-displays",
+    "family": "structured-foundational-courses",
+    "recipe": "survey"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-538a2ea0417a-1",
+    "providerSourceId": "course-87-en:authored:MCADA-18.1",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "18.1"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-08d5c41e08cb-1",
+    "providerSourceId": "course-87-en:authored:MCADA-18.4",
+    "topic": "similarity-scale",
+    "family": "structured-curriculum87",
+    "recipe": "18.4"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-08d5c41e08cb-2",
+    "providerSourceId": "course-87-en:authored:MCADA-18.5",
+    "topic": "similarity-scale",
+    "family": "structured-curriculum87",
+    "recipe": "18.5"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-763509187d44-1",
+    "providerSourceId": "intermediate-4-en:authored:M2-763509187d44-1",
+    "topic": "reasoning",
+    "family": "structured-foundational-courses",
+    "recipe": "information"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-9a770361a5f0-1",
+    "providerSourceId": "intermediate-4-en:authored:M2-9a770361a5f0-1",
+    "topic": "geometry-properties",
+    "family": "structured-foundational-courses",
+    "recipe": "turns"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-87908ef73c84-1",
+    "providerSourceId": "course-87-en:authored:MCADA-58.1",
+    "topic": "transformations",
+    "family": "structured-curriculum87",
+    "recipe": "58.1"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-2c12df5cf209-1",
+    "providerSourceId": "intermediate-4-en:authored:M2-2c12df5cf209-1",
+    "topic": "geometry-properties",
+    "family": "structured-foundational-courses",
+    "recipe": "tessellation"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-ec616ec4d1a2-1",
+    "providerSourceId": "course-87-en:authored:MCADA-67.1",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "67.1"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-ec616ec4d1a2-2",
+    "providerSourceId": "course-87-en:authored:MCADA-67.2",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "67.2"
+  },
+  {
+    "sourceId": "intermediate-4-en:authored:M2-9423110916cd-1",
+    "providerSourceId": "intermediate-4-en:authored:M2-9423110916cd-1",
+    "topic": "measurement",
+    "family": "structured-foundational-courses",
+    "recipe": "estimate-measure"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-c4f194fd4dd9-3",
+    "providerSourceId": "course-1-en:authored:M2-c4f194fd4dd9-3",
+    "topic": "data-displays",
+    "family": "structured-foundational-courses",
+    "recipe": "survey"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-5609fb540126-2",
+    "providerSourceId": "course-1-en:authored:M2-5609fb540126-2",
+    "topic": "measurement",
+    "family": "structured-foundational-courses",
+    "recipe": "scales"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-865122776ab4-1",
+    "providerSourceId": "course-87-en:authored:MCADA-7.4",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "7.4"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-1586a2a40f39-2",
+    "providerSourceId": "course-1-en:authored:M2-1586a2a40f39-2",
+    "topic": "data-displays",
+    "family": "structured-foundational-courses",
+    "recipe": "bar-create"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-fc5a10837abc-2",
+    "providerSourceId": "course-87-en:authored:MCADA-66.3",
+    "topic": "circle-measurement",
+    "family": "structured-curriculum87",
+    "recipe": "66.3"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-23b803fc7d4e-1",
+    "providerSourceId": "course-87-en:authored:MCADA-67.1",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "67.1"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-23b803fc7d4e-2",
+    "providerSourceId": "course-87-en:authored:MCADA-67.2",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "67.2"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-75eb2aeb1566-1",
+    "providerSourceId": "course-87-en:authored:MCADA-18.1",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "18.1"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-75eb2aeb1566-2",
+    "providerSourceId": "course-87-en:authored:MCADA-18.2",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "18.2"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-335fb8ceaa11-1",
+    "providerSourceId": "course-87-en:authored:MCADA-INV3.1",
+    "topic": "coordinate-geometry",
+    "family": "structured-curriculum87",
+    "recipe": "INV3.1"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-4f893f9e8209-2",
+    "providerSourceId": "course-87-en:authored:MCADA-40.4",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "40.4"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-5c4fa8e00372-2",
+    "providerSourceId": "course-1-en:authored:M2-5c4fa8e00372-2",
+    "topic": "constructions",
+    "family": "structured-foundational-courses",
+    "recipe": "bisect-angle"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-5e0ce2596e35-2",
+    "providerSourceId": "course-87-en:authored:MCADA-61.2",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "61.2"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-8e79c4526873-1",
+    "providerSourceId": "course-1-en:authored:M2-8e79c4526873-1",
+    "topic": "geometry-properties",
+    "family": "structured-foundational-courses",
+    "recipe": "turns"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-5a92e1ff2ff9-2",
+    "providerSourceId": "course-87-en:authored:COURSE108.2",
+    "topic": "reasoning",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE108.2"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-e9c8b69493c0-2",
+    "providerSourceId": "course-87-en:authored:MCADA-102.2",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "102.2"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-9996ee79c132-1",
+    "providerSourceId": "course-87-en:authored:MCADA-18.4",
+    "topic": "similarity-scale",
+    "family": "structured-curriculum87",
+    "recipe": "18.4"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-3c1582763e12-1",
+    "providerSourceId": "course-87-en:authored:MCADA-58.1",
+    "topic": "transformations",
+    "family": "structured-curriculum87",
+    "recipe": "58.1"
+  },
+  {
+    "sourceId": "course-1-en:authored:M2-7ee5e3a62a7a-1",
+    "providerSourceId": "course-87-en:authored:MCADA-50.1",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "50.1"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-9-2",
+    "providerSourceId": "course-87-en:authored:MCADA-7.4",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "7.4"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-23-2",
+    "providerSourceId": "course-87-en:authored:MCADA-50.1",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "50.1"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-38-1",
+    "providerSourceId": "course-87-en:authored:MCADA-INV3.1",
+    "topic": "coordinate-geometry",
+    "family": "structured-curriculum87",
+    "recipe": "INV3.1"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-53-2",
+    "providerSourceId": "course-87-en:authored:MCADA-16.3",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "16.3"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-55-2",
+    "providerSourceId": "algebra-half-en:authored:M3-55-2",
+    "topic": "reasoning",
+    "family": "structured-algebra-half",
+    "recipe": "reference-number"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-64-1",
+    "providerSourceId": "course-87-en:authored:MCADA-104.1",
+    "topic": "circle-measurement",
+    "family": "structured-curriculum87",
+    "recipe": "104.1"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-98-1",
+    "providerSourceId": "course-87-en:authored:MCADA-40.3",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "40.3"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-98-2",
+    "providerSourceId": "course-87-en:authored:MCADA-40.4",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "40.4"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-98-3",
+    "providerSourceId": "course-1-en:authored:M2-5c4fa8e00372-2",
+    "topic": "constructions",
+    "family": "structured-foundational-courses",
+    "recipe": "bisect-angle"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-115-1",
+    "providerSourceId": "course-87-en:authored:MCADA-18.1",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "18.1"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-115-2",
+    "providerSourceId": "course-87-en:authored:MCADA-18.4",
+    "topic": "similarity-scale",
+    "family": "structured-curriculum87",
+    "recipe": "18.4"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-115-3",
+    "providerSourceId": "course-87-en:authored:MCADA-18.5",
+    "topic": "similarity-scale",
+    "family": "structured-curriculum87",
+    "recipe": "18.5"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-118-1",
+    "providerSourceId": "algebra-half-en:authored:M3-118-1",
+    "topic": "measurement",
+    "family": "structured-algebra-half",
+    "recipe": "english-volume"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-118-2",
+    "providerSourceId": "algebra-half-en:authored:M3-118-2",
+    "topic": "measurement",
+    "family": "structured-algebra-half",
+    "recipe": "volume-multipliers"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-119-1",
+    "providerSourceId": "course-87-en:authored:COURSE115.1",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE115.1"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-119-2",
+    "providerSourceId": "course-87-en:authored:COURSE115.2",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE115.2"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-119-3",
+    "providerSourceId": "algebra-half-en:authored:M3-119-3",
+    "topic": "measurement",
+    "family": "structured-algebra-half",
+    "recipe": "metric-cube"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-120-3",
+    "providerSourceId": "course-87-en:authored:COURSE113.3",
+    "topic": "volume",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE113.3"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-121-1",
+    "providerSourceId": "course-87-en:authored:MCADA-67.3",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "67.3"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-121-3",
+    "providerSourceId": "course-87-en:authored:MCADA-58.1",
+    "topic": "transformations",
+    "family": "structured-curriculum87",
+    "recipe": "58.1"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-201-6",
+    "providerSourceId": "algebra-half-en:authored:M3-201-6",
+    "topic": "constructions",
+    "family": "structured-algebra-half",
+    "recipe": "construction-tools"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-202-7",
+    "providerSourceId": "algebra-half-en:authored:M3-202-7",
+    "topic": "data-displays",
+    "family": "structured-algebra-half",
+    "recipe": "histogram-read"
+  },
+  {
+    "sourceId": "algebra-half-en:authored:M3-204-2",
+    "providerSourceId": "course-87-en:authored:MCADA-102.2",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "102.2"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-2-1",
+    "providerSourceId": "course-87-en:authored:MCADA-7.4",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "7.4"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-2-2",
+    "providerSourceId": "course-87-en:authored:MCADA-18.1",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "18.1"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-2-3",
+    "providerSourceId": "course-87-en:authored:MCADA-18.3",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "18.3"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-3-2",
+    "providerSourceId": "course-87-en:authored:MCADA-19.2",
+    "topic": "perimeter",
+    "family": "structured-curriculum87",
+    "recipe": "19.2"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-10-1",
+    "providerSourceId": "course-87-en:authored:COURSE119.1",
+    "topic": "reasoning",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE119.1"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-20-3",
+    "providerSourceId": "algebra-half-en:node:475",
+    "topic": "volume",
+    "family": "structured-geometry",
+    "recipe": "cylinder-volume"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-45-1",
+    "providerSourceId": "algebra-1-en:node:493",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "data-statistics"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-45-2",
+    "providerSourceId": "algebra-1-en:node:496",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "mean-from-total"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-50-2",
+    "providerSourceId": "algebra-1-en:authored:M4-50-2",
+    "topic": "coordinate-geometry",
+    "family": "structured-algebra-one",
+    "recipe": "coordinate-pairs"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-52-2",
+    "providerSourceId": "algebra-1-en:node:551",
+    "topic": "statistics",
+    "family": "structured-statistics",
+    "recipe": "two-group-mean"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-53-2",
+    "providerSourceId": "algebra-half-en:authored:M3-118-2",
+    "topic": "measurement",
+    "family": "structured-algebra-half",
+    "recipe": "volume-multipliers"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-60-1",
+    "providerSourceId": "course-87-en:authored:MCADA-67.1",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "67.1"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-60-2",
+    "providerSourceId": "course-87-en:authored:MCADA-67.2",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "67.2"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-60-4",
+    "providerSourceId": "algebra-half-en:node:475",
+    "topic": "volume",
+    "family": "structured-geometry",
+    "recipe": "cylinder-volume"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-64-1",
+    "providerSourceId": "algebra-1-en:authored:M4-64-1",
+    "topic": "reasoning",
+    "family": "structured-algebra-one",
+    "recipe": "domain"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-70-1",
+    "providerSourceId": "algebra-1-en:node:696",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "dice-sum"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-70-2",
+    "providerSourceId": "algebra-1-en:node:702",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "coin-sequence"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-73-2",
+    "providerSourceId": "algebra-1-en:node:735",
+    "topic": "probability",
+    "family": "structured-statistics",
+    "recipe": "marble-without"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-91-2",
+    "providerSourceId": "course-87-en:authored:COURSE113.3",
+    "topic": "volume",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE113.3"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-94-1",
+    "providerSourceId": "algebra-1-en:authored:M4-94-1",
+    "topic": "rates",
+    "family": "structured-algebra-one",
+    "recipe": "motion:sum"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-97-2",
+    "providerSourceId": "course-87-en:authored:MCADA-40.4",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "40.4"
+  },
+  {
+    "sourceId": "algebra-1-en:authored:M4-97-4",
+    "providerSourceId": "course-87-en:authored:COURSE112.2",
+    "topic": "pythagorean",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE112.2"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M5-space-lines-planes",
+    "providerSourceId": "algebra-2-en:authored:M5-space-lines-planes",
+    "topic": "geometry-properties",
+    "family": "structured-algebra-two",
+    "recipe": "space:lines-planes"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M5-statistics-population",
+    "providerSourceId": "algebra-2-en:authored:M5-statistics-population",
+    "topic": "statistics",
+    "family": "structured-algebra-two",
+    "recipe": "statistics:population"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M5-statistics-normal",
+    "providerSourceId": "algebra-2-en:authored:M5-statistics-normal",
+    "topic": "statistics",
+    "family": "structured-algebra-two",
+    "recipe": "statistics:normal"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-0-1",
+    "providerSourceId": "algebra-2-en:authored:M6-0-1",
+    "topic": "geometry-properties",
+    "family": "structured-algebra-two-completion",
+    "recipe": "review:notation"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-0-2",
+    "providerSourceId": "algebra-2-en:authored:M6-0-2",
+    "topic": "area",
+    "family": "structured-algebra-two-completion",
+    "recipe": "review:area"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-0-3",
+    "providerSourceId": "algebra-2-en:authored:M6-0-3",
+    "topic": "volume",
+    "family": "structured-algebra-two-completion",
+    "recipe": "review:solid"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-0-4",
+    "providerSourceId": "algebra-2-en:authored:M6-0-4",
+    "topic": "angles",
+    "family": "structured-algebra-two-completion",
+    "recipe": "review:angles"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-0-10",
+    "providerSourceId": "algebra-2-en:authored:M6-0-10",
+    "topic": "volume",
+    "family": "structured-algebra-two-completion",
+    "recipe": "review:inverse-solid"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-0-12",
+    "providerSourceId": "algebra-2-en:authored:M6-0-12",
+    "topic": "surface-area",
+    "family": "structured-algebra-two-completion",
+    "recipe": "review:surface"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-1-1",
+    "providerSourceId": "course-87-en:authored:MCADA-18.3",
+    "topic": "geometry-properties",
+    "family": "structured-curriculum87",
+    "recipe": "18.3"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-1-4",
+    "providerSourceId": "course-87-en:authored:MCADA-102.2",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "102.2"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-2-4",
+    "providerSourceId": "algebra-2-en:authored:M6-2-4",
+    "topic": "geometry-properties",
+    "family": "structured-algebra-two-completion",
+    "recipe": "geometry:circle-parts"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-17-2",
+    "providerSourceId": "algebra-2-en:authored:M6-17-2",
+    "topic": "angles",
+    "family": "structured-algebra-two-completion",
+    "recipe": "review:angles"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-29-1",
+    "providerSourceId": "algebra-1-en:authored:M4-94-1",
+    "topic": "rates",
+    "family": "structured-algebra-one",
+    "recipe": "motion:sum"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-30-1",
+    "providerSourceId": "algebra-2-en:authored:M6-30-1",
+    "topic": "proof",
+    "family": "structured-algebra-two-completion",
+    "recipe": "proof:deduction"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-30-2",
+    "providerSourceId": "algebra-2-en:authored:M6-30-2",
+    "topic": "proof",
+    "family": "structured-algebra-two-completion",
+    "recipe": "proof:euclid"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-30-4",
+    "providerSourceId": "course-87-en:authored:MCADA-102.2",
+    "topic": "angles",
+    "family": "structured-curriculum87",
+    "recipe": "102.2"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-31-3",
+    "providerSourceId": "algebra-2-en:authored:M6-31-3",
+    "topic": "angles",
+    "family": "structured-algebra-two-completion",
+    "recipe": "geometry:exterior"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-35-2",
+    "providerSourceId": "algebra-2-en:authored:M6-35-2",
+    "topic": "angles",
+    "family": "structured-algebra-two-completion",
+    "recipe": "geometry:cyclic"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-39-5",
+    "providerSourceId": "algebra-2-en:authored:M6-39-5",
+    "topic": "angles",
+    "family": "structured-algebra-two-completion",
+    "recipe": "geometry:rhombus"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-41-1",
+    "providerSourceId": "course-87-en:authored:MCADA-50.1",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "50.1"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-47-1",
+    "providerSourceId": "algebra-2-en:authored:M6-47-1",
+    "topic": "measurement",
+    "family": "structured-algebra-two-completion",
+    "recipe": "units:rate"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-53-3",
+    "providerSourceId": "algebra-2-en:authored:M6-53-3",
+    "topic": "measurement",
+    "family": "structured-algebra-two-completion",
+    "recipe": "units:metric-chain"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-53-4",
+    "providerSourceId": "algebra-2-en:authored:M6-53-4",
+    "topic": "measurement",
+    "family": "structured-algebra-two-completion",
+    "recipe": "units:area-chain"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-56-1",
+    "providerSourceId": "algebra-2-en:authored:M6-56-1",
+    "topic": "geometry-properties",
+    "family": "structured-algebra-two-completion",
+    "recipe": "geometry:circle-parts"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-57-2",
+    "providerSourceId": "algebra-2-en:authored:M6-57-2",
+    "topic": "gas-laws",
+    "family": "structured-algebra-two-completion",
+    "recipe": "gas:significant-pressure"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-57-3",
+    "providerSourceId": "algebra-2-en:authored:M6-57-3",
+    "topic": "gas-laws",
+    "family": "structured-algebra-two-completion",
+    "recipe": "gas:significant-volume"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-74-1",
+    "providerSourceId": "algebra-2-en:authored:M6-74-1",
+    "topic": "rates",
+    "family": "structured-algebra-two-completion",
+    "recipe": "motion:two-distances"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-74-2",
+    "providerSourceId": "algebra-2-en:authored:M6-74-2",
+    "topic": "rates",
+    "family": "structured-algebra-two-completion",
+    "recipe": "motion:return"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-79-1",
+    "providerSourceId": "algebra-half-en:authored:M3-119-3",
+    "topic": "measurement",
+    "family": "structured-algebra-half",
+    "recipe": "metric-cube"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-79-2",
+    "providerSourceId": "course-87-en:authored:COURSE115.1",
+    "topic": "measurement",
+    "family": "structured-curriculum87",
+    "recipe": "COURSE115.1"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-88-2",
+    "providerSourceId": "algebra-2-en:authored:M6-88-2",
+    "topic": "gas-laws",
+    "family": "structured-algebra-two-completion",
+    "recipe": "gas:moles"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-88-3",
+    "providerSourceId": "algebra-2-en:authored:M6-88-3",
+    "topic": "gas-laws",
+    "family": "structured-algebra-two-completion",
+    "recipe": "gas:ideal-volume"
+  },
+  {
+    "sourceId": "algebra-2-en:authored:M6-125-1",
+    "providerSourceId": "algebra-2-en:authored:M6-125-1",
+    "topic": "coordinate-geometry",
+    "family": "structured-algebra-two-completion",
+    "recipe": "geometry:distance-line"
+  }
+]
