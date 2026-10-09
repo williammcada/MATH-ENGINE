@@ -1,4 +1,6 @@
-> Current checkpoint (2026-10-09): Milestone 3 complete at documented representative scope. Algebra 1/2: 378 working entries (+306), Lessons 1–123 and Topics A–J; all banks: 1,597. Engine 0.23.0-rc.4 / Studio 0.25.0-rc.4. Next: Milestone 4, Algebra 1, not started. Earlier checkpoint sections below are historical.
+> Current checkpoint (2026-10-09): Milestone 4 complete at documented representative scope. Algebra 1: 309 working entries (+240), Lessons 1–120; all banks: 1,837. Engine 0.24.0-rc.3 / Studio 0.26.0-rc.3. Next: Milestone 5, remaining Algebra 2 generator families, not started. Earlier checkpoints below are historical.
+
+[Download Studio v0.26.0-rc.3](https://github.com/williammcada/test-and-practice-studio/blob/main/downloads/Test-and-Practice-Studio-v0.26.0-rc.3.html) · [Verification](https://github.com/williammcada/MATH-ENGINE/blob/main/docs/MILESTONE4-VERIFICATION.md) · [Quickstart](https://github.com/williammcada/test-and-practice-studio/blob/main/docs/MILESTONE4-QUICKSTART.md).
 
 [Download Studio v0.25.0-rc.4](https://github.com/williammcada/test-and-practice-studio/blob/main/downloads/Test-and-Practice-Studio-v0.25.0-rc.4.html) · [Verification](https://github.com/williammcada/MATH-ENGINE/blob/main/docs/MILESTONE3-VERIFICATION.md) · [Quickstart](https://github.com/williammcada/test-and-practice-studio/blob/main/docs/MILESTONE3-QUICKSTART.md).
 

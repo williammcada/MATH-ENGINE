@@ -1,0 +1,93 @@
+{
+  "milestone": 4,
+  "status": "complete",
+  "date": "2026-10-09",
+  "scope": "Algebra 1 Lessons 1–120, documented bounded representative task coverage",
+  "handbookRevision": "fd4330863f4cc0812180fbf1de122970a42c7885",
+  "baselines": {
+    "engine": "1b127905daf63548b8f288e483b1617785619179",
+    "studio": "76491f872b7e3b6515fa1d065e518fd21c2d2b99"
+  },
+  "testedImplementation": {
+    "engine": "3689414a2a25f965bd1660641d6934ab6658b77b",
+    "engineVersion": "0.24.0-rc.3",
+    "studio": "df1b60a938d954c3938f4b03a864afc067996aae",
+    "studioVersion": "0.26.0-rc.3"
+  },
+  "counts": {
+    "lessons": 120,
+    "sourceRecordsTraced": 679,
+    "addedEntries": 240,
+    "retainedAlgebra1Entries": 69,
+    "algebra1Working": 309,
+    "allWorking": 1837,
+    "allAuthored": 1316,
+    "reuseBindings": 104,
+    "customTaskBindings": 136,
+    "distinctNewRecipes": 121,
+    "retainedLegacyPreviews": 5425
+  },
+  "checks": {
+    "generatedCases": 15360,
+    "variantsPerNewEntry": 64,
+    "teacherCases": 9344,
+    "customAuditCases": 8704,
+    "independentNumericCases": 896,
+    "symbolicOrModelCases": 6656,
+    "teacherContractOnlyCases": 1152,
+    "retainedEntries": 1597,
+    "retainedParityCases": 4791,
+    "layoutCases": 15792,
+    "layoutFailures": 0,
+    "layoutScope": "1316 authored entries × 12 A4/Letter, column and mode combinations at variant 7",
+    "visualPDFPages": 10,
+    "visualRenderedWordPages": 7,
+    "vendorModulesIdentical": 58,
+    "studioCore": "passed",
+    "phase3Core": "passed",
+    "phase3Browser": "passed",
+    "milestone4Browser": {
+      "result": "passed",
+      "version": "0.26.0-rc.3",
+      "selected": 12,
+      "exports": [
+        {
+          "name": "A4-student",
+          "pages": 5
+        },
+        {
+          "name": "Letter-key",
+          "pages": 5
+        }
+      ],
+      "browser": "153.0.8010.0",
+      "checks": "Algebra 1 selector; 12 new entry previews covering symbolic, graph and data tasks; manual packet; student/key isolation; session replay; narrow viewport; actual Word/PDF exports"
+    }
+  },
+  "delivery": {
+    "path": "downloads/Test-and-Practice-Studio-v0.26.0-rc.3.html",
+    "bytes": 2006012,
+    "sha256": "4c5bf2d42bfe877791686d8963f7dc9aa21198d1613b454927483990182dd99d",
+    "indexIdentical": true
+  },
+  "exportHashes": {
+    "A4-student.pdf": "2a9d57e6ac2b1c455f2f20d12ece701220fe41bb2cb4ccb95d39aefad3e96d55",
+    "Letter-key.pdf": "0a471f73b2bbb73ed63be2c8ad3ddcb15dd82c6db45b95fcb03f084652f2f968",
+    "A4-student.docx": "5df411500dcd4f17c148ded9259a2357d685dd579f04c007bda6a74e50881da7",
+    "Letter-key.docx": "8738fb71a341265d1e6379a2692d0ad16dc5efe6f8422fc4919eb1ea85303523"
+  },
+  "runtimeHashes": {
+    "course-banks.js": "52b77a9c6773d7131dc13a444fdb68c020e20bacb7e6d5d10697fe9023ba0d63",
+    "algebra-one.js": "37368d7711151215ba7a86331dd95c3a11a282367d4a816d4be84f2c4647291b",
+    "algebra-one-map.js": "808e5b7b34af7c80ef70c2a889933fde37d797082a0d4c3a64dfbf65a8f50310"
+  },
+  "limits": [
+    "Finite representative curriculum coverage, not exact reconstruction of all publisher records or exhaustive outcome certification.",
+    "Teacher production and symbolic-method tasks require teacher review; contract checks do not grade student drawings or proofs.",
+    "Actual Word files were reviewed using LibreOffice rendering; native Windows Word, iPad and physical printer checks are not certified.",
+    "No deployment. GradeCam remains Grade 5 only. Cross-grade connections remain planned for Milestone 7."
+  ],
+  "nextMilestone": 5,
+  "nextMilestoneTitle": "Remaining Algebra 2 generator families",
+  "nextMilestoneStarted": false
+}
