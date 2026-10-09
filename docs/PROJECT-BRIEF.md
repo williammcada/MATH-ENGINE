@@ -1,3 +1,5 @@
+> Future feature recorded 2026-10-09: after all curriculum banks are complete, Milestone 7 will analyze cross-grade connections and support teacher selection of harder/easier related tasks across banks. See [cross-grade feature note](change-specs/cross-grade-connections-v0.1.md). Planning only; not implemented.
+
 > Current checkpoint (2026-10-09): Milestone 2 authorized by “Complete milestone 2” and completed. Intermediate 4: 260 working entries; Course 1: 277; 8/7: 502 retained. Engine 0.22.0-rc.2 / Studio 0.24.0-rc.2. See docs/MILESTONE2-VERIFICATION.md (or MILESTONE2-VERIFICATION.md from this docs folder). Next: Milestone 3, Algebra 1/2, not started. Earlier status sections below are historical.
 
 # Remaining curricula — Milestone 1 audit complete

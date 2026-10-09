@@ -12,7 +12,7 @@ Canonical audit: [REVIEW.md](https://github.com/williammcada/MATH-ENGINE/blob/ma
 4. Proposed: finish Algebra 1, including symbolic restrictions, contextual models and distinct solution methods.
 5. Proposed: implement and independently verify remaining Algebra 2 generator families.
 6. Proposed: integrate and close all Algebra 2 lesson demands, including authored coverage for Lesson 128.
-7. Proposed: cross-course verification, deduplication review and consolidated delivery.
+7. Planned final milestone: cross-course verification, deduplication review, systematic cross-grade connection analysis, teacher-directed upward/downward content suggestions, and consolidated delivery. The cross-grade feature was requested on 2026-10-09; see [feature note](cross-grade-connections-v0.1.md). Implementation has not started.
 
 One milestone authorization includes implementation, internal checkpoint saves, correction and verification, and a final verified checkpoint. No recurring proceed prompts for internal batches. A real blocking source decision or execution limit gets an explicit checkpoint and precise resume location. Runtime mathematics stays in Engine; Studio consumes pinned modules. GradeCam remains Grade 5 only. Preserve all 891 current entries and completed 8/7 behavior. New HTML bytes require a new version. Release and deployment are separate from implementation verification.
 
