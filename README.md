@@ -1,3 +1,9 @@
+## Current checkpoint — Related Concepts verified (2026-10-09)
+
+Engine 0.33.0-rc.1 / Studio 0.35.0-rc.1 maps all 2,184 working entries across Grade 3 through Algebra 2. The teacher finder supports concept search, course filters, explained connections, repeated-generator grouping and batch selection into existing packets. All 331 Grade 5 codes and prior progression relationships remain.
+
+[Verification](docs/RELATED-CONCEPTS-VERIFICATION.md) · [Download and teacher quickstart](docs/RELATED-CONCEPTS-QUICKSTART.md). Saved on review branches; no main merge or deployment. Earlier checkpoints below are historical.
+
 ## Current checkpoint — Chunk 4 verified (2026-10-09)
 
 Engine 0.32.0-rc.2 / Studio 0.34.0-rc.2: all 749 frozen entries reconciled, 39 new cross-course directional entries, 710 reviewed residuals. All 2,184 working entries and 331 Grade 5 codes preserved. Exact download, browser, generation and Word/PDF checks passed. Saved on review branches; no merge or deployment.

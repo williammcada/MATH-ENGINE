@@ -1,0 +1,37 @@
+{
+  "result": "passed",
+  "version": "0.35.0-rc.1",
+  "browser": "153.0.8010.0",
+  "bytes": 5892859,
+  "sha256": "7756be0f18011fe6ac4cc35cbd59c3b45fe7a436f90318b6f9944b27ec55527b",
+  "pagination": {
+    "providers": 299,
+    "pages": 13
+  },
+  "exports": [
+    {
+      "mode": "student",
+      "pages": 2,
+      "questions": 6
+    },
+    {
+      "mode": "key",
+      "pages": 2,
+      "questions": 6
+    }
+  ],
+  "checks": [
+    "Actual preview entry point",
+    "Pythagorean earlier/later courses and reverse discovery",
+    "GCF synonym and prime factorisation search",
+    "Algebra 1 factoring to Grade 5",
+    "No matches and conflicting course filters",
+    "Preview preserves origin",
+    "Multiselect across filters/pages, clear, add and undo",
+    "Repeated provider grouping",
+    "Existing difficulty/progression",
+    "Six-course draft download and packet replay",
+    "Student/key Word and PDF exports",
+    "390px viewport"
+  ]
+}

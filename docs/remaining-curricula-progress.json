@@ -1,15 +1,15 @@
 {
   "milestone": 7,
   "status": "complete at documented representative curriculum and reviewed-connection scope",
-  "stage": "Comparison Chunk 4 complete and verified",
-  "engineVersion": "0.32.0-rc.2",
-  "studioVersion": "0.34.0-rc.2",
+  "stage": "Whole-curriculum related concepts v0.1 complete and verified",
+  "engineVersion": "0.33.0-rc.1",
+  "studioVersion": "0.35.0-rc.1",
   "auditRepository": "williammcada/MATH-ENGINE",
   "auditPath": "curriculum/cross-course/v0.6",
-  "nextMilestone": "Whole-curriculum related concepts finder",
+  "nextMilestone": null,
   "nextMilestoneStarted": false,
-  "futureCrossGradeFeature": "Implemented: canonical topic analysis, reviewed relationships, teacher preview and mixed-bank selection.",
-  "resume": "Chunks 1–4 complete and verified. All 749 Chunk 4 entries reconciled; 39 gained directions; 710 reviewed residuals retain explicit dispositions. Next: RELATED-CONCEPTS-NEXT.md, not implemented. Preserve 2184 entries, all 331 Grade 5 codes and existing directions. Read COMPARISON-CHUNK4-VERIFICATION.md. Review branches only; no merge or deployment.",
+  "futureCrossGradeFeature": "Implemented: related concepts finder across all six courses, alongside retained difficulty/progression.",
+  "resume": "Related concepts v0.1 complete and verified. Read RELATED-CONCEPTS-VERIFICATION.md and QUICKSTART. All 2184 entries mapped, 1539 canonical providers, 475 concepts, 164 curated links. Preserve original IDs, all 331 Grade 5 codes, progression judgments and prior downloads. No main merge or deployment; resume from codex/related-concepts-v1.",
   "comparisonExpansion": {
     "reviewedPaths": 414,
     "reviewedPathEntries": 2158,
@@ -58,10 +58,19 @@
     }
   ],
   "delivery": {
-    "file": "downloads/Test-and-Practice-Studio-v0.34.0-rc.2.html",
-    "bytes": 4462312,
-    "sha256": "3e692de1c05ce06f68545258daa1590483dd937f2e2dad93e12a7237038725d9",
-    "engineImplementationCommit": "78ac654252c808f825c1ca60409f0be215420674",
-    "studioImplementationCommit": "85fa017c61427b394887addac001ce60288e2ad4"
+    "file": "downloads/Test-and-Practice-Studio-v0.35.0-rc.1.html",
+    "bytes": 5892859,
+    "sha256": "7756be0f18011fe6ac4cc35cbd59c3b45fe7a436f90318b6f9944b27ec55527b",
+    "engineImplementationCommit": "a1484d714bba3790a8c228fc69b9ae7174135068",
+    "studioImplementationCommit": "9d13f0961dbb5248f4a7e35c0cf05af5b8204c4b"
+  },
+  "relatedConcepts": {
+    "status": "complete and verified at documented working-entry scope",
+    "entries": 2184,
+    "providers": 1539,
+    "concepts": 475,
+    "curatedLinks": 164,
+    "unmappedEntries": 0,
+    "auditPath": "curriculum/related-concepts/v0.1"
   }
 }

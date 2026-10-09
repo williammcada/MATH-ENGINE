@@ -1,0 +1,66 @@
+{
+  "result": "passed",
+  "entries": 2184,
+  "providers": 1539,
+  "concepts": 475,
+  "edges": 164,
+  "unmapped": 0,
+  "symmetricProviderPairs": 1183491,
+  "relatedProviderPairs": 121380,
+  "paginatedEntries": 2184,
+  "largestProviderResult": 467,
+  "generationParityCases": 8736,
+  "grade5Codes": 331,
+  "priorGeneratorAndProgressionModulesUnchanged": true,
+  "pythagoreanCounts": [
+    {
+      "bankId": "intermediate-4-en",
+      "entries": 5,
+      "providers": 5,
+      "mappedEntries": 260,
+      "totalWorkingEntries": 260,
+      "status": "available"
+    },
+    {
+      "bankId": "course-1-en",
+      "entries": 14,
+      "providers": 14,
+      "mappedEntries": 278,
+      "totalWorkingEntries": 278,
+      "status": "available"
+    },
+    {
+      "bankId": "course-87-en",
+      "entries": 24,
+      "providers": 24,
+      "mappedEntries": 503,
+      "totalWorkingEntries": 503,
+      "status": "available"
+    },
+    {
+      "bankId": "algebra-half-en",
+      "entries": 24,
+      "providers": 24,
+      "mappedEntries": 378,
+      "totalWorkingEntries": 378,
+      "status": "available"
+    },
+    {
+      "bankId": "algebra-1-en",
+      "entries": 21,
+      "providers": 20,
+      "mappedEntries": 309,
+      "totalWorkingEntries": 309,
+      "status": "available"
+    },
+    {
+      "bankId": "algebra-2-en",
+      "entries": 41,
+      "providers": 33,
+      "mappedEntries": 456,
+      "totalWorkingEntries": 456,
+      "status": "available"
+    }
+  ],
+  "factoringOrigin": "algebra-1-en:authored:M4-35-1"
+}

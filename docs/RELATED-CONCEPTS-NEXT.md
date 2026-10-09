@@ -1,3 +1,5 @@
+> Implemented and verified 2026-10-09 in Engine 0.33.0-rc.1 / Studio 0.35.0-rc.1. See [verification](RELATED-CONCEPTS-VERIFICATION.md) and [teacher quickstart](RELATED-CONCEPTS-QUICKSTART.md). Original proposal below is historical.
+
 # Next: whole-curriculum related concepts
 
 User-requested proposal, recorded 2026-10-09. Chunk 4 closeout comes first. This feature is not yet implemented.

@@ -1,0 +1,9 @@
+{
+  "result": "passed",
+  "checks": [
+    "Studio core draft validation and missing-object markers",
+    "Phase 3 core: 331 mappings, zero/missing/scales, invalid/duplicate inputs, cap review, replay and source boundaries",
+    "Phase 3 import: XLSX, leading-zero identifiers, formulas, escaped output and local-only requests",
+    "Engine mapping rebuild produces no tracked diff"
+  ]
+}

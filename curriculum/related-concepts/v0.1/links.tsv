@@ -1,0 +1,99 @@
+# from|to|kind|reason|limit
+number-representation|whole-arithmetic|supporting|Place value explains alignment, regrouping and powers-of-ten operations.|Numeral naming alone does not practice an arithmetic algorithm.
+number-representation|decimal-arithmetic|representation|Decimal places extend the base-ten representation used in whole-number work.|Check the places and operation in each preview.
+number-representation|numeral-systems|representation|Positional notation can be compared across bases; Roman notation supplies a contrasting nonpositional system.|Roman rules do not follow binary place-value arithmetic.
+number-representation|rounding-estimation|supporting|Rounding chooses a place and uses neighboring place values.|Estimation tasks may also require an operation or reasonableness judgment.
+number-order|rounding-estimation|supporting|Ordering and bounding values supports choosing a nearest benchmark.|A comparison task need not ask for a rounded answer.
+number-order|integers|representation|Signed numbers can be compared and located on an ordered number line.|Keep the number domain shown in the task.
+whole-arithmetic|fractions|representation|Equal groups and inverse operations connect whole arithmetic to fractional operations.|Fraction operations require their own unit and denominator interpretations.
+whole-arithmetic|decimal-arithmetic|representation|The four arithmetic operations recur in decimal form with place-value scaling.|Decimal placement is an additional demand.
+whole-arithmetic|number-theory|supporting|Multiplication and division expose factors, multiples and divisibility.|Not every arithmetic task asks for factor structure.
+fractions|fraction-equivalence|supporting|Equivalent forms allow fractions to be simplified and expressed with shared denominators.|Some fraction models or products do not require common denominators.
+fraction-equivalence|number-theory|supporting|Factors and common multiples support reduction and common-denominator forms.|Check whether the task uses GCF, LCM or prime factors.
+fractions|fraction-decimal-percent|representation|The same rational quantity can be expressed as a fraction, decimal or percent.|Repeating values and rounding require the displayed conventions.
+fraction-equivalence|fraction-decimal-percent|representation|Simplifying fractional forms preserves the value represented in a conversion.|Conversions may include repeating decimals.
+fraction-decimal-percent|percent|application|Equivalent forms let a percent be used to describe or calculate a part and whole.|Percent change uses a reference amount and is not just a conversion.
+fraction-decimal-percent|ratio-proportion|representation|Fractions and decimals can express ordered part-to-part or part-to-whole comparisons.|Identify the reference quantities before treating a ratio as a fractional share.
+ratio-proportion|rates|application|A rate compares quantities with units and can be scaled proportionally.|Multi-leg motion may require several rates rather than one proportion.
+ratio-proportion|percent|representation|A percent is a ratio with reference value one hundred.|Preserve the original whole in percent-change contexts.
+ratio-proportion|similarity-scale|application|Corresponding lengths and scale factors use proportional relationships.|Area and volume ratios use squares and cubes of a length scale.
+ratio-proportion|variation|application|Proportional relationships lead to direct variation and contrast with inverse or combined variation.|Inverse and joint variation are different model types.
+ratio-proportion|mixtures|application|Concentrations compare a component quantity with the total mixture.|Replacement and removal require tracking which quantities change.
+ratio-proportion|gas-laws|application|Gas models relate changing pressure, volume and temperature through ratios.|Physical conditions and temperature units must be retained.
+percent|exponential|application|Repeated percentage changes give multiplicative growth and compound interest.|Simple interest and repeated growth are different models.
+percent|probability|representation|Event probabilities and their complements can be expressed as percentages.|A percent of a population is not automatically a probability model.
+counting|probability|supporting|Counting possible and favorable outcomes supports finite probability calculations.|Equal likelihood, order and replacement must be checked.
+counting|sets|representation|Sets and outcome lists provide ways to organize possibilities.|Set membership tasks may be conceptual rather than counting calculations.
+probability|statistics|application|Observed frequencies connect probability experiments with data summaries.|Descriptive statistics do not by themselves establish a probability law.
+statistics|data-displays|representation|Data displays make summaries and distribution features visible.|Choose the display and summary appropriate to the variable.
+sequences|functions|representation|A numerical sequence can be viewed as an input-output rule on discrete inputs.|Current sequence tasks need not require formal function notation.
+sequences|whole-arithmetic|supporting|Constant-step sequences use repeated addition or subtraction.|A sequence rule must be identified, not assumed from grade level.
+expressions|equations|supporting|Expression structure and simplification support solving equalities.|An expression has no solution set until a condition is imposed.
+expressions|polynomials|application|Like terms and distribution operate on polynomial expressions.|Variable powers and term structure matter.
+expressions|powers-roots|supporting|Powers and roots can appear within order-of-operations expressions.|Keep parentheses and principal-root conventions.
+expressions|integers|supporting|Signed arithmetic supports substitution and simplification.|Not every expression contains negative values.
+equations|word-equations|representation|A verbal relationship can be modeled by an equation and interpreted in context.|Keep the meaning and feasible values of the unknown.
+equations|literal-equations|representation|Equality-preserving operations also rearrange symbolic formulas.|Parameters can introduce zero or exceptional cases.
+equations|inequalities|representation|Equations and inequalities describe different conditions on unknown quantities.|Negative multiplication reverses inequalities; solution sets differ.
+equations|systems|application|Several simultaneous conditions require solving equations together.|Independent, dependent and inconsistent cases must be distinguished.
+word-equations|systems|application|Count, value and comparison stories may impose multiple simultaneous conditions.|Not every story requires a system.
+word-equations|rates|application|Motion and work contexts translate rates and totals into equations.|Different intervals or rates need distinct terms.
+word-equations|mixtures|application|Mixture quantities can be translated into conservation equations.|Check uniform mixing and the quantity removed.
+functions|function-graphs|representation|Tables, formulas and graphs represent input-output relationships.|Domain and range may change with the chosen function.
+functions|lines-slope|representation|Linear functions connect input-output tables to slope and intercept.|Vertical lines are not functions of x.
+functions|sets|supporting|Domains and ranges are sets of allowed inputs and outputs.|A set alone does not define a function rule.
+lines-slope|coordinate-geometry|representation|Coordinates support line equations, slopes and distances.|Distance and slope measure different properties.
+lines-slope|systems|representation|An intersection represents simultaneous linear equations.|Parallel and coincident lines need separate interpretation.
+function-graphs|quadratics|representation|Quadratic expressions and equations connect to parabola features and zeros.|A graphing task may require domain, window or transformation details.
+function-graphs|transformations|representation|Shifts, reflections and scaling change the graph of a function.|Transforming a geometric figure and a function use different notation.
+function-graphs|nonlinear-systems|application|Intersections of nonlinear graphs solve simultaneous conditions.|All real intersections must be considered.
+systems|nonlinear-systems|application|Simultaneous conditions extend from lines to curves.|Nonlinear systems can have several real solutions.
+polynomials|factoring|representation|Expansion and factoring are opposite descriptions of polynomial structure.|Factoring methods depend on the expression form.
+factoring|quadratics|supporting|Factored quadratics expose zeros through the zero-product property.|Irreducible or non-real cases require other methods.
+factoring|rational-expressions|supporting|Factoring exposes cancellable factors and common denominators.|Original denominator exclusions remain after cancellation.
+fractions|rational-expressions|representation|Fraction operations extend to algebraic numerators and denominators.|Variable restrictions introduce additional obligations.
+rational-expressions|rational-equations|application|An equality involving rational expressions requires denominator restrictions and solution checks.|Simplifying an expression and solving an equation are distinct tasks.
+rational-equations|equations|supporting|Clearing allowed denominators can reduce a rational equation to a polynomial equation.|Excluded values must still be rejected.
+exponent-laws|powers-roots|representation|Numerical powers and roots illustrate symbolic exponent laws.|Real-domain restrictions matter for fractional powers.
+exponent-laws|scientific-notation|application|Powers of ten and exponent laws support scientific-notation operations.|Normalize coefficients and follow stated rounding.
+exponent-laws|polynomials|supporting|Monomial products and quotients use exponent laws.|Adding terms does not add their exponents.
+scientific-notation|rounding-estimation|application|Scientific notation makes magnitude comparisons and significant-figure estimates explicit.|Use the requested precision, not an inferred tolerance.
+scientific-notation|gas-laws|application|Gas calculations can involve very large or small measured quantities.|Unit consistency and reporting precision remain separate checks.
+logarithms|exponential|representation|Logarithms invert exponential relationships and recover unknown exponents.|Log arguments must be positive in real-number tasks.
+logarithms|powers-roots|representation|A logarithm names an exponent in a specified base.|Keep base restrictions and distinguish exact from approximate values.
+radicals|powers-roots|representation|Radical notation expresses roots and permits exact simplified forms.|Principal roots and variable signs must be retained.
+radicals|radical-equations|application|Equations containing radicals use root properties and solution validation.|Squaring may introduce extraneous candidates.
+radicals|complex-numbers|representation|Negative real radicands motivate the imaginary unit and complex roots.|Real radical product laws do not apply unchanged to negative radicands.
+complex-numbers|quadratics|application|Quadratics with negative discriminants have complex roots.|Complex-root tasks require both conjugate roots where appropriate.
+complex-numbers|polar-vectors|representation|Rectangular components and polar magnitude-angle forms describe related two-dimensional quantities.|Complex operations and vector operations are not interchangeable in every context.
+coordinate-geometry|polar-vectors|representation|Cartesian coordinates and polar coordinates locate points in a plane.|Angle convention, radius sign and quadrant must be checked.
+trigonometry|polar-vectors|application|Sine and cosine resolve magnitude-angle information into components.|Signed components and quadrant conventions matter.
+trigonometry|similarity-scale|supporting|Similar right triangles preserve ratios of corresponding sides.|Choose sides relative to the named angle.
+pythagorean|trigonometry|supporting|Right-triangle side relations and angle ratios describe the same triangle from different information.|Pythagorean tasks require a right angle; trig tasks specify the reference angle.
+pythagorean|coordinate-geometry|application|Horizontal and vertical coordinate differences form a right triangle for distance.|Coordinate reading alone does not apply the distance theorem.
+pythagorean|radicals|representation|Right-triangle lengths may be expressed as exact radicals or approximations.|Follow the answer form requested by the task.
+area|perimeter|representation|Area measures a region while perimeter measures its boundary.|Linear and square units are different; equal perimeters need not give equal areas.
+area|surface-area|application|Solid surface area sums areas of exposed faces.|Include only the faces required by the task.
+area|volume|application|Prism and cylinder volume use base area and perpendicular height.|Pyramids and cones introduce a one-third factor.
+circle-measurement|area|application|Circle and sector formulas extend area measurement to curved regions.|Circle formulas use radius and the stated value of pi.
+circle-measurement|perimeter|application|Circumference and arc length measure curved boundaries.|A semicircle perimeter includes its diameter if the full boundary is requested.
+circle-measurement|volume|application|Circular base area supports cylinder and cone volume.|Sphere volume is a different formula.
+surface-area|volume|representation|The same solid can be measured by its outside area or enclosed volume.|Surface area and volume use different dimensions and units.
+measurement|calendar-time|application|Time measurements use unit conversion and elapsed intervals.|Month lengths and midnight boundaries are not decimal place-value changes.
+measurement|rates|supporting|Rates require compatible units in numerator and denominator.|Convert each quantity in the required direction.
+measurement|area|supporting|Area calculations require compatible lengths and square units.|Square-unit conversion squares the length factor.
+measurement|volume|supporting|Volume uses compatible lengths, cubic units and capacity relationships.|Cube the linear conversion factor where appropriate.
+measurement|segments|application|Segment lengths can be read and combined using measurement units.|A nonzero ruler start requires subtraction.
+segments|geometry-properties|supporting|Segments and endpoints are basic parts of geometric figures.|A vocabulary task does not establish a measurement relationship.
+angles|geometry-properties|supporting|Angle relationships help identify and analyze geometric figures.|Not every named figure supports every angle theorem.
+angles|constructions|application|Geometric constructions can copy, bisect or create specified angles.|Compass-and-straightedge requirements differ from protractor drawing.
+constructions|locus|representation|Many constructions locate points satisfying equal-distance conditions.|Keep both distance conditions when finding intersections of loci.
+locus|coordinate-geometry|representation|Distance conditions can be described geometrically or in coordinates.|Current locus tasks may require a construction rather than an equation.
+geometry-properties|transformations|representation|Rigid transformations preserve lengths and angles of a figure.|Similarity scaling changes lengths while preserving angle measures.
+geometry-properties|similarity-scale|supporting|Corresponding sides and angles support judgments of congruence and similarity.|Matching appearance alone is insufficient evidence.
+geometry-properties|proof|supporting|Definitions and geometric properties supply reasons in proofs.|A recognition answer is not a complete justification.
+angles|proof|supporting|Angle facts can be conclusions or reasons in a geometric proof.|Only use hypotheses actually supplied.
+sets|inequalities|representation|Inequalities define sets that can be expressed with intervals and number-line graphs.|Integer and real domains produce different sets.
+reasoning|word-equations|supporting|Checking information sufficiency helps decide whether a story determines an answer.|More calculation cannot repair missing information.
+reasoning|proof|representation|Both require explaining what follows from stated information.|Numerical sufficiency and formal geometric proof are distinct contracts.
+literal-equations|measurement|application|Measurement formulas can be rearranged to recover an unknown quantity.|Keep positive-length and nonzero-parameter assumptions.
