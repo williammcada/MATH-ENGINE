@@ -1,0 +1,902 @@
+# Explicit reviewed recipe contracts; see REVIEW.md for limits and corrections.
+whole-addition|whole-arithmetic|1|Add two-digit whole numbers, regrouping when needed|Place value and regrouping|f/add:2 f/add:2:carry @/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00145
+whole-addition|whole-arithmetic|2|Add whole numbers with three or more digits|Maintain alignment across more places|f/add:5 f/add:6 f/add:3 @/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00072 @/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00073 @/intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00102
+whole-subtraction|whole-arithmetic|1|Subtract two-digit whole numbers regrouping when needed|Place value|f/sub:2 f/sub:2:borrow @/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00074 @/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00124
+whole-subtraction|whole-arithmetic|2|Subtract three-digit whole numbers, regrouping when needed|Regroup tens and ones|f/sub:3:borrow f/sub:3:zero f/sub:3 @/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00078 @/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00079 @/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00125 @/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00130
+whole-multiplication|whole-arithmetic|1|Multiply two digits by one digit|Multiplication facts and regrouping|f/mul:2:1
+whole-multiplication|whole-arithmetic|2|Multiply three digits by one digit|Track more places and regrouping|f/mul:3:1
+whole-multiplication|whole-arithmetic|3|Multiply two digits by two digits|Two partial products and place-value shift|f/mul:2:2
+whole-multiplication|whole-arithmetic|4|Multiply three digits by two digits|Combine longer partial products|f/mul:3:2 @/course-87-en:item:SX870017
+division-exact|whole-arithmetic|1|Divide by a one-digit divisor with a two-digit quotient, optionally checking by multiplication|Division facts and place value|f/div:2:exact f/div:2:endzero f/division-check
+division-exact|whole-arithmetic|2|Divide with a three-digit whole-number quotient|Track an additional quotient place|f/div:3:exact f/div:3:insidezero @/course-1-en:bank:C1_Section01:item:C1_S01_00113
+place-values|number-representation|1|Identify a digit and its value through thousands|Ones, tens, hundreds and thousands|f/place:4
+place-values|number-representation|2|Identify a digit and its value through trillions|Large-number periods|f/place:13
+fraction-add-subtract|fractions|1|Add or subtract fractions with a shared denominator|Numerators count equal parts|f/fraction-same f/fraction-simplify
+fraction-add-subtract|fractions|2|Add or subtract fractions, finding a common denominator when needed|Equivalent fractions and common denominators|f/fraction-unlike c/30.3 c/9.1 c/9.2 f/fraction-unlike-method p/fraction-subtract
+fraction-add-subtract|fractions|3|Add or subtract mixed and whole numbers with fractional parts, regrouping when needed|Combine whole and fractional parts; regroup if needed|f/mixed-unlike f/mixed-same c/23.1 c/23.2 @/algebra-1-en:node:4
+fraction-product-chain|fractions|1|Multiply two fractions|Multiply numerators and denominators; simplify|c/9.3 f/cancel-factors f/cancel-product
+fraction-multiply|fractions|1|Multiply two fractions and simplify, with explicit cancellation where requested|Multiply numerators and denominators; simplify|c/9.3 f/cancel-factors f/cancel-product
+fraction-multiply|fractions|2|Multiply mixed numbers|Convert mixed numbers to improper fractions|f/mixed:mul
+fraction-product-chain|fractions|2|Multiply three fractions and simplify|Coordinate cancellation across three factors|f/fraction-three-product h/fraction-product
+perimeter|perimeter|1|Find a square or rectangle perimeter, using a formula when supplied|Add sides or use repeated equal lengths|b/square-perimeter b/rectangle-perimeter x/perimeter-rectangle f/formula
+perimeter|perimeter|2|Find perimeter of an irregular quadrilateral or a labelled polygon|Track each labelled boundary side rather than assuming equal sides|x/perimeter-irregular c/19.1
+perimeter|perimeter|3|Find an L-shaped boundary perimeter with implied sides|Infer missing lengths and follow the complete boundary|f/compound-perimeter g/compound-perimeter
+area-rectilinear|area|1|Find rectangular area using unit squares or perpendicular side lengths|Multiply perpendicular side lengths|r/rectangle-area c/20.6 f/array-area
+area-rectilinear|area|2|Find area of a compound rectilinear figure by partitioning or subtraction|Partition without overlap and add component areas|c/37.3 g/compound-area c/37.4
+area-rectilinear|area|3|Find area of a figure combining rectangular and triangular regions|Triangle area and decomposition|c/75.1
+circle-area|circle-measurement|1|Find circle area from a radius|Square the radius and apply the stated pi convention|c/82.1 g/circle-area
+circle-area|circle-measurement|2|Find sector area|Use the angle fraction of a whole circle|c/104.3 v/sector-area
+unit-conversion|measurement|1|Convert between two metric units|Metric place-value factors|c/32.2
+unit-conversion|measurement|2|Convert with more than one unit multiplier|Cancel intermediate units in a chain|c/88.1
+unit-conversion|measurement|3|Convert square units|Square the linear conversion factor|c/88.2 o/area-units
+unit-conversion|measurement|4|Convert cubic units with six unit multipliers|Cube linear factors and preserve dimensional cancellation|z/units:volume-chain
+linear-equations|equations|1|Solve a one-operation equation|Inverse operations|e/3.1 e/3.2 e/3.3 e/3.4 e/3.5 f/missing:2 f/balance-equation c/INV7.1 a/inverse-operations =/algebra-1-en:node:297 =/algebra-1-en:node:298 =/algebra-half-en:node:287 =/algebra-half-en:node:288 =/algebra-half-en:node:297 =/course-1-en:bank:C1_Section01:item:C1_S01_00085 =/course-1-en:bank:C1_Section01:item:C1_S01_00132 =/course-1-en:bank:C1_Section01:item:C1_S01_00133 =/course-1-en:bank:C1_Section01:item:C1_S01_00134 =/course-1-en:bank:C1_Section01:item:C1_S01_00137 =/course-1-en:bank:C1_Section01:item:C1_S01_00138 =/course-1-en:bank:C1_Section01:item:C1_S01_00139 =/course-1-en:bank:C1_Section09:item:C1_S09_00077 =/course-87-en:item:SN870012 =/course-87-en:item:SN870013 =/course-87-en:item:SN870014 =/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00111 =/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00071 =/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00075 =/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00076 =/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00081 =/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00080 =/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00068 =/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00069 =/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00099 =/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00100 =/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00101 =/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00103 =/intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085 =/intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086
+linear-equations|equations|2|Solve a two-step linear equation, showing equality operations or clearing decimals when requested|Undo addition and scaling while preserving signs and equality|c/93.1 f/two-step-positive h/equality-method z/equation:decimal =/algebra-1-en:node:302 =/algebra-1-en:node:316 =/algebra-half-en:node:413 =/algebra-half-en:node:415 =/algebra-half-en:node:532 =/course-1-en:bank:C1_Section11:item:C1_S11_00060 =/course-1-en:bank:C1_Section11:item:C1_S11_00074
+linear-equations|equations|3|Solve an equation with parentheses|Distribute and collect before isolating the variable|a/equation:parentheses c/102.3
+linear-equations|equations|4|Solve an equation with multiple subtracted groups|Resolve multiple subtracted groups while preserving equality|a/equation:nested
+quadratic-formula|quadratics|1|Use the quadratic formula for real roots|Discriminant, radicals and both signs|a/quadratic:formula z/quadratic:irrational =/algebra-1-en:node:1026 =/algebra-1-en:node:1027
+quadratic-formula|quadratics|2|Use the quadratic formula for complex roots|Principal imaginary roots and i squared equals negative one|m/quadratic:complex-formula
+complete-square|quadratics|1|Complete the square for a monic quadratic|Half the linear coefficient and preserve equality|a/quadratic:complete =/algebra-1-en:node:1021 =/algebra-2-en:node:408 =/algebra-2-en:node:407
+complete-square|quadratics|2|Complete the square for a nonmonic quadratic with irrational roots|Divide by the leading coefficient and simplify radicals|z/quadratic:nonmonic
+systems-elimination|systems|1|Solve a two-variable system by elimination|Equivalent equations and cancellation|a/system:elimination a/system:subscript
+systems-elimination|systems|2|Solve a linear system with fractional or decimal coefficients|Clear denominators or decimals before elimination|a/system:fraction z/system:decimal
+systems-elimination|systems|3|Solve a three-variable linear system|Eliminate in stages and back-substitute|m/three:unique z/system:cyclic-three z/system:combined
+rational-equations|rational-equations|1|Solve a rational equation reducible to a linear equation|Clear denominators and retain exclusions|a/rational-equation:linear =/algebra-1-en:node:928 =/algebra-1-en:node:930
+rational-equations|rational-equations|2|Solve a rational equation that can produce an excluded candidate|Check each candidate in the original denominators|a/rational-equation:excluded =/algebra-1-en:node:929
+rational-equations|rational-equations|3|Solve a rational equation leading to a quadratic|Quadratic solution plus original-domain checks|a/rational-equation:quadratic
+radical-equations|radical-equations|1|Solve an equation with one radical|Isolate, square and check the original equation|a/radical-equation m/radical:extraneous =/algebra-1-en:node:962
+radical-equations|radical-equations|2|Solve an equation with two radicals|Repeated isolation and squaring with final checks|m/radical:two =/algebra-2-en:node:570
+expression-evaluation|expressions|1|Substitute positive values in a given expression or formula|Substitution and operation order|e/1.5 f/evaluation f/formula c/41.1
+expression-evaluation|expressions|2|Substitute values in expressions that include powers or signed numbers|Operation order, powers and signed arithmetic|c/91.1 c/52.2 c/COURSE108.1 =/algebra-2-en:node:74 =/algebra-half-en:authored:M3-47-2
+expression-evaluation|expressions|3|Evaluate a more complex signed expression|Fraction bars, powers and signed arithmetic|a/evaluate-hard
+integer-arithmetic|integers|1|Add or subtract integers with a number-line or counter model|Signed position and direction|e/4.3 f/integer-model c/59.2
+integer-arithmetic|integers|2|Add or subtract signed numbers and rewrite subtraction as addition|Sign rules and additive inverses|c/64.1 a/signed-sum c/68.1 @/course-1-en:bank:C1_Section10:item:C1_S10_00068
+integer-arithmetic|integers|3|Simplify signed arithmetic with nested grouping|Distribute negative signs through groups|a/signed-nesting
+fraction-equivalence|fraction-equivalence|1|Reduce by common factors without a model|Find and cancel a common factor|f/reduce c/15.2
+fraction-equivalence|fraction-equivalence|2|Reduce using prime factorization|Prime-factor representation and cancellation|c/24.1
+percent-unknown|percent|1|Find a percent of a known whole, including rates above 100 percent or fractional rates|Convert a percent to a fraction or decimal|f/percent-of c/22.2 c/60.2 c/8.4 h/percent-over100 h/fraction-percent h/commission
+percent-unknown|percent|2|Model and solve a percent problem with an unknown part, whole or rate|Distinguish the whole, part and rate|c/77.1 c/81.1 p/percent-whole p/percent-part p/percent-whole-half
+percent-unknown|percent|3|Recover an original amount before a percent increase|Model the final amount as a multiplier of the original|p/reverse-increase a/word:percent
+ratio-total|ratio-proportion|1|Find a missing term in a proportion|Equivalent ratios and cross products|c/39.2 f/ratio-factor f/cross-products c/54.1 c/54.2 c/72.1 p/ratio-missing p/recipe-proportion p/employee-proportion
+ratio-total|ratio-proportion|2|Divide a total according to a ratio|Add ratio parts before scaling|c/65.2 p/ratio-total-large c/65.1 p/ratio-total-small
+ratio-total|ratio-proportion|3|Connect quantities through two ratios|Match and scale a shared quantity|p/ratio-chain
+average|statistics|1|Find the arithmetic mean of a list|Add values and divide by count|c/28.2 f/mean-small
+average|statistics|2|Find a missing value given the mean|Recover the required total|c/55.2 s/missing-value
+average|statistics|3|Find a combined or weighted average|Weight each group by its size|c/55.3 s/weighted-scores
+probability-events|probability|1|Find probability of one event|Count favorable and total outcomes|c/36.3 s/marble-single
+probability-events|probability|2|Find probability of ordered independent events|Multiply independent probabilities|c/94.2
+probability-events|probability|3|Find probability without replacement|Update the sample space after the first draw|c/94.3 m/counting:probability
+powers|powers-roots|1|Evaluate a positive whole-number power|Repeated multiplication|c/20.3 b/positive-power f/power-small
+powers|powers-roots|2|Evaluate zero and negative exponents|Reciprocal rule and nonzero-base restriction|c/57.1 b/negative-power
+powers|powers-roots|3|Evaluate negative bases with rational exponents|Real odd roots and exponent restrictions|m/fractional:negative =/algebra-2-en:node:304
+scientific-notation|scientific-notation|1|Convert between large numbers and scientific notation|Powers of ten and a normalized coefficient|c/51.1 c/51.2
+scientific-notation|scientific-notation|2|Convert small numbers using negative powers of ten|Decimal place value and negative exponents|c/57.2 c/57.3
+scientific-notation|scientific-notation|3|Multiply or divide scientific-notation numbers|Operate on coefficients and powers of ten; normalize|c/83.2 o/scientific-product c/COURSE111.1 o/scientific-quotient
+scientific-notation|scientific-notation|4|Add scientific-notation numbers|Align powers of ten before adding coefficients|a/scientific:add
+exponent-laws|exponent-laws|1|Apply product or quotient laws to powers and monomials|Combine exponents and simplify coefficients; retain nonzero restrictions|c/20.9 c/20.10 c/83.1 c/87.1 c/103.3
+exponent-laws|exponent-laws|2|Apply symbolic exponent laws including zero or negative exponents|Combine powers and preserve nonzero-domain restrictions|a/exponents:negative a/exponents:power a/exponents:product a/exponents:quotient a/exponents:numerator a/exponents:zero =/algebra-2-en:node:62 =/algebra-2-en:node:66
+exponent-laws|exponent-laws|3|Simplify powers with fractional variable exponents|Rational exponent arithmetic and positive-variable domains|m/fractional:variables z/exponent:variables-product =/algebra-2-en:node:755
+factoring|factoring|1|Factor out a common monomial|GCF of coefficients and variables|a/factor:gcf c/COURSE116.1 c/COURSE116.2
+factoring|factoring|2|Factor a monic quadratic trinomial|Find numbers with specified product and sum|a/factor:monic =/algebra-1-en:node:690 =/algebra-2-en:node:228
+factoring|factoring|3|Factor a nonmonic quadratic trinomial|Split or group a nonunit leading coefficient|a/factor:nonmonic
+factoring|factoring|4|Factor a quartic through a quadratic substitution|Recognize repeated powers then factor further|m/factor:quartic
+polynomial-products|polynomials|1|Multiply two binomials|Distribute every term pair and collect like terms|h/polynomial:mul 
+polynomial-products|polynomials|2|Expand the cube of a binomial|Repeated distribution and cubic coefficients|z/algebra:binomial
+polynomial-division|polynomials|1|Divide a polynomial by a linear divisor|Polynomial long division|a/polynomial-division =/algebra-1-en:node:820 =/algebra-2-en:node:159
+polynomial-division|polynomials|2|Divide a polynomial by a quadratic divisor|Track more divisor terms and a remainder|m/division:quadratic
+rational-sums|rational-expressions|1|Add rational expressions with the same denominator|Combine numerators and retain exclusions|a/rational:equal
+rational-sums|rational-expressions|2|Add rational expressions with different denominators|Find a common polynomial denominator|a/rational:unequal =/algebra-2-en:node:236
+rational-sums|rational-expressions|3|Add expressions with oppositely oriented factors|Control denominator signs before combining|z/rational:sign
+radical-simplification|radicals|1|Combine like radicals|Recognize equal radicands|a/radical:sum
+radical-simplification|radicals|2|Expand products of radical binomials|Distribution, simplification and combining terms|a/radical:binomial
+linear-inequalities|inequalities|1|Graph a stated inequality on a number line|Open/closed endpoints and shading direction|c/78.2
+linear-inequalities|inequalities|2|Solve a two-step linear inequality|Inverse operations and boundary inclusion|c/93.2
+linear-inequalities|inequalities|3|Solve a compound intersection or union|Combine two solution sets correctly|a/compound:and a/compound:or
+line-slope|lines-slope|1|Find slope from two points|Change in y divided by change in x|c/COURSE107.1 h/slope-graph =/algebra-1-en:node:905
+line-slope|lines-slope|2|Find a line equation from two points|Slope and point substitution|a/line:two-points =/algebra-1-en:node:948
+function-evaluation|functions|1|Use a given rule to complete a function table|Substitute the input|c/85.2 c/58.3 =/course-1-en:bank:C1_Section10:item:C1_S10_00047 =/course-1-en:bank:C1_Section10:item:C1_S10_00048
+function-evaluation|functions|2|Evaluate a function written in function notation|Interpret argument and output notation|a/function:evaluate =/algebra-2-en:node:678
+function-evaluation|functions|3|Find the sum or product of functions and its domain|Intersect domains before evaluating|z/function:sum z/function:product
+trigonometry|trigonometry|1|Form sine, cosine and tangent ratios|Identify opposite, adjacent and hypotenuse|h/trig-ratio =/algebra-2-en:node:362
+trigonometry|trigonometry|2|Find a side using a trig ratio|Select a ratio and rearrange it|m/trig:triangle
+trigonometry|trigonometry|3|Find an angle with inverse trigonometry|Choose an inverse trig function and round at the end|m/trig:inverse =/algebra-2-en:node:365
+vectors|polar-vectors|1|Convert a polar point to rectangular coordinates, including negative angles|Sine, cosine and quadrant signs|m/polar:rectangular z/polar:negative
+vectors|polar-vectors|2|Add two vectors through rectangular components|Resolve and add x and y components|z/vector:rectangular
+vectors|polar-vectors|3|Add vectors including a negative radius|Reverse the signed vector before adding components|z/vector:negative-rectangular =/algebra-2-en:node:563
+log-equations|logarithms|1|Convert between exponential and logarithmic forms|Definition of a logarithm|m/log:convert
+log-equations|logarithms|2|Solve an equation with a sum or difference of logarithms|Log laws and positive-argument restrictions|m/log:sum m/log:difference
+log-equations|logarithms|3|Solve a logarithmic equation with an extraneous candidate|Check candidate arguments in the original equation|m/log:extraneous
+variation|variation|1|Solve a direct-variation model|Find a constant of proportionality|a/variation:direct =/algebra-2-en:node:487
+variation|variation|2|Solve a joint-variation model|Relate one output to a product of inputs|m/variation:joint =/algebra-2-en:node:686
+variation|variation|3|Solve a combined-variation model|Track both direct and inverse factors|m/variation:combined
+motion|rates|1|Solve a distance-rate-time problem|Use consistent units and d equals rt|t/distance-rate
+motion|rates|2|Solve a round-trip model with unequal speeds|Express each travel time using the shared distance|a/motion:equal
+motion|rates|3|Model motion with different start times|Assign a separate elapsed time and signed relative distance to each traveler|a/motion:delayed-sum a/motion:unequal
+motion|rates|4|Solve a river-current motion model|Use upstream and downstream effective speeds|m/motion:river
+binary|numeral-systems|1|Convert between base two and base ten|Powers of two and place value|c/COURSE213.1 c/COURSE213.2 b/binary-read b/binary-write
+binary|numeral-systems|2|Add whole binary numbers|Carry in base two|h/binary:add o/binary-add
+binary|numeral-systems|3|Add binary fractions|Negative powers of two and aligned binary points|h/binary:fraction-add o/binary-fractions
+angle-measures|angles|1|Find the third angle of a triangle|Triangle angle sum|c/40.2 r/triangle-angle
+angle-measures|angles|2|Find angles formed by parallel lines and a transversal|Corresponding, alternate and supplementary angles|c/102.1
+clock-time|calendar-time|1|Read an analog clock|Hour and minute hands|b/clock-read
+clock-time|calendar-time|2|Find a start, end or elapsed time within the same day|Hour boundaries and consistent time units|c/12.4 f/clock-elapsed f/schedule
+clock-time|calendar-time|3|Calculate elapsed time across midnight|Track the date boundary|b/elapsed-overnight
+complex-operations|complex-numbers|1|Add complex numbers|Combine real and imaginary components|b/complex-add
+complex-operations|complex-numbers|2|Multiply complex numbers|Distribution and i squared equals negative one|b/complex-multiply
+complex-operations|complex-numbers|3|Divide complex numbers|Use the conjugate and simplify|m/complex:divide =/algebra-2-en:node:597
+compass-constructions|constructions|1|Construct a perpendicular bisector|Equal-radius arcs from endpoints|m/construct:bisector f/bisect-segment c/INV8.1
+compass-constructions|constructions|2|Construct a parallel through an external point|Two justified perpendicular constructions|z/construct:parallel
+compass-constructions|constructions|3|Construct the incircle of a right triangle|Angle bisectors and equal distances to three sides|z/circle:incircle
+coordinate-distance|coordinate-geometry|1|Read or plot coordinates of points|Ordered pairs and signed axes|c/INV3.2 c/INV3.3
+coordinate-distance|coordinate-geometry|2|Find distance between two points|Coordinate differences and Pythagorean theorem|a/distance-points
+counting-outcomes|counting|1|Count outcomes with repeated choices|Multiplication principle|b/counting-power
+counting-outcomes|counting|2|Count ordered arrangements without repetition|Decreasing choices and order|b/permutations h/permutation
+statistical-displays|data-displays|1|Read a stem-and-leaf display|Place value, key and ordered observations|c/INV4.2
+statistical-displays|data-displays|2|Construct a stem-and-leaf display|Organize raw observations and provide a key|c/INV4.1 a/stem-leaf
+statistical-displays|data-displays|3|Construct a box plot|Median, quartiles and extremes|a/boxplot:draw c/INV4.5
+experimental-data|data-displays|1|Plot a given linear equation|Coordinate plotting and line features|a/line:graph
+experimental-data|data-displays|2|Estimate a linear model from experimental data|Choose a trend and distinguish estimate from interpolation|z/data:graph z/data:table
+decimal-operations|decimal-arithmetic|1|Add or subtract decimals|Align decimal places|f/decimal:add f/decimal:sub f/money:add f/money:sub c/35.1 @/course-1-en:bank:C1_Section04:item:C1_S04_00080 @/course-1-en:bank:C1_Section04:item:C1_S04_00081 @/course-1-en:bank:C1_Section04:item:C1_S04_00123 @/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00072 @/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00074 @/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00122 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00071 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00091 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00092 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00106 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00110 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00111 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00115 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00116 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00137 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00141 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00142 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00145 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00146 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00077 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00079 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00081 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00082
+decimal-operations|decimal-arithmetic|2|Multiply decimals|Place-value scaling in a product|f/decimal:mul f/money:mul c/35.2 @/course-87-en:item:SX870018 @/course-87-en:item:SN870004 @/course-1-en:bank:C1_Section01:item:C1_S01_00112 @/course-1-en:bank:C1_Section04:item:C1_S04_00076 @/course-1-en:bank:C1_Section04:item:C1_S04_00077 @/course-1-en:bank:C1_Section04:item:C1_S04_00078
+fraction-conversions|fraction-decimal-percent|1|Write a terminating decimal as a simplified fraction|Decimal place values and fraction reduction|c/31.2 c/43.1 p/decimal-fraction-small p/decimal-fraction-fiftieths
+fraction-conversions|fraction-decimal-percent|2|Convert among fractions, decimals and percents|Equivalent forms and division|c/43.4 f/conversions f/percent-fraction c/43.2 c/43.3 c/48.2 p/percent-decimal-large p/percent-decimal-integer p/percent-decimal-small p/circle-percent p/sector-percent
+fraction-conversions|fraction-decimal-percent|3|Convert a repeating decimal to an exact fraction|Scale and subtract the repeated part|a/repeating-decimal b/repeating-fraction
+exponential-models|exponential|1|Calculate simple exponential growth|Repeated multiplication by a growth factor|a/exponential:growth c/COURSE110.2 =/algebra-2-en:node:790
+exponential-models|exponential|2|Calculate compound interest with several periods per year|Periodic rate and total number of periods|m/exponential:interest
+exponential-models|exponential|3|Solve for an exponent using logarithms|Inverse relation between exponentials and logarithms|m/exponential:solve
+quadratic-graphs|function-graphs|1|Complete the square and identify a parabola|Match vertex form to a graph|v/parabola-choice
+quadratic-graphs|function-graphs|2|Graph a shifted parabola|Translate the vertex and preserve shape|h/parabola:shift
+quadratic-graphs|function-graphs|3|Graph a quadratic by completing the square|Find vertex form before plotting|z/graph:complete-square
+gas-models|gas-laws|1|Apply pressure-volume variation at constant temperature|Rearrange a product equation|m/gas:pressure m/gas:volume
+gas-models|gas-laws|2|Apply a combined pressure-volume-temperature law|Use absolute temperature and isolate the requested variable|m/gas:combined-pressure m/gas:combined-temperature
+gas-models|gas-laws|3|Apply the combined law using scientific notation|Track powers of ten and final significant figures|z/gas:scientific-pressure z/gas:scientific-temperature
+geometry-vocabulary|geometry-properties|1|Identify points, lines, rays, segments and angles|Definitions and geometric notation|c/7.2
+geometry-vocabulary|geometry-properties|2|Identify corresponding parts of congruent triangles|Match vertex order|z/geometry:correspondence
+literal-formulas|literal-equations|1|Rearrange a linear formula|Inverse operations with letter coefficients|a/literal:linear
+literal-formulas|literal-equations|2|Rearrange formulas with rational terms or exceptional parameter cases|Clear denominators and preserve restrictions|a/literal:rational a/literal:formula a/literal:abstract z/literal:multi z/literal:nested
+literal-formulas|literal-equations|3|Rearrange a formula with exceptional parameter cases|Distinguish unique, impossible and nonunique cases|m/literal:exception
+locus-constructions|locus|1|Describe a locus equidistant from two points|Perpendicular-bisector theorem|l/equidistant-locus
+locus-constructions|locus|2|Combine two distance conditions|Intersect two loci and count possible points|m/locus:two
+mixture-models|mixtures|1|Mix two stocks to a target concentration|Conservation of total substance|m/mixture:final
+mixture-models|mixtures|2|Replace part of a mixture with a new stock|Subtract removed substance before adding replacement|m/mixture:replace
+nonlinear-intersections|nonlinear-systems|1|Find intersections of a line and parabola|Substitute a linear relation into a quadratic|m/nonlinear:line-parabola
+nonlinear-intersections|nonlinear-systems|2|Find intersections of a circle and parabola|Substitution, multiple roots and all real ordered pairs|z/system:circle-parabola
+ordering-numbers|number-order|1|Compare decimal numbers|Align place values|c/33.1
+ordering-numbers|number-order|2|Compare fractions with different denominators|Use equivalent fractions or cross products|c/30.2
+prime-factorization|number-theory|1|List all factors of a whole number|Factor pairs and completeness|e/6.1
+prime-factorization|number-theory|2|Write a prime factorization|Break composite factors into primes|c/21.3
+prime-factorization|number-theory|3|Find the LCM through prime factors|Take each prime to its largest required power|c/27.4
+geometric-proof|proof|1|Prove vertical angles are equal|Supplementary angles and subtraction of equals|m/proof:vertical
+geometric-proof|proof|2|Prove geometric properties using congruent triangles|Select and justify a congruence criterion from the actual givens|m/proof:congruence m/proof:isosceles m/proof:parallelogram m/proof:chord m/proof:tangent z/proof:hl z/proof:aas z/proof:bisector z/proof:angle-bisector z/proof:rectangle z/proof:rhombus z/proof:equal-chords z/proof:space z/geometry:parallel-proof
+geometric-proof|proof|3|Prove a general theorem by area decomposition|Justify the diagram and connect geometry to algebra|z/proof:pythagoras c/COURSE212.1
+right-triangles|pythagorean|1|Find a missing side in a right triangle|Squares and square roots|c/99.1
+right-triangles|pythagorean|2|Apply the right-triangle theorem in a context|Identify the hidden right triangle|c/COURSE112.1
+information-sufficiency|reasoning|1|Decide whether information determines an answer|Identify the required quantities|c/79.1
+information-sufficiency|reasoning|2|Assess whether a comparison is determined|Consider more than one admissible case|c/79.2
+rounding|rounding-estimation|1|Round whole numbers to a specified place, explaining when requested|Nearest place-value interval|f/round:3 f/round:4 f/round:9 c/29.1 b/round-whole c/29.2
+rounding|rounding-estimation|2|Round decimals to a specified place|Decimal place-value intervals|c/33.3
+rounding|rounding-estimation|3|Estimate a product in scientific notation|Round factors first and normalize the estimate|z/scientific:estimate
+segments|segments|2|Find a missing segment with decimal measurements|Subtract decimal parts from the whole|@/algebra-2-en:node:5
+segments|segments|1|Find a missing segment with whole-number lengths|Part plus part equals whole|f/segment-length
+sequences|sequences|1|Find the constant step and continue an arithmetic sequence|Identify the common difference|b/sequence-next f/sequence e/2.3 @/course-87-en:item:SX870478 @/course-87-en:item:SX650024 @/course-87-en:item:SN870010 @/course-87-en:item:SN870011
+sequences|sequences|2|Find a missing internal term|Apply the pattern in both directions|b/sequence-missing
+set-relations|sets|1|Classify counting, whole, integer and rational numbers|Definitions and containment|c/86.1 c/86.2 h/real-subsets =/algebra-2-en:node:730 =/course-87-en:authored:MCADA-1.1
+set-relations|sets|2|Find unions and intersections of stated sets|Membership conditions and set operations|b/set-union b/set-intersection
+set-relations|sets|3|Calculate regions in a two-set Venn diagram|Account for the intersection, union and neither region|m/sets:venn
+similar-figures|similarity-scale|1|Find a missing corresponding side of similar triangles|Use a scale factor with matched sides|c/97.2
+similar-figures|similarity-scale|2|Find a height by indirect measurement|Translate a context into similar triangles|c/97.3
+similar-figures|similarity-scale|3|Connect length, area and volume ratios of similar solids|Square or cube a linear scale factor, or recover it from a ratio|c/COURSE211.2
+solid-surface|surface-area|1|Find surface area of a rectangular prism|Sum the areas of six faces|c/67.5 c/105.1
+solid-surface|surface-area|2|Find surface area of a cylinder|Combine curved area and circular bases|v/cylinder-surface f/cylinder-area
+solid-surface|surface-area|3|Find surface area of a cone or pyramid|Use slant height in lateral areas|h/cone-area h/pyramid-area
+transformations|transformations|1|Translate a figure on a coordinate plane|Apply a fixed displacement to every vertex|c/80.2
+transformations|transformations|2|Reflect a figure on a coordinate plane|Reverse position across the stated line|c/80.1
+transformations|transformations|3|Transform a graph using function notation|Connect changes in the formula to shifts and reflections|a/transform:quadratic
+solid-volume|volume|1|Find the volume of a rectangular prism using dimensions or layers|Multiply length, width and height|c/70.1 f/cube-volume
+solid-volume|volume|2|Find volume of a triangular prism|Find a triangular base area before multiplying by length|c/70.2
+solid-volume|volume|3|Find volume of a pyramid or cone|Apply one third of base area times height|c/COURSE113.1 c/COURSE113.2
+contextual-equations|word-equations|1|Translate and solve a one-step comparison story|Represent a difference between quantities|c/12.1
+contextual-equations|word-equations|2|Model consecutive integers with a linear equation|Represent related unknowns in one variable|a/word:consecutive a/word:odd-even
+contextual-equations|word-equations|3|Model consecutive integers with a quadratic equation|Represent a product and reject inadmissible roots|z/word:quadratic =/algebra-2-en:authored:M6-55-3
+whole-subtraction|whole-arithmetic|3|Subtract five- or six-digit whole numbers|Maintain place alignment across longer numbers|f/sub:5 f/sub:6 @/intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00072 @/intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00074 @/intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00109
+division-remainders|whole-arithmetic|1|Divide by a one-digit divisor with a one-digit quotient and remainder|Division facts and remainder smaller than divisor|f/div:1:remainder
+division-remainders|whole-arithmetic|2|Divide by a one-digit divisor with a two-digit quotient and remainder|Track quotient places and retain the remainder|f/div:2:remainder 
+division-divisors|whole-arithmetic|1|Divide exactly by a one-digit divisor|Place-value division|f/div:2:exact f/div:2:endzero
+division-divisors|whole-arithmetic|2|Divide exactly by a two-digit divisor|Estimate quotient digits using a two-digit divisor|f/div-two @/course-1-en:bank:C1_Section01:item:C1_S01_00114
+division-remainder-meaning|whole-arithmetic|1|Calculate quotient and remainder|Division facts|f/div:1:remainder f/div:2:remainder
+division-remainder-meaning|whole-arithmetic|2|Interpret the quotient or remainder in a packing or transport situation|Decide whether to round up, count complete groups or report leftovers|f/remainder-context
+number-words|number-representation|1|Convert between whole-number digits and words through hundreds|Three-digit periods|f/words:3 r/words-small r/words-zero
+number-words|number-representation|2|Convert between digits and words through hundred thousands|Thousands period|f/words:6
+number-words|number-representation|3|Convert between digits and words through hundred millions|Millions period|f/words:9 r/words-large
+expanded-notation|number-representation|1|Expand a four-digit whole number by place value|Powers of ten as place values|f/expanded:4
+expanded-notation|number-representation|2|Expand a whole number through trillions|More periods and zero placeholders|f/expanded:13
+number-notation-forms|number-representation|1|Identify a place or digit value|Count digit positions rather than punctuation|e/5.1 e/5.5 f/place:4 f/place:13
+number-notation-forms|number-representation|2|Write a number in expanded notation|Sum nonzero place values|e/5.2 f/expanded:4 f/expanded:13 r/expanded-large r/expanded-small r/expanded-zero
+number-notation-forms|number-representation|3|Convert between number words and digits|Read and compose three-digit periods|e/5.3 e/5.4 f/words:3 f/words:6 f/words:9
+roman-range|numeral-systems|1|Read and write Roman numerals through 39|I, V, X and subtractive pairs|f/roman:39
+roman-range|numeral-systems|2|Read and write Roman numerals through 3999|Additional symbols and subtractive pairs across places|f/roman:3999
+decimal-division|decimal-arithmetic|1|Divide a decimal by a whole number|Place value and exact division|f/money:div f/decimal:divwhole e/1.7 c/35.3
+decimal-division|decimal-arithmetic|2|Divide by a decimal divisor|Scale both dividend and divisor to make an integer divisor|c/45.1 @/course-1-en:bank:C1_Section05:item:C1_S05_00076 @/course-1-en:bank:C1_Section05:item:C1_S05_00077 @/course-1-en:bank:C1_Section05:item:C1_S05_00078 @/course-1-en:bank:C1_Section05:item:C1_S05_00105
+decimal-powers-ten|decimal-arithmetic|1|Multiply decimals by powers of ten|Each place changes by a power of ten|f/ten-power:mul c/47.3
+decimal-powers-ten|decimal-arithmetic|2|Divide decimals by powers of ten|Each place changes by a reciprocal power of ten|f/ten-power:div c/47.4
+fraction-division|fractions|1|Divide a whole number or fraction by a fraction|Reciprocal multiplication|c/25.2 c/25.3
+fraction-division|fractions|2|Divide mixed numbers|Rewrite both operands as improper fractions before reciprocal multiplication|c/26.1 f/mixed:div
+fraction-sum-chain|fractions|1|Add two fractions with unlike denominators|Equivalent fractions and common denominators|f/fraction-unlike f/fraction-unlike-method c/30.3
+fraction-sum-chain|fractions|2|Add three fractions with potentially different denominators|Coordinate a common denominator across three terms|f/fraction-three
+fraction-equivalence-models|fraction-equivalence|1|Show equivalent fractions by regrouping or subdividing a model|Equal whole size and equal parts|f/fraction-reduce-model f/fraction-circles c/INV1.2
+fraction-equivalence-models|fraction-equivalence|2|Generate or complete an equivalent symbolic fraction|Apply the same scale factor to numerator and denominator|f/fraction-rename c/15.1
+fraction-equivalence-models|fraction-equivalence|3|Find common-denominator forms of two fractions|Coordinate equivalent forms for both denominators|c/30.1
+fraction-whole-unknown|ratio-proportion|1|Find a fraction of a known group|Partition into denominator groups and select numerator groups|c/14.1 c/14.2 c/22.1 c/60.1
+fraction-whole-unknown|ratio-proportion|2|Recover the whole when a fractional part is known|Reverse fractional scaling|c/71.1 c/71.2 c/74.1 t/whole-from-used
+fraction-whole-unknown|ratio-proportion|3|Combine fractional scaling with another change|Track the whole and the remaining amount through successive operations|f/fraction-two-step
+fraction-models|fractions|1|Read a fractional part from a supplied model|Equal-sized partitions and a defined whole|f/fraction-name c/8.7 g/shaded-fraction
+fraction-models|fractions|2|Construct a model for a given fraction|Create equal partitions before shading|f/fraction-draw
+fraction-models|fractions|3|Read and plot mixed numbers on a number line|Equal intervals and whole-number parts|f/numberline c/8.3
+fraction-form-changes|fractions|1|Convert an improper fraction to a mixed number|Divide numerator by denominator|c/10.1 c/10.3 p/improper-mixed
+fraction-form-changes|fractions|2|Convert a mixed number to an improper fraction|Combine whole and fractional parts over one denominator|c/10.4
+fraction-form-changes|fractions|3|Find a reciprocal|A nonzero number multiplied by its reciprocal is one|c/9.4 b/negative-reciprocals
+decimal-fraction-models|fraction-decimal-percent|1|Read and explain fraction and decimal names for a shaded model|Place values and the same whole|f/decimal-fraction-model f/decimal-grid c/31.1
+decimal-fraction-models|fraction-decimal-percent|2|Read fraction and percent or fraction-decimal-percent names for a model|Percent means hundredths of the same whole|f/percent-model c/8.1 c/48.1 g/shaded-percent
+fraction-equation-coefficients|equations|1|Solve a one-step equation with a fractional coefficient|Multiply by its reciprocal and check|f/fraction-unknown c/9.5
+fraction-equation-coefficients|equations|2|Solve a one-step equation with a mixed-number coefficient|Convert the coefficient to an improper fraction before inversion|c/90.1 h/mixed-equation
+signed-equations|equations|1|Solve a whole-number one-operation equation|Inverse operations|e/3.1 e/3.2 e/3.3 e/3.4 e/3.5
+signed-equations|equations|2|Solve an additive or multiplicative equation with signed values|Maintain signs when reversing operations and checking|c/INV7.2 c/90.2 =/algebra-half-en:node:531
+operation-properties|expressions|1|Recognize or apply a named arithmetic property|Distinguish order, grouping, distribution and identities|e/2.1 e/2.2 e/2.4 e/2.5 f/associative f/distributive c/41.2 =/course-87-en:item:SX870024 =/course-87-en:item:SX870025
+operation-properties|expressions|2|Show failure of a property for subtraction or division|Compare two orders or groupings and give unequal results|e/2.6
+like-terms|expressions|1|Collect like linear terms and constants|Combine coefficients of the same variable|c/84.1
+like-terms|expressions|2|Distribute then collect linear terms|Multiply every term in a group before collecting|c/96.2 =/course-87-en:item:SN870560
+numerical-grouping|expressions|1|Evaluate an expression with powers and mixed operations|Powers before multiplication and addition|c/52.1
+numerical-grouping|expressions|2|Evaluate an expression with several nested grouping symbols|Work from inner groups out while preserving operation order|c/63.2
+integer-products|integers|1|Multiply signed integers|Sign and magnitude rules|c/73.1
+integer-products|integers|2|Divide signed integers|Sign and magnitude rules; nonzero divisor|c/73.2
+integer-products|integers|3|Determine a product sign without its magnitude|Parity of the negative-factor count|c/103.1
+absolute-values|integers|1|Find an absolute value|Distance from zero|c/59.1 a/absolute-value
+absolute-values|integers|2|Compare signed integers|Order on a number line|e/4.2 h/trichotomy @/course-87-en:item:SN870017
+prime-factor-methods|number-theory|1|Write prime factors using exponents|Prime decomposition and repeated factors|c/21.3
+prime-factor-methods|number-theory|2|Use a factor tree or successive prime division|The method must exhibit a complete prime factorization|c/21.4 c/21.5
+common-factors-multiples|number-theory|1|Find a greatest common factor|Factors common to both inputs|e/6.2 c/24.2 b/gcf
+common-factors-multiples|number-theory|2|Find a least common multiple or consecutive common multiples|Multiples shared by all inputs|c/27.2 c/27.3 c/27.4 b/lcm b/common-multiples
+rate-calculations|rates|1|Find a unit rate from a total and elapsed time|Divide corresponding quantities|f/rate c/46.1 c/46.2
+rate-calculations|rates|2|Use a unit rate to find another time or amount|Maintain units when multiplying or dividing by a rate|f/rate-total f/rate-reduce c/53.2 h/distance h/distance-multi h/rate-proportion
+single-unit-conversions|measurement|1|Convert using one known unit equivalence|Orient a multiplier to cancel the starting unit|f/capacity f/mass c/16.1 c/32.2 c/32.3 c/34.3 c/50.2
+single-unit-conversions|measurement|2|Convert through an intermediate unit|Use two oriented unit multipliers|c/88.1
+ruler-reading|measurement|1|Read and draw lengths on a quarter-inch ruler|Four equal subdivisions per inch|f/ruler-quarter
+ruler-reading|measurement|2|Read and draw lengths on a sixteenth-inch ruler|Distinguish finer fractional subdivisions|c/8.5
+metric-ruler-models|measurement|1|Read a centimeter ruler with millimeter subdivisions|Ten subdivisions per centimeter|f/metric-ruler c/34.1
+metric-ruler-models|measurement|2|Read or draw decimal positions on a number line|Equal tenths and a defined unit|f/decimal-line c/34.2
+compound-measures|measurement|1|Add measures with two units|Regroup at the stated nondecimal radix|c/49.1
+compound-measures|measurement|2|Subtract measures with two units|Borrow at the stated nondecimal radix|c/56.1
+percent-change-models|percent|1|Calculate tax or tip from a price|Percent of a base and stated cent rounding|c/46.3 c/46.4 f/tax-total h/markup t/sales-tax
+percent-change-models|percent|2|Model a percent increase or decrease and its inverse|Identify which amount represents 100 percent|c/92.2
+percent-change-models|percent|3|Apply successive percentage discounts|Use each changed amount as the next base|c/COURSE110.3
+interest-models|exponential|1|Calculate simple interest and the balance|Interest is based on the original principal|c/COURSE110.1
+interest-models|exponential|2|Calculate annually compounded interest|Each new balance becomes the next base|c/COURSE110.2 a/exponential:growth =/course-87-en:item:SX870463
+interest-models|exponential|3|Calculate compound interest with multiple annual periods|Convert annual rate and years into periodic rate and periods|m/exponential:interest
+mean-and-total|statistics|1|Calculate a mean or recover a total from a mean|Sum equals count times mean|f/mean-small c/28.2 c/55.1
+mean-and-total|statistics|2|Recover a missing observation from a mean|Subtract known observations from the required total|c/55.2 s/missing-value
+statistics-summary|statistics|1|Calculate mean, median, mode and range|Sort values and distinguish the measures|f/stats-small c/INV4.3
+statistics-summary|statistics|2|Calculate a five-number summary and quartiles|Apply the specified convention for splitting halves|c/INV4.4
+histogram-production|data-displays|1|Tabulate frequencies in explicit intervals|Count every observation once|f/frequency
+histogram-production|data-displays|2|Draw a histogram for explicit intervals|Frequency table, touching bars, labeled axes and scale|f/histogram c/INV5.1 h/histogram10
+graph-reading|data-displays|1|Read and compare quantities on a pictograph or bar graph|Read its key or scale|c/38.1 c/38.2
+graph-reading|data-displays|2|Read values and changes on a line graph|Read axes and distinguish values from differences|c/38.3
+graph-reading|data-displays|3|Read a quantity from a circle graph|Scale a fraction of the whole|c/38.4
+box-plot-work|data-displays|1|Read a box plot and its spread|Median, range and interquartile range|c/INV4.6 a/boxplot:read
+box-plot-work|data-displays|2|Construct a box plot from raw observations|Sort, calculate quartiles using the stated convention and draw the scale|c/INV4.5 a/boxplot:draw
+angle-construction|angles|1|Read a supplied protractor|Select the zero aligned with the starting ray|c/17.1 h/angle-measure
+angle-construction|angles|2|Read and physically draw an angle with a protractor|Use a correctly aligned baseline and scale|c/17.3
+polygon-angle-sums|angles|1|Find a missing angle in a triangle or quadrilateral|Subtract known angles from the polygon sum|c/40.2 f/quadrilateral-angle
+polygon-angle-sums|angles|2|Find polygon interior or exterior angle measures and sums|Relate side count, total turn and regularity|c/89.2 c/89.3 c/89.4 c/89.5 z/geometry:polygon
+quadrilateral-properties|geometry-properties|1|Identify a named quadrilateral by its defining properties|Inclusive definitions of rectangles, rhombi and squares|c/INV6.1
+quadrilateral-properties|geometry-properties|2|Construct an inclusion diagram for quadrilateral classes|Every square is both a rectangle and a rhombus|c/INV6.2
+triangle-properties|geometry-properties|1|Classify a triangle by sides|Use the most specific equal-side classification|c/62.3
+triangle-properties|geometry-properties|2|Classify a triangle by angles|Compare largest angle with a right angle|c/62.1
+triangle-properties|geometry-properties|3|Order sides by their opposite angles|Larger angle is opposite longer side|c/62.2
+circle-parts-and-length|circle-measurement|1|Identify radius and diameter or find diameter from radius|Diameter is twice radius|f/circle-parts f/circle-measures
+circle-parts-and-length|circle-measurement|2|Calculate circumference|Apply the stated pi value and distinguish radius from diameter|c/66.2
+circle-parts-and-length|circle-measurement|3|Calculate arc length from a central angle|Scale circumference by the angle fraction|c/104.2
+triangle-area-method|area|1|Identify a base and its perpendicular height|The altitude may meet the extended base|c/37.1
+triangle-area-method|area|2|Calculate triangle area from base and perpendicular height|Half of base times height|c/37.2
+area-shape-formulas|area|1|Calculate parallelogram area|Use perpendicular height|c/61.1
+area-shape-formulas|area|2|Calculate trapezoid area|Use the average of the parallel bases and perpendicular height|c/75.2
+area-shape-formulas|area|3|Calculate triangle area|Use half of base times perpendicular height|c/37.2
+scale-lengths|similarity-scale|1|Find or apply a linear scale factor|Corresponding lengths use one ratio|c/98.2 c/98.3
+scale-lengths|similarity-scale|2|Use map or drawing scales with units|Distinguish drawing dimensions from actual dimensions|c/98.1 f/scale-draw
+scale-lengths|similarity-scale|3|Relate linear, area and volume scales|Square or cube the linear scale factor|c/COURSE211.1 c/COURSE211.2
+similarity-correspondence|similarity-scale|1|Establish correspondence or justify AA similarity|Triangle angle sum and consistent vertex order|c/97.1 z/geometry:aa
+similarity-correspondence|similarity-scale|2|Solve corresponding lengths in similar triangles|Use whole lengths and match corresponding sides|c/97.2 z/geometry:parallel-segments z/geometry:overlap
+similarity-correspondence|similarity-scale|3|Apply similar triangles to indirect measurement|Identify the triangles in context before scaling|c/97.3
+solid-nets|surface-area|1|Identify the solid from a supplied net|Match face shapes and folding connections|c/67.4
+solid-nets|surface-area|2|Draw and label a cube or pyramid net|Join the required faces so they fold without overlap|f/net-prism f/net-pyramid
+prism-cylinder-volumes|volume|1|Find rectangular or triangular prism volume|Find base area and multiply by prism height|c/70.1 c/70.2
+prism-cylinder-volumes|volume|2|Find cylinder volume or compare prism and cylinder formulas|Use base area times perpendicular height with stated pi|c/95.1 f/cylinder-volume
+coordinate-transformations|transformations|1|Translate or reflect a coordinate figure|Apply one transformation to all vertices|c/80.1 c/80.2
+coordinate-transformations|transformations|2|Apply a coordinate translation, reflection or rotation|Use the stated transformation consistently on every vertex|c/80.3 h/transform-quad
+line-table-graph|functions|1|Read or complete a table using a given linear rule|Substitute each input|c/58.3 c/85.2
+line-table-graph|functions|2|Make a table and plot a linear relation|Match every ordered pair to the axes|c/INV9.1 f/function-graph
+line-table-graph|functions|3|Model a continuous linear context with a table and graph|Choose variables, rule and meaningful input interval|c/INV9.3
+literal-formula-basics|literal-equations|1|Rearrange a stated formula under explicit nonzero assumptions|Use inverse operations and preserve stated restrictions|c/COURSE106.1 c/COURSE106.2
+literal-formula-basics|literal-equations|2|Rearrange a formula while handling exceptional cases|Identify zero coefficients, domain exclusions and nonunique cases|a/literal:linear a/literal:rational m/literal:exception a/literal:formula a/literal:abstract z/literal:multi z/literal:nested
+root-evaluation|powers-roots|1|Find exact positive square roots of whole numbers|Recognize perfect squares|c/20.8 =/algebra-1-en:authored:M4-66-2
+root-evaluation|powers-roots|2|Find the positive square root of a fraction|Take square roots of numerator and denominator|c/20.12 =/algebra-2-en:node:277
+root-evaluation|powers-roots|3|Locate or approximate an irrational square root|Bracket by perfect squares and use the stated precision|c/100.1 c/100.2
+power-equations|powers-roots|1|Find both real square roots or solve a pure square equation|Both signs solve a positive square equation|c/105.3 c/COURSE109.1 =/algebra-1-en:node:837 =/algebra-1-en:node:838 =/algebra-half-en:node:718
+power-equations|powers-roots|2|Find a real cube root or solve a pure cube equation|Odd roots preserve sign|c/105.4 c/COURSE109.2 b/cube-root
+probability-experiments|probability|1|Calculate experimental and theoretical probabilities from given counts|Observed relative frequency versus model probability|c/COURSE210.1
+probability-experiments|probability|2|Plan and explain an experiment for a stated probability event|Specify trials and recording; distinguish illustration from observed evidence|f/experiment c/COURSE210.3
+counting-trees|counting|1|List ordered outcomes with a tree diagram|Branches represent successive choices|c/94.1
+counting-trees|counting|2|Count repeated choices by multiplication|Multiply the number of choices at each position|b/counting-power
+fraction-operation-order|fractions|1|Calculate a fraction product or quotient|Fraction operations and simplification|c/9.3 c/25.3
+fraction-operation-order|fractions|2|Evaluate grouped combinations of fraction operations|Respect parentheses and the scope of a fraction bar|c/9.6 c/76.1 h/fraction-order h/fraction-bar a/complex:numeric
+fraction-powers|powers-roots|1|Evaluate a whole-number power|Repeated multiplication|f/power-small c/20.3
+fraction-powers|powers-roots|2|Evaluate a power of a fraction|Raise numerator and denominator to the same positive integer power|h/fraction-power
+signed-powers|powers-roots|1|Evaluate a signed integer power|Distinguish odd and even powers|c/103.2
+signed-powers|powers-roots|2|Compare parenthesized negative bases with a leading negative|Exponentiation precedes an ungrouped minus sign|h/signed-power
+fraction-coefficient-equations|equations|1|Solve equations with a proper or improper fractional coefficient|Use an exact reciprocal and check the result|h/fraction-equation
+fraction-coefficient-equations|equations|2|Solve equations with a displayed mixed-number coefficient|Rewrite the coefficient then apply its reciprocal|h/mixed-equation c/90.1
+equations-both-sides|equations|1|Solve a two-step equation with the variable on one side|Inverse operations and signed arithmetic|h/equality-method c/93.1 f/two-step-positive
+equations-both-sides|equations|2|Solve a linear equation with variables on both sides|Collect variable terms by subtracting equal quantities|h/both-sides h/multi-term =/algebra-half-en:node:580
+equations-both-sides|equations|3|Simplify matching quadratic terms before solving a linear equation|Cancel equal higher-degree terms without introducing spurious roots|a/polynomial-equation
+proportion-number-types|ratio-proportion|1|Solve a proportion with whole-number entries|Equivalent ratios and cross products|c/39.2 f/cross-products
+proportion-number-types|ratio-proportion|2|Solve a proportion with fractional entries|Multiply and divide exact fractions while cross-multiplying|h/fraction-proportion h/mixed-proportion
+ratio-transfer|ratio-proportion|1|Split a total by a given ratio|Find the value of one ratio part|c/65.1 c/65.2 p/ratio-total-large p/ratio-total-small
+ratio-transfer|ratio-proportion|2|Find a new ratio after transferring some objects|Recover initial counts, adjust both counts and simplify|h/ratio-transfer
+changing-rates|rates|1|Find distance, rate or time at a constant rate|Use d equals rt|h/distance h/distance-multi t/distance-rate
+changing-rates|rates|2|Model a change of rate or a multi-leg journey|Keep each segment time and rate separate; total time determines average speed|h/changing-rate h/rate-change
+root-approximation-precision|powers-roots|1|Approximate a square root to two decimal places by trial bounds|Repeated multiplication and rounding boundaries|h/root-approx:2:2
+root-approximation-precision|powers-roots|2|Approximate a square root to four decimal places by trial bounds|Tighter bounds must justify the ten-thousandths digit|h/root-approx:2:4
+root-degrees|powers-roots|1|Approximate a square root by trial bounds|Compare squares with the radicand|h/root-approx:2:2 h/root-approx:2:4 c/100.1 c/100.2
+root-degrees|powers-roots|2|Approximate a cube or fourth root by trial bounds|Compare the corresponding powers and justify stated precision|h/root-approx:3:2 h/root-approx:3:3 h/root-approx:4:3
+real-to-complex-roots|complex-numbers|1|Decide whether a root has a real value|Even roots of negative values are not real; odd roots may be|h/negative-root =/algebra-2-en:node:412
+real-to-complex-roots|complex-numbers|2|Evaluate a principal square root of a negative number using i|Use i squared equals negative one|z/complex:negative-root
+real-to-complex-roots|complex-numbers|3|Explain why a real radical product rule fails for negative radicands|Evaluate principal complex roots before multiplying|z/complex:root-product
+binary-fractions-notation|numeral-systems|1|Convert whole values between binary and decimal|Powers of two|c/COURSE213.1 c/COURSE213.2 b/binary-read b/binary-write
+binary-fractions-notation|numeral-systems|2|Convert binary fractions and decimals|Reciprocal powers of two after the binary point|h/binary:read h/binary:write
+binary-multiplication|numeral-systems|1|Multiply whole binary numbers and check in decimal|Partial products and carrying in base two|h/binary:mul o/binary-multiply
+binary-multiplication|numeral-systems|2|Multiply binary fractions and check in decimal|Track the binary point as well as partial products|h/binary:fraction-mul
+polynomial-collection|polynomials|1|Collect terms with the same variable powers|Terms with different powers remain distinct|h/like-terms =/algebra-2-en:node:77
+polynomial-collection|polynomials|2|Add polynomials by collecting like terms|Account for all terms and signs in both expressions|h/polynomial:add
+polynomial-collection|polynomials|3|Expand a product of two binomials|Distribution generates terms before collection|h/polynomial:mul
+monomial-to-polynomial-division|polynomials|1|Divide each term of a polynomial by a monomial|Divide coefficients and subtract exponents; retain exclusions|h/polynomial:divide a/rational:distribute
+monomial-to-polynomial-division|polynomials|2|Divide a polynomial by a linear polynomial|Repeated leading-term cancellation with a possible remainder|a/polynomial-division
+monomial-to-polynomial-division|polynomials|3|Divide by a quadratic polynomial|Track more terms in the divisor and remainder|m/division:quadratic
+factoring-structure|factoring|1|Factor a common monomial or common binomial|Identify a factor shared by all terms|a/factor:gcf a/factor:sum c/COURSE116.1 c/COURSE116.2
+factoring-structure|factoring|2|Factor by grouping|Create groups that expose a common factor|a/factor:grouping
+factoring-structure|factoring|3|Use a difference-of-squares or cubes identity|Recognize the appropriate special-product structure|a/factor:squares m/factor:cubes =/algebra-2-en:node:750
+factor-then-trinomial|factoring|1|Factor a monic quadratic trinomial|Find a pair with the required sum and product|a/factor:monic
+factor-then-trinomial|factoring|2|Remove a common factor before factoring a monic trinomial|Complete both factorization steps|a/factor:common
+rational-denominator-structure|rational-expressions|1|Add fractions with distinct linear denominators already factored|Use a common denominator and preserve exclusions|a/rational:unequal
+rational-denominator-structure|rational-expressions|2|Add fractions after factoring a quadratic denominator|Reveal a shared factor before constructing the LCD|a/rational:factorable
+rational-products|rational-expressions|1|Simplify or multiply rational expressions by cancellation|Cancel factors, not terms, and preserve original exclusions|a/rational:cancel a/rational:product =/algebra-2-en:node:311
+rational-products|rational-expressions|2|Divide rational expressions|Invert the divisor and also exclude its zeros|a/rational:quotient =/algebra-2-en:node:314
+complex-fraction-structure|rational-expressions|1|Simplify a symbolic fraction divided by a symbolic fraction|Multiply by a reciprocal and preserve denominator exclusions|a/complex:symbolic
+complex-fraction-structure|rational-expressions|2|Simplify a symbolic complex fraction with a sum in its numerator|Combine the numerator before dividing and retain all exclusions|a/complex:nested
+negative-exponent-expressions|rational-expressions|1|Collect like terms with the same negative power|Add coefficients and express the reciprocal with positive powers|a/rational:like
+negative-exponent-expressions|rational-expressions|2|Distribute a negative power through a polynomial|Apply power laws separately to each product term|a/rational:negative-distribute =/algebra-2-en:node:81
+radical-rationalization|radicals|1|Rationalize a single-term radical denominator|Multiply numerator and denominator by the radical|a/radical:rationalize =/algebra-2-en:node:245
+radical-rationalization|radicals|2|Simplify and rationalize a quotient whose numerator has two terms|Distribute division and simplify both radical terms|a/radical:quotient
+principal-root-absolute|radicals|1|Simplify the principal square root of a real variable squared|Use an absolute value rather than assuming a nonnegative variable|a/roots:absolute
+principal-root-absolute|radicals|2|Extract a squared variable and a square numerical factor from a radical|Retain the absolute value while simplifying the coefficient|a/radical:simplify
+quadratic-solution-methods|quadratics|1|Solve by factoring and the zero-product property|Set each factor to zero|a/quadratic:factor
+quadratic-solution-methods|quadratics|2|Solve by completing the square|Preserve equality and both square-root signs|a/quadratic:complete z/quadratic:nonmonic
+quadratic-solution-methods|quadratics|3|Solve using the quadratic formula|Signed coefficients and discriminant interpretation|a/quadratic:formula z/quadratic:irrational
+complete-square-complex|quadratics|1|Complete the square for real roots|Principal radical and both signs|a/quadratic:complete z/quadratic:nonmonic
+complete-square-complex|quadratics|2|Complete the square for complex roots|Represent a negative completed square using i|m/quadratic:complex-complete
+linear-system-methods|systems|1|Solve by substitution or rearrangement|Replace a variable with an equivalent expression|a/system:substitution a/system:rearrange =/algebra-1-en:node:570
+linear-system-methods|systems|2|Solve by elimination|Combine equivalent equations to remove a variable|a/system:elimination a/system:subscript
+linear-system-methods|systems|3|Solve by graphing and checking the intersection|Plot both lines accurately and check the pair in both equations|a/system:graph
+system-classification|systems|1|Classify a two-variable system including dependent and inconsistent cases|Interpret identical equations and contradictions|a/system:classify
+system-classification|systems|2|Classify a three-variable system including free-parameter solutions|Eliminate in stages and express an infinite family with a parameter|m/three:unique m/three:inconsistent m/three:dependent
+system-models|word-equations|1|Form and solve a two-variable count or value system|Define variables and use consistent count/value units|a/word:coins a/word:value a/word:two-equalities =/algebra-2-en:authored:M6-107-1
+system-models|word-equations|2|Form and solve a three-variable count or value system|Translate three independent conditions and check all counts|z/word:three-coins z/word:three-weights =/algebra-2-en:authored:M6-111-1
+model-linear-relations|word-equations|1|Translate a verbal numerical relationship into an equation|Represent each quantity and equality explicitly|h/algebra-sentence h/two-step-story a/word:fraction
+model-linear-relations|word-equations|2|Model a rectangle perimeter with related dimensions|Connect perimeter and length-width relationship|c/101.2 z/geometry:equation
+model-linear-relations|word-equations|3|Model age relationships at different times|Add or subtract elapsed years from each age consistently|z/word:age-ratio z/word:age-past z/word:age-sum
+line-equation-demands|lines-slope|1|Find a line equation from a known slope and point|Substitute the point to determine the intercept|a/line:slope =/algebra-1-en:node:955
+line-equation-demands|lines-slope|2|Find a line equation from two points|Calculate the slope before determining the intercept|a/line:two-points =/algebra-1-en:node:948
+line-graph-methods|lines-slope|1|Graph a line using slope and intercept|Plot the intercept and a correct slope step|a/line:graph c/COURSE117.2
+line-graph-methods|lines-slope|2|Graph using both intercepts|Set each coordinate equal to zero in turn|z/line:intercepts
+line-graph-methods|lines-slope|3|Rearrange then graph a linear equation|Solve for y before using its slope and intercept|a/line:rearrange
+line-graph-methods|lines-slope|4|Graph an axis-parallel line and explain its slope|Vertical slope is undefined; horizontal slope is zero|a/line:axis c/COURSE107.2
+inequality-negative-scaling|inequalities|1|Solve and graph an additive inequality|Subtract the same amount and retain boundary inclusion|a/inequality:add
+inequality-negative-scaling|inequalities|2|Solve and graph with a negative coefficient|Reverse the comparison when dividing by a negative|a/inequality:multiply
+absolute-inequalities|inequalities|1|Solve a compound union or intersection|Combine two inequalities with and or or|a/compound:and a/compound:or
+absolute-inequalities|inequalities|2|Solve an absolute-value inequality|Translate distance into the appropriate two branches|a/absolute:inside a/absolute:outside
+absolute-inequalities|inequalities|3|Handle an absolute-value inequality with a negative bound|Use nonnegativity to identify all-real or empty solutions|z/absolute:negative
+inequality-sign-charts|inequalities|1|Solve a quadratic product inequality|Build a sign chart and check zero endpoints|m/inequality:quadratic m/inequality:repeated
+inequality-sign-charts|inequalities|2|Solve a rational inequality and retain holes|Denominator zeros stay excluded even after cancellation|m/inequality:rational m/inequality:hole
+plane-regions|inequalities|1|Graph one linear half-plane|Use a test point and correct boundary inclusion|a/plane-inequality c/COURSE114.1
+plane-regions|inequalities|2|Graph simultaneous linear half-planes|Intersect the regions satisfying both conditions|m/plane:linear
+plane-regions|inequalities|3|Graph a region between a parabola and a line|Find nonlinear boundary intersections and test the common region|z/graph:nonlinear-system
+function-recognition|functions|1|Decide if ordered pairs define a function and state domain or range|Each input has only one output; omit repeated set elements|a/function:test a/function:domain-range
+function-recognition|functions|2|Apply the vertical-line test to a graph|At most one intersection for each x-coordinate|a/function:vertical
+parent-function-graphs|function-graphs|1|Recognize a parent-function graph and its defining features|Distinguish quadratic, cubic, absolute, root and reciprocal families|a/nonlinear:recognize
+parent-function-graphs|function-graphs|2|Sketch a parent function and state domain and range|Use valid points, endpoints and asymptotes|a/nonlinear:graph =/course-87-en:authored:COURSE120.2
+parent-function-graphs|function-graphs|3|Transform quadratic, cubic, absolute or root graphs|Apply the prescribed shifts and reflections in order|a/transform:quadratic a/transform:cubic a/transform:absolute a/transform:root
+parabola-features|function-graphs|1|Graph a quadratic with a vertical shift|Find the vertex and preserve the opening|h/parabola:shift c/COURSE120.1
+parabola-features|function-graphs|2|Graph a scaled or reflected quadratic|Explain the changed opening and width|h/parabola:scale
+exponential-graphs|exponential|1|Graph an exponential parent and record a meaningful window|Positive range, growth or decay and zero asymptote|a/exponential:graph
+exponential-graphs|exponential|2|Graph a shifted exponential and state its domain and range|Shift the asymptote as well as plotted points|m/exponential:graph
+variation-types|variation|1|Model direct or inverse variation in a single variable|Find the constant from a known pair and preserve nonzero restrictions|a/variation:direct a/variation:inverse z/variation:ratio-direct z/variation:ratio-inverse =/algebra-2-en:node:589
+variation-types|variation|2|Model direct-square or inverse-square variation|Square the input in the chosen relationship|a/variation:direct-square a/variation:inverse-square
+variation-types|variation|3|Recover a positive input from a direct-square model|Take the positive square root and apply the stated rounding|a/variation:find-x
+weighted-average-target|statistics|1|Find a combined mean from group means and counts|Weight means by their group sizes|s/weighted-scores c/55.3
+weighted-average-target|statistics|2|Find the required future-group average for a target overall mean|Recover the future total after subtracting the existing total|a/target-average
+trig-table-application|trigonometry|1|Read a trig value or an angle from a supplied table|Choose the right row and sine, cosine or tangent column|h/trig-table:read h/trig-table:inverse
+trig-table-application|trigonometry|2|Use a table to calculate lengths in a right triangle or context|Choose the ratio, rearrange it and follow the table rounding contract|h/trig-application:height h/trig-application:ladder h/trig-application:sides
+trig-table-application|trigonometry|3|Calculate right-triangle sides with calculator trig functions|Use unrounded intermediate trig values and round final lengths only|m/trig:triangle
+construction-copy-bisect|constructions|1|Copy an angle with compass and straightedge|Transfer an equal-radius arc and its chord|c/COURSE118.1 m/construct:angle-copy
+construction-copy-bisect|constructions|2|Copy an angle and then bisect the copy|Complete both constructions and retain arcs|h/angle-bisector z/construct:copy-bisect
+perpendicular-constructions|constructions|1|Construct a perpendicular at a point on a line|Equal-radius arcs around the given point|h/perpendicular:on
+perpendicular-constructions|constructions|2|Construct a perpendicular from an external point|Equal distances to two intersections on the line|h/perpendicular:off m/construct:perpendicular
+perpendicular-constructions|constructions|3|Construct a perpendicular bisector of a segment|Equal-radius arcs from both endpoints|f/bisect-segment c/INV8.1 m/construct:bisector
+three-side-construction|constructions|1|Construct a triangle from three side lengths|Intersect endpoint-centered arcs and preserve all lengths|c/COURSE118.2 z/construct:triangle
+three-side-construction|constructions|2|Construct a circumcircle of a right triangle|Locate the midpoint of the hypotenuse and justify equal vertex distances|z/circle:circumtriangle
+logarithm-laws|logarithms|1|Convert between log and exponential forms or evaluate an antilog|Base positive and not one; argument positive|m/log:convert m/log:antilog
+logarithm-laws|logarithms|2|Expand or condense a logarithmic expression|Product, quotient and power laws with positive arguments|m/log:expand m/log:condense
+logarithm-laws|logarithms|3|Solve an equation by combining logarithms|Preserve original argument restrictions while solving|m/log:sum m/log:difference m/log:extraneous
+complex-number-operations|complex-numbers|1|Add or subtract complex numbers|Combine real and imaginary components|b/complex-add m/complex:subtract
+complex-number-operations|complex-numbers|2|Multiply complex numbers or evaluate powers of i|Use i squared equals negative one and its four-power cycle|b/complex-multiply m/complex:power
+complex-number-operations|complex-numbers|3|Divide complex numbers using a conjugate|Create a real nonzero denominator|m/complex:divide
+vector-output-representations|polar-vectors|1|Add vectors supplied as rectangular components|Add corresponding coordinates|m/vector:components
+vector-output-representations|polar-vectors|2|Resolve polar vectors and add rectangular components|Sine/cosine, angle convention and signed radius|z/vector:rectangular z/vector:negative-rectangular
+vector-output-representations|polar-vectors|3|Express a polar-vector resultant as magnitude and direction|Use the quadrant-correct angle; zero vectors have no direction|m/vector:polar m/vector:negative m/vector:force =/algebra-2-en:node:499 =/algebra-2-en:node:573
+polar-conversions|polar-vectors|1|Convert polar coordinates to rectangular|Use cosine and sine with the signed angle|m/polar:rectangular z/polar:negative =/algebra-2-en:node:442
+polar-conversions|polar-vectors|2|Convert rectangular coordinates to polar|Magnitude and quadrant-correct angle in the stated interval|m/polar:polar =/algebra-2-en:node:483
+mixture-operations|mixtures|1|Mix stocks or add water to attain a concentration|Conserve solute while total volume changes|m/mixture:final m/mixture:stock m/mixture:dilute
+mixture-operations|mixtures|2|Remove pure solute or replace uniformly mixed solution|Distinguish what is removed before applying conservation|m/mixture:extract m/mixture:replace
+nonlinear-system-types|nonlinear-systems|1|Find intersections with a line|Substitution and all real root branches|m/nonlinear:line-parabola m/nonlinear:circle-line
+nonlinear-system-types|nonlinear-systems|2|Find intersections of two quadratic relations|Use elimination or substitution and check all sign choices|m/nonlinear:two-squares z/system:circle-parabola z/system:ellipse-circle
+plane-nonlinear-extension|inequalities|1|Graph a single nonlinear inequality|Test the correct side of a curved boundary|m/plane:nonlinear
+plane-nonlinear-extension|inequalities|2|Graph two simultaneous nonlinear and linear conditions|Find and respect boundary intersections|z/graph:nonlinear-system
+circle-angle-theorems|angles|1|Relate central and inscribed angles intercepting one arc|An inscribed angle has half the central angle|h/circle-angles
+circle-angle-theorems|angles|2|Prove the diameter right-angle corollary|A semicircle measures 180 degrees|z/proof:diameter
+circle-angle-theorems|angles|3|Prove the general inscribed-angle theorem|Use isosceles triangles and handle the diameter positions|z/proof:inscribed-angle
+triangle-length-reasoning|pythagorean|1|Find a missing right-triangle side|Squares and square roots|c/99.1
+triangle-length-reasoning|pythagorean|2|Infer lengths by identifying a hidden or subdivided right triangle|Draw the relevant altitude or diagonal before calculating|c/COURSE112.1 z/geometry:isosceles-area z/circle:inscribed-square
+triangle-length-reasoning|pythagorean|3|Find an altitude and projections using overlapping right triangles|Combine area and similarity relationships|z/geometry:overlap-right
+circle-segment-products|geometry-properties|1|Use intersecting-chord products|Match the two parts on each chord|z/geometry:chords
+circle-segment-products|geometry-properties|2|Use secant products and validate the resulting lengths|Multiply external length by whole length|z/geometry:secants
+circle-segment-products|geometry-properties|3|Use a tangent-secant product|The tangent length is the positive square root of the product|z/geometry:tangent-secant
+gas-model-types|gas-laws|1|Relate pressure and volume at fixed temperature|Inverse pressure-volume relation|m/gas:pressure m/gas:volume
+gas-model-types|gas-laws|2|Relate volume and temperature at fixed pressure|Convert Celsius to absolute temperature|m/gas:temperature
+gas-model-types|gas-laws|3|Use the ideal gas equation|Consistent units and the supplied gas constant|m/gas:ideal
+locus-types|locus|1|Describe points equidistant from two points|Perpendicular-bisector locus|l/equidistant-locus
+locus-types|locus|2|Describe points equidistant from two lines|Midline or both angle-bisector lines|z/locus:lines
+locus-types|locus|3|Describe points at fixed distance from a circumference|May contain inner and outer components or a center point|z/locus:circle
+division-remainder-range|whole-arithmetic|1|Divide by one digit with a two-digit quotient and remainder|Remainder is smaller than divisor|f/div:2:remainder
+division-remainder-range|whole-arithmetic|2|Divide by two digits with a three-digit quotient and an optional remainder|Estimate longer quotient and retain any remainder|@/course-87-en:item:SN870001
+place-value-response|number-representation|1|Identify one digit value or three requested digit values|Response count and six-digit range do not establish a universal rank|f/place:4 f/place:13 @/algebra-half-en:node:4
+factor-testing|number-theory|1|Check whether a candidate divides a whole number|Zero remainder defines a factor|@/course-87-en:item:NAV40385
+factor-testing|number-theory|2|List all factors of a whole number|Exhaust all factor pairs|e/6.1
+whole-sum-formats|whole-arithmetic|1|Add two whole-number operands|Place alignment; task ranges differ|f/add:2 f/add:3 f/add:5
+whole-sum-formats|whole-arithmetic|2|Add three or more whole-number operands|More addends but varied digit ranges; no blanket difficulty order|@/course-1-en:bank:C1_Section01:item:C1_S01_00093 @/course-1-en:bank:C1_Section01:item:C1_S01_00101 @/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00104 @/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106 @/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00110 @/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00121 @/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00123 f/columns
+decimal-sum-length|decimal-arithmetic|1|Add two decimals with up to hundredths|Align corresponding places|f/decimal:add f/money:add
+decimal-sum-length|decimal-arithmetic|2|Add three decimals or money amounts with up to hundredths|Keep an additional addend aligned|@/course-1-en:bank:C1_Section01:item:C1_S01_00100 @/course-1-en:bank:C1_Section04:item:C1_S04_00072 @/course-1-en:bank:C1_Section04:item:C1_S04_00074 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00089 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00147 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00148
+decimal-sum-length|decimal-arithmetic|3|Add four decimals or money amounts with up to hundredths|Keep four aligned addends|@/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00112 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00144
+whole-subtraction-grouping|whole-arithmetic|1|Subtract two whole numbers|Regroup if needed|f/sub:2
+whole-subtraction-grouping|whole-arithmetic|2|Subtract a parenthesized whole-number difference|Evaluate the inner difference before outer subtraction|@/course-1-en:bank:C1_Section01:item:C1_S01_00118 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00079
+decimal-subtraction-grouping|decimal-arithmetic|1|Subtract two decimals|Align places|f/decimal:sub f/money:sub
+decimal-subtraction-grouping|decimal-arithmetic|2|Subtract a grouped decimal sum or difference|Respect the group before outer subtraction|@/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00088 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00139 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00143 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00080
+fraction-complement|fractions|1|Find the fractional share remaining|Subtract a proper fraction from one|p/fraction-complement f/remaining
+fraction-complement|fractions|2|Find the remaining count from a fractional or ratio share|Use the complementary share of a known total|p/wins-losses
+fraction-complement|fractions|3|Recover the whole from the amount remaining|Complement the used share before inverse scaling|t/whole-from-left
+percent-complement|percent|1|Find the percent remaining|Subtract given percent from 100|p/percent-complement
+percent-complement|percent|2|Find an unsold count from a percent and total|Scale the total by the complementary rate|p/percent-count-complement
+percent-from-complement|percent|1|Find a percent from a given part and whole|Divide part by whole, multiply by 100|p/percent-part
+percent-from-complement|percent|2|Find the percent outside a known group|Find the complementary count or subtract the known percent from 100|p/percent-count-rest
+ratio-forms|ratio-proportion|1|Write ratios in the requested order or notation|Part-to-part and part-to-whole denominators differ|p/ratio-reverse p/ratio-part p/fraction-ratio c/36.1 c/36.2 h/ratio-compare
+ratio-forms|ratio-proportion|2|Form a ratio after finding a missing group count|Subtract from total, then compare ordered quantities|p/club-ratio
+part-reference-forms|fraction-decimal-percent|1|Express a part relative to a reference quantity as a fraction or decimal|Reference quantity is the denominator; fraction-part can exceed one|p/fraction-part p/decimal-part p/decimal-part-eighths
+part-reference-forms|fraction-decimal-percent|2|Express a part relative to a reference quantity as a percent|Percent scales the quotient by 100|p/percent-part p/bill-percent
+fraction-sum-to-percent|fraction-decimal-percent|1|Convert a given fractional share to percent|Multiply by 100|p/circle-percent
+fraction-sum-to-percent|fraction-decimal-percent|2|Combine nonoverlapping fractional shares then convert to percent|Add fractions of the same whole first|p/circle-sum-percent
+fraction-sum-to-percent|fraction-decimal-percent|3|Draw and add fractional circle regions then give fraction and percent|Construct equal partitions and assess the drawing manually|c/INV1.1
+percent-forward-change|percent|1|Calculate a percent of an amount|Identify the original base|f/percent-of
+percent-forward-change|percent|2|Calculate a final amount after a discount or increase|Use 1 minus or plus the rate; increase may exceed 100 percent|p/percent-increase t/discount-price
+money-purchase-change|decimal-arithmetic|1|Multiply unit price by count|Convert cents consistently|f/money:mul @/course-87-en:item:SX870018 @/course-87-en:item:SN870004
+money-purchase-change|decimal-arithmetic|2|Find change after purchasing multiple items|Calculate cost before subtracting from tendered amount|t/purchase-change
+interest-time-conversion|percent|1|Calculate simple interest in whole years|Use principal times annual rate times years|c/COURSE110.1
+interest-time-conversion|percent|2|Calculate simple interest for a number of months|Convert months to a fraction of a year and round cents|t/simple-interest
+fraction-between-bounds|number-order|1|Find a supplied fractional position between positive whole-number endpoints|Take the given tenths share of the difference and add the start; these endpoints yield whole-number answers|b/fraction-between
+fraction-between-bounds|number-order|2|Find a supplied fractional position between signed rational endpoints|Use the given fraction of the difference then add the start with exact signed rational arithmetic|z/number:fraction-between
+prime-decomposition|number-theory|1|List all whole-number factors|Factor pairs|e/6.1
+prime-decomposition|number-theory|2|Write a prime factorization|Continue splitting until every factor is prime|b/prime-factorization
+prime-decomposition|number-theory|3|Write a prime factorization using exponents|Compress repeated prime factors into powers|c/21.3
+scientific-normalization|scientific-notation|1|Convert ordinary numbers to or from scientific notation|Normalize coefficient and track exponent sign|c/51.1 c/51.2 c/57.2 c/57.3
+scientific-normalization|scientific-notation|2|Normalize a nonstandard scientific expression|Generator includes both exponent signs; not solely a small-number task|b/scientific-normalize
+prime-classification|number-theory|1|Decide whether a whole number is prime or composite|Exactly two positive factors define prime; one is neither|b/prime-test f/prime-small
+prime-classification|number-theory|2|List primes or composites in a specified interval|Test all interval members; honor endpoints|b/prime-list c/21.1 c/21.2
+prime-classification|number-theory|3|Find the sum of primes in an interval|Identify all primes before summing|b/prime-sum c/21.6
+roman-notation-practice|numeral-systems|1|Read or write Roman numerals|Subtractive pairs; each generator retains its own range|f/roman:39 f/roman:3999
+roman-notation-practice|numeral-systems|2|Read or write Roman numerals over mixed configured ranges|maxRoman defaults and 999 differ; never infer a higher course is harder|b/roman-write b/roman-read c/COURSE213.3
+round-money-value|rounding-estimation|1|Round whole values to a requested place|Place-value intervals|f/round:3 c/29.1
+round-money-value|rounding-estimation|2|Round a dollar-and-cent amount to a whole dollar|Nearest whole dollar from cents; different representation|b/round-money
+powers-in-expressions|powers-roots|1|Evaluate an exact square root or positive power|Perfect powers|c/20.8 c/20.3
+powers-in-expressions|powers-roots|2|Combine roots or powers with arithmetic|Operation order before final sum or difference|b/square-root-difference h/root-operations
+decimal-number-words|number-representation|1|Convert between whole-number digits and words|Three-digit periods|f/words:3
+decimal-number-words|number-representation|2|Read or write a decimal through thousandths|Name the fractional place as well as the whole part|r/words-decimal c/31.4
+circle-fraction-interpretations|fractions|1|Read the shaded fraction of a circle|Equal sectors define the whole|g/shaded-fraction
+circle-fraction-interpretations|fractions|2|Express an angle as a fraction of a full turn|Use 360 degrees as the whole|r/circle-fraction
+money-notation|number-representation|1|Convert between cents and dollar notation|100 cents per dollar, including values below ten cents|e/1.4
+money-notation|number-representation|2|Write money as a fraction or mixed number of dollars|Reduce quarter-dollar fractions; a mixed value retains whole dollars|f/mixed-money f/dollar-fraction
+multiplication-number-forms|decimal-arithmetic|1|Multiply whole or finite-decimal operands|Alternates whole-number and decimal multiplication; cannot classify solely from one branch|e/1.6
+multiplication-number-forms|decimal-arithmetic|2|Multiply decimals or money|Decimal point placement|f/decimal:mul f/money:mul
+division-answer-forms|whole-arithmetic|1|Give a quotient and remainder|Remainder is smaller than divisor|f/div:2:remainder
+division-answer-forms|whole-arithmetic|2|Give a nonexact quotient as remainder or mixed number|Select the requested response form|e/1.8
+division-answer-forms|whole-arithmetic|3|Give remainder, mixed-number and decimal forms of one quotient|Convert the same remainder into both fractional and decimal representations|c/44.1
+integer-ordering|integers|1|Compare two signed integers|Order on a number line|@/course-87-en:item:SN870017
+integer-ordering|integers|2|Order three plotted integers and compare two|Read positions and coordinate more than one comparison|e/4.1
+divisibility-methods|number-theory|1|Test a proposed factor by division|A zero remainder establishes divisibility|@/course-87-en:item:NAV40385
+divisibility-methods|number-theory|2|Apply a specified divisibility test|Rules for 2,3,4,5,6,8,9,10 and the required test value|e/6.3
+fraction-symbol-language|fractions|1|Name numerator and denominator|Part count versus equal partitions|c/8.2
+fraction-symbol-language|fractions|2|Classify proper and improper fractions|Numerator equal to denominator is improper|c/10.2
+fraction-symbol-language|fractions|3|Read or construct fractional models|Models and vocabulary are related, not an ordinal difficulty chain|f/fraction-name f/fraction-draw
+equivalence-recognition|fraction-equivalence|1|Generate an equivalent fraction|Scale numerator and denominator equally|f/fraction-rename c/15.1
+equivalence-recognition|fraction-equivalence|2|Identify a nonequivalent fraction among unreduced choices|Check all choices; phase2 preserves the unreduced forms|c/15.3
+power-notation-language|powers-roots|1|Read a power in words or compress repeated factors|Distinguish base and exponent|c/20.1 c/20.2
+power-notation-language|powers-roots|2|Write and evaluate a repeated-factor power|Evaluate after writing the exponential expression|f/factors
+fraction-piece-count|fractions|1|Read a fraction as a number of equal parts|Numerator counts parts of the specified whole|f/fraction-name
+fraction-piece-count|fractions|2|Count unit-fraction pieces in a whole or fractional amount|Phase2 alternates whole and proper-fraction amounts; multiply by the denominator|c/25.1
+multiples-to-common|number-theory|1|List the first five multiples of one number|Repeated multiplication|c/27.1
+multiples-to-common|number-theory|2|Find common multiples of several numbers|Coordinate multiples shared across inputs|b/lcm b/common-multiples
+whole-powers-ten-shortcuts|whole-arithmetic|1|Multiply whole multiples of powers of ten|Multiply nonzero parts and restore powers of ten|f/mul-ten
+whole-powers-ten-shortcuts|whole-arithmetic|2|Divide using whole multiples of ten|Cancel a shared factor or divide by a tens divisor|c/27.5 f/div-ten
+estimate-operation-types|rounding-estimation|1|Estimate an addition by rounding operands|Use rounded operands, not rounded exact answer|f/estimate:add
+estimate-operation-types|rounding-estimation|2|Estimate sums or differences|Both operation branches are preserved|f/estimate:mixed
+estimate-operation-types|rounding-estimation|3|Estimate products or quotients|Product label includes division branch|f/estimate:product
+estimate-operation-types|rounding-estimation|4|Estimate any of the four operations|Phase2 rounds both operands to tens, then returns exact rounded-input calculation|c/29.3
+estimate-operation-types|rounding-estimation|5|Estimate a decimal product using whole-number rounding|Round decimal operands before multiplication|h/decimal-estimate
+decimal-place-language|number-representation|1|Name a decimal place or identify its digit value|Tenths through thousandths or ten-thousandths; differing response demands|c/31.3 f/decimal-place
+decimal-place-language|number-representation|2|Write a decimal in expanded notation|Decompose whole, tenths and hundredths|f/decimal-expanded
+decimal-place-language|number-representation|3|Explain zero placeholders and trailing zero equivalence|Internal zero and trailing zero branches must both be considered|f/decimal-zero
+decimal-list-order|number-order|1|Compare two decimals|Align place values|c/33.1
+decimal-list-order|number-order|2|Order four decimals|Coordinate comparisons across the full list|c/33.2
+proportion-validation|ratio-proportion|1|Check whether two ratios form a proportion|Compare cross products, including false cases|c/39.1
+proportion-validation|ratio-proportion|2|Find a missing value in a proportion|Solve the cross-product equality|f/cross-products c/39.2
+repeating-decimal-forms|fraction-decimal-percent|1|Write repetition-bar notation for a repeating decimal|Identify the shortest repeating block|c/42.1
+repeating-decimal-forms|fraction-decimal-percent|2|Convert a repeating decimal to an exact fraction|Algebraic scaling and subtraction|a/repeating-decimal b/repeating-fraction
+repeating-decimal-forms|fraction-decimal-percent|3|Divide to produce and round a repeating decimal|Fraction input; round to requested two or three decimal places|c/42.2
+powers-ten-place-language|number-representation|1|Express a whole-number place value as a power of ten|Exponent zero through six|c/47.1
+powers-ten-place-language|number-representation|2|Expand a four-digit number using powers of ten|Track each digit and preserve zero coefficients|c/47.2
+scientific-expression-forms|scientific-notation|1|Compare scientific-notation numbers with negative exponents|Compare exponents then coefficients|c/57.4
+scientific-expression-forms|scientific-notation|2|Combine powers of ten and normalize a two-digit coefficient|Phase2 exponent is sum plus normalization adjustment|c/69.1
+scientific-expression-forms|scientific-notation|3|Multiply or divide scientific-notation numbers|Coefficient operation and normalization|c/83.2 o/scientific-product o/scientific-quotient
+integer-product-sum|integers|1|Multiply signed integers|Sign and magnitude rules|c/73.1
+integer-product-sum|integers|2|Multiply signed integers then add another integer|Multiplication precedes addition|c/85.1
+real-numberline-placement|number-order|1|Plot or read signed whole numbers|Equal-spaced signed number line|e/4.1
+real-numberline-placement|number-order|2|Place rational numbers and irrational square roots on a number line|Approximate roots and mark to tenths; teacher checks the diagram|c/100.3
+place-digit-value|number-representation|1|Identify a digit in a named whole-number place|Four-digit positions|f/digit
+place-digit-value|number-representation|2|Give the numerical value of a digit in a place|Multiply digit by its place value|f/place:4
+multiplication-fact-formats|whole-arithmetic|1|Recall a multiplication fact|Easy/nine/hard names partition factor sets, not measured difficulty|f/facts:easy f/facts:nine f/facts:hard
+multiplication-fact-formats|whole-arithmetic|2|Continue a table or express equal groups|Table extension, repeated addition and inverse grouping are distinct formats|f/times-table f/repeated f/equal-groups
+multiplication-fact-formats|whole-arithmetic|3|Write a multiplication/division fact family|All four related equations required|f/fact-family
+power-root-inverses|powers-roots|1|Evaluate a square or a positive square root|Alternating branches; not square-only|f/square-small
+power-root-inverses|powers-roots|2|Evaluate a power and its positive inverse root|Degrees two, three and four; both outputs required|h/power-roots
+power-root-inverses|powers-roots|3|Give both signs of a square-root expression|Plus/minus has two values unlike a principal square root|a/plusminus
+fraction-comparison-methods|number-order|1|Compare same-denominator fractions using drawn models|Equal wholes and partitions; teacher assesses the drawing|f/fraction-model-compare
+fraction-comparison-methods|number-order|2|Compare fractions by converting to decimals|Eighths and tenths; prescribed conversion method|f/compare-decimal-method
+fraction-comparison-methods|number-order|3|Compare fractions using equivalent forms|Unlike denominators and method choice|c/30.2
+fraction-benchmark-completion|fraction-equivalence|1|Complete a fraction equal to one or one half|Use the specific benchmark|f/fraction-benchmarks
+fraction-benchmark-completion|fraction-equivalence|2|Complete an arbitrary equivalent fraction|Generalize numerator/denominator scaling|f/fraction-rename c/15.1
+fraction-decimal-chart-methods|fraction-decimal-percent|1|Use a fraction-decimal chart to subtract, multiply or divide|All three branches require chart use; no blanket rank against mental algorithms|f/decimal-chart f/fraction-chart
+fraction-decimal-chart-methods|fraction-decimal-percent|2|Express a ratio as a decimal|Divide numerator by denominator for terminating denominators|f/ratio-decimal
+fraction-decimal-chart-methods|fraction-decimal-percent|3|Convert equivalent fraction, decimal and percent forms|Equivalent values; method requirements vary|f/conversions
+area-estimation-models|area|1|Find exact rectangle area from unit squares|Whole unit cells|f/array-area
+area-estimation-models|area|2|Estimate area using whole and half grid cells|Count partial cells; exact formulas are a different method|f/estimate-area
+fraction-grouping-models|fractions|1|Model a fractional part or fractional division as equal groups|Recipe alternates multiplication and division; teacher assesses model|f/fraction-equal-groups
+fraction-grouping-models|fractions|2|Model whole-number multiplication or division as equal groups|Whole-number grouping uses a different quantity domain|f/equal-groups
+decimal-part-scaling|ratio-proportion|1|Find a fraction of a known group|Partition and scale|c/14.1 c/22.1
+decimal-part-scaling|ratio-proportion|2|Find a decimal part of a whole-number amount|Use decimal multiplication for the specified part|h/decimal-part
+mixed-part-whole-models|ratio-proportion|1|Find a mixed-number part or recover the whole|Both forward and inverse branches are present|h/mixed-part
+mixed-part-whole-models|ratio-proportion|2|Find a fractional part or recover the whole|Different unknown roles; mixed contract cannot occupy one directional stage|c/14.1 c/71.1
+integer-opposites|integers|1|Find an additive inverse and the inverse of that inverse|Negation reflects through zero twice|h/opposites
+integer-opposites|integers|2|Add or subtract signed values|Use additive inverses in calculation|c/64.1
+money-net-amount|decimal-arithmetic|1|Subtract a money amount|Align place values|f/money:sub
+money-net-amount|decimal-arithmetic|2|Find profit from revenue and cost|Whole-dollar subtraction; no percent or markup unknown|h/profit
+absolute-value-expressions|integers|1|Evaluate an absolute value|Distance from zero|a/absolute-value c/59.1
+absolute-value-expressions|integers|2|Evaluate a signed expression containing an absolute value|Inside subtraction, then absolute value, outside negative and addition|z/review:absolute
+chemical-mass-proportions|ratio-proportion|1|Scale a ratio to find a missing amount|Part/reference quantities|p/recipe-proportion p/ratio-missing
+chemical-mass-proportions|ratio-proportion|2|Find oxygen mass in water using supplied relative atomic masses|Water mass scales by 16/18; chemical context adds representation|z/chemical:mass
+chemical-mass-proportions|ratio-proportion|3|Express oxygen mass fraction of water as percent|Fixed 16/18 ratio rounds to 88.89 percent; do not imply variable quantitative breadth|z/chemical:percent
+unknown-sum-length|equations|1|Find a missing addend in a three-term single-digit sum|Combine two known addends before subtracting|=/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00075 =/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00076 =/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00113
+unknown-sum-length|equations|2|Find a missing addend with three or four known addends|Collect more known terms; some templates use two-digit values|=/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00077 =/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00078 =/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114 =/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116
+unknown-sum-length|equations|3|Find a missing addend among eight known single-digit addends|Maintain a longer addition total before isolating the unknown|=/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119
+rational-affine-steps|equations|1|Solve one-step additive equations with rational or decimal constants|Exact fractional arithmetic or aligned decimal subtraction|=/algebra-1-en:node:293 =/algebra-half-en:node:276 =/algebra-half-en:node:277
+rational-affine-steps|equations|2|Solve two-step affine equations with fractional coefficients and constants|Combine rational terms and divide by a nonzero rational coefficient|=/algebra-1-en:node:303 =/algebra-1-en:node:304 =/algebra-half-en:node:414 =/algebra-half-en:node:533
+collect-before-solving|equations|1|Collect variable terms on one side before solving|Combine like coefficients and retain fractional or decimal arithmetic|=/algebra-1-en:node:305 =/algebra-1-en:node:317
+collect-before-solving|equations|2|Collect several variable and constant terms across both sides|Move variable terms while preserving signs and equality|=/algebra-1-en:node:309 =/algebra-half-en:node:583 =/algebra-half-en:node:584
+distributed-linear-equations|equations|1|Distribute one or two linear groups and isolate the unknown|Signs and decimal coefficients must survive distribution|=/algebra-1-en:node:358 =/algebra-1-en:node:359
+distributed-linear-equations|equations|2|Distribute several signed groups with variable terms on both sides|Multiple sign changes, collection and exact solution; no variable squared|=/algebra-1-en:node:354 =/algebra-1-en:node:355 =/algebra-1-en:node:356 =/algebra-1-en:node:362
+numeric-denominator-equations|equations|1|Clear numerical denominators in a linear equation|LCM scaling and signed linear numerator expansion; no variable denominator|=/algebra-1-en:node:768 =/algebra-1-en:node:769 =/algebra-1-en:node:770 =/algebra-2-en:node:209
+numeric-denominator-equations|equations|2|Clear denominators and distribute multiple linear numerators|Coordinate several rational terms, including both-side variables or signed grouping|=/algebra-1-en:node:771 =/algebra-2-en:node:210
+constant-powers-linear-equations|equations|1|Simplify constant powers or absolute values inside a linear equation|Only constants occur inside powers and absolute values; the unknown remains affine. Mixed nested branches do not establish a universal difficulty ordering|=/algebra-1-en:node:357 =/algebra-1-en:node:360 =/algebra-1-en:node:361 =/algebra-1-en:node:363 =/algebra-1-en:node:364
+quadratic-zero-product-solutions|quadratics|1|Rearrange a monic integer-root quadratic and solve for all roots|Move constants, factor and apply the zero-product property|=/algebra-1-en:node:839 =/algebra-1-en:node:840 =/algebra-1-en:node:841 =/algebra-2-en:node:329 a/quadratic:factor =/algebra-1-en:node:836
+quadratic-zero-product-solutions|quadratics|2|Remove a nonunit common factor or factor nonmonic linear factors|Retain all distinct roots including a repeated-root branch; factored-rational explicitly requires factoring|=/algebra-1-en:node:842 =/algebra-2-en:node:738
+quadratic-discriminant-work|quadratics|1|Classify roots from the discriminant|Distinguish two real, repeated real and nonreal roots; no roots need be calculated|=/algebra-2-en:node:668
+quadratic-discriminant-work|quadratics|2|Find exact complex conjugate roots of a nonmonic quadratic|Extend discriminant classification to simplified real and imaginary parts|=/algebra-2-en:node:495 m/quadratic:complex-formula
+root-substitution-equations|radical-equations|1|Solve a pure real square equation|Retain both algebraic signs|c/COURSE109.1
+root-substitution-equations|radical-equations|2|Solve a quadratic in t equal to the principal square root of x|Require t nonnegative, square surviving t values, and check original domains|=/algebra-1-en:node:960
+algebraic-expression-structure|expressions|1|Name arithmetic operations and operand or result roles|All four operations and all operand/result positions are retained|=/course-87-en:authored:MCADA-1.2 =/course-87-en:authored:MCADA-1.3
+algebraic-expression-structure|expressions|2|Identify terms, coefficients, factors and top-level operations of a polynomial|Extend arithmetic language to signed symbolic terms and a factored monomial|=/algebra-1-en:authored:M4-11-3 =/algebra-1-en:authored:M4-17-1
+algebraic-expression-structure|expressions|3|Extract a polynomial coefficient list including a missing power|Recognize an implicit zero coefficient rather than dropping its position|=/algebra-2-en:authored:M6-58-1
+polynomial-description|polynomials|1|Describe term count or total degree, including cancellation in an equation|Term-count names, multivariate degree and reduced-equation degree are different questions; no difficulty direction is asserted|=/algebra-1-en:authored:M4-48-1 =/algebra-2-en:authored:M6-84-1 =/algebra-2-en:node:115
+linear-system-solution-size|systems|1|Solve a unique two-variable linear system|Nonzero determinant; integer solution, with no specified method|=/algebra-2-en:node:142 =/algebra-2-en:node:152
+linear-system-solution-size|systems|2|Solve a unique three-variable linear system|Eliminate successively and back-substitute; all three coordinates are required|=/algebra-2-en:node:652
+line-direction-constraints|lines-slope|1|Construct a parallel line through a specified point|Transfer the given slope and solve the intercept|=/algebra-1-en:authored:M4-107-1 =/algebra-2-en:node:188 a/line:slope
+line-direction-constraints|lines-slope|2|Construct a perpendicular line through a specified point|Use the negative reciprocal of the nonzero reference slope before substitution|=/algebra-2-en:node:270
+system-classification-response|systems|1|Classify a two-variable system as one, none or infinitely many solutions|Inspect coefficient proportionality and consistency without requiring a solution|=/algebra-2-en:node:614
+system-classification-response|systems|2|Classify and solve a two-variable system|Produce the unique point or describe the dependent/inconsistent set and explain it|a/system:classify
+function-recognition-response|functions|1|Decide if listed ordered pairs define a function|Repeated outputs are permitted; conflicting outputs for one input are not|=/algebra-2-en:node:675
+function-recognition-response|functions|2|Decide if a relation is a function and state domain and range|Extend recognition to describing both sets|a/function:domain-range
+function-domain-operations|functions|1|Evaluate a sum or product of two functions at a given input|Intersect the specified integer domains first; return undefined when excluded|=/algebra-2-en:node:718 =/algebra-2-en:node:722
+function-domain-operations|functions|2|Find a combined formula and complete common domain before evaluation|Extend point evaluation to a symbolic sum/product and explicit domain, including empty intersections|z/function:sum z/function:product
+inequality-answer-production|inequalities|1|Select the correct graph for a two-step linear inequality|Include negative-coefficient reversal and open/closed endpoints; recognition response|=/algebra-1-en:node:859
+inequality-answer-production|inequalities|2|Solve and produce a graph for a negative-coefficient inequality|Explain sign reversal and draw the complete solution ray|a/inequality:multiply
+polynomial-distribution-size|polynomials|1|Multiply two binomials|Four partial products and collection|h/polynomial:mul
+polynomial-distribution-size|polynomials|2|Multiply a binomial by a trinomial|Six partial products and collection into four cubic coefficients|=/algebra-2-en:node:156
+nonlinear-intersection-contracts|systems|1|Find every real line/conic intersection|Circle-line and product-hyperbola-line systems have different algebraic forms; preserve all ordered pairs without forcing a common difficulty rank|=/algebra-2-en:authored:M6-95-3 =/algebra-2-en:node:618
+inequality-graph-selection|inequalities|1|Select the solution graph of a strict quadratic product inequality|Use two distinct real roots to choose inside or outside intervals|=/algebra-2-en:node:759 =/algebra-2-en:node:766
+inequality-graph-selection|inequalities|2|Select a rational-inequality solution graph|Track a zero and an excluded pole; include equality only at defined zero points|=/algebra-2-en:node:837
+log-law-components|logarithms|1|Evaluate a logarithm or its inverse with the stated base and precision|Distinguish exact powers of ten from calculator natural/common logs and exponentials|=/algebra-2-en:node:770 =/algebra-2-en:node:771 =/algebra-2-en:node:773 =/algebra-2-en:node:774 =/algebra-2-en:node:777 =/algebra-2-en:node:778
+log-law-components|logarithms|2|Apply a single logarithm product, quotient or power law|Retain positive arguments and a common base; report the condensed argument or coefficient|=/algebra-2-en:node:841 =/algebra-2-en:node:842 =/algebra-2-en:node:843
+like-radical-preparation|radicals|1|Combine already matching radicals|Add coefficients of the same radicand|a/radical:sum
+like-radical-preparation|radicals|2|Extract square factors before combining like radicals|Three radicals require simplification first; the resulting coefficient may be negative or zero|=/algebra-2-en:node:184
+radical-product-length|radicals|1|Multiply two positive radicals with matching squarefree parts|Extract square factors and use the shared radical product|=/algebra-1-en:authored:M4-63-1 =/algebra-1-en:authored:M4-84-1
+radical-product-length|radicals|2|Multiply three positive radicals and simplify fully|Track three factors and remove every perfect-square factor|=/algebra-2-en:node:186
+radical-distribution|radicals|1|Distribute a radical monomial over a radical binomial|Simplify each radical product and retain the two output coefficients|=/algebra-2-en:node:185
+radical-distribution|radicals|2|Expand a product of two radical binomials|Distribute all four term pairs and combine rational and radical terms|a/radical:binomial
+conjugate-rationalization|radicals|1|Rationalize a single-term radical denominator|Multiply by a matching radical|a/radical:rationalize
+conjugate-rationalization|radicals|2|Rationalize a binomial radical denominator with its conjugate|Use a difference of squares and distribute the numerator, including a squared binomial|=/algebra-2-en:node:521 =/algebra-2-en:node:548
+logarithmic-time-models|exponential|1|Evaluate a forward exponential growth model|Substitute a known number of periods|a/exponential:growth
+logarithmic-time-models|exponential|2|Recover elapsed time in an exponential decay model|Use log ratios; for percent decayed first recover the remaining proportion and round the final time|=/algebra-2-en:node:789 =/algebra-2-en:node:791
+logarithm-equation-contracts|logarithms|1|Use log definitions or a single log law to isolate a positive-domain unknown|Exponential offset, positive power and product-log equations have stated domain restrictions|=/algebra-2-en:node:786 =/algebra-2-en:node:822 =/algebra-2-en:node:823 m/log:convert
+logarithm-equation-contracts|logarithms|2|Solve log-difference equations and test original positive arguments|Combined or cancelling rational expressions can give an inadmissible candidate; check every original argument|=/algebra-2-en:node:821 =/algebra-2-en:node:824
+venn-region-reading|sets|1|Identify union or intersection regions in a three-set Venn diagram|Include the central overlap when it belongs; selecting regions differs from cardinality calculations|=/algebra-2-en:node:852 m/sets:venn
+plane-region-production|inequalities|1|Select the common region of two linear inequalities|Both half-plane directions and strict boundaries must hold|=/algebra-2-en:node:660
+plane-region-production|inequalities|2|Construct the common region of two linear inequalities|Produce boundary lines and shading with justified inclusion|m/plane:linear
+absolute-inequality-domains|inequalities|1|Interpret absolute inequalities with explicit number domains|Finite integer inside lists, real outside rays, and impossible negative-bound cases are not interchangeable response contracts|=/algebra-2-en:node:701 =/algebra-2-en:node:704 =/algebra-2-en:node:707 z/absolute:negative
+formula-selection-production|literal-equations|1|Select a rearranged geometric formula including a positive square root|Recognize a valid isolated variable under geometric positivity assumptions|=/course-87-en:item:SN870681
+formula-selection-production|literal-equations|2|Rearrange and explain a stated formula|Produce the expression under its stated nonzero conditions|c/COURSE106.1
+complex-conjugate-product|complex-numbers|1|Multiply a complex number by its conjugate|Opposite imaginary terms cancel and the result is the squared modulus|=/algebra-2-en:node:594
+complex-conjugate-product|complex-numbers|2|Multiply two general complex numbers|Retain both real and imaginary components with i squared equal to minus one|b/complex-multiply
+compound-inequality-selection|inequalities|1|Select an intersection or union after solving two inequalities|AND uses an interval; OR may require reversal from negative x coefficients. Recognition is related to full construction, without equating their demands|=/algebra-2-en:node:642 =/algebra-2-en:node:645 a/compound:and a/compound:or
+inequality-representations|inequalities|1|Translate among inequality words, symbols, graphs and justification|Shifted set-builder rays, verbal reading, graph-to-symbol translation and transitivity/trichotomy differ; preserve real-domain and strictness conventions|=/algebra-2-en:authored:M6-86-1 =/algebra-2-en:authored:M6-86-3 =/algebra-2-en:node:817 =/course-87-en:authored:MCADA-78.1 c/78.2
+one-step-story-demands|word-equations|1|Solve a one-step story with a stated or implicit unknown|Interpret addition, removal, comparison or equal-group roles; unknown position may vary|=/course-87-en:authored:MCADA-11.1 =/course-87-en:authored:MCADA-11.4 =/course-87-en:authored:MCADA-13.1 =/intermediate-4-en:authored:M2-b487519c4d36-1 =/intermediate-4-en:authored:M2-d41d5223f791-1 c/12.1
+one-step-story-demands|word-equations|2|Write an equation for a one-step story and solve it|Define the unknown and preserve the quantitative relationship|=/course-87-en:authored:MCADA-11.2 =/course-87-en:authored:MCADA-11.5 =/course-87-en:authored:MCADA-12.2 =/course-87-en:authored:MCADA-13.2
+one-step-story-demands|word-equations|3|Author a story for a supplied one-step equation|Create compatible quantities, define the unknown and include meaningful units and solution|=/course-87-en:authored:MCADA-11.3 =/course-87-en:authored:MCADA-11.6 =/course-87-en:authored:MCADA-12.3 =/course-87-en:authored:MCADA-13.3 =/course-87-en:authored:MCADA-14.3
+story-operation-chain|word-equations|1|Solve a one-step additive story|Identify quantities and the requested difference|f/missing-story:add
+story-operation-chain|word-equations|2|Choose and combine several operations in a story|Branches include multiplication plus addition, subtraction then division, change, and a longer purchase chain|=/course-87-en:authored:MCADA-28.1
+linear-rule-inference|functions|1|Read an output at a marked input on a line graph|Use the given graph and signed coordinate scale|=/course-87-en:authored:MCADA-INV9.2
+linear-rule-inference|functions|2|Infer both coefficients of a linear rule from a table|Recover constant rate and intercept from several input-output pairs|=/course-87-en:authored:MCADA-58.2
+subtraction-order|expressions|1|Evaluate successive integer subtractions left to right|Preserve the negative result when subtraction crosses zero|=/course-87-en:authored:MCADA-91.2
+subtraction-order|expressions|2|Evaluate a division expression with nested grouping|Resolve the inner sum/difference and product before dividing|=/algebra-half-en:authored:M3-42-3
+algebra-language-production|expressions|1|Translate a verbal phrase into a symbolic expression|Distinguish a product plus a constant, grouped multiplication and a quotient minus a constant|=/course-87-en:authored:MCADA-101.1
+algebra-language-production|expressions|2|Translate and solve a verbal numerical relationship|Extend expression translation to equality modelling and an unknown value|h/algebra-sentence
+slope-from-equation|lines-slope|1|Read slope and intercept from an explicit slope-intercept equation|Recognize coefficients in y equals mx plus b|=/course-87-en:authored:COURSE117.1
+slope-from-equation|lines-slope|2|Recover slope from a standard-form line equation|Rearrange using signed division by a nonzero y coefficient|=/algebra-half-en:authored:M3-209-4
+grouping-production|expressions|1|Evaluate a supplied grouped numerical expression|Apply the given parentheses|e/2.4
+grouping-production|expressions|2|Insert parentheses to achieve a specified value|Choose a grouping while preserving every number and operation, then verify|=/algebra-half-en:authored:M3-74-1
+set-description-demands|sets|1|Describe membership, finiteness and a set-builder representation|Connect a finite arithmetic list to a rule and contrast it with an infinite counting set|=/algebra-1-en:authored:M4-5-1 =/algebra-1-en:authored:M4-56-1
+set-description-demands|sets|2|Explain subset relations and list all proper subsets of a two-element set|Check both inclusion directions and include the empty set|=/algebra-1-en:authored:M4-61-1
+properties-in-simplification|expressions|1|Regroup numerical factors and name the properties used|Use associativity and commutativity for a convenient product|=/algebra-1-en:authored:M4-10-2
+properties-in-simplification|expressions|2|Collect linear terms while naming the algebraic properties used|Extend regrouping to distribution and additive inverse cancellation|=/algebra-2-en:authored:M6-33-1
+monomial-common-multiple|factoring|1|Find a numerical least common multiple by prime factors|Take highest prime exponents|c/27.4
+monomial-common-multiple|factoring|2|Find the LCM of two monomials|Combine coefficient LCM with highest variable exponents|=/algebra-1-en:authored:M4-43-2
+subscript-product-models|systems|1|Solve a two-unknown equal-product and time-sum model|Rates are known and the time variables carry subscripts|=/algebra-1-en:authored:M4-79-1
+subscript-product-models|systems|2|Solve four positive unknowns linked by two products, a rate ratio and a time sum|Substitute the rate relation, justify nonzero division and verify all four equations|=/algebra-2-en:authored:M6-65-1
+difference-squares-identity|factoring|1|Factor a difference of squares|Recognize conjugate factors|a/factor:squares
+difference-squares-identity|factoring|2|Prove the identity by distribution and use it numerically|Explain cancellation of cross terms then apply it to a near-square product|=/algebra-1-en:authored:M4-96-2
+euler-representation|complex-numbers|1|Use Euler form at a quadrantal angle|State Euler identity and use the equivalent radian angle to obtain rectangular components|=/algebra-2-en:authored:M5-complex-euler
+euler-representation|complex-numbers|2|Convert a general polar point to rectangular coordinates|Extend special-angle components to arbitrary calculator angles|m/polar:rectangular
+geometry-to-equations|word-equations|1|Form simple equations from equal geometric parts|Use congruent corresponding parts or opposite parallelogram sides; justify the geometric premise before solving|=/algebra-2-en:authored:M6-32-3 =/algebra-2-en:authored:M6-37-2 z/geometry:equation
+fractional-power-forms|exponent-laws|1|Convert roots and negative fractional powers to equivalent positive-power forms|Assume x positive and retain reciprocal conventions|=/algebra-2-en:authored:M6-35-4 =/algebra-2-en:authored:M6-46-3
+fractional-power-forms|exponent-laws|2|Apply a power rule with an algebraic exponent|Distribute the outer exponent across a linear expression in the exponent under x-positive assumptions|=/algebra-2-en:authored:M6-83-2
+special-right-triangle-ratios|trigonometry|1|Find exact sides using special right-triangle ratios|30-60-90 starts from a short leg; 45-45-90 starts from a hypotenuse and simplifies a radical. Neither is universally harder|=/algebra-2-en:authored:M6-66-2 =/algebra-2-en:authored:M6-79-3
+contextual-function-domain|functions|1|Evaluate a linear rule in a function table|Substitute a supplied input|c/85.2
+contextual-function-domain|functions|2|Model a linear process with independent/dependent variables and physical domain|Interpret initial quantity, rate and a bounded nonnegative time interval|=/algebra-2-en:authored:M6-94-1
+fractional-binomial-products|polynomials|1|Multiply binomials with whole-number variable powers|Distribute and collect terms|h/polynomial:mul
+fractional-binomial-products|polynomials|2|Expand a square or conjugate product with fractional and negative powers|Assume positive variables; add rational exponents and preserve reciprocal terms|=/algebra-2-en:authored:M6-109-1 =/algebra-2-en:authored:M6-109-2
+set-domain-graphing|sets|1|Graph a real number-line inequality|Use endpoint inclusion and a continuous ray|c/78.2
+set-domain-graphing|sets|2|Graph an interval with an explicit integer or real domain|Distinguish discrete filled dots from a continuous interval and preserve unequal endpoint inclusion|=/algebra-2-en:authored:M6-117-2
+
+# Chunk 3 full-contract review; exact canonical providers only.
+lap-time-conversion|calendar-time|1|Convert a mixed minute-second lap and calculate a difference|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870149
+lap-time-conversion|calendar-time|2|Compute elapsed clock time with hour boundaries|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-12.4
+purchase-unit-rate|rates|1|Divide a total by its count or measure|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870244 =/course-87-en:item:SX870060 =/intermediate-4-en:authored:M2-f7b035ecb88d-1 =/course-1-en:authored:M2-8c34efb217fa-2
+purchase-unit-rate|rates|2|Recover net cost before calculating a unit price|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870116
+purchase-unit-rate|rates|3|Compare a premium unit price and scale to a purchase|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870148
+proportional-money-rounding|rates|1|Calculate a unit rate from corresponding totals|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870244 =/course-87-en:item:SX870060 =/intermediate-4-en:authored:M2-f7b035ecb88d-1 =/course-1-en:authored:M2-8c34efb217fa-2
+proportional-money-rounding|rates|2|Scale proportional cost and round only the final money amount|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870275 =/course-87-en:item:SN870393
+rate-interpretations|rates|1|Calculate a contextual quotient or reciprocal pair|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870226 =/course-87-en:authored:MCADA-53.1
+rate-interpretations|rates|2|Compare two independently calculated exact rates|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:node:402
+single-unit-practice|measurement|1|Apply one length mass or capacity equivalence|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870264 =/algebra-half-en:node:197 =/algebra-half-en:node:198 =/algebra-half-en:node:199 =/algebra-half-en:node:200 =/algebra-half-en:node:201 =/algebra-half-en:node:206 =/algebra-half-en:node:207 =/algebra-half-en:node:730 =/course-87-en:authored:MCADA-32.2 =/course-87-en:authored:MCADA-16.1
+single-unit-practice|measurement|2|Show a chain of unit cancellations|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-53-3 =/course-87-en:authored:MCADA-88.1
+unit-dimensions|measurement|1|Convert an exact length through three factors|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-53-3
+unit-dimensions|measurement|2|Convert square units dimension by dimension|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-53-4
+unit-dimensions|measurement|3|Convert cubic units dimension by dimension|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-53-5
+unit-concepts|measurement|1|Explain metric powers or reciprocal unit multipliers|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-32.1 =/course-87-en:authored:MCADA-50.1
+unit-concepts|measurement|2|Interpret a unit as a percentage of a larger unit|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-16.3
+cubic-unit-models|measurement|1|Cube the feet-to-inches factor|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:authored:M3-118-1
+cubic-unit-models|measurement|2|Show forward or reverse cubic conversion chains|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:authored:M3-118-2
+cubic-unit-models|measurement|3|Connect cubic length and capacity units|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:authored:M3-119-3 =/course-87-en:authored:COURSE115.1 =/course-87-en:authored:COURSE115.2
+compound-rate-units|rates|1|Calculate a distance per time with compatible units|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:node:403
+compound-rate-units|rates|2|Convert units in both numerator and denominator|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-47-1
+mean-list-recovery|statistics|1|Compute a mean of a supplied list or total|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870112 =/algebra-half-en:node:185 =/algebra-half-en:node:217 =/algebra-half-en:node:218 =/algebra-1-en:node:496 =/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00071 =/intermediate-4-en:authored:M2-1ce82540ba6b-1
+mean-list-recovery|statistics|2|Recover a missing observation from the required total|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:node:187 =/algebra-half-en:node:186
+mean-group-target|statistics|1|Compute an arithmetic list mean|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870112 =/algebra-half-en:node:185 =/algebra-half-en:node:217 =/algebra-half-en:node:218 =/algebra-1-en:node:496 =/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00071 =/intermediate-4-en:authored:M2-1ce82540ba6b-1
+mean-group-target|statistics|2|Combine group means or rates with their weights|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870286 =/course-87-en:item:SX870283 =/algebra-1-en:node:551 =/algebra-1-en:node:662 =/algebra-1-en:node:661
+mean-group-target|statistics|3|Recover a required future-group mean|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870278 =/algebra-1-en:authored:M4-52-3
+weighted-group-count|statistics|1|Combine two exact count-weighted means|See the per-provider source contract in chunk3-review.json|=/algebra-1-en:node:551
+weighted-group-count|statistics|2|Combine three exact count-weighted means|See the per-provider source contract in chunk3-review.json|=/algebra-1-en:node:552
+data-summary-demands|statistics|1|Sort five values and find their median|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00072
+data-summary-demands|statistics|2|Calculate mean median mode and range|See the per-provider source contract in chunk3-review.json|=/algebra-1-en:node:493 =/algebra-1-en:node:494 =/algebra-1-en:node:495 =/intermediate-4-en:authored:M2-4a7871efe9f0-1
+data-summary-demands|statistics|3|Calculate population standard deviation with N denominator|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M5-statistics-population
+normal-model-reading|statistics|1|Read mean and standard deviation from the curve scale|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:node:921
+normal-model-reading|statistics|2|Calculate normal-model bands and empirical-rule percentages|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M5-statistics-normal
+independent-history|probability|1|Count outcomes for one fair-die event|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX650321
+independent-history|probability|2|Ignore independent past die or replaced-marble results|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:node:700 =/algebra-1-en:node:697 =/algebra-1-en:node:698 =/algebra-1-en:node:699
+repeated-coin-events|probability|1|Find probability of a specified run or exact sequence|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX760141 =/algebra-half-en:node:699 =/algebra-1-en:node:702
+repeated-coin-events|probability|2|Find probability of mixed independent events|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-94.2
+marble-replacement-models|probability|1|Calculate one disjoint-color event|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:node:687 =/course-87-en:item:SN870816
+marble-replacement-models|probability|2|Calculate two ordered draws using the stated replacement rule|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:node:701 =/algebra-1-en:node:735
+marble-replacement-models|probability|3|Calculate and contrast both replacement models|See the per-provider source contract in chunk3-review.json|=/algebra-1-en:node:736 =/algebra-1-en:node:737
+card-event-order|probability|1|Calculate mixed ordered card events without replacement|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:node:702
+card-event-order|probability|2|Calculate mixed card events including an either-order branch|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870522
+probability-odds-output|probability|1|Convert odds to the probability of the same named event|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870774
+probability-odds-output|probability|2|Give both event and complement probabilities|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:COURSE210.2
+odds-event-interpretation|probability|1|Interpret the named event in given odds|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870774 =/course-87-en:item:SN870834
+probability-complement-work|probability|1|Find a complementary percentage|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX760144
+probability-complement-work|probability|2|Convert odds and give the event plus its complement|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:COURSE210.2
+dice-enumeration|probability|1|Count one-die outcomes for a stated condition|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX650321 =/algebra-half-en:node:700 =/algebra-1-en:node:697
+dice-enumeration|probability|2|Enumerate ordered two-dice outcomes with a target sum|See the per-provider source contract in chunk3-review.json|=/algebra-1-en:node:696
+rectangle-measure-production|area|1|Calculate rectangle perimeter and area|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX650319
+rectangle-measure-production|area|2|Write both formulas and evaluate with correct units|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:COURSE108.2
+triangle-area-production|area|1|Identify a base and perpendicular altitude|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-37.1
+triangle-area-production|area|2|Calculate area with interior or external height|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870309 =/algebra-half-en:node:221 =/course-87-en:authored:MCADA-37.2
+triangle-area-production|area|3|Calculate area and a missing right-triangle hypotenuse|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870430
+composite-area-shapes|area|1|Combine a square and triangle with an inferred base|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870199 =/course-87-en:authored:MCADA-75.1
+composite-area-shapes|area|2|Subtract a circular hole and draw the remaining region|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-0-2
+area-formula-practice|area|1|Use parallelogram base and perpendicular height|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870327 =/algebra-half-en:node:712 =/course-87-en:authored:MCADA-61.1
+area-formula-practice|area|2|Use two trapezoid bases and perpendicular height|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870351 =/algebra-half-en:node:222 =/course-87-en:authored:MCADA-75.2
+circle-output-demands|circle-measurement|1|Find circumference from radius with stated pi|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870332
+circle-output-demands|circle-measurement|2|Find circumference and area from radius|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:node:409
+circle-output-demands|circle-measurement|3|Recover radius from diameter and find circumference and area|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:node:410
+circle-fraction-measures|circle-measurement|1|Calculate circumference and area|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:node:409
+circle-fraction-measures|circle-measurement|2|Calculate semicircle arc and area or an arbitrary arc|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-104.1 =/algebra-2-en:node:38 =/course-87-en:authored:MCADA-104.2
+rectangular-volume-practice|volume|1|Find rectangular prism volume from dimensions|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870379 =/course-87-en:authored:MCADA-70.1
+rectangular-volume-practice|volume|2|Find triangular prism volume via base area|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-70.2
+volume-shape-contracts|volume|1|Calculate cylinder volume with given radius and height|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870542 =/algebra-half-en:node:475 =/course-1-en:bank:C1_Section12:item:C1_S12_00042 =/course-1-en:authored:M2-d6a57c1e9476-5 =/course-1-en:authored:M2-30a1a2f60398-1
+volume-shape-contracts|volume|2|Calculate cone pyramid or sphere volume with their rounding rules|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:node:31 =/course-87-en:item:SN870721 =/algebra-half-en:node:737 =/algebra-half-en:node:738 =/course-87-en:authored:COURSE113.3 =/algebra-2-en:authored:M6-0-3
+volume-side-ratios|similarity-scale|1|Cube a known side ratio for cube volumes|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870466
+volume-side-ratios|similarity-scale|2|Connect forward and inverse length area and volume ratios|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:COURSE211.2
+surface-shape-contracts|surface-area|1|Find rectangular or triangular prism total surface area|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870672 =/algebra-half-en:node:354 =/course-1-en:bank:C1_Section12:item:C1_S12_00056 =/algebra-2-en:authored:M6-0-12
+surface-shape-contracts|surface-area|2|Find cone or square-pyramid surface area using slant height|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:node:741 =/algebra-half-en:node:742 =/algebra-half-en:authored:M3-120-5 =/algebra-half-en:authored:M3-120-4
+surface-shape-contracts|surface-area|3|Find sphere surface area from radius|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870664 =/course-87-en:authored:MCADA-105.2
+polygon-triangulation|angles|1|Count triangles from one vertex of a convex polygon|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870414
+polygon-triangulation|angles|2|Calculate the interior-angle sum|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870424
+polygon-triangulation|angles|3|Draw the triangulation and give both count and sum|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-35-1
+regular-polygon-angles|angles|1|Calculate a regular exterior angle|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870451 =/course-87-en:item:SN870428
+regular-polygon-angles|angles|2|Calculate a regular interior angle|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870417
+polygon-diagonal-production|angles|1|Count diagonals from one vertex|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870566
+polygon-diagonal-production|angles|2|Draw and count every diagonal exactly once|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-89.1
+coordinate-rectangle-work|coordinate-geometry|1|Read or plot signed coordinate pairs|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-INV3.2 =/course-87-en:authored:MCADA-INV3.3
+coordinate-rectangle-work|coordinate-geometry|2|Complete a rectangle and calculate coordinate-difference area|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870108
+coordinate-description|coordinate-geometry|1|Identify quadrant axis or origin from signs|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-INV3.1
+coordinate-description|coordinate-geometry|2|Plot swapped pairs and explain coincidence|See the per-provider source contract in chunk3-review.json|=/algebra-1-en:authored:M4-50-2
+coordinate-distance-practice|coordinate-geometry|1|Find distance to a horizontal line|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-125-1
+coordinate-distance-practice|coordinate-geometry|2|Find exact distance between arbitrary signed-coordinate points|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:node:635 =/algebra-1-en:authored:M4-98-1
+graph-selection-production|data-displays|1|Select a line graph matching a signed rational slope and intercept|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:node:119 =/algebra-1-en:node:752
+graph-selection-production|data-displays|2|Construct a line graph from its equation|See the per-provider source contract in chunk3-review.json|=/algebra-1-en:authored:M4-51-1 =/algebra-1-en:authored:M4-75-2
+bar-graph-production|data-displays|1|Match all given table frequencies to a bar graph|See the per-provider source contract in chunk3-review.json|=/course-1-en:bank:C1_Section01:item:C1_S01_00083
+bar-graph-production|data-displays|2|Tally raw observations and construct a bar graph|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:authored:M2-874aeaab47bb-1 =/course-1-en:authored:M2-1586a2a40f39-2
+histogram-read-depth|data-displays|1|Read one histogram interval frequency|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870341
+histogram-read-depth|data-displays|2|Read and add two interval frequencies|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:authored:M3-202-7
+histogram-select-produce|data-displays|1|Match all table frequencies to a histogram|See the per-provider source contract in chunk3-review.json|=/course-1-en:bank:C1_Section01:item:C1_S01_00021
+histogram-select-produce|data-displays|2|Tally raw observations and construct a histogram|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:authored:M3-202-6 =/course-1-en:authored:M2-c4f194fd4dd9-2
+circle-graph-production|data-displays|1|Calculate a count from a labeled circle-graph percentage|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870345
+circle-graph-production|data-displays|2|Construct and label a circle graph from counts|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-INV5.3
+line-series-production|data-displays|1|Read a line graph and its changes|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-38.3
+line-series-production|data-displays|2|Construct two series on shared axes with a key|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-INV5.2
+stem-display-work|data-displays|1|Read ordered observations retaining repeated leaves|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870742
+stem-display-work|data-displays|2|Calculate median mode and range from the display|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870812
+stem-display-authoring|data-displays|1|Fill supplied stems with sorted leaves|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870810
+stem-display-authoring|data-displays|2|Construct the complete stem-and-leaf display with key|See the per-provider source contract in chunk3-review.json|=/algebra-1-en:authored:M4-85-1 =/course-87-en:authored:MCADA-INV4.1
+box-display-work|data-displays|1|Read the five marked summary values|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870806
+box-display-work|data-displays|2|Calculate range and interquartile range|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870744
+box-display-production|data-displays|1|Calculate quartiles and select the matching box plot|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870838
+box-display-production|data-displays|2|Construct a box plot from raw observations|See the per-provider source contract in chunk3-review.json|=/algebra-1-en:authored:M4-120-1 =/course-87-en:authored:MCADA-INV4.5
+geometric-notation-production|geometry-properties|1|Recognize primitive figures and arrow conventions|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870029
+geometric-notation-production|geometry-properties|2|Draw name and describe geometric primitives|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-0-1 =/course-87-en:authored:MCADA-7.2
+shape-identification-practice|geometry-properties|1|Name planar shapes and polygon types|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:authored:M2-8249b642047f-1 =/course-87-en:authored:MCADA-18.1
+shape-identification-practice|geometry-properties|2|Identify regularity or consecutive vertex naming|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-18.3 =/course-87-en:authored:MCADA-18.2
+shape-dimension-language|geometry-properties|1|Identify dimension counts and linear versus square units|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-7.1 =/course-87-en:authored:MCADA-20.5
+shape-dimension-language|geometry-properties|2|Name six types of solid|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-67.1
+line-relationships-space|geometry-properties|1|Classify parallel perpendicular or oblique planar lines|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-7.3
+line-relationships-space|geometry-properties|2|Identify parallel intersecting and skew edges and plane intersections|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M5-space-lines-planes
+triangle-side-classification|geometry-properties|1|Classify sides by the most specific triangle category|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870299 =/course-87-en:authored:MCADA-62.3
+angle-classification-work|angles|1|Recognize a right angle in a selection|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00078
+angle-classification-work|angles|2|Classify acute right obtuse or straight angles|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076 =/course-1-en:bank:C1_Section03:item:C1_S03_00061 =/course-87-en:authored:MCADA-7.4 =/course-87-en:authored:MCADA-17.2
+clock-angle-interpretation|angles|1|Convert quarter revolutions to degrees|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:authored:M2-9a770361a5f0-1 =/course-1-en:authored:M2-8e79c4526873-1
+clock-angle-interpretation|angles|2|Classify the smaller whole-hour clock-hand angle|See the per-provider source contract in chunk3-review.json|=/course-1-en:bank:C1_Section03:item:C1_S03_00063
+angle-relationship-application|angles|1|Name complementary supplementary adjacent or vertical relationships|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-40.3
+angle-relationship-application|angles|2|Use a complementary supplementary or vertical relationship numerically|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-40.4
+intersecting-angle-output|angles|1|Find one complementary supplementary or vertical angle|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-40.4
+intersecting-angle-output|angles|2|Find all three remaining angles of two intersecting lines|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-0-4 =/algebra-2-en:authored:M6-17-2
+transversal-identification|angles|1|Identify angle-pair positions on a transversal|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-102.2
+transversal-identification|angles|2|Find angles on parallel lines with a transversal|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-102.1
+quadrilateral-angle-contracts|angles|1|Use parallelogram opposite and adjacent angle properties|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-61.2
+quadrilateral-angle-contracts|angles|2|Use cyclic-quadrilateral opposite supplements|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-35-2
+rhombus-angle-extension|angles|1|Find parallelogram angles|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-61.2
+rhombus-angle-extension|angles|2|Use rhombus angle bisection and perpendicular diagonals too|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-39-5
+triangle-angle-interpretations|angles|1|Find a third interior or exterior angle|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-31-3 =/course-87-en:authored:MCADA-40.2
+triangle-angle-interpretations|angles|2|Demonstrate the triangle sum with cut corners|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-40.1
+symmetry-line-practice|transformations|1|Draw every line of reflection symmetry|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-58.1 =/course-87-en:authored:MCADA-INV6.3
+symmetry-line-practice|transformations|2|Explain point symmetry from diagonal midpoints|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-INV6.4
+reflection-coordinate-count|transformations|1|Recover one point after a y-axis reflection|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870293
+reflection-coordinate-count|transformations|2|Reflect all three triangle points across the x-axis|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870555
+transformation-response|transformations|1|Select a rotated rectangle|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870556
+transformation-response|transformations|2|Supply reflected or translated coordinates|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870555 =/course-87-en:item:SN870554
+transformation-response|transformations|3|Draw the transformed coordinate figure|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-80.1 =/course-87-en:authored:MCADA-80.2 =/course-87-en:authored:MCADA-80.3
+similarity-judgment-production|similarity-scale|1|Judge statements about similarity or congruence|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SAX70303 =/course-87-en:authored:MCADA-18.6
+similarity-judgment-production|similarity-scale|2|Justify similarity or congruence from corresponding parts|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-18.4 =/course-87-en:authored:MCADA-18.5
+circle-term-production|geometry-properties|1|Identify diameter or name radius diameter chord and arc|See the per-provider source contract in chunk3-review.json|=/course-1-en:bank:C1_Section03:item:C1_S03_00079 =/course-87-en:authored:MCADA-INV2.5
+circle-term-production|geometry-properties|2|Draw and label circle parts including major arcs and inscribed angles|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-2-4 =/algebra-2-en:authored:M6-56-1
+construction-step-production|constructions|1|Recognize an angle-copy or angle-bisector construction step|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:node:860 =/algebra-half-en:node:766
+construction-step-production|constructions|2|Carry out and justify the full corresponding construction|See the per-provider source contract in chunk3-review.json|=/course-1-en:authored:M2-5c4fa8e00372-2 =/course-87-en:authored:COURSE118.1 =/algebra-2-en:authored:M5-construct-angle-copy
+construction-tool-use|constructions|1|Name the permitted classical construction tools|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:authored:M3-201-6
+construction-tool-use|constructions|2|Construct concentric circles with measured radii|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-INV2.1
+construction-tool-use|constructions|3|Construct a regular hexagon and its alternate-vertex triangle|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-INV2.2
+circle-sector-construction|constructions|1|Construct equal circle sectors by the required compass method|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-INV2.3
+circle-sector-construction|constructions|2|Construct an inscribed hexagon and triangle|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-INV2.2
+inscribed-angle-methods|angles|1|Measure and compare central and inscribed angles|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-INV2.4
+inscribed-angle-methods|angles|2|Calculate using the central-inscribed relationship|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:authored:M3-204-3
+proof-response-production|proof|1|Identify SAS and CPCTC in a supplied diagram|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:node:873
+proof-response-production|proof|2|Write a statement-reason triangle-congruence proof|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M5-proof-congruence
+parallelogram-evidence|geometry-properties|1|Judge sufficient and insufficient parallelogram conditions|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:node:340
+parallelogram-evidence|geometry-properties|2|Explain deduction and a failed converse|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-30-1
+solid-representation-demands|geometry-properties|1|Name solid types|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-67.1
+solid-representation-demands|geometry-properties|2|Count prism or pyramid faces edges and vertices|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-67.2
+solid-representation-demands|geometry-properties|3|Draw a prism with correct hidden edges and labeled bases|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-67.3
+square-inverse-measures|area|1|Recover side from perfect-square area or regular perimeter|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-20.7 =/course-87-en:authored:MCADA-19.2
+square-inverse-measures|area|2|Recover area from square perimeter|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-20.11
+right-triangle-converse|pythagorean|1|Calculate a missing right-triangle side|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-99.1
+right-triangle-converse|pythagorean|2|Test whether given lengths form a right triangle|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:COURSE112.2
+ruler-response-demands|measurement|1|Read a sixteenth-inch ruler|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:node:691
+ruler-response-demands|measurement|2|Read and physically draw the sixteenth-inch length|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-8.5
+ruler-segment-difference|measurement|1|Read a fractional inch coordinate from zero|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:node:691
+ruler-segment-difference|measurement|2|Read and subtract two ruler segment lengths including a nonzero start|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SX870048
+metric-ruler-response|measurement|1|Read a tenths-centimeter ruler|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:node:694
+metric-ruler-response|measurement|2|Read and draw metric lengths|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:authored:M2-7e1f14941402-2 =/intermediate-4-en:authored:M2-ba9deaf822ca-1 =/course-1-en:authored:M2-733cdfd45860-3
+scale-interpretations|measurement|1|Infer a scale interval or smallest graduation|See the per-provider source contract in chunk3-review.json|=/course-1-en:authored:M2-5609fb540126-2 =/course-87-en:authored:MCADA-8.6
+scale-interpretations|measurement|2|Read a thermometer scale|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:authored:M2-5c0fe4f1443f-1
+temperature-comparison|measurement|1|Read a Celsius thermometer|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:authored:M2-5c0fe4f1443f-1
+temperature-comparison|measurement|2|Convert and compare Celsius and Fahrenheit values|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-32.4
+protractor-response-demands|angles|1|Read the correctly aligned protractor scale|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870075 =/course-87-en:authored:MCADA-17.1
+protractor-response-demands|angles|2|Read and physically construct the requested angle|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-17.3
+angle-estimation-methods|angles|1|Read an exact supplied protractor|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870075
+angle-estimation-methods|angles|2|Estimate without an instrument and justify benchmarks|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-96.1
+calendar-month-relations|calendar-time|1|Name the intermediate month without wraparound|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054
+calendar-month-relations|calendar-time|2|Name previous or next months including year wraparound|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:authored:M2-3f5b0aee3781-2
+calendar-date-models|calendar-time|1|Interpret cyclic month order|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:authored:M2-3f5b0aee3781-2
+calendar-date-models|calendar-time|2|Calculate within-month and across-boundary dates|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:authored:M2-dbd5635b2478-1
+information-response|reasoning|1|Select the missing quantity needed for an answer|See the per-provider source contract in chunk3-review.json|=/course-87-en:item:SN870539
+information-response|reasoning|2|Explain sufficiency or insufficiency and calculate when possible|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:authored:M2-763509187d44-1 =/course-87-en:authored:MCADA-79.1
+dimensional-estimate-models|rounding-estimation|1|Choose a reasonable everyday quantity|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-16.2
+dimensional-estimate-models|rounding-estimation|2|Estimate perimeter area or volume after rounding dimensions|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:authored:M2-9423110916cd-1
+fraction-benchmark-distance|number-order|1|Choose the nearest zero half or one benchmark|See the per-provider source contract in chunk3-review.json|=/algebra-half-en:authored:M3-55-2
+fraction-benchmark-distance|number-order|2|Round a mixed number to its nearest whole|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-29.2
+circle-fraction-output|circle-measurement|1|Convert a fraction of a revolution to degrees|See the per-provider source contract in chunk3-review.json|=/intermediate-4-en:authored:M2-9a770361a5f0-1 =/course-1-en:authored:M2-8e79c4526873-1
+circle-fraction-output|circle-measurement|2|Give both circle percentage and angle from a proper fraction|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:MCADA-17.4
+denominator-domain-concepts|rational-expressions|1|Distinguish zero quotient and undefined division|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:COURSE119.1
+denominator-domain-concepts|rational-expressions|2|Find the excluded input of a shifted linear denominator|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:COURSE119.2
+domain-branch-contracts|rational-expressions|1|Interpret a shifted linear denominator exclusion|See the per-provider source contract in chunk3-review.json|=/course-87-en:authored:COURSE119.2
+domain-branch-contracts|rational-expressions|2|Explain a canceled rational or principal-root domain|See the per-provider source contract in chunk3-review.json|=/algebra-1-en:authored:M4-64-1
+motion-sum-extension|rates|1|Model simultaneous opposite-direction travel|See the per-provider source contract in chunk3-review.json|=/algebra-1-en:authored:M4-94-1
+motion-sum-extension|rates|2|Model opposite-direction travel with delayed departure|See the per-provider source contract in chunk3-review.json|=/algebra-1-en:authored:M4-94-2
+motion-speed-relations|rates|1|Model speed multiples on an equal-distance round trip|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-74-2 =/algebra-1-en:authored:M4-92-1
+motion-speed-relations|rates|2|Model unequal distances and a departure-time relation|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-74-1 =/algebra-1-en:authored:M4-99-1
+gas-reporting-precision|gas-laws|1|Calculate a constant-temperature pressure or volume|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M5-gas-pressure =/algebra-2-en:authored:M5-gas-volume
+gas-reporting-precision|gas-laws|2|Report the result with specified significant figures in scientific notation|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-57-2 =/algebra-2-en:authored:M6-57-3
+ideal-gas-unknowns|gas-laws|1|Isolate pressure in the ideal gas equation|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M5-gas-ideal
+ideal-gas-unknowns|gas-laws|2|Isolate moles or volume with consistent units|See the per-provider source contract in chunk3-review.json|=/algebra-2-en:authored:M6-88-2 =/algebra-2-en:authored:M6-88-3

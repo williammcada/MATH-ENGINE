@@ -1,0 +1,263 @@
+# Family alias | mathematical topic | explicit recipe identifiers (suffix * matches a declared recipe prefix)
+f|whole-arithmetic|add:* sub:* mul:* div:* div-two times-table facts:* columns mul-ten div-ten division-check repeated equal-groups remainder-context fact-family
+f|number-representation|digit place:* words:* expanded:* ordinal parity decimal-place decimal-expanded decimal-zero decimal-chart
+f|number-order|numberline decimal-line fraction-model-compare fraction-benchmarks compare-decimal-method
+f|sequences|sequence
+f|calendar-time|months calendar clock-elapsed schedule
+f|decimal-arithmetic|money:* decimal:* mixed-money ten-power:*
+f|measurement|ruler-quarter metric-ruler temperature capacity mass scales estimate-measure
+f|equations|missing:* missing-story:* two-step-positive balance-equation
+f|rounding-estimation|round:* estimate:* estimate-area
+f|area|array-area
+f|powers-roots|power-small square-small
+f|geometry-properties|shapes turns tessellation circle-parts quadrilateral-angle
+f|fractions|fraction-name fraction-draw fraction-circles dollar-fraction fraction-same mixed-same fraction-unlike mixed-unlike fraction-unlike-method fraction-three mixed:* fraction-three-product fraction-rename
+f|fraction-equivalence|fraction-reduce-model fraction-simplify reduce cancel-factors cancel-product
+f|fraction-decimal-percent|percent-model decimal-fraction-model decimal-grid percent-fraction conversions fraction-chart
+f|percent|percent-of tax-total
+f|ratio-proportion|ratio-factor cross-products fraction-unknown ratio-decimal fraction-two-step remaining fraction-equal-groups
+f|rates|rate rate-total rate-reduce
+f|statistics|mean-small stats-small
+f|data-displays|bar-create survey frequency histogram
+f|probability|experiment
+f|number-theory|prime-small factors
+f|functions|function-graph
+f|reasoning|information
+f|volume|cube-volume cylinder-volume
+f|surface-area|net-pyramid net-prism cylinder-area
+f|expressions|evaluation formula associative distributive
+f|numeral-systems|roman:*
+f|circle-measurement|circle-measures
+f|segments|segment-length
+f|constructions|bisect-segment bisect-angle
+f|similarity-scale|scale-draw
+f|perimeter|compound-perimeter
+f|integers|integer-model
+h|rounding-estimation|decimal-estimate
+h|fractions|fraction-product fraction-order mixed-part fraction-power fraction-bar
+h|equations|equality-method fraction-equation mixed-equation both-sides multi-term two-step-story
+h|expressions|inclusion-division variable-power-root insert-parentheses like-terms algebra-sentence
+h|powers-roots|root-operations power-roots signed-power negative-root root-approx:*
+h|fraction-decimal-percent|decimal-part fraction-percent
+h|reasoning|reference-number
+h|rates|distance distance-multi changing-rate rate-change rate-proportion
+h|ratio-proportion|fraction-proportion mixed-proportion ratio-compare ratio-transfer
+h|percent|percent-over100 markup commission profit
+h|integers|opposites trichotomy negation
+h|angles|angle-measure circle-angles
+h|measurement|english-volume volume-multipliers metric-cube
+h|surface-area|pyramid-area cone-area
+h|counting|permutation
+h|sets|real-subsets
+h|constructions|angle-bisector perpendicular:* construction-tools
+h|data-displays|histogram10 histogram-read
+h|numeral-systems|binary:*
+h|polynomials|polynomial:*
+h|transformations|transform-quad
+h|function-graphs|parabola:*
+h|lines-slope|slope-graph slope-equation
+h|trigonometry|trig-*
+a|sets|sets sets:*
+a|integers|absolute-value signed-sum signed-nesting plusminus
+a|expressions|inverse-operations factor-exchange expression-parts evaluate-hard sentence-types
+a|exponent-laws|exponents:*
+a|equations|equation:* polynomial-equation
+a|functions|function:*
+a|factoring|factor:* monomial-lcm
+a|rational-expressions|rational:* complex:*
+a|inequalities|inequality:* compound:* absolute:* plane-inequality
+a|literal-equations|literal:*
+a|polynomials|degree polynomial-division identity:squares
+a|coordinate-geometry|coordinate-pairs distance-points
+a|lines-slope|line:*
+a|statistics|target-average
+a|systems|system:*
+a|radicals|roots:* radical:*
+a|fraction-decimal-percent|repeating-decimal
+a|reasoning|domain
+a|word-equations|word:*
+a|scientific-notation|scientific:*
+a|data-displays|stem-leaf boxplot:*
+a|quadratics|quadratic:*
+a|rates|motion:*
+a|function-graphs|nonlinear:*
+a|rational-equations|rational-equation:*
+a|radical-equations|radical-equation
+a|transformations|transform:*
+a|variation|variation:*
+a|exponential|calculator-power exponential:*
+m|complex-numbers|complex:*
+m|quadratics|quadratic:*
+m|exponent-laws|fractional:*
+m|radical-equations|radical:*
+m|factoring|factor:*
+m|polynomials|division:*
+m|literal-equations|literal:*
+m|systems|three:*
+m|nonlinear-systems|nonlinear:*
+m|inequalities|inequality:* plane:*
+m|logarithms|log:*
+m|exponential|exponential:*
+m|trigonometry|trig:*
+m|polar-vectors|polar:* vector:*
+m|mixtures|mixture:*
+m|gas-laws|gas:*
+m|rates|motion:*
+m|variation|variation:*
+m|proof|proof:*
+m|constructions|construct:*
+m|locus|locus:*
+m|geometry-properties|space:*
+m|statistics|statistics:*
+m|sets|sets:*
+m|probability|counting:*
+z|geometry-properties|review:notation geometry:circle-parts geometry:correspondence
+z|area|review:area geometry:isosceles-area
+z|volume|review:solid review:inverse-solid
+z|surface-area|review:surface
+z|angles|review:angles geometry:exterior geometry:polygon geometry:cyclic geometry:rhombus
+z|integers|review:absolute
+z|similarity-scale|geometry:parallel-segments geometry:overlap geometry:overlap-right
+z|proof|geometry:aa geometry:parallel-proof proof:*
+z|equations|equation:decimal
+z|word-equations|geometry:equation geometry:congruent-values geometry:parallelogram word:*
+z|expressions|algebra:rules algebra:coefficients
+z|polynomials|algebra:binomial algebra:degree-equation
+z|exponent-laws|fractional:* exponent:*
+z|percent|chemical:*
+z|literal-equations|literal:*
+z|scientific-notation|scientific:*
+z|measurement|units:*
+z|lines-slope|line:*
+z|quadratics|quadratic:*
+z|complex-numbers|complex:*
+z|data-displays|data:*
+z|systems|system:decimal system:four system:combined system:cyclic-three
+z|nonlinear-systems|system:circle-parabola system:ellipse-circle system:hyperbola-line
+z|polar-vectors|vector:* polar:*
+z|rational-expressions|rational:*
+z|trigonometry|geometry:30-60 geometry:45-45
+z|gas-laws|gas:*
+z|rates|motion:*
+z|variation|variation:*
+z|inequalities|inequality:* absolute:* graph:nonlinear-system
+z|circle-measurement|geometry:chords geometry:secants geometry:tangent-secant
+z|functions|function:*
+z|ratio-proportion|number:fraction-between
+z|word-equations|number:digits
+z|function-graphs|graph:complete-square
+z|sets|sets:*
+z|locus|locus:*
+z|constructions|construct:* circle:*
+z|coordinate-geometry|geometry:distance-line
+q|quadratics|*
+d|rational-equations|shared-denominator three-fractions cross-products
+d|radical-equations|root-substitution isolate-root two-roots
+p|fractions|improper-mixed fraction-complement fraction-subtract
+p|ratio-proportion|ratio-reverse ratio-part fraction-ratio ratio-missing recipe-proportion ratio-chain employee-proportion wins-losses club-ratio ratio-total-small ratio-total-large fraction-part
+p|fraction-decimal-percent|decimal-fraction-small decimal-fraction-fiftieths percent-decimal-large percent-decimal-integer percent-decimal-small decimal-part decimal-part-eighths circle-percent circle-sum-percent sector-percent
+p|percent|percent-complement percent-whole percent-part percent-count-complement percent-count-rest reverse-increase percent-whole-half bill-percent percent-increase
+t|calendar-time|lap-seconds
+t|decimal-arithmetic|purchase-change
+t|rates|price-per-pound compare-unit-price nightly-rate seed-cost weighted-wage grape-cost rate-difference distance-rate
+t|measurement|yards-feet feet-yards inches-feet feet-inches feet-miles centimeters-meters grams-kilograms milliliters-liters
+t|percent|sales-tax discount-price simple-interest
+t|ratio-proportion|whole-from-used whole-from-left
+t|exponential|compound-interest
+t|similarity-scale|cube-volume-ratio
+s|statistics|yield-mean grocery-mean batting-average test-group-mean target-mean four-mean missing-value missing-price mass-mean length-mean data-statistics weight-statistics score-statistics mean-from-total two-group-mean three-group-mean weighted-scores weighted-percent
+s|probability|die-event coin-run cards-unordered rain-complement odds-same-event odds-complement marble-single marble-union die-history marble-repeat cards-ordered dice-sum die-next-value marble-next coin-sequence marble-without compare-different compare-same
+g|fraction-decimal-percent|shaded-fraction shaded-percent
+g|area|rectangle-pa right-triangle-area compound-area square-triangle-area parallelogram-area trapezoid-area triangle-area-hypotenuse oblique-triangle-area
+g|circle-measurement|circle-circumference circle-area circle-radius-ca circle-diameter-rca
+g|volume|prism-volume cylinder-volume
+g|angles|polygon-triangles polygon-angle-sum polygon-exterior
+g|surface-area|prism-surface
+g|coordinate-geometry|coordinate-missing
+g|perimeter|compound-perimeter
+b|powers-roots|negative-power positive-power cube-root square-root-difference
+b|expressions|evaluate-xy collect-xy
+b|polynomials|polynomial-class polynomial-division
+b|systems|system-two system-class system-three system-substitution
+b|lines-slope|parallel-line perpendicular-line slope-points line-points line-point-slope
+b|factoring|factor-trinomial
+b|fractions|negative-reciprocals
+b|trigonometry|trig-ratios
+b|complex-numbers|complex-add complex-multiply complex-divide
+b|variation|direct-variation inverse-variation joint-variation
+b|functions|relation-function function-evaluate function-sum function-product function-table
+b|ratio-proportion|fraction-between
+b|fraction-decimal-percent|repeating-fraction
+b|logarithms|log-ten
+b|exponential|exponential-growth
+b|counting|permutations counting-power
+b|sets|set-intersection set-union
+b|data-displays|line-graph-choice bar-graph-choice
+b|number-theory|prime-factorization prime-list prime-sum gcf lcm common-multiples prime-test
+b|scientific-notation|scientific-normalize
+b|inequalities|inequality-graph-choice
+b|numeral-systems|roman-write roman-read binary-read binary-write
+b|rounding-estimation|round-whole round-money
+b|volume|cylinder-volume
+b|surface-area|prism-surface
+b|sequences|sequence-next sequence-missing
+b|calendar-time|clock-read elapsed-overnight
+b|perimeter|square-perimeter rectangle-perimeter
+b|statistics|mean-three median-five
+v|volume|sphere-volume
+v|surface-area|cylinder-surface
+v|circle-measurement|arc-length sector-area
+v|exponent-laws|exponent-product exponent-quotient fractional-power fractional-exponent-expansion
+v|polynomials|polynomial-product
+v|radicals|rationalize root-quotient
+v|rational-expressions|rational-product rational-division
+v|trigonometry|inverse-trig
+v|polar-vectors|vector-polar negative-vector
+v|nonlinear-systems|circle-line-system
+v|function-graphs|parabola-choice
+v|factoring|factor-cubes
+v|inequalities|quadratic-positive quadratic-negative rational-inequality
+v|logarithms|logarithm-quotient
+r|number-representation|expanded-large words-large words-decimal words-small words-zero expanded-small expanded-zero
+r|geometry-properties|line-kind triangle-kind
+r|data-displays|histogram-read pie-read histogram-choice
+r|angles|triangle-angle polygon-interior polygon-exterior diagonals angle-kind right-angle clock-angle
+r|transformations|y-symmetry rotation reflection translation
+r|fraction-decimal-percent|circle-fraction
+r|area|rectangle-area
+r|circle-measurement|diameter
+n|expressions|distribute-powers commutative associative distribute-linear
+n|radicals|combine-radicals distribute-radicals multiply-radicals conjugate-two-roots
+n|rational-expressions|rational-sum conjugate-ratio
+n|complex-numbers|real-imaginary
+n|logarithms|common-log-power natural-log-power natural-log log-product log-power
+n|exponential|exponential-decay half-life
+n|similarity-scale|similar-truth
+n|reasoning|missing-information
+n|data-displays|stem-build stem-read stem-statistics box-choice box-range box-summary
+n|calendar-time|calendar-month
+l|logarithms|inverse-natural-log two-logarithms log-quotient-equation log-coefficient-equation log-product-equation log-ratio-equation
+l|exponential|exponential-equation
+l|proof|parallelogram-reason triangle-proof
+l|locus|equidistant-locus
+l|statistics|normal-parameters
+l|sets|venn-region
+l|inequalities|inequality-system absolute-integers absolute-outside
+l|constructions|copy-construction bisector-construction
+o|volume|solid-volume pyramid-volume cone-volume
+o|surface-area|sphere-surface pyramid-surface cone-surface
+o|measurement|ruler-difference area-units inch-read metric-read
+o|scientific-notation|scientific-product scientific-quotient
+o|literal-equations|formula-transform
+o|numeral-systems|binary-add binary-fractions binary-multiply
+w|quadratics|complex-quadratic
+w|polar-vectors|rectangular-polar polar-rectangular force-resultant
+w|complex-numbers|complex-conjugates
+w|inequalities|compound-and compound-or absolute-impossible
+w|rational-equations|rational-classify
+w|sets|set-builder-graph
+w|coordinate-geometry|point-distance
+w|rational-expressions|complex-fraction
+w|literal-equations|literal-denominator literal-formula nested-literal
+w|angles|protractor-read
+x|perimeter|perimeter-irregular perimeter-rectangle
