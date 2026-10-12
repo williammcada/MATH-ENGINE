@@ -1,4 +1,4 @@
-# Engine 0.34.0-rc.1 host practice layer — verification
+# Engine 0.34.0-rc.2 host practice layer — verification
 
 **Spec:** [host-integration-v0.1](../change-specs/host-integration-v0.1.md) · **Date:** 2026-10-12 (Asia/Shanghai) · **Branch:** `review/engine-0.34.0`
 **Environment:** Linux, Node.js 22.22.0. No browser, Worker runtime or physical device was used.

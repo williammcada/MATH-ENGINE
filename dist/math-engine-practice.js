@@ -18,7 +18,7 @@ const { loadK7Skills, baselineSha256 } = __req(68);
 const INDEX = __req(69);
 const CONT = __req(70);
 
-const version = '0.34.0-rc.1';
+const version = '0.34.0-rc.2';
 const freeze = Object.freeze;
 
 // ---------- deterministic randomness ----------
