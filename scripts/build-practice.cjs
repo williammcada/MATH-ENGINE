@@ -38,9 +38,10 @@ for (const f of fs.readdirSync(inventoryDir).filter(f => f.endsWith('-en.json'))
 }
 const entries = [], excluded = {};
 for (const c of banks.catalog) {
-  const item = banks.generate(c.sourceId, { seed: 'catalog', index: 0 });
   const p = banks.connections.lookup(c.sourceId);
-  if (item.answer.kind === 'teacher') { excluded[p.bankId] = (excluded[p.bankId] || 0) + 1; continue; }
+  let item, teacher = false;
+  for (let s = 0; s < 200 && !teacher; s++) { item = banks.generate(c.sourceId, { seed: 'catalog-' + s, index: s % 5 }); teacher = item.answer.kind === 'teacher'; }
+  if (teacher) { excluded[p.bankId] = (excluded[p.bankId] || 0) + 1; continue; }
   entries.push({ sourceId: c.sourceId, title: c.title, course: c.course, bankId: p.bankId, localGrade: p.localGrade, lessonId: p.lessonId || null, lessonLabel: lessonLabels.get(p.lessonId) || null, topic: p.topic || null, answerKind: item.answer.kind });
 }
 const courseNames = new Map(entries.map(e => [e.bankId, e.course]));

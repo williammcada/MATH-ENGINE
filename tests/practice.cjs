@@ -25,7 +25,7 @@ const grades = {}; for (const s of skills) grades[s.gradeLabel] = (grades[s.grad
 pass('catalog', { total: P.catalog.length, k7Skills: skills.length, k7ByGrade: grades, autoCheckedBankEntries: bankRows.length, courses: P.courses });
 
 // 3. Every game-eligible item, every seed
-let generated = 0, selfChecked = 0, roundTrip = 0, perturbedRejected = 0, deterministic = 0, keypadCovered = 0, studioIdentical = 0;
+let redrawn = 0, generated = 0, selfChecked = 0, roundTrip = 0, perturbedRejected = 0, deterministic = 0, keypadCovered = 0, studioIdentical = 0;
 const perturb = text => text + '7';
 for (const entry of P.catalog) {
   for (let s = 0; s < SEEDS; s++) {
@@ -45,7 +45,9 @@ for (const entry of P.catalog) {
     } else keypadCovered++;
     if (entry.layer === 'bank') {
       if (item.raw.answer.kind === 'teacher') fail('teacher-kind-leaked', { id: entry.id, seed });
-      if (JSON.stringify(banks.generate(entry.sourceId, { seed, index: s % 3 })) === JSON.stringify(item.raw)) studioIdentical++; else fail('studio-identical', { id: entry.id, seed });
+      const studio = banks.generate(entry.sourceId, { seed, index: s % 3 });
+      if (studio.answer.kind === 'teacher') { redrawn++; studioIdentical++; }
+      else if (JSON.stringify(studio) === JSON.stringify(item.raw)) studioIdentical++; else fail('studio-identical', { id: entry.id, seed });
     }
   }
 }
@@ -58,6 +60,7 @@ record('json-round-trip', roundTrip, n);
 record('perturbed-answer-rejected', perturbedRejected, n);
 record('keypad-keys-cover-answer', keypadCovered, n);
 record('studio-items-identical', studioIdentical, nb);
+results.checks['teacher-variant-redraws'] = { status: 'Informational', count: redrawn, note: 'Studio draw was teacher-reviewed for this seed; engine redrew deterministically.' };
 const modes = {}; for (const e of bankRows) { const m = P.generate(e.id, { seed: 'mode' }).inputMode; modes[m] = (modes[m] || 0) + 1; }
 results.checks['bank-input-modes'] = { status: 'Informational', ...modes };
 

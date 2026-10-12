@@ -72,7 +72,8 @@ function fromSkill(skill, raw, meta) {
   item.html = K7.formatItem(raw);
   item.inputMode = 'keypad';
   item.keys = K7.keypadKeys(raw.type);
-  item.answerText = String(raw.answer);
+  // Display/report text only; checking still uses the baseline's own answer and tolerance.
+  item.answerText = typeof raw.answer === 'number' ? String(Number(raw.answer.toPrecision(12))) : String(raw.answer);
   item.solution = '';
   return item;
 }
@@ -99,7 +100,16 @@ function generate(id, options = {}) {
     const skill = skillById.get(id);
     return fromSkill(skill, withSeed(`${id}|${seed}|${index}`, () => K7.nextMathItem(skill, {})), meta);
   }
-  return fromBank(entry, banks.generate(entry.sourceId, { seed, index }), meta);
+  return fromBank(entry, bankDraw(entry, seed, index), meta);
+}
+// A few entries switch to a teacher-reviewed variant for some seeds. Those are excluded from the
+// index when seen at build time; this deterministic redraw is the runtime safety net.
+function bankDraw(entry, seed, index) {
+  for (let k = 0; k < 12; k++) {
+    const raw = banks.generate(entry.sourceId, { seed, index: index + k * 100000 });
+    if (raw.answer.kind !== 'teacher') return raw;
+  }
+  throw Error('No auto-checked variant for ' + entry.id);
 }
 /** Live play: K–7 fluency facts keep their no-repeat decks in `state` (baseline behavior). */
 function nextItem(id, state = {}) {
@@ -109,7 +119,7 @@ function nextItem(id, state = {}) {
     return fromSkill(skill, withSeed(null, () => K7.nextMathItem(skill, state)), { seed: null, index: null });
   }
   const seed = 'live-' + Math.floor(Math.random() * 2 ** 48).toString(36);
-  return fromBank(entry, banks.generate(entry.sourceId, { seed, index: 0 }), { seed, index: 0 });
+  return fromBank(entry, bankDraw(entry, seed, 0), { seed, index: 0 });
 }
 /** The only answer validator hosts use. Accepts items after a JSON round trip. */
 function checkAnswer(item, response) {

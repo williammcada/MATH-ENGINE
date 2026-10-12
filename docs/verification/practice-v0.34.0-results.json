@@ -1,0 +1,134 @@
+{
+  "engine": "0.34.0-rc.1",
+  "bankVersion": "0.33.0-rc.1",
+  "seedsPerItem": 50,
+  "checks": {
+    "k7-baseline-unedited": {
+      "status": "Passed",
+      "sha256": "78841274e50b07c6640913bb84fdd821247ed47030b575feb27760d35fcff1a0"
+    },
+    "catalog": {
+      "status": "Passed",
+      "total": 1753,
+      "k7Skills": 312,
+      "k7ByGrade": {
+        "1": 19,
+        "2": 21,
+        "3": 68,
+        "4": 64,
+        "5": 36,
+        "6": 51,
+        "7": 33,
+        "K": 20
+      },
+      "autoCheckedBankEntries": 1441,
+      "courses": [
+        {
+          "bankId": "intermediate-4-en",
+          "course": "Intermediate 4",
+          "localGrade": 3,
+          "placement": "grade-assigned",
+          "teacherReviewedExcluded": 50,
+          "count": 210
+        },
+        {
+          "bankId": "course-1-en",
+          "course": "Course 1",
+          "localGrade": 4,
+          "placement": "grade-assigned",
+          "teacherReviewedExcluded": 80,
+          "count": 198
+        },
+        {
+          "bankId": "course-87-en",
+          "course": "Introduction to PreAlgebra (8/7)",
+          "localGrade": 5,
+          "placement": "grade-assigned",
+          "teacherReviewedExcluded": 116,
+          "count": 387
+        },
+        {
+          "bankId": "algebra-half-en",
+          "course": "Algebra 1/2",
+          "localGrade": null,
+          "placement": "tracked-not-grade-locked",
+          "teacherReviewedExcluded": 87,
+          "count": 291
+        },
+        {
+          "bankId": "algebra-1-en",
+          "course": "Algebra 1",
+          "localGrade": null,
+          "placement": "tracked-not-grade-locked",
+          "teacherReviewedExcluded": 146,
+          "count": 163
+        },
+        {
+          "bankId": "algebra-2-en",
+          "course": "Algebra 2",
+          "localGrade": null,
+          "placement": "tracked-not-grade-locked",
+          "teacherReviewedExcluded": 264,
+          "count": 192
+        }
+      ]
+    },
+    "generate-all-seeds": {
+      "status": "Passed",
+      "count": 87650
+    },
+    "deterministic": {
+      "status": "Passed",
+      "count": 87650
+    },
+    "own-answer-accepted": {
+      "status": "Passed",
+      "count": 87650
+    },
+    "json-round-trip": {
+      "status": "Passed",
+      "count": 87650
+    },
+    "perturbed-answer-rejected": {
+      "status": "Passed",
+      "count": 87650
+    },
+    "keypad-keys-cover-answer": {
+      "status": "Passed",
+      "count": 87650
+    },
+    "studio-items-identical": {
+      "status": "Passed",
+      "count": 72050
+    },
+    "teacher-variant-redraws": {
+      "status": "Informational",
+      "count": 0,
+      "note": "Studio draw was teacher-reviewed for this seed; engine redrew deterministically."
+    },
+    "bank-input-modes": {
+      "status": "Informational",
+      "keypad": 1280,
+      "keyboard": 161
+    },
+    "related-links": {
+      "status": "Passed",
+      "links": 2605,
+      "itemsWithEasier": 492,
+      "itemsWithHarder": 443
+    },
+    "practice-gates": {
+      "status": "Passed",
+      "k7Gate": "complete",
+      "mixedTargetedGate": "complete",
+      "invalidIdRejected": true
+    },
+    "bundle-provenance": {
+      "status": "Passed",
+      "bundleSha256": "5d702d704344d1c004e33f3db18f7f78d9de501ecb58ade7fa49390cab7a88a3",
+      "contentHash": "34e4a786efd1b984c2c328c5e05a911c"
+    }
+  },
+  "failures": [],
+  "status": "Passed"
+}
