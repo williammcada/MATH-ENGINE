@@ -24,6 +24,14 @@ assert.strictEqual(skills.length, 312); assert.strictEqual(new Set(P.catalog.map
 const grades = {}; for (const s of skills) grades[s.gradeLabel] = (grades[s.gradeLabel] || 0) + 1;
 pass('catalog', { total: P.catalog.length, k7Skills: skills.length, k7ByGrade: grades, autoCheckedBankEntries: bankRows.length, continuitySkills: contRows.length, courses: P.courses });
 
+// 2b. Lesson names (rc.3): every course item names its lesson, matching the imported table
+{
+  const table = JSON.parse(fs.readFileSync(path.join(root, 'curriculum/lesson-labels/v0.1/lesson-labels.json'), 'utf8'));
+  const missing = bankRows.filter(e => !e.lessonLabel || table.lessons[e.lessonId]?.display !== e.lessonLabel);
+  if (missing.length) fail('lesson-labels', { count: missing.length, first: missing[0].id });
+  else pass('lesson-labels', { entries: bankRows.length, lessons: table.count, source: table.source.repository + '@' + table.source.commit.slice(0, 7) });
+}
+
 // 3. Every game-eligible item, every seed
 let unsimplifiedAccepted = 0; const unsimplifiedAcceptedIds = new Set(); let redrawn = 0, evaluated = 0, fractionItems = 0, unsimplifiedFlagged = 0, generated = 0, selfChecked = 0, roundTrip = 0, perturbedRejected = 0, deterministic = 0, keypadCovered = 0, studioIdentical = 0;
 const perturb = text => text + '7';

@@ -85,6 +85,10 @@ Five MathQuest constructs had no engine equivalent. They are now engine generato
 
 A saved MathQuest config that names an old module expands to that module's engine items. The old Beginner/Intermediate/Advanced band is not carried over (D4).
 
+### Lesson names (rc.3)
+
+Course items carry `lessonLabel` and `lessonOrder`, imported from Studio's course-bank index by `scripts/import-lesson-labels.py` with source commit and file hashes. Hosts show and sort by them.
+
 ## MathQuest changes (MathQuest 0.10.0)
 
 - Server (`src/worker.js`, `src/question-provider.js`) calls only the engine for preset questions and checking. Remove `math.js`/`math-v06.js` generators; keep `hashSeed` and teacher-authored custom items, which are not code-generated.

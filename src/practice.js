@@ -14,7 +14,7 @@ const { loadK7Skills, baselineSha256 } = require('./k7-skills.js');
 const INDEX = require('./practice-index.js');
 const CONT = require('./continuity-skills.js');
 
-const version = '0.34.0-rc.2';
+const version = '0.34.0-rc.3';
 const freeze = Object.freeze;
 
 // ---------- deterministic randomness ----------
@@ -46,7 +46,7 @@ const skillEntries = K7.catalog.map(s => {
 });
 const bankEntries = INDEX.entries.map(x => freeze({
   id: 'bank:' + x.sourceId, layer: 'bank', sourceId: x.sourceId, name: x.title, grade: x.localGrade, gradeLabel: gradeLabel(x.localGrade),
-  standard: '', prereq: null, course: x.course, bankId: x.bankId, lessonId: x.lessonId, lessonLabel: x.lessonLabel, topic: x.topic
+  standard: '', prereq: null, course: x.course, bankId: x.bankId, lessonId: x.lessonId, lessonLabel: x.lessonLabel, lessonOrder: x.lessonOrder, topic: x.topic
 }));
 const continuityEntries = CONT.SKILLS.map(c => freeze({ id: c.id, layer: 'continuity', name: c.name, grade: c.grade, gradeLabel: gradeLabel(c.grade), standard: '', prereq: c.easier, course: null, bankId: null, lessonId: null, topic: null }));
 const continuityById = new Map(CONT.SKILLS.map(c => [c.id, c]));

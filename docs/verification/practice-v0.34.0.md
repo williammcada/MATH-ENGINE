@@ -1,4 +1,6 @@
-# Engine 0.34.0-rc.2 host practice layer — verification
+# Engine 0.34.0-rc.3 host practice layer — verification
+
+**rc.3 (2026-10-12):** adds lesson names and teaching order for all 1,441 course items, imported from Studio's course-bank index (`curriculum/lesson-labels/v0.1`, Studio `16685a8`, same naming rule as Studio). No question, answer or check changed. The full 50-seed verification below was rerun on rc.3 and passed, plus a new lesson-label check (1,441 / 1,441 labelled). `npm test` passed. The two pre-existing stale-count suite failures are unchanged.
 
 **Spec:** [host-integration-v0.1](../change-specs/host-integration-v0.1.md) · **Date:** 2026-10-12 (Asia/Shanghai) · **Branch:** `review/engine-0.34.0`
 **Environment:** Linux, Node.js 22.22.0. No browser, Worker runtime or physical device was used.

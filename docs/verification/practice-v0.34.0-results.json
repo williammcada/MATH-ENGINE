@@ -1,5 +1,5 @@
 {
-  "engine": "0.34.0-rc.2",
+  "engine": "0.34.0-rc.3",
   "bankVersion": "0.33.0-rc.1",
   "seedsPerItem": 50,
   "checks": {
@@ -74,6 +74,12 @@
         }
       ]
     },
+    "lesson-labels": {
+      "status": "Passed",
+      "entries": 1441,
+      "lessons": 785,
+      "source": "williammcada/test-and-practice-studio@16685a8"
+    },
     "generate-all-seeds": {
       "status": "Passed",
       "count": 88150
@@ -143,8 +149,8 @@
     },
     "bundle-provenance": {
       "status": "Passed",
-      "bundleSha256": "a13792204c1665555d45cb2e19af7a359a87828d48ab148980d4cf5b9e89019d",
-      "contentHash": "d769fe0583b4314cc6785e6fcbf7ca3f"
+      "bundleSha256": "8784557667e08ce08fd23c77b232dbbdbe307f67c744c4598a2e465e9990cd11",
+      "contentHash": "5cdb34cc0facb7ac3c2b6658f1c2f72b"
     }
   },
   "failures": [],
