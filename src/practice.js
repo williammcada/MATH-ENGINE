@@ -12,6 +12,7 @@
 const banks = require('./course-banks.js');
 const { loadK7Skills, baselineSha256 } = require('./k7-skills.js');
 const INDEX = require('./practice-index.js');
+const CONT = require('./continuity-skills.js');
 
 const version = '0.34.0-rc.1';
 const freeze = Object.freeze;
@@ -47,7 +48,9 @@ const bankEntries = INDEX.entries.map(x => freeze({
   id: 'bank:' + x.sourceId, layer: 'bank', sourceId: x.sourceId, name: x.title, grade: x.localGrade, gradeLabel: gradeLabel(x.localGrade),
   standard: '', prereq: null, course: x.course, bankId: x.bankId, lessonId: x.lessonId, lessonLabel: x.lessonLabel, topic: x.topic
 }));
-const catalog = freeze([...skillEntries, ...bankEntries]);
+const continuityEntries = CONT.SKILLS.map(c => freeze({ id: c.id, layer: 'continuity', name: c.name, grade: c.grade, gradeLabel: gradeLabel(c.grade), standard: '', prereq: c.easier, course: null, bankId: null, lessonId: null, topic: null }));
+const continuityById = new Map(CONT.SKILLS.map(c => [c.id, c]));
+const catalog = freeze([...skillEntries, ...bankEntries, ...continuityEntries]);
 const byId = new Map(catalog.map(e => [e.id, e]));
 const skillById = new Map(K7.catalog.map(s => [s.id, s]));
 const courses = freeze(INDEX.courses.map(c => freeze({ ...c, count: bankEntries.filter(e => e.bankId === c.bankId).length })));
@@ -73,13 +76,22 @@ function fromSkill(skill, raw, meta) {
   item.inputMode = 'keypad';
   item.keys = K7.keypadKeys(raw.type);
   // Display/report text only; checking still uses the baseline's own answer and tolerance.
-  item.answerText = typeof raw.answer === 'number' ? String(Number(raw.answer.toPrecision(12))) : String(raw.answer);
+  item.answerText = typeof raw.answer === 'number' ? String(Number(raw.answer.toPrecision(12))) : String(raw.answer).replace(/^(-?\d+)\/1$/, '$1');
+  // Show expression answers with the keypad's × (the baseline stores *, and accepts ×, * or juxtaposition).
+  if (['expression', 'expanded', 'linear', 'factored'].includes(raw.type)) item.answerText = item.answerText.replace(/\*/g, '×');
   item.solution = '';
   return item;
 }
 function fromBank(entry, raw, meta) {
   const answerText = banks.answerText(raw);
   return { engine: version, id: entry.id, layer: 'bank', ...meta, prompt: raw.prompt, type: 'bank', html: banks.renderQuestion(raw), ...bankEntryMode(answerText), answerText, solution: raw.solution || '', raw };
+}
+function fromContinuity(entry, raw, meta) {
+  const keys = raw.kind === 'choice' ? [] : raw.kind === 'fraction' ? BASE_KEYS.slice() : BASE_KEYS.slice();
+  return { engine: version, id: entry.id, layer: 'continuity', ...meta, prompt: raw.prompt, type: raw.kind, kind: raw.kind,
+    html: `<div class="engine-question"><p>${raw.promptHTML || CONT.esc(raw.prompt)}</p></div>`,
+    inputMode: raw.kind === 'choice' ? 'choice' : 'keypad', keys, choices: raw.choices || null,
+    answer: raw.answer, answerText: raw.answer, solution: raw.solution || '' };
 }
 function requireEntry(id) {
   const entry = find(id);
@@ -100,6 +112,7 @@ function generate(id, options = {}) {
     const skill = skillById.get(id);
     return fromSkill(skill, withSeed(`${id}|${seed}|${index}`, () => K7.nextMathItem(skill, {})), meta);
   }
+  if (entry.layer === 'continuity') return fromContinuity(entry, continuityById.get(id).make(rngFrom(`${id}|${seed}|${index}`)), meta);
   return fromBank(entry, bankDraw(entry, seed, index), meta);
 }
 // A few entries switch to a teacher-reviewed variant for some seeds. Those are excluded from the
@@ -118,6 +131,7 @@ function nextItem(id, state = {}) {
     const skill = skillById.get(id);
     return fromSkill(skill, withSeed(null, () => K7.nextMathItem(skill, state)), { seed: null, index: null });
   }
+  if (entry.layer === 'continuity') return generate(id, { seed: 'live-' + Math.floor(Math.random() * 2 ** 48).toString(36), index: 0 });
   const seed = 'live-' + Math.floor(Math.random() * 2 ** 48).toString(36);
   return fromBank(entry, bankDraw(entry, seed, 0), { seed, index: 0 });
 }
@@ -129,7 +143,54 @@ function checkAnswer(item, response) {
   if (item.layer === 'bank') {
     try { return banks.checkAnswer(item.raw, text).answerCorrect === true; } catch { return false; }
   }
+  if (item.layer === 'continuity') return CONT.check(item, text).correct === true;
   try { return !!K7.checkAnswer(item, text); } catch { return false; }
+}
+const MESSAGES = Object.freeze({
+  empty: 'Enter an answer.',
+  tooLong: 'That answer is too long.',
+  keys: 'Use only the answer keys shown for this question.',
+  choice: 'Choose one of the answers shown.',
+  unsimplified: 'Your value is correct, but the fraction is not in simplest form. Simplify it and try again.',
+  wrong: 'Not yet. Check your work, then try again.'
+});
+function gcd(a, b) { a = Math.abs(a); b = Math.abs(b); while (b) [a, b] = [b, a % b]; return a; }
+function simplifiedForm(text) {
+  const t = text.trim().replace(/−/g, '-');
+  let m = t.match(/^(-?)(\d+)\s+(\d+)\s*\/\s*(\d+)$/);
+  if (m && +m[4]) { const g = gcd(+m[3], +m[4]); return g > 1 ? `${m[1]}${m[2]} ${+m[3] / g}/${+m[4] / g}` : null; }
+  m = t.match(/^(-?\d+)\s*\/\s*(-?\d+)$/);
+  if (m && +m[2]) { let n = +m[1], d = +m[2]; if (d < 0) { n = -n; d = -d; } const g = gcd(n, d); if (g <= 1 && +m[2] > 0) return null; return d / g === 1 ? String(n / g) : `${n / g}/${d / g}`; }
+  return null;
+}
+/**
+ * Full answer evaluation for hosts: { valid, correct, reason, message, normalized }.
+ * valid:false means a malformed entry (hosts need not count it as an attempt).
+ * reason 'equivalent-unsimplified' implements MathQuest v0.9.2 §27 (MATH-FRAC-01) for every item.
+ */
+function evaluate(item, response) {
+  const text = typeof response === 'string' ? response : response == null ? '' : String(response);
+  const normalized = text.trim();
+  if (!normalized) return { valid: false, correct: false, reason: 'empty', message: MESSAGES.empty, normalized };
+  if (normalized.length > 200) return { valid: false, correct: false, reason: 'too-long', message: MESSAGES.tooLong, normalized };
+  if (item && item.inputMode === 'choice') {
+    const ok = (item.choices || []).some(c => String(c).toLowerCase() === normalized.toLowerCase());
+    if (!ok) return { valid: false, correct: false, reason: 'not-a-choice', message: MESSAGES.choice, normalized };
+  } else if (item && item.inputMode === 'keypad' && Array.isArray(item.keys) && item.keys.length) {
+    const allowed = new Set([...item.keys.filter(k => k !== 'back' && k !== 'clear').join('').toLowerCase(), ' ', '−']);
+    if (allowed.has('×')) allowed.add('*');
+    if ([...normalized.toLowerCase()].some(ch => !allowed.has(ch))) return { valid: false, correct: false, reason: 'invalid-characters', message: MESSAGES.keys, normalized };
+  }
+  if (item && item.layer === 'continuity') {
+    const r = CONT.check(item, normalized);
+    if (!r.valid) return { valid: false, correct: false, reason: 'invalid-format', message: MESSAGES.wrong, normalized };
+    if (r.equivalentUnsimplified) return { valid: true, correct: false, reason: 'equivalent-unsimplified', message: MESSAGES.unsimplified, normalized };
+    return r.correct ? { valid: true, correct: true, reason: null, message: '', normalized } : { valid: true, correct: false, reason: 'wrong-value', message: MESSAGES.wrong, normalized };
+  }
+  if (checkAnswer(item, normalized)) return { valid: true, correct: true, reason: null, message: '', normalized };
+  const simpler = simplifiedForm(normalized);
+  if (simpler && checkAnswer(item, simpler)) return { valid: true, correct: false, reason: 'equivalent-unsimplified', message: MESSAGES.unsimplified, normalized };
+  return { valid: true, correct: false, reason: 'wrong-value', message: MESSAGES.wrong, normalized };
 }
 function keypadKeys(item) { return item && Array.isArray(item.keys) ? item.keys.slice() : BASE_KEYS.slice(); }
 
@@ -138,9 +199,10 @@ function keypadKeys(item) { return item && Array.isArray(item.keys) ? item.keys.
 function related(id, relation) {
   if (!['easier', 'harder'].includes(relation)) throw Error('Use relation "easier" or "harder".');
   const entry = requireEntry(id);
-  if (entry.layer === 'skill') {
+  if (entry.layer === 'skill' || entry.layer === 'continuity') {
+    const peers = entry.layer === 'skill' ? skillEntries : continuityEntries;
     if (relation === 'easier') return entry.prereq && byId.has(entry.prereq) ? [entry.prereq] : [];
-    return skillEntries.filter(s => s.prereq === id).map(s => s.id);
+    return peers.filter(s => s.prereq === id).map(s => s.id);
   }
   let found = [];
   try { found = banks.connections.suggestions(entry.sourceId, { relation, limit: 24 }); } catch { found = []; }
@@ -152,7 +214,7 @@ function related(id, relation) {
 // are not limited by the K–7 grade range. General and progression modes stay K–7 only.
 const inRange = (s, c) => s.grade >= c.lo && s.grade <= c.hi;
 function pool(c) {
-  if (c.mode === 'targeted') return catalog.filter(s => c.selected.includes(s.id) && (s.layer === 'bank' || (inRange(s, c) && (!s.optional24 || c.include24))));
+  if (c.mode === 'targeted') return catalog.filter(s => c.selected.includes(s.id) && (s.layer !== 'skill' || (inRange(s, c) && (!s.optional24 || c.include24))));
   return skillEntries.filter(s => (c.mode !== 'progression' || !s.reviewOnly) && inRange(s, c) && (!s.optional24 || c.include24));
 }
 function configError(c) {
@@ -226,7 +288,7 @@ function contentHash() {
 }
 const api = freeze({
   version, bankVersion: banks.version, k7Version: 'megaman-v0.7', k7BaselineSha256: baselineSha256,
-  catalog, courses, find, generate, nextItem, checkAnswer, related, keypadKeys,
+  catalog, courses, find, generate, nextItem, checkAnswer, evaluate, related, keypadKeys,
   Practice, freshMath, configError, formatMath: K7.formatMath, contentHash: contentHash()
 });
 module.exports = api;

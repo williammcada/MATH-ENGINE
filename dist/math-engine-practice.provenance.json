@@ -3,8 +3,8 @@
   "engineVersion": "0.34.0-rc.1",
   "bankVersion": "0.33.0-rc.1",
   "k7Version": "megaman-v0.7",
-  "bundleSha256": "5d702d704344d1c004e33f3db18f7f78d9de501ecb58ade7fa49390cab7a88a3",
-  "contentHash": "34e4a786efd1b984c2c328c5e05a911c",
+  "bundleSha256": "a73261e0e9a94b94f734bc8636e862164f0b3240ac1e60c72bc77234a090b4c9",
+  "contentHash": "12980e5c6d675e6a431f5ea0d80fad93",
   "baseline": "baselines/megaman-v0.7/shared-math.js",
   "baselineSha256": "78841274e50b07c6640913bb84fdd821247ed47030b575feb27760d35fcff1a0",
   "sources": [
@@ -77,11 +77,13 @@
     "src/curriculum87-assessment.js",
     "src/curriculum87-assessment-map.js",
     "src/k7-skills.js",
-    "src/practice-index.js"
+    "src/practice-index.js",
+    "src/continuity-skills.js"
   ],
   "catalog": {
-    "total": 1753,
+    "total": 1763,
     "k7": 312,
-    "bank": 1441
+    "bank": 1441,
+    "continuity": 10
   }
 }

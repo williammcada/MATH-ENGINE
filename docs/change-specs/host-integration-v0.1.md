@@ -40,14 +40,50 @@ One engine interface supplies every code-generated question, answer check and so
 ## Engine changes (Engine 0.34.0)
 
 - Add one host-facing module, `src/practice.js`, with a bundled browser/Worker build (`dist/math-engine-practice.js`, ESM):
-  - `catalog({ gameEligible })` — unified, namespaced IDs: `skill:<id>` (K–7) and `bank:<sourceId>`; grade/course, lesson, title.
+  - `catalog` — unified IDs: K–7 skill IDs unchanged (so Arcade's saved progress keeps working), `bank:<sourceId>` for course-bank entries, `mq-…` for continuity skills; grade/course, lesson, title.
   - `generate(id, { seed, index })` — deterministic item with `prompt`, optional sanitized `diagram` SVG, `answer`, `solution`, `inputMode`.
-  - `checkAnswer(item, response)` — the only answer validator hosts use.
+  - `checkAnswer(item, response)` → boolean, and `evaluate(item, response)` → `{ valid, correct, reason, message }`. Hosts use only these. `evaluate` reports malformed entries (`valid: false`) and gives the simplest-form message wherever an item rejects an unreduced fraction (MathQuest MATH-FRAC-01).
   - `related(id, 'easier' | 'harder')` — reviewed links only.
   - `version` and a content hash.
 - `inputMode` per answer kind: `keypad` (numbers, integers, decimals, fractions, mixed, money, scientific) or `keyboard` (text, words, lists, sets). Hosts must offer the device keyboard for `keyboard` items.
 - Preserve all existing exports, Studio behavior and the K–7 baseline bytes; the new module wraps them.
 - Fraction answers keep the simplest-form requirement wherever the prompt asks for simplest form (already true in 0.33.0-rc.1; required by MathQuest v0.9.2 §27).
+
+### Continuity skills (D3 gap-filling)
+
+Five MathQuest constructs had no engine equivalent. They are now engine generators in `src/continuity-skills.js` (10 entries, grade-agnostic like the course banks, with easier/harder links): negative exponents, unit-multiplier conversions with rounding, properties of operations, polygon and quadrilateral names, and smallest number family. Choice items carry their options (`inputMode: 'choice'`).
+
+### MathQuest module mapping (D3)
+
+| MathQuest module | Engine items |
+| --- | --- |
+| `number.integer-operations` | `g7-intadd`, `g7-intsub`, `g7-intmul`, `g7-intdiv` |
+| `number.gcf` | `g6-gcf`, `bank:course-87-en:item:SN870025`, `bank:course-1-en:bank:C1_Section02:item:C1_S02_00055` |
+| `number.lcm` | `g6-lcm`, `bank:course-87-en:item:SAX70082`, `bank:course-87-en:item:SAX70083` |
+| `number.absolute-value` | `g6-absolute`, `bank:course-87-en:authored:MCADA-59.1` |
+| `number.order-of-operations` | `g6-order`, `bank:course-87-en:authored:MCADA-52.1`, `bank:course-87-en:authored:MCADA-85.1` |
+| `number.part-of-whole` | `g6-percent`, `bank:course-1-en:authored:M2-4a5dc2d6e728-1`, `bank:course-87-en:authored:MCADA-14.1` |
+| `data.mean-missing` | `bank:algebra-half-en:node:186`, `bank:course-87-en:authored:MCADA-55.2` |
+| `algebra.one-step` | `g6-eq` |
+| `algebra.two-step` | `g7-eq`, `g7-fraceq`, `g7-eqgroup` |
+| `fraction.simplify` | `g3-reduce`, `g4-equivalent` |
+| `number.fdp-conversion` | `g6-represent` |
+| `probability.simple` | `bank:course-87-en:item:SN870816`, `bank:course-87-en:item:SX650321` |
+| `ratio.unit-rate` | `g6-rate`, `g7-fracrate` |
+| `ratio.proportion` | `bank:course-87-en:authored:MCADA-39.2`, `g7-propword` |
+| `percent.change` | `g7-change` |
+| `exponent.negative` | `mq-negative-exponents-basic`, `mq-negative-exponents` |
+| `number.scientific-notation` | `bank:course-87-en:authored:MCADA-51.1`, `bank:course-87-en:authored:MCADA-57.2` |
+| `word.multistep` | `g7-rationalword` |
+| `algebra.word-problems` | `g6-eqword`, `g7-eqword` |
+| `exponent.scientific-operations` | `bank:course-87-en:item:SN870434`, `bank:course-87-en:item:SX870468` |
+| `measurement.conversions` | `mq-unit-conversions-metric`, `mq-unit-conversions-customary`, `mq-unit-conversions-cross` |
+| `number.properties` | `mq-properties-basic`, `mq-properties` |
+| `geometry.polygons` | `mq-polygon-names-basic`, `mq-polygon-names` |
+| `percent.tax-tip` | `g7-increase`, `bank:course-87-en:authored:MCADA-46.3` |
+| `number.real-family` | `mq-real-number-family` |
+
+A saved MathQuest config that names an old module expands to that module's engine items. The old Beginner/Intermediate/Advanced band is not carried over (D4).
 
 ## MathQuest changes (MathQuest 0.10.0)
 

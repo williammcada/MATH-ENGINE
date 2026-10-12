@@ -75,7 +75,7 @@ const __cache = {};
 function __req(id) { if (__cache[id]) return __cache[id].exports; const module = { exports: {} }; __cache[id] = module; __defs[id].call(globalThis, module, module.exports, __req); return module.exports; }
 const MathEnginePractice = __req(${entry});
 export default MathEnginePractice;
-export const { version, bankVersion, k7Version, k7BaselineSha256, catalog, courses, find, generate, nextItem, checkAnswer, related, keypadKeys, Practice, freshMath, configError, formatMath, contentHash } = MathEnginePractice;
+export const { version, bankVersion, k7Version, k7BaselineSha256, catalog, courses, find, generate, nextItem, checkAnswer, evaluate, related, keypadKeys, Practice, freshMath, configError, formatMath, contentHash } = MathEnginePractice;
 `;
 fs.mkdirSync(path.join(root, 'dist'), { recursive: true });
 fs.writeFileSync(path.join(root, 'dist/math-engine-practice.js'), bundle);
@@ -89,7 +89,7 @@ const prov = {
   bundleSha256: sha(bundle), contentHash: P.contentHash,
   baseline: baselinePath, baselineSha256: sha(baseline),
   sources: modules.map(m => m.file),
-  catalog: { total: P.catalog.length, k7: P.catalog.filter(c => c.layer === 'skill').length, bank: P.catalog.filter(c => c.layer === 'bank').length }
+  catalog: { total: P.catalog.length, k7: P.catalog.filter(c => c.layer === 'skill').length, bank: P.catalog.filter(c => c.layer === 'bank').length, continuity: P.catalog.filter(c => c.layer === 'continuity').length }
 };
 fs.writeFileSync(path.join(root, 'dist/math-engine-practice.provenance.json'), JSON.stringify(prov, null, 2) + '\n');
 console.log(JSON.stringify({ modules: modules.length, bytes: bundle.length, ...prov.catalog, contentHash: prov.contentHash }));

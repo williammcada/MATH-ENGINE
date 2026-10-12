@@ -9,7 +9,7 @@
     },
     "catalog": {
       "status": "Passed",
-      "total": 1753,
+      "total": 1763,
       "k7Skills": 312,
       "k7ByGrade": {
         "1": 19,
@@ -22,6 +22,7 @@
         "K": 20
       },
       "autoCheckedBankEntries": 1441,
+      "continuitySkills": 10,
       "courses": [
         {
           "bankId": "intermediate-4-en",
@@ -75,27 +76,40 @@
     },
     "generate-all-seeds": {
       "status": "Passed",
-      "count": 87650
+      "count": 88150
     },
     "deterministic": {
       "status": "Passed",
-      "count": 87650
+      "count": 88150
     },
     "own-answer-accepted": {
       "status": "Passed",
-      "count": 87650
+      "count": 88150
     },
     "json-round-trip": {
       "status": "Passed",
-      "count": 87650
+      "count": 88150
+    },
+    "evaluate-own-answer-valid-and-correct": {
+      "status": "Passed",
+      "count": 88150
+    },
+    "unsimplified-fraction-feedback": {
+      "status": "Passed",
+      "count": 7651,
+      "simplestFormRequiredAndFlagged": 5627,
+      "equivalentFormsAllowedByPrompt": {
+        "items": 2024,
+        "entries": 65
+      }
     },
     "perturbed-answer-rejected": {
       "status": "Passed",
-      "count": 87650
+      "count": 88150
     },
     "keypad-keys-cover-answer": {
       "status": "Passed",
-      "count": 87650
+      "count": 88150
     },
     "studio-items-identical": {
       "status": "Passed",
@@ -111,11 +125,15 @@
       "keypad": 1280,
       "keyboard": 161
     },
+    "continuity-independent-oracle": {
+      "status": "Passed",
+      "items": 2000
+    },
     "related-links": {
       "status": "Passed",
-      "links": 2605,
-      "itemsWithEasier": 492,
-      "itemsWithHarder": 443
+      "links": 2615,
+      "itemsWithEasier": 497,
+      "itemsWithHarder": 448
     },
     "practice-gates": {
       "status": "Passed",
@@ -125,8 +143,8 @@
     },
     "bundle-provenance": {
       "status": "Passed",
-      "bundleSha256": "5d702d704344d1c004e33f3db18f7f78d9de501ecb58ade7fa49390cab7a88a3",
-      "contentHash": "34e4a786efd1b984c2c328c5e05a911c"
+      "bundleSha256": "a73261e0e9a94b94f734bc8636e862164f0b3240ac1e60c72bc77234a090b4c9",
+      "contentHash": "12980e5c6d675e6a431f5ea0d80fad93"
     }
   },
   "failures": [],
