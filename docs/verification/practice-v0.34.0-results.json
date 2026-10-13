@@ -1,0 +1,158 @@
+{
+  "engine": "0.34.0-rc.3",
+  "bankVersion": "0.33.0-rc.1",
+  "seedsPerItem": 50,
+  "checks": {
+    "k7-baseline-unedited": {
+      "status": "Passed",
+      "sha256": "78841274e50b07c6640913bb84fdd821247ed47030b575feb27760d35fcff1a0"
+    },
+    "catalog": {
+      "status": "Passed",
+      "total": 1763,
+      "k7Skills": 312,
+      "k7ByGrade": {
+        "1": 19,
+        "2": 21,
+        "3": 68,
+        "4": 64,
+        "5": 36,
+        "6": 51,
+        "7": 33,
+        "K": 20
+      },
+      "autoCheckedBankEntries": 1441,
+      "continuitySkills": 10,
+      "courses": [
+        {
+          "bankId": "intermediate-4-en",
+          "course": "Intermediate 4",
+          "localGrade": 3,
+          "placement": "grade-assigned",
+          "teacherReviewedExcluded": 50,
+          "count": 210
+        },
+        {
+          "bankId": "course-1-en",
+          "course": "Course 1",
+          "localGrade": 4,
+          "placement": "grade-assigned",
+          "teacherReviewedExcluded": 80,
+          "count": 198
+        },
+        {
+          "bankId": "course-87-en",
+          "course": "Introduction to PreAlgebra (8/7)",
+          "localGrade": 5,
+          "placement": "grade-assigned",
+          "teacherReviewedExcluded": 116,
+          "count": 387
+        },
+        {
+          "bankId": "algebra-half-en",
+          "course": "Algebra 1/2",
+          "localGrade": null,
+          "placement": "tracked-not-grade-locked",
+          "teacherReviewedExcluded": 87,
+          "count": 291
+        },
+        {
+          "bankId": "algebra-1-en",
+          "course": "Algebra 1",
+          "localGrade": null,
+          "placement": "tracked-not-grade-locked",
+          "teacherReviewedExcluded": 146,
+          "count": 163
+        },
+        {
+          "bankId": "algebra-2-en",
+          "course": "Algebra 2",
+          "localGrade": null,
+          "placement": "tracked-not-grade-locked",
+          "teacherReviewedExcluded": 264,
+          "count": 192
+        }
+      ]
+    },
+    "lesson-labels": {
+      "status": "Passed",
+      "entries": 1441,
+      "lessons": 785,
+      "source": "williammcada/test-and-practice-studio@16685a8"
+    },
+    "generate-all-seeds": {
+      "status": "Passed",
+      "count": 88150
+    },
+    "deterministic": {
+      "status": "Passed",
+      "count": 88150
+    },
+    "own-answer-accepted": {
+      "status": "Passed",
+      "count": 88150
+    },
+    "json-round-trip": {
+      "status": "Passed",
+      "count": 88150
+    },
+    "evaluate-own-answer-valid-and-correct": {
+      "status": "Passed",
+      "count": 88150
+    },
+    "unsimplified-fraction-feedback": {
+      "status": "Passed",
+      "count": 7651,
+      "simplestFormRequiredAndFlagged": 5627,
+      "equivalentFormsAllowedByPrompt": {
+        "items": 2024,
+        "entries": 65
+      }
+    },
+    "perturbed-answer-rejected": {
+      "status": "Passed",
+      "count": 88150
+    },
+    "keypad-keys-cover-answer": {
+      "status": "Passed",
+      "count": 88150
+    },
+    "studio-items-identical": {
+      "status": "Passed",
+      "count": 72050
+    },
+    "teacher-variant-redraws": {
+      "status": "Informational",
+      "count": 0,
+      "note": "Studio draw was teacher-reviewed for this seed; engine redrew deterministically."
+    },
+    "bank-input-modes": {
+      "status": "Informational",
+      "keypad": 1280,
+      "keyboard": 161
+    },
+    "continuity-independent-oracle": {
+      "status": "Passed",
+      "items": 2000
+    },
+    "related-links": {
+      "status": "Passed",
+      "links": 2615,
+      "itemsWithEasier": 497,
+      "itemsWithHarder": 448
+    },
+    "practice-gates": {
+      "status": "Passed",
+      "k7Gate": "complete",
+      "mixedTargetedGate": "complete",
+      "invalidIdRejected": true
+    },
+    "bundle-provenance": {
+      "status": "Passed",
+      "bundleSha256": "8784557667e08ce08fd23c77b232dbbdbe307f67c744c4598a2e465e9990cd11",
+      "contentHash": "5cdb34cc0facb7ac3c2b6658f1c2f72b"
+    }
+  },
+  "failures": [],
+  "status": "Passed"
+}
