@@ -6672,41 +6672,6 @@
     "samplePrompt": "3/7 of a trail has been walked. What fraction remains? Give a simplified fraction."
   },
   {
-    "sourceId": "course-87-en:item:SN870224",
-    "providerSourceId": "course-87-en:item:SN870224",
-    "bankId": "course-87-en",
-    "topic": "fraction-decimal-percent",
-    "action": "Convert a decimal to a simplified fraction",
-    "recipe": "decimal-fraction-small",
-    "family": "structured-proportion",
-    "title": "Convert a decimal to a simplified fraction",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:43",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "fraction-conversions",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Terminating decimals over 100/1000 or fiftieths; reduce the exact place-value fraction."
-    },
-    "samplePrompt": "Write 0.065 as a simplified fraction."
-  },
-  {
     "sourceId": "course-87-en:item:SNAH0101",
     "providerSourceId": "course-87-en:item:SNAH0101",
     "bankId": "course-87-en",
@@ -8039,41 +8004,6 @@
       "reason": "Tax on a price with fractional percentage rate; round the tax to cents."
     },
     "samplePrompt": "An appliance costs $2130 before tax. The sales-tax rate is 5%. What is the sales tax in dollars? Do not round intermediate values. Round the final answer to the nearest cent; halfway values round up. Enter the numerical answer (a dollar sign is optional)."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870264",
-    "providerSourceId": "course-87-en:item:SX870264",
-    "bankId": "course-87-en",
-    "topic": "measurement",
-    "action": "Convert yards to feet",
-    "recipe": "yards-feet",
-    "family": "structured-measurement",
-    "title": "Convert yards to feet",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:50",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "single-unit-practice",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "measurement"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Convert large whole-number yards to feet with factor 3. Number-size practice, not a distinct dimension or a course-based rank. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "samplePrompt": "Convert 1190 yards to feet. Enter the numerical answer in feet, without the unit."
   },
   {
     "sourceId": "course-87-en:item:SX870275",
@@ -81309,5 +81239,1289 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Find the measure of \u2220x in degrees. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870215",
+    "providerSourceId": "course-87-en:item:SX870215",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Evaluate an expression with three variables",
+    "recipe": "evaluate-xy",
+    "family": "structured-port87",
+    "title": "Evaluate an expression with three variables",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:41",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Evaluate df \u2212 fg if d = 9, f = 4, and g = 7. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870216",
+    "providerSourceId": "course-87-en:item:SN870216",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Evaluate an expression with decimal values",
+    "recipe": "evaluate-xy",
+    "family": "structured-port87",
+    "title": "Evaluate an expression with decimal values",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:41",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Evaluate ab + bc if a = 0.4, b = 2.8, and c = 0.4. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870347",
+    "providerSourceId": "course-87-en:item:SN870347",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Evaluate an expression with parentheses",
+    "recipe": "evaluate-paren",
+    "family": "structured-port87",
+    "title": "Evaluate an expression with parentheses",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:41",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Evaluate 8(s + t) when s is 5 and t is 7. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870217",
+    "providerSourceId": "course-87-en:item:SX870217",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Evaluate an expression with parentheses and decimals",
+    "recipe": "evaluate-paren",
+    "family": "structured-port87",
+    "title": "Evaluate an expression with parentheses and decimals",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:41",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Evaluate q(r + s) if s = 0.9 and q = 0.2, r = 2.8. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870218",
+    "providerSourceId": "course-87-en:item:SN870218",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Evaluate an expression with parentheses",
+    "recipe": "evaluate-paren",
+    "family": "structured-port87",
+    "title": "Evaluate an expression with parentheses",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:41",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Evaluate s(t \u2212 u) if u = 4 and s = 4, t = 10. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870349",
+    "providerSourceId": "course-87-en:item:SN870349",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Expand with the distributive property",
+    "recipe": "distribute",
+    "family": "structured-port87",
+    "title": "Expand with the distributive property",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:41",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "linear"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Use the distributive property to expand: 4(5x + 3)"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870219",
+    "providerSourceId": "course-87-en:item:SX870219",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Round a repeating decimal",
+    "recipe": "round-repeating",
+    "family": "structured-port87",
+    "title": "Round a repeating decimal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:42",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Round 57.4\u0305 to five decimal places. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870220",
+    "providerSourceId": "course-87-en:item:SX870220",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Divide and write a repeating decimal with a bar",
+    "recipe": "divide-repeating",
+    "family": "structured-port87",
+    "title": "Divide and write a repeating decimal with a bar",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:42",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "repeating"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide 3.8 by 27 and write the quotient with a bar over the repetend."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870220",
+    "providerSourceId": "course-87-en:item:SN870220",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Write a fraction as a repeating decimal",
+    "recipe": "fraction-repeating",
+    "family": "structured-port87",
+    "title": "Write a fraction as a repeating decimal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:42",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "repeating"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 17/18 as a decimal number. Use a bar over the repeating digits."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870224",
+    "providerSourceId": "course-87-en:item:SN870224",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Write a decimal as a fraction",
+    "recipe": "decimal-to-fraction",
+    "family": "structured-port87",
+    "title": "Write a decimal as a fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:43",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Terminating decimals over 100/1000 or fiftieths; reduce the exact place-value fraction."
+    },
+    "samplePrompt": "Write 0.025 as a fraction. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SMAH0596",
+    "providerSourceId": "course-87-en:item:SMAH0596",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Write a decimal as a mixed number",
+    "recipe": "decimal-to-fraction",
+    "family": "structured-port87",
+    "title": "Write a decimal as a mixed number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:43",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 4.35 as a mixed number. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SNAH0208",
+    "providerSourceId": "course-87-en:item:SNAH0208",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Write a decimal as a mixed number in lowest terms",
+    "recipe": "decimal-to-mixed-thousandths",
+    "family": "structured-port87",
+    "title": "Write a decimal as a mixed number in lowest terms",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:43",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 5.644 as a mixed number in lowest terms. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870366",
+    "providerSourceId": "course-87-en:item:SX870366",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Write a fraction as a decimal",
+    "recipe": "fraction-to-decimal",
+    "family": "structured-port87",
+    "title": "Write a fraction as a decimal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:43",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 6/5 as a decimal number. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870604",
+    "providerSourceId": "course-87-en:item:SN870604",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Write a fraction as a decimal",
+    "recipe": "fraction-to-decimal",
+    "family": "structured-port87",
+    "title": "Write a fraction as a decimal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:43",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 391/100 as a decimal number. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870606",
+    "providerSourceId": "course-87-en:item:SN870606",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Write a fraction as a decimal",
+    "recipe": "fraction-to-decimal",
+    "family": "structured-port87",
+    "title": "Write a fraction as a decimal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:43",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 11/20 as a decimal number. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870605",
+    "providerSourceId": "course-87-en:item:SN870605",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Write a fraction as a decimal",
+    "recipe": "fraction-to-decimal",
+    "family": "structured-port87",
+    "title": "Write a fraction as a decimal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:43",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 3/16 as a decimal number. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870232",
+    "providerSourceId": "course-87-en:item:SN870232",
+    "bankId": "course-87-en",
+    "topic": "whole-arithmetic",
+    "action": "Interpret a remainder: chairs in rows",
+    "recipe": "chairs-rows",
+    "family": "structured-port87",
+    "title": "Interpret a remainder: chairs in rows",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:44",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "division-remainder-meaning",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Marsha arranged 56 chairs in 9 rows as evenly as possible. (a) How many rows had exactly 6 chairs? (b) How many rows had 7 chairs? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870319",
+    "providerSourceId": "course-87-en:item:SN870319",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide and round to the nearest hundredth",
+    "recipe": "capsules",
+    "family": "structured-port87",
+    "title": "Divide and round to the nearest hundredth",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:44",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "There are 35.66 grams of medication. If a pharmacist wants to separate the medication into 37 capsules, how many grams will be in each? Round to the nearest hundredth. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870227",
+    "providerSourceId": "course-87-en:item:SX870227",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide by a decimal and round",
+    "recipe": "divide-by-decimal",
+    "family": "structured-port87",
+    "title": "Divide by a decimal and round",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:45",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide 5 by 0.18 and write the answer rounded to the nearest whole number. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870228",
+    "providerSourceId": "course-87-en:item:SX870228",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide by a decimal",
+    "recipe": "divide-by-decimal",
+    "family": "structured-port87",
+    "title": "Divide by a decimal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:45",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide: 3.6 \u00f7 0.018 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870229",
+    "providerSourceId": "course-87-en:item:SX870229",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide by a decimal",
+    "recipe": "divide-by-decimal",
+    "family": "structured-port87",
+    "title": "Divide by a decimal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:45",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide: 1.584 \u00f7 0.08 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870237",
+    "providerSourceId": "course-87-en:item:SN870237",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide by a decimal",
+    "recipe": "divide-by-decimal",
+    "family": "structured-port87",
+    "title": "Divide by a decimal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:45",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide: 7.79 \u00f7 0.19 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870230",
+    "providerSourceId": "course-87-en:item:SX870230",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve an equation with a decimal coefficient",
+    "recipe": "solve-decimal-coefficient",
+    "family": "structured-port87",
+    "title": "Solve an equation with a decimal coefficient",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:45",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: 5.1d = 0.102 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870150",
+    "providerSourceId": "course-87-en:item:SX870150",
+    "bankId": "course-87-en",
+    "topic": "rates",
+    "action": "Saving per item when buying by the case",
+    "recipe": "yogurt-saving",
+    "family": "structured-port87",
+    "title": "Saving per item when buying by the case",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:46",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A single-serving carton of yogurt costs 85\u00a2. A case of 10 single-serving cartons costs $7.80. How much is saved per carton by buying the yogurt by the case? Give the answer in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870368",
+    "providerSourceId": "course-87-en:item:SX870368",
+    "bankId": "course-87-en",
+    "topic": "rates",
+    "action": "Unit price of a collection",
+    "recipe": "cost-each",
+    "family": "structured-port87",
+    "title": "Unit price of a collection",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:46",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A discount audio store advertised a collection of hits from the 1960s on 13 compact discs for $71.24. What is the cost of each disc? Give the answer in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870241",
+    "providerSourceId": "course-87-en:item:SN870241",
+    "bankId": "course-87-en",
+    "topic": "rates",
+    "action": "Unit price from a total",
+    "recipe": "stationery-each",
+    "family": "structured-port87",
+    "title": "Unit price from a total",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:46",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Andrew spent $1.68 at the stationery store, buying 4 stickers. How much did each sticker cost? Give the answer in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870232",
+    "providerSourceId": "course-87-en:item:SX870232",
+    "bankId": "course-87-en",
+    "topic": "rates",
+    "action": "Average speed for a round trip",
+    "recipe": "round-trip-speed",
+    "family": "structured-port87",
+    "title": "Average speed for a round trip",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:46",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "motion",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "It was 84 kilometers from Benton to Persy. Jonathan raced to Persy and idled back to Benton. If the round trip took 7 hours, what was his average speed in kilometers per hour? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870233",
+    "providerSourceId": "course-87-en:item:SX870233",
+    "bankId": "course-87-en",
+    "topic": "rates",
+    "action": "Average speed with a mixed-number distance",
+    "recipe": "trail-speed",
+    "family": "structured-port87",
+    "title": "Average speed with a mixed-number distance",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:46",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "motion",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "It is 2 3/4 miles to the end of the trail. If Adele skates to the end and back in 60 minutes, what is her average speed in miles per hour? Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870234",
+    "providerSourceId": "course-87-en:item:SX870234",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "A 15% tip",
+    "recipe": "tip",
+    "family": "structured-port87",
+    "title": "A 15% tip",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:46",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "percent-change-models",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The dinner bill totaled $21.00. Beth left a 15% tip. How much money did Beth leave for a tip? Give the answer in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870238",
+    "providerSourceId": "course-87-en:item:SX870238",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "Sales tax and total price",
+    "recipe": "tax-total",
+    "family": "structured-port87",
+    "title": "Sales tax and total price",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:46",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "percent-change-models",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The price of the ski jacket was $92.00. The tax rate was 6%. (a) What was the tax on the ski jacket? (b) What was the total price of the ski jacket including tax? Give the answers in dollars. Enter exact decimal or whole-number answers. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870248",
+    "providerSourceId": "course-87-en:item:SN870248",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Divide powers of 10",
+    "recipe": "powers-of-ten-quotient",
+    "family": "structured-port87",
+    "title": "Divide powers of 10",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:47",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the number equivalent to 10^8/10^4 in standard form. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870250",
+    "providerSourceId": "course-87-en:item:SN870250",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Missing exponent in a product of powers of 10",
+    "recipe": "missing-exponent",
+    "family": "structured-port87",
+    "title": "Missing exponent in a product of powers of 10",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:47",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Find the missing exponent: 10^3 \u00b7 10^9 = 10^? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870251",
+    "providerSourceId": "course-87-en:item:SN870251",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Write a number named in millions, billions or trillions in standard form",
+    "recipe": "number-names-standard",
+    "family": "structured-port87",
+    "title": "Write a number named in millions, billions or trillions in standard form",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:47",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Write 4.12 million in standard form. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870245",
+    "providerSourceId": "course-87-en:item:SX870245",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Complete a fraction-decimal-percent table",
+    "recipe": "fdp-table",
+    "family": "structured-port87",
+    "title": "Complete a fraction-decimal-percent table",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:48",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Complete the table. Row 1 shows 90%. Row 2 shows 4/5. Give the row 1 fraction, the row 1 decimal, the row 2 decimal and the row 2 percent. The % sign is optional. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870246",
+    "providerSourceId": "course-87-en:item:SX870246",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Complete a fraction-decimal-percent table",
+    "recipe": "fdp-table",
+    "family": "structured-port87",
+    "title": "Complete a fraction-decimal-percent table",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:48",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Complete the table. Row 1 shows 1/25. Row 2 shows 1.25. Give the row 1 decimal, the row 1 percent, the row 2 fraction and the row 2 percent. The % sign is optional. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870247",
+    "providerSourceId": "course-87-en:item:SX870247",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Complete a fraction-decimal-percent table",
+    "recipe": "fdp-table",
+    "family": "structured-port87",
+    "title": "Complete a fraction-decimal-percent table",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:48",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Complete the table. Row 1 shows 0.68. Give the fraction (in lowest terms) and the percent. The % sign is optional. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870253",
+    "providerSourceId": "course-87-en:item:SX870253",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Add yards, feet and inches",
+    "recipe": "add-measures",
+    "family": "structured-port87",
+    "title": "Add yards, feet and inches",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:49",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "compound-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "compound"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 5 yd 2 ft + 5 yd 1 ft 11 in."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870254",
+    "providerSourceId": "course-87-en:item:SX870254",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Add inches to yards, feet and inches",
+    "recipe": "add-measures",
+    "family": "structured-port87",
+    "title": "Add inches to yards, feet and inches",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:49",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "compound-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "compound"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 10 in. + 5 yd 1 ft 9 in."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870255",
+    "providerSourceId": "course-87-en:item:SX870255",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Add hours, minutes and seconds",
+    "recipe": "add-measures",
+    "family": "structured-port87",
+    "title": "Add hours, minutes and seconds",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:49",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "compound-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "compound"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 11 hr 25 min 55 sec + 4 hr 24 min 17 sec"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870259",
+    "providerSourceId": "course-87-en:item:SN870259",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Add hours, minutes and seconds",
+    "recipe": "add-measures",
+    "family": "structured-port87",
+    "title": "Add hours, minutes and seconds",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:49",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "compound-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "compound"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 5 hr 13 min 35 sec + 3 hr 32 min 46 sec"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870264",
+    "providerSourceId": "course-87-en:item:SX870264",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Convert yards to feet with a unit multiplier",
+    "recipe": "yards-to-feet",
+    "family": "structured-port87",
+    "title": "Convert yards to feet with a unit multiplier",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:50",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "single-unit-conversions",
+        "level": 1
+      },
+      {
+        "trackId": "single-unit-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Convert large whole-number yards to feet with factor 3. Number-size practice, not a distinct dimension or a course-based rank. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "samplePrompt": "Use a unit multiplier to convert 1,170 yards to feet. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870269",
+    "providerSourceId": "course-87-en:item:SX870269",
+    "bankId": "course-87-en",
+    "topic": "rates",
+    "action": "Chain unit multipliers: dollars per hour",
+    "recipe": "wage-per-hour",
+    "family": "structured-port87",
+    "title": "Chain unit multipliers: dollars per hour",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:50",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: $512/1 wk \u00b7 1 wk/4 days \u00b7 1 day/10 hr. Give the answer in dollars per hour. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870262",
+    "providerSourceId": "course-87-en:item:SN870262",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Convert between tons and pounds",
+    "recipe": "tons-pounds",
+    "family": "structured-port87",
+    "title": "Convert between tons and pounds",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:50",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "single-unit-conversions",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Convert 4,100 pounds to tons. Enter exact decimal or whole-number answers."
   }
 ]

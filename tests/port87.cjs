@@ -8,6 +8,9 @@ const fracEq=(q,n,d)=>{const v=q.answer.values[0],[x,y]=red(n,d);return v.numera
 const isPrime=p=>p>1&&[...Array(p).keys()].slice(2).every(k=>p%k);
 const PLACES=['ones','tens','hundreds','thousands','ten-thousands','hundred-thousands','millions','ten-millions','hundred-millions','billions','ten-billions','hundred-billions','trillions'];
 const words=P.words;
+const Fd=x=>{const t=String(x);if(!t.includes('.'))return [Number(t),1];const [w,f]=t.split('.');return [Number(w+f),10**f.length];},mulF=(a,b)=>red(a[0]*b[0],a[1]*b[1]),divF=(a,b)=>red(a[0]*b[1],a[1]*b[0]),addF=(a,b)=>red(a[0]*b[1]+b[0]*a[1],a[1]*b[1]),subF=(a,b)=>red(a[0]*b[1]-b[0]*a[1],a[1]*b[1]);
+// Repeating decimal in parentheses notation by tracking remainders (independent of the task code).
+const parenRep=(n,d)=>{const w=Math.floor(n/d);let r=n%d;const pos={},ds=[];while(r&&pos[r]===undefined){pos[r]=ds.length;ds.push(Math.floor(10*r/d));r=10*r%d;}return r?`${w}.${ds.slice(0,pos[r]).join('')}(${ds.slice(pos[r]).join('')})`:`${w}.${ds.join('')}`;};
 const shoelace=P=>Math.abs(P.reduce((s,[x,y],i)=>{const [u,v]=P[(i+1)%P.length];return s+x*v-u*y;},0))/2,lcm=(a,b)=>a*b/gcd(a,b),vals=q=>q.answer.values.map(v=>Number(v.numerator)/Number(v.denominator));
 const factorize=x=>{const f=[];for(let p=2;x>1;)if(x%p===0){f.push(p);x/=p;}else p++;return f;};
 const powerForm=f=>[...new Set(f)].map(p=>{const k=f.filter(x=>x===p).length;return k>1?`${p}^${k}`:String(p);}).join(' · ');
@@ -174,6 +177,40 @@ const oracle={
  'crossing-triangles':(q,p)=>{const w=180-90-p.an2;return vals(q).join()===[w,180-p.an1-w].join();},
  'triangle-line-angles':(q,p)=>{const a=180-90-p.a;return vals(q).join()===[a,180-a,a].join();},
  'crossing-lines-triangle':(q,p)=>{assert(p.a1>=95&&p.a1<=115&&p.a2>=45&&p.a2<=60);return fracEq(q,180-p.a1-p.a2,1);},
+ // Batch 5: Lessons 41–50.
+ 'evaluate-xy':(q,p)=>{const [x,y,w]=[p.x,p.y,p.w].map(Fd);const r=p.form==='decimal-sum'?addF(mulF(x,y),mulF(y,w)):subF(mulF(x,y),mulF(y,w));return fracEq(q,...r);},
+ 'evaluate-paren':(q,p)=>{const [a,b,c]=[p.a,p.b,p.c].map(Fd);return fracEq(q,...mulF(a,p.form==='minus'?subF(b,c):addF(b,c)));},
+ 'distribute':(q,p)=>{const d=p.a*p.b,e=p.a*p.c;assert(p.a!==p.b&&p.c!==p.a&&p.c!==p.b);return q.answer.coef===d&&q.answer.constant===e&&E.checkAnswer(q,`${d}x${e<0?'-':'+'}${Math.abs(e)}`).answerCorrect&&E.checkAnswer(q,`${e} + ${d}x`).answerCorrect&&!E.checkAnswer(q,`${d}x${e<0?'+':'-'}${Math.abs(e)}`).answerCorrect;},
+ 'round-repeating':(q,p)=>{assert([9,11,33,27].includes(p.den)&&(p.den!==27||p.N%3));return fracEq(q,Math.round(p.N*10**p.p/p.den),10**p.p);},
+ 'divide-repeating':(q,p)=>E.checkAnswer(q,parenRep(p.a,10*p.b)).answerCorrect&&!E.checkAnswer(q,(p.a/(10*p.b)).toFixed(6)).answerCorrect&&!E.checkAnswer(q,parenRep(p.a+1,10*p.b)).answerCorrect,
+ 'fraction-repeating':(q,p)=>E.checkAnswer(q,parenRep(p.q,p.p)).answerCorrect&&E.checkAnswer(q,parenRep(p.q,p.p).replace(/\((\d+)\)$/,'[$1]')).answerCorrect&&!E.checkAnswer(q,(p.q/p.p).toFixed(3)).answerCorrect,
+ 'decimal-to-fraction':(q,p)=>fracEq(q,p.num,p.den),
+ 'decimal-to-mixed-thousandths':(q,p)=>{assert(p.N%10&&p.N%2===0);return fracEq(q,p.N,1000)&&!E.checkAnswer(q,`${p.N/red(p.N,1000)[1]>0?red(p.N,1000)[0]:0}/${red(p.N,1000)[1]}`).answerCorrect;},
+ 'fraction-to-decimal':(q,p)=>{let d=red(p.a,p.b)[1];while(d%2===0)d/=2;while(d%5===0)d/=5;assert.equal(d,1);return fracEq(q,p.a,p.b);},
+ 'chairs-rows':(q,p)=>{assert(p.b===p.a*p.bb+p.aa&&p.b<=99&&p.aa>=2&&p.aa<=p.a-2);return vals(q).join()===[p.a-p.aa,p.aa].join();},
+ 'capsules':(q,p)=>{assert(p.a%100&&p.b>=20&&p.b<=50);return fracEq(q,Math.round(p.a/p.b),100);},
+ 'divide-by-decimal':(q,p)=>{if(p.num===undefined){assert(p.b%10);return fracEq(q,Math.round(100*p.a/p.b),1);}return fracEq(q,...divF(Fd(p.num),Fd(p.divisor)));},
+ 'solve-decimal-coefficient':(q,p)=>{assert(p.a*p.c<1000&&(p.a*p.c)%10);return fracEq(q,p.c,100);},
+ 'yogurt-saving':(q,p)=>fracEq(q,p.a*p.b-(p.a-p.d)*p.b,100*p.b),
+ 'cost-each':(q,p)=>{assert(p.b!==20);return fracEq(q,p.k*p.b,100*p.b);},
+ 'stationery-each':(q,p)=>fracEq(q,p.a*(10*p.b+p.c),100*p.a),
+ 'round-trip-speed':(q,p)=>fracEq(q,2*p.a*p.b,p.a),
+ 'trail-speed':(q,p)=>fracEq(q,2*(p.b*p.wh+p.a),p.b),
+ 'tip':(q,p)=>{assert(p.a%10);return fracEq(q,15*p.a,100);},
+ 'tax-total':(q,p)=>{const v=vals(q);return Math.abs(v[0]-p.a*p.b/100)<1e-9&&Math.abs(v[1]-p.a*(100+p.b)/100)<1e-9;},
+ 'powers-of-ten-quotient':(q,p)=>fracEq(q,10**(p.a-p.b),1),
+ 'missing-exponent':(q,p)=>fracEq(q,p.a+p.b,1),
+ 'number-names-standard':(q,p)=>fracEq(q,p.a*10**[4,7,10][p.k-1],1),
+ 'fdp-table':(q,p)=>{const P=x=>Fd(x.replace('%','')),Q=x=>x.includes('/')?x.split('/').map(Number):Fd(x);let want;
+   if(p.rows.length===1){const d=Fd(p.rows[0][1]);want=[d,mulF(d,[100,1])];}
+   else if(p.rows[0][2]){const r1=divF(P(p.rows[0][2]),[100,1]),f2=Q(p.rows[1][0]);want=[r1,r1,f2,mulF(f2,[100,1])];}
+   else{const f1=Q(p.rows[0][0]),d2=Fd(p.rows[1][1]);want=[f1,mulF(f1,[100,1]),d2,mulF(d2,[100,1])];}
+   return vals(q).every((v,i)=>Math.abs(v-want[i][0]/want[i][1])<1e-12);},
+ 'add-measures':(q,p)=>{let base,units;if(q.answer.parts[0][0]==='hr'){base=(p.a+p.d)*3600+(p.b+p.e)*60+p.c+p.f;units=[['hr',3600],['min',60],['sec',1]];}else{base=p.b!==undefined&&p.a===undefined?p.b+p.c*36+p.d*12+p.e:(p.a+p.c)*36+(p.b+p.d)*12+p.e;units=[['yd',36],['ft',12],['in.',1]];}
+   let r=base;const want=units.map(([u,k])=>{const v=Math.floor(r/k);r-=v*k;return v;});return q.answer.parts.every(([u,v],i)=>v===want[i]&&u===units[i][0]);},
+ 'yards-to-feet':(q,p)=>{assert(p.yd%30===0&&p.yd%100&&p.yd>=1020&&p.yd<=2970);return fracEq(q,3*p.yd,1);},
+ 'wage-per-hour':(q,p)=>{assert.equal(p.d*p.h,40);return fracEq(q,p.p,p.d*p.h);},
+ 'tons-pounds':(q,p)=>typeof p.q==='string'?fracEq(q,...mulF(Fd(p.q),[2000,1])):fracEq(q,p.q,2000),
 };
 const checks={};let tasks=0;
 for(const c of P.catalog){tasks++;const seen=new Set();
@@ -192,7 +229,7 @@ for(const c of P.catalog){tasks++;const seen=new Set();
   if(q.choices){const vals=q.choices.map(x=>String(x.value));assert.equal(new Set(vals).size,vals.length,'distinct choices');assert(q.choices.length===3||q.choices.length===2&&(['compare-number-line','metric-compare','decimal-compare'].includes(c.recipe)||c.recipe==='fans-ratio'&&E.answerText(q)==='1 to 1'||['estimate-mixed-product','mixed-expression'].includes(c.recipe)&&E.answerText(q)==='1'),c.sourceId+' choice count');
    for(const ch of q.choices){assert(ch.mistake&&ch.mistake.length>8,c.sourceId+' named mistake');assert(!/NaN|undefined|Infinity/.test(ch.value));if(a.kind!=='teacher'&&!/→/.test(ch.value))assert(!E.checkAnswer(q,ch.value).answerCorrect,c.sourceId+' distractor accepted: '+ch.value);}}
   // Drawings where the source draws.
-  if(['number-line-average','segment-bc','number-line-point','spinner','dart-board','right-triangle-area','diagonal-plot','step-area','l-shape-area','square-triangle-area','tally-votes','histogram-walk','circle-graph','right-triangle-x','isosceles-angle','complementary-expression','right-angle-chain','parallel-zigzag','crossing-triangles','triangle-line-angles','crossing-lines-triangle','compare-number-line','percent-shaded-square','percent-grid','ruler-length','angle-kind','protractor-read','regular-polygon-pick','step-perimeter','quad-perimeter','rectangle-abcd'].includes(c.recipe)||c.variant==='identify'){assert(/<svg[\s\S]*<\/svg>/.test(q.givens.svg||''),c.sourceId+' drawing');}
+  if(['fdp-table','add-measures','number-line-average','segment-bc','number-line-point','spinner','dart-board','right-triangle-area','diagonal-plot','step-area','l-shape-area','square-triangle-area','tally-votes','histogram-walk','circle-graph','right-triangle-x','isosceles-angle','complementary-expression','right-angle-chain','parallel-zigzag','crossing-triangles','triangle-line-angles','crossing-lines-triangle','compare-number-line','percent-shaded-square','percent-grid','ruler-length','angle-kind','protractor-read','regular-polygon-pick','step-perimeter','quad-perimeter','rectangle-abcd'].includes(c.recipe)||c.variant==='identify'){assert(/<svg[\s\S]*<\/svg>/.test(q.givens.svg||''),c.sourceId+' drawing');}
   if(['subtraction-number-line','name-linear-figures','draw-angle','congruent-pairs'].includes(c.recipe)||c.variant==='draw')assert(/<svg/.test((q.givens.svg||'')+(q.teacherSvg||'')),c.sourceId+' teacher drawing');
   assert(/<div class="engine-question">/.test(E.renderQuestion(q)));
  }

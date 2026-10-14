@@ -2,7 +2,7 @@
 import json,pathlib,subprocess
 from fractions import Fraction as F
 root=pathlib.Path(__file__).resolve().parents[1]
-js="""const E=require('./src/course-banks'),T=require('./src/measurement-bank');for(const c of T.catalog)for(let index=0;index<1000;index++){const q=E.generate(c.sourceId,{seed:'measure-audit',index});if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'measure-audit',index})))throw Error('Replay');if(!E.checkAnswer(q,E.answerText(q)).answerCorrect||E.checkAnswer(q,'nonsense').answerCorrect||E.checkAnswer(q,'0').answerCorrect)throw Error('Answer contract');console.log(JSON.stringify({recipe:c.recipe,q}));}"""
+js="""const E=require('./src/course-banks'),T=require('./src/measurement-bank');for(const c of T.catalog.filter(c=>E.catalog.find(x=>x.sourceId===c.sourceId).family===c.family))/* entries replaced by a coverage port are audited by tests/port87.cjs */for(let index=0;index<1000;index++){const q=E.generate(c.sourceId,{seed:'measure-audit',index});if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'measure-audit',index})))throw Error('Replay');if(!E.checkAnswer(q,E.answerText(q)).answerCorrect||E.checkAnswer(q,'nonsense').answerCorrect||E.checkAnswer(q,'0').answerCorrect)throw Error('Answer contract');console.log(JSON.stringify({recipe:c.recipe,q}));}"""
 p=subprocess.Popen(['node','-e',js],cwd=root,stdout=subprocess.PIPE,text=True);count=0;rounded=0;ties=0;seen=set()
 for line in p.stdout:
  x=json.loads(line);r=x['recipe'];q=x['q'];v=q['givens']['parameters'];seen.add(r)
@@ -38,5 +38,6 @@ for line in p.stdout:
  assert a>0
  if ans['mode']=='money':assert (a*100).denominator==1
  count+=1
-assert p.wait()==0 and count==26000 and ties>0
+# SX870264 is served by its coverage port (audited by tests/port87.cjs).
+assert p.wait()==0 and count==25000 and ties>0
 print(f'PASS: {count:,} independent cases; {len(seen)} recipes; {rounded:,} final-rounding cases including {ties} exact half-cent ties')

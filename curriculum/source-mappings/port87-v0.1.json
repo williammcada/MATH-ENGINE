@@ -3326,5 +3326,758 @@
    "51d03336d946d5b6ef3283345b2e7c6a5b12403a19931bb8c8f36d9e03567363",
    "5918412b8f553687855216c81149c8218347503cab781e295472c6de5ab12342"
   ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870215",
+  "sourceRecord": "course-87-en:item:SX870215",
+  "lessonId": "course-87-en:scope:41",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "evaluate-xy",
+  "variant": null,
+  "title": "Evaluate an expression with three variables",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "e4b4287dff0f6ab34c9e5a4334923dad03493e8772e92a2d43100f94484b7b63",
+   "3e3fb5e5948d20ae84478e88817c1ec46ea745a9fecf68c8083bda495686057a",
+   "dc62908b03eeb4de2c32f358dc15f23beb40f4c27fbd1ca6d8835b1dc994b25b",
+   "57fe0855cf5a1502e3c8aa3ffbf6baaba378429c98cce724e8ba0e1c9738e77e"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870216",
+  "sourceRecord": "course-87-en:item:SN870216",
+  "lessonId": "course-87-en:scope:41",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "evaluate-xy",
+  "variant": "decimal-sum",
+  "title": "Evaluate an expression with decimal values",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "e4b4287dff0f6ab34c9e5a4334923dad03493e8772e92a2d43100f94484b7b63",
+   "e1505410c0dc999ec3e8e90a2f773a81ae4b991bf2348e5278bf5089fcaf5512",
+   "a4d5c3228e268ed83fa333468c891e83cc6cddb98b3fde6f784d2d0e353b33a0",
+   "9ad4438455844867a7eec4f62a5b26a4b7a4897a19809aaf3946e01595757804"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870347",
+  "sourceRecord": "course-87-en:item:SN870347",
+  "lessonId": "course-87-en:scope:41",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "evaluate-paren",
+  "variant": null,
+  "title": "Evaluate an expression with parentheses",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "00f4e4d7afd72f7b266b8d9736e126a57e736ffc8001e96da4c0a73c3be9c8f9",
+   "85dce0fe2fb78f617fc7755ba49b116456414094664445ffc389859249499c7c",
+   "ccc852205f3d3a089342bca15d96be0d871bae1e571d5b098787e92d49372020",
+   "9eef56b5ab01ae631f7cf54d227ba1abd9e1d33bd444900b73b82a68524e3f36"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870217",
+  "sourceRecord": "course-87-en:item:SX870217",
+  "lessonId": "course-87-en:scope:41",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "evaluate-paren",
+  "variant": "decimal",
+  "title": "Evaluate an expression with parentheses and decimals",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "a7b088baf577475ccc79bf1cf7409525007dc937afcbc2918a283b21212a3aef",
+   "9b60e568a0c48e9439810a240f4c8ad11a6a24396d149020d12ae59b8333d065",
+   "e94c0071a26f81f6e3b5e2563d23a36fe99797aa3d774ad647319de7bcd51740",
+   "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870218",
+  "sourceRecord": "course-87-en:item:SN870218",
+  "lessonId": "course-87-en:scope:41",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "evaluate-paren",
+  "variant": "minus",
+  "title": "Evaluate an expression with parentheses",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "e4b4287dff0f6ab34c9e5a4334923dad03493e8772e92a2d43100f94484b7b63",
+   "f9a0081c2384614c7159f562d1f69622d418a84a4828b177fa2764304bb362bb",
+   "3acb30db6bbb882e3895e073f54ea828c7c4d3502bc41da1fe8a94c3b82d4fe0",
+   "486776b8ae37bdedd9cd0170b8f04c9131f7bf0bee52445f5c3f701d5b01721a"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870349",
+  "sourceRecord": "course-87-en:item:SN870349",
+  "lessonId": "course-87-en:scope:41",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "distribute",
+  "variant": null,
+  "title": "Expand with the distributive property",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "e4086f1ea66e3693ceed068c48a1945a92a02dbd1386fa38815ea5bb3341756b",
+   "2d8df189e02bb93f067372e9a80b67f25d018dd77daec48f1a510e3aa8c64608",
+   "dc9d51cfa5de577a145f90435166c1c28d9bc2ed628df894773f318f5bcdf7de",
+   "627fc083c65f6d8c99362c2dd028263b1b453e08438cb938f9cf46d493fbcec0"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870219",
+  "sourceRecord": "course-87-en:item:SX870219",
+  "lessonId": "course-87-en:scope:42",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "round-repeating",
+  "variant": null,
+  "title": "Round a repeating decimal",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "a8cc653edf51b973ae92d17622a5c99a5b5f4d02f7beae7fb046fcb7385adb64",
+   "e1a602688e1959a4123452a7a827572796a36edb2c2ee842c79128cd8e1d7595",
+   "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870220",
+  "sourceRecord": "course-87-en:item:SX870220",
+  "lessonId": "course-87-en:scope:42",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "divide-repeating",
+  "variant": null,
+  "title": "Divide and write a repeating decimal with a bar",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "b2bcbc5d82fcba91bbd9b437a3b18bea75046a9cab6072f20e843614c5e72ab6",
+   "2283e90e16df977d84371737a6a94b1d4a36d75fef0d1332defef99c037ac114",
+   "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870220",
+  "sourceRecord": "course-87-en:item:SN870220",
+  "lessonId": "course-87-en:scope:42",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "fraction-repeating",
+  "variant": null,
+  "title": "Write a fraction as a repeating decimal",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "9fe41f00fd70e8ac6f31cebbf3005090ef77d59e7cd86de7595e1f0f640266d5",
+   "606078f24ec803468b1d1d4166e3727b733aa9e3836621fe24aca271645f1171",
+   "b7be704a9d576196d161f27eb9b0140c8bf86ce2a2aec7be1cbbb0c2a217d244"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870224",
+  "sourceRecord": "course-87-en:item:SN870224",
+  "lessonId": "course-87-en:scope:43",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "decimal-to-fraction",
+  "variant": "fiveths",
+  "title": "Write a decimal as a fraction",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "dbb1cd813f4500b406f18d357b29ca4c87cf9e2731306c0fbe5fb527bd1d9b7f",
+   "4915050ec786069cee87ee0a4a3f57fa80fd7c926f71f1717a4441e409f858d2",
+   "a05c224cd29bd36fa622f91b0c05c69bd093cba6956857a899d6be8720ae9825"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SMAH0596",
+  "sourceRecord": "course-87-en:item:SMAH0596",
+  "lessonId": "course-87-en:scope:43",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "decimal-to-fraction",
+  "variant": null,
+  "title": "Write a decimal as a mixed number",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "d37f4012536b7536b2dff2e8b7fe46c85373fc8ba67892bd914a8f1af7eb7f5e",
+   "b57ad621f62c9119cf65cc940427741550f9da1d985dd03a89c8c3ab0c6a8808",
+   "a7d1739621d1551e17f4a88403b85c734cf96ae94f57f1d537fa3cdb9c5f0736"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SNAH0208",
+  "sourceRecord": "course-87-en:item:SNAH0208",
+  "lessonId": "course-87-en:scope:43",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "decimal-to-mixed-thousandths",
+  "variant": null,
+  "title": "Write a decimal as a mixed number in lowest terms",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "385378337c9ac0051bf996173a062aa1ff5783618e01f2efdf373a7594360d84",
+   "e56ea77cbcf01265050b5478ea7c84afd518d984ef0ca438c40f794d3a2708d9",
+   "bddb269f476ed53a93f4ea62fd43dd486a2b0df725718a7ccd028b04d92d7ed3",
+   "b367ee478752476aedd408e08284985f0bd01467f329fd0ed29f6d209a5b9c6b",
+   "f21e06f9540ad8672d29d6830f2c788b4afb6f3034189bf33091e1f04bb2b6b2",
+   "f17159a2b8aef856c323341ecfba57437c894b78d3b71eae68d4d9173a03a1b0"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870366",
+  "sourceRecord": "course-87-en:item:SX870366",
+  "lessonId": "course-87-en:scope:43",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "fraction-to-decimal",
+  "variant": "improper",
+  "title": "Write a fraction as a decimal",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "6810c26a60783534aad6f064b8b941be4b0f37205d8302b1a51cfc74ee602052",
+   "e6d12c2f1cda976cdaf7c36a4020a3565f46fbce1f96389cd220b6df03d89854",
+   "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870604",
+  "sourceRecord": "course-87-en:item:SN870604",
+  "lessonId": "course-87-en:scope:43",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "fraction-to-decimal",
+  "variant": "tenths",
+  "title": "Write a fraction as a decimal",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "02d4492527f809110d8e2f7af5526c9e10a4a4dd7155b02d6ab75566bfee6734",
+   "04fca3cde21b69118c03872705473444cbdcaee904e22a670a640477d37d1f59",
+   "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870606",
+  "sourceRecord": "course-87-en:item:SN870606",
+  "lessonId": "course-87-en:scope:43",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "fraction-to-decimal",
+  "variant": "eighths",
+  "title": "Write a fraction as a decimal",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "9112f02ac7496d972e4ec7e5acb348da6771eb87faa2a02b7b939f925d923312",
+   "0c5cceaea4d80b7ca115d2e6ce967adabfadd52014cebbc5ee3fc9537e8c897d",
+   "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870605",
+  "sourceRecord": "course-87-en:item:SN870605",
+  "lessonId": "course-87-en:scope:43",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "fraction-to-decimal",
+  "variant": null,
+  "title": "Write a fraction as a decimal",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "5fd9d6bcc08df137b8c166231c3c75afded5d41d78d51e72b273189cf0187db6",
+   "82a19b79dbde52b579fd49f613b65dc9942438bbb11838930656c779a4743d43",
+   "370d0a2d87b4faf4ffd435992e6754d8f5c9f6f0e11c039c8beef40b42d63bae",
+   "fd939635025eaeb027b10d88e0d2d78e1c9729b44c23794f23603de93aac94d6",
+   "79037fd9899cd586a22b2a50d527722005bb957a47fe41136d79280231c11e2d",
+   "af8541525db0eb46a9e649684fd8545d966fdc526db92f35eb86c238e2af437c"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870232",
+  "sourceRecord": "course-87-en:item:SN870232",
+  "lessonId": "course-87-en:scope:44",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "chairs-rows",
+  "variant": null,
+  "title": "Interpret a remainder: chairs in rows",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "b2f465d1e83f9e5ddc4747f1820b760276c3e8a29aa62172b98e5381551476df",
+   "fd023f20f7bfbe13d0b8dda009fcf264298ea9c04ee8b1a75d981c59eaa3cbdf",
+   "f4e654d58882d4034529aad208532203d44ab6f530f79361e1c74842ca91858f"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870319",
+  "sourceRecord": "course-87-en:item:SN870319",
+  "lessonId": "course-87-en:scope:44",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "capsules",
+  "variant": null,
+  "title": "Divide and round to the nearest hundredth",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "7eac74bb7bbee0b6f704116228895674a4c23808df6e59db4a29a139cee20e9b",
+   "2886d83019a10679a2e9eaf88b3ebd89788a7d817b7cc74241623568f817817a",
+   "e1a6790ab936658e4e34f3742c06be800205284453277d6ae5864a15ceed0ada"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870227",
+  "sourceRecord": "course-87-en:item:SX870227",
+  "lessonId": "course-87-en:scope:45",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "divide-by-decimal",
+  "variant": "round",
+  "title": "Divide by a decimal and round",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "f8818dc7646a1f164c405f82b1b8a2ec4ef6c8d643df169986aaee0603b248b3",
+   "d0a6ca32321666959c030f98b4c5022305db5842caf8e7eca284e8129ff010e4",
+   "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870228",
+  "sourceRecord": "course-87-en:item:SX870228",
+  "lessonId": "course-87-en:scope:45",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "divide-by-decimal",
+  "variant": "thousandths",
+  "title": "Divide by a decimal",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "016a7e980f8dbe31a92c2e837ea5397e31532abfcbdc40110f7108dc818afe15",
+   "f9f3d7bf0fb410e518890f5df20facc6a83e8c55ff497e46481bee3edf10e35b",
+   "d80e5e7e74217bb601ff46c2c0167cf04e2f370e534c0d3abf3212a5138eb9a6",
+   "c71505bcc781ed7130cf6a3f2febbcc832f53592eb0f6e5905418a947843a172"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870229",
+  "sourceRecord": "course-87-en:item:SX870229",
+  "lessonId": "course-87-en:scope:45",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "divide-by-decimal",
+  "variant": "hundredths",
+  "title": "Divide by a decimal",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "016a7e980f8dbe31a92c2e837ea5397e31532abfcbdc40110f7108dc818afe15",
+   "7a2ed83fc99f47a003f115954a503c5c906545aff29f3f88d71c815b490adfde",
+   "75672d12438dcbbd30a028709401b1ed4b6b521eae520461a63f18b275018847",
+   "c71505bcc781ed7130cf6a3f2febbcc832f53592eb0f6e5905418a947843a172"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870237",
+  "sourceRecord": "course-87-en:item:SN870237",
+  "lessonId": "course-87-en:scope:45",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "divide-by-decimal",
+  "variant": null,
+  "title": "Divide by a decimal",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "416d9753d6fe855eb1c9b187c142e81475ee384cac07772aa22a4d19662298e6",
+   "12ef7b59780aefc17627bc9fdc2cf3cdd1a312f1d5d81c235bc1d1c530ca9cb3",
+   "3e13e7b2b04f7630f890808500d95a8b9fa0afb98f5707f67456ff13d8764dd3",
+   "7d78172bb70e4b621b7186a08dda788a1f79f99cfc4666b4627c39470fa40ba3"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870230",
+  "sourceRecord": "course-87-en:item:SX870230",
+  "lessonId": "course-87-en:scope:45",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "solve-decimal-coefficient",
+  "variant": null,
+  "title": "Solve an equation with a decimal coefficient",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "5ea15b600c889b64eded47f12ca14b4ad396f06f4401ffc977fceeb8d37677a5",
+   "e34987b644f42b77f4bf3e28d82666937794278615fc37c68d496bbbaaf983db",
+   "eb0fc05fdcbf3f526c7bb07eef984bf1b4c394b835c7d38f25915166bd396c07",
+   "bc51472720d9b91d50333b16b72867d26031596b5d1e28a12386ee414fea2771"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870150",
+  "sourceRecord": "course-87-en:item:SX870150",
+  "lessonId": "course-87-en:scope:46",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "yogurt-saving",
+  "variant": null,
+  "title": "Saving per item when buying by the case",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "4495389033305e0c970d8d020615242776dc83b78f5501b55720f357d8e816f5",
+   "463b636c14cebe775de1e791b05a00cb09a9e48a4c43735dd7695561ded5d500",
+   "b459d11894931a9329668dfcd197d92ee0239f592ac364a63d452a72d922ddc7"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870368",
+  "sourceRecord": "course-87-en:item:SX870368",
+  "lessonId": "course-87-en:scope:46",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "cost-each",
+  "variant": null,
+  "title": "Unit price of a collection",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "757bc89928deff1355e1cdf3b24114bd2d4a7ec72606a2afcc0401a262bd405c",
+   "fdf5807ec8f78c3f0d117804c83950918cd359d9f0a2af5e2da7cb50b1fe01a1",
+   "f66e36f9ee8297b23fb4a1dc08b02bb7df181827a8653be6fe30dfc31dad3561"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870241",
+  "sourceRecord": "course-87-en:item:SN870241",
+  "lessonId": "course-87-en:scope:46",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "stationery-each",
+  "variant": null,
+  "title": "Unit price from a total",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "bc5bac4c2b1740f67ba8b7b6dbffda2c094361ef8704260e01710d3d2169d8eb",
+   "4dd6d5103239e2cacee660edb36936d021f88702113425afa43a27dbead3dc4e",
+   "dff2735815f041c41eae9c54d8c8475dbf3d77e92eafc2b0fabfcc78c28121f8"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870232",
+  "sourceRecord": "course-87-en:item:SX870232",
+  "lessonId": "course-87-en:scope:46",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "round-trip-speed",
+  "variant": null,
+  "title": "Average speed for a round trip",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "2fe21a5fe0b2697185e32b035059f299e166bf97a5a3ca98bde8b66c23cd1eef",
+   "8fea5de326f71696d211ea7f4acee58baebcb0f1a7f4764ccf0a7e26031d542a",
+   "e828000882dc62d04a6651ab80aa88bbdeafedf3c568c6141cb59b41604148d6"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870233",
+  "sourceRecord": "course-87-en:item:SX870233",
+  "lessonId": "course-87-en:scope:46",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "trail-speed",
+  "variant": null,
+  "title": "Average speed with a mixed-number distance",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "35fd25cf7812c23294974f22fae640456efbfc795b55a7bbd4ee4dd427440cac",
+   "af2b2c93cc60de0151f2086e52dd78c4a7072c14b18fed62e67bbb342ebe4230",
+   "494dbb2e471ef5e1674aec4d22461af35d14bf9b7179b1b50f684174a90ead1f"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870234",
+  "sourceRecord": "course-87-en:item:SX870234",
+  "lessonId": "course-87-en:scope:46",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "tip",
+  "variant": null,
+  "title": "A 15% tip",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "1a4918692aa4a6f6d9a6a210601569896d79a10b4d9d8042316e904f81927a75",
+   "9e512a0420b46131a8c2361da26a9a06349d720d2f1d416b276c35022cbd9165",
+   "b459d11894931a9329668dfcd197d92ee0239f592ac364a63d452a72d922ddc7"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870238",
+  "sourceRecord": "course-87-en:item:SX870238",
+  "lessonId": "course-87-en:scope:46",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "tax-total",
+  "variant": null,
+  "title": "Sales tax and total price",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "3b05f3a4e1ce46cfcc8dd347cc7c9bbd913130d52420e5d271bfbe9a11a7519d",
+   "6de70a87b34639d5e88ce49ddb229c3bd962031e925c00e02a97eb2e2b5d7119",
+   "b38501e4fdc1af28f7a6c2921a2c0b76e6135b0099f27c08a1cc23cf142a8754"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870248",
+  "sourceRecord": "course-87-en:item:SN870248",
+  "lessonId": "course-87-en:scope:47",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "powers-of-ten-quotient",
+  "variant": null,
+  "title": "Divide powers of 10",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "d1cdffb6a50993ed24537fa8a94d9167ab1eaf3cf99ae8d5ec215564056ebef4",
+   "9f0dc7d5e6c3dba03e9bf3875de5e036664cc75ade073de79ee7f80497d6a287",
+   "e450f35707dc7b38e759e1c38acad9a6dbe82d37662c115c4a8f7dc6c170d062"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870250",
+  "sourceRecord": "course-87-en:item:SN870250",
+  "lessonId": "course-87-en:scope:47",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "missing-exponent",
+  "variant": null,
+  "title": "Missing exponent in a product of powers of 10",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "ce484c3d30145e30327e75e28e7fcf5cf0bc43c4f50d0799cff5f0fa864885a3",
+   "103f97b5a61f1defded492e3508b5821a40c87b75e6b9d4ae255b6e2435e525e",
+   "f6b4151d6ac3f4b52b8a9c5d438ee2abd464c7ce7d211bd0d762a5cbbdcd25ce",
+   "9ad4438455844867a7eec4f62a5b26a4b7a4897a19809aaf3946e01595757804"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870251",
+  "sourceRecord": "course-87-en:item:SN870251",
+  "lessonId": "course-87-en:scope:47",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "number-names-standard",
+  "variant": null,
+  "title": "Write a number named in millions, billions or trillions in standard form",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "a26feff3e262237b1f3af266806630a316aa0d7215c3b419bf64fdb0fe656840",
+   "324e08c135306163a2a26a3a036fc22eca59edd386d06257c379eef01948d9bb",
+   "9ad4438455844867a7eec4f62a5b26a4b7a4897a19809aaf3946e01595757804"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870245",
+  "sourceRecord": "course-87-en:item:SX870245",
+  "lessonId": "course-87-en:scope:48",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "fdp-table",
+  "variant": "percent-and-fraction",
+  "title": "Complete a fraction-decimal-percent table",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "cf51fc89c64e9ffd08ffd598405c85553407156441bd25de2362a7dfc4bbc02e",
+   "cc584e4a60bdcef44285e5b06bea5ec1b1b3ccbf9e5685c0e740ffc5e3e93bf3",
+   "fcbc2636edb2314bd39cad4a505faec5c61235924cf7df69c918bc54bb4beb0e"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870246",
+  "sourceRecord": "course-87-en:item:SX870246",
+  "lessonId": "course-87-en:scope:48",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "fdp-table",
+  "variant": "fraction-and-decimal",
+  "title": "Complete a fraction-decimal-percent table",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "a86a420aaf89693a253ff3ea1832a63d03b9da084ff8aed73ca04bc70d903039",
+   "7022846663ebda7c2b924deead957c9f93d7eac77568616837232c5d8f088181",
+   "fcbc2636edb2314bd39cad4a505faec5c61235924cf7df69c918bc54bb4beb0e"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870247",
+  "sourceRecord": "course-87-en:item:SX870247",
+  "lessonId": "course-87-en:scope:48",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "fdp-table",
+  "variant": null,
+  "title": "Complete a fraction-decimal-percent table",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "3fa51ec50e0dbd1f46f861b0e203ceaea9cd285696f73ebc7ad2fa30850e7b3a",
+   "740f45039bcde4e8540a8fd8ca3d51a1eb5b21a40d44b85357d488d29aee421e",
+   "0e6903135ad4fb6b397d5423866998ee5f514f4678453247f399a5dd711d0314"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870253",
+  "sourceRecord": "course-87-en:item:SX870253",
+  "lessonId": "course-87-en:scope:49",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "add-measures",
+  "variant": null,
+  "title": "Add yards, feet and inches",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "6e1666546b349360f49e4afdfe351e6fa7a7faed21cd5c97a04aebc5b9f74511",
+   "e457c84d1ffc273a4b7694307dc5bcc43d875f17ef5733f53c3a94b5abe67755",
+   "d44595b63021c2495c3d19ef1565254963fe1a53973f9f6262d4a3929b2262f2",
+   "d59be181d072508d985cf45e1454f6ddb4dc8228217de9e8cde5418227e293c4"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870254",
+  "sourceRecord": "course-87-en:item:SX870254",
+  "lessonId": "course-87-en:scope:49",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "add-measures",
+  "variant": "inches",
+  "title": "Add inches to yards, feet and inches",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "6e1666546b349360f49e4afdfe351e6fa7a7faed21cd5c97a04aebc5b9f74511",
+   "4d8ff16f4e0a9a45c3414a0b423b2cc28c59e94c4bcc62496f7d6007c682c3b4",
+   "f9dbfd0184553a5eb8f136a32cb455068d61444e5b1b04c24ebd008dbe95be0e",
+   "20e26f6d443273176cc67609b3120b8851a75d862d929fccfc45b39963bb4615"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870255",
+  "sourceRecord": "course-87-en:item:SX870255",
+  "lessonId": "course-87-en:scope:49",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "add-measures",
+  "variant": "time",
+  "title": "Add hours, minutes and seconds",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "6e1666546b349360f49e4afdfe351e6fa7a7faed21cd5c97a04aebc5b9f74511",
+   "b70e2872519fcd87c78029307b495838cfad2b794775bd904f104fc1143dd2e2",
+   "438281052ce3ee6109a0270460667151bda2e1affeae6b6c3a220f2568d3e90e",
+   "e8656be58b944763954197754b5995ade1f7e9b628bb1f019dcf7ed15f9369ed"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870259",
+  "sourceRecord": "course-87-en:item:SN870259",
+  "lessonId": "course-87-en:scope:49",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "add-measures",
+  "variant": "time-2",
+  "title": "Add hours, minutes and seconds",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "6e1666546b349360f49e4afdfe351e6fa7a7faed21cd5c97a04aebc5b9f74511",
+   "26877c453d9ac2bc1542c9b79d95f70846407f13b33e6f8e8606eb551d51847f",
+   "d858c5a972ae1a9efa0eaae6831c0200f137761aaa95d702264bcd221cd35b99",
+   "87aad7934ef401caa34ccdbcc2f3e707598dde0678676b793657f485350ad75a"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870264",
+  "sourceRecord": "course-87-en:item:SX870264",
+  "lessonId": "course-87-en:scope:50",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "yards-to-feet",
+  "variant": null,
+  "title": "Convert yards to feet with a unit multiplier",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "6adba4e0a77e2868c29cc078bf4affcbe69cf0a86f022357b665e2b1aa0298f7",
+   "3c37243b152a586b50ec6cf528fb633597cc8146f4054f651f84337ec0df855b",
+   "e11378873c168ba506054c2c0be7c50cd0bd4f10e4de5c332bf95a38e6f62b3e"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870269",
+  "sourceRecord": "course-87-en:item:SX870269",
+  "lessonId": "course-87-en:scope:50",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "wage-per-hour",
+  "variant": null,
+  "title": "Chain unit multipliers: dollars per hour",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "6e1666546b349360f49e4afdfe351e6fa7a7faed21cd5c97a04aebc5b9f74511",
+   "06cf88a6c27cf72c3ca48151451f15a447406feb7a7fbaecd0380075159ee3fb",
+   "0bd57b0c067e8ef547c00ce125298441cb5afdaf4cccc2a726e7f1f99ec14d41",
+   "0f763c80599861d480c160ecbf3c2fc946d0e489f4ce2a7b4c7236b3c2d601da"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870262",
+  "sourceRecord": "course-87-en:item:SN870262",
+  "lessonId": "course-87-en:scope:50",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "tons-pounds",
+  "variant": null,
+  "title": "Convert between tons and pounds",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "43661bb1d7e05cec5d203e696d2d99dfdf68f9d9e667a6c49c0c0bcbef311068",
+   "9a49f1658fb019509cc5b96fa61228446c7f4f6a1a0bb77d27cd93e354a75408",
+   "9ad4438455844867a7eec4f62a5b26a4b7a4897a19809aaf3946e01595757804"
+  ]
  }
 ]

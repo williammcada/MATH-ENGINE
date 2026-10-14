@@ -699,7 +699,8 @@
           "=/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00103",
           "=/intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085",
           "=/intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086",
-          "k/missing-dividend"
+          "k/missing-dividend",
+          "k/solve-decimal-coefficient"
         ],
         "sourceIds": [
           "course-87-en:item:SN870012",
@@ -756,7 +757,8 @@
           "algebra-half-en:authored:M3-37-1",
           "algebra-half-en:authored:M3-40-3",
           "algebra-1-en:authored:M4-9-3",
-          "course-87-en:item:SN870015"
+          "course-87-en:item:SN870015",
+          "course-87-en:item:SX870230"
         ]
       },
       {
@@ -1057,7 +1059,9 @@
           "f/formula",
           "c/41.1",
           "k/evaluate-quotient",
-          "k/evaluate-product-over-sum"
+          "k/evaluate-product-over-sum",
+          "k/evaluate-xy",
+          "k/evaluate-paren"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-1.5",
@@ -1067,7 +1071,12 @@
           "course-1-en:authored:M2-5a92e1ff2ff9-1",
           "algebra-half-en:authored:M3-32-1",
           "course-87-en:item:SN870005",
-          "course-87-en:item:SN870006"
+          "course-87-en:item:SN870006",
+          "course-87-en:item:SX870215",
+          "course-87-en:item:SN870216",
+          "course-87-en:item:SN870347",
+          "course-87-en:item:SX870217",
+          "course-87-en:item:SN870218"
         ]
       },
       {
@@ -1482,7 +1491,8 @@
           "b/positive-power",
           "f/power-small",
           "k/power-sum",
-          "k/power-difference"
+          "k/power-difference",
+          "k/powers-of-ten-quotient"
         ],
         "sourceIds": [
           "algebra-1-en:node:242",
@@ -1493,7 +1503,8 @@
           "course-1-en:authored:M2-e40d641cb9a0-2",
           "algebra-half-en:authored:M3-16-3",
           "course-87-en:item:SX870139",
-          "course-87-en:item:SX870075"
+          "course-87-en:item:SX870075",
+          "course-87-en:item:SN870248"
         ]
       },
       {
@@ -2217,10 +2228,14 @@
         "demand": "Solve a distance-rate-time problem",
         "prerequisites": "Use consistent units and d equals rt",
         "selectors": [
-          "t/distance-rate"
+          "t/distance-rate",
+          "k/round-trip-speed",
+          "k/trail-speed"
         ],
         "sourceIds": [
-          "algebra-half-en:node:403"
+          "algebra-half-en:node:403",
+          "course-87-en:item:SX870232",
+          "course-87-en:item:SX870233"
         ]
       },
       {
@@ -2800,10 +2815,11 @@
           "c/31.2",
           "c/43.1",
           "p/decimal-fraction-small",
-          "p/decimal-fraction-fiftieths"
+          "p/decimal-fraction-fiftieths",
+          "k/decimal-to-fraction",
+          "k/decimal-to-mixed-thousandths"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870224",
           "course-87-en:item:SNAH0101",
           "course-87-en:item:SMAH0068",
           "algebra-half-en:node:148",
@@ -2811,7 +2827,10 @@
           "course-87-en:authored:MCADA-43.1",
           "course-1-en:authored:M2-9b4f3daaed5f-1",
           "course-1-en:authored:M2-e40d641cb9a0-3",
-          "algebra-half-en:authored:M3-15-3"
+          "algebra-half-en:authored:M3-15-3",
+          "course-87-en:item:SN870224",
+          "course-87-en:item:SMAH0596",
+          "course-87-en:item:SNAH0208"
         ]
       },
       {
@@ -2829,7 +2848,11 @@
           "p/percent-decimal-integer",
           "p/percent-decimal-small",
           "p/circle-percent",
-          "p/sector-percent"
+          "p/sector-percent",
+          "k/fraction-to-decimal",
+          "k/fdp-table",
+          "k/fraction-repeating",
+          "k/divide-repeating"
         ],
         "sourceIds": [
           "course-87-en:item:SX870224",
@@ -2853,7 +2876,16 @@
           "algebra-half-en:authored:M3-15-1",
           "algebra-half-en:authored:M3-28-3",
           "algebra-half-en:authored:M3-53-1",
-          "algebra-half-en:authored:M3-55-1"
+          "algebra-half-en:authored:M3-55-1",
+          "course-87-en:item:SX870220",
+          "course-87-en:item:SN870220",
+          "course-87-en:item:SX870366",
+          "course-87-en:item:SN870604",
+          "course-87-en:item:SN870606",
+          "course-87-en:item:SN870605",
+          "course-87-en:item:SX870245",
+          "course-87-en:item:SX870246",
+          "course-87-en:item:SX870247"
         ]
       },
       {
@@ -3942,11 +3974,13 @@
         "demand": "Interpret the quotient or remainder in a packing or transport situation",
         "prerequisites": "Decide whether to round up, count complete groups or report leftovers",
         "selectors": [
-          "f/remainder-context"
+          "f/remainder-context",
+          "k/chairs-rows"
         ],
         "sourceIds": [
           "intermediate-4-en:authored:M2-1430cff8d988-1",
-          "course-1-en:authored:M2-c0b887a9fa8a-1"
+          "course-1-en:authored:M2-c0b887a9fa8a-1",
+          "course-87-en:item:SN870232"
         ]
       }
     ],
@@ -4145,14 +4179,16 @@
           "f/decimal:divwhole",
           "e/1.7",
           "c/35.3",
-          "k/decimal-divide-whole"
+          "k/decimal-divide-whole",
+          "k/capsules"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-1.7",
           "course-87-en:authored:MCADA-35.3",
           "course-1-en:authored:M2-e2dd66f0d06d-4",
           "course-1-en:authored:M2-37ac098aa373-1",
-          "course-87-en:item:SX870189"
+          "course-87-en:item:SX870189",
+          "course-87-en:item:SN870319"
         ]
       },
       {
@@ -4165,7 +4201,8 @@
           "@/course-1-en:bank:C1_Section05:item:C1_S05_00077",
           "@/course-1-en:bank:C1_Section05:item:C1_S05_00078",
           "@/course-1-en:bank:C1_Section05:item:C1_S05_00105",
-          "k/decimal-divide-decimal"
+          "k/decimal-divide-decimal",
+          "k/divide-by-decimal"
         ],
         "sourceIds": [
           "course-1-en:bank:C1_Section05:item:C1_S05_00076",
@@ -4176,7 +4213,11 @@
           "course-1-en:authored:M2-11e470490eec-1",
           "algebra-half-en:authored:M3-7-2",
           "algebra-1-en:authored:M4-4-6",
-          "course-87-en:item:SX870193"
+          "course-87-en:item:SX870193",
+          "course-87-en:item:SX870227",
+          "course-87-en:item:SX870228",
+          "course-87-en:item:SX870229",
+          "course-87-en:item:SN870237"
         ]
       }
     ],
@@ -4993,14 +5034,22 @@
         "selectors": [
           "f/rate",
           "c/46.1",
-          "c/46.2"
+          "c/46.2",
+          "k/cost-each",
+          "k/stationery-each",
+          "k/yogurt-saving",
+          "k/wage-per-hour"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-46.1",
           "course-87-en:authored:MCADA-46.2",
           "intermediate-4-en:authored:M2-f7b035ecb88d-1",
           "course-1-en:authored:M2-8c34efb217fa-2",
-          "algebra-half-en:authored:M3-34-2"
+          "algebra-half-en:authored:M3-34-2",
+          "course-87-en:item:SX870150",
+          "course-87-en:item:SX870368",
+          "course-87-en:item:SN870241",
+          "course-87-en:item:SX870269"
         ]
       },
       {
@@ -5045,7 +5094,9 @@
           "c/32.2",
           "c/32.3",
           "c/34.3",
-          "c/50.2"
+          "c/50.2",
+          "k/yards-to-feet",
+          "k/tons-pounds"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-16.1",
@@ -5063,7 +5114,9 @@
           "algebra-half-en:authored:M3-24-1",
           "algebra-half-en:authored:M3-24-2",
           "algebra-half-en:authored:M3-24-3",
-          "algebra-2-en:authored:M6-53-1"
+          "algebra-2-en:authored:M6-53-1",
+          "course-87-en:item:SX870264",
+          "course-87-en:item:SN870262"
         ]
       },
       {
@@ -5163,12 +5216,17 @@
         "demand": "Add measures with two units",
         "prerequisites": "Regroup at the stated nondecimal radix",
         "selectors": [
-          "c/49.1"
+          "c/49.1",
+          "k/add-measures"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-49.1",
           "course-1-en:authored:M2-553ed8f5cd07-1",
-          "course-1-en:authored:M2-6988d2a0631f-1"
+          "course-1-en:authored:M2-6988d2a0631f-1",
+          "course-87-en:item:SX870253",
+          "course-87-en:item:SX870254",
+          "course-87-en:item:SX870255",
+          "course-87-en:item:SN870259"
         ]
       },
       {
@@ -5201,7 +5259,9 @@
           "c/46.4",
           "f/tax-total",
           "h/markup",
-          "t/sales-tax"
+          "t/sales-tax",
+          "k/tip",
+          "k/tax-total"
         ],
         "sourceIds": [
           "course-87-en:item:SN870247",
@@ -5210,7 +5270,9 @@
           "intermediate-4-en:authored:M2-54453aca5cd2-1",
           "intermediate-4-en:authored:M2-54453aca5cd2-2",
           "algebra-half-en:authored:M3-110-1",
-          "algebra-2-en:authored:M6-101-1"
+          "algebra-2-en:authored:M6-101-1",
+          "course-87-en:item:SX870234",
+          "course-87-en:item:SX870238"
         ]
       },
       {
@@ -12791,7 +12853,6 @@
           "=/course-87-en:authored:MCADA-16.1"
         ],
         "sourceIds": [
-          "course-87-en:item:SX870264",
           "algebra-half-en:node:197",
           "algebra-half-en:node:198",
           "algebra-half-en:node:199",
@@ -12804,7 +12865,8 @@
           "course-87-en:authored:MCADA-32.2",
           "algebra-half-en:authored:M3-23-1",
           "algebra-half-en:authored:M3-24-2",
-          "algebra-2-en:authored:M6-53-1"
+          "algebra-2-en:authored:M6-53-1",
+          "course-87-en:item:SX870264"
         ]
       },
       {
