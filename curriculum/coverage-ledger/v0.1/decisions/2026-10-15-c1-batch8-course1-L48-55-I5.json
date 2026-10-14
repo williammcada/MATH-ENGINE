@@ -1,0 +1,587 @@
+{
+ "batch": "c1-batch-8 course-1 lessons 48-55, investigation 5",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00040",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00040"
+   ],
+   "note": "Ported: Subtract mixed numbers with regrouping."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00136",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00136"
+   ],
+   "note": "Ported: Subtract mixed numbers with regrouping and reduce."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00042",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00042"
+   ],
+   "note": "Ported: Divide by tenths."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00043",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00043"
+   ],
+   "note": "Ported: Divide by hundredths."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00044",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00044"
+   ],
+   "note": "Ported: Divide a whole number by tenths."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00111",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00111"
+   ],
+   "note": "Ported: Divide by a product in parentheses."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00101",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00101"
+   ],
+   "note": "Ported: Divide by a decimal, writing zeros."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00102",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00102"
+   ],
+   "note": "Ported: Divide a square root by a decimal."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00046",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00046"
+   ],
+   "note": "Ported: Read a point on a tenths number line."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00061",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00061"
+   ],
+   "note": "Ported: Find a decimal on a tenths number line."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00049",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00049"
+   ],
+   "note": "Ported: How many of a fraction are in a whole number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00047",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00047"
+   ],
+   "note": "Ported: Quarters in a dollar amount."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00048",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00048"
+   ],
+   "note": "Ported: Marbles in a row."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00017",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00017"
+   ],
+   "note": "Ported: Difference read from a pictograph."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00079",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00079"
+   ],
+   "note": "Ported: Median of a data set."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00065",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00065"
+   ],
+   "note": "Ported: Mean, median and mode."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00062",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00062"
+   ],
+   "note": "Ported: Draw a pictograph from a table."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00063",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00063"
+   ],
+   "note": "Ported: Make a line plot and find the mean."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00064",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00064"
+   ],
+   "note": "Ported: Make a bar graph from a table."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00065",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00065"
+   ],
+   "note": "Ported: Estimate a decimal sum by rounding."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00066",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00066"
+   ],
+   "note": "Ported: Order a fraction, a decimal and a percent."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00001",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00001"
+   ],
+   "note": "Ported: Divide money and round to the cent."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00016",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00016"
+   ],
+   "note": "Ported: Round a decimal to a whole number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00080",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00080"
+   ],
+   "note": "Ported: Round a decimal to tenths or hundredths."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00014",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00014"
+   ],
+   "note": "Ported: Round money to the nearest cent."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00017",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00017"
+   ],
+   "note": "Ported: Divide a decimal by 100 mentally."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00018",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00018"
+   ],
+   "note": "Ported: Divide a decimal by 10 mentally."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00085",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00085"
+   ],
+   "note": "Ported: Divide a decimal by 10 squared."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00042",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00042"
+   ],
+   "note": "Ported: Add fractions, reduce and write a mixed number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00043",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00043"
+   ],
+   "note": "Ported: Add fractions with one denominator twice the other."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00039",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00039"
+   ],
+   "note": "Ported: Decimal computations from the decimals chart."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00020",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00020"
+   ],
+   "note": "Ported: Reduce by grouping factors equal to 1."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00023",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00023"
+   ],
+   "note": "Ported: How many of one fraction are in another."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00006",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00006"
+   ],
+   "note": "Ported: Subtract fractions, one denominator twice the other."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00025",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00025"
+   ],
+   "note": "Ported: Add fractions, one denominator four times the other."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00026",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00026"
+   ],
+   "note": "Ported: Subtract fractions, one denominator four times the other."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00027",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section06:item:C1_S06_00027"
+   ],
+   "note": "Ported: Add fractions, one denominator twice the other."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00076",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00076"
+   ],
+   "note": "Confirmed: divide a decimal by a decimal (shape-preserving arithmetic adaptation)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00077",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00077"
+   ],
+   "note": "Confirmed: divide a decimal by a decimal (shape-preserving arithmetic adaptation)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00078",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00078"
+   ],
+   "note": "Confirmed: divide a decimal by a decimal (shape-preserving arithmetic adaptation)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00105",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section05:item:C1_S05_00105"
+   ],
+   "note": "Confirmed: divide a decimal by a decimal (shape-preserving arithmetic adaptation)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00013",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00040",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00039",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00040",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00041",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00040",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00075",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00040",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00135",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00040",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00014",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00042",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00100",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00078",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00103",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00077",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00106",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00044",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00107",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00044",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00108",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00044",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00109",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00044",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00104",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00044",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00110",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00111",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00015",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00061",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00045",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00046",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00127",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00046",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00016",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00049",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section05:item:C1_S05_00128",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00079",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00064",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section05:item:C1_S05_00084",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00015",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00001",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00082",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00001",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00081",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00080",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00002",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00017",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00084",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00017",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00019",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00018",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00083",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00085",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00003",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00042",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00040",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00039",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00041",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00039",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00067",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00023",
+   "note": "The expression is missing from the bank; the choices (3/8, 3/4, 1, 3) and the lesson (dividing fractions) point to dividing one fraction by another."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00004",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00020",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00021",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00020",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00022",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00020",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00089",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00020",
+   "note": "The fraction is missing from the bank; the answer (6/7) and the lesson point to reducing by grouping factors equal to 1."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00005",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00023",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00024",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00023",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00044",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00023",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00068",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00043",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00097",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00043",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00087",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00006",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section06:item:C1_S06_00086",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section06:item:C1_S06_00027",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  }
+ ]
+}

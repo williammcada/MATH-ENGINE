@@ -105060,5 +105060,1291 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "The diameter of the front wheel of a small bike is 20 inches. In one full turn of the wheel, the bike travels about how many feet? Use 3.14 for \u03c0 and round to the nearest foot. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00040",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00040",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Subtract mixed numbers with regrouping",
+    "recipe": "c1-mixed-regroup",
+    "family": "structured-port87",
+    "title": "Subtract mixed numbers with regrouping",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:d8055671900ddcf9",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00136",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00136",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Subtract mixed numbers with regrouping and reduce",
+    "recipe": "c1-mixed-regroup",
+    "family": "structured-port87",
+    "title": "Subtract mixed numbers with regrouping and reduce",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:d8055671900ddcf9",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract. Reduce your answer. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00042",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00042",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide by tenths",
+    "recipe": "c1-dec-by-dec",
+    "family": "structured-port87",
+    "title": "Divide by tenths",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:c7fca5fa3a66a054",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide: 4.4 \u00f7 0.5 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00043",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00043",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide by hundredths",
+    "recipe": "c1-dec-by-dec",
+    "family": "structured-port87",
+    "title": "Divide by hundredths",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:c7fca5fa3a66a054",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide: 0.25 \u00f7 0.05 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00044",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00044",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide a whole number by tenths",
+    "recipe": "c1-dec-by-dec",
+    "family": "structured-port87",
+    "title": "Divide a whole number by tenths",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:c7fca5fa3a66a054",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide: 18/0.4 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00111",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00111",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide by a product in parentheses",
+    "recipe": "c1-dec-by-dec",
+    "family": "structured-port87",
+    "title": "Divide by a product in parentheses",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:c7fca5fa3a66a054",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 6 \u00f7 (0.2 \u00d7 2) Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00101",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00101",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide by a decimal, writing zeros",
+    "recipe": "c1-dec-by-dec",
+    "family": "structured-port87",
+    "title": "Divide by a decimal, writing zeros",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:c7fca5fa3a66a054",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide: 0.029 \u00f7 0.4 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00102",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00102",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide a square root by a decimal",
+    "recipe": "c1-dec-by-dec",
+    "family": "structured-port87",
+    "title": "Divide a square root by a decimal",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:c7fca5fa3a66a054",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: \u221a64 \u00f7 0.2 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00046",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00046",
+    "bankId": "course-1-en",
+    "topic": "number-order",
+    "action": "Read a point on a tenths number line",
+    "recipe": "c1-tenths-line",
+    "family": "structured-port87",
+    "title": "Read a point on a tenths number line",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:0564b84c8df48f08",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-division",
+        "level": 1
+      },
+      {
+        "trackId": "real-numberline-placement",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the decimal number represented by point q on the number line below. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00061",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00061",
+    "bankId": "course-1-en",
+    "topic": "number-order",
+    "action": "Find a decimal on a tenths number line",
+    "recipe": "c1-tenths-line",
+    "family": "structured-port87",
+    "title": "Find a decimal on a tenths number line",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:0564b84c8df48f08",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-division",
+        "level": 1
+      },
+      {
+        "trackId": "real-numberline-placement",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which letter represents 9.9 on this number line?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00049",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00049",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "How many of a fraction are in a whole number",
+    "recipe": "c1-tenths-line",
+    "family": "structured-port87",
+    "title": "How many of a fraction are in a whole number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:0564b84c8df48f08",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-division",
+        "level": 1
+      },
+      {
+        "trackId": "real-numberline-placement",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How many 3/2\u2019s are in 3? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00047",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00047",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Quarters in a dollar amount",
+    "recipe": "c1-tenths-line",
+    "family": "structured-port87",
+    "title": "Quarters in a dollar amount",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:0564b84c8df48f08",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-division",
+        "level": 1
+      },
+      {
+        "trackId": "real-numberline-placement",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How many quarters are in $5? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00048",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00048",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Marbles in a row",
+    "recipe": "c1-tenths-line",
+    "family": "structured-port87",
+    "title": "Marbles in a row",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:0564b84c8df48f08",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-division",
+        "level": 1
+      },
+      {
+        "trackId": "real-numberline-placement",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The diameter of a marble is 3/5 of an inch. How many marbles are needed to make a row of marbles 6 inches long? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00017",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00017",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Difference read from a pictograph",
+    "recipe": "c1-data5",
+    "family": "structured-port87",
+    "title": "Difference read from a pictograph",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:c2169666a145f158",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "mean-and-total",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "data-summary-demands",
+        "level": 1
+      },
+      {
+        "trackId": "data-summary-demands",
+        "level": 2
+      },
+      {
+        "trackId": "bar-graph-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The pictograph shows the number of sandwiches sold at a school during one week. How many more roasted veggie sandwiches were sold than ginger chicken sandwiches? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00079",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00079",
+    "bankId": "course-1-en",
+    "topic": "statistics",
+    "action": "Median of a data set",
+    "recipe": "c1-data5",
+    "family": "structured-port87",
+    "title": "Median of a data set",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:c2169666a145f158",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "mean-and-total",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "data-summary-demands",
+        "level": 1
+      },
+      {
+        "trackId": "data-summary-demands",
+        "level": 2
+      },
+      {
+        "trackId": "bar-graph-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Ten children measured and recorded how high they could jump. The results, in inches, were: 9, 14, 6, 9, 9, 9, 10, 7, 15, 11. What is the median of these measures? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00065",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00065",
+    "bankId": "course-1-en",
+    "topic": "statistics",
+    "action": "Mean, median and mode",
+    "recipe": "c1-data5",
+    "family": "structured-port87",
+    "title": "Mean, median and mode",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:c2169666a145f158",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "mean-and-total",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "data-summary-demands",
+        "level": 1
+      },
+      {
+        "trackId": "data-summary-demands",
+        "level": 2
+      },
+      {
+        "trackId": "bar-graph-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the mean, median, and mode for 13, 19, 17, 12, 19. Give the three numbers in that order. Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00062",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00062",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Draw a pictograph from a table",
+    "recipe": "c1-data5",
+    "family": "structured-port87",
+    "title": "Draw a pictograph from a table",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:c2169666a145f158",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "mean-and-total",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "data-summary-demands",
+        "level": 1
+      },
+      {
+        "trackId": "data-summary-demands",
+        "level": 2
+      },
+      {
+        "trackId": "bar-graph-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The table shows the number of sandwiches sold at a school during one week: Soyburger 350; Ginger Chicken 275; Roasted Veggie 500; Tuna Salad 325; Turkey Meatball 275. Draw a pictograph that matches the table. Use a symbol for every 50 sandwiches and a half symbol when needed. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00063",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00063",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Make a line plot and find the mean",
+    "recipe": "c1-data5",
+    "family": "structured-port87",
+    "title": "Make a line plot and find the mean",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:c2169666a145f158",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "mean-and-total",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "data-summary-demands",
+        "level": 1
+      },
+      {
+        "trackId": "data-summary-demands",
+        "level": 2
+      },
+      {
+        "trackId": "bar-graph-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Make a line plot for the following set of data and find the mean: 27, 28, 30, 27, 27, 29, 32, 33, 31, 34. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00064",
+    "providerSourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00064",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Make a bar graph from a table",
+    "recipe": "c1-data5",
+    "family": "structured-port87",
+    "title": "Make a bar graph from a table",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section05:scope:c2169666a145f158",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "mean-and-total",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "data-summary-demands",
+        "level": 1
+      },
+      {
+        "trackId": "data-summary-demands",
+        "level": 2
+      },
+      {
+        "trackId": "bar-graph-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text with teacher diagram"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The table shows the number of posters that students have in their rooms at home: 1 poster: 4 students; 2 posters: 10 students; 3 posters: 16 students; 4 posters: 20 students; 5 posters: 10 students; 6 posters: 5 students. Make a bar graph that correctly represents the data in the table. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00065",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00065",
+    "bankId": "course-1-en",
+    "topic": "rounding-estimation",
+    "action": "Estimate a decimal sum by rounding",
+    "recipe": "c1-round-dec",
+    "family": "structured-port87",
+    "title": "Estimate a decimal sum by rounding",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:1c20fc0592ee8cf7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ordering-numbers",
+        "level": 1
+      },
+      {
+        "trackId": "rounding",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Estimate the sum of 19.27 and 7.8 by rounding each number to the nearest whole number before adding. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00066",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00066",
+    "bankId": "course-1-en",
+    "topic": "number-order",
+    "action": "Order a fraction, a decimal and a percent",
+    "recipe": "c1-round-dec",
+    "family": "structured-port87",
+    "title": "Order a fraction, a decimal and a percent",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:1c20fc0592ee8cf7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ordering-numbers",
+        "level": 1
+      },
+      {
+        "trackId": "rounding",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Arrange 1/3, 0.3, 33% from least to greatest. Separate them with commas."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00001",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00001",
+    "bankId": "course-1-en",
+    "topic": "rounding-estimation",
+    "action": "Divide money and round to the cent",
+    "recipe": "c1-round-dec",
+    "family": "structured-port87",
+    "title": "Divide money and round to the cent",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:1c20fc0592ee8cf7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ordering-numbers",
+        "level": 1
+      },
+      {
+        "trackId": "rounding",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide $19.99 by 5 and round the quotient to the nearest cent. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00016",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00016",
+    "bankId": "course-1-en",
+    "topic": "rounding-estimation",
+    "action": "Round a decimal to a whole number",
+    "recipe": "c1-round-dec",
+    "family": "structured-port87",
+    "title": "Round a decimal to a whole number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:1c20fc0592ee8cf7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ordering-numbers",
+        "level": 1
+      },
+      {
+        "trackId": "rounding",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Round 50.219 to the nearest whole number. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00080",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00080",
+    "bankId": "course-1-en",
+    "topic": "rounding-estimation",
+    "action": "Round a decimal to tenths or hundredths",
+    "recipe": "c1-round-dec",
+    "family": "structured-port87",
+    "title": "Round a decimal to tenths or hundredths",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:1c20fc0592ee8cf7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ordering-numbers",
+        "level": 1
+      },
+      {
+        "trackId": "rounding",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Round 3.3554 to the nearest tenth. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00014",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00014",
+    "bankId": "course-1-en",
+    "topic": "rounding-estimation",
+    "action": "Round money to the nearest cent",
+    "recipe": "c1-round-dec",
+    "family": "structured-port87",
+    "title": "Round money to the nearest cent",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:1c20fc0592ee8cf7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ordering-numbers",
+        "level": 1
+      },
+      {
+        "trackId": "rounding",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Round $14.104 to the nearest cent. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00017",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00017",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide a decimal by 100 mentally",
+    "recipe": "c1-div-tens",
+    "family": "structured-port87",
+    "title": "Divide a decimal by 100 mentally",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:01b31d311e59d70c",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide: 148.1 \u00f7 100 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00018",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00018",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide a decimal by 10 mentally",
+    "recipe": "c1-div-tens",
+    "family": "structured-port87",
+    "title": "Divide a decimal by 10 mentally",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:01b31d311e59d70c",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide: 61.6 \u00f7 10 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00085",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00085",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide a decimal by 10 squared",
+    "recipe": "c1-div-tens",
+    "family": "structured-port87",
+    "title": "Divide a decimal by 10 squared",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:01b31d311e59d70c",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 5.19 \u00f7 10\u00b2 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00042",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00042",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add fractions, reduce and write a mixed number",
+    "recipe": "c1-frac-add2",
+    "family": "structured-port87",
+    "title": "Add fractions, reduce and write a mixed number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:0d9ac86354b38f2f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-chain",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add. Simplify the answer to a mixed number in lowest terms. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00043",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00043",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add fractions with one denominator twice the other",
+    "recipe": "c1-frac-add2",
+    "family": "structured-port87",
+    "title": "Add fractions with one denominator twice the other",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:0d9ac86354b38f2f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-chain",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add. Write the answer as a mixed number. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00039",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00039",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Decimal computations from the decimals chart",
+    "recipe": "c1-dec-chart",
+    "family": "structured-port87",
+    "title": "Decimal computations from the decimals chart",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:0d9ac86354b38f2f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-operations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use the decimals chart to complete the table. Give the three answers in order: 6 \u2212 2.7 = ?; 4.2 \u00d7 1.7 = ?; 5 \u00f7 0.4 = ? Enter exact decimal or whole-number answers. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00020",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00020",
+    "bankId": "course-1-en",
+    "topic": "fraction-equivalence",
+    "action": "Reduce by grouping factors equal to 1",
+    "recipe": "c1-frac-div2",
+    "family": "structured-port87",
+    "title": "Reduce by grouping factors equal to 1",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:d389eadb430e1243",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-division",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Reduce. Group the factors equal to 1 first. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00023",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00023",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "How many of one fraction are in another",
+    "recipe": "c1-frac-div2",
+    "family": "structured-port87",
+    "title": "How many of one fraction are in another",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:d389eadb430e1243",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-division",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How many 1/3\u2019s are in 8/7? Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00006",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00006",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Subtract fractions, one denominator twice the other",
+    "recipe": "c1-common-den",
+    "family": "structured-port87",
+    "title": "Subtract fractions, one denominator twice the other",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:e47dace4b899b6b5",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract. Reduce your answer. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00025",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00025",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add fractions, one denominator four times the other",
+    "recipe": "c1-common-den",
+    "family": "structured-port87",
+    "title": "Add fractions, one denominator four times the other",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:e47dace4b899b6b5",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00026",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00026",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Subtract fractions, one denominator four times the other",
+    "recipe": "c1-common-den",
+    "family": "structured-port87",
+    "title": "Subtract fractions, one denominator four times the other",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:e47dace4b899b6b5",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract. Reduce your answer. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00027",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00027",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add fractions, one denominator twice the other",
+    "recipe": "c1-common-den",
+    "family": "structured-port87",
+    "title": "Add fractions, one denominator twice the other",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:e47dace4b899b6b5",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add. Enter a fraction in lowest terms (or an integer)."
   }
 ]
