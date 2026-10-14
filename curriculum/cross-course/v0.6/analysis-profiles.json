@@ -110044,5 +110044,1189 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Construct the perpendicular bisector of the segment. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00039",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00039",
+    "bankId": "course-1-en",
+    "topic": "rates",
+    "action": "Divide miles by gallons",
+    "recipe": "c1-unit-arith",
+    "family": "structured-port87",
+    "title": "Divide miles by gallons",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:bd3d258bf8dd3a46",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Divide: 550 mi \u00f7 50 gal. Give the answer in miles per gallon. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00041",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00041",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Multiply centimeters by centimeters",
+    "recipe": "c1-unit-arith",
+    "family": "structured-port87",
+    "title": "Multiply centimeters by centimeters",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:bd3d258bf8dd3a46",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Multiply: 6 cm \u00d7 7 cm. Give the answer in square centimeters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00063",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00063",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Subtract inches from feet",
+    "recipe": "c1-unit-arith",
+    "family": "structured-port87",
+    "title": "Subtract inches from feet",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:bd3d258bf8dd3a46",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "5 ft \u2212 6 in. Write the difference in inches. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00040",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00040",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Add yards and feet",
+    "recipe": "c1-unit-arith",
+    "family": "structured-port87",
+    "title": "Add yards and feet",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:bd3d258bf8dd3a46",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Write the sum in yards: 4 yd + 3 ft Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00001",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00001",
+    "bankId": "course-1-en",
+    "topic": "volume",
+    "action": "Sugar cubes to build a rectangular prism",
+    "recipe": "c1-volume",
+    "family": "structured-port87",
+    "title": "Sugar cubes to build a rectangular prism",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:21c31bc498cd8f36",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How many 1-cm sugar cubes would be needed to build this rectangular prism? Dimensions are in centimeters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00015",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00015",
+    "bankId": "course-1-en",
+    "topic": "volume",
+    "action": "Volume of a rectangular prism",
+    "recipe": "c1-volume",
+    "family": "structured-port87",
+    "title": "Volume of a rectangular prism",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:21c31bc498cd8f36",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the volume of the rectangular prism, in cubic feet. Dimensions are in feet. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00014",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00014",
+    "bankId": "course-1-en",
+    "topic": "volume",
+    "action": "Volume of a cube",
+    "recipe": "c1-volume",
+    "family": "structured-port87",
+    "title": "Volume of a cube",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:21c31bc498cd8f36",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the volume of the cube, in cubic inches. Dimensions are in inches. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00011",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00011",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Units for perimeter",
+    "recipe": "c1-volume",
+    "family": "structured-port87",
+    "title": "Units for perimeter",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:21c31bc498cd8f36",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The sides of a garden are measured in yards. In which units is its perimeter measured: yards, square yards, or cubic yards?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00012",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00012",
+    "bankId": "course-1-en",
+    "topic": "volume",
+    "action": "Units for volume",
+    "recipe": "c1-volume",
+    "family": "structured-port87",
+    "title": "Units for volume",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:21c31bc498cd8f36",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The sides of a box are measured in yards. Fred wants to know the volume of the box. In what units will the volume be measured?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00048",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00048",
+    "bankId": "course-1-en",
+    "topic": "volume",
+    "action": "Perimeter, area and volume",
+    "recipe": "c1-volume",
+    "family": "structured-port87",
+    "title": "Perimeter, area and volume",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:21c31bc498cd8f36",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "(a) What is the perimeter of a square with a side length of 64 m? (b) What is the area of a square with a side length of 16 m? (c) What is the volume of a cube with a side length of 8 m? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00016",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00016",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "How many pairs are proportions",
+    "recipe": "c1-proportions",
+    "family": "structured-port87",
+    "title": "How many pairs are proportions",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:e991a689d4dd72e9",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "How many of the following are proportions? 4/9 = 45/20; 4/9 = 36/16; 4/9 = 24/54; 4/9 = 12/27 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00017",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00017",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "Which fraction does not form a proportion",
+    "recipe": "c1-proportions",
+    "family": "structured-port87",
+    "title": "Which fraction does not form a proportion",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:e991a689d4dd72e9",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which of the following does not form a proportion with 1/7? A. 4/21 B. 3/21 C. 4/28 D. 7/49 Answer with the letter."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00042",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00042",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "Write a proportion with digits",
+    "recipe": "c1-proportions",
+    "family": "structured-port87",
+    "title": "Write a proportion with digits",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:e991a689d4dd72e9",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Write the given proportion with digits: four is to six as eight is to twelve."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00018",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00018",
+    "bankId": "course-1-en",
+    "topic": "expressions",
+    "action": "Order of operations with four operations",
+    "recipe": "c1-order-ops2",
+    "family": "structured-port87",
+    "title": "Order of operations with four operations",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:871b9bbe41b4327b",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: 4 \u00d7 7 + 30 \u2212 36 \u00f7 6 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00019",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00019",
+    "bankId": "course-1-en",
+    "topic": "expressions",
+    "action": "Divide, add and multiply in order",
+    "recipe": "c1-order-ops2",
+    "family": "structured-port87",
+    "title": "Divide, add and multiply in order",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:871b9bbe41b4327b",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: 30 \u00f7 6 + 4 \u00d7 9 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00020",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00020",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Difference of two decimal quotients",
+    "recipe": "c1-order-ops2",
+    "family": "structured-port87",
+    "title": "Difference of two decimal quotients",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:871b9bbe41b4327b",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: (4 \u00f7 0.8) \u2212 (0.8 \u00f7 2) Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00004",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00004",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "A is to B as C is to what number",
+    "recipe": "c1-cross-products",
+    "family": "structured-port87",
+    "title": "A is to B as C is to what number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:d07d898c309d8a82",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "18 is to 22 as 36 is to what number? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00021",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00021",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "Complete a proportion: missing denominator",
+    "recipe": "c1-cross-products",
+    "family": "structured-port87",
+    "title": "Complete a proportion: missing denominator",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:d07d898c309d8a82",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use cross products to complete the proportion. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00022",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00022",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "Complete a proportion: missing numerator",
+    "recipe": "c1-cross-products",
+    "family": "structured-port87",
+    "title": "Complete a proportion: missing numerator",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:d07d898c309d8a82",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use cross products to complete the proportion. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00070",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00070",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "Solve a proportion with cross products",
+    "recipe": "c1-cross-products",
+    "family": "structured-port87",
+    "title": "Solve a proportion with cross products",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:d07d898c309d8a82",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve the proportion. What number is m? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00005",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00005",
+    "bankId": "course-1-en",
+    "topic": "circle-measurement",
+    "action": "Area of a circle from its diameter, to the hundredth",
+    "recipe": "c1-circle-area",
+    "family": "structured-port87",
+    "title": "Area of a circle from its diameter, to the hundredth",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:2234bfbefada0059",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-area",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "For a circle with a diameter of 54 decimeters, find the area rounded to the nearest hundredth, in square decimeters. Use 3.14 for \u03c0. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00025",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00025",
+    "bankId": "course-1-en",
+    "topic": "circle-measurement",
+    "action": "Area of a circle from its radius",
+    "recipe": "c1-circle-area",
+    "family": "structured-port87",
+    "title": "Area of a circle from its radius",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:2234bfbefada0059",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-area",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of the circle, in square meters. Use 3.14 for \u03c0. Round to the nearest hundredth if necessary. Dimensions are in meters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00057",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00057",
+    "bankId": "course-1-en",
+    "topic": "circle-measurement",
+    "action": "Approximate area of a circular rug",
+    "recipe": "c1-circle-area",
+    "family": "structured-port87",
+    "title": "Approximate area of a circular rug",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:2234bfbefada0059",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-area",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The diameter of a circular braided rug is 8 feet. About how many square feet of floor does the rug cover? Use 3.14 for \u03c0 and round to the nearest whole number. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00006",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00006",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Solve a decimal equation by dividing",
+    "recipe": "c1-unknown-factor",
+    "family": "structured-port87",
+    "title": "Solve a decimal equation by dividing",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:f80fa784d0b82bc3",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: 1.9q = 3.61 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00028",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00028",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Solve a whole-number coefficient equation with a decimal answer",
+    "recipe": "c1-unknown-factor",
+    "family": "structured-port87",
+    "title": "Solve a whole-number coefficient equation with a decimal answer",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:f80fa784d0b82bc3",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: 3x = 1.2 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00043",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00043",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Solve with a mixed-number answer",
+    "recipe": "c1-unknown-factor",
+    "family": "structured-port87",
+    "title": "Solve with a mixed-number answer",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:f80fa784d0b82bc3",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: 12y = 160. Write the answer as a mixed number. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00007",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00007",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "Dragons and knights ratio problem",
+    "recipe": "c1-ratio-word",
+    "family": "structured-port87",
+    "title": "Dragons and knights ratio problem",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:00952c70f0a5030b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "There were more dragons than knights in the battle. The ratio of dragons to knights was 5 to 4. If there were 32 knights, how many dragons were there? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00030",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00030",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "Ratio word problem",
+    "recipe": "c1-ratio-word",
+    "family": "structured-port87",
+    "title": "Ratio word problem",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:00952c70f0a5030b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The ratio of sparrows to finches was 2 to 9. If there were 63 finches, how many sparrows were there? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00037",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00037",
+    "bankId": "course-1-en",
+    "topic": "rates",
+    "action": "Distance from d = rt with hours and minutes",
+    "recipe": "c1-ratio-word",
+    "family": "structured-port87",
+    "title": "Distance from d = rt with hours and minutes",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:00952c70f0a5030b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The formula for finding distance is d = rt, where d = distance, r = rate, and t = time. How far will Greeble go if she is traveling at 55 miles per hour for 2 hours and 45 minutes? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00038",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00038",
+    "bankId": "course-1-en",
+    "topic": "area",
+    "action": "A side from the area formula",
+    "recipe": "c1-ratio-word",
+    "family": "structured-port87",
+    "title": "A side from the area formula",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:00952c70f0a5030b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The formula for finding the area of a rectangle is A = lw, where A = area, l = length, and w = width. Juniper knows that the area of the picture frame she bought is 30 square inches and that the shorter side of the frame is 5 inches long. How long is the longer side, in inches? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00050",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00050",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Complete a force table with f = ma",
+    "recipe": "c1-ratio-word",
+    "family": "structured-port87",
+    "title": "Complete a force table with f = ma",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:00952c70f0a5030b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The formula for force is f = ma, where f = force, m = mass, and a = acceleration. Complete the table. Give the four missing values from top to bottom, rounded to the nearest hundredth if necessary. Enter exact decimal or whole-number answers. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00051",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00051",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "Constant of proportionality",
+    "recipe": "c1-ratio-word",
+    "family": "structured-port87",
+    "title": "Constant of proportionality",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:00952c70f0a5030b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Frieda wants to sell her art at a price that is proportional to the amount of time it took her to make it. If it takes her 6 days to create a painting and she sells it for $1650, what is the constant of proportionality, k, in dollars per day? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00044",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00044",
+    "bankId": "course-1-en",
+    "topic": "powers-roots",
+    "action": "Consecutive whole numbers around a square root",
+    "recipe": "c1-sqrt-est",
+    "family": "structured-port87",
+    "title": "Consecutive whole numbers around a square root",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:3a7a55cf0f31eea7",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "\u221a77 is between which two consecutive whole numbers? Give the smaller number first. Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00032",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00032",
+    "bankId": "course-1-en",
+    "topic": "powers-roots",
+    "action": "Approximate a square root to two decimal places",
+    "recipe": "c1-sqrt-est",
+    "family": "structured-port87",
+    "title": "Approximate a square root to two decimal places",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:3a7a55cf0f31eea7",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Approximate \u221a71 to two decimal places using a calculator. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00045",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00045",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Direction after two turns",
+    "recipe": "c1-turns",
+    "family": "structured-port87",
+    "title": "Direction after two turns",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:2627777c3becbce0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Leila was traveling south. At the light, she turned 90\u00b0 to the left and traveled one block to the next intersection. At the intersection, she turned 90\u00b0 to the left. What direction was Leila then traveling?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00081",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00081",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Total of the turns around a closed path",
+    "recipe": "c1-turns",
+    "family": "structured-port87",
+    "title": "Total of the turns around a closed path",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:2627777c3becbce0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Anita began at point A and ran around the field once, making the 4 turns shown. In those 4 turns, Anita turned a total of how many degrees? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00035",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00035",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Average turn on a lap",
+    "recipe": "c1-turns",
+    "family": "structured-port87",
+    "title": "Average turn on a lap",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:2627777c3becbce0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "As Marcus ran each lap around the park, he made 12 turns to the left (and no turns to the right). What was the average number of degrees of each turn? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00034",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00034",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Degrees of a counterclockwise turn",
+    "recipe": "c1-turns",
+    "family": "structured-port87",
+    "title": "Degrees of a counterclockwise turn",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:2627777c3becbce0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Candace and Owen were both facing east. Candace made a turn 270\u00b0 clockwise to face north, while Owen turned counterclockwise to face north. How many degrees did Owen turn? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00010",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00010",
+    "bankId": "course-1-en",
+    "topic": "probability",
+    "action": "Theoretical and experimental probability",
+    "recipe": "c1-turns",
+    "family": "structured-port87",
+    "title": "Theoretical and experimental probability",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:2627777c3becbce0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A six-sided number cube is rolled 65 times. The number three comes up 10 times. (a) What is the theoretical probability of rolling a three? (b) What is the experimental probability of rolling a three? Enter a fraction in lowest terms (or an integer). Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00046",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00046",
+    "bankId": "course-1-en",
+    "topic": "statistics",
+    "action": "Frequency table with relative frequencies",
+    "recipe": "c1-exp-prob",
+    "family": "structured-port87",
+    "title": "Frequency table with relative frequencies",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:63343249c7484496",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Construct a frequency distribution table showing the frequency and relative frequency of the retirement ages of 30 police detectives. Use the intervals 50\u201352, 53\u201355, 56\u201358, 59\u201361, 62\u201364 and 65\u201367. Ages: 59, 67, 52, 60, 63, 60, 62, 56, 59, 57, 52, 66, 67, 57, 66, 56, 67, 64, 66, 60, 51, 51, 50, 54, 67, 66, 62, 55, 57, 60. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00036",
+    "providerSourceId": "course-1-en:bank:C1_Section09:item:C1_S09_00036",
+    "bankId": "course-1-en",
+    "topic": "statistics",
+    "action": "Estimate a count from relative frequency",
+    "recipe": "c1-exp-prob",
+    "family": "structured-port87",
+    "title": "Estimate a count from relative frequency",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section09:scope:63343249c7484496",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "The frequency table below shows the enrollment of 707 students in foreign-language courses at a middle school. The school estimates that enrollment will increase next year to 803. Use the relative frequency to estimate how many students will enroll in German next year. Enter exact numerical answers without units."
   }
 ]
