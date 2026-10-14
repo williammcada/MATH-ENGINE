@@ -6930,46 +6930,6 @@
     "samplePrompt": "35% of 2000 tickets have been sold. How many tickets remain unsold?"
   },
   {
-    "sourceId": "course-87-en:item:SN870526",
-    "providerSourceId": "course-87-en:item:SN870526",
-    "bankId": "course-87-en",
-    "topic": "percent",
-    "action": "Find the percent not participating",
-    "recipe": "percent-count-rest",
-    "family": "structured-proportion",
-    "title": "Find the percent not participating",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:81",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "percent-from-complement",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "extension: Find the percent outside a known group. Find the complementary count or subtract the known percent from 100."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained within-course directions"
-    },
-    "samplePrompt": "20 of 80 students joined a club. What percent did not join?"
-  },
-  {
     "sourceId": "course-87-en:item:SX870430",
     "providerSourceId": "course-87-en:item:SX870430",
     "bankId": "course-87-en",
@@ -16659,40 +16619,6 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Convert 81 square feet to square yards. Use the fact that 1 yard = 3 feet. Enter a numerical value without units; exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870434",
-    "providerSourceId": "course-87-en:item:SN870434",
-    "bankId": "course-87-en",
-    "topic": "scientific-notation",
-    "action": "Multiply numbers in scientific notation",
-    "recipe": "scientific-product",
-    "family": "structured-solids",
-    "title": "Multiply numbers in scientific notation",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:83",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "scientific-notation",
-        "level": 3
-      },
-      {
-        "trackId": "scientific-expression-forms",
-        "level": 3
-      }
-    ],
-    "answerKinds": [
-      "scientific"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "samplePrompt": "Multiply (1.3 \u00d7 10^7) by (4 \u00d7 10^8). Write the result in normalized scientific notation C \u00d7 10^N. Enter decimal C; integer N, with 1 \u2264 C < 10. Give exact values."
   },
   {
     "sourceId": "course-87-en:item:SX870468",
@@ -85427,5 +85353,1321 @@
       "disposition": "retained related-only cross-course evidence"
     },
     "samplePrompt": "Which graph shows rectangle ABCD with vertices A(1, 5), B(\u22123, 9), C(\u22125, 7), D(\u22121, 3) and its image (dashed) after a rotation of 180\u00b0 about the origin? Answer with the letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870390",
+    "providerSourceId": "course-87-en:item:SX870390",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "Find the whole from the percent not in a group",
+    "recipe": "percent-rest",
+    "family": "structured-port87",
+    "title": "Find the whole from the percent not in a group",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:81",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "percent-unknown",
+        "level": 2
+      },
+      {
+        "trackId": "percent-complement",
+        "level": 1
+      },
+      {
+        "trackId": "percent-from-complement",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "At the ball game, 32% of the fans waved pom-poms. If 272 fans did not wave pom-poms, how many fans were there in all? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870526",
+    "providerSourceId": "course-87-en:item:SN870526",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "Percent not in a group",
+    "recipe": "percent-rest",
+    "family": "structured-port87",
+    "title": "Percent not in a group",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:81",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "percent-unknown",
+        "level": 2
+      },
+      {
+        "trackId": "percent-complement",
+        "level": 1
+      },
+      {
+        "trackId": "percent-from-complement",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "extension: Find the percent outside a known group. Find the complementary count or subtract the known percent from 100."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained within-course directions"
+    },
+    "samplePrompt": "At the picnic, twelve of the 48 students participated in the water-balloon toss. What percentage of the students did not participate in the water-balloon toss? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870529",
+    "providerSourceId": "course-87-en:item:SN870529",
+    "bankId": "course-87-en",
+    "topic": "circle-measurement",
+    "action": "Area of a circle with 3.14",
+    "recipe": "circle-area",
+    "family": "structured-port87",
+    "title": "Area of a circle with 3.14",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:82",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-area",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of this circle. Use 3.14 for \u03c0. Dimensions are in centimeters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870533",
+    "providerSourceId": "course-87-en:item:SN870533",
+    "bankId": "course-87-en",
+    "topic": "circle-measurement",
+    "action": "Area of a circle in terms of pi",
+    "recipe": "circle-area",
+    "family": "structured-port87",
+    "title": "Area of a circle in terms of pi",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:82",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-area",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of this circle. Leave \u03c0 as \u03c0. Dimensions are in feet."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870415",
+    "providerSourceId": "course-87-en:item:SN870415",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Multiply powers of 10",
+    "recipe": "power-ten",
+    "family": "structured-port87",
+    "title": "Multiply powers of 10",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:83",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "power10"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Express as a power of 10: 10\u00b3 \u00b7 10\u2075"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870419",
+    "providerSourceId": "course-87-en:item:SN870419",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Multiply powers of 10",
+    "recipe": "power-ten",
+    "family": "structured-port87",
+    "title": "Multiply powers of 10",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:83",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "power10"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Express as a power of 10: 10\u2078 \u00b7 10\u00b2"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870422",
+    "providerSourceId": "course-87-en:item:SN870422",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Multiply powers of 10",
+    "recipe": "power-ten",
+    "family": "structured-port87",
+    "title": "Multiply powers of 10",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:83",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "power10"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Express as a power of 10: 10\u00b2 \u00b7 10\u00b9\u00b2"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870434",
+    "providerSourceId": "course-87-en:item:SN870434",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Multiply numbers in scientific notation",
+    "recipe": "sci-product",
+    "family": "structured-port87",
+    "title": "Multiply numbers in scientific notation",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:83",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-notation",
+        "level": 3
+      },
+      {
+        "trackId": "scientific-expression-forms",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Express the product in scientific notation: (1.3 \u00d7 10\u2077)(4 \u00d7 10\u2074)"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870432",
+    "providerSourceId": "course-87-en:item:SN870432",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Multiply numbers in scientific notation",
+    "recipe": "sci-product",
+    "family": "structured-port87",
+    "title": "Multiply numbers in scientific notation",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:83",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-notation",
+        "level": 3
+      },
+      {
+        "trackId": "scientific-expression-forms",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Express the product in scientific notation: (5 \u00d7 10\u00b3)(7 \u00d7 10\u2075)"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870429",
+    "providerSourceId": "course-87-en:item:SN870429",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Multiply numbers in scientific notation",
+    "recipe": "sci-product",
+    "family": "structured-port87",
+    "title": "Multiply numbers in scientific notation",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:83",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-notation",
+        "level": 3
+      },
+      {
+        "trackId": "scientific-expression-forms",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Express the product in scientific notation: (3 \u00d7 10\u00b2)(7 \u00d7 10\u207b\u2076)"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870798",
+    "providerSourceId": "course-87-en:item:SN870798",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Monomial, binomial or trinomial",
+    "recipe": "classify-poly",
+    "family": "structured-port87",
+    "title": "Monomial, binomial or trinomial",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:84",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "algebraic-expression-structure",
+        "level": 2
+      },
+      {
+        "trackId": "polynomial-description",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Classify the expression as a monomial, binomial or trinomial: 7x\u00b2 + 5"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870441",
+    "providerSourceId": "course-87-en:item:SN870441",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Collect like terms after subtracting",
+    "recipe": "like-terms",
+    "family": "structured-port87",
+    "title": "Collect like terms after subtracting",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:84",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "like-terms",
+        "level": 1
+      },
+      {
+        "trackId": "polynomial-collection",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "poly"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Collect like terms: (\u22126z\u00b2 + z + 5) \u2212 (3z \u2212 1)"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870449",
+    "providerSourceId": "course-87-en:item:SN870449",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Collect like terms with two variables",
+    "recipe": "like-terms",
+    "family": "structured-port87",
+    "title": "Collect like terms with two variables",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:84",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "like-terms",
+        "level": 1
+      },
+      {
+        "trackId": "polynomial-collection",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "poly"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Collect like terms: \u2212ds + 3d \u2212 2ds \u2212 7d"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870455",
+    "providerSourceId": "course-87-en:item:SN870455",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Order of operations with signed numbers",
+    "recipe": "signed-order",
+    "family": "structured-port87",
+    "title": "Order of operations with signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:85",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 3
+      },
+      {
+        "trackId": "integer-arithmetic",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (\u22121)[(\u22126) \u2212 (\u22129)(+7)] Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870397",
+    "providerSourceId": "course-87-en:item:SX870397",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Order of operations with signed numbers",
+    "recipe": "signed-order",
+    "family": "structured-port87",
+    "title": "Order of operations with signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:85",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 3
+      },
+      {
+        "trackId": "integer-arithmetic",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (\u22121) \u2212 (\u22121)(\u22124) \u2212 (+5)(\u22127) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870459",
+    "providerSourceId": "course-87-en:item:SN870459",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Order of operations with signed numbers",
+    "recipe": "signed-order",
+    "family": "structured-port87",
+    "title": "Order of operations with signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:85",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 3
+      },
+      {
+        "trackId": "integer-arithmetic",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: \u22123(1 \u2212 5) \u2212 4(\u22124)(\u22122) + (\u22125)(\u22128)/2 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870473",
+    "providerSourceId": "course-87-en:item:SN870473",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Complete a table from a function rule",
+    "recipe": "rule-table",
+    "family": "structured-port87",
+    "title": "Complete a table from a function rule",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:85",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing numbers in the table using the function rule y = x \u2212 3. Give them in order from top to bottom. Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870400",
+    "providerSourceId": "course-87-en:item:SX870400",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Complete a table from a function rule",
+    "recipe": "rule-table",
+    "family": "structured-port87",
+    "title": "Complete a table from a function rule",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:85",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing numbers in the table using the function rule y = 3x \u2212 5. Give them in order from top to bottom. Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870463",
+    "providerSourceId": "course-87-en:item:SN870463",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Complete a table from a function rule",
+    "recipe": "rule-table",
+    "family": "structured-port87",
+    "title": "Complete a table from a function rule",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:85",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing numbers in the table using the function rule y = (1/4)x. Give them in order from top to bottom. Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870477",
+    "providerSourceId": "course-87-en:item:SN870477",
+    "bankId": "course-87-en",
+    "topic": "number-order",
+    "action": "Describe a graph of integers",
+    "recipe": "integer-graph",
+    "family": "structured-port87",
+    "title": "Describe a graph of integers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:86",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "real-numberline-placement",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "integer-set"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write a description that matches the graph."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870403",
+    "providerSourceId": "course-87-en:item:SX870403",
+    "bankId": "course-87-en",
+    "topic": "number-order",
+    "action": "Graph negative integers greater than a number",
+    "recipe": "integer-graph",
+    "family": "structured-port87",
+    "title": "Graph negative integers greater than a number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:86",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "real-numberline-placement",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Graph the negative integers greater than \u22123. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870402",
+    "providerSourceId": "course-87-en:item:SX870402",
+    "bankId": "course-87-en",
+    "topic": "number-order",
+    "action": "Graph whole numbers less than a number",
+    "recipe": "integer-graph",
+    "family": "structured-port87",
+    "title": "Graph whole numbers less than a number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:86",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "real-numberline-placement",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Graph the whole numbers less than 3. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870484",
+    "providerSourceId": "course-87-en:item:SN870484",
+    "bankId": "course-87-en",
+    "topic": "number-order",
+    "action": "Choose the graph of whole numbers less than a number",
+    "recipe": "integer-graph",
+    "family": "structured-port87",
+    "title": "Choose the graph of whole numbers less than a number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:86",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "real-numberline-placement",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which graph shows the whole numbers less than 5? Answer with the letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870405",
+    "providerSourceId": "course-87-en:item:SX870405",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Multiply algebraic terms",
+    "recipe": "mono-product",
+    "family": "structured-port87",
+    "title": "Multiply algebraic terms",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:87",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "poly"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (3x)(3xy)"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870406",
+    "providerSourceId": "course-87-en:item:SX870406",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Multiply algebraic terms",
+    "recipe": "mono-product",
+    "family": "structured-port87",
+    "title": "Multiply algebraic terms",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:87",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "poly"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (5x\u00b2)(5x\u00b3y)(\u2212x\u00b2y\u00b2)"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870396",
+    "providerSourceId": "course-87-en:item:SN870396",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Multiply algebraic terms",
+    "recipe": "mono-product",
+    "family": "structured-port87",
+    "title": "Multiply algebraic terms",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:87",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "poly"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: \u22122x\u00b2y(9xy\u00b3)(\u22124xy\u00b2)"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870408",
+    "providerSourceId": "course-87-en:item:SN870408",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Convert milliliters to liters",
+    "recipe": "unit-convert",
+    "family": "structured-port87",
+    "title": "Convert milliliters to liters",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:88",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "unit-conversion",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Convert 9,027,000 milliliters to liters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870410",
+    "providerSourceId": "course-87-en:item:SN870410",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Convert between inches and miles with unit multipliers",
+    "recipe": "unit-convert",
+    "family": "structured-port87",
+    "title": "Convert between inches and miles with unit multipliers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:88",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "unit-conversion",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "unit-expr"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How many miles are in 40 inches? Write the unit-multiplier expression or its exact value."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870412",
+    "providerSourceId": "course-87-en:item:SN870412",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Convert with three unit multipliers",
+    "recipe": "unit-convert",
+    "family": "structured-port87",
+    "title": "Convert with three unit multipliers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:88",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "unit-conversion",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "unit-expr"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use three unit multipliers to convert 28 miles to centimeters. Write the unit-multiplier expression (you do not need to multiply it out)."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870411",
+    "providerSourceId": "course-87-en:item:SX870411",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Convert square feet to square inches",
+    "recipe": "unit-convert",
+    "family": "structured-port87",
+    "title": "Convert square feet to square inches",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:88",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "unit-conversion",
+        "level": 2
+      },
+      {
+        "trackId": "unit-conversion",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use two unit multipliers to convert 9 square feet to square inches. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870405",
+    "providerSourceId": "course-87-en:item:SN870405",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Convert metric units of area",
+    "recipe": "unit-convert",
+    "family": "structured-port87",
+    "title": "Convert metric units of area",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:88",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "unit-conversion",
+        "level": 2
+      },
+      {
+        "trackId": "unit-conversion",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use two unit multipliers to convert 500 square centimeters to square millimeters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870413",
+    "providerSourceId": "course-87-en:item:SX870413",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Diagonals from one vertex",
+    "recipe": "polygon-angles",
+    "family": "structured-port87",
+    "title": "Diagonals from one vertex",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:89",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "polygon-diagonal-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How many diagonals can be drawn from one vertex of a regular decagon? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870445",
+    "providerSourceId": "course-87-en:item:SN870445",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Each angle of a regular polygon in a circle",
+    "recipe": "polygon-angles",
+    "family": "structured-port87",
+    "title": "Each angle of a regular polygon in a circle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:89",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "regular-polygon-angles",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A regular octagon is inscribed in a circle. Find the measure of each angle of the regular octagon. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870427",
+    "providerSourceId": "course-87-en:item:SN870427",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Exterior angle of a regular polygon",
+    "recipe": "polygon-angles",
+    "family": "structured-port87",
+    "title": "Exterior angle of a regular polygon",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:89",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "regular-polygon-angles",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the measure of one of the exterior angles of a regular polygon with twelve sides. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870384",
+    "providerSourceId": "course-87-en:item:SX870384",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve with a mixed-number coefficient",
+    "recipe": "coef-equation",
+    "family": "structured-port87",
+    "title": "Solve with a mixed-number coefficient",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:90",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-equation-coefficients",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-coefficient-equations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: (2 4/7)k = 108 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870585",
+    "providerSourceId": "course-87-en:item:SN870585",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve with a fraction coefficient",
+    "recipe": "coef-equation",
+    "family": "structured-port87",
+    "title": "Solve with a fraction coefficient",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:90",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-equation-coefficients",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-coefficient-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: (2/7)x = 11 2/3 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870491",
+    "providerSourceId": "course-87-en:item:SN870491",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve with a mixed-number coefficient",
+    "recipe": "coef-equation",
+    "family": "structured-port87",
+    "title": "Solve with a mixed-number coefficient",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:90",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-equation-coefficients",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-coefficient-equations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: (2 1/2)x = 1/4 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870490",
+    "providerSourceId": "course-87-en:item:SN870490",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve with a mixed-number coefficient",
+    "recipe": "coef-equation",
+    "family": "structured-port87",
+    "title": "Solve with a mixed-number coefficient",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:90",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-equation-coefficients",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-coefficient-equations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: (4 2/5)a = 3 4/5 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870492",
+    "providerSourceId": "course-87-en:item:SN870492",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve with a negative decimal coefficient",
+    "recipe": "coef-equation",
+    "family": "structured-port87",
+    "title": "Solve with a negative decimal coefficient",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:90",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: \u22125.4 = 0.6y Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870416",
+    "providerSourceId": "course-87-en:item:SX870416",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve with a negative coefficient",
+    "recipe": "coef-equation",
+    "family": "structured-port87",
+    "title": "Solve with a negative coefficient",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:90",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: \u22129r = 8.1 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870494",
+    "providerSourceId": "course-87-en:item:SN870494",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve with a negative coefficient",
+    "recipe": "coef-equation",
+    "family": "structured-port87",
+    "title": "Solve with a negative coefficient",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:90",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: \u221212a = \u2212384 Enter exact numerical answers without units."
   }
 ]

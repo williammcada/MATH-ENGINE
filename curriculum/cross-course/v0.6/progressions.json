@@ -561,14 +561,17 @@
         "prerequisites": "Square the radius and apply the stated pi convention",
         "selectors": [
           "c/82.1",
-          "g/circle-area"
+          "g/circle-area",
+          "k/circle-area"
         ],
         "sourceIds": [
           "course-87-en:item:SN870528",
           "course-87-en:authored:MCADA-82.1",
           "course-1-en:authored:M2-cdb181eb60ec-1",
           "algebra-half-en:authored:M3-60-2",
-          "algebra-1-en:authored:M4-8-6"
+          "algebra-1-en:authored:M4-8-6",
+          "course-87-en:item:SN870529",
+          "course-87-en:item:SN870533"
         ]
       },
       {
@@ -614,12 +617,18 @@
         "demand": "Convert with more than one unit multiplier",
         "prerequisites": "Cancel intermediate units in a chain",
         "selectors": [
-          "c/88.1"
+          "c/88.1",
+          "k/unit-convert"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-88.1",
           "algebra-half-en:authored:M3-33-1",
-          "algebra-2-en:authored:M6-41-2"
+          "algebra-2-en:authored:M6-41-2",
+          "course-87-en:item:SN870408",
+          "course-87-en:item:SN870410",
+          "course-87-en:item:SN870412",
+          "course-87-en:item:SX870411",
+          "course-87-en:item:SN870405"
         ]
       },
       {
@@ -628,14 +637,18 @@
         "prerequisites": "Square the linear conversion factor",
         "selectors": [
           "c/88.2",
-          "o/area-units"
+          "o/area-units",
+          "=/course-87-en:item:SX870411",
+          "=/course-87-en:item:SN870405"
         ],
         "sourceIds": [
           "course-87-en:item:SX870408",
           "course-87-en:authored:MCADA-88.2",
           "algebra-half-en:authored:M3-33-2",
           "algebra-1-en:authored:M4-10-3",
-          "algebra-2-en:authored:M6-53-2"
+          "algebra-2-en:authored:M6-53-2",
+          "course-87-en:item:SX870411",
+          "course-87-en:item:SN870405"
         ]
       },
       {
@@ -1112,11 +1125,15 @@
         "demand": "Evaluate a more complex signed expression",
         "prerequisites": "Fraction bars, powers and signed arithmetic",
         "selectors": [
-          "a/evaluate-hard"
+          "a/evaluate-hard",
+          "k/signed-order"
         ],
         "sourceIds": [
           "algebra-1-en:authored:M4-16-1",
-          "algebra-2-en:authored:M6-3-1"
+          "algebra-2-en:authored:M6-3-1",
+          "course-87-en:item:SN870455",
+          "course-87-en:item:SX870397",
+          "course-87-en:item:SN870459"
         ]
       }
     ],
@@ -1186,10 +1203,14 @@
         "demand": "Simplify signed arithmetic with nested grouping",
         "prerequisites": "Distribute negative signs through groups",
         "selectors": [
-          "a/signed-nesting"
+          "a/signed-nesting",
+          "k/signed-order"
         ],
         "sourceIds": [
-          "algebra-1-en:authored:M4-7-2"
+          "algebra-1-en:authored:M4-7-2",
+          "course-87-en:item:SN870455",
+          "course-87-en:item:SX870397",
+          "course-87-en:item:SN870459"
         ]
       }
     ],
@@ -1278,7 +1299,8 @@
           "c/81.1",
           "k/percent-of-what",
           "p/percent-part",
-          "p/percent-whole-half"
+          "p/percent-whole-half",
+          "k/percent-rest"
         ],
         "sourceIds": [
           "course-87-en:item:SN870487",
@@ -1289,7 +1311,9 @@
           "course-1-en:authored:M2-297bdb9f52d9-1",
           "algebra-1-en:authored:M4-47-1",
           "course-87-en:item:SN870485",
-          "course-87-en:item:SN870486"
+          "course-87-en:item:SN870486",
+          "course-87-en:item:SX870390",
+          "course-87-en:item:SN870526"
         ]
       },
       {
@@ -1629,12 +1653,11 @@
         "prerequisites": "Operate on coefficients and powers of ten; normalize",
         "selectors": [
           "c/83.2",
-          "o/scientific-product",
+          "k/sci-product",
           "c/COURSE111.1",
           "o/scientific-quotient"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870434",
           "course-87-en:item:SX870468",
           "course-87-en:authored:MCADA-83.2",
           "course-87-en:authored:COURSE111.1",
@@ -1644,7 +1667,10 @@
           "algebra-2-en:authored:M6-21-1",
           "algebra-2-en:authored:M6-21-2",
           "algebra-2-en:authored:M6-68-2",
-          "algebra-2-en:authored:M6-68-3"
+          "algebra-2-en:authored:M6-68-3",
+          "course-87-en:item:SN870434",
+          "course-87-en:item:SN870432",
+          "course-87-en:item:SN870429"
         ]
       },
       {
@@ -1675,7 +1701,9 @@
           "c/20.10",
           "c/83.1",
           "c/87.1",
-          "c/103.3"
+          "c/103.3",
+          "k/power-ten",
+          "k/mono-product"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-20.9",
@@ -1683,7 +1711,13 @@
           "course-87-en:authored:MCADA-83.1",
           "course-87-en:authored:MCADA-87.1",
           "course-87-en:authored:MCADA-103.3",
-          "algebra-half-en:authored:M3-101-1"
+          "algebra-half-en:authored:M3-101-1",
+          "course-87-en:item:SN870415",
+          "course-87-en:item:SN870419",
+          "course-87-en:item:SN870422",
+          "course-87-en:item:SX870405",
+          "course-87-en:item:SX870406",
+          "course-87-en:item:SN870396"
         ]
       },
       {
@@ -2053,7 +2087,8 @@
           "=/course-1-en:bank:C1_Section10:item:C1_S10_00047",
           "=/course-1-en:bank:C1_Section10:item:C1_S10_00048",
           "k/function-table",
-          "k/number-machine"
+          "k/number-machine",
+          "k/rule-table"
         ],
         "sourceIds": [
           "course-1-en:bank:C1_Section10:item:C1_S10_00047",
@@ -2063,7 +2098,10 @@
           "course-1-en:authored:M2-72fe9236420a-2",
           "course-87-en:item:SX870291",
           "course-87-en:item:SN870617",
-          "course-87-en:item:SN870351"
+          "course-87-en:item:SN870351",
+          "course-87-en:item:SN870473",
+          "course-87-en:item:SX870400",
+          "course-87-en:item:SN870463"
         ]
       },
       {
@@ -4715,13 +4753,15 @@
         "prerequisites": "Multiply by its reciprocal and check",
         "selectors": [
           "f/fraction-unknown",
-          "c/9.5"
+          "c/9.5",
+          "=/course-87-en:item:SN870585"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-9.5",
           "course-1-en:authored:M2-99567b9c653d-2",
           "course-1-en:authored:M2-a7f02f34ce7f-2",
-          "algebra-half-en:authored:M3-40-2"
+          "algebra-half-en:authored:M3-40-2",
+          "course-87-en:item:SN870585"
         ]
       },
       {
@@ -4730,12 +4770,18 @@
         "prerequisites": "Convert the coefficient to an improper fraction before inversion",
         "selectors": [
           "c/90.1",
-          "h/mixed-equation"
+          "h/mixed-equation",
+          "=/course-87-en:item:SX870384",
+          "=/course-87-en:item:SN870491",
+          "=/course-87-en:item:SN870490"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-90.1",
           "algebra-half-en:authored:M3-56-1",
-          "algebra-half-en:authored:M3-56-2"
+          "algebra-half-en:authored:M3-56-2",
+          "course-87-en:item:SX870384",
+          "course-87-en:item:SN870491",
+          "course-87-en:item:SN870490"
         ]
       }
     ],
@@ -4787,7 +4833,10 @@
         "selectors": [
           "c/INV7.2",
           "c/90.2",
-          "=/algebra-half-en:node:531"
+          "=/algebra-half-en:node:531",
+          "=/course-87-en:item:SN870492",
+          "=/course-87-en:item:SX870416",
+          "=/course-87-en:item:SN870494"
         ],
         "sourceIds": [
           "algebra-half-en:node:531",
@@ -4795,7 +4844,10 @@
           "course-87-en:authored:MCADA-INV7.2",
           "algebra-half-en:authored:M3-37-2",
           "algebra-half-en:authored:M3-39-1",
-          "algebra-half-en:authored:M3-84-2"
+          "algebra-half-en:authored:M3-84-2",
+          "course-87-en:item:SN870492",
+          "course-87-en:item:SX870416",
+          "course-87-en:item:SN870494"
         ]
       }
     ],
@@ -4861,11 +4913,14 @@
         "demand": "Collect like linear terms and constants",
         "prerequisites": "Combine coefficients of the same variable",
         "selectors": [
-          "c/84.1"
+          "c/84.1",
+          "k/like-terms"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-84.1",
-          "algebra-half-en:authored:M3-94-1"
+          "algebra-half-en:authored:M3-94-1",
+          "course-87-en:item:SN870441",
+          "course-87-en:item:SN870449"
         ]
       },
       {
@@ -6622,10 +6677,12 @@
         "demand": "Solve equations with a proper or improper fractional coefficient",
         "prerequisites": "Use an exact reciprocal and check the result",
         "selectors": [
-          "h/fraction-equation"
+          "h/fraction-equation",
+          "=/course-87-en:item:SN870585"
         ],
         "sourceIds": [
-          "algebra-half-en:authored:M3-48-2"
+          "algebra-half-en:authored:M3-48-2",
+          "course-87-en:item:SN870585"
         ]
       },
       {
@@ -6634,12 +6691,18 @@
         "prerequisites": "Rewrite the coefficient then apply its reciprocal",
         "selectors": [
           "h/mixed-equation",
-          "c/90.1"
+          "c/90.1",
+          "=/course-87-en:item:SX870384",
+          "=/course-87-en:item:SN870491",
+          "=/course-87-en:item:SN870490"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-90.1",
           "algebra-half-en:authored:M3-56-1",
-          "algebra-half-en:authored:M3-56-2"
+          "algebra-half-en:authored:M3-56-2",
+          "course-87-en:item:SX870384",
+          "course-87-en:item:SN870491",
+          "course-87-en:item:SN870490"
         ]
       }
     ],
@@ -7021,14 +7084,17 @@
         "prerequisites": "Terms with different powers remain distinct",
         "selectors": [
           "h/like-terms",
-          "=/algebra-2-en:node:77"
+          "=/algebra-2-en:node:77",
+          "k/like-terms"
         ],
         "sourceIds": [
           "algebra-2-en:node:77",
           "algebra-half-en:authored:M3-102-1",
           "algebra-1-en:authored:M4-18-1",
           "algebra-1-en:authored:M4-21-2",
-          "algebra-2-en:authored:M6-3-2"
+          "algebra-2-en:authored:M6-3-2",
+          "course-87-en:item:SN870441",
+          "course-87-en:item:SN870449"
         ]
       },
       {
@@ -9161,10 +9227,13 @@
         "demand": "Find the percent remaining",
         "prerequisites": "Subtract given percent from 100",
         "selectors": [
-          "p/percent-complement"
+          "p/percent-complement",
+          "k/percent-rest"
         ],
         "sourceIds": [
-          "course-87-en:item:SX870064"
+          "course-87-en:item:SX870064",
+          "course-87-en:item:SX870390",
+          "course-87-en:item:SN870526"
         ]
       },
       {
@@ -9202,9 +9271,10 @@
         "demand": "Find the percent outside a known group",
         "prerequisites": "Find the complementary count or subtract the known percent from 100",
         "selectors": [
-          "p/percent-count-rest"
+          "k/percent-rest"
         ],
         "sourceIds": [
+          "course-87-en:item:SX870390",
           "course-87-en:item:SN870526"
         ]
       }
@@ -10478,17 +10548,19 @@
         "prerequisites": "Coefficient operation and normalization",
         "selectors": [
           "c/83.2",
-          "o/scientific-product",
+          "k/sci-product",
           "o/scientific-quotient"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870434",
           "course-87-en:item:SX870468",
           "course-87-en:authored:MCADA-83.2",
           "algebra-half-en:authored:M3-76-1",
           "algebra-1-en:authored:M4-80-1",
           "algebra-2-en:authored:M6-21-1",
-          "algebra-2-en:authored:M6-68-2"
+          "algebra-2-en:authored:M6-68-2",
+          "course-87-en:item:SN870434",
+          "course-87-en:item:SN870432",
+          "course-87-en:item:SN870429"
         ]
       }
     ],
@@ -10541,12 +10613,17 @@
         "demand": "Plot or read signed whole numbers",
         "prerequisites": "Equal-spaced signed number line",
         "selectors": [
-          "e/4.1"
+          "e/4.1",
+          "k/integer-graph"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-4.1",
           "course-1-en:authored:M2-f5f865b61e25-1",
-          "algebra-half-en:authored:M3-2-1"
+          "algebra-half-en:authored:M3-2-1",
+          "course-87-en:item:SN870477",
+          "course-87-en:item:SX870403",
+          "course-87-en:item:SX870402",
+          "course-87-en:item:SN870484"
         ]
       },
       {
@@ -11472,13 +11549,15 @@
         "prerequisites": "Extend arithmetic language to signed symbolic terms and a factored monomial",
         "selectors": [
           "=/algebra-1-en:authored:M4-11-3",
-          "=/algebra-1-en:authored:M4-17-1"
+          "=/algebra-1-en:authored:M4-17-1",
+          "k/classify-poly"
         ],
         "sourceIds": [
           "algebra-1-en:authored:M4-11-3",
           "algebra-1-en:authored:M4-17-1",
           "algebra-2-en:authored:M6-0-6",
-          "algebra-2-en:authored:M6-8-1"
+          "algebra-2-en:authored:M6-8-1",
+          "course-87-en:item:SN870798"
         ]
       },
       {
@@ -11507,13 +11586,15 @@
         "selectors": [
           "=/algebra-1-en:authored:M4-48-1",
           "=/algebra-2-en:authored:M6-84-1",
-          "=/algebra-2-en:node:115"
+          "=/algebra-2-en:node:115",
+          "k/classify-poly"
         ],
         "sourceIds": [
           "algebra-2-en:node:115",
           "algebra-1-en:authored:M4-48-1",
           "algebra-2-en:authored:M6-8-2",
-          "algebra-2-en:authored:M6-84-1"
+          "algebra-2-en:authored:M6-84-1",
+          "course-87-en:item:SN870798"
         ]
       }
     ],
@@ -14191,11 +14272,13 @@
         "prerequisites": "Exterior angles total 360 degrees; interior and exterior angles supplement",
         "selectors": [
           "=/course-87-en:item:SN870451",
-          "=/course-87-en:item:SN870428"
+          "=/course-87-en:item:SN870428",
+          "=/course-87-en:item:SN870427"
         ],
         "sourceIds": [
           "course-87-en:item:SN870451",
-          "course-87-en:item:SN870428"
+          "course-87-en:item:SN870428",
+          "course-87-en:item:SN870427"
         ]
       },
       {
@@ -14203,10 +14286,12 @@
         "demand": "Calculate a regular interior angle",
         "prerequisites": "Exterior angles total 360 degrees; interior and exterior angles supplement",
         "selectors": [
-          "=/course-87-en:item:SN870417"
+          "=/course-87-en:item:SN870417",
+          "=/course-87-en:item:SN870445"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870417"
+          "course-87-en:item:SN870417",
+          "course-87-en:item:SN870445"
         ]
       }
     ],
@@ -14222,10 +14307,12 @@
         "demand": "Count diagonals from one vertex",
         "prerequisites": "Diagonals join nonadjacent vertices; count each unordered pair once",
         "selectors": [
-          "=/course-87-en:item:SN870566"
+          "=/course-87-en:item:SN870566",
+          "=/course-87-en:item:SX870413"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870566"
+          "course-87-en:item:SN870566",
+          "course-87-en:item:SX870413"
         ]
       },
       {

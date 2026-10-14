@@ -24,11 +24,11 @@ perimeter|perimeter|3|Find an L-shaped boundary perimeter with implied sides|Inf
 area-rectilinear|area|1|Find rectangular area using unit squares or perpendicular side lengths|Multiply perpendicular side lengths|r/rectangle-area c/20.6 f/array-area k/rectangle-abcd
 area-rectilinear|area|2|Find area of a compound rectilinear figure by partitioning or subtraction|Partition without overlap and add component areas|c/37.3 g/compound-area c/37.4 k/step-area k/l-shape-area
 area-rectilinear|area|3|Find area of a figure combining rectangular and triangular regions|Triangle area and decomposition|c/75.1 k/square-triangle-area
-circle-area|circle-measurement|1|Find circle area from a radius|Square the radius and apply the stated pi convention|c/82.1 g/circle-area
+circle-area|circle-measurement|1|Find circle area from a radius|Square the radius and apply the stated pi convention|c/82.1 g/circle-area k/circle-area
 circle-area|circle-measurement|2|Find sector area|Use the angle fraction of a whole circle|c/104.3 v/sector-area
 unit-conversion|measurement|1|Convert between two metric units|Metric place-value factors|c/32.2 k/mm-to-cm k/metric-how-many
-unit-conversion|measurement|2|Convert with more than one unit multiplier|Cancel intermediate units in a chain|c/88.1
-unit-conversion|measurement|3|Convert square units|Square the linear conversion factor|c/88.2 o/area-units
+unit-conversion|measurement|2|Convert with more than one unit multiplier|Cancel intermediate units in a chain|c/88.1 k/unit-convert
+unit-conversion|measurement|3|Convert square units|Square the linear conversion factor|c/88.2 o/area-units =/course-87-en:item:SX870411 =/course-87-en:item:SN870405
 unit-conversion|measurement|4|Convert cubic units with six unit multipliers|Cube linear factors and preserve dimensional cancellation|z/units:volume-chain
 linear-equations|equations|1|Solve a one-operation equation|Inverse operations|e/3.1 e/3.2 e/3.3 e/3.4 e/3.5 f/missing:2 f/balance-equation c/INV7.1 a/inverse-operations =/algebra-1-en:node:297 =/algebra-1-en:node:298 =/algebra-half-en:node:287 =/algebra-half-en:node:288 =/algebra-half-en:node:297 =/course-1-en:bank:C1_Section01:item:C1_S01_00085 =/course-1-en:bank:C1_Section01:item:C1_S01_00132 =/course-1-en:bank:C1_Section01:item:C1_S01_00133 =/course-1-en:bank:C1_Section01:item:C1_S01_00134 =/course-1-en:bank:C1_Section01:item:C1_S01_00137 =/course-1-en:bank:C1_Section01:item:C1_S01_00138 =/course-1-en:bank:C1_Section01:item:C1_S01_00139 =/course-1-en:bank:C1_Section09:item:C1_S09_00077 =/course-87-en:item:SN870012 =/course-87-en:item:SN870013 =/course-87-en:item:SN870014 =/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00111 =/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00071 =/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00075 =/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00076 =/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00081 =/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00080 =/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00068 =/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00069 =/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00099 =/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00100 =/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00101 =/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00103 =/intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085 =/intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086 k/missing-dividend k/solve-decimal-coefficient
 linear-equations|equations|2|Solve a two-step linear equation, showing equality operations or clearing decimals when requested|Undo addition and scaling while preserving signs and equality|c/93.1 f/two-step-positive h/equality-method z/equation:decimal =/algebra-1-en:node:302 =/algebra-1-en:node:316 =/algebra-half-en:node:413 =/algebra-half-en:node:415 =/algebra-half-en:node:532 =/course-1-en:bank:C1_Section11:item:C1_S11_00060 =/course-1-en:bank:C1_Section11:item:C1_S11_00074
@@ -48,14 +48,14 @@ radical-equations|radical-equations|1|Solve an equation with one radical|Isolate
 radical-equations|radical-equations|2|Solve an equation with two radicals|Repeated isolation and squaring with final checks|m/radical:two =/algebra-2-en:node:570
 expression-evaluation|expressions|1|Substitute positive values in a given expression or formula|Substitution and operation order|e/1.5 f/evaluation f/formula c/41.1 k/evaluate-quotient k/evaluate-product-over-sum k/evaluate-xy k/evaluate-paren
 expression-evaluation|expressions|2|Substitute values in expressions that include powers or signed numbers|Operation order, powers and signed arithmetic|c/91.1 c/52.2 c/COURSE108.1 =/algebra-2-en:node:74 =/algebra-half-en:authored:M3-47-2 k/evaluate-product-difference =/course-87-en:item:SX870301
-expression-evaluation|expressions|3|Evaluate a more complex signed expression|Fraction bars, powers and signed arithmetic|a/evaluate-hard
+expression-evaluation|expressions|3|Evaluate a more complex signed expression|Fraction bars, powers and signed arithmetic|a/evaluate-hard k/signed-order
 integer-arithmetic|integers|1|Add or subtract integers with a number-line or counter model|Signed position and direction|e/4.3 f/integer-model c/59.2 k/subtraction-number-line k/integer-line-add
 integer-arithmetic|integers|2|Add or subtract signed numbers and rewrite subtraction as addition|Sign rules and additive inverses|c/64.1 a/signed-sum c/68.1 @/course-1-en:bank:C1_Section10:item:C1_S10_00068 k/signed-sum k/signed-subtract
-integer-arithmetic|integers|3|Simplify signed arithmetic with nested grouping|Distribute negative signs through groups|a/signed-nesting
+integer-arithmetic|integers|3|Simplify signed arithmetic with nested grouping|Distribute negative signs through groups|a/signed-nesting k/signed-order
 fraction-equivalence|fraction-equivalence|1|Reduce by common factors without a model|Find and cancel a common factor|f/reduce c/15.2 k/reduce-product-form
 fraction-equivalence|fraction-equivalence|2|Reduce using prime factorization|Prime-factor representation and cancellation|c/24.1
 percent-unknown|percent|1|Find a percent of a known whole, including rates above 100 percent or fractional rates|Convert a percent to a fraction or decimal|f/percent-of c/22.2 c/60.2 c/8.4 h/percent-over100 h/fraction-percent h/commission k/percent-of
-percent-unknown|percent|2|Model and solve a percent problem with an unknown part, whole or rate|Distinguish the whole, part and rate|c/77.1 c/81.1 k/percent-of-what p/percent-part p/percent-whole-half
+percent-unknown|percent|2|Model and solve a percent problem with an unknown part, whole or rate|Distinguish the whole, part and rate|c/77.1 c/81.1 k/percent-of-what p/percent-part p/percent-whole-half k/percent-rest
 percent-unknown|percent|3|Recover an original amount before a percent increase|Model the final amount as a multiplier of the original|p/reverse-increase a/word:percent
 ratio-total|ratio-proportion|1|Find a missing term in a proportion|Equivalent ratios and cross products|c/39.2 f/ratio-factor f/cross-products c/54.1 c/54.2 c/72.1 p/ratio-missing k/recipe-ratio k/ratio-find k/implied-ratio
 ratio-total|ratio-proportion|2|Divide a total according to a ratio|Add ratio parts before scaling|c/65.2 p/ratio-total-large c/65.1 k/ratio-total
@@ -71,9 +71,9 @@ powers|powers-roots|2|Evaluate zero and negative exponents|Reciprocal rule and n
 powers|powers-roots|3|Evaluate negative bases with rational exponents|Real odd roots and exponent restrictions|m/fractional:negative =/algebra-2-en:node:304
 scientific-notation|scientific-notation|1|Convert between large numbers and scientific notation|Powers of ten and a normalized coefficient|c/51.1 c/51.2 =/course-87-en:item:SN870321 =/course-87-en:item:SN870322 =/course-87-en:item:SX870261
 scientific-notation|scientific-notation|2|Convert small numbers using negative powers of ten|Decimal place value and negative exponents|c/57.2 c/57.3 =/course-87-en:item:SN870286 =/course-87-en:item:SX870289 =/course-87-en:item:SX870290
-scientific-notation|scientific-notation|3|Multiply or divide scientific-notation numbers|Operate on coefficients and powers of ten; normalize|c/83.2 o/scientific-product c/COURSE111.1 o/scientific-quotient
+scientific-notation|scientific-notation|3|Multiply or divide scientific-notation numbers|Operate on coefficients and powers of ten; normalize|c/83.2 k/sci-product c/COURSE111.1 o/scientific-quotient
 scientific-notation|scientific-notation|4|Add scientific-notation numbers|Align powers of ten before adding coefficients|a/scientific:add
-exponent-laws|exponent-laws|1|Apply product or quotient laws to powers and monomials|Combine exponents and simplify coefficients; retain nonzero restrictions|c/20.9 c/20.10 c/83.1 c/87.1 c/103.3
+exponent-laws|exponent-laws|1|Apply product or quotient laws to powers and monomials|Combine exponents and simplify coefficients; retain nonzero restrictions|c/20.9 c/20.10 c/83.1 c/87.1 c/103.3 k/power-ten k/mono-product
 exponent-laws|exponent-laws|2|Apply symbolic exponent laws including zero or negative exponents|Combine powers and preserve nonzero-domain restrictions|a/exponents:negative a/exponents:power a/exponents:product a/exponents:quotient a/exponents:numerator a/exponents:zero =/algebra-2-en:node:62 =/algebra-2-en:node:66
 exponent-laws|exponent-laws|3|Simplify powers with fractional variable exponents|Rational exponent arithmetic and positive-variable domains|m/fractional:variables z/exponent:variables-product =/algebra-2-en:node:755
 factoring|factoring|1|Factor out a common monomial|GCF of coefficients and variables|a/factor:gcf c/COURSE116.1 c/COURSE116.2
@@ -94,7 +94,7 @@ linear-inequalities|inequalities|2|Solve a two-step linear inequality|Inverse op
 linear-inequalities|inequalities|3|Solve a compound intersection or union|Combine two solution sets correctly|a/compound:and a/compound:or
 line-slope|lines-slope|1|Find slope from two points|Change in y divided by change in x|c/COURSE107.1 h/slope-graph =/algebra-1-en:node:905
 line-slope|lines-slope|2|Find a line equation from two points|Slope and point substitution|a/line:two-points =/algebra-1-en:node:948
-function-evaluation|functions|1|Use a given rule to complete a function table|Substitute the input|c/85.2 c/58.3 =/course-1-en:bank:C1_Section10:item:C1_S10_00047 =/course-1-en:bank:C1_Section10:item:C1_S10_00048 k/function-table k/number-machine
+function-evaluation|functions|1|Use a given rule to complete a function table|Substitute the input|c/85.2 c/58.3 =/course-1-en:bank:C1_Section10:item:C1_S10_00047 =/course-1-en:bank:C1_Section10:item:C1_S10_00048 k/function-table k/number-machine k/rule-table
 function-evaluation|functions|2|Evaluate a function written in function notation|Interpret argument and output notation|a/function:evaluate =/algebra-2-en:node:678
 function-evaluation|functions|3|Find the sum or product of functions and its domain|Intersect domains before evaluating|z/function:sum z/function:product
 trigonometry|trigonometry|1|Form sine, cosine and tangent ratios|Identify opposite, adjacent and hypotenuse|h/trig-ratio =/algebra-2-en:node:362
@@ -237,13 +237,13 @@ fraction-form-changes|fractions|2|Convert a mixed number to an improper fraction
 fraction-form-changes|fractions|3|Find a reciprocal|A nonzero number multiplied by its reciprocal is one|c/9.4 b/negative-reciprocals
 decimal-fraction-models|fraction-decimal-percent|1|Read and explain fraction and decimal names for a shaded model|Place values and the same whole|f/decimal-fraction-model f/decimal-grid c/31.1
 decimal-fraction-models|fraction-decimal-percent|2|Read fraction and percent or fraction-decimal-percent names for a model|Percent means hundredths of the same whole|f/percent-model c/8.1 c/48.1 g/shaded-percent
-fraction-equation-coefficients|equations|1|Solve a one-step equation with a fractional coefficient|Multiply by its reciprocal and check|f/fraction-unknown c/9.5
-fraction-equation-coefficients|equations|2|Solve a one-step equation with a mixed-number coefficient|Convert the coefficient to an improper fraction before inversion|c/90.1 h/mixed-equation
+fraction-equation-coefficients|equations|1|Solve a one-step equation with a fractional coefficient|Multiply by its reciprocal and check|f/fraction-unknown c/9.5 =/course-87-en:item:SN870585
+fraction-equation-coefficients|equations|2|Solve a one-step equation with a mixed-number coefficient|Convert the coefficient to an improper fraction before inversion|c/90.1 h/mixed-equation =/course-87-en:item:SX870384 =/course-87-en:item:SN870491 =/course-87-en:item:SN870490
 signed-equations|equations|1|Solve a whole-number one-operation equation|Inverse operations|e/3.1 e/3.2 e/3.3 e/3.4 e/3.5
-signed-equations|equations|2|Solve an additive or multiplicative equation with signed values|Maintain signs when reversing operations and checking|c/INV7.2 c/90.2 =/algebra-half-en:node:531
+signed-equations|equations|2|Solve an additive or multiplicative equation with signed values|Maintain signs when reversing operations and checking|c/INV7.2 c/90.2 =/algebra-half-en:node:531 =/course-87-en:item:SN870492 =/course-87-en:item:SX870416 =/course-87-en:item:SN870494
 operation-properties|expressions|1|Recognize or apply a named arithmetic property|Distinguish order, grouping, distribution and identities|e/2.1 e/2.2 e/2.4 e/2.5 f/associative f/distributive c/41.2 =/course-87-en:item:SX870024 =/course-87-en:item:SX870025
 operation-properties|expressions|2|Show failure of a property for subtraction or division|Compare two orders or groupings and give unequal results|e/2.6
-like-terms|expressions|1|Collect like linear terms and constants|Combine coefficients of the same variable|c/84.1
+like-terms|expressions|1|Collect like linear terms and constants|Combine coefficients of the same variable|c/84.1 k/like-terms
 like-terms|expressions|2|Distribute then collect linear terms|Multiply every term in a group before collecting|c/96.2 =/course-87-en:item:SN870560
 numerical-grouping|expressions|1|Evaluate an expression with powers and mixed operations|Powers before multiplication and addition|c/52.1 =/course-87-en:item:SX870263 =/course-87-en:item:SX870320 =/course-87-en:item:SN870266
 numerical-grouping|expressions|2|Evaluate an expression with several nested grouping symbols|Work from inner groups out while preserving operation order|c/63.2 k/inclusion
@@ -332,8 +332,8 @@ fraction-powers|powers-roots|1|Evaluate a whole-number power|Repeated multiplica
 fraction-powers|powers-roots|2|Evaluate a power of a fraction|Raise numerator and denominator to the same positive integer power|h/fraction-power
 signed-powers|powers-roots|1|Evaluate a signed integer power|Distinguish odd and even powers|c/103.2
 signed-powers|powers-roots|2|Compare parenthesized negative bases with a leading negative|Exponentiation precedes an ungrouped minus sign|h/signed-power
-fraction-coefficient-equations|equations|1|Solve equations with a proper or improper fractional coefficient|Use an exact reciprocal and check the result|h/fraction-equation
-fraction-coefficient-equations|equations|2|Solve equations with a displayed mixed-number coefficient|Rewrite the coefficient then apply its reciprocal|h/mixed-equation c/90.1
+fraction-coefficient-equations|equations|1|Solve equations with a proper or improper fractional coefficient|Use an exact reciprocal and check the result|h/fraction-equation =/course-87-en:item:SN870585
+fraction-coefficient-equations|equations|2|Solve equations with a displayed mixed-number coefficient|Rewrite the coefficient then apply its reciprocal|h/mixed-equation c/90.1 =/course-87-en:item:SX870384 =/course-87-en:item:SN870491 =/course-87-en:item:SN870490
 equations-both-sides|equations|1|Solve a two-step equation with the variable on one side|Inverse operations and signed arithmetic|h/equality-method c/93.1 f/two-step-positive
 equations-both-sides|equations|2|Solve a linear equation with variables on both sides|Collect variable terms by subtracting equal quantities|h/both-sides h/multi-term =/algebra-half-en:node:580
 equations-both-sides|equations|3|Simplify matching quadratic terms before solving a linear equation|Cancel equal higher-degree terms without introducing spurious roots|a/polynomial-equation
@@ -354,7 +354,7 @@ binary-fractions-notation|numeral-systems|1|Convert whole values between binary 
 binary-fractions-notation|numeral-systems|2|Convert binary fractions and decimals|Reciprocal powers of two after the binary point|h/binary:read h/binary:write
 binary-multiplication|numeral-systems|1|Multiply whole binary numbers and check in decimal|Partial products and carrying in base two|h/binary:mul o/binary-multiply
 binary-multiplication|numeral-systems|2|Multiply binary fractions and check in decimal|Track the binary point as well as partial products|h/binary:fraction-mul
-polynomial-collection|polynomials|1|Collect terms with the same variable powers|Terms with different powers remain distinct|h/like-terms =/algebra-2-en:node:77
+polynomial-collection|polynomials|1|Collect terms with the same variable powers|Terms with different powers remain distinct|h/like-terms =/algebra-2-en:node:77 k/like-terms
 polynomial-collection|polynomials|2|Add polynomials by collecting like terms|Account for all terms and signs in both expressions|h/polynomial:add
 polynomial-collection|polynomials|3|Expand a product of two binomials|Distribution generates terms before collection|h/polynomial:mul
 monomial-to-polynomial-division|polynomials|1|Divide each term of a polynomial by a monomial|Divide coefficients and subtract exponents; retain exclusions|h/polynomial:divide a/rational:distribute
@@ -481,10 +481,10 @@ decimal-subtraction-grouping|decimal-arithmetic|2|Subtract a grouped decimal sum
 fraction-complement|fractions|1|Find the fractional share remaining|Subtract a proper fraction from one|p/fraction-complement f/remaining
 fraction-complement|fractions|2|Find the remaining count from a fractional or ratio share|Use the complementary share of a known total|k/ratio-games
 fraction-complement|fractions|3|Recover the whole from the amount remaining|Complement the used share before inverse scaling|t/whole-from-left
-percent-complement|percent|1|Find the percent remaining|Subtract given percent from 100|p/percent-complement
+percent-complement|percent|1|Find the percent remaining|Subtract given percent from 100|p/percent-complement k/percent-rest
 percent-complement|percent|2|Find an unsold count from a percent and total|Scale the total by the complementary rate|p/percent-count-complement
 percent-from-complement|percent|1|Find a percent from a given part and whole|Divide part by whole, multiply by 100|p/percent-part
-percent-from-complement|percent|2|Find the percent outside a known group|Find the complementary count or subtract the known percent from 100|p/percent-count-rest
+percent-from-complement|percent|2|Find the percent outside a known group|Find the complementary count or subtract the known percent from 100|k/percent-rest
 ratio-forms|ratio-proportion|1|Write ratios in the requested order or notation|Part-to-part and part-to-whole denominators differ|c/36.1 c/36.2 h/ratio-compare k/ratio-reverse k/fans-ratio k/ratio-part-fraction
 ratio-forms|ratio-proportion|2|Form a ratio after finding a missing group count|Subtract from total, then compare ordered quantities|k/ratio-club k/fraction-rest-ratio
 part-reference-forms|fraction-decimal-percent|1|Express a part relative to a reference quantity as a fraction or decimal|Reference quantity is the denominator; fraction-part can exceed one|k/part-of-whole p/decimal-part-eighths
@@ -561,10 +561,10 @@ powers-ten-place-language|number-representation|1|Express a whole-number place v
 powers-ten-place-language|number-representation|2|Expand a four-digit number using powers of ten|Track each digit and preserve zero coefficients|c/47.2
 scientific-expression-forms|scientific-notation|1|Compare scientific-notation numbers with negative exponents|Compare exponents then coefficients|c/57.4
 scientific-expression-forms|scientific-notation|2|Combine powers of ten and normalize a two-digit coefficient|Phase2 exponent is sum plus normalization adjustment|c/69.1 k/sci-renormalize
-scientific-expression-forms|scientific-notation|3|Multiply or divide scientific-notation numbers|Coefficient operation and normalization|c/83.2 o/scientific-product o/scientific-quotient
+scientific-expression-forms|scientific-notation|3|Multiply or divide scientific-notation numbers|Coefficient operation and normalization|c/83.2 k/sci-product o/scientific-quotient
 integer-product-sum|integers|1|Multiply signed integers|Sign and magnitude rules|c/73.1 k/signed-product
 integer-product-sum|integers|2|Multiply signed integers then add another integer|Multiplication precedes addition|c/85.1
-real-numberline-placement|number-order|1|Plot or read signed whole numbers|Equal-spaced signed number line|e/4.1
+real-numberline-placement|number-order|1|Plot or read signed whole numbers|Equal-spaced signed number line|e/4.1 k/integer-graph
 real-numberline-placement|number-order|2|Place rational numbers and irrational square roots on a number line|Approximate roots and mark to tenths; teacher checks the diagram|c/100.3
 place-digit-value|number-representation|1|Identify a digit in a named whole-number place|Four-digit positions|f/digit
 place-digit-value|number-representation|2|Give the numerical value of a digit in a place|Multiply digit by its place value|f/place:4
@@ -618,9 +618,9 @@ quadratic-discriminant-work|quadratics|2|Find exact complex conjugate roots of a
 root-substitution-equations|radical-equations|1|Solve a pure real square equation|Retain both algebraic signs|c/COURSE109.1
 root-substitution-equations|radical-equations|2|Solve a quadratic in t equal to the principal square root of x|Require t nonnegative, square surviving t values, and check original domains|=/algebra-1-en:node:960
 algebraic-expression-structure|expressions|1|Name arithmetic operations and operand or result roles|All four operations and all operand/result positions are retained|=/course-87-en:authored:MCADA-1.2 =/course-87-en:authored:MCADA-1.3
-algebraic-expression-structure|expressions|2|Identify terms, coefficients, factors and top-level operations of a polynomial|Extend arithmetic language to signed symbolic terms and a factored monomial|=/algebra-1-en:authored:M4-11-3 =/algebra-1-en:authored:M4-17-1
+algebraic-expression-structure|expressions|2|Identify terms, coefficients, factors and top-level operations of a polynomial|Extend arithmetic language to signed symbolic terms and a factored monomial|=/algebra-1-en:authored:M4-11-3 =/algebra-1-en:authored:M4-17-1 k/classify-poly
 algebraic-expression-structure|expressions|3|Extract a polynomial coefficient list including a missing power|Recognize an implicit zero coefficient rather than dropping its position|=/algebra-2-en:authored:M6-58-1
-polynomial-description|polynomials|1|Describe term count or total degree, including cancellation in an equation|Term-count names, multivariate degree and reduced-equation degree are different questions; no difficulty direction is asserted|=/algebra-1-en:authored:M4-48-1 =/algebra-2-en:authored:M6-84-1 =/algebra-2-en:node:115
+polynomial-description|polynomials|1|Describe term count or total degree, including cancellation in an equation|Term-count names, multivariate degree and reduced-equation degree are different questions; no difficulty direction is asserted|=/algebra-1-en:authored:M4-48-1 =/algebra-2-en:authored:M6-84-1 =/algebra-2-en:node:115 k/classify-poly
 linear-system-solution-size|systems|1|Solve a unique two-variable linear system|Nonzero determinant; integer solution, with no specified method|=/algebra-2-en:node:142 =/algebra-2-en:node:152
 linear-system-solution-size|systems|2|Solve a unique three-variable linear system|Eliminate successively and back-substitute; all three coordinates are required|=/algebra-2-en:node:652
 line-direction-constraints|lines-slope|1|Construct a parallel line through a specified point|Transfer the given slope and solve the intercept|=/algebra-1-en:authored:M4-107-1 =/algebra-2-en:node:188 a/line:slope
@@ -776,9 +776,9 @@ surface-shape-contracts|surface-area|3|Find sphere surface area from radius|Sum 
 polygon-triangulation|angles|1|Count triangles from one vertex of a convex polygon|A convex n-gon splits from one vertex into n minus 2 triangles|=/course-87-en:item:SN870414
 polygon-triangulation|angles|2|Calculate the interior-angle sum|A convex n-gon splits from one vertex into n minus 2 triangles|=/course-87-en:item:SN870424
 polygon-triangulation|angles|3|Draw the triangulation and give both count and sum|A convex n-gon splits from one vertex into n minus 2 triangles|=/algebra-2-en:authored:M6-35-1
-regular-polygon-angles|angles|1|Calculate a regular exterior angle|Exterior angles total 360 degrees; interior and exterior angles supplement|=/course-87-en:item:SN870451 =/course-87-en:item:SN870428
-regular-polygon-angles|angles|2|Calculate a regular interior angle|Exterior angles total 360 degrees; interior and exterior angles supplement|=/course-87-en:item:SN870417
-polygon-diagonal-production|angles|1|Count diagonals from one vertex|Diagonals join nonadjacent vertices; count each unordered pair once|=/course-87-en:item:SN870566
+regular-polygon-angles|angles|1|Calculate a regular exterior angle|Exterior angles total 360 degrees; interior and exterior angles supplement|=/course-87-en:item:SN870451 =/course-87-en:item:SN870428 =/course-87-en:item:SN870427
+regular-polygon-angles|angles|2|Calculate a regular interior angle|Exterior angles total 360 degrees; interior and exterior angles supplement|=/course-87-en:item:SN870417 =/course-87-en:item:SN870445
+polygon-diagonal-production|angles|1|Count diagonals from one vertex|Diagonals join nonadjacent vertices; count each unordered pair once|=/course-87-en:item:SN870566 =/course-87-en:item:SX870413
 polygon-diagonal-production|angles|2|Draw and count every diagonal exactly once|Diagonals join nonadjacent vertices; count each unordered pair once|=/course-87-en:authored:MCADA-89.1
 coordinate-rectangle-work|coordinate-geometry|1|Read or plot signed coordinate pairs|Use signed coordinates, parallel sides and coordinate differences|=/course-87-en:authored:MCADA-INV3.2 =/course-87-en:authored:MCADA-INV3.3 k/symmetric-vertex
 coordinate-rectangle-work|coordinate-geometry|2|Complete a rectangle and calculate coordinate-difference area|Use signed coordinates, parallel sides and coordinate differences|=/course-87-en:item:SX870108

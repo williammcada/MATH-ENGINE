@@ -3,7 +3,7 @@ from pathlib import Path
 from fractions import Fraction as F
 import subprocess,json,re,xml.etree.ElementTree as ET
 root=Path(__file__).resolve().parents[1]
-js="""const E=require('./src/course-banks'),C=require('./src/solids-bank-map');for(const c of C)for(let index=0;index<300;index++){const q=E.generate(c.sourceId,{seed:'independent-solids',index});if(!E.checkAnswer(q,E.answerText(q)).answerCorrect)throw Error(c.recipe);if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'independent-solids',index})))throw Error('Replay');console.log(JSON.stringify({recipe:c.recipe,q,html:index<10?E.renderQuestion(q):null}));}"""
+js="""const E=require('./src/course-banks'),C=require('./src/solids-bank-map');for(const c of C.filter(c=>E.catalog.find(x=>x.sourceId===c.sourceId).family===c.family))/* entries replaced by a coverage port are audited by tests/port87.cjs */for(let index=0;index<300;index++){const q=E.generate(c.sourceId,{seed:'independent-solids',index});if(!E.checkAnswer(q,E.answerText(q)).answerCorrect)throw Error(c.recipe);if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'independent-solids',index})))throw Error('Replay');console.log(JSON.stringify({recipe:c.recipe,q,html:index<10?E.renderQuestion(q):null}));}"""
 lines=subprocess.check_output(['node','-e',js],cwd=root,text=True).splitlines()
 def rounded(v):return F((v*100+F(1,2)).numerator//(v*100+F(1,2)).denominator,100)
 def binary(s):
