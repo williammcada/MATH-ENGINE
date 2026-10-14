@@ -3,8 +3,8 @@
   "engineVersion": "0.34.0-rc.3",
   "bankVersion": "0.33.0-rc.1",
   "k7Version": "megaman-v0.7",
-  "bundleSha256": "cd8d3f0665b77b7b950098e1b77da50ea9ea6cd95403b8c774184d9d3b29ef85",
-  "contentHash": "e725ab6dae517738f883532592faff71",
+  "bundleSha256": "9b58460b1b218bc1df5d1e37487bfc8d9f9864ca4ad8f3ca74d8156dc5276c1a",
+  "contentHash": "c70ed6261be50034ff22a909194ce05a",
   "baseline": "baselines/megaman-v0.7/shared-math.js",
   "baselineSha256": "78841274e50b07c6640913bb84fdd821247ed47030b575feb27760d35fcff1a0",
   "sources": [
@@ -83,9 +83,9 @@
     "src/continuity-skills.js"
   ],
   "catalog": {
-    "total": 2817,
+    "total": 2879,
     "k7": 312,
-    "bank": 2495,
+    "bank": 2557,
     "continuity": 10
   }
 }

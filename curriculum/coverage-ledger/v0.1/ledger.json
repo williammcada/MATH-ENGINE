@@ -30,6 +30,7 @@
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch12-course1-L81-90-I9.json": "af6c6e63e9dd4f17543006750f9ee7874b39e00172fef3db322912d884153814",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch13-course1-L91-100-I10.json": "38625a7406232532bf10bdabf542a07e641f2a2012822674d506c9fe594e51f9",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch14-course1-L101-110-I11.json": "eabd382df7692966d9ba19febf6a7eb259690bdc7b76cf990e94fb129bc59f69",
+"curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch15-course1-L111-120-I12.json": "ea3848e72506e302aef6784a168264c29cf43e7518bad671d1649ac351132804",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch3-course1-L12-19.json": "686c3750dde50b693e49609ad5494e6c8c657f769a054ccc7118bf00f1b1fecd",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch4-course1-L20-26-I2.json": "46bb8e34f01f93812a7f933cd6f505c165de55094a76a92a9c299f9037e8698f",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch5-course1-L27-34-I3.json": "c6e3afd02a1a4f8877afaa83d312e69b8bc5f31fe7440c77e53d3a19cb69f7c4",
@@ -46,7 +47,7 @@
 "curriculum/source-mappings/linear-equations-v0.1.json": "9e4f9fd37066e63cd74f133bcc76713db8ae30251a22f03f5a672ab535bc7e65",
 "curriculum/source-mappings/linear-equations-v0.2.json": "759f02762a92c18098944bfe8a88f2be5a0a4384f778105cb78239a07df22371",
 "curriculum/source-mappings/measurement-v0.1.json": "3ca7cc1cdb74fb6e1bf8741beea9c2787fe122befe28499e75bfd6d803409451",
-"curriculum/source-mappings/port87-v0.1.json": "55cb481dc54ea7865a145a44b22db11d0f0b49324ab04031d2724fba9232075d",
+"curriculum/source-mappings/port87-v0.1.json": "8e8d4d046b43e45b8f66e8ffafa35eeb2fa031a47859bd5dad25e0b74382e77b",
 "curriculum/source-mappings/proportions-v0.1.json": "85db6cf773c6c1a6bbad37f83cf3724becf552fee4bbf4154e2ade0bae7751af",
 "curriculum/source-mappings/quadratic-equations-v0.1.json": "51b5a6c7221720481df7ac7a3cf9b4561744ef910fee5427c8cd73d6c027f4a6",
 "curriculum/source-mappings/reasoning-v0.1.json": "b88aeb99d84bd8ab367678d0c6f7d90fdc3cba8dbc087ebf108a3e835ef7f448",
@@ -56,14 +57,14 @@
 "curriculum/source-mappings/statistics-v0.1.json": "a3ba878bad7cc71dea555ef623b6c3e89483a9c8f809d21e4d90efa9ba09ce8d"
 },
 "totals": {
-"open": 3027,
-"covered-provisional": 346,
-"covered": 1288,
-"consolidated": 764,
+"open": 2939,
+"covered-provisional": 344,
+"covered": 1352,
+"consolidated": 790,
 "retired": 0,
 "records": 5425,
-"percentComplete": 37.8,
-"percentIncludingProvisional": 44.2
+"percentComplete": 39.5,
+"percentIncludingProvisional": 45.8
 },
 "banks": {
 "course-87-en": {
@@ -107,14 +108,14 @@
 "percentIncludingProvisional": 18.8
 },
 "course-1-en": {
-"open": 88,
-"covered-provisional": 2,
-"covered": 663,
-"consolidated": 600,
+"open": 0,
+"covered-provisional": 0,
+"covered": 727,
+"consolidated": 626,
 "retired": 0,
 "records": 1353,
-"percentComplete": 93.3,
-"percentIncludingProvisional": 93.5
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 "intermediate-4-en": {
 "open": 1296,
@@ -6167,134 +6168,134 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:1aa393456b1a4fd9",
-"open": 4,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 3,
+"consolidated": 1,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"open": 36,
-"covered-provisional": 1,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 27,
+"consolidated": 10,
 "retired": 0,
 "records": 37,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 2.7
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:493f5060ac5d271d",
-"open": 4,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 1,
+"consolidated": 3,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:569afc7cc8360536",
-"open": 10,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 7,
+"consolidated": 3,
 "retired": 0,
 "records": 10,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:949c3e1b9f0ca436",
-"open": 7,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 4,
+"consolidated": 3,
 "retired": 0,
 "records": 7,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:bfabe1658820a9a3",
-"open": 5,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 4,
+"consolidated": 1,
 "retired": 0,
 "records": 5,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:cf7bcd0624269423",
-"open": 4,
-"covered-provisional": 1,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 4,
+"consolidated": 1,
 "retired": 0,
 "records": 5,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 20.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:d8d6c8623fb5d068",
-"open": 4,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 2,
+"consolidated": 2,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:fbaad18154c146e7",
-"open": 4,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
+"covered": 4,
 "consolidated": 0,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:fdabeff2bf8c94e0",
-"open": 4,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 3,
+"consolidated": 1,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:ffe6253f8867a6a9",
-"open": 6,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 5,
+"consolidated": 1,
 "retired": 0,
 "records": 6,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
@@ -36116,551 +36117,1029 @@
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00001",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:bfabe1658820a9a3",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00019"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00002",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:949c3e1b9f0ca436",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Divide a negative integer by a positive integer.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00002"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00003",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:569afc7cc8360536",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Subtract feet and inches.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00003"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00004",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:569afc7cc8360536",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: A decimal times a power of ten in standard notation.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00004"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00005",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:ffe6253f8867a6a9",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00028"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00006",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:fbaad18154c146e7",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: A percent with a mixed number (eighths and sixths) as a fraction.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00006"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00007",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:493f5060ac5d271d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Compound interest compounded annually.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00007"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00008",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:fdabeff2bf8c94e0",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00035"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00009",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:d8d6c8623fb5d068",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "The figure is missing from the bank; estimating an area by counting whole and half squares matches the drawn grid task.",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00066"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00010",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:1aa393456b1a4fd9",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00041"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00011",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:cf7bcd0624269423",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Cylinder volume from the diameter, to the nearest tenth.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00011"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00012",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Surface area of a cylinder, to the nearest hundredth.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00012"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00013",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: The volume formula for a solid.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00013"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00014",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: The solid for a volume formula.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00014"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00015",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Estimate the volume of a cube.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00015"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00016",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Estimate the volume of a cylinder inside a cube.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00016"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00017",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Cones that fill a cylinder.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00017"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00018",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Estimate the surface area of a cylinder.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00018"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00019",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:bfabe1658820a9a3",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Cars needed: round the quotient up.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00019"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00020",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:bfabe1658820a9a3",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Books affordable: round the quotient down.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00020"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00021",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:bfabe1658820a9a3",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Equal shares of a payment.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00021"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00022",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:949c3e1b9f0ca436",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00002"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00023",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:569afc7cc8360536",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Millions, billions and trillions in standard notation.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00023"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00024",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:569afc7cc8360536",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: A decimal number of millions in standard notation.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00024"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00025",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:569afc7cc8360536",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00004"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00026",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:ffe6253f8867a6a9",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Unit multiplier: ounces to pounds.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00026"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00027",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:ffe6253f8867a6a9",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Unit multiplier: yards to feet.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00027"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00028",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:ffe6253f8867a6a9",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Unit multiplier: tons to pounds.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00028"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00029",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:fbaad18154c146e7",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: A percent with thirds as a fraction.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00029"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00030",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:fbaad18154c146e7",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: A fractional percent as a fraction.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00030"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00031",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:fbaad18154c146e7",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: A percent with fourths as a fraction.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00031"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00032",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:493f5060ac5d271d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00007"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00033",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:493f5060ac5d271d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00007"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00034",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:493f5060ac5d271d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00007"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00035",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:fdabeff2bf8c94e0",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Class size from the fraction that are boys.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00035"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00036",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:fdabeff2bf8c94e0",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Town population from the fraction that voted.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00036"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00037",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:fdabeff2bf8c94e0",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: A fraction of what number.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00037"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00038",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:d8d6c8623fb5d068",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Area of a shaded figure from squares of 10 square inches.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00038"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00039",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:1aa393456b1a4fd9",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: A number is a percent of what number.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00039"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00040",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:1aa393456b1a4fd9",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: A percent of what number is a number.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00040"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00041",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:1aa393456b1a4fd9",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: A population from a percent and a part.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00041"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00042",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:cf7bcd0624269423",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Confirmed: cylinder volume from a radius and height in meters, using 3.14 (existing structured adaptation, reviewed and kept; it asks for the same quantity in the same units).",
 "by": [
 "course-1-en:bank:C1_Section12:item:C1_S12_00042"
-],
-"basis": "breadth-v0.1.json",
-"family": "structured-breadth"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00043",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:cf7bcd0624269423",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00011"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00044",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:cf7bcd0624269423",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Volume of a soup can.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00044"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00045",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Volume of a prism with an isosceles triangle base.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00045"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00046",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Volume of a pyramid.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00046"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00047",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Volume of a cone.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00047"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00048",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Surface area of a right triangular prism.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00048"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00049",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Surface area of a drawn rectangular prism.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00049"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00050",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Milliliters of water in a cube.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00050"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00051",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Paper in a roll of paper towels, in terms of π.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00051"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00052",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Storage space in an attic shaped like a triangular prism.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00052"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00053",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "The figure is missing from the bank; the surface area of a rectangular prism from its net matches the net task with given dimensions.",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00075"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00054",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00049"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00055",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Surface area of a drawn cylinder from its diameter.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00055"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00056",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Confirmed: rectangular-prism surface area in square centimeters (existing structured adaptation, reviewed and kept; it asks for the same quantity in the same units).",
 "by": [
 "course-1-en:bank:C1_Section12:item:C1_S12_00056"
-],
-"basis": "breadth-v0.1.json",
-"family": "structured-breadth"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00057",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Paper left after covering a soda can.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00057"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00058",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Glass in a fish tank with no top.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00058"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00059",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "The same fact (three cones fill a cylinder with the same base and height) as the task it points to.",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00017"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00060",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Pyramids that fill a prism.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00060"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00061",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:949c3e1b9f0ca436",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Multiply signed integers.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00061"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00062",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:949c3e1b9f0ca436",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Divide a negative integer by a negative integer. The bank's key marks the negative quotient; the port uses the correct positive quotient.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00062"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00063",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:569afc7cc8360536",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00003"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00064",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:569afc7cc8360536",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Add feet and inches.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00064"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00065",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:569afc7cc8360536",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Add hours and minutes.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00065"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00066",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:d8d6c8623fb5d068",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Estimate an area from whole and half squares.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00066"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00067",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:d8d6c8623fb5d068",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "The figure cannot be read from the bank; estimating an area by counting whole and half squares matches the drawn grid task.",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00066"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00068",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Volume of a drawn cylinder in terms of π.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00068"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00069",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Surface area of a drawn cylinder in terms of π.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00069"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00070",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Why the cube and prism volume formulas agree.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00070"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00071",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "The same fact (three cones fill a cylinder with the same base and height), stated with the formulas, as the task it points to.",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00017"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00072",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "The figure cannot be read from the bank; the volume of a triangular prism (half of a rectangular prism) matches the drawn triangular-prism task.",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00045"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00073",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:cf7bcd0624269423",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Estimate the volume of a sphere.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00073"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00074",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Drawing the net is shown in the solution; the surface area of a cylinder in terms of π matches the diameter task.",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00075",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Surface area of a rectangular prism from its net.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00075"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00076",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Drawing the net is shown in the solution; the surface area of a cylinder in terms of π matches the diameter task.",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00077",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Surface area of a cylinder in terms of π.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00077"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00078",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "The figure is missing from the bank; the surface area of a rectangular prism matches the drawn prism task.",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00049"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00079",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "The figure is missing from the bank; the surface area of a triangular prism matches the drawn right-triangular-prism task.",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00048"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00080",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Surface area of a square pyramid.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00080"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00081",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Enough wrapping paper for a box.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00081"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00082",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:3aba9f0d5998c1bd",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Two surface areas of a cylinder in a box: the cylinder part matches the drawn cylinder task (in terms of π) and the box part matches the drawn rectangular-prism task.",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00069"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00083",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:949c3e1b9f0ca436",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00061"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00084",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:569afc7cc8360536",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00088"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00085",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:ffe6253f8867a6a9",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: An equal metric length.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00085"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00086",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:949c3e1b9f0ca436",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section12:item:C1_S12_00061"
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00087",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:949c3e1b9f0ca436",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Signed division written with a fraction bar.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00087"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00088",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:569afc7cc8360536",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: A mixed number of millions as a standard numeral.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00088"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00089",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:bfabe1658820a9a3",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Students shared among rooms as equally as possible.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00089"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section12:item:C1_S12_00090",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section12:scope:ffe6253f8867a6a9",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+"reviewed": "2026-10-15",
+"note": "Ported: Unit multiplier: quarts to gallons.",
+"by": [
+"course-1-en:bank:C1_Section12:item:C1_S12_00090"
+]
 },
 {
 "id": "course-87-en:item:AHG50141",
