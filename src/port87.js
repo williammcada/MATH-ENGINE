@@ -541,6 +541,38 @@ function lineGraph(xs,ys,o){const W=400,H=260,x0=56,y0=210,w=W-x0-24,h=170,X=v=>
 function letteredLine(lo,hi,sub,points,label){const W=440,x0=30,base=50,X=v=>x0+(v-lo)*(W-60)/(hi-lo);let b=ln(12,base,W-12,base,{start:1,end:1});
  for(let k=0;k<=(hi-lo)*sub;k++){const v=lo+k/sub,whole=k%sub===0;b+=ln(X(v),base-(whole?7:4),X(v),base+(whole?7:4),{w:whole?1.4:1});if(whole)b+=tx(X(v),base+22,minus(v),{size:12});}
  points.forEach(([L,v])=>{b+=dot(X(v),base)+tx(X(v),base-12,L,{italic:1,size:14});});return svg(b,label,W,base+32);}
+// ---------- Course 1, Batch C1-5 drawings ----------
+// A circle with centre M, a diameter SR at angle th and a point Q on the circle; segments SQ, SR and MQ drawn.
+function circleChordFigure(nm,th,phi){const cx=120,cy=105,r=80,P=a=>[cx+r*Math.cos(a*Math.PI/180),cy-r*Math.sin(a*Math.PI/180)],[S,R0,Q]=[P(th+180),P(th),P(th+phi)];
+ const lab=(p,s,dx,dy)=>tx(p[0]+dx,p[1]+dy,s,{italic:1,size:14}),out=(a,s)=>{const [x,y]=P(a);return lab([x,y],s,14*Math.cos(a*Math.PI/180),5-14*Math.sin(a*Math.PI/180));};
+ const b=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${INK}" stroke-width="1.6"/>`+ln(S[0],S[1],R0[0],R0[1])+ln(S[0],S[1],Q[0],Q[1])+ln(cx,cy,Q[0],Q[1])+dot(cx,cy)+dot(Q[0],Q[1])+out(th+180,nm.S)+out(th,nm.R)+out(th+phi,nm.Q)+lab([cx,cy],nm.M,-10*Math.cos((th+90)*Math.PI/180),18);
+ return svg(b,`A circle with centre ${nm.M}; segment ${nm.S}${nm.R} passes through ${nm.M}; segments ${nm.S}${nm.Q} and ${nm.M}${nm.Q} are also drawn`,240,215);}
+// Line R–O–T with rays OP, OQ (perpendicular) and OS.
+function supplementFigure(sDeg,pDeg){const F=Fig(),O=[0,0],at=d=>[10*Math.cos(d*Math.PI/180),10*Math.sin(d*Math.PI/180)],lab=d=>[12*Math.cos(d*Math.PI/180),12*Math.sin(d*Math.PI/180)];
+ F.seg([-12,0],[12,0],{start:1,end:1}).seg(O,at(sDeg),{end:1}).seg(O,at(90),{end:1}).seg(O,at(pDeg),{end:1}).dot(O).dot([-9,0]).dot([9,0]).dot(at(sDeg).map(v=>v*0.8)).dot(at(90).map(v=>v*0.8)).dot(at(pDeg).map(v=>v*0.8))
+  .txt([0,-1.6],'O',{italic:1}).txt([-9,-1.6],'R',{italic:1}).txt([9,-1.6],'T',{italic:1}).txt(lab(sDeg).map(v=>v*0.8+0.9),'S',{italic:1}).txt([1,9.2],'Q',{italic:1}).txt(lab(pDeg).map((v,i)=>v*0.8+(i?0.9:-0.9)),'P',{italic:1}).right(O,0,90,9);
+ return F.render('Line RT through O with rays OS, OQ and OP above it; ray OQ is perpendicular to line RT',320,170);}
+// Triangle with labelled vertices (math coordinates).
+function triangleFigure(V,names){const F=Fig().poly(V),c=[(V[0][0]+V[1][0]+V[2][0])/3,(V[0][1]+V[1][1]+V[2][1])/3];
+ V.forEach((p,i)=>{const dx=p[0]-c[0],dy=p[1]-c[1],L=Math.hypot(dx,dy);F.txt([p[0]+dx/L*0.9,p[1]+dy/L*0.9-0.25],names[i],{italic:1});});
+ return F.render(`Triangle ${names.join('')}`,320,180);}
+// Rectangle with corner names (top-left, top-right, bottom-right, bottom-left) and one diagonal (bottom-left to top-right).
+function rectDiagFigure(nm,w,h){const x0=40,y0=25,W=w,H=h;return svg(`<rect x="${x0}" y="${y0}" width="${W}" height="${H}" fill="none" stroke="${INK}" stroke-width="1.8"/>`+ln(x0,y0+H,x0+W,y0)+tx(x0-12,y0+4,nm[0],{italic:1,size:15})+tx(x0+W+12,y0+4,nm[1],{italic:1,size:15})+tx(x0+W+12,y0+H+14,nm[2],{italic:1,size:15})+tx(x0-12,y0+H+14,nm[3],{italic:1,size:15}),`Rectangle ${nm.join('')} with diagonal ${nm[3]}${nm[1]}`,W+80,H+55);}
+// A row of equal balls with the first diameter marked.
+function ballsFigure(k,label){const r=34,g=4;let b='';for(let i=0;i<k;i++){const cx=14+r+i*(2*r+g);b+=`<circle cx="${cx}" cy="${r+8}" r="${r}" fill="none" stroke="${INK}" stroke-width="1.6"/>`+`<path d="M${cx-r*0.62},${r+8-r*0.25} A${r*0.7},${r*0.7} 0 0 0 ${cx-r*0.1},${r+8+r*0.62}" fill="none" stroke="${INK}" stroke-width="2.4"/>`;}
+ const y=2*r+26,x0=14,x1=14+2*r;b+=ln(x0,y-8,x0,y+8,{w:1})+ln(x1,y-8,x1,y+8,{w:1})+ln(x0+2,y,x1-2,y,{start:1,end:1})+tx((x0+x1)/2,y+20,label,{size:13});
+ return svg(b,`${k} equal balls side by side in a row; the first ball's diameter is marked ${label} inch`,14*2+k*(2*r+g),y+30);}
+// Four separate angles labelled Angle 1 to Angle 4 (no measures shown).
+function fourAnglesFigure(degs){let b='';degs.forEach((d,i)=>{const ox=20+i*135+(d>90?40:0),oy=95,r=70,a=d*Math.PI/180;b+=ln(ox,oy,ox+r,oy,{w:1.8})+ln(ox,oy,ox+r*Math.cos(a),oy-r*Math.sin(a),{w:1.8})+`<path d="M${ox+18},${oy} A18,18 0 0 0 ${(ox+18*Math.cos(a)).toFixed(1)},${(oy-18*Math.sin(a)).toFixed(1)}" fill="none" stroke="${INK}"/>`+tx(20+i*135+55,oy+26,`Angle ${i+1}`,{size:13});});
+ return svg(b,'Four angles labelled Angle 1, Angle 2, Angle 3 and Angle 4',4*135+20,130);}
+// Two rays with the reflex side marked by an arc; the smaller angle labelled with its measure.
+function reflexFigure(small,rot){const cx=150,cy=100,r=80,P=(d,rr=r)=>[cx+rr*Math.cos(d*Math.PI/180),cy-rr*Math.sin(d*Math.PI/180)],a0=rot,a1=rot+small,[x0,y0]=P(a0),[x1,y1]=P(a1),[u0,v0]=P(a0,22),[u1,v1]=P(a1,22),[lx,ly]=P(a0+small/2,46);
+ const b=ln(cx,cy,x0,y0,{w:2,end:1})+ln(cx,cy,x1,y1,{w:2,end:1})+`<path d="M${u1.toFixed(1)},${v1.toFixed(1)} A22,22 0 1 0 ${u0.toFixed(1)},${v0.toFixed(1)}" fill="none" stroke="${INK}" stroke-width="1.6"/>`+tx(lx,ly+4,`${small}°`,{size:13});
+ return svg(b,`Two rays forming a ${small}° angle; the arc marks the angle on the other side, the long way around`,300,200);}
+// Line A–D–C with ray DB.
+function lineRayFigure(phi){const F=Fig(),D=[0,0],B=[8*Math.cos(phi*Math.PI/180),8*Math.sin(phi*Math.PI/180)];
+ F.seg([-11,0],[11,0],{start:1,end:1}).seg(D,[B[0]*1.45,B[1]*1.45],{end:1}).dot([-7,0]).dot([7,0]).dot(B).txt([-7,1],'A',{italic:1}).txt([0,-1.5],'D',{italic:1}).txt([7,-1.5],'C',{italic:1}).txt([B[0]+(B[0]>0?-1:1),B[1]+0.4],'B',{italic:1});
+ return F.render('Line AC through D with ray DB',320,170);}
 // ---------- tasks ----------
 const LETTERS='ABCDEGHJKMNPQRSTUVWXYZ';
 function letter(int,ban=''){const pool=[...LETTERS].filter(c=>!ban.includes(c));return pool[int(0,pool.length-1)];}
@@ -2744,6 +2776,189 @@ case 'c1-reduce':{const v=c.variant,mx=(n0,d0)=>mixedText(n0,d0);
  const w=int(2,9),d=pick([2,3,4,5]),a=int(1,d-1),k=int(1,w-1),tot=w*d+a,z=mx(tot-k*d,d);
  t=n(`Find the missing number: ${k} + N = ${w} ${a}/${d}.`,R(tot-k*d,d),`N = ${w} ${a}/${d} − ${k} = ${z}.`,{k,w,a,d},'mixed');
  t.choices=distinct(z,[{value:mx(tot+k*d,d),mistake:'Added instead of subtracting'},{value:mx(tot-k*d+d,d),mistake:'Subtraction slip in the whole numbers'},{value:String(w-k),mistake:'Left out the fraction'}]);break;}
+// ---------- Course 1, Batch C1-5: Lessons 27-34, Investigation 3 ----------
+case 'c1-circle':{const v=c.variant;
+ if(v==='radius'){const d=2*int(2,15),z=d/2;
+  t=n(`If the diameter of a circle is ${d} inches, what is its radius, in inches?`,z,`The radius is half the diameter: ${d} ÷ 2 = ${z}.`,{d});
+  t.choices=distinct(z,[{value:z+1,mistake:'Added 1 to half the diameter'},{value:d,mistake:'Gave the diameter instead of the radius'},{value:z-1,mistake:'Subtracted 1 from half the diameter'},{value:2*d,mistake:'Doubled the diameter instead of halving it'}]);break;}
+ if(v==='diameter'){const r=int(2,15),z=2*r;
+  t=n(`If the radius of a circle is ${r} inches, what is the diameter, in inches?`,z,`The diameter is twice the radius: 2 × ${r} = ${z}.`,{r});
+  t.choices=distinct(z,[{value:z+1,mistake:'Added 1 to twice the radius'},{value:r+2,mistake:'Added 2 instead of multiplying by 2'},{value:z-1,mistake:'Subtracted 1 from twice the radius'},{value:r,mistake:'Gave the radius'}]);break;}
+ if(v==='radius-fr'){const d=2*int(8,38),z=d/2;
+  t=n(`If the diameter of a circle is ${d} inches, what is its radius, in inches?`,z,`The radius is half the diameter: ${d} ÷ 2 = ${z}.`,{d});
+  t.choices=distinct(z,[{value:d,mistake:'Gave the diameter instead of the radius'},{value:2*d,mistake:'Doubled the diameter instead of halving it'},{value:z+2,mistake:'Arithmetic slip in halving'}]);break;}
+ if(v==='ratio'){const D=2*int(5,30),u=pick(['feet','meters','yards','inches']);
+  t=n(`The diameter of a big circle is ${D} ${u}. What is the ratio of the circle’s radius to its diameter?`,R(1,2),`The radius is ${D/2} ${u}; ${D/2}/${D} = 1/2. The radius is always half the diameter.`,{D},'fraction');
+  t.choices=wrongOnly(t,[{value:'2',mistake:'Gave the ratio of the diameter to the radius'},{value:String(D/2),mistake:'Gave the length of the radius'},{value:'1/4',mistake:'Halved twice'},{value:`${D/2}/${D}`,mistake:'Did not reduce the ratio'}]);break;}
+ // which segment is a diameter
+ const pool=['Q','R','S','T','M','N','P','A','B','C','O'];let L=[];while(L.length<4){const x=pick(pool);if(!L.includes(x))L.push(x);}
+ const nm={S:L[0],R:L[1],Q:L[2],M:L[3]},th=int(0,5)*30-60,phi=pick([50,60,70,110,120,130]),z=nm.S+nm.R;
+ t=text(`Which segment in the circle below is a diameter? The center of the circle is ${nm.M}.`,z,`A diameter passes through the center and has both endpoints on the circle: ${z}. ${nm.M}${nm.S} and ${nm.M}${nm.R} are radii; ${nm.S}${nm.Q} does not pass through the center.`,{nm,th,phi},circleChordFigure(nm,th,phi),[nm.R+nm.S,'segment '+z,'segment '+nm.R+nm.S]);
+ t.choices=[{value:nm.S+nm.Q,mistake:'Chose a chord that does not pass through the center'},{value:nm.M+nm.S,mistake:'Chose a radius'},{value:nm.M+nm.R,mistake:'Chose a radius'}];break;}
+case 'c1-angles':{const v=c.variant,K=['acute','obtuse','right','straight'],kind=d=>d<90?'acute':d===90?'right':d<180?'obtuse':'straight';
+ if(v==='supplement'){const s=int(2,7)*10,p0=int(11,16)*10,dir={R:180,T:0,Q:90,S:s,P:p0},A1=['ROS','TOS','TOQ','TOP','POR'],A2=['TOS','ROS','ROQ','ROP','POT'],k=int(0,4),m=nm=>Math.abs(dir[nm[0]]-dir[nm[2]]),g=kind(m(A1[k])),z=kind(m(A2[k]));
+  t=text(`In the figure, R, O and T are on a line. If ∠${A1[k]} is ${g}, then ∠${A2[k]} is what kind of angle?`,z,`∠${A1[k]} and ∠${A2[k]} together make the straight angle ROT (180°). ${g==='right'?'If one is 90°, the other is 90°: right.':g==='obtuse'?'If one is more than 90°, the other is less than 90°: acute.':'If one is less than 90°, the other is more than 90°: obtuse.'}`,{s,p:p0,k,A1:A1[k],A2:A2[k]},supplementFigure(s,p0));
+  t.choices=K.filter(x=>x!==z).map(x=>({value:x,mistake:x==='straight'?'Gave the kind of the whole angle ROT':x===g?'Repeated the kind of the given angle':'Did not use the fact that the two angles make a straight angle'}));break;}
+ const names=['A','B','C'],pickTri=()=>{const type=pick(['obtuse','obtuse','right','acute']);const a=type==='obtuse'?int(100,140):type==='right'?90:int(55,80);let b0,c0;do{b0=int(20,type==='acute'?85:60);c0=180-a-b0;}while(c0<20||(type==='acute'&&(c0>=85||c0<45)));return [a,b0,c0];};
+ const solve=(angs,at)=>{const ang=[0,0,0];at.forEach((k,i)=>ang[k]=angs[i]);const [A,B,C]=ang,s=x=>Math.sin(x*Math.PI/180),AB=10,AC=AB*s(B)/s(C);return [[0,0],[AB,0],[AC*Math.cos(A*Math.PI/180),AC*Math.sin(A*Math.PI/180)]].map(([x,y])=>[x,y]);};
+ if(v==='triangle-kind'){const angs=pickTri(),perm=pick([[0,1,2],[1,0,2],[2,1,0],[1,2,0],[0,2,1],[2,0,1]]),V=solve(angs,perm),special=perm[0],ask=int(0,3)===0?pick([0,1,2].filter(i=>i!==special)):special,deg=[0,0,0];perm.forEach((k,i)=>deg[k]=angs[i]);const z=kind(deg[ask]);
+  t=text(`In triangle ABC, what kind of angle is angle ${names[ask]}?`,z,`Angle ${names[ask]} is ${z==='acute'?'less than a right angle':z==='right'?'a square corner (90°)':'more than a right angle but less than a straight angle'}: ${z}.`,{V,ask},triangleFigure(V,names));
+  t.choices=K.filter(x=>x!==z).map(x=>({value:x,mistake:x==='straight'?'A triangle cannot have a straight angle':'Misjudged the size of the angle'}));break;}
+ if(v==='name-obtuse'){let angs;do{angs=pickTri();}while(angs[0]<=90);const perm=pick([[0,1,2],[1,0,2],[2,1,0],[1,2,0],[0,2,1],[2,0,1]]),V=solve(angs,perm),o=perm[0],[x,y]=[0,1,2].filter(i=>i!==o).map(i=>names[i]),O=names[o];
+  t=text(`Name the obtuse angle in triangle ABC.`,`∠${O}`,`The angle at ${O} is greater than a right angle, so it is obtuse: ∠${O} (also named ∠${x}${O}${y} or ∠${y}${O}${x}).`,{V,o},triangleFigure(V,names),[O,`angle ${O}`,`∠${x}${O}${y}`,`∠${y}${O}${x}`,`${x}${O}${y}`,`${y}${O}${x}`,`angle ${x}${O}${y}`,`angle ${y}${O}${x}`]);
+  t.choices=[x,y].map(w=>({value:`∠${w}`,mistake:'Chose an acute angle of the triangle'}));break;}
+ // parallel sides in a rectangle with a diagonal
+ const nm=pick([['T','Q','R','S'],['A','B','C','D'],['W','X','Y','Z'],['P','Q','R','S']]),k=int(0,3),side=[nm[k],nm[(k+1)%4]],opp=[nm[(k+3)%4],nm[(k+2)%4]],adj=[[nm[(k+1)%4],nm[(k+2)%4]],[nm[(k+3)%4],nm[k]]],diag=nm[3]+nm[1],w=int(14,20)*10,h=int(8,13)*10;
+ const sv=side.join(''),z=opp.join('');
+ t=text(`In rectangle ${nm.join('')}, which segment is parallel to ${sv}?`,z,`Opposite sides of a rectangle are parallel: ${z} is parallel to ${sv}.`,{nm,k,w,h},rectDiagFigure(nm,w,h),[opp[1]+opp[0],'segment '+z,'segment '+opp[1]+opp[0]]);
+ t.choices=[{value:diag,mistake:'Chose the diagonal'},{value:adj[0].join(''),mistake:'Chose a side that meets it at a right angle'},{value:adj[1].join(''),mistake:'Chose a side that meets it at a right angle'}];break;}
+case 'c1-fraction-mult':{const v=c.variant,fa=(x,y)=>fracText(...red(x,y)),mx=(x,y)=>mixedText(x,y),times=(a,b,c0,d)=>math(`<mrow>${mfrac(a,b)}<mo>×</mo>${mfrac(c0,d)}</mrow>`);
+ if(v==='products'||v==='two'){const lo=v==='two'?2:6,hi=v==='two'?5:10,dlo=v==='two'?3:8,dhi=v==='two'?9:12;let a,b,c0,d;do{a=int(lo,hi);c0=int(lo,hi);b=int(dlo,dhi);d=int(dlo,dhi);}while(b===d||a>=b||c0>=d||(a*c0)%(b*d)===0);
+  t=n(v==='two'?'Multiply.':'Multiply. Reduce your answer.',R(a*c0,b*d),`Multiply the numerators and the denominators: ${a} × ${c0} = ${a*c0} and ${b} × ${d} = ${b*d}; ${a*c0}/${b*d} = ${f(R(a*c0,b*d))}.`,{a,b,c:c0,d},'fraction');t.math=times(a,b,c0,d);
+  t.choices=wrongOnly(t,[{value:fa(a+c0,b+d),mistake:'Added the numerators and the denominators'},{value:mx(a*b,c0*d),mistake:'Multiplied across each fraction instead of numerator by numerator'},{value:fa(a+c0,b*d),mistake:'Added the numerators but multiplied the denominators'},{value:`${a*c0}/${b*d}`,mistake:'Did not reduce the product'},{value:fa(a*d+b*c0,b*d),mistake:'Added the fractions instead of multiplying'},{value:fa(a*c0+1,b*d),mistake:'Multiplication slip in the numerator'},{value:fa(a*c0,b*d+1),mistake:'Multiplication slip in the denominator'}]);break;}
+ if(v==='whole-times'){const w=int(2,6),d=pick([4,6,5,8]),a=int(2,d-1);
+  t=n('Multiply. Reduce your answer.',R(w*a,d),`${w} × ${a}/${d} = ${w*a}/${d} = ${mx(w*a,d)}.`,{w,a,d},'mixed');t.math=math(`<mrow><mn>${w}</mn><mo>×</mo>${mfrac(a,d)}</mrow>`);
+  t.choices=wrongOnly(t,[{value:mx(w*d,d),mistake:'Multiplied the whole number by the denominator too'},{value:mx(w+a,d),mistake:'Added the whole number to the numerator'},{value:mx(w+a+d,d),mistake:'Added all the numbers'},{value:`${w*a}/${d}`,mistake:'Did not write the answer as a reduced mixed number'},{value:mx(w*a+1,d),mistake:'Multiplication slip'},{value:mx(a,w*d),mistake:'Divided by the whole number instead of multiplying'},{value:mx(w*a+d,d),mistake:'Added an extra whole'}]);break;}
+ if(v==='whole-improper'){let w,a,b;do{w=int(2,9);b=int(3,9);a=int(1,b-1);}while(gcd(a,b)!==1||gcd(w*a,b)!==1);
+  t=n('Multiply. Write your answer as an improper fraction.',R(w*a,b),`${w} × ${a}/${b} = ${w*a}/${b}.`,{w,a,b},'fraction');t.math=math(`<mrow><mn>${w}</mn><mo>×</mo>${mfrac(a,b)}</mrow>`);
+  t.choices=wrongOnly(t,[{value:`${w*a}/${w*b}`,mistake:'Multiplied the denominator by the whole number too'},{value:`${w+a}/${b}`,mistake:'Added the whole number to the numerator'},{value:`${a}/${w*b}`,mistake:'Divided instead of multiplying'},{value:`${w*a+1}/${b}`,mistake:'Multiplication slip'},{value:`${w*b}/${a}`,mistake:'Multiplied by the reciprocal'}]);break;}
+ if(v==='half-of'){const [a,b]=pick([[3,4],[1,3],[2,3],[1,4],[3,5],[1,5],[5,6],[1,6],[3,7],[5,8],[7,8],[2,5]]);
+  t=n(`What is one-half of ${a}/${b}?`,R(a,2*b),`One-half of ${a}/${b} is 1/2 × ${a}/${b} = ${a}/${2*b}${gcd(a,2*b)>1?` = ${fa(a,2*b)}`:''}.`,{a,b},'fraction');t.math=math(`<mrow>${mfrac(1,2)}<mo>×</mo>${mfrac(a,b)}</mrow>`);
+  t.choices=wrongOnly(t,[{value:mx(2*a,b),mistake:'Doubled instead of halving'},{value:'1/2',mistake:'Gave one-half itself'},{value:`${a}/${b}`,mistake:'Gave the original fraction'},{value:fa(a,b+2),mistake:'Added 2 to the denominator instead of doubling it'},{value:fa(a,4*b),mistake:'Halved twice'}]);break;}
+ if(v==='pizza'){const k=int(5,7),j=int(1,k-2),z=R(k-j,8);
+  t=n(`In a box was ${k}/8 of a pizza. David took ${j}/8 of the pizza. Then what fraction of the pizza was in the box?`,z,`${k}/8 − ${j}/8 = ${k-j}/8${gcd(k-j,8)>1?` = ${fa(k-j,8)}`:''}.`,{k,j},'fraction',sectorsFigure(8,[...Array(k).keys()],`A pizza cut into 8 equal slices; ${k} slices are shaded`));
+  t.choices=wrongOnly(t,[{value:fa(k-j,k),mistake:'Used the slices in the box as the denominator'},{value:fa(k+j,8),mistake:'Added instead of subtracting'},{value:fa(j,8),mistake:'Gave the part David took'},{value:`${k-j}/8`,mistake:'Did not reduce the answer'},{value:fa(k-j,8-j),mistake:'Subtracted from the denominator too'},{value:fa(k-j+1,8),mistake:'Counted one slice too many'}]);break;}
+ if(v==='shots'){const who=pick([['Brenda','her','shots'],['Marcus','his','free throws'],['Lupe','her','shots'],['Tom','his','attempts']]);let a,b;do{b=int(10,30);a=int(2,b-2);}while(gcd(a,b)===1||2*a===b);
+  t=n(`In the basketball game, ${who[0]} made ${a} of ${who[1]} ${b} ${who[2]}. What fraction of ${who[1]} ${who[2]} did ${who[0]} make?`,R(a,b),`${a}/${b} = ${fa(a,b)}.`,{a,b},'fraction');
+  t.choices=wrongOnly(t,[{value:fa(a,b-a),mistake:'Compared the made shots with the missed shots'},{value:fa(b-a,b),mistake:'Gave the fraction missed'},{value:`${a}/${b}`,mistake:'Did not reduce the fraction'},{value:`1/${a}`,mistake:'Used the number made as the denominator'}]);break;}
+ if(v==='overhang'){const T=int(5,10)*6,C=T+2*int(3,8),W=x=>x.replace(/ /g,''),ex=(f0,op)=>`${f0} × (${C} ${op} ${T})`,z=ex('1/2','−');
+  t=text(`A ${C}-inch square table cloth is centered on a ${T}-inch square table so that the same length of cloth hangs over each edge. Which expression shows how to find the number of inches the cloth hangs down from each edge? Write it like 1/2 × (60 − 48).`,z,`The cloth is ${C} − ${T} = ${C-T} inches longer than the table; half of that hangs over each edge: 1/2 × (${C} − ${T}) = ${(C-T)/2} inches.`,{C,T},'',[W(z),`1/2(${C}−${T})`,`(${C}−${T})/2`,`(${C} − ${T}) ÷ 2`,`(${C}−${T})÷2`,`1/2 × (${C} - ${T})`,`1/2(${C}-${T})`,`(${C}-${T})/2`]);
+  t.choices=[{value:ex('1/4','+'),mistake:'Added the lengths and divided by 4'},{value:ex('1/4','−'),mistake:'Divided the extra length among four edges; each edge gets half of the extra length'},{value:ex('1/2','+'),mistake:'Added the lengths'}];break;}
+ if(v==='balls'){const k=pick([2,3,3,4,5]),b=pick([2,3,4,5]);let a;do{a=int(1,b-1);}while(gcd(a,b)!==1);
+  const z=R(k*a,b);t=n(`${['','','Two','Three','Four','Five'][k]} balls are placed side by side as shown below. The diameter of one ball is ${a}/${b} inch. How long, in inches, is the row of balls?`,z,`${k} × ${a}/${b} = ${k*a}/${b} = ${mx(k*a,b)} inches.`,{k,a,b},'mixed',ballsFigure(k,`${a}/${b}`));
+  t.choices=wrongOnly(t,[{value:mx(a,k*b),mistake:'Divided by the number of balls instead of multiplying'},{value:mx(k+a,b),mistake:'Added the number of balls to the numerator'},{value:mx(2*k*a,b),mistake:'Used the radius idea twice (doubled the length)'},{value:mx(k*a+b,b),mistake:'Added a whole inch'}]);break;}
+ if(v==='reduce-unit'){let rd,m1,m2;do{rd=pick([2,3,5]);m1=pick([4,6,8,9]);m2=pick([2,3]);}while(rd*m1*m2>=100);const N=m1*m2,D=rd*m1*m2;
+  t=n(`Reduce: ${N}/${D}`,R(1,rd),`${N} is a factor of ${D}: ${D} ÷ ${N} = ${rd}, so ${N}/${D} = 1/${rd}.`,{N,D},'fraction');t.math=math(mfrac(N,D));
+  t.choices=wrongOnly(t,[{value:`${m1}/${rd*m1}`,mistake:`Divided by ${m2} only; the fraction can be reduced further`},{value:`${m2}/${rd*m2}`,mistake:`Divided by ${m1} only; the fraction can be reduced further`},{value:`1/${rd+1}`,mistake:'Divided incorrectly'},{value:`1/${N}`,mistake:'Put the numerator in the denominator'}]);break;}
+ if(v==='reduce-large'){let p,q,k;do{q=int(3,9);p=int(1,q-1);k=int(6,14);}while(gcd(p,q)!==1||q*k>100||q*k<40);const N=p*k,D=q*k;
+  t=n(`Reduce ${N}/${D} to lowest terms.`,R(p,q),`The greatest common factor of ${N} and ${D} is ${k}: ${N} ÷ ${k} = ${p} and ${D} ÷ ${k} = ${q}.`,{N,D},'fraction');t.math=math(mfrac(N,D));
+  const part=[2,3,4,6].filter(g=>k%g===0&&g<k).map(g=>({value:`${N/g}/${D/g}`,mistake:`Divided by ${g} only; the fraction can be reduced further`}));
+  t.choices=wrongOnly(t,[...part,{value:'1/2',mistake:'Guessed a benchmark fraction'},{value:fa(N-1,D-1),mistake:'Subtracted instead of dividing'},{value:fa(q,p),mistake:'Inverted the fraction'},{value:fa(p+1,q),mistake:'Arithmetic slip in dividing'}]);break;}
+ // cancel before multiplying
+ let a,b,c0,d;do{b=int(2,10);d=int(2,10);a=int(1,b-1);c0=int(1,d-1);}while(gcd(a,b)!==1||gcd(c0,d)!==1||(gcd(a,d)===1&&gcd(c0,b)===1)||(a*c0)%(b*d)===0);
+ t=n('Multiply. Reduce your answer.',R(a*c0,b*d),`Cancel common factors before multiplying: ${a}/${b} × ${c0}/${d} = ${f(R(a*c0,b*d))}.`,{a,b,c:c0,d},'fraction');t.math=times(a,b,c0,d);
+ t.choices=wrongOnly(t,[{value:`${a*c0}/${b*d}`,mistake:'Did not reduce the product'},{value:fa(a+c0,b+d),mistake:'Added the numerators and the denominators'},{value:fa(a*d,b*c0),mistake:'Multiplied by the reciprocal of the second fraction'},{value:fa(a*c0,b+d),mistake:'Added the denominators'}]);break;}
+case 'c1-lcm':{const lcm=(x,y)=>x*y/gcd(x,y);
+ if(c.variant==='two'){const [a,b]=pick([[2,3],[2,4],[3,4],[3,5],[4,6],[4,8],[6,9],[3,9],[6,8]]),z=lcm(a,b);
+  t=n(pick([`What is the least common multiple (LCM) of ${a} and ${b}?`,`Find the least common multiple of ${a} and ${b}.`]),z,`Multiples of ${b}: ${[1,2,3,4].map(k=>k*b).join(', ')}, ...; the first one that is also a multiple of ${a} is ${z}.`,{a,b});
+  t.choices=distinct(z,[{value:a+b,mistake:'Added the numbers'},{value:a*b*2,mistake:'Doubled the product'},{value:a*b,mistake:'Multiplied the numbers (a common multiple, but not the least)'},{value:gcd(a,b)===1?a:gcd(a,b),mistake:'Gave a common factor instead of a common multiple'},{value:2*z,mistake:'Gave a common multiple that is not the least'}]);break;}
+ const tri=pick([[2,4,6],[3,5,9],[2,4,7],[4,6,8],[2,3,4],[2,4,5],[3,4,9],[3,6,9],[2,4,5],[2,6,8],[4,6,10],[6,8,12]]),z=tri.reduce(lcm);
+ t=n(`What is the least common multiple of ${tri[0]}, ${tri[1]}, and ${tri[2]}?`,z,`List multiples of ${tri[2]} until one is a multiple of ${tri[0]} and ${tri[1]}: ${z}.`,{nums:tri});
+ t.choices=distinct(z,[{value:tri[0]*tri[1]*tri[2],mistake:'Multiplied the numbers (a common multiple, but not the least)'},{value:tri[0]+tri[1]+tri[2],mistake:'Added the numbers'},{value:z-tri[0],mistake:'Gave a number that is not a multiple of all three'},{value:2*z,mistake:'Gave a common multiple that is not the least'}]);break;}
+case 'c1-reciprocal':{const v=c.variant,fa=(x,y)=>fracText(...red(x,y));
+ if(v==='how-many'){let a,b;do{b=int(3,15);a=int(2,b-1);}while(b===8||gcd(a,b)!==1);
+  t=n(`How many ${a}/${b}’s are in 1?`,R(b,a),`The number of ${a}/${b}’s in 1 is the reciprocal of ${a}/${b}: ${b}/${a}.`,{a,b},'fraction');t.eitherForm=true;
+  t.choices=wrongOnly(t,[{value:`1/${b}`,mistake:'Gave the unit fraction with the same denominator'},{value:`1/${a}`,mistake:'Used the numerator as the denominator of a unit fraction'},{value:`${a}/${b}`,mistake:'Gave the fraction itself'}]);break;}
+ if(v==='fraction'){let a,b;do{b=int(3,12);a=int(2,b-1);}while(gcd(a,b)!==1);
+  t=n(`Find the reciprocal of ${a}/${b}.`,R(b,a),`Swap the numerator and denominator: ${b}/${a}.`,{a,b},'fraction');t.eitherForm=true;t.math=math(mfrac(a,b));
+  t.choices=wrongOnly(t,[{value:`${a}/${b}`,mistake:'Gave the fraction itself'},{value:String(a),mistake:'Dropped the denominator'},{value:`1/${a}`,mistake:'Put the numerator under 1'}]);break;}
+ if(v==='whole'){const N=int(5,50);
+  t=n(`Find the reciprocal of ${N}.`,R(1,N),`${N} = ${N}/1, so its reciprocal is 1/${N}.`,{N},'fraction');
+  t.choices=wrongOnly(t,[{value:String(N),mistake:'Gave the number itself'},{value:`−1/${N}`,mistake:'Confused the reciprocal with the opposite'},{value:`${N-1}/${N}`,mistake:'Found the difference from 1'}]);break;}
+ let a,b;do{b=int(3,10);a=int(1,b-1);}while(gcd(a,b)!==1);
+ t=n(`If ${a}/${b} × □ = 1, then □ equals what number?`,R(b,a),`A number times its reciprocal is 1, so □ = ${b}/${a}.`,{a,b},'fraction');t.eitherForm=true;t.math=math(`<mrow>${mfrac(a,b)}<mo>×</mo><mi>□</mi><mo>=</mo><mn>1</mn></mrow>`);
+ t.choices=wrongOnly(t,[{value:fa(b-a,b),mistake:'Found what to add to make 1'},{value:`${a}/${b}`,mistake:'Gave the same fraction'},{value:'1',mistake:'Gave 1, the product'}]);break;}
+case 'c1-protractor':{const v=c.variant;
+ if(v==='read'){const mid=[];while(mid.length<7){const x=int(1,17)*10;if(!mid.includes(x))mid.push(x);}const angs=[0,...mid.sort((x,y)=>x-y),180],L='ABCDEFGHI'.split(''),rays=angs.map((a,i)=>[L[i],a]);let i,j;do{i=int(0,8);j=int(0,8);}while(i===j);const m=Math.abs(angs[i]-angs[j]),ang=`${L[i]}O${L[j]}`;
+  t=n(`Determine the measure of ∠${ang}, in degrees.`,m,`Ray O${L[i]} is at ${angs[i]}° and ray O${L[j]} at ${angs[j]}° on the same scale; the angle between them is ${m}°.`,{rays,i,j},'numbers',protractorFigure(rays));t.answer.display=`${m}°`;
+  t.choices=distinct(m,[{value:180-m,mistake:'Read the other scale of the protractor'},{value:m+10,mistake:'Misread by one 10° mark'},{value:m-10,mistake:'Misread by one 10° mark'},{value:Math.max(angs[i],angs[j]),mistake:'Read one ray from 0° instead of measuring between the rays'},{value:m+20,mistake:'Misread by two 10° marks'},{value:m-20,mistake:'Misread by two 10° marks'},{value:180-m+10,mistake:'Read the other scale and misread a mark'}].map(x=>({value:x.value+'°',mistake:x.mistake})));break;}
+ if(v==='four'){const base=[90,45,135,178,23];let s=[];while(s.length<4){const x=pick(base);if(!s.includes(x))s.push(x);}const k=int(0,3),z=`Angle ${k+1}`;
+  t=text(`Which angle below measures ${s[k]}°?`,z,`${s[k]===90?'A right angle makes a square corner':s[k]<90?'An acute angle is less than 90°':'An obtuse angle is between 90° and 180°'}; compare the openings: Angle ${k+1} measures ${s[k]}°.`,{s,k},fourAnglesFigure(s),[String(k+1),`angle${k+1}`]);
+  t.choices=[0,1,2,3].filter(i=>i!==k).map(i=>({value:`Angle ${i+1}`,mistake:`Angle ${i+1} measures about ${s[i]}°`}));break;}
+ if(v==='reflex'){const x=int(100,170),rot=int(0,5)*20-50,z=360-x;
+  t=n(`The arc marks the angle that goes the long way around between the two rays. The smaller angle between the rays measures ${x}°. What is the measure of the marked angle, in degrees?`,z,`The two angles around the point make a full turn of 360°: 360° − ${x}° = ${z}°.`,{x,rot},'numbers',reflexFigure(x,rot));t.answer.display=`${z}°`;
+  t.choices=distinct(z,[{value:x,mistake:'Gave the smaller angle'},{value:180-x,mistake:'Subtracted from 180° instead of 360°'},{value:180+x,mistake:'Added 180° to the smaller angle'}].map(q0=>({value:q0.value+'°',mistake:q0.mistake})));break;}
+ // which angle could measure the given degrees
+ const th=pick([30,40,50,60,70]),lean=int(0,1),phi=lean?th:180-th,acute=int(0,1)===1,want=acute?th:180-th,BDC=phi,ADB=180-phi,z=(BDC===want)?'∠BDC':'∠ADB',alt=z==='∠BDC'?['∠CDB','BDC','CDB','angle BDC','angle CDB']:['∠BDA','ADB','BDA','angle ADB','angle BDA'];
+ t=text(`Which of these angles could measure ${want}°: ∠ADB, ∠BDC or ∠ADC?`,z,`∠ADC is a straight angle (180°). ${want<90?'An acute angle':'An obtuse angle'} of ${want}° is ${z}, which ${want<90?'is smaller':'is larger'} than a right angle.`,{phi,want},lineRayFigure(phi),alt);
+ t.choices=['∠ADB','∠BDC','∠ADC'].filter(x=>x!==z).map(x=>({value:x,mistake:x==='∠ADC'?'Chose the straight angle (180°)':want<90?'Chose the obtuse angle':'Chose the acute angle'}));break;}
+case 'c1-area':{const v=c.variant;
+ if(v==='rect'){let l,w;do{l=int(6,15);w=int(2,7);}while(2*w>=l);const z=l*w;
+  t=n('Find the area of the rectangle, in square centimeters. Dimensions are in centimeters.',z,`Area = length × width = ${l} × ${w} = ${z} square centimeters.`,{l,w},'numbers',sideLabelled('rect',[l,w],'cm'));
+  t.choices=distinct(z,[{value:l+w,mistake:'Added the length and width'},{value:4*l,mistake:'Multiplied the length by 4'},{value:4*w,mistake:'Multiplied the width by 4'},{value:2*(l+w),mistake:'Found the perimeter instead of the area'},{value:l*(w+1),mistake:'Multiplied by the wrong width'},{value:z+10,mistake:'Multiplication slip'}]);break;}
+ if(v==='square-pa'){const s=pick([2,3,5,6,7,8,9,10,11,12]),P=4*s,A=s*s;
+  t=n(`One side of a square is ${s} feet long. (a) What is the perimeter of the square, in feet? (b) What is the area of the square, in square feet?`,[P,A],`(a) Perimeter = 4 × ${s} = ${P} ft. (b) Area = ${s} × ${s} = ${A} ft².`,{s});
+  t.choices=[[A+1,P,'Swapped perimeter and area'],[2*s,A,'Added only two sides for the perimeter'],[A,P,'Swapped perimeter and area']].filter(([x,y])=>!(x===P&&y===A)).map(([x,y,m])=>({value:`${x}; ${y}`,mistake:m}));
+  const seen=new Set();t.choices=t.choices.filter(q0=>!seen.has(q0.value)&&seen.add(q0.value));if(t.choices.length<3)t.choices.push({value:`${P}; ${2*s}`,mistake:'Doubled the side instead of squaring it'});break;}
+ if(v==='tiles'){const sq=int(0,2)===0;if(sq){const s=int(6,15),z=s*s;
+   t=n(`One side of a square is ${s} inches long. How many 1-square-inch tiles are needed to cover the area of the square?`,z,`${s} rows of ${s} tiles: ${s} × ${s} = ${z}.`,{s});t.choices=distinct(z,[{value:4*s,mistake:'Found the perimeter instead of the area'},{value:2*s,mistake:'Doubled the side'},{value:s,mistake:'Gave the side length'}]);break;}
+  let a,b;do{a=int(8,15);b=int(10,20);}while(a>=b);const z=a*b;
+  t=n(`How many square tiles with sides 1 ft long are needed to cover the floor of a ${a}-ft-by-${b}-ft room?`,z,`${a} rows of ${b} tiles: ${a} × ${b} = ${z}.`,{a,b});
+  t.choices=distinct(z,[{value:2*(a+b),mistake:'Found the perimeter instead of the area'},{value:a+b,mistake:'Added the dimensions'},{value:z+a,mistake:'Multiplication slip'}]);break;}
+ if(v==='square-side'){const s=pick([10,20,30,40,50,60,70,80,90,100,12,15,25]),z=s*s;
+  t=n('What is the area of this square, in square centimeters?',z,`All four sides of a square are ${s} cm: ${s} × ${s} = ${comma(z)} square centimeters.`,{s},'numbers',sideLabelled('square',[s],'cm'));t.answer.display=comma(z);
+  t.choices=distinct(z,[{value:4*s,mistake:'Found the perimeter instead of the area'},{value:2*s,mistake:'Doubled the side instead of squaring it'},{value:s*10,mistake:'Multiplied the side by 10'},{value:(s+1)*(s+1),mistake:'Squared the wrong length'},{value:s*s*2,mistake:'Doubled the area'}]);break;}
+ const s=int(2,15),P=4*s,z=s*s;
+ t=n(`The perimeter of a square is ${P} ${pick(['feet','centimeters','inches','meters'])}. What is its area in square units?`,z,`Each side is ${P} ÷ 4 = ${s}; area = ${s} × ${s} = ${z}.`,{P});
+ t.choices=distinct(z,[{value:s,mistake:'Gave the side length'},{value:P,mistake:'Gave the perimeter'},{value:(P/2)*(P/2),mistake:'Divided the perimeter by 2 instead of 4'},{value:P*P,mistake:'Squared the perimeter'}]);break;}
+case 'c1-time':{const v=c.variant,p2=x=>String(x).padStart(2,'0'),clock=(h,m,ap)=>`${h}:${p2(m)} ${ap}`,alts=(h,m,ap)=>[`${h}:${p2(m)}`,`${h}:${p2(m)} ${ap.replace(/\./g,'')}`,`${h}:${p2(m)}${ap.replace(/\./g,'')}`,`${h}:${p2(m)}${ap}`];
+ if(v==='end-time'){let m,h,mm,end;do{m=int(95,170);h=int(1,7);mm=int(5,55);end=h*60+mm+m;}while(m%60===0||Math.floor(end/60)>11||m%100>=60);const H=Math.floor(end/60),M=end%60;
+  const as=(tot)=>[Math.floor(tot/60),tot%60],w1=as(h*60+mm+Math.floor(m/100)*60+m%100),w2=as(h*60+mm-(Math.floor(m/100)*60+m%100)),w3=as(end+20);
+  t=text(`The movie is ${m} minutes long. If it starts at ${clock(h,mm,'p.m.')}, then at what time does it end?`,clock(H,M,'p.m.'),`${m} minutes = ${Math.floor(m/60)} hr ${m%60} min. ${clock(h,mm,'p.m.')} + ${Math.floor(m/60)} hr ${m%60} min = ${clock(H,M,'p.m.')}.`,{m,h,mm},'',alts(H,M,'p.m.'));
+  const cands=[[w1,'Read the minutes as hours and minutes (as if 100 minutes made an hour)'],[w2,'Subtracted instead of adding'],[w3,'Added 20 extra minutes']].filter(([[x,y]])=>x>=1&&x<=11&&!(x===H&&y===M));const sn=new Set();
+  t.choices=cands.filter(([[x,y]])=>{const k=x+':'+y;if(sn.has(k))return false;sn.add(k);return true;}).map(([[x,y],mi])=>({value:clock(x,y,'p.m.'),mistake:mi}));while(t.choices.length<3){const k=t.choices.length;t.choices.push({value:clock(H,(M+10*(k+1))%60,'p.m.'),mistake:'Added the minutes incorrectly'});}break;}
+ if(v==='elapsed'){let tot,h1,h2,m1,m2;do{tot=int(2,3);h1=int(3,11);h2=h1===3?1:h1-tot;m1=int(16,58);m2=int(11,46);}while(!(m1>m2+10)||h2<1);const ch=h1-h2,cm=m1-m2;
+  const [who,a,b]=pick([['A plane landed in Miami','It departed from New York','fly from New York to Miami'],['A train arrived in Chicago','It left St. Louis','travel from St. Louis to Chicago'],['A bus reached the stadium','It left the school','drive from the school to the stadium']]);
+  t={prompt:`${who} at ${h1}:${p2(m1)} p.m. ${a} at ${h2}:${p2(m2)} p.m. How long did it take to ${b}? Answer in hours and minutes, for example 2 hr 15 min.`,answer:{kind:'duration',minutes:ch*60+cm,value:`${ch} hr ${cm} min`},solution:`${h1}:${p2(m1)} − ${h2}:${p2(m2)}: ${h1} − ${h2} = ${ch} hours and ${m1} − ${m2} = ${cm} minutes.`,parameters:{h1,m1,h2,m2}};
+  t.choices=[[ch-1,cm-2,'Subtracted an hour too few and slipped in the minutes'],[ch+1,cm,'Counted one hour too many'],[ch-1,cm,'Counted one hour too few']].map(([x,y,mi])=>({value:`${x} hr ${y} min`,mistake:mi}));break;}
+ if(v==='elapsed-borrow'){let h1,m1,dh,m2;do{h1=int(1,8);dh=int(1,3);m1=int(10,55);m2=int(2,m1-3);}while(h1+dh>11);const h2=h1+dh,tot=(h2*60+m2)-(h1*60+m1),H=Math.floor(tot/60),M=tot%60;
+  const ev=pick([['The movie starts','ends','How long is the movie?'],['The game starts','ends','How long is the game?'],['The concert starts','ends','How long is the concert?']]);
+  t={prompt:`${ev[0]} at ${h1}:${p2(m1)} p.m. and ${ev[1]} at ${h2}:${p2(m2)} p.m. ${ev[2]} Answer in hours and minutes, for example 2 hr 15 min.`,answer:{kind:'duration',minutes:tot,value:`${H} hr ${M} min`},solution:`From ${h1}:${p2(m1)} to ${h2-1}:${p2(m1)} is ${H} hr; from ${h2-1}:${p2(m1)} to ${h2}:${p2(m2)} is ${M} min. Total: ${H} hr ${M} min.`,parameters:{h1,m1,h2,m2}};
+  const sn=new Set([H+':'+M]);t.choices=[[dh,m1-m2,'Subtracted the smaller number of minutes from the larger'],[dh,M,'Did not take an hour when regrouping'],[H,100+m2-m1,'Regrouped an hour as 100 minutes'],[H+1,m1-m2,'Subtracted the minutes the wrong way and added an hour'],[H,(M+10)%60,'Counted the minutes incorrectly']].filter(([x,y])=>{const k=x+':'+y;if(sn.has(k))return false;sn.add(k);return true;}).slice(0,3).map(([x,y,mi])=>({value:`${x} hr ${y} min`,mistake:mi}));break;}
+ // hours after a time
+ const w=int(1,4),hr=int(1,6),mi=pick([35,40,45,50,55]),H=w+hr+1,M=mi+30-60;
+ t=text(`What time is ${w} 1/2 hours after ${hr}:${p2(mi)} a.m.?`,clock(H,M,'a.m.'),`${hr}:${p2(mi)} + ${w} hr = ${hr+w}:${p2(mi)}; + 30 min = ${clock(H,M,'a.m.')}.`,{w,hr,mi},'',alts(H,M,'a.m.'));
+ t.choices=[[H-1,M,'Added an hour too few when the minutes passed 60'],[H<11?H+1:H-2,M,H<11?'Added an hour too many':'Added the hours incorrectly'],[H,mi,'Forgot the half hour (kept the starting minutes)']].map(([x,y,m0])=>({value:clock(x,y,'a.m.'),mistake:m0}));break;}
+case 'c1-expanded':{const v=c.variant,PV=[1000,100,10,1];
+ if(v==='expanded'){let d;do{d=[int(1,9),int(1,9),int(1,9),int(1,9)];}while(d[0]===d[1]||d[2]===d[3]);const N=Number(d.join('')),terms=d.map((x,i)=>[x,PV[i]]),ref=terms.map(([x,p])=>`${x} × ${p}`).join(' + ');
+  t={prompt:`Write ${comma(N)} in expanded notation, using multiplication, for example 2 × 1000 + 6 × 100 + 2 × 10 + 8 × 1.`,answer:{kind:'expanded',terms,value:ref},solution:ref+'.',parameters:{N}};
+  t.choices=[{value:`${d[0]} × 1000 + ${d[2]} × 10 + ${d[3]} × 1`,mistake:'Left out the hundreds'},{value:`${d[0]}${d[1]} × 1000 + ${d[2]} × 100 + ${d[3]} × 1`,mistake:'Combined digits and used the wrong places'},{value:`${d[0]} × 10,000 + ${d[1]} × 1000 + ${d[2]} × 10 + ${d[3]} × 1`,mistake:'Started one place too high'}];break;}
+ if(v==='standard'){const d=[];while(d.length<4){const x=int(1,9);if(!d.includes(x))d.push(x);}const z=Number(d.join(''));
+  t=n(`What is ${d.map((x,i)=>comma(x*PV[i])).join(' + ')} in standard notation?`,z,`${d.map((x,i)=>comma(x*PV[i])).join(' + ')} = ${comma(z)}.`,{d});t.answer.display=comma(z);
+  t.choices=distinct(comma(z),[{value:''+d[0]+d[1]+d[3]+d[2],mistake:'Swapped the tens and ones digits'},{value:''+d[3]+d[2]+d[1]+d[0],mistake:'Wrote the digits in reverse order'},{value:''+d[1]+d[0]+d[2]+d[3],mistake:'Swapped the thousands and hundreds digits'}].map(x=>({value:comma(x.value),mistake:x.mistake})));break;}
+ // with zeros: only the nonzero places are written
+ const len=pick([3,4]);let d;do{d=[int(1,9),...Array.from({length:len-1},()=>int(0,9))];}while(!d.slice(1).includes(0)||d.filter(x=>x>0).length<2);
+ const pv=PV.slice(4-len),z=Number(d.join('')),shown=d.map((x,i)=>[x,pv[i]]).filter(([x])=>x>0),ex=shown.map(([x,p])=>`(${x} × ${p})`).join(' + '),squash=Number(shown.map(([x])=>x).join(''));
+ t=n(`Write ${ex} in standard notation.`,z,`${shown.map(([x,p])=>comma(x*p)).join(' + ')} = ${comma(z)}; the missing places hold zeros.`,{d});t.answer.display=comma(z);
+ const alt=[];const nz=shown.map(([x])=>x),place=(k,start,acc)=>{if(k===nz.length){const full=acc.concat(Array(len-acc.length).fill(0));const v=Number(full.join(''));if(v!==z&&full[0]!==0)alt.push(v);return;}for(let i=start;i<len;i++){const a2=acc.slice();while(a2.length<i)a2.push(0);a2.push(nz[k]);place(k+1,i+1,a2);}};place(0,0,[]);
+ t.choices=distinct(comma(z),[{value:squash,mistake:'Left out the zeros for the missing places'},{value:z*10,mistake:'Wrote an extra zero'},...alt.map(x=>({value:x,mistake:'Put a digit in the wrong place'}))].map(x=>({value:comma(x.value),mistake:x.mistake})));break;}
+case 'c1-percent':{const v=c.variant,fa=(x,y)=>fracText(...red(x,y));
+ if(v==='story'){const [p,dd]=pick([[75,4],[60,5],[25,4],[40,5],[80,5],[50,2],[20,5],[30,10],[70,10]]),N=dd*int(2,6),right=N*p/100;
+  t=n(`If ${p}% of the ${N} answers were correct, then what fraction of the answers were correct?`,R(p,100),`${p}% = ${p}/100 = ${fa(p,100)}.`,{p,N},'fraction');
+  t.choices=wrongOnly(t,[{value:fa(100-p,100),mistake:'Gave the fraction that were not correct'},{value:String(N-right),mistake:'Gave the number of wrong answers'},{value:String(right),mistake:'Gave the number of correct answers, not a fraction'},{value:`${p}/100`,mistake:'Did not reduce the fraction'},{value:`${p}/10`,mistake:'Used tenths instead of hundredths'},{value:`1/${p}`,mistake:'Put the percent in the denominator'}]);break;}
+ if(v==='fifty'){const p=pick([14,26,34,38,42,46,62,66,82,86]);
+  t=n(`What fraction equals ${p}%? Reduce the fraction.`,R(p/2,50),`${p}% = ${p}/100 = ${p/2}/50.`,{p},'fraction');
+  t.choices=wrongOnly(t,[{value:`${p+1}/100`,mistake:'Changed the numerator'},{value:`${p/2}/25`,mistake:'Halved the denominator twice'},{value:`${p+3}/100`,mistake:'Changed the numerator'},{value:`${p}/100`,mistake:'Did not reduce the fraction'}]);break;}
+ if(v==='hundredths'){const p=pick([13,17,19,23,27,37,39,41]);
+  t=n(`Write ${p}% as a fraction. Reduce if possible.`,R(p,100),`Percent means per hundred: ${p}% = ${p}/100, which cannot be reduced.`,{p},'fraction');
+  t.choices=wrongOnly(t,[{value:`${p}/10`,mistake:'Used tenths instead of hundredths'},{value:`1/${p}`,mistake:'Put the percent in the denominator'},{value:`${100-p}/100`,mistake:'Gave the remaining percent'}]);break;}
+ const p=pick([12,15,24,28,35,40,48,56,65,75,78,88,94,80,60]);
+ t=n(`Write ${p}% as a fraction. Reduce if possible.`,R(p,100),`${p}% = ${p}/100 = ${fa(p,100)}.`,{p},'fraction');
+ t.choices=wrongOnly(t,[...(p%2===0&&fa(p,100)!==`${p/2}/50`?[{value:`${p/2}/50`,mistake:'Reduced only partly'}]:[]),{value:`${p}/100`,mistake:'Did not reduce the fraction'},{value:fa(100-p,100),mistake:'Gave the remaining percent'},{value:fa(p+1,100),mistake:'Reduced incorrectly'},{value:`1/${p}`,mistake:'Put the percent in the denominator'}]);break;}
+case 'c1-decimal-place':{const v=c.variant,NM=['thousands','hundreds','tens','ones','tenths','hundredths','thousandths'];
+ if(v==='digit'){const wd=int(3,4),pos=[...NM.slice(4-wd)],len=wd+3;let d;do{d=[];while(d.length<len){const x=int(0,9);if(!d.includes(x))d.push(x);}}while(d[0]===0);
+  const s=d.slice(0,wd).join('')+'.'+d.slice(wd).join(''),k=int(0,len-1),pl=pos[k],z=d[k],mirror={tens:'tenths',tenths:'tens',hundreds:'hundredths',hundredths:'hundreds',thousands:'thousandths',thousandths:'thousands',ones:'tenths'}[pl],mk=pos.indexOf(mirror);
+  t=n(`What digit in ${s} is in the ${pl} place?`,z,`Places to the left of the decimal point are ones, tens, hundreds, thousands; to the right are tenths, hundredths, thousandths. The ${pl} digit is ${z}.`,{s,pl});
+  t.choices=wrongOnly(t,[...(mk>=0?[{value:d[mk],mistake:`Confused the ${pl} place with the ${mirror} place`}]:[]),{value:d[k+1],mistake:'Counted one place too far'},{value:d[k-1],mistake:'Counted one place too few'},{value:d[0],mistake:'Chose the first digit'},{value:d[len-1],mistake:'Chose the last digit'},...d.filter((x,i)=>i!==k).map(x=>({value:x,mistake:'Read the wrong place'}))].filter(x=>x.value!==undefined));break;}
+ if(v==='same-place'){const xw=int(1,2),yw=int(1,3),yd=int(1,2),xd=2,gen=(a,b)=>{const d=[];while(d.length<a+b){const q=int(1,9);if(!d.includes(q))d.push(q);}return d;};
+  const X=gen(xw,xd),Y=gen(yw,yd),Xs=X.slice(0,xw).join('')+'.'+X.slice(xw).join(''),Ys=Y.slice(0,yw).join('')+'.'+Y.slice(yw).join(''),xPl=X.map((_,i)=>i<xw?NM[3-(xw-1-i)]:NM[4+i-xw]),yPl=Y.map((_,i)=>i<yw?NM[3-(yw-1-i)]:NM[4+i-yw]);
+  const shared=yPl.map((p0,i)=>[p0,i]).filter(([p0])=>xPl.includes(p0)),[pl,yi]=pick(shared),z=X[xPl.indexOf(pl)],mirror={tens:'tenths',tenths:'tens',ones:'tenths',hundredths:'tens'}[pl];
+  t=n(`Which digit in ${Xs} has the same place value as the ${Y[yi]} in ${Ys}?`,z,`The ${Y[yi]} in ${Ys} is in the ${pl} place; the ${pl} digit of ${Xs} is ${z}.`,{Xs,Ys,yi,pl});
+  t.choices=wrongOnly(t,[...(xPl.includes(mirror)?[{value:X[xPl.indexOf(mirror)],mistake:`Confused the ${pl} place with the ${mirror} place`}]:[]),...X.filter(q0=>q0!==z).map(q0=>({value:q0,mistake:'Matched the digit position from the left instead of the place value'})),{value:Y[yi],mistake:'Gave the digit from the second number'},...Y.filter(q0=>q0!==Y[yi]).map(q0=>({value:q0,mistake:'Read a digit from the wrong number'})),{value:(z+1)%10,mistake:'Read the wrong digit'},{value:(z+2)%10,mistake:'Read the wrong digit'},{value:(z+3)%10,mistake:'Read the wrong digit'},{value:(z+4)%10,mistake:'Read the wrong digit'}]);break;}
+ // name the place of a digit in ddd.dd
+ let d=[];while(d.length<5){const x=int(1,9);if(!d.includes(x))d.push(x);}const P5=['hundreds','tens','ones','tenths','hundredths'],k=int(0,4),z=P5[k],mir={hundreds:'hundredths',tens:'tenths',ones:'tenths',tenths:'tens',hundredths:'hundreds'}[z];
+ t=text(`What is the place value of the ${d[k]} in ${d.slice(0,3).join('')}.${d.slice(3).join('')}? Name the place.`,z,`Count places from the decimal point: the ${d[k]} is in the ${z} place.`,{d,k},'',[z+' place',z.replace(/s$/,''),z.replace(/s$/,'')+' place']);
+ t.choices=[mir,...P5.filter(x=>x!==z&&x!==mir)].slice(0,3).map(x=>({value:x,mistake:x===mir?'Confused a whole-number place with the matching decimal place':'Counted the places incorrectly'}));break;}
 default:throw Error('Unknown port recipe '+c.recipe);}
 return t;}
 

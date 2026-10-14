@@ -117,6 +117,6 @@ for line in proc.stdout:
  count+=1
 assert proc.wait()==0
 # Served by coverage ports instead: SN870025 (gcf); SN870166 (prime-test, the only entry of that recipe), SX870082 (prime-factorization),
-# SAX70082 and SAX70083 (lcm) and SN870128 (round-whole); C1_S02_00067 (prime-list, Course 1 Batch C1-3); C1_S02_00077 and C1_S02_00055 (gcf, Batch C1-4).
-assert count==15200 and len(recipes)==65 and len(domains)==4 and len(classes)==3 and len(letters)==4 and len(signs)==8
+# SAX70082 and SAX70083 (lcm) and SN870128 (round-whole); C1_S02_00067 (prime-list, Course 1 Batch C1-3); C1_S02_00077 and C1_S02_00055 (gcf, Batch C1-4); C1_S03_00087 and C1_S03_00123 (lcm, Batch C1-5).
+assert count==14800 and len(recipes)==65 and len(domains)==4 and len(classes)==3 and len(letters)==4 and len(signs)==8
 print(f'PASS: {count} independent generated cases, {len(recipes)} task recipes, {svgs} parsed SVGs; domain and system branches, inequality signs, unique graph choices, replay and answer checks')

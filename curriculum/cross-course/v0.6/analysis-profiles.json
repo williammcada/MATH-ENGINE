@@ -11951,84 +11951,6 @@
     "samplePrompt": "Round 66111 to the nearest 1000. Halfway values round up. Use exact fractions or terminating decimals, without units."
   },
   {
-    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00087",
-    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00087",
-    "bankId": "course-1-en",
-    "topic": "number-theory",
-    "action": "Find a least common multiple",
-    "recipe": "lcm",
-    "family": "structured-breadth",
-    "title": "Find a least common multiple",
-    "course": "Course 1",
-    "localGrade": 4,
-    "placement": "grade-assigned",
-    "lessonId": "course-1-en:bank:C1_Section03:scope:ebfb32ef61036495",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "common-factors-multiples",
-        "level": 2
-      },
-      {
-        "trackId": "multiples-to-common",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "LCM or first common multiples for configured two/three inputs. No strict count ranking across the mixed recipe configurations. extension: Find common multiples of several numbers. Coordinate multiples shared across inputs."
-    },
-    "samplePrompt": "Find the least common multiple of 3, 6. Use exact fractions or terminating decimals, without units."
-  },
-  {
-    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00123",
-    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00123",
-    "bankId": "course-1-en",
-    "topic": "number-theory",
-    "action": "Find the LCM of three numbers",
-    "recipe": "lcm",
-    "family": "structured-breadth",
-    "title": "Find the LCM of three numbers",
-    "course": "Course 1",
-    "localGrade": 4,
-    "placement": "grade-assigned",
-    "lessonId": "course-1-en:bank:C1_Section03:scope:ebfb32ef61036495",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "common-factors-multiples",
-        "level": 2
-      },
-      {
-        "trackId": "multiples-to-common",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "LCM or first common multiples for configured two/three inputs. No strict count ranking across the mixed recipe configurations. extension: Find common multiples of several numbers. Coordinate multiples shared across inputs."
-    },
-    "samplePrompt": "Find the least common multiple of 16, 33, 2. Use exact fractions or terminating decimals, without units."
-  },
-  {
     "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00047",
     "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00047",
     "bankId": "course-1-en",
@@ -98447,13 +98369,13 @@
       }
     ],
     "answerKinds": [
-      "text"
+      "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
     "comparisonStatus": "reviewed progression",
-    "samplePrompt": "Which fraction does not equal 1/2? 3/5, 4/8, 5/10, 6/12"
+    "samplePrompt": "Which fraction does not equal 1/2? 3/5, 4/8, 5/10, 6/12 Enter exact numerical answers without units."
   },
   {
     "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00079",
@@ -100364,5 +100286,1779 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Ama lives 3 1/2 miles from school. Ama rode there and back home. How far did Ama ride, in miles? Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00009",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00009",
+    "bankId": "course-1-en",
+    "topic": "circle-measurement",
+    "action": "Radius from a diameter",
+    "recipe": "c1-circle",
+    "family": "structured-port87",
+    "title": "Radius from a diameter",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:94de769bed55b3c1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-parts-and-length",
+        "level": 1
+      },
+      {
+        "trackId": "circle-term-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If the diameter of a circle is 22 inches, what is its radius, in inches? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00036",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00036",
+    "bankId": "course-1-en",
+    "topic": "circle-measurement",
+    "action": "Diameter from a radius",
+    "recipe": "c1-circle",
+    "family": "structured-port87",
+    "title": "Diameter from a radius",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:94de769bed55b3c1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-parts-and-length",
+        "level": 1
+      },
+      {
+        "trackId": "circle-term-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If the radius of a circle is 7 inches, what is the diameter, in inches? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00035",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00035",
+    "bankId": "course-1-en",
+    "topic": "circle-measurement",
+    "action": "Radius from a larger diameter",
+    "recipe": "c1-circle",
+    "family": "structured-port87",
+    "title": "Radius from a larger diameter",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:94de769bed55b3c1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-parts-and-length",
+        "level": 1
+      },
+      {
+        "trackId": "circle-term-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If the diameter of a circle is 16 inches, what is its radius, in inches? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00113",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00113",
+    "bankId": "course-1-en",
+    "topic": "circle-measurement",
+    "action": "Ratio of radius to diameter",
+    "recipe": "c1-circle",
+    "family": "structured-port87",
+    "title": "Ratio of radius to diameter",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:94de769bed55b3c1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-parts-and-length",
+        "level": 1
+      },
+      {
+        "trackId": "circle-term-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The diameter of a big circle is 60 inches. What is the ratio of the circle\u2019s radius to its diameter? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00080",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00080",
+    "bankId": "course-1-en",
+    "topic": "circle-measurement",
+    "action": "Identify the diameter in a circle",
+    "recipe": "c1-circle",
+    "family": "structured-port87",
+    "title": "Identify the diameter in a circle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:94de769bed55b3c1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-parts-and-length",
+        "level": 1
+      },
+      {
+        "trackId": "circle-term-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which segment in the circle below is a diameter? The center of the circle is A."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00062",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00062",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Kind of the angle that completes a straight angle",
+    "recipe": "c1-angles",
+    "family": "structured-port87",
+    "title": "Kind of the angle that completes a straight angle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:84ce4d9f7a281f64",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "line-relationships-space",
+        "level": 1
+      },
+      {
+        "trackId": "angle-classification-work",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "In the figure, R, O and T are on a line. If \u2220TOP is obtuse, then \u2220ROP is what kind of angle?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00081",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00081",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Classify an angle of a triangle",
+    "recipe": "c1-angles",
+    "family": "structured-port87",
+    "title": "Classify an angle of a triangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:84ce4d9f7a281f64",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "line-relationships-space",
+        "level": 1
+      },
+      {
+        "trackId": "angle-classification-work",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "In triangle ABC, what kind of angle is angle C?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00134",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00134",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Name the obtuse angle of a triangle",
+    "recipe": "c1-angles",
+    "family": "structured-port87",
+    "title": "Name the obtuse angle of a triangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:84ce4d9f7a281f64",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "line-relationships-space",
+        "level": 1
+      },
+      {
+        "trackId": "angle-classification-work",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Name the obtuse angle in triangle ABC."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00082",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00082",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Parallel sides of a rectangle",
+    "recipe": "c1-angles",
+    "family": "structured-port87",
+    "title": "Parallel sides of a rectangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:84ce4d9f7a281f64",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "line-relationships-space",
+        "level": 1
+      },
+      {
+        "trackId": "angle-classification-work",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "In rectangle PQRS, which segment is parallel to PQ?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00011",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00011",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Multiply two fractions and reduce",
+    "recipe": "c1-fraction-mult",
+    "family": "structured-port87",
+    "title": "Multiply two fractions and reduce",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:97cf54600589c718",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-multiply",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Reduce your answer. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00037",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00037",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Multiply two fractions",
+    "recipe": "c1-fraction-mult",
+    "family": "structured-port87",
+    "title": "Multiply two fractions",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:97cf54600589c718",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-multiply",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00041",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00041",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Multiply a whole number by a fraction",
+    "recipe": "c1-fraction-mult",
+    "family": "structured-port87",
+    "title": "Multiply a whole number by a fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:97cf54600589c718",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-multiply",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Reduce your answer. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00038",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00038",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Whole number times a fraction as an improper fraction",
+    "recipe": "c1-fraction-mult",
+    "family": "structured-port87",
+    "title": "Whole number times a fraction as an improper fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:97cf54600589c718",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-multiply",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Write your answer as an improper fraction. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00083",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00083",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "One-half of a fraction",
+    "recipe": "c1-fraction-mult",
+    "family": "structured-port87",
+    "title": "One-half of a fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:97cf54600589c718",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-multiply",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is one-half of 1/6? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00084",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00084",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Fraction of a pizza left",
+    "recipe": "c1-fraction-mult",
+    "family": "structured-port87",
+    "title": "Fraction of a pizza left",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:97cf54600589c718",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-multiply",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "In a box was 7/8 of a pizza. David took 3/8 of the pizza. Then what fraction of the pizza was in the box? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00085",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00085",
+    "bankId": "course-1-en",
+    "topic": "fraction-equivalence",
+    "action": "Fraction of shots made, reduced",
+    "recipe": "c1-fraction-mult",
+    "family": "structured-port87",
+    "title": "Fraction of shots made, reduced",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:97cf54600589c718",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-multiply",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "In the basketball game, Tom made 6 of his 10 attempts. What fraction of his attempts did Tom make? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00089",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00089",
+    "bankId": "course-1-en",
+    "topic": "expressions",
+    "action": "Expression for a table-cloth overhang",
+    "recipe": "c1-fraction-mult",
+    "family": "structured-port87",
+    "title": "Expression for a table-cloth overhang",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:97cf54600589c718",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-multiply",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A 46-inch square table cloth is centered on a 30-inch square table so that the same length of cloth hangs over each edge. Which expression shows how to find the number of inches the cloth hangs down from each edge? Write it like 1/2 \u00d7 (60 \u2212 48)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00039",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00039",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Length of a row of balls",
+    "recipe": "c1-fraction-mult",
+    "family": "structured-port87",
+    "title": "Length of a row of balls",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:97cf54600589c718",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-multiply",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Four balls are placed side by side as shown below. The diameter of one ball is 1/2 inch. How long, in inches, is the row of balls? Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00040",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00040",
+    "bankId": "course-1-en",
+    "topic": "fraction-equivalence",
+    "action": "Reduce to a unit fraction",
+    "recipe": "c1-fraction-mult",
+    "family": "structured-port87",
+    "title": "Reduce to a unit fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:97cf54600589c718",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-multiply",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Reduce: 16/80 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00086",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00086",
+    "bankId": "course-1-en",
+    "topic": "fraction-equivalence",
+    "action": "Reduce a fraction with larger terms",
+    "recipe": "c1-fraction-mult",
+    "family": "structured-port87",
+    "title": "Reduce a fraction with larger terms",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:97cf54600589c718",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-multiply",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Reduce 8/40 to lowest terms. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00111",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00111",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Multiply fractions with cancelling",
+    "recipe": "c1-fraction-mult",
+    "family": "structured-port87",
+    "title": "Multiply fractions with cancelling",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:97cf54600589c718",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-multiply",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Reduce your answer. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00087",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00087",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Least common multiple of two numbers",
+    "recipe": "c1-lcm",
+    "family": "structured-port87",
+    "title": "Least common multiple of two numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:ebfb32ef61036495",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "common-factors-multiples",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "LCM or first common multiples for configured two/three inputs. No strict count ranking across the mixed recipe configurations. extension: Find common multiples of several numbers. Coordinate multiples shared across inputs."
+    },
+    "samplePrompt": "What is the least common multiple (LCM) of 2 and 3? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00123",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00123",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Least common multiple of three numbers",
+    "recipe": "c1-lcm",
+    "family": "structured-port87",
+    "title": "Least common multiple of three numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:ebfb32ef61036495",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "common-factors-multiples",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "LCM or first common multiples for configured two/three inputs. No strict count ranking across the mixed recipe configurations. extension: Find common multiples of several numbers. Coordinate multiples shared across inputs."
+    },
+    "samplePrompt": "What is the least common multiple of 3, 6, and 9? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00014",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00014",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "How many of a fraction are in 1",
+    "recipe": "c1-reciprocal",
+    "family": "structured-port87",
+    "title": "How many of a fraction are in 1",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:ebfb32ef61036495",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-form-changes",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How many 6/13\u2019s are in 1? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00046",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00046",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Reciprocal of a fraction",
+    "recipe": "c1-reciprocal",
+    "family": "structured-port87",
+    "title": "Reciprocal of a fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:ebfb32ef61036495",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-form-changes",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the reciprocal of 2/3. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00047",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00047",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Reciprocal of a whole number",
+    "recipe": "c1-reciprocal",
+    "family": "structured-port87",
+    "title": "Reciprocal of a whole number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:ebfb32ef61036495",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-form-changes",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the reciprocal of 37. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00088",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00088",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "The factor that makes a product of 1",
+    "recipe": "c1-reciprocal",
+    "family": "structured-port87",
+    "title": "The factor that makes a product of 1",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:ebfb32ef61036495",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-form-changes",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If 1/7 \u00d7 \u25a1 = 1, then \u25a1 equals what number? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00050",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00050",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Read an angle on a protractor",
+    "recipe": "c1-protractor",
+    "family": "structured-port87",
+    "title": "Read an angle on a protractor",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:dec050a895637358",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-construction",
+        "level": 1
+      },
+      {
+        "trackId": "angle-classification-work",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Determine the measure of \u2220BOH, in degrees. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00064",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00064",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Choose the angle with a given measure",
+    "recipe": "c1-protractor",
+    "family": "structured-port87",
+    "title": "Choose the angle with a given measure",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:dec050a895637358",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-construction",
+        "level": 1
+      },
+      {
+        "trackId": "angle-classification-work",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which angle below measures 45\u00b0?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00049",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00049",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Measure of an angle the long way around",
+    "recipe": "c1-protractor",
+    "family": "structured-port87",
+    "title": "Measure of an angle the long way around",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:dec050a895637358",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-construction",
+        "level": 1
+      },
+      {
+        "trackId": "angle-classification-work",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The arc marks the angle that goes the long way around between the two rays. The smaller angle between the rays measures 159\u00b0. What is the measure of the marked angle, in degrees? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00137",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00137",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Which angle could have a given measure",
+    "recipe": "c1-protractor",
+    "family": "structured-port87",
+    "title": "Which angle could have a given measure",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:dec050a895637358",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-construction",
+        "level": 1
+      },
+      {
+        "trackId": "angle-classification-work",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which of these angles could measure 70\u00b0: \u2220ADB, \u2220BDC or \u2220ADC?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00045",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00045",
+    "bankId": "course-1-en",
+    "topic": "area",
+    "action": "Area of a rectangle",
+    "recipe": "c1-area",
+    "family": "structured-port87",
+    "title": "Area of a rectangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:bd5b8915a252f1ab",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-rectilinear",
+        "level": 1
+      },
+      {
+        "trackId": "square-inverse-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of the rectangle, in square centimeters. Dimensions are in centimeters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00044",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00044",
+    "bankId": "course-1-en",
+    "topic": "area",
+    "action": "Perimeter and area of a square",
+    "recipe": "c1-area",
+    "family": "structured-port87",
+    "title": "Perimeter and area of a square",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:bd5b8915a252f1ab",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-rectilinear",
+        "level": 1
+      },
+      {
+        "trackId": "square-inverse-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "One side of a square is 10 feet long. (a) What is the perimeter of the square, in feet? (b) What is the area of the square, in square feet? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00082",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00082",
+    "bankId": "course-1-en",
+    "topic": "area",
+    "action": "Square tiles to cover a floor",
+    "recipe": "c1-area",
+    "family": "structured-port87",
+    "title": "Square tiles to cover a floor",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:bd5b8915a252f1ab",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-rectilinear",
+        "level": 1
+      },
+      {
+        "trackId": "square-inverse-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "One side of a square is 12 inches long. How many 1-square-inch tiles are needed to cover the area of the square? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00085",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00085",
+    "bankId": "course-1-en",
+    "topic": "area",
+    "action": "Area of a square from one side",
+    "recipe": "c1-area",
+    "family": "structured-port87",
+    "title": "Area of a square from one side",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:bd5b8915a252f1ab",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-rectilinear",
+        "level": 1
+      },
+      {
+        "trackId": "square-inverse-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the area of this square, in square centimeters? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00089",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00089",
+    "bankId": "course-1-en",
+    "topic": "area",
+    "action": "Area of a square from its perimeter",
+    "recipe": "c1-area",
+    "family": "structured-port87",
+    "title": "Area of a square from its perimeter",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:bd5b8915a252f1ab",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-rectilinear",
+        "level": 1
+      },
+      {
+        "trackId": "square-inverse-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The perimeter of a square is 20 inches. What is its area in square units? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00067",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00067",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "When a movie ends",
+    "recipe": "c1-time",
+    "family": "structured-port87",
+    "title": "When a movie ends",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:640a5fc403275480",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "clock-time",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The movie is 126 minutes long. If it starts at 2:11 p.m., then at what time does it end?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00003",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00003",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Elapsed time in hours and minutes",
+    "recipe": "c1-time",
+    "family": "structured-port87",
+    "title": "Elapsed time in hours and minutes",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:640a5fc403275480",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "clock-time",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "duration"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A train arrived in Chicago at 5:54 p.m. It left St. Louis at 3:16 p.m. How long did it take to travel from St. Louis to Chicago? Answer in hours and minutes, for example 2 hr 15 min."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00132",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00132",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Elapsed time with regrouping",
+    "recipe": "c1-time",
+    "family": "structured-port87",
+    "title": "Elapsed time with regrouping",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:640a5fc403275480",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "clock-time",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "duration"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The game starts at 2:25 p.m. and ends at 4:08 p.m. How long is the game? Answer in hours and minutes, for example 2 hr 15 min."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00050",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00050",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "The time some hours later",
+    "recipe": "c1-time",
+    "family": "structured-port87",
+    "title": "The time some hours later",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:640a5fc403275480",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "clock-time",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What time is 1 1/2 hours after 4:45 a.m.?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00046",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00046",
+    "bankId": "course-1-en",
+    "topic": "number-representation",
+    "action": "Write a number in expanded notation",
+    "recipe": "c1-expanded",
+    "family": "structured-port87",
+    "title": "Write a number in expanded notation",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:640a5fc403275480",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expanded-notation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "expanded"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 3,161 in expanded notation, using multiplication, for example 2 \u00d7 1000 + 6 \u00d7 100 + 2 \u00d7 10 + 8 \u00d7 1."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00016",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00016",
+    "bankId": "course-1-en",
+    "topic": "number-representation",
+    "action": "Standard notation from expanded form",
+    "recipe": "c1-expanded",
+    "family": "structured-port87",
+    "title": "Standard notation from expanded form",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:640a5fc403275480",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expanded-notation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is 3,000 + 200 + 90 + 6 in standard notation? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00090",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00090",
+    "bankId": "course-1-en",
+    "topic": "number-representation",
+    "action": "Standard notation when places are missing",
+    "recipe": "c1-expanded",
+    "family": "structured-port87",
+    "title": "Standard notation when places are missing",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:640a5fc403275480",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expanded-notation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write (5 \u00d7 1000) + (4 \u00d7 10) + (9 \u00d7 1) in standard notation. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00068",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00068",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A percent of answers as a fraction",
+    "recipe": "c1-percent",
+    "family": "structured-port87",
+    "title": "A percent of answers as a fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:ae4125603de8d488",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If 40% of the 20 answers were correct, then what fraction of the answers were correct? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00004",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00004",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A percent as fiftieths",
+    "recipe": "c1-percent",
+    "family": "structured-port87",
+    "title": "A percent as fiftieths",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:ae4125603de8d488",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What fraction equals 26%? Reduce the fraction. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00017",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00017",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A percent as hundredths",
+    "recipe": "c1-percent",
+    "family": "structured-port87",
+    "title": "A percent as hundredths",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:ae4125603de8d488",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 19% as a fraction. Reduce if possible. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00019",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00019",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A percent as a reduced fraction",
+    "recipe": "c1-percent",
+    "family": "structured-port87",
+    "title": "A percent as a reduced fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:ae4125603de8d488",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 15% as a fraction. Reduce if possible. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00005",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00005",
+    "bankId": "course-1-en",
+    "topic": "number-representation",
+    "action": "Digit in a decimal place",
+    "recipe": "c1-decimal-place",
+    "family": "structured-port87",
+    "title": "Digit in a decimal place",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:449d510e7aa35bb1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-place-language",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What digit in 5428.317 is in the hundreds place? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00096",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00096",
+    "bankId": "course-1-en",
+    "topic": "number-representation",
+    "action": "Digit with the same place value",
+    "recipe": "c1-decimal-place",
+    "family": "structured-port87",
+    "title": "Digit with the same place value",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:449d510e7aa35bb1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-place-language",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which digit in 31.84 has the same place value as the 3 in 96.32? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00051",
+    "providerSourceId": "course-1-en:bank:C1_Section04:item:C1_S04_00051",
+    "bankId": "course-1-en",
+    "topic": "number-representation",
+    "action": "Name the place of a digit in a decimal",
+    "recipe": "c1-decimal-place",
+    "family": "structured-port87",
+    "title": "Name the place of a digit in a decimal",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section04:scope:449d510e7aa35bb1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-place-language",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the place value of the 5 in 875.24? Name the place."
   }
 ]
