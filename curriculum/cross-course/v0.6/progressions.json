@@ -1276,19 +1276,20 @@
         "selectors": [
           "c/77.1",
           "c/81.1",
-          "p/percent-whole",
+          "k/percent-of-what",
           "p/percent-part",
           "p/percent-whole-half"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870486",
           "course-87-en:item:SN870487",
           "algebra-half-en:node:448",
           "course-87-en:authored:MCADA-77.1",
           "course-87-en:authored:MCADA-81.1",
           "course-1-en:authored:M2-fe6f5fc0e488-1",
           "course-1-en:authored:M2-297bdb9f52d9-1",
-          "algebra-1-en:authored:M4-47-1"
+          "algebra-1-en:authored:M4-47-1",
+          "course-87-en:item:SN870485",
+          "course-87-en:item:SN870486"
         ]
       },
       {
@@ -1327,7 +1328,8 @@
           "c/72.1",
           "p/ratio-missing",
           "k/recipe-ratio",
-          "k/ratio-find"
+          "k/ratio-find",
+          "k/implied-ratio"
         ],
         "sourceIds": [
           "algebra-half-en:node:439",
@@ -1346,7 +1348,9 @@
           "algebra-2-en:authored:M6-18-1",
           "course-87-en:item:SXA10204",
           "course-87-en:item:SX870277",
-          "course-87-en:item:SN870274"
+          "course-87-en:item:SN870274",
+          "course-87-en:item:SN870392",
+          "course-87-en:item:SN870389"
         ]
       },
       {
@@ -1951,11 +1955,17 @@
         "demand": "Graph a stated inequality on a number line",
         "prerequisites": "Open/closed endpoints and shading direction",
         "selectors": [
-          "c/78.2"
+          "c/78.2",
+          "k/inequality-graph",
+          "k/inequality-choose"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-78.2",
-          "algebra-half-en:authored:M3-72-2"
+          "algebra-half-en:authored:M3-72-2",
+          "course-87-en:item:SX870497",
+          "course-87-en:item:SN870500",
+          "course-87-en:item:SN870510",
+          "course-87-en:item:SX870498"
         ]
       },
       {
@@ -3459,11 +3469,16 @@
         "demand": "Decide whether information determines an answer",
         "prerequisites": "Identify the required quantities",
         "selectors": [
-          "c/79.1"
+          "c/79.1",
+          "k/missing-info",
+          "k/enough-info"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-79.1",
-          "course-1-en:authored:M2-909b2e76dee2-1"
+          "course-1-en:authored:M2-909b2e76dee2-1",
+          "course-87-en:item:SN870537",
+          "course-87-en:item:SN870539",
+          "course-87-en:item:SN870796"
         ]
       },
       {
@@ -3471,10 +3486,14 @@
         "demand": "Assess whether a comparison is determined",
         "prerequisites": "Consider more than one admissible case",
         "selectors": [
-          "c/79.2"
+          "c/79.2",
+          "k/compare-quantities"
         ],
         "sourceIds": [
-          "course-87-en:authored:MCADA-79.2"
+          "course-87-en:authored:MCADA-79.2",
+          "course-87-en:item:SX870363",
+          "course-87-en:item:SX870364",
+          "course-87-en:item:SN870535"
         ]
       }
     ],
@@ -3783,14 +3802,16 @@
         "demand": "Translate a figure on a coordinate plane",
         "prerequisites": "Apply a fixed displacement to every vertex",
         "selectors": [
-          "c/80.2"
+          "c/80.2",
+          "=/course-87-en:item:SN870554"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-80.2",
           "intermediate-4-en:authored:M2-fb8d054bd38a-2",
           "course-1-en:authored:M2-a9e3c6cb0366-2",
           "algebra-half-en:authored:M3-115-5",
-          "algebra-half-en:authored:M3-207-2"
+          "algebra-half-en:authored:M3-207-2",
+          "course-87-en:item:SN870554"
         ]
       },
       {
@@ -3798,14 +3819,16 @@
         "demand": "Reflect a figure on a coordinate plane",
         "prerequisites": "Reverse position across the stated line",
         "selectors": [
-          "c/80.1"
+          "c/80.1",
+          "=/course-87-en:item:SN870555"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-80.1",
           "intermediate-4-en:authored:M2-fb8d054bd38a-1",
           "course-1-en:authored:M2-a9e3c6cb0366-1",
           "algebra-half-en:authored:M3-115-4",
-          "algebra-half-en:authored:M3-207-1"
+          "algebra-half-en:authored:M3-207-1",
+          "course-87-en:item:SN870555"
         ]
       },
       {
@@ -4496,12 +4519,12 @@
           "c/71.1",
           "c/71.2",
           "c/74.1",
-          "t/whole-from-used",
+          "k/whole-from-fraction",
           "k/fraction-of-price",
-          "k/goal-shortfall"
+          "k/goal-shortfall",
+          "k/whole-from-part"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870372",
           "course-87-en:authored:MCADA-71.1",
           "course-87-en:authored:MCADA-71.2",
           "course-87-en:authored:MCADA-74.1",
@@ -4509,7 +4532,12 @@
           "course-1-en:authored:M2-c1c7c96159b4-2",
           "algebra-half-en:authored:M3-62-2",
           "course-87-en:item:SX870090",
-          "course-87-en:item:SX870092"
+          "course-87-en:item:SX870092",
+          "course-87-en:item:SN870381",
+          "course-87-en:item:SN870372",
+          "course-87-en:item:SX870349",
+          "course-87-en:item:SX870348",
+          "course-87-en:item:SN870466"
         ]
       },
       {
@@ -4919,13 +4947,18 @@
         "demand": "Multiply signed integers",
         "prerequisites": "Sign and magnitude rules",
         "selectors": [
-          "c/73.1"
+          "c/73.1",
+          "k/signed-product",
+          "k/signed-four"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-73.1",
           "course-1-en:authored:M2-d284505b4ac7-1",
           "algebra-half-en:authored:M3-81-1",
-          "algebra-1-en:authored:M4-9-1"
+          "algebra-1-en:authored:M4-9-1",
+          "course-87-en:item:SN870437",
+          "course-87-en:item:SN870438",
+          "course-87-en:item:SX870344"
         ]
       },
       {
@@ -4933,13 +4966,18 @@
         "demand": "Divide signed integers",
         "prerequisites": "Sign and magnitude rules; nonzero divisor",
         "selectors": [
-          "c/73.2"
+          "c/73.2",
+          "k/signed-product",
+          "k/signed-four"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-73.2",
           "course-1-en:authored:M2-d284505b4ac7-2",
           "algebra-half-en:authored:M3-81-2",
-          "algebra-1-en:authored:M4-9-2"
+          "algebra-1-en:authored:M4-9-2",
+          "course-87-en:item:SN870437",
+          "course-87-en:item:SN870438",
+          "course-87-en:item:SX870344"
         ]
       },
       {
@@ -5928,12 +5966,16 @@
         "demand": "Calculate trapezoid area",
         "prerequisites": "Use the average of the parallel bases and perpendicular height",
         "selectors": [
-          "c/75.2"
+          "c/75.2",
+          "k/trapezoid-area"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-75.2",
           "algebra-half-en:authored:M3-116-2",
-          "algebra-1-en:authored:M4-8-5"
+          "algebra-1-en:authored:M4-8-5",
+          "course-87-en:item:SX870351",
+          "course-87-en:item:SN870443",
+          "course-87-en:item:SN870476"
         ]
       },
       {
@@ -6169,7 +6211,9 @@
         "prerequisites": "Use the stated transformation consistently on every vertex",
         "selectors": [
           "c/80.3",
-          "h/transform-quad"
+          "h/transform-quad",
+          "k/transform-graph",
+          "k/rotation-choose"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-80.3",
@@ -6177,7 +6221,11 @@
           "course-1-en:authored:M2-a9e3c6cb0366-3",
           "algebra-half-en:authored:M3-115-6",
           "algebra-half-en:authored:M3-207-3",
-          "algebra-half-en:authored:M3-207-4"
+          "algebra-half-en:authored:M3-207-4",
+          "course-87-en:item:SN870554",
+          "course-87-en:item:SN870555",
+          "course-87-en:item:SN870547",
+          "course-87-en:item:SN870556"
         ]
       }
     ],
@@ -6475,7 +6523,8 @@
           "c/76.1",
           "h/fraction-order",
           "h/fraction-bar",
-          "a/complex:numeric"
+          "a/complex:numeric",
+          "k/complex-fraction"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-9.6",
@@ -6484,7 +6533,10 @@
           "algebra-half-en:authored:M3-46-2",
           "algebra-half-en:authored:M3-52-1",
           "algebra-half-en:authored:M3-93-1",
-          "algebra-1-en:authored:M4-55-1"
+          "algebra-1-en:authored:M4-55-1",
+          "course-87-en:item:SX870355",
+          "course-87-en:item:SN870481",
+          "course-87-en:item:SN870483"
         ]
       }
     ],
@@ -9214,14 +9266,13 @@
         "demand": "Express a part relative to a reference quantity as a fraction or decimal",
         "prerequisites": "Reference quantity is the denominator; fraction-part can exceed one",
         "selectors": [
-          "p/fraction-part",
-          "p/decimal-part",
+          "k/part-of-whole",
           "p/decimal-part-eighths"
         ],
         "sourceIds": [
+          "algebra-half-en:node:365",
           "course-87-en:item:SN870460",
-          "course-87-en:item:SN870464",
-          "algebra-half-en:node:365"
+          "course-87-en:item:SN870464"
         ]
       },
       {
@@ -10453,13 +10504,16 @@
         "demand": "Multiply signed integers",
         "prerequisites": "Sign and magnitude rules",
         "selectors": [
-          "c/73.1"
+          "c/73.1",
+          "k/signed-product"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-73.1",
           "course-1-en:authored:M2-d284505b4ac7-1",
           "algebra-half-en:authored:M3-81-1",
-          "algebra-1-en:authored:M4-9-1"
+          "algebra-1-en:authored:M4-9-1",
+          "course-87-en:item:SN870437",
+          "course-87-en:item:SN870438"
         ]
       },
       {
@@ -10887,14 +10941,21 @@
         "prerequisites": "Different unknown roles; mixed contract cannot occupy one directional stage",
         "selectors": [
           "c/14.1",
-          "c/71.1"
+          "c/71.1",
+          "k/whole-from-fraction",
+          "k/whole-from-part"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-14.1",
           "course-87-en:authored:MCADA-71.1",
           "course-1-en:authored:M2-c1c7c96159b4-1",
           "algebra-half-en:authored:M3-62-1",
-          "algebra-half-en:authored:M3-62-2"
+          "algebra-half-en:authored:M3-62-2",
+          "course-87-en:item:SN870381",
+          "course-87-en:item:SN870372",
+          "course-87-en:item:SX870349",
+          "course-87-en:item:SX870348",
+          "course-87-en:item:SN870466"
         ]
       }
     ],
@@ -12782,11 +12843,15 @@
         "demand": "Graph a real number-line inequality",
         "prerequisites": "Use endpoint inclusion and a continuous ray",
         "selectors": [
-          "c/78.2"
+          "c/78.2",
+          "k/inequality-graph"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-78.2",
-          "algebra-half-en:authored:M3-72-2"
+          "algebra-half-en:authored:M3-72-2",
+          "course-87-en:item:SX870497",
+          "course-87-en:item:SN870500",
+          "course-87-en:item:SN870510"
         ]
       },
       {
@@ -13744,11 +13809,15 @@
         "prerequisites": "Partition or subtract nonoverlapping regions and infer only justified lengths",
         "selectors": [
           "=/course-87-en:item:SX870199",
-          "=/course-87-en:authored:MCADA-75.1"
+          "=/course-87-en:authored:MCADA-75.1",
+          "k/complex-area"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-75.1",
-          "course-87-en:item:SX870199"
+          "course-87-en:item:SX870199",
+          "course-87-en:item:SX870352",
+          "course-87-en:item:SN870468",
+          "course-87-en:item:SN870471"
         ]
       },
       {
@@ -13798,14 +13867,17 @@
         "selectors": [
           "=/course-87-en:item:SX870351",
           "=/algebra-half-en:node:222",
-          "=/course-87-en:authored:MCADA-75.2"
+          "=/course-87-en:authored:MCADA-75.2",
+          "k/trapezoid-area"
         ],
         "sourceIds": [
-          "course-87-en:item:SX870351",
           "algebra-half-en:node:222",
           "course-87-en:authored:MCADA-75.2",
           "algebra-half-en:authored:M3-116-2",
-          "algebra-1-en:authored:M4-8-5"
+          "algebra-1-en:authored:M4-8-5",
+          "course-87-en:item:SX870351",
+          "course-87-en:item:SN870443",
+          "course-87-en:item:SN870476"
         ]
       }
     ],
@@ -15157,8 +15229,8 @@
           "=/course-87-en:item:SN870554"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870555",
-          "course-87-en:item:SN870554"
+          "course-87-en:item:SN870554",
+          "course-87-en:item:SN870555"
         ]
       },
       {
@@ -15168,7 +15240,8 @@
         "selectors": [
           "=/course-87-en:authored:MCADA-80.1",
           "=/course-87-en:authored:MCADA-80.2",
-          "=/course-87-en:authored:MCADA-80.3"
+          "=/course-87-en:authored:MCADA-80.3",
+          "k/transform-graph"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-80.1",
@@ -15185,7 +15258,10 @@
           "algebra-half-en:authored:M3-115-6",
           "algebra-half-en:authored:M3-207-1",
           "algebra-half-en:authored:M3-207-2",
-          "algebra-half-en:authored:M3-207-3"
+          "algebra-half-en:authored:M3-207-3",
+          "course-87-en:item:SN870554",
+          "course-87-en:item:SN870555",
+          "course-87-en:item:SN870547"
         ]
       }
     ],

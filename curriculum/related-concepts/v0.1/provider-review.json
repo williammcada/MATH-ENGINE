@@ -2646,49 +2646,6 @@
     ]
   },
   {
-    "providerSourceId": "course-87-en:item:SN870460",
-    "conceptIds": [
-      "fraction-decimal-percent",
-      "ratio-proportion",
-      "focus:part-reference-forms"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "8ed85b81caa585945cc23c1b676fcbddd8dc0e42e6cf1b9c71ba470a6ff53dda",
-    "limits": "related: Express a part relative to a reference quantity as a fraction or decimal. Reference quantity is the denominator; fraction-part can exceed one.",
-    "sourceIds": [
-      "course-87-en:item:SN870460"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SN870464",
-    "conceptIds": [
-      "fraction-decimal-percent",
-      "focus:part-reference-forms"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "4711bbbcd599d878feffd0b3342e79f828fd1e2f3ba54778e895e3cf5f61ba51",
-    "limits": "related: Express a part relative to a reference quantity as a fraction or decimal. Reference quantity is the denominator; fraction-part can exceed one.",
-    "sourceIds": [
-      "course-87-en:item:SN870464"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SN870486",
-    "conceptIds": [
-      "percent",
-      "focus:percent-unknown"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "1a4b6784ed257556d70c095b4af04786d4d0b85622bc50822bd6e623fa992ece",
-    "limits": "Recover unknown whole or rate. Percent-whole and percent-whole-half have identical executable ranges despite different names.",
-    "sourceIds": [
-      "course-87-en:item:SN870486"
-    ]
-  },
-  {
     "providerSourceId": "course-87-en:item:SN870487",
     "conceptIds": [
       "fraction-decimal-percent",
@@ -2974,20 +2931,6 @@
     "limits": "Tax on a price with fractional percentage rate; round the tax to cents.",
     "sourceIds": [
       "course-87-en:item:SN870247"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SN870372",
-    "conceptIds": [
-      "ratio-proportion",
-      "focus:fraction-whole-unknown"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "daea7e0076fb8072744b55837013a7ff69a99216f6cc5f8da63702dfba1c5bfa",
-    "limits": "Recover whole from the given used fractional part by inverse scaling.",
-    "sourceIds": [
-      "course-87-en:item:SN870372"
     ]
   },
   {
@@ -3816,20 +3759,6 @@
     "limits": "Find circumference from radius using pi=22/7; radii are multiples of seven, so the result is exact. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
     "sourceIds": [
       "course-87-en:item:SX870332"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SX870351",
-    "conceptIds": [
-      "area",
-      "focus:area-formula-practice"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "7577a647c2b0bfe6488e0eae6d5e18407ad346c3f5e3a123c007efe127de90d9",
-    "limits": "Find a right-trapezoid area from two parallel bases and its perpendicular height; use half the base sum times height. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
-    "sourceIds": [
-      "course-87-en:item:SX870351"
     ]
   },
   {
@@ -5592,49 +5521,6 @@
     ]
   },
   {
-    "providerSourceId": "course-87-en:item:SN870556",
-    "conceptIds": [
-      "transformations",
-      "focus:transformation-response"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "cd1808b40ad927efe0512db0f96741f98d3520bef7f4831ebb10113a9f19bce8",
-    "limits": "Select the image of a rectangle after 90-degree counterclockwise, 180-degree, or 90-degree clockwise rotation about the origin; no drawing is requested. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
-    "sourceIds": [
-      "course-87-en:item:SN870556"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SN870555",
-    "conceptIds": [
-      "transformations",
-      "focus:reflection-coordinate-count",
-      "focus:transformation-response"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "a3be920739c093182404718c9256b5e7b2429e322c6ca9d39c16c4181c42f88f",
-    "limits": "Reflect all three triangle vertices across the x-axis and supply six coordinate values. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
-    "sourceIds": [
-      "course-87-en:item:SN870555"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SN870554",
-    "conceptIds": [
-      "transformations",
-      "focus:transformation-response"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "7312e356deb832939f188a6cc7ca7c44d5e0f92bf0b2f481a6e7e6f32a5480e0",
-    "limits": "Translate four rectangle vertices by a signed vector and supply eight coordinate values. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
-    "sourceIds": [
-      "course-87-en:item:SN870554"
-    ]
-  },
-  {
     "providerSourceId": "course-87-en:item:SN870417",
     "conceptIds": [
       "angles",
@@ -6071,20 +5957,6 @@
     "limits": "Evaluate six similarity statements, including squares versus arbitrary rectangles, corresponding angles, possible unequal size and non-required equal area or side lengths. True/false recognition is not justification. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
     "sourceIds": [
       "course-87-en:item:SAX70303"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SN870539",
-    "conceptIds": [
-      "reasoning",
-      "focus:information-response"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "f884b583c22509858a8aab2beb5c5c5c4bc2f74b73fe860116967d11c689e4c7",
-    "limits": "Select the missing information needed to recover Lee's April hours from the given comparison; do not invent a quantity. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
-    "sourceIds": [
-      "course-87-en:item:SN870539"
     ]
   },
   {
@@ -26479,6 +26351,555 @@
     "limits": "Find rectangular prism volume from three labeled perpendicular dimensions. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
     "sourceIds": [
       "course-87-en:item:SN870379"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870381",
+    "conceptIds": [
+      "fractions",
+      "ratio-proportion",
+      "focus:fraction-whole-unknown",
+      "focus:mixed-part-whole-models"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "16bcbcb24baf4118c804ae943d29a1d7f892f769c40d8f0310c403e46d2c44a7",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870381"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870372",
+    "conceptIds": [
+      "fractions",
+      "ratio-proportion",
+      "focus:fraction-whole-unknown",
+      "focus:mixed-part-whole-models"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "7340f85b98ed85f180aa4abaa1b2c8325800d2e8ba5c4fa3a660e744b4568823",
+    "limits": "Recover whole from the given used fractional part by inverse scaling.",
+    "sourceIds": [
+      "course-87-en:item:SN870372"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870392",
+    "conceptIds": [
+      "ratio-proportion",
+      "focus:ratio-total"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "0686b6155c11f2259ce49344e05d7dfb812e6cbd7f5fcab047cfd7d642f0dcf9",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870392"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870389",
+    "conceptIds": [
+      "rates",
+      "ratio-proportion",
+      "focus:ratio-total"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "d596c1a98ffc360b8d1af18d6ffe5976140a1e046b41d8d3f66bf136cca70a6c",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870389"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870437",
+    "conceptIds": [
+      "integers",
+      "focus:integer-product-sum",
+      "focus:integer-products"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "bc22e09086ad85e8006f99c9e1f8b7d390b88449f1d008afb0eac3d0caa9c09f",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870437"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870438",
+    "conceptIds": [
+      "integers",
+      "focus:integer-product-sum",
+      "focus:integer-products"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "9a5bd5dc6d3883680af2cb3879ea4661725d4950eb7e917ba0f30c56173d2de8",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870438"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870344",
+    "conceptIds": [
+      "integers",
+      "focus:integer-products"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "786150f813f64fb851be3394b9afaae317b018930d073528efc03f684ba376a0",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870344"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870349",
+    "conceptIds": [
+      "fractions",
+      "ratio-proportion",
+      "focus:fraction-whole-unknown",
+      "focus:mixed-part-whole-models"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "d63d392de547c553dfb77b7893ac74a65e2612920b61a945c864472657301752",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870349"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870348",
+    "conceptIds": [
+      "fractions",
+      "ratio-proportion",
+      "focus:fraction-whole-unknown",
+      "focus:mixed-part-whole-models"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "f84a7427626d5048266db8296a1645b4577e6d59e4611dd2059b7cc2edcad596",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870348"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870460",
+    "conceptIds": [
+      "fraction-decimal-percent",
+      "fractions",
+      "focus:part-reference-forms"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "8ed85b81caa585945cc23c1b676fcbddd8dc0e42e6cf1b9c71ba470a6ff53dda",
+    "limits": "related: Express a part relative to a reference quantity as a fraction or decimal. Reference quantity is the denominator; fraction-part can exceed one.",
+    "sourceIds": [
+      "course-87-en:item:SN870460"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870464",
+    "conceptIds": [
+      "fraction-decimal-percent",
+      "focus:part-reference-forms"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "4711bbbcd599d878feffd0b3342e79f828fd1e2f3ba54778e895e3cf5f61ba51",
+    "limits": "related: Express a part relative to a reference quantity as a fraction or decimal. Reference quantity is the denominator; fraction-part can exceed one.",
+    "sourceIds": [
+      "course-87-en:item:SN870464"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870466",
+    "conceptIds": [
+      "fraction-decimal-percent",
+      "ratio-proportion",
+      "focus:fraction-whole-unknown",
+      "focus:mixed-part-whole-models"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "fc9975c50caa1ca577bb28865ba11d9fe4b32e3dee892c57b86904fffa37fad5",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870466"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870352",
+    "conceptIds": [
+      "area",
+      "focus:composite-area-shapes"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "64a03d0d940df0993882afd417cee8c8cc582208c951bd3abcbe67c6204b55e7",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870352"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870468",
+    "conceptIds": [
+      "area",
+      "focus:composite-area-shapes"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "2e10c6c599bfb852f122e66aa0d32506f47ecc896e1c51dc0bc9e3f9a830a01f",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870468"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870471",
+    "conceptIds": [
+      "area",
+      "focus:composite-area-shapes"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "63bf3735cf2a7b5f6c557e45a1b217376d4d886786bb8696f46926d91231bf26",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870471"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870351",
+    "conceptIds": [
+      "area",
+      "focus:area-formula-practice",
+      "focus:area-shape-formulas"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "e1b1462763b72d121ff779ef0e969959adb2eba53a841daa1353ffd04e65ad87",
+    "limits": "Find a right-trapezoid area from two parallel bases and its perpendicular height; use half the base sum times height. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
+    "sourceIds": [
+      "course-87-en:item:SX870351"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870443",
+    "conceptIds": [
+      "area",
+      "focus:area-formula-practice",
+      "focus:area-shape-formulas"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "897c8b5c1744cfe7354a456649b3eb8c71030648b354e4441f28b3ad99ef449d",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870443"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870476",
+    "conceptIds": [
+      "area",
+      "focus:area-formula-practice",
+      "focus:area-shape-formulas"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "d8ef07cbfacf1244667f203e2116a59922d1c08bdd97487bdaf5f9ed20918d4b",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870476"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870355",
+    "conceptIds": [
+      "fractions",
+      "focus:fraction-operation-order"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "3675d172c1ef6568764259e6e81804ecd357ba97208e80faf8f066b9ed9f62cc",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870355"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870481",
+    "conceptIds": [
+      "fractions",
+      "focus:fraction-operation-order"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "f130ed27c26ae0201d1869d4c2434cf196d23a9858c37cf1178dcdcec9a1ad74",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870481"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870483",
+    "conceptIds": [
+      "fractions",
+      "focus:fraction-operation-order"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "71b097b17cb625a4633ea7c6a7774bec32d3d79febce0a8105b6476998d4567c",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870483"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870485",
+    "conceptIds": [
+      "percent",
+      "focus:percent-unknown"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "c3c761fa66e43c5db35bfc6e8d4911195a537f3e66fecf33950f4ce4b8f0c742",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870485"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870486",
+    "conceptIds": [
+      "percent",
+      "focus:percent-unknown"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "1a4b6784ed257556d70c095b4af04786d4d0b85622bc50822bd6e623fa992ece",
+    "limits": "Recover unknown whole or rate. Percent-whole and percent-whole-half have identical executable ranges despite different names.",
+    "sourceIds": [
+      "course-87-en:item:SN870486"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870497",
+    "conceptIds": [
+      "inequalities",
+      "sets",
+      "focus:linear-inequalities",
+      "focus:set-domain-graphing"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "db185b88d0e78e02f17e120eacbafc787e78798a98b4364ba77be96f5b3f6a8b",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870497"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870500",
+    "conceptIds": [
+      "inequalities",
+      "sets",
+      "focus:linear-inequalities",
+      "focus:set-domain-graphing"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "0df9cb97fe74ca042c27ddf8da75cfd51c4266d5aae90e83371faefc31578414",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870500"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870510",
+    "conceptIds": [
+      "inequalities",
+      "sets",
+      "focus:linear-inequalities",
+      "focus:set-domain-graphing"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "40ba7913c52e1d55ab4eab3dc6f4fbb97567853187ed6d75ca958f76cc0d0450",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870510"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870498",
+    "conceptIds": [
+      "inequalities",
+      "focus:linear-inequalities"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "74797d0ac67bc6b54aefad1d5966e8b3f2f208eea9737d5dbe18e8968f3649c6",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870498"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870537",
+    "conceptIds": [
+      "reasoning",
+      "focus:information-sufficiency"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "2606bf3b41efcf9e8ce3647c3ae3c65a0af9f27fefba0b4ec305e160049d66ef",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870537"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870539",
+    "conceptIds": [
+      "reasoning",
+      "focus:information-response",
+      "focus:information-sufficiency"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "b10739bb8b94ee3bb2af031ccb9a900cd7ff00b65eda0884bf1ad9512d6cbd23",
+    "limits": "Select the missing information needed to recover Lee's April hours from the given comparison; do not invent a quantity. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
+    "sourceIds": [
+      "course-87-en:item:SN870539"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870796",
+    "conceptIds": [
+      "reasoning",
+      "focus:information-sufficiency"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "76256372383b56a452b320af80078b0c978fc8da3d81731ef91e8f780c721599",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870796"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870363",
+    "conceptIds": [
+      "reasoning",
+      "focus:information-sufficiency"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "28cd60ecec6ec098da49e62cf7d682ae950274a3019186d8b0ea66c239cf4a1b",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870363"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870364",
+    "conceptIds": [
+      "reasoning",
+      "focus:information-sufficiency"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "948d9f429f93c206cbd4dc1fa3d4370ffba23e74b44d48e6cd657320babc6a96",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870364"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870535",
+    "conceptIds": [
+      "reasoning",
+      "focus:information-sufficiency"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "9fb86ca53a66a441e990a60790ced5198ad9d0ab3471c2debbe5eea1c624c0d4",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870535"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870554",
+    "conceptIds": [
+      "transformations",
+      "focus:coordinate-transformations",
+      "focus:transformation-response",
+      "focus:transformations"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "caebdc9b383effd58774480dea33ff223d0a1974c477f86904a1ab26a6dc9909",
+    "limits": "Translate four rectangle vertices by a signed vector and supply eight coordinate values. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
+    "sourceIds": [
+      "course-87-en:item:SN870554"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870555",
+    "conceptIds": [
+      "transformations",
+      "focus:coordinate-transformations",
+      "focus:reflection-coordinate-count",
+      "focus:transformation-response",
+      "focus:transformations"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "86b578242d904ba449d823c2bf7ea937ba38f9b81877cdd38d17a42849b757c8",
+    "limits": "Reflect all three triangle vertices across the x-axis and supply six coordinate values. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
+    "sourceIds": [
+      "course-87-en:item:SN870555"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870547",
+    "conceptIds": [
+      "transformations",
+      "focus:coordinate-transformations",
+      "focus:transformation-response"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "6b92ee80398d10d3cbbdf4ea43a35143309e1b2cf447c7d5f0171ef5e1fd81e3",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870547"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870556",
+    "conceptIds": [
+      "transformations",
+      "focus:coordinate-transformations",
+      "focus:transformation-response"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "6c1854743ab2d1f858fe85ecc209b511d0b1afcff81cbbfafc735984af478d86",
+    "limits": "Select the image of a rectangle after 90-degree counterclockwise, 180-degree, or 90-degree clockwise rotation about the origin; no drawing is requested. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
+    "sourceIds": [
+      "course-87-en:item:SN870556"
     ]
   }
 ]

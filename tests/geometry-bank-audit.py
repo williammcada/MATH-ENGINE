@@ -46,6 +46,6 @@ for line in p.stdout:
    labels=[n.text for n in nodes if n.attrib.get('data-role')=='dimension'];assert 'x' in labels and str(expected[1]).removesuffix('.0') not in labels
   svg_count+=1
  count+=1
-# SX870199, SX870309, SX870310, SN870327 and SN870379 are served by coverage ports (audited by tests/port87.cjs).
-assert p.wait()==0 and count==22000 and len(types)==12
+# SX870199, SX870309, SX870310, SN870327, SN870379 and SX870351 are served by coverage ports (audited by tests/port87.cjs).
+assert p.wait()==0 and count==21000 and len(types)==12
 print(f'PASS: {count:,} independent geometry cases, {len(types)} diagram types, {svg_count} parsed SVGs with uniform transforms, sector/edge counts and unknown-value checks')

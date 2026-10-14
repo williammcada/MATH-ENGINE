@@ -17,6 +17,7 @@
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch5-course87-L41-50.json": "688e9b1f48e02f0227c664f8964d0db45f95a936f3dd114b6d7f1a40dea4d4f7",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch6-course87-L51-60.json": "1d4b6cb92f1fcdd332cbc0b34242eeab2777d2fb54174066d791f8e74ed7f408",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch7-course87-L61-70.json": "b54dab2ec2091cc171a78006055ab67c055e470026fbc198ab9cbbe8d98cb06e",
+"curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch8-course87-L71-80.json": "8b20507436d0a3be5df21b0af904eee114ab24f4b6edc2c417c50f3deb00c41b",
 "curriculum/source-mappings/advanced-v0.1.json": "740f9d6e25483a2838d5561a85c66c9eb3f67b7505a8ab9004353e5eb6883aa7",
 "curriculum/source-mappings/algebra-review-v0.1.json": "a4956b61d8353d4258097f2ea5ca8d7baf4031fdd9c090e344ca2ce366a29a0e",
 "curriculum/source-mappings/breadth-v0.1.json": "d8255409d16dcc8db7b45244ab1239896d13ac56ffe4f3eb2ecdd8778f5e4996",
@@ -26,7 +27,7 @@
 "curriculum/source-mappings/linear-equations-v0.1.json": "9e4f9fd37066e63cd74f133bcc76713db8ae30251a22f03f5a672ab535bc7e65",
 "curriculum/source-mappings/linear-equations-v0.2.json": "759f02762a92c18098944bfe8a88f2be5a0a4384f778105cb78239a07df22371",
 "curriculum/source-mappings/measurement-v0.1.json": "3ca7cc1cdb74fb6e1bf8741beea9c2787fe122befe28499e75bfd6d803409451",
-"curriculum/source-mappings/port87-v0.1.json": "c7ecac41eaaf6e577dc79a7028b1a11c480e56b5763ea08c44a2c5c691fc33f0",
+"curriculum/source-mappings/port87-v0.1.json": "02e4603818be6691637be8d0c5fb95dd899da87bed70a985cd4f61571c2de86b",
 "curriculum/source-mappings/proportions-v0.1.json": "85db6cf773c6c1a6bbad37f83cf3724becf552fee4bbf4154e2ade0bae7751af",
 "curriculum/source-mappings/quadratic-equations-v0.1.json": "51b5a6c7221720481df7ac7a3cf9b4561744ef910fee5427c8cd73d6c027f4a6",
 "curriculum/source-mappings/reasoning-v0.1.json": "b88aeb99d84bd8ab367678d0c6f7d90fdc3cba8dbc087ebf108a3e835ef7f448",
@@ -36,25 +37,25 @@
 "curriculum/source-mappings/statistics-v0.1.json": "a3ba878bad7cc71dea555ef623b6c3e89483a9c8f809d21e4d90efa9ba09ce8d"
 },
 "totals": {
-"open": 4542,
-"covered-provisional": 441,
-"covered": 350,
-"consolidated": 92,
+"open": 4504,
+"covered-provisional": 429,
+"covered": 390,
+"consolidated": 102,
 "retired": 0,
 "records": 5425,
-"percentComplete": 8.1,
-"percentIncludingProvisional": 16.3
+"percentComplete": 9.1,
+"percentIncludingProvisional": 17.0
 },
 "banks": {
 "course-87-en": {
-"open": 295,
-"covered-provisional": 52,
-"covered": 350,
-"consolidated": 92,
+"open": 257,
+"covered-provisional": 40,
+"covered": 390,
+"consolidated": 102,
 "retired": 0,
 "records": 789,
-"percentComplete": 56.0,
-"percentIncludingProvisional": 62.6
+"percentComplete": 62.4,
+"percentIncludingProvisional": 67.4
 },
 "algebra-half-en": {
 "open": 552,
@@ -7503,110 +7504,110 @@
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:71",
-"open": 2,
-"covered-provisional": 2,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 3,
+"consolidated": 1,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 50.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:72",
-"open": 3,
-"covered-provisional": 1,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 3,
+"consolidated": 1,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 25.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:73",
-"open": 4,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 3,
+"consolidated": 1,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:74",
-"open": 4,
-"covered-provisional": 2,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 5,
+"consolidated": 1,
 "retired": 0,
 "records": 6,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 33.3
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:75",
-"open": 7,
-"covered-provisional": 1,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 6,
+"consolidated": 2,
 "retired": 0,
 "records": 8,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 12.5
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:76",
-"open": 4,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 3,
+"consolidated": 1,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:77",
-"open": 2,
-"covered-provisional": 2,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 3,
+"consolidated": 1,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 50.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:78",
-"open": 4,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
+"covered": 4,
 "consolidated": 0,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:79",
-"open": 7,
-"covered-provisional": 1,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 6,
+"consolidated": 2,
 "retired": 0,
 "records": 8,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 12.5
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
@@ -7623,14 +7624,14 @@
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:80",
-"open": 1,
-"covered-provisional": 3,
-"covered": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 4,
 "consolidated": 0,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 75.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
@@ -33079,29 +33080,35 @@
 "id": "course-87-en:item:SN870372",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:71",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation used amounts outside the original's 40–56 inches and unreduced fractions such as 2/6; the original uses 1/d or 2/d of the spool (d from 3 to 7) in lowest terms.",
 "by": [
 "course-87-en:item:SN870372"
-],
-"basis": "measurement-v0.1.json",
-"family": "structured-measurement"
+]
 },
 {
 "id": "course-87-en:item:SN870373",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:71",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870375 (same script). Its distractors are pending the distractor programme, as the covering adaptation has none yet.",
+"into": "course-87-en:item:SN870375"
 },
 {
 "id": "course-87-en:item:SN870375",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:71",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source: existing adaptation asks the same thing. Same 24–48 inches left and fractions (d − 1)/d with d from 3 to 8.",
 "by": [
 "course-87-en:item:SN870375"
-],
-"basis": "measurement-v0.1.json",
-"family": "structured-measurement"
+]
 },
 {
 "id": "course-87-en:item:SN870377",
@@ -33141,7 +33148,13 @@
 "id": "course-87-en:item:SN870381",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:71",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870381"
+]
 },
 {
 "id": "course-87-en:item:SN870384",
@@ -33181,30 +33194,47 @@
 "id": "course-87-en:item:SN870388",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:72",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870389 (same script). The port's distractors cover the choice form.",
+"into": "course-87-en:item:SN870389"
 },
 {
 "id": "course-87-en:item:SN870389",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:72",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870389"
+]
 },
 {
 "id": "course-87-en:item:SN870392",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:72",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same table of multipliers as the source; half-number answers are written as mixed numbers.",
+"by": [
+"course-87-en:item:SN870392"
+]
 },
 {
 "id": "course-87-en:item:SN870393",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:72",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source: existing adaptation asks the same thing. Same pounds (3–8 and 12–18) and prices ($1.20–$1.50), with the final rounding to the cent stated.",
 "by": [
 "course-87-en:item:SN870393"
-],
-"basis": "measurement-v0.1.json",
-"family": "structured-measurement"
+]
 },
 {
 "id": "course-87-en:item:SN870396",
@@ -33384,13 +33414,25 @@
 "id": "course-87-en:item:SN870437",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:73",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870437"
+]
 },
 {
 "id": "course-87-en:item:SN870438",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:73",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870438"
+]
 },
 {
 "id": "course-87-en:item:SN870440",
@@ -33408,7 +33450,13 @@
 "id": "course-87-en:item:SN870443",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:75",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870443"
+]
 },
 {
 "id": "course-87-en:item:SN870444",
@@ -33432,7 +33480,11 @@
 "id": "course-87-en:item:SN870448",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:73",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SX870344 (same script). The port's distractors cover the choice form.",
+"into": "course-87-en:item:SX870344"
 },
 {
 "id": "course-87-en:item:SN870449",
@@ -33497,12 +33549,13 @@
 "id": "course-87-en:item:SN870460",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:74",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation allowed the part and the whole to match (a fraction equal to 1); the original keeps them different.",
 "by": [
 "course-87-en:item:SN870460"
-],
-"basis": "proportions-v0.1.json",
-"family": "structured-proportion"
+]
 },
 {
 "id": "course-87-en:item:SN870462",
@@ -33520,42 +33573,69 @@
 "id": "course-87-en:item:SN870464",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:74",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation included eighths and tenths (for example 0.375); the original uses only quarters, fifths and 3/6.",
 "by": [
 "course-87-en:item:SN870464"
-],
-"basis": "proportions-v0.1.json",
-"family": "structured-proportion"
+]
 },
 {
 "id": "course-87-en:item:SN870465",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:74",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870466 (same script). The port's distractors cover the choice form.",
+"into": "course-87-en:item:SN870466"
 },
 {
 "id": "course-87-en:item:SN870466",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:74",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870466"
+]
 },
 {
 "id": "course-87-en:item:SN870468",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:75",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870468"
+]
 },
 {
 "id": "course-87-en:item:SN870470",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:75",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870471 (same script and figure). The port's distractors cover the choice form.",
+"into": "course-87-en:item:SN870471"
 },
 {
 "id": "course-87-en:item:SN870471",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:75",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870471"
+]
 },
 {
 "id": "course-87-en:item:SN870473",
@@ -33567,13 +33647,23 @@
 "id": "course-87-en:item:SN870474",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:75",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870476 (same script and figure). The port's distractors cover the choice form.",
+"into": "course-87-en:item:SN870476"
 },
 {
 "id": "course-87-en:item:SN870476",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:75",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870476"
+]
 },
 {
 "id": "course-87-en:item:SN870477",
@@ -33585,19 +33675,35 @@
 "id": "course-87-en:item:SN870481",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:76",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870481"
+]
 },
 {
 "id": "course-87-en:item:SN870482",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:76",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870483 (same script). The port's distractors cover the choice form.",
+"into": "course-87-en:item:SN870483"
 },
 {
 "id": "course-87-en:item:SN870483",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:76",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870483"
+]
 },
 {
 "id": "course-87-en:item:SN870484",
@@ -33609,29 +33715,37 @@
 "id": "course-87-en:item:SN870485",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:77",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand and amounts as the source. The source rounds 7.5% and 12.5% to whole percents (8% and 13%); the port keys the exact percent.",
+"by": [
+"course-87-en:item:SN870485"
+]
 },
 {
 "id": "course-87-en:item:SN870486",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:77",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation used its own values (for example 56 is 20% of what number); the original uses a table of seven percents, each with its own range of given numbers.",
 "by": [
 "course-87-en:item:SN870486"
-],
-"basis": "proportions-v0.1.json",
-"family": "structured-proportion"
+]
 },
 {
 "id": "course-87-en:item:SN870487",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:77",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source: existing adaptation asks the same thing. Same values (b from 1 to 9 as 10% or 20% of the whole).",
 "by": [
 "course-87-en:item:SN870487"
-],
-"basis": "proportions-v0.1.json",
-"family": "structured-proportion"
+]
 },
 {
 "id": "course-87-en:item:SN870490",
@@ -33667,7 +33781,13 @@
 "id": "course-87-en:item:SN870500",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:78",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported as a teacher-reviewed task: the source asks the student to draw a graph. The prompt carries a blank grid or number line, and the teacher sees a reference drawing and criteria.",
+"by": [
+"course-87-en:item:SN870500"
+]
 },
 {
 "id": "course-87-en:item:SN870501",
@@ -33709,7 +33829,13 @@
 "id": "course-87-en:item:SN870510",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:78",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported as a teacher-reviewed task: the source asks the student to draw a graph. The prompt carries a blank grid or number line, and the teacher sees a reference drawing and criteria.",
+"by": [
+"course-87-en:item:SN870510"
+]
 },
 {
 "id": "course-87-en:item:SN870513",
@@ -33756,7 +33882,11 @@
 "id": "course-87-en:item:SN870523",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:79",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870535 (same conditions). The port's distractors cover the choice form.",
+"into": "course-87-en:item:SN870535"
 },
 {
 "id": "course-87-en:item:SN870526",
@@ -33802,24 +33932,37 @@
 "id": "course-87-en:item:SN870535",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:79",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same conditions and ranges as the source. The source keys p/q = 2 as p > q, which fails when both are negative; the port keys insufficient information.",
+"by": [
+"course-87-en:item:SN870535"
+]
 },
 {
 "id": "course-87-en:item:SN870537",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:79",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand and response form as the source. The source can name the same person twice; the port always uses two different people. The written answer is checked for the other person's name and the quantity.",
+"by": [
+"course-87-en:item:SN870537"
+]
 },
 {
 "id": "course-87-en:item:SN870539",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:79",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation was multiple choice; the original asks the student to state the missing fact. The port checks the written answer for the other person's name and hours, and offers choices for practice.",
 "by": [
 "course-87-en:item:SN870539"
-],
-"basis": "reasoning-v0.1.json",
-"family": "structured-reasoning"
+]
 },
 {
 "id": "course-87-en:item:SN870540",
@@ -33866,7 +34009,13 @@
 "id": "course-87-en:item:SN870547",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:80",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported as a teacher-reviewed task: the source asks the student to draw a graph. The prompt carries a blank grid or number line, and the teacher sees a reference drawing and criteria.",
+"by": [
+"course-87-en:item:SN870547"
+]
 },
 {
 "id": "course-87-en:item:SN870548",
@@ -33896,34 +34045,37 @@
 "id": "course-87-en:item:SN870554",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:80",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation asked for coordinates after translations of 2–3 units; the original asks for a graph of translations of 4–7 units. Ported as a teacher-reviewed task: the source asks the student to draw a graph. The prompt carries a blank grid or number line, and the teacher sees a reference drawing and criteria.",
 "by": [
 "course-87-en:item:SN870554"
-],
-"basis": "representations-v0.1.json",
-"family": "structured-representations"
+]
 },
 {
 "id": "course-87-en:item:SN870555",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:80",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation used vertices outside the original's ranges (A from x = −8 to −6). Ported as a teacher-reviewed task: the source asks the student to draw a graph. The prompt carries a blank grid or number line, and the teacher sees a reference drawing and criteria.",
 "by": [
 "course-87-en:item:SN870555"
-],
-"basis": "representations-v0.1.json",
-"family": "structured-representations"
+]
 },
 {
 "id": "course-87-en:item:SN870556",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:80",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation used small upright rectangles in the first quadrant; the original rotates a tilted rectangle placed anywhere on the grid, and asks which of four graphs is right.",
 "by": [
 "course-87-en:item:SN870556"
-],
-"basis": "representations-v0.1.json",
-"family": "structured-representations"
+]
 },
 {
 "id": "course-87-en:item:SN870560",
@@ -34017,7 +34169,11 @@
 "id": "course-87-en:item:SN870577",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:77",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870487 (same values). Its distractors are pending the distractor programme, as the covering adaptation has none yet.",
+"into": "course-87-en:item:SN870487"
 },
 {
 "id": "course-87-en:item:SN870580",
@@ -34979,13 +35135,23 @@
 "id": "course-87-en:item:SN870795",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:79",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870796 (same stories). The port's distractors cover the choice form.",
+"into": "course-87-en:item:SN870796"
 },
 {
 "id": "course-87-en:item:SN870796",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:79",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same seven stories and questions as the source. The answer is either 'not enough information' or 'yes' with the number of minutes.",
+"by": [
+"course-87-en:item:SN870796"
+]
 },
 {
 "id": "course-87-en:item:SN870798",
@@ -37369,54 +37535,97 @@
 "id": "course-87-en:item:SX870344",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:73",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870344"
+]
 },
 {
 "id": "course-87-en:item:SX870348",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:74",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870348"
+]
 },
 {
 "id": "course-87-en:item:SX870349",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:74",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870349"
+]
 },
 {
 "id": "course-87-en:item:SX870351",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:75",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation used bases of 5–16 and heights of 6–18; the original builds a right trapezoid whose height is about the shorter base, in inches.",
 "by": [
 "course-87-en:item:SX870351"
-],
-"basis": "geometry-v0.1.json",
-"family": "structured-geometry"
+]
 },
 {
 "id": "course-87-en:item:SX870352",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:75",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870352"
+]
 },
 {
 "id": "course-87-en:item:SX870355",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:76",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870355"
+]
 },
 {
 "id": "course-87-en:item:SX870363",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:79",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870363"
+]
 },
 {
 "id": "course-87-en:item:SX870364",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:79",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same seven conditions as the source; the answer is >, <, = or insufficient information.",
+"by": [
+"course-87-en:item:SX870364"
+]
 },
 {
 "id": "course-87-en:item:SX870366",
@@ -37847,13 +38056,25 @@
 "id": "course-87-en:item:SX870497",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:78",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported as a teacher-reviewed task: the source asks the student to draw a graph. The prompt carries a blank grid or number line, and the teacher sees a reference drawing and criteria.",
+"by": [
+"course-87-en:item:SX870497"
+]
 },
 {
 "id": "course-87-en:item:SX870498",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:78",
-"state": "open"
+"state": "covered",
+"batch": "batch-8 course-87 lessons 71-80",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form and ranges as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870498"
+]
 },
 {
 "id": "course-87-en:item:SX870499",

@@ -55,9 +55,9 @@ integer-arithmetic|integers|3|Simplify signed arithmetic with nested grouping|Di
 fraction-equivalence|fraction-equivalence|1|Reduce by common factors without a model|Find and cancel a common factor|f/reduce c/15.2 k/reduce-product-form
 fraction-equivalence|fraction-equivalence|2|Reduce using prime factorization|Prime-factor representation and cancellation|c/24.1
 percent-unknown|percent|1|Find a percent of a known whole, including rates above 100 percent or fractional rates|Convert a percent to a fraction or decimal|f/percent-of c/22.2 c/60.2 c/8.4 h/percent-over100 h/fraction-percent h/commission k/percent-of
-percent-unknown|percent|2|Model and solve a percent problem with an unknown part, whole or rate|Distinguish the whole, part and rate|c/77.1 c/81.1 p/percent-whole p/percent-part p/percent-whole-half
+percent-unknown|percent|2|Model and solve a percent problem with an unknown part, whole or rate|Distinguish the whole, part and rate|c/77.1 c/81.1 k/percent-of-what p/percent-part p/percent-whole-half
 percent-unknown|percent|3|Recover an original amount before a percent increase|Model the final amount as a multiplier of the original|p/reverse-increase a/word:percent
-ratio-total|ratio-proportion|1|Find a missing term in a proportion|Equivalent ratios and cross products|c/39.2 f/ratio-factor f/cross-products c/54.1 c/54.2 c/72.1 p/ratio-missing k/recipe-ratio k/ratio-find
+ratio-total|ratio-proportion|1|Find a missing term in a proportion|Equivalent ratios and cross products|c/39.2 f/ratio-factor f/cross-products c/54.1 c/54.2 c/72.1 p/ratio-missing k/recipe-ratio k/ratio-find k/implied-ratio
 ratio-total|ratio-proportion|2|Divide a total according to a ratio|Add ratio parts before scaling|c/65.2 p/ratio-total-large c/65.1 k/ratio-total
 ratio-total|ratio-proportion|3|Connect quantities through two ratios|Match and scale a shared quantity|k/ratio-chain
 average|statistics|1|Find the arithmetic mean of a list|Add values and divide by count|c/28.2 f/mean-small k/average-five
@@ -89,7 +89,7 @@ rational-sums|rational-expressions|2|Add rational expressions with different den
 rational-sums|rational-expressions|3|Add expressions with oppositely oriented factors|Control denominator signs before combining|z/rational:sign
 radical-simplification|radicals|1|Combine like radicals|Recognize equal radicands|a/radical:sum
 radical-simplification|radicals|2|Expand products of radical binomials|Distribution, simplification and combining terms|a/radical:binomial
-linear-inequalities|inequalities|1|Graph a stated inequality on a number line|Open/closed endpoints and shading direction|c/78.2
+linear-inequalities|inequalities|1|Graph a stated inequality on a number line|Open/closed endpoints and shading direction|c/78.2 k/inequality-graph k/inequality-choose
 linear-inequalities|inequalities|2|Solve a two-step linear inequality|Inverse operations and boundary inclusion|c/93.2
 linear-inequalities|inequalities|3|Solve a compound intersection or union|Combine two solution sets correctly|a/compound:and a/compound:or
 line-slope|lines-slope|1|Find slope from two points|Change in y divided by change in x|c/COURSE107.1 h/slope-graph =/algebra-1-en:node:905
@@ -171,8 +171,8 @@ geometric-proof|proof|2|Prove geometric properties using congruent triangles|Sel
 geometric-proof|proof|3|Prove a general theorem by area decomposition|Justify the diagram and connect geometry to algebra|z/proof:pythagoras c/COURSE212.1
 right-triangles|pythagorean|1|Find a missing side in a right triangle|Squares and square roots|c/99.1
 right-triangles|pythagorean|2|Apply the right-triangle theorem in a context|Identify the hidden right triangle|c/COURSE112.1
-information-sufficiency|reasoning|1|Decide whether information determines an answer|Identify the required quantities|c/79.1
-information-sufficiency|reasoning|2|Assess whether a comparison is determined|Consider more than one admissible case|c/79.2
+information-sufficiency|reasoning|1|Decide whether information determines an answer|Identify the required quantities|c/79.1 k/missing-info k/enough-info
+information-sufficiency|reasoning|2|Assess whether a comparison is determined|Consider more than one admissible case|c/79.2 k/compare-quantities
 rounding|rounding-estimation|1|Round whole numbers to a specified place, explaining when requested|Nearest place-value interval|f/round:3 f/round:4 f/round:9 c/29.1 b/round-whole c/29.2 k/round-place k/round-two-places
 rounding|rounding-estimation|2|Round decimals to a specified place|Decimal place-value intervals|c/33.3 k/round-thousandth k/round-decimal-two k/round-decimal-place
 rounding|rounding-estimation|3|Estimate a product in scientific notation|Round factors first and normalize the estimate|z/scientific:estimate
@@ -189,8 +189,8 @@ similar-figures|similarity-scale|3|Connect length, area and volume ratios of sim
 solid-surface|surface-area|1|Find surface area of a rectangular prism|Sum the areas of six faces|c/67.5 c/105.1
 solid-surface|surface-area|2|Find surface area of a cylinder|Combine curved area and circular bases|v/cylinder-surface f/cylinder-area
 solid-surface|surface-area|3|Find surface area of a cone or pyramid|Use slant height in lateral areas|h/cone-area h/pyramid-area
-transformations|transformations|1|Translate a figure on a coordinate plane|Apply a fixed displacement to every vertex|c/80.2
-transformations|transformations|2|Reflect a figure on a coordinate plane|Reverse position across the stated line|c/80.1
+transformations|transformations|1|Translate a figure on a coordinate plane|Apply a fixed displacement to every vertex|c/80.2 =/course-87-en:item:SN870554
+transformations|transformations|2|Reflect a figure on a coordinate plane|Reverse position across the stated line|c/80.1 =/course-87-en:item:SN870555
 transformations|transformations|3|Transform a graph using function notation|Connect changes in the formula to shifts and reflections|a/transform:quadratic
 solid-volume|volume|1|Find the volume of a rectangular prism using dimensions or layers|Multiply length, width and height|c/70.1 f/cube-volume k/cube-volume k/prism-cubes k/prism-volume
 solid-volume|volume|2|Find volume of a triangular prism|Find a triangular base area before multiplying by length|c/70.2
@@ -227,7 +227,7 @@ fraction-equivalence-models|fraction-equivalence|1|Show equivalent fractions by 
 fraction-equivalence-models|fraction-equivalence|2|Generate or complete an equivalent symbolic fraction|Apply the same scale factor to numerator and denominator|f/fraction-rename c/15.1
 fraction-equivalence-models|fraction-equivalence|3|Find common-denominator forms of two fractions|Coordinate equivalent forms for both denominators|c/30.1
 fraction-whole-unknown|ratio-proportion|1|Find a fraction of a known group|Partition into denominator groups and select numerator groups|c/14.1 c/14.2 c/22.1 c/60.1 k/fraction-not =/course-87-en:item:SX650094 =/course-87-en:item:SN870326
-fraction-whole-unknown|ratio-proportion|2|Recover the whole when a fractional part is known|Reverse fractional scaling|c/71.1 c/71.2 c/74.1 t/whole-from-used k/fraction-of-price k/goal-shortfall
+fraction-whole-unknown|ratio-proportion|2|Recover the whole when a fractional part is known|Reverse fractional scaling|c/71.1 c/71.2 c/74.1 k/whole-from-fraction k/fraction-of-price k/goal-shortfall k/whole-from-part
 fraction-whole-unknown|ratio-proportion|3|Combine fractional scaling with another change|Track the whole and the remaining amount through successive operations|f/fraction-two-step
 fraction-models|fractions|1|Read a fractional part from a supplied model|Equal-sized partitions and a defined whole|f/fraction-name c/8.7 g/shaded-fraction
 fraction-models|fractions|2|Construct a model for a given fraction|Create equal partitions before shading|f/fraction-draw
@@ -247,8 +247,8 @@ like-terms|expressions|1|Collect like linear terms and constants|Combine coeffic
 like-terms|expressions|2|Distribute then collect linear terms|Multiply every term in a group before collecting|c/96.2 =/course-87-en:item:SN870560
 numerical-grouping|expressions|1|Evaluate an expression with powers and mixed operations|Powers before multiplication and addition|c/52.1 =/course-87-en:item:SX870263 =/course-87-en:item:SX870320 =/course-87-en:item:SN870266
 numerical-grouping|expressions|2|Evaluate an expression with several nested grouping symbols|Work from inner groups out while preserving operation order|c/63.2 k/inclusion
-integer-products|integers|1|Multiply signed integers|Sign and magnitude rules|c/73.1
-integer-products|integers|2|Divide signed integers|Sign and magnitude rules; nonzero divisor|c/73.2
+integer-products|integers|1|Multiply signed integers|Sign and magnitude rules|c/73.1 k/signed-product k/signed-four
+integer-products|integers|2|Divide signed integers|Sign and magnitude rules; nonzero divisor|c/73.2 k/signed-product k/signed-four
 integer-products|integers|3|Determine a product sign without its magnitude|Parity of the negative-factor count|c/103.1
 absolute-values|integers|1|Find an absolute value|Distance from zero|c/59.1 a/absolute-value
 absolute-values|integers|2|Compare signed integers|Order on a number line|e/4.2 h/trichotomy @/course-87-en:item:SN870017
@@ -298,7 +298,7 @@ circle-parts-and-length|circle-measurement|3|Calculate arc length from a central
 triangle-area-method|area|1|Identify a base and its perpendicular height|The altitude may meet the extended base|c/37.1
 triangle-area-method|area|2|Calculate triangle area from base and perpendicular height|Half of base times height|c/37.2 k/right-triangle-area k/coordinate-triangle-area k/diagonal-plot
 area-shape-formulas|area|1|Calculate parallelogram area|Use perpendicular height|c/61.1 k/parallelogram-area
-area-shape-formulas|area|2|Calculate trapezoid area|Use the average of the parallel bases and perpendicular height|c/75.2
+area-shape-formulas|area|2|Calculate trapezoid area|Use the average of the parallel bases and perpendicular height|c/75.2 k/trapezoid-area
 area-shape-formulas|area|3|Calculate triangle area|Use half of base times perpendicular height|c/37.2
 scale-lengths|similarity-scale|1|Find or apply a linear scale factor|Corresponding lengths use one ratio|c/98.2 c/98.3
 scale-lengths|similarity-scale|2|Use map or drawing scales with units|Distinguish drawing dimensions from actual dimensions|c/98.1 f/scale-draw
@@ -311,7 +311,7 @@ solid-nets|surface-area|2|Draw and label a cube or pyramid net|Join the required
 prism-cylinder-volumes|volume|1|Find rectangular or triangular prism volume|Find base area and multiply by prism height|c/70.1 c/70.2 k/prism-volume
 prism-cylinder-volumes|volume|2|Find cylinder volume or compare prism and cylinder formulas|Use base area times perpendicular height with stated pi|c/95.1 f/cylinder-volume
 coordinate-transformations|transformations|1|Translate or reflect a coordinate figure|Apply one transformation to all vertices|c/80.1 c/80.2
-coordinate-transformations|transformations|2|Apply a coordinate translation, reflection or rotation|Use the stated transformation consistently on every vertex|c/80.3 h/transform-quad
+coordinate-transformations|transformations|2|Apply a coordinate translation, reflection or rotation|Use the stated transformation consistently on every vertex|c/80.3 h/transform-quad k/transform-graph k/rotation-choose
 line-table-graph|functions|1|Read or complete a table using a given linear rule|Substitute each input|c/58.3 c/85.2
 line-table-graph|functions|2|Make a table and plot a linear relation|Match every ordered pair to the axes|c/INV9.1 f/function-graph
 line-table-graph|functions|3|Model a continuous linear context with a table and graph|Choose variables, rule and meaningful input interval|c/INV9.3
@@ -327,7 +327,7 @@ probability-experiments|probability|2|Plan and explain an experiment for a state
 counting-trees|counting|1|List ordered outcomes with a tree diagram|Branches represent successive choices|c/94.1
 counting-trees|counting|2|Count repeated choices by multiplication|Multiply the number of choices at each position|b/counting-power
 fraction-operation-order|fractions|1|Calculate a fraction product or quotient|Fraction operations and simplification|c/9.3 c/25.3
-fraction-operation-order|fractions|2|Evaluate grouped combinations of fraction operations|Respect parentheses and the scope of a fraction bar|c/9.6 c/76.1 h/fraction-order h/fraction-bar a/complex:numeric
+fraction-operation-order|fractions|2|Evaluate grouped combinations of fraction operations|Respect parentheses and the scope of a fraction bar|c/9.6 c/76.1 h/fraction-order h/fraction-bar a/complex:numeric k/complex-fraction
 fraction-powers|powers-roots|1|Evaluate a whole-number power|Repeated multiplication|f/power-small c/20.3
 fraction-powers|powers-roots|2|Evaluate a power of a fraction|Raise numerator and denominator to the same positive integer power|h/fraction-power
 signed-powers|powers-roots|1|Evaluate a signed integer power|Distinguish odd and even powers|c/103.2
@@ -487,7 +487,7 @@ percent-from-complement|percent|1|Find a percent from a given part and whole|Div
 percent-from-complement|percent|2|Find the percent outside a known group|Find the complementary count or subtract the known percent from 100|p/percent-count-rest
 ratio-forms|ratio-proportion|1|Write ratios in the requested order or notation|Part-to-part and part-to-whole denominators differ|c/36.1 c/36.2 h/ratio-compare k/ratio-reverse k/fans-ratio k/ratio-part-fraction
 ratio-forms|ratio-proportion|2|Form a ratio after finding a missing group count|Subtract from total, then compare ordered quantities|k/ratio-club k/fraction-rest-ratio
-part-reference-forms|fraction-decimal-percent|1|Express a part relative to a reference quantity as a fraction or decimal|Reference quantity is the denominator; fraction-part can exceed one|p/fraction-part p/decimal-part p/decimal-part-eighths
+part-reference-forms|fraction-decimal-percent|1|Express a part relative to a reference quantity as a fraction or decimal|Reference quantity is the denominator; fraction-part can exceed one|k/part-of-whole p/decimal-part-eighths
 part-reference-forms|fraction-decimal-percent|2|Express a part relative to a reference quantity as a percent|Percent scales the quotient by 100|p/percent-part p/bill-percent
 fraction-sum-to-percent|fraction-decimal-percent|1|Convert a given fractional share to percent|Multiply by 100|p/circle-percent
 fraction-sum-to-percent|fraction-decimal-percent|2|Combine nonoverlapping fractional shares then convert to percent|Add fractions of the same whole first|p/circle-sum-percent
@@ -562,7 +562,7 @@ powers-ten-place-language|number-representation|2|Expand a four-digit number usi
 scientific-expression-forms|scientific-notation|1|Compare scientific-notation numbers with negative exponents|Compare exponents then coefficients|c/57.4
 scientific-expression-forms|scientific-notation|2|Combine powers of ten and normalize a two-digit coefficient|Phase2 exponent is sum plus normalization adjustment|c/69.1 k/sci-renormalize
 scientific-expression-forms|scientific-notation|3|Multiply or divide scientific-notation numbers|Coefficient operation and normalization|c/83.2 o/scientific-product o/scientific-quotient
-integer-product-sum|integers|1|Multiply signed integers|Sign and magnitude rules|c/73.1
+integer-product-sum|integers|1|Multiply signed integers|Sign and magnitude rules|c/73.1 k/signed-product
 integer-product-sum|integers|2|Multiply signed integers then add another integer|Multiplication precedes addition|c/85.1
 real-numberline-placement|number-order|1|Plot or read signed whole numbers|Equal-spaced signed number line|e/4.1
 real-numberline-placement|number-order|2|Place rational numbers and irrational square roots on a number line|Approximate roots and mark to tenths; teacher checks the diagram|c/100.3
@@ -589,7 +589,7 @@ fraction-grouping-models|fractions|2|Model whole-number multiplication or divisi
 decimal-part-scaling|ratio-proportion|1|Find a fraction of a known group|Partition and scale|c/14.1 c/22.1
 decimal-part-scaling|ratio-proportion|2|Find a decimal part of a whole-number amount|Use decimal multiplication for the specified part|h/decimal-part
 mixed-part-whole-models|ratio-proportion|1|Find a mixed-number part or recover the whole|Both forward and inverse branches are present|h/mixed-part
-mixed-part-whole-models|ratio-proportion|2|Find a fractional part or recover the whole|Different unknown roles; mixed contract cannot occupy one directional stage|c/14.1 c/71.1
+mixed-part-whole-models|ratio-proportion|2|Find a fractional part or recover the whole|Different unknown roles; mixed contract cannot occupy one directional stage|c/14.1 c/71.1 k/whole-from-fraction k/whole-from-part
 integer-opposites|integers|1|Find an additive inverse and the inverse of that inverse|Negation reflects through zero twice|h/opposites
 integer-opposites|integers|2|Add or subtract signed values|Use additive inverses in calculation|c/64.1 k/signed-sum k/signed-subtract
 money-net-amount|decimal-arithmetic|1|Subtract a money amount|Align place values|f/money:sub
@@ -697,7 +697,7 @@ contextual-function-domain|functions|1|Evaluate a linear rule in a function tabl
 contextual-function-domain|functions|2|Model a linear process with independent/dependent variables and physical domain|Interpret initial quantity, rate and a bounded nonnegative time interval|=/algebra-2-en:authored:M6-94-1
 fractional-binomial-products|polynomials|1|Multiply binomials with whole-number variable powers|Distribute and collect terms|h/polynomial:mul
 fractional-binomial-products|polynomials|2|Expand a square or conjugate product with fractional and negative powers|Assume positive variables; add rational exponents and preserve reciprocal terms|=/algebra-2-en:authored:M6-109-1 =/algebra-2-en:authored:M6-109-2
-set-domain-graphing|sets|1|Graph a real number-line inequality|Use endpoint inclusion and a continuous ray|c/78.2
+set-domain-graphing|sets|1|Graph a real number-line inequality|Use endpoint inclusion and a continuous ray|c/78.2 k/inequality-graph
 set-domain-graphing|sets|2|Graph an interval with an explicit integer or real domain|Distinguish discrete filled dots from a continuous interval and preserve unequal endpoint inclusion|=/algebra-2-en:authored:M6-117-2
 
 # Chunk 3 full-contract review; exact canonical providers only.
@@ -755,10 +755,10 @@ rectangle-measure-production|area|2|Write both formulas and evaluate with correc
 triangle-area-production|area|1|Identify a base and perpendicular altitude|Use a perpendicular altitude, including one outside the triangle|=/course-87-en:authored:MCADA-37.1
 triangle-area-production|area|2|Calculate area with interior or external height|Use a perpendicular altitude, including one outside the triangle|=/course-87-en:item:SX870309 =/algebra-half-en:node:221 =/course-87-en:authored:MCADA-37.2
 triangle-area-production|area|3|Calculate area and a missing right-triangle hypotenuse|Use a perpendicular altitude, including one outside the triangle|=/course-87-en:item:SN870430
-composite-area-shapes|area|1|Combine a square and triangle with an inferred base|Partition or subtract nonoverlapping regions and infer only justified lengths|=/course-87-en:item:SX870199 =/course-87-en:authored:MCADA-75.1
+composite-area-shapes|area|1|Combine a square and triangle with an inferred base|Partition or subtract nonoverlapping regions and infer only justified lengths|=/course-87-en:item:SX870199 =/course-87-en:authored:MCADA-75.1 k/complex-area
 composite-area-shapes|area|2|Subtract a circular hole and draw the remaining region|Partition or subtract nonoverlapping regions and infer only justified lengths|=/algebra-2-en:authored:M6-0-2
 area-formula-practice|area|1|Use parallelogram base and perpendicular height|Distinguish bases, perpendicular heights and slanted sides|=/course-87-en:item:SN870327 =/algebra-half-en:node:712 =/course-87-en:authored:MCADA-61.1 k/parallelogram-area
-area-formula-practice|area|2|Use two trapezoid bases and perpendicular height|Distinguish bases, perpendicular heights and slanted sides|=/course-87-en:item:SX870351 =/algebra-half-en:node:222 =/course-87-en:authored:MCADA-75.2
+area-formula-practice|area|2|Use two trapezoid bases and perpendicular height|Distinguish bases, perpendicular heights and slanted sides|=/course-87-en:item:SX870351 =/algebra-half-en:node:222 =/course-87-en:authored:MCADA-75.2 k/trapezoid-area
 circle-output-demands|circle-measurement|1|Find circumference from radius with stated pi|Diameter is twice radius; apply the stated pi convention|=/course-87-en:item:SX870332
 circle-output-demands|circle-measurement|2|Find circumference and area from radius|Diameter is twice radius; apply the stated pi convention|=/algebra-half-en:node:409
 circle-output-demands|circle-measurement|3|Recover radius from diameter and find circumference and area|Diameter is twice radius; apply the stated pi convention|=/algebra-half-en:node:410
@@ -837,7 +837,7 @@ reflection-coordinate-count|transformations|1|Recover one point after a y-axis r
 reflection-coordinate-count|transformations|2|Reflect all three triangle points across the x-axis|A coordinate-axis reflection changes the perpendicular coordinate sign|=/course-87-en:item:SN870555
 transformation-response|transformations|1|Select a rotated rectangle|Apply the stated center, axis or vector to every vertex|=/course-87-en:item:SN870556
 transformation-response|transformations|2|Supply reflected or translated coordinates|Apply the stated center, axis or vector to every vertex|=/course-87-en:item:SN870555 =/course-87-en:item:SN870554
-transformation-response|transformations|3|Draw the transformed coordinate figure|Apply the stated center, axis or vector to every vertex|=/course-87-en:authored:MCADA-80.1 =/course-87-en:authored:MCADA-80.2 =/course-87-en:authored:MCADA-80.3
+transformation-response|transformations|3|Draw the transformed coordinate figure|Apply the stated center, axis or vector to every vertex|=/course-87-en:authored:MCADA-80.1 =/course-87-en:authored:MCADA-80.2 =/course-87-en:authored:MCADA-80.3 k/transform-graph
 similarity-judgment-production|similarity-scale|1|Judge statements about similarity or congruence|Compare corresponding angles and side ratios; congruence additionally preserves size|=/course-87-en:item:SAX70303 =/course-87-en:authored:MCADA-18.6
 similarity-judgment-production|similarity-scale|2|Justify similarity or congruence from corresponding parts|Compare corresponding angles and side ratios; congruence additionally preserves size|=/course-87-en:authored:MCADA-18.4 =/course-87-en:authored:MCADA-18.5
 circle-term-production|geometry-properties|1|Identify diameter or name radius diameter chord and arc|Distinguish center-to-circle radii, chords, diameters, arcs and angle vertices|=/course-1-en:bank:C1_Section03:item:C1_S03_00079 =/course-87-en:authored:MCADA-INV2.5

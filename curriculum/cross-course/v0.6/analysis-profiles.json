@@ -6847,125 +6847,6 @@
     "samplePrompt": "Write 3.68% as a decimal."
   },
   {
-    "sourceId": "course-87-en:item:SN870460",
-    "providerSourceId": "course-87-en:item:SN870460",
-    "bankId": "course-87-en",
-    "topic": "ratio-proportion",
-    "action": "Find what fraction one number is of another",
-    "recipe": "fraction-part",
-    "family": "structured-proportion",
-    "title": "Find what fraction one number is of another",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:74",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "part-reference-forms",
-        "level": 1
-      },
-      {
-        "trackId": "c4-ratio-to-trigonometry-from",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "related: Express a part relative to a reference quantity as a fraction or decimal. Reference quantity is the denominator; fraction-part can exceed one."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "validated cross-course prerequisite/extension"
-    },
-    "samplePrompt": "What fraction of 247 is 95? Give a simplified fraction."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870464",
-    "providerSourceId": "course-87-en:item:SN870464",
-    "bankId": "course-87-en",
-    "topic": "fraction-decimal-percent",
-    "action": "Find what decimal part one number is of another",
-    "recipe": "decimal-part",
-    "family": "structured-proportion",
-    "title": "Find what decimal part one number is of another",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:74",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "part-reference-forms",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "related: Express a part relative to a reference quantity as a fraction or decimal. Reference quantity is the denominator; fraction-part can exceed one."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "What decimal of 80 is 32? Give a decimal."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870486",
-    "providerSourceId": "course-87-en:item:SN870486",
-    "bankId": "course-87-en",
-    "topic": "percent",
-    "action": "Find the whole from a percent and a part",
-    "recipe": "percent-whole",
-    "family": "structured-proportion",
-    "title": "Find the whole from a percent and a part",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:77",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "percent-unknown",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Recover unknown whole or rate. Percent-whole and percent-whole-half have identical executable ranges despite different names."
-    },
-    "samplePrompt": "108 is 60% of what number?"
-  },
-  {
     "sourceId": "course-87-en:item:SN870487",
     "providerSourceId": "course-87-en:item:SN870487",
     "bankId": "course-87-en",
@@ -7713,41 +7594,6 @@
       "reason": "Tax on a price with fractional percentage rate; round the tax to cents."
     },
     "samplePrompt": "An appliance costs $2130 before tax. The sales-tax rate is 5%. What is the sales tax in dollars? Do not round intermediate values. Round the final answer to the nearest cent; halfway values round up. Enter the numerical answer (a dollar sign is optional)."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870372",
-    "providerSourceId": "course-87-en:item:SN870372",
-    "bankId": "course-87-en",
-    "topic": "ratio-proportion",
-    "action": "Find a whole length from a fraction used",
-    "recipe": "whole-from-used",
-    "family": "structured-measurement",
-    "title": "Find a whole length from a fraction used",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:71",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "fraction-whole-unknown",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "measurement"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Recover whole from the given used fractional part by inverse scaling."
-    },
-    "samplePrompt": "A project uses 23 inches of string, which is 1/6 of a full spool. How many inches of string are on a full spool? Enter the numerical answer in inches, without the unit."
   },
   {
     "sourceId": "course-87-en:item:SN870375",
@@ -9889,46 +9735,6 @@
       "reason": "Find circumference from radius using pi=22/7; radii are multiples of seven, so the result is exact. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
     },
     "samplePrompt": "Find the circumference in cm. Use 22/7 for \u03c0; give exact results using that value without further rounding. Enter the numerical answer without units. Exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870351",
-    "providerSourceId": "course-87-en:item:SX870351",
-    "bankId": "course-87-en",
-    "topic": "area",
-    "action": "Find trapezoid area",
-    "recipe": "trapezoid-area",
-    "family": "structured-geometry",
-    "title": "Find trapezoid area",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:75",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "area-formula-practice",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "geometry"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Find a right-trapezoid area from two parallel bases and its perpendicular height; use half the base sum times height. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Find the area of the right trapezoid in m\u00b2. Its top and bottom sides are parallel. Enter the numerical answer without units. Exact fractions or terminating decimals are accepted."
   },
   {
     "sourceId": "course-87-en:item:SN870528",
@@ -14582,130 +14388,6 @@
     "samplePrompt": "Classify this triangle by its sides. Use the most specific name: equilateral, isosceles or scalene."
   },
   {
-    "sourceId": "course-87-en:item:SN870556",
-    "providerSourceId": "course-87-en:item:SN870556",
-    "bankId": "course-87-en",
-    "topic": "transformations",
-    "action": "Recognize a rotated rectangle",
-    "recipe": "rotation",
-    "family": "structured-representations",
-    "title": "Recognize a rotated rectangle",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:80",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "transformation-response",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "text"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Select the image of a rectangle after 90-degree counterclockwise, 180-degree, or 90-degree clockwise rotation about the origin; no drawing is requested. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Which dashed image is the solid rectangle rotated 90\u00b0 clockwise about the origin? Enter A, B, C or D."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870555",
-    "providerSourceId": "course-87-en:item:SN870555",
-    "bankId": "course-87-en",
-    "topic": "transformations",
-    "action": "Reflect a triangle across the x-axis",
-    "recipe": "reflection",
-    "family": "structured-representations",
-    "title": "Reflect a triangle across the x-axis",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:80",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "reflection-coordinate-count",
-        "level": 2
-      },
-      {
-        "trackId": "transformation-response",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Reflect all three triangle vertices across the x-axis and supply six coordinate values. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained within-course directions"
-    },
-    "samplePrompt": "Reflect triangle A(-6, 2), B(-2, 2), C(-5, 6) across the x-axis. Enter xA\u2032; yA\u2032; xB\u2032; yB\u2032; xC\u2032; yC\u2032. Enter numerical values without units; use semicolons between multiple answers."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870554",
-    "providerSourceId": "course-87-en:item:SN870554",
-    "bankId": "course-87-en",
-    "topic": "transformations",
-    "action": "Translate a rectangle",
-    "recipe": "translation",
-    "family": "structured-representations",
-    "title": "Translate a rectangle",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:80",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "transformation-response",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Translate four rectangle vertices by a signed vector and supply eight coordinate values. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Rectangle vertices in order are A[-2,-2], B[2,-2], C[2,1], D[-2,1]. Translate it 3 units left and 3 units down. Enter xA\u2032; yA\u2032; xB\u2032; yB\u2032; xC\u2032; yC\u2032; xD\u2032; yD\u2032. Enter numerical values without units; use semicolons between multiple answers."
-  },
-  {
     "sourceId": "course-87-en:item:SN870417",
     "providerSourceId": "course-87-en:item:SN870417",
     "bankId": "course-87-en",
@@ -15857,41 +15539,6 @@
       "reason": "Evaluate six similarity statements, including squares versus arbitrary rectangles, corresponding angles, possible unequal size and non-required equal area or side lengths. True/false recognition is not justification. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
     },
     "samplePrompt": "Any two rectangles are similar, regardless of their side ratios. Is this true or false?"
-  },
-  {
-    "sourceId": "course-87-en:item:SN870539",
-    "providerSourceId": "course-87-en:item:SN870539",
-    "bankId": "course-87-en",
-    "topic": "reasoning",
-    "action": "Identify missing information",
-    "recipe": "missing-information",
-    "family": "structured-reasoning",
-    "title": "Identify missing information",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:79",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "information-response",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "text"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Select the missing information needed to recover Lee's April hours from the given comparison; do not invent a quantity. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "samplePrompt": "In April, Pat worked 8 more hours than Lee. Which additional fact is sufficient to find Pat's April hours? A: the number of hours Pat worked in a different month. B: the number of hours Lee worked. C: the number of days in the month. D: the amount of money Pat earned. Enter A, B, C or D."
   },
   {
     "sourceId": "course-87-en:item:SN870810",
@@ -84487,5 +84134,1298 @@
       "reason": "Find rectangular prism volume from three labeled perpendicular dimensions. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
     },
     "samplePrompt": "Find the volume of the rectangular prism. Dimensions are in inches. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870381",
+    "providerSourceId": "course-87-en:item:SN870381",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Find the whole group from a unit fraction",
+    "recipe": "whole-from-fraction",
+    "family": "structured-port87",
+    "title": "Find the whole group from a unit fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:71",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 2
+      },
+      {
+        "trackId": "mixed-part-whole-models",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "There were 6 squished boxes in the crate. This was 1/3 of the total number of boxes in the crate. How many boxes were in the crate? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870372",
+    "providerSourceId": "course-87-en:item:SN870372",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Find the whole from a fraction used",
+    "recipe": "whole-from-fraction",
+    "family": "structured-port87",
+    "title": "Find the whole from a fraction used",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:71",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 2
+      },
+      {
+        "trackId": "mixed-part-whole-models",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Recover whole from the given used fractional part by inverse scaling."
+    },
+    "samplePrompt": "Julie needed 51 inches of string for her project. She used 1/5 of a full spool of string. How many inches of string were on the full spool? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870392",
+    "providerSourceId": "course-87-en:item:SN870392",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Implied ratio: is to as",
+    "recipe": "implied-ratio",
+    "family": "structured-port87",
+    "title": "Implied ratio: is to as",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:72",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Six is to 14 as 9 is to what number? Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870389",
+    "providerSourceId": "course-87-en:item:SN870389",
+    "bankId": "course-87-en",
+    "topic": "rates",
+    "action": "Gallons needed at the same rate",
+    "recipe": "implied-ratio",
+    "family": "structured-port87",
+    "title": "Gallons needed at the same rate",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:72",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A van travels 160 miles on 8 gallons of gas. How many gallons will it need to travel 360 miles? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870437",
+    "providerSourceId": "course-87-en:item:SN870437",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Multiply signed numbers",
+    "recipe": "signed-product",
+    "family": "structured-port87",
+    "title": "Multiply signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:73",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-products",
+        "level": 1
+      },
+      {
+        "trackId": "integer-products",
+        "level": 2
+      },
+      {
+        "trackId": "integer-product-sum",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (+5)(\u22123) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870438",
+    "providerSourceId": "course-87-en:item:SN870438",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Divide signed numbers",
+    "recipe": "signed-product",
+    "family": "structured-port87",
+    "title": "Divide signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:73",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-products",
+        "level": 1
+      },
+      {
+        "trackId": "integer-products",
+        "level": 2
+      },
+      {
+        "trackId": "integer-product-sum",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (\u221254)/(6) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870344",
+    "providerSourceId": "course-87-en:item:SX870344",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Multiply and divide signed numbers",
+    "recipe": "signed-four",
+    "family": "structured-port87",
+    "title": "Multiply and divide signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:73",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-products",
+        "level": 1
+      },
+      {
+        "trackId": "integer-products",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify each expression. (a) \u22122(\u22126) (b) \u22128(+9) (c) (\u221220)/(\u22125) (d) (+20)/(\u22124) Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870349",
+    "providerSourceId": "course-87-en:item:SX870349",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "A number is a fraction of what number",
+    "recipe": "whole-from-part",
+    "family": "structured-port87",
+    "title": "A number is a fraction of what number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:74",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 2
+      },
+      {
+        "trackId": "mixed-part-whole-models",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Thirty-six is 4/5 of what number? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870348",
+    "providerSourceId": "course-87-en:item:SX870348",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "A fraction of what number is a given number",
+    "recipe": "whole-from-part",
+    "family": "structured-port87",
+    "title": "A fraction of what number is a given number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:74",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 2
+      },
+      {
+        "trackId": "mixed-part-whole-models",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Nine tenths of what number is 135? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870460",
+    "providerSourceId": "course-87-en:item:SN870460",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "What fraction of a number is another",
+    "recipe": "part-of-whole",
+    "family": "structured-port87",
+    "title": "What fraction of a number is another",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:74",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "part-reference-forms",
+        "level": 1
+      },
+      {
+        "trackId": "c4-ratio-to-trigonometry-from",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "related: Express a part relative to a reference quantity as a fraction or decimal. Reference quantity is the denominator; fraction-part can exceed one."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "validated cross-course prerequisite/extension"
+    },
+    "samplePrompt": "What fraction of 240 is 100? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870464",
+    "providerSourceId": "course-87-en:item:SN870464",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "What decimal part of a number is another",
+    "recipe": "part-of-whole",
+    "family": "structured-port87",
+    "title": "What decimal part of a number is another",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:74",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "part-reference-forms",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "related: Express a part relative to a reference quantity as a fraction or decimal. Reference quantity is the denominator; fraction-part can exceed one."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "What decimal part of 80 is 48? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870466",
+    "providerSourceId": "course-87-en:item:SN870466",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A number is a decimal part of what number",
+    "recipe": "whole-from-part",
+    "family": "structured-port87",
+    "title": "A number is a decimal part of what number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:74",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 2
+      },
+      {
+        "trackId": "mixed-part-whole-models",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Eighty is 0.4 of what number? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870352",
+    "providerSourceId": "course-87-en:item:SX870352",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a figure made of a rectangle and a triangle",
+    "recipe": "complex-area",
+    "family": "structured-port87",
+    "title": "Area of a figure made of a rectangle and a triangle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:75",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "composite-area-shapes",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of the figure. Dimensions are in centimeters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870468",
+    "providerSourceId": "course-87-en:item:SN870468",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a figure made of a rectangle and a trapezoid",
+    "recipe": "complex-area",
+    "family": "structured-port87",
+    "title": "Area of a figure made of a rectangle and a trapezoid",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:75",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "composite-area-shapes",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of the figure. Dimensions are in inches. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870471",
+    "providerSourceId": "course-87-en:item:SN870471",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a figure made of two rectangles",
+    "recipe": "complex-area",
+    "family": "structured-port87",
+    "title": "Area of a figure made of two rectangles",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:75",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "composite-area-shapes",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of the figure. Dimensions are in meters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870351",
+    "providerSourceId": "course-87-en:item:SX870351",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a right trapezoid",
+    "recipe": "trapezoid-area",
+    "family": "structured-port87",
+    "title": "Area of a right trapezoid",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:75",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-shape-formulas",
+        "level": 2
+      },
+      {
+        "trackId": "area-formula-practice",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Find a right-trapezoid area from two parallel bases and its perpendicular height; use half the base sum times height. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "Find the area of the trapezoid. Dimensions are in inches. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870443",
+    "providerSourceId": "course-87-en:item:SN870443",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a trapezoid",
+    "recipe": "trapezoid-area",
+    "family": "structured-port87",
+    "title": "Area of a trapezoid",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:75",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-shape-formulas",
+        "level": 2
+      },
+      {
+        "trackId": "area-formula-practice",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of the trapezoid. Dimensions are in meters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870476",
+    "providerSourceId": "course-87-en:item:SN870476",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a trapezoid",
+    "recipe": "trapezoid-area",
+    "family": "structured-port87",
+    "title": "Area of a trapezoid",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:75",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-shape-formulas",
+        "level": 2
+      },
+      {
+        "trackId": "area-formula-practice",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of the trapezoid. Dimensions are in millimeters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870355",
+    "providerSourceId": "course-87-en:item:SX870355",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Simplify a complex fraction",
+    "recipe": "complex-fraction",
+    "family": "structured-port87",
+    "title": "Simplify a complex fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:76",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-operation-order",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (27 1/6)/42 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870481",
+    "providerSourceId": "course-87-en:item:SN870481",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Simplify a complex fraction",
+    "recipe": "complex-fraction",
+    "family": "structured-port87",
+    "title": "Simplify a complex fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:76",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-operation-order",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 71/(6 3/4) Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870483",
+    "providerSourceId": "course-87-en:item:SN870483",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Simplify a complex fraction",
+    "recipe": "complex-fraction",
+    "family": "structured-port87",
+    "title": "Simplify a complex fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:76",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-operation-order",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (4/9)/(7/8) Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870485",
+    "providerSourceId": "course-87-en:item:SN870485",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "What percent one amount of money is of another",
+    "recipe": "percent-of-what",
+    "family": "structured-port87",
+    "title": "What percent one amount of money is of another",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:77",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "percent-unknown",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What percent of $5.00 is $0.30? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870486",
+    "providerSourceId": "course-87-en:item:SN870486",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "A percent of what number",
+    "recipe": "percent-of-what",
+    "family": "structured-port87",
+    "title": "A percent of what number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:77",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "percent-unknown",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Recover unknown whole or rate. Percent-whole and percent-whole-half have identical executable ranges despite different names."
+    },
+    "samplePrompt": "Seventy-five percent of what number is 165? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870497",
+    "providerSourceId": "course-87-en:item:SX870497",
+    "bankId": "course-87-en",
+    "topic": "inequalities",
+    "action": "Graph an inequality on a number line",
+    "recipe": "inequality-graph",
+    "family": "structured-port87",
+    "title": "Graph an inequality on a number line",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:78",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-inequalities",
+        "level": 1
+      },
+      {
+        "trackId": "set-domain-graphing",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Graph on a number line: x \u2264 \u22126 Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870500",
+    "providerSourceId": "course-87-en:item:SN870500",
+    "bankId": "course-87-en",
+    "topic": "inequalities",
+    "action": "Graph an inequality on a number line",
+    "recipe": "inequality-graph",
+    "family": "structured-port87",
+    "title": "Graph an inequality on a number line",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:78",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-inequalities",
+        "level": 1
+      },
+      {
+        "trackId": "set-domain-graphing",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Graph on a number line: x \u2265 3 Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870510",
+    "providerSourceId": "course-87-en:item:SN870510",
+    "bankId": "course-87-en",
+    "topic": "inequalities",
+    "action": "Graph the numbers greater or less than a number",
+    "recipe": "inequality-graph",
+    "family": "structured-port87",
+    "title": "Graph the numbers greater or less than a number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:78",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-inequalities",
+        "level": 1
+      },
+      {
+        "trackId": "set-domain-graphing",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "On a number line, graph all the numbers greater than or equal to \u22122. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870498",
+    "providerSourceId": "course-87-en:item:SX870498",
+    "bankId": "course-87-en",
+    "topic": "inequalities",
+    "action": "Choose the graph of an inequality",
+    "recipe": "inequality-choose",
+    "family": "structured-port87",
+    "title": "Choose the graph of an inequality",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:78",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-inequalities",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which graph shows all the numbers greater than 3? Answer with the letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870537",
+    "providerSourceId": "course-87-en:item:SN870537",
+    "bankId": "course-87-en",
+    "topic": "reasoning",
+    "action": "What more do you need to know",
+    "recipe": "missing-info",
+    "family": "structured-port87",
+    "title": "What more do you need to know",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:79",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "information-sufficiency",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "keywords"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Stephanie is 4 years younger than Gertrude. What more do you need to know to find Stephanie's age?"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870539",
+    "providerSourceId": "course-87-en:item:SN870539",
+    "bankId": "course-87-en",
+    "topic": "reasoning",
+    "action": "What more do you need to know",
+    "recipe": "missing-info",
+    "family": "structured-port87",
+    "title": "What more do you need to know",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:79",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "information-sufficiency",
+        "level": 1
+      },
+      {
+        "trackId": "information-response",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "keywords"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Select the missing information needed to recover Lee's April hours from the given comparison; do not invent a quantity. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "samplePrompt": "George worked 16 more hours than Tanya during the month of May. What more do you need to know to find how many hours George worked in May?"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870796",
+    "providerSourceId": "course-87-en:item:SN870796",
+    "bankId": "course-87-en",
+    "topic": "reasoning",
+    "action": "Is there enough information",
+    "recipe": "enough-info",
+    "family": "structured-port87",
+    "title": "Is there enough information",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:79",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "information-sufficiency",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "yes-number"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "From home it took you 9 minutes to walk to your friend's house. Then you walked 13 minutes to the park. How long does it take to get to the candy store from the park? Do you have enough information to solve this problem? If you do, give the answer."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870363",
+    "providerSourceId": "course-87-en:item:SX870363",
+    "bankId": "course-87-en",
+    "topic": "reasoning",
+    "action": "Compare a number and its square",
+    "recipe": "compare-quantities",
+    "family": "structured-port87",
+    "title": "Compare a number and its square",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:79",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "information-sufficiency",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "relation"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Compare: a\u00b2 \u25cb a if a = 1.6. Answer >, <, = or insufficient information."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870364",
+    "providerSourceId": "course-87-en:item:SX870364",
+    "bankId": "course-87-en",
+    "topic": "reasoning",
+    "action": "Compare two quantities from a condition",
+    "recipe": "compare-quantities",
+    "family": "structured-port87",
+    "title": "Compare two quantities from a condition",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:79",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "information-sufficiency",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "relation"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Compare: w \u25cb x if w is not negative and x is positive. Answer >, <, = or insufficient information."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870535",
+    "providerSourceId": "course-87-en:item:SN870535",
+    "bankId": "course-87-en",
+    "topic": "reasoning",
+    "action": "Compare two quantities from a condition",
+    "recipe": "compare-quantities",
+    "family": "structured-port87",
+    "title": "Compare two quantities from a condition",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:79",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "information-sufficiency",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "relation"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Compare: d \u25cb e if d \u00d7 e = 1. Answer >, <, = or insufficient information."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870554",
+    "providerSourceId": "course-87-en:item:SN870554",
+    "bankId": "course-87-en",
+    "topic": "transformations",
+    "action": "Graph a translation",
+    "recipe": "transform-graph",
+    "family": "structured-port87",
+    "title": "Graph a translation",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:80",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "transformations",
+        "level": 1
+      },
+      {
+        "trackId": "coordinate-transformations",
+        "level": 2
+      },
+      {
+        "trackId": "transformation-response",
+        "level": 2
+      },
+      {
+        "trackId": "transformation-response",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Translate four rectangle vertices by a signed vector and supply eight coordinate values. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "The coordinates of the vertices of rectangle ABCD are A(2, 2), B(2, 7), C(6, 7), D(6, 2). Graph rectangle ABCD and its image after a translation 7 units to the left and 6 units down. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870555",
+    "providerSourceId": "course-87-en:item:SN870555",
+    "bankId": "course-87-en",
+    "topic": "transformations",
+    "action": "Graph a reflection across the x-axis",
+    "recipe": "transform-graph",
+    "family": "structured-port87",
+    "title": "Graph a reflection across the x-axis",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:80",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "transformations",
+        "level": 2
+      },
+      {
+        "trackId": "coordinate-transformations",
+        "level": 2
+      },
+      {
+        "trackId": "reflection-coordinate-count",
+        "level": 2
+      },
+      {
+        "trackId": "transformation-response",
+        "level": 2
+      },
+      {
+        "trackId": "transformation-response",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Reflect all three triangle vertices across the x-axis and supply six coordinate values. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained within-course directions"
+    },
+    "samplePrompt": "The coordinates of the vertices of triangle ABC are A(\u22127, 2), B(\u22122, 2), C(\u22125, 5). Graph triangle ABC and its image after a reflection across the x-axis. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870547",
+    "providerSourceId": "course-87-en:item:SN870547",
+    "bankId": "course-87-en",
+    "topic": "transformations",
+    "action": "Graph a rotation about the origin",
+    "recipe": "transform-graph",
+    "family": "structured-port87",
+    "title": "Graph a rotation about the origin",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:80",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "coordinate-transformations",
+        "level": 2
+      },
+      {
+        "trackId": "transformation-response",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The coordinates of the vertices of rectangle ABCD are A(\u22124, \u22125), B(\u22126, \u22123), C(\u221210, \u22127), D(\u22128, \u22129). Graph rectangle ABCD and its image after a clockwise rotation of 90\u00b0 about the origin. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870556",
+    "providerSourceId": "course-87-en:item:SN870556",
+    "bankId": "course-87-en",
+    "topic": "transformations",
+    "action": "Choose the graph of a rotation",
+    "recipe": "rotation-choose",
+    "family": "structured-port87",
+    "title": "Choose the graph of a rotation",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:80",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "coordinate-transformations",
+        "level": 2
+      },
+      {
+        "trackId": "transformation-response",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Select the image of a rectangle after 90-degree counterclockwise, 180-degree, or 90-degree clockwise rotation about the origin; no drawing is requested. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "Which graph shows rectangle ABCD with vertices A(1, 5), B(\u22123, 9), C(\u22125, 7), D(\u22121, 3) and its image (dashed) after a rotation of 180\u00b0 about the origin? Answer with the letter."
   }
 ]
