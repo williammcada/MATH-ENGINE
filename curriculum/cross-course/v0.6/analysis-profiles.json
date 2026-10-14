@@ -9811,50 +9811,6 @@
     "samplePrompt": "Find one exterior angle of the regular polygon, in degrees. Enter the numerical answer without units. Exact fractions or terminating decimals are accepted."
   },
   {
-    "sourceId": "course-87-en:item:SN870672",
-    "providerSourceId": "course-87-en:item:SN870672",
-    "bankId": "course-87-en",
-    "topic": "surface-area",
-    "action": "Find rectangular-prism surface area",
-    "recipe": "prism-surface",
-    "family": "structured-geometry",
-    "title": "Find rectangular-prism surface area",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:105",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "surface-shape-contracts",
-        "level": 1
-      },
-      {
-        "trackId": "c4-rectangle-to-prism-surface-to",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "geometry"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Calculate rectangular prism surface area by summing three pairs of equal rectangular faces. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "validated cross-course prerequisite/extension"
-    },
-    "samplePrompt": "Find the total surface area of the rectangular prism in m\u00b2. Enter the numerical answer without units. Exact fractions or terminating decimals are accepted."
-  },
-  {
     "sourceId": "course-87-en:item:SX870108",
     "providerSourceId": "course-87-en:item:SX870108",
     "bankId": "course-87-en",
@@ -16332,46 +16288,6 @@
     "samplePrompt": "To bisect this angle, an arc centered at its vertex meets the two rays at P and Q. You draw equal-radius arcs centered at P and Q, choosing a radius large enough that they intersect inside the angle. What is the final straightedge step? A: draw any ray through P. B: draw the line from P to Q. C: draw the ray from the angle vertex through the interior intersection of the two arcs. D: join the vertex to the midpoint of only one arc. Enter A, B, C or D."
   },
   {
-    "sourceId": "course-87-en:item:SN870721",
-    "providerSourceId": "course-87-en:item:SN870721",
-    "bankId": "course-87-en",
-    "topic": "volume",
-    "action": "Find pyramid, cone or sphere volume",
-    "recipe": "solid-volume",
-    "family": "structured-solids",
-    "title": "Find pyramid, cone or sphere volume",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:113",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "volume-shape-contracts",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "The generator alternates pyramid, cone and sphere volume; sphere has no perpendicular-height input and cone/sphere require final hundredths rounding. Keep these mixed demands related rather than imposing one uniform rank. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Find the volume of this pyramid in cubic meters. All dimensions are in meters. Give an exact answer. Enter a numerical value without units; exact fractions or terminating decimals are accepted."
-  },
-  {
     "sourceId": "course-87-en:item:SN870664",
     "providerSourceId": "course-87-en:item:SN870664",
     "bankId": "course-87-en",
@@ -16475,85 +16391,6 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Convert 81 square feet to square yards. Use the fact that 1 yard = 3 feet. Enter a numerical value without units; exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870468",
-    "providerSourceId": "course-87-en:item:SX870468",
-    "bankId": "course-87-en",
-    "topic": "scientific-notation",
-    "action": "Divide numbers in scientific notation",
-    "recipe": "scientific-quotient",
-    "family": "structured-solids",
-    "title": "Divide numbers in scientific notation",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:111",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "scientific-notation",
-        "level": 3
-      },
-      {
-        "trackId": "scientific-expression-forms",
-        "level": 3
-      }
-    ],
-    "answerKinds": [
-      "scientific"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Divide coefficients and subtract exponents, then normalize."
-    },
-    "samplePrompt": "Divide (2.2 \u00d7 10^6) by (5 \u00d7 10^5). Write the result in normalized scientific notation C \u00d7 10^N. Enter decimal C; integer N, with 1 \u2264 C < 10. Give exact values."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870681",
-    "providerSourceId": "course-87-en:item:SN870681",
-    "bankId": "course-87-en",
-    "topic": "literal-equations",
-    "action": "Rearrange a geometric formula",
-    "recipe": "formula-transform",
-    "family": "structured-solids",
-    "title": "Rearrange a geometric formula",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:106",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "formula-selection-production",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "text"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 2,
-      "status": "reviewed",
-      "reason": "extension: Select a rearranged geometric formula including a positive square root. Recognize a valid isolated variable under geometric positivity assumptions."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained within-course directions"
-    },
-    "samplePrompt": "A square has area A = s\u00b2. Solve for its side length s. All lengths and area/perimeter values are positive. A: s = A\u00b2. B: s = A/2. C: s = \u2212\u221aA. D: s = \u221aA. Enter A, B, C or D."
   },
   {
     "sourceId": "algebra-half-en:node:737",
@@ -87997,5 +87834,3157 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Which graph shows \u221a8 and \u221224/5 on a number line? Answer with the letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870620",
+    "providerSourceId": "course-87-en:item:SN870620",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Translate a statement into an equation and solve",
+    "recipe": "translate-eq",
+    "family": "structured-port87",
+    "title": "Translate a statement into an equation and solve",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:101",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "contextual-equations",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If six more than the product of 3 and a number is 33, what is the number? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870622",
+    "providerSourceId": "course-87-en:item:SN870622",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Translate a statement about half a number and solve",
+    "recipe": "translate-eq",
+    "family": "structured-port87",
+    "title": "Translate a statement about half a number and solve",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:101",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "contextual-equations",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Ten more than half of what number is 37? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870624",
+    "providerSourceId": "course-87-en:item:SN870624",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Solve for angles written as multiples of x",
+    "recipe": "translate-eq",
+    "family": "structured-port87",
+    "title": "Solve for angles written as multiples of x",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:101",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "contextual-equations",
+        "level": 1
+      },
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the measure of the largest angle in the figure? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870636",
+    "providerSourceId": "course-87-en:item:SN870636",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Name pairs of angles formed by a transversal",
+    "recipe": "transversal",
+    "family": "structured-port87",
+    "title": "Name pairs of angles formed by a transversal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:102",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-measures",
+        "level": 2
+      },
+      {
+        "trackId": "transversal-identification",
+        "level": 1
+      },
+      {
+        "trackId": "transversal-identification",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "angle-pairs"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Transversal t intersects parallel lines l and m to form angles 1\u20138. Name the two pairs of alternate interior angles. Write each pair as two angle numbers, for example \u22201 and \u22202."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870633",
+    "providerSourceId": "course-87-en:item:SN870633",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Find all angles formed by a transversal",
+    "recipe": "transversal",
+    "family": "structured-port87",
+    "title": "Find all angles formed by a transversal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:102",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-measures",
+        "level": 2
+      },
+      {
+        "trackId": "transversal-identification",
+        "level": 1
+      },
+      {
+        "trackId": "transversal-identification",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Transversal t intersects parallel lines l and m to form angles 1\u20138. If m\u22201 = 76\u00b0, what is the measure of each of the other angles? Give the measure of the odd-numbered angles, then the measure of the even-numbered angles. Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870638",
+    "providerSourceId": "course-87-en:item:SN870638",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Difference of angles formed by a transversal",
+    "recipe": "transversal",
+    "family": "structured-port87",
+    "title": "Difference of angles formed by a transversal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:102",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-measures",
+        "level": 2
+      },
+      {
+        "trackId": "transversal-identification",
+        "level": 1
+      },
+      {
+        "trackId": "transversal-identification",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Transversal t intersects parallel lines l and m to form angles 1\u20138. If m\u22203 = 73\u00b0, what is the difference between the measures of \u22203 and \u22202? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870627",
+    "providerSourceId": "course-87-en:item:SN870627",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve with the variable on both sides",
+    "recipe": "simplify-solve",
+    "family": "structured-port87",
+    "title": "Solve with the variable on both sides",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:102",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "equations-both-sides",
+        "level": 2
+      },
+      {
+        "trackId": "collect-before-solving",
+        "level": 2
+      },
+      {
+        "trackId": "distributed-linear-equations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: 6w + 21 = \u22125w \u2212 23 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870626",
+    "providerSourceId": "course-87-en:item:SN870626",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Collect like terms and solve",
+    "recipe": "simplify-solve",
+    "family": "structured-port87",
+    "title": "Collect like terms and solve",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:102",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "equations-both-sides",
+        "level": 2
+      },
+      {
+        "trackId": "collect-before-solving",
+        "level": 2
+      },
+      {
+        "trackId": "distributed-linear-equations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: 4n + 18 \u2212 6n = 34 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870635",
+    "providerSourceId": "course-87-en:item:SN870635",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Collect like terms and constants and solve",
+    "recipe": "simplify-solve",
+    "family": "structured-port87",
+    "title": "Collect like terms and constants and solve",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:102",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "equations-both-sides",
+        "level": 2
+      },
+      {
+        "trackId": "collect-before-solving",
+        "level": 2
+      },
+      {
+        "trackId": "distributed-linear-equations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: \u221210x + 21 + 12x + 21 = 4 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870629",
+    "providerSourceId": "course-87-en:item:SN870629",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Distribute and solve",
+    "recipe": "simplify-solve",
+    "family": "structured-port87",
+    "title": "Distribute and solve",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:102",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "equations-both-sides",
+        "level": 2
+      },
+      {
+        "trackId": "collect-before-solving",
+        "level": 2
+      },
+      {
+        "trackId": "distributed-linear-equations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: 3x + 3(x + 4) = \u221224 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870642",
+    "providerSourceId": "course-87-en:item:SN870642",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Even powers of negative numbers",
+    "recipe": "neg-power",
+    "family": "structured-port87",
+    "title": "Even powers of negative numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:103",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-products",
+        "level": 1
+      },
+      {
+        "trackId": "signed-powers",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (\u22125)\u2074 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870643",
+    "providerSourceId": "course-87-en:item:SN870643",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Odd powers of negative numbers",
+    "recipe": "neg-power",
+    "family": "structured-port87",
+    "title": "Odd powers of negative numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:103",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-products",
+        "level": 1
+      },
+      {
+        "trackId": "signed-powers",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (\u22127)\u00b3 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870644",
+    "providerSourceId": "course-87-en:item:SN870644",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Multiply five signed numbers",
+    "recipe": "neg-power",
+    "family": "structured-port87",
+    "title": "Multiply five signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:103",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-products",
+        "level": 1
+      },
+      {
+        "trackId": "signed-powers",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply: (+1)(\u22124)(\u22122)(+4)(+1) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870648",
+    "providerSourceId": "course-87-en:item:SN870648",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Divide algebraic terms",
+    "recipe": "divide-terms",
+    "family": "structured-port87",
+    "title": "Divide algebraic terms",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:103",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "poly"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (30w\u00b2xy\u00b2)/(6wx). Enter the result as a single term, for example 4x\u00b2y."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870449",
+    "providerSourceId": "course-87-en:item:SX870449",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Multiply and divide algebraic terms",
+    "recipe": "divide-terms",
+    "family": "structured-port87",
+    "title": "Multiply and divide algebraic terms",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:103",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "poly"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (\u22122eg\u00b2)(\u221212g\u00b3)/(4eg\u00b2). Enter the result as a single term, for example \u22124x\u00b2y."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870650",
+    "providerSourceId": "course-87-en:item:SN870650",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Simplify a quotient of terms to lowest terms",
+    "recipe": "divide-terms",
+    "family": "structured-port87",
+    "title": "Simplify a quotient of terms to lowest terms",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:103",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mono-ratio"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (\u22127r\u00b3s\u00b3)(9s)/(\u221217r\u00b3). Write the result as a single term or as a fraction in lowest terms with positive exponents, for example \u22123x\u00b2/(5y)."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870452",
+    "providerSourceId": "course-87-en:item:SX870452",
+    "bankId": "course-87-en",
+    "topic": "circle-measurement",
+    "action": "Perimeter of a rectangle with a semicircle",
+    "recipe": "semicircle-figure",
+    "family": "structured-port87",
+    "title": "Perimeter of a rectangle with a semicircle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:104",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-parts-and-length",
+        "level": 2
+      },
+      {
+        "trackId": "composite-area-shapes",
+        "level": 1
+      },
+      {
+        "trackId": "composite-area-shapes",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the perimeter of the figure. Use 3.14 for \u03c0. Dimensions are in feet. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870656",
+    "providerSourceId": "course-87-en:item:SN870656",
+    "bankId": "course-87-en",
+    "topic": "circle-measurement",
+    "action": "Area of a rectangle with a semicircle",
+    "recipe": "semicircle-figure",
+    "family": "structured-port87",
+    "title": "Area of a rectangle with a semicircle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:104",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-parts-and-length",
+        "level": 2
+      },
+      {
+        "trackId": "composite-area-shapes",
+        "level": 1
+      },
+      {
+        "trackId": "composite-area-shapes",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of the figure. Use 3.14 for \u03c0. Dimensions are in meters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870651",
+    "providerSourceId": "course-87-en:item:SN870651",
+    "bankId": "course-87-en",
+    "topic": "circle-measurement",
+    "action": "Area of a sector",
+    "recipe": "sector",
+    "family": "structured-port87",
+    "title": "Area of a sector",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:104",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-area",
+        "level": 2
+      },
+      {
+        "trackId": "circle-parts-and-length",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of the sector. Use 3.14 for \u03c0. Dimensions are in centimeters. Round to the nearest hundredth. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870652",
+    "providerSourceId": "course-87-en:item:SN870652",
+    "bankId": "course-87-en",
+    "topic": "circle-measurement",
+    "action": "Perimeter of a sector",
+    "recipe": "sector",
+    "family": "structured-port87",
+    "title": "Perimeter of a sector",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:104",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-area",
+        "level": 2
+      },
+      {
+        "trackId": "circle-parts-and-length",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the perimeter of the sector. Use 3.14 for \u03c0. Dimensions are in meters. Round to the nearest hundredth. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870654",
+    "providerSourceId": "course-87-en:item:SN870654",
+    "bankId": "course-87-en",
+    "topic": "circle-measurement",
+    "action": "Length of an arc",
+    "recipe": "sector",
+    "family": "structured-port87",
+    "title": "Length of an arc",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:104",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-area",
+        "level": 2
+      },
+      {
+        "trackId": "circle-parts-and-length",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the length of the arc. Use 3.14 for \u03c0. Dimensions are in inches. Round to the nearest hundredth. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870672",
+    "providerSourceId": "course-87-en:item:SN870672",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Surface area of a rectangular prism",
+    "recipe": "surface-area",
+    "family": "structured-port87",
+    "title": "Surface area of a rectangular prism",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:105",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-surface",
+        "level": 1
+      },
+      {
+        "trackId": "solid-surface",
+        "level": 2
+      },
+      {
+        "trackId": "surface-shape-contracts",
+        "level": 1
+      },
+      {
+        "trackId": "c4-rectangle-to-prism-surface-to",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Calculate rectangular prism surface area by summing three pairs of equal rectangular faces. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "validated cross-course prerequisite/extension"
+    },
+    "samplePrompt": "What is the surface area of the rectangular prism? Dimensions are in meters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SXA10099",
+    "providerSourceId": "course-87-en:item:SXA10099",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Surface area of a right triangular prism",
+    "recipe": "surface-area",
+    "family": "structured-port87",
+    "title": "Surface area of a right triangular prism",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:105",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-surface",
+        "level": 1
+      },
+      {
+        "trackId": "solid-surface",
+        "level": 2
+      },
+      {
+        "trackId": "surface-shape-contracts",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the surface area of the right triangular prism. Dimensions are in centimeters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870671",
+    "providerSourceId": "course-87-en:item:SN870671",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Surface area of a can and its label",
+    "recipe": "surface-area",
+    "family": "structured-port87",
+    "title": "Surface area of a can and its label",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:105",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-surface",
+        "level": 1
+      },
+      {
+        "trackId": "solid-surface",
+        "level": 2
+      },
+      {
+        "trackId": "surface-shape-contracts",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "(a) What is the surface area of the label on the soup can? (b) What is the total surface area of the soup can? Use 3.14 for \u03c0. Dimensions are in centimeters. Enter exact decimal or whole-number answers. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870665",
+    "providerSourceId": "course-87-en:item:SN870665",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Surface area of a sphere",
+    "recipe": "sphere-area",
+    "family": "structured-port87",
+    "title": "Surface area of a sphere",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:105",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "surface-shape-contracts",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the surface area of the sphere. Use 3.14 for \u03c0. Dimensions are in inches. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870666",
+    "providerSourceId": "course-87-en:item:SN870666",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Surface area of a ball from its diameter",
+    "recipe": "sphere-area",
+    "family": "structured-port87",
+    "title": "Surface area of a ball from its diameter",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:105",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "surface-shape-contracts",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A ball has a diameter of 4 cm. Find the surface area of the ball. Use 3.14 for \u03c0. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870456",
+    "providerSourceId": "course-87-en:item:SX870456",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "The two square roots of a number",
+    "recipe": "roots-more",
+    "family": "structured-port87",
+    "title": "The two square roots of a number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:105",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "power-equations",
+        "level": 1
+      },
+      {
+        "trackId": "power-equations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "roots"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What are the two square roots of 21? Separate them with a comma."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870659",
+    "providerSourceId": "course-87-en:item:SN870659",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Cube root of a perfect cube",
+    "recipe": "roots-more",
+    "family": "structured-port87",
+    "title": "Cube root of a perfect cube",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:105",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "power-equations",
+        "level": 1
+      },
+      {
+        "trackId": "power-equations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: \u221b64 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870660",
+    "providerSourceId": "course-87-en:item:SN870660",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Cube root of a negative perfect cube",
+    "recipe": "roots-more",
+    "family": "structured-port87",
+    "title": "Cube root of a negative perfect cube",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:105",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "power-equations",
+        "level": 1
+      },
+      {
+        "trackId": "power-equations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: \u221b(\u2212512) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870675",
+    "providerSourceId": "course-87-en:item:SN870675",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve a literal equation (product)",
+    "recipe": "literal",
+    "family": "structured-port87",
+    "title": "Solve a literal equation (product)",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:106",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "literal-formulas",
+        "level": 1
+      },
+      {
+        "trackId": "literal-formula-basics",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "formula"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve for f: fe = d"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870676",
+    "providerSourceId": "course-87-en:item:SN870676",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve a literal equation (sum or difference)",
+    "recipe": "literal",
+    "family": "structured-port87",
+    "title": "Solve a literal equation (sum or difference)",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:106",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "literal-formulas",
+        "level": 1
+      },
+      {
+        "trackId": "literal-formula-basics",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "formula"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve for u: u \u2212 t = sx"
+  },
+  {
+    "sourceId": "course-87-en:item:MOOR0907",
+    "providerSourceId": "course-87-en:item:MOOR0907",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve a literal equation with a fraction",
+    "recipe": "literal",
+    "family": "structured-port87",
+    "title": "Solve a literal equation with a fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:106",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "literal-formulas",
+        "level": 1
+      },
+      {
+        "trackId": "literal-formula-basics",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "formula"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve for w: u = (v + w)/w"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870681",
+    "providerSourceId": "course-87-en:item:SN870681",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Transform an area or perimeter formula",
+    "recipe": "transform-formula",
+    "family": "structured-port87",
+    "title": "Transform an area or perimeter formula",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:106",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "literal-formulas",
+        "level": 1
+      },
+      {
+        "trackId": "literal-formula-basics",
+        "level": 1
+      },
+      {
+        "trackId": "formula-selection-production",
+        "level": 1
+      },
+      {
+        "trackId": "formula-selection-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "formula"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 2,
+      "status": "reviewed",
+      "reason": "extension: Select a rearranged geometric formula including a positive square root. Recognize a valid isolated variable under geometric positivity assumptions."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained within-course directions"
+    },
+    "samplePrompt": "Solve for b: A = bh"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870682",
+    "providerSourceId": "course-87-en:item:SN870682",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Transform the triangle area formula",
+    "recipe": "transform-formula",
+    "family": "structured-port87",
+    "title": "Transform the triangle area formula",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:106",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "literal-formulas",
+        "level": 1
+      },
+      {
+        "trackId": "literal-formula-basics",
+        "level": 1
+      },
+      {
+        "trackId": "formula-selection-production",
+        "level": 1
+      },
+      {
+        "trackId": "formula-selection-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "formula"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve for f: A = \u00bdfg"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870683",
+    "providerSourceId": "course-87-en:item:SN870683",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Transform a circle formula",
+    "recipe": "transform-formula",
+    "family": "structured-port87",
+    "title": "Transform a circle formula",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:106",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "literal-formulas",
+        "level": 1
+      },
+      {
+        "trackId": "literal-formula-basics",
+        "level": 1
+      },
+      {
+        "trackId": "formula-selection-production",
+        "level": 1
+      },
+      {
+        "trackId": "formula-selection-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "formula"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve for m: A = \u03c0m\u00b2"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870687",
+    "providerSourceId": "course-87-en:item:SN870687",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Slope of a horizontal or vertical line",
+    "recipe": "slope",
+    "family": "structured-port87",
+    "title": "Slope of a horizontal or vertical line",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:107",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "line-slope",
+        "level": 1
+      },
+      {
+        "trackId": "line-graph-methods",
+        "level": 4
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Determine the slope of the graphed line. Enter a number or the word undefined."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870685",
+    "providerSourceId": "course-87-en:item:SN870685",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Slope of a graphed line (whole number)",
+    "recipe": "slope",
+    "family": "structured-port87",
+    "title": "Slope of a graphed line (whole number)",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:107",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "line-slope",
+        "level": 1
+      },
+      {
+        "trackId": "line-graph-methods",
+        "level": 4
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the slope of the graphed line. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870686",
+    "providerSourceId": "course-87-en:item:SN870686",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Slope of a graphed line",
+    "recipe": "slope",
+    "family": "structured-port87",
+    "title": "Slope of a graphed line",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:107",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "line-slope",
+        "level": 1
+      },
+      {
+        "trackId": "line-graph-methods",
+        "level": 4
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the slope of the graphed line. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870692",
+    "providerSourceId": "course-87-en:item:SN870692",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Use A = bh to find a dimension",
+    "recipe": "formula-sub",
+    "family": "structured-port87",
+    "title": "Use A = bh to find a dimension",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:108",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "temperature-comparison",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use the formula A = bh to find b when A = 63 and h = 7. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870460",
+    "providerSourceId": "course-87-en:item:SX870460",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Use A = 1/2 bh to find a dimension",
+    "recipe": "formula-sub",
+    "family": "structured-port87",
+    "title": "Use A = 1/2 bh to find a dimension",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:108",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "temperature-comparison",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use the formula A = \u00bdbh to find h when A = 12 and b = 4. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870690",
+    "providerSourceId": "course-87-en:item:SN870690",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Use F = 1.8C + 32",
+    "recipe": "formula-sub",
+    "family": "structured-port87",
+    "title": "Use F = 1.8C + 32",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:108",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "temperature-comparison",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use the formula F = 1.8C + 32 to find F when C = \u221236. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870694",
+    "providerSourceId": "course-87-en:item:SN870694",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Solve ax^2 = n",
+    "recipe": "square-eq",
+    "family": "structured-port87",
+    "title": "Solve ax^2 = n",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:109",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "power-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "roots"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: 7x\u00b2 = 42 Give every solution, separated by a comma; write roots in simplest form, for example 2\u221a3."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870698",
+    "providerSourceId": "course-87-en:item:SN870698",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Solve bx^2 + c = n",
+    "recipe": "square-eq",
+    "family": "structured-port87",
+    "title": "Solve bx^2 + c = n",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:109",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "power-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "roots"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: 3x\u00b2 \u2212 3 = 105 Give every solution, separated by a comma; write roots in simplest form, for example 2\u221a3."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870699",
+    "providerSourceId": "course-87-en:item:SN870699",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Solve x/a = b/x",
+    "recipe": "square-eq",
+    "family": "structured-port87",
+    "title": "Solve x/a = b/x",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:109",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "power-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "roots"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: x/3 = 12/x Give every solution, separated by a comma; write roots in simplest form, for example 2\u221a3."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870700",
+    "providerSourceId": "course-87-en:item:SN870700",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Translate and solve an equation with a square",
+    "recipe": "square-eq",
+    "family": "structured-port87",
+    "title": "Translate and solve an equation with a square",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:109",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "power-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "roots"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Seven less than what number squared is 57? If there are two numbers, separate them with a comma."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870704",
+    "providerSourceId": "course-87-en:item:SN870704",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "Table of compound interest",
+    "recipe": "interest",
+    "family": "structured-port87",
+    "title": "Table of compound interest",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:110",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "interest-models",
+        "level": 1
+      },
+      {
+        "trackId": "interest-models",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Teesha left $5,500.00 in an account that paid 8% interest compounded annually. Make a table that shows the amount of interest earned after 1, 2, 3, 4 and 5 years. Round each amount to the nearest cent, and list the five amounts in order. Enter exact decimal or whole-number answers. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870826",
+    "providerSourceId": "course-87-en:item:SN870826",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "Balance with simple interest",
+    "recipe": "interest",
+    "family": "structured-port87",
+    "title": "Balance with simple interest",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:110",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "interest-models",
+        "level": 1
+      },
+      {
+        "trackId": "interest-models",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If a principal of $800.00 is invested in an account paying 2.3% simple interest annually, what is the account balance at the end of 5 years? Draw a table showing the account balance at the end of each year to solve the problem. Round to the nearest cent. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870705",
+    "providerSourceId": "course-87-en:item:SN870705",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "Successive discounts",
+    "recipe": "discounts",
+    "family": "structured-port87",
+    "title": "Successive discounts",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:110",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "percent-change-models",
+        "level": 3
+      },
+      {
+        "trackId": "percent-forward-change",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A camera regularly priced at $290.00 was placed on sale for 20% off. When the camera did not sell, the sale price was reduced 35% for clearance. What was the clearance price of the camera? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870706",
+    "providerSourceId": "course-87-en:item:SN870706",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "A percent coupon on a sale price",
+    "recipe": "discounts",
+    "family": "structured-port87",
+    "title": "A percent coupon on a sale price",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:110",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "percent-change-models",
+        "level": 3
+      },
+      {
+        "trackId": "percent-forward-change",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Anna has a coupon from O'Toole's Variety Store that reads, \"Take 35% off of any sale price!\" She finds a bicycle safety and repair kit that usually costs $20.65 marked 15% off. If Anna uses the coupon to buy the kit, how much will she pay before sales tax is applied? Round to the nearest cent. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870828",
+    "providerSourceId": "course-87-en:item:SN870828",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "A sale price and a dollar coupon",
+    "recipe": "discounts",
+    "family": "structured-port87",
+    "title": "A sale price and a dollar coupon",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:110",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "percent-change-models",
+        "level": 3
+      },
+      {
+        "trackId": "percent-forward-change",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Darnell bought a sweater that originally cost $27.00. The sweater was on sale for 20% off, and then Darnell used a coupon for $5 off. How much did he pay for the sweater? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870468",
+    "providerSourceId": "course-87-en:item:SX870468",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Divide in scientific notation",
+    "recipe": "sci-divide",
+    "family": "structured-port87",
+    "title": "Divide in scientific notation",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:111",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-notation",
+        "level": 3
+      },
+      {
+        "trackId": "scientific-expression-forms",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Divide coefficients and subtract exponents, then normalize."
+    },
+    "samplePrompt": "Divide. Write the answer in scientific notation: (2 \u00d7 10\u2078)/(4 \u00d7 10\u00b2)"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870709",
+    "providerSourceId": "course-87-en:item:SN870709",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Divide in scientific notation (positive exponents)",
+    "recipe": "sci-divide",
+    "family": "structured-port87",
+    "title": "Divide in scientific notation (positive exponents)",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:111",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-notation",
+        "level": 3
+      },
+      {
+        "trackId": "scientific-expression-forms",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide. Write the answer in scientific notation: (5.6 \u00d7 10\u00b3)/(8 \u00d7 10\u2078)"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870710",
+    "providerSourceId": "course-87-en:item:SN870710",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Divide in scientific notation (negative exponents)",
+    "recipe": "sci-divide",
+    "family": "structured-port87",
+    "title": "Divide in scientific notation (negative exponents)",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:111",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-notation",
+        "level": 3
+      },
+      {
+        "trackId": "scientific-expression-forms",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide. Write the answer in scientific notation: (3 \u00d7 10\u207b\u2074)/(6 \u00d7 10\u207b\u00b2)"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870712",
+    "providerSourceId": "course-87-en:item:SN870712",
+    "bankId": "course-87-en",
+    "topic": "pythagorean",
+    "action": "How much shorter is the direct route",
+    "recipe": "pythag-apps",
+    "family": "structured-port87",
+    "title": "How much shorter is the direct route",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:112",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "right-triangles",
+        "level": 2
+      },
+      {
+        "trackId": "triangle-length-reasoning",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Wayne used the diagram to compute the distance from Ferris to Dunlap to Butte. How much shorter is the distance directly from Ferris to Butte than the distance Wayne found? Dimensions are in miles. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870716",
+    "providerSourceId": "course-87-en:item:SN870716",
+    "bankId": "course-87-en",
+    "topic": "pythagorean",
+    "action": "Total distance with a shortcut",
+    "recipe": "pythag-apps",
+    "family": "structured-port87",
+    "title": "Total distance with a shortcut",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:112",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "right-triangles",
+        "level": 2
+      },
+      {
+        "trackId": "triangle-length-reasoning",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Jill and Eileen decided to take a shortcut through the woods to go to their friend's house. When they went home they decided to take the long way around the woods to avoid getting blackberry vine scratches. What total distance did they walk to and from their friend's house? Dimensions are in meters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870717",
+    "providerSourceId": "course-87-en:item:SN870717",
+    "bankId": "course-87-en",
+    "topic": "pythagorean",
+    "action": "Kite string and height",
+    "recipe": "pythag-apps",
+    "family": "structured-port87",
+    "title": "Kite string and height",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:112",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "right-triangles",
+        "level": 2
+      },
+      {
+        "trackId": "triangle-length-reasoning",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Donald went to a level field to fly a kite. He let out all 650 feet of the string and tied it to a stake. Then he walked out on the field until he was directly under the kite, which was 630 feet from the stake. How high was the kite from the ground? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870721",
+    "providerSourceId": "course-87-en:item:SN870721",
+    "bankId": "course-87-en",
+    "topic": "volume",
+    "action": "Volume of a pyramid, cone or sphere",
+    "recipe": "solid-volume2",
+    "family": "structured-port87",
+    "title": "Volume of a pyramid, cone or sphere",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:113",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 3
+      },
+      {
+        "trackId": "volume-shape-contracts",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed",
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "The generator alternates pyramid, cone and sphere volume; sphere has no perpendicular-height input and cone/sphere require final hundredths rounding. Keep these mixed demands related rather than imposing one uniform rank. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "Find the volume of the pyramid. Dimensions are in meters. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870722",
+    "providerSourceId": "course-87-en:item:SN870722",
+    "bankId": "course-87-en",
+    "topic": "volume",
+    "action": "Volume of a cube with a cone-shaped hole",
+    "recipe": "solid-volume2",
+    "family": "structured-port87",
+    "title": "Volume of a cube with a cone-shaped hole",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:113",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 3
+      },
+      {
+        "trackId": "volume-shape-contracts",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A machinist drilled a cone-shaped hole in a metal cube, as shown. The cone's base diameter and its depth both equal the side of the cube. If the cube has sides of 10 cm, what is the volume of the cube after the hole is drilled? Use 3.14 for \u03c0. Round your answer to the nearest hundredth. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870723",
+    "providerSourceId": "course-87-en:item:SN870723",
+    "bankId": "course-87-en",
+    "topic": "volume",
+    "action": "Cube minus a pyramid",
+    "recipe": "solid-volume2",
+    "family": "structured-port87",
+    "title": "Cube minus a pyramid",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:113",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 3
+      },
+      {
+        "trackId": "volume-shape-contracts",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The pyramid has the same base and height as the cube that contains it. Find the difference between the volume of the cube and the volume of the pyramid. Dimensions are in centimeters. Round to the nearest hundredth if necessary. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870724",
+    "providerSourceId": "course-87-en:item:SN870724",
+    "bankId": "course-87-en",
+    "topic": "volume",
+    "action": "Cylinder minus a sphere",
+    "recipe": "solid-volume2",
+    "family": "structured-port87",
+    "title": "Cylinder minus a sphere",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:113",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 3
+      },
+      {
+        "trackId": "volume-shape-contracts",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A tennis ball is placed in a cylindrical container. Packing material is to be placed in all the voids in the cylinder not occupied by the sphere. What is the volume of the cylinder that has to be filled with the packing material? Use 3.14 for \u03c0. Dimensions are in inches. Round to the nearest hundredth. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870739",
+    "providerSourceId": "course-87-en:item:SN870739",
+    "bankId": "course-87-en",
+    "topic": "inequalities",
+    "action": "Write and graph a sum inequality",
+    "recipe": "inequality-plane",
+    "family": "structured-port87",
+    "title": "Write and graph a sum inequality",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:114",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "plane-regions",
+        "level": 1
+      },
+      {
+        "trackId": "plane-regions",
+        "level": 2
+      },
+      {
+        "trackId": "plane-region-production",
+        "level": 1
+      },
+      {
+        "trackId": "plane-region-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Josh thought of two numbers whose sum was less than 10. Show the inequality and the graph for the given statement. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870740",
+    "providerSourceId": "course-87-en:item:SN870740",
+    "bankId": "course-87-en",
+    "topic": "inequalities",
+    "action": "Write and graph an at least or at most inequality",
+    "recipe": "inequality-plane",
+    "family": "structured-port87",
+    "title": "Write and graph an at least or at most inequality",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:114",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "plane-regions",
+        "level": 1
+      },
+      {
+        "trackId": "plane-regions",
+        "level": 2
+      },
+      {
+        "trackId": "plane-region-production",
+        "level": 1
+      },
+      {
+        "trackId": "plane-region-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Every day Abby runs and/or walks for at most 10 minutes. Let x and y be the minutes spent running and walking. Show the inequality and the graph for the given statement. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870741",
+    "providerSourceId": "course-87-en:item:SN870741",
+    "bankId": "course-87-en",
+    "topic": "inequalities",
+    "action": "Write and graph two inequalities",
+    "recipe": "inequality-plane",
+    "family": "structured-port87",
+    "title": "Write and graph two inequalities",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:114",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "plane-regions",
+        "level": 1
+      },
+      {
+        "trackId": "plane-regions",
+        "level": 2
+      },
+      {
+        "trackId": "plane-region-production",
+        "level": 1
+      },
+      {
+        "trackId": "plane-region-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "John spends at least 2 hours reading or studying math every day. However, he spends no more than 5 hours on these activities. Let x and y be the hours spent on each activity. Show the inequalities and graph them. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870738",
+    "providerSourceId": "course-87-en:item:SN870738",
+    "bankId": "course-87-en",
+    "topic": "inequalities",
+    "action": "Choose the inequalities and graph",
+    "recipe": "inequality-plane",
+    "family": "structured-port87",
+    "title": "Choose the inequalities and graph",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:114",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "plane-regions",
+        "level": 1
+      },
+      {
+        "trackId": "plane-regions",
+        "level": 2
+      },
+      {
+        "trackId": "plane-region-production",
+        "level": 1
+      },
+      {
+        "trackId": "plane-region-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "John spends at least 4 hours reading or studying math every day. However, he spends no more than 6 hours on these activities. Let x and y be the hours spent on each activity. Which shows the inequalities and the graph that satisfies both inequalities? Answer with the letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870475",
+    "providerSourceId": "course-87-en:item:SX870475",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Liters and kilograms of water in an aquarium",
+    "recipe": "metric-capacity",
+    "family": "structured-port87",
+    "title": "Liters and kilograms of water in an aquarium",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:115",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "single-unit-practice",
+        "level": 1
+      },
+      {
+        "trackId": "cubic-unit-models",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "An aquarium with the dimensions shown is filled with water. (a) How many liters of water are in the aquarium? (b) How many kilograms of water are in the aquarium? Enter exact decimal or whole-number answers. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870731",
+    "providerSourceId": "course-87-en:item:SN870731",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Volume and mass of a vase of water",
+    "recipe": "metric-capacity",
+    "family": "structured-port87",
+    "title": "Volume and mass of a vase of water",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:115",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "single-unit-practice",
+        "level": 1
+      },
+      {
+        "trackId": "cubic-unit-models",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Peter wanted to find the volume of a vase. He filled a 2-liter beaker with water and then used all but 1650 milliliters to fill the vase. (a) What is the volume of the vase? (b) If the mass of the vase is 1580 grams, what is the mass of the vase filled with water? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870726",
+    "providerSourceId": "course-87-en:item:SN870726",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Water balloons from a half-meter cube",
+    "recipe": "metric-capacity",
+    "family": "structured-port87",
+    "title": "Water balloons from a half-meter cube",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:115",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "single-unit-practice",
+        "level": 1
+      },
+      {
+        "trackId": "cubic-unit-models",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Mr. Saxon showed his class a cube that had sides one-half meter long. He said, \"For the end-of-year water-balloon fight, you may use the amount of water that would fill this cube.\" If each balloon held 255 milliliters of water, how many balloons did the class fill? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870758",
+    "providerSourceId": "course-87-en:item:SN870758",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Factor a term completely",
+    "recipe": "factor-gcf",
+    "family": "structured-port87",
+    "title": "Factor a term completely",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:116",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "factoring",
+        "level": 1
+      },
+      {
+        "trackId": "prime-factorization",
+        "level": 2
+      },
+      {
+        "trackId": "factoring-structure",
+        "level": 1
+      },
+      {
+        "trackId": "c4-gcf-to-monomial-to",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "prime-factors"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Factor the algebraic expression completely, as a product of prime numbers and single variables: 14x\u00b2y\u00b3"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870481",
+    "providerSourceId": "course-87-en:item:SX870481",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Factor the greatest common factor from a binomial",
+    "recipe": "factor-gcf",
+    "family": "structured-port87",
+    "title": "Factor the greatest common factor from a binomial",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:116",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "factoring",
+        "level": 1
+      },
+      {
+        "trackId": "prime-factorization",
+        "level": 2
+      },
+      {
+        "trackId": "factoring-structure",
+        "level": 1
+      },
+      {
+        "trackId": "c4-gcf-to-monomial-to",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "factored"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Factor the algebraic expression by factoring out the greatest common factor: 14qr + 16q\u2074r\u2075"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870765",
+    "providerSourceId": "course-87-en:item:SN870765",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Factor the greatest common factor from a trinomial",
+    "recipe": "factor-gcf",
+    "family": "structured-port87",
+    "title": "Factor the greatest common factor from a trinomial",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:116",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "factoring",
+        "level": 1
+      },
+      {
+        "trackId": "prime-factorization",
+        "level": 2
+      },
+      {
+        "trackId": "factoring-structure",
+        "level": 1
+      },
+      {
+        "trackId": "c4-gcf-to-monomial-to",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "factored"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Factor the algebraic expression by factoring out the greatest common factor: 20u\u00b2v\u00b2 + 24u\u2074v\u2075 + 4u\u00b2v\u2075"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870766",
+    "providerSourceId": "course-87-en:item:SN870766",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Write ax + by = c in slope-intercept form",
+    "recipe": "slope-intercept",
+    "family": "structured-port87",
+    "title": "Write ax + by = c in slope-intercept form",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:117",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "line-graph-methods",
+        "level": 1
+      },
+      {
+        "trackId": "line-graph-methods",
+        "level": 3
+      },
+      {
+        "trackId": "slope-from-equation",
+        "level": 1
+      },
+      {
+        "trackId": "slope-from-equation",
+        "level": 2
+      },
+      {
+        "trackId": "graph-selection-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "slope-int"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the slope-intercept form of the equation \u22129x \u2212 y = 8. Enter it in the form y = mx + b."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870767",
+    "providerSourceId": "course-87-en:item:SN870767",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Write an equation in slope-intercept form",
+    "recipe": "slope-intercept",
+    "family": "structured-port87",
+    "title": "Write an equation in slope-intercept form",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:117",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "line-graph-methods",
+        "level": 1
+      },
+      {
+        "trackId": "line-graph-methods",
+        "level": 3
+      },
+      {
+        "trackId": "slope-from-equation",
+        "level": 1
+      },
+      {
+        "trackId": "slope-from-equation",
+        "level": 2
+      },
+      {
+        "trackId": "graph-selection-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "slope-int"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the slope-intercept form of the equation \u2212y + 19 = 5x. Enter it in the form y = mx + b."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870768",
+    "providerSourceId": "course-87-en:item:SN870768",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Graph a line in slope-intercept form",
+    "recipe": "slope-intercept",
+    "family": "structured-port87",
+    "title": "Graph a line in slope-intercept form",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:117",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "line-graph-methods",
+        "level": 1
+      },
+      {
+        "trackId": "line-graph-methods",
+        "level": 3
+      },
+      {
+        "trackId": "slope-from-equation",
+        "level": 1
+      },
+      {
+        "trackId": "slope-from-equation",
+        "level": 2
+      },
+      {
+        "trackId": "graph-selection-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Graph: y = 5x \u2212 7 Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870761",
+    "providerSourceId": "course-87-en:item:SN870761",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Choose the graph of a line",
+    "recipe": "slope-intercept",
+    "family": "structured-port87",
+    "title": "Choose the graph of a line",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:117",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "line-graph-methods",
+        "level": 1
+      },
+      {
+        "trackId": "line-graph-methods",
+        "level": 3
+      },
+      {
+        "trackId": "slope-from-equation",
+        "level": 1
+      },
+      {
+        "trackId": "slope-from-equation",
+        "level": 2
+      },
+      {
+        "trackId": "graph-selection-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which shows the graph of y = \u22126x + 9? Answer with the letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870483",
+    "providerSourceId": "course-87-en:item:SX870483",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Draw and copy an acute angle",
+    "recipe": "copy-construct",
+    "family": "structured-port87",
+    "title": "Draw and copy an acute angle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:118",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "construction-copy-bisect",
+        "level": 1
+      },
+      {
+        "trackId": "construction-step-production",
+        "level": 1
+      },
+      {
+        "trackId": "protractor-response-demands",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use a protractor to draw a 90\u00b0 angle. Then use a compass and a straightedge to copy the angle. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870802",
+    "providerSourceId": "course-87-en:item:SN870802",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Draw and copy an obtuse angle",
+    "recipe": "copy-construct",
+    "family": "structured-port87",
+    "title": "Draw and copy an obtuse angle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:118",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "construction-copy-bisect",
+        "level": 1
+      },
+      {
+        "trackId": "construction-step-production",
+        "level": 1
+      },
+      {
+        "trackId": "protractor-response-demands",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use a protractor to draw a 130\u00b0 angle. Then use a compass and a straightedge to copy the angle. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870484",
+    "providerSourceId": "course-87-en:item:SX870484",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Draw and copy a triangle",
+    "recipe": "copy-construct",
+    "family": "structured-port87",
+    "title": "Draw and copy a triangle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:118",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "construction-copy-bisect",
+        "level": 1
+      },
+      {
+        "trackId": "construction-step-production",
+        "level": 1
+      },
+      {
+        "trackId": "protractor-response-demands",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use a protractor to draw a triangle with angles of 25\u00b0, 75\u00b0 and 80\u00b0. Then use a compass and a straightedge to copy the triangle. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870789",
+    "providerSourceId": "course-87-en:item:SN870789",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Choose a correct triangle copy",
+    "recipe": "copy-construct",
+    "family": "structured-port87",
+    "title": "Choose a correct triangle copy",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:118",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "construction-copy-bisect",
+        "level": 1
+      },
+      {
+        "trackId": "construction-step-production",
+        "level": 1
+      },
+      {
+        "trackId": "protractor-response-demands",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which of the following shows how to correctly copy a triangle with angles 55\u00b0, 65\u00b0 and 60\u00b0? Each construction copies two angles at the ends of the base. Answer with the letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870794",
+    "providerSourceId": "course-87-en:item:SN870794",
+    "bankId": "course-87-en",
+    "topic": "reasoning",
+    "action": "Why division by zero is not a fact",
+    "recipe": "zero-divide",
+    "family": "structured-port87",
+    "title": "Why division by zero is not a fact",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:119",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "denominator-domain-concepts",
+        "level": 1
+      },
+      {
+        "trackId": "denominator-domain-concepts",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The numbers in the multiplication fact 2 \u00d7 2 = 4 can be arranged to form two division facts. If we attempt to form two division facts for the multiplication fact 2 \u00d7 0 = 0, one of the arrangements is not a fact. Which arrangement is not a fact and why? Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870792",
+    "providerSourceId": "course-87-en:item:SN870792",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Excluded value of a rational expression",
+    "recipe": "zero-divide",
+    "family": "structured-port87",
+    "title": "Excluded value of a rational expression",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:119",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "denominator-domain-concepts",
+        "level": 1
+      },
+      {
+        "trackId": "denominator-domain-concepts",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What number cannot be used for s in this expression? 5tu/(s) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870790",
+    "providerSourceId": "course-87-en:item:SN870790",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Excluded value of a simple fraction",
+    "recipe": "zero-divide",
+    "family": "structured-port87",
+    "title": "Excluded value of a simple fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:119",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "denominator-domain-concepts",
+        "level": 1
+      },
+      {
+        "trackId": "denominator-domain-concepts",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What number cannot be used for r in this expression? 9/(r + 2) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870786",
+    "providerSourceId": "course-87-en:item:SN870786",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Excluded values of a fraction",
+    "recipe": "zero-divide",
+    "family": "structured-port87",
+    "title": "Excluded values of a fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:119",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "denominator-domain-concepts",
+        "level": 1
+      },
+      {
+        "trackId": "denominator-domain-concepts",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "num-set"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What number(s) cannot be used for k in this expression? 10/(k\u00b2 + 6k). Separate the numbers with a comma."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870783",
+    "providerSourceId": "course-87-en:item:SN870783",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Graph y = a/x",
+    "recipe": "nonlinear-graph",
+    "family": "structured-port87",
+    "title": "Graph y = a/x",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:120",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "parent-function-graphs",
+        "level": 1
+      },
+      {
+        "trackId": "parabola-features",
+        "level": 1
+      },
+      {
+        "trackId": "parabola-features",
+        "level": 2
+      },
+      {
+        "trackId": "variation-types",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Graph: y = 4/x Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870781",
+    "providerSourceId": "course-87-en:item:SN870781",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Graph y = bx^2 + a",
+    "recipe": "nonlinear-graph",
+    "family": "structured-port87",
+    "title": "Graph y = bx^2 + a",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:120",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "parent-function-graphs",
+        "level": 1
+      },
+      {
+        "trackId": "parabola-features",
+        "level": 1
+      },
+      {
+        "trackId": "parabola-features",
+        "level": 2
+      },
+      {
+        "trackId": "variation-types",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Graph: y = 2x\u00b2 + 3 Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870785",
+    "providerSourceId": "course-87-en:item:SN870785",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Graph y = ax^2",
+    "recipe": "nonlinear-graph",
+    "family": "structured-port87",
+    "title": "Graph y = ax^2",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:120",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "parent-function-graphs",
+        "level": 1
+      },
+      {
+        "trackId": "parabola-features",
+        "level": 1
+      },
+      {
+        "trackId": "parabola-features",
+        "level": 2
+      },
+      {
+        "trackId": "variation-types",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Graph: y = 9x\u00b2 Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870489",
+    "providerSourceId": "course-87-en:item:SX870489",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Choose the graph of y = ax^2",
+    "recipe": "nonlinear-graph",
+    "family": "structured-port87",
+    "title": "Choose the graph of y = ax^2",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:120",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "parent-function-graphs",
+        "level": 1
+      },
+      {
+        "trackId": "parabola-features",
+        "level": 1
+      },
+      {
+        "trackId": "parabola-features",
+        "level": 2
+      },
+      {
+        "trackId": "variation-types",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which graph shows y = 5x\u00b2? Answer with the letter."
   }
 ]
