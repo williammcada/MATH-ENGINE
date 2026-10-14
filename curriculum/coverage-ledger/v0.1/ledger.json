@@ -26,6 +26,7 @@
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-14-c1-batch1-course1-L1-5.json": "c8ae79ba052d7c6c3f9889e583c803a383fa5a7c6ffc3452bfc4af98bdf4810a",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-14-c1-batch2-course1-L6-11-I1.json": "2ab29d79e4567c46376a09acd9e686a1ad7149f851ede3d8ea8ee600bb5045b9",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch3-course1-L12-19.json": "686c3750dde50b693e49609ad5494e6c8c657f769a054ccc7118bf00f1b1fecd",
+"curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch4-course1-L20-26-I2.json": "46bb8e34f01f93812a7f933cd6f505c165de55094a76a92a9c299f9037e8698f",
 "curriculum/source-mappings/advanced-v0.1.json": "740f9d6e25483a2838d5561a85c66c9eb3f67b7505a8ab9004353e5eb6883aa7",
 "curriculum/source-mappings/algebra-review-v0.1.json": "a4956b61d8353d4258097f2ea5ca8d7baf4031fdd9c090e344ca2ce366a29a0e",
 "curriculum/source-mappings/breadth-v0.1.json": "d8255409d16dcc8db7b45244ab1239896d13ac56ffe4f3eb2ecdd8778f5e4996",
@@ -35,7 +36,7 @@
 "curriculum/source-mappings/linear-equations-v0.1.json": "9e4f9fd37066e63cd74f133bcc76713db8ae30251a22f03f5a672ab535bc7e65",
 "curriculum/source-mappings/linear-equations-v0.2.json": "759f02762a92c18098944bfe8a88f2be5a0a4384f778105cb78239a07df22371",
 "curriculum/source-mappings/measurement-v0.1.json": "3ca7cc1cdb74fb6e1bf8741beea9c2787fe122befe28499e75bfd6d803409451",
-"curriculum/source-mappings/port87-v0.1.json": "c5b074729943f7d6333799bea4f01af27aca39d09e35f949ec04367335aef06a",
+"curriculum/source-mappings/port87-v0.1.json": "6381f0232cf3609d302c499bd0fd447de88c4ec5cc1deddc97b918988b127639",
 "curriculum/source-mappings/proportions-v0.1.json": "85db6cf773c6c1a6bbad37f83cf3724becf552fee4bbf4154e2ade0bae7751af",
 "curriculum/source-mappings/quadratic-equations-v0.1.json": "51b5a6c7221720481df7ac7a3cf9b4561744ef910fee5427c8cd73d6c027f4a6",
 "curriculum/source-mappings/reasoning-v0.1.json": "b88aeb99d84bd8ab367678d0c6f7d90fdc3cba8dbc087ebf108a3e835ef7f448",
@@ -45,14 +46,14 @@
 "curriculum/source-mappings/statistics-v0.1.json": "a3ba878bad7cc71dea555ef623b6c3e89483a9c8f809d21e4d90efa9ba09ce8d"
 },
 "totals": {
-"open": 3996,
-"covered-provisional": 371,
-"covered": 806,
-"consolidated": 252,
+"open": 3899,
+"covered-provisional": 369,
+"covered": 856,
+"consolidated": 301,
 "retired": 0,
 "records": 5425,
-"percentComplete": 19.5,
-"percentIncludingProvisional": 26.3
+"percentComplete": 21.3,
+"percentIncludingProvisional": 28.1
 },
 "banks": {
 "course-87-en": {
@@ -96,14 +97,14 @@
 "percentIncludingProvisional": 18.8
 },
 "course-1-en": {
-"open": 1057,
-"covered-provisional": 27,
-"covered": 181,
-"consolidated": 88,
+"open": 960,
+"covered-provisional": 25,
+"covered": 231,
+"consolidated": 137,
 "retired": 0,
 "records": 1353,
-"percentComplete": 19.9,
-"percentIncludingProvisional": 21.9
+"percentComplete": 27.2,
+"percentIncludingProvisional": 29.0
 },
 "intermediate-4-en": {
 "open": 1296,
@@ -4872,14 +4873,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"open": 14,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 9,
+"consolidated": 5,
 "retired": 0,
 "records": 14,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -4944,14 +4945,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
-"open": 8,
-"covered-provisional": 2,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 2,
+"consolidated": 8,
 "retired": 0,
 "records": 10,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 20.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -4968,14 +4969,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
-"open": 10,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 5,
+"consolidated": 5,
 "retired": 0,
 "records": 10,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -4992,14 +4993,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"open": 14,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 6,
+"consolidated": 8,
 "retired": 0,
 "records": 14,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -5028,50 +5029,50 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a0b1890080b2c670",
-"open": 6,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 5,
+"consolidated": 1,
 "retired": 0,
 "records": 6,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"open": 15,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 9,
+"consolidated": 6,
 "retired": 0,
 "records": 15,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"open": 17,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 9,
+"consolidated": 8,
 "retired": 0,
 "records": 17,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
-"open": 13,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 5,
+"consolidated": 8,
 "retired": 0,
 "records": 13,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -24207,13 +24208,21 @@
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00016",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00055"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00017",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00057"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00018",
@@ -24633,42 +24642,69 @@
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00054",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00055",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Greatest common factor of three numbers. Replaces the earlier breadth adaptation, which drew numbers up to 48 whose GCF could be 1; the port keeps source-style triples such as 50, 220 and 20.",
 "by": [
 "course-1-en:bank:C1_Section02:item:C1_S02_00055"
-],
-"basis": "breadth-v0.1.json",
-"family": "structured-breadth"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00056",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00057",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Add parts of a circle as percents.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00057"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00058",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Fraction pieces in whole circles.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00058"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00059",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Half of a unit fraction.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00059"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00060",
@@ -24872,30 +24908,49 @@
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00077",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Greatest common factor of two numbers. Replaces the earlier breadth adaptation, which drew numbers up to 48 whose GCF could be 1; the port keeps source-style pairs with a GCF above 1.",
 "by": [
 "course-1-en:bank:C1_Section02:item:C1_S02_00077"
-],
-"basis": "breadth-v0.1.json",
-"family": "structured-breadth"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00078",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Find the fraction that is not equivalent.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00078"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00079",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Compare fractions in a table.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00079"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00080",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Percent of a circle that is shaded.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00080"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00081",
@@ -25237,55 +25292,95 @@
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00111",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00112",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00113",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00114",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00115",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00116",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Subtract a fraction from 1.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00116"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00117",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00116"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00118",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00116"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00119",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: A fraction of a circle as a percent.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00119"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00120",
@@ -25337,67 +25432,115 @@
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00124",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Compare two fractions.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00124"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00125",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00124"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00126",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00116"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00001",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a0b1890080b2c670",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00053"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00002",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00016"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00003",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00019"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00004",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00027"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00005",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00056"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00006",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00030"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00007",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00032"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00008",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: There and back with halves of a mile.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00008"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00009",
@@ -25445,115 +25588,209 @@
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00016",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Fraction of a group in a story.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00016"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00017",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00091"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00018",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00093"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00019",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Ratio of two groups.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00019"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00020",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00019"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00021",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00097"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00022",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Average speed.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00022"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00023",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Miles per gallon.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00023"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00024",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00025"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00025",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Unit price rounded to the cent.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00025"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00026",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00102"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00027",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Add three fractions with a common denominator.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00027"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00028",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00103"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00029",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: A given multiple of a number.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00029"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00030",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: A number that is a given multiple of two numbers.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00030"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00031",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00032"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00032",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Reduce a fraction.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00032"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00033",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00032"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00034",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00128"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00035",
@@ -25655,55 +25892,105 @@
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00051",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a0b1890080b2c670",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Divisible by both of two numbers.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00051"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00052",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a0b1890080b2c670",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: List the numbers divisible by a given number.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00052"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00053",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a0b1890080b2c670",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Use divisibility tests for 2, 3, 5, 9 and 10.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00053"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00054",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00125"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00055",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00126"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00056",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: A quotient as a mixed number.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00056"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00057",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: The first five multiples.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00057"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00058",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Subtract mixed numbers.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00058"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00059",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: There and back with fourths of a mile.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00059"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00060",
@@ -25749,79 +26036,139 @@
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00065",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a0b1890080b2c670",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Find a number that does not divide.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00065"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00066",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a0b1890080b2c670",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Divisible by 3.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00066"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00067",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00093"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00068",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00080"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00069",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00097"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00070",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00101"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00071",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00025"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00072",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Distance for a time with a half hour.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00072"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00073",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00106"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00074",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00126"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00075",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00127"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00076",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Divide by 25 with a mixed-number quotient.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00076"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00077",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00128"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00078",
@@ -25909,103 +26256,195 @@
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00090",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00093"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00091",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: A fraction of a number.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00091"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00092",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: A fraction in words of a group.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00092"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00093",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: A fraction of some dozens.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00093"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00094",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00093"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00095",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: A fraction of thousands.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00095"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00096",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00091"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00097",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Ratio of boys to girls.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00097"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00098",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Distance from rate and time.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00098"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00099",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00097"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00100",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Ratio of length to width.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00100"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00101",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Win-loss ratio.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00101"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00102",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Add two fractions with a common denominator.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00102"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00103",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Subtract fractions with a common denominator.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00103"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00104",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Add fractions that make 1.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00104"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00105",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00027"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00106",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Add and subtract fractions with grouping.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00106"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00107",
@@ -26124,55 +26563,103 @@
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00125",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: An improper fraction as a mixed number.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00125"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00126",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Equal pieces as a mixed number.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00126"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00127",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Add fractions and convert to a mixed number.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00127"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00128",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Add mixed numbers and convert.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00128"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00129",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Find a missing addend with a mixed number.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00129"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00130",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00128"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00131",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00058"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00132",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Ported: Subtract mixed numbers with regrouping.",
+"by": [
+"course-1-en:bank:C1_Section03:item:C1_S03_00132"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00133",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-4 course-1 lesson 20, investigation 2, lessons 21-26",
+"reviewed": "2026-10-15",
+"note": "Same demand as the port task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section03:item:C1_S03_00128"
 },
 {
 "id": "course-1-en:bank:C1_Section03:item:C1_S03_00134",

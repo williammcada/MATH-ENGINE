@@ -11916,102 +11916,6 @@
     "samplePrompt": "How much greater is 49 squared than the square root of 49? Use exact fractions or terminating decimals, without units."
   },
   {
-    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00077",
-    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00077",
-    "bankId": "course-1-en",
-    "topic": "number-theory",
-    "action": "Find a greatest common factor",
-    "recipe": "gcf",
-    "family": "structured-breadth",
-    "title": "Find a greatest common factor",
-    "course": "Course 1",
-    "localGrade": 4,
-    "placement": "grade-assigned",
-    "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "common-factors-multiples",
-        "level": 1
-      },
-      {
-        "trackId": "c4-gcf-to-monomial-from",
-        "level": 1
-      },
-      {
-        "trackId": "c4-prime-factors-to-gcf-to",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Find GCF for configured two or three inputs. Configurations reviewed; related-only methods path does not rank input counts."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "validated cross-course prerequisite/extension"
-    },
-    "samplePrompt": "Find the greatest common factor of 27, 5. Use exact fractions or terminating decimals, without units."
-  },
-  {
-    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00055",
-    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00055",
-    "bankId": "course-1-en",
-    "topic": "number-theory",
-    "action": "Find the GCF of three numbers",
-    "recipe": "gcf",
-    "family": "structured-breadth",
-    "title": "Find the GCF of three numbers",
-    "course": "Course 1",
-    "localGrade": 4,
-    "placement": "grade-assigned",
-    "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "common-factors-multiples",
-        "level": 1
-      },
-      {
-        "trackId": "c4-gcf-to-monomial-from",
-        "level": 1
-      },
-      {
-        "trackId": "c4-prime-factors-to-gcf-to",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Find GCF for configured two or three inputs. Configurations reviewed; related-only methods path does not rank input counts."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "validated cross-course prerequisite/extension"
-    },
-    "samplePrompt": "Find the greatest common factor of 12, 36, 18. Use exact fractions or terminating decimals, without units."
-  },
-  {
     "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00097",
     "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00097",
     "bankId": "course-1-en",
@@ -98400,5 +98304,2065 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Write 54 as a product of prime numbers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00077",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00077",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Greatest common factor of two numbers",
+    "recipe": "c1-gcf",
+    "family": "structured-port87",
+    "title": "Greatest common factor of two numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "common-factors-multiples",
+        "level": 1
+      },
+      {
+        "trackId": "c4-gcf-to-monomial-from",
+        "level": 1
+      },
+      {
+        "trackId": "c4-prime-factors-to-gcf-to",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Find GCF for configured two or three inputs. Configurations reviewed; related-only methods path does not rank input counts."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "validated cross-course prerequisite/extension"
+    },
+    "samplePrompt": "What is the greatest common factor (GCF) of 45 and 36? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00055",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00055",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Greatest common factor of three numbers",
+    "recipe": "c1-gcf",
+    "family": "structured-port87",
+    "title": "Greatest common factor of three numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:d37876a69e300c4f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "common-factors-multiples",
+        "level": 1
+      },
+      {
+        "trackId": "c4-gcf-to-monomial-from",
+        "level": 1
+      },
+      {
+        "trackId": "c4-prime-factors-to-gcf-to",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Find GCF for configured two or three inputs. Configurations reviewed; related-only methods path does not rank input counts."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "validated cross-course prerequisite/extension"
+    },
+    "samplePrompt": "Find the greatest common factor of 6, 10, and 16. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00078",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00078",
+    "bankId": "course-1-en",
+    "topic": "fraction-equivalence",
+    "action": "Find the fraction that is not equivalent",
+    "recipe": "c1-fraction-concepts",
+    "family": "structured-port87",
+    "title": "Find the fraction that is not equivalent",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-complement",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 2
+      },
+      {
+        "trackId": "equivalence-recognition",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-piece-count",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-comparison-methods",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which fraction does not equal 1/2? 3/5, 4/8, 5/10, 6/12"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00079",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00079",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Compare fractions in a table",
+    "recipe": "c1-fraction-concepts",
+    "family": "structured-port87",
+    "title": "Compare fractions in a table",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-complement",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 2
+      },
+      {
+        "trackId": "equivalence-recognition",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-piece-count",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-comparison-methods",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The table shows the fraction of shots each player made. Which player made the largest fraction of her shots?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00080",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00080",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Percent of a circle that is shaded",
+    "recipe": "c1-fraction-concepts",
+    "family": "structured-port87",
+    "title": "Percent of a circle that is shaded",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-complement",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 2
+      },
+      {
+        "trackId": "equivalence-recognition",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-piece-count",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-comparison-methods",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which percent best describes the shaded part of this circle? Write it like 40%."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00057",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00057",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Add parts of a circle as percents",
+    "recipe": "c1-fraction-concepts",
+    "family": "structured-port87",
+    "title": "Add parts of a circle as percents",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-complement",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 2
+      },
+      {
+        "trackId": "equivalence-recognition",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-piece-count",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-comparison-methods",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Three-fourths of a circle plus one-fifth of a circle is what percent of a circle? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00059",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00059",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Half of a unit fraction",
+    "recipe": "c1-fraction-concepts",
+    "family": "structured-port87",
+    "title": "Half of a unit fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-complement",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 2
+      },
+      {
+        "trackId": "equivalence-recognition",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-piece-count",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-comparison-methods",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the fraction that is half of 1/8. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00116",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00116",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Subtract a fraction from 1",
+    "recipe": "c1-fraction-concepts",
+    "family": "structured-port87",
+    "title": "Subtract a fraction from 1",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-complement",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 2
+      },
+      {
+        "trackId": "equivalence-recognition",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-piece-count",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-comparison-methods",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00119",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00119",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A fraction of a circle as a percent",
+    "recipe": "c1-fraction-concepts",
+    "family": "structured-port87",
+    "title": "A fraction of a circle as a percent",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-complement",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 2
+      },
+      {
+        "trackId": "equivalence-recognition",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-piece-count",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-comparison-methods",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What percent of a circle is 1/4 of a circle? Write it like 40%."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00058",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00058",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Fraction pieces in whole circles",
+    "recipe": "c1-fraction-concepts",
+    "family": "structured-port87",
+    "title": "Fraction pieces in whole circles",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-complement",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 2
+      },
+      {
+        "trackId": "equivalence-recognition",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-piece-count",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-comparison-methods",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Each piece is 1/5 of a circle. How many 1/5 pieces are needed to make five whole circles? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00124",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00124",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Compare two fractions",
+    "recipe": "c1-fraction-concepts",
+    "family": "structured-port87",
+    "title": "Compare two fractions",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:547e428eef5c289c",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-complement",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 2
+      },
+      {
+        "trackId": "equivalence-recognition",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-piece-count",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-comparison-methods",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Compare: 1/6 \u2610 1/5. Write >, < or =."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00053",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00053",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Use divisibility tests for 2, 3, 5, 9 and 10",
+    "recipe": "c1-divisibility",
+    "family": "structured-port87",
+    "title": "Use divisibility tests for 2, 3, 5, 9 and 10",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:a0b1890080b2c670",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "divisibility-methods",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "num-set"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use the divisibility tests to decide which of the numbers 2, 3, 5, 9, and 10 are factors of 100. List them, separated by commas."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00051",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00051",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Divisible by both of two numbers",
+    "recipe": "c1-divisibility",
+    "family": "structured-port87",
+    "title": "Divisible by both of two numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:a0b1890080b2c670",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "divisibility-methods",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which of these numbers is divisible by both 3 and 2? 5, 13, 29, 30"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00065",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00065",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Find a number that does not divide",
+    "recipe": "c1-divisibility",
+    "family": "structured-port87",
+    "title": "Find a number that does not divide",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:a0b1890080b2c670",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "divisibility-methods",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The number 420 is not divisible by which of these: 4, 5, 9, 12?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00066",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00066",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Divisible by 3",
+    "recipe": "c1-divisibility",
+    "family": "structured-port87",
+    "title": "Divisible by 3",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:a0b1890080b2c670",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "divisibility-methods",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which of these numbers is divisible by 3? 4393, 7902, 9481"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00052",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00052",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "List the numbers divisible by a given number",
+    "recipe": "c1-divisibility",
+    "family": "structured-port87",
+    "title": "List the numbers divisible by a given number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:a0b1890080b2c670",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "divisibility-methods",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "num-set"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which of these numbers are divisible by 5? 171, 110, 165, 116, 186, 180. List them, separated by commas."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00016",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00016",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "Fraction of a group in a story",
+    "recipe": "c1-fraction-group",
+    "family": "structured-port87",
+    "title": "Fraction of a group in a story",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "There were 90 squirrels in the forest. If 3/5 of them were gray, how many squirrels were gray? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00091",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00091",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "A fraction of a number",
+    "recipe": "c1-fraction-group",
+    "family": "structured-port87",
+    "title": "A fraction of a number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What number is 3/4 of 100? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00093",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00093",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "A fraction of some dozens",
+    "recipe": "c1-fraction-group",
+    "family": "structured-port87",
+    "title": "A fraction of some dozens",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How much is 7/12 of two dozen? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00092",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00092",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "A fraction in words of a group",
+    "recipe": "c1-fraction-group",
+    "family": "structured-port87",
+    "title": "A fraction in words of a group",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Seven-tenths of the 60 answers were correct. How many answers were correct? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00095",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00095",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "A fraction of thousands",
+    "recipe": "c1-fraction-group",
+    "family": "structured-port87",
+    "title": "A fraction of thousands",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:c60477daa77ff6e0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If 7/10 of the 4,000 raffle tickets were sold, how many tickets were sold? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00019",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00019",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "Ratio of two groups",
+    "recipe": "c1-ratio",
+    "family": "structured-port87",
+    "title": "Ratio of two groups",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 1
+      },
+      {
+        "trackId": "rate-calculations",
+        "level": 2
+      },
+      {
+        "trackId": "ratio-forms",
+        "level": 1
+      },
+      {
+        "trackId": "purchase-unit-rate",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "ratio"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the ratio of dogs to cats in a pound that has 20 dogs and 10 cats? Write the ratio as a fraction in lowest terms."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00097",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00097",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "Ratio of boys to girls",
+    "recipe": "c1-ratio",
+    "family": "structured-port87",
+    "title": "Ratio of boys to girls",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 1
+      },
+      {
+        "trackId": "rate-calculations",
+        "level": 2
+      },
+      {
+        "trackId": "ratio-forms",
+        "level": 1
+      },
+      {
+        "trackId": "purchase-unit-rate",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "ratio"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "In a class of 32 students there are 21 girls. What is the ratio of boys to girls? Write the ratio as a fraction in lowest terms."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00101",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00101",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "Win-loss ratio",
+    "recipe": "c1-ratio",
+    "family": "structured-port87",
+    "title": "Win-loss ratio",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 1
+      },
+      {
+        "trackId": "rate-calculations",
+        "level": 2
+      },
+      {
+        "trackId": "ratio-forms",
+        "level": 1
+      },
+      {
+        "trackId": "purchase-unit-rate",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "ratio"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A team won 6 of its 14 games and lost the rest. What was the team's win-loss ratio? Write the ratio as a fraction in lowest terms."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00100",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00100",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "Ratio of length to width",
+    "recipe": "c1-ratio",
+    "family": "structured-port87",
+    "title": "Ratio of length to width",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 1
+      },
+      {
+        "trackId": "rate-calculations",
+        "level": 2
+      },
+      {
+        "trackId": "ratio-forms",
+        "level": 1
+      },
+      {
+        "trackId": "purchase-unit-rate",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "ratio"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the ratio of the length of the rectangle to its width? Write the ratio as a fraction in lowest terms."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00022",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00022",
+    "bankId": "course-1-en",
+    "topic": "rates",
+    "action": "Average speed",
+    "recipe": "c1-ratio",
+    "family": "structured-port87",
+    "title": "Average speed",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 1
+      },
+      {
+        "trackId": "rate-calculations",
+        "level": 2
+      },
+      {
+        "trackId": "ratio-forms",
+        "level": 1
+      },
+      {
+        "trackId": "purchase-unit-rate",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If Greta travels 525 miles in 15 hours, what is the average rate of speed in miles per hour? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00025",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00025",
+    "bankId": "course-1-en",
+    "topic": "rates",
+    "action": "Unit price rounded to the cent",
+    "recipe": "c1-ratio",
+    "family": "structured-port87",
+    "title": "Unit price rounded to the cent",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 1
+      },
+      {
+        "trackId": "rate-calculations",
+        "level": 2
+      },
+      {
+        "trackId": "ratio-forms",
+        "level": 1
+      },
+      {
+        "trackId": "purchase-unit-rate",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "It costs $5.70 for a package of 4 rolls of paper towels. What is the cost per roll, rounded to the nearest cent? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00098",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00098",
+    "bankId": "course-1-en",
+    "topic": "rates",
+    "action": "Distance from rate and time",
+    "recipe": "c1-ratio",
+    "family": "structured-port87",
+    "title": "Distance from rate and time",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 1
+      },
+      {
+        "trackId": "rate-calculations",
+        "level": 2
+      },
+      {
+        "trackId": "ratio-forms",
+        "level": 1
+      },
+      {
+        "trackId": "purchase-unit-rate",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "At an average rate of 15 miles per hour, how far could a person ride a bike in 3 hours? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00072",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00072",
+    "bankId": "course-1-en",
+    "topic": "rates",
+    "action": "Distance for a time with a half hour",
+    "recipe": "c1-ratio",
+    "family": "structured-port87",
+    "title": "Distance for a time with a half hour",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 1
+      },
+      {
+        "trackId": "rate-calculations",
+        "level": 2
+      },
+      {
+        "trackId": "ratio-forms",
+        "level": 1
+      },
+      {
+        "trackId": "purchase-unit-rate",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "At 300 miles per hour, how far can an airplane fly in 1 \u00bd hours? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00023",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00023",
+    "bankId": "course-1-en",
+    "topic": "rates",
+    "action": "Miles per gallon",
+    "recipe": "c1-ratio",
+    "family": "structured-port87",
+    "title": "Miles per gallon",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:c198faa452fa2041",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 1
+      },
+      {
+        "trackId": "rate-calculations",
+        "level": 2
+      },
+      {
+        "trackId": "ratio-forms",
+        "level": 1
+      },
+      {
+        "trackId": "purchase-unit-rate",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Lena has exactly 16 gallons of gas in the car, drives 227.2 miles, and then runs out of gas. On average, how many miles per gallon did the car go? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00027",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00027",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add three fractions with a common denominator",
+    "recipe": "c1-fraction-add",
+    "family": "structured-port87",
+    "title": "Add three fractions with a common denominator",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify. Reduce your answer. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00102",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00102",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add two fractions with a common denominator",
+    "recipe": "c1-fraction-add",
+    "family": "structured-port87",
+    "title": "Add two fractions with a common denominator",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify. Reduce your answer. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00103",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00103",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Subtract fractions with a common denominator",
+    "recipe": "c1-fraction-add",
+    "family": "structured-port87",
+    "title": "Subtract fractions with a common denominator",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract. Reduce your answer. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00104",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00104",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add fractions that make 1",
+    "recipe": "c1-fraction-add",
+    "family": "structured-port87",
+    "title": "Add fractions that make 1",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify. Reduce your answer. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00106",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00106",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add and subtract fractions with grouping",
+    "recipe": "c1-fraction-add",
+    "family": "structured-port87",
+    "title": "Add and subtract fractions with grouping",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:232bf09a9844d919",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify. Reduce your answer. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00056",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00056",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "A quotient as a mixed number",
+    "recipe": "c1-mixed",
+    "family": "structured-port87",
+    "title": "A quotient as a mixed number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-form-changes",
+        "level": 1
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 1
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide 927 by 16 and write the quotient as a mixed number. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00125",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00125",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "An improper fraction as a mixed number",
+    "recipe": "c1-mixed",
+    "family": "structured-port87",
+    "title": "An improper fraction as a mixed number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-form-changes",
+        "level": 1
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 1
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 38/8 as a mixed number. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00126",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00126",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Equal pieces as a mixed number",
+    "recipe": "c1-mixed",
+    "family": "structured-port87",
+    "title": "Equal pieces as a mixed number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-form-changes",
+        "level": 1
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 1
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A 33-inch length of rope was cut into five equal pieces. How long was each piece, in inches? Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00127",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00127",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add fractions and convert to a mixed number",
+    "recipe": "c1-mixed",
+    "family": "structured-port87",
+    "title": "Add fractions and convert to a mixed number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-form-changes",
+        "level": 1
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 1
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add and convert the answer to a mixed number. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00076",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00076",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Divide by 25 with a mixed-number quotient",
+    "recipe": "c1-mixed",
+    "family": "structured-port87",
+    "title": "Divide by 25 with a mixed-number quotient",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-form-changes",
+        "level": 1
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 1
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide 9265 by 25. Write the answer as a mixed number. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00029",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00029",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "A given multiple of a number",
+    "recipe": "c1-mixed",
+    "family": "structured-port87",
+    "title": "A given multiple of a number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-form-changes",
+        "level": 1
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 1
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What number is the fifth multiple of 3? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00030",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00030",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "A number that is a given multiple of two numbers",
+    "recipe": "c1-mixed",
+    "family": "structured-port87",
+    "title": "A number that is a given multiple of two numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-form-changes",
+        "level": 1
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 1
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the number that is the third multiple of 10 and the fifth multiple of 6. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00057",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00057",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "The first five multiples",
+    "recipe": "c1-mixed",
+    "family": "structured-port87",
+    "title": "The first five multiples",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-form-changes",
+        "level": 1
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 1
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "sequence"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What are the first five multiples of 8? Separate them with commas."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00059",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00059",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "There and back with fourths of a mile",
+    "recipe": "c1-mixed",
+    "family": "structured-port87",
+    "title": "There and back with fourths of a mile",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:a25a0143ee840a87",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-form-changes",
+        "level": 1
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 1
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Elsa lives 5 1/4 miles from an after-school job. Elsa rode there and back home. How far did Elsa ride, in miles? Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00032",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00032",
+    "bankId": "course-1-en",
+    "topic": "fraction-equivalence",
+    "action": "Reduce a fraction",
+    "recipe": "c1-reduce",
+    "family": "structured-port87",
+    "title": "Reduce a fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "rational-affine-steps",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Reduce the fraction. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00128",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00128",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add mixed numbers and convert",
+    "recipe": "c1-reduce",
+    "family": "structured-port87",
+    "title": "Add mixed numbers and convert",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "rational-affine-steps",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add. Write the answer as a mixed number in simplest form. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00058",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00058",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Subtract mixed numbers",
+    "recipe": "c1-reduce",
+    "family": "structured-port87",
+    "title": "Subtract mixed numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "rational-affine-steps",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract. Write the answer as a mixed number. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00132",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00132",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Subtract mixed numbers with regrouping",
+    "recipe": "c1-reduce",
+    "family": "structured-port87",
+    "title": "Subtract mixed numbers with regrouping",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "rational-affine-steps",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract. Write the answer as a mixed number. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00129",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00129",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find a missing addend with a mixed number",
+    "recipe": "c1-reduce",
+    "family": "structured-port87",
+    "title": "Find a missing addend with a mixed number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      },
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      },
+      {
+        "trackId": "rational-affine-steps",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number: 8 + N = 9 3/5. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00008",
+    "providerSourceId": "course-1-en:bank:C1_Section03:item:C1_S03_00008",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "There and back with halves of a mile",
+    "recipe": "c1-mixed",
+    "family": "structured-port87",
+    "title": "There and back with halves of a mile",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section03:scope:8c437df87b75fca7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-form-changes",
+        "level": 1
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 1
+      },
+      {
+        "trackId": "multiples-to-common",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Ama lives 3 1/2 miles from school. Ama rode there and back home. How far did Ama ride, in miles? Enter a simplified mixed number, proper fraction or integer."
   }
 ]
