@@ -135,3 +135,12 @@ Two selectors that pointed only at replaced adaptations now point to the port re
 - **Fidelity.**
   - Every recipe was written from its source script.
   - The new drawings were rendered and inspected.
+
+## Correction in Engine 0.46.1-rc.1
+
+The Studio's Word-packet check of Engine 0.46.0-rc.1 found that two of the three Pythagorean-proof drawings for SN870778 were not geometrically faithful:
+
+- **Garfield's trapezoid** was drawn with the wrong shape: its lower triangle had legs b and b. It is now the standard figure: parallel sides a and b, height a + b, two right triangles with legs a and b, and an isosceles right triangle with legs c. All three right angles are marked.
+- **The square proof** placed the inner square's corners at the midpoints, which only fits a = b. It is now drawn with a ≠ b, and its labels match the lengths drawn.
+
+The altitude-to-the-hypotenuse drawing was already correct. The task text, steps and checks are unchanged.
