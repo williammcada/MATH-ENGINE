@@ -573,6 +573,26 @@ function reflexFigure(small,rot){const cx=150,cy=100,r=80,P=(d,rr=r)=>[cx+rr*Mat
 function lineRayFigure(phi){const F=Fig(),D=[0,0],B=[8*Math.cos(phi*Math.PI/180),8*Math.sin(phi*Math.PI/180)];
  F.seg([-11,0],[11,0],{start:1,end:1}).seg(D,[B[0]*1.45,B[1]*1.45],{end:1}).dot([-7,0]).dot([7,0]).dot(B).txt([-7,1],'A',{italic:1}).txt([0,-1.5],'D',{italic:1}).txt([7,-1.5],'C',{italic:1}).txt([B[0]+(B[0]>0?-1:1),B[1]+0.4],'B',{italic:1});
  return F.render('Line AC through D with ray DB',320,170);}
+// ---------- Course 1, Batch C1-6 drawings ----------
+// Bar graph with the value printed above each bar.
+function labelledBars(cats,vals,title,yLabel,top,step,showVals=true,labelEvery=1){const W=60+cats.length*78,H=250,x0=52,y0=205,h=160,bw=(W-x0-16)/cats.length,Y=v=>y0-h*v/top;let b=tx(W/2,18,title,{size:13});
+ for(let v=0;v<=top;v+=step)b+=ln(x0,Y(v),W-12,Y(v),{color:'#c9d3d6',w:1})+(Math.round(v/step)%labelEvery===0?tx(x0-8,Y(v)+4,String(v),{size:11,anchor:'end'}):'');
+ cats.forEach((c,i)=>{const x=x0+i*bw+bw*0.18;b+=`<rect x="${x.toFixed(1)}" y="${Y(vals[i]).toFixed(1)}" width="${(bw*0.64).toFixed(1)}" height="${(y0-Y(vals[i])).toFixed(1)}" fill="#7d8f96" fill-opacity="0.55" stroke="${INK}" stroke-width="1.2"/>`+(showVals?tx(x+bw*0.32,Y(vals[i])-5,String(vals[i]),{size:11}):'')+tx(x+bw*0.32,y0+16,c,{size:11});});
+ b+=ln(x0,y0,W-12,y0,{w:1.5})+ln(x0,y0,x0,y0-h-8,{w:1.5})+`<text x="14" y="${y0-h/2}" font-size="12" text-anchor="middle" transform="rotate(-90 14 ${y0-h/2})" fill="${INK}">${esc(yLabel)}</text>`;
+ return svg(b,`Bar graph: ${title}; `+cats.map((c,i)=>`${c} ${vals[i]}`).join(', '),W,H);}
+// Circle graph whose sectors are labelled with counts.
+function countCircle(title,names,counts){const cx=200,cy=160,r=90,T=counts.reduce((a,b)=>a+b,0),P=(t,rr)=>[cx+rr*Math.cos(t*Math.PI/180),cy-rr*Math.sin(t*Math.PI/180)];let b=tx(cx,20,title,{size:13})+`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${INK}" stroke-width="1.6"/>`,a=90;
+ counts.forEach((k,i)=>{b+=ln(cx,cy,...P(a,r),{w:1.2});const sweep=360*k/T,mid=a+sweep/2,[lx,ly]=P(mid,r*0.58);b+=tx(lx,ly-2,names[i],{size:12})+tx(lx,ly+13,String(k),{size:12});a+=sweep;});
+ return svg(b,`Circle graph: ${title}; `+names.map((nm,i)=>`${nm} ${counts[i]}`).join(', '),400,270);}
+// Tally sheet with a title.
+function tallyFigure(title,names,counts){const rowH=34,W=Math.max(380,140+Math.ceil(Math.max(...counts)/5)*48),H=rowH*names.length+34;let b=`<rect x="10" y="4" width="${W-20}" height="${H-8}" fill="none" stroke="${INK}" stroke-width="1.5"/>`+ln(10,30,W-10,30,{w:1.2})+ln(110,30,110,H-4,{w:1.2})+tx(W/2,22,title,{size:13});
+ names.forEach((nm,i)=>{const y=30+rowH*i+rowH/2;b+=tx(60,y+5,nm,{size:12});let x=120;for(let k=0;k<counts[i];k++){if(k%5===4){b+=ln(x-4*9-4,y+6,x-2,y-7,{w:1.3});x+=12;}else{b+=ln(x,y-9,x,y+9,{w:1.3});x+=9;}}if(i)b+=ln(10,30+rowH*i,W-10,30+rowH*i,{w:.6});});
+ return svg(b,`Tally sheet: ${title}; `+names.join(', '),W,H);}
+// House outline with the low edge of the roof and the peak marked with heights.
+function roofFigure(low,peak){const g=170,s=26,x0=100,x1=290,yb=g+20,ye=yb-low*s,yp=yb-peak*s,xm=(x0+x1)/2;
+ const b=`<polygon points="${x0},${yb} ${x0},${ye.toFixed(1)} ${xm},${yp.toFixed(1)} ${x1},${ye.toFixed(1)} ${x1},${yb}" fill="none" stroke="${INK}" stroke-width="1.8"/>`+ln(20,yb,330,yb,{w:1.2})
+  +ln(x0-22,yb,x0-22,ye,{start:1,end:1,w:1})+tx(x0-26,(yb+ye)/2+4,`${low} m`,{size:12,anchor:'end'})+ln(xm,yb,xm,yp,{start:1,end:1,w:1,dash:'4,3'})+tx(xm+6,(yb+yp)/2+20,`${peak} m`,{size:12,anchor:'start'});
+ return svg(b,`A house; the lowest part of the roof is ${low} m high and the peak is ${peak} m high`,345,yb+14);}
 // ---------- tasks ----------
 const LETTERS='ABCDEGHJKMNPQRSTUVWXYZ';
 function letter(int,ban=''){const pool=[...LETTERS].filter(c=>!ban.includes(c));return pool[int(0,pool.length-1)];}
@@ -2959,6 +2979,131 @@ case 'c1-decimal-place':{const v=c.variant,NM=['thousands','hundreds','tens','on
  let d=[];while(d.length<5){const x=int(1,9);if(!d.includes(x))d.push(x);}const P5=['hundreds','tens','ones','tenths','hundredths'],k=int(0,4),z=P5[k],mir={hundreds:'hundredths',tens:'tenths',ones:'tenths',tenths:'tens',hundredths:'hundreds'}[z];
  t=text(`What is the place value of the ${d[k]} in ${d.slice(0,3).join('')}.${d.slice(3).join('')}? Name the place.`,z,`Count places from the decimal point: the ${d[k]} is in the ${z} place.`,{d,k},'',[z+' place',z.replace(/s$/,''),z.replace(/s$/,'')+' place']);
  t.choices=[mir,...P5.filter(x=>x!==z&&x!==mir)].slice(0,3).map(x=>({value:x,mistake:x===mir?'Confused a whole-number place with the matching decimal place':'Counted the places incorrectly'}));break;}
+// ---------- Course 1, Batch C1-6: Lessons 35-40, Investigation 4 ----------
+case 'c1-decimal-forms':{const v=c.variant,D=(x,k)=>decStr(R(x,10**k)),PL=['','tenth','hundredth','thousandth'],fw=(x,k)=>`${words(x)} ${PL[k]}${x===1?'':'s'}`;
+ if(v==='hundredths'||v==='tenths'){const k=v==='tenths'?1:2,x=k===1?int(1,9):int(12,68);
+  t=n(`Write ${x}/${10**k} as a decimal.`,R(x,10**k),`${x}/${10**k} is ${x} ${PL[k]}s: ${D(x,k)}.`,{x,k},'decimal');t.math=math(mfrac(x,10**k));
+  t.choices=distinct(D(x,k),[1,2,3,4].filter(j=>j!==k).map(j=>({value:D(x,j),mistake:j<k?'Put the decimal point too far to the right':'Put the decimal point too far to the left'})));break;}
+ if(v==='dec-to-frac'){let x;do{x=int(11,89);}while(gcd(x,100)!==1);
+  t=n(`Write 0.${x} as a fraction.`,R(x,100),`0.${x} is ${x} hundredths: ${x}/100.`,{x},'fraction');
+  t.choices=wrongOnly(t,[{value:`${x}/10`,mistake:'Used tenths for a two-place decimal'},{value:`${x}/1000`,mistake:'Used thousandths for a two-place decimal'},{value:`1/${x}`,mistake:'Put the digits in the denominator'}]);break;}
+ if(v==='words-to-dec'){const kind=int(0,4);let w,f,k;
+  if(kind===0){w=int(11,99);k=2;do{f=int(11,99);}while(f%10===0);}else if(kind===1){w=10*int(1,9);k=2;f=int(1,9);}else if(kind===2){w=int(10,90);k=1;f=int(1,9);}else if(kind===3){w=0;k=3;f=int(11,29);}else{w=0;k=3;f=int(31,99);}
+  const N=w*10**k+f,wd=w?`${words(w)} and ${fw(f,k)}`:fw(f,k),z=D(N,k);
+  t=n(`Write the decimal numeral for ${wd}.`,R(N,10**k),`${wd}: ${w} and ${f} ${PL[k]}${f===1?'':'s'}; the last digit goes in the ${PL[k]}s place: ${z}.`,{w,f,k},'decimal');
+  const flat=Number(`${w}.${f}`),cands=[{value:String(flat),mistake:'Left out the zero placeholders'},{value:D(N,k-1),mistake:'Put the decimal point one place too far right'},{value:D(N,k+1),mistake:'Put the decimal point one place too far left'},{value:w?String(w*10**String(f).length+f):String(f*10**k),mistake:'Wrote a whole number instead of a decimal'},{value:D(N*10,k),mistake:'Put the digits in the wrong places'},{value:D(N+10**k,k),mistake:'Wrote the whole number incorrectly'},{value:D(w*10**(k+1)+f,k+1),mistake:'Put the digits in the wrong places'}];
+  t.choices=distinct(z,cands);break;}
+ // decimal numeral in words
+ const kind=int(0,2);let w,f,k;if(kind===0){w=int(1,9);k=2;do{f=int(11,99);}while(f%10===0);}else if(kind===1){w=0;k=3;do{f=int(101,999);}while(f%10===0);}else{w=int(2,9);k=1;f=int(1,9);}
+ const ref=w?`${words(w)} and ${fw(f,k)}`:fw(f,k),s=w?`${w}.${String(f).padStart(k,'0')}`:`0.${String(f).padStart(k,'0')}`;
+ t={prompt:`Write ${s} in words.`,answer:{kind:'words',value:ref},solution:`Read the whole number, say "and" for the decimal point, then read the digits after it and name the last place: ${ref}.`,parameters:{w,f,k}};
+ t.choices=(w?[{value:words(w*10**k+f),mistake:'Read the digits as one whole number'},{value:`${words(w)} and ${fw(f,k===1?2:k-1)}`,mistake:'Named the wrong place value'},{value:`${words(w)} ${fw(f,k)}`,mistake:'Left out "and" for the decimal point'}]:[{value:words(f),mistake:'Read the digits as one whole number'},{value:fw(f,k-1),mistake:'Named the wrong place value'},{value:`${words(f)} ten-thousandths`,mistake:'Named the wrong place value'}]).filter(x=>x.value!==ref);break;}
+case 'c1-whole-minus':{const v=c.variant,mx=(n0,d0)=>mixedText(n0,d0),mm=(w0,a0,d0)=>mixedML(w0,a0,d0);
+ if(v==='pencil'){const L=int(5,8),a=int(2,L-2),b=pick([1,3]),z=R(4*L-(4*a+b),4);
+  t=n(`When Sam went to the sharpener, his pencil was ${L} inches long. When he came back from the sharpener, his pencil was ${a} ${b}/4 inches long. His pencil was how many inches shorter after he went to the sharpener?`,z,`${L} − ${a} ${b}/4: rename ${L} as ${L-1} 4/4; ${L-1} 4/4 − ${a} ${b}/4 = ${mx(4*L-(4*a+b),4)} inches.`,{L,a,b},'mixed');
+  t.choices=wrongOnly(t,[{value:`${L-a} ${b}/4`,mistake:'Subtracted only the whole numbers and kept the fraction'},{value:`${L-a-1} ${b}/4`,mistake:'Renamed a whole but kept the fraction instead of subtracting it'},{value:mx(4*(L-a)+(4-b),4),mistake:'Did not rename a whole as fourths'},{value:mx(4*a+b,4),mistake:'Gave the new length of the pencil'}]);break;}
+ if(v==='pies'){const W=pick([5,6]),d=W,pool=W===6?[7,11,13,17,19,23,25,29,31,35]:[6,8,12,14,16,18,22],num=pick(pool),z=R(W*d-num,d);
+  t=n(`There were ${['','','','','','five','six'][W]} whole pies on the shelf. The server took ${mx(num,d)} pies. How many pies were left on the shelf?`,z,`${W} = ${W-1} ${d}/${d}; ${W-1} ${d}/${d} − ${mx(num,d)} = ${mx(W*d-num,d)}.`,{W,num},'mixed');
+  t.choices=wrongOnly(t,[{value:mx(num+d,d),mistake:'Added a whole to the pies taken'},{value:mx(W*d+d-num,d),mistake:'Forgot that one whole was renamed'},{value:mx(num,d),mistake:'Gave the amount the server took'},{value:mx(W*d-num+1,d),mistake:'Subtraction slip in the fraction'}]);break;}
+ if(v==='whole-minus-frac'){const w=int(3,8),a=int(1,6),z=R(7*w-a,7);
+  t=n('Subtract.',z,`${w} = ${w-1} 7/7; ${w-1} 7/7 − ${a}/7 = ${mx(7*w-a,7)}.`,{w,a},'mixed');t.math=math(`<mrow><mn>${w}</mn><mo>−</mo>${mfrac(a,7)}</mrow>`);
+  t.choices=wrongOnly(t,[{value:mx(7*w-2*a,7),mistake:'Subtracted the fraction twice'},{value:mx(w*a-a,7),mistake:'Multiplied the whole number by the numerator'},{value:mx(w,7),mistake:'Wrote the whole number over 7'},{value:`${w} ${a}/7`,mistake:'Added the fraction instead of subtracting'}]);break;}
+ const d=pick([4,4,3]),w=int(3,8),w1=int(2,w-1),a=d===4?pick([1,3]):pick([1,2]),z=R(d*w-(d*w1+a),d);
+ t=n('Subtract.',z,`${w} = ${w-1} ${d}/${d}; ${w-1} ${d}/${d} − ${w1} ${a}/${d} = ${mx(d*w-(d*w1+a),d)}.`,{w,w1,a,d},'mixed');t.math=math(`<mrow><mn>${w}</mn><mo>−</mo>${mm(w1,a,d)}</mrow>`);
+ t.choices=wrongOnly(t,[{value:mx(d*w-a,d),mistake:'Subtracted only the fraction'},{value:mx(d*w-d*w1,d),mistake:'Subtracted only the whole number'},{value:mx(d*w-w1*a+d,d),mistake:'Multiplied the whole number by the numerator'},{value:`${w-w1} ${a}/${d}`,mistake:'Subtracted the whole numbers and kept the fraction'}]);break;}
+case 'c1-dec-add':{const v=c.variant,D=(x,k)=>decStr(R(x,10**k)),opt=(z,k,list)=>distinct(D(z,k),list.map(([x,m])=>({value:D(x,k),mistake:m})).filter(q0=>!/^-/.test(q0.value)));
+ if(v==='three'){const big=int(0,1),a=big?425+2*int(0,112):125+2*int(0,112),b=big?55+2*int(0,15):25+2*int(0,12),c0=10*int(1,9),z=a+b+c0;
+  t=n(`Add: ${D(a,2)} + ${D(b,2)} + ${D(c0,2)}`,R(z,100),`Line up the decimal points: ${D(a,2)} + ${D(b,2)} + ${D(c0,2)} = ${D(z,2)}.`,{a,b,c:c0},'decimal');
+  t.choices=opt(z,2,[[a+b+c0/10,'Lined up the last digits instead of the decimal points'],[a+10*b+c0,'Lined up the last digits instead of the decimal points'],[a/10+b+c0,'Misplaced the decimal point of the first number'],[z-10,'Addition slip']].filter(([x])=>Number.isInteger(x)));break;}
+ if(v==='tenths'){let a,b;do{a=int(2,9);b=int(2,9);}while(a===b);const z=a+b;
+  t=n(`Add: 0.${a} + 0.${b}`,R(z,10),`${a} tenths + ${b} tenths = ${z} tenths = ${D(z,1)}.`,{a,b},'decimal');
+  t.choices=opt(10*z,2,[[10*a+b,'Lined up the last digits instead of the decimal points'],[10*a+100*b,'Misplaced the decimal point'],[10*z-10,'Addition slip']]);break;}
+ if(v==='sub-hundredths'){let a,b;do{a=int(22,97);b=int(22,97);}while(!(a>b&&a-b>15));const z=a-b;
+  t=n(`Subtract: ${D(a,2)} − ${D(b,2)}`,R(z,100),`${a} hundredths − ${b} hundredths = ${z} hundredths = ${D(z,2)}.`,{a,b},'decimal');
+  t.choices=opt(10*z,3,[[10*a-b,'Lined up the last digits instead of the decimal points'],[10*z+100,'Subtraction slip in the tenths'],[10*z-100,'Subtraction slip in the tenths']]);break;}
+ if(v==='dec-minus-whole'){let a,w;do{a=1351+2*int(0,2338);w=int(3,16);}while(a-100*w<=100);const z=a-100*w;
+  t=n(`Subtract: ${D(a,2)} − ${w}`,R(z,100),`Write ${w} as ${w}.00 and line up the decimal points: ${D(a,2)} − ${w}.00 = ${D(z,2)}.`,{a,w},'decimal');
+  t.choices=opt(z,2,[[z+50,'Subtraction slip in the tenths'],[z-50,'Subtraction slip in the tenths'],[z-100,'Subtraction slip in the ones'],[a-w,'Lined up the whole number with the last digit']]);break;}
+ if(v==='whole-plus-dec'){const w=int(3,8),a=1521+3*int(0,571),z=100*w+a;
+  t=n(`Add: ${w} + ${D(a,2)}`,R(z,100),`Write ${w} as ${w}.00: ${w}.00 + ${D(a,2)} = ${D(z,2)}.`,{w,a},'decimal');
+  t.choices=opt(z,2,[[z+50,'Addition slip in the tenths'],[z-50,'Addition slip in the tenths'],[z-100,'Addition slip in the ones'],[a+w,'Lined up the whole number with the last digit']]);break;}
+ if(v==='mixed-three'){const a=251+2*int(0,249),w=int(3,8),c0=25+int(0,50),z=a+100*w+10*c0;
+  t=n(`Add: ${D(a,2)} + ${w} + ${D(c0,1)}`,R(z,100),`Line up the decimal points (${w} = ${w}.00): ${D(a,2)} + ${w}.00 + ${D(10*c0,2)} = ${D(z,2)}.`,{a,w,c:c0},'decimal');
+  t.choices=opt(z,2,[[z+50,'Addition slip'],[z-30,'Addition slip in the tenths'],[z-100,'Addition slip in the ones'],[a+w+c0,'Lined up the last digits instead of the decimal points']]);break;}
+ if(v==='roof'){const P=pick([4,4,5]),L=100*(P-1)+int(1,9)+10*int(0,4),z=100*P-L;
+  t=n(`The lowest part of the roof is ${D(L,2)} m high. The peak of the roof is ${P} m high. The peak is how many meters higher than the lowest part of the roof?`,R(z,100),`${P}.00 − ${D(L,2)} = ${D(z,2)} m.`,{L,P},'decimal',roofFigure(D(L,2),P));
+  t.choices=opt(z,2,[[100*(P-Math.floor(L/100))+L%100,'Subtracted the whole numbers and kept the decimal part'],[100*P+L,'Added the heights'],[z+10,'Regrouping slip'],[L,'Gave the height of the lowest part']]);break;}
+ if(v==='whole-minus-tenths'){let w,d;do{w=int(4,9);d=int(11,59);}while(d%10===0||10*w-d<=10);const z=10*w-d;
+  t=n(`Subtract: ${w} − ${D(d,1)}`,R(z,10),`Write ${w} as ${w}.0: ${w}.0 − ${D(d,1)} = ${D(z,1)}.`,{w,d},'decimal');
+  t.choices=opt(z,1,[[10*w+d,'Added instead of subtracting'],[z-1,'Regrouping slip'],[z+1,'Regrouping slip']]);break;}
+ // grouping with decimals (thousandths as integers)
+ const form=int(0,2);let A,B,C0,txt,z,wrong;
+ if(form===0){A=1000*int(5,10);B=10*int(10,95);C0=1000*int(1,3);z=A-(B+C0);txt=`${D(A,3)} − (${D(B,3)} + ${D(C0,3)})`;wrong=[A-B+C0,'Subtracted the first number and added the second instead of subtracting their sum'];}
+ else if(form===1){A=100*int(50,80);B=1000*int(1,3)+250*int(0,1);C0=10*int(5,99);z=A-(B+C0);txt=`${D(A,3)} − (${D(B,3)} + ${D(C0,3)})`;wrong=[A-B+C0,'Subtracted the first number and added the second instead of subtracting their sum'];}
+ else{A=int(101,999);B=1000*int(3,8);C0=10*int(11,95);z=A+(B-C0);txt=`${D(A,3)} + (${D(B,3)} − ${D(C0,3)})`;wrong=[A+B+C0,'Added all three numbers'];}
+ t=n(`Simplify: ${txt}`,R(z,1000),`Do the work inside the parentheses first, then ${form<2?'subtract':'add'}: ${D(z,3)}.`,{A,B,C:C0,form},'decimal');
+ t.choices=opt(z,3,[wrong,[z+100,'Arithmetic slip in the tenths'],[z-100,'Arithmetic slip in the tenths'],[z+1000,'Arithmetic slip in the ones']]);break;}
+case 'c1-squares':{const v=c.variant,sq=(x)=>`<msup><mn>${x}</mn><mn>2</mn></msup>`,rt=x=>`<msqrt><mn>${x}</mn></msqrt>`;
+ if(v==='square-units'){const [s,l,k]=pick([['feet','yard',3],['inches','foot',12],['centimeters','decimeter',10],['decimeters','meter',10]]);
+  t=n(`The number of ${s} in a ${l} is ${k}. What is the number of square ${s} in a square ${l}?`,k*k,`A square ${l} is ${k} ${s} by ${k} ${s}: ${k} × ${k} = ${k*k} square ${s}.`,{k,s});
+  t.choices=distinct(k*k,[{value:k,mistake:'Gave the number of linear units'},{value:2*k,mistake:'Doubled instead of squaring'},{value:4*k,mistake:'Found the perimeter of the square'}]);break;}
+ if(v==='compare'){let s,b;do{s=int(2,5);b=int(2,4);}while(s>=b*b);const a=s*s,z=`√${a} < ${b}²`;
+  t=text(`Which inequality shows that the square root of ${a} is less than ${b} squared?`,z,`The square root of ${a} is written √${a} (= ${s}); ${b} squared is ${b}² (= ${b*b}); ${s} < ${b*b}, so √${a} < ${b}².`,{a,b},'',[`√${a}<${b}²`,`sqrt(${a}) < ${b}^2`,`sqrt(${a})<${b}^2`,`√${a} < ${b}^2`]);
+  t.choices=[{value:`√${a} > ${b}²`,mistake:'Used the wrong inequality symbol'},{value:`${a}² < √${b}`,mistake:'Squared the first number and took the root of the second'},{value:`${a}² > √${b}`,mistake:'Squared the first number, took the root of the second and reversed the symbol'}];break;}
+ if(v==='root-diff'){let r1,r2;do{r1=int(6,12);r2=pick([2,3,4,5,6,7]);}while(r1<=r2);const z=r1-r2;
+  t=n(`Simplify: √${r1*r1} − √${r2*r2}`,z,`√${r1*r1} = ${r1} and √${r2*r2} = ${r2}; ${r1} − ${r2} = ${z}.`,{r1,r2});t.math=math(`<mrow>${rt(r1*r1)}<mo>−</mo>${rt(r2*r2)}</mrow>`);
+  t.choices=distinct(z,[{value:r1*r1-r2*r2,mistake:'Subtracted the numbers under the roots'},{value:z+1,mistake:'Arithmetic slip'},{value:R(2*z+3,2),mistake:'Estimated the roots'},{value:z-1,mistake:'Arithmetic slip'}].map(x=>({value:typeof x.value==='object'?decStr(x.value):x.value,mistake:x.mistake})));break;}
+ if(v==='square-sum'){let a,b;do{a=int(2,7);b=int(2,7);}while(a===b);const z=a*a+b*b;
+  t=n(`Simplify: ${a}² + ${b}²`,z,`${a}² = ${a*a} and ${b}² = ${b*b}; ${a*a} + ${b*b} = ${z}.`,{a,b});t.math=math(`<mrow>${sq(a)}<mo>+</mo>${sq(b)}</mrow>`);
+  t.choices=distinct(z,[{value:a+b,mistake:'Added the bases'},{value:z-a,mistake:'Arithmetic slip'},{value:z-b,mistake:'Arithmetic slip'},{value:2*a+2*b,mistake:'Multiplied by 2 instead of squaring'}]);break;}
+ if(v==='sqrt'){const r=int(3,12);
+  t=n(`Simplify: √${r*r}`,r,`${r} × ${r} = ${r*r}, so √${r*r} = ${r}.`,{r});t.math=math(rt(r*r));
+  t.choices=distinct(r,[{value:r*r/2,mistake:'Divided by 2 instead of finding the square root'},{value:r*r,mistake:'Did not take the square root'},{value:r+1,mistake:'Arithmetic slip'}].filter(x=>Number.isInteger(x.value)).concat([{value:2*r,mistake:'Doubled the root'}]));break;}
+ if(v==='square-plus-root'){const a=int(2,6),r=int(2,5),z=a*a+r;
+  t=n(`Simplify: ${a}² + √${r*r}`,z,`${a}² = ${a*a} and √${r*r} = ${r}; ${a*a} + ${r} = ${z}.`,{a,r});t.math=math(`<mrow>${sq(a)}<mo>+</mo>${rt(r*r)}</mrow>`);
+  t.choices=distinct(z,[{value:2*a+r,mistake:'Doubled instead of squaring'},{value:a*a+r*r,mistake:'Did not take the square root'},{value:a*a-r,mistake:'Subtracted instead of adding'},{value:a*a+r+1,mistake:'Addition slip'},{value:a+r,mistake:'Did not square the first number'}]);break;}
+ let w,a,b;do{w=int(1,4);b=pick([2,3,4,5]);a=int(1,b-1);}while(gcd(a,b)!==1);const r=int(2,5),z=R(b*(w+r)+a,b);
+ t=n(`Simplify: ${w} ${a}/${b} + √${r*r}`,z,`√${r*r} = ${r}; ${w} ${a}/${b} + ${r} = ${w+r} ${a}/${b}.`,{w,a,b,r},'mixed');t.math=math(`<mrow>${mixedML(w,a,b)}<mo>+</mo>${rt(r*r)}</mrow>`);
+ t.choices=wrongOnly(t,[{value:`${w+r*r} ${a}/${b}`,mistake:'Did not take the square root'},{value:String(w+r),mistake:'Dropped the fraction'},{value:`${w+r+1} ${a}/${b}`,mistake:'Addition slip'},{value:`${w} ${a+r}/${b}`,mistake:'Added the root to the numerator'}]);break;}
+case 'c1-dec-mult':{const v=c.variant,D=(x,k)=>decStr(R(x,10**k)),opt=(z,k,list)=>distinct(D(z,k),list.map(([x,m])=>({value:D(x,k),mistake:m})));
+ if(v==='small'){const a=31+2*int(0,34),b=int(2,5),z=a*b;
+  t=n(`Multiply: ${D(a,2)} × ${D(b,2)}`,R(z,10000),`${a} × ${b} = ${z}; the factors have 2 + 2 = 4 decimal places: ${D(z,4)}.`,{a,b},'decimal');
+  t.choices=opt(z,4,[[10*z,'Counted too few decimal places'],[100*z,'Counted only the places of one factor'],[1000*z,'Counted only one decimal place']]);break;}
+ if(v==='dec-square'){const x=int(3,9),z=x*x;
+  t=n(`Simplify: (0.${x})²`,R(z,100),`0.${x} × 0.${x} = ${D(z,2)}; two decimal places in all.`,{x},'decimal');t.math=math(`<msup><mrow><mo>(</mo><mn>0.${x}</mn><mo>)</mo></mrow><mn>2</mn></msup>`);
+  t.choices=distinct(D(z,2),[{value:D(10*z,2),mistake:'Counted only one decimal place'},{value:D(2*x,1),mistake:'Multiplied by 2 instead of squaring'},{value:D(z,3),mistake:'Counted too many decimal places'},{value:D(20*x,1),mistake:'Multiplied by 2 and lost the decimal point'}]);break;}
+ if(v==='whole-times-tenths'){let w,d;do{w=int(11,23);d=int(2,8);}while((w*d)%10===0);const z=w*d;
+  t=n(`Multiply: ${w} × 0.${d}`,R(z,10),`${w} × ${d} = ${z}; one decimal place: ${D(z,1)}.`,{w,d},'decimal');
+  t.choices=opt(z,1,[[10*z,'Left out the decimal point'],[100*z,'Moved the decimal point the wrong way'],[z/10,'Counted two decimal places'],[10*w+d,'Added instead of multiplying'],[z+10,'Multiplication slip']].filter(([q0])=>Number.isInteger(q0)));break;}
+ if(v==='three-factors'){const a=int(2,9),b=int(2,9),c0=int(2,9),z=a*b*c0;
+  t=n(`Multiply: 0.${a} × 0.${b} × 0.${c0}`,R(z,1000),`${a} × ${b} × ${c0} = ${z}; three decimal places: ${D(z,3)}.`,{a,b,c:c0},'decimal');
+  t.choices=opt(z,3,[[10*z,'Counted only two decimal places'],[100*z,'Counted only one decimal place']]).concat([{value:D(z,4),mistake:'Counted too many decimal places'}]);break;}
+ const a=int(1,5),b=int(2,5),z=a*b;
+ t=n(`Multiply: ${D(a,3)} × 0.${b}`,R(z,10000),`${a} × ${b} = ${z}; 3 + 1 = 4 decimal places, so write zeros as placeholders: ${D(z,4)}.`,{a,b},'decimal');
+ t.choices=opt(z,4,[[10*z,'Counted only three decimal places'],[100*z,'Counted only two decimal places'],[1000*z,'Counted only one decimal place']]);break;}
+case 'c1-graph-diff':{const v=c.variant;
+ if(v==='bars'){const books=int(0,2)===0;let A,B,C0,Dd;do{A=int(books?29:49,books?39:59);B=int(books?27:47,books?38:58);C0=int(books?41:61,books?49:69);Dd=int(books?40:60,books?48:68);}while(!(A>B&&C0>Dd));
+  const cats=books?['Adventure','Mystery','Romance','Biography']:['Soccer','Football','Basketball','Baseball'],title=books?'Types of Books Read by Sixth-Graders':'Children Playing Selected Sports',vals=[A,B,C0,Dd],first=int(0,1),[i,j]=first?[0,1]:[2,3],z=vals[i]-vals[j],[o1,o2]=first?[2,3]:[0,1];
+  t=n(books?`How many more sixth-graders read ${cats[i].toLowerCase()} books than ${cats[j].toLowerCase()} books?`:`How many more children play ${cats[i].toLowerCase()} than ${cats[j].toLowerCase()}?`,z,`${vals[i]} − ${vals[j]} = ${z}.`,{vals,i,j},'numbers',labelledBars(cats,vals,title,books?'Students':'Children',80,10));
+  t.choices=distinct(z,[{value:vals[i]+vals[j],mistake:'Added the two amounts'},{value:z+1,mistake:'Subtraction slip'},{value:vals[o1]+vals[o2],mistake:'Used the other two bars'},{value:vals[o1]-vals[o2],mistake:'Used the other two bars'}]);break;}
+ let dogs,birds,cats;do{dogs=int(15,24);birds=int(5,10);cats=pick([2,4,8]);}while(!(dogs>birds+cats&&birds>cats&&(dogs+birds+cats)%2===1));const T=dogs+birds+cats;
+ t=n(`Bryant asked his classmates about their pets and displayed the numbers in a circle graph. What fraction of the pets are cats?`,R(cats,T),`There are ${dogs} + ${birds} + ${cats} = ${T} pets; ${cats} are cats: ${cats}/${T}.`,{dogs,birds,cats},'fraction',countCircle('Our Pets',['Dogs','Birds','Cats'],[dogs,birds,cats]));
+ t.choices=wrongOnly(t,[{value:`${cats}/${dogs}`,mistake:'Compared cats with dogs instead of with all the pets'},{value:`${cats}/${T-cats}`,mistake:'Compared cats with the other pets'},{value:`${birds}/${T}`,mistake:'Read the wrong part of the graph'}]);break;}
+case 'c1-data-bias':{const pool=[['Do you think merry-go-rounds are fun even though they make you giddy?','biased'],['Do you agree that our wonderful library needs longer hours?','biased'],['Which do you prefer, delicious fresh fruit or boring vegetables?','biased'],['Don’t you think the new playground is much better than the old one?','biased'],['Would you rather spend your time on healthy sports or on video games?','biased'],['What is your favorite season of the year?','unbiased'],['How many hours do you sleep on a school night?','unbiased'],['Which school lunch do you like best: pizza, tacos or pasta?','unbiased'],['How do you usually get to school?','unbiased'],['What type of pet, if any, does your family have?','unbiased']],[qq,z]=pick(pool);
+ t=text(`Is the survey question biased or unbiased? “${qq}”`,z,z==='biased'?'The wording favors one answer, so the question is biased.':'The wording does not favor any answer, so the question is unbiased.',{qq},'');t.choices=[{value:z==='biased'?'unbiased':'biased',mistake:z==='biased'?'Did not notice the wording that favors one answer':'Treated a neutral question as leading'}];break;}
+case 'c1-data-type':{const pool=[['the color of each car','qualitative'],['the number of orange butterflies','quantitative'],['the favorite sport of each student','qualitative'],['the height of each plant in centimeters','quantitative'],['the type of tree in each yard','qualitative'],['the number of pets in each home','quantitative'],['the brand of each pair of shoes','qualitative'],['the time each runner took to finish','quantitative'],['the month each student was born','qualitative'],['the number of pages in each book','quantitative']],[d,z]=pick(pool);
+ t=text(`Is the data set “${d}” quantitative or qualitative?`,z,z==='quantitative'?'The data are numbers that can be counted or measured, so they are quantitative.':'The data are categories, not numbers, so they are qualitative.',{d},'');t.choices=[{value:z==='quantitative'?'qualitative':'quantitative',mistake:'Confused categories with numerical data'}];break;}
+case 'c1-data-inv4':{const v=c.variant;
+ if(v==='read-bar'){const sports=['Cross-Country','Field Hockey','Football','Lacrosse','Racquetball','Soccer','Tennis'],vals=sports.map(()=>5*int(1,14)),miss=[0,3,4,5];
+  t=n(`The bar graph shows how many athletes signed up for each fall sport. Read the graph to complete the table: how many athletes signed up for ${miss.map(i=>sports[i]).join(', ').replace(/, ([^,]*)$/,' and $1')}? Give the four numbers in that order.`,miss.map(i=>vals[i]),`Read each bar against the scale: ${miss.map(i=>`${sports[i]} ${vals[i]}`).join(', ')}.`,{vals},'numbers',labelledBars(sports,vals,'Fall Sports Sign-Ups','Athletes',70,5,false,2));
+  break;}
+ if(v==='tally'){const names=['Sedans','Compacts','SUVs','Trucks','Vans'],cnt=[int(30,45),int(20,29),int(50,60),int(40,55),int(8,15)];
+  t=teacher(`The tally sheet shows the vehicles counted in a parking lot. (a) How many trucks were counted? (b) Were there more sedans or compact cars? (c) Without counting tally marks, compare the number of SUVs with the number of compact cars and explain how you can tell. (d) What kind of graph would you use to display these data?`,`(a) ${cnt[3]}. (b) ${cnt[0]>cnt[1]?'Sedans':'Compact cars'}. (c) There are more SUVs than compact cars: the SUV row of tally marks is longer. (d) A bar graph.`,['(a) counts the trucks correctly','(b) compares sedans and compact cars correctly','(c) compares the SUV and compact-car rows by length, without counting, and explains the reasoning','(d) names a suitable display for categories, such as a bar graph'],{cnt},tallyFigure('Vehicles in the Parking Lot',names,cnt));break;}
+ if(v==='ask-table'){const clubs=['Drama','Speech','Debate','Camera','Choir'],vals=clubs.map(()=>5*int(8,19));let i,j;do{i=int(0,4);j=int(0,4);}while(vals[i]<=vals[j]);
+  t=teacher(`Formulate a question that can be answered by the data in the table.`,`Questions will vary. Check that the table answers the question. One example: “How many more students are in the ${clubs[i]} club than the ${clubs[j]} club?” (${vals[i]} − ${vals[j]} = ${vals[i]-vals[j]}).`,['asks a question about the clubs or the numbers of students','the question can be answered from the table alone','the student can give the answer from the table'],{vals},tableFigure(['Club','Students'],clubs.map((cl,k)=>[cl,String(vals[k])]),'Students in each club: '+clubs.map((cl,k)=>`${cl} ${vals[k]}`).join(', ')));break;}
+ // inferred question from a line graph
+ const yrs=[2019,2020,2021,2022,2023],cost=yrs.map(()=>10*int(6,14));
+ t=teacher(`The line graph shows the average monthly heating cost for one family each year. Write a question whose answer is not shown in the graph but can be inferred from it.`,`Questions will vary. One example: “Did the family probably spend more on heating in ${yrs[cost.indexOf(Math.max(...cost))]} or in ${yrs[cost.indexOf(Math.min(...cost))]}?” or “About how much did the family spend on heating for the whole of ${yrs[0]}?”`,['the question goes beyond reading a single value from the graph','the answer can be reasoned from the graph (a trend, a comparison or a total)','the question is clearly worded'],{cost},lineGraph(yrs,cost,{xmin:2019,xmax:2023,xstep:1,ymin:0,ymax:160,ystep:20,dots:1,title:'Average Monthly Heating Cost',xLabel:'Year',yLabel:'Dollars',label:'Average monthly heating cost by year: '+yrs.map((y,k)=>`${y} $${cost[k]}`).join(', ')}));break;}
 default:throw Error('Unknown port recipe '+c.recipe);}
 return t;}
 

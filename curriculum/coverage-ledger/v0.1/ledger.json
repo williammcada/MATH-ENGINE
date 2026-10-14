@@ -28,6 +28,7 @@
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch3-course1-L12-19.json": "686c3750dde50b693e49609ad5494e6c8c657f769a054ccc7118bf00f1b1fecd",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch4-course1-L20-26-I2.json": "46bb8e34f01f93812a7f933cd6f505c165de55094a76a92a9c299f9037e8698f",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch5-course1-L27-34-I3.json": "c6e3afd02a1a4f8877afaa83d312e69b8bc5f31fe7440c77e53d3a19cb69f7c4",
+"curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch6-course1-L35-40-I4.json": "9d2e724df7ca9798e3a64d5fb313a4ba3b29559c9a416cc253829abae44fc86d",
 "curriculum/source-mappings/advanced-v0.1.json": "740f9d6e25483a2838d5561a85c66c9eb3f67b7505a8ab9004353e5eb6883aa7",
 "curriculum/source-mappings/algebra-review-v0.1.json": "a4956b61d8353d4258097f2ea5ca8d7baf4031fdd9c090e344ca2ce366a29a0e",
 "curriculum/source-mappings/breadth-v0.1.json": "d8255409d16dcc8db7b45244ab1239896d13ac56ffe4f3eb2ecdd8778f5e4996",
@@ -37,7 +38,7 @@
 "curriculum/source-mappings/linear-equations-v0.1.json": "9e4f9fd37066e63cd74f133bcc76713db8ae30251a22f03f5a672ab535bc7e65",
 "curriculum/source-mappings/linear-equations-v0.2.json": "759f02762a92c18098944bfe8a88f2be5a0a4384f778105cb78239a07df22371",
 "curriculum/source-mappings/measurement-v0.1.json": "3ca7cc1cdb74fb6e1bf8741beea9c2787fe122befe28499e75bfd6d803409451",
-"curriculum/source-mappings/port87-v0.1.json": "f05f03fcb6949d48262763e9f6b30a06ef8e7a4d32526f20f50e5a918559fead",
+"curriculum/source-mappings/port87-v0.1.json": "09b4d055925ed477744fe387357bc83592a87269956fdc66a43346a02b55b67a",
 "curriculum/source-mappings/proportions-v0.1.json": "85db6cf773c6c1a6bbad37f83cf3724becf552fee4bbf4154e2ade0bae7751af",
 "curriculum/source-mappings/quadratic-equations-v0.1.json": "51b5a6c7221720481df7ac7a3cf9b4561744ef910fee5427c8cd73d6c027f4a6",
 "curriculum/source-mappings/reasoning-v0.1.json": "b88aeb99d84bd8ab367678d0c6f7d90fdc3cba8dbc087ebf108a3e835ef7f448",
@@ -47,14 +48,14 @@
 "curriculum/source-mappings/statistics-v0.1.json": "a3ba878bad7cc71dea555ef623b6c3e89483a9c8f809d21e4d90efa9ba09ce8d"
 },
 "totals": {
-"open": 3801,
-"covered-provisional": 364,
-"covered": 909,
-"consolidated": 351,
+"open": 3716,
+"covered-provisional": 356,
+"covered": 955,
+"consolidated": 398,
 "retired": 0,
 "records": 5425,
-"percentComplete": 23.2,
-"percentIncludingProvisional": 29.9
+"percentComplete": 24.9,
+"percentIncludingProvisional": 31.5
 },
 "banks": {
 "course-87-en": {
@@ -98,14 +99,14 @@
 "percentIncludingProvisional": 18.8
 },
 "course-1-en": {
-"open": 862,
-"covered-provisional": 20,
-"covered": 284,
-"consolidated": 187,
+"open": 777,
+"covered-provisional": 12,
+"covered": 330,
+"consolidated": 234,
 "retired": 0,
 "records": 1353,
-"percentComplete": 34.8,
-"percentIncludingProvisional": 36.3
+"percentComplete": 41.7,
+"percentIncludingProvisional": 42.6
 },
 "intermediate-4-en": {
 "open": 1296,
@@ -5102,38 +5103,38 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"open": 16,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 5,
+"consolidated": 11,
 "retired": 0,
 "records": 16,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:32ac3a605e08d1e5",
-"open": 6,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 4,
+"consolidated": 2,
 "retired": 0,
 "records": 6,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"open": 13,
-"covered-provisional": 3,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 7,
+"consolidated": 9,
 "retired": 0,
 "records": 16,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 18.8
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -5162,26 +5163,26 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:8f7944dc37a7cab1",
-"open": 9,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 6,
+"consolidated": 3,
 "retired": 0,
 "records": 9,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:937585dce3304075",
-"open": 6,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 3,
+"consolidated": 3,
 "retired": 0,
 "records": 6,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -5198,14 +5199,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"open": 19,
-"covered-provisional": 2,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 12,
+"consolidated": 9,
 "retired": 0,
 "records": 21,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 9.5
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -5222,14 +5223,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"open": 16,
-"covered-provisional": 3,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 9,
+"consolidated": 10,
 "retired": 0,
 "records": 19,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 15.8
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -27037,55 +27038,97 @@
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00006",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00023"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00007",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00052"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00008",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:32ac3a605e08d1e5",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00056"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00009",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:937585dce3304075",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Add three decimal numbers.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00009"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00010",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00031"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00011",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00034"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00012",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Multiply hundredths by hundredths.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00012"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00013",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00025"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00014",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Difference of two bars on a graph.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00014"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00015",
@@ -27167,133 +27210,255 @@
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00022",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Decimal as a fraction.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00022"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00023",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Hundredths fraction as a decimal.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00023"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00024",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Tenths fraction as a decimal.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00024"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00025",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Decimal numeral from words.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00025"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00026",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:937585dce3304075",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Add tenths.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00026"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00027",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:937585dce3304075",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00009"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00028",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:937585dce3304075",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Subtract hundredths.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00028"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00029",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Add a whole number and a decimal.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00029"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00030",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Add decimals and a whole number.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00030"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00031",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Subtract a whole number from a decimal.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00031"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00032",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Square root of a perfect square.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00032"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00033",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Sum of two squares.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00033"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00034",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Difference of square roots.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00034"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00035",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00012"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00036",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Square a decimal.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00036"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00037",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Multiply a whole number by tenths.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00037"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00038",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Subtract tenths from a whole number.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00038"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00039",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Multiply thousandths by tenths.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00039"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00040",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00025"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00041",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00014"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00042",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00014"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00043",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Fraction from a circle graph.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00043"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00044",
@@ -27389,85 +27554,161 @@
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00052",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Decimal number in words.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00052"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00053",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00052"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00054",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:32ac3a605e08d1e5",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Subtract a fraction from a whole number.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00054"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00055",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:32ac3a605e08d1e5",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Subtract a mixed number from a whole number.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00055"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00056",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:32ac3a605e08d1e5",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Pies left on the shelf.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00056"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00057",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:8f7944dc37a7cab1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Biased or unbiased survey question.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00057"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00058",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:8f7944dc37a7cab1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Qualitative or quantitative data.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00058"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00059",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:8f7944dc37a7cab1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Complete a table from a bar graph.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00059"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00060",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:8f7944dc37a7cab1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Answer questions from a tally sheet.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00060"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00061",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:8f7944dc37a7cab1",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00058"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00062",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:8f7944dc37a7cab1",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00063"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00063",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:8f7944dc37a7cab1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Formulate a question from a table.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00063"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00064",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:8f7944dc37a7cab1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Formulate an inferred question from a graph.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00064"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00065",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:8f7944dc37a7cab1",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00063"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00066",
@@ -27517,108 +27758,143 @@
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00070",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00025"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00071",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:32ac3a605e08d1e5",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Subtract a mixed number from a whole in a story.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00071"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00072",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Confirmed: add a whole number and decimals (shape-preserving arithmetic adaptation).",
 "by": [
 "course-1-en:bank:C1_Section04:item:C1_S04_00072"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00073",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Square units in a larger square unit.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00073"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00074",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Confirmed: add decimals and a whole number (shape-preserving arithmetic adaptation).",
 "by": [
 "course-1-en:bank:C1_Section04:item:C1_S04_00074"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00075",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Inequality with a square root and a square.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00075"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00076",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Confirmed: multiply a decimal by hundredths (shape-preserving arithmetic adaptation).",
 "by": [
 "course-1-en:bank:C1_Section04:item:C1_S04_00076"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00077",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Confirmed: multiply tenths by hundredths (shape-preserving arithmetic adaptation).",
 "by": [
 "course-1-en:bank:C1_Section04:item:C1_S04_00077"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00078",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Confirmed: multiply hundredths by a decimal (shape-preserving arithmetic adaptation).",
 "by": [
 "course-1-en:bank:C1_Section04:item:C1_S04_00078"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00079",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Height difference in meters.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00079"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00080",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Confirmed: subtract a decimal from a whole number (shape-preserving arithmetic adaptation).",
 "by": [
 "course-1-en:bank:C1_Section04:item:C1_S04_00080"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00081",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Confirmed: subtract hundredths from tenths (shape-preserving arithmetic adaptation).",
 "by": [
 "course-1-en:bank:C1_Section04:item:C1_S04_00081"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00082",
@@ -27794,210 +28070,349 @@
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00098",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00025"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00099",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00022"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00100",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00023"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00101",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00025"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00102",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00025"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00103",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00025"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00104",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:07b12e910156d9fb",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00025"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00105",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:937585dce3304075",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00026"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00106",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:937585dce3304075",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00028"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00107",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00030"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00108",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00030"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00109",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00030"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00110",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00030"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00111",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00030"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00112",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00030"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00113",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00125"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00114",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00115",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00116",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Multiply three decimals.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00116"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00117",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00118",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00119",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00120",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00121",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00122",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00080"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00123",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Confirmed: subtract decimals with regrouping (shape-preserving arithmetic adaptation).",
 "by": [
 "course-1-en:bank:C1_Section04:item:C1_S04_00123"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00124",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00125"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00125",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: Decimal expressions with parentheses.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00125"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00126",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00080"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00127",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00125"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00128",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00125"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00129",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: A square plus a square root.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00129"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00130",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:e7d96b82a1b67f6a",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00125"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00131",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:44586d3c0337becc",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00132",
@@ -28015,13 +28430,23 @@
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00133",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:32ac3a605e08d1e5",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00055"
 },
 {
 "id": "course-1-en:bank:C1_Section04:item:C1_S04_00134",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section04:scope:ba6b90686574ec41",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-6 course-1 lessons 35-40, investigation 4",
+"reviewed": "2026-10-15",
+"note": "Ported: A mixed number plus a square root.",
+"by": [
+"course-1-en:bank:C1_Section04:item:C1_S04_00134"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00001",
