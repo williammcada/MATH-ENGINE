@@ -63,7 +63,7 @@ ratio-total|ratio-proportion|3|Connect quantities through two ratios|Match and s
 average|statistics|1|Find the arithmetic mean of a list|Add values and divide by count|c/28.2 f/mean-small k/average-five
 average|statistics|2|Find a missing value given the mean|Recover the required total|c/55.2 s/missing-value k/race-time
 average|statistics|3|Find a combined or weighted average|Weight each group by its size|c/55.3 s/weighted-scores k/combined-average k/wage-average
-probability-events|probability|1|Find probability of one event|Count favorable and total outcomes|c/36.3 s/marble-single k/spinner k/dart-board
+probability-events|probability|1|Find probability of one event|Count favorable and total outcomes|c/36.3 k/inv-probability k/spinner k/dart-board
 probability-events|probability|2|Find probability of ordered independent events|Multiply independent probabilities|c/94.2 k/spinner-twice
 probability-events|probability|3|Find probability without replacement|Update the sample space after the first draw|c/94.3 m/counting:probability
 powers|powers-roots|1|Evaluate a positive whole-number power|Repeated multiplication|c/20.3 b/positive-power f/power-small k/power-sum k/power-difference k/powers-of-ten-quotient
@@ -94,7 +94,7 @@ linear-inequalities|inequalities|2|Solve a two-step linear inequality|Inverse op
 linear-inequalities|inequalities|3|Solve a compound intersection or union|Combine two solution sets correctly|a/compound:and a/compound:or
 line-slope|lines-slope|1|Find slope from two points|Change in y divided by change in x|c/COURSE107.1 h/slope-graph =/algebra-1-en:node:905 k/slope
 line-slope|lines-slope|2|Find a line equation from two points|Slope and point substitution|a/line:two-points =/algebra-1-en:node:948
-function-evaluation|functions|1|Use a given rule to complete a function table|Substitute the input|c/85.2 c/58.3 =/course-1-en:bank:C1_Section10:item:C1_S10_00047 =/course-1-en:bank:C1_Section10:item:C1_S10_00048 k/function-table k/number-machine k/rule-table
+function-evaluation|functions|1|Use a given rule to complete a function table|Substitute the input|c/85.2 c/58.3 =/course-1-en:bank:C1_Section10:item:C1_S10_00047 =/course-1-en:bank:C1_Section10:item:C1_S10_00048 k/function-table k/number-machine k/rule-table k/inv-functions
 function-evaluation|functions|2|Evaluate a function written in function notation|Interpret argument and output notation|a/function:evaluate =/algebra-2-en:node:678
 function-evaluation|functions|3|Find the sum or product of functions and its domain|Intersect domains before evaluating|z/function:sum z/function:product
 trigonometry|trigonometry|1|Form sine, cosine and tangent ratios|Identify opposite, adjacent and hypotenuse|h/trig-ratio =/algebra-2-en:node:362
@@ -113,7 +113,7 @@ motion|rates|1|Solve a distance-rate-time problem|Use consistent units and d equ
 motion|rates|2|Solve a round-trip model with unequal speeds|Express each travel time using the shared distance|a/motion:equal
 motion|rates|3|Model motion with different start times|Assign a separate elapsed time and signed relative distance to each traveler|a/motion:delayed-sum a/motion:unequal
 motion|rates|4|Solve a river-current motion model|Use upstream and downstream effective speeds|m/motion:river
-binary|numeral-systems|1|Convert between base two and base ten|Powers of two and place value|c/COURSE213.1 c/COURSE213.2 b/binary-read b/binary-write
+binary|numeral-systems|1|Convert between base two and base ten|Powers of two and place value|c/COURSE213.1 c/COURSE213.2 b/binary-read b/binary-write k/inv-numerals
 binary|numeral-systems|2|Add whole binary numbers|Carry in base two|h/binary:add o/binary-add
 binary|numeral-systems|3|Add binary fractions|Negative powers of two and aligned binary points|h/binary:fraction-add o/binary-fractions
 angle-measures|angles|1|Find the third angle of a triangle|Triangle angle sum|c/40.2 r/triangle-angle k/right-triangle-x k/isosceles-angle
@@ -124,16 +124,16 @@ clock-time|calendar-time|3|Calculate elapsed time across midnight|Track the date
 complex-operations|complex-numbers|1|Add complex numbers|Combine real and imaginary components|b/complex-add
 complex-operations|complex-numbers|2|Multiply complex numbers|Distribution and i squared equals negative one|b/complex-multiply
 complex-operations|complex-numbers|3|Divide complex numbers|Use the conjugate and simplify|m/complex:divide =/algebra-2-en:node:597
-compass-constructions|constructions|1|Construct a perpendicular bisector|Equal-radius arcs from endpoints|m/construct:bisector f/bisect-segment c/INV8.1
+compass-constructions|constructions|1|Construct a perpendicular bisector|Equal-radius arcs from endpoints|m/construct:bisector f/bisect-segment c/INV8.1 k/inv-construct
 compass-constructions|constructions|2|Construct a parallel through an external point|Two justified perpendicular constructions|z/construct:parallel
 compass-constructions|constructions|3|Construct the incircle of a right triangle|Angle bisectors and equal distances to three sides|z/circle:incircle
-coordinate-distance|coordinate-geometry|1|Read or plot coordinates of points|Ordered pairs and signed axes|c/INV3.2 c/INV3.3
+coordinate-distance|coordinate-geometry|1|Read or plot coordinates of points|Ordered pairs and signed axes|c/INV3.2 c/INV3.3 k/inv-coordinates
 coordinate-distance|coordinate-geometry|2|Find distance between two points|Coordinate differences and Pythagorean theorem|a/distance-points
 counting-outcomes|counting|1|Count outcomes with repeated choices|Multiplication principle|b/counting-power
 counting-outcomes|counting|2|Count ordered arrangements without repetition|Decreasing choices and order|b/permutations h/permutation
-statistical-displays|data-displays|1|Read a stem-and-leaf display|Place value, key and ordered observations|c/INV4.2
+statistical-displays|data-displays|1|Read a stem-and-leaf display|Place value, key and ordered observations|c/INV4.2 k/inv-stem-leaf
 statistical-displays|data-displays|2|Construct a stem-and-leaf display|Organize raw observations and provide a key|c/INV4.1 a/stem-leaf
-statistical-displays|data-displays|3|Construct a box plot|Median, quartiles and extremes|a/boxplot:draw c/INV4.5
+statistical-displays|data-displays|3|Construct a box plot|Median, quartiles and extremes|a/boxplot:draw c/INV4.5 k/inv-box-plot
 experimental-data|data-displays|1|Plot a given linear equation|Coordinate plotting and line features|a/line:graph
 experimental-data|data-displays|2|Estimate a linear model from experimental data|Choose a trend and distinguish estimate from interpolation|z/data:graph z/data:table
 decimal-operations|decimal-arithmetic|1|Add or subtract decimals|Align decimal places|f/decimal:add f/decimal:sub f/money:add f/money:sub c/35.1 @/course-1-en:bank:C1_Section04:item:C1_S04_00080 @/course-1-en:bank:C1_Section04:item:C1_S04_00081 @/course-1-en:bank:C1_Section04:item:C1_S04_00123 @/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00072 @/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00074 @/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00122 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00071 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00091 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00092 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00106 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00110 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00111 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00115 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00116 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00137 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00141 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00142 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00145 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00146 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00077 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00079 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00081 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00082 k/decimal-sum k/decimal-difference k/segment-bc
@@ -168,8 +168,8 @@ prime-factorization|number-theory|2|Write a prime factorization|Break composite 
 prime-factorization|number-theory|3|Find the LCM through prime factors|Take each prime to its largest required power|c/27.4
 geometric-proof|proof|1|Prove vertical angles are equal|Supplementary angles and subtraction of equals|m/proof:vertical
 geometric-proof|proof|2|Prove geometric properties using congruent triangles|Select and justify a congruence criterion from the actual givens|m/proof:congruence m/proof:isosceles m/proof:parallelogram m/proof:chord m/proof:tangent z/proof:hl z/proof:aas z/proof:bisector z/proof:angle-bisector z/proof:rectangle z/proof:rhombus z/proof:equal-chords z/proof:space z/geometry:parallel-proof
-geometric-proof|proof|3|Prove a general theorem by area decomposition|Justify the diagram and connect geometry to algebra|z/proof:pythagoras c/COURSE212.1
-right-triangles|pythagorean|1|Find a missing side in a right triangle|Squares and square roots|c/99.1 k/pythagorean
+geometric-proof|proof|3|Prove a general theorem by area decomposition|Justify the diagram and connect geometry to algebra|z/proof:pythagoras c/COURSE212.1 k/inv-pythagoras
+right-triangles|pythagorean|1|Find a missing side in a right triangle|Squares and square roots|c/99.1 k/pythagorean k/inv-pythagoras
 right-triangles|pythagorean|2|Apply the right-triangle theorem in a context|Identify the hidden right triangle|c/COURSE112.1 k/pythagorean k/pythag-apps
 information-sufficiency|reasoning|1|Decide whether information determines an answer|Identify the required quantities|c/79.1 k/missing-info k/enough-info
 information-sufficiency|reasoning|2|Assess whether a comparison is determined|Consider more than one admissible case|c/79.2 k/compare-quantities
@@ -185,7 +185,7 @@ set-relations|sets|2|Find unions and intersections of stated sets|Membership con
 set-relations|sets|3|Calculate regions in a two-set Venn diagram|Account for the intersection, union and neither region|m/sets:venn
 similar-figures|similarity-scale|1|Find a missing corresponding side of similar triangles|Use a scale factor with matched sides|c/97.2 k/similar-sides
 similar-figures|similarity-scale|2|Find a height by indirect measurement|Translate a context into similar triangles|c/97.3 k/indirect
-similar-figures|similarity-scale|3|Connect length, area and volume ratios of similar solids|Square or cube a linear scale factor, or recover it from a ratio|c/COURSE211.2 k/scale-factor
+similar-figures|similarity-scale|3|Connect length, area and volume ratios of similar solids|Square or cube a linear scale factor, or recover it from a ratio|c/COURSE211.2 k/scale-factor k/inv-scale-solids
 solid-surface|surface-area|1|Find surface area of a rectangular prism|Sum the areas of six faces|c/67.5 c/105.1 k/surface-area
 solid-surface|surface-area|2|Find surface area of a cylinder|Combine curved area and circular bases|v/cylinder-surface f/cylinder-area k/surface-area
 solid-surface|surface-area|3|Find surface area of a cone or pyramid|Use slant height in lateral areas|h/cone-area h/pyramid-area
@@ -213,8 +213,8 @@ expanded-notation|number-representation|2|Expand a whole number through trillion
 number-notation-forms|number-representation|1|Identify a place or digit value|Count digit positions rather than punctuation|e/5.1 e/5.5 f/place:4 f/place:13
 number-notation-forms|number-representation|2|Write a number in expanded notation|Sum nonzero place values|e/5.2 f/expanded:4 f/expanded:13 k/expanded-notation r/expanded-small r/expanded-zero
 number-notation-forms|number-representation|3|Convert between number words and digits|Read and compose three-digit periods|e/5.3 e/5.4 f/words:3 f/words:6 f/words:9 k/words-to-digits
-roman-range|numeral-systems|1|Read and write Roman numerals through 39|I, V, X and subtractive pairs|f/roman:39
-roman-range|numeral-systems|2|Read and write Roman numerals through 3999|Additional symbols and subtractive pairs across places|f/roman:3999
+roman-range|numeral-systems|1|Read and write Roman numerals through 39|I, V, X and subtractive pairs|f/roman:39 k/inv-numerals
+roman-range|numeral-systems|2|Read and write Roman numerals through 3999|Additional symbols and subtractive pairs across places|f/roman:3999 k/inv-numerals
 decimal-division|decimal-arithmetic|1|Divide a decimal by a whole number|Place value and exact division|f/money:div f/decimal:divwhole e/1.7 c/35.3 k/decimal-divide-whole k/capsules
 decimal-division|decimal-arithmetic|2|Divide by a decimal divisor|Scale both dividend and divisor to make an integer divisor|c/45.1 @/course-1-en:bank:C1_Section05:item:C1_S05_00076 @/course-1-en:bank:C1_Section05:item:C1_S05_00077 @/course-1-en:bank:C1_Section05:item:C1_S05_00078 @/course-1-en:bank:C1_Section05:item:C1_S05_00105 k/decimal-divide-decimal k/divide-by-decimal
 decimal-powers-ten|decimal-arithmetic|1|Multiply decimals by powers of ten|Each place changes by a power of ten|f/ten-power:mul c/47.3
@@ -279,15 +279,15 @@ statistics-summary|statistics|2|Calculate a five-number summary and quartiles|Ap
 histogram-production|data-displays|1|Tabulate frequencies in explicit intervals|Count every observation once|f/frequency
 histogram-production|data-displays|2|Draw a histogram for explicit intervals|Frequency table, touching bars, labeled axes and scale|f/histogram c/INV5.1 h/histogram10
 graph-reading|data-displays|1|Read and compare quantities on a pictograph or bar graph|Read its key or scale|c/38.1 c/38.2
-graph-reading|data-displays|2|Read values and changes on a line graph|Read axes and distinguish values from differences|c/38.3
-graph-reading|data-displays|3|Read a quantity from a circle graph|Scale a fraction of the whole|c/38.4 k/circle-graph
-box-plot-work|data-displays|1|Read a box plot and its spread|Median, range and interquartile range|c/INV4.6 a/boxplot:read
-box-plot-work|data-displays|2|Construct a box plot from raw observations|Sort, calculate quartiles using the stated convention and draw the scale|c/INV4.5 a/boxplot:draw
+graph-reading|data-displays|2|Read values and changes on a line graph|Read axes and distinguish values from differences|c/38.3 k/inv-graphs
+graph-reading|data-displays|3|Read a quantity from a circle graph|Scale a fraction of the whole|c/38.4 k/circle-graph k/inv-graphs
+box-plot-work|data-displays|1|Read a box plot and its spread|Median, range and interquartile range|c/INV4.6 a/boxplot:read k/inv-box-plot
+box-plot-work|data-displays|2|Construct a box plot from raw observations|Sort, calculate quartiles using the stated convention and draw the scale|c/INV4.5 a/boxplot:draw k/inv-box-plot
 angle-construction|angles|1|Read a supplied protractor|Select the zero aligned with the starting ray|c/17.1 h/angle-measure
 angle-construction|angles|2|Read and physically draw an angle with a protractor|Use a correctly aligned baseline and scale|c/17.3 k/angle-estimate
 polygon-angle-sums|angles|1|Find a missing angle in a triangle or quadrilateral|Subtract known angles from the polygon sum|c/40.2 f/quadrilateral-angle
 polygon-angle-sums|angles|2|Find polygon interior or exterior angle measures and sums|Relate side count, total turn and regularity|c/89.2 c/89.3 c/89.4 c/89.5 z/geometry:polygon
-quadrilateral-properties|geometry-properties|1|Identify a named quadrilateral by its defining properties|Inclusive definitions of rectangles, rhombi and squares|c/INV6.1
+quadrilateral-properties|geometry-properties|1|Identify a named quadrilateral by its defining properties|Inclusive definitions of rectangles, rhombi and squares|c/INV6.1 k/inv-quadrilaterals
 quadrilateral-properties|geometry-properties|2|Construct an inclusion diagram for quadrilateral classes|Every square is both a rectangle and a rhombus|c/INV6.2
 triangle-properties|geometry-properties|1|Classify a triangle by sides|Use the most specific equal-side classification|c/62.3 k/triangle-definitions
 triangle-properties|geometry-properties|2|Classify a triangle by angles|Compare largest angle with a right angle|c/62.1 k/triangle-classify
@@ -302,7 +302,7 @@ area-shape-formulas|area|2|Calculate trapezoid area|Use the average of the paral
 area-shape-formulas|area|3|Calculate triangle area|Use half of base times perpendicular height|c/37.2
 scale-lengths|similarity-scale|1|Find or apply a linear scale factor|Corresponding lengths use one ratio|c/98.2 c/98.3 k/scale-factor
 scale-lengths|similarity-scale|2|Use map or drawing scales with units|Distinguish drawing dimensions from actual dimensions|c/98.1 f/scale-draw k/scale
-scale-lengths|similarity-scale|3|Relate linear, area and volume scales|Square or cube the linear scale factor|c/COURSE211.1 c/COURSE211.2 k/scale-factor
+scale-lengths|similarity-scale|3|Relate linear, area and volume scales|Square or cube the linear scale factor|c/COURSE211.1 c/COURSE211.2 k/scale-factor k/inv-scale-solids
 similarity-correspondence|similarity-scale|1|Establish correspondence or justify AA similarity|Triangle angle sum and consistent vertex order|c/97.1 z/geometry:aa
 similarity-correspondence|similarity-scale|2|Solve corresponding lengths in similar triangles|Use whole lengths and match corresponding sides|c/97.2 z/geometry:parallel-segments z/geometry:overlap k/similar-sides
 similarity-correspondence|similarity-scale|3|Apply similar triangles to indirect measurement|Identify the triangles in context before scaling|c/97.3 k/indirect
@@ -327,7 +327,7 @@ probability-experiments|probability|2|Plan and explain an experiment for a state
 counting-trees|counting|1|List ordered outcomes with a tree diagram|Branches represent successive choices|c/94.1
 counting-trees|counting|2|Count repeated choices by multiplication|Multiply the number of choices at each position|b/counting-power
 fraction-operation-order|fractions|1|Calculate a fraction product or quotient|Fraction operations and simplification|c/9.3 c/25.3
-fraction-operation-order|fractions|2|Evaluate grouped combinations of fraction operations|Respect parentheses and the scope of a fraction bar|c/9.6 c/76.1 h/fraction-order h/fraction-bar a/complex:numeric k/complex-fraction
+fraction-operation-order|fractions|2|Evaluate grouped combinations of fraction operations|Respect parentheses and the scope of a fraction bar|c/9.6 c/76.1 h/fraction-order h/fraction-bar a/complex:numeric k/complex-fraction k/inv-fractions
 fraction-powers|powers-roots|1|Evaluate a whole-number power|Repeated multiplication|f/power-small c/20.3
 fraction-powers|powers-roots|2|Evaluate a power of a fraction|Raise numerator and denominator to the same positive integer power|h/fraction-power
 signed-powers|powers-roots|1|Evaluate a signed integer power|Distinguish odd and even powers|c/103.2 k/neg-power
@@ -350,7 +350,7 @@ root-degrees|powers-roots|2|Approximate a cube or fourth root by trial bounds|Co
 real-to-complex-roots|complex-numbers|1|Decide whether a root has a real value|Even roots of negative values are not real; odd roots may be|h/negative-root =/algebra-2-en:node:412
 real-to-complex-roots|complex-numbers|2|Evaluate a principal square root of a negative number using i|Use i squared equals negative one|z/complex:negative-root
 real-to-complex-roots|complex-numbers|3|Explain why a real radical product rule fails for negative radicands|Evaluate principal complex roots before multiplying|z/complex:root-product
-binary-fractions-notation|numeral-systems|1|Convert whole values between binary and decimal|Powers of two|c/COURSE213.1 c/COURSE213.2 b/binary-read b/binary-write
+binary-fractions-notation|numeral-systems|1|Convert whole values between binary and decimal|Powers of two|c/COURSE213.1 c/COURSE213.2 b/binary-read b/binary-write k/inv-numerals
 binary-fractions-notation|numeral-systems|2|Convert binary fractions and decimals|Reciprocal powers of two after the binary point|h/binary:read h/binary:write
 binary-multiplication|numeral-systems|1|Multiply whole binary numbers and check in decimal|Partial products and carrying in base two|h/binary:mul o/binary-multiply
 binary-multiplication|numeral-systems|2|Multiply binary fractions and check in decimal|Track the binary point as well as partial products|h/binary:fraction-mul
@@ -426,10 +426,10 @@ trig-table-application|trigonometry|1|Read a trig value or an angle from a suppl
 trig-table-application|trigonometry|2|Use a table to calculate lengths in a right triangle or context|Choose the ratio, rearrange it and follow the table rounding contract|h/trig-application:height h/trig-application:ladder h/trig-application:sides
 trig-table-application|trigonometry|3|Calculate right-triangle sides with calculator trig functions|Use unrounded intermediate trig values and round final lengths only|m/trig:triangle
 construction-copy-bisect|constructions|1|Copy an angle with compass and straightedge|Transfer an equal-radius arc and its chord|c/COURSE118.1 m/construct:angle-copy k/copy-construct
-construction-copy-bisect|constructions|2|Copy an angle and then bisect the copy|Complete both constructions and retain arcs|h/angle-bisector z/construct:copy-bisect
+construction-copy-bisect|constructions|2|Copy an angle and then bisect the copy|Complete both constructions and retain arcs|h/angle-bisector z/construct:copy-bisect k/inv-construct
 perpendicular-constructions|constructions|1|Construct a perpendicular at a point on a line|Equal-radius arcs around the given point|h/perpendicular:on
 perpendicular-constructions|constructions|2|Construct a perpendicular from an external point|Equal distances to two intersections on the line|h/perpendicular:off m/construct:perpendicular
-perpendicular-constructions|constructions|3|Construct a perpendicular bisector of a segment|Equal-radius arcs from both endpoints|f/bisect-segment c/INV8.1 m/construct:bisector
+perpendicular-constructions|constructions|3|Construct a perpendicular bisector of a segment|Equal-radius arcs from both endpoints|f/bisect-segment c/INV8.1 m/construct:bisector k/inv-construct
 three-side-construction|constructions|1|Construct a triangle from three side lengths|Intersect endpoint-centered arcs and preserve all lengths|c/COURSE118.2 z/construct:triangle
 three-side-construction|constructions|2|Construct a circumcircle of a right triangle|Locate the midpoint of the hypotenuse and justify equal vertex distances|z/circle:circumtriangle
 logarithm-laws|logarithms|1|Convert between log and exponential forms or evaluate an antilog|Base positive and not one; argument positive|m/log:convert m/log:antilog
@@ -449,7 +449,7 @@ nonlinear-system-types|nonlinear-systems|1|Find intersections with a line|Substi
 nonlinear-system-types|nonlinear-systems|2|Find intersections of two quadratic relations|Use elimination or substitution and check all sign choices|m/nonlinear:two-squares z/system:circle-parabola z/system:ellipse-circle
 plane-nonlinear-extension|inequalities|1|Graph a single nonlinear inequality|Test the correct side of a curved boundary|m/plane:nonlinear
 plane-nonlinear-extension|inequalities|2|Graph two simultaneous nonlinear and linear conditions|Find and respect boundary intersections|z/graph:nonlinear-system
-circle-angle-theorems|angles|1|Relate central and inscribed angles intercepting one arc|An inscribed angle has half the central angle|h/circle-angles
+circle-angle-theorems|angles|1|Relate central and inscribed angles intercepting one arc|An inscribed angle has half the central angle|h/circle-angles k/inv-circle-parts
 circle-angle-theorems|angles|2|Prove the diameter right-angle corollary|A semicircle measures 180 degrees|z/proof:diameter
 circle-angle-theorems|angles|3|Prove the general inscribed-angle theorem|Use isosceles triangles and handle the diameter positions|z/proof:inscribed-angle
 triangle-length-reasoning|pythagorean|1|Find a missing right-triangle side|Squares and square roots|c/99.1
@@ -490,7 +490,7 @@ ratio-forms|ratio-proportion|2|Form a ratio after finding a missing group count|
 part-reference-forms|fraction-decimal-percent|1|Express a part relative to a reference quantity as a fraction or decimal|Reference quantity is the denominator; fraction-part can exceed one|k/part-of-whole p/decimal-part-eighths
 part-reference-forms|fraction-decimal-percent|2|Express a part relative to a reference quantity as a percent|Percent scales the quotient by 100|p/percent-part p/bill-percent
 fraction-sum-to-percent|fraction-decimal-percent|1|Convert a given fractional share to percent|Multiply by 100|p/circle-percent
-fraction-sum-to-percent|fraction-decimal-percent|2|Combine nonoverlapping fractional shares then convert to percent|Add fractions of the same whole first|p/circle-sum-percent
+fraction-sum-to-percent|fraction-decimal-percent|2|Combine nonoverlapping fractional shares then convert to percent|Add fractions of the same whole first|k/inv-fractions
 fraction-sum-to-percent|fraction-decimal-percent|3|Draw and add fractional circle regions then give fraction and percent|Construct equal partitions and assess the drawing manually|c/INV1.1
 percent-forward-change|percent|1|Calculate a percent of an amount|Identify the original base|f/percent-of k/percent-of
 percent-forward-change|percent|2|Calculate a final amount after a discount or increase|Use 1 minus or plus the rate; increase may exceed 100 percent|p/percent-increase t/discount-price k/discounts
@@ -508,7 +508,7 @@ scientific-normalization|scientific-notation|2|Normalize a nonstandard scientifi
 prime-classification|number-theory|1|Decide whether a whole number is prime or composite|Exactly two positive factors define prime; one is neither|f/prime-small k/prime-yes-no
 prime-classification|number-theory|2|List primes or composites in a specified interval|Test all interval members; honor endpoints|b/prime-list c/21.1 c/21.2
 prime-classification|number-theory|3|Find the sum of primes in an interval|Identify all primes before summing|b/prime-sum c/21.6
-roman-notation-practice|numeral-systems|1|Read or write Roman numerals|Subtractive pairs; each generator retains its own range|f/roman:39 f/roman:3999
+roman-notation-practice|numeral-systems|1|Read or write Roman numerals|Subtractive pairs; each generator retains its own range|f/roman:39 f/roman:3999 k/inv-numerals
 roman-notation-practice|numeral-systems|2|Read or write Roman numerals over mixed configured ranges|maxRoman defaults and 999 differ; never infer a higher course is harder|b/roman-write b/roman-read c/COURSE213.3
 round-money-value|rounding-estimation|1|Round whole values to a requested place|Place-value intervals|f/round:3 c/29.1
 round-money-value|rounding-estimation|2|Round a dollar-and-cent amount to a whole dollar|Nearest whole dollar from cents; different representation|b/round-money
@@ -602,7 +602,7 @@ chemical-mass-proportions|ratio-proportion|3|Express oxygen mass fraction of wat
 unknown-sum-length|equations|1|Find a missing addend in a three-term single-digit sum|Combine two known addends before subtracting|=/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00075 =/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00076 =/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00113
 unknown-sum-length|equations|2|Find a missing addend with three or four known addends|Collect more known terms; some templates use two-digit values|=/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00077 =/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00078 =/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114 =/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116
 unknown-sum-length|equations|3|Find a missing addend among eight known single-digit addends|Maintain a longer addition total before isolating the unknown|=/intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119
-rational-affine-steps|equations|1|Solve one-step additive equations with rational or decimal constants|Exact fractional arithmetic or aligned decimal subtraction|=/algebra-1-en:node:293 =/algebra-half-en:node:276 =/algebra-half-en:node:277
+rational-affine-steps|equations|1|Solve one-step additive equations with rational or decimal constants|Exact fractional arithmetic or aligned decimal subtraction|=/algebra-1-en:node:293 =/algebra-half-en:node:276 =/algebra-half-en:node:277 k/inv-balanced
 rational-affine-steps|equations|2|Solve two-step affine equations with fractional coefficients and constants|Combine rational terms and divide by a nonzero rational coefficient|=/algebra-1-en:node:303 =/algebra-1-en:node:304 =/algebra-half-en:node:414 =/algebra-half-en:node:533
 collect-before-solving|equations|1|Collect variable terms on one side before solving|Combine like coefficients and retain fractional or decimal arithmetic|=/algebra-1-en:node:305 =/algebra-1-en:node:317
 collect-before-solving|equations|2|Collect several variable and constant terms across both sides|Move variable terms while preserving signs and equality|=/algebra-1-en:node:309 =/algebra-half-en:node:583 =/algebra-half-en:node:584 k/simplify-solve
@@ -693,7 +693,7 @@ geometry-to-equations|word-equations|1|Form simple equations from equal geometri
 fractional-power-forms|exponent-laws|1|Convert roots and negative fractional powers to equivalent positive-power forms|Assume x positive and retain reciprocal conventions|=/algebra-2-en:authored:M6-35-4 =/algebra-2-en:authored:M6-46-3
 fractional-power-forms|exponent-laws|2|Apply a power rule with an algebraic exponent|Distribute the outer exponent across a linear expression in the exponent under x-positive assumptions|=/algebra-2-en:authored:M6-83-2
 special-right-triangle-ratios|trigonometry|1|Find exact sides using special right-triangle ratios|30-60-90 starts from a short leg; 45-45-90 starts from a hypotenuse and simplifies a radical. Neither is universally harder|=/algebra-2-en:authored:M6-66-2 =/algebra-2-en:authored:M6-79-3
-contextual-function-domain|functions|1|Evaluate a linear rule in a function table|Substitute a supplied input|c/85.2
+contextual-function-domain|functions|1|Evaluate a linear rule in a function table|Substitute a supplied input|c/85.2 k/inv-functions
 contextual-function-domain|functions|2|Model a linear process with independent/dependent variables and physical domain|Interpret initial quantity, rate and a bounded nonnegative time interval|=/algebra-2-en:authored:M6-94-1
 fractional-binomial-products|polynomials|1|Multiply binomials with whole-number variable powers|Distribute and collect terms|h/polynomial:mul
 fractional-binomial-products|polynomials|2|Expand a square or conjugate product with fractional and negative powers|Assume positive variables; add rational exponents and preserve reciprocal terms|=/algebra-2-en:authored:M6-109-1 =/algebra-2-en:authored:M6-109-2
@@ -738,13 +738,13 @@ independent-history|probability|1|Count outcomes for one fair-die event|Count fa
 independent-history|probability|2|Ignore independent past die or replaced-marble results|Count favorable outcomes; independent previous results do not change the next trial|=/algebra-half-en:node:700 =/algebra-1-en:node:697 =/algebra-1-en:node:698 =/algebra-1-en:node:699
 repeated-coin-events|probability|1|Find probability of a specified run or exact sequence|Multiply probabilities for independent trials and distinguish a sequence from any order|=/course-87-en:item:SX760141 =/algebra-half-en:node:699 =/algebra-1-en:node:702
 repeated-coin-events|probability|2|Find probability of mixed independent events|Multiply probabilities for independent trials and distinguish a sequence from any order|=/course-87-en:authored:MCADA-94.2
-marble-replacement-models|probability|1|Calculate one disjoint-color event|Track color counts and whether a drawn marble is replaced|=/algebra-half-en:node:687 =/course-87-en:item:SN870816
+marble-replacement-models|probability|1|Calculate one disjoint-color event|Track color counts and whether a drawn marble is replaced|=/algebra-half-en:node:687 =/course-87-en:item:SN870816 k/inv-probability
 marble-replacement-models|probability|2|Calculate two ordered draws using the stated replacement rule|Track color counts and whether a drawn marble is replaced|=/algebra-half-en:node:701 =/algebra-1-en:node:735
 marble-replacement-models|probability|3|Calculate and contrast both replacement models|Track color counts and whether a drawn marble is replaced|=/algebra-1-en:node:736 =/algebra-1-en:node:737
 card-event-order|probability|1|Calculate mixed ordered card events without replacement|Count the remaining cards, preserve event order and avoid double counting|=/algebra-half-en:node:702
 card-event-order|probability|2|Calculate mixed card events including an either-order branch|Count the remaining cards, preserve event order and avoid double counting|=/course-87-en:item:SN870522
-probability-odds-output|probability|1|Convert odds to the probability of the same named event|Odds compare favorable to unfavorable counts; probability uses the total|=/course-87-en:item:SN870774
-probability-odds-output|probability|2|Give both event and complement probabilities|Odds compare favorable to unfavorable counts; probability uses the total|=/course-87-en:authored:COURSE210.2
+probability-odds-output|probability|1|Convert odds to the probability of the same named event|Odds compare favorable to unfavorable counts; probability uses the total|=/course-87-en:item:SN870774 k/inv-probability
+probability-odds-output|probability|2|Give both event and complement probabilities|Odds compare favorable to unfavorable counts; probability uses the total|=/course-87-en:authored:COURSE210.2 k/inv-probability
 odds-event-interpretation|probability|1|Interpret the named event in given odds|Identify the exact event named in the odds before choosing its probability|=/course-87-en:item:SN870774 =/course-87-en:item:SN870834
 probability-complement-work|probability|1|Find a complementary percentage|An event and its complement have probabilities summing to one|=/course-87-en:item:SX760144
 probability-complement-work|probability|2|Convert odds and give the event plus its complement|An event and its complement have probabilities summing to one|=/course-87-en:authored:COURSE210.2
@@ -782,7 +782,7 @@ polygon-diagonal-production|angles|1|Count diagonals from one vertex|Diagonals j
 polygon-diagonal-production|angles|2|Draw and count every diagonal exactly once|Diagonals join nonadjacent vertices; count each unordered pair once|=/course-87-en:authored:MCADA-89.1
 coordinate-rectangle-work|coordinate-geometry|1|Read or plot signed coordinate pairs|Use signed coordinates, parallel sides and coordinate differences|=/course-87-en:authored:MCADA-INV3.2 =/course-87-en:authored:MCADA-INV3.3 k/symmetric-vertex
 coordinate-rectangle-work|coordinate-geometry|2|Complete a rectangle and calculate coordinate-difference area|Use signed coordinates, parallel sides and coordinate differences|=/course-87-en:item:SX870108
-coordinate-description|coordinate-geometry|1|Identify quadrant axis or origin from signs|Order coordinates as horizontal then vertical; axes have a zero coordinate|=/course-87-en:authored:MCADA-INV3.1
+coordinate-description|coordinate-geometry|1|Identify quadrant axis or origin from signs|Order coordinates as horizontal then vertical; axes have a zero coordinate|=/course-87-en:authored:MCADA-INV3.1 k/inv-coordinates
 coordinate-description|coordinate-geometry|2|Plot swapped pairs and explain coincidence|Order coordinates as horizontal then vertical; axes have a zero coordinate|=/algebra-1-en:authored:M4-50-2
 coordinate-distance-practice|coordinate-geometry|1|Find distance to a horizontal line|Use perpendicular coordinate differences and simplify square roots exactly|=/algebra-2-en:authored:M6-125-1
 coordinate-distance-practice|coordinate-geometry|2|Find exact distance between arbitrary signed-coordinate points|Use perpendicular coordinate differences and simplify square roots exactly|=/algebra-2-en:node:635 =/algebra-1-en:authored:M4-98-1
@@ -790,22 +790,22 @@ graph-selection-production|data-displays|1|Select a line graph matching a signed
 graph-selection-production|data-displays|2|Construct a line graph from its equation|Interpret slope and intercept with signed coordinates|=/algebra-1-en:authored:M4-51-1 =/algebra-1-en:authored:M4-75-2
 bar-graph-production|data-displays|1|Match all given table frequencies to a bar graph|Count each observation once and use a consistent frequency scale|=/course-1-en:bank:C1_Section01:item:C1_S01_00083
 bar-graph-production|data-displays|2|Tally raw observations and construct a bar graph|Count each observation once and use a consistent frequency scale|=/intermediate-4-en:authored:M2-874aeaab47bb-1 =/course-1-en:authored:M2-1586a2a40f39-2
-histogram-read-depth|data-displays|1|Read one histogram interval frequency|Read interval frequencies from the vertical scale and add the requested bins|=/course-87-en:item:SN870341 k/histogram-walk
-histogram-read-depth|data-displays|2|Read and add two interval frequencies|Read interval frequencies from the vertical scale and add the requested bins|=/algebra-half-en:authored:M3-202-7
+histogram-read-depth|data-displays|1|Read one histogram interval frequency|Read interval frequencies from the vertical scale and add the requested bins|=/course-87-en:item:SN870341 k/histogram-walk k/inv-graphs
+histogram-read-depth|data-displays|2|Read and add two interval frequencies|Read interval frequencies from the vertical scale and add the requested bins|=/algebra-half-en:authored:M3-202-7 k/inv-graphs
 histogram-select-produce|data-displays|1|Match all table frequencies to a histogram|Match interval boundaries and frequencies; histogram bars touch|=/course-1-en:bank:C1_Section01:item:C1_S01_00021
 histogram-select-produce|data-displays|2|Tally raw observations and construct a histogram|Match interval boundaries and frequencies; histogram bars touch|=/algebra-half-en:authored:M3-202-6 =/course-1-en:authored:M2-c4f194fd4dd9-2
 circle-graph-production|data-displays|1|Calculate a count from a labeled circle-graph percentage|Parts of a whole correspond to percentages and angles totaling 360 degrees|=/course-87-en:item:SN870345
-circle-graph-production|data-displays|2|Construct and label a circle graph from counts|Parts of a whole correspond to percentages and angles totaling 360 degrees|=/course-87-en:authored:MCADA-INV5.3
-line-series-production|data-displays|1|Read a line graph and its changes|Use uniform axes, ordered time points and a key for multiple series|=/course-87-en:authored:MCADA-38.3
+circle-graph-production|data-displays|2|Construct and label a circle graph from counts|Parts of a whole correspond to percentages and angles totaling 360 degrees|=/course-87-en:authored:MCADA-INV5.3 k/inv-graphs
+line-series-production|data-displays|1|Read a line graph and its changes|Use uniform axes, ordered time points and a key for multiple series|=/course-87-en:authored:MCADA-38.3 k/inv-graphs
 line-series-production|data-displays|2|Construct two series on shared axes with a key|Use uniform axes, ordered time points and a key for multiple series|=/course-87-en:authored:MCADA-INV5.2
-stem-display-work|data-displays|1|Read ordered observations retaining repeated leaves|Apply the stem-and-leaf key and retain repeated observations|=/course-87-en:item:SN870742
-stem-display-work|data-displays|2|Calculate median mode and range from the display|Apply the stem-and-leaf key and retain repeated observations|=/course-87-en:item:SN870812
+stem-display-work|data-displays|1|Read ordered observations retaining repeated leaves|Apply the stem-and-leaf key and retain repeated observations|=/course-87-en:item:SN870742 k/inv-stem-leaf
+stem-display-work|data-displays|2|Calculate median mode and range from the display|Apply the stem-and-leaf key and retain repeated observations|=/course-87-en:item:SN870812 k/inv-stem-leaf
 stem-display-authoring|data-displays|1|Fill supplied stems with sorted leaves|Split place values into stems and ordered leaves and supply a key|=/course-87-en:item:SN870810
 stem-display-authoring|data-displays|2|Construct the complete stem-and-leaf display with key|Split place values into stems and ordered leaves and supply a key|=/algebra-1-en:authored:M4-85-1 =/course-87-en:authored:MCADA-INV4.1
 box-display-work|data-displays|1|Read the five marked summary values|Distinguish extremes, quartiles and median; spread measures are differences|=/course-87-en:item:SN870806
 box-display-work|data-displays|2|Calculate range and interquartile range|Distinguish extremes, quartiles and median; spread measures are differences|=/course-87-en:item:SN870744
 box-display-production|data-displays|1|Calculate quartiles and select the matching box plot|Sort data and use the stated convention when splitting the halves|=/course-87-en:item:SN870838
-box-display-production|data-displays|2|Construct a box plot from raw observations|Sort data and use the stated convention when splitting the halves|=/algebra-1-en:authored:M4-120-1 =/course-87-en:authored:MCADA-INV4.5
+box-display-production|data-displays|2|Construct a box plot from raw observations|Sort data and use the stated convention when splitting the halves|=/algebra-1-en:authored:M4-120-1 =/course-87-en:authored:MCADA-INV4.5 k/inv-box-plot
 geometric-notation-production|geometry-properties|1|Recognize primitive figures and arrow conventions|Arrowheads and endpoints distinguish a line, ray and segment|=/course-87-en:item:SN870029
 geometric-notation-production|geometry-properties|2|Draw name and describe geometric primitives|Arrowheads and endpoints distinguish a line, ray and segment|=/algebra-2-en:authored:M6-0-1 =/course-87-en:authored:MCADA-7.2
 shape-identification-practice|geometry-properties|1|Name planar shapes and polygon types|Count sides and follow consecutive vertices; regularity needs equal sides and angles|=/intermediate-4-en:authored:M2-8249b642047f-1 =/course-87-en:authored:MCADA-18.1
@@ -831,7 +831,7 @@ rhombus-angle-extension|angles|1|Find parallelogram angles|Use supplementary adj
 rhombus-angle-extension|angles|2|Use rhombus angle bisection and perpendicular diagonals too|Use supplementary adjacent angles, angle bisectors and perpendicular diagonals|=/algebra-2-en:authored:M6-39-5
 triangle-angle-interpretations|angles|1|Find a third interior or exterior angle|Triangle interior angles sum to 180 degrees; distinguish demonstration from proof|=/algebra-2-en:authored:M6-31-3 =/course-87-en:authored:MCADA-40.2 k/crossing-lines-triangle k/right-angle-chain
 triangle-angle-interpretations|angles|2|Demonstrate the triangle sum with cut corners|Triangle interior angles sum to 180 degrees; distinguish demonstration from proof|=/course-87-en:authored:MCADA-40.1
-symmetry-line-practice|transformations|1|Draw every line of reflection symmetry|A reflection fixes a symmetry line; point symmetry is a half-turn|=/course-87-en:authored:MCADA-58.1 =/course-87-en:authored:MCADA-INV6.3 k/polygon-symmetry
+symmetry-line-practice|transformations|1|Draw every line of reflection symmetry|A reflection fixes a symmetry line; point symmetry is a half-turn|=/course-87-en:authored:MCADA-58.1 =/course-87-en:authored:MCADA-INV6.3 k/polygon-symmetry k/inv-quadrilaterals
 symmetry-line-practice|transformations|2|Explain point symmetry from diagonal midpoints|A reflection fixes a symmetry line; point symmetry is a half-turn|=/course-87-en:authored:MCADA-INV6.4
 reflection-coordinate-count|transformations|1|Recover one point after a y-axis reflection|A coordinate-axis reflection changes the perpendicular coordinate sign|=/course-87-en:item:SX870293
 reflection-coordinate-count|transformations|2|Reflect all three triangle points across the x-axis|A coordinate-axis reflection changes the perpendicular coordinate sign|=/course-87-en:item:SN870555
@@ -846,10 +846,10 @@ construction-step-production|constructions|1|Recognize an angle-copy or angle-bi
 construction-step-production|constructions|2|Carry out and justify the full corresponding construction|Equal compass radii transfer distances; keep the construction arcs|=/course-1-en:authored:M2-5c4fa8e00372-2 =/course-87-en:authored:COURSE118.1 =/algebra-2-en:authored:M5-construct-angle-copy
 construction-tool-use|constructions|1|Name the permitted classical construction tools|Use a compass for circles and distance transfer and an unmarked straightedge for lines|=/algebra-half-en:authored:M3-201-6
 construction-tool-use|constructions|2|Construct concentric circles with measured radii|Use a compass for circles and distance transfer and an unmarked straightedge for lines|=/course-87-en:authored:MCADA-INV2.1
-construction-tool-use|constructions|3|Construct a regular hexagon and its alternate-vertex triangle|Use a compass for circles and distance transfer and an unmarked straightedge for lines|=/course-87-en:authored:MCADA-INV2.2
+construction-tool-use|constructions|3|Construct a regular hexagon and its alternate-vertex triangle|Use a compass for circles and distance transfer and an unmarked straightedge for lines|=/course-87-en:authored:MCADA-INV2.2 k/inv-construct
 circle-sector-construction|constructions|1|Construct equal circle sectors by the required compass method|Use equal-radius arcs and justify equal central angles|=/course-87-en:authored:MCADA-INV2.3
-circle-sector-construction|constructions|2|Construct an inscribed hexagon and triangle|Use equal-radius arcs and justify equal central angles|=/course-87-en:authored:MCADA-INV2.2
-inscribed-angle-methods|angles|1|Measure and compare central and inscribed angles|Compare angles intercepting the same arc; measurements do not prove a general theorem|=/course-87-en:authored:MCADA-INV2.4
+circle-sector-construction|constructions|2|Construct an inscribed hexagon and triangle|Use equal-radius arcs and justify equal central angles|=/course-87-en:authored:MCADA-INV2.2 k/inv-construct
+inscribed-angle-methods|angles|1|Measure and compare central and inscribed angles|Compare angles intercepting the same arc; measurements do not prove a general theorem|=/course-87-en:authored:MCADA-INV2.4 k/inv-circle-parts
 inscribed-angle-methods|angles|2|Calculate using the central-inscribed relationship|Compare angles intercepting the same arc; measurements do not prove a general theorem|=/algebra-half-en:authored:M3-204-3
 proof-response-production|proof|1|Identify SAS and CPCTC in a supplied diagram|Match triangle vertices and justify a congruence criterion before using corresponding parts|=/algebra-2-en:node:873
 proof-response-production|proof|2|Write a statement-reason triangle-congruence proof|Match triangle vertices and justify a congruence criterion before using corresponding parts|=/algebra-2-en:authored:M5-proof-congruence

@@ -9,7 +9,7 @@
     },
     "catalog": {
       "status": "Passed",
-      "total": 2190,
+      "total": 2213,
       "k7Skills": 312,
       "k7ByGrade": {
         "1": 19,
@@ -21,7 +21,7 @@
         "7": 33,
         "K": 20
       },
-      "autoCheckedBankEntries": 1868,
+      "autoCheckedBankEntries": 1891,
       "continuitySkills": 10,
       "courses": [
         {
@@ -45,8 +45,8 @@
           "course": "Introduction to PreAlgebra (8/7)",
           "localGrade": 5,
           "placement": "grade-assigned",
-          "teacherReviewedExcluded": 151,
-          "count": 814
+          "teacherReviewedExcluded": 162,
+          "count": 837
         },
         {
           "bankId": "algebra-half-en",
@@ -76,50 +76,50 @@
     },
     "lesson-labels": {
       "status": "Passed",
-      "entries": 1868,
+      "entries": 1891,
       "lessons": 785,
       "source": "williammcada/test-and-practice-studio@16685a8"
     },
     "generate-all-seeds": {
       "status": "Passed",
-      "count": 109500
+      "count": 110650
     },
     "deterministic": {
       "status": "Passed",
-      "count": 109500
+      "count": 110650
     },
     "own-answer-accepted": {
       "status": "Passed",
-      "count": 109500
+      "count": 110650
     },
     "json-round-trip": {
       "status": "Passed",
-      "count": 109500
+      "count": 110650
     },
     "evaluate-own-answer-valid-and-correct": {
       "status": "Passed",
-      "count": 109500
+      "count": 110650
     },
     "unsimplified-fraction-feedback": {
       "status": "Passed",
-      "count": 9256,
-      "simplestFormRequiredAndFlagged": 7272,
+      "count": 9352,
+      "simplestFormRequiredAndFlagged": 7472,
       "equivalentFormsAllowedByPrompt": {
-        "items": 1984,
-        "entries": 63
+        "items": 1880,
+        "entries": 60
       }
     },
     "perturbed-answer-rejected": {
       "status": "Passed",
-      "count": 109500
+      "count": 110650
     },
     "keypad-keys-cover-answer": {
       "status": "Passed",
-      "count": 109500
+      "count": 110650
     },
     "studio-items-identical": {
       "status": "Passed",
-      "count": 93400
+      "count": 94550
     },
     "teacher-variant-redraws": {
       "status": "Informational",
@@ -128,8 +128,8 @@
     },
     "bank-input-modes": {
       "status": "Informational",
-      "keypad": 1509,
-      "keyboard": 359
+      "keypad": 1517,
+      "keyboard": 374
     },
     "continuity-independent-oracle": {
       "status": "Passed",
@@ -137,9 +137,9 @@
     },
     "related-links": {
       "status": "Passed",
-      "links": 4251,
+      "links": 4311,
       "itemsWithEasier": 599,
-      "itemsWithHarder": 553
+      "itemsWithHarder": 564
     },
     "practice-gates": {
       "status": "Passed",
@@ -149,8 +149,8 @@
     },
     "bundle-provenance": {
       "status": "Passed",
-      "bundleSha256": "31de8667652e030027889e91b273a686b29caa544b41e20c2836c9342f1b49b6",
-      "contentHash": "08ec972d5a59f93ea2e827eda159c316"
+      "bundleSha256": "6f6af27bfa24842f55f6f235ae42aed858042972428795821b624416313c2728",
+      "contentHash": "dbecce1a9e615f892f3e06ae15c9f03a"
     }
   },
   "failures": [],

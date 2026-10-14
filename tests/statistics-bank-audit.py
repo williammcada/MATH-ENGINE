@@ -68,5 +68,6 @@ for line in p.stdout:
  if q['answer']['form']=='probability':
   assert all(0<=v<=1 for v in a);zeros+=sum(v==0 for v in a);ones+=sum(v==1 for v in a)
  assert q['solution'] and q['prompt'];count+=1
-assert p.wait()==0 and count==37000 and odd and even and zeros and ones and ties and len(card_events)==10
+# SN870774, SN870816 and SN870834 are served by coverage ports (audited by tests/port87.cjs).
+assert p.wait()==0 and count==34000 and odd and even and zeros and ones and ties and len(card_events)==10
 print(f'PASS: {count:,} independent cases; {len(seen)} recipes; {ties} rounding ties; {zeros} impossible and {ones} certain outcomes; {odd} odd/{even} even data sets; all 10 card event/order classes enumerated')

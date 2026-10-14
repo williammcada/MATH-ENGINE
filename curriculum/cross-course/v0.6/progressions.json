@@ -1510,18 +1510,20 @@
         "prerequisites": "Count favorable and total outcomes",
         "selectors": [
           "c/36.3",
-          "s/marble-single",
+          "k/inv-probability",
           "k/spinner",
           "k/dart-board"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870816",
           "course-87-en:authored:MCADA-36.3",
           "intermediate-4-en:authored:M2-e5a763f5acab-1",
           "course-1-en:authored:M2-a08bfbb4a69d-1",
           "algebra-half-en:authored:M3-112-1",
           "course-87-en:item:SN870200",
-          "course-87-en:item:SN870202"
+          "course-87-en:item:SN870202",
+          "course-87-en:item:SN870774",
+          "course-87-en:item:SN870834",
+          "course-87-en:item:SN870816"
         ]
       },
       {
@@ -2131,7 +2133,8 @@
           "=/course-1-en:bank:C1_Section10:item:C1_S10_00048",
           "k/function-table",
           "k/number-machine",
-          "k/rule-table"
+          "k/rule-table",
+          "k/inv-functions"
         ],
         "sourceIds": [
           "course-1-en:bank:C1_Section10:item:C1_S10_00047",
@@ -2144,7 +2147,11 @@
           "course-87-en:item:SN870351",
           "course-87-en:item:SN870473",
           "course-87-en:item:SX870400",
-          "course-87-en:item:SN870463"
+          "course-87-en:item:SN870463",
+          "course-87-en:item:SN870808",
+          "course-87-en:item:SN870763",
+          "course-87-en:item:SN870772",
+          "course-87-en:item:SN870807"
         ]
       },
       {
@@ -2432,7 +2439,8 @@
           "c/COURSE213.1",
           "c/COURSE213.2",
           "b/binary-read",
-          "b/binary-write"
+          "b/binary-write",
+          "k/inv-numerals"
         ],
         "sourceIds": [
           "algebra-half-en:node:791",
@@ -2440,7 +2448,13 @@
           "course-87-en:authored:COURSE213.1",
           "course-87-en:authored:COURSE213.2",
           "algebra-half-en:authored:M3-203-1",
-          "algebra-half-en:authored:M3-203-2"
+          "algebra-half-en:authored:M3-203-2",
+          "course-87-en:item:SMAH0535",
+          "course-87-en:item:SMAH0446",
+          "course-87-en:item:SMAH0451",
+          "course-87-en:item:SMAH0365",
+          "course-87-en:item:SMAH0367",
+          "course-87-en:item:SMAH0366"
         ]
       },
       {
@@ -2632,13 +2646,17 @@
         "selectors": [
           "m/construct:bisector",
           "f/bisect-segment",
-          "c/INV8.1"
+          "c/INV8.1",
+          "k/inv-construct"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-INV8.1",
           "course-1-en:authored:M2-5c4fa8e00372-1",
           "algebra-half-en:authored:M3-201-3",
-          "algebra-2-en:authored:M5-construct-bisector"
+          "algebra-2-en:authored:M5-construct-bisector",
+          "course-87-en:item:SX870105",
+          "course-87-en:item:SN870753",
+          "course-87-en:item:SN870841"
         ]
       },
       {
@@ -2677,7 +2695,8 @@
         "prerequisites": "Ordered pairs and signed axes",
         "selectors": [
           "c/INV3.2",
-          "c/INV3.3"
+          "c/INV3.3",
+          "k/inv-coordinates"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-INV3.2",
@@ -2685,7 +2704,9 @@
           "course-1-en:authored:M2-335fb8ceaa11-2",
           "course-1-en:authored:M2-335fb8ceaa11-3",
           "algebra-half-en:authored:M3-38-2",
-          "algebra-half-en:authored:M3-38-3"
+          "algebra-half-en:authored:M3-38-3",
+          "course-87-en:item:SN870805",
+          "course-87-en:item:AXA10097"
         ]
       },
       {
@@ -2745,11 +2766,14 @@
         "demand": "Read a stem-and-leaf display",
         "prerequisites": "Place value, key and ordered observations",
         "selectors": [
-          "c/INV4.2"
+          "c/INV4.2",
+          "k/inv-stem-leaf"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-INV4.2",
-          "algebra-half-en:authored:M3-202-2"
+          "algebra-half-en:authored:M3-202-2",
+          "course-87-en:item:SN870742",
+          "course-87-en:item:SN870812"
         ]
       },
       {
@@ -2774,13 +2798,17 @@
         "prerequisites": "Median, quartiles and extremes",
         "selectors": [
           "a/boxplot:draw",
-          "c/INV4.5"
+          "c/INV4.5",
+          "k/inv-box-plot"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-INV4.5",
           "course-1-en:authored:M2-987e818adcf1-2",
           "algebra-half-en:authored:M3-202-4",
-          "algebra-1-en:authored:M4-120-1"
+          "algebra-1-en:authored:M4-120-1",
+          "course-87-en:item:SN870838",
+          "course-87-en:item:SN870744",
+          "course-87-en:item:SN870806"
         ]
       }
     ],
@@ -3512,12 +3540,16 @@
         "prerequisites": "Justify the diagram and connect geometry to algebra",
         "selectors": [
           "z/proof:pythagoras",
-          "c/COURSE212.1"
+          "c/COURSE212.1",
+          "k/inv-pythagoras"
         ],
         "sourceIds": [
           "course-87-en:authored:COURSE212.1",
           "algebra-half-en:authored:M3-117-3",
-          "algebra-2-en:authored:M6-128-5"
+          "algebra-2-en:authored:M6-128-5",
+          "course-87-en:item:SN870778",
+          "course-87-en:item:SMAH0406",
+          "course-87-en:item:SN870780"
         ]
       }
     ],
@@ -3534,7 +3566,8 @@
         "prerequisites": "Squares and square roots",
         "selectors": [
           "c/99.1",
-          "k/pythagorean"
+          "k/pythagorean",
+          "k/inv-pythagoras"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-99.1",
@@ -3543,7 +3576,10 @@
           "algebra-2-en:authored:M6-10-1",
           "course-87-en:item:SX870506",
           "course-87-en:item:AXG80580",
-          "course-87-en:item:SN870430"
+          "course-87-en:item:SN870430",
+          "course-87-en:item:SN870778",
+          "course-87-en:item:SMAH0406",
+          "course-87-en:item:SN870780"
         ]
       },
       {
@@ -3847,13 +3883,17 @@
         "prerequisites": "Square or cube a linear scale factor, or recover it from a ratio",
         "selectors": [
           "c/COURSE211.2",
-          "k/scale-factor"
+          "k/scale-factor",
+          "k/inv-scale-solids"
         ],
         "sourceIds": [
           "course-87-en:authored:COURSE211.2",
           "course-87-en:item:SN870587",
           "course-87-en:item:SN870401",
-          "course-87-en:item:SN870402"
+          "course-87-en:item:SN870402",
+          "course-87-en:item:SN870775",
+          "course-87-en:item:SX870466",
+          "course-87-en:item:SN870818"
         ]
       }
     ],
@@ -4365,10 +4405,17 @@
         "demand": "Read and write Roman numerals through 39",
         "prerequisites": "I, V, X and subtractive pairs",
         "selectors": [
-          "f/roman:39"
+          "f/roman:39",
+          "k/inv-numerals"
         ],
         "sourceIds": [
-          "intermediate-4-en:authored:M2-cebac3c2298d-1"
+          "intermediate-4-en:authored:M2-cebac3c2298d-1",
+          "course-87-en:item:SMAH0535",
+          "course-87-en:item:SMAH0446",
+          "course-87-en:item:SMAH0451",
+          "course-87-en:item:SMAH0365",
+          "course-87-en:item:SMAH0367",
+          "course-87-en:item:SMAH0366"
         ]
       },
       {
@@ -4376,10 +4423,17 @@
         "demand": "Read and write Roman numerals through 3999",
         "prerequisites": "Additional symbols and subtractive pairs across places",
         "selectors": [
-          "f/roman:3999"
+          "f/roman:3999",
+          "k/inv-numerals"
         ],
         "sourceIds": [
-          "intermediate-4-en:authored:M2-2e2b2a641fd1-1"
+          "intermediate-4-en:authored:M2-2e2b2a641fd1-1",
+          "course-87-en:item:SMAH0535",
+          "course-87-en:item:SMAH0446",
+          "course-87-en:item:SMAH0451",
+          "course-87-en:item:SMAH0365",
+          "course-87-en:item:SMAH0367",
+          "course-87-en:item:SMAH0366"
         ]
       }
     ],
@@ -5794,13 +5848,18 @@
         "demand": "Read values and changes on a line graph",
         "prerequisites": "Read axes and distinguish values from differences",
         "selectors": [
-          "c/38.3"
+          "c/38.3",
+          "k/inv-graphs"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-38.3",
           "intermediate-4-en:authored:M2-874aeaab47bb-4",
           "course-1-en:authored:M2-1e4115418038-2",
-          "algebra-half-en:authored:M3-29-3"
+          "algebra-half-en:authored:M3-29-3",
+          "course-87-en:item:SN870831",
+          "course-87-en:item:SN870833",
+          "course-87-en:item:AXG70450",
+          "course-87-en:item:AXG70449"
         ]
       },
       {
@@ -5809,13 +5868,18 @@
         "prerequisites": "Scale a fraction of the whole",
         "selectors": [
           "c/38.4",
-          "k/circle-graph"
+          "k/circle-graph",
+          "k/inv-graphs"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-38.4",
           "course-1-en:authored:M2-d8dec1074de5-2",
           "algebra-half-en:authored:M3-29-4",
-          "course-87-en:item:SN870345"
+          "course-87-en:item:SN870345",
+          "course-87-en:item:SN870831",
+          "course-87-en:item:SN870833",
+          "course-87-en:item:AXG70450",
+          "course-87-en:item:AXG70449"
         ]
       }
     ],
@@ -5832,12 +5896,16 @@
         "prerequisites": "Median, range and interquartile range",
         "selectors": [
           "c/INV4.6",
-          "a/boxplot:read"
+          "a/boxplot:read",
+          "k/inv-box-plot"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-INV4.6",
           "algebra-half-en:authored:M3-202-5",
-          "algebra-1-en:authored:M4-120-2"
+          "algebra-1-en:authored:M4-120-2",
+          "course-87-en:item:SN870838",
+          "course-87-en:item:SN870744",
+          "course-87-en:item:SN870806"
         ]
       },
       {
@@ -5846,13 +5914,17 @@
         "prerequisites": "Sort, calculate quartiles using the stated convention and draw the scale",
         "selectors": [
           "c/INV4.5",
-          "a/boxplot:draw"
+          "a/boxplot:draw",
+          "k/inv-box-plot"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-INV4.5",
           "course-1-en:authored:M2-987e818adcf1-2",
           "algebra-half-en:authored:M3-202-4",
-          "algebra-1-en:authored:M4-120-1"
+          "algebra-1-en:authored:M4-120-1",
+          "course-87-en:item:SN870838",
+          "course-87-en:item:SN870744",
+          "course-87-en:item:SN870806"
         ]
       }
     ],
@@ -5953,13 +6025,17 @@
         "demand": "Identify a named quadrilateral by its defining properties",
         "prerequisites": "Inclusive definitions of rectangles, rhombi and squares",
         "selectors": [
-          "c/INV6.1"
+          "c/INV6.1",
+          "k/inv-quadrilaterals"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-INV6.1",
           "intermediate-4-en:authored:M2-8bcdcfeaa15a-1",
           "course-1-en:authored:M2-99c9eb5462cf-1",
-          "algebra-1-en:authored:M4-2-6"
+          "algebra-1-en:authored:M4-2-6",
+          "course-87-en:item:SX870477",
+          "course-87-en:item:SX870296",
+          "course-87-en:item:SN870748"
         ]
       },
       {
@@ -6233,14 +6309,18 @@
         "selectors": [
           "c/COURSE211.1",
           "c/COURSE211.2",
-          "k/scale-factor"
+          "k/scale-factor",
+          "k/inv-scale-solids"
         ],
         "sourceIds": [
           "course-87-en:authored:COURSE211.1",
           "course-87-en:authored:COURSE211.2",
           "course-87-en:item:SN870587",
           "course-87-en:item:SN870401",
-          "course-87-en:item:SN870402"
+          "course-87-en:item:SN870402",
+          "course-87-en:item:SN870775",
+          "course-87-en:item:SX870466",
+          "course-87-en:item:SN870818"
         ]
       }
     ],
@@ -6772,7 +6852,8 @@
           "h/fraction-order",
           "h/fraction-bar",
           "a/complex:numeric",
-          "k/complex-fraction"
+          "k/complex-fraction",
+          "k/inv-fractions"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-9.6",
@@ -6784,7 +6865,9 @@
           "algebra-1-en:authored:M4-55-1",
           "course-87-en:item:SX870355",
           "course-87-en:item:SN870481",
-          "course-87-en:item:SN870483"
+          "course-87-en:item:SN870483",
+          "course-87-en:item:SX870315",
+          "course-87-en:item:SN870730"
         ]
       }
     ],
@@ -7220,7 +7303,8 @@
           "c/COURSE213.1",
           "c/COURSE213.2",
           "b/binary-read",
-          "b/binary-write"
+          "b/binary-write",
+          "k/inv-numerals"
         ],
         "sourceIds": [
           "algebra-half-en:node:791",
@@ -7228,7 +7312,13 @@
           "course-87-en:authored:COURSE213.1",
           "course-87-en:authored:COURSE213.2",
           "algebra-half-en:authored:M3-203-1",
-          "algebra-half-en:authored:M3-203-2"
+          "algebra-half-en:authored:M3-203-2",
+          "course-87-en:item:SMAH0535",
+          "course-87-en:item:SMAH0446",
+          "course-87-en:item:SMAH0451",
+          "course-87-en:item:SMAH0365",
+          "course-87-en:item:SMAH0367",
+          "course-87-en:item:SMAH0366"
         ]
       },
       {
@@ -8567,12 +8657,16 @@
         "prerequisites": "Complete both constructions and retain arcs",
         "selectors": [
           "h/angle-bisector",
-          "z/construct:copy-bisect"
+          "z/construct:copy-bisect",
+          "k/inv-construct"
         ],
         "sourceIds": [
           "algebra-half-en:authored:M3-201-2",
           "algebra-2-en:authored:M6-123-7",
-          "algebra-2-en:authored:M6-123-10"
+          "algebra-2-en:authored:M6-123-10",
+          "course-87-en:item:SX870105",
+          "course-87-en:item:SN870753",
+          "course-87-en:item:SN870841"
         ]
       }
     ],
@@ -8615,13 +8709,17 @@
         "selectors": [
           "f/bisect-segment",
           "c/INV8.1",
-          "m/construct:bisector"
+          "m/construct:bisector",
+          "k/inv-construct"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-INV8.1",
           "course-1-en:authored:M2-5c4fa8e00372-1",
           "algebra-half-en:authored:M3-201-3",
-          "algebra-2-en:authored:M5-construct-bisector"
+          "algebra-2-en:authored:M5-construct-bisector",
+          "course-87-en:item:SX870105",
+          "course-87-en:item:SN870753",
+          "course-87-en:item:SN870841"
         ]
       }
     ],
@@ -8956,13 +9054,17 @@
         "demand": "Relate central and inscribed angles intercepting one arc",
         "prerequisites": "An inscribed angle has half the central angle",
         "selectors": [
-          "h/circle-angles"
+          "h/circle-angles",
+          "k/inv-circle-parts"
         ],
         "sourceIds": [
           "algebra-half-en:authored:M3-204-3",
           "algebra-2-en:authored:M6-11-2",
           "algebra-2-en:authored:M6-56-2",
-          "algebra-2-en:authored:M6-128-6"
+          "algebra-2-en:authored:M6-128-6",
+          "course-87-en:item:SX870106",
+          "course-87-en:item:SN870770",
+          "course-87-en:item:SN870771"
         ]
       },
       {
@@ -9645,9 +9747,10 @@
         "demand": "Combine nonoverlapping fractional shares then convert to percent",
         "prerequisites": "Add fractions of the same whole first",
         "selectors": [
-          "p/circle-sum-percent"
+          "k/inv-fractions"
         ],
         "sourceIds": [
+          "course-87-en:item:SX870315",
           "course-87-en:item:SN870730"
         ]
       },
@@ -9959,11 +10062,18 @@
         "prerequisites": "Subtractive pairs; each generator retains its own range",
         "selectors": [
           "f/roman:39",
-          "f/roman:3999"
+          "f/roman:3999",
+          "k/inv-numerals"
         ],
         "sourceIds": [
           "intermediate-4-en:authored:M2-2e2b2a641fd1-1",
-          "intermediate-4-en:authored:M2-cebac3c2298d-1"
+          "intermediate-4-en:authored:M2-cebac3c2298d-1",
+          "course-87-en:item:SMAH0535",
+          "course-87-en:item:SMAH0446",
+          "course-87-en:item:SMAH0451",
+          "course-87-en:item:SMAH0365",
+          "course-87-en:item:SMAH0367",
+          "course-87-en:item:SMAH0366"
         ]
       },
       {
@@ -11518,12 +11628,16 @@
         "selectors": [
           "=/algebra-1-en:node:293",
           "=/algebra-half-en:node:276",
-          "=/algebra-half-en:node:277"
+          "=/algebra-half-en:node:277",
+          "k/inv-balanced"
         ],
         "sourceIds": [
           "algebra-1-en:node:293",
           "algebra-half-en:node:276",
-          "algebra-half-en:node:277"
+          "algebra-half-en:node:277",
+          "course-87-en:item:SX870378",
+          "course-87-en:item:SX870379",
+          "course-87-en:item:SX870380"
         ]
       },
       {
@@ -13170,10 +13284,15 @@
         "demand": "Evaluate a linear rule in a function table",
         "prerequisites": "Substitute a supplied input",
         "selectors": [
-          "c/85.2"
+          "c/85.2",
+          "k/inv-functions"
         ],
         "sourceIds": [
-          "course-87-en:authored:MCADA-85.2"
+          "course-87-en:authored:MCADA-85.2",
+          "course-87-en:item:SN870808",
+          "course-87-en:item:SN870763",
+          "course-87-en:item:SN870772",
+          "course-87-en:item:SN870807"
         ]
       },
       {
@@ -13933,11 +14052,14 @@
         "prerequisites": "Track color counts and whether a drawn marble is replaced",
         "selectors": [
           "=/algebra-half-en:node:687",
-          "=/course-87-en:item:SN870816"
+          "=/course-87-en:item:SN870816",
+          "k/inv-probability"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870816",
-          "algebra-half-en:node:687"
+          "algebra-half-en:node:687",
+          "course-87-en:item:SN870774",
+          "course-87-en:item:SN870834",
+          "course-87-en:item:SN870816"
         ]
       },
       {
@@ -14010,10 +14132,13 @@
         "demand": "Convert odds to the probability of the same named event",
         "prerequisites": "Odds compare favorable to unfavorable counts; probability uses the total",
         "selectors": [
-          "=/course-87-en:item:SN870774"
+          "=/course-87-en:item:SN870774",
+          "k/inv-probability"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870774"
+          "course-87-en:item:SN870774",
+          "course-87-en:item:SN870834",
+          "course-87-en:item:SN870816"
         ]
       },
       {
@@ -14021,10 +14146,14 @@
         "demand": "Give both event and complement probabilities",
         "prerequisites": "Odds compare favorable to unfavorable counts; probability uses the total",
         "selectors": [
-          "=/course-87-en:authored:COURSE210.2"
+          "=/course-87-en:authored:COURSE210.2",
+          "k/inv-probability"
         ],
         "sourceIds": [
-          "course-87-en:authored:COURSE210.2"
+          "course-87-en:authored:COURSE210.2",
+          "course-87-en:item:SN870774",
+          "course-87-en:item:SN870834",
+          "course-87-en:item:SN870816"
         ]
       }
     ],
@@ -14711,12 +14840,15 @@
         "demand": "Identify quadrant axis or origin from signs",
         "prerequisites": "Order coordinates as horizontal then vertical; axes have a zero coordinate",
         "selectors": [
-          "=/course-87-en:authored:MCADA-INV3.1"
+          "=/course-87-en:authored:MCADA-INV3.1",
+          "k/inv-coordinates"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-INV3.1",
           "course-1-en:authored:M2-335fb8ceaa11-1",
-          "algebra-half-en:authored:M3-38-1"
+          "algebra-half-en:authored:M3-38-1",
+          "course-87-en:item:SN870805",
+          "course-87-en:item:AXA10097"
         ]
       },
       {
@@ -14849,10 +14981,15 @@
         "prerequisites": "Read interval frequencies from the vertical scale and add the requested bins",
         "selectors": [
           "=/course-87-en:item:SN870341",
-          "k/histogram-walk"
+          "k/histogram-walk",
+          "k/inv-graphs"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870341"
+          "course-87-en:item:SN870341",
+          "course-87-en:item:SN870831",
+          "course-87-en:item:SN870833",
+          "course-87-en:item:AXG70450",
+          "course-87-en:item:AXG70449"
         ]
       },
       {
@@ -14860,10 +14997,15 @@
         "demand": "Read and add two interval frequencies",
         "prerequisites": "Read interval frequencies from the vertical scale and add the requested bins",
         "selectors": [
-          "=/algebra-half-en:authored:M3-202-7"
+          "=/algebra-half-en:authored:M3-202-7",
+          "k/inv-graphs"
         ],
         "sourceIds": [
-          "algebra-half-en:authored:M3-202-7"
+          "algebra-half-en:authored:M3-202-7",
+          "course-87-en:item:SN870831",
+          "course-87-en:item:SN870833",
+          "course-87-en:item:AXG70450",
+          "course-87-en:item:AXG70449"
         ]
       }
     ],
@@ -14923,10 +15065,15 @@
         "demand": "Construct and label a circle graph from counts",
         "prerequisites": "Parts of a whole correspond to percentages and angles totaling 360 degrees",
         "selectors": [
-          "=/course-87-en:authored:MCADA-INV5.3"
+          "=/course-87-en:authored:MCADA-INV5.3",
+          "k/inv-graphs"
         ],
         "sourceIds": [
-          "course-87-en:authored:MCADA-INV5.3"
+          "course-87-en:authored:MCADA-INV5.3",
+          "course-87-en:item:SN870831",
+          "course-87-en:item:SN870833",
+          "course-87-en:item:AXG70450",
+          "course-87-en:item:AXG70449"
         ]
       }
     ],
@@ -14942,13 +15089,18 @@
         "demand": "Read a line graph and its changes",
         "prerequisites": "Use uniform axes, ordered time points and a key for multiple series",
         "selectors": [
-          "=/course-87-en:authored:MCADA-38.3"
+          "=/course-87-en:authored:MCADA-38.3",
+          "k/inv-graphs"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-38.3",
           "intermediate-4-en:authored:M2-874aeaab47bb-4",
           "course-1-en:authored:M2-1e4115418038-2",
-          "algebra-half-en:authored:M3-29-3"
+          "algebra-half-en:authored:M3-29-3",
+          "course-87-en:item:SN870831",
+          "course-87-en:item:SN870833",
+          "course-87-en:item:AXG70450",
+          "course-87-en:item:AXG70449"
         ]
       },
       {
@@ -14975,10 +15127,12 @@
         "demand": "Read ordered observations retaining repeated leaves",
         "prerequisites": "Apply the stem-and-leaf key and retain repeated observations",
         "selectors": [
-          "=/course-87-en:item:SN870742"
+          "=/course-87-en:item:SN870742",
+          "k/inv-stem-leaf"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870742"
+          "course-87-en:item:SN870742",
+          "course-87-en:item:SN870812"
         ]
       },
       {
@@ -14986,9 +15140,11 @@
         "demand": "Calculate median mode and range from the display",
         "prerequisites": "Apply the stem-and-leaf key and retain repeated observations",
         "selectors": [
-          "=/course-87-en:item:SN870812"
+          "=/course-87-en:item:SN870812",
+          "k/inv-stem-leaf"
         ],
         "sourceIds": [
+          "course-87-en:item:SN870742",
           "course-87-en:item:SN870812"
         ]
       }
@@ -15082,13 +15238,17 @@
         "prerequisites": "Sort data and use the stated convention when splitting the halves",
         "selectors": [
           "=/algebra-1-en:authored:M4-120-1",
-          "=/course-87-en:authored:MCADA-INV4.5"
+          "=/course-87-en:authored:MCADA-INV4.5",
+          "k/inv-box-plot"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-INV4.5",
           "course-1-en:authored:M2-987e818adcf1-2",
           "algebra-half-en:authored:M3-202-4",
-          "algebra-1-en:authored:M4-120-1"
+          "algebra-1-en:authored:M4-120-1",
+          "course-87-en:item:SN870838",
+          "course-87-en:item:SN870744",
+          "course-87-en:item:SN870806"
         ]
       }
     ],
@@ -15583,7 +15743,8 @@
         "selectors": [
           "=/course-87-en:authored:MCADA-58.1",
           "=/course-87-en:authored:MCADA-INV6.3",
-          "k/polygon-symmetry"
+          "k/polygon-symmetry",
+          "k/inv-quadrilaterals"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-58.1",
@@ -15591,7 +15752,10 @@
           "intermediate-4-en:authored:M2-87908ef73c84-1",
           "course-1-en:authored:M2-3c1582763e12-1",
           "algebra-half-en:authored:M3-121-3",
-          "course-87-en:item:SN870289"
+          "course-87-en:item:SN870289",
+          "course-87-en:item:SX870477",
+          "course-87-en:item:SX870296",
+          "course-87-en:item:SN870748"
         ]
       },
       {
@@ -15849,10 +16013,14 @@
         "demand": "Construct a regular hexagon and its alternate-vertex triangle",
         "prerequisites": "Use a compass for circles and distance transfer and an unmarked straightedge for lines",
         "selectors": [
-          "=/course-87-en:authored:MCADA-INV2.2"
+          "=/course-87-en:authored:MCADA-INV2.2",
+          "k/inv-construct"
         ],
         "sourceIds": [
-          "course-87-en:authored:MCADA-INV2.2"
+          "course-87-en:authored:MCADA-INV2.2",
+          "course-87-en:item:SX870105",
+          "course-87-en:item:SN870753",
+          "course-87-en:item:SN870841"
         ]
       }
     ],
@@ -15879,10 +16047,14 @@
         "demand": "Construct an inscribed hexagon and triangle",
         "prerequisites": "Use equal-radius arcs and justify equal central angles",
         "selectors": [
-          "=/course-87-en:authored:MCADA-INV2.2"
+          "=/course-87-en:authored:MCADA-INV2.2",
+          "k/inv-construct"
         ],
         "sourceIds": [
-          "course-87-en:authored:MCADA-INV2.2"
+          "course-87-en:authored:MCADA-INV2.2",
+          "course-87-en:item:SX870105",
+          "course-87-en:item:SN870753",
+          "course-87-en:item:SN870841"
         ]
       }
     ],
@@ -15898,10 +16070,14 @@
         "demand": "Measure and compare central and inscribed angles",
         "prerequisites": "Compare angles intercepting the same arc; measurements do not prove a general theorem",
         "selectors": [
-          "=/course-87-en:authored:MCADA-INV2.4"
+          "=/course-87-en:authored:MCADA-INV2.4",
+          "k/inv-circle-parts"
         ],
         "sourceIds": [
-          "course-87-en:authored:MCADA-INV2.4"
+          "course-87-en:authored:MCADA-INV2.4",
+          "course-87-en:item:SX870106",
+          "course-87-en:item:SN870770",
+          "course-87-en:item:SN870771"
         ]
       },
       {

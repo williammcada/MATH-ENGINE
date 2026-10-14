@@ -6969,46 +6969,6 @@
     "samplePrompt": "What percent of a circle is 1/4 of the circle? Give an exact value."
   },
   {
-    "sourceId": "course-87-en:item:SN870730",
-    "providerSourceId": "course-87-en:item:SN870730",
-    "bankId": "course-87-en",
-    "topic": "fraction-decimal-percent",
-    "action": "Express a sum of circle fractions as percent",
-    "recipe": "circle-sum-percent",
-    "family": "structured-proportion",
-    "title": "Express a sum of circle fractions as percent",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:201",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "fraction-sum-to-percent",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "extension: Combine nonoverlapping fractional shares then convert to percent. Add fractions of the same whole first."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained within-course directions"
-    },
-    "samplePrompt": "Two nonoverlapping regions cover 3/10 and 7/10 of a circle. What percent do they cover together? Give an exact value."
-  },
-  {
     "sourceId": "course-87-en:item:SN870734",
     "providerSourceId": "course-87-en:item:SN870734",
     "bankId": "course-87-en",
@@ -7701,46 +7661,6 @@
     "samplePrompt": "A $1350 loan earns simple interest at 11% per year. How much interest is earned in 4 months, in dollars? Do not round intermediate values. Round the final answer to the nearest cent; halfway values round up. Enter the numerical answer (a dollar sign is optional)."
   },
   {
-    "sourceId": "course-87-en:item:SX870466",
-    "providerSourceId": "course-87-en:item:SX870466",
-    "bankId": "course-87-en",
-    "topic": "similarity-scale",
-    "action": "Compare volumes of cubes",
-    "recipe": "cube-volume-ratio",
-    "family": "structured-measurement",
-    "title": "Compare volumes of cubes",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:211",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "volume-side-ratios",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "measurement"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Cube an integer side-length ratio from 2 through 5 to obtain the ratio of cube volumes. No area ratio or inverse-root branch occurs here. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained within-course directions"
-    },
-    "samplePrompt": "The volume of a cube with side length 12 cm is how many times the volume of a cube with side length 3 cm? Enter the numerical answer in times, without the unit."
-  },
-  {
     "sourceId": "algebra-half-en:node:197",
     "providerSourceId": "algebra-half-en:node:197",
     "bankId": "algebra-half-en",
@@ -8414,124 +8334,6 @@
       "disposition": "retained within-course directions"
     },
     "samplePrompt": "The probability of rain tomorrow is 22%. What is the probability, as a percent, that it will not rain tomorrow? The percent sign is optional; give an exact value."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870774",
-    "providerSourceId": "course-87-en:item:SN870774",
-    "bankId": "course-87-en",
-    "topic": "probability",
-    "action": "Convert odds to probability",
-    "recipe": "odds-same-event",
-    "family": "structured-statistics",
-    "title": "Convert odds to probability",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:210",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "probability-odds-output",
-        "level": 1
-      },
-      {
-        "trackId": "odds-event-interpretation",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "statistics"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Convert favorable-to-unfavorable odds a:b to a/(a+b) for the same named event, which may itself be not-winning. Do not automatically complement the named event. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained within-course directions"
-    },
-    "samplePrompt": "The odds in favor of not winning a prize are 1 to 7. This compares not winning with the opposite outcome. What is the probability of not winning? Enter an exact fraction or terminating decimal, not a percent."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870834",
-    "providerSourceId": "course-87-en:item:SN870834",
-    "bankId": "course-87-en",
-    "topic": "probability",
-    "action": "Find event or complement probability from odds",
-    "recipe": "odds-complement",
-    "family": "structured-statistics",
-    "title": "Find event or complement probability from odds",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:210",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "odds-event-interpretation",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "statistics"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Given winning odds, answer either winning or not-winning according to the branch. The complement branch is optional, so do not assert a uniform extra-step difficulty over same-event odds. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "The odds in favor of winning a prize are 11 to 1. This compares winning with the opposite outcome. What is the probability of not winning? Enter an exact fraction or terminating decimal, not a percent."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870816",
-    "providerSourceId": "course-87-en:item:SN870816",
-    "bankId": "course-87-en",
-    "topic": "probability",
-    "action": "Find a single-draw probability",
-    "recipe": "marble-single",
-    "family": "structured-statistics",
-    "title": "Find a single-draw probability",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:210",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "probability-events",
-        "level": 1
-      },
-      {
-        "trackId": "marble-replacement-models",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "statistics"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "samplePrompt": "A bag contains only 5 red, 5 white and 3 blue marbles. Each marble is equally likely to be drawn. What is the probability of drawing red? Enter an exact fraction or terminating decimal, not a percent."
   },
   {
     "sourceId": "algebra-half-en:node:185",
@@ -15381,201 +15183,6 @@
       "reason": "Organize fifteen two-digit values into the supplied stems two through five with sorted leaves and duplicates; the stems and key are already provided. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
     },
     "samplePrompt": "Make a stem-and-leaf plot for 53, 47, 56, 28, 36, 30, 44, 48, 31, 51, 29, 43, 27, 35, 23. Stems are tens and leaves are ones; 2 | 7 means 27. Enter the leaves in ascending order for stems 2, 3, 4, 5, with spaces between leaves and semicolons between rows. Keep repeated leaves."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870742",
-    "providerSourceId": "course-87-en:item:SN870742",
-    "bankId": "course-87-en",
-    "topic": "data-displays",
-    "action": "Read a stem-and-leaf plot",
-    "recipe": "stem-read",
-    "family": "structured-reasoning",
-    "title": "Read a stem-and-leaf plot",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:204",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "stem-display-work",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Read and sort all fifteen observations from a stem-and-leaf display, retaining duplicate leaves and the supplied key. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained within-course directions"
-    },
-    "samplePrompt": "The stem is the tens digit and each leaf is a ones digit; for example, 2 | 7 means 27. List all represented numbers in ascending order, preserving repetitions. Enter numerical values without units; separate multiple answers with semicolons. Exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870812",
-    "providerSourceId": "course-87-en:item:SN870812",
-    "bankId": "course-87-en",
-    "topic": "data-displays",
-    "action": "Find statistics from a stem-and-leaf plot",
-    "recipe": "stem-statistics",
-    "family": "structured-reasoning",
-    "title": "Find statistics from a stem-and-leaf plot",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:204",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "stem-display-work",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "From a stem-and-leaf display of nine values with one triple mode, calculate median, mode and range. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained within-course directions"
-    },
-    "samplePrompt": "The stem is the tens digit and each leaf is a ones digit; for example, 2 | 7 means 27. Find median; mode; range in that order. Enter numerical values without units; separate multiple answers with semicolons. Exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870838",
-    "providerSourceId": "course-87-en:item:SN870838",
-    "bankId": "course-87-en",
-    "topic": "data-displays",
-    "action": "Match data to a box-and-whisker plot",
-    "recipe": "box-choice",
-    "family": "structured-reasoning",
-    "title": "Match data to a box-and-whisker plot",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:204",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "box-display-production",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "text"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Select the correct box plot for nine strictly increasing observations; exclude the overall median when finding quartiles. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "samplePrompt": "Which box-and-whisker plot represents 35, 13, 17, 21, 9, 27, 23, 31, 5? Exclude the overall median when splitting the sorted data into lower and upper halves; use each half\u2019s median as its quartile. Whiskers mark the minimum and maximum. Enter A, B, C or D."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870744",
-    "providerSourceId": "course-87-en:item:SN870744",
-    "bankId": "course-87-en",
-    "topic": "data-displays",
-    "action": "Read range and interquartile range",
-    "recipe": "box-range",
-    "family": "structured-reasoning",
-    "title": "Read range and interquartile range",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:204",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "box-display-work",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Read range and interquartile range from a supplied box plot by two differences. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained within-course directions"
-    },
-    "samplePrompt": "Find range; interquartile range from the box-and-whisker plot, in that order. Enter numerical values without units; separate multiple answers with semicolons. Exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870806",
-    "providerSourceId": "course-87-en:item:SN870806",
-    "bankId": "course-87-en",
-    "topic": "data-displays",
-    "action": "Read a five-number summary",
-    "recipe": "box-summary",
-    "family": "structured-reasoning",
-    "title": "Read a five-number summary",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:204",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "box-display-work",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Read minimum, maximum, first quartile, third quartile and median from a box plot in the explicitly requested order. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained within-course directions"
-    },
-    "samplePrompt": "Read minimum; maximum; lower quartile; upper quartile; median from the plot, in that order. Enter numerical values without units; separate multiple answers with semicolons. Exact fractions or terminating decimals are accepted."
   },
   {
     "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054",
@@ -90986,5 +90593,1826 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Which graph shows y = 5x\u00b2? Answer with the letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870315",
+    "providerSourceId": "course-87-en:item:SX870315",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "A fraction of a fraction",
+    "recipe": "inv-fractions",
+    "family": "structured-port87",
+    "title": "A fraction of a fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:201",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-operation-order",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What fraction is 1/2 of 2/5? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870730",
+    "providerSourceId": "course-87-en:item:SN870730",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Add parts of a circle as a percent",
+    "recipe": "inv-fractions",
+    "family": "structured-port87",
+    "title": "Add parts of a circle as a percent",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:201",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-operation-order",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-sum-to-percent",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "extension: Combine nonoverlapping fractional shares then convert to percent. Add fractions of the same whole first."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained within-course directions"
+    },
+    "samplePrompt": "One tenth of a circle plus one fourth of a circle is what percent of a circle? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870105",
+    "providerSourceId": "course-87-en:item:SX870105",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Construct a hexagon, triangle or circle divisions",
+    "recipe": "inv-construct",
+    "family": "structured-port87",
+    "title": "Construct a hexagon, triangle or circle divisions",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:202",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "compass-constructions",
+        "level": 1
+      },
+      {
+        "trackId": "construction-copy-bisect",
+        "level": 2
+      },
+      {
+        "trackId": "perpendicular-constructions",
+        "level": 3
+      },
+      {
+        "trackId": "construction-tool-use",
+        "level": 3
+      },
+      {
+        "trackId": "circle-sector-construction",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use a compass and straightedge to draw a circle divided into sixths. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870106",
+    "providerSourceId": "course-87-en:item:SX870106",
+    "bankId": "course-87-en",
+    "topic": "circle-measurement",
+    "action": "Diameters and inscribed and central angles",
+    "recipe": "inv-circle-parts",
+    "family": "structured-port87",
+    "title": "Diameters and inscribed and central angles",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:202",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-angle-theorems",
+        "level": 1
+      },
+      {
+        "trackId": "inscribed-angle-methods",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "chord-angle"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The figure shows a circle with center K. (a) Which chord is a diameter? (b) Which central angle appears to be an obtuse angle? Write the answers separated by a semicolon, for example AB; \u2220ABC."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870805",
+    "providerSourceId": "course-87-en:item:SN870805",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Graph three points",
+    "recipe": "inv-coordinates",
+    "family": "structured-port87",
+    "title": "Graph three points",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:203",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "coordinate-distance",
+        "level": 1
+      },
+      {
+        "trackId": "coordinate-description",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Graph the points A(3, \u22123), B(\u22123, \u22127), C(\u22121, 8) on the same axes. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:AXA10097",
+    "providerSourceId": "course-87-en:item:AXA10097",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Quadrant or axis of a point",
+    "recipe": "inv-coordinates",
+    "family": "structured-port87",
+    "title": "Quadrant or axis of a point",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:203",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "coordinate-distance",
+        "level": 1
+      },
+      {
+        "trackId": "coordinate-description",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the quadrant or axis where the point (3, 0) is located."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870742",
+    "providerSourceId": "course-87-en:item:SN870742",
+    "bankId": "course-87-en",
+    "topic": "data-displays",
+    "action": "Read a stem-and-leaf plot",
+    "recipe": "inv-stem-leaf",
+    "family": "structured-port87",
+    "title": "Read a stem-and-leaf plot",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:204",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "statistical-displays",
+        "level": 1
+      },
+      {
+        "trackId": "stem-display-work",
+        "level": 1
+      },
+      {
+        "trackId": "stem-display-work",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "sequence"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Read and sort all fifteen observations from a stem-and-leaf display, retaining duplicate leaves and the supplied key. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained within-course directions"
+    },
+    "samplePrompt": "What numbers are represented by the stem-and-leaf plot? List them in order, separated by commas."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870812",
+    "providerSourceId": "course-87-en:item:SN870812",
+    "bankId": "course-87-en",
+    "topic": "statistics",
+    "action": "Median, mode and range from a stem-and-leaf plot",
+    "recipe": "inv-stem-leaf",
+    "family": "structured-port87",
+    "title": "Median, mode and range from a stem-and-leaf plot",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:204",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "statistical-displays",
+        "level": 1
+      },
+      {
+        "trackId": "stem-display-work",
+        "level": 1
+      },
+      {
+        "trackId": "stem-display-work",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "From a stem-and-leaf display of nine values with one triple mode, calculate median, mode and range. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained within-course directions"
+    },
+    "samplePrompt": "Find the median, mode, and range of the data in the stem-and-leaf plot. Enter exact decimal or whole-number answers. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870838",
+    "providerSourceId": "course-87-en:item:SN870838",
+    "bankId": "course-87-en",
+    "topic": "data-displays",
+    "action": "Draw a box-and-whisker plot",
+    "recipe": "inv-box-plot",
+    "family": "structured-port87",
+    "title": "Draw a box-and-whisker plot",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:204",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "statistical-displays",
+        "level": 3
+      },
+      {
+        "trackId": "box-plot-work",
+        "level": 1
+      },
+      {
+        "trackId": "box-plot-work",
+        "level": 2
+      },
+      {
+        "trackId": "box-display-production",
+        "level": 1
+      },
+      {
+        "trackId": "box-display-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text with teacher diagram"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Select the correct box plot for nine strictly increasing observations; exclude the overall median when finding quartiles. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "samplePrompt": "Draw a box-and-whisker plot for the following data. 37, 40, 26, 24, 25, 39, 21, 27, 26 Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870744",
+    "providerSourceId": "course-87-en:item:SN870744",
+    "bankId": "course-87-en",
+    "topic": "statistics",
+    "action": "Range and interquartile range from a box plot",
+    "recipe": "inv-box-plot",
+    "family": "structured-port87",
+    "title": "Range and interquartile range from a box plot",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:204",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "statistical-displays",
+        "level": 3
+      },
+      {
+        "trackId": "box-plot-work",
+        "level": 1
+      },
+      {
+        "trackId": "box-plot-work",
+        "level": 2
+      },
+      {
+        "trackId": "box-display-work",
+        "level": 2
+      },
+      {
+        "trackId": "box-display-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Read range and interquartile range from a supplied box plot by two differences. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained within-course directions"
+    },
+    "samplePrompt": "Find the range and interquartile range of the data in the box-and-whisker plot. Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870806",
+    "providerSourceId": "course-87-en:item:SN870806",
+    "bankId": "course-87-en",
+    "topic": "statistics",
+    "action": "Five-number summary from a box plot",
+    "recipe": "inv-box-plot",
+    "family": "structured-port87",
+    "title": "Five-number summary from a box plot",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:204",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "statistical-displays",
+        "level": 3
+      },
+      {
+        "trackId": "box-plot-work",
+        "level": 1
+      },
+      {
+        "trackId": "box-plot-work",
+        "level": 2
+      },
+      {
+        "trackId": "box-display-work",
+        "level": 1
+      },
+      {
+        "trackId": "box-display-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Read minimum, maximum, first quartile, third quartile and median from a box plot in the explicitly requested order. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained within-course directions"
+    },
+    "samplePrompt": "Find the lower extreme, upper extreme, lower quartile, upper quartile, and median values of the data in the box-and-whisker plot. Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870831",
+    "providerSourceId": "course-87-en:item:SN870831",
+    "bankId": "course-87-en",
+    "topic": "data-displays",
+    "action": "Read a histogram",
+    "recipe": "inv-graphs",
+    "family": "structured-port87",
+    "title": "Read a histogram",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:205",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 3
+      },
+      {
+        "trackId": "histogram-read-depth",
+        "level": 1
+      },
+      {
+        "trackId": "histogram-read-depth",
+        "level": 2
+      },
+      {
+        "trackId": "circle-graph-production",
+        "level": 2
+      },
+      {
+        "trackId": "line-series-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The test scores for the 31 members of the advanced math class are represented in the histogram below. How many students had scores between 110 and 119? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870833",
+    "providerSourceId": "course-87-en:item:SN870833",
+    "bankId": "course-87-en",
+    "topic": "data-displays",
+    "action": "Read a double-line graph",
+    "recipe": "inv-graphs",
+    "family": "structured-port87",
+    "title": "Read a double-line graph",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:205",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 3
+      },
+      {
+        "trackId": "histogram-read-depth",
+        "level": 1
+      },
+      {
+        "trackId": "histogram-read-depth",
+        "level": 2
+      },
+      {
+        "trackId": "circle-graph-production",
+        "level": 2
+      },
+      {
+        "trackId": "line-series-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "num-set"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The double-line graph below compares high temperatures in Yuma and Miami. Use the graph to determine all the dates on which Yuma's temperature was the same as Miami's. List the April dates, separated by commas."
+  },
+  {
+    "sourceId": "course-87-en:item:AXG70450",
+    "providerSourceId": "course-87-en:item:AXG70450",
+    "bankId": "course-87-en",
+    "topic": "data-displays",
+    "action": "Make a circle graph from a budget",
+    "recipe": "inv-graphs",
+    "family": "structured-port87",
+    "title": "Make a circle graph from a budget",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:205",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 3
+      },
+      {
+        "trackId": "histogram-read-depth",
+        "level": 1
+      },
+      {
+        "trackId": "histogram-read-depth",
+        "level": 2
+      },
+      {
+        "trackId": "circle-graph-production",
+        "level": 2
+      },
+      {
+        "trackId": "line-series-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text with teacher diagram"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "In a young single person's monthly budget, $75 is spent on food, $120 is spent on housing, and $105 is spent on other items. Represent the data on a circle graph. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:AXG70449",
+    "providerSourceId": "course-87-en:item:AXG70449",
+    "bankId": "course-87-en",
+    "topic": "data-displays",
+    "action": "Choose the circle graph for a budget",
+    "recipe": "inv-graphs",
+    "family": "structured-port87",
+    "title": "Choose the circle graph for a budget",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:205",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 3
+      },
+      {
+        "trackId": "histogram-read-depth",
+        "level": 1
+      },
+      {
+        "trackId": "histogram-read-depth",
+        "level": 2
+      },
+      {
+        "trackId": "circle-graph-production",
+        "level": 2
+      },
+      {
+        "trackId": "line-series-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "In a young single person's monthly budget, $150 is spent on food, $200 is spent on housing, and $150 is spent on other items. Which circle graph represents the data? Answer with the letter, or d for none of these."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870477",
+    "providerSourceId": "course-87-en:item:SX870477",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Name a quadrilateral from its properties",
+    "recipe": "inv-quadrilaterals",
+    "family": "structured-port87",
+    "title": "Name a quadrilateral from its properties",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:206",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "quadrilateral-properties",
+        "level": 1
+      },
+      {
+        "trackId": "symmetry-line-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the name of the quadrilateral that has exactly one pair of parallel sides?"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870296",
+    "providerSourceId": "course-87-en:item:SX870296",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Name a quadrilateral and explain",
+    "recipe": "inv-quadrilaterals",
+    "family": "structured-port87",
+    "title": "Name a quadrilateral and explain",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:206",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "quadrilateral-properties",
+        "level": 1
+      },
+      {
+        "trackId": "symmetry-line-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Name the quadrilateral and explain why that is the best name for the figure. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870748",
+    "providerSourceId": "course-87-en:item:SN870748",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Lines of symmetry of a quadrilateral",
+    "recipe": "inv-quadrilaterals",
+    "family": "structured-port87",
+    "title": "Lines of symmetry of a quadrilateral",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:206",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "quadrilateral-properties",
+        "level": 1
+      },
+      {
+        "trackId": "symmetry-line-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "For the figure below, draw all the lines of symmetry. How many lines of symmetry are there?"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870378",
+    "providerSourceId": "course-87-en:item:SX870378",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve a + x = b with decimals",
+    "recipe": "inv-balanced",
+    "family": "structured-port87",
+    "title": "Solve a + x = b with decimals",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:207",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rational-affine-steps",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: w + 14 = 28.2 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870379",
+    "providerSourceId": "course-87-en:item:SX870379",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve a = x - b with decimals",
+    "recipe": "inv-balanced",
+    "family": "structured-port87",
+    "title": "Solve a = x - b with decimals",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:207",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rational-affine-steps",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: 1.5 = t \u2212 0.09 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870380",
+    "providerSourceId": "course-87-en:item:SX870380",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Solve a = bx with decimals",
+    "recipe": "inv-balanced",
+    "family": "structured-port87",
+    "title": "Solve a = bx with decimals",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:207",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rational-affine-steps",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: 2.8 = 0.7d Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870753",
+    "providerSourceId": "course-87-en:item:SN870753",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Construct a segment bisector",
+    "recipe": "inv-construct",
+    "family": "structured-port87",
+    "title": "Construct a segment bisector",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:208",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "compass-constructions",
+        "level": 1
+      },
+      {
+        "trackId": "construction-copy-bisect",
+        "level": 2
+      },
+      {
+        "trackId": "perpendicular-constructions",
+        "level": 3
+      },
+      {
+        "trackId": "construction-tool-use",
+        "level": 3
+      },
+      {
+        "trackId": "circle-sector-construction",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Construct a segment bisector for the segment shown. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870841",
+    "providerSourceId": "course-87-en:item:SN870841",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Construct an angle bisector",
+    "recipe": "inv-construct",
+    "family": "structured-port87",
+    "title": "Construct an angle bisector",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:208",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "compass-constructions",
+        "level": 1
+      },
+      {
+        "trackId": "construction-copy-bisect",
+        "level": 2
+      },
+      {
+        "trackId": "perpendicular-constructions",
+        "level": 3
+      },
+      {
+        "trackId": "construction-tool-use",
+        "level": 3
+      },
+      {
+        "trackId": "circle-sector-construction",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Construct the angle bisector of the given angle. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870770",
+    "providerSourceId": "course-87-en:item:SN870770",
+    "bankId": "course-87-en",
+    "topic": "circle-measurement",
+    "action": "Central angles and area of an inscribed square",
+    "recipe": "inv-circle-parts",
+    "family": "structured-port87",
+    "title": "Central angles and area of an inscribed square",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:208",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-angle-theorems",
+        "level": 1
+      },
+      {
+        "trackId": "inscribed-angle-methods",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "(a) What is the measure of each central angle formed? (b) Find the area of the square if the radius of the circle is 2. Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870771",
+    "providerSourceId": "course-87-en:item:SN870771",
+    "bankId": "course-87-en",
+    "topic": "circle-measurement",
+    "action": "Angles in an inscribed octagon",
+    "recipe": "inv-circle-parts",
+    "family": "structured-port87",
+    "title": "Angles in an inscribed octagon",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:208",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-angle-theorems",
+        "level": 1
+      },
+      {
+        "trackId": "inscribed-angle-methods",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "(a) What is the measure of each central angle? (b) What is the measure of \u2220FOD? Enter exact decimal or whole-number answers. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870808",
+    "providerSourceId": "course-87-en:item:SN870808",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Complete a function table and graph",
+    "recipe": "inv-functions",
+    "family": "structured-port87",
+    "title": "Complete a function table and graph",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:209",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "contextual-function-domain",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text with teacher diagram"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Complete the function table for y = x \u2212 1 (x = \u22124, 0, 4). Then graph the function. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870763",
+    "providerSourceId": "course-87-en:item:SN870763",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Graph a table and describe the trend",
+    "recipe": "inv-functions",
+    "family": "structured-port87",
+    "title": "Graph a table and describe the trend",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:209",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "contextual-function-domain",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The table below shows the depth of the water in a pond in winter over a period of time. Graph the ordered pairs and make a statement about the trend indicated by the table. Week 1 to 5, Depth (inches): 1.375, 2.125, 3.875, 4.625, 5.25. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870772",
+    "providerSourceId": "course-87-en:item:SN870772",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Write and graph a function rule",
+    "recipe": "inv-functions",
+    "family": "structured-port87",
+    "title": "Write and graph a function rule",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:209",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "contextual-function-domain",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text with teacher diagram"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write a function rule for the table. Graph the function. x: 3, 4, 5, 6; y: 2, 1, 0, \u22121. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870807",
+    "providerSourceId": "course-87-en:item:SN870807",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Choose the graph and rule for a table",
+    "recipe": "inv-functions",
+    "family": "structured-port87",
+    "title": "Choose the graph and rule for a table",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:209",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "contextual-function-domain",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which shows the graph and equation for the function found in the table? x: 2, 3, 4, 5; y: 3, 2, 1, 0. Answer with the letter, or d for not enough information."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870774",
+    "providerSourceId": "course-87-en:item:SN870774",
+    "bankId": "course-87-en",
+    "topic": "probability",
+    "action": "Probability from odds",
+    "recipe": "inv-probability",
+    "family": "structured-port87",
+    "title": "Probability from odds",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:210",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "marble-replacement-models",
+        "level": 1
+      },
+      {
+        "trackId": "probability-odds-output",
+        "level": 1
+      },
+      {
+        "trackId": "probability-odds-output",
+        "level": 2
+      },
+      {
+        "trackId": "odds-event-interpretation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Convert favorable-to-unfavorable odds a:b to a/(a+b) for the same named event, which may itself be not-winning. Do not automatically complement the named event. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained within-course directions"
+    },
+    "samplePrompt": "If the odds that you will win a prize in the raffle are 1 to 3, what is the probability that you will win a prize? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870834",
+    "providerSourceId": "course-87-en:item:SN870834",
+    "bankId": "course-87-en",
+    "topic": "probability",
+    "action": "Probability that an event will or will not occur from odds",
+    "recipe": "inv-probability",
+    "family": "structured-port87",
+    "title": "Probability that an event will or will not occur from odds",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:210",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "marble-replacement-models",
+        "level": 1
+      },
+      {
+        "trackId": "probability-odds-output",
+        "level": 1
+      },
+      {
+        "trackId": "probability-odds-output",
+        "level": 2
+      },
+      {
+        "trackId": "odds-event-interpretation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Given winning odds, answer either winning or not-winning according to the branch. The complement branch is optional, so do not assert a uniform extra-step difficulty over same-event odds. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "The odds that an event will occur are 1 to 11. Find the probability that the event will not occur. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870816",
+    "providerSourceId": "course-87-en:item:SN870816",
+    "bankId": "course-87-en",
+    "topic": "probability",
+    "action": "Probability of drawing a color",
+    "recipe": "inv-probability",
+    "family": "structured-port87",
+    "title": "Probability of drawing a color",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:210",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "marble-replacement-models",
+        "level": 1
+      },
+      {
+        "trackId": "probability-odds-output",
+        "level": 1
+      },
+      {
+        "trackId": "probability-odds-output",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A bag contains 2 red, 7 white, and 3 blue marbles. What is the probability that a marble drawn from the bag will be blue? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870775",
+    "providerSourceId": "course-87-en:item:SN870775",
+    "bankId": "course-87-en",
+    "topic": "similarity-scale",
+    "action": "Compare surface areas of cubes",
+    "recipe": "inv-scale-solids",
+    "family": "structured-port87",
+    "title": "Compare surface areas of cubes",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:211",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "similar-figures",
+        "level": 3
+      },
+      {
+        "trackId": "scale-lengths",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which has more surface area? (A) one 7-cm cube (B) five 3-cm cubes (C) they have the same surface area. Answer A, B or C."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870466",
+    "providerSourceId": "course-87-en:item:SX870466",
+    "bankId": "course-87-en",
+    "topic": "similarity-scale",
+    "action": "Volume ratio of two cubes",
+    "recipe": "inv-scale-solids",
+    "family": "structured-port87",
+    "title": "Volume ratio of two cubes",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:211",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "similar-figures",
+        "level": 3
+      },
+      {
+        "trackId": "scale-lengths",
+        "level": 3
+      },
+      {
+        "trackId": "volume-side-ratios",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Cube an integer side-length ratio from 2 through 5 to obtain the ratio of cube volumes. No area ratio or inverse-root branch occurs here. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained within-course directions"
+    },
+    "samplePrompt": "The volume of a 9-cm cube is how many times the volume of a 3-cm cube? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870818",
+    "providerSourceId": "course-87-en:item:SN870818",
+    "bankId": "course-87-en",
+    "topic": "similarity-scale",
+    "action": "Volume from a scale model",
+    "recipe": "inv-scale-solids",
+    "family": "structured-port87",
+    "title": "Volume from a scale model",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:211",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "similar-figures",
+        "level": 3
+      },
+      {
+        "trackId": "scale-lengths",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A log cabin in the shape of a rectangular prism is modeled using a scale of 1 centimeter to 0.8 meter. If the model is 30 \u00d7 15 \u00d7 9 centimeters, what is the volume of the actual log cabin? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870778",
+    "providerSourceId": "course-87-en:item:SN870778",
+    "bankId": "course-87-en",
+    "topic": "pythagorean",
+    "action": "Prove the Pythagorean theorem",
+    "recipe": "inv-pythagoras",
+    "family": "structured-port87",
+    "title": "Prove the Pythagorean theorem",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:212",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "geometric-proof",
+        "level": 3
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Prove the Pythagorean theorem. This proof was discovered by President James Garfield. Using the diagram, write two different expressions for the area of the trapezoid and set them equal to each other. Algebraically manipulate the equation to show a\u00b2 + b\u00b2 = c\u00b2. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SMAH0406",
+    "providerSourceId": "course-87-en:item:SMAH0406",
+    "bankId": "course-87-en",
+    "topic": "pythagorean",
+    "action": "Find the hypotenuse in radical form",
+    "recipe": "inv-pythagoras",
+    "family": "structured-port87",
+    "title": "Find the hypotenuse in radical form",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:212",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "geometric-proof",
+        "level": 3
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "roots"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find c. Write the answer in simplest radical form if it is not a whole number."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870780",
+    "providerSourceId": "course-87-en:item:SN870780",
+    "bankId": "course-87-en",
+    "topic": "pythagorean",
+    "action": "Find a side of a right triangle",
+    "recipe": "inv-pythagoras",
+    "family": "structured-port87",
+    "title": "Find a side of a right triangle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:212",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "geometric-proof",
+        "level": 3
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find m. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SMAH0535",
+    "providerSourceId": "course-87-en:item:SMAH0535",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Base 2 to base 10",
+    "recipe": "inv-numerals",
+    "family": "structured-port87",
+    "title": "Base 2 to base 10",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:213",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "binary",
+        "level": 1
+      },
+      {
+        "trackId": "roman-range",
+        "level": 1
+      },
+      {
+        "trackId": "roman-range",
+        "level": 2
+      },
+      {
+        "trackId": "binary-fractions-notation",
+        "level": 1
+      },
+      {
+        "trackId": "roman-notation-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the base 10 value of 10100 (base 2)? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SMAH0446",
+    "providerSourceId": "course-87-en:item:SMAH0446",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Six-digit base 2 to base 10",
+    "recipe": "inv-numerals",
+    "family": "structured-port87",
+    "title": "Six-digit base 2 to base 10",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:213",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "binary",
+        "level": 1
+      },
+      {
+        "trackId": "roman-range",
+        "level": 1
+      },
+      {
+        "trackId": "roman-range",
+        "level": 2
+      },
+      {
+        "trackId": "binary-fractions-notation",
+        "level": 1
+      },
+      {
+        "trackId": "roman-notation-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the base 10 value of 110001 (base 2)? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SMAH0451",
+    "providerSourceId": "course-87-en:item:SMAH0451",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Base 10 to base 2",
+    "recipe": "inv-numerals",
+    "family": "structured-port87",
+    "title": "Base 10 to base 2",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:213",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "binary",
+        "level": 1
+      },
+      {
+        "trackId": "roman-range",
+        "level": 1
+      },
+      {
+        "trackId": "roman-range",
+        "level": 2
+      },
+      {
+        "trackId": "binary-fractions-notation",
+        "level": 1
+      },
+      {
+        "trackId": "roman-notation-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 40 (base 10) using base 2 numerals."
+  },
+  {
+    "sourceId": "course-87-en:item:SMAH0365",
+    "providerSourceId": "course-87-en:item:SMAH0365",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Write a Roman numeral",
+    "recipe": "inv-numerals",
+    "family": "structured-port87",
+    "title": "Write a Roman numeral",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:213",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "binary",
+        "level": 1
+      },
+      {
+        "trackId": "roman-range",
+        "level": 1
+      },
+      {
+        "trackId": "roman-range",
+        "level": 2
+      },
+      {
+        "trackId": "binary-fractions-notation",
+        "level": 1
+      },
+      {
+        "trackId": "roman-notation-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the Roman numeral for 24."
+  },
+  {
+    "sourceId": "course-87-en:item:SMAH0367",
+    "providerSourceId": "course-87-en:item:SMAH0367",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Write a Roman numeral for a large number",
+    "recipe": "inv-numerals",
+    "family": "structured-port87",
+    "title": "Write a Roman numeral for a large number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:213",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "binary",
+        "level": 1
+      },
+      {
+        "trackId": "roman-range",
+        "level": 1
+      },
+      {
+        "trackId": "roman-range",
+        "level": 2
+      },
+      {
+        "trackId": "binary-fractions-notation",
+        "level": 1
+      },
+      {
+        "trackId": "roman-notation-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the Roman numeral for 557."
+  },
+  {
+    "sourceId": "course-87-en:item:SMAH0366",
+    "providerSourceId": "course-87-en:item:SMAH0366",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Read a Roman numeral",
+    "recipe": "inv-numerals",
+    "family": "structured-port87",
+    "title": "Read a Roman numeral",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:213",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "binary",
+        "level": 1
+      },
+      {
+        "trackId": "roman-range",
+        "level": 1
+      },
+      {
+        "trackId": "roman-range",
+        "level": 2
+      },
+      {
+        "trackId": "binary-fractions-notation",
+        "level": 1
+      },
+      {
+        "trackId": "roman-notation-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the number represented by the Roman numeral XXIV. Enter exact numerical answers without units."
   }
 ]
