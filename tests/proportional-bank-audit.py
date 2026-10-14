@@ -44,5 +44,5 @@ for line in p.stdout:
   assert d==1
  assert q['solution'] and q['prompt'] and q['provenance']['exactLegacyReproduction'] is False
  count+=1
-assert p.wait()==0 and count==33000  # 38 entries less SX870068, SX870195, SX870196, SN870199 and SN870224, now served by coverage ports
+assert p.wait()==0 and count==29000  # 38 entries less SX870068, SX870195, SX870196, SN870199, SN870224, SN870274, SX870277, SX870281 and SXA10204, now served by coverage ports
 print(f'PASS: {count:,} independent exact checks across {len(seen)} recipes; replay and checker checks passed')

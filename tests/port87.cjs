@@ -14,6 +14,10 @@ const parenRep=(n,d)=>{const w=Math.floor(n/d);let r=n%d;const pos={},ds=[];whil
 const shoelace=P=>Math.abs(P.reduce((s,[x,y],i)=>{const [u,v]=P[(i+1)%P.length];return s+x*v-u*y;},0))/2,lcm=(a,b)=>a*b/gcd(a,b),vals=q=>q.answer.values.map(v=>Number(v.numerator)/Number(v.denominator));
 const factorize=x=>{const f=[];for(let p=2;x>1;)if(x%p===0){f.push(p);x/=p;}else p++;return f;};
 const powerForm=f=>[...new Set(f)].map(p=>{const k=f.filter(x=>x===p).length;return k>1?`${p}^${k}`:String(p);}).join(' · ');
+// Independent scientific-notation helpers for Batch 6: digit-string shifting, no floating point.
+const SUPN={'⁻':'-','⁰':'0','¹':'1','²':'2','³':'3','⁴':'4','⁵':'5','⁶':'6','⁷':'7','⁸':'8','⁹':'9'},supNum=s=>Number([...s].map(c=>SUPN[c]).join(''));
+const shiftDec=(d,e)=>{let [w,f='']=d.split('.');let digits=w+f,pt=w.length+e;while(pt<=0){digits='0'+digits;pt++;}while(pt>digits.length)digits+='0';let W=digits.slice(0,pt).replace(/^0+(?=\d)/,''),F=digits.slice(pt).replace(/0+$/,'');return W+(F?'.'+F:'');};
+const toSci=d=>{let [w,f='']=d.split('.');const digits=(w+f).replace(/^0+/,''),lead=(w+f).length-digits.length,e=w.length-lead-1,m=digits.replace(/0+$/,'');return `${m[0]}${m.length>1?'.'+m.slice(1):''} x 10^${e}`;};
 const oracle={
  'money-divide':(q,p)=>{assert(p.divisor>=11&&p.divisor<=99&&p.divisor%10);const z=p.dividendCents/p.divisor;assert(Number.isInteger(z)&&z>=11&&z<=99&&z%10);return fracEq(q,z,100);},
  'money-times':(q,p)=>{assert(p.cents>=101&&p.cents<=999&&p.cents%100&&p.factor%10===0&&p.factor>=20&&p.factor<=90);return fracEq(q,p.cents*p.factor,100);},
@@ -211,6 +215,37 @@ const oracle={
  'yards-to-feet':(q,p)=>{assert(p.yd%30===0&&p.yd%100&&p.yd>=1020&&p.yd<=2970);return fracEq(q,3*p.yd,1);},
  'wage-per-hour':(q,p)=>{assert.equal(p.d*p.h,40);return fracEq(q,p.p,p.d*p.h);},
  'tons-pounds':(q,p)=>typeof p.q==='string'?fracEq(q,...mulF(Fd(p.q),[2000,1])):fracEq(q,p.q,2000),
+ // Batch 6: Lessons 51–60.
+ 'sci-two-way':(q,p)=>{const [pa,pb]=q.prompt.match(/\(a\) Write (.*?) in scientific notation\. \(b\) Write (.*?) in standard form\./).slice(1);let A;
+   const m=pa.match(/^([a-z-]+(?: [a-z-]+)*?) (million|billion|trillion)$/);if(m){const n1=wordsValue(m[1]);assert(n1>=14&&n1<=44&&n1%10);A=String(n1)+'0'.repeat({million:6,billion:9,trillion:12}[m[2]]);}
+   else{const s=pa.match(/^([a-z]+) (ten-thousandths?|hundred-thousandths?)$/);if(s){const n1=wordsValue(s[1]);const k=/^ten/.test(s[2])?4:5;A='0.'+'0'.repeat(k-1)+n1;}else A=pa;}
+   const b=pb.match(/^(\d)\.(\d+) × 10([⁻⁰¹²³⁴⁵⁶⁷⁸⁹]+)$/);const e=supNum(b[3]);return E.checkAnswer(q,`${toSci(A)}; ${shiftDec(b[1]+'.'+b[2],e)}`).answerCorrect&&!E.checkAnswer(q,`${toSci(A)}; ${shiftDec(b[1]+'.'+b[2],e+1)}`).answerCorrect;},
+ 'to-sci':(q,p)=>{const num=q.prompt.match(/(\d[\d,]*(?:\.\d+)?)/)[1].replace(/,/g,'');return E.checkAnswer(q,toSci(num)).answerCorrect&&!E.checkAnswer(q,toSci(num).replace(/\^(-?\d+)$/,(m,e)=>'^'+(Number(e)+1))).answerCorrect;},
+ 'order-ops':(q,p)=>{const v={plain:()=>p.a+p.a*p.a-p.a/p.a,square:()=>(p.a*p.b)**2-p.a*p.b**2,variables:()=>p.b+(p.b**2-p.b*p.c)-p.c,'divide-multiply':()=>p.a*p.a/p.a*p.a+p.b-p.c}[p.form]();if(p.form==='variables')assert(p.b>=10&&p.b<=12&&p.c>=2&&p.c<=9);return fracEq(q,v,1);},
+ 'seed-cost':(q,p)=>{assert(p.a>=15&&p.a<=30&&p.b>p.a);return fracEq(q,p.c*p.b,p.a)&&Number.isInteger(p.c*p.b*100/p.a);},
+ 'taffy':(q,p)=>{assert([10,20,30].includes(p.a)&&p.b2>=4&&p.b2<=9);return fracEq(q,p.b2*60*p.c,2*p.a);},
+ 'nut-price':(q,p)=>{assert(p.z>=199&&p.z<=299&&p.c>2*p.a&&p.c<=15);const [x,y]=vals(q);return Math.abs(x-p.z/100)<1e-12&&Math.abs(y-p.z*p.c/100)<1e-9;},
+ 'beanstalk':(q,p)=>{assert(p.b%p.a===0);const inches=p.b/p.a*7*p.c;return q.answer.parts[0][1]*12+q.answer.parts[1][1]===inches&&q.answer.parts[1][1]<12;},
+ 'ratio-find':(q,p)=>{const m=q.prompt.match(/ratio of (.+?) to (.+?) (?:was|in a certain company is) (\d+) to (\d+)\. If there (?:were|are) (\d+) (.+?)(?: in the company)?, how many/);const [,x,y,ra,rb,f,z]=m;if(p.variant==='people')assert(gcd(Number(ra),Number(rb))===1&&ra!==rb);const want=z===x?Number(f)/Number(ra)*Number(rb):Number(f)/Number(rb)*Number(ra);assert(Number.isInteger(want));return fracEq(q,want,1);},
+ 'recipe-ratio':(q,p)=>fracEq(q,p.b*p.a2,p.a),
+ 'ratio-chain':(q,p)=>{assert(q.prompt.includes(`there were ${p.a*p.m} lions`));const tigers=p.a*p.m/p.a*p.b,bears=tigers/p.m*p.c;return fracEq(q,bears,1);},
+ 'combined-average':(q,p)=>{assert(p.n1!==p.n2&&p.a!==p.b);return fracEq(q,Math.round(100*(p.a*p.n1+p.b*p.n2)/(p.n1+p.n2)),100);},
+ 'race-time':(q,p)=>{const Z=3*p.av-p.A-p.A2;assert(p.A<Z&&Z<p.A2);return fracEq(q,Z,10);},
+ 'wage-average':(q,p)=>fracEq(q,10*(p.a*p.b+p.a2*p.c),100*(p.b+p.c))&&Number.isInteger(10*(p.a*p.b+p.a2*p.c)/(p.b+p.c)),
+ 'subtract-measures':(q,p)=>{const P=q.answer.parts;let tot,u;if(P[0][0]==='hr'){tot=p.a*3600+p.b*60-(p.d*3600+p.e*60+p.f);u=[3600,60,1];}else if(p.a===undefined){tot=p.c*36+p.d*12+p.e-p.b;u=[36,12,1];}else{tot=p.a*36+p.b*12-(p.c*36+p.d*12+p.e);u=[36,12,1];}
+   assert(tot>0);return P.reduce((s,[,v],i)=>s+v*u[i],0)===tot&&P[1][1]*u[1]<u[0]&&P[2][1]<u[1];},
+ 'negative-exponent':(q,p)=>fracEq(q,1,p.a**p.p),
+ 'ten-negative-power':(q,p)=>{assert(p.k>=2&&p.k<=8);return E.checkAnswer(q,`1/${10**p.k}; 0.${'0'.repeat(p.k-1)}1`).answerCorrect&&!E.checkAnswer(q,`1/${10**p.k}; 0.${'0'.repeat(p.k)}1`).answerCorrect;},
+ 'symmetric-vertex':(q,p)=>q.answer.x===-p.a&&q.answer.y===p.b&&E.checkAnswer(q,`(${-p.a},${p.b})`).answerCorrect&&!E.checkAnswer(q,`(${p.a},${-p.b})`).answerCorrect,
+ 'polygon-symmetry':(q,p)=>(q.givens.svg.match(/points="([^"]*)"/)[1].trim().split(/\s+/).length===p.k)&&fracEq(q,p.k,1),
+ 'function-table':(q,p)=>{const miss=p.mult?2:1,rule=x=>p.mult?x*p.e:x+p.e;assert(p.ins.slice(1).every((x,i)=>x>p.ins[i]));return fracEq(q,rule(p.ins[miss]),1)&&p.ins.every((x,i)=>i===miss||q.givens.svg.includes(`>${rule(x)}<`));},
+ 'number-machine':(q,p)=>{assert(p.a%p.e&&p.b%p.e===0);return fracEq(q,p.a,p.e)&&q.givens.svg.includes(`${p.b} in, ${p.b/p.e} out`);},
+ 'integer-line-add':(q,p)=>{const z=p.a+p.b;assert(Math.sign(p.a)===-Math.sign(p.b));
+   if(q.answer.kind==='teacher'){assert(q.answer.reference.endsWith(`= ${String(z).replace('-','−')}.`));return /<svg/.test(q.teacherSvg||'');}
+   assert(Math.abs(z)<7&&z!==0);const X=v=>(30+(v+6)*380/12).toFixed(1),groups=q.givens.svg.split('<g transform').slice(1),ok=g=>{const ar=[...g.matchAll(/<line x1="([\d.]+)" y1="[\d.]+" x2="([\d.]+)" y2="[\d.]+" stroke="[^"]*" stroke-width="2" marker-end/g)].map(m=>[m[1],m[2]]),dot=(g.match(/<circle cx="([\d.]+)"/)||[])[1];return ar.length===2&&ar[0][0]===X(0)&&ar[0][1]===X(p.a)&&ar[1][0]===X(p.a)&&ar[1][1]===X(z)&&dot===X(z);};
+   assert.equal(groups.length,4);return groups.filter(ok).length===1&&ok(groups['abcd'.indexOf(q.answer.value)]);},
+ 'fraction-of-group':(q,p)=>p.den?(assert(p.e%p.den===0),fracEq(q,p.e,p.den)):fracEq(q,p.a*p.c,p.b*p.d),
+ 'percent-of':(q,p)=>{assert(Number.isInteger(p.a*p.b/100));return fracEq(q,p.a*p.b,100);},
 };
 const checks={};let tasks=0;
 for(const c of P.catalog){tasks++;const seen=new Set();
@@ -229,8 +264,8 @@ for(const c of P.catalog){tasks++;const seen=new Set();
   if(q.choices){const vals=q.choices.map(x=>String(x.value));assert.equal(new Set(vals).size,vals.length,'distinct choices');assert(q.choices.length===3||q.choices.length===2&&(['compare-number-line','metric-compare','decimal-compare'].includes(c.recipe)||c.recipe==='fans-ratio'&&E.answerText(q)==='1 to 1'||['estimate-mixed-product','mixed-expression'].includes(c.recipe)&&E.answerText(q)==='1'),c.sourceId+' choice count');
    for(const ch of q.choices){assert(ch.mistake&&ch.mistake.length>8,c.sourceId+' named mistake');assert(!/NaN|undefined|Infinity/.test(ch.value));if(a.kind!=='teacher'&&!/→/.test(ch.value))assert(!E.checkAnswer(q,ch.value).answerCorrect,c.sourceId+' distractor accepted: '+ch.value);}}
   // Drawings where the source draws.
-  if(['fdp-table','add-measures','number-line-average','segment-bc','number-line-point','spinner','dart-board','right-triangle-area','diagonal-plot','step-area','l-shape-area','square-triangle-area','tally-votes','histogram-walk','circle-graph','right-triangle-x','isosceles-angle','complementary-expression','right-angle-chain','parallel-zigzag','crossing-triangles','triangle-line-angles','crossing-lines-triangle','compare-number-line','percent-shaded-square','percent-grid','ruler-length','angle-kind','protractor-read','regular-polygon-pick','step-perimeter','quad-perimeter','rectangle-abcd'].includes(c.recipe)||c.variant==='identify'){assert(/<svg[\s\S]*<\/svg>/.test(q.givens.svg||''),c.sourceId+' drawing');}
-  if(['subtraction-number-line','name-linear-figures','draw-angle','congruent-pairs'].includes(c.recipe)||c.variant==='draw')assert(/<svg/.test((q.givens.svg||'')+(q.teacherSvg||'')),c.sourceId+' teacher drawing');
+  if(['fdp-table','add-measures','number-line-average','segment-bc','number-line-point','spinner','dart-board','right-triangle-area','diagonal-plot','step-area','l-shape-area','square-triangle-area','tally-votes','histogram-walk','circle-graph','right-triangle-x','isosceles-angle','complementary-expression','right-angle-chain','parallel-zigzag','crossing-triangles','triangle-line-angles','crossing-lines-triangle','compare-number-line','percent-shaded-square','percent-grid','ruler-length','angle-kind','protractor-read','regular-polygon-pick','step-perimeter','quad-perimeter','rectangle-abcd','function-table','number-machine','polygon-symmetry','subtract-measures'].includes(c.recipe)||c.variant==='identify'||c.variant==='choose'){assert(/<svg[\s\S]*<\/svg>/.test(q.givens.svg||''),c.sourceId+' drawing');}
+  if(['subtraction-number-line','name-linear-figures','draw-angle','congruent-pairs','integer-line-add'].includes(c.recipe)||c.variant==='draw')assert(/<svg/.test((q.givens.svg||'')+(q.teacherSvg||'')),c.sourceId+' teacher drawing');
   assert(/<div class="engine-question">/.test(E.renderQuestion(q)));
  }
  assert(seen.size>=Math.min(20,seen.size)&&seen.size>1,c.sourceId+' varies');checks[c.sourceId]=seen.size;}

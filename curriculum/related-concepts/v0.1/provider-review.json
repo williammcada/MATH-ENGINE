@@ -2646,64 +2646,6 @@
     ]
   },
   {
-    "providerSourceId": "course-87-en:item:SXA10204",
-    "conceptIds": [
-      "ratio-proportion",
-      "focus:chemical-mass-proportions",
-      "focus:ratio-total"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "6b07674e9dadbe6b9271966061ad6a859405bcc86ee1ee6885e4a69ee13d8bf5",
-    "limits": "Scale a given part-to-part ratio; known side can reverse and recipe output can be fractional.",
-    "sourceIds": [
-      "course-87-en:item:SXA10204"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SX870277",
-    "conceptIds": [
-      "ratio-proportion",
-      "focus:chemical-mass-proportions",
-      "focus:ratio-total"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "5903ab5b529109d776d281e347712cc7f781782e27adbf544ccb6c00303e9ff8",
-    "limits": "Scale a given part-to-part ratio; known side can reverse and recipe output can be fractional.",
-    "sourceIds": [
-      "course-87-en:item:SX870277"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SX870281",
-    "conceptIds": [
-      "ratio-proportion",
-      "focus:ratio-total"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "c6436222e7c35a3034f150a826913bb694896b0fde197f5a6bf65085daee9c24",
-    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
-    "sourceIds": [
-      "course-87-en:item:SX870281"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SN870274",
-    "conceptIds": [
-      "ratio-proportion",
-      "focus:ratio-total"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "063ce99dc65f70c1b17b97ef90583e4d3398ce69263e33763f5ffb02fadf4f05",
-    "limits": "Scale a given part-to-part ratio; known side can reverse and recipe output can be fractional.",
-    "sourceIds": [
-      "course-87-en:item:SN870274"
-    ]
-  },
-  {
     "providerSourceId": "course-87-en:item:SX870324",
     "conceptIds": [
       "fractions",
@@ -3094,35 +3036,6 @@
     ]
   },
   {
-    "providerSourceId": "course-87-en:item:SX870275",
-    "conceptIds": [
-      "rates",
-      "focus:proportional-money-rounding"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "c02b04db59d0c9f5d9eececd9ec8789aa7982ea0fcfd8fb57b146f9f7554e631",
-    "limits": "Scale a seed price proportionally and round only the final money amount to cents, halfway upward; do not round the intermediate unit rate. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
-    "sourceIds": [
-      "course-87-en:item:SX870275"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SX870286",
-    "conceptIds": [
-      "rates",
-      "statistics",
-      "focus:mean-group-target"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "c1c8e0a35ec95afbb641a49ac7dbf559ed0c8c00b1b1c3b2ab0948b92e8d1af1",
-    "limits": "Divide total earnings from two different hour/rate groups by total hours. Unequal weights prohibit taking the simple mean of the two rates. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
-    "sourceIds": [
-      "course-87-en:item:SX870286"
-    ]
-  },
-  {
     "providerSourceId": "course-87-en:item:SN870372",
     "conceptIds": [
       "ratio-proportion",
@@ -3407,20 +3320,6 @@
     "limits": "Use the supplied hits/at-bats formula and round the final batting average to the nearest thousandth. This is a contextual rate, not a list mean. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
     "sourceIds": [
       "course-87-en:item:SX870226"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SX870283",
-    "conceptIds": [
-      "statistics",
-      "focus:mean-group-target"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "bdc4eff2274f98a7789c8b063a6840be5757ca4c51b06d5eb0d990d939848107",
-    "limits": "Combine two groups using their unequal counts and means, then round the final result to hundredths. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
-    "sourceIds": [
-      "course-87-en:item:SX870283"
     ]
   },
   {
@@ -25582,6 +25481,607 @@
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "course-87-en:item:SN870262"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870261",
+    "conceptIds": [
+      "scientific-notation",
+      "focus:scientific-notation"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "15d3cffd6b5df2334e4dc2b0e454c9d4823f740e0f06d5ab1e95a4fc2ce3968d",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870261"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870321",
+    "conceptIds": [
+      "scientific-notation",
+      "focus:scientific-notation"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "938569258759e400f1d8edaa68e5e9bd091e3cc311abb04ca143bff23630569f",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870321"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870322",
+    "conceptIds": [
+      "scientific-notation",
+      "focus:scientific-notation"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "148eed29fa036d1435e4598e62db449c9134b38b678bf539f469cf704d0f5428",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870322"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870263",
+    "conceptIds": [
+      "expressions",
+      "focus:numerical-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "91c4ee29c8ddb7bebe241ca85533d68a2801da73d8ab16eef2aa55ffa69c6f1d",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870263"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870320",
+    "conceptIds": [
+      "expressions",
+      "focus:numerical-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "f4575b22028cf0f4b7ebb4f9cc0b9b5c7e93522da1c61ab49277e0b79602b922",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870320"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870301",
+    "conceptIds": [
+      "expressions",
+      "focus:expression-evaluation"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "a3985bbbf0baa04c479a35762c9b5d9e41b146f2a5c10281b13e584dd66f1714",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870301"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870266",
+    "conceptIds": [
+      "expressions",
+      "focus:numerical-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "bda0cab73cf61af172db9be70fd6dd31d9f075a3e1c0c3c5797bc2c68abf4664",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870266"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870275",
+    "conceptIds": [
+      "rates",
+      "focus:proportional-money-rounding",
+      "focus:rate-calculations"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "51a806099064476fb0e6e0e3060678194aa6065c05e11169aa26de7f677838bb",
+    "limits": "Scale a seed price proportionally and round only the final money amount to cents, halfway upward; do not round the intermediate unit rate. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
+    "sourceIds": [
+      "course-87-en:item:SX870275"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870276",
+    "conceptIds": [
+      "rates",
+      "focus:rate-calculations"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "0fecbf99be82142a8a4e612ef7b2602c2ff2a6407eb1d2535f0f7d3a226f7697",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870276"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870279",
+    "conceptIds": [
+      "rates",
+      "focus:rate-calculations"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "93051b426eafeacbe59a263cf03730dba50b22cbf04c110058793d682b6677c6",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870279"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870269",
+    "conceptIds": [
+      "rates",
+      "focus:rate-calculations"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "ef4425da7f5ab8a49bdeb7a57a1948e1dbd7e6e5f27bb040d007ce3553937bf2",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870269"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SXA10204",
+    "conceptIds": [
+      "ratio-proportion",
+      "focus:ratio-total"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "63d545e6526ba9ea9121a7e67249075d2c7440933f4dcd10e430cbf667e0573e",
+    "limits": "Scale a given part-to-part ratio; known side can reverse and recipe output can be fractional.",
+    "sourceIds": [
+      "course-87-en:item:SXA10204"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870277",
+    "conceptIds": [
+      "ratio-proportion",
+      "focus:chemical-mass-proportions",
+      "focus:ratio-total"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "5903ab5b529109d776d281e347712cc7f781782e27adbf544ccb6c00303e9ff8",
+    "limits": "Scale a given part-to-part ratio; known side can reverse and recipe output can be fractional.",
+    "sourceIds": [
+      "course-87-en:item:SX870277"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870281",
+    "conceptIds": [
+      "ratio-proportion",
+      "focus:ratio-total"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "c6436222e7c35a3034f150a826913bb694896b0fde197f5a6bf65085daee9c24",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870281"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870274",
+    "conceptIds": [
+      "ratio-proportion",
+      "focus:ratio-total"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "063ce99dc65f70c1b17b97ef90583e4d3398ce69263e33763f5ffb02fadf4f05",
+    "limits": "Scale a given part-to-part ratio; known side can reverse and recipe output can be fractional.",
+    "sourceIds": [
+      "course-87-en:item:SN870274"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870283",
+    "conceptIds": [
+      "statistics",
+      "focus:average",
+      "focus:mean-group-target",
+      "focus:weighted-average-target"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "73303d37d4e09445161e1ee1f656f92aa3732b7a2e45a4422e8700a7b7863217",
+    "limits": "Combine two groups using their unequal counts and means, then round the final result to hundredths. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
+    "sourceIds": [
+      "course-87-en:item:SX870283"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870284",
+    "conceptIds": [
+      "statistics",
+      "focus:average",
+      "focus:mean-and-total"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "1dc9235a02a73de264505b16c69c562630928895df66b4d9f18cecf0de03bdf3",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870284"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870286",
+    "conceptIds": [
+      "statistics",
+      "focus:average",
+      "focus:mean-group-target",
+      "focus:weighted-average-target"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "cd4489610c5af65ff0708816e8e5afc4ea92e1192f7524fbaba8e97e08017be0",
+    "limits": "Divide total earnings from two different hour/rate groups by total hours. Unequal weights prohibit taking the simple mean of the two rates. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
+    "sourceIds": [
+      "course-87-en:item:SX870286"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870287",
+    "conceptIds": [
+      "measurement",
+      "focus:compound-measures"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "74fcafe75aedb23a00cbac13c9e461d5d12e21bd4aacabe0c04ba89feb987095",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870287"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870280",
+    "conceptIds": [
+      "measurement",
+      "focus:compound-measures"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "1e1c75f38a06c68256583e994b7f8ed2e09ac11c99294202d172441aba699f41",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870280"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870282",
+    "conceptIds": [
+      "measurement",
+      "focus:compound-measures"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "2198a725dbefc3a99516fa098262c7ea4bfdbb68f1810e81e66da34acae24087",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870282"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870334",
+    "conceptIds": [
+      "powers-roots",
+      "focus:powers"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "8bf7c193d96025a9cf0002bf8377a883b3af53bc68ede1aff55b9f236c7849a7",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870334"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870615",
+    "conceptIds": [
+      "powers-roots",
+      "focus:powers"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "a89c050460ad53d4684e3d1399351cde567fa99fb1119f196d3b7d26461a6eef",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870615"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:BMPA0207",
+    "conceptIds": [
+      "powers-roots",
+      "focus:powers"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "ff4755be8d42449abdbcd14c46b79e37b234d915e00caebfe6cb43ba854897a3",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:BMPA0207"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870290",
+    "conceptIds": [
+      "scientific-notation",
+      "focus:scientific-notation"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "53317ad97921a4ccaa3e22cb683eb90cb8c3db20e8b1de4fe15822ea2550b1df",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870290"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870289",
+    "conceptIds": [
+      "scientific-notation",
+      "focus:scientific-notation"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "57d5a66491786627d25edcff299b5b671eb2aebdd4b885d5988e23564a113b6d",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870289"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870286",
+    "conceptIds": [
+      "scientific-notation",
+      "focus:scientific-notation"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "0e1c4185002e0d230ca6ca6f751c9086d79dbf0a6732e254a3f431dee8802ea6",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870286"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870288",
+    "conceptIds": [
+      "coordinate-geometry",
+      "transformations",
+      "focus:coordinate-rectangle-work"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "70e460796946a138a2d4c3ecaea92b5d736447036ab4383310a576ae8938c11c",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870288"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870289",
+    "conceptIds": [
+      "geometry-properties",
+      "transformations",
+      "focus:symmetry-line-practice"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "7b2ba15dcd15195612b17104fd7c8c969bf6af673aa49976d483e53c10a46755",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870289"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870291",
+    "conceptIds": [
+      "functions",
+      "focus:function-evaluation"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "c4489daeade6a068f77335bb6f729d4bb41a9741f1697d3c059dcbcbe7ced4f6",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870291"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870617",
+    "conceptIds": [
+      "functions",
+      "focus:function-evaluation"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "e20f827e553e368555c1c4e9fdb17c95cd3328f278dd7eacbf170d2e9be3f7f3",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870617"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870351",
+    "conceptIds": [
+      "functions",
+      "focus:function-evaluation"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "2b690ca204483205718e539d8aa70462c01109a98fc1c5c2c9b610f1e12fb629",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870351"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870501",
+    "conceptIds": [
+      "integers",
+      "focus:integer-arithmetic"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "f7f95469d0d76da3b4d58eab496bf09754c2cd5d9c8c4fbf1efc00019783067f",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870501"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870353",
+    "conceptIds": [
+      "integers",
+      "focus:integer-arithmetic"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "08139c290f8d33ee810a94c7c27754237ddd2e7a4e968af1a5d31d86f97fb8cc",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870353"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870324",
+    "conceptIds": [
+      "integers",
+      "focus:integer-arithmetic"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "19e262c9371f15b983e9bdd150cf7039e90f36955c55afc2779d7fe01f328d06",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870324"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870323",
+    "conceptIds": [
+      "integers",
+      "focus:integer-arithmetic"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "4ff24bcab46ae47fca5de14b0cc4084e13c4f8696f6c2a42ee427d504470232d",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870323"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX650094",
+    "conceptIds": [
+      "ratio-proportion",
+      "focus:fraction-whole-unknown"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "ac008052629d3815e00fb5798036576838471d68107e560a06161ad3114dc78c",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX650094"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870292",
+    "conceptIds": [
+      "fractions",
+      "ratio-proportion",
+      "focus:fraction-multiply"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "ba287c8d4126b425d682d287dea6ed22d2c3a21523e4e72b64064f55335e82e6",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870292"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SN870326",
+    "conceptIds": [
+      "ratio-proportion",
+      "focus:fraction-whole-unknown"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "1faa475b96d714eca89b6e44b87c01669d913c51c3bf4cebb1c01ddd095f4133",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SN870326"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870370",
+    "conceptIds": [
+      "percent",
+      "focus:percent-forward-change",
+      "focus:percent-unknown"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "d053cfb11dbcb5d58a79d9325f90f79b795c00baa15f3384ff27a2cbe7415eac",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870370"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX760175",
+    "conceptIds": [
+      "percent",
+      "focus:percent-forward-change",
+      "focus:percent-unknown"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "31820d08ec3925b537136c942c52793d6c4ad8671732bd7ca0804594a9cf2d20",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX760175"
+    ]
+  },
+  {
+    "providerSourceId": "course-87-en:item:SX870372",
+    "conceptIds": [
+      "percent",
+      "focus:percent-forward-change",
+      "focus:percent-unknown"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "5acb30838794985fc436e590fadb19d130a4061d818e0d47abb22ff7c29b8dfa",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-87-en:item:SX870372"
     ]
   }
 ]

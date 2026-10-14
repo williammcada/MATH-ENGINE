@@ -6847,149 +6847,6 @@
     "samplePrompt": "Write 3.68% as a decimal."
   },
   {
-    "sourceId": "course-87-en:item:SXA10204",
-    "providerSourceId": "course-87-en:item:SXA10204",
-    "bankId": "course-87-en",
-    "topic": "ratio-proportion",
-    "action": "Find a missing quantity from a ratio",
-    "recipe": "ratio-missing",
-    "family": "structured-proportion",
-    "title": "Find a missing quantity from a ratio",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:54",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "ratio-total",
-        "level": 1
-      },
-      {
-        "trackId": "chemical-mass-proportions",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Scale a given part-to-part ratio; known side can reverse and recipe output can be fractional."
-    },
-    "samplePrompt": "The ratio of red counters to green counters is 17:2. There are 22 green counters. How many red counters are there?"
-  },
-  {
-    "sourceId": "course-87-en:item:SX870277",
-    "providerSourceId": "course-87-en:item:SX870277",
-    "bankId": "course-87-en",
-    "topic": "ratio-proportion",
-    "action": "Scale a recipe using a ratio",
-    "recipe": "recipe-proportion",
-    "family": "structured-proportion",
-    "title": "Scale a recipe using a ratio",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:54",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "ratio-total",
-        "level": 1
-      },
-      {
-        "trackId": "chemical-mass-proportions",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Scale a given part-to-part ratio; known side can reverse and recipe output can be fractional."
-    },
-    "samplePrompt": "A recipe uses oats and raisins in the ratio 2:1 by volume. For 3 cups of oats, how many cups of raisins are needed? Give an exact number."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870281",
-    "providerSourceId": "course-87-en:item:SX870281",
-    "bankId": "course-87-en",
-    "topic": "ratio-proportion",
-    "action": "Connect two ratios",
-    "recipe": "ratio-chain",
-    "family": "structured-proportion",
-    "title": "Connect two ratios",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:54",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "ratio-total",
-        "level": 3
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "samplePrompt": "Red:blue beads = 5:3, and blue:yellow beads = 3:2. If there are 15 red beads, how many yellow beads are there?"
-  },
-  {
-    "sourceId": "course-87-en:item:SN870274",
-    "providerSourceId": "course-87-en:item:SN870274",
-    "bankId": "course-87-en",
-    "topic": "ratio-proportion",
-    "action": "Find a missing quantity from a ratio",
-    "recipe": "employee-proportion",
-    "family": "structured-proportion",
-    "title": "Find a missing quantity from a ratio",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:54",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "ratio-total",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Scale a given part-to-part ratio; known side can reverse and recipe output can be fractional."
-    },
-    "samplePrompt": "The ratio of employees to computers is 8:6. There are 184 employees. How many computers are there?"
-  },
-  {
     "sourceId": "course-87-en:item:SX870324",
     "providerSourceId": "course-87-en:item:SX870324",
     "bankId": "course-87-en",
@@ -8006,76 +7863,6 @@
     "samplePrompt": "An appliance costs $2130 before tax. The sales-tax rate is 5%. What is the sales tax in dollars? Do not round intermediate values. Round the final answer to the nearest cent; halfway values round up. Enter the numerical answer (a dollar sign is optional)."
   },
   {
-    "sourceId": "course-87-en:item:SX870275",
-    "providerSourceId": "course-87-en:item:SX870275",
-    "bankId": "course-87-en",
-    "topic": "rates",
-    "action": "Scale a cost using a unit rate",
-    "recipe": "seed-cost",
-    "family": "structured-measurement",
-    "title": "Scale a cost using a unit rate",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:53",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "proportional-money-rounding",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "measurement"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Scale a seed price proportionally and round only the final money amount to cents, halfway upward; do not round the intermediate unit rate. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "samplePrompt": "If 25 kilograms of seed cost $38.00, what will 34 kilograms of seed cost at the same rate, in dollars? Do not round intermediate values. Round the final answer to the nearest cent; halfway values round up. Enter the numerical answer (a dollar sign is optional)."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870286",
-    "providerSourceId": "course-87-en:item:SX870286",
-    "bankId": "course-87-en",
-    "topic": "rates",
-    "action": "Find average earnings per hour",
-    "recipe": "weighted-wage",
-    "family": "structured-measurement",
-    "title": "Find average earnings per hour",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:55",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "mean-group-target",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "measurement"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Divide total earnings from two different hour/rate groups by total hours. Unequal weights prohibit taking the simple mean of the two rates. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "samplePrompt": "You work 4 hours at $5.80 per hour and 5 hours at $6.07 per hour. What are your average earnings per hour in dollars? Enter the numerical answer (a dollar sign is optional)."
-  },
-  {
     "sourceId": "course-87-en:item:SN870372",
     "providerSourceId": "course-87-en:item:SN870372",
     "bankId": "course-87-en",
@@ -8805,41 +8592,6 @@
       "disposition": "retained related-only cross-course evidence"
     },
     "samplePrompt": "A player makes 22 hits in 57 at-bats. Batting average is hits divided by at-bats. Find the batting average. Round only the final answer to the nearest thousandth; halfway values round up. Use decimal notation."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870283",
-    "providerSourceId": "course-87-en:item:SX870283",
-    "bankId": "course-87-en",
-    "topic": "statistics",
-    "action": "Combine test-score averages",
-    "recipe": "test-group-mean",
-    "family": "structured-statistics",
-    "title": "Combine test-score averages",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:55",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "mean-group-target",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "statistics"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Combine two groups using their unequal counts and means, then round the final result to hundredths. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "samplePrompt": "The first 4 equally weighted tests have an average score of 90, and the next 5 have an average of 77. What is the average of all 9 test scores? Round only the final answer to the nearest hundredth; halfway values round up. Use decimal notation."
   },
   {
     "sourceId": "course-87-en:item:SN870278",
@@ -82523,5 +82275,1335 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Convert 4,100 pounds to tons. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870261",
+    "providerSourceId": "course-87-en:item:SX870261",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Scientific notation and standard form for large numbers",
+    "recipe": "sci-two-way",
+    "family": "structured-port87",
+    "title": "Scientific notation and standard form for large numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:51",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-notation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "(a) Write thirty-nine billion in scientific notation. (b) Write 9.41 \u00d7 10\u2078 in standard form. Separate the answers with a semicolon."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870321",
+    "providerSourceId": "course-87-en:item:SN870321",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Write a large number in scientific notation",
+    "recipe": "to-sci",
+    "family": "structured-port87",
+    "title": "Write a large number in scientific notation",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:51",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-notation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 81,000 in scientific notation."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870322",
+    "providerSourceId": "course-87-en:item:SN870322",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Write a measurement in scientific notation",
+    "recipe": "to-sci",
+    "family": "structured-port87",
+    "title": "Write a measurement in scientific notation",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:51",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-notation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A communications satellite travels about 102,000 kilometers in one orbit. Write the measurement in scientific notation."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870263",
+    "providerSourceId": "course-87-en:item:SX870263",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Order of operations",
+    "recipe": "order-ops",
+    "family": "structured-port87",
+    "title": "Order of operations",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:52",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "numerical-grouping",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 8 + 8 \u00d7 8 \u2212 8 \u00f7 8 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870320",
+    "providerSourceId": "course-87-en:item:SX870320",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Order of operations with powers",
+    "recipe": "order-ops",
+    "family": "structured-port87",
+    "title": "Order of operations with powers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:52",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "numerical-grouping",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (2 \u00b7 3)\u00b2 \u2212 2(3)\u00b2 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870301",
+    "providerSourceId": "course-87-en:item:SX870301",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Evaluate with the order of operations",
+    "recipe": "order-ops",
+    "family": "structured-port87",
+    "title": "Evaluate with the order of operations",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:52",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Evaluate: e + (e\u00b2 \u2212 ef) \u2212 f if e = 10 and f = 8 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870266",
+    "providerSourceId": "course-87-en:item:SN870266",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Order of operations: divide and multiply left to right",
+    "recipe": "order-ops",
+    "family": "structured-port87",
+    "title": "Order of operations: divide and multiply left to right",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:52",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "numerical-grouping",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 4 \u00f7 2 \u00d7 2 + 8 \u2212 6 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870275",
+    "providerSourceId": "course-87-en:item:SX870275",
+    "bankId": "course-87-en",
+    "topic": "rates",
+    "action": "Cost at the same rate",
+    "recipe": "seed-cost",
+    "family": "structured-port87",
+    "title": "Cost at the same rate",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:53",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 2
+      },
+      {
+        "trackId": "proportional-money-rounding",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Scale a seed price proportionally and round only the final money amount to cents, halfway upward; do not round the intermediate unit rate. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "samplePrompt": "If 20 kilograms of seed cost $34, how much would 37 kilograms cost at the same rate? Give the answer in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870276",
+    "providerSourceId": "course-87-en:item:SX870276",
+    "bankId": "course-87-en",
+    "topic": "rates",
+    "action": "Length at the same rate",
+    "recipe": "taffy",
+    "family": "structured-port87",
+    "title": "Length at the same rate",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:53",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A lump of taffy was dropped into the stretching machine. Thirty seconds later it was a rope of taffy 2.5 feet long. At that rate, how long would the taffy rope be in 5 minutes? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870279",
+    "providerSourceId": "course-87-en:item:SX870279",
+    "bankId": "course-87-en",
+    "topic": "rates",
+    "action": "Price per pound and total cost",
+    "recipe": "nut-price",
+    "family": "structured-port87",
+    "title": "Price per pound and total cost",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:53",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Pistachios were priced at 5 pounds for $10.15. (a) What was the price per pound? (b) At the same price per pound, how much would 11 pounds cost? Give the answers in dollars. Enter exact decimal or whole-number answers. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870269",
+    "providerSourceId": "course-87-en:item:SN870269",
+    "bankId": "course-87-en",
+    "topic": "rates",
+    "action": "Growth at the same rate in feet and inches",
+    "recipe": "beanstalk",
+    "family": "structured-port87",
+    "title": "Growth at the same rate in feet and inches",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:53",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rate-calculations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "compound"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A jumbo bean stalk grew 63 inches in 3 days. At that rate, how much would the stalk grow in 6 weeks? Give the answer in feet and inches."
+  },
+  {
+    "sourceId": "course-87-en:item:SXA10204",
+    "providerSourceId": "course-87-en:item:SXA10204",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Use a ratio to find a quantity",
+    "recipe": "ratio-find",
+    "family": "structured-port87",
+    "title": "Use a ratio to find a quantity",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:54",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Scale a given part-to-part ratio; known side can reverse and recipe output can be fractional."
+    },
+    "samplePrompt": "The ratio of serpents to doves was 5 to 7. If there were 161 doves, how many serpents were there? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870277",
+    "providerSourceId": "course-87-en:item:SX870277",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Use a ratio in a recipe",
+    "recipe": "recipe-ratio",
+    "family": "structured-port87",
+    "title": "Use a ratio in a recipe",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:54",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      },
+      {
+        "trackId": "chemical-mass-proportions",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Scale a given part-to-part ratio; known side can reverse and recipe output can be fractional."
+    },
+    "samplePrompt": "The cookie recipe called for oatmeal and raisins in the ratio of 2 to 1. If 3 cups of oatmeal were called for, how many cups of raisins were needed? Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870281",
+    "providerSourceId": "course-87-en:item:SX870281",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Combine two ratios",
+    "recipe": "ratio-chain",
+    "family": "structured-port87",
+    "title": "Combine two ratios",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:54",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-total",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "In the forest there were lions and tigers and bears. The ratio of lions to tigers was 6 to 5. The ratio of tigers to bears was 3 to 2. If there were 18 lions, how many bears were there? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870274",
+    "providerSourceId": "course-87-en:item:SN870274",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Use a ratio to find a quantity",
+    "recipe": "ratio-find",
+    "family": "structured-port87",
+    "title": "Use a ratio to find a quantity",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:54",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Scale a given part-to-part ratio; known side can reverse and recipe output can be fractional."
+    },
+    "samplePrompt": "The ratio of employees to computers in a certain company is 8 to 6. If there are 18 computers in the company, how many employees are there? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870283",
+    "providerSourceId": "course-87-en:item:SX870283",
+    "bankId": "course-87-en",
+    "topic": "statistics",
+    "action": "Average of two groups of tests",
+    "recipe": "combined-average",
+    "family": "structured-port87",
+    "title": "Average of two groups of tests",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:55",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 3
+      },
+      {
+        "trackId": "weighted-average-target",
+        "level": 1
+      },
+      {
+        "trackId": "mean-group-target",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Combine two groups using their unequal counts and means, then round the final result to hundredths. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "samplePrompt": "Timothy's average score on the first 5 tests was 80. On the next 2 tests his average score was 90. What was his average score on all 7 tests? Round to the nearest hundredth if necessary. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870284",
+    "providerSourceId": "course-87-en:item:SX870284",
+    "bankId": "course-87-en",
+    "topic": "statistics",
+    "action": "Missing value from an average",
+    "recipe": "race-time",
+    "family": "structured-port87",
+    "title": "Missing value from an average",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:55",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 2
+      },
+      {
+        "trackId": "mean-and-total",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Stephanie ran a 400-meter race 3 times. Her fastest time was 50.8 seconds. Her slowest time was 55.3 seconds. If her average time was 53.5 seconds, what was her time for the other race? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870286",
+    "providerSourceId": "course-87-en:item:SX870286",
+    "bankId": "course-87-en",
+    "topic": "statistics",
+    "action": "Average earnings per hour",
+    "recipe": "wage-average",
+    "family": "structured-port87",
+    "title": "Average earnings per hour",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:55",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 3
+      },
+      {
+        "trackId": "weighted-average-target",
+        "level": 1
+      },
+      {
+        "trackId": "mean-group-target",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Divide total earnings from two different hour/rate groups by total hours. Unequal weights prohibit taking the simple mean of the two rates. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "samplePrompt": "Frances mowed lawns for 3 hours and earned $5.40 per hour. Then she washed windows for 3 hours and earned $6.40 per hour. What were Frances's average earnings per hour for all 6 hours? Give the answer in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870287",
+    "providerSourceId": "course-87-en:item:SX870287",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Subtract hours, minutes and seconds",
+    "recipe": "subtract-measures",
+    "family": "structured-port87",
+    "title": "Subtract hours, minutes and seconds",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:56",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "compound-measures",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "compound"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 19 hr 12 min \u2212 4 hr 53 min 49 sec"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870280",
+    "providerSourceId": "course-87-en:item:SN870280",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Subtract yards, feet and inches",
+    "recipe": "subtract-measures",
+    "family": "structured-port87",
+    "title": "Subtract yards, feet and inches",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:56",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "compound-measures",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "compound"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 3 yd 2 ft \u2212 2 yd 2 ft 8 in."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870282",
+    "providerSourceId": "course-87-en:item:SN870282",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Subtract inches from yards, feet and inches",
+    "recipe": "subtract-measures",
+    "family": "structured-port87",
+    "title": "Subtract inches from yards, feet and inches",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:56",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "compound-measures",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "compound"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 8 yd 1 ft 8 in. \u2212 6 in."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870334",
+    "providerSourceId": "course-87-en:item:SN870334",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Simplify a negative exponent",
+    "recipe": "negative-exponent",
+    "family": "structured-port87",
+    "title": "Simplify a negative exponent",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:57",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 7\u207b\u00b2 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870615",
+    "providerSourceId": "course-87-en:item:SN870615",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Simplify a negative exponent",
+    "recipe": "negative-exponent",
+    "family": "structured-port87",
+    "title": "Simplify a negative exponent",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:57",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 4\u207b\u2074 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:BMPA0207",
+    "providerSourceId": "course-87-en:item:BMPA0207",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "A negative power of ten as a fraction and a decimal",
+    "recipe": "ten-negative-power",
+    "family": "structured-port87",
+    "title": "A negative power of ten as a fraction and a decimal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:57",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 10\u207b\u2078 as a fraction and then as a decimal. Separate the answers with a semicolon."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870290",
+    "providerSourceId": "course-87-en:item:SX870290",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Scientific notation and standard form for small numbers",
+    "recipe": "sci-two-way",
+    "family": "structured-port87",
+    "title": "Scientific notation and standard form for small numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:57",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-notation",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "(a) Write 0.000487 in scientific notation. (b) Write 7.12 \u00d7 10\u207b\u2074 in standard form. Separate the answers with a semicolon."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870289",
+    "providerSourceId": "course-87-en:item:SX870289",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Scientific notation and standard form for small numbers",
+    "recipe": "sci-two-way",
+    "family": "structured-port87",
+    "title": "Scientific notation and standard form for small numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:57",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-notation",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "(a) Write one ten-thousandth in scientific notation. (b) Write 1.7 \u00d7 10\u207b\u2074 in standard form. Separate the answers with a semicolon."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870286",
+    "providerSourceId": "course-87-en:item:SN870286",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Write a small number in scientific notation",
+    "recipe": "to-sci",
+    "family": "structured-port87",
+    "title": "Write a small number in scientific notation",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:57",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-notation",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 0.00751 in scientific notation."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870288",
+    "providerSourceId": "course-87-en:item:SN870288",
+    "bankId": "course-87-en",
+    "topic": "transformations",
+    "action": "Vertex of a triangle symmetric about the y-axis",
+    "recipe": "symmetric-vertex",
+    "family": "structured-port87",
+    "title": "Vertex of a triangle symmetric about the y-axis",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:58",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "coordinate-rectangle-work",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "point"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The y-axis is a line of symmetry for a triangle. The coordinates of two of its vertices are (8, \u22128) and (0, 7). What are the coordinates of the third vertex?"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870289",
+    "providerSourceId": "course-87-en:item:SN870289",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Lines of symmetry of a regular polygon",
+    "recipe": "polygon-symmetry",
+    "family": "structured-port87",
+    "title": "Lines of symmetry of a regular polygon",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:58",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "symmetry-line-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Draw the lines of symmetry for this regular polygon. How many lines of symmetry does it have? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870291",
+    "providerSourceId": "course-87-en:item:SX870291",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Missing output in a function table (add)",
+    "recipe": "function-table",
+    "family": "structured-port87",
+    "title": "Missing output in a function table (add)",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:58",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number in the function table. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870617",
+    "providerSourceId": "course-87-en:item:SN870617",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Missing output in a function table (multiply)",
+    "recipe": "function-table",
+    "family": "structured-port87",
+    "title": "Missing output in a function table (multiply)",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:58",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number in the function table. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870351",
+    "providerSourceId": "course-87-en:item:SN870351",
+    "bankId": "course-87-en",
+    "topic": "functions",
+    "action": "Missing output from a number machine",
+    "recipe": "number-machine",
+    "family": "structured-port87",
+    "title": "Missing output from a number machine",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:58",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number that this number machine would produce. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870501",
+    "providerSourceId": "course-87-en:item:SX870501",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Show integer addition on a number line",
+    "recipe": "integer-line-add",
+    "family": "structured-port87",
+    "title": "Show integer addition on a number line",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:59",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use arrows on a number line to show 3 + (\u22122). Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870353",
+    "providerSourceId": "course-87-en:item:SN870353",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Show integer addition on a number line",
+    "recipe": "integer-line-add",
+    "family": "structured-port87",
+    "title": "Show integer addition on a number line",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:59",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use arrows on a number line to show \u22123 + 5. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870324",
+    "providerSourceId": "course-87-en:item:SN870324",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Show integer addition on a number line and give the sum",
+    "recipe": "integer-line-add",
+    "family": "structured-port87",
+    "title": "Show integer addition on a number line and give the sum",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:59",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use arrows on a number line to show 4 + (\u221212), and give the sum. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870323",
+    "providerSourceId": "course-87-en:item:SN870323",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Choose the number line that shows an integer sum",
+    "recipe": "integer-line-add",
+    "family": "structured-port87",
+    "title": "Choose the number line that shows an integer sum",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:59",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which number line shows 6 + (\u22124)? Answer with the letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SX650094",
+    "providerSourceId": "course-87-en:item:SX650094",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "A unit fraction of a group",
+    "recipe": "fraction-of-group",
+    "family": "structured-port87",
+    "title": "A unit fraction of a group",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:60",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Christa ate 1/5 of the 20 cookies. How many cookies did she eat? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870292",
+    "providerSourceId": "course-87-en:item:SN870292",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "A fraction of a fraction of a group",
+    "recipe": "fraction-of-group",
+    "family": "structured-port87",
+    "title": "A fraction of a fraction of a group",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:60",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-multiply",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A ski group rented a bus to the ski slopes. Only 3/4 of the group went on the trip, and only 6/11 of those paid in advance. What part of the total group paid in advance? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870326",
+    "providerSourceId": "course-87-en:item:SN870326",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "A unit fraction of a group",
+    "recipe": "fraction-of-group",
+    "family": "structured-port87",
+    "title": "A unit fraction of a group",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:60",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Roderick missed 1/12 of his 72 phone calls. How many calls did he miss? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870370",
+    "providerSourceId": "course-87-en:item:SX870370",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "Percent of a number",
+    "recipe": "percent-of",
+    "family": "structured-port87",
+    "title": "Percent of a number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:60",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "percent-unknown",
+        "level": 1
+      },
+      {
+        "trackId": "percent-forward-change",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What number is 70% of 50? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX760175",
+    "providerSourceId": "course-87-en:item:SX760175",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "Percent of an amount of money",
+    "recipe": "percent-of",
+    "family": "structured-port87",
+    "title": "Percent of an amount of money",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:60",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "percent-unknown",
+        "level": 1
+      },
+      {
+        "trackId": "percent-forward-change",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How much money is 20% of $8,000? Give the answer in dollars. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870372",
+    "providerSourceId": "course-87-en:item:SX870372",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "Percent of a number",
+    "recipe": "percent-of",
+    "family": "structured-port87",
+    "title": "Percent of a number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:60",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "percent-unknown",
+        "level": 1
+      },
+      {
+        "trackId": "percent-forward-change",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What number is 60% of 415? Enter exact numerical answers without units."
   }
 ]

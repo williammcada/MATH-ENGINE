@@ -394,7 +394,8 @@
           "c/9.3",
           "f/cancel-factors",
           "f/cancel-product",
-          "k/multiply-cancel"
+          "k/multiply-cancel",
+          "=/course-87-en:item:SN870292"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-9.3",
@@ -404,7 +405,8 @@
           "algebra-half-en:authored:M3-18-1",
           "algebra-half-en:authored:M3-19-1",
           "algebra-1-en:authored:M4-4-1",
-          "course-87-en:item:SX870066"
+          "course-87-en:item:SX870066",
+          "course-87-en:item:SN870292"
         ]
       },
       {
@@ -1089,7 +1091,8 @@
           "c/COURSE108.1",
           "=/algebra-2-en:node:74",
           "=/algebra-half-en:authored:M3-47-2",
-          "k/evaluate-product-difference"
+          "k/evaluate-product-difference",
+          "=/course-87-en:item:SX870301"
         ],
         "sourceIds": [
           "algebra-2-en:node:74",
@@ -1100,7 +1103,8 @@
           "algebra-half-en:authored:M3-47-2",
           "algebra-half-en:authored:M3-82-1",
           "algebra-1-en:authored:M4-14-1",
-          "course-87-en:item:SN870181"
+          "course-87-en:item:SN870181",
+          "course-87-en:item:SX870301"
         ]
       },
       {
@@ -1131,7 +1135,8 @@
           "e/4.3",
           "f/integer-model",
           "c/59.2",
-          "k/subtraction-number-line"
+          "k/subtraction-number-line",
+          "k/integer-line-add"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-4.3",
@@ -1140,7 +1145,11 @@
           "course-1-en:authored:M2-be05244a33a6-1",
           "algebra-half-en:authored:M3-69-2",
           "course-87-en:item:SX870033",
-          "course-87-en:item:SN870156"
+          "course-87-en:item:SN870156",
+          "course-87-en:item:SX870501",
+          "course-87-en:item:SN870353",
+          "course-87-en:item:SN870324",
+          "course-87-en:item:SN870323"
         ]
       },
       {
@@ -1233,7 +1242,8 @@
           "c/8.4",
           "h/percent-over100",
           "h/fraction-percent",
-          "h/commission"
+          "h/commission",
+          "k/percent-of"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-8.4",
@@ -1245,7 +1255,10 @@
           "algebra-half-en:authored:M3-77-2",
           "algebra-half-en:authored:M3-108-1",
           "algebra-half-en:authored:M3-111-1",
-          "algebra-1-en:authored:M4-47-2"
+          "algebra-1-en:authored:M4-47-2",
+          "course-87-en:item:SX870370",
+          "course-87-en:item:SX760175",
+          "course-87-en:item:SX870372"
         ]
       },
       {
@@ -1305,13 +1318,10 @@
           "c/54.2",
           "c/72.1",
           "p/ratio-missing",
-          "p/recipe-proportion",
-          "p/employee-proportion"
+          "k/recipe-ratio",
+          "k/ratio-find"
         ],
         "sourceIds": [
-          "course-87-en:item:SXA10204",
-          "course-87-en:item:SX870277",
-          "course-87-en:item:SN870274",
           "algebra-half-en:node:439",
           "course-87-en:authored:MCADA-39.2",
           "course-87-en:authored:MCADA-54.1",
@@ -1325,7 +1335,10 @@
           "algebra-half-en:authored:M3-66-1",
           "algebra-half-en:authored:M3-75-1",
           "algebra-1-en:authored:M4-38-1",
-          "algebra-2-en:authored:M6-18-1"
+          "algebra-2-en:authored:M6-18-1",
+          "course-87-en:item:SXA10204",
+          "course-87-en:item:SX870277",
+          "course-87-en:item:SN870274"
         ]
       },
       {
@@ -1355,7 +1368,7 @@
         "demand": "Connect quantities through two ratios",
         "prerequisites": "Match and scale a shared quantity",
         "selectors": [
-          "p/ratio-chain"
+          "k/ratio-chain"
         ],
         "sourceIds": [
           "course-87-en:item:SX870281"
@@ -1395,13 +1408,15 @@
         "prerequisites": "Recover the required total",
         "selectors": [
           "c/55.2",
-          "s/missing-value"
+          "s/missing-value",
+          "k/race-time"
         ],
         "sourceIds": [
           "algebra-half-en:node:186",
           "course-87-en:authored:MCADA-55.2",
           "algebra-half-en:authored:M3-21-3",
-          "algebra-half-en:authored:M3-26-3"
+          "algebra-half-en:authored:M3-26-3",
+          "course-87-en:item:SX870284"
         ]
       },
       {
@@ -1410,13 +1425,17 @@
         "prerequisites": "Weight each group by its size",
         "selectors": [
           "c/55.3",
-          "s/weighted-scores"
+          "s/weighted-scores",
+          "k/combined-average",
+          "k/wage-average"
         ],
         "sourceIds": [
           "algebra-1-en:node:661",
           "course-87-en:authored:MCADA-55.3",
           "algebra-half-en:authored:M3-41-1",
-          "algebra-1-en:authored:M4-65-2"
+          "algebra-1-en:authored:M4-65-2",
+          "course-87-en:item:SX870283",
+          "course-87-en:item:SX870286"
         ]
       }
     ],
@@ -1513,12 +1532,17 @@
         "prerequisites": "Reciprocal rule and nonzero-base restriction",
         "selectors": [
           "c/57.1",
-          "b/negative-power"
+          "b/negative-power",
+          "k/negative-exponent",
+          "k/ten-negative-power"
         ],
         "sourceIds": [
           "algebra-2-en:node:57",
           "course-87-en:authored:MCADA-57.1",
-          "algebra-half-en:authored:M3-106-2"
+          "algebra-half-en:authored:M3-106-2",
+          "course-87-en:item:SN870334",
+          "course-87-en:item:SN870615",
+          "course-87-en:item:BMPA0207"
         ]
       },
       {
@@ -1549,14 +1573,20 @@
         "prerequisites": "Powers of ten and a normalized coefficient",
         "selectors": [
           "c/51.1",
-          "c/51.2"
+          "c/51.2",
+          "=/course-87-en:item:SN870321",
+          "=/course-87-en:item:SN870322",
+          "=/course-87-en:item:SX870261"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-51.1",
           "course-87-en:authored:MCADA-51.2",
           "algebra-half-en:authored:M3-50-1",
           "algebra-half-en:authored:M3-50-2",
-          "algebra-1-en:authored:M4-74-1"
+          "algebra-1-en:authored:M4-74-1",
+          "course-87-en:item:SX870261",
+          "course-87-en:item:SN870321",
+          "course-87-en:item:SN870322"
         ]
       },
       {
@@ -1565,14 +1595,20 @@
         "prerequisites": "Decimal place value and negative exponents",
         "selectors": [
           "c/57.2",
-          "c/57.3"
+          "c/57.3",
+          "=/course-87-en:item:SN870286",
+          "=/course-87-en:item:SX870289",
+          "=/course-87-en:item:SX870290"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-57.2",
           "course-87-en:authored:MCADA-57.3",
           "algebra-half-en:authored:M3-50-3",
           "algebra-half-en:authored:M3-50-4",
-          "algebra-1-en:authored:M4-74-2"
+          "algebra-1-en:authored:M4-74-2",
+          "course-87-en:item:SX870290",
+          "course-87-en:item:SX870289",
+          "course-87-en:item:SN870286"
         ]
       },
       {
@@ -1997,14 +2033,19 @@
           "c/85.2",
           "c/58.3",
           "=/course-1-en:bank:C1_Section10:item:C1_S10_00047",
-          "=/course-1-en:bank:C1_Section10:item:C1_S10_00048"
+          "=/course-1-en:bank:C1_Section10:item:C1_S10_00048",
+          "k/function-table",
+          "k/number-machine"
         ],
         "sourceIds": [
           "course-1-en:bank:C1_Section10:item:C1_S10_00047",
           "course-1-en:bank:C1_Section10:item:C1_S10_00048",
           "course-87-en:authored:MCADA-58.3",
           "course-87-en:authored:MCADA-85.2",
-          "course-1-en:authored:M2-72fe9236420a-2"
+          "course-1-en:authored:M2-72fe9236420a-2",
+          "course-87-en:item:SX870291",
+          "course-87-en:item:SN870617",
+          "course-87-en:item:SN870351"
         ]
       },
       {
@@ -4414,7 +4455,9 @@
           "c/14.2",
           "c/22.1",
           "c/60.1",
-          "k/fraction-not"
+          "k/fraction-not",
+          "=/course-87-en:item:SX650094",
+          "=/course-87-en:item:SN870326"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-14.1",
@@ -4426,7 +4469,9 @@
           "algebra-half-en:authored:M3-18-2",
           "algebra-half-en:authored:M3-48-1",
           "algebra-half-en:authored:M3-62-1",
-          "course-87-en:item:SN870095"
+          "course-87-en:item:SN870095",
+          "course-87-en:item:SX650094",
+          "course-87-en:item:SN870326"
         ]
       },
       {
@@ -4809,7 +4854,10 @@
         "demand": "Evaluate an expression with powers and mixed operations",
         "prerequisites": "Powers before multiplication and addition",
         "selectors": [
-          "c/52.1"
+          "c/52.1",
+          "=/course-87-en:item:SX870263",
+          "=/course-87-en:item:SX870320",
+          "=/course-87-en:item:SN870266"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-52.1",
@@ -4817,7 +4865,10 @@
           "course-1-en:authored:M2-d6d3b0f59c54-2",
           "algebra-half-en:authored:M3-31-1",
           "algebra-1-en:authored:M4-4-7",
-          "algebra-1-en:authored:M4-11-2"
+          "algebra-1-en:authored:M4-11-2",
+          "course-87-en:item:SX870263",
+          "course-87-en:item:SX870320",
+          "course-87-en:item:SN870266"
         ]
       },
       {
@@ -5062,7 +5113,11 @@
           "c/53.2",
           "h/distance",
           "h/distance-multi",
-          "h/rate-proportion"
+          "h/rate-proportion",
+          "k/seed-cost",
+          "k/taffy",
+          "k/beanstalk",
+          "k/nut-price"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-53.2",
@@ -5072,7 +5127,11 @@
           "algebra-half-en:authored:M3-58-1",
           "algebra-half-en:authored:M3-58-2",
           "algebra-half-en:authored:M3-83-1",
-          "algebra-half-en:authored:M3-83-2"
+          "algebra-half-en:authored:M3-83-2",
+          "course-87-en:item:SX870275",
+          "course-87-en:item:SX870276",
+          "course-87-en:item:SX870279",
+          "course-87-en:item:SN870269"
         ]
       }
     ],
@@ -5234,12 +5293,16 @@
         "demand": "Subtract measures with two units",
         "prerequisites": "Borrow at the stated nondecimal radix",
         "selectors": [
-          "c/56.1"
+          "c/56.1",
+          "k/subtract-measures"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-56.1",
           "course-1-en:authored:M2-553ed8f5cd07-2",
-          "course-1-en:authored:M2-6988d2a0631f-2"
+          "course-1-en:authored:M2-6988d2a0631f-2",
+          "course-87-en:item:SX870287",
+          "course-87-en:item:SN870280",
+          "course-87-en:item:SN870282"
         ]
       }
     ],
@@ -5381,13 +5444,15 @@
         "prerequisites": "Subtract known observations from the required total",
         "selectors": [
           "c/55.2",
-          "s/missing-value"
+          "s/missing-value",
+          "k/race-time"
         ],
         "sourceIds": [
           "algebra-half-en:node:186",
           "course-87-en:authored:MCADA-55.2",
           "algebra-half-en:authored:M3-21-3",
-          "algebra-half-en:authored:M3-26-3"
+          "algebra-half-en:authored:M3-26-3",
+          "course-87-en:item:SX870284"
         ]
       }
     ],
@@ -7994,13 +8059,17 @@
         "prerequisites": "Weight means by their group sizes",
         "selectors": [
           "s/weighted-scores",
-          "c/55.3"
+          "c/55.3",
+          "k/combined-average",
+          "k/wage-average"
         ],
         "sourceIds": [
           "algebra-1-en:node:661",
           "course-87-en:authored:MCADA-55.3",
           "algebra-half-en:authored:M3-41-1",
-          "algebra-1-en:authored:M4-65-2"
+          "algebra-1-en:authored:M4-65-2",
+          "course-87-en:item:SX870283",
+          "course-87-en:item:SX870286"
         ]
       },
       {
@@ -9190,10 +9259,14 @@
         "demand": "Calculate a percent of an amount",
         "prerequisites": "Identify the original base",
         "selectors": [
-          "f/percent-of"
+          "f/percent-of",
+          "k/percent-of"
         ],
         "sourceIds": [
-          "course-1-en:authored:M2-4a5dc2d6e728-1"
+          "course-1-en:authored:M2-4a5dc2d6e728-1",
+          "course-87-en:item:SX870370",
+          "course-87-en:item:SX760175",
+          "course-87-en:item:SX870372"
         ]
       },
       {
@@ -10894,13 +10967,12 @@
         "demand": "Scale a ratio to find a missing amount",
         "prerequisites": "Part/reference quantities",
         "selectors": [
-          "p/recipe-proportion",
+          "k/recipe-ratio",
           "p/ratio-missing"
         ],
         "sourceIds": [
-          "course-87-en:item:SXA10204",
-          "course-87-en:item:SX870277",
-          "algebra-half-en:node:439"
+          "algebra-half-en:node:439",
+          "course-87-en:item:SX870277"
         ]
       },
       {
@@ -12791,8 +12863,8 @@
           "=/course-87-en:item:SN870393"
         ],
         "sourceIds": [
-          "course-87-en:item:SX870275",
-          "course-87-en:item:SN870393"
+          "course-87-en:item:SN870393",
+          "course-87-en:item:SX870275"
         ]
       }
     ],
@@ -13130,13 +13202,13 @@
           "=/algebra-1-en:node:661"
         ],
         "sourceIds": [
-          "course-87-en:item:SX870286",
-          "course-87-en:item:SX870283",
           "algebra-1-en:node:551",
           "algebra-1-en:node:661",
           "algebra-1-en:node:662",
           "algebra-1-en:authored:M4-52-2",
-          "algebra-1-en:authored:M4-65-2"
+          "algebra-1-en:authored:M4-65-2",
+          "course-87-en:item:SX870283",
+          "course-87-en:item:SX870286"
         ]
       },
       {
@@ -14058,7 +14130,8 @@
         "prerequisites": "Use signed coordinates, parallel sides and coordinate differences",
         "selectors": [
           "=/course-87-en:authored:MCADA-INV3.2",
-          "=/course-87-en:authored:MCADA-INV3.3"
+          "=/course-87-en:authored:MCADA-INV3.3",
+          "k/symmetric-vertex"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-INV3.2",
@@ -14066,7 +14139,8 @@
           "course-1-en:authored:M2-335fb8ceaa11-2",
           "course-1-en:authored:M2-335fb8ceaa11-3",
           "algebra-half-en:authored:M3-38-2",
-          "algebra-half-en:authored:M3-38-3"
+          "algebra-half-en:authored:M3-38-3",
+          "course-87-en:item:SN870288"
         ]
       },
       {
@@ -14939,14 +15013,16 @@
         "prerequisites": "A reflection fixes a symmetry line; point symmetry is a half-turn",
         "selectors": [
           "=/course-87-en:authored:MCADA-58.1",
-          "=/course-87-en:authored:MCADA-INV6.3"
+          "=/course-87-en:authored:MCADA-INV6.3",
+          "k/polygon-symmetry"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-58.1",
           "course-87-en:authored:MCADA-INV6.3",
           "intermediate-4-en:authored:M2-87908ef73c84-1",
           "course-1-en:authored:M2-3c1582763e12-1",
-          "algebra-half-en:authored:M3-121-3"
+          "algebra-half-en:authored:M3-121-3",
+          "course-87-en:item:SN870289"
         ]
       },
       {
