@@ -50,7 +50,7 @@ expression-evaluation|expressions|1|Substitute positive values in a given expres
 expression-evaluation|expressions|2|Substitute values in expressions that include powers or signed numbers|Operation order, powers and signed arithmetic|c/91.1 c/52.2 c/COURSE108.1 =/algebra-2-en:node:74 =/algebra-half-en:authored:M3-47-2 k/evaluate-product-difference =/course-87-en:item:SX870301
 expression-evaluation|expressions|3|Evaluate a more complex signed expression|Fraction bars, powers and signed arithmetic|a/evaluate-hard
 integer-arithmetic|integers|1|Add or subtract integers with a number-line or counter model|Signed position and direction|e/4.3 f/integer-model c/59.2 k/subtraction-number-line k/integer-line-add
-integer-arithmetic|integers|2|Add or subtract signed numbers and rewrite subtraction as addition|Sign rules and additive inverses|c/64.1 a/signed-sum c/68.1 @/course-1-en:bank:C1_Section10:item:C1_S10_00068
+integer-arithmetic|integers|2|Add or subtract signed numbers and rewrite subtraction as addition|Sign rules and additive inverses|c/64.1 a/signed-sum c/68.1 @/course-1-en:bank:C1_Section10:item:C1_S10_00068 k/signed-sum k/signed-subtract
 integer-arithmetic|integers|3|Simplify signed arithmetic with nested grouping|Distribute negative signs through groups|a/signed-nesting
 fraction-equivalence|fraction-equivalence|1|Reduce by common factors without a model|Find and cancel a common factor|f/reduce c/15.2 k/reduce-product-form
 fraction-equivalence|fraction-equivalence|2|Reduce using prime factorization|Prime-factor representation and cancellation|c/24.1
@@ -58,7 +58,7 @@ percent-unknown|percent|1|Find a percent of a known whole, including rates above
 percent-unknown|percent|2|Model and solve a percent problem with an unknown part, whole or rate|Distinguish the whole, part and rate|c/77.1 c/81.1 p/percent-whole p/percent-part p/percent-whole-half
 percent-unknown|percent|3|Recover an original amount before a percent increase|Model the final amount as a multiplier of the original|p/reverse-increase a/word:percent
 ratio-total|ratio-proportion|1|Find a missing term in a proportion|Equivalent ratios and cross products|c/39.2 f/ratio-factor f/cross-products c/54.1 c/54.2 c/72.1 p/ratio-missing k/recipe-ratio k/ratio-find
-ratio-total|ratio-proportion|2|Divide a total according to a ratio|Add ratio parts before scaling|c/65.2 p/ratio-total-large c/65.1 p/ratio-total-small
+ratio-total|ratio-proportion|2|Divide a total according to a ratio|Add ratio parts before scaling|c/65.2 p/ratio-total-large c/65.1 k/ratio-total
 ratio-total|ratio-proportion|3|Connect quantities through two ratios|Match and scale a shared quantity|k/ratio-chain
 average|statistics|1|Find the arithmetic mean of a list|Add values and divide by count|c/28.2 f/mean-small k/average-five
 average|statistics|2|Find a missing value given the mean|Recover the required total|c/55.2 s/missing-value k/race-time
@@ -192,7 +192,7 @@ solid-surface|surface-area|3|Find surface area of a cone or pyramid|Use slant he
 transformations|transformations|1|Translate a figure on a coordinate plane|Apply a fixed displacement to every vertex|c/80.2
 transformations|transformations|2|Reflect a figure on a coordinate plane|Reverse position across the stated line|c/80.1
 transformations|transformations|3|Transform a graph using function notation|Connect changes in the formula to shifts and reflections|a/transform:quadratic
-solid-volume|volume|1|Find the volume of a rectangular prism using dimensions or layers|Multiply length, width and height|c/70.1 f/cube-volume
+solid-volume|volume|1|Find the volume of a rectangular prism using dimensions or layers|Multiply length, width and height|c/70.1 f/cube-volume k/cube-volume k/prism-cubes k/prism-volume
 solid-volume|volume|2|Find volume of a triangular prism|Find a triangular base area before multiplying by length|c/70.2
 solid-volume|volume|3|Find volume of a pyramid or cone|Apply one third of base area times height|c/COURSE113.1 c/COURSE113.2
 contextual-equations|word-equations|1|Translate and solve a one-step comparison story|Represent a difference between quantities|c/12.1
@@ -246,7 +246,7 @@ operation-properties|expressions|2|Show failure of a property for subtraction or
 like-terms|expressions|1|Collect like linear terms and constants|Combine coefficients of the same variable|c/84.1
 like-terms|expressions|2|Distribute then collect linear terms|Multiply every term in a group before collecting|c/96.2 =/course-87-en:item:SN870560
 numerical-grouping|expressions|1|Evaluate an expression with powers and mixed operations|Powers before multiplication and addition|c/52.1 =/course-87-en:item:SX870263 =/course-87-en:item:SX870320 =/course-87-en:item:SN870266
-numerical-grouping|expressions|2|Evaluate an expression with several nested grouping symbols|Work from inner groups out while preserving operation order|c/63.2
+numerical-grouping|expressions|2|Evaluate an expression with several nested grouping symbols|Work from inner groups out while preserving operation order|c/63.2 k/inclusion
 integer-products|integers|1|Multiply signed integers|Sign and magnitude rules|c/73.1
 integer-products|integers|2|Divide signed integers|Sign and magnitude rules; nonzero divisor|c/73.2
 integer-products|integers|3|Determine a product sign without its magnitude|Parity of the negative-factor count|c/103.1
@@ -289,15 +289,15 @@ polygon-angle-sums|angles|1|Find a missing angle in a triangle or quadrilateral|
 polygon-angle-sums|angles|2|Find polygon interior or exterior angle measures and sums|Relate side count, total turn and regularity|c/89.2 c/89.3 c/89.4 c/89.5 z/geometry:polygon
 quadrilateral-properties|geometry-properties|1|Identify a named quadrilateral by its defining properties|Inclusive definitions of rectangles, rhombi and squares|c/INV6.1
 quadrilateral-properties|geometry-properties|2|Construct an inclusion diagram for quadrilateral classes|Every square is both a rectangle and a rhombus|c/INV6.2
-triangle-properties|geometry-properties|1|Classify a triangle by sides|Use the most specific equal-side classification|c/62.3
-triangle-properties|geometry-properties|2|Classify a triangle by angles|Compare largest angle with a right angle|c/62.1
+triangle-properties|geometry-properties|1|Classify a triangle by sides|Use the most specific equal-side classification|c/62.3 k/triangle-definitions
+triangle-properties|geometry-properties|2|Classify a triangle by angles|Compare largest angle with a right angle|c/62.1 k/triangle-classify
 triangle-properties|geometry-properties|3|Order sides by their opposite angles|Larger angle is opposite longer side|c/62.2
 circle-parts-and-length|circle-measurement|1|Identify radius and diameter or find diameter from radius|Diameter is twice radius|f/circle-parts f/circle-measures
-circle-parts-and-length|circle-measurement|2|Calculate circumference|Apply the stated pi value and distinguish radius from diameter|c/66.2
+circle-parts-and-length|circle-measurement|2|Calculate circumference|Apply the stated pi value and distinguish radius from diameter|c/66.2 k/circumference-pair
 circle-parts-and-length|circle-measurement|3|Calculate arc length from a central angle|Scale circumference by the angle fraction|c/104.2
 triangle-area-method|area|1|Identify a base and its perpendicular height|The altitude may meet the extended base|c/37.1
 triangle-area-method|area|2|Calculate triangle area from base and perpendicular height|Half of base times height|c/37.2 k/right-triangle-area k/coordinate-triangle-area k/diagonal-plot
-area-shape-formulas|area|1|Calculate parallelogram area|Use perpendicular height|c/61.1
+area-shape-formulas|area|1|Calculate parallelogram area|Use perpendicular height|c/61.1 k/parallelogram-area
 area-shape-formulas|area|2|Calculate trapezoid area|Use the average of the parallel bases and perpendicular height|c/75.2
 area-shape-formulas|area|3|Calculate triangle area|Use half of base times perpendicular height|c/37.2
 scale-lengths|similarity-scale|1|Find or apply a linear scale factor|Corresponding lengths use one ratio|c/98.2 c/98.3
@@ -308,7 +308,7 @@ similarity-correspondence|similarity-scale|2|Solve corresponding lengths in simi
 similarity-correspondence|similarity-scale|3|Apply similar triangles to indirect measurement|Identify the triangles in context before scaling|c/97.3
 solid-nets|surface-area|1|Identify the solid from a supplied net|Match face shapes and folding connections|c/67.4
 solid-nets|surface-area|2|Draw and label a cube or pyramid net|Join the required faces so they fold without overlap|f/net-prism f/net-pyramid
-prism-cylinder-volumes|volume|1|Find rectangular or triangular prism volume|Find base area and multiply by prism height|c/70.1 c/70.2
+prism-cylinder-volumes|volume|1|Find rectangular or triangular prism volume|Find base area and multiply by prism height|c/70.1 c/70.2 k/prism-volume
 prism-cylinder-volumes|volume|2|Find cylinder volume or compare prism and cylinder formulas|Use base area times perpendicular height with stated pi|c/95.1 f/cylinder-volume
 coordinate-transformations|transformations|1|Translate or reflect a coordinate figure|Apply one transformation to all vertices|c/80.1 c/80.2
 coordinate-transformations|transformations|2|Apply a coordinate translation, reflection or rotation|Use the stated transformation consistently on every vertex|c/80.3 h/transform-quad
@@ -339,7 +339,7 @@ equations-both-sides|equations|2|Solve a linear equation with variables on both 
 equations-both-sides|equations|3|Simplify matching quadratic terms before solving a linear equation|Cancel equal higher-degree terms without introducing spurious roots|a/polynomial-equation
 proportion-number-types|ratio-proportion|1|Solve a proportion with whole-number entries|Equivalent ratios and cross products|c/39.2 f/cross-products =/course-87-en:item:SX870374 =/course-87-en:item:SX870375 =/course-87-en:item:SX870376
 proportion-number-types|ratio-proportion|2|Solve a proportion with fractional entries|Multiply and divide exact fractions while cross-multiplying|h/fraction-proportion h/mixed-proportion
-ratio-transfer|ratio-proportion|1|Split a total by a given ratio|Find the value of one ratio part|c/65.1 c/65.2 p/ratio-total-large p/ratio-total-small
+ratio-transfer|ratio-proportion|1|Split a total by a given ratio|Find the value of one ratio part|c/65.1 c/65.2 p/ratio-total-large k/ratio-total
 ratio-transfer|ratio-proportion|2|Find a new ratio after transferring some objects|Recover initial counts, adjust both counts and simplify|h/ratio-transfer
 changing-rates|rates|1|Find distance, rate or time at a constant rate|Use d equals rt|h/distance h/distance-multi t/distance-rate
 changing-rates|rates|2|Model a change of rate or a multi-leg journey|Keep each segment time and rate separate; total time determines average speed|h/changing-rate h/rate-change
@@ -479,14 +479,14 @@ whole-subtraction-grouping|whole-arithmetic|2|Subtract a parenthesized whole-num
 decimal-subtraction-grouping|decimal-arithmetic|1|Subtract two decimals|Align places|f/decimal:sub f/money:sub
 decimal-subtraction-grouping|decimal-arithmetic|2|Subtract a grouped decimal sum or difference|Respect the group before outer subtraction|@/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00088 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00139 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00143 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00080
 fraction-complement|fractions|1|Find the fractional share remaining|Subtract a proper fraction from one|p/fraction-complement f/remaining
-fraction-complement|fractions|2|Find the remaining count from a fractional or ratio share|Use the complementary share of a known total|p/wins-losses
+fraction-complement|fractions|2|Find the remaining count from a fractional or ratio share|Use the complementary share of a known total|k/ratio-games
 fraction-complement|fractions|3|Recover the whole from the amount remaining|Complement the used share before inverse scaling|t/whole-from-left
 percent-complement|percent|1|Find the percent remaining|Subtract given percent from 100|p/percent-complement
 percent-complement|percent|2|Find an unsold count from a percent and total|Scale the total by the complementary rate|p/percent-count-complement
 percent-from-complement|percent|1|Find a percent from a given part and whole|Divide part by whole, multiply by 100|p/percent-part
 percent-from-complement|percent|2|Find the percent outside a known group|Find the complementary count or subtract the known percent from 100|p/percent-count-rest
 ratio-forms|ratio-proportion|1|Write ratios in the requested order or notation|Part-to-part and part-to-whole denominators differ|c/36.1 c/36.2 h/ratio-compare k/ratio-reverse k/fans-ratio k/ratio-part-fraction
-ratio-forms|ratio-proportion|2|Form a ratio after finding a missing group count|Subtract from total, then compare ordered quantities|p/club-ratio k/fraction-rest-ratio
+ratio-forms|ratio-proportion|2|Form a ratio after finding a missing group count|Subtract from total, then compare ordered quantities|k/ratio-club k/fraction-rest-ratio
 part-reference-forms|fraction-decimal-percent|1|Express a part relative to a reference quantity as a fraction or decimal|Reference quantity is the denominator; fraction-part can exceed one|p/fraction-part p/decimal-part p/decimal-part-eighths
 part-reference-forms|fraction-decimal-percent|2|Express a part relative to a reference quantity as a percent|Percent scales the quotient by 100|p/percent-part p/bill-percent
 fraction-sum-to-percent|fraction-decimal-percent|1|Convert a given fractional share to percent|Multiply by 100|p/circle-percent
@@ -504,7 +504,7 @@ prime-decomposition|number-theory|1|List all whole-number factors|Factor pairs|e
 prime-decomposition|number-theory|2|Write a prime factorization|Continue splitting until every factor is prime|b/prime-factorization k/prime-factorization
 prime-decomposition|number-theory|3|Write a prime factorization using exponents|Compress repeated prime factors into powers|c/21.3
 scientific-normalization|scientific-notation|1|Convert ordinary numbers to or from scientific notation|Normalize coefficient and track exponent sign|c/51.1 c/51.2 c/57.2 c/57.3
-scientific-normalization|scientific-notation|2|Normalize a nonstandard scientific expression|Generator includes both exponent signs; not solely a small-number task|b/scientific-normalize
+scientific-normalization|scientific-notation|2|Normalize a nonstandard scientific expression|Generator includes both exponent signs; not solely a small-number task|b/scientific-normalize k/sci-renormalize
 prime-classification|number-theory|1|Decide whether a whole number is prime or composite|Exactly two positive factors define prime; one is neither|f/prime-small k/prime-yes-no
 prime-classification|number-theory|2|List primes or composites in a specified interval|Test all interval members; honor endpoints|b/prime-list c/21.1 c/21.2
 prime-classification|number-theory|3|Find the sum of primes in an interval|Identify all primes before summing|b/prime-sum c/21.6
@@ -560,7 +560,7 @@ repeating-decimal-forms|fraction-decimal-percent|3|Divide to produce and round a
 powers-ten-place-language|number-representation|1|Express a whole-number place value as a power of ten|Exponent zero through six|c/47.1
 powers-ten-place-language|number-representation|2|Expand a four-digit number using powers of ten|Track each digit and preserve zero coefficients|c/47.2
 scientific-expression-forms|scientific-notation|1|Compare scientific-notation numbers with negative exponents|Compare exponents then coefficients|c/57.4
-scientific-expression-forms|scientific-notation|2|Combine powers of ten and normalize a two-digit coefficient|Phase2 exponent is sum plus normalization adjustment|c/69.1
+scientific-expression-forms|scientific-notation|2|Combine powers of ten and normalize a two-digit coefficient|Phase2 exponent is sum plus normalization adjustment|c/69.1 k/sci-renormalize
 scientific-expression-forms|scientific-notation|3|Multiply or divide scientific-notation numbers|Coefficient operation and normalization|c/83.2 o/scientific-product o/scientific-quotient
 integer-product-sum|integers|1|Multiply signed integers|Sign and magnitude rules|c/73.1
 integer-product-sum|integers|2|Multiply signed integers then add another integer|Multiplication precedes addition|c/85.1
@@ -591,7 +591,7 @@ decimal-part-scaling|ratio-proportion|2|Find a decimal part of a whole-number am
 mixed-part-whole-models|ratio-proportion|1|Find a mixed-number part or recover the whole|Both forward and inverse branches are present|h/mixed-part
 mixed-part-whole-models|ratio-proportion|2|Find a fractional part or recover the whole|Different unknown roles; mixed contract cannot occupy one directional stage|c/14.1 c/71.1
 integer-opposites|integers|1|Find an additive inverse and the inverse of that inverse|Negation reflects through zero twice|h/opposites
-integer-opposites|integers|2|Add or subtract signed values|Use additive inverses in calculation|c/64.1
+integer-opposites|integers|2|Add or subtract signed values|Use additive inverses in calculation|c/64.1 k/signed-sum k/signed-subtract
 money-net-amount|decimal-arithmetic|1|Subtract a money amount|Align place values|f/money:sub
 money-net-amount|decimal-arithmetic|2|Find profit from revenue and cost|Whole-dollar subtraction; no percent or markup unknown|h/profit
 absolute-value-expressions|integers|1|Evaluate an absolute value|Distance from zero|a/absolute-value c/59.1
@@ -757,7 +757,7 @@ triangle-area-production|area|2|Calculate area with interior or external height|
 triangle-area-production|area|3|Calculate area and a missing right-triangle hypotenuse|Use a perpendicular altitude, including one outside the triangle|=/course-87-en:item:SN870430
 composite-area-shapes|area|1|Combine a square and triangle with an inferred base|Partition or subtract nonoverlapping regions and infer only justified lengths|=/course-87-en:item:SX870199 =/course-87-en:authored:MCADA-75.1
 composite-area-shapes|area|2|Subtract a circular hole and draw the remaining region|Partition or subtract nonoverlapping regions and infer only justified lengths|=/algebra-2-en:authored:M6-0-2
-area-formula-practice|area|1|Use parallelogram base and perpendicular height|Distinguish bases, perpendicular heights and slanted sides|=/course-87-en:item:SN870327 =/algebra-half-en:node:712 =/course-87-en:authored:MCADA-61.1
+area-formula-practice|area|1|Use parallelogram base and perpendicular height|Distinguish bases, perpendicular heights and slanted sides|=/course-87-en:item:SN870327 =/algebra-half-en:node:712 =/course-87-en:authored:MCADA-61.1 k/parallelogram-area
 area-formula-practice|area|2|Use two trapezoid bases and perpendicular height|Distinguish bases, perpendicular heights and slanted sides|=/course-87-en:item:SX870351 =/algebra-half-en:node:222 =/course-87-en:authored:MCADA-75.2
 circle-output-demands|circle-measurement|1|Find circumference from radius with stated pi|Diameter is twice radius; apply the stated pi convention|=/course-87-en:item:SX870332
 circle-output-demands|circle-measurement|2|Find circumference and area from radius|Diameter is twice radius; apply the stated pi convention|=/algebra-half-en:node:409
@@ -811,7 +811,7 @@ geometric-notation-production|geometry-properties|2|Draw name and describe geome
 shape-identification-practice|geometry-properties|1|Name planar shapes and polygon types|Count sides and follow consecutive vertices; regularity needs equal sides and angles|=/intermediate-4-en:authored:M2-8249b642047f-1 =/course-87-en:authored:MCADA-18.1
 shape-identification-practice|geometry-properties|2|Identify regularity or consecutive vertex naming|Count sides and follow consecutive vertices; regularity needs equal sides and angles|=/course-87-en:authored:MCADA-18.3 =/course-87-en:authored:MCADA-18.2
 shape-dimension-language|geometry-properties|1|Identify dimension counts and linear versus square units|Distinguish point, length, area and solid dimensions|=/course-87-en:authored:MCADA-7.1 =/course-87-en:authored:MCADA-20.5
-shape-dimension-language|geometry-properties|2|Name six types of solid|Distinguish point, length, area and solid dimensions|=/course-87-en:authored:MCADA-67.1
+shape-dimension-language|geometry-properties|2|Name six types of solid|Distinguish point, length, area and solid dimensions|=/course-87-en:authored:MCADA-67.1 k/solid-object k/solid-picture
 line-relationships-space|geometry-properties|1|Classify parallel perpendicular or oblique planar lines|Parallel lines are coplanar; skew lines do not meet and are not coplanar|=/course-87-en:authored:MCADA-7.3
 line-relationships-space|geometry-properties|2|Identify parallel intersecting and skew edges and plane intersections|Parallel lines are coplanar; skew lines do not meet and are not coplanar|=/algebra-2-en:authored:M5-space-lines-planes
 triangle-side-classification|geometry-properties|1|Classify sides by the most specific triangle category|Compare side lengths and choose the most specific category|=/course-87-en:item:SN870299 =/course-87-en:authored:MCADA-62.3
@@ -825,9 +825,9 @@ intersecting-angle-output|angles|1|Find one complementary supplementary or verti
 intersecting-angle-output|angles|2|Find all three remaining angles of two intersecting lines|Vertical angles are equal and adjacent linear-pair angles sum to 180 degrees|=/algebra-2-en:authored:M6-0-4 =/algebra-2-en:authored:M6-17-2
 transversal-identification|angles|1|Identify angle-pair positions on a transversal|Use angle positions and the stated parallel-line assumptions|=/course-87-en:authored:MCADA-102.2
 transversal-identification|angles|2|Find angles on parallel lines with a transversal|Use angle positions and the stated parallel-line assumptions|=/course-87-en:authored:MCADA-102.1
-quadrilateral-angle-contracts|angles|1|Use parallelogram opposite and adjacent angle properties|Use the properties of the specified quadrilateral, not a look-alike diagram|=/course-87-en:authored:MCADA-61.2
+quadrilateral-angle-contracts|angles|1|Use parallelogram opposite and adjacent angle properties|Use the properties of the specified quadrilateral, not a look-alike diagram|=/course-87-en:authored:MCADA-61.2 k/parallelogram-angle k/parallelogram-missing
 quadrilateral-angle-contracts|angles|2|Use cyclic-quadrilateral opposite supplements|Use the properties of the specified quadrilateral, not a look-alike diagram|=/algebra-2-en:authored:M6-35-2
-rhombus-angle-extension|angles|1|Find parallelogram angles|Use supplementary adjacent angles, angle bisectors and perpendicular diagonals|=/course-87-en:authored:MCADA-61.2
+rhombus-angle-extension|angles|1|Find parallelogram angles|Use supplementary adjacent angles, angle bisectors and perpendicular diagonals|=/course-87-en:authored:MCADA-61.2 k/parallelogram-angle
 rhombus-angle-extension|angles|2|Use rhombus angle bisection and perpendicular diagonals too|Use supplementary adjacent angles, angle bisectors and perpendicular diagonals|=/algebra-2-en:authored:M6-39-5
 triangle-angle-interpretations|angles|1|Find a third interior or exterior angle|Triangle interior angles sum to 180 degrees; distinguish demonstration from proof|=/algebra-2-en:authored:M6-31-3 =/course-87-en:authored:MCADA-40.2 k/crossing-lines-triangle k/right-angle-chain
 triangle-angle-interpretations|angles|2|Demonstrate the triangle sum with cut corners|Triangle interior angles sum to 180 degrees; distinguish demonstration from proof|=/course-87-en:authored:MCADA-40.1
@@ -855,8 +855,8 @@ proof-response-production|proof|1|Identify SAS and CPCTC in a supplied diagram|M
 proof-response-production|proof|2|Write a statement-reason triangle-congruence proof|Match triangle vertices and justify a congruence criterion before using corresponding parts|=/algebra-2-en:authored:M5-proof-congruence
 parallelogram-evidence|geometry-properties|1|Judge sufficient and insufficient parallelogram conditions|Separate sufficient conditions from examples and test the converse with a counterexample|=/algebra-2-en:node:340
 parallelogram-evidence|geometry-properties|2|Explain deduction and a failed converse|Separate sufficient conditions from examples and test the converse with a counterexample|=/algebra-2-en:authored:M6-30-1
-solid-representation-demands|geometry-properties|1|Name solid types|Distinguish bases, faces, edges, vertices and hidden edges|=/course-87-en:authored:MCADA-67.1
-solid-representation-demands|geometry-properties|2|Count prism or pyramid faces edges and vertices|Distinguish bases, faces, edges, vertices and hidden edges|=/course-87-en:authored:MCADA-67.2
+solid-representation-demands|geometry-properties|1|Name solid types|Distinguish bases, faces, edges, vertices and hidden edges|=/course-87-en:authored:MCADA-67.1 k/solid-object k/solid-picture
+solid-representation-demands|geometry-properties|2|Count prism or pyramid faces edges and vertices|Distinguish bases, faces, edges, vertices and hidden edges|=/course-87-en:authored:MCADA-67.2 k/solid-counts
 solid-representation-demands|geometry-properties|3|Draw a prism with correct hidden edges and labeled bases|Distinguish bases, faces, edges, vertices and hidden edges|=/course-87-en:authored:MCADA-67.3
 square-inverse-measures|area|1|Recover side from perfect-square area or regular perimeter|Equal sides connect perimeter to side length; area is the square of the side|=/course-87-en:authored:MCADA-20.7 =/course-87-en:authored:MCADA-19.2
 square-inverse-measures|area|2|Recover area from square perimeter|Equal sides connect perimeter to side length; area is the square of the side|=/course-87-en:authored:MCADA-20.11

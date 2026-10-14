@@ -1160,7 +1160,9 @@
           "c/64.1",
           "a/signed-sum",
           "c/68.1",
-          "@/course-1-en:bank:C1_Section10:item:C1_S10_00068"
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00068",
+          "k/signed-sum",
+          "k/signed-subtract"
         ],
         "sourceIds": [
           "course-1-en:bank:C1_Section10:item:C1_S10_00068",
@@ -1170,7 +1172,13 @@
           "algebra-half-en:authored:M3-70-1",
           "algebra-half-en:authored:M3-74-2",
           "algebra-1-en:authored:M4-5-4",
-          "algebra-1-en:authored:M4-6-1"
+          "algebra-1-en:authored:M4-6-1",
+          "course-87-en:item:SX870328",
+          "course-87-en:item:SN870305",
+          "course-87-en:item:SN870331",
+          "course-87-en:item:SN870366",
+          "course-87-en:item:SN870367",
+          "course-87-en:item:SN870363"
         ]
       },
       {
@@ -1349,18 +1357,18 @@
           "c/65.2",
           "p/ratio-total-large",
           "c/65.1",
-          "p/ratio-total-small"
+          "k/ratio-total"
         ],
         "sourceIds": [
-          "course-87-en:item:SX870330",
-          "course-87-en:item:SN870309",
           "algebra-half-en:node:607",
           "course-87-en:authored:MCADA-65.1",
           "course-87-en:authored:MCADA-65.2",
           "course-1-en:authored:M2-1ad47e8007f2-1",
           "course-1-en:authored:M2-1ad47e8007f2-2",
           "algebra-half-en:authored:M3-66-2",
-          "algebra-half-en:authored:M3-100-1"
+          "algebra-half-en:authored:M3-100-1",
+          "course-87-en:item:SX870330",
+          "course-87-en:item:SN870309"
         ]
       },
       {
@@ -3825,7 +3833,10 @@
         "prerequisites": "Multiply length, width and height",
         "selectors": [
           "c/70.1",
-          "f/cube-volume"
+          "f/cube-volume",
+          "k/cube-volume",
+          "k/prism-cubes",
+          "k/prism-volume"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-70.1",
@@ -3833,7 +3844,10 @@
           "course-1-en:authored:M2-52b648583671-1",
           "course-1-en:authored:M2-d6a57c1e9476-1",
           "algebra-half-en:authored:M3-45-1",
-          "algebra-1-en:authored:M4-20-1"
+          "algebra-1-en:authored:M4-20-1",
+          "course-87-en:item:SN870540",
+          "course-87-en:item:SN870377",
+          "course-87-en:item:SN870379"
         ]
       },
       {
@@ -4876,7 +4890,8 @@
         "demand": "Evaluate an expression with several nested grouping symbols",
         "prerequisites": "Work from inner groups out while preserving operation order",
         "selectors": [
-          "c/63.2"
+          "c/63.2",
+          "k/inclusion"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-63.2",
@@ -4884,7 +4899,11 @@
           "algebra-half-en:authored:M3-42-2",
           "algebra-half-en:authored:M3-91-1",
           "algebra-1-en:authored:M4-12-2",
-          "algebra-1-en:authored:M4-13-1"
+          "algebra-1-en:authored:M4-13-1",
+          "course-87-en:item:SX870321",
+          "course-87-en:item:SX870322",
+          "course-87-en:item:SX870323",
+          "course-87-en:item:SN870303"
         ]
       }
     ],
@@ -5746,14 +5765,16 @@
         "demand": "Classify a triangle by sides",
         "prerequisites": "Use the most specific equal-side classification",
         "selectors": [
-          "c/62.3"
+          "c/62.3",
+          "k/triangle-definitions"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-62.3",
           "intermediate-4-en:authored:M2-b0a77dc8dc17-2",
           "course-1-en:authored:M2-9484f27d079c-2",
           "algebra-half-en:authored:M3-104-2",
-          "algebra-1-en:authored:M4-2-5"
+          "algebra-1-en:authored:M4-2-5",
+          "course-87-en:item:SMAH0349"
         ]
       },
       {
@@ -5761,14 +5782,16 @@
         "demand": "Classify a triangle by angles",
         "prerequisites": "Compare largest angle with a right angle",
         "selectors": [
-          "c/62.1"
+          "c/62.1",
+          "k/triangle-classify"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-62.1",
           "intermediate-4-en:authored:M2-b0a77dc8dc17-1",
           "course-1-en:authored:M2-9484f27d079c-1",
           "algebra-half-en:authored:M3-104-1",
-          "algebra-1-en:authored:M4-2-4"
+          "algebra-1-en:authored:M4-2-4",
+          "course-87-en:item:SN870339"
         ]
       },
       {
@@ -5808,14 +5831,17 @@
         "demand": "Calculate circumference",
         "prerequisites": "Apply the stated pi value and distinguish radius from diameter",
         "selectors": [
-          "c/66.2"
+          "c/66.2",
+          "k/circumference-pair"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-66.2",
           "course-1-en:authored:M2-fc5a10837abc-1",
           "algebra-half-en:authored:M3-60-1",
           "algebra-1-en:authored:M4-3-3",
-          "algebra-2-en:authored:M6-0-9"
+          "algebra-2-en:authored:M6-0-9",
+          "course-87-en:item:SX870333",
+          "course-87-en:item:SX870334"
         ]
       },
       {
@@ -5884,13 +5910,17 @@
         "demand": "Calculate parallelogram area",
         "prerequisites": "Use perpendicular height",
         "selectors": [
-          "c/61.1"
+          "c/61.1",
+          "k/parallelogram-area"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-61.1",
           "course-1-en:authored:M2-5e0ce2596e35-1",
           "algebra-half-en:authored:M3-116-1",
-          "algebra-1-en:authored:M4-8-4"
+          "algebra-1-en:authored:M4-8-4",
+          "course-87-en:item:SX870519",
+          "course-87-en:item:SN870297",
+          "course-87-en:item:SN870327"
         ]
       },
       {
@@ -6072,7 +6102,8 @@
         "prerequisites": "Find base area and multiply by prism height",
         "selectors": [
           "c/70.1",
-          "c/70.2"
+          "c/70.2",
+          "k/prism-volume"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-70.1",
@@ -6084,7 +6115,8 @@
           "algebra-half-en:authored:M3-45-2",
           "algebra-1-en:authored:M4-20-1",
           "algebra-1-en:authored:M4-20-2",
-          "algebra-1-en:authored:M4-60-3"
+          "algebra-1-en:authored:M4-60-3",
+          "course-87-en:item:SN870379"
         ]
       },
       {
@@ -6671,18 +6703,18 @@
           "c/65.1",
           "c/65.2",
           "p/ratio-total-large",
-          "p/ratio-total-small"
+          "k/ratio-total"
         ],
         "sourceIds": [
-          "course-87-en:item:SX870330",
-          "course-87-en:item:SN870309",
           "algebra-half-en:node:607",
           "course-87-en:authored:MCADA-65.1",
           "course-87-en:authored:MCADA-65.2",
           "course-1-en:authored:M2-1ad47e8007f2-1",
           "course-1-en:authored:M2-1ad47e8007f2-2",
           "algebra-half-en:authored:M3-66-2",
-          "algebra-half-en:authored:M3-100-1"
+          "algebra-half-en:authored:M3-100-1",
+          "course-87-en:item:SX870330",
+          "course-87-en:item:SN870309"
         ]
       },
       {
@@ -9047,7 +9079,7 @@
         "demand": "Find the remaining count from a fractional or ratio share",
         "prerequisites": "Use the complementary share of a known total",
         "selectors": [
-          "p/wins-losses"
+          "k/ratio-games"
         ],
         "sourceIds": [
           "course-87-en:item:SX870324"
@@ -9161,12 +9193,12 @@
         "demand": "Form a ratio after finding a missing group count",
         "prerequisites": "Subtract from total, then compare ordered quantities",
         "selectors": [
-          "p/club-ratio",
+          "k/ratio-club",
           "k/fraction-rest-ratio"
         ],
         "sourceIds": [
-          "course-87-en:item:SX870325",
-          "course-87-en:item:SX870089"
+          "course-87-en:item:SX870089",
+          "course-87-en:item:SX870325"
         ]
       }
     ],
@@ -9462,10 +9494,14 @@
         "demand": "Normalize a nonstandard scientific expression",
         "prerequisites": "Generator includes both exponent signs; not solely a small-number task",
         "selectors": [
-          "b/scientific-normalize"
+          "b/scientific-normalize",
+          "k/sci-renormalize"
         ],
         "sourceIds": [
-          "algebra-1-en:node:742"
+          "algebra-1-en:node:742",
+          "course-87-en:item:SX870337",
+          "course-87-en:item:SN870384",
+          "course-87-en:item:SN870386"
         ]
       }
     ],
@@ -10375,10 +10411,14 @@
         "demand": "Combine powers of ten and normalize a two-digit coefficient",
         "prerequisites": "Phase2 exponent is sum plus normalization adjustment",
         "selectors": [
-          "c/69.1"
+          "c/69.1",
+          "k/sci-renormalize"
         ],
         "sourceIds": [
-          "course-87-en:authored:MCADA-69.1"
+          "course-87-en:authored:MCADA-69.1",
+          "course-87-en:item:SX870337",
+          "course-87-en:item:SN870384",
+          "course-87-en:item:SN870386"
         ]
       },
       {
@@ -10882,13 +10922,21 @@
         "demand": "Add or subtract signed values",
         "prerequisites": "Use additive inverses in calculation",
         "selectors": [
-          "c/64.1"
+          "c/64.1",
+          "k/signed-sum",
+          "k/signed-subtract"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-64.1",
           "course-1-en:authored:M2-6cb2c36c81b8-1",
           "algebra-half-en:authored:M3-70-1",
-          "algebra-1-en:authored:M4-5-4"
+          "algebra-1-en:authored:M4-5-4",
+          "course-87-en:item:SX870328",
+          "course-87-en:item:SN870305",
+          "course-87-en:item:SN870331",
+          "course-87-en:item:SN870366",
+          "course-87-en:item:SN870367",
+          "course-87-en:item:SN870363"
         ]
       }
     ],
@@ -13729,15 +13777,18 @@
         "selectors": [
           "=/course-87-en:item:SN870327",
           "=/algebra-half-en:node:712",
-          "=/course-87-en:authored:MCADA-61.1"
+          "=/course-87-en:authored:MCADA-61.1",
+          "k/parallelogram-area"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870327",
           "algebra-half-en:node:712",
           "course-87-en:authored:MCADA-61.1",
           "course-1-en:authored:M2-5e0ce2596e35-1",
           "algebra-half-en:authored:M3-116-1",
-          "algebra-1-en:authored:M4-8-4"
+          "algebra-1-en:authored:M4-8-4",
+          "course-87-en:item:SX870519",
+          "course-87-en:item:SN870297",
+          "course-87-en:item:SN870327"
         ]
       },
       {
@@ -13850,12 +13901,12 @@
           "=/course-87-en:authored:MCADA-70.1"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870379",
           "course-87-en:authored:MCADA-70.1",
           "course-1-en:authored:M2-52b648583671-1",
           "course-1-en:authored:M2-d6a57c1e9476-1",
           "algebra-half-en:authored:M3-45-1",
-          "algebra-1-en:authored:M4-20-1"
+          "algebra-1-en:authored:M4-20-1",
+          "course-87-en:item:SN870379"
         ]
       },
       {
@@ -14646,13 +14697,17 @@
         "demand": "Name six types of solid",
         "prerequisites": "Distinguish point, length, area and solid dimensions",
         "selectors": [
-          "=/course-87-en:authored:MCADA-67.1"
+          "=/course-87-en:authored:MCADA-67.1",
+          "k/solid-object",
+          "k/solid-picture"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-67.1",
           "intermediate-4-en:authored:M2-ec616ec4d1a2-1",
           "course-1-en:authored:M2-23b803fc7d4e-1",
-          "algebra-1-en:authored:M4-60-1"
+          "algebra-1-en:authored:M4-60-1",
+          "course-87-en:item:SN870313",
+          "course-87-en:item:SN870610"
         ]
       }
     ],
@@ -14909,11 +14964,16 @@
         "demand": "Use parallelogram opposite and adjacent angle properties",
         "prerequisites": "Use the properties of the specified quadrilateral, not a look-alike diagram",
         "selectors": [
-          "=/course-87-en:authored:MCADA-61.2"
+          "=/course-87-en:authored:MCADA-61.2",
+          "k/parallelogram-angle",
+          "k/parallelogram-missing"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-61.2",
-          "course-1-en:authored:M2-5e0ce2596e35-2"
+          "course-1-en:authored:M2-5e0ce2596e35-2",
+          "course-87-en:item:SX870317",
+          "course-87-en:item:SN870602",
+          "course-87-en:item:SN870355"
         ]
       },
       {
@@ -14940,11 +15000,14 @@
         "demand": "Find parallelogram angles",
         "prerequisites": "Use supplementary adjacent angles, angle bisectors and perpendicular diagonals",
         "selectors": [
-          "=/course-87-en:authored:MCADA-61.2"
+          "=/course-87-en:authored:MCADA-61.2",
+          "k/parallelogram-angle"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-61.2",
-          "course-1-en:authored:M2-5e0ce2596e35-2"
+          "course-1-en:authored:M2-5e0ce2596e35-2",
+          "course-87-en:item:SX870317",
+          "course-87-en:item:SN870602"
         ]
       },
       {
@@ -15413,13 +15476,17 @@
         "demand": "Name solid types",
         "prerequisites": "Distinguish bases, faces, edges, vertices and hidden edges",
         "selectors": [
-          "=/course-87-en:authored:MCADA-67.1"
+          "=/course-87-en:authored:MCADA-67.1",
+          "k/solid-object",
+          "k/solid-picture"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-67.1",
           "intermediate-4-en:authored:M2-ec616ec4d1a2-1",
           "course-1-en:authored:M2-23b803fc7d4e-1",
-          "algebra-1-en:authored:M4-60-1"
+          "algebra-1-en:authored:M4-60-1",
+          "course-87-en:item:SN870313",
+          "course-87-en:item:SN870610"
         ]
       },
       {
@@ -15427,13 +15494,15 @@
         "demand": "Count prism or pyramid faces edges and vertices",
         "prerequisites": "Distinguish bases, faces, edges, vertices and hidden edges",
         "selectors": [
-          "=/course-87-en:authored:MCADA-67.2"
+          "=/course-87-en:authored:MCADA-67.2",
+          "k/solid-counts"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-67.2",
           "intermediate-4-en:authored:M2-ec616ec4d1a2-2",
           "course-1-en:authored:M2-23b803fc7d4e-2",
-          "algebra-1-en:authored:M4-60-2"
+          "algebra-1-en:authored:M4-60-2",
+          "course-87-en:item:SX870327"
         ]
       },
       {

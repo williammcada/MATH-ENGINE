@@ -6847,154 +6847,6 @@
     "samplePrompt": "Write 3.68% as a decimal."
   },
   {
-    "sourceId": "course-87-en:item:SX870324",
-    "providerSourceId": "course-87-en:item:SX870324",
-    "bankId": "course-87-en",
-    "topic": "ratio-proportion",
-    "action": "Find losses from a win-to-total ratio",
-    "recipe": "wins-losses",
-    "family": "structured-proportion",
-    "title": "Find losses from a win-to-total ratio",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:65",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "fraction-complement",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "extension: Find the remaining count from a fractional or ratio share. Use the complementary share of a known total."
-    },
-    "samplePrompt": "The ratio of wins to all games is 6:11. A team played 132 games with no draws. How many games did it lose?"
-  },
-  {
-    "sourceId": "course-87-en:item:SX870325",
-    "providerSourceId": "course-87-en:item:SX870325",
-    "bankId": "course-87-en",
-    "topic": "ratio-proportion",
-    "action": "Find a ratio from a total and a part",
-    "recipe": "club-ratio",
-    "family": "structured-proportion",
-    "title": "Find a ratio from a total and a part",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:65",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "ratio-forms",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "related: Form a ratio after finding a missing group count. Subtract from total, then compare ordered quantities."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "A club has 39 members. 24 are in group A and the rest are in group B. Give the ratio of group B to group A in lowest terms."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870330",
-    "providerSourceId": "course-87-en:item:SX870330",
-    "bankId": "course-87-en",
-    "topic": "ratio-proportion",
-    "action": "Divide a total using a ratio",
-    "recipe": "ratio-total-small",
-    "family": "structured-proportion",
-    "title": "Divide a total using a ratio",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:65",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "ratio-total",
-        "level": 2
-      },
-      {
-        "trackId": "ratio-transfer",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Partition total by sum of ratio parts; smaller values do not change the method. Initial total is split by ratio before the transfer extension."
-    },
-    "samplePrompt": "There are 297 red and blue counters altogether. The ratio of red to blue is 7:2. How many are blue?"
-  },
-  {
-    "sourceId": "course-87-en:item:SN870309",
-    "providerSourceId": "course-87-en:item:SN870309",
-    "bankId": "course-87-en",
-    "topic": "ratio-proportion",
-    "action": "Divide a total using a ratio",
-    "recipe": "ratio-total-large",
-    "family": "structured-proportion",
-    "title": "Divide a total using a ratio",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:65",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "ratio-total",
-        "level": 2
-      },
-      {
-        "trackId": "ratio-transfer",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "samplePrompt": "There are 8481 red and blue counters altogether. The ratio of red to blue is 17:16. How many are blue?"
-  },
-  {
     "sourceId": "course-87-en:item:SN870460",
     "providerSourceId": "course-87-en:item:SN870460",
     "bankId": "course-87-en",
@@ -10004,46 +9856,6 @@
     "samplePrompt": "Find (a) the perimeter in mm and (b) the area in mm\u00b2 of the rectangle. Enter the numerical answers in the stated order, separated by semicolons, without units. Exact fractions or terminating decimals are accepted."
   },
   {
-    "sourceId": "course-87-en:item:SN870327",
-    "providerSourceId": "course-87-en:item:SN870327",
-    "bankId": "course-87-en",
-    "topic": "area",
-    "action": "Find parallelogram area using perpendicular height",
-    "recipe": "parallelogram-area",
-    "family": "structured-geometry",
-    "title": "Find parallelogram area using perpendicular height",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:61",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "area-formula-practice",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "geometry"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Find parallelogram area from base and perpendicular height; the slanted side is irrelevant. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Find the area of the parallelogram in mm\u00b2. The dashed height is perpendicular to the base. Enter the numerical answer without units. Exact fractions or terminating decimals are accepted."
-  },
-  {
     "sourceId": "course-87-en:item:SX870332",
     "providerSourceId": "course-87-en:item:SX870332",
     "bankId": "course-87-en",
@@ -10077,41 +9889,6 @@
       "reason": "Find circumference from radius using pi=22/7; radii are multiples of seven, so the result is exact. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
     },
     "samplePrompt": "Find the circumference in cm. Use 22/7 for \u03c0; give exact results using that value without further rounding. Enter the numerical answer without units. Exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870379",
-    "providerSourceId": "course-87-en:item:SN870379",
-    "bankId": "course-87-en",
-    "topic": "volume",
-    "action": "Find rectangular-prism volume",
-    "recipe": "prism-volume",
-    "family": "structured-geometry",
-    "title": "Find rectangular-prism volume",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:70",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "rectangular-volume-practice",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "geometry"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Find rectangular prism volume from three labeled perpendicular dimensions. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "samplePrompt": "Find the volume of the rectangular prism in mm\u00b3. Enter the numerical answer without units. Exact fractions or terminating decimals are accepted."
   },
   {
     "sourceId": "course-87-en:item:SX870351",
@@ -83605,5 +83382,1110 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "What number is 60% of 415? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870519",
+    "providerSourceId": "course-87-en:item:SX870519",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a parallelogram",
+    "recipe": "parallelogram-area",
+    "family": "structured-port87",
+    "title": "Area of a parallelogram",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:61",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-shape-formulas",
+        "level": 1
+      },
+      {
+        "trackId": "area-formula-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of the parallelogram. Dimensions are in kilometers. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870297",
+    "providerSourceId": "course-87-en:item:SN870297",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a parallelogram",
+    "recipe": "parallelogram-area",
+    "family": "structured-port87",
+    "title": "Area of a parallelogram",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:61",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-shape-formulas",
+        "level": 1
+      },
+      {
+        "trackId": "area-formula-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of the parallelogram. Dimensions are in kilometers. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870327",
+    "providerSourceId": "course-87-en:item:SN870327",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a parallelogram with the height outside",
+    "recipe": "parallelogram-area",
+    "family": "structured-port87",
+    "title": "Area of a parallelogram with the height outside",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:61",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-shape-formulas",
+        "level": 1
+      },
+      {
+        "trackId": "area-formula-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Find parallelogram area from base and perpendicular height; the slanted side is irrelevant. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "Find the area of the parallelogram. Dimensions are in centimeters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870317",
+    "providerSourceId": "course-87-en:item:SX870317",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Find an angle of a parallelogram",
+    "recipe": "parallelogram-angle",
+    "family": "structured-port87",
+    "title": "Find an angle of a parallelogram",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:61",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "quadrilateral-angle-contracts",
+        "level": 1
+      },
+      {
+        "trackId": "rhombus-angle-extension",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The measure of \u2220C in parallelogram ABCD is 106\u00b0. Find the measure of \u2220D. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870602",
+    "providerSourceId": "course-87-en:item:SN870602",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Find an angle of a parallelogram",
+    "recipe": "parallelogram-angle",
+    "family": "structured-port87",
+    "title": "Find an angle of a parallelogram",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:61",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "quadrilateral-angle-contracts",
+        "level": 1
+      },
+      {
+        "trackId": "rhombus-angle-extension",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "ABCD is a parallelogram. If m\u2220DAB = 97\u00b0, what is m\u2220CDA? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870355",
+    "providerSourceId": "course-87-en:item:SN870355",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Missing sides and angles of a parallelogram",
+    "recipe": "parallelogram-missing",
+    "family": "structured-port87",
+    "title": "Missing sides and angles of a parallelogram",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:61",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "quadrilateral-angle-contracts",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "assignments"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing measures in the parallelogram. Write each one as letter = value, separated by commas."
+  },
+  {
+    "sourceId": "course-87-en:item:SMAH0349",
+    "providerSourceId": "course-87-en:item:SMAH0349",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Define triangles by sides and by angles",
+    "recipe": "triangle-definitions",
+    "family": "structured-port87",
+    "title": "Define triangles by sides and by angles",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:62",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "triangle-properties",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "(a) Define scalene triangle. (b) Define obtuse triangle. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870339",
+    "providerSourceId": "course-87-en:item:SN870339",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Classify a triangle by sides and by angles",
+    "recipe": "triangle-classify",
+    "family": "structured-port87",
+    "title": "Classify a triangle by sides and by angles",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:62",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "triangle-properties",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "labels"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Classify the triangle as equilateral, isosceles or scalene and as right, obtuse or acute. Give both names, separated by a comma."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870321",
+    "providerSourceId": "course-87-en:item:SX870321",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Simplify with brackets",
+    "recipe": "inclusion",
+    "family": "structured-port87",
+    "title": "Simplify with brackets",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:63",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "numerical-grouping",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 39 \u2212 3[3(4 \u2212 1)] Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870322",
+    "providerSourceId": "course-87-en:item:SX870322",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Simplify with braces and brackets",
+    "recipe": "inclusion",
+    "family": "structured-port87",
+    "title": "Simplify with braces and brackets",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:63",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "numerical-grouping",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 5{45 \u2212 [7\u00b2 \u2212 4(3 \u2212 1)]} Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870323",
+    "providerSourceId": "course-87-en:item:SX870323",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Simplify with braces, brackets and a power",
+    "recipe": "inclusion",
+    "family": "structured-port87",
+    "title": "Simplify with braces, brackets and a power",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:63",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "numerical-grouping",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 32 \u2212 {124 \u2212 4[3 + 3(3\u00b2)]} Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870303",
+    "providerSourceId": "course-87-en:item:SN870303",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Simplify with symbols of inclusion",
+    "recipe": "inclusion",
+    "family": "structured-port87",
+    "title": "Simplify with symbols of inclusion",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:63",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "numerical-grouping",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 20 \u00f7 4 + {6 \u00b7 8 \u2212 [5 + (6 + 1)]} Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870328",
+    "providerSourceId": "course-87-en:item:SX870328",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Add four signed numbers",
+    "recipe": "signed-sum",
+    "family": "structured-port87",
+    "title": "Add four signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:64",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 2
+      },
+      {
+        "trackId": "integer-opposites",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (\u22128) + (\u22129) + (+8) + (+6) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870305",
+    "providerSourceId": "course-87-en:item:SN870305",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Add three signed numbers",
+    "recipe": "signed-sum",
+    "family": "structured-port87",
+    "title": "Add three signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:64",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 2
+      },
+      {
+        "trackId": "integer-opposites",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (\u22128) + (+7) + (\u22126) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870331",
+    "providerSourceId": "course-87-en:item:SN870331",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Add three signed numbers",
+    "recipe": "signed-sum",
+    "family": "structured-port87",
+    "title": "Add three signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:64",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 2
+      },
+      {
+        "trackId": "integer-opposites",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (\u22122) + 3 + (\u22125) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870324",
+    "providerSourceId": "course-87-en:item:SX870324",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Games lost from a ratio of games won to games played",
+    "recipe": "ratio-games",
+    "family": "structured-port87",
+    "title": "Games lost from a ratio of games won to games played",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:65",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-complement",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "extension: Find the remaining count from a fractional or ratio share. Use the complementary share of a known total."
+    },
+    "samplePrompt": "The team's ratio of games won to games played was 8 to 9. If the team played 81 games, how many games did the team lose? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870325",
+    "providerSourceId": "course-87-en:item:SX870325",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Ratio from a part and a total",
+    "recipe": "ratio-club",
+    "family": "structured-port87",
+    "title": "Ratio from a part and a total",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:65",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-forms",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "ratio"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "related: Form a ratio after finding a missing group count. Subtract from total, then compare ordered quantities."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "Of the 39 students in the club, 24 were boys. What was the ratio of girls to boys in the club? Give the ratio in lowest terms."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870330",
+    "providerSourceId": "course-87-en:item:SX870330",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Use a ratio and a total",
+    "recipe": "ratio-total",
+    "family": "structured-port87",
+    "title": "Use a ratio and a total",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:65",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-total",
+        "level": 2
+      },
+      {
+        "trackId": "ratio-transfer",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Partition total by sum of ratio parts; smaller values do not change the method. Initial total is split by ratio before the transfer extension."
+    },
+    "samplePrompt": "The ratio of boys to girls was 7 to 2. If there were 378 boys and girls in all, how many were boys? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870309",
+    "providerSourceId": "course-87-en:item:SN870309",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Use a ratio and a total",
+    "recipe": "ratio-total",
+    "family": "structured-port87",
+    "title": "Use a ratio and a total",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:65",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-total",
+        "level": 2
+      },
+      {
+        "trackId": "ratio-transfer",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The ratio of beetles to spiders was 17 to 16. If there were 6,996 beetles and spiders in all, how many were spiders? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870333",
+    "providerSourceId": "course-87-en:item:SX870333",
+    "bankId": "course-87-en",
+    "topic": "circle-measurement",
+    "action": "Circumference with 3.14 and in terms of pi",
+    "recipe": "circumference-pair",
+    "family": "structured-port87",
+    "title": "Circumference with 3.14 and in terms of pi",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:66",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-parts-and-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the circumference of each circle. (a) Use 3.14 for \u03c0. Dimensions are in inches. (b) Leave \u03c0 as \u03c0. Dimensions are in meters. Separate the answers with a semicolon."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870334",
+    "providerSourceId": "course-87-en:item:SX870334",
+    "bankId": "course-87-en",
+    "topic": "circle-measurement",
+    "action": "Circumference with 22/7 and in terms of pi",
+    "recipe": "circumference-pair",
+    "family": "structured-port87",
+    "title": "Circumference with 22/7 and in terms of pi",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:66",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "circle-parts-and-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the circumference of each circle. (a) Use 22/7 for \u03c0. Dimensions are in millimeters. (b) Leave \u03c0 as \u03c0. Dimensions are in centimeters. Separate the answers with a semicolon."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870327",
+    "providerSourceId": "course-87-en:item:SX870327",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Faces, edges and vertices of a solid",
+    "recipe": "solid-counts",
+    "family": "structured-port87",
+    "title": "Faces, edges and vertices of a solid",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:67",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-representation-demands",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A triangular prism has how many faces? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870313",
+    "providerSourceId": "course-87-en:item:SN870313",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Name the solid an object resembles",
+    "recipe": "solid-object",
+    "family": "structured-port87",
+    "title": "Name the solid an object resembles",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:67",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "shape-dimension-language",
+        "level": 2
+      },
+      {
+        "trackId": "solid-representation-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use the name of a geometric solid to describe a marble."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870610",
+    "providerSourceId": "course-87-en:item:SN870610",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Name a geometric solid from a picture",
+    "recipe": "solid-picture",
+    "family": "structured-port87",
+    "title": "Name a geometric solid from a picture",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:67",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "shape-dimension-language",
+        "level": 2
+      },
+      {
+        "trackId": "solid-representation-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The shape shown is an example of what kind of solid?"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870366",
+    "providerSourceId": "course-87-en:item:SN870366",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Subtract a negative number",
+    "recipe": "signed-subtract",
+    "family": "structured-port87",
+    "title": "Subtract a negative number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:68",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 2
+      },
+      {
+        "trackId": "integer-opposites",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (+2) \u2212 (\u22125) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870367",
+    "providerSourceId": "course-87-en:item:SN870367",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Subtract a signed number",
+    "recipe": "signed-subtract",
+    "family": "structured-port87",
+    "title": "Subtract a signed number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:68",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 2
+      },
+      {
+        "trackId": "integer-opposites",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (\u22123) \u2212 (\u22128) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870363",
+    "providerSourceId": "course-87-en:item:SN870363",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Add and subtract signed numbers",
+    "recipe": "signed-subtract",
+    "family": "structured-port87",
+    "title": "Add and subtract signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:68",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 2
+      },
+      {
+        "trackId": "integer-opposites",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (\u22123) \u2212 (\u22127) + (+9) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870337",
+    "providerSourceId": "course-87-en:item:SX870337",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Rewrite a number in scientific notation",
+    "recipe": "sci-renormalize",
+    "family": "structured-port87",
+    "title": "Rewrite a number in scientific notation",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:69",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-normalization",
+        "level": 2
+      },
+      {
+        "trackId": "scientific-expression-forms",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 29 \u00d7 10\u207b\u2076 in scientific notation."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870384",
+    "providerSourceId": "course-87-en:item:SN870384",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Rewrite a number in scientific notation",
+    "recipe": "sci-renormalize",
+    "family": "structured-port87",
+    "title": "Rewrite a number in scientific notation",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:69",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-normalization",
+        "level": 2
+      },
+      {
+        "trackId": "scientific-expression-forms",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 0.41 \u00d7 10\u2078 in scientific notation."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870386",
+    "providerSourceId": "course-87-en:item:SN870386",
+    "bankId": "course-87-en",
+    "topic": "scientific-notation",
+    "action": "Rewrite a number in scientific notation",
+    "recipe": "sci-renormalize",
+    "family": "structured-port87",
+    "title": "Rewrite a number in scientific notation",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:69",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scientific-normalization",
+        "level": 2
+      },
+      {
+        "trackId": "scientific-expression-forms",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "parts"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 20.6 \u00d7 10\u207b\u2076 in scientific notation."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870540",
+    "providerSourceId": "course-87-en:item:SN870540",
+    "bankId": "course-87-en",
+    "topic": "volume",
+    "action": "Volume of a prism built of cubes",
+    "recipe": "cube-volume",
+    "family": "structured-port87",
+    "title": "Volume of a prism built of cubes",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:70",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "This rectangular prism is built of cubes. Its volume is how many cubes? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870377",
+    "providerSourceId": "course-87-en:item:SN870377",
+    "bankId": "course-87-en",
+    "topic": "volume",
+    "action": "Cubes needed to build a rectangular prism",
+    "recipe": "prism-cubes",
+    "family": "structured-port87",
+    "title": "Cubes needed to build a rectangular prism",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:70",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How many 1-cm sugar cubes would be needed to build a rectangular prism with the given dimensions? Dimensions are in centimeters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870379",
+    "providerSourceId": "course-87-en:item:SN870379",
+    "bankId": "course-87-en",
+    "topic": "volume",
+    "action": "Volume of a rectangular prism",
+    "recipe": "prism-volume",
+    "family": "structured-port87",
+    "title": "Volume of a rectangular prism",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:70",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      },
+      {
+        "trackId": "prism-cylinder-volumes",
+        "level": 1
+      },
+      {
+        "trackId": "rectangular-volume-practice",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Find rectangular prism volume from three labeled perpendicular dimensions. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "samplePrompt": "Find the volume of the rectangular prism. Dimensions are in inches. Enter exact decimal or whole-number answers."
   }
 ]
