@@ -83,6 +83,12 @@ def runs(r, lo, hi):
                 q += 2
             out.append('{' + n + '}')
             p = q + 2
+            s = ''
+            while p < hi and r[p] >= 0x20:
+                s += SYM.get(r[p], chr(r[p]))
+                p += 1
+            if s:
+                out.append(s)
             continue
         if r[p:p + 5] == b'\x01\xff\x7f\x00\x00':
             a, b = struct.unpack('<ii', r[p + 5:p + 13])
@@ -91,6 +97,11 @@ def runs(r, lo, hi):
             continue
         p += 1
     return out
+
+
+def xrefs(r):
+    """Variable fields: an 'X' record followed by a UTF-16 variable name."""
+    return [m.group(1).decode('utf-16le') for m in re.finditer(rb'X\x00\x00\x00((?:[\x21-\x7e]\x00)+)\x00\x00', r)]
 
 
 def objects(r):
@@ -143,6 +154,9 @@ def show(bank, sid, pics):
         t = runs(r, s, starts[k + 1] if k + 1 < len(starts) else len(r))
         if t:
             print('  ▣%d: %s' % (k, ' '.join(t)[:400]))
+    x = xrefs(r)
+    if x:
+        print('  fields:', ', '.join(x))
     a = i['answer']
     print('A: %s %s' % (a.get('label', ''), a.get('text_with_controls', '').replace('\x0f', '▣')))
     end = bank.next.get(sid, o + n + 200000)
@@ -151,6 +165,9 @@ def show(bank, sid, pics):
         t = runs(ar, 0, len(ar))
         if t:
             print('  answer objects:', ' '.join(t)[:400])
+        x = xrefs(ar)
+        if x:
+            print('  answer fields:', ', '.join(x))
     if pics:
         for tag, seg in (('q', r), ('a', ar if a['kind'] != 'choice' else b'')):
             for k, im in enumerate(bitmaps(seg)):

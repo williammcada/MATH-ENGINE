@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Catalog and source mapping for the 8/7 port tasks (coverage programme batches).
+"""Catalog and source mapping for the port tasks (coverage programme batches): 8/7, then Course 1.
+
+The Course 1 task list is in port_c1_tasks.py.
 
 Each task names the source record it ports. Open records keep their own ID (course-87-en:item:...), so they
 become working entries. A port that replaces an earlier, less faithful adaptation takes over the record's ID
@@ -9,7 +11,8 @@ faithful task.
 Block hashes come from the private recovery ZIP when SAXON_SOURCE_ZIP is set; otherwise the committed
 mapping is reused. Only IDs and hashes are written here, never source text.
 """
-import hashlib, json, os, pathlib, zipfile
+import hashlib, json, os, pathlib, sys, zipfile
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 root = pathlib.Path(__file__).resolve().parents[1]
 COURSE = 'Introduction to PreAlgebra (8/7)'
 # (record, recipe, variant, title, topic, replaces-earlier-adaptation)
@@ -589,21 +592,30 @@ TASKS = [
  ('SMAH0366', 'inv-numerals', 'roman-from', 'Read a Roman numeral', 'number-representation', False),
 ]
 
+def c1_record(rec):
+    return 'course-1-en:bank:C1_Section%s:item:%s' % (rec[4:6], rec)
+
+
 def main():
+    from port_c1_tasks import TASKS_C1
     inv = json.loads((root / 'curriculum/course-inventory/v0.1/course-87-en.json').read_text())
+    inv += json.loads((root / 'curriculum/course-inventory/v0.1/course-1-en.json').read_text())
     lesson = {r['id']: r['lessonId'] for r in inv}
     mapping_path = root / 'curriculum/source-mappings/port87-v0.1.json'
     old = {m['sourceRecord']: m['sourceBlockSha256'] for m in json.loads(mapping_path.read_text())} if mapping_path.exists() else {}
     hashes = {}
     zpath = os.environ.get('SAXON_SOURCE_ZIP')
     if zpath:
-        items = json.loads(zipfile.ZipFile(zpath).read('course-87-en.json'))['items']
+        z = zipfile.ZipFile(zpath)
+        items = json.loads(z.read('course-87-en.json'))['items']
         hashes = {i['id']: [b['sha256'] for b in i['blocks'] if b['type'] in (1, 3, 4, 5, 6, 8)] for i in items}
+        # ExamView records: the dynamic-data and rich-question segments.
+        hashes.update({i['id']: [i['dynamic_data_sha256'], i['question_rich_data_sha256']] for i in json.loads(z.read('course-1-en.json'))['items']})
     entries, mapping = [], []
-    for rec, recipe, variant, title, topic, replaces in TASKS:
-        record = 'course-87-en:item:' + rec
-        sid = 'course-87-en:item:' + rec  # a replacement takes over the record's ID; course-banks drops the earlier entry
-        e = dict(sourceId=sid, sourceRecord=record, lessonId=lesson[record], course=COURSE, family='structured-port87',
+    rows = [('course-87-en:item:' + t[0], COURSE) + t[1:] for t in TASKS] + [(c1_record(t[0]), 'Course 1') + t[1:] for t in TASKS_C1]
+    for record, course, recipe, variant, title, topic, replaces in rows:
+        sid = record  # a replacement takes over the record's ID; course-banks drops the earlier entry
+        e = dict(sourceId=sid, sourceRecord=record, lessonId=lesson[record], course=course, family='structured-port87',
                  recipe=recipe, title=title, topic=topic, origin='original-source-informed-port', exactLegacyReproduction=False)
         if variant:
             e['variant'] = variant
@@ -612,13 +624,13 @@ def main():
         entries.append(e)
         h = hashes.get(record) or old.get(record)
         assert h, 'no block hashes for ' + record + ' (set SAXON_SOURCE_ZIP)'
-        mapping.append(dict(sourceId=sid, sourceRecord=record, lessonId=lesson[record], course=COURSE, family='structured-port87',
+        mapping.append(dict(sourceId=sid, sourceRecord=record, lessonId=lesson[record], course=course, family='structured-port87',
                             recipe=recipe, variant=variant, title=title, relationship='original-source-informed-port',
                             exactLegacyReproduction=False, sourceBlockSha256=h))
     assert len({e['sourceId'] for e in entries}) == len(entries)
     (root / 'src/port87-map.js').write_text('(function(root){const data=' + json.dumps(entries, ensure_ascii=False, separators=(',', ':')) +
         ';if(typeof module!=="undefined"&&module.exports)module.exports=data;root.MathPort87Map=data;})(typeof globalThis!=="undefined"?globalThis:this);\n')
     mapping_path.write_text(json.dumps(mapping, indent=1, ensure_ascii=False) + '\n')
-    print('port87 tasks:', len(entries))
+    print('port tasks:', len(entries), '(8/7:', len(TASKS), '· Course 1:', len(TASKS_C1), ')')
 
 main()

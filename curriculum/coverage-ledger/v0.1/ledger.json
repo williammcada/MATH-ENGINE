@@ -23,6 +23,7 @@
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch7-course87-L61-70.json": "b54dab2ec2091cc171a78006055ab67c055e470026fbc198ab9cbbe8d98cb06e",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch8-course87-L71-80.json": "8b20507436d0a3be5df21b0af904eee114ab24f4b6edc2c417c50f3deb00c41b",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch9-course87-L81-90.json": "9fdec8c0fd9dbcf0b44d2115f86753c9816020a63358f9d6caa5062ad5210edc",
+"curriculum/coverage-ledger/v0.1/decisions/2026-10-14-c1-batch1-course1-L1-5.json": "c8ae79ba052d7c6c3f9889e583c803a383fa5a7c6ffc3452bfc4af98bdf4810a",
 "curriculum/source-mappings/advanced-v0.1.json": "740f9d6e25483a2838d5561a85c66c9eb3f67b7505a8ab9004353e5eb6883aa7",
 "curriculum/source-mappings/algebra-review-v0.1.json": "a4956b61d8353d4258097f2ea5ca8d7baf4031fdd9c090e344ca2ce366a29a0e",
 "curriculum/source-mappings/breadth-v0.1.json": "d8255409d16dcc8db7b45244ab1239896d13ac56ffe4f3eb2ecdd8778f5e4996",
@@ -32,7 +33,7 @@
 "curriculum/source-mappings/linear-equations-v0.1.json": "9e4f9fd37066e63cd74f133bcc76713db8ae30251a22f03f5a672ab535bc7e65",
 "curriculum/source-mappings/linear-equations-v0.2.json": "759f02762a92c18098944bfe8a88f2be5a0a4384f778105cb78239a07df22371",
 "curriculum/source-mappings/measurement-v0.1.json": "3ca7cc1cdb74fb6e1bf8741beea9c2787fe122befe28499e75bfd6d803409451",
-"curriculum/source-mappings/port87-v0.1.json": "a6b186a5fb8d6329fb9ea853f498b91226dc75e37ea14674da2608bfea9ea25f",
+"curriculum/source-mappings/port87-v0.1.json": "80ea21db365e02d38cbf44de996eb131ab9809d0a664e88ef99fcb4b91844d7d",
 "curriculum/source-mappings/proportions-v0.1.json": "85db6cf773c6c1a6bbad37f83cf3724becf552fee4bbf4154e2ade0bae7751af",
 "curriculum/source-mappings/quadratic-equations-v0.1.json": "51b5a6c7221720481df7ac7a3cf9b4561744ef910fee5427c8cd73d6c027f4a6",
 "curriculum/source-mappings/reasoning-v0.1.json": "b88aeb99d84bd8ab367678d0c6f7d90fdc3cba8dbc087ebf108a3e835ef7f448",
@@ -42,14 +43,14 @@
 "curriculum/source-mappings/statistics-v0.1.json": "a3ba878bad7cc71dea555ef623b6c3e89483a9c8f809d21e4d90efa9ba09ce8d"
 },
 "totals": {
-"open": 4247,
-"covered-provisional": 389,
-"covered": 625,
-"consolidated": 164,
+"open": 4162,
+"covered-provisional": 375,
+"covered": 699,
+"consolidated": 189,
 "retired": 0,
 "records": 5425,
-"percentComplete": 14.5,
-"percentIncludingProvisional": 21.7
+"percentComplete": 16.4,
+"percentIncludingProvisional": 23.3
 },
 "banks": {
 "course-87-en": {
@@ -93,14 +94,14 @@
 "percentIncludingProvisional": 18.8
 },
 "course-1-en": {
-"open": 1308,
-"covered-provisional": 45,
-"covered": 0,
-"consolidated": 0,
+"open": 1223,
+"covered-provisional": 31,
+"covered": 74,
+"consolidated": 25,
 "retired": 0,
 "records": 1353,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 3.3
+"percentComplete": 7.3,
+"percentIncludingProvisional": 9.6
 },
 "intermediate-4-en": {
 "open": 1296,
@@ -4713,14 +4714,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
-"open": 9,
-"covered-provisional": 1,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 8,
+"consolidated": 2,
 "retired": 0,
 "records": 10,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 10.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -4749,26 +4750,26 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"open": 23,
-"covered-provisional": 3,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 18,
+"consolidated": 8,
 "retired": 0,
 "records": 26,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 11.5
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"open": 11,
-"covered-provisional": 4,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 13,
+"consolidated": 2,
 "retired": 0,
 "records": 15,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 26.7
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -4785,14 +4786,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"open": 11,
-"covered-provisional": 3,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 9,
+"consolidated": 5,
 "retired": 0,
 "records": 14,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 21.4
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -4809,14 +4810,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"open": 31,
-"covered-provisional": 3,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 26,
+"consolidated": 8,
 "retired": 0,
 "records": 34,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 8.8
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -22146,67 +22147,121 @@
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00001",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of the two-price story; its distractors are served by the port.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00024"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00002",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Subtract money amounts (stacked) with regrouping.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00002"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00003",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Choice form of the addition fact family; the port offers the families as choices.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00158"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00004",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Multiply money by a multiple of ten (stacked).",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00004"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00005",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Long division with a remainder.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00005"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00006",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Choice form of the multiplication fact family.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00160"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00007",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin: missing addend in a sum of four numbers.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00035"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00008",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Find a missing subtrahend.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00008"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00009",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin: missing factor.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00041"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00010",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin: missing divisor.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00046"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00011",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Multiply in parentheses, then divide.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00011"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00012",
@@ -22283,163 +22338,315 @@
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00023",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Add three whole numbers (stacked).",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00023"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00024",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Add two prices in a story.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00024"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00025",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Add three money amounts.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00025"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00026",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Subtract cents from whole dollars (stacked).",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00026"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00027",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Subtract a three-digit number from a four-digit number.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00027"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00028",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Change from a bill.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00028"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00029",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: multiply a money amount by a multiple of ten.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00004"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00030",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Multiply two two-digit numbers.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00030"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00031",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Cost of several tickets.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00031"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00032",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Quotient from a named divisor and dividend.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00032"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00033",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: long division with a three-digit quotient and a remainder.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00005"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00034",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Multiply a money amount by a one-digit number.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00034"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00035",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Find a missing addend in a sum of four numbers.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00035"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00036",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: missing addend.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00130"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00037",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Find a missing addend (stacked).",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00037"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00038",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Find a missing minuend.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00038"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00039",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin: missing minuend.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00038"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00040",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Find a missing subtrahend (regrouping).",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00040"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00041",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Find a missing factor.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00041"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00042",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Find a missing factor (product on the left).",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00042"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00043",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Find a missing factor with a multiple of ten.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00043"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00044",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Find a missing dividend (fraction form).",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00044"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00045",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Find a missing dividend.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00045"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00046",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Find a missing divisor.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00046"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00047",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Divide a sum written over a fraction bar.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00047"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00048",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Add after subtracting in parentheses.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00048"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00049",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: multiply in parentheses, then divide.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00011"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00050",
@@ -22565,37 +22772,67 @@
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00070",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: another sentence in the fact family of a given addition.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00073"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00071",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Complete an addition and subtraction fact family.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00071"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00072",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: an addition fact family from three given numbers.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00158"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00073",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Write a number sentence in the same fact family (addition).",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00073"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00074",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Write a number sentence in the same fact family (division).",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00074"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00075",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: a multiplication fact family from three given numbers.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00160"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00076",
@@ -22660,12 +22897,13 @@
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00085",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Find the unknown in a multiplication equation. Replaces the earlier adaptation, which had no choices.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00085"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00086",
@@ -22713,348 +22951,547 @@
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00093",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Confirmed: three addends of four, three and four digits, as in the source.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00093"
-],
-"basis": "course-banks catalog (initial adaptations)",
-"family": "three-whole-number-sum"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00094",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: change from a bill.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00028"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00095",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Dozens less some.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00095"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00096",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: add three money amounts written in a row.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00025"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00097",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: subtract a three-digit number from a four-digit number.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00027"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00098",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Add two four-digit numbers (stacked).",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00098"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00099",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Subtract four-digit numbers (stacked), regrouping across zero.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00099"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00100",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Add whole dollars and money amounts. Replaces the earlier adaptation, which dropped the dollar signs and named the amounts as multipliers.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00100"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00101",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Confirmed: four-, five- and three-digit addends, as in the source.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00101"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00102",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Subtract cents written with a cent sign from dollars.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00102"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00103",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Repeated addition as multiplication.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00103"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00104",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Multiply a three-digit number by a two-digit number.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00104"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00105",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Multiply a three-digit number with a zero by a two-digit number (stacked).",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00105"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00106",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Division written as a fraction (one-digit divisor).",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00106"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00107",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Long division by a two-digit number into thousands.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00107"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00108",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Multiply two two-digit numbers (stacked).",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00108"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00109",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Division written as a fraction (two-digit divisor).",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00109"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00110",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Long division with a zero in the quotient.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00110"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00111",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Multiply two two-digit numbers written in parentheses.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00111"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00112",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Multiply dollars and cents by a one-digit number. Replaces the earlier adaptation, which dropped the dollar sign.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00112"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00113",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Divide a four-digit number by a one-digit number (zero in the quotient). Replaces the earlier adaptation, which allowed a divisor of 1 and had no zero in the quotient.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00113"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00114",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Divide a three-digit number by a two-digit number. Replaces the earlier adaptation, which used four-digit dividends.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00114"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00115",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Divide a money amount by 10.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00115"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00116",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Subtract a difference in parentheses.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00116"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00117",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Divide by a quotient in parentheses.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00117"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00118",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Confirmed: a − (b − c) with small whole numbers.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00118"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00119",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: divide by a quotient in parentheses.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00117"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00120",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Multiply and divide from left to right.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00120"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00121",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Divide a product written over a fraction bar.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00121"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00122",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: division written as a fraction with a one-digit divisor.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00106"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00123",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: division written as a fraction with a one-digit divisor.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00106"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00124",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Division written as a fraction, zeros in the quotient.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00124"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00125",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Total cost of three items.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00125"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00126",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: cost of several tickets at one price.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00031"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00127",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Coins in a roll.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00127"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00128",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Number of equal groups.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00128"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00129",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Cost of ten items.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00129"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00130",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Find a missing addend.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00130"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00131",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: a number subtracted from 1000.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00133"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00132",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Confirmed: two-digit addend with a three-digit sum.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00132"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00133",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Find a number subtracted from 1000. Replaces the earlier adaptation, which subtracted from four-digit numbers instead of 1000.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00133"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00134",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Confirmed: find the minuend, two-digit numbers.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00134"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00135",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: missing minuend.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00038"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00136",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Solve a one-step multiplication equation.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00136"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00137",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Confirmed: one-digit coefficient, two-digit answer.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00137"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00138",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Confirmed: multiplication fact form.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00138"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00139",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Confirmed: one-digit coefficient, two-digit answer.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00139"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00140",
@@ -23168,43 +23605,81 @@
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00158",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Write an addition and subtraction fact family.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00158"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00159",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: an addition fact family from three given numbers.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00158"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00160",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Write a multiplication and division fact family.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00160"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00161",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Three ways to show a division.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00161"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00162",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Same demand: a multiplication fact family from three given numbers.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00160"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00163",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: List the whole-number factors.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00163"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00164",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-1 course-1 lessons 1-5",
+"reviewed": "2026-10-14",
+"note": "Ported: Read the highest score from a bar graph.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00164"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00165",

@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "entries": 2680,
-  "providers": 2035,
+  "entries": 2740,
+  "providers": 2095,
   "concepts": 475,
   "edges": 164,
   "unmappedEntries": 0,
@@ -17,8 +17,8 @@
       "bankId": "course-1-en",
       "localGrade": 4,
       "placement": "grade-assigned",
-      "entries": 278,
-      "providers": 267
+      "entries": 338,
+      "providers": 327
     },
     {
       "bankId": "course-87-en",
@@ -50,7 +50,7 @@
     }
   ],
   "evidence": {
-    "crossCourseMapSha256": "8e39bf4f917b0788a4753fde9f16612625de790013d80f53d6721b8a9a29aad2",
+    "crossCourseMapSha256": "6de25847a66c294a20eb424fc8ea387e72097b9eedac760622119bbcc9c5c24d",
     "linksSha256": "2d8c6192fedf4c9357435f77581c042c0fb051c1169be1e7c27e0fbe4f26551d",
     "focusLinksSha256": "de64125000b582fea93c85a3f47886c656d3c40bdc7e40fe0bf7149d8f85d6bd"
   },

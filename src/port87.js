@@ -435,6 +435,41 @@ function proofFigure(kind){const F=Fig();if(kind===2){const a=3,b=5,s=a+b;F.poly
 function segmentFigure(vertical){const F=Fig();if(vertical)F.seg([5,0],[5,10]).dot([5,0]).dot([5,10]);else F.seg([0,5],[10,5]).dot([0,5]).dot([10,5]);return F.render('A line segment to bisect',220,200);}
 function angleToBisect(deg){const F=Fig();F.seg([0,0],[20,0]).seg([0,0],pt([0,0],deg,20));return F.render(`An angle of about ${deg}° to bisect`,300,170);}
 function toRoman(n){const T=[[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']];let s='';for(const [v,r] of T)while(n>=v){s+=r;n-=v;}return s;}
+// ---------- Course 1 (ExamView) helpers ----------
+// Column arithmetic: rows right-aligned in a fixed-width font, the operator before the last row and a rule
+// beneath; an optional result row sits under the rule (used when the sum is given and an addend is missing).
+function stackFigure(rows,op,result,label){const W=220,cw=11.5,x=W-30,lh=26;let b='',y=30;
+ rows.forEach((r,i)=>{b+=`<text x="${x}" y="${y}" font-size="19" text-anchor="end" font-family="'Courier New',monospace" fill="${INK}">${esc(r)}</text>`;if(i===rows.length-1&&op)b+=`<text x="${(x-cw*Math.max(...rows.map(s=>s.length))-16).toFixed(1)}" y="${y}" font-size="19" text-anchor="middle" fill="${INK}">${esc(op)}</text>`;y+=lh;});
+ const wid=cw*Math.max(...rows.map(s=>s.length),result?String(result).length:0)+30;b+=ln(x-wid,y-lh+8,x+4,y-lh+8,{w:1.6});
+ if(result!==undefined){b+=`<text x="${x}" y="${y+4}" font-size="19" text-anchor="end" font-family="'Courier New',monospace" fill="${INK}">${esc(String(result))}</text>`;y+=lh;}
+ return svg(b,label,W,y-6);}
+// Long division: the divisor, a bracket and an overline over the dividend.
+function longDivFigure(divisor,dividend,label){const ds=String(divisor),dv=String(dividend),cw=11.5,x0=20+cw*ds.length,W=x0+cw*dv.length+40;
+ const b=`<text x="${(x0-6).toFixed(1)}" y="46" font-size="19" text-anchor="end" font-family="'Courier New',monospace" fill="${INK}">${esc(ds)}</text>`+
+  `<path d="M${(x0-2).toFixed(1)},24 Q${(x0+6).toFixed(1)},38 ${(x0-2).toFixed(1)},52" fill="none" stroke="${INK}" stroke-width="1.6"/>`+ln(x0-2,24,x0+cw*dv.length+10,24,{w:1.6})+
+  `<text x="${(x0+6).toFixed(1)}" y="46" font-size="19" text-anchor="start" font-family="'Courier New',monospace" fill="${INK}">${esc(dv)}</text>`;
+ return svg(b,label||`${dv} divided by ${ds}, written with a long-division bracket`,W,64);}
+// The example of three ways to write a division: bracket, division sign and fraction (15 divided by 5).
+function divFormsExample(){const M="'Courier New',monospace",T=(x,y,s,a='start')=>`<text x="${x}" y="${y}" font-size="19" text-anchor="${a}" font-family="${M}" fill="${INK}">${esc(s)}</text>`;
+ const b=T(26,46,'5','end')+`<path d="M28,24 Q36,38 28,52" fill="none" stroke="${INK}" stroke-width="1.6"/>`+ln(28,24,64,24,{w:1.6})+T(36,46,'15')+T(110,46,'15 ÷ 5')+T(232,34,'15','middle')+ln(216,40,248,40,{w:1.5})+T(232,62,'5','middle');
+ return svg(b,'15 divided by 5 written three ways: with a long-division bracket, as 15 ÷ 5, and as the fraction 15 over 5',270,72);}
+// Bar graph of one value per category (scores by day).
+function barGraph(cats,vals,title,yLabel,top,step){const W=380,H=240,x0=50,y0=200,h=160,bw=(W-x0-20)/cats.length,Y=v=>y0-h*v/top;let b=tx(W/2,18,title,{size:14});
+ for(let v=0;v<=top;v+=step)b+=ln(x0,Y(v),W-12,Y(v),{color:'#c9d3d6',w:1})+tx(x0-8,Y(v)+4,String(v),{size:11,anchor:'end'});
+ cats.forEach((c,i)=>{const x=x0+i*bw+bw*0.18;b+=`<rect x="${x.toFixed(1)}" y="${Y(vals[i]).toFixed(1)}" width="${(bw*0.64).toFixed(1)}" height="${(y0-Y(vals[i])).toFixed(1)}" fill="#7d8f96" fill-opacity="0.55" stroke="${INK}" stroke-width="1.2"/>`+tx(x+bw*0.32,y0+16,c,{size:11});});
+ b+=ln(x0,y0,W-12,y0,{w:1.5})+ln(x0,y0,x0,y0-h-8,{w:1.5})+`<text x="14" y="${y0-h/2}" font-size="12" text-anchor="middle" transform="rotate(-90 14 ${y0-h/2})" fill="${INK}">${esc(yLabel)}</text>`;
+ return svg(b,`${title}: bar graph of ${cats.map((c,i)=>c+' '+vals[i]).join(', ')}`,W,H);}
+const FACT_OPS={'+':'+','-':'−','−':'−','–':'−','x':'×','×':'×','*':'×','·':'×','÷':'÷','/':'÷'};
+// Facts written as "a + b = c", separated by semicolons, commas, line breaks or "and"; null if any part is not a fact.
+function parseFacts(s){const parts=String(s).split(/;|\n|,|\band\b/i).map(x=>x.trim()).filter(Boolean);if(!parts.length||parts.length>8)return null;const out=[];
+ for(const p of parts){const m=p.replace(/\s+/g,'').match(/^(\d{1,6})([+\-−–x×*·÷\/])(\d{1,6})=(\d{1,7})$/i);if(!m)return null;out.push(`${Number(m[1])}${FACT_OPS[m[2].toLowerCase()]}${Number(m[3])}=${Number(m[4])}`);}return out;}
+const factKey=(x,op,y,z)=>`${x}${op}${y}=${z}`;
+function familyFacts(a,b,mult){const c=mult?a*b:a+b,o=mult?'×':'+',u=mult?'÷':'−';return [factKey(a,o,b,c),factKey(b,o,a,c),factKey(c,u,a,b),factKey(c,u,b,a)];}
+const factShow=k=>k.replace(/([+−×÷=])/g,' $1 ');
+// Two-digit-or-more digit columns subtracted without regrouping (the smaller digit from the larger in each column).
+function noRegroup(a,b){const A=String(a),B=String(b).padStart(A.length,'0');return Number([...A].map((d,i)=>Math.abs(Number(d)-Number(B[i]))).join(''));}
+// Divisor and quotient pairs whose product is a whole number of thousands (two-digit divisor, three-digit quotient).
+const C1_THOUSANDS=(()=>{const out=[];for(let d=12;d<=48;d++)for(let q=101;q<=999;q++)if(d*q%1000===0&&d*q<10000&&q%100)out.push([d,q]);return out;})();
 // ---------- tasks ----------
 const LETTERS='ABCDEGHJKMNPQRSTUVWXYZ';
 function letter(int,ban=''){const pool=[...LETTERS].filter(c=>!ban.includes(c));return pool[int(0,pool.length-1)];}
@@ -2027,6 +2062,155 @@ case 'inv-numerals':{const v=c.variant;
  if(v==='roman-from'){const x=int(1,39),r=toRoman(x);t=n(`Write the number represented by the Roman numeral ${r}.`,x,`${r} = ${x}.`,{x});t.choices=distinct(x,[{value:x+5,mistake:'Misread a V'},{value:x-2,mistake:'Misread the I symbols'},{value:x+10,mistake:'Counted an extra X'},{value:x+2,mistake:'Misread the I symbols'}].filter(y=>y.value>0));break;}
  let num;if(v==='roman-large'){if(int(1,2)===1){const b1=int(0,3),b2=int(0,3),b3=int(0,1);num=[500,600,900,1100][b1]+[10,40,50,60][b2]+5*b3+2;}else num=1000*int(0,3)+pick([400,500,600,700,800,900])+pick([0,10,20,30,40,50,60,90])+pick([0,4,5,6,7,8,9]);}else num=int(1,39);
  const r=toRoman(num);t=text(`Write the Roman numeral for ${num}.`,r,`${num} = ${r}.`,{n:num});const bad=[toRoman(num+5),toRoman(num+1),num%10===4?r.replace(/IV$/,'IIII'):num%10===9?r.replace(/IX$/,'VIIII'):toRoman(num+10)];t.choices=wrongOnly(t,bad.map((b,i)=>({value:b,mistake:['Wrote the numeral for a number 5 greater','Added an extra I',num%10===4||num%10===9?'Wrote repeated symbols instead of using subtraction':'Added an extra X'][i]})).concat([{value:toRoman(Math.max(num-1,1)),mistake:'Left out an I'}]));break;}
+// ---------- Course 1, Batch C1-1: Lessons 1-5 ----------
+case 'c1-add-money':{const v=c.variant,cash=z=>money(z);
+ if(v==='story'){const [i1,i2]=pick([['skirt','blouse'],['jacket','scarf'],['pair of shoes','belt'],['backpack','lunch box']]),nm=pick(['Kayla','Marco','Priya','Sam','Lena','Diego']);let a,b;
+  do{const tens=10*int(2,4),o1=int(1,8);a=100*(tens+o1)+int(11,79);b=100*(tens-10+int(o1+1,9))+int(11,79);}while(a%100+b%100>=100);const z=a+b;
+  t=n(`${nm} bought a ${i1} for ${cash(a)} and a ${i2} for ${cash(b)}. What is the total cost of the two items?`,R(z,100),`${cash(a)} + ${cash(b)} = ${cash(z)}.`,{a,b},'decimal');t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(z+110),mistake:'Added an extra 1 to both the dimes and the dollars'},{value:cash(z+100),mistake:'Added an extra 1 to the dollars'},{value:cash(z+10),mistake:'Added an extra 1 to the dimes'},{value:cash(z-100),mistake:'Lost a ten-dollar or one-dollar carry'}]);break;}
+ if(v==='three'){let d1,d2,c1,c3;do{d1=int(1,9);d2=int(10-d1,9);c1=10*int(0,5)+35;c3=10*int(11,14)-c1;}while(c3>=100);const a=100*d1+c1,b=100*d2,z=a+b+c3;
+  t=n(`Add: ${cash(a)} + ${cash(b)} + ${cash(c3)}.`,R(z,100),`Line up the decimal points: ${cash(a)} + ${cash(b)} + ${cash(c3)} = ${cash(z)}.`,{a,b,c:c3},'decimal');t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(z-10),mistake:'Forgot to carry from the cents to the dimes'},{value:cash(z-100),mistake:'Forgot to carry from the dimes to the dollars'},{value:cash(z-110),mistake:'Forgot both carries'}]);break;}
+ if(v==='whole-first'){let w,b,cc;do{w=int(2,9);b=100*int(1,9)+int(10,99);cc=int(11,95);}while(b%10+cc%10<10||b%10===0||cc%10===0);const z=100*w+b+cc;
+  t=n(`Add: $${w} + ${cash(b)} + ${cash(cc)}.`,R(z,100),`$${w} is ${cash(100*w)}. Line up the decimal points: ${cash(100*w)} + ${cash(b)} + ${cash(cc)} = ${cash(z)}.`,{w,b,c:cc},'decimal');t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(z-100*w+w),mistake:`Treated $${w} as ${w} cents`},{value:cash(z-10),mistake:'Forgot to carry from the cents to the dimes'},{value:cash(z-100*w),mistake:'Left out the whole-dollar amount'}]);break;}
+ // story-three: three prices, cents and dimes both carry.
+ let p1,p2,p3;do{p1=int(21,99);p2=100+int(10,49);p3=int(51,99);}while(p1%10+p2%10+p3%10<10||p1%100+p2%100+p3%100<100||!(p1%10&&p2%10&&p3%10));const z=p1+p2+p3,nm=pick(['Mark','Ana','Tomas','Grace','Ravi']);
+ t=n(`${nm} bought a pen for ${cash(p1)}, a box of pencils for ${cash(p2)}, and a pad of paper for ${cash(p3)}. How much did ${nm} spend in all?`,R(z,100),`${cash(p1)} + ${cash(p2)} + ${cash(p3)} = ${cash(z)}.`,{a:p1,b:p2,c:p3},'decimal');t.answer.display=cash(z);
+ t.choices=distinct(cash(z),[{value:cash(z-10),mistake:'Forgot to carry from the cents to the dimes'},{value:cash(z-100),mistake:'Forgot to carry from the dimes to the dollars'},{value:cash(p1+p2),mistake:'Added only two of the three prices'}]);break;}
+case 'c1-sub-money':{const v=c.variant,cash=z=>money(z);
+ if(v==='regroup'){let mo,mt,mh,st,sh;do{mo=int(1,9);mt=int(5,9);mh=int(1,8);st=int(1,4);sh=int(1,9);}while(mh>=sh);const M=100*mo+10*mt+mh,S=10*st+sh,z=M-S;
+  t=n('Subtract.',R(z,100),`Regroup 1 dime as 10 cents: ${cash(M)} − ${cash(S)} = ${cash(z)}.`,{m:M,s:S},'decimal',stackFigure([cash(M),cash(S)],'−',undefined,`${cash(M)} minus ${cash(S)}, written in columns`));t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(z+10),mistake:'Did not reduce the dimes after regrouping'},{value:cash(100*mo+10*(mt-st)+(sh-mh)),mistake:'Subtracted the smaller digit from the larger in the cents column'},{value:cash(z-100),mistake:'Took the regrouped 1 from the dollars instead of the dimes'},{value:cash(z-10),mistake:'Took an extra 10 cents when regrouping'},{value:cash(z+1),mistake:'Subtraction slip in the cents'}]);break;}
+ if(v==='from-whole'){const w=int(2,9),S=10*int(1,8)+int(1,9),z=100*w-S;
+  t=n('Subtract.',R(z,100),`Write $${w} as ${cash(100*w)} and regroup: ${cash(100*w)} − ${cash(S)} = ${cash(z)}.`,{w,s:S},'decimal',stackFigure([cash(100*w),cash(S)],'−',undefined,`${cash(100*w)} minus ${cash(S)}, written in columns`));t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(z+10),mistake:'Did not reduce the dimes after regrouping'},{value:cash(z-10),mistake:'Took an extra 10 cents when regrouping'},{value:cash(z-1),mistake:'Took an extra cent when regrouping'}]);break;}
+ if(v==='cents'){const w=int(3,9),k=int(1,w-1),z=100*w-k;
+  t=n(`Subtract: $${w} − ${k}¢.`,R(z,100),`${k}¢ is ${cash(k)}, so ${cash(100*w)} − ${cash(k)} = ${cash(z)}.`,{w,k},'decimal');t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(100*(w-k)),mistake:`Subtracted ${k} dollars instead of ${k} cents`},{value:cash(100*w-10*k),mistake:`Subtracted ${k} dimes instead of ${k} cents`},{value:cash(100*w+k),mistake:'Added instead of subtracting'}]);break;}
+ // change from a bill
+ const bill=pick([5,10,20]),dol=bill===5?int(1,3):bill===10?int(6,8):int(11,18),cost=100*dol+10*int(1,8)+pick([1,3,5,7,9]),z=100*bill-cost,[nm,item]=pick([['Greg','book'],['Ines','lunch'],['Tariq','T-shirt'],['Ruth','puzzle']]);
+ t=n(`${nm} paid $${bill} for a ${cash(cost)} ${item}. How much change should ${nm} get back?`,R(z,100),`$${bill} − ${cash(cost)} = ${cash(z)}.`,{bill,cost},'decimal');t.answer.display=cash(z);
+ t.choices=distinct(cash(z),[{value:cash(z+10),mistake:'Did not reduce the dimes after regrouping'},{value:cash(z+100),mistake:'Did not reduce the dollars after regrouping'},{value:cash(z-10),mistake:'Took an extra 10 cents when regrouping'}]);break;}
+case 'c1-add-whole':{const v=c.variant;
+ if(v==='three-stacked'){const a=1000*int(1,9)+100*int(1,3)+10*int(7,9)+int(3,4),b=100*int(4,6)+10*int(4,6)+int(0,2),d=100*int(6,9)+10*int(1,3)+int(1,3),z=a+b+d;
+  t=n('Add.',z,`${a} + ${b} + ${d} = ${z}.`,{a,b,c:d},'numbers',stackFigure([String(a),String(b),String(d)],'+',undefined,`${a} plus ${b} plus ${d}, written in columns`));
+  t.choices=distinct(z,[{value:z-10,mistake:'Forgot to carry from the tens to the hundreds'},{value:z-100,mistake:'Forgot to carry from the hundreds to the thousands'},{value:z+pick([-1000,1000]),mistake:'Made an error in the thousands column'}]);break;}
+ let a,b;do{a=int(1000,4999);b=int(1000,4999);}while(a%10+b%10<10||Math.floor(a/10)%10+Math.floor(b/10)%10+1<10||a+b>=10000);const z=a+b;
+ t=n('Add.',z,`${a} + ${b} = ${z}.`,{a,b},'numbers',stackFigure([String(a),String(b)],'+',undefined,`${a} plus ${b}, written in columns`));
+ t.choices=distinct(z,[{value:z-10,mistake:'Forgot to carry from the ones to the tens'},{value:z-100,mistake:'Forgot to carry from the tens to the hundreds'},{value:z-110,mistake:'Forgot both carries'}]);break;}
+case 'c1-sub-whole':{const v=c.variant;
+ if(v==='four-three'){let a,b;do{a=int(1000,9000);b=int(100,800);}while(noRegroup(a,b)===a-b);const z=a-b;
+  t=n(`Subtract: ${a} − ${b}.`,z,`${a} − ${b} = ${z}.`,{a,b});
+  t.choices=distinct(z,[{value:noRegroup(a,b),mistake:'Subtracted the smaller digit from the larger in each column instead of regrouping'},{value:a+b,mistake:'Added instead of subtracting'},{value:z+pick([10,100]),mistake:'Did not reduce the next column after regrouping'},{value:z-10,mistake:'Subtraction slip in the tens'},{value:z+1,mistake:'Subtraction slip in the ones'}]);break;}
+ const th=int(3,9),hu=int(1,9),on=int(0,8),a=1000*th+100*hu+on,b=1000*int(1,th-1)+100*int(0,9)+10*int(1,9)+int(on+1,9),z=a-b;
+ t=n('Subtract.',z,`Regroup across the zero in the tens: ${a} − ${b} = ${z}.`,{a,b},'numbers',stackFigure([String(a),String(b)],'−',undefined,`${a} minus ${b}, written in columns`));
+ t.choices=distinct(z,[{value:noRegroup(a,b),mistake:'Subtracted the smaller digit from the larger in each column instead of regrouping'},{value:z+100,mistake:'Did not reduce the hundreds when regrouping across the zero'},{value:z+10,mistake:'Did not reduce the tens after regrouping'}]);break;}
+case 'c1-dozen':{const k=int(2,6),m=int(1,5),nm=pick(['Alberto','Mia','Kenji','Zoe']),thing=pick(['pencils','eggs','markers','cookies']),z=12*k-m;
+ t=n(`${nm} had ${['','','two','three','four','five','six'][k]} dozen ${thing}. Then ${nm} lost ${m===1?'one':['','','two','three','four','five'][m]} of them. How many ${thing} does ${nm} have now?`,z,`${k} dozen is ${k} × 12 = ${12*k}; ${12*k} − ${m} = ${z}.`,{k,m});
+ t.choices=distinct(z,[{value:12*k,mistake:'Forgot to subtract the lost ones'},{value:10*k-m,mistake:'Used 10 for a dozen'},{value:12*k+m,mistake:'Added instead of subtracting'}]);break;}
+case 'c1-fact-family':{const v=c.variant;
+ if(v==='add-write'||v==='mult-write'){const mult=v==='mult-write';let a,b;if(mult){[a,b]=pick([[3,15],[3,16],[4,13],[4,14],[5,12],[5,13],[6,12],[6,13],[7,11],[7,12],[5,15],[8,15]]);if(int(0,1))[a,b]=[b,a];}else do{a=int(2,19);b=int(2,19);}while(a===b||a+b>30);
+  const s=mult?a*b:a+b,facts=familyFacts(a,b,mult),show=f=>f.map(factShow).join('; ');
+  t={prompt:`Use the numbers ${Math.min(a,b)}, ${Math.max(a,b)}, and ${s} to make two ${mult?'multiplication':'addition'} facts and two ${mult?'division':'subtraction'} facts. Separate the facts with semicolons.`,answer:{kind:'fact-family',facts,value:show(facts)},solution:`${show(facts)}.`,parameters:{a,b,mult}};
+  const other=mult?familyFacts(a,b,false):[factKey(a,'+',b,a+b),factKey(b,'+',a,a+b),factKey(s+a,'−',a,s),factKey(s+a,'−',s,a)];
+  t.choices=wrongOnly(t,[{value:show(other),mistake:mult?'Wrote addition and subtraction facts instead':'Mixed in subtraction facts from a different family'},{value:show([facts[0],facts[1],facts[2],facts[2]]),mistake:'Repeated one fact instead of writing both inverse facts'},{value:show([facts[0],facts[1],mult?factKey(s,'−',a,s-a):factKey(a,'−',s,b),mult?factKey(s,'−',b,s-b):factKey(b,'−',s,a)]),mistake:mult?'Used subtraction instead of division':'Subtracted the sum from an addend (wrong order)'}]);break;}
+ if(v==='complete'){let a,b;do{a=int(2,19);b=int(2,19);}while(a===b);const s=a+b;
+  t=n(`Complete the fact family: ${a} + ${b} = ☐; ${b} + ☐ = ${s}; ${s} − ${a} = ☐; ${s} − ${b} = ${a}. Give the three missing numbers in order.`,[s,a,b],`${a} + ${b} = ${s}; ${b} + ${a} = ${s}; ${s} − ${a} = ${b}.`,{a,b});
+  t.choices=distinct(`${s}; ${a}; ${b}`,[{value:`${s}; ${b}; ${a}`,mistake:'Swapped the addends in the last two blanks'},{value:`${s+1}; ${a}; ${b+1}`,mistake:'Added incorrectly'},{value:`${s}; ${a}; ${a}`,mistake:'Subtracted the wrong number in the third fact'}]);break;}
+ // sentence-add / sentence-div: one more sentence in the family of a given sentence.
+ const mult=v==='sentence-div';let a,b;do{a=mult?int(3,9):int(5,9);b=mult?int(3,9):int(11,19);}while(a===b);const s=mult?a*b:a+b,facts=familyFacts(a,b,mult),given=mult?factKey(s,'÷',a,b):factKey(a,'+',b,s);
+ t={prompt:`Write a number sentence that goes with ${factShow(given)}. Use the same three numbers.`,answer:{kind:'fact-sentence',facts,given,value:factShow(mult?factKey(a,'×',b,s):factKey(b,'+',a,s))},solution:`The other sentences in the family are ${facts.filter(f=>f!==given).map(factShow).join(', ')}.`,parameters:{a,b,mult}};
+ t.choices=wrongOnly(t,mult?[{value:factShow(factKey(s,'−',a,s-a)),mistake:'Used subtraction instead of division'},{value:factShow(factKey(a,'×',s,a*s)),mistake:'Multiplied by the dividend'},{value:factShow(given),mistake:'Repeated the given sentence'}]:[{value:factShow(factKey(a,'+',s,a+s)),mistake:'Used the sum as an addend'},{value:factShow(factKey(b,'−',a,b-a)),mistake:'Subtracted one addend from the other'},{value:factShow(given),mistake:'Repeated the given sentence'}]);break;}
+case 'c1-division-forms':{let b,q;do{b=int(2,9);q=int(2,9);}while(b===5&&q===3||b===q);const a=b*q;
+ const ex=divFormsExample();
+ t={prompt:`Here are three ways to show "15 divided by 5". Write three ways to show "${a} divided by ${b}": with a long-division bracket (type it as ${b})${a}), with a division sign, and as a fraction. Separate them with semicolons.`,answer:{kind:'division-forms',dividend:a,divisor:b,value:`${b})${a}; ${a} ÷ ${b}; ${a}/${b}`},solution:`${b})${a}; ${a} ÷ ${b}; ${a}/${b}.`,parameters:{a,b},svg:ex};
+ t.choices=wrongOnly(t,[{value:`${a})${b}; ${b} ÷ ${a}; ${b}/${a}`,mistake:'Switched the dividend and the divisor'},{value:`${a})${b}; ${a} ÷ ${b}; ${a}/${b}`,mistake:'Wrote the long-division form backward'},{value:`${b})${a}; ${a} ÷ ${b}; ${a} × ${b}`,mistake:'Wrote a multiplication instead of the fraction form'}]);break;}
+case 'c1-multiply':{const v=c.variant,cash=z=>money(z);
+ if(v==='money-tens'){const [o,te]=pick([[3,4],[3,5],[3,6],[4,3],[4,4],[5,2],[5,3],[6,2],[6,3],[7,2]]),d=int(3,7),amt=100*d+10*o,m=10*te,z=amt*m;
+  t=n('Multiply.',R(z,100),`${cash(amt)} × ${m} = ${cash(z)}.`,{amt,m},'decimal',stackFigure([cash(amt),String(m)],'×',undefined,`${cash(amt)} times ${m}, written in columns`));t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(z-1000),mistake:'Made an error in the tens of dollars'},{value:cash(amt+100*m),mistake:'Added instead of multiplying'},{value:cash(z/10),mistake:'Placed the decimal point one place too far left'}]);break;}
+ if(['two-by-two','two-by-two-stacked','paren','three-by-two-dot','three-zero-stacked'].includes(v)){let a,b;
+  if(v==='two-by-two'){a=10*int(1,6)+int(1,6);b=10*int(1,6)+int(1,6);}else if(v==='two-by-two-stacked'){do{a=int(23,98);b=int(23,98);}while(a%10<2||b%10<2);}
+  else if(v==='paren'){do{a=int(41,89);b=int(41,89);}while(a%10<3||b%10<3);}else if(v==='three-by-two-dot'){do{a=int(312,989);b=int(23,89);}while(a%10<2||b%10<2||Math.floor(a/10)%10===0);}
+  else{a=100*int(2,9)+int(1,9);do{b=int(23,89);}while(b%10<2);}
+  const z=a*b,shown=v==='paren'?`(${a})(${b})`:v==='three-by-two-dot'?`${a} · ${b}`:`${a} × ${b}`,stacked=v.endsWith('stacked'),noShift=a*(b%10)+a*Math.floor(b/10);
+  t=n(stacked?'Multiply.':`Multiply: ${shown}.`,z,`${a} × ${b % 10} = ${a*(b%10)} and ${a} × ${b-b%10} = ${a*(b-b%10)}; ${a*(b%10)} + ${a*(b-b%10)} = ${z}.`,{a,b},'numbers',stacked?stackFigure([String(a),String(b)],'×',undefined,`${a} times ${b}, written in columns`):'');
+  t.choices=distinct(z,v==='two-by-two'?[{value:z-10,mistake:'Forgot to carry in the first partial product'},{value:z-100,mistake:'Forgot to carry in the second partial product'},{value:z-110,mistake:'Forgot a carry in each partial product'}]
+   :v==='three-zero-stacked'?[{value:(10*Math.floor(a/100)+a%10)*b,mistake:'Left out the zero in the first factor'},{value:noShift,mistake:'Did not shift the second partial product one place left'},{value:z-100,mistake:'Forgot a carry in the second partial product'},{value:z+10,mistake:'Arithmetic slip in the first partial product'}]
+   :[{value:noShift,mistake:'Did not shift the second partial product one place left'},{value:z-100,mistake:'Forgot a carry in the second partial product'},{value:v==='paren'?a+b:z+10,mistake:v==='paren'?'Added instead of multiplying':'Arithmetic slip in the first partial product'}]);break;}
+ if(v==='tickets'){const k=int(5,9),p=100*int(2,4)+int(1,9),z=k*p,nm=pick(['Helen','Omar','Bea','Luis']);
+  t=n(`${nm} buys ${k} tickets for ${cash(p)} each. What is the total cost of the tickets?`,R(z,100),`${k} × ${cash(p)} = ${cash(z)}.`,{k,p},'decimal');t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(z-1000),mistake:'Made an error in the tens of dollars'},{value:cash(10*z),mistake:'Placed the decimal point one place too far right'},{value:cash(Math.floor(z/10)),mistake:'Placed the decimal point one place too far left'}]);break;}
+ if(v==='times-ten'){let p;do{p=int(15,95);}while(p%10===0);const [who,thing]=pick([['The coach','whistles'],['The teacher','notebooks'],['The librarian','bookmarks']]),z=10*p;
+  t=n(`${who} bought ten ${thing} for ${cash(p)} each. How much was spent in all?`,R(z,100),`10 × ${cash(p)} = ${cash(z)}: each digit moves one place to the left.`,{p},'decimal');t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(100*p),mistake:'Moved the decimal point two places'},{value:cash(p+1000),mistake:'Added $10 instead of multiplying by 10'},{value:cash(p),mistake:'Forgot to multiply by 10'}]);break;}
+ if(v==='money-digit-big'){const p=1000*int(1,6)+10*int(0,9)+5,m=int(3,9),z=p*m;
+  t=n(`Multiply: ${cash(p)} × ${m}.`,R(z,100),`${cash(p)} × ${m} = ${cash(z)}.`,{p,m},'decimal');t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(z+1000),mistake:'Carried an extra 1 into the tens of dollars'},{value:cash(z-1000),mistake:'Forgot to carry into the tens of dollars'},{value:cash(z+10000),mistake:'Made an error in the hundreds of dollars'}]);break;}
+ if(v==='money-digit'){let p,m;do{p=100*int(1,4)+5*int(1,19);m=int(3,9);}while((p%100)*m<100);const z=p*m;
+  t=n(`Multiply: ${cash(p)} × ${m}.`,R(z,100),`${cash(p)} × ${m} = ${cash(z)}.`,{p,m},'decimal');t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(z-100*Math.floor((p%100)*m/100)),mistake:'Forgot to carry from the cents into the dollars'},{value:cash(z+p),mistake:'Multiplied by one more than the number given'},{value:cash(z-p),mistake:'Multiplied by one less than the number given'}]);break;}
+ // repeated addition
+ const a=int(13,49),k=int(4,7),z=a*k;
+ t=n(`Add: ${Array(k).fill(a).join(' + ')}.`,z,`${a} is added ${k} times, so the sum is ${k} × ${a} = ${z}.`,{a,k});
+ t.choices=distinct(z,[{value:a*(k-1),mistake:'Counted one addend too few'},{value:a*(k+1),mistake:'Counted one addend too many'},{value:a+k,mistake:'Added the number of addends instead of multiplying'}]);break;}
+case 'c1-divide':{const v=c.variant,cash=z=>money(z),dropZero=q=>Number(String(q).replace(/0/g,''));
+ if(v==='bracket-remainder'){const d=int(3,9),q=100+10*int(2,8)+int(1,9),r=int(1,d-1),N=d*q+r,r2=r===1?2:r-1;
+  t={prompt:'Divide. Write the answer with its remainder, for example 25 R3.',answer:{kind:'quot-rem',q,r,value:`${q} R${r}`},solution:`${d} × ${q} = ${d*q}, and ${N} − ${d*q} = ${r}, so the answer is ${q} R${r}.`,parameters:{d,q,r},svg:longDivFigure(d,N)};
+  t.choices=wrongOnly(t,[{value:`${q} R${r2}`,mistake:'Subtracted incorrectly in the last step'},{value:`${q-1} R${r}`,mistake:'Wrote one too few in the ones place of the quotient'},{value:`${q-1} R${r2}`,mistake:'Made errors in both the quotient and the remainder'}]);break;}
+ if(['bar-one','bar-two','bar-tens','bracket-two','bracket-zero','horiz-zero','horiz-two'].includes(v)){let d,q;
+  if(v==='bar-one'){do{d=int(2,9);q=int(0,1)?int(21,99):1000+int(0,1)*100+int(1,99);}while(d*q>9999||d*q<100);}
+  else if(v==='bar-two'||v==='horiz-two'){do{d=int(12,v==='bar-two'?25:35);q=int(12,39);}while(d*q>999);}
+  else if(v==='bar-tens'){do{d=10*int(2,9);q=1000*int(1,9)+int(1,9);}while(d*q>99999);}
+  else if(v==='bracket-two')[d,q]=pick(C1_THOUSANDS);
+  else{do{d=v==='horiz-zero'?int(4,9):int(3,9);q=100*int(2,9)+int(1,9);}while(v==='horiz-zero'&&d*q<1000);}
+  const N=d*q,mm=v.startsWith('bar')?math(mfrac(`<mn>${comma(N)}</mn>`,d)):'',fig=v.startsWith('bracket')?longDivFigure(d,N):'';
+  t=n(v.startsWith('horiz')?`Divide: ${N} ÷ ${d}.`:v.startsWith('bar')?'Simplify the division shown.':'Divide.',q,`${d} × ${q} = ${N}, so ${N} ÷ ${d} = ${q}.`,{d,q},'numbers',fig);if(mm)t.math=mm;
+  t.choices=distinct(q,String(q).includes('0')&&String(q).length>2?[{value:dropZero(q),mistake:'Left out a zero in the quotient'},{value:q+10,mistake:'Made an error in the tens place of the quotient'},{value:q*10,mistake:'Wrote an extra zero in the quotient'}]:[{value:q+1,mistake:'Arithmetic slip in the last step'},{value:q-1,mistake:'Arithmetic slip in the last step'},{value:q*10,mistake:'Wrote an extra zero in the quotient'}]);break;}
+ if(v==='money-ten'){const cents=10*int(101,999),z=cents/10;
+  t=n(`Divide: ${cash(cents)} ÷ 10.`,R(z,100),`Dividing by 10 moves each digit one place to the right: ${cash(cents)} ÷ 10 = ${cash(z)}.`,{cents},'decimal');t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(10*cents),mistake:'Multiplied by 10 instead of dividing'},{value:cash(cents),mistake:'Did not move the decimal point'},{value:cash(z+10),mistake:'Arithmetic slip in the dimes'}]);break;}
+ if(v==='divisor-dividend'){const q=10*int(2,6),d=int(11,19),N=q*d;let o;do{o=10*int(2,6);}while(o===q);
+  t=n(`Find the quotient when the divisor is ${d} and the dividend is ${comma(N)}.`,q,`The dividend is divided by the divisor: ${comma(N)} ÷ ${d} = ${q}.`,{d,q});
+  t.choices=distinct(q,[{value:o,mistake:'Estimated the quotient without checking it'},{value:N*d,mistake:'Multiplied the dividend by the divisor'},{value:N+d,mistake:'Added the dividend and the divisor'}]);break;}
+ if(v==='groups'){const size=10*int(2,6),g=int(4,9),tot=size*g,who=pick(['students','campers','players','singers']);
+  t=n(`If ${tot} ${who} are divided into groups of ${size}, how many groups will be formed?`,g,`${tot} ÷ ${size} = ${g}.`,{size,g});
+  t.choices=distinct(g,[{value:10*g,mistake:'Wrote an extra zero in the quotient'},{value:tot-size,mistake:'Subtracted instead of dividing'},{value:g+1,mistake:'Arithmetic slip'}]);break;}
+ // coins in a roll
+ const [coin,per,roll]=pick([['quarters',4,10],['dimes',10,5],['nickels',20,2]]),z=per*roll,word={4:'Four',10:'Ten',20:'Twenty'}[per];
+ t=n(`${word} ${coin} are worth $1.00. A roll of ${coin} is worth $${roll}. How many ${coin} are in a roll?`,z,`Each dollar is ${per} ${coin}, so $${roll} is ${roll} × ${per} = ${z} ${coin}.`,{per,roll});
+ t.choices=distinct(z,[{value:per+roll,mistake:'Added instead of multiplying'},{value:10*z,mistake:'Wrote an extra zero'},{value:100/per,mistake:'Gave the value of one coin in cents'}]);break;}
+case 'c1-unknown':{const v=c.variant,L=pick(['n','m','w','y','a','q']);let eq,z,list,sol,fig='',mathml='';
+ if(v==='addend-four'){const a=int(40,60),b=int(10,30),d=int(1,9),x=int(5,19),S=a+b+d+x;eq=`${a} + ${b} + ${d} + ${L} = ${S}`;z=x;sol=`${a} + ${b} + ${d} = ${a+b+d}, and ${S} − ${a+b+d} = ${x}.`;list=[{value:x>d?x-d:x+1,mistake:x>d?'Subtracted one of the known addends twice':'Subtraction slip in the ones'},{value:a+b+d,mistake:'Gave the sum of the known addends'},{value:x+10,mistake:'Subtraction slip in the tens'}];}
+ else if(v==='subtrahend'||v==='subtrahend-regroup'){const reg=v==='subtrahend-regroup',a=reg?int(211,250):int(251,299),x=reg?int(51,99):int(101,149),d=a-x;eq=`${a} − ${L} = ${d}`;z=x;sol=`${L} = ${a} − ${d} = ${x}.`;list=[{value:a+d,mistake:'Added instead of subtracting'},{value:x+10,mistake:'Subtraction slip in the tens'},{value:x-10,mistake:'Subtraction slip in the tens'}];}
+ else if(v==='from-thousand'){let x;do{x=int(101,899);}while(x%10===0);const k=1000-x;eq=`1000 − ${L} = ${k}`;z=x;sol=`${L} = 1000 − ${k} = ${x}.`;list=[{value:1000+k,mistake:'Added instead of subtracting'},{value:x+10,mistake:'Did not reduce the tens when regrouping across the zeros'},{value:x+100,mistake:'Did not reduce the hundreds when regrouping across the zeros'}];}
+ else if(v==='addend-stacked'){const x=int(11,49),b=int(11,49),S=x+b;z=x;eq=null;fig=stackFigure([L,String(b)],'+',S,`${L} plus ${b} equals ${S}, written in columns`);sol=`${L} = ${S} − ${b} = ${x}.`;list=[{value:x-10,mistake:'Subtraction slip in the tens'},{value:x+10,mistake:'Subtraction slip in the tens'},{value:x+pick([-1,1]),mistake:'Subtraction slip in the ones'}];}
+ else if(v==='addend'){let tot,a;do{tot=10*int(4,15);a=int(5,tot-11);}while(a%10===0);eq=`${a} + ${L} = ${tot}`;z=tot-a;sol=`${L} = ${tot} − ${a} = ${z}.`;list=[{value:tot+a,mistake:'Added instead of subtracting'},{value:z+10,mistake:'Did not reduce the tens after regrouping'},{value:z-10,mistake:'Subtraction slip in the tens'},{value:z+1,mistake:'Subtraction slip in the ones'},{value:z-1,mistake:'Subtraction slip in the ones'}];}
+ else if(v==='minuend'){let a,d;do{a=int(12,52);d=int(10,48);}while(a===d);eq=`${L} − ${a} = ${d}`;z=a+d;sol=`${L} = ${d} + ${a} = ${z}.`;list=[{value:Math.abs(a-d),mistake:'Subtracted instead of adding'},{value:z-10,mistake:'Forgot to carry when adding'},{value:z+10,mistake:'Addition slip in the tens'}];}
+ else if(v==='factor'||v==='factor-tens'||v==='coef'||v==='coef-choice'||v==='product-left'){let a,x;if(v==='factor'){a=int(11,19);x=int(11,19);}else if(v==='factor-tens'){a=10*int(1,5);x=int(2,9);}else if(v==='coef'){a=int(3,9);x=int(12,29);}else if(v==='coef-choice'){a=int(2,9);x=10*int(2,9);}else{a=int(2,9);x=int(2,9);}
+  const P=a*x;z=x;eq=v==='factor-tens'?`${a} × ${L} = ${P}`:v==='product-left'?`${P} = ${a}${L}`:`${a}${L} = ${P}`;sol=`${L} = ${P} ÷ ${a} = ${x}.`;
+  list=v==='factor'?[{value:x+10,mistake:'Division slip in the tens'},{value:P-a,mistake:'Subtracted instead of dividing'},{value:x+pick([-1,1]),mistake:'Division slip in the ones'}]:v==='factor-tens'?[{value:10*x,mistake:'Wrote an extra zero'},{value:P-a,mistake:'Subtracted instead of dividing'},{value:x+1,mistake:'Division slip'},{value:x+2,mistake:'Division slip'}]:v==='coef-choice'?[{value:x/10,mistake:'Dropped the zero from the quotient'},{value:P-a,mistake:'Subtracted instead of dividing'},{value:x+10,mistake:'Division slip in the tens'}]:[{value:P-a,mistake:'Subtracted instead of dividing'},{value:P+a,mistake:'Added instead of dividing'},{value:x+1,mistake:'Division slip'},{value:x+2,mistake:'Division slip'},{value:P,mistake:'Gave the product instead of the missing factor'}];}
+ else if(v==='divisor'){const q=int(2,12),x=int(21,90),N=q*x;eq=`${N} ÷ ${L} = ${q}`;z=x;sol=`${L} = ${N} ÷ ${q} = ${x}.`;list=[{value:x+pick([-5,5]),mistake:'Division slip in the ones'},{value:x-10,mistake:'Division slip in the tens'},{value:x+10,mistake:'Division slip in the tens'}];}
+ else{const bar=v==='dividend-bar',b=int(2,9),q=bar?int(2,9):int(11,19),N=b*q;z=N;eq=bar?null:`${L} ÷ ${b} = ${q}`;if(bar)mathml=math(`<mrow>${mfrac(`<mi>${L}</mi>`,b)}<mo>=</mo>${mn(q)}</mrow>`);sol=`${L} = ${b} × ${q} = ${N}.`;
+  list=bar?[{value:b+q,mistake:'Added instead of multiplying'},{value:b===q?1:Math.abs(b-q),mistake:'Subtracted instead of multiplying'},{value:b*(q+1),mistake:'Multiplication slip'},{value:N+1,mistake:'Multiplication slip'},{value:N+b,mistake:'Multiplied by one more'}]:[{value:b*(q+1),mistake:'Multiplication slip'},{value:N+10,mistake:'Forgot to carry correctly'},{value:Math.abs(q-b),mistake:'Subtracted instead of multiplying'}];}
+ const ask=v==='coef-choice'?`In the equation ${eq}, what number is the unknown ${L}?`:eq?`Find the missing number: ${eq}.`:`Find the missing number ${L}.`;
+ t=n(ask,z,sol,{v,eq,letter:L},'numbers',fig);if(mathml)t.math=mathml;t.choices=distinct(z,list);break;}
+case 'c1-list-factors':{const N=pick([12,16,18,20,24,28,30,32,36,40,42,44,45,48,50,54,56,60]),fs=[];for(let k=1;k<=N;k++)if(N%k===0)fs.push(k);let non;do{non=int(2,N-1);}while(N%non===0);
+ t={prompt:`List the whole-number factors of ${N}. Separate them with commas.`,answer:{kind:'num-set',set:fs,value:fs.join(', ')},solution:`The factors pair up to make ${N}: ${fs.join(', ')}.`,parameters:{N}};
+ const mid=fs[Math.floor(fs.length/2)];t.choices=wrongOnly(t,[{value:fs.slice(1,-1).join(', '),mistake:'Left out 1 and the number itself'},{value:[...fs,non].sort((x,y)=>x-y).join(', '),mistake:'Included a number that is not a factor'},{value:fs.filter(x=>x!==mid&&x!==N/mid).join(', '),mistake:'Missed a factor pair'}]);break;}
+case 'c1-scores-graph':{const days=['Mon','Tue','Wed','Thu','Fri'],full=['Monday','Tuesday','Wednesday','Thursday','Friday'];let s;do{s=days.map(()=>5*int(12,20));}while(new Set(s).size<5);const nm=pick(['Jana','Felix','Nora','Abel']),k=s.indexOf(Math.max(...s)),lo=s.indexOf(Math.min(...s));
+ t=text(`The bar graph shows ${nm}'s quiz scores for one week. On which day did ${nm} earn the highest score?`,full[k],`The tallest bar is ${full[k]} (${s[k]}).`,{scores:s,k},barGraph(days,s,`${nm}'s Quiz Scores`,'Score',100,20),[days[k]]);
+ t.choices=[lo,...[0,1,2,3,4].filter(i=>i!==k&&i!==lo)].slice(0,3).map(i=>({value:full[i],mistake:i===lo?'Chose the day with the lowest score':'Chose a day with a lower score'}));break;}
+case 'c1-order-ops':{const v=c.variant;let shown,z,list,sol,mathml='',plain='';
+ if(v==='paren-mul-div'){const a=int(2,5),b=int(2,5),f=int(2,3),m=a*b*f;shown=`(${m} × ${b}) ÷ ${a}`;z=m*b/a;sol=`${m} × ${b} = ${m*b}, and ${m*b} ÷ ${a} = ${z}.`;list=[{value:m*b,mistake:'Forgot to divide'},{value:a*b,mistake:'Multiplied the wrong numbers'},{value:f,mistake:'Divided by the product of the other two numbers'},{value:z+1,mistake:'Division slip'},{value:z*a,mistake:'Forgot to divide after multiplying'}];}
+ else if(v==='left-right'){let a,b,d;do{d=pick([6,8,9,12,15]);a=int(10,25);b=int(10,30);}while(a*b%d||a%d===0||b%d===0);shown=`${a} × ${b} ÷ ${d}`;z=a*b/d;sol=`Work from left to right: ${a} × ${b} = ${a*b}, and ${a*b} ÷ ${d} = ${z}.`;list=[{value:a*b,mistake:'Forgot to divide'},{value:a*b-d,mistake:'Subtracted instead of dividing'},{value:z+10,mistake:'Division slip in the tens'}];}
+ else if(v==='bar-sum'){const d=int(2,5),f1=int(2,5),f2=int(2,5),a=f1*d,b=f2*d;shown=null;mathml=math(mfrac(`<mrow>${mn(a)}<mo>+</mo>${mn(b)}</mrow>`,d));plain=`(${a} + ${b}) ÷ ${d}`;z=(a+b)/d;sol=`Add first: ${a} + ${b} = ${a+b}, then ${a+b} ÷ ${d} = ${z}.`;list=[{value:a/d+b,mistake:'Divided only the first number'},{value:b/d+a,mistake:'Divided only the second number'},{value:z+pick([-1,1]),mistake:'Division slip'},{value:a+b,mistake:'Forgot to divide the sum'},{value:z+2,mistake:'Division slip'}];}
+ else if(v==='add-paren'){const a=int(2,9),b=int(11,19),d=int(2,9);shown=`${a} + (${b} − ${d})`;z=a+b-d;sol=`${b} − ${d} = ${b-d}, and ${a} + ${b-d} = ${z}.`;list=[{value:a+b+d,mistake:'Added instead of subtracting in the parentheses'},{value:b-d,mistake:'Left out the first number'},{value:z+10,mistake:'Addition slip'},{value:z+1,mistake:'Addition slip'},{value:z-1,mistake:'Subtraction slip in the parentheses'}];}
+ else if(v==='sub-paren'){const d=int(2,9),b=int(d+2,20),a=int(b+d+1,b+d+20);shown=`${a} − (${b} − ${d})`;z=a-b+d;sol=`${b} − ${d} = ${b-d}, and ${a} − ${b-d} = ${z}.`;list=[{value:a-b-d,mistake:'Ignored the parentheses and subtracted from left to right'},{value:a-d,mistake:'Left out the second number'},{value:a+b-d,mistake:'Added instead of subtracting'},{value:z+1,mistake:'Subtraction slip'},{value:z-1,mistake:'Subtraction slip'}];}
+ else if(v==='div-paren'){const d=int(2,4),b=d*int(2,4),q=b/d,a=q*int(3,12);shown=`${a} ÷ (${b} ÷ ${d})`;z=a/q;sol=`${b} ÷ ${d} = ${q}, and ${a} ÷ ${q} = ${z}.`;list=[...(a%b===0&&(a/b)%d===0?[{value:a/b/d,mistake:'Ignored the parentheses and divided from left to right'}]:[]),{value:a*q,mistake:'Multiplied instead of dividing'},...(a%b===0?[{value:a/b,mistake:'Divided by the first number in the parentheses only'}]:[]),{value:z+2,mistake:'Division slip'},{value:z+1,mistake:'Division slip'}];}
+ else{let a,b,d;do{d=pick([10,12,15,20,24]);a=int(11,19);b=int(11,24);}while(a*b%d||a%d===0||b%d===0);mathml=math(mfrac(`<mrow><mo>(</mo>${mn(a)}<mo>)</mo><mo>(</mo>${mn(b)}<mo>)</mo></mrow>`,d));plain=`${a} × ${b} ÷ ${d}`;shown=null;z=a*b/d;sol=`${a} × ${b} = ${a*b}, and ${a*b} ÷ ${d} = ${z}.`;list=[{value:a*b,mistake:'Forgot to divide'},{value:(a+b)%d===0?(a+b)/d:z+10,mistake:(a+b)%d===0?'Added the numbers on top instead of multiplying':'Division slip in the tens'},{value:z+1,mistake:'Division slip'}];}
+ t=n(shown?`Simplify: ${shown}.`:'Simplify the expression shown.',z,sol,{v,shown,plain},'numbers');if(mathml)t.math=mathml;t.choices=distinct(z,list);break;}
 default:throw Error('Unknown port recipe '+c.recipe);}
 return t;}
 
@@ -2038,7 +2222,7 @@ function generate(c,seed,index,int,version){const h={int,index,pick:a=>a[int(0,a
 
 // ---------- answers ----------
 const clean=s=>String(s??'').trim().toLowerCase().replace(/[−–]/g,'-').replace(/[×x*·]/g,'×').replace(/\s+/g,'').replace(/,/g,'');
-function answerText(q){const a=q.answer;if(a.display)return a.display;switch(a.kind){case'property':case'expanded':case'lists':case'equation-pair':case'duration':case'part':case'side-and-number':case'set':case'sequence':case'factorization':case'factorization-root':case'compare-common':case'words':case'ratio':case'fraction-ratio':case'linear':case'repeating':case'compound':case'parts':case'point':case'assignments':case'labels':case'keywords':case'yes-number':case'relation':case'power10':case'poly':case'integer-set':case'unit-expr':case'approx':case'num-pair':case'formula':case'slope-int':case'roots':case'mono-ratio':case'angle-pairs':case'factored':case'prime-factors':case'num-set':case'chord-angle':return a.value;case'percent-approx':return a.display;default:return U.answerText(q);}}
+function answerText(q){const a=q.answer;if(a.display)return a.display;switch(a.kind){case'property':case'expanded':case'lists':case'equation-pair':case'duration':case'part':case'side-and-number':case'set':case'sequence':case'factorization':case'factorization-root':case'compare-common':case'words':case'ratio':case'fraction-ratio':case'linear':case'repeating':case'compound':case'parts':case'point':case'assignments':case'labels':case'keywords':case'yes-number':case'relation':case'power10':case'poly':case'integer-set':case'unit-expr':case'approx':case'num-pair':case'formula':case'slope-int':case'roots':case'mono-ratio':case'angle-pairs':case'factored':case'prime-factors':case'num-set':case'chord-angle':case'fact-family':case'fact-sentence':case'division-forms':case'quot-rem':return a.value;case'percent-approx':return a.display;default:return U.answerText(q);}}
 function nums(s){return s.split(',').map(x=>x.trim()).filter(Boolean);}
 function check(q,response){const a=q.answer;let s=String(response??'');if(s.length>600)return{answerCorrect:false,fullOutcomeVerified:false};
  if(a.kind==='property'){const r=clean(s).replace(/×/g,a.op==='+'?'?':'×'),op=a.op==='+'?'\\+':'×',num='(\\d)';let ok=false;const sides=r.split('=');
@@ -2107,6 +2291,10 @@ function check(q,response){const a=q.answer;let s=String(response??'');if(s.leng
  if(a.kind==='prime-factors'){const r=supToCaret(s);if(!/^[\s()·*×•\da-z^]+$/.test(r)||!/[\da-z]/.test(r))return fail;const ps=[],vars={};for(const tk of r.match(/\d+|[a-z](?:\^\d+)?/g)){if(/^\d/.test(tk)){const p=Number(tk);if(!isPrime(p))return fail;ps.push(p);}else{const e=tk.length>1?Number(tk.slice(2)):1;vars[tk[0]]=(vars[tk[0]]||0)+e;}}return okv(ps.sort((x,y)=>x-y).join()===[...a.primes].sort((x,y)=>x-y).join()&&monoKey(vars)===monoKey(a.vars));}
  if(a.kind==='num-set'){const r=String(s).replace(/[−–]/g,'-');if(/\d\.\d/.test(r))return fail;const got=(r.match(/-?\d+/g)||[]).map(Number);return okv(got.length===a.set.length&&new Set(got).size===got.length&&a.set.every(x=>got.includes(x)));}
  if(a.kind==='chord-angle'){const ps=String(s).split(';');if(ps.length!==2||/\d/.test(String(s).replace(/\([ab]\)/gi,'')))return fail;const ch=ps[0].replace(/\(a\)|chord|segment|[^A-Za-z]/gi,'').toUpperCase(),an=ps[1].replace(/\(b\)|angle|[^A-Za-z]/gi,'').toUpperCase();return okv(ch.length===2&&[...ch].sort().join()===[...a.chord].sort().join()&&an.length===3&&an[1]===a.vertex&&[an[0],an[2]].sort().join()===[...a.ends].sort().join());}
+ if(a.kind==='fact-family'){const got=parseFacts(s);return okv(!!got&&got.length===4&&new Set(got).size===4&&got.every(f=>a.facts.includes(f)));}
+ if(a.kind==='fact-sentence'){const got=parseFacts(s);return okv(!!got&&got.length===1&&a.facts.includes(got[0])&&got[0]!==a.given);}
+ if(a.kind==='division-forms'){const ps=String(s).split(/;|\n|,/).map(x=>x.replace(/\s+/g,'').replace(/[‾¯]/g,'')).filter(Boolean),want=[`${a.divisor})${a.dividend}`,`${a.dividend}÷${a.divisor}`,`${a.dividend}/${a.divisor}`];return okv(ps.length===3&&new Set(ps).size===3&&ps.every(x=>want.includes(x)));}
+ if(a.kind==='quot-rem'){const m=String(s).replace(/\s+/g,'').toUpperCase().match(/^(\d+)(?:R|REMAINDER)(\d+)$/);return okv(!!m&&Number(m[1])===a.q&&Number(m[2])===a.r);}
  if(a.kind==='compare-common'){const m=String(s).replace(/\s/g,'').replace(/[−–]/g,'-').match(/^(\d+)\/(\d+)(<|>|=)(\d+)\/(\d+)$/);if(!m)return fail;const [p,k1,sym,q,k2]=[Number(m[1]),Number(m[2]),m[3],Number(m[4]),Number(m[5])];
   return okv(k1===k2&&k1>0&&p*a.a[1]===a.a[0]*k1&&q*a.b[1]===a.b[0]*k2&&sym===a.symbol);}
  if(q.eitherForm){s=s.split(';').map(stripUnits).join('; ');const r=U.check(q,s.replace(/\$/g,''));if(r.answerCorrect)return r;return U.check({...q,answer:{...a,kind:'mixed'}},s);}

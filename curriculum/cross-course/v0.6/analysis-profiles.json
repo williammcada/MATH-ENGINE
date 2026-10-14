@@ -617,76 +617,6 @@
     "samplePrompt": "Is 4 a factor of 20? Answer yes or no."
   },
   {
-    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00085",
-    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00085",
-    "bankId": "course-1-en",
-    "topic": "equations",
-    "action": "Find a missing number",
-    "recipe": "structured-equation",
-    "family": "structured-equation",
-    "title": "Find a missing number",
-    "course": "Course 1",
-    "localGrade": 4,
-    "placement": "grade-assigned",
-    "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "linear-equations",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 2,
-      "status": "reviewed",
-      "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
-    },
-    "samplePrompt": "Find w. Give an exact whole-number answer."
-  },
-  {
-    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00100",
-    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00100",
-    "bankId": "course-1-en",
-    "topic": "decimal-arithmetic",
-    "action": "Calculate an exact money amount",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact money amount",
-    "course": "Course 1",
-    "localGrade": 4,
-    "placement": "grade-assigned",
-    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "decimal-sum-length",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "difficulty: Add three decimals or money amounts with up to hundredths. Keep an additional addend aligned."
-    },
-    "samplePrompt": "Calculate the amount in dollars. Every number shown is a dollar amount or a numerical multiplier; no rounding is needed."
-  },
-  {
     "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00101",
     "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00101",
     "bankId": "course-1-en",
@@ -723,111 +653,6 @@
       "chunk": 4,
       "status": "reconciled",
       "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Calculate. Give an exact integer answer."
-  },
-  {
-    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00112",
-    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00112",
-    "bankId": "course-1-en",
-    "topic": "decimal-arithmetic",
-    "action": "Calculate an exact money amount",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact money amount",
-    "course": "Course 1",
-    "localGrade": 4,
-    "placement": "grade-assigned",
-    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "decimal-operations",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Money or finite-decimal multiplication; decimal point placement, including factors below one. Decimal range min=max=0 is fractional, not constant zero."
-    },
-    "samplePrompt": "Calculate the amount in dollars. Every number shown is a dollar amount or a numerical multiplier; no rounding is needed."
-  },
-  {
-    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00113",
-    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00113",
-    "bankId": "course-1-en",
-    "topic": "whole-arithmetic",
-    "action": "Calculate an exact expression",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact expression",
-    "course": "Course 1",
-    "localGrade": 4,
-    "placement": "grade-assigned",
-    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "division-exact",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "AST quotientRange synthesizes the dividend; one-digit divisor and exact three-digit quotient."
-    },
-    "samplePrompt": "Calculate. Give an exact integer answer."
-  },
-  {
-    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00114",
-    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00114",
-    "bankId": "course-1-en",
-    "topic": "whole-arithmetic",
-    "action": "Calculate an exact expression",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact expression",
-    "course": "Course 1",
-    "localGrade": 4,
-    "placement": "grade-assigned",
-    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "division-divisors",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "AST synthesizes exact dividend; two-digit divisor and two-digit quotient."
     },
     "samplePrompt": "Calculate. Give an exact integer answer."
   },
@@ -900,41 +725,6 @@
       "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
     },
     "samplePrompt": "Find n. Give an exact whole-number answer."
-  },
-  {
-    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00133",
-    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00133",
-    "bankId": "course-1-en",
-    "topic": "equations",
-    "action": "Find a missing number",
-    "recipe": "structured-equation",
-    "family": "structured-equation",
-    "title": "Find a missing number",
-    "course": "Course 1",
-    "localGrade": 4,
-    "placement": "grade-assigned",
-    "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "linear-equations",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 2,
-      "status": "reviewed",
-      "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
-    },
-    "samplePrompt": "Find m. Give an exact whole-number answer."
   },
   {
     "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00134",
@@ -92414,5 +92204,2582 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Write the number represented by the Roman numeral XXIV. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00024",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00024",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Add two prices in a story",
+    "recipe": "c1-add-money",
+    "family": "structured-port87",
+    "title": "Add two prices in a story",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-sum-length",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Priya bought a backpack for $25.13 and a lunch box for $18.40. What is the total cost of the two items? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00025",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00025",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Add three money amounts",
+    "recipe": "c1-add-money",
+    "family": "structured-port87",
+    "title": "Add three money amounts",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-sum-length",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add: $2.75 + $8.00 + $0.55. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00100",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00100",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Add whole dollars and money amounts",
+    "recipe": "c1-add-money",
+    "family": "structured-port87",
+    "title": "Add whole dollars and money amounts",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-sum-length",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "difficulty: Add three decimals or money amounts with up to hundredths. Keep an additional addend aligned."
+    },
+    "samplePrompt": "Add: $2 + $2.73 + $0.39. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00125",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00125",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Total cost of three items",
+    "recipe": "c1-add-money",
+    "family": "structured-port87",
+    "title": "Total cost of three items",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-sum-length",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Mark bought a pen for $0.38, a box of pencils for $1.27, and a pad of paper for $0.64. How much did Mark spend in all? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00002",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00002",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Subtract money amounts (stacked) with regrouping",
+    "recipe": "c1-sub-money",
+    "family": "structured-port87",
+    "title": "Subtract money amounts (stacked) with regrouping",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "money-net-amount",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00026",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00026",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Subtract cents from whole dollars (stacked)",
+    "recipe": "c1-sub-money",
+    "family": "structured-port87",
+    "title": "Subtract cents from whole dollars (stacked)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "money-net-amount",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00102",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00102",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Subtract cents written with a cent sign from dollars",
+    "recipe": "c1-sub-money",
+    "family": "structured-port87",
+    "title": "Subtract cents written with a cent sign from dollars",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "money-net-amount",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract: $4 \u2212 3\u00a2. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00028",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00028",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Change from a bill",
+    "recipe": "c1-sub-money",
+    "family": "structured-port87",
+    "title": "Change from a bill",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "money-net-amount",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Tariq paid $20 for a $12.59 T-shirt. How much change should Tariq get back? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00023",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00023",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Add three whole numbers (stacked)",
+    "recipe": "c1-add-whole",
+    "family": "structured-port87",
+    "title": "Add three whole numbers (stacked)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-addition",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00098",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00098",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Add two four-digit numbers (stacked)",
+    "recipe": "c1-add-whole",
+    "family": "structured-port87",
+    "title": "Add two four-digit numbers (stacked)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-addition",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00027",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00027",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Subtract a three-digit number from a four-digit number",
+    "recipe": "c1-sub-whole",
+    "family": "structured-port87",
+    "title": "Subtract a three-digit number from a four-digit number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-subtraction",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract: 8533 \u2212 534. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00099",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00099",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Subtract four-digit numbers (stacked), regrouping across zero",
+    "recipe": "c1-sub-whole",
+    "family": "structured-port87",
+    "title": "Subtract four-digit numbers (stacked), regrouping across zero",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-subtraction",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00095",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00095",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Dozens less some",
+    "recipe": "c1-dozen",
+    "family": "structured-port87",
+    "title": "Dozens less some",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Zoe had four dozen cookies. Then Zoe lost two of them. How many cookies does Zoe have now? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00158",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00158",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Write an addition and subtraction fact family",
+    "recipe": "c1-fact-family",
+    "family": "structured-port87",
+    "title": "Write an addition and subtraction fact family",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fact-family"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use the numbers 11, 14, and 25 to make two addition facts and two subtraction facts. Separate the facts with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00071",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00071",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Complete an addition and subtraction fact family",
+    "recipe": "c1-fact-family",
+    "family": "structured-port87",
+    "title": "Complete an addition and subtraction fact family",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Complete the fact family: 15 + 16 = \u2610; 16 + \u2610 = 31; 31 \u2212 15 = \u2610; 31 \u2212 16 = 15. Give the three missing numbers in order. Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00073",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00073",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Write a number sentence in the same fact family (addition)",
+    "recipe": "c1-fact-family",
+    "family": "structured-port87",
+    "title": "Write a number sentence in the same fact family (addition)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5d6bef3a5b56ed5d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fact-sentence"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write a number sentence that goes with 5 + 12 = 17. Use the same three numbers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00160",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00160",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Write a multiplication and division fact family",
+    "recipe": "c1-fact-family",
+    "family": "structured-port87",
+    "title": "Write a multiplication and division fact family",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fact-family"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use the numbers 6, 12, and 72 to make two multiplication facts and two division facts. Separate the facts with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00074",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00074",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Write a number sentence in the same fact family (division)",
+    "recipe": "c1-fact-family",
+    "family": "structured-port87",
+    "title": "Write a number sentence in the same fact family (division)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fact-sentence"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write a number sentence that goes with 20 \u00f7 5 = 4. Use the same three numbers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00161",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00161",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Three ways to show a division",
+    "recipe": "c1-division-forms",
+    "family": "structured-port87",
+    "title": "Three ways to show a division",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "division-forms"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Here are three ways to show \"15 divided by 5\". Write three ways to show \"56 divided by 8\": with a long-division bracket (type it as 8)56), with a division sign, and as a fraction. Separate them with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00004",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00004",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Multiply money by a multiple of ten (stacked)",
+    "recipe": "c1-multiply",
+    "family": "structured-port87",
+    "title": "Multiply money by a multiple of ten (stacked)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 3
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 2
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      },
+      {
+        "trackId": "multiplication-number-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00030",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00030",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Multiply two two-digit numbers",
+    "recipe": "c1-multiply",
+    "family": "structured-port87",
+    "title": "Multiply two two-digit numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 3
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 2
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      },
+      {
+        "trackId": "multiplication-number-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply: 13 \u00d7 54. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00108",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00108",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Multiply two two-digit numbers (stacked)",
+    "recipe": "c1-multiply",
+    "family": "structured-port87",
+    "title": "Multiply two two-digit numbers (stacked)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 3
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 2
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      },
+      {
+        "trackId": "multiplication-number-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00111",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00111",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Multiply two two-digit numbers written in parentheses",
+    "recipe": "c1-multiply",
+    "family": "structured-port87",
+    "title": "Multiply two two-digit numbers written in parentheses",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 3
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 2
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      },
+      {
+        "trackId": "multiplication-number-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply: (68)(45). Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00104",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00104",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Multiply a three-digit number by a two-digit number",
+    "recipe": "c1-multiply",
+    "family": "structured-port87",
+    "title": "Multiply a three-digit number by a two-digit number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 3
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 2
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      },
+      {
+        "trackId": "multiplication-number-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply: 586 \u00b7 35. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00105",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00105",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Multiply a three-digit number with a zero by a two-digit number (stacked)",
+    "recipe": "c1-multiply",
+    "family": "structured-port87",
+    "title": "Multiply a three-digit number with a zero by a two-digit number (stacked)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 3
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 2
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      },
+      {
+        "trackId": "multiplication-number-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00031",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00031",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Cost of several tickets",
+    "recipe": "c1-multiply",
+    "family": "structured-port87",
+    "title": "Cost of several tickets",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 3
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 2
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      },
+      {
+        "trackId": "multiplication-number-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Luis buys 9 tickets for $2.05 each. What is the total cost of the tickets? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00129",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00129",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Cost of ten items",
+    "recipe": "c1-multiply",
+    "family": "structured-port87",
+    "title": "Cost of ten items",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 3
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 2
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      },
+      {
+        "trackId": "multiplication-number-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The teacher bought ten notebooks for $0.39 each. How much was spent in all? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00034",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00034",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Multiply a money amount by a one-digit number",
+    "recipe": "c1-multiply",
+    "family": "structured-port87",
+    "title": "Multiply a money amount by a one-digit number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 3
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 2
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      },
+      {
+        "trackId": "multiplication-number-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply: $60.65 \u00d7 6. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00112",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00112",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Multiply dollars and cents by a one-digit number",
+    "recipe": "c1-multiply",
+    "family": "structured-port87",
+    "title": "Multiply dollars and cents by a one-digit number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 3
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 2
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      },
+      {
+        "trackId": "multiplication-number-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Money or finite-decimal multiplication; decimal point placement, including factors below one. Decimal range min=max=0 is fractional, not constant zero."
+    },
+    "samplePrompt": "Multiply: $2.25 \u00d7 9. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00103",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00103",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Repeated addition as multiplication",
+    "recipe": "c1-multiply",
+    "family": "structured-port87",
+    "title": "Repeated addition as multiplication",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 3
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 2
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      },
+      {
+        "trackId": "multiplication-number-forms",
+        "level": 2
+      },
+      {
+        "trackId": "multiplication-fact-formats",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add: 37 + 37 + 37 + 37. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00005",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00005",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Long division with a remainder",
+    "recipe": "c1-divide",
+    "family": "structured-port87",
+    "title": "Long division with a remainder",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "division-exact",
+        "level": 2
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 1
+      },
+      {
+        "trackId": "whole-powers-ten-shortcuts",
+        "level": 2
+      },
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "quot-rem"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide. Write the answer with its remainder, for example 25 R3."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00106",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00106",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Division written as a fraction (one-digit divisor)",
+    "recipe": "c1-divide",
+    "family": "structured-port87",
+    "title": "Division written as a fraction (one-digit divisor)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "division-exact",
+        "level": 2
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 1
+      },
+      {
+        "trackId": "whole-powers-ten-shortcuts",
+        "level": 2
+      },
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify the division shown. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00109",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00109",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Division written as a fraction (two-digit divisor)",
+    "recipe": "c1-divide",
+    "family": "structured-port87",
+    "title": "Division written as a fraction (two-digit divisor)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "division-exact",
+        "level": 2
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 1
+      },
+      {
+        "trackId": "whole-powers-ten-shortcuts",
+        "level": 2
+      },
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify the division shown. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00124",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00124",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Division written as a fraction, zeros in the quotient",
+    "recipe": "c1-divide",
+    "family": "structured-port87",
+    "title": "Division written as a fraction, zeros in the quotient",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "division-exact",
+        "level": 2
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 1
+      },
+      {
+        "trackId": "whole-powers-ten-shortcuts",
+        "level": 2
+      },
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify the division shown. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00107",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00107",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Long division by a two-digit number into thousands",
+    "recipe": "c1-divide",
+    "family": "structured-port87",
+    "title": "Long division by a two-digit number into thousands",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "division-exact",
+        "level": 2
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 1
+      },
+      {
+        "trackId": "whole-powers-ten-shortcuts",
+        "level": 2
+      },
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00110",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00110",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Long division with a zero in the quotient",
+    "recipe": "c1-divide",
+    "family": "structured-port87",
+    "title": "Long division with a zero in the quotient",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "division-exact",
+        "level": 2
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 1
+      },
+      {
+        "trackId": "whole-powers-ten-shortcuts",
+        "level": 2
+      },
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00113",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00113",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Divide a four-digit number by a one-digit number (zero in the quotient)",
+    "recipe": "c1-divide",
+    "family": "structured-port87",
+    "title": "Divide a four-digit number by a one-digit number (zero in the quotient)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "division-exact",
+        "level": 2
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 1
+      },
+      {
+        "trackId": "whole-powers-ten-shortcuts",
+        "level": 2
+      },
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "AST quotientRange synthesizes the dividend; one-digit divisor and exact three-digit quotient."
+    },
+    "samplePrompt": "Divide: 1836 \u00f7 6. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00114",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00114",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Divide a three-digit number by a two-digit number",
+    "recipe": "c1-divide",
+    "family": "structured-port87",
+    "title": "Divide a three-digit number by a two-digit number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "division-exact",
+        "level": 2
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 1
+      },
+      {
+        "trackId": "whole-powers-ten-shortcuts",
+        "level": 2
+      },
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "AST synthesizes exact dividend; two-digit divisor and two-digit quotient."
+    },
+    "samplePrompt": "Divide: 513 \u00f7 27. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00115",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00115",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide a money amount by 10",
+    "recipe": "c1-divide",
+    "family": "structured-port87",
+    "title": "Divide a money amount by 10",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "division-exact",
+        "level": 2
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 1
+      },
+      {
+        "trackId": "whole-powers-ten-shortcuts",
+        "level": 2
+      },
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide: $48.30 \u00f7 10. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00032",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00032",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Quotient from a named divisor and dividend",
+    "recipe": "c1-divide",
+    "family": "structured-port87",
+    "title": "Quotient from a named divisor and dividend",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "division-exact",
+        "level": 2
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 1
+      },
+      {
+        "trackId": "whole-powers-ten-shortcuts",
+        "level": 2
+      },
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the quotient when the divisor is 17 and the dividend is 340. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00128",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00128",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Number of equal groups",
+    "recipe": "c1-divide",
+    "family": "structured-port87",
+    "title": "Number of equal groups",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "division-exact",
+        "level": 2
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 1
+      },
+      {
+        "trackId": "whole-powers-ten-shortcuts",
+        "level": 2
+      },
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If 240 campers are divided into groups of 30, how many groups will be formed? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00127",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00127",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Coins in a roll",
+    "recipe": "c1-divide",
+    "family": "structured-port87",
+    "title": "Coins in a roll",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:d38906837dae4d6f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "division-exact",
+        "level": 2
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-powers-ten",
+        "level": 2
+      },
+      {
+        "trackId": "division-answer-forms",
+        "level": 1
+      },
+      {
+        "trackId": "whole-powers-ten-shortcuts",
+        "level": 2
+      },
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Four quarters are worth $1.00. A roll of quarters is worth $10. How many quarters are in a roll? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00035",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00035",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find a missing addend in a sum of four numbers",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Find a missing addend in a sum of four numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number: 58 + 14 + 3 + w = 88. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00008",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00008",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find a missing subtrahend",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Find a missing subtrahend",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number: 281 \u2212 w = 138. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00040",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00040",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find a missing subtrahend (regrouping)",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Find a missing subtrahend (regrouping)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number: 219 \u2212 a = 165. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00133",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00133",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find a number subtracted from 1000",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Find a number subtracted from 1000",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 1
+      },
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 2,
+      "status": "reviewed",
+      "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
+    },
+    "samplePrompt": "Find the missing number: 1000 \u2212 m = 122. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00037",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00037",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find a missing addend (stacked)",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Find a missing addend (stacked)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number w. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00130",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00130",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find a missing addend",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Find a missing addend",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number: 5 + w = 50. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00038",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00038",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find a missing minuend",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Find a missing minuend",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:b003e306c9d2155b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number: y \u2212 12 = 35. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00041",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00041",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find a missing factor",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Find a missing factor",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number: 13q = 234. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00043",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00043",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find a missing factor with a multiple of ten",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Find a missing factor with a multiple of ten",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number: 10 \u00d7 n = 70. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00042",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00042",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find a missing factor (product on the left)",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Find a missing factor (product on the left)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number: 16 = 4n. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00046",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00046",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find a missing divisor",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Find a missing divisor",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number: 690 \u00f7 m = 10. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00044",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00044",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find a missing dividend (fraction form)",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Find a missing dividend (fraction form)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number q. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00045",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00045",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find a missing dividend",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Find a missing dividend",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number: m \u00f7 7 = 12. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00136",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00136",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Solve a one-step multiplication equation",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Solve a one-step multiplication equation",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number: 9y = 108. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00085",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00085",
+    "bankId": "course-1-en",
+    "topic": "equations",
+    "action": "Find the unknown in a multiplication equation",
+    "recipe": "c1-unknown",
+    "family": "structured-port87",
+    "title": "Find the unknown in a multiplication equation",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 1
+      },
+      {
+        "trackId": "signed-equations",
+        "level": 1
+      },
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 2,
+      "status": "reviewed",
+      "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
+    },
+    "samplePrompt": "In the equation 4w = 120, what number is the unknown w? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00163",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00163",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "List the whole-number factors",
+    "recipe": "c1-list-factors",
+    "family": "structured-port87",
+    "title": "List the whole-number factors",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "factor-testing",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "num-set"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "List the whole-number factors of 12. Separate them with commas."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00164",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00164",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Read the highest score from a bar graph",
+    "recipe": "c1-scores-graph",
+    "family": "structured-port87",
+    "title": "Read the highest score from a bar graph",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:6fd7b6e67fec8d9e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The bar graph shows Nora's quiz scores for one week. On which day did Nora earn the highest score?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00011",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00011",
+    "bankId": "course-1-en",
+    "topic": "expressions",
+    "action": "Multiply in parentheses, then divide",
+    "recipe": "c1-order-ops",
+    "family": "structured-port87",
+    "title": "Multiply in parentheses, then divide",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "numerical-grouping",
+        "level": 1
+      },
+      {
+        "trackId": "grouping-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (45 \u00d7 3) \u00f7 5. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00120",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00120",
+    "bankId": "course-1-en",
+    "topic": "expressions",
+    "action": "Multiply and divide from left to right",
+    "recipe": "c1-order-ops",
+    "family": "structured-port87",
+    "title": "Multiply and divide from left to right",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "numerical-grouping",
+        "level": 1
+      },
+      {
+        "trackId": "grouping-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 10 \u00d7 27 \u00f7 6. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00047",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00047",
+    "bankId": "course-1-en",
+    "topic": "expressions",
+    "action": "Divide a sum written over a fraction bar",
+    "recipe": "c1-order-ops",
+    "family": "structured-port87",
+    "title": "Divide a sum written over a fraction bar",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "numerical-grouping",
+        "level": 1
+      },
+      {
+        "trackId": "grouping-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify the expression shown. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00048",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00048",
+    "bankId": "course-1-en",
+    "topic": "expressions",
+    "action": "Add after subtracting in parentheses",
+    "recipe": "c1-order-ops",
+    "family": "structured-port87",
+    "title": "Add after subtracting in parentheses",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "numerical-grouping",
+        "level": 1
+      },
+      {
+        "trackId": "grouping-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 3 + (17 \u2212 3). Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00116",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00116",
+    "bankId": "course-1-en",
+    "topic": "expressions",
+    "action": "Subtract a difference in parentheses",
+    "recipe": "c1-order-ops",
+    "family": "structured-port87",
+    "title": "Subtract a difference in parentheses",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "numerical-grouping",
+        "level": 1
+      },
+      {
+        "trackId": "grouping-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 24 \u2212 (14 \u2212 7). Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00117",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00117",
+    "bankId": "course-1-en",
+    "topic": "expressions",
+    "action": "Divide by a quotient in parentheses",
+    "recipe": "c1-order-ops",
+    "family": "structured-port87",
+    "title": "Divide by a quotient in parentheses",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "numerical-grouping",
+        "level": 1
+      },
+      {
+        "trackId": "grouping-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 18 \u00f7 (8 \u00f7 4). Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00121",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00121",
+    "bankId": "course-1-en",
+    "topic": "expressions",
+    "action": "Divide a product written over a fraction bar",
+    "recipe": "c1-order-ops",
+    "family": "structured-port87",
+    "title": "Divide a product written over a fraction bar",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:24ceb602d5ed3837",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "numerical-grouping",
+        "level": 1
+      },
+      {
+        "trackId": "grouping-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify the expression shown. Enter exact numerical answers without units."
   }
 ]

@@ -241,34 +241,6 @@
     ]
   },
   {
-    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00085",
-    "conceptIds": [
-      "equations",
-      "focus:linear-equations"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "47d7460c8bf08cd166aeb5a4073d6ede8a8257590f12584419267b3ebd492077",
-    "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
-    "sourceIds": [
-      "course-1-en:bank:C1_Section01:item:C1_S01_00085"
-    ]
-  },
-  {
-    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00100",
-    "conceptIds": [
-      "decimal-arithmetic",
-      "focus:decimal-sum-length"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "ce7612525c24f78a9853eaa62d2430de996b42364c7fe22b95212facec02cd4d",
-    "limits": "difficulty: Add three decimals or money amounts with up to hundredths. Keep an additional addend aligned.",
-    "sourceIds": [
-      "course-1-en:bank:C1_Section01:item:C1_S01_00100"
-    ]
-  },
-  {
     "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00101",
     "conceptIds": [
       "whole-arithmetic",
@@ -280,48 +252,6 @@
     "limits": "related: Add three or more whole-number operands. More addends but varied digit ranges; no blanket difficulty order.",
     "sourceIds": [
       "course-1-en:bank:C1_Section01:item:C1_S01_00101"
-    ]
-  },
-  {
-    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00112",
-    "conceptIds": [
-      "decimal-arithmetic",
-      "focus:decimal-operations"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "e723a2492c0abb33120c561276dff0686573a0496905befd2560b019e8f3f5cf",
-    "limits": "Money or finite-decimal multiplication; decimal point placement, including factors below one. Decimal range min=max=0 is fractional, not constant zero.",
-    "sourceIds": [
-      "course-1-en:bank:C1_Section01:item:C1_S01_00112"
-    ]
-  },
-  {
-    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00113",
-    "conceptIds": [
-      "whole-arithmetic",
-      "focus:division-exact"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "c6978e14df6b91320f0ebb19f3752e4be2168ec22e3ed93ed86f9e7b6b0cc43b",
-    "limits": "AST quotientRange synthesizes the dividend; one-digit divisor and exact three-digit quotient.",
-    "sourceIds": [
-      "course-1-en:bank:C1_Section01:item:C1_S01_00113"
-    ]
-  },
-  {
-    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00114",
-    "conceptIds": [
-      "whole-arithmetic",
-      "focus:division-divisors"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "bbb7987491288ab3d2d98dac3b4bf07df45aa96e5c6ce6fa92043249afb16d51",
-    "limits": "AST synthesizes exact dividend; two-digit divisor and two-digit quotient.",
-    "sourceIds": [
-      "course-1-en:bank:C1_Section01:item:C1_S01_00114"
     ]
   },
   {
@@ -350,20 +280,6 @@
     "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
     "sourceIds": [
       "course-1-en:bank:C1_Section01:item:C1_S01_00132"
-    ]
-  },
-  {
-    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00133",
-    "conceptIds": [
-      "equations",
-      "focus:linear-equations"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "f0d4349fee3a0ad156660eb43d1bb43e8c09ca03a8c0d9c84b8cf18a8637486b",
-    "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
-    "sourceIds": [
-      "course-1-en:bank:C1_Section01:item:C1_S01_00133"
     ]
   },
   {
@@ -29956,6 +29872,1093 @@
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "course-87-en:item:SMAH0366"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00024",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "focus:decimal-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "2de2964f6e1cf3ac98d5e66b9c69f06a100c443798837b2942596d7c4caacf63",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00024"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00025",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "focus:decimal-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "3bc1beea1d883c7524449f36bd94a90c9ba31f8a3e77d95628a8b7cbf3c4a385",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00025"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00100",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "focus:decimal-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "b5933a8475fbfd65bca8715cbd1e323ecca2626d2c963c5bfe8d265a8165a7ca",
+    "limits": "difficulty: Add three decimals or money amounts with up to hundredths. Keep an additional addend aligned.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00100"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00125",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "focus:decimal-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "bfc92d01330a2273105d0803afb1ae1343c68f40b9a472ac31ec093b363d66c1",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00125"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00002",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "focus:money-net-amount"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "ddb58a0544cd691a6ef80c8f996a3d55b98da7b640e316b5e758b64b6c6c8ae1",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00002"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00026",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "focus:money-net-amount"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "278ef20dbf828e7bc033e636049546792325fa30bbc542662508f76460e8c885",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00026"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00102",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "focus:money-net-amount"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "efd6a510768482666ea3c845d192a9849b8e731dd141c4d421dfe84e217f58f9",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00102"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00028",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "focus:money-net-amount"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "e6e540366fe7b1bc6840670825f4f2b82c66bd21518861d67140f7f91017a98b",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00028"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00023",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:whole-addition"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "07a4dd0bb57057624724b52c6e46dd96709e0fb682c648a6f76db6039f635865",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00023"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00098",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:whole-addition"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "eba7e06308e1288428af28d77e1b414112a84584d6cea146585fe4c38222ef2a",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00098"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00027",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:whole-subtraction"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "f60390d731f1d3f8ddbbc88f936efae42fe97dfb559c3205bb1bb51162150260",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00027"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00099",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:whole-subtraction"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "78f459a0a44dda2f63744b5b0b226e509d654820b3d4f5fd79b324a09edd0a92",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00099"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00095",
+    "conceptIds": [
+      "whole-arithmetic",
+      "word-equations",
+      "focus:one-step-story-demands"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "941ce64f37873d8b1b0450092df6f1a21826edd5f2318c12e62a5357427f03e6",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00095"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00158",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:multiplication-fact-formats"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "ea5a26146356b7d9c65fe28d74625c9ef13ec618bc0ecc4255404e0e3a5f34a8",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00158"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00071",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:multiplication-fact-formats"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "33b1af68b8d304f90b0c9cf44d0f3775b1a319142f68027f516d489baf46e29b",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00071"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00073",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:multiplication-fact-formats"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "33a2c8bba4f7257b0568b75d78b726ae52d107eae4389ffe61eda8d71bad2719",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00073"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00160",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:multiplication-fact-formats"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "d506b3f53e7cee408a43e4ccd87c966f9cb2c7ea182c63639914e24553c5d558",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00160"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00074",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:multiplication-fact-formats"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "49735c22315db2dd69bfee7b3dcea8dcd324245df331f33f81f996d40e1e8d15",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00074"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00161",
+    "conceptIds": [
+      "whole-arithmetic"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "5b37b5fabae127f8e0393c018de219a42511b1a77f979be56694b29fc00a16ef",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00161"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00004",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-operations",
+      "focus:money-purchase-change",
+      "focus:multiplication-fact-formats",
+      "focus:multiplication-number-forms",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "a4e7f612d6c0c28999f96cf24b7e08b4753a0c8afb65160dfebd015b87dbc871",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00004"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00030",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-operations",
+      "focus:money-purchase-change",
+      "focus:multiplication-fact-formats",
+      "focus:multiplication-number-forms",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "bec230df4c22ecb6058a14ab15bbc28e42396f92307ce8a4f55a89c08e5bd4d4",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00030"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00108",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-operations",
+      "focus:money-purchase-change",
+      "focus:multiplication-fact-formats",
+      "focus:multiplication-number-forms",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "95bfe9e1c8269f5fea108fd8991e294f9f4d434792075154bf086b4f11bff5c1",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00108"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00111",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-operations",
+      "focus:money-purchase-change",
+      "focus:multiplication-fact-formats",
+      "focus:multiplication-number-forms",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "f2724a212b119202150b9bbf376818a072819c62d08e016b6e3359fce805cdfd",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00111"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00104",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-operations",
+      "focus:money-purchase-change",
+      "focus:multiplication-fact-formats",
+      "focus:multiplication-number-forms",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "f79eefcbcefdc3d4faa295386b8f95f61b85e7ac093f8cb68e82e33a0bc5ae3e",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00104"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00105",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-operations",
+      "focus:money-purchase-change",
+      "focus:multiplication-fact-formats",
+      "focus:multiplication-number-forms",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "a91dfbdab41e72690ea0a209b9bc432188d589f44d8cdd6cd526a9859a960b83",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00105"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00031",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-operations",
+      "focus:money-purchase-change",
+      "focus:multiplication-fact-formats",
+      "focus:multiplication-number-forms",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "5e7a57cef14114a3f7ce2eeb35652adad4f7f8c26beaaefea5fbf984711084dc",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00031"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00129",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-operations",
+      "focus:money-purchase-change",
+      "focus:multiplication-fact-formats",
+      "focus:multiplication-number-forms",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "2d7730fd98a2a32131b1b9670e33fea4619964e431dd4a21e61606d921dac928",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00129"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00034",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-operations",
+      "focus:money-purchase-change",
+      "focus:multiplication-fact-formats",
+      "focus:multiplication-number-forms",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "75d77504d12e1701c84fd2519266d34a131e6b852734ccb48987ab2f6047aeef",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00034"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00112",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-operations",
+      "focus:money-purchase-change",
+      "focus:multiplication-fact-formats",
+      "focus:multiplication-number-forms",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "b47486fb4d77725c7b0e8ef6f1cdc25c1675a91212192e96193a802c40e91ad7",
+    "limits": "Money or finite-decimal multiplication; decimal point placement, including factors below one. Decimal range min=max=0 is fractional, not constant zero.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00112"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00103",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-operations",
+      "focus:money-purchase-change",
+      "focus:multiplication-fact-formats",
+      "focus:multiplication-number-forms",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "4fa123d412d0b7e23face871d235f77297f92f9013c313a23f1f7649db7d30aa",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00103"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00005",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "word-equations",
+      "focus:decimal-powers-ten",
+      "focus:division-answer-forms",
+      "focus:division-divisors",
+      "focus:division-exact",
+      "focus:one-step-story-demands",
+      "focus:whole-powers-ten-shortcuts"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "5f847e877284143b18ee346526408e24b1752a8bececceb0bfe26a2bda9a315f",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00005"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00106",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "word-equations",
+      "focus:decimal-powers-ten",
+      "focus:division-answer-forms",
+      "focus:division-divisors",
+      "focus:division-exact",
+      "focus:one-step-story-demands",
+      "focus:whole-powers-ten-shortcuts"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "42410d4c9c48a60934f0c967726ce49df463a9eb9f8a20196549f3015341561c",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00106"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00109",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "word-equations",
+      "focus:decimal-powers-ten",
+      "focus:division-answer-forms",
+      "focus:division-divisors",
+      "focus:division-exact",
+      "focus:one-step-story-demands",
+      "focus:whole-powers-ten-shortcuts"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "d0b28a7e206384bdf49b923d7fdbe57fc30a8055d05fe7a112245a09605fad92",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00109"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00124",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "word-equations",
+      "focus:decimal-powers-ten",
+      "focus:division-answer-forms",
+      "focus:division-divisors",
+      "focus:division-exact",
+      "focus:one-step-story-demands",
+      "focus:whole-powers-ten-shortcuts"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "e36ae37fb782a1c04dfc3912d24586a4e144156c2d8c2f638647aafecd8b99c1",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00124"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00107",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "word-equations",
+      "focus:decimal-powers-ten",
+      "focus:division-answer-forms",
+      "focus:division-divisors",
+      "focus:division-exact",
+      "focus:one-step-story-demands",
+      "focus:whole-powers-ten-shortcuts"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "62382fd5eac5733e0781444c33344439fc8f84e3d1bbdddf4603255c7e88f23b",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00107"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00110",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "word-equations",
+      "focus:decimal-powers-ten",
+      "focus:division-answer-forms",
+      "focus:division-divisors",
+      "focus:division-exact",
+      "focus:one-step-story-demands",
+      "focus:whole-powers-ten-shortcuts"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "5c42c5c28af575a4133a96b6096ca69079b8bf248f5171e8ff2dab7fd6839e28",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00110"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00113",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "word-equations",
+      "focus:decimal-powers-ten",
+      "focus:division-answer-forms",
+      "focus:division-divisors",
+      "focus:division-exact",
+      "focus:one-step-story-demands",
+      "focus:whole-powers-ten-shortcuts"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "e73ba6cb5f53c4e2063bcfe70a002421b6c86d63e14dc34daa80ccf8767317e3",
+    "limits": "AST quotientRange synthesizes the dividend; one-digit divisor and exact three-digit quotient.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00113"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00114",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "word-equations",
+      "focus:decimal-powers-ten",
+      "focus:division-answer-forms",
+      "focus:division-divisors",
+      "focus:division-exact",
+      "focus:one-step-story-demands",
+      "focus:whole-powers-ten-shortcuts"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "402bcc5ebb66739bc410efab790a9568682691b6fd302a4dec2556737a16cbeb",
+    "limits": "AST synthesizes exact dividend; two-digit divisor and two-digit quotient.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00114"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00115",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "word-equations",
+      "focus:decimal-powers-ten",
+      "focus:division-answer-forms",
+      "focus:division-divisors",
+      "focus:division-exact",
+      "focus:one-step-story-demands",
+      "focus:whole-powers-ten-shortcuts"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "9cfd39137d47b73245a1c404bccbbbd3764cdcc49ab1ee75c1819036e5cf803e",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00115"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00032",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "word-equations",
+      "focus:decimal-powers-ten",
+      "focus:division-answer-forms",
+      "focus:division-divisors",
+      "focus:division-exact",
+      "focus:one-step-story-demands",
+      "focus:whole-powers-ten-shortcuts"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "646860c99b60893b442fe28f9efe5bfcf474934bc701842536048e4ebc05d268",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00032"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00128",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "word-equations",
+      "focus:decimal-powers-ten",
+      "focus:division-answer-forms",
+      "focus:division-divisors",
+      "focus:division-exact",
+      "focus:one-step-story-demands",
+      "focus:whole-powers-ten-shortcuts"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "c88c236a4da301468d1fc50b173248693fec29b8224aaaa157c5b4039ae14e7c",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00128"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00127",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "word-equations",
+      "focus:decimal-powers-ten",
+      "focus:division-answer-forms",
+      "focus:division-divisors",
+      "focus:division-exact",
+      "focus:one-step-story-demands",
+      "focus:whole-powers-ten-shortcuts"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "34e8eb23f52b0697ffd34d12a2f1aacfee206ccbb45283549b3a845bf67811d9",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00127"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00035",
+    "conceptIds": [
+      "equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "3ea1a4fb0f7065b4c20b848c890859b7c609b5377f08f85a4d52734e5679f53d",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00035"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00008",
+    "conceptIds": [
+      "equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "213abaca1c7f7370598e897054d2deb01642988d2ed5bcc70193a87981ccafe3",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00008"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00040",
+    "conceptIds": [
+      "equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "f55710c1dcad88045f331b89cc3a3d3ca430403a683f873fed93409087b994d2",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00040"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00133",
+    "conceptIds": [
+      "equations",
+      "focus:linear-equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "fe7fe4919123e965c367d8167a259f5008607c76552a82b128579ad032938949",
+    "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00133"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00037",
+    "conceptIds": [
+      "equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "4ce28be63527ad0cc12a5c39381cd2bb0b29de808fc66010b731925f9fdb805c",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00037"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00130",
+    "conceptIds": [
+      "equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "2c6b832af77f87a6f29b84b8a254c8ba7287d5bafdd6c26e26d04aa67bcf7443",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00130"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00038",
+    "conceptIds": [
+      "equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "d96990f8223c707af74057e6765d303454e5e0b7307188034fc471c3aa34b90c",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00038"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00041",
+    "conceptIds": [
+      "equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "baf72e8ba4249432af9cf360969ec6bf6a1cebcc1dd350f6af9edab7359396fd",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00041"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00043",
+    "conceptIds": [
+      "equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "94c4867a43473364251cd60a5f91c6f64cdfad8d36f5782998bdb5c118d60fab",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00043"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00042",
+    "conceptIds": [
+      "equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "5ff25514738580961bb46ce5908f68894071bb9980f352c9634ac20dcb28a732",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00042"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00046",
+    "conceptIds": [
+      "equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "82b5568cc32426add80ad919e3421b854f2f615738702a97621b2dce3c7a2e17",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00046"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00044",
+    "conceptIds": [
+      "equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "2d00621acad9be23ce7f85a5afff5b6ed99024b35160745b055a5e912e0b0a65",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00044"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00045",
+    "conceptIds": [
+      "equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "74e7c748da2d6c24a0f52bed47329e77126fd33803ed4111324e0c654af05e25",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00045"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00136",
+    "conceptIds": [
+      "equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "09099b340afc2ec586c761d1a81b4399e9fe2584047dd51bc3cb6435d4590629",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00136"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00085",
+    "conceptIds": [
+      "equations",
+      "focus:linear-equations",
+      "focus:signed-equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "0f3c62370f96658651cdfbc702d21f87507e053dea89ddbb3368b7679018ef1d",
+    "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00085"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00163",
+    "conceptIds": [
+      "number-theory",
+      "focus:factor-testing"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "679b2091e24498e4115037182af897013996b10ba019d4c2915408a63e568926",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00163"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00164",
+    "conceptIds": [
+      "data-displays",
+      "focus:graph-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "c37702e11aa2c3048f614de4833bada6baca18c916ed587ebbe56146a55ccdd9",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00164"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00011",
+    "conceptIds": [
+      "expressions",
+      "focus:grouping-production",
+      "focus:numerical-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "06ce14c85ad293aede7ed42bf3d819f872b9a3abff7fa29ceee021dc10cfaf96",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00011"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00120",
+    "conceptIds": [
+      "expressions",
+      "focus:grouping-production",
+      "focus:numerical-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "4270cd084f44cf6309d1ff6a2031ce7411fbca083c2552764aee5323cc61292a",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00120"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00047",
+    "conceptIds": [
+      "expressions",
+      "focus:grouping-production",
+      "focus:numerical-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "9cdc29e91318d07f2c183c10bb1bbb1d92d2eac0e54e5e208b46282ae406ae49",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00047"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00048",
+    "conceptIds": [
+      "expressions",
+      "focus:grouping-production",
+      "focus:numerical-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "5cf45f18d1a30744da4de0247bac34c3acdddf0d89cdb0a35659f19e6af8f83a",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00048"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00116",
+    "conceptIds": [
+      "expressions",
+      "focus:grouping-production",
+      "focus:numerical-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "0cc57aaeec1670d868fa2ac603f166573276fcdb45aff22397508a1101b08fdd",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00116"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00117",
+    "conceptIds": [
+      "expressions",
+      "focus:grouping-production",
+      "focus:numerical-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "9d0ffc7b7195404e2035e7014b946d93b076328b908ff5be4e78fd9d66c99480",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00117"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00121",
+    "conceptIds": [
+      "expressions",
+      "focus:grouping-production",
+      "focus:numerical-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "e34756fc64665c9a254b9d8482af525e718a278d0771f2ce96d026649501a954",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section01:item:C1_S01_00121"
     ]
   }
 ]

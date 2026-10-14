@@ -9,7 +9,7 @@
     },
     "catalog": {
       "status": "Passed",
-      "total": 2213,
+      "total": 2273,
       "k7Skills": 312,
       "k7ByGrade": {
         "1": 19,
@@ -21,7 +21,7 @@
         "7": 33,
         "K": 20
       },
-      "autoCheckedBankEntries": 1891,
+      "autoCheckedBankEntries": 1951,
       "continuitySkills": 10,
       "courses": [
         {
@@ -38,7 +38,7 @@
           "localGrade": 4,
           "placement": "grade-assigned",
           "teacherReviewedExcluded": 80,
-          "count": 198
+          "count": 258
         },
         {
           "bankId": "course-87-en",
@@ -76,29 +76,29 @@
     },
     "lesson-labels": {
       "status": "Passed",
-      "entries": 1891,
+      "entries": 1951,
       "lessons": 785,
       "source": "williammcada/test-and-practice-studio@16685a8"
     },
     "generate-all-seeds": {
       "status": "Passed",
-      "count": 110650
+      "count": 113650
     },
     "deterministic": {
       "status": "Passed",
-      "count": 110650
+      "count": 113650
     },
     "own-answer-accepted": {
       "status": "Passed",
-      "count": 110650
+      "count": 113650
     },
     "json-round-trip": {
       "status": "Passed",
-      "count": 110650
+      "count": 113650
     },
     "evaluate-own-answer-valid-and-correct": {
       "status": "Passed",
-      "count": 110650
+      "count": 113650
     },
     "unsimplified-fraction-feedback": {
       "status": "Passed",
@@ -111,15 +111,15 @@
     },
     "perturbed-answer-rejected": {
       "status": "Passed",
-      "count": 110650
+      "count": 113650
     },
     "keypad-keys-cover-answer": {
       "status": "Passed",
-      "count": 110650
+      "count": 113650
     },
     "studio-items-identical": {
       "status": "Passed",
-      "count": 94550
+      "count": 97550
     },
     "teacher-variant-redraws": {
       "status": "Informational",
@@ -128,8 +128,8 @@
     },
     "bank-input-modes": {
       "status": "Informational",
-      "keypad": 1517,
-      "keyboard": 374
+      "keypad": 1573,
+      "keyboard": 378
     },
     "continuity-independent-oracle": {
       "status": "Passed",
@@ -137,9 +137,9 @@
     },
     "related-links": {
       "status": "Passed",
-      "links": 4311,
-      "itemsWithEasier": 599,
-      "itemsWithHarder": 564
+      "links": 4751,
+      "itemsWithEasier": 627,
+      "itemsWithHarder": 589
     },
     "practice-gates": {
       "status": "Passed",
@@ -149,8 +149,8 @@
     },
     "bundle-provenance": {
       "status": "Passed",
-      "bundleSha256": "6f6af27bfa24842f55f6f235ae42aed858042972428795821b624416313c2728",
-      "contentHash": "dbecce1a9e615f892f3e06ae15c9f03a"
+      "bundleSha256": "17271302ef994bd717884175c1894a009c0ab0c441c097d6e69f471d46cf7f42",
+      "contentHash": "ef9a10ad990a23c3f72366c5a281176c"
     }
   },
   "failures": [],
