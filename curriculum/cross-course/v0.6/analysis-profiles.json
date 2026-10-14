@@ -108783,5 +108783,1266 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "What are the coordinates of the point halfway between (1, 3) and (1, 7)?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00001",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00001",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Angles of a parallelogram",
+    "recipe": "c1-parallelograms",
+    "family": "structured-port87",
+    "title": "Angles of a parallelogram",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:a04c019736cf14d8",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "area-shape-formulas",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "In parallelogram ABCD, the measure of angle A is 112\u00b0. (a) What is the measure of angle C? (b) What is the measure of angle D? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00014",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00014",
+    "bankId": "course-1-en",
+    "topic": "perimeter",
+    "action": "Perimeter of a parallelogram",
+    "recipe": "c1-parallelograms",
+    "family": "structured-port87",
+    "title": "Perimeter of a parallelogram",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:a04c019736cf14d8",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "area-shape-formulas",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the perimeter of the parallelogram, in meters. Dimensions are in meters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00015",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00015",
+    "bankId": "course-1-en",
+    "topic": "area",
+    "action": "Area of a parallelogram",
+    "recipe": "c1-parallelograms",
+    "family": "structured-port87",
+    "title": "Area of a parallelogram",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:a04c019736cf14d8",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "area-shape-formulas",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of the parallelogram, in square centimeters. Dimensions are in centimeters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00040",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00040",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Fractions chart: sum or difference, product and quotient",
+    "recipe": "c1-three-frac",
+    "family": "structured-port87",
+    "title": "Fractions chart: sum or difference, product and quotient",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:9bf6efa173e521f0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-multiply",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use the fractions chart to complete the table. Give the three answers in order, in simplest form: 3/9 \u2212 2/9 = ?; 4/3 \u00d7 2/3 = ?; 4/5 \u00f7 6/7 = ? Enter a simplified mixed number, proper fraction or integer. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00003",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00003",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Multiply two mixed numbers and a fraction",
+    "recipe": "c1-three-frac",
+    "family": "structured-port87",
+    "title": "Multiply two mixed numbers and a fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:9bf6efa173e521f0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-multiply",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00016",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00016",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Multiply two mixed numbers and a whole number",
+    "recipe": "c1-three-frac",
+    "family": "structured-port87",
+    "title": "Multiply two mixed numbers and a whole number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:9bf6efa173e521f0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-multiply",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00017",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00017",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Multiply three fractions",
+    "recipe": "c1-three-frac",
+    "family": "structured-port87",
+    "title": "Multiply three fractions",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:9bf6efa173e521f0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-multiply",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-product-chain",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00004",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00004",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Prime factorization using exponents",
+    "recipe": "c1-exponents",
+    "family": "structured-port87",
+    "title": "Prime factorization using exponents",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:11b905167e698abb",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-conversions",
+        "level": 1
+      },
+      {
+        "trackId": "prime-factorization",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "factorization"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the prime factorization of 360 using exponents?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00020",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00020",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A thousandths decimal as a fraction",
+    "recipe": "c1-exponents",
+    "family": "structured-port87",
+    "title": "A thousandths decimal as a fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:11b905167e698abb",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-conversions",
+        "level": 1
+      },
+      {
+        "trackId": "prime-factorization",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 0.875 as a fraction. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00046",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00046",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A decimal greater than 1 as a mixed number",
+    "recipe": "c1-exponents",
+    "family": "structured-port87",
+    "title": "A decimal greater than 1 as a mixed number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:11b905167e698abb",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-conversions",
+        "level": 1
+      },
+      {
+        "trackId": "prime-factorization",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 2.5 as a fraction. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00018",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00018",
+    "bankId": "course-1-en",
+    "topic": "powers-roots",
+    "action": "Simplify a power",
+    "recipe": "c1-exponents",
+    "family": "structured-port87",
+    "title": "Simplify a power",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:11b905167e698abb",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-conversions",
+        "level": 1
+      },
+      {
+        "trackId": "prime-factorization",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 5\u00b2 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00045",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00045",
+    "bankId": "course-1-en",
+    "topic": "powers-roots",
+    "action": "Compare two powers",
+    "recipe": "c1-exponents",
+    "family": "structured-port87",
+    "title": "Compare two powers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:11b905167e698abb",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-conversions",
+        "level": 1
+      },
+      {
+        "trackId": "prime-factorization",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Compare: 6\u00b3 \u25cb 5\u00b2. Write >, <, or =."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00006",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00006",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A mixed number as a decimal",
+    "recipe": "c1-frac-to-dec",
+    "family": "structured-port87",
+    "title": "A mixed number as a decimal",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:06964e3213a630a6",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is 8 9/40 as a decimal number? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00021",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00021",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A fraction as a decimal",
+    "recipe": "c1-frac-to-dec",
+    "family": "structured-port87",
+    "title": "A fraction as a decimal",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:06964e3213a630a6",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Convert 1/2 to a decimal number. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00022",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00022",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A fraction with a larger denominator as a decimal",
+    "recipe": "c1-frac-to-dec",
+    "family": "structured-port87",
+    "title": "A fraction with a larger denominator as a decimal",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:06964e3213a630a6",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 20/25 as a decimal number. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00026",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00026",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "A ratio as a decimal",
+    "recipe": "c1-frac-to-dec",
+    "family": "structured-port87",
+    "title": "A ratio as a decimal",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:06964e3213a630a6",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "There are 12 oak trees in the park for every 5 maple trees. Express the ratio of oak trees to maple trees as a decimal number. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00027",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00027",
+    "bankId": "course-1-en",
+    "topic": "probability",
+    "action": "A probability as a decimal",
+    "recipe": "c1-frac-to-dec",
+    "family": "structured-port87",
+    "title": "A probability as a decimal",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:06964e3213a630a6",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "There are 3 red sticks and 22 blue sticks in a bag. Use a decimal number to express the probability of drawing a red stick from the bag. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00025",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00025",
+    "bankId": "course-1-en",
+    "topic": "probability",
+    "action": "A number-cube probability as a repeating decimal",
+    "recipe": "c1-frac-to-dec",
+    "family": "structured-port87",
+    "title": "A number-cube probability as a repeating decimal",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:06964e3213a630a6",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "repeating"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Express the probability of rolling a 1 or a 6 on a number cube as a decimal. Use a bar over the repeating digits."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00072",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00072",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Add or subtract a decimal and a fraction",
+    "recipe": "c1-frac-to-dec",
+    "family": "structured-port87",
+    "title": "Add or subtract a decimal and a fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:06964e3213a630a6",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract. Give the answer as a decimal number: 7.5 \u2212 1 1/2 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00028",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00028",
+    "bankId": "course-1-en",
+    "topic": "percent",
+    "action": "Percent of students who earned A\u2019s",
+    "recipe": "c1-to-percent",
+    "family": "structured-port87",
+    "title": "Percent of students who earned A\u2019s",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:9861a8c2968f2ae8",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      },
+      {
+        "trackId": "percent-from-complement",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Of the 55 students who took the test, 11 earned A\u2019s. What percent of the students earned A\u2019s? Write it like 40%."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00029",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00029",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A decimal as a percent",
+    "recipe": "c1-to-percent",
+    "family": "structured-port87",
+    "title": "A decimal as a percent",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:9861a8c2968f2ae8",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      },
+      {
+        "trackId": "percent-from-complement",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 0.22 as a percent. Write it like 40%."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00030",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00030",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A fraction as a percent",
+    "recipe": "c1-to-percent",
+    "family": "structured-port87",
+    "title": "A fraction as a percent",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:9861a8c2968f2ae8",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      },
+      {
+        "trackId": "percent-from-complement",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 2/8 as a percent. Write it like 40%."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00008",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00008",
+    "bankId": "course-1-en",
+    "topic": "number-order",
+    "action": "Compare a fraction and a decimal",
+    "recipe": "c1-compare-fd",
+    "family": "structured-port87",
+    "title": "Compare a fraction and a decimal",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:93a288f3ae06f5c4",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ordering-numbers",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Compare: 3/8 \u25cb 0.26. Write >, <, or =."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00077",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00077",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "How many did not, from a fraction that did",
+    "recipe": "c1-unstated",
+    "family": "structured-port87",
+    "title": "How many did not, from a fraction that did",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:b30895b6ee832853",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-complement",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If 7/10 of the 90 students finished, how many students did not finish? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00009",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00009",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Parts of a group divided by a fraction",
+    "recipe": "c1-unstated",
+    "family": "structured-port87",
+    "title": "Parts of a group divided by a fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:b30895b6ee832853",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-complement",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Each package of jolly gobs has 40 gobs. If one fourth of the gobs are red and the rest are blue, (a) into how many parts was the group divided? (b) How many parts are blue? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00033",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00033",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "How many of each colour, from a fraction",
+    "recipe": "c1-unstated",
+    "family": "structured-port87",
+    "title": "How many of each colour, from a fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:b30895b6ee832853",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-complement",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Each package of jolly gobs has 36 gobs. If two thirds of the gobs are red and the rest are blue, how many gobs are blue? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00031",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00031",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Cents left after spending a fraction of a dollar",
+    "recipe": "c1-unstated",
+    "family": "structured-port87",
+    "title": "Cents left after spending a fraction of a dollar",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:b30895b6ee832853",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-complement",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Heaton spent 2/5 of his dollar. How many cents did he still have left? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00010",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00010",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Cups filled by part of a gallon",
+    "recipe": "c1-capacity",
+    "family": "structured-port87",
+    "title": "Cups filled by part of a gallon",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:dd375bb4fc823cc2",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Three fourths of a gallon of orange juice will fill how many 32-ounce cups? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00035",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00035",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "One unit of capacity as a fraction of another",
+    "recipe": "c1-capacity",
+    "family": "structured-port87",
+    "title": "One unit of capacity as a fraction of another",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:dd375bb4fc823cc2",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "What fraction of a pint is an ounce? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00050",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00050",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Which container has the greater capacity",
+    "recipe": "c1-capacity",
+    "family": "structured-port87",
+    "title": "Which container has the greater capacity",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:dd375bb4fc823cc2",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which has the greater capacity, a 24-ounce can or a 1-pint container?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00011",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00011",
+    "bankId": "course-1-en",
+    "topic": "area",
+    "action": "Area of a triangle with its height drawn",
+    "recipe": "c1-tri-area",
+    "family": "structured-port87",
+    "title": "Area of a triangle with its height drawn",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:2cc0023e15beeb4a",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-shape-formulas",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of the triangle, in square yards. Dimensions are in yards. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00037",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00037",
+    "bankId": "course-1-en",
+    "topic": "area",
+    "action": "Area of a right triangle",
+    "recipe": "c1-tri-area",
+    "family": "structured-port87",
+    "title": "Area of a right triangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:2cc0023e15beeb4a",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-shape-formulas",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of the triangle, in square meters. Dimensions are in meters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00080",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00080",
+    "bankId": "course-1-en",
+    "topic": "area",
+    "action": "Area of a triangle that is half a rectangle",
+    "recipe": "c1-tri-area",
+    "family": "structured-port87",
+    "title": "Area of a triangle that is half a rectangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:2cc0023e15beeb4a",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-shape-formulas",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Figure ABCD is a rectangle. Segment AB is 12 cm long, segment BC is 9 cm long, and segment AC is 15 cm long. What is the area of triangle ABC in square centimeters? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00084",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00084",
+    "bankId": "course-1-en",
+    "topic": "area",
+    "action": "Area of half a parallelogram",
+    "recipe": "c1-tri-area",
+    "family": "structured-port87",
+    "title": "Area of half a parallelogram",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:2cc0023e15beeb4a",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-shape-formulas",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the area of the shaded part of this parallelogram, in square centimeters? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00085",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00085",
+    "bankId": "course-1-en",
+    "topic": "area",
+    "action": "Area of a triangle from its vertices",
+    "recipe": "c1-tri-area",
+    "family": "structured-port87",
+    "title": "Area of a triangle from its vertices",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:2cc0023e15beeb4a",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-shape-formulas",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The coordinates of the vertices of a triangle are (0, 0), (6, 0), and (3, 3). What is the area of the triangle in square units? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00012",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00012",
+    "bankId": "course-1-en",
+    "topic": "ratio-proportion",
+    "action": "Scale factor and count from a ratio",
+    "recipe": "c1-scale-factor",
+    "family": "structured-port87",
+    "title": "Scale factor and count from a ratio",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:46af39fc9a95db8c",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-total",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The ratio of flowers to weeds in the garden was 3 to 4. There were 15 flowers in the garden. (a) What is the scale factor? (b) How many weeds were there? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00054",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00054",
+    "bankId": "course-1-en",
+    "topic": "constructions",
+    "action": "Construct an angle bisector",
+    "recipe": "c1-bisectors",
+    "family": "structured-port87",
+    "title": "Construct an angle bisector",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:23f870867dc185d4",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "compass-constructions",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Construct the angle bisector of the given angle. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00055",
+    "providerSourceId": "course-1-en:bank:C1_Section08:item:C1_S08_00055",
+    "bankId": "course-1-en",
+    "topic": "constructions",
+    "action": "Construct a perpendicular bisector",
+    "recipe": "c1-bisectors",
+    "family": "structured-port87",
+    "title": "Construct a perpendicular bisector",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section08:scope:23f870867dc185d4",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "compass-constructions",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Construct the perpendicular bisector of the segment. Complete the requested work on paper; this task requires teacher review."
   }
 ]
