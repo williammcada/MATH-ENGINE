@@ -14737,5 +14737,693 @@
    "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
    "f93155e1e504e02f33aa7b82ffbd4c28893a1c3213eb90cfca27dcd28769631f"
   ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00001",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00001",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-percent-of",
+  "variant": "tax",
+  "title": "Sales tax on a purchase",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "31e8f02fef02b6dd88743ccbd8f5325b7ac2600c89debd51a8cf4ed2bc194c5f",
+   "161e778510efffae60ef0540ae29ac610e222261b48567a5ef07e16f4b2d8c95"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00020",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00020",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-percent-of",
+  "variant": "total",
+  "title": "Total paid including sales tax",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "a0bb3f704ed8ad5131ea6e788cd78cde8e0e4baa7e11755b47346eb9f790dd27",
+   "3404c40e49d559cf848024b234bff5082541fe1b82b1e5c9c76cefbcee1e25ee"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00084",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00084",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-percent-of",
+  "variant": "total-round",
+  "title": "Total with tax rounded to the cent",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "338ccc36fe3ea1e4c530933119dfaf51007b731e575f3da76771f37e2b3ce016"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00067",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00067",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-percent-of",
+  "variant": "sale-price",
+  "title": "Sale price after a percent off",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "ce5bce62f4cd228c090495427136460cf7dfe09aa02a7f9a2a74314d7106c37a"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00086",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00086",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-percent-of",
+  "variant": "change",
+  "title": "Change after a meal with tax",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "a24c60abcf1fdff9a72a6d1ff4f6e876c7a430307ac6f71aee22e5d02ab841dd"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00082",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00082",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-percent-of",
+  "variant": "of-count",
+  "title": "A percent of a number of items",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "ab788d4d41f672b43d9f5acdb954ee4a8fb046531b3189724f2a8605455a4398"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00019",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00019",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-percent-of",
+  "variant": "pct-to-dec",
+  "title": "A percent as a decimal",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fdc7b7b7d8b43f2c642b244d7e431d9e14503271f18cb7c0055b41c3ebe9fe35",
+   "cf82ad474ec0ba56d9d50a377008de77c6a75cb587601910f6cd1c19c3ad3eb7"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00131",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00131",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-percent-of",
+  "variant": "dec-and-frac",
+  "title": "A percent as a fraction and a decimal",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "feadaebcc29f6bfaf04765784849a21b253024747852d0c697f6078e50a47dd5"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00130",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00130",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-percent-of",
+  "variant": "frac-and-count",
+  "title": "A percent as a fraction and a count",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "983f4122dd98e599957057302d2b566c8438997cadaf16e353b2761d80caf62b"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00021",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00021",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-rename",
+  "variant": "complete",
+  "title": "Complete an equivalent fraction",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "97514d5fcc43722a32ae768a9bb8fd25043e39d115443b812cd6ba4c56247802",
+   "db937632ca8f6e63c6ecbccaee1e4c31523faf9ce4807b56a9ee432986ee1afc"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00088",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00088",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-rename",
+  "variant": "to-hundredths",
+  "title": "Rename a fraction in hundredths",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "1c68737604c4d909c3e04c2b58add187a8900b082d4ee2a2e7d3da556383c173"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00051",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00051",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-rename",
+  "variant": "rename-sub",
+  "title": "Rename and subtract fractions",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "a72a12652d118963bea5a9e9f398ace97591e44578c10884c7eb6aafd7784c71"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00050",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00050",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-rename",
+  "variant": "lcd-add",
+  "title": "Rename to a common denominator and add",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "55fab8664c347f3e332bdf58d2e49130aef3a90700977ae28f0c70719ac323a6",
+   "c99e8ec0ee576a11b6715995676a10a836bb3d4306f853cad5ca3950c9ec05d7"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00113",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00113",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-rename",
+  "variant": "which-one",
+  "title": "The fraction equal to 1 that renames a fraction",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "1b558c5e5c3c467277d3307cbafe63e72b4d5ecf351c83c30c167dbf7d6dad28"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00052",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00052",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-unknowns",
+  "variant": "equiv-frac-div",
+  "title": "Equivalent division by a unit fraction",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "1be30815c862fead84dc3a8879bcd990fd025718bae8e6a3985f0d1f2565d5b2",
+   "7771a369d690aa6c51a6268678f980cdc19988fe8375ed6f883462dac3a21c27"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00053",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00053",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-unknowns",
+  "variant": "equiv-dec-div",
+  "title": "Equivalent division with decimals",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "e205eb70654b42d8e1016dda28af7e07eb39bcb4e97e68b5fc3aa899cdc8cf77",
+   "917eb8a85f524d5d2e2a0f0ac3b6aedfe80f376cd99a4221fe3ffdd342835103"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00068",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00068",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-unknowns",
+  "variant": "equiv-choose",
+  "title": "Choose an equivalent division",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "4061c0804e9374defad7465b88b06ff4798360e9a36c70fa85d677746072ad28"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00005",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00005",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-unknowns",
+  "variant": "add-mixed",
+  "title": "Missing addend with a mixed number",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "05447ba430a1eb4b6c1f76bb089c5c27e40fcdbf020956a1021951c6618e6f85",
+   "a9e60df7d1c978636e7f46bec2ae124b5c42e075619b0151e509c878195582f8"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00022",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00022",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-unknowns",
+  "variant": "add-dec",
+  "title": "Missing addend with a decimal",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "bebcfd40c1f4ea0597886717b1b0f48189b55e5bcad5210cec693adcbdc4e00d",
+   "633fe3e6a264bf8e8993bfea686085fb8e58a07819ae2d4234ebe18730a1260e"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00023",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00023",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-unknowns",
+  "variant": "sub-frac",
+  "title": "Missing number in a fraction subtraction",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "95a56ba63fe96904664c27b5968ae06ab9ce6216560e8792383d28f7bce4cf84",
+   "5e356ad6ebe97d0dcb79fff4286a65764adf1f155d639a17e8072e105af80fb0"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00115",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00115",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-unknowns",
+  "variant": "sub-dec",
+  "title": "Missing number in a decimal subtraction",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "7fcf1003454d6b5a65b4645bce100accf6b78f00c78c899a43eb0bde098c4b05"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00026",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00026",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-compare",
+  "variant": "sub-simplify",
+  "title": "Subtract decimals and simplify",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "822b1c316c5873879f2874de9fb8b1ade0072760b5fad6dbff8e5f10ec700bc1",
+   "d60b2df6ccb4230fad998890ed7226bf40135f8958b03cc935343414325d454c"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00007",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00007",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-compare",
+  "variant": "compare",
+  "title": "Compare decimal numbers",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "330c396d6996af7695db9e34ad882f74df775879bc2fec245e9c7355f2b8cd53",
+   "b0cec2eda4933c5de15498c88db7437fa56beaacdaa4bcc065f4036d9d021c15"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00138",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00138",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-compare",
+  "variant": "sum-product",
+  "title": "Compare a sum and a product of decimals",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "c89bde172d169659ea4d969d4d47d8a258b7a95828af40523dfadb0964b0f02b"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00024",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00024",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-compare",
+  "variant": "simplify",
+  "title": "Simplify a decimal number",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "0147f6c1cfdc0898574188c6a763c629d53b82f886db37f2d76bcc7b178ade9c",
+   "c52b67fe3ee3e71a98e66d914721b55ba5aab173243699e7824cc4ae8646f9da"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00055",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00055",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-compare",
+  "variant": "order",
+  "title": "Order decimal numbers",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "2f02eabf6fd8c51eabfba9cf1b440ced9e35d8c2396b76c09d9adfe067f0550d",
+   "e2a0b85050854cc9ba4400fd55481272fa999e3cd28ef3f9bf32bb5325f21ec3"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00008",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00008",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-div",
+  "variant": "small",
+  "title": "Divide a decimal by a whole number (thousandths)",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "5162a666499c22168e71d4c7bc75a2b939583a20e2f81042be58a7264230ebab",
+   "c5b343ce1cb205c643e3d42d08e96d1048a446eb4cb7608f851aa0f7d99ffcea"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00027",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00027",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-div",
+  "variant": "tenths",
+  "title": "Divide a decimal by a whole number (hundredths)",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fe5a04a6c75ea90cab9333da14d840680fd949a92137390b83b84729582f554e",
+   "5bee12d882ca96e955f96102073d0689393ee65bc98c354bac3864a1321f2647"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00028",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00028",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-div",
+  "variant": "zeros",
+  "title": "Divide a decimal, writing zeros",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "4e505439ded8d8e1af459750a842b628a9fdc026af1577dc7fa08d86c79d83d1",
+   "4a57caf91b9f5144374c91e19afa88ea4dbcd8bfa9972fc2d0c0883272622ab6"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00095",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00095",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-div",
+  "variant": "root",
+  "title": "Divide a decimal by a square root",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "dfd4d6fbd32505245236e0858e822b77473212c4f89af5c93e3a2be547a6c009"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00029",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00029",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-div",
+  "variant": "round-trip",
+  "title": "Distance from a round trip",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "b77019715ef944e4b130c0ccba8b2a2096a8908d1d97b026853a33c51daf7aa7",
+   "f63e64218c49d43978d1be7cec3a3ae714274d14f3ca79c9866009192fe4a55b"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00070",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00070",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-div",
+  "variant": "average-weight",
+  "title": "Average weight of items",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "8ae4ce2d201a7227e4af0de5662b370e08dc603835e4341ed98c431975307126"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00059",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00059",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-tens",
+  "variant": "expanded-dec",
+  "title": "A decimal in expanded notation",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "f26682a0ff3ce0a4558523be0e8b31a0c7cda4a77bc3e35bbf220b19e5b26217",
+   "92d444afc013aee3476cbffc0309bef49f302cb0f190d4ba6bc73e6e15b0e557"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00030",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00030",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-tens",
+  "variant": "expanded-to-dec",
+  "title": "A decimal from expanded notation",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "5f6df5f5e7a4a5ca98c1081fabd9fd3e19a0f078ddcee2be436459414b70f103",
+   "18f8c59b7a4df9731b6a799a53566b39192584361414743754874eb51214a1fd"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00031",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00031",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-tens",
+  "variant": "times-ten",
+  "title": "Multiply a decimal by 10 mentally",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "ea3f2daf5b515b1ddc9b5bdd6e04e1ad6e221502b81a29d9f6f7dfb3d13e6212",
+   "6b4d5430875b443d06b89af046365a6850d9d0c35355c154adc1499054f4b8f1"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00032",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00032",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-tens",
+  "variant": "times-hundred",
+  "title": "Multiply a decimal by 100 or 1000 mentally",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "eae67fc1c3a47a782fcebfb02f996d8efbfb5c915f76f4a0e066ef29720a3009",
+   "42b72cd2ab6ab29abbcaeacaf25b7c2f165c514e8e29d295763003d7f2d5f3ef"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00033",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00033",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dec-tens",
+  "variant": "dec-div-dec",
+  "title": "Divide by a decimal after multiplying by 10",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fe6de97ad675591d290049c2bcc9ad44508e13ef1108f80d1eda29b9cb12eac2",
+   "7cdf4c587f393de9a202d8acd8083dc4e604353c3a51c9b691aa96aaa6232425"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00035",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00035",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-circumference",
+  "variant": "from-d",
+  "title": "Circumference from a diameter",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "f3b3a52aae685a13ee0d5c3daf5fdea4b91403e9995dc40de356b6bb5e8bb476",
+   "6cd46d1d3f7bf1b64715e5cf4ca523864278453dd69bf7f5bda82ebcd92ece49"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00034",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00034",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-circumference",
+  "variant": "from-r",
+  "title": "Circumference from a radius",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "72540349625eb067d54d400a36738c8e22ac2760dd29c4b19179af6e9a58fd30",
+   "2b3e431d7164210ddcfcc6358f5ed60ad5c4443811045e373dc71786e967793a"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00037",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00037",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-circumference",
+  "variant": "d-from-pi",
+  "title": "Diameter from a circumference in terms of pi",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "0414bd47300c72f44ad6fe12e037d6de10ce89d2c8bd0e21e12407377bf43991",
+   "c6f3e88a35f7ada11c45d1ee731269cefa8824d1840e14220202ad42670e69f9"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00038",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00038",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-circumference",
+  "variant": "d-from-c",
+  "title": "Diameter from a circumference",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "c4e4e5a7788ebc1f71e6017a2a7d05c3eb657fc2590a81c3456abdd9d34ff067",
+   "8e6ec98a849e6bb2ffd5f7ff633fd3fb1368f1800026298dadd8195273fe6a82"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00060",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00060",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-circumference",
+  "variant": "in-pi",
+  "title": "Circumference in terms of pi",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "c0f35ac949922824ec09b734319f15f078419658924b5cf835b1410e02737576",
+   "90385be33adf932f6620a74b5296310d0913be4ddce76933a9f72ae8809e7931"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section05:item:C1_S05_00073",
+  "sourceRecord": "course-1-en:bank:C1_Section05:item:C1_S05_00073",
+  "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-circumference",
+  "variant": "wheel-feet",
+  "title": "Distance a wheel travels in one turn",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "0e2d2b50729e4011045ea956bae374e82431417d6984d1e4ef589eeb310ced2d"
+  ]
  }
 ]

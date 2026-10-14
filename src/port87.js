@@ -3104,6 +3104,142 @@ case 'c1-data-inv4':{const v=c.variant;
  // inferred question from a line graph
  const yrs=[2019,2020,2021,2022,2023],cost=yrs.map(()=>10*int(6,14));
  t=teacher(`The line graph shows the average monthly heating cost for one family each year. Write a question whose answer is not shown in the graph but can be inferred from it.`,`Questions will vary. One example: “Did the family probably spend more on heating in ${yrs[cost.indexOf(Math.max(...cost))]} or in ${yrs[cost.indexOf(Math.min(...cost))]}?” or “About how much did the family spend on heating for the whole of ${yrs[0]}?”`,['the question goes beyond reading a single value from the graph','the answer can be reasoned from the graph (a trend, a comparison or a total)','the question is clearly worded'],{cost},lineGraph(yrs,cost,{xmin:2019,xmax:2023,xstep:1,ymin:0,ymax:160,ystep:20,dots:1,title:'Average Monthly Heating Cost',xLabel:'Year',yLabel:'Dollars',label:'Average monthly heating cost by year: '+yrs.map((y,k)=>`${y} $${cost[k]}`).join(', ')}));break;}
+// ---------- Course 1, Batch C1-7: Lessons 41-47 ----------
+case 'c1-percent-of':{const v=c.variant,D=(x,k)=>decStr(R(x,10**k)),fa=(x,y)=>fracText(...red(x,y)),mopt=(z,list)=>distinct(money(z),list.filter(([x])=>x>0&&Number.isInteger(x)).map(([x,m])=>({value:money(x),mistake:m})));
+ if(v==='tax'){const r=int(5,9),P=int(12,25),z=P*r;
+  t=n(`The sales tax rate is ${r}%. What is the tax on a ${money(100*P)} purchase?`,R(z,100),`${r}% of ${money(100*P)} = ${D(r,2)} × ${P} = ${money(z)}.`,{r,P},'decimal');t.answer.display=money(z);
+  t.choices=mopt(z,[[100*P+z,'Found the total price instead of the tax'],[100*r,'Gave the rate as dollars'],[100*P-z,'Subtracted the tax from the price'],[10*z,'Placed the decimal point incorrectly']]);break;}
+ if(v==='total'){const r=int(5,9),P=int(12,19),tax=P*r,z=100*P+tax;
+  t=n(`The sales tax rate is ${r}%. Find the total amount paid for a ${money(100*P)} item.`,R(z,100),`Tax: ${r}% × ${money(100*P)} = ${money(tax)}; total: ${money(100*P)} + ${money(tax)} = ${money(z)}.`,{r,P},'decimal');t.answer.display=money(z);
+  t.choices=mopt(z,[[tax,'Gave only the tax'],[100*P-tax,'Subtracted the tax'],[100*(P-r),'Subtracted the rate from the price'],[100*P+10*tax,'Placed the decimal point of the tax incorrectly']]);break;}
+ if(v==='total-round'){let p,r;do{p=int(1,29)*100+pick([29,49,79,89,95,99]);r=int(6,8);}while(false);const tax=Math.floor((p*r+50)/100),z=p+tax;
+  t=n(`An item costs ${money(p)} and the sales tax rate is ${r}%. What is the total price of the item including sales tax? Round the tax to the nearest cent.`,R(z,100),`Tax: ${r}% × ${money(p)} = ${D(p*r,4)} ≈ ${money(tax)}; total: ${money(p)} + ${money(tax)} = ${money(z)}.`,{p,r},'decimal');t.answer.display=money(z);
+  t.choices=mopt(z,[[p+r,'Added the rate as cents'],[tax,'Gave only the tax'],[p+10*tax,'Placed the decimal point of the tax incorrectly'],[p+tax+1,'Rounded the tax up instead of to the nearest cent']]);break;}
+ if(v==='sale-price'){const [d,mult]=pick([[25,4],[20,5],[10,10],[50,2],[25,4]]),P=mult*int(3,15),off=P*d/100,z=P-off;
+  t=n(`A shirt regularly priced at ${money(100*P)} was on sale for ${d}% off. What was the sale price?`,z,`${d}% of ${money(100*P)} is ${money(100*off)}; ${money(100*P)} − ${money(100*off)} = ${money(100*z)}.`,{d,P},'decimal');t.answer.display=money(100*z);
+  t.choices=mopt(100*z,[[100*off,'Gave the discount instead of the sale price'],[100*(P+off),'Added the discount'],[100*(P-d),'Subtracted the percent as dollars'],[100*P-50*off,'Took off only half the discount'],[100*z+100,'Subtraction slip']]);break;}
+ if(v==='change'){const who=pick(['Quan','Maya','Luis','Ava']),p=int(4,8)*100+pick([0,20,40,60,80]),r=pick([6,7,8]),tax=Math.floor((p*r+50)/100),bill=1000,z=bill-p-tax;
+  t=n(`${who} ordered a ${money(p)} meal. The tax rate was ${r}%. ${who} paid with a $10 bill. How much money should ${who} get back? Round the tax to the nearest cent.`,R(z,100),`Tax: ${r}% × ${money(p)} ≈ ${money(tax)}; total ${money(p+tax)}; change: $10.00 − ${money(p+tax)} = ${money(z)}.`,{p,r},'decimal');t.answer.display=money(z);
+  t.choices=mopt(z,[[bill-p,'Forgot the tax'],[p+tax,'Gave the total cost instead of the change'],[bill-p+tax,'Added the tax to the change'],[z+100,'Subtraction slip'],[bill-tax,'Subtracted only the tax']]);break;}
+ if(v==='of-count'){const [pc,N]=pick([[30,50],[20,40],[10,60],[40,50],[60,30],[25,40],[75,40],[70,30]]),z=pc*N/100,item=pick([['dimes','roll','were minted before the year 2000'],['marbles','bag','were blue'],['seeds','packet','sprouted']]);
+  t=n(`If ${pc}% of the ${N} ${item[0]} in the ${item[1]} ${item[2]}, then how many of the ${item[0]} ${item[2]}?`,z,`${pc}% of ${N} = ${D(pc,2)} × ${N} = ${z}.`,{pc,N});
+  t.choices=distinct(z,[{value:N-z,mistake:'Found the part that did not'},{value:pc,mistake:'Gave the percent'},{value:10*z,mistake:'Placed the decimal point incorrectly'},{value:z+5,mistake:'Multiplication slip'}]);break;}
+ if(v==='pct-to-dec'){const pc=int(15,97);
+  t=n(`Write ${pc}% as a decimal number.`,R(pc,100),`Percent means hundredths: ${pc}% = ${D(pc,2)}.`,{pc},'decimal');
+  t.choices=distinct(D(pc,2),[{value:D(pc,1),mistake:'Divided by 10 instead of 100'},{value:String(pc),mistake:'Dropped the percent sign without dividing by 100'},{value:String(pc*100),mistake:'Multiplied by 100 instead of dividing'}]);break;}
+ if(v==='dec-and-frac'){const pc=pick([12,80,75,7,4,24,35,45,60,90,25,8]);
+  t=n(`Write ${pc}% as a reduced fraction and as a decimal numeral.`,[R(pc,100),R(pc,100)],`${pc}% = ${pc}/100 = ${fa(pc,100)} = ${D(pc,2)}.`,{pc},['fraction','decimal']);
+  t.choices=wrongOnly(t,[{value:`${pc}/100; ${D(pc,2)}`,mistake:'Did not reduce the fraction'},{value:`${fa(pc,100)}; ${D(pc,1)}`,mistake:'Wrote tenths for the decimal'},{value:`${fa(pc,10)}; ${D(pc,2)}`,mistake:'Used tenths for the fraction'},{value:`${fa(pc,100)}; ${pc}`,mistake:'Did not divide by 100 for the decimal'}]);break;}
+ const [pc,N]=pick([[60,30],[40,25],[75,32],[20,35],[80,25],[30,40],[25,28]]),z=pc*N/100;
+ t=n(`${pc}% of the ${N} students in the class were girls. Write ${pc}% as a reduced fraction. Then find the number of girls in the class.`,[R(pc,100),z],`${pc}% = ${fa(pc,100)}; ${fa(pc,100)} of ${N} = ${z}.`,{pc,N},['fraction','numbers']);
+ t.choices=wrongOnly(t,[{value:`${pc}/100; ${z}`,mistake:'Did not reduce the fraction'},{value:`${fa(pc,100)}; ${N-z}`,mistake:'Found the number of boys'},{value:`${fa(100-pc,100)}; ${N-z}`,mistake:'Used the percent of boys'},{value:`${fa(pc,100)}; ${pc}`,mistake:'Gave the percent instead of the number'}]);break;}
+case 'c1-rename':{const v=c.variant,fa=(x,y)=>fracText(...red(x,y));
+ if(v==='complete'){const e=int(1,7),k=int(2,4),D0=8*k,z=e*k;
+  t=n(`Complete the equivalent fraction: ${e}/8 = ?/${D0}`,z,`8 × ${k} = ${D0}, so multiply the numerator by ${k} too: ${e} × ${k} = ${z}.`,{e,k});t.math=math(`<mrow>${mfrac(e,8)}<mo>=</mo>${mfrac('<mi>?</mi>',D0)}</mrow>`);
+  t.choices=distinct(z,[{value:e,mistake:'Kept the same numerator'},{value:D0,mistake:'Gave the new denominator'},{value:D0-8,mistake:'Subtracted the denominators'},{value:e+D0-8,mistake:'Added instead of multiplying'}]);break;}
+ if(v==='to-hundredths'){const d=pick([20,25,50,4,5]),k=100/d;let a;do{a=int(1,d-1);}while(gcd(a,d)!==1);const z=a*k;
+  t=n(`Complete the equivalent fraction: ${a}/${d} = ?/100`,z,`${d} × ${k} = 100, so ${a} × ${k} = ${z}.`,{a,d});t.math=math(`<mrow>${mfrac(a,d)}<mo>=</mo>${mfrac('<mi>?</mi>',100)}</mrow>`);
+  t.choices=distinct(z,[{value:a+100-d,mistake:'Added instead of multiplying'},{value:a,mistake:'Kept the same numerator'},{value:k,mistake:'Gave the multiplier'},{value:z+k,mistake:'Multiplication slip'}]);break;}
+ if(v==='rename-sub'){const [a,b,dd]=pick([[1,3,6],[1,2,6],[1,4,8],[3,4,8],[1,2,8],[2,3,6],[1,5,10],[1,2,10]]),m=dd/b;let big;do{big=int(a*m+1,dd-1);}while(false);const z=R(big-a*m,dd);
+  t=n(`Write ${a}/${b} as a fraction with ${dd} as the denominator. Subtract the renamed fraction from ${big}/${dd}. Reduce the answer.`,z,`${a}/${b} = ${a*m}/${dd}; ${big}/${dd} − ${a*m}/${dd} = ${big-a*m}/${dd}${gcd(big-a*m,dd)>1?` = ${fa(big-a*m,dd)}`:''}.`,{a,b,dd,big},'fraction');
+  t.choices=wrongOnly(t,[{value:fa(big-a,dd),mistake:'Subtracted without renaming'},{value:fa(big-a,dd-b),mistake:'Subtracted the numerators and the denominators'},{value:`${big-a*m}/${dd}`,mistake:'Did not reduce the answer'},{value:fa(big+a*m,dd),mistake:'Added instead of subtracting'}]);break;}
+ if(v==='lcd-add'){let a1,a2,d1,d2,L,S;do{a1=int(1,3);a2=int(1,3);d1=int(3,8);d2=int(3,11);L=d1*d2/gcd(d1,d2);S=a1*L/d1+a2*L/d2;}while(d1===d2||a1>=d1||a2>=d2||gcd(a1,d1)!==1||gcd(a2,d2)!==1||S<=L||gcd(S%L,L)!==1||S%L===0);
+  t=n(`Write ${a1}/${d1} and ${a2}/${d2} as fractions with denominators of ${L}. Then add the renamed fractions. Write the sum as a mixed number.`,R(S,L),`${a1}/${d1} = ${a1*L/d1}/${L} and ${a2}/${d2} = ${a2*L/d2}/${L}; ${a1*L/d1}/${L} + ${a2*L/d2}/${L} = ${S}/${L} = ${mixedText(S,L)}.`,{a1,d1,a2,d2},'mixed');
+  t.choices=wrongOnly(t,[{value:fa(a1+a2,d1+d2),mistake:'Added the numerators and the denominators'},{value:mixedText(a1+a2,L),mistake:'Added the numerators without renaming'},{value:`${S}/${L}`,mistake:'Did not write the sum as a mixed number'},{value:mixedText(S+L,L),mistake:'Added an extra whole'}]);break;}
+ const [a,b]=pick([[2,3],[3,4],[1,2],[3,5],[2,5],[5,6],[1,3],[4,5]]),k=int(2,6);
+ t=n(`By what fraction equal to 1 should ${a}/${b} be multiplied to form ${a*k}/${b*k}? The fraction has the same number on top and bottom: enter that number.`,k,`${b} × ${k} = ${b*k} and ${a} × ${k} = ${a*k}, so multiply by ${k}/${k}.`,{a,b,k});t.math=math(`<mrow>${mfrac(a,b)}<mo>×</mo>${mfrac('<mi>?</mi>','<mi>?</mi>')}<mo>=</mo>${mfrac(a*k,b*k)}</mrow>`);
+ t.choices=distinct(k,[{value:a*k,mistake:'Gave the new numerator'},{value:b*k,mistake:'Gave the new denominator'},{value:k+1,mistake:'Multiplication slip'},{value:b*k-b,mistake:'Subtracted instead of dividing'},{value:k*k,mistake:'Multiplied the multiplier by itself'},{value:k+2,mistake:'Multiplication slip'},{value:k+3,mistake:'Multiplication slip'},{value:2*k+1,mistake:'Multiplication slip'}]);break;}
+case 'c1-unknowns':{const v=c.variant,D=(x,k)=>decStr(R(x,10**k)),mx=(x,y)=>mixedText(x,y);
+ if(v==='equiv-frac-div'){const a=int(5,25),d=int(2,8),z=`${a*d} ÷ 1`;
+  t=text(`Write an equivalent division problem for ${a} ÷ 1/${d} by multiplying both numbers by ${d}.`,z,`${a} × ${d} = ${a*d} and 1/${d} × ${d} = 1, so ${a} ÷ 1/${d} = ${a*d} ÷ 1 = ${a*d}.`,{a,d},'',[`${a*d}÷1`,`${a*d} / 1`,`${a*d}/1`]);t.math=math(`<mrow><mn>${a}</mn><mo>÷</mo>${mfrac(1,d)}</mrow>`);
+  t.choices=[{value:`${a} ÷ ${d}`,mistake:'Multiplied only the second number'},{value:`${a*d} ÷ ${d}`,mistake:'Multiplied only the first number'},{value:`${a+d} ÷ 1`,mistake:'Added instead of multiplying'}];break;}
+ if(v==='equiv-dec-div'){const x=int(1,99),k=int(2,19),z=`${x} ÷ ${k}`;
+  t=text(`Write an equivalent division problem for ${D(x,2)} ÷ ${k}/100 by multiplying both numbers by 100.`,z,`${D(x,2)} × 100 = ${x} and ${k}/100 × 100 = ${k}, so the problem becomes ${x} ÷ ${k}.`,{x,k},'',[`${x}÷${k}`]);t.math=math(`<mrow><mn>${D(x,2)}</mn><mo>÷</mo>${mfrac(k,100)}</mrow>`);
+  t.choices=[{value:`${x} ÷ ${k*100}`,mistake:'Multiplied the second number by 100 twice'},{value:`${D(x,2)} ÷ ${k}`,mistake:'Multiplied only the second number'},{value:`${x*100} ÷ ${k}`,mistake:'Multiplied the first number by 100 twice'}];break;}
+ if(v==='equiv-choose'){const [N,d]=pick([[400,16],[300,12],[600,24],[800,32],[200,8],[900,36],[500,20]]),g=4,z=`${N/g} ÷ ${d/g}`;
+  t=text(`Instead of dividing ${N} by ${d}, Quan can find the quotient by dividing both numbers by ${g}. Which division gives the same quotient? Write it like 50 ÷ 2.`,z,`Dividing both numbers by the same number keeps the quotient: ${N} ÷ ${g} = ${N/g} and ${d} ÷ ${g} = ${d/g}; ${N/g} ÷ ${d/g} = ${N/d}.`,{N,d},'',[`${N/g}÷${d/g}`,`${N/g} by ${d/g}`]);
+  t.choices=[{value:`${N} ÷ ${d/2}`,mistake:'Changed only the divisor'},{value:`${N/2} ÷ ${d/g}`,mistake:'Divided the numbers by different amounts'},{value:`${2*N} ÷ ${d/2}`,mistake:'Multiplied one number and divided the other'}];break;}
+ if(v==='add-mixed'){let an,ad,S;do{ad=int(2,8);an=int(ad+1,6*ad);S=int(5,25);}while(gcd(an,ad)!==1||an%ad===0||S*ad<=an);const z=R(S*ad-an,ad);
+  t=n(`Solve: x + ${mx(an,ad)} = ${S}`,z,`x = ${S} − ${mx(an,ad)} = ${mx(S*ad-an,ad)}.`,{an,ad,S},'mixed');
+  t.choices=wrongOnly(t,[{value:mx(an,ad),mistake:'Gave the number being added'},{value:String(S-Math.floor(an/ad)),mistake:'Subtracted only the whole number'},{value:mx(S*ad+an,ad),mistake:'Added instead of subtracting'},{value:mx(S*ad-an+ad,ad),mistake:'Forgot to rename a whole'}]);break;}
+ if(v==='add-dec'){let a;do{a=pick([int(40,90),int(300,399),int(250,480)]);}while(a%10===0);const k=a<100?1:2,S=k===1?int(19,26):int(5,9),z=S*10**k-a;
+  t=n(`Solve: x + ${D(a,k)} = ${S}`,R(z,10**k),`x = ${S} − ${D(a,k)} = ${D(z,k)}.`,{a,k,S},'decimal');
+  t.choices=distinct(D(z,k),[{value:D(a,k),mistake:'Gave the number being added'},{value:String(S-Math.floor(a/10**k)),mistake:'Subtracted only the whole-number part'},{value:D(S*10**k-(a%10**k),k),mistake:'Subtracted only the decimal part'},{value:D(S*10**k+a,k),mistake:'Added instead of subtracting'}]);break;}
+ if(v==='sub-frac'){const d=int(7,17),a=int(2,6),b=a+int(3,11),z=R(a+b,d);
+  t=n(`Solve: x − ${a}/${d} = ${b}/${d}`,z,`x = ${b}/${d} + ${a}/${d} = ${a+b}/${d}${a+b>=d?` = ${mx(a+b,d)}`:''}.`,{a,b,d},'mixed');t.math=math(`<mrow><mi>x</mi><mo>−</mo>${mfrac(a,d)}<mo>=</mo>${mfrac(b,d)}</mrow>`);
+  t.choices=wrongOnly(t,[{value:mx(b-a,d),mistake:'Subtracted instead of adding'},{value:String(a+b),mistake:'Added only the numerators and dropped the denominator'},{value:String(b-a),mistake:'Subtracted the numerators and dropped the denominator'},{value:mx(a+b,2*d),mistake:'Added the denominators too'}]);break;}
+ const [A,k]=pick([[int(1,1)*100,2],[int(5,9)*10,1],[int(100,160),1]]),Bv=int(Math.ceil(A*0.15),Math.floor(A*0.85)),z=A-Bv;const nm=pick(['x','n','w','y']);
+ t=n(`Solve: ${D(A,k)} − ${nm} = ${D(Bv,k)}`,R(z,10**k),`${nm} = ${D(A,k)} − ${D(Bv,k)} = ${D(z,k)}.`,{A,B:Bv,k},'decimal');
+ t.choices=distinct(D(z,k),[{value:D(A+Bv,k),mistake:'Added instead of subtracting'},{value:D(z+10,k),mistake:'Regrouping slip'},{value:D(Bv,k),mistake:'Gave the number on the right side'},{value:D(Math.abs(z-10),k),mistake:'Regrouping slip'}]);break;}
+case 'c1-dec-compare':{const v=c.variant,D=(x,k)=>decStr(R(x,10**k));
+ if(v==='sub-simplify'){const i1=int(15,80),i2=Math.max(1,i1-int(5,25)),dp=5*int(1,19);let s1=`${i1}.${String(dp).padStart(2,'0')}`,s2=`${i2}.${String(dp).padStart(2,'0')}`;const z=i1-i2;
+  t=n(`Subtract and simplify the answer: ${s1} − ${s2}`,z,`The decimal parts are equal, so the difference is a whole number: ${i1} − ${i2} = ${z} (not ${z}.00).`,{i1,i2,dp});
+  t.choices=distinct(z,[{value:Number(s1),mistake:'Gave the first number'},{value:D(100*z+dp,2),mistake:'Kept the decimal part'},{value:D(dp,2),mistake:'Gave only the decimal part'},{value:z+1,mistake:'Subtraction slip'},{value:z-1,mistake:'Subtraction slip'}]);break;}
+ if(v==='compare'){const form=int(0,3);let a,b,k;
+  if(form===0){a=310+int(0,60);b=3100+int(0,600);k=[1,2];}else if(form===1){a=10*(5*int(6,11))+int(1,9);b=10*a+int(1,9);k=[1,2];}else if(form===2){const r=int(1,9),base=100*(5*int(6,11));a=base+r;b=10*base+r;k=[2,3];}else{const t0=int(1,9);a=10*t0;b=t0;k=[2,1];}
+  const [x,y]=int(0,1)?[[a,k[0]],[b,k[1]]]:[[b,k[1]],[a,k[0]]],vx=x[0]/10**x[1],vy=y[0]/10**y[1],z=Math.abs(vx-vy)<1e-12?'=':vx>vy?'>':'<',sx=form===3&&x[1]===2?`0.${String(x[0]).padStart(2,'0')}`:D(x[0],x[1]),sy=form===3&&y[1]===2?`0.${String(y[0]).padStart(2,'0')}`:D(y[0],y[1]);
+  t=text(`Compare: ${sx} ○ ${sy}. Write >, < or =.`,z,z==='='?`Trailing zeros after the decimal point do not change the value: ${sx} = ${sy}.`:`Line up the decimal points and compare place by place: ${sx} ${z} ${sy}.`,{x,y},'');
+  t.choices=['>','<','='].filter(q0=>q0!==z).map(q0=>({value:q0,mistake:q0==='='?'Thought the numbers were equal':'Compared the number of digits instead of the place values'}));break;}
+ if(v==='sum-product'){const a=int(1,9),b=pick([a,int(1,9)]),s=a+b,p=a*b,z=s*10>p?'>':s*10<p?'<':'=';
+  t=text(`Compare: 0.${a} + 0.${b} ○ 0.${a} × 0.${b}. Write >, < or =.`,z,`0.${a} + 0.${b} = ${D(s,1)} and 0.${a} × 0.${b} = ${D(p,2)}; ${D(s,1)} ${z} ${D(p,2)}.`,{a,b},'');
+  t.choices=['>','<','='].filter(q0=>q0!==z).map(q0=>({value:q0,mistake:'Thought multiplying always makes a number larger'}));break;}
+ if(v==='simplify'){const lead=int(0,1);let s,z;if(lead){const w=int(1,9);let d;do{d=int(1,99);}while(d%10===0);z=`${w}.${String(d).padStart(2,'0')}`;s=`0${z}`;}else{const x=int(100,500);let y=x;if(x%10===0)y=x+1;z=D(y,2);s=z+'0';}
+  t=text(`Express the number in simplified form: ${s}`,z,`Zeros ${lead?'before the first nonzero whole-number digit':'at the end of the decimal part'} do not change the value: ${s} = ${z}.`,{s},'');
+  const num=Number(z);t.choices=[{value:String(Math.round(num)),mistake:'Rounded to a whole number'},{value:num.toFixed(1)===z?num.toFixed(3):num.toFixed(1),mistake:'Dropped a digit that is not a zero'},{value:z+'0',mistake:'Kept a trailing zero'}].filter(q0=>q0.value!==z&&q0.value!==s);if(t.choices.length<3)t.choices.push({value:s,mistake:'Did not simplify'});break;}
+ const ones=int(5,8);let ds;do{ds=[int(21,79)*10,int(201,791),int(201,791)];}while(new Set(ds).size<3||ds.some(x=>x%10===0&&x!==ds[0]));const nums=ds.map(x=>ones*1000+x),sorted=[...nums].sort((p0,q0)=>p0-q0),S=x=>D(x,3);
+ t=text(`Order ${nums.map(S).join(', ')} from least to greatest. Separate the numbers with commas.`,sorted.map(S).join(', '),`Compare tenths, then hundredths, then thousandths: ${sorted.map(S).join(' < ')}.`,{nums},'',[sorted.map(S).join(','),sorted.map(S).join(' , '),sorted.map(S).join(' ')]);
+ t.choices=[{value:[...sorted].reverse().map(S).join(', '),mistake:'Ordered from greatest to least'},{value:[...nums].sort((p0,q0)=>String(p0%1000).length-String(q0%1000).length||p0-q0).map(S).join(', '),mistake:'Ordered by the number of digits'},{value:[sorted[1],sorted[0],sorted[2]].map(S).join(', '),mistake:'Compared the last digits first'},{value:[sorted[0],sorted[2],sorted[1]].map(S).join(', '),mistake:'Compared the last digits first'},{value:nums.map(S).join(', '),mistake:'Left the numbers in the given order'}].filter((q0,i,arr)=>q0.value!==sorted.map(S).join(', ')&&arr.findIndex(r0=>r0.value===q0.value)===i).slice(0,3);break;}
+case 'c1-dec-div':{const v=c.variant,D=(x,k)=>decStr(R(x,10**k)),opt=(z,k,list)=>distinct(D(z,k),list.map(([x,kk,m])=>({value:D(x,kk),mistake:m})));
+ if(v==='small'||v==='tenths'||v==='zeros'){let d,q,k,N,kN;
+  if(v==='small'){d=int(2,8);q=int(1,40);k=3;N=d*q;kN=3;}else if(v==='tenths'){d=int(3,8);q=int(50,90);k=2;N=d*q;kN=2;}else{do{d=int(3,8);N=3*int(1,19);}while((N*10)%d!==0||N%d===0);q=N*10/d;k=3;kN=2;}
+  const Ns=D(N,kN),qs=D(q,k);
+  t=n(`Divide: ${Ns} ÷ ${d}`,R(q,10**k),`Place the decimal point in the quotient above the decimal point in the dividend${v==='zeros'?' and write zeros to keep dividing':''}: ${Ns} ÷ ${d} = ${qs}.`,{N,kN,d},'decimal',longDivFigure(d,Ns,`${d} into ${Ns}`));
+  t.choices=opt(q,k,[[N,kN,'Gave the dividend'],[N,kN+1,'Gave the dividend with the decimal point moved'],[q,k+1,'Placed the decimal point one place too far left'],[q,k-1,'Placed the decimal point one place too far right']]);break;}
+ if(v==='root'){const r=pick([6,8]),q=5*int(1,80),N=q*r,shown=D(N,3);
+  t=n(`Divide: ${shown} ÷ √${r*r}`,R(q,1000),`√${r*r} = ${r}; ${shown} ÷ ${r} = ${D(q,3)}.`,{N,r},'decimal');t.math=math(`<mrow><mn>${shown}</mn><mo>÷</mo><msqrt><mn>${r*r}</mn></msqrt></mrow>`);
+  t.choices=opt(q,3,[[q,2,'Placed the decimal point one place too far right'],[N,3,'Did not divide'],[q,4,'Placed the decimal point one place too far left'],[q+5,3,'Division slip']]);break;}
+ if(v==='round-trip'){let d;do{d=int(4,19);}while(d%10===0);const rt=2*d,u=x=>x>10?'miles':'mile';
+  t=n(`The distance from a student’s house to school and back is ${D(rt,1)} ${u(rt)}. How far, in miles, does the student live from school?`,R(d,10),`The round trip is twice the distance: ${D(rt,1)} ÷ 2 = ${D(d,1)} ${u(d)}.`,{rt},'decimal');
+  t.choices=opt(d,1,[[rt,1,'Gave the round-trip distance'],[5*d,2,'Divided by 2 twice'],[2*rt,1,'Doubled instead of halving']]);break;}
+ const items=pick([['apricots','pound'],['peaches','pound'],['potatoes','pound'],['lemons','pound']]),cnt=pick([4,5,6,8]),each=int(11,39),tot=cnt*each;
+ t=n(`The ${cnt} ${items[0]} weighed a total of ${D(tot,2)} pounds. What was the average weight of each one, in pounds?`,R(each,100),`${D(tot,2)} ÷ ${cnt} = ${D(each,2)} pound.`,{tot,cnt},'decimal');
+ t.choices=opt(each,2,[[cnt,0,'Gave the number of fruit'],[each,1,'Placed the decimal point one place too far right'],[tot*cnt,2,'Multiplied instead of dividing'],[tot,2,'Gave the total weight']]);break;}
+case 'c1-dec-tens':{const v=c.variant,D=(x,k)=>decStr(R(x,10**k)),PL=['1/10','1/100','1/1000'];
+ if(v==='expanded-dec'){let o,dg;do{o=int(1,9);dg=[int(0,9),int(0,9),int(1,9)];if(int(0,2)===0){dg=[0,int(1,9),0];}}while(dg.every(x=>x===0));const last=dg.map((x,i)=>x?i:-1).filter(i=>i>=0).pop(),dgs=dg.slice(0,last+1),terms=[[o,1],...dgs.map((x,i)=>[x,PL[i]]).filter(([x])=>x>0)],num=`${o}.${dgs.join('')}`,ref=terms.map(([x,p0])=>`${x} × ${p0}`).join(' + ');
+  t={prompt:`Write ${num} in expanded notation, using fractions for the decimal places, for example 4 × 1 + 9 × 1/10 + 7 × 1/100.`,answer:{kind:'expanded',terms,value:ref},solution:ref+'.',parameters:{o,dg:dgs}};
+  const PLx=['1/10','1/100','1/1000','1/10000'],t2=terms.map(([x,p0],i)=>`${x} × ${i===0?1:PLx[PLx.indexOf(p0)+1]}`).join(' + '),t3=terms.map(([x,p0])=>`${x} × ${typeof p0==='string'?p0.replace('1/',''):p0}`).join(' + ');
+  t.choices=[{value:t2,mistake:'Used each decimal place one place too far right'},{value:t3,mistake:'Used whole-number places instead of fractions'},{value:terms.map(([x,p0],i)=>`${x} × ${i===0?10:p0}`).join(' + '),mistake:'Wrote the ones digit as tens'}].filter(q0=>q0.value!==ref);break;}
+ if(v==='expanded-to-dec'){const o=int(1,9),te=int(0,9),hu=int(1,9),z=100*o+10*te+hu;
+  t=n(`Write ${o} × 1 + ${te} × 1/10 + ${hu} × 1/100 as a decimal number.`,R(z,100),`${o} ones, ${te} tenths and ${hu} hundredths: ${D(z,2)}.`,{o,te,hu},'decimal');
+  t.choices=distinct(D(z,2),[{value:D(z,1),mistake:'Placed the decimal point one place too far right'},{value:String(z),mistake:'Left out the decimal point'},{value:D(100*o+10*hu+te,2),mistake:'Swapped the tenths and hundredths'},{value:D(z,3),mistake:'Placed the decimal point one place too far left'},{value:D(z+10,2),mistake:'Wrote the wrong tenths digit'}]);break;}
+ if(v==='times-ten'){const m=300+5*int(0,100),z=m*10;
+  t=n(`Mentally calculate the product: ${D(m,2)} × 10`,R(z,100),`Multiplying by 10 moves the decimal point one place to the right: ${D(z,2)}.`,{m},'decimal');
+  t.choices=distinct(D(z,2),[{value:D(m*100,2),mistake:'Moved the decimal point two places'},{value:D(m,3),mistake:'Moved the decimal point the wrong way'},{value:D(m,2)+'0',mistake:'Wrote a zero at the end instead of moving the decimal point'},{value:D(m*10,3),mistake:'Did not move the decimal point'},{value:D(z+10,2),mistake:'Moved the decimal point and changed a digit'}]);break;}
+ if(v==='times-hundred'){const m=10+5*int(0,17),p=int(2,3),z=m*10**p;
+  t=n(`Mentally calculate the product: ${D(m,3)} × ${10**p}`,R(z,1000),`Multiplying by ${10**p} moves the decimal point ${p} places to the right: ${D(z,3)}.`,{m,p},'decimal');
+  t.choices=distinct(D(z,3),[{value:D(m*10**(p-1),3),mistake:'Moved the decimal point one place too few'},{value:D(m*10**(p+1),3),mistake:'Moved the decimal point one place too many'},{value:D(m,3+p),mistake:'Moved the decimal point the wrong way'}]);break;}
+ const d=int(2,9),k=int(2,5),num=d*k,mult=pick([10,100]);
+ t=n(`Divide: ${D(num,1)} ÷ ${D(d,1)}. (Multiply both numbers by 10 first.)`,k,`${D(num,1)} × 10 = ${num} and ${D(d,1)} × 10 = ${d}; ${num} ÷ ${d} = ${k}.`,{num,d});
+ t.choices=distinct(k,[{value:D(num,1),mistake:'Gave the dividend'},{value:num*mult/10,mistake:'Multiplied only the dividend'},{value:mult,mistake:'Gave the multiplier'},{value:D(k,1),mistake:'Placed the decimal point in the quotient'},{value:k+1,mistake:'Division slip'}]);break;}
+case 'c1-circumference':{const v=c.variant,D=(x,k)=>decStr(R(x,10**k)),rnd=(x,dd)=>Math.floor((x+dd/2)/dd);
+ if(v==='from-d'){const d10=88+2*int(0,46),z=rnd(314*d10,10);
+  t=n(`Find the circumference, in centimeters, of the circle. Use 3.14 for π and round your answer to the nearest hundredth.`,R(z,100),`C = πd ≈ 3.14 × ${D(d10,1)} = ${D(314*d10,3)} ≈ ${D(z,2)} cm.`,{d10},'decimal',circlesFigure([['diameter',`${D(d10,1)} cm`]]));
+  t.choices=distinct(D(z,2),[{value:D(rnd(157*d10,10),2),mistake:'Used the radius instead of the diameter'},{value:D(rnd(314*d10*d10,100),2),mistake:'Multiplied π by the diameter squared'},{value:D(z,1),mistake:'Placed the decimal point incorrectly'},{value:D(d10*2,1),mistake:'Doubled the diameter instead of multiplying by π'}]);break;}
+ if(v==='from-r'){let r;do{r=int(6,14);}while(r===10);const z=628*r;
+  t=n(`Find the circumference, in inches, of the circle. Dimensions are in inches. Use 3.14 for π.`,R(z,100),`C = 2πr ≈ 2 × 3.14 × ${r} = ${D(z,2)} in.`,{r},'decimal',circlesFigure([['radius',`${r} in.`]]));
+  t.choices=distinct(D(z,2),[{value:D(314*r,2),mistake:'Used the radius as the diameter'},{value:D(314*r*r,2),mistake:'Found the area instead of the circumference'},{value:String(2*r),mistake:'Gave the diameter'}]);break;}
+ if(v==='d-from-pi'){const d=int(12,50);
+  t=n(`If the circumference of a circle is ${d}π cm, what is the diameter, in centimeters?`,d,`C = πd, so ${d}π = π × d and d = ${d}.`,{d});
+  t.choices=distinct(d,[...(d%2===0?[{value:d/2,mistake:'Gave the radius'}]:[]),{value:2*d,mistake:'Doubled the number'},{value:'3.14',mistake:'Gave the value of π'},{value:decStr(R(314*d,100)),mistake:'Multiplied by π'}]);break;}
+ if(v==='d-from-c'){const C=1500+int(0,2000),z=rnd(100*C,314);
+  t=n(`The circumference of a circle is ${D(C,2)} feet. Find the diameter, in feet. Use 3.14 for π and round to the nearest hundredth.`,R(z,100),`d = C ÷ π ≈ ${D(C,2)} ÷ 3.14 ≈ ${D(z,2)} feet.`,{C},'decimal');
+  t.choices=distinct(D(z,2),[{value:D(rnd(50*C,314),2),mistake:'Found the radius'},{value:D(rnd(314*C,100),2),mistake:'Multiplied by π instead of dividing'},{value:D(rnd(628*C,100),2),mistake:'Multiplied by 2π'}]);break;}
+ if(v==='in-pi'){const r=int(12,39),z=`${2*r}π`;
+  t=text(`Write the circumference of the circle in terms of π. Dimensions are in inches.`,z,`C = 2πr = 2 × π × ${r} = ${2*r}π inches.`,{r},circlesFigure([['radius',`${r} in.`]]),[`${2*r}π in.`,`${2*r} π`,`${2*r}pi`,`${2*r} pi`,`${2*r}π in`]);
+  t.choices=[{value:`${r}π`,mistake:'Used the radius as the diameter'},{value:`${r*r}π`,mistake:'Found the area instead of the circumference'},{value:`${4*r}π`,mistake:'Doubled the diameter'}];break;}
+ const dIn=pick([20,24,16,12,18]),C100=314*dIn,ft=Math.floor((C100+600)/1200);
+ t=n(`The diameter of the front wheel of a small bike is ${dIn} inches. In one full turn of the wheel, the bike travels about how many feet? Use 3.14 for π and round to the nearest foot.`,ft,`C = πd ≈ 3.14 × ${dIn} = ${D(314*dIn,2)} inches ≈ ${D(314*dIn,2)} ÷ 12 ≈ ${ft} feet.`,{dIn});
+ t.choices=distinct(ft,[{value:ft-1,mistake:'Rounded down'},{value:ft+1,mistake:'Rounded up'},{value:Math.round(dIn/12),mistake:'Converted the diameter instead of the circumference'},{value:Math.floor((C100+50)/100),mistake:'Gave inches instead of feet'}]);break;}
 default:throw Error('Unknown port recipe '+c.recipe);}
 return t;}
 

@@ -3311,7 +3311,9 @@
           "@/course-1-en:bank:C1_Section04:item:C1_S04_00017",
           "@/course-1-en:bank:C1_Section04:item:C1_S04_00019",
           "@/course-1-en:bank:C1_Section04:item:C1_S04_00023",
-          "@/course-1-en:bank:C1_Section04:item:C1_S04_00024"
+          "@/course-1-en:bank:C1_Section04:item:C1_S04_00024",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00019",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00131"
         ],
         "sourceIds": [
           "course-87-en:item:SX870224",
@@ -3353,7 +3355,16 @@
           "course-1-en:bank:C1_Section04:item:C1_S04_00024",
           "course-1-en:bank:C1_Section04:item:C1_S04_00022",
           "course-1-en:bank:C1_Section04:item:C1_S04_00025",
-          "course-1-en:bank:C1_Section04:item:C1_S04_00052"
+          "course-1-en:bank:C1_Section04:item:C1_S04_00052",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00001",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00020",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00084",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00067",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00086",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00082",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00019",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00131",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00130"
         ]
       },
       {
@@ -3711,11 +3722,18 @@
         "demand": "Compare decimal numbers",
         "prerequisites": "Align place values",
         "selectors": [
-          "c/33.1"
+          "c/33.1",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00007",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00138"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-33.1",
-          "course-1-en:authored:M2-921eee1b99fa-2"
+          "course-1-en:authored:M2-921eee1b99fa-2",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00026",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00007",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00138",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00024",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00055"
         ]
       },
       {
@@ -4814,7 +4832,13 @@
           "c/35.3",
           "k/decimal-divide-whole",
           "k/capsules",
-          "@/course-1-en:bank:C1_Section02:item:C1_S02_00038"
+          "@/course-1-en:bank:C1_Section02:item:C1_S02_00038",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00008",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00027",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00028",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00095",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00029",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00070"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-1.7",
@@ -4827,7 +4851,13 @@
           "course-1-en:bank:C1_Section02:item:C1_S02_00036",
           "course-1-en:bank:C1_Section02:item:C1_S02_00095",
           "course-1-en:bank:C1_Section02:item:C1_S02_00096",
-          "course-1-en:bank:C1_Section02:item:C1_S02_00038"
+          "course-1-en:bank:C1_Section02:item:C1_S02_00038",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00008",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00027",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00028",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00095",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00029",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00070"
         ]
       },
       {
@@ -4841,7 +4871,10 @@
           "@/course-1-en:bank:C1_Section05:item:C1_S05_00078",
           "@/course-1-en:bank:C1_Section05:item:C1_S05_00105",
           "k/decimal-divide-decimal",
-          "k/divide-by-decimal"
+          "k/divide-by-decimal",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00052",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00053",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00033"
         ],
         "sourceIds": [
           "course-1-en:bank:C1_Section05:item:C1_S05_00076",
@@ -4856,7 +4889,19 @@
           "course-87-en:item:SX870227",
           "course-87-en:item:SX870228",
           "course-87-en:item:SX870229",
-          "course-87-en:item:SN870237"
+          "course-87-en:item:SN870237",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00052",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00053",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00068",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00005",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00022",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00023",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00115",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00059",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00030",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00031",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00032",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00033"
         ]
       }
     ],
@@ -4873,14 +4918,21 @@
         "prerequisites": "Each place changes by a power of ten",
         "selectors": [
           "f/ten-power:mul",
-          "c/47.3"
+          "c/47.3",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00031",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00032"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-47.3",
           "intermediate-4-en:authored:M2-dc686476b3a8-1",
           "course-1-en:authored:M2-5bca007a0d6d-2",
           "course-1-en:authored:M2-6988d2a0631f-3",
-          "algebra-half-en:authored:M3-8-1"
+          "algebra-half-en:authored:M3-8-1",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00059",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00030",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00031",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00032",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00033"
         ]
       },
       {
@@ -4973,14 +5025,21 @@
         "selectors": [
           "f/fraction-unlike",
           "f/fraction-unlike-method",
-          "c/30.3"
+          "c/30.3",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00051",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00050"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-30.3",
           "intermediate-4-en:authored:M2-5c12a4e5f17d-1",
           "course-1-en:authored:M2-be586af06c90-1",
           "algebra-half-en:authored:M3-30-4",
-          "algebra-1-en:authored:M4-1-1"
+          "algebra-1-en:authored:M4-1-1",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00021",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00088",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00051",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00050",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00113"
         ]
       },
       {
@@ -5024,14 +5083,21 @@
         "prerequisites": "Apply the same scale factor to numerator and denominator",
         "selectors": [
           "f/fraction-rename",
-          "c/15.1"
+          "c/15.1",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00021",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00113"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-15.1",
           "intermediate-4-en:authored:M2-a6c80b298af6-1",
           "intermediate-4-en:authored:M2-abbc7b1e0e30-1",
           "course-1-en:authored:M2-aa2e5ebd29e5-1",
-          "algebra-half-en:authored:M3-14-2"
+          "algebra-half-en:authored:M3-14-2",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00021",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00088",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00051",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00050",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00113"
         ]
       },
       {
@@ -6119,7 +6185,8 @@
           "h/markup",
           "t/sales-tax",
           "k/tip",
-          "k/tax-total"
+          "k/tax-total",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00001"
         ],
         "sourceIds": [
           "course-87-en:item:SN870247",
@@ -6130,7 +6197,16 @@
           "algebra-half-en:authored:M3-110-1",
           "algebra-2-en:authored:M6-101-1",
           "course-87-en:item:SX870234",
-          "course-87-en:item:SX870238"
+          "course-87-en:item:SX870238",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00001",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00020",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00084",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00067",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00086",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00082",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00019",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00131",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00130"
         ]
       },
       {
@@ -6742,7 +6818,12 @@
         "selectors": [
           "c/66.2",
           "k/circumference-pair",
-          "k/semicircle-figure"
+          "k/semicircle-figure",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00035",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00037",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00038",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00060",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00073"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-66.2",
@@ -6753,7 +6834,13 @@
           "course-87-en:item:SX870333",
           "course-87-en:item:SX870334",
           "course-87-en:item:SX870452",
-          "course-87-en:item:SN870656"
+          "course-87-en:item:SN870656",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00035",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00034",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00037",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00038",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00060",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00073"
         ]
       },
       {
@@ -10500,13 +10587,24 @@
         "prerequisites": "Identify the original base",
         "selectors": [
           "f/percent-of",
-          "k/percent-of"
+          "k/percent-of",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00082",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00130"
         ],
         "sourceIds": [
           "course-1-en:authored:M2-4a5dc2d6e728-1",
           "course-87-en:item:SX870370",
           "course-87-en:item:SX760175",
-          "course-87-en:item:SX870372"
+          "course-87-en:item:SX870372",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00001",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00020",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00084",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00067",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00086",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00082",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00019",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00131",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00130"
         ]
       },
       {
@@ -10516,14 +10614,27 @@
         "selectors": [
           "p/percent-increase",
           "t/discount-price",
-          "k/discounts"
+          "k/discounts",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00020",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00084",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00067",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00086"
         ],
         "sourceIds": [
           "algebra-half-en:node:510",
           "course-87-en:item:SX870427",
           "course-87-en:item:SN870705",
           "course-87-en:item:SN870706",
-          "course-87-en:item:SN870828"
+          "course-87-en:item:SN870828",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00001",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00020",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00084",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00067",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00086",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00082",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00019",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00131",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00130"
         ]
       }
     ],
@@ -11512,7 +11623,8 @@
         "selectors": [
           "c/27.5",
           "f/div-ten",
-          "@/course-1-en:bank:C1_Section01:item:C1_S01_00128"
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00128",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00068"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-27.5",
@@ -11529,7 +11641,14 @@
           "course-1-en:bank:C1_Section01:item:C1_S01_00115",
           "course-1-en:bank:C1_Section01:item:C1_S01_00032",
           "course-1-en:bank:C1_Section01:item:C1_S01_00128",
-          "course-1-en:bank:C1_Section01:item:C1_S01_00127"
+          "course-1-en:bank:C1_Section01:item:C1_S01_00127",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00052",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00053",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00068",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00005",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00022",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00023",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00115"
         ]
       }
     ],
@@ -11635,10 +11754,17 @@
         "demand": "Write a decimal in expanded notation",
         "prerequisites": "Decompose whole, tenths and hundredths",
         "selectors": [
-          "f/decimal-expanded"
+          "f/decimal-expanded",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00059",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00030"
         ],
         "sourceIds": [
-          "course-1-en:authored:M2-5bca007a0d6d-1"
+          "course-1-en:authored:M2-5bca007a0d6d-1",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00059",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00030",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00031",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00032",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00033"
         ]
       },
       {
@@ -11646,11 +11772,18 @@
         "demand": "Explain zero placeholders and trailing zero equivalence",
         "prerequisites": "Internal zero and trailing zero branches must both be considered",
         "selectors": [
-          "f/decimal-zero"
+          "f/decimal-zero",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00026",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00024"
         ],
         "sourceIds": [
           "course-1-en:authored:M2-d8dec1074de5-1",
-          "course-1-en:authored:M2-921eee1b99fa-1"
+          "course-1-en:authored:M2-921eee1b99fa-1",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00026",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00007",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00138",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00024",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00055"
         ]
       }
     ],
@@ -11683,12 +11816,18 @@
         "prerequisites": "Coordinate comparisons across the full list",
         "selectors": [
           "c/33.2",
-          "k/order-decimals"
+          "k/order-decimals",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00055"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-33.2",
           "algebra-half-en:authored:M3-8-3",
-          "course-87-en:item:SN870146"
+          "course-87-en:item:SN870146",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00026",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00007",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00138",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00024",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00055"
         ]
       }
     ],
@@ -12172,14 +12311,20 @@
         "prerequisites": "Generalize numerator/denominator scaling",
         "selectors": [
           "f/fraction-rename",
-          "c/15.1"
+          "c/15.1",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00088"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-15.1",
           "intermediate-4-en:authored:M2-a6c80b298af6-1",
           "intermediate-4-en:authored:M2-abbc7b1e0e30-1",
           "course-1-en:authored:M2-aa2e5ebd29e5-1",
-          "algebra-half-en:authored:M3-14-2"
+          "algebra-half-en:authored:M3-14-2",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00021",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00088",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00051",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00050",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00113"
         ]
       }
     ],
@@ -12609,7 +12754,11 @@
           "=/algebra-half-en:node:276",
           "=/algebra-half-en:node:277",
           "k/inv-balanced",
-          "@/course-1-en:bank:C1_Section03:item:C1_S03_00129"
+          "@/course-1-en:bank:C1_Section03:item:C1_S03_00129",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00005",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00022",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00023",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00115"
         ],
         "sourceIds": [
           "algebra-1-en:node:293",
@@ -12622,7 +12771,14 @@
           "course-1-en:bank:C1_Section03:item:C1_S03_00128",
           "course-1-en:bank:C1_Section03:item:C1_S03_00058",
           "course-1-en:bank:C1_Section03:item:C1_S03_00132",
-          "course-1-en:bank:C1_Section03:item:C1_S03_00129"
+          "course-1-en:bank:C1_Section03:item:C1_S03_00129",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00052",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00053",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00068",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00005",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00022",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00023",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00115"
         ]
       },
       {
@@ -15495,10 +15651,17 @@
         "demand": "Find circumference from radius with stated pi",
         "prerequisites": "Diameter is twice radius; apply the stated pi convention",
         "selectors": [
-          "=/course-87-en:item:SX870332"
+          "=/course-87-en:item:SX870332",
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00034"
         ],
         "sourceIds": [
-          "course-87-en:item:SX870332"
+          "course-87-en:item:SX870332",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00035",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00034",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00037",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00038",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00060",
+          "course-1-en:bank:C1_Section05:item:C1_S05_00073"
         ]
       },
       {

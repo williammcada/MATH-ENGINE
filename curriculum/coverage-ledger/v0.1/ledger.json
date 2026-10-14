@@ -29,6 +29,7 @@
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch4-course1-L20-26-I2.json": "46bb8e34f01f93812a7f933cd6f505c165de55094a76a92a9c299f9037e8698f",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch5-course1-L27-34-I3.json": "c6e3afd02a1a4f8877afaa83d312e69b8bc5f31fe7440c77e53d3a19cb69f7c4",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch6-course1-L35-40-I4.json": "9d2e724df7ca9798e3a64d5fb313a4ba3b29559c9a416cc253829abae44fc86d",
+"curriculum/coverage-ledger/v0.1/decisions/2026-10-15-c1-batch7-course1-L41-47.json": "e2edc6cda71aace71a0fde5ab40dd24435bbb1cefb526f764f8731cfb14687a8",
 "curriculum/source-mappings/advanced-v0.1.json": "740f9d6e25483a2838d5561a85c66c9eb3f67b7505a8ab9004353e5eb6883aa7",
 "curriculum/source-mappings/algebra-review-v0.1.json": "a4956b61d8353d4258097f2ea5ca8d7baf4031fdd9c090e344ca2ce366a29a0e",
 "curriculum/source-mappings/breadth-v0.1.json": "d8255409d16dcc8db7b45244ab1239896d13ac56ffe4f3eb2ecdd8778f5e4996",
@@ -38,7 +39,7 @@
 "curriculum/source-mappings/linear-equations-v0.1.json": "9e4f9fd37066e63cd74f133bcc76713db8ae30251a22f03f5a672ab535bc7e65",
 "curriculum/source-mappings/linear-equations-v0.2.json": "759f02762a92c18098944bfe8a88f2be5a0a4384f778105cb78239a07df22371",
 "curriculum/source-mappings/measurement-v0.1.json": "3ca7cc1cdb74fb6e1bf8741beea9c2787fe122befe28499e75bfd6d803409451",
-"curriculum/source-mappings/port87-v0.1.json": "09b4d055925ed477744fe387357bc83592a87269956fdc66a43346a02b55b67a",
+"curriculum/source-mappings/port87-v0.1.json": "6efb723a1b1e5a56a381b08ee9a48e62ab0dc9aa99285e3c48dcb13562c6f0c8",
 "curriculum/source-mappings/proportions-v0.1.json": "85db6cf773c6c1a6bbad37f83cf3724becf552fee4bbf4154e2ade0bae7751af",
 "curriculum/source-mappings/quadratic-equations-v0.1.json": "51b5a6c7221720481df7ac7a3cf9b4561744ef910fee5427c8cd73d6c027f4a6",
 "curriculum/source-mappings/reasoning-v0.1.json": "b88aeb99d84bd8ab367678d0c6f7d90fdc3cba8dbc087ebf108a3e835ef7f448",
@@ -48,14 +49,14 @@
 "curriculum/source-mappings/statistics-v0.1.json": "a3ba878bad7cc71dea555ef623b6c3e89483a9c8f809d21e4d90efa9ba09ce8d"
 },
 "totals": {
-"open": 3716,
+"open": 3620,
 "covered-provisional": 356,
-"covered": 955,
-"consolidated": 398,
+"covered": 998,
+"consolidated": 451,
 "retired": 0,
 "records": 5425,
-"percentComplete": 24.9,
-"percentIncludingProvisional": 31.5
+"percentComplete": 26.7,
+"percentIncludingProvisional": 33.3
 },
 "banks": {
 "course-87-en": {
@@ -99,14 +100,14 @@
 "percentIncludingProvisional": 18.8
 },
 "course-1-en": {
-"open": 777,
+"open": 681,
 "covered-provisional": 12,
-"covered": 330,
-"consolidated": 234,
+"covered": 373,
+"consolidated": 287,
 "retired": 0,
 "records": 1353,
-"percentComplete": 41.7,
-"percentIncludingProvisional": 42.6
+"percentComplete": 48.8,
+"percentIncludingProvisional": 49.7
 },
 "intermediate-4-en": {
 "open": 1296,
@@ -5247,50 +5248,50 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
-"open": 10,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 5,
+"consolidated": 5,
 "retired": 0,
 "records": 10,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"open": 18,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 6,
+"consolidated": 12,
 "retired": 0,
 "records": 18,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
-"open": 13,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 6,
+"consolidated": 7,
 "retired": 0,
 "records": 13,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"open": 18,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 9,
+"consolidated": 9,
 "retired": 0,
 "records": 18,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -5319,14 +5320,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"open": 16,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 7,
+"consolidated": 9,
 "retired": 0,
 "records": 16,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -5343,26 +5344,26 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
-"open": 12,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 5,
+"consolidated": 7,
 "retired": 0,
 "records": 12,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
-"open": 9,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 5,
+"consolidated": 4,
 "retired": 0,
 "records": 9,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -28452,73 +28453,129 @@
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00001",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Sales tax on a purchase.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00001"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00002",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00051"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00003",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00068"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00004",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00068"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00005",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Missing addend with a mixed number.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00005"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00006",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00026"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00007",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Compare decimal numbers.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00007"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00008",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Divide a decimal by a whole number (thousandths).",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00008"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00009",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00059"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00010",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00031"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00011",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00035"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00012",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00038"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00013",
@@ -28554,127 +28611,247 @@
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00018",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section04:item:C1_S04_00019"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00019",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: A percent as a decimal.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00019"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00020",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Total paid including sales tax.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00020"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00021",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Complete an equivalent fraction.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00021"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00022",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Missing addend with a decimal.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00022"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00023",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Missing number in a fraction subtraction.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00023"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00024",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Simplify a decimal number.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00024"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00025",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00024"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00026",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Subtract decimals and simplify.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00026"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00027",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Divide a decimal by a whole number (hundredths).",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00027"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00028",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Divide a decimal, writing zeros.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00028"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00029",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Distance from a round trip.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00029"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00030",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: A decimal from expanded notation.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00030"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00031",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Multiply a decimal by 10 mentally.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00031"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00032",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Multiply a decimal by 100 or 1000 mentally.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00032"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00033",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Divide by a decimal after multiplying by 10.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00033"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00034",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Circumference from a radius.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00034"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00035",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Circumference from a diameter.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00035"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00036",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00035"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00037",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Diameter from a circumference in terms of pi.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00037"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00038",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Diameter from a circumference.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00038"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00039",
@@ -28746,67 +28923,125 @@
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00050",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Rename to a common denominator and add.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00050"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00051",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Rename and subtract fractions.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00051"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00052",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Equivalent division by a unit fraction.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00052"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00053",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Equivalent division with decimals.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00053"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00054",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00005"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00055",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Order decimal numbers.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00055"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00056",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00007"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00057",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00007"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00058",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00059"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00059",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: A decimal in expanded notation.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00059"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00060",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Circumference in terms of pi.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00060"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00061",
@@ -28842,55 +29077,99 @@
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00066",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00084"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00067",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Sale price after a percent off.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00067"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00068",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Choose an equivalent division.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00068"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00069",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00095"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00070",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Average weight of items.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00070"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00071",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00031"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00072",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00034"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00073",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Distance a wheel travels in one turn.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00073"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00074",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00034"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00075",
@@ -28941,121 +29220,211 @@
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00080",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00001"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00081",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00001"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00082",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: A percent of a number of items.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00082"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00083",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00084"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00084",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Total with tax rounded to the cent.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00084"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00085",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00084"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00086",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Change after a meal with tax.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00086"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00087",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00021"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00088",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Rename a fraction in hundredths.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00088"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00089",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00088"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00090",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00115"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00091",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00028"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00092",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00027"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00093",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00027"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00094",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00028"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00095",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Divide a decimal by a square root.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00095"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00096",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00095"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00097",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:698e6711b8bf76d9",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00095"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00098",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00031"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00099",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00032"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00100",
@@ -29138,91 +29507,155 @@
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00112",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00050"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00113",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f7f94d8294fdfa3d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: The fraction equal to 1 that renames a fraction. The student enters the number in the fraction n/n (for example 4 for 4/4).",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00113"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00114",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00022"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00115",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Missing number in a decimal subtraction.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00115"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00116",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00115"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00117",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00005"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00118",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00022"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00119",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:f0e3aa0ca98a4f4c",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00032"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00120",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00035"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00121",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00034"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00122",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00035"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00123",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00035"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00124",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00034"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00125",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00034"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00126",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:389f77158b119cd6",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00035"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00127",
@@ -29240,37 +29673,65 @@
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00129",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00131"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00130",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: A percent as a fraction and a count.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00130"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00131",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: A percent as a fraction and a decimal.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00131"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00132",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00131"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00133",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:aa05ac493f13e994",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00131"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00134",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:c997a1543a2aa970",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00005"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00135",
@@ -29288,13 +29749,23 @@
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00137",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Same demand as the task it points to (choice-only twin or repeated fixed item).",
+"into": "course-1-en:bank:C1_Section05:item:C1_S05_00007"
 },
 {
 "id": "course-1-en:bank:C1_Section05:item:C1_S05_00138",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section05:scope:2584796aafa01869",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-7 course-1 lessons 41-47",
+"reviewed": "2026-10-15",
+"note": "Ported: Compare a sum and a product of decimals.",
+"by": [
+"course-1-en:bank:C1_Section05:item:C1_S05_00138"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section06:item:C1_S06_00001",
