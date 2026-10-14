@@ -189,7 +189,8 @@ function evaluate(item, response) {
   }
   if (checkAnswer(item, normalized)) return { valid: true, correct: true, reason: null, message: '', normalized };
   const simpler = simplifiedForm(normalized);
-  if (simpler && checkAnswer(item, simpler)) return { valid: true, correct: false, reason: 'equivalent-unsimplified', message: MESSAGES.unsimplified, normalized };
+  // A whole-number ratio such as 4/2 simplifies to 4/1 as well as to 2.
+  if (simpler && (checkAnswer(item, simpler) || (/^-?\d+$/.test(simpler) && checkAnswer(item, simpler + '/1')))) return { valid: true, correct: false, reason: 'equivalent-unsimplified', message: MESSAGES.unsimplified, normalized };
   return { valid: true, correct: false, reason: 'wrong-value', message: MESSAGES.wrong, normalized };
 }
 function keypadKeys(item) { return item && Array.isArray(item.keys) ? item.keys.slice() : BASE_KEYS.slice(); }

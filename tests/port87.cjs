@@ -546,7 +546,7 @@ const oracle={
    return fracEq(q,[...Array(p.N).keys()].filter(k=>p.N%(k+1)===0).length,1);},
  // ---------- Course 1, Batch C1-4 ----------
  'c1-gcf':(q,p)=>{const nums=p.nums||[p.a,p.b],G=nums.reduce((x,y)=>gcd(x,y));assert(G>1);return fracEq(q,G,1);},
- 'c1-fraction-concepts':(q,p)=>{if(p.bad)return p.eqs.every(e=>{const [x,y]=e.split('/').map(Number);return x*p.b===y*p.a;})&&(()=>{const [x,y]=p.bad.split('/').map(Number);return x*p.b!==y*p.a;})()&&q.answer.value===p.bad;
+ 'c1-fraction-concepts':(q,p)=>{if(p.bad)return p.eqs.every(e=>{const [x,y]=e.split('/').map(Number);return x*p.b===y*p.a;})&&(()=>{const [x,y]=p.bad.split('/').map(Number);return x*p.b!==y*p.a;})()&&E.answerText(q)===p.bad&&E.checkAnswer(q,p.bad).answerCorrect;
    if(p.fs){const v=p.fs.map(([a,b])=>a/b);return q.answer.value===['Maricruz','Ting','Molly','Jasmine'][v.indexOf(Math.max(...v))];}
    if(p.k!==undefined&&p.n!==undefined){const sh=(q.givens.svg.match(/fill="#7d8f96"/g)||[]).length;return E.checkAnswer(q,`${100*sh/p.n}%`).answerCorrect&&sh===p.k;}
    if(p.x!==undefined)return fracEq(q,p.x+p.y,1);if(p.d!==undefined&&p.k!==undefined)return fracEq(q,p.d*p.k,1);if(p.d!==undefined)return fracEq(q,1,2*p.d);
