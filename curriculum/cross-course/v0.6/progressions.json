@@ -691,7 +691,10 @@
           "@/course-1-en:bank:C1_Section01:item:C1_S01_00056",
           "@/course-1-en:bank:C1_Section06:item:C1_S06_00090",
           "@/course-1-en:bank:C1_Section06:item:C1_S06_00011",
-          "@/course-1-en:bank:C1_Section08:item:C1_S08_00014"
+          "@/course-1-en:bank:C1_Section08:item:C1_S08_00014",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00037",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00020",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00076"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-19.1",
@@ -714,7 +717,15 @@
           "course-1-en:bank:C1_Section06:item:C1_S06_00049",
           "course-1-en:bank:C1_Section08:item:C1_S08_00001",
           "course-1-en:bank:C1_Section08:item:C1_S08_00014",
-          "course-1-en:bank:C1_Section08:item:C1_S08_00015"
+          "course-1-en:bank:C1_Section08:item:C1_S08_00015",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00036",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00037",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00038",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00062",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00063",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00004",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00020",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00076"
         ]
       },
       {
@@ -870,14 +881,18 @@
         "selectors": [
           "c/32.2",
           "k/mm-to-cm",
-          "k/metric-how-many"
+          "k/metric-how-many",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00025"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-32.2",
           "algebra-half-en:authored:M3-24-2",
           "algebra-2-en:authored:M6-53-1",
           "course-87-en:item:SX870200",
-          "course-87-en:item:SN870143"
+          "course-87-en:item:SN870143",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00006",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00025",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00023"
         ]
       },
       {
@@ -1365,7 +1380,8 @@
           "k/evaluate-xy",
           "k/evaluate-paren",
           "k/formula-sub",
-          "@/course-1-en:bank:C1_Section09:item:C1_S09_00037"
+          "@/course-1-en:bank:C1_Section09:item:C1_S09_00037",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00064"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-1.5",
@@ -1389,7 +1405,12 @@
           "course-1-en:bank:C1_Section09:item:C1_S09_00037",
           "course-1-en:bank:C1_Section09:item:C1_S09_00038",
           "course-1-en:bank:C1_Section09:item:C1_S09_00050",
-          "course-1-en:bank:C1_Section09:item:C1_S09_00051"
+          "course-1-en:bank:C1_Section09:item:C1_S09_00051",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00064",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00065",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00014",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00051",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00057"
         ]
       },
       {
@@ -1457,7 +1478,8 @@
           "k/subtraction-number-line",
           "k/integer-line-add",
           "@/course-1-en:bank:C1_Section02:item:C1_S02_00035",
-          "@/course-1-en:bank:C1_Section02:item:C1_S02_00094"
+          "@/course-1-en:bank:C1_Section02:item:C1_S02_00094",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00079"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-4.3",
@@ -1474,7 +1496,11 @@
           "course-1-en:bank:C1_Section02:item:C1_S02_00035",
           "course-1-en:bank:C1_Section02:item:C1_S02_00062",
           "course-1-en:bank:C1_Section02:item:C1_S02_00094",
-          "course-1-en:bank:C1_Section02:item:C1_S02_00122"
+          "course-1-en:bank:C1_Section02:item:C1_S02_00122",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00012",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00056",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00073",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00079"
         ]
       },
       {
@@ -1487,7 +1513,10 @@
           "c/68.1",
           "@/course-1-en:bank:C1_Section10:item:C1_S10_00068",
           "k/signed-sum",
-          "k/signed-subtract"
+          "k/signed-subtract",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00012",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00056",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00073"
         ],
         "sourceIds": [
           "course-1-en:bank:C1_Section10:item:C1_S10_00068",
@@ -1503,7 +1532,11 @@
           "course-87-en:item:SN870331",
           "course-87-en:item:SN870366",
           "course-87-en:item:SN870367",
-          "course-87-en:item:SN870363"
+          "course-87-en:item:SN870363",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00012",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00056",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00073",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00079"
         ]
       },
       {
@@ -1932,14 +1965,21 @@
         "prerequisites": "Multiply independent probabilities",
         "selectors": [
           "c/94.2",
-          "k/spinner-twice"
+          "k/spinner-twice",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00033",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00080"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-94.2",
           "course-1-en:authored:M2-4dea1de3dcfa-2",
           "algebra-half-en:authored:M3-114-2",
           "algebra-2-en:authored:M6-116-4",
-          "course-87-en:item:SX870438"
+          "course-87-en:item:SX870438",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00013",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00033",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00080",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00081",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00034"
         ]
       },
       {
@@ -1948,11 +1988,19 @@
         "prerequisites": "Update the sample space after the first draw",
         "selectors": [
           "c/94.3",
-          "m/counting:probability"
+          "m/counting:probability",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00013",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00081",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00034"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-94.3",
-          "algebra-2-en:authored:M5-counting-probability"
+          "algebra-2-en:authored:M5-counting-probability",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00013",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00033",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00080",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00081",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00034"
         ]
       }
     ],
@@ -1975,7 +2023,11 @@
           "k/power-difference",
           "k/powers-of-ten-quotient",
           "@/course-1-en:bank:C1_Section08:item:C1_S08_00018",
-          "@/course-1-en:bank:C1_Section08:item:C1_S08_00045"
+          "@/course-1-en:bank:C1_Section08:item:C1_S08_00045",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00003",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00019",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00016",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00017"
         ],
         "sourceIds": [
           "algebra-1-en:node:242",
@@ -1992,7 +2044,17 @@
           "course-1-en:bank:C1_Section08:item:C1_S08_00020",
           "course-1-en:bank:C1_Section08:item:C1_S08_00046",
           "course-1-en:bank:C1_Section08:item:C1_S08_00018",
-          "course-1-en:bank:C1_Section08:item:C1_S08_00045"
+          "course-1-en:bank:C1_Section08:item:C1_S08_00045",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00060",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00061",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00002",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00003",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00019",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00015",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00040",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00016",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00017",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00069"
         ]
       },
       {
@@ -2139,7 +2201,8 @@
           "c/103.3",
           "k/power-ten",
           "k/mono-product",
-          "k/divide-terms"
+          "k/divide-terms",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00060"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-20.9",
@@ -2156,7 +2219,17 @@
           "course-87-en:item:SN870396",
           "course-87-en:item:SN870648",
           "course-87-en:item:SX870449",
-          "course-87-en:item:SN870650"
+          "course-87-en:item:SN870650",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00060",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00061",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00002",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00003",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00019",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00015",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00040",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00016",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00017",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00069"
         ]
       },
       {
@@ -2541,7 +2614,8 @@
           "k/function-table",
           "k/number-machine",
           "k/rule-table",
-          "k/inv-functions"
+          "k/inv-functions",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00065"
         ],
         "sourceIds": [
           "course-1-en:bank:C1_Section10:item:C1_S10_00047",
@@ -2558,7 +2632,12 @@
           "course-87-en:item:SN870808",
           "course-87-en:item:SN870763",
           "course-87-en:item:SN870772",
-          "course-87-en:item:SN870807"
+          "course-87-en:item:SN870807",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00064",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00065",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00014",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00051",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00057"
         ]
       },
       {
@@ -2906,7 +2985,10 @@
           "c/40.2",
           "r/triangle-angle",
           "k/right-triangle-x",
-          "k/isosceles-angle"
+          "k/isosceles-angle",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00027",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00078",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00066"
         ],
         "sourceIds": [
           "course-87-en:item:SN870590",
@@ -2918,7 +3000,11 @@
           "algebra-2-en:authored:M6-30-5",
           "course-87-en:item:AXG80499",
           "course-87-en:item:SN870809",
-          "course-87-en:item:SN870804"
+          "course-87-en:item:SN870804",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00066",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00010",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00027",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00078"
         ]
       },
       {
@@ -2928,7 +3014,10 @@
         "selectors": [
           "c/102.1",
           "k/parallel-zigzag",
-          "k/transversal"
+          "k/transversal",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00052",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00026",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00053"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-102.1",
@@ -2940,7 +3029,10 @@
           "course-87-en:item:SX870205",
           "course-87-en:item:SN870636",
           "course-87-en:item:SN870633",
-          "course-87-en:item:SN870638"
+          "course-87-en:item:SN870638",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00052",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00026",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00053"
         ]
       }
     ],
@@ -3510,7 +3602,17 @@
           "@/course-1-en:bank:C1_Section08:item:C1_S08_00021",
           "@/course-1-en:bank:C1_Section08:item:C1_S08_00022",
           "@/course-1-en:bank:C1_Section08:item:C1_S08_00029",
-          "@/course-1-en:bank:C1_Section08:item:C1_S08_00030"
+          "@/course-1-en:bank:C1_Section08:item:C1_S08_00030",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00005",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00021",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00022",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00030",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00031",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00086",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00087",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00088",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00054",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00067"
         ],
         "sourceIds": [
           "course-87-en:item:SX870224",
@@ -3571,7 +3673,18 @@
           "course-1-en:bank:C1_Section08:item:C1_S08_00072",
           "course-1-en:bank:C1_Section08:item:C1_S08_00028",
           "course-1-en:bank:C1_Section08:item:C1_S08_00029",
-          "course-1-en:bank:C1_Section08:item:C1_S08_00030"
+          "course-1-en:bank:C1_Section08:item:C1_S08_00030",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00005",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00021",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00022",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00067",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00030",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00031",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00086",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00087",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00088",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00054",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00084"
         ]
       },
       {
@@ -4136,7 +4249,8 @@
         "selectors": [
           "c/99.1",
           "k/pythagorean",
-          "k/inv-pythagoras"
+          "k/inv-pythagoras",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00061"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-99.1",
@@ -4148,7 +4262,17 @@
           "course-87-en:item:SN870430",
           "course-87-en:item:SN870778",
           "course-87-en:item:SMAH0406",
-          "course-87-en:item:SN870780"
+          "course-87-en:item:SN870780",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00060",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00061",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00002",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00003",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00019",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00015",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00040",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00016",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00017",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00069"
         ]
       },
       {
@@ -7012,7 +7136,8 @@
         "prerequisites": "Subtract known angles from the polygon sum",
         "selectors": [
           "c/40.2",
-          "f/quadrilateral-angle"
+          "f/quadrilateral-angle",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00010"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-40.2",
@@ -7021,7 +7146,11 @@
           "algebra-half-en:authored:M3-104-3",
           "algebra-1-en:authored:M4-97-1",
           "algebra-2-en:authored:M6-1-2",
-          "algebra-2-en:authored:M6-30-5"
+          "algebra-2-en:authored:M6-30-5",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00066",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00010",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00027",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00078"
         ]
       },
       {
@@ -7095,7 +7224,9 @@
         "prerequisites": "Use the most specific equal-side classification",
         "selectors": [
           "c/62.3",
-          "k/triangle-definitions"
+          "k/triangle-definitions",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00004",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00063"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-62.3",
@@ -7103,7 +7234,12 @@
           "course-1-en:authored:M2-9484f27d079c-2",
           "algebra-half-en:authored:M3-104-2",
           "algebra-1-en:authored:M4-2-5",
-          "course-87-en:item:SMAH0349"
+          "course-87-en:item:SMAH0349",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00062",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00063",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00004",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00020",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00076"
         ]
       },
       {
@@ -7112,7 +7248,8 @@
         "prerequisites": "Compare largest angle with a right angle",
         "selectors": [
           "c/62.1",
-          "k/triangle-classify"
+          "k/triangle-classify",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00062"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-62.1",
@@ -7120,7 +7257,12 @@
           "course-1-en:authored:M2-9484f27d079c-1",
           "algebra-half-en:authored:M3-104-1",
           "algebra-1-en:authored:M4-2-4",
-          "course-87-en:item:SN870339"
+          "course-87-en:item:SN870339",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00062",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00063",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00004",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00020",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00076"
         ]
       },
       {
@@ -7268,7 +7410,8 @@
         "selectors": [
           "c/61.1",
           "k/parallelogram-area",
-          "@/course-1-en:bank:C1_Section08:item:C1_S08_00015"
+          "@/course-1-en:bank:C1_Section08:item:C1_S08_00015",
+          "@/course-1-en:bank:C1_Section10:item:C1_S10_00036"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-61.1",
@@ -7280,7 +7423,10 @@
           "course-87-en:item:SN870327",
           "course-1-en:bank:C1_Section08:item:C1_S08_00001",
           "course-1-en:bank:C1_Section08:item:C1_S08_00014",
-          "course-1-en:bank:C1_Section08:item:C1_S08_00015"
+          "course-1-en:bank:C1_Section08:item:C1_S08_00015",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00036",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00037",
+          "course-1-en:bank:C1_Section10:item:C1_S10_00038"
         ]
       },
       {

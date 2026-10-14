@@ -111228,5 +111228,1799 @@
     ],
     "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
     "samplePrompt": "The frequency table below shows the enrollment of 707 students in foreign-language courses at a middle school. The school estimates that enrollment will increase next year to 803. Use the relative frequency to estimate how many students will enroll in German next year. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00036",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00036",
+    "bankId": "course-1-en",
+    "topic": "area",
+    "action": "Formula and area of a parallelogram",
+    "recipe": "c1-formulas",
+    "family": "structured-port87",
+    "title": "Formula and area of a parallelogram",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:b6e210a5eb83dea6",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "area-shape-formulas",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the formula for the area of a parallelogram. Then use it to find the area of a parallelogram whose base is 16 inches and height is 7 inches, in square inches. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00037",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00037",
+    "bankId": "course-1-en",
+    "topic": "perimeter",
+    "action": "Formula and perimeter of a triangle",
+    "recipe": "c1-formulas",
+    "family": "structured-port87",
+    "title": "Formula and perimeter of a triangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:b6e210a5eb83dea6",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "area-shape-formulas",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the formula for the perimeter of a triangle. Then use it to find the perimeter of a triangle whose sides are 9 yards, 5 yards, and 10 yards, in yards. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00038",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00038",
+    "bankId": "course-1-en",
+    "topic": "area",
+    "action": "Formula and area of a square",
+    "recipe": "c1-formulas",
+    "family": "structured-port87",
+    "title": "Formula and area of a square",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:b6e210a5eb83dea6",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "area-shape-formulas",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the formula for the area of a square. Then use it to find the area of a square whose sides are 8 centimeters long, in square centimeters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00060",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00060",
+    "bankId": "course-1-en",
+    "topic": "powers-roots",
+    "action": "Multiply powers of ten",
+    "recipe": "c1-exp-order",
+    "family": "structured-port87",
+    "title": "Multiply powers of ten",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:a3c7aa6ac1639b26",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 10\u2075 \u00b7 10\u2075. Write the answer as a power of 10."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00061",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00061",
+    "bankId": "course-1-en",
+    "topic": "powers-roots",
+    "action": "Find c from a\u00b2 + b\u00b2 = c\u00b2",
+    "recipe": "c1-exp-order",
+    "family": "structured-port87",
+    "title": "Find c from a\u00b2 + b\u00b2 = c\u00b2",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:a3c7aa6ac1639b26",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If 3\u00b2 + 4\u00b2 = c\u00b2, then c equals Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00002",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00002",
+    "bankId": "course-1-en",
+    "topic": "expressions",
+    "action": "Order of operations with a square, a root and a product",
+    "recipe": "c1-exp-order",
+    "family": "structured-port87",
+    "title": "Order of operations with a square, a root and a product",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:a3c7aa6ac1639b26",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 7\u00b2 \u2212 \u221a16 \u2212 3 \u00d7 6 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00003",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00003",
+    "bankId": "course-1-en",
+    "topic": "powers-roots",
+    "action": "A mixed number raised to a power",
+    "recipe": "c1-exp-order",
+    "family": "structured-port87",
+    "title": "A mixed number raised to a power",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:a3c7aa6ac1639b26",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (3 3/4)\u00b2 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00019",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00019",
+    "bankId": "course-1-en",
+    "topic": "powers-roots",
+    "action": "A fraction raised to a power",
+    "recipe": "c1-exp-order",
+    "family": "structured-port87",
+    "title": "A fraction raised to a power",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:a3c7aa6ac1639b26",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (5/6)\u00b2 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00015",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00015",
+    "bankId": "course-1-en",
+    "topic": "number-representation",
+    "action": "Standard notation from powers of ten",
+    "recipe": "c1-exp-order",
+    "family": "structured-port87",
+    "title": "Standard notation from powers of ten",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:a3c7aa6ac1639b26",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 5 \u00d7 10\u2075 + 4 \u00d7 10\u2074 in standard notation. Enter the number without commas. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00040",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00040",
+    "bankId": "course-1-en",
+    "topic": "number-representation",
+    "action": "Expanded notation with exponents",
+    "recipe": "c1-exp-order",
+    "family": "structured-port87",
+    "title": "Expanded notation with exponents",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:a3c7aa6ac1639b26",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "expanded"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 4321 in expanded notation using exponents, for example 3 \u00d7 10\u00b3 + 2 \u00d7 10\u00b2 + 5 \u00d7 10\u00b9 + 1 \u00d7 10\u2070."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00016",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00016",
+    "bankId": "course-1-en",
+    "topic": "powers-roots",
+    "action": "A square minus a square root",
+    "recipe": "c1-exp-order",
+    "family": "structured-port87",
+    "title": "A square minus a square root",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:a3c7aa6ac1639b26",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 9\u00b2 \u2212 \u221a81 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00017",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00017",
+    "bankId": "course-1-en",
+    "topic": "powers-roots",
+    "action": "A square root plus a power",
+    "recipe": "c1-exp-order",
+    "family": "structured-port87",
+    "title": "A square root plus a power",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:a3c7aa6ac1639b26",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: \u221a16 + 3\u00b2 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00069",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00069",
+    "bankId": "course-1-en",
+    "topic": "expressions",
+    "action": "Order of operations with an exponent",
+    "recipe": "c1-exp-order",
+    "family": "structured-port87",
+    "title": "Order of operations with an exponent",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:a3c7aa6ac1639b26",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      },
+      {
+        "trackId": "exponent-laws",
+        "level": 1
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 13 + 6 \u00d7 2 \u2212 3\u00b2 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00062",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00062",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Classify a triangle by its angles",
+    "recipe": "c1-tri-classify",
+    "family": "structured-port87",
+    "title": "Classify a triangle by its angles",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:8a17413168122879",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "triangle-properties",
+        "level": 1
+      },
+      {
+        "trackId": "triangle-properties",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Classify triangle PQR by its angles: acute, right, or obtuse."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00063",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00063",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Which triangle is equilateral",
+    "recipe": "c1-tri-classify",
+    "family": "structured-port87",
+    "title": "Which triangle is equilateral",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:8a17413168122879",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "triangle-properties",
+        "level": 1
+      },
+      {
+        "trackId": "triangle-properties",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which of these triangles appears to be equilateral? Answer with the letter."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00004",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00004",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Classify a triangle by its sides",
+    "recipe": "c1-tri-classify",
+    "family": "structured-port87",
+    "title": "Classify a triangle by its sides",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:8a17413168122879",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "triangle-properties",
+        "level": 1
+      },
+      {
+        "trackId": "triangle-properties",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Classify the triangle as equilateral, isosceles, or scalene."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00020",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00020",
+    "bankId": "course-1-en",
+    "topic": "perimeter",
+    "action": "Perimeter of an obtuse triangle",
+    "recipe": "c1-tri-classify",
+    "family": "structured-port87",
+    "title": "Perimeter of an obtuse triangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:8a17413168122879",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "triangle-properties",
+        "level": 1
+      },
+      {
+        "trackId": "triangle-properties",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the perimeter of the obtuse triangle, in centimeters. Dimensions are in centimeters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00076",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00076",
+    "bankId": "course-1-en",
+    "topic": "perimeter",
+    "action": "Perimeter of an equilateral triangle",
+    "recipe": "c1-tri-classify",
+    "family": "structured-port87",
+    "title": "Perimeter of an equilateral triangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:8a17413168122879",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "triangle-properties",
+        "level": 1
+      },
+      {
+        "trackId": "triangle-properties",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the perimeter, in centimeters, of an equilateral triangle if one of its sides is 24 centimeters long? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00005",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00005",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Thirds, sixths and ninths as percents",
+    "recipe": "c1-to-percent2",
+    "family": "structured-port87",
+    "title": "Thirds, sixths and ninths as percents",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:6b47de9058fac826",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Change 5/9 to a percent by multiplying by 100%."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00021",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00021",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A mixed number as a percent",
+    "recipe": "c1-to-percent2",
+    "family": "structured-port87",
+    "title": "A mixed number as a percent",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:6b47de9058fac826",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Change 4 2/5 to a percent by multiplying by 100%."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00022",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00022",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "A decimal greater than 1 as a percent",
+    "recipe": "c1-to-percent2",
+    "family": "structured-port87",
+    "title": "A decimal greater than 1 as a percent",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:6b47de9058fac826",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Change 5.54 to a percent by multiplying by 100%."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00006",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00006",
+    "bankId": "course-1-en",
+    "topic": "rates",
+    "action": "Hours times kilometers per hour",
+    "recipe": "c1-rate-mult",
+    "family": "structured-port87",
+    "title": "Hours times kilometers per hour",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:54de8894dc0e6206",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "unit-conversion",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is 2.2 hours multiplied by 150 kilometers per hour? Give the answer in kilometers. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00025",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00025",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Meters times centimeters per meter",
+    "recipe": "c1-rate-mult",
+    "family": "structured-port87",
+    "title": "Meters times centimeters per meter",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:54de8894dc0e6206",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "unit-conversion",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply 8.2 meters by 100 centimeters per meter. Express your answer in centimeters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00023",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00023",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Feet times inches per foot",
+    "recipe": "c1-rate-mult",
+    "family": "structured-port87",
+    "title": "Feet times inches per foot",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:54de8894dc0e6206",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "unit-conversion",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Multiply 4 feet by 12 inches per foot. Express your answer in inches. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00064",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00064",
+    "bankId": "course-1-en",
+    "topic": "expressions",
+    "action": "Evaluate a product of variables",
+    "recipe": "c1-functions",
+    "family": "structured-port87",
+    "title": "Evaluate a product of variables",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:47f79a4337072f48",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If a is 8 and c is 2, then 4ac equals Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00065",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00065",
+    "bankId": "course-1-en",
+    "topic": "functions",
+    "action": "Missing number in a function table",
+    "recipe": "c1-functions",
+    "family": "structured-port87",
+    "title": "Missing number in a function table",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:47f79a4337072f48",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number in the function table. x: 3, 6, 9; 4x \u2212 5: 7, 19, ? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00014",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00014",
+    "bankId": "course-1-en",
+    "topic": "functions",
+    "action": "A property a proportional graph does not have",
+    "recipe": "c1-functions",
+    "family": "structured-port87",
+    "title": "A property a proportional graph does not have",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:47f79a4337072f48",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If Sally graphs y = 2x, which characteristic will the graph NOT have? A. It passes through the origin. B. It is a straight line. C. It has a positive slope. D. It crosses the y-axis at a positive value. Answer with the letter."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00051",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00051",
+    "bankId": "course-1-en",
+    "topic": "functions",
+    "action": "Complete a function table and plot its points",
+    "recipe": "c1-functions",
+    "family": "structured-port87",
+    "title": "Complete a function table and plot its points",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:47f79a4337072f48",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "(a) Complete the function table for 3x \u2212 5 with x = 1, 2, 3, 4. (b) Plot the values of the function table as points on a coordinate grid. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00057",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00057",
+    "bankId": "course-1-en",
+    "topic": "functions",
+    "action": "Graph a proportional relationship",
+    "recipe": "c1-functions",
+    "family": "structured-port87",
+    "title": "Graph a proportional relationship",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:47f79a4337072f48",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      },
+      {
+        "trackId": "function-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Graph the proportional relationship y = 0.5x. Then list three characteristics of the graph. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00052",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00052",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Relationship between two angles at parallel lines",
+    "recipe": "c1-transversals",
+    "family": "structured-port87",
+    "title": "Relationship between two angles at parallel lines",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:1591cd5dfd55b1a7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-measures",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the relationship between angle 1 and angle 8? Lines a and b are parallel."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00026",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00026",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Angle measure at parallel lines",
+    "recipe": "c1-transversals",
+    "family": "structured-port87",
+    "title": "Angle measure at parallel lines",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:1591cd5dfd55b1a7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-measures",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Lines p and q are parallel and the measure of angle 8 is 102\u00b0. Find the measure of angle 5, in degrees. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00053",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00053",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "The corresponding angle",
+    "recipe": "c1-transversals",
+    "family": "structured-port87",
+    "title": "The corresponding angle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:1591cd5dfd55b1a7",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-measures",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Lines m and n are parallel. Which angle corresponds to angle 4? Give its number. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00066",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00066",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "The other acute angle of a right triangle",
+    "recipe": "c1-angle-sums",
+    "family": "structured-port87",
+    "title": "The other acute angle of a right triangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:9653e516da65253f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-measures",
+        "level": 1
+      },
+      {
+        "trackId": "polygon-angle-sums",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If x measures 29\u00b0, what is the measure of y, in degrees? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00010",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00010",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Missing angle of a quadrilateral",
+    "recipe": "c1-angle-sums",
+    "family": "structured-port87",
+    "title": "Missing angle of a quadrilateral",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:9653e516da65253f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-measures",
+        "level": 1
+      },
+      {
+        "trackId": "polygon-angle-sums",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the measure of the missing angle of the quadrilateral, in degrees. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00027",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00027",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Missing angle of a triangle",
+    "recipe": "c1-angle-sums",
+    "family": "structured-port87",
+    "title": "Missing angle of a triangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:9653e516da65253f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-measures",
+        "level": 1
+      },
+      {
+        "trackId": "polygon-angle-sums",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the measure of the missing angle of the triangle, in degrees. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00078",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00078",
+    "bankId": "course-1-en",
+    "topic": "angles",
+    "action": "Top angle of an isosceles triangle",
+    "recipe": "c1-angle-sums",
+    "family": "structured-port87",
+    "title": "Top angle of an isosceles triangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:9653e516da65253f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-measures",
+        "level": 1
+      },
+      {
+        "trackId": "polygon-angle-sums",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Triangle PQR is an isosceles triangle. Angles Q and R each measure 47\u00b0. What is the measure of angle P, in degrees? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00067",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00067",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Which form is not equivalent to a percent",
+    "recipe": "c1-fdp",
+    "family": "structured-port87",
+    "title": "Which form is not equivalent to a percent",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:ab02156c8407834d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "35% is NOT equivalent to which of these: 7/20, 35/100, 0.35, or 0.035?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00030",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00030",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "The decimal in a fraction-decimal-percent table",
+    "recipe": "c1-fdp",
+    "family": "structured-port87",
+    "title": "The decimal in a fraction-decimal-percent table",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:ab02156c8407834d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the decimal that completes the table row: fraction in lowest terms 19/20; percent 95%; decimal ? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00031",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00031",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "The fraction in a fraction-decimal-percent table",
+    "recipe": "c1-fdp",
+    "family": "structured-port87",
+    "title": "The fraction in a fraction-decimal-percent table",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:ab02156c8407834d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the fraction in lowest terms that completes the table row: fraction ?; percent 66%; decimal 0.66 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00086",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00086",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Fraction and percent from a decimal",
+    "recipe": "c1-fdp",
+    "family": "structured-port87",
+    "title": "Fraction and percent from a decimal",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:ab02156c8407834d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Complete the table row: decimal 0.25. Give (a) the fraction in lowest terms and (b) the percent, as a number of percent. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00087",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00087",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Fraction and decimal from a percent",
+    "recipe": "c1-fdp",
+    "family": "structured-port87",
+    "title": "Fraction and decimal from a percent",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:ab02156c8407834d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Complete the table row: percent 80%. Give (a) the fraction or mixed number in lowest terms and (b) the decimal. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00088",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00088",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Decimal and percent from a fraction",
+    "recipe": "c1-fdp",
+    "family": "structured-port87",
+    "title": "Decimal and percent from a fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:ab02156c8407834d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Complete the table row: fraction 2 1/2. Give (a) the decimal and (b) the percent, as a number of percent. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00054",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00054",
+    "bankId": "course-1-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Fraction, decimal and percent for hundredths",
+    "recipe": "c1-fdp",
+    "family": "structured-port87",
+    "title": "Fraction, decimal and percent for hundredths",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:ab02156c8407834d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Complete the table row for the fraction 91/100. Give the fraction in lowest terms, the decimal, and the percent as a number of percent. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00084",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00084",
+    "bankId": "course-1-en",
+    "topic": "number-order",
+    "action": "Order a fraction, a negative integer and a decimal",
+    "recipe": "c1-fdp",
+    "family": "structured-port87",
+    "title": "Order a fraction, a negative integer and a decimal",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:ab02156c8407834d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-conversions",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Arrange in order from least to greatest: 3/5, \u22122, 0.3. Separate them with commas."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00012",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00012",
+    "bankId": "course-1-en",
+    "topic": "integers",
+    "action": "Add a positive and a negative integer",
+    "recipe": "c1-integers2",
+    "family": "structured-port87",
+    "title": "Add a positive and a negative integer",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:752fea7df4123b89",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 1
+      },
+      {
+        "trackId": "integer-arithmetic",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (+14) + (\u221216) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00056",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00056",
+    "bankId": "course-1-en",
+    "topic": "integers",
+    "action": "Add two negative integers",
+    "recipe": "c1-integers2",
+    "family": "structured-port87",
+    "title": "Add two negative integers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:752fea7df4123b89",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 1
+      },
+      {
+        "trackId": "integer-arithmetic",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (\u22125) + (\u221224) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00073",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00073",
+    "bankId": "course-1-en",
+    "topic": "integers",
+    "action": "Subtract a negative integer",
+    "recipe": "c1-integers2",
+    "family": "structured-port87",
+    "title": "Subtract a negative integer",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:752fea7df4123b89",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 1
+      },
+      {
+        "trackId": "integer-arithmetic",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: \u22122 \u2212 (\u22126) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00079",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00079",
+    "bankId": "course-1-en",
+    "topic": "integers",
+    "action": "Temperature rise from below zero",
+    "recipe": "c1-integers2",
+    "family": "structured-port87",
+    "title": "Temperature rise from below zero",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:752fea7df4123b89",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 1
+      },
+      {
+        "trackId": "integer-arithmetic",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "At midnight the temperature was \u221213\u00b0F. By 8 a.m. the temperature had risen to 11\u00b0F. How many degrees had the temperature risen? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00013",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00013",
+    "bankId": "course-1-en",
+    "topic": "probability",
+    "action": "Two draws without replacement",
+    "recipe": "c1-compound",
+    "family": "structured-port87",
+    "title": "Two draws without replacement",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:b8b48f1366b3e00e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 2
+      },
+      {
+        "trackId": "probability-events",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A bag contains 8 blue marbles and 4 green marbles. One marble is drawn at random and not replaced. Then a second marble is drawn. Find the probability of drawing a green marble then a blue marble. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00033",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00033",
+    "bankId": "course-1-en",
+    "topic": "probability",
+    "action": "A coin and a number cube",
+    "recipe": "c1-compound",
+    "family": "structured-port87",
+    "title": "A coin and a number cube",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:b8b48f1366b3e00e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 2
+      },
+      {
+        "trackId": "probability-events",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A coin is tossed and a number cube is rolled. Find the probability that the coin shows heads and the number cube shows a one. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00080",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00080",
+    "bankId": "course-1-en",
+    "topic": "probability",
+    "action": "The same event on two rolls",
+    "recipe": "c1-compound",
+    "family": "structured-port87",
+    "title": "The same event on two rolls",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:b8b48f1366b3e00e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 2
+      },
+      {
+        "trackId": "probability-events",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the probability of rolling a number less than 3 twice with two rolls of a number cube? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00081",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00081",
+    "bankId": "course-1-en",
+    "topic": "probability",
+    "action": "Both marbles the same colour without replacement",
+    "recipe": "c1-compound",
+    "family": "structured-port87",
+    "title": "Both marbles the same colour without replacement",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:b8b48f1366b3e00e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 2
+      },
+      {
+        "trackId": "probability-events",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A bag contains 3 red, 5 white, and 4 blue marbles. If one marble is drawn and not replaced and another marble is drawn, what is the probability that both marbles will be white? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00034",
+    "providerSourceId": "course-1-en:bank:C1_Section10:item:C1_S10_00034",
+    "bankId": "course-1-en",
+    "topic": "probability",
+    "action": "Two cards without replacement",
+    "recipe": "c1-compound",
+    "family": "structured-port87",
+    "title": "Two cards without replacement",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section10:scope:b8b48f1366b3e00e",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 2
+      },
+      {
+        "trackId": "probability-events",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Two cards are drawn without replacement from a shuffled deck of 52 cards. Find the probability that they are both hearts. Enter a fraction in lowest terms (or an integer)."
   }
 ]
