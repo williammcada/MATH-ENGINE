@@ -528,6 +528,19 @@ function histogramFigure(cats,vals,title,yLabel,top,step){const W=380,H=250,x0=5
  return svg(b,`${title}: histogram of ${cats.map((c,i)=>c+' '+vals[i]).join(', ')}`,W,H);}
 const SEG_LETTERS=[['A','B','C'],['P','Q','R'],['X','Y','Z'],['D','E','F'],['L','M','N']];
 const twoLetters=s=>String(s).toUpperCase().replace(/[^A-Z]/g,'');
+// ---------- Course 1, Batch C1-3 helpers ----------
+const PLACE_NAMES=['ones','tens','hundreds','thousands','ten thousands','hundred thousands','millions','ten millions','hundred millions','billions','ten billions','hundred billions','trillions'];
+// A line graph through (x, y) points with labelled axes.
+function lineGraph(xs,ys,o){const W=400,H=260,x0=56,y0=210,w=W-x0-24,h=170,X=v=>x0+w*(v-o.xmin)/(o.xmax-o.xmin),Y=v=>y0-h*(v-o.ymin)/(o.ymax-o.ymin);let b=tx(W/2,18,o.title,{size:14});
+ for(let v=o.ymin;v<=o.ymax+1e-9;v+=o.ystep)b+=ln(x0,Y(v),x0+w,Y(v),{color:'#c9d3d6',w:1})+tx(x0-8,Y(v)+4,o.yfmt?o.yfmt(v):String(v),{size:11,anchor:'end'});
+ for(let v=o.xmin;v<=o.xmax+1e-9;v+=o.xstep)b+=ln(X(v),y0,X(v),y0+5,{w:1})+tx(X(v),y0+18,o.xfmt?o.xfmt(v):String(v),{size:11});
+ b+=ln(x0,y0,x0+w,y0,{w:1.5})+ln(x0,y0,x0,y0-h-6,{w:1.5})+tx(x0+w/2,y0+38,o.xLabel,{size:12})+`<text x="14" y="${y0-h/2}" font-size="12" text-anchor="middle" transform="rotate(-90 14 ${y0-h/2})" fill="${INK}">${esc(o.yLabel)}</text>`;
+ b+=`<polyline points="${xs.map((x,i)=>X(x).toFixed(1)+','+Y(ys[i]).toFixed(1)).join(' ')}" fill="none" stroke="${INK}" stroke-width="2"/>`+(o.dots?xs.map((x,i)=>dot(X(x),Y(ys[i]))).join(''):'');
+ return svg(b,o.label,W,H+12);}
+// A number line from lo to hi (whole numbers labelled) with lettered points at given values.
+function letteredLine(lo,hi,sub,points,label){const W=440,x0=30,base=50,X=v=>x0+(v-lo)*(W-60)/(hi-lo);let b=ln(12,base,W-12,base,{start:1,end:1});
+ for(let k=0;k<=(hi-lo)*sub;k++){const v=lo+k/sub,whole=k%sub===0;b+=ln(X(v),base-(whole?7:4),X(v),base+(whole?7:4),{w:whole?1.4:1});if(whole)b+=tx(X(v),base+22,minus(v),{size:12});}
+ points.forEach(([L,v])=>{b+=dot(X(v),base)+tx(X(v),base-12,L,{italic:1,size:14});});return svg(b,label,W,base+32);}
 // ---------- tasks ----------
 const LETTERS='ABCDEGHJKMNPQRSTUVWXYZ';
 function letter(int,ban=''){const pool=[...LETTERS].filter(c=>!ban.includes(c));return pool[int(0,pool.length-1)];}
@@ -2423,6 +2436,179 @@ case 'c1-data':{const v=c.variant;
  // draw a bar graph of tallied lunch votes
  let f;do{f=Array.from({length:5},()=>5*int(1,12));}while(f.reduce((x,y)=>x+y,0)!==150);const foods=['Pizza','Hot Dog','Pot Pie','Burger','Nuggets'];
  t=teacher(`A class surveyed favorite lunches. The tallies give these counts: ${foods.map((x,i)=>x+' '+f[i]).join(', ')}. Draw a bar graph that displays the results of the survey.`,`Bars: ${foods.map((x,i)=>x+' '+f[i]).join('; ')}.`,['One bar for each lunch, labelled.','A numbered scale with equal steps (for example by 5 or 10).',`Bar heights match ${f.join(', ')}.`],{f},'',barGraph(foods,f,'Favorite Lunches','Votes',60,10));break;}
+// ---------- Course 1, Batch C1-3: Lessons 12-19 ----------
+case 'c1-place':{const v=c.variant;
+ if(v==='digit-in-place'){const len=int(10,12),d=[int(1,9),...Array.from({length:len-1},()=>int(0,9))],N=Number(d.join('')),k=int(3,Math.min(len-2,11)),dig=i=>d[len-1-i],z=dig(k);
+  t=n(`Which digit is in the ${PLACE_NAMES[k].replace(' ','-')} place in ${comma(N)}?`,z,`From the right, the places are ones, tens, hundreds, ...; the ${PLACE_NAMES[k]} digit is ${z}.`,{d,k});
+  t.choices=wrongOnly(t,[{value:dig(k+1),mistake:'Counted one place too far to the left'},{value:dig(k-1),mistake:'Counted one place too few'},{value:dig(k+2),mistake:'Counted two places too far to the left'},{value:dig(k-2),mistake:'Counted two places too few'},{value:dig(k+3),mistake:'Counted three places too far to the left'},{value:dig(k-3),mistake:'Counted three places too few'},{value:(z+1)%10,mistake:'Read the wrong digit'},{value:(z+2)%10,mistake:'Read the wrong digit'}].filter(x=>x.value!==undefined));break;}
+ if(v==='decimal'){const d=[1,2,3,4,5,6,7,8,9];for(let i=8;i>0;i--){const j=int(0,i);[d[i],d[j]]=[d[j],d[i]];}const s=`${d[0]}${d[1]},${d[2]}${d[3]}${d[4]}.${d[5]}${d[6]}${d[7]}`,places=[['ten thousands',0,null],['thousands',1,7],['hundreds',2,6],['tens',3,5],['tenths',5,3],['hundredths',6,2]],[pl,at,mirror]=pick(places);
+  t=n(`Which digit in ${s} is in the ${pl} place?`,d[at],`Read the places from the decimal point: the ${pl} digit is ${d[at]}.`,{s,pl});
+  t.choices=wrongOnly(t,[...(mirror!==null?[{value:d[mirror],mistake:'Confused a whole-number place with the matching decimal place'}]:[]),{value:d[at+1]===undefined?d[at-1]:d[at+1],mistake:'Counted one place too far'},{value:at>0?d[at-1]:d[at+2],mistake:'Counted one place too few'},{value:d[7],mistake:'Chose the last digit'},{value:d[4],mistake:'Chose the ones digit'}]);break;}
+ if(v==='place-name'){const w1=int(0,2),w2=int(0,2),w3=int(0,3),A=[[3,4,5],[4,5,3],[5,3,4]][w1],lo=[0,1,2],hi=[6,7,8,9],r3=k=>hi[(w3+k)%4],r2=k=>lo[(w2+k)%3];
+  const d=[A[0],r2(0),r3(0),A[1],r2(1),r3(1),A[2],r2(2),r3(2),r2(0),r3(1),r3(3),r2(1)],N=d.join(''),which=int(0,2),digit=A[which],name=['trillions','billions','millions'][which];
+  t=text(`Find the place value of the digit ${digit} in the number ${comma(N)}. Name the place.`,name,`Group the digits by threes from the right: ${digit} is in the ${name} place.`,{N,digit},'',[name.replace(/s$/,''),name+' place',name.replace(/s$/,'')+' place','one '+name,'ones of '+name]);
+  t.choices=['trillions','billions','millions','thousands'].filter(x=>x!==name).slice(0,3).map(x=>({value:x,mistake:'Grouped the digits from the wrong end or miscounted the periods'}));break;}
+ // place of the only zero in a six-digit number
+ const k=int(1,4),d=Array.from({length:6},(_,i)=>i===5-k?0:int(1,9)),N=Number(d.join('')),name=PLACE_NAMES[k];
+ t=text(`The zero holds what place in ${comma(N)}?`,name,`Counting places from the right, the zero is in the ${name} place.`,{N,k},'',[name+' place',name.replace(' ','-'),name.replace(' ','-')+' place',name.replace(/s$/,''),name.replace(/s$/,'')+' place']);
+ t.choices=[k+1,k-1,k===1?3:k+2].map(j=>({value:PLACE_NAMES[j],mistake:j>k?'Counted one place too many from the right':'Counted one place too few from the right'}));break;}
+case 'c1-numeral':{const v=c.variant;
+ if(v==='standard'){let g;do{g=[int(1,9),int(0,999),int(0,999),int(0,999)];if(int(0,2)===0)g[int(1,3)]=0;}while(g.slice(1).filter(x=>x>=100&&x%100>=10).length<2);const N=g[0]*1e9+g[1]*1e6+g[2]*1e3+g[3],names=['billion','million','thousand',''];
+  const wordsN=g.map((x,i)=>x?words(x)+(names[i]?' '+names[i]:''):'').filter(Boolean).join(', ');
+  const sw=x=>{const s=String(x).padStart(3,'0');return Number(s[0]+s[2]+s[1]);},alt1=g[0]*1e9+sw(g[1])*1e6+g[2]*1e3+g[3],alt2=g[0]*1e9+g[1]*1e6+g[2]*1e3+sw(g[3]),alt3=g[0]*1e9+g[1]*1e6+sw(g[2])*1e3+g[3];
+  t=n(`Write the numeral for ${wordsN}.`,N,`Write each period with three digits: ${comma(N)}.`,{g},'numbers');t.answer.display=comma(N);
+  t.choices=distinct(comma(N),[{value:comma(alt1),mistake:'Swapped two digits in the millions period'},{value:comma(alt2),mistake:'Swapped two digits in the last period'},{value:comma(alt3),mistake:'Swapped two digits in the thousands period'},{value:comma(N+9e5),mistake:'Wrote a digit in the wrong place'},{value:comma(N+1e7),mistake:'Wrote the wrong digit in the ten-millions place'},{value:comma(N+1e3),mistake:'Wrote the wrong digit in the thousands place'}]);break;}
+ if(v==='to-words'){const pat=pick([[1,7],[1,6],[3,6],[25,4],[4,5],[12,6],[2,9],[40,6]]),N=pat[0]*10**pat[1],w=words(N);
+  t=text(`Write ${comma(N)} in word form.`,w,`${comma(N)} is ${w}.`,{N},'',[w.replace(/-/g,' '),w.replace(/,/g,'')]);
+  t.choices=[[N*10,'Counted one zero too many'],[N/10,'Counted one zero too few'],[N*1000,'Used the wrong period name']].filter(([x])=>Number.isInteger(x)&&x>=1).map(([x,m])=>({value:words(x),mistake:m}));break;}
+ // product given in words
+ const th=int(2,9),u=10*int(1,9),a=1000*th+u,b=10*int(2,9)+int(1,9),z=a*b;
+ t=n(`What is the product of ${words(a)} and ${words(b)}?`,z,`${comma(a)} × ${b} = ${comma(z)}.`,{a,b});t.answer.display=comma(z);
+ t.choices=distinct(comma(z),[{value:comma((100*th+u)*b),mistake:`Wrote ${words(a)} as ${100*th+u}`},{value:comma(a*(10*(b%10)+Math.floor(b/10))),mistake:'Reversed the digits of the second number'},{value:comma(z-10*b),mistake:'Multiplication slip'},{value:comma(z+100*b),mistake:'Multiplication slip in the hundreds'}]);break;}
+case 'c1-words-ops':{const v=c.variant;
+ if(v==='prod-minus-sum3'){const a=int(1,7),P=a*(a+1)*(a+2),S=3*a+3,z=P-S;
+  t=n(`What is the difference between the product of ${a}, ${a+1}, and ${a+2} and the sum of ${a}, ${a+1}, and ${a+2}?`,z,`Product ${P}, sum ${S}; ${P} − ${S} = ${z}.`,{a});
+  t.choices=distinct(z,[{value:P+S,mistake:'Added the product and the sum'},{value:z+1,mistake:'Arithmetic slip'},{value:z+10,mistake:'Arithmetic slip in the tens'},{value:P,mistake:'Gave only the product'}]);break;}
+ if(v==='prod-minus-sum2'){const same=int(0,1)===1,a=int(2,10),b=int(2,10),c2=same?a:int(5,20),d=same?b:int(2,10),P=c2*d,S=a+b,z=P-S;
+  t=n(same?`What is the difference when the sum of ${a} and ${b} is subtracted from the product of ${a} and ${b}?`:`What is the difference when the sum of ${a} and ${b} is subtracted from the product of ${c2} and ${d}?`,z,`Product ${P}, sum ${S}: ${P} − ${S} = ${z}.`,{a,b,c:c2,d});
+  t.choices=distinct(z,[{value:P,mistake:'Gave only the product'},{value:S,mistake:'Gave only the sum'},{value:z+Math.min(a,b),mistake:'Arithmetic slip'},{value:P+S,mistake:'Added the product and the sum'}]);break;}
+ if(v==='sum-div-diff'){let a,b,d;do{d=pick([2,2,3,4,6]);b=int(2,14);a=b+d;}while((a+b)%d);const S=a+b,z=S/d;
+  t=n(`What is the quotient when the sum of ${a} and ${b} is divided by the difference of ${a} and ${b}?`,z,`Sum ${S}, difference ${d}: ${S} ÷ ${d} = ${z}.`,{a,b});
+  t.choices=distinct(z,[{value:S-d,mistake:'Subtracted instead of dividing'},{value:S*d,mistake:'Multiplied instead of dividing'},{value:S,mistake:'Gave only the sum'}]);break;}
+ const a=int(1,9),b=int(1,9),S=R(a+b,10),Pp=R(a*b,100),z=M.op('sub',S,Pp);
+ t=n(`What is the difference when the product of ${decStr(R(a,10))} and ${decStr(R(b,10))} is subtracted from the sum of ${decStr(R(a,10))} and ${decStr(R(b,10))}?`,z,`Sum ${decStr(S)}, product ${decStr(Pp)}: ${decStr(S)} − ${decStr(Pp)} = ${decStr(z)}.`,{a,b},'decimal');
+ t.choices=distinct(decStr(z),[{value:decStr(Pp),mistake:'Gave only the product'},{value:decStr(S),mistake:'Gave only the sum'},...(a*b<a+b?[{value:decStr(M.op('sub',S,R(a*b,10))),mistake:'Placed the decimal point wrongly in the product'}]:[]),{value:decStr(M.op('add',S,Pp)),mistake:'Added the product instead of subtracting it'}]);break;}
+case 'c1-elapsed':{const v=c.variant;
+ if(v==='heights'){const h1=100*int(1,6),t1=10*int(1,7),h2=100*int(h1/100+1,9),t2=10*int(t1/10+1,9),a=1000+h1+t1+int(0,9),b=h2+t2,z=a-b;
+  t=n(`The height of one building is ${a} feet. The height of a second building is ${b} feet. What is the difference, in feet, in their heights?`,z,`${a} − ${b} = ${z}.`,{a,b});
+  t.choices=distinct(z,[{value:z+pick([-10,10]),mistake:'Regrouping slip in the tens'},{value:z+pick([-100,100]),mistake:'Regrouping slip in the hundreds'},{value:z+110,mistake:'Did not reduce the hundreds or the tens after regrouping'}]);break;}
+ if(v==='decades'||v==='decades-large'){let Y,k;if(v==='decades'){Y=int(1995,2005);k=int(3,10);}else{do{Y=1000+100*int(5,8)+10*int(1,5)+int(1,9);k=10*int(2,7)+int(1,5);}while(Y-10*k<1000);}const z=Y-10*k;
+  t=n(`In ${Y}, what year would it have been ${k} decades ago?`,z,`${k} decades is ${10*k} years: ${Y} − ${10*k} = ${z}.`,{Y,k});
+  t.choices=distinct(z,v==='decades'?[{value:z+pick([-10,10]),mistake:'Counted one decade too many or too few'},{value:Y-k,mistake:'Used years instead of decades'},{value:Y-100*k,mistake:'Used centuries instead of decades'}]:[{value:Y-k,mistake:'Used years instead of decades'},{value:Y+k,mistake:'Added years instead of subtracting decades'},{value:Y+10*k,mistake:'Added instead of subtracting'}]);break;}
+ if(v==='born'){const a=int(1980,1989),b=int(1992,1999),z=b-a,[nm,rel]=pick([['Zanna','cousin'],['Omar','uncle'],['Lucy','aunt']]);
+  t=n(`${nm}'s ${rel} was born in ${a}. If ${nm} was born in ${b}, how much older, in years, is the ${rel}?`,z,`${b} − ${a} = ${z}.`,{a,b});
+  t.choices=distinct(z,[{value:z+1,mistake:'Counted one year too many'},{value:z-1,mistake:'Counted one year too few'},{value:z+2,mistake:'Subtraction slip'},{value:z+3,mistake:'Subtraction slip'}]);break;}
+ if(v==='years-between'){const a=1000+100*int(2,4)+10*int(5,9)+int(0,4),b=1000+100*int(6,8)+10*int(0,4)+int(5,9),z=b-a;
+  t=n(`How many years were there from ${a} to ${b}?`,z,`${b} − ${a} = ${z}.`,{a,b});
+  t.choices=distinct(z,[{value:z+pick([-100,100]),mistake:'Regrouping slip in the hundreds'},{value:z+pick([-10,10]),mistake:'Regrouping slip in the tens'},{value:z-110,mistake:'Regrouping slips in the tens and the hundreds'}]);break;}
+ const a=10*int(6,9)+int(0,4),b=10*int(3,4)+int(5,9),z=a-b,[p1,p2]=pick([['Bartonville','Cloverton'],['Lakeside','Hill City'],['Elm Grove','Stony Point']]);
+ t=n(`In ${p1} the high temperature was ${a}°F. On the same day the high temperature in ${p2} was ${b}°F. What was the difference, in degrees Fahrenheit, between the temperatures?`,z,`${a} − ${b} = ${z}.`,{a,b});
+ t.choices=distinct(z,[{value:noRegroup(a,b),mistake:'Subtracted the smaller digit from the larger in each column'},{value:z+10,mistake:'Did not reduce the tens after regrouping'},{value:a+b,mistake:'Added instead of subtracting'},{value:z-10,mistake:'Subtraction slip in the tens'},{value:z+1,mistake:'Subtraction slip in the ones'}]);break;}
+case 'c1-integers':{const v=c.variant;
+ if(v==='steps'){let s,k,left,z;do{s=int(-5,10);k=int(2,19);left=int(0,3)>0;z=left?s-k:s+k;}while(z<-10||z>10);const w=words(k);
+  t=n(`What number is ${w} spaces to the ${left?'left':'right'} of ${minus(s)} on the number line?`,z,`Moving ${k} to the ${left?'left':'right'} from ${minus(s)} gives ${minus(z)}.`,{s,k,left},'numbers',numberLine(-10,10,[],'A number line from −10 to 10'));
+  t.choices=wrongOnly(t,[{value:z+pick([-1,1]),mistake:'Counted the starting mark as a space'},{value:z+pick([-2,2]),mistake:'Miscounted the spaces'},{value:left?s+k:s-k,mistake:'Moved in the wrong direction'},{value:z+3,mistake:'Miscounted the spaces'},{value:z-2,mistake:'Miscounted the spaces'},{value:z+1,mistake:'Counted the starting mark as a space'}].filter(x=>x.value>=-20&&x.value<=20));break;}
+ if(v==='order'){const vals=new Set();while(vals.size<7)vals.add(int(-9,9));const xs=[...vals],s=[...xs].sort((a,b)=>a-b),show=a=>a.map(minus).join(', ');
+  t={prompt:`Order these numbers from least to greatest: ${show(xs)}. Separate them with commas.`,answer:{kind:'int-sequence',values:s,value:show(s)},solution:`Negative numbers farther from zero are less: ${show(s)}.`,parameters:{xs}};
+  t.choices=wrongOnly(t,[{value:show([...s.slice(0,4),s[6],s[5],s[4]]),mistake:'Reversed the order of the greatest numbers'},{value:show([...s.filter(x=>x<0).sort((a,b)=>b-a),...s.filter(x=>x>=0)]),mistake:'Ordered the negative numbers by their distance from zero'},{value:show([s[0],s[1],s[3],s[2],...s.slice(4)]),mistake:'Swapped two numbers'},{value:show([...s].reverse()),mistake:'Ordered from greatest to least'}]);break;}
+ if(v==='rise'){const a=int(1,15),b=int(1,15),z=a+b;
+  t=n(`The morning temperature was −${a}°. By noon the temperature was ${b}°. How many degrees had the temperature risen?`,z,`From −${a} up to 0 is ${a} degrees, and from 0 up to ${b} is ${b} more: ${z} degrees.`,{a,b});
+  t.choices=distinct(z,[{value:Math.abs(b-a)||z+2,mistake:'Subtracted the numbers without the sign'},{value:b,mistake:'Counted only from 0'},{value:a,mistake:'Counted only up to 0'},{value:z+1,mistake:'Counted one degree too many'}]);break;}
+ let a,b;do{a=-int(1,12);b=-int(1,12);}while(a===b);const sym=a>b?'>':'<';
+ t=text(`Compare: ${minus(a)} ☐ ${minus(b)}. Write >, < or =.`,sym,`${minus(a)} is ${a>b?'to the right of':'to the left of'} ${minus(b)} on the number line, so ${minus(a)} ${sym} ${minus(b)}.`,{a,b});
+ t.choices=['<','>','='].filter(x=>x!==sym).map(x=>({value:x,mistake:x==='='?'Thought the two numbers were equal':'Compared the distances from zero instead of the positions'}));break;}
+case 'c1-mult-story':{const v=c.variant,cash=z=>money(z);
+ if(v==='beads'){const a=int(301,601),b=5*int(3,15),z=a*b,[thing,nm]=pick([['beads','Petula'],['buttons','Pierce'],['pins','Dara']]);
+  t=n(`A craft store packs ${a} ${thing} in each box. ${nm} ordered ${b} boxes of ${thing}. How many ${thing} did ${nm} order?`,z,`${a} × ${b} = ${comma(z)}.`,{a,b});t.answer.display=comma(z);
+  t.choices=distinct(comma(z),[{value:comma(z+pick([-1000,1000])),mistake:'Multiplication slip in the thousands'},{value:comma(z+pick([-10,10])),mistake:'Multiplication slip in the tens'},{value:comma(z+pick([-100,100])),mistake:'Multiplication slip in the hundreds'}]);break;}
+ if(v==='calories'){const a=100*int(4,6)+10*int(3,9)+int(3,9),b=int(4,6),z=a*b,nm=pick(['Vernon','Gwen','Tariq']);
+  t=n(`${nm} eats about ${a} calories at each meal. How many calories will ${nm} eat in ${b} meals?`,z,`${a} × ${b} = ${z}.`,{a,b});
+  t.choices=distinct(z,[{value:z-100,mistake:'Forgot a carry into the hundreds'},{value:z+pick([-10,10]),mistake:'Multiplication slip in the tens'},{value:z+1000,mistake:'Carried an extra 1 into the thousands'}]);break;}
+ if(v==='rolls'){const k=int(10,40),N=50*k;
+  t=n(`If ${comma(N)} pennies are put into rolls of 50 pennies, how many rolls will be made?`,k,`${comma(N)} ÷ 50 = ${k}.`,{N});
+  t.choices=distinct(k,[{value:10*k,mistake:'Divided by 5 instead of 50'},{value:N-50,mistake:'Subtracted instead of dividing'},{value:k+1,mistake:'Division slip'}]);break;}
+ if(v==='stamps'){const p=int(29,49),n0=pick([20,25,50]),z=p*n0;
+  t=n(`The post office sold ${p}-cent stamps in sheets of ${n0} stamps. What was the price for one sheet of stamps?`,R(z,100),`${n0} × ${p}¢ = ${z}¢ = ${cash(z)}.`,{p,n:n0},'decimal');t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(10*z),mistake:'Placed the decimal point one place too far right'},{value:cash(p+n0),mistake:'Added instead of multiplying'},{value:cash(z-100),mistake:'Multiplication slip'}]);break;}
+ const k=int(4,9),p=int(51,99),T=k*p,nm=pick(['Adrianna','Felipe','June']),thing=pick(['erasers','pencils','folders']);
+ t=n(`${nm} spent ${cash(T)} on ${k} ${thing} that each cost the same. How much did each one cost?`,R(p,100),`${cash(T)} ÷ ${k} = ${cash(p)}.`,{T,k},'decimal');t.answer.display=cash(p);
+ t.choices=distinct(cash(p),[{value:cash(10*p),mistake:'Placed the decimal point one place too far right'},{value:cash(T-p),mistake:'Subtracted instead of dividing'},{value:cash(p+10),mistake:'Division slip in the dimes'}]);break;}
+case 'c1-rounding':{const v=c.variant;
+ if(v==='place'){const pl=pick([10,100,1000]);let N;do{N=pl===10?int(21,99):pl===100?int(201,9999):int(2001,99999);}while(N%pl===0||N%pl===pl/2);const z=Math.round(N/pl)*pl,other=[10,100,1000].filter(x=>x!==pl&&x<N);
+  t=n(`Round ${comma(N)} to the nearest ${{10:'ten',100:'hundred',1000:'thousand'}[pl]}.`,z,`The digit after the ${{10:'tens',100:'hundreds',1000:'thousands'}[pl]} place is ${Math.floor(N%pl/(pl/10))}, so round ${z>N?'up':'down'} to ${comma(z)}.`,{N,pl});t.answer.display=comma(z);
+  t.choices=distinct(comma(z),[...other.map(o=>({value:comma(Math.round(N/o)*o),mistake:`Rounded to the nearest ${{10:'ten',100:'hundred',1000:'thousand'}[o]} instead`})),{value:comma(z>N?z-pl:z+pl),mistake:`Rounded ${z>N?'down':'up'} instead of ${z>N?'up':'down'}`},{value:comma(Math.floor(N/pl)*pl+pl),mistake:'Always rounded up'},{value:comma(Math.floor(N/pl)*pl),mistake:'Always rounded down'},{value:comma(N),mistake:'Did not round'},{value:comma(z+pl),mistake:'Rounded one step too far'},{value:comma(z-pl),mistake:'Rounded one step too far down'}]);break;}
+ if(v==='est-product'){const on=[3,4,6,7],a=10*int(1,9)+pick(on),b=10*int(1,9)+pick(on),ra=Math.round(a/10)*10,rb=Math.round(b/10)*10,z=ra*rb,fl=x=>Math.floor(x/10)*10,ce=x=>Math.ceil(x/10)*10;
+  t=n(`Use rounded numbers to estimate the product: ${a} × ${b}.`,z,`${a} rounds to ${ra} and ${b} rounds to ${rb}: ${ra} × ${rb} = ${z}.`,{a,b});
+  t.choices=distinct(z,[{value:ce(a)*ce(b),mistake:'Rounded both numbers up'},{value:fl(a)*fl(b),mistake:'Rounded both numbers down'},{value:pick([ce(a)*fl(b),fl(a)*ce(b)]),mistake:'Rounded one number the wrong way'},{value:a*b,mistake:'Found the exact product instead of an estimate'}]);break;}
+ if(v==='est-sum'){const w=int(0,4),a=100*int(5,9)+10*[0,1,2,3,4][w]+int(3,6),b=100*int(1,4)+10*[9,8,7,6,5][w]+int(7,9),z=Math.round(a/100)*100+Math.round(b/100)*100;
+  t=n(`Use numbers rounded to the nearest hundred to estimate the sum: ${a} + ${b}.`,z,`${a} rounds to ${Math.round(a/100)*100} and ${b} rounds to ${Math.round(b/100)*100}; the estimate is ${z}.`,{a,b},'numbers',stackFigure([String(a),String(b)],'+',undefined,`${a} plus ${b}, written in columns`));
+  t.choices=distinct(z,[{value:Math.floor(a/100)*100+Math.floor(b/100)*100,mistake:'Rounded both numbers down'},{value:Math.ceil(a/100)*100+Math.ceil(b/100)*100,mistake:'Rounded both numbers up'},{value:z+pick([-200,200]),mistake:'Rounding slip'}]);break;}
+ if(v==='est-sum-thousand'){let a,b;do{a=int(1100,8899);b=int(1100,8899);}while(a%1000>=400&&a%1000<=600||b%1000>=400&&b%1000<=600||a+b>=10000);const z=Math.round(a/1000)*1000+Math.round(b/1000)*1000;
+  t=n(`Estimate the sum of ${a} and ${b} by rounding each number to the nearest thousand.`,z,`${a} → ${Math.round(a/1000)*1000}, ${b} → ${Math.round(b/1000)*1000}; ${z}.`,{a,b});
+  t.choices=distinct(z,[{value:Math.floor(a/1000)*1000+Math.floor(b/1000)*1000,mistake:'Rounded both numbers down'},{value:Math.ceil(a/1000)*1000+Math.ceil(b/1000)*1000,mistake:'Rounded both numbers up'},{value:a+b,mistake:'Found the exact sum instead of an estimate'},{value:z+1000,mistake:'Rounding slip'},{value:z-1000,mistake:'Rounding slip'}]);break;}
+ if(v==='estimate-expression'){const m=pick([2,3,4]),q=int(3,9),S=10*m*q+pick([-3,-2,-1,1,2,3]),per=10*m-1,show=(a,b)=>`${a} ÷ ${b}`;
+  t=text(`A school has ${S} seventh-grade students and about ${per} students in each class. Which division gives the best estimate of the number of classes? Write it like ${show(100,20)}.`,show(10*m*q,10*m),`Round ${S} to ${10*m*q} and ${per} to ${10*m}: ${show(10*m*q,10*m)}.`,{S,per},'',[`${10*m*q}/${10*m}`]);
+  t.choices=[{value:show(S,per),mistake:'Did not round the numbers'},{value:show(10*m*q-10,10*(m-1)),mistake:'Rounded both numbers down too far'},{value:show(10*m*q,10*(m-1)),mistake:'Rounded the class size the wrong way'}];break;}
+ // night skiers
+ const lowT=int(0,1)===1,wk=[0,1,2,3,4,5].map(i=>100*int(1,4)+10*((i%2===0)===lowT?int(1,4):int(6,9))),first=int(0,1)===1,sel=first?wk.slice(0,3):wk.slice(3),rd=x=>Math.round(x/100)*100,z=sel.map(rd).reduce((a,b)=>a+b,0);
+ t=n(`The graph shows the number of people who went night skiing over 6 weeks. Rounding each week to the nearest hundred, about how many people skied the ${first?'first':'last'} 3 weeks?`,z,`Round ${sel.join(', ')} to ${sel.map(rd).join(', ')}; the sum is ${z}.`,{wk,first},'numbers',barGraph(['1','2','3','4','5','6'].map(x=>'Week '+x),wk,'Night Skiers','People',500,100));
+ t.choices=distinct(z,[{value:sel.map(x=>Math.floor(x/100)*100).reduce((a,b)=>a+b,0),mistake:'Rounded every week down'},{value:sel.map(x=>Math.ceil(x/100)*100).reduce((a,b)=>a+b,0),mistake:'Rounded every week up'},{value:z+pick([-100,100]),mistake:'Rounding slip'},{value:sel.reduce((a,b)=>a+b,0),mistake:'Found the exact total instead of an estimate'},{value:z+200,mistake:'Rounding slip'},{value:z-200,mistake:'Rounding slip'}]);break;}
+case 'c1-fine-measure':{const v=c.variant;
+ if(v==='sixteenth'){const k=pick([1,3,5,7,9,11,13,15]),w=int(0,3),num=16*w+k,z=mixedText(num,16);
+  t=n('How long is the black bar, to the nearest sixteenth of an inch?',R(num,16),`The bar ends ${num} sixteenths past 0: ${z} inches.`,{num},'mixed',c1Ruler({unit:'in',len:4,den:16,bar:num/16,label:`An inch ruler marked in sixteenths under a bar ${z} inches long`}));
+  t.choices=distinct(z,[{value:mixedText(num+2,16),mistake:'Counted two sixteenths too many'},{value:mixedText(num-2>0?num-2:num+4,16),mistake:'Miscounted the sixteenth marks'},{value:mixedText(num+4,16),mistake:'Counted the eighth marks as sixteenths'},{value:mixedText(num+6,16),mistake:'Counted the quarter marks as sixteenths'}]);break;}
+ if(v==='halfway'){const k=pick([67,69,71,73,75,77,35,37,39,41,43,45]),z=mixedText(k,16);
+  t=n(`Find the mark that is halfway between the ${mixedText(k-1,16)} inch mark and the ${mixedText(k+1,16)} inch mark on an inch ruler.`,R(k,16),`Write both marks in sixteenths: ${k-1}/16 and ${k+1}/16. Halfway between them is ${k}/16 = ${z}.`,{k},'mixed');
+  t.choices=distinct(z,[{value:mixedText(k+2,16),mistake:'Moved past the second mark'},{value:mixedText(k-1,16),mistake:'Gave the first mark'},{value:mixedText(k-2,16),mistake:'Counted the wrong way'}]);break;}
+ if(v==='letter'){const ones=int(1,4),f=int(1,4),val=ones+f/5,pts=[val];while(pts.length<4){const x=int(0,4)+int(1,4)/5;if(pts.every(y=>Math.abs(x-y)>0.39))pts.push(x);}const L=['Q','R','S','T'],order=[0,1,2,3];for(let i=3;i>0;i--){const j=int(0,i);[order[i],order[j]]=[order[j],order[i]];}
+  const lab=pts.map((p,i)=>[L[order[i]],p]),ans=L[order[0]];
+  t=text(`Which letter represents ${ones} ${f}/5 on the number line?`,ans,`Each whole is cut into fifths; ${ones} ${f}/5 is ${f} marks past ${ones}.`,{val,pts,order},letteredLine(0,5,5,lab,`A number line from 0 to 5 marked in fifths with points ${lab.map(([l,p])=>l).join(', ')}`));
+  t.choices=lab.slice(1).map(([l,p])=>({value:l,mistake:Math.floor(p)===ones?'Counted the fifths from the wrong whole number':'Chose a point in the wrong whole-number interval'}));break;}
+ // order a mixed set
+ const neg=-int(1,3),dec=pick([1,2,3,4,6,7,8,9]),[fn,fd]=pick([[1,2],[1,4],[3,4]]),whole=int(1,3),items=[[neg,minus(neg)],[dec/10,`0.${dec}`],[fn/fd,`${fn}/${fd}`],[whole,String(whole)]].sort((a,b)=>a[0]-b[0]);
+ const show=a=>a.map(x=>x[1]).join(', '),key=show(items);
+ t=text(`Which list shows these numbers from least to greatest? ${[...items].reverse().map(x=>x[1]).join(', ')}. Write the list, separated by commas.`,key,`Negative numbers are least; compare 0.${dec}, ${fn}/${fd} and ${whole} as decimals.`,{items:items.map(x=>x[0])},'',[key.replace(/−/g,'-')]);
+ const sw=(i,j)=>{const a=[...items];[a[i],a[j]]=[a[j],a[i]];return show(a);};t.choices=[{value:sw(1,2),mistake:'Compared the decimal and the fraction incorrectly'},{value:sw(0,1),mistake:'Placed the negative number after a positive number'},{value:sw(2,3),mistake:'Compared the fraction and the whole number incorrectly'}].filter(ch=>ch.value!==key);break;}
+case 'c1-average':{const v=c.variant;
+ if(['four','six','three','story-three','story-four'].includes(v)){const nn={four:4,six:6,three:3,'story-three':3,'story-four':4}[v],[lo,hi]={four:[11,99],six:[1,12],three:[60,100],'story-three':[70,95],'story-four':[12,24]}[v];let xs;do{xs=Array.from({length:nn},()=>int(lo,hi));}while(xs.reduce((a,b)=>a+b,0)%nn);const S=xs.reduce((a,b)=>a+b,0),z=S/nn;
+  const nm=pick(['Dan','Tom','Ana','Kim']);t=n(v==='story-three'?`In three days ${nm} read ${xs[0]} pages, ${xs[1]} pages, and ${xs[2]} pages. What was the average number of pages read each day?`:v==='story-four'?`On Tuesday ${nm} read ${xs[0]} pages, on Wednesday ${xs[1]} pages, on Thursday ${xs[2]} pages, and on Friday ${xs[3]} pages. What was the average number of pages read per day?`:`What is the average of ${xs.slice(0,-1).join(', ')}, and ${xs[nn-1]}?`,z,`Sum ${S}, divided by ${nn}: ${z}.`,{xs},'numbers');
+  t.choices=distinct(z,[{value:z+1,mistake:'Division slip'},{value:z-1,mistake:'Division slip'},{value:v==='story-four'?z+10:S,mistake:v==='story-four'?'Division slip in the tens':'Found the sum but did not divide'},{value:z+2,mistake:'Addition slip before dividing'}]);break;}
+ if(v==='money-three'){let p;do{p=[int(5,9)*100+int(7,9)*10+int(1,3),int(5,9)*100+int(4,6)*10+int(4,6),int(5,9)*100+int(1,3)*10+int(7,9)];}while((p[0]+p[1]+p[2])%3);const S=p[0]+p[1]+p[2],z=S/3,cash=x=>money(x),nm=pick(['Otis','Rae','Ivan']);
+  t=n(`${nm} bought 3 sweaters. One cost ${cash(p[0])}, the second cost ${cash(p[1])}, and the third cost ${cash(p[2])}. What was the average cost of the sweaters?`,R(z,100),`Total ${cash(S)} ÷ 3 = ${cash(z)}.`,{p},'decimal');t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(S),mistake:'Found the total but did not divide'},{value:cash(z-10),mistake:'Division slip in the dimes'},{value:cash(z-100),mistake:'Division slip in the dollars'}]);break;}
+ if(v==='between'){let xs;do{xs=[int(30,50),int(30,50),int(30,50)];}while(new Set(xs).size<3);const lo=Math.min(...xs),hi=Math.max(...xs),nm=pick(['Jorge','Ella','Kofi']),ans=`between ${lo} yd and ${hi} yd`;
+  t=text(`${nm} punted a football three times. The punts traveled ${xs.join(' yd, ')} yd. Which is true of the average length of the three punts: less than ${lo} yd, more than ${hi} yd, between ${lo} yd and ${hi} yd, or cannot tell?`,ans,`An average is never less than the least value or more than the greatest: it is between ${lo} and ${hi} yd.`,{xs},'',['between']);
+  t.choices=[{value:`less than ${lo} yd`,mistake:'Thought an average could be below every value'},{value:`more than ${hi} yd`,mistake:'Thought an average could be above every value'},{value:'cannot tell',mistake:'Did not use the fact that an average lies between the least and greatest values'}];break;}
+ if(v==='missing'){const A=int(20,40),x=A-int(1,5),z=3*A-2*x;
+  t=n(`The average age of three people is ${A}. If two of the people are ${x}, how old is the third person?`,z,`The three ages total 3 × ${A} = ${3*A}; ${3*A} − ${x} − ${x} = ${z}.`,{A,x});
+  t.choices=distinct(z,[{value:A,mistake:'Gave the average'},{value:A+(A-x),mistake:'Made up the difference for only one of the two people'},{value:3*A-x,mistake:'Subtracted only one of the known ages'}]);break;}
+ if(v==='halfway'){let a,b;do{a=int(12,48);b=int(52,98);}while((a+b)%2);const z=(a+b)/2;
+  t=n(`What number is halfway between ${a} and ${b}?`,z,`Add and divide by 2: (${a} + ${b}) ÷ 2 = ${z}.`,{a,b});
+  t.choices=distinct(z,[{value:z+pick([-1,1]),mistake:'Division slip'},{value:z+pick([-2,2]),mistake:'Arithmetic slip'},{value:(b-a)/2,mistake:'Found half the difference only'}]);break;}
+ if(v==='line-parts'){const k=int(0,4),r=[8,10,14,16,20][k],lim=[55,55,51.5,45,36][k],z=10*r,maxY=10*Math.ceil(r*lim/30);
+  t=n('The graph shows the number of parts made by a machine over time. How many parts were made in the first 30 minutes?',z,`At 30 minutes the line is at ${z} parts.`,{r},'numbers',lineGraph([0,lim],[0,r*lim/3],{xmin:0,xmax:60,xstep:10,ymin:0,ymax:Math.max(maxY,z+20),ystep:Math.max(maxY,z+20)>200?40:20,title:'Parts Made',xLabel:'Minutes',yLabel:'Parts',label:`A line from 0 parts at 0 minutes rising at ${r} parts every 3 minutes`}));
+  t.choices=distinct(z,[{value:z+pick([-5,5]),mistake:'Read the graph between grid lines inaccurately'},{value:z+10,mistake:'Read the next grid line up'},{value:z-10,mistake:'Read the next grid line down'}]);break;}
+ if(v==='sales'){let s;do{s=Array.from({length:5},()=>5*int(2,10));}while(new Set(s).size<5);const y0=int(1990,2000),hi=s.indexOf(Math.max(...s)),lo=s.indexOf(Math.min(...s)),z=(s[hi]-s[lo])*1e6,cash=x=>'$'+comma(x);
+  t=n(`The graph shows sales (in millions of dollars) for a company. How much greater were sales, in dollars, in ${y0+hi} than in ${y0+lo}?`,z,`${s[hi]} million − ${s[lo]} million = ${s[hi]-s[lo]} million dollars.`,{s,y0},'numbers',barGraph(s.map((_,i)=>String(y0+i)),s,'Sales (millions of dollars)','Millions',50,10));t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(z+pick([-5e6,5e6])),mistake:'Misread one of the bars by half a grid line'},{value:cash(z+pick([-1e7,1e7])),mistake:'Misread one of the bars by a grid line'},{value:cash(s[hi]-s[lo]),mistake:'Did not write the amount in millions'}]);break;}
+ if(v==='rates'){let r;do{r=Array.from({length:5},()=>int(13,18)/2);}while(new Set(r).size<5);const k=r.indexOf(Math.max(...r))+1;
+  t=n('The graph shows mortgage rates in July for five years. In which year was the interest rate the greatest? Give the year number.',k,`The highest point is at year ${k}.`,{r},'numbers',lineGraph([1,2,3,4,5],r,{xmin:1,xmax:5,xstep:1,ymin:6,ymax:9.5,ystep:0.5,dots:1,title:'Mortgage Rates in July',xLabel:'Year',yLabel:'Rate (%)',label:`Mortgage rates for years 1 to 5: ${r.join(', ')} percent`}));
+  t.choices=distinct(k,[1,2,3,4,5].filter(i=>i!==k).map(i=>({value:i,mistake:r[i-1]===Math.min(...r)?'Chose the year with the lowest rate':'Chose a year that is not the highest'})));break;}
+ // read a value from a bar graph
+ let f;do{f=Array.from({length:5},()=>int(2,10));}while(new Set(f).size<4);const days=['Mon','Tue','Wed','Thu','Fri'],full=['Monday','Tuesday','Wednesday','Thursday','Friday'],k=int(0,4),nm=pick(['Jana','Felix','Nora']);
+ t=n(`The bar graph shows how many answers ${nm} had correct each day. How many answers did ${nm} have correct on ${full[k]}?`,f[k],`The ${full[k]} bar reaches ${f[k]}.`,{f,k},'numbers',barGraph(days,f,'Correct Answers','Answers',10,2));
+ t.choices=distinct(f[k],[0,1,2,3,4].filter(i=>i!==k).map(i=>({value:f[i],mistake:`Read the ${full[i]} bar`})));break;}
+case 'c1-primes':{const v=c.variant,isP=x=>x>1&&[...Array(x).keys()].slice(2).every(k=>x%k);
+ if(v==='not-factor'){const [N,a,b]=pick([[24,6,4],[18,6,3],[20,5,4],[12,4,3],[30,6,5],[36,9,4]]),fs=[];for(let k=2;k<N;k++)if(N%k===0)fs.push(k);let non;do{non=int(5,N-1);}while(N%non===0);const show=[...fs];for(let i=show.length-1;i>0;i--){const j=int(0,i);[show[i],show[j]]=[show[j],show[i]];}
+  t=text(`This rectangle of ${N} tiles shows that ${a} and ${b} are factors of ${N}. Which of these numbers is not a factor of ${N}: ${[...show.slice(0,3),non].sort((x,y)=>x-y).join(', ')}?`,String(non),`${N} ÷ ${non} is not a whole number, so ${non} is not a factor of ${N}.`,{N,non,show:show.slice(0,3)},gridFigure(b,a,0,`A rectangle of ${a} by ${b} tiles`));
+  t.choices=show.slice(0,3).map(x=>({value:String(x),mistake:`Chose a factor: ${N} ÷ ${x} = ${N/x}`}));break;}
+ if(v==='not-prime'){const ps=[3,5,7,11,13],comp=pick([9,15,21]),sh=[];while(sh.length<3){const p=pick(ps);if(!sh.includes(p))sh.push(p);}const all=[...sh,comp].sort((a,b)=>a-b);
+  t=text(`Which of these numbers is not a prime number? ${all.join(', ')}`,String(comp),`${comp} = ${[3,5,7].find(p=>comp%p===0)} × ${comp/[3,5,7].find(p=>comp%p===0)}, so it is not prime.`,{all,comp});t.choices=sh.map(x=>({value:String(x),mistake:'Chose a prime number (its only factors are 1 and itself)'}));break;}
+ if(v==='which-prime'){const k=int(0,7),pr=[23,29,31,37,41,43,47,53][k],others=[[21,22,24],[27,28,26],[30,32,33],[38,39,36],[38,39,42],[42,44,45],[46,48,49],[51,52,54]][k];
+  t=text(`Which number in this group is a prime number? ${[pr,...others].sort((a,b)=>a-b).join(', ')}`,String(pr),`${pr} has only the factors 1 and ${pr}.`,{pr,others});t.choices=others.map(x=>({value:String(x),mistake:`Chose a composite number (${x} = ${[2,3,5,7].find(p=>x%p===0)} × ${x/[2,3,5,7].find(p=>x%p===0)})`}));break;}
+ if(v==='between'){let a,b,ps;do{a=int(1,16);b=int(a+7,30);ps=[];for(let k=a+1;k<b;k++)if(isP(k))ps.push(k);}while(ps.length<3||ps.length>5);
+  t={prompt:`List all the prime numbers between ${a} and ${b}. Separate them with commas.`,answer:{kind:'num-set',set:ps,value:ps.join(', ')},solution:`The primes between ${a} and ${b} are ${ps.join(', ')}.`,parameters:{a,b}};
+  let odd=null;for(let k=a+1;k<b;k++)if(k%2&&!isP(k)&&k>1){odd=k;break;}
+  t.choices=wrongOnly(t,[...(odd?[{value:[...ps,odd].sort((x,y)=>x-y).join(', '),mistake:`Included ${odd}, which is odd but not prime`}]:[]),{value:ps.slice(1).join(', '),mistake:'Missed a prime number'},{value:ps.slice(0,-1).join(', '),mistake:'Missed a prime number'},...(a<1?[{value:[1,...ps].join(', '),mistake:'Included 1, which is not prime'}]:[]),{value:[...ps,b].join(', '),mistake:'Included the end number'}]);break;}
+ if(v==='two-lists'){const L=[6,8,9,10,12,14,15,16,18,20,21,22,24,26,27,28,30];let a,b;do{a=pick(L);b=pick(L);}while(a===b);const F=x=>[...Array(x).keys()].map(k=>k+1).filter(k=>x%k===0),A=F(a),B=F(b);
+  t={prompt:`List the factors of ${a} and the factors of ${b}. Write the factors of ${a}, a semicolon, then the factors of ${b}.`,answer:{kind:'num-lists',lists:[A,B],value:`${A.join(', ')}; ${B.join(', ')}`},solution:`${a}: ${A.join(', ')}. ${b}: ${B.join(', ')}.`,parameters:{a,b}};
+  t.choices=wrongOnly(t,[{value:`${A.slice(1).join(', ')}; ${B.slice(1).join(', ')}`,mistake:'Left out 1'},{value:`${A.slice(1,-1).join(', ')}; ${B.slice(1,-1).join(', ')}`,mistake:'Left out 1 and the number itself'},{value:`${A.join(', ')}; ${B.slice(0,-1).join(', ')}`,mistake:'Left out the number itself from the second list'}]);break;}
+ if(v==='count'){const N=pick([32,40,42,45,48,54,56,60,72,80,84,90]),k=[...Array(N).keys()].filter(j=>N%(j+1)===0).length;
+  t=n(`How many different whole numbers are factors of ${N}?`,k,`The factors of ${N} pair up: there are ${k} of them.`,{N});t.choices=distinct(k,[{value:k+2,mistake:'Counted a factor pair twice'},{value:k-2,mistake:'Missed a factor pair'},{value:k+pick([-4,4]),mistake:'Miscounted the factor pairs'}]);break;}
+ // prime factorization as a product of four primes
+ const [p1,p2,p3,p4]=pick([[2,2,2,2],[2,2,2,3],[2,2,3,3],[2,2,2,5],[2,2,3,5],[2,3,3,3],[2,2,2,7],[2,3,3,5]]),N=p1*p2*p3*p4,show=a=>a.join(' · '),p5=p4===2?3:p4===3?5:7;
+ t={prompt:`Write ${N} as a product of prime numbers.`,answer:{kind:'prime-factors',primes:[p1,p2,p3,p4],vars:{},value:show([p1,p2,p3,p4])},solution:`${N} = ${show([p1,p2,p3,p4])}.`,parameters:{N}};
+ t.choices=wrongOnly(t,[{value:show([p2,p3,p4]),mistake:'Left out one prime factor'},{value:show([2,p2,p2,p3,p5]),mistake:'Included factors that do not multiply to the number'},{value:show([p1*p2,p3,p4]),mistake:`Left a composite factor (${p1*p2})`},{value:show([2,p1,5,p5]),mistake:'Included factors that do not multiply to the number'}]);break;}
 default:throw Error('Unknown port recipe '+c.recipe);}
 return t;}
 
@@ -2434,7 +2620,7 @@ function generate(c,seed,index,int,version){const h={int,index,pick:a=>a[int(0,a
 
 // ---------- answers ----------
 const clean=s=>String(s??'').trim().toLowerCase().replace(/[−–]/g,'-').replace(/[×x*·]/g,'×').replace(/\s+/g,'').replace(/,/g,'');
-function answerText(q){const a=q.answer;if(a.display)return a.display;switch(a.kind){case'property':case'expanded':case'lists':case'equation-pair':case'duration':case'part':case'side-and-number':case'set':case'sequence':case'factorization':case'factorization-root':case'compare-common':case'words':case'ratio':case'fraction-ratio':case'linear':case'repeating':case'compound':case'parts':case'point':case'assignments':case'labels':case'keywords':case'yes-number':case'relation':case'power10':case'poly':case'integer-set':case'unit-expr':case'approx':case'num-pair':case'formula':case'slope-int':case'roots':case'mono-ratio':case'angle-pairs':case'factored':case'prime-factors':case'num-set':case'chord-angle':case'fact-family':case'fact-sentence':case'division-forms':case'quot-rem':case'seg-rays':return a.value;case'percent-approx':return a.display;default:return U.answerText(q);}}
+function answerText(q){const a=q.answer;if(a.display)return a.display;switch(a.kind){case'property':case'expanded':case'lists':case'equation-pair':case'duration':case'part':case'side-and-number':case'set':case'sequence':case'factorization':case'factorization-root':case'compare-common':case'words':case'ratio':case'fraction-ratio':case'linear':case'repeating':case'compound':case'parts':case'point':case'assignments':case'labels':case'keywords':case'yes-number':case'relation':case'power10':case'poly':case'integer-set':case'unit-expr':case'approx':case'num-pair':case'formula':case'slope-int':case'roots':case'mono-ratio':case'angle-pairs':case'factored':case'prime-factors':case'num-set':case'chord-angle':case'fact-family':case'fact-sentence':case'division-forms':case'quot-rem':case'seg-rays':case'int-sequence':case'num-lists':return a.value;case'percent-approx':return a.display;default:return U.answerText(q);}}
 function nums(s){return s.split(',').map(x=>x.trim()).filter(Boolean);}
 function check(q,response){const a=q.answer;let s=String(response??'');if(s.length>600)return{answerCorrect:false,fullOutcomeVerified:false};
  if(a.kind==='property'){const r=clean(s).replace(/×/g,a.op==='+'?'?':'×'),op=a.op==='+'?'\\+':'×',num='(\\d)';let ok=false;const sides=r.split('=');
@@ -2509,6 +2695,8 @@ function check(q,response){const a=q.answer;let s=String(response??'');if(s.leng
  if(a.kind==='quot-rem'){const m=String(s).replace(/\s+/g,'').toUpperCase().match(/^(\d+)(?:R|REMAINDER)(\d+)$/);return okv(!!m&&Number(m[1])===a.q&&Number(m[2])===a.r);}
  if(a.kind==='seg-rays'){const ps=String(s).split(';');if(ps.length!==2||/\d/.test(String(s)))return fail;const tok=x=>x.toUpperCase().replace(/\bAND\b/g,',').split(/[\s,]+/).map(w=>w.replace(/[^A-Z]/g,'')).filter(Boolean);const sg=tok(ps[0]),ry=tok(ps[1]);if(sg.some(w=>w.length!==2)||ry.some(w=>w.length!==2))return fail;
   const key=w=>[...w].sort().join('');return okv(sg.length===3&&new Set(sg.map(key)).size===3&&a.segs.every(w=>sg.map(key).includes(key(w)))&&ry.length===3&&new Set(ry).size===3&&a.rays.every(w=>ry.includes(w)));}
+ if(a.kind==='int-sequence'){const got=(String(s).replace(/[−–]/g,'-').match(/-?\d+(?:\.\d+)?/g)||[]).map(Number);if(/\d\.\d/.test(s))return fail;return okv(got.length===a.values.length&&got.every((x,i)=>x===a.values[i]));}
+ if(a.kind==='num-lists'){const ps=String(s).split(';');if(ps.length!==a.lists.length||/\d\.\d/.test(s))return fail;return okv(ps.every((p,i)=>{const g=(p.match(/\d+/g)||[]).map(Number);const w=a.lists[i];return g.length===w.length&&new Set(g).size===g.length&&w.every(x=>g.includes(x));}));}
  if(a.kind==='compare-common'){const m=String(s).replace(/\s/g,'').replace(/[−–]/g,'-').match(/^(\d+)\/(\d+)(<|>|=)(\d+)\/(\d+)$/);if(!m)return fail;const [p,k1,sym,q,k2]=[Number(m[1]),Number(m[2]),m[3],Number(m[4]),Number(m[5])];
   return okv(k1===k2&&k1>0&&p*a.a[1]===a.a[0]*k1&&q*a.b[1]===a.b[0]*k2&&sym===a.symbol);}
  if(q.eitherForm){s=s.split(';').map(stripUnits).join('; ');const r=U.check(q,s.replace(/\$/g,''));if(r.answerCorrect)return r;return U.check({...q,answer:{...a,kind:'mixed'}},s);}

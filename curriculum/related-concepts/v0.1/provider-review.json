@@ -4602,20 +4602,6 @@
     ]
   },
   {
-    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00067",
-    "conceptIds": [
-      "number-theory",
-      "focus:prime-classification"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "0fd73c3f9a004adf00f250c8aed23ae72f3a602b4ed2b44d9098551a74eba790",
-    "limits": "extension: List primes or composites in a specified interval. Test all interval members; honor endpoints.",
-    "sourceIds": [
-      "course-1-en:bank:C1_Section02:item:C1_S02_00067"
-    ]
-  },
-  {
     "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00097",
     "conceptIds": [
       "rounding-estimation",
@@ -31669,6 +31655,877 @@
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "course-1-en:bank:C1_Section01:item:C1_S01_00084"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00069",
+    "conceptIds": [
+      "number-representation",
+      "focus:place-values"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "d81bf7323c757b5dbefb16f84e3667a361ebd2b672dd1885c2ecf3a133d63984",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00069"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00083",
+    "conceptIds": [
+      "number-representation",
+      "focus:place-values"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "951fb133c44c44ecc1ab27846d576269c7e5c7236b060a2750ce80f4daaa9dbd",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00083"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00060",
+    "conceptIds": [
+      "number-representation",
+      "focus:place-values"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "4a62a1378139aaceb739551da67d43e213af1c0f927c4fcac7fbdbdcb2efb64f",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00060"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00120",
+    "conceptIds": [
+      "number-representation",
+      "focus:place-values"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "647ec7d583ad1235a114ab51672842ecbcaa3a0c773d0e422f10994fc00a1686",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00120"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00024",
+    "conceptIds": [
+      "number-representation",
+      "whole-arithmetic",
+      "focus:number-notation-forms",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "5e32670747829d4ccd872db6d52fa3c76488bed4723a8d2efda508d02749b8ae",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00024"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00121",
+    "conceptIds": [
+      "number-representation",
+      "whole-arithmetic",
+      "focus:number-notation-forms",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "fd641fc992e9273acaf0353ecf16484447a2d6c5050323f730d28db034233fe5",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00121"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00086",
+    "conceptIds": [
+      "number-representation",
+      "whole-arithmetic",
+      "focus:number-notation-forms",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "be201670efd7372636e7cbf8b9a4152886f0101957c6aa6221f5337d23787efc",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00086"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00028",
+    "conceptIds": [
+      "expressions",
+      "word-equations",
+      "focus:algebra-language-production"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "edb71b877c207353ee4547b2c2c92ad82dd8f34f8644d9528b9e4bcdccfc5e71",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00028"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00084",
+    "conceptIds": [
+      "expressions",
+      "word-equations",
+      "focus:algebra-language-production"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "295b3240f320c4dc05a2d6cbaf59e383d87f42cc91658e950e2f80f6003e1807",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00084"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00085",
+    "conceptIds": [
+      "expressions",
+      "word-equations",
+      "focus:algebra-language-production"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "257bc4a32efe42e7e7f60c8be850f5dd96b018e251ac8ef765606f7b39b4f5de",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00085"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00091",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "expressions",
+      "focus:algebra-language-production"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "4ec556e0153b65ed0ebf72dff766aea40afd9351d6e311c274badc230f12cf1e",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00091"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00030",
+    "conceptIds": [
+      "word-equations",
+      "focus:one-step-story-demands"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "9fc8654c49ef3960780ba82ace6dc39a4b5f916022b2f96e0a62445de2ab7cd5",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00030"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00034",
+    "conceptIds": [
+      "calendar-time",
+      "word-equations",
+      "focus:one-step-story-demands"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "8c5311faeed44cf1f667e1230b9e21174b6b136f6f67e9a8a200cb655963081b",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00034"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00006",
+    "conceptIds": [
+      "calendar-time",
+      "word-equations",
+      "focus:one-step-story-demands"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "8e538e66a4c68dee5fbe99b5c3ddd03fc34671854f7aac28c709cff4469fb6f9",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00006"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00032",
+    "conceptIds": [
+      "calendar-time",
+      "word-equations",
+      "focus:one-step-story-demands"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "7b7fd856008105ff8fa0a39d5a4831aae8bdbe2fb617f19a0eb44cc4a961424d",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00032"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00093",
+    "conceptIds": [
+      "calendar-time",
+      "word-equations",
+      "focus:one-step-story-demands"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "e8214d160c50d28615d35017011c65277dc2d26691fc166a980057c5be489813",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00093"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00029",
+    "conceptIds": [
+      "word-equations",
+      "focus:one-step-story-demands"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "c656b9ae527c2d7cabbc782814ab23f6db2ef4d882bcc3e578c533b867eabd6b",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00029"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00035",
+    "conceptIds": [
+      "integers",
+      "focus:integer-arithmetic",
+      "focus:integer-ordering"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "dc43c6221d098b9912e0073c6a9d8ef667f4486792df424788bb4b947a85a9e9",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00035"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00062",
+    "conceptIds": [
+      "integers",
+      "focus:integer-arithmetic",
+      "focus:integer-ordering"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "32e418ead2941fd959f7b4e81685ab1897c0aa30bd3a8f99022a2bfa3980de90",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00062"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00094",
+    "conceptIds": [
+      "integers",
+      "focus:integer-arithmetic",
+      "focus:integer-ordering"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "18e82ec4252741a480b8155588a1b6755f78e8c0c0944330a27677d10d8632c1",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00094"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00122",
+    "conceptIds": [
+      "integers",
+      "focus:integer-arithmetic",
+      "focus:integer-ordering"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "15609923ffacfb7da8bba2893469d63731a8960d15e9c8b437ff529dd7b29182",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00122"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00037",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-division",
+      "focus:division-divisors",
+      "focus:money-purchase-change",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "65913617f2e5d1e5ca24fc6e8f21fa53a7a36240247844c932b52e16c87e7eb8",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00037"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00036",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-division",
+      "focus:division-divisors",
+      "focus:money-purchase-change",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "a0a245acd4f9c8b05941c600ae56bb3dabf709dc8f70ec305dd4b31647579631",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00036"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00095",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-division",
+      "focus:division-divisors",
+      "focus:money-purchase-change",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "de0b62d0bfa1171fe0df423ca9b89f822c3a51249f977b8d0b80ea097412e8d4",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00095"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00096",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-division",
+      "focus:division-divisors",
+      "focus:money-purchase-change",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "a76269d4810b82fbf2624090055f3d693cd3ee040da40fffe738e96ce2c59be2",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00096"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00038",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-division",
+      "focus:division-divisors",
+      "focus:money-purchase-change",
+      "focus:whole-multiplication"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "a70815ab48718b812fa6fc522fd1898b46f5a0a07a8b48f4fcc37179fa3b91ea",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00038"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00039",
+    "conceptIds": [
+      "rounding-estimation",
+      "focus:rounding"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "3cc9f385672e3e780aaf4575e4ac657d7fdedd94e7d7a83a0271dd5435e25eaf",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00039"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00042",
+    "conceptIds": [
+      "rounding-estimation",
+      "focus:rounding"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "57cd4600d4b22a0efdaa1e196b75692609a7f745e80db9f98fdf725eb8a63c0e",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00042"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00043",
+    "conceptIds": [
+      "rounding-estimation",
+      "focus:rounding"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "0d7821d35f76bb648055c206fd439f4fef9d440bbec8c1f3ff89443f3846f683",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00043"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00102",
+    "conceptIds": [
+      "rounding-estimation",
+      "focus:rounding"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "18acf2ca74e95c0bb0be493d4facd1cf9b3972c28760efd1cfc54bdcfe883a8d",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00102"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00070",
+    "conceptIds": [
+      "rounding-estimation",
+      "focus:rounding"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "92944eb50426a078c8989f11c667ef43c2548f9f050ea91cb7c82eefc6ac9f45",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00070"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00044",
+    "conceptIds": [
+      "rounding-estimation",
+      "focus:rounding"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "fac73917ea6600db029e139fd82fec2208fb15e37a35276b60856267e8156c29",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00044"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00045",
+    "conceptIds": [
+      "fractions",
+      "measurement",
+      "number-order",
+      "focus:fraction-models",
+      "focus:ordering-numbers",
+      "focus:ruler-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "9cd5778abd5cf4bb193b8b4d567b54360fd624be78ca67335c590709c49de723",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00045"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00064",
+    "conceptIds": [
+      "fractions",
+      "measurement",
+      "number-order",
+      "focus:fraction-models",
+      "focus:ordering-numbers",
+      "focus:ruler-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "8c235a8a988e6c2ae12da342fc06e82724327b547a536723127c9cf7f140ff96",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00064"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00063",
+    "conceptIds": [
+      "fractions",
+      "measurement",
+      "number-order",
+      "focus:fraction-models",
+      "focus:ordering-numbers",
+      "focus:ruler-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "53fcc5cdfe4d6891f520e154dc7e5330443547a3b96ed2d79fa66c38bd056276",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00063"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00071",
+    "conceptIds": [
+      "fractions",
+      "measurement",
+      "number-order",
+      "focus:fraction-models",
+      "focus:ordering-numbers",
+      "focus:ruler-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "8b10eb11e13697b00b36cbd93f43bdbcf6420cd09d2aee83371816caed597a09",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00071"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00107",
+    "conceptIds": [
+      "data-displays",
+      "statistics",
+      "focus:average",
+      "focus:graph-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "eee919581d0d785113a136d025dd1b509c3de40960591c799cff6cc81c754b51",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00107"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00104",
+    "conceptIds": [
+      "data-displays",
+      "statistics",
+      "focus:average",
+      "focus:graph-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "62f3dd886c96b6bd6dcc4fd0dca8bb7ddf5e3adb4d3e98db40597941964f638b",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00104"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00108",
+    "conceptIds": [
+      "data-displays",
+      "statistics",
+      "focus:average",
+      "focus:graph-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "3b4f63224ed8c56609463048cd51988044108cbf70ceab124f243554e553dff5",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00108"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00109",
+    "conceptIds": [
+      "data-displays",
+      "statistics",
+      "focus:average",
+      "focus:graph-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "87c4a1bafabfa4e00b1437bdc5860f1a02f26c6146c64dc32ee195a92209afd4",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00109"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00048",
+    "conceptIds": [
+      "data-displays",
+      "statistics",
+      "focus:average",
+      "focus:graph-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "9566545850e605d52f69cb2ff0605d4e0fc4ed25d3bb2afa50a143538cb83b98",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00048"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00012",
+    "conceptIds": [
+      "data-displays",
+      "statistics",
+      "focus:average",
+      "focus:graph-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "93375858c1f4553c8f454a753fe8fa73443174b0474b4017adbb478295c9bc13",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00012"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00072",
+    "conceptIds": [
+      "data-displays",
+      "statistics",
+      "focus:average",
+      "focus:graph-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "afc2c2ba6aeae5e7ef81a60362f9abc978f6819cde1b1ebd655044345378c24e",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00072"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00073",
+    "conceptIds": [
+      "data-displays",
+      "statistics",
+      "focus:average",
+      "focus:graph-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "b9ab9c64cc8ceaf47b1f0e97d5d18931055dd7dfdb97aadf900432c537b4ca48",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00073"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00105",
+    "conceptIds": [
+      "data-displays",
+      "statistics",
+      "focus:average",
+      "focus:graph-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "e81f52d97e22f3fd63dd66beb20660dc3beab2fb59e8849dd709d3eadfa72966",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00105"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00050",
+    "conceptIds": [
+      "data-displays",
+      "statistics",
+      "focus:average",
+      "focus:graph-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "f85bf85a847af2462b2571882ff7200ff79166f92f44b60ced30ff8f378b212c",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00050"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00049",
+    "conceptIds": [
+      "data-displays",
+      "statistics",
+      "focus:average",
+      "focus:graph-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "9aa844ee7b3d5003ea1f1c0b1138a417468fcc561b497aaf2b92fc9e41c89a76",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00049"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00051",
+    "conceptIds": [
+      "data-displays",
+      "statistics",
+      "focus:average",
+      "focus:graph-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "657c5dd5c966450e32201777c30e00d0609468ea9b7bc9c636e5795ae82a42f6",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00051"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00106",
+    "conceptIds": [
+      "data-displays",
+      "statistics",
+      "focus:average",
+      "focus:graph-reading"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "4460a4dbb6ca4c0439b352c97e1cc0afc1a63631ef2986b283d75cfb039b2f47",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00106"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00074",
+    "conceptIds": [
+      "number-theory",
+      "focus:prime-classification",
+      "focus:prime-decomposition"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "1a128cd226c4fe120e3d116cc65ab0844df4a338236b62d9e86d886c5f85ef2d",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00074"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00075",
+    "conceptIds": [
+      "number-theory",
+      "focus:prime-classification",
+      "focus:prime-decomposition"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "fd7d5e4ff8f59dcbc48cc71975db86a8ab946fe68424e0c0133c2dfa960f9575",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00075"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00053",
+    "conceptIds": [
+      "number-theory",
+      "focus:prime-classification",
+      "focus:prime-decomposition"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "1db81f5f8238d5cf2a614aa6cec3a611732ddfc3c0a2269d1a263641e3d6c58c",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00053"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00067",
+    "conceptIds": [
+      "number-theory",
+      "focus:prime-classification",
+      "focus:prime-decomposition"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "429cfda431cad8eb451661fac47a6553b316c065fd98dd480222422e3ba825fc",
+    "limits": "extension: List primes or composites in a specified interval. Test all interval members; honor endpoints.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00067"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00066",
+    "conceptIds": [
+      "number-theory",
+      "focus:prime-classification",
+      "focus:prime-decomposition"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "2a71c50f9eeaff548c0b361094f2a9ef7b5123fb66551677d4710aa147e5c80a",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00066"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00052",
+    "conceptIds": [
+      "number-theory",
+      "focus:prime-classification",
+      "focus:prime-decomposition"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "bb6ef50a6786b7eac1004ac10a3195b83ca480f363a5d314e65b4a03d90b5f0d",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00052"
+    ]
+  },
+  {
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00068",
+    "conceptIds": [
+      "number-theory",
+      "focus:prime-classification",
+      "focus:prime-decomposition"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "26966c1905b65bfcb050d30c294950a6bf9f7d66f2305587eab8dbdc731d6801",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "course-1-en:bank:C1_Section02:item:C1_S02_00068"
     ]
   }
 ]

@@ -12012,41 +12012,6 @@
     "samplePrompt": "Find the greatest common factor of 12, 36, 18. Use exact fractions or terminating decimals, without units."
   },
   {
-    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00067",
-    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00067",
-    "bankId": "course-1-en",
-    "topic": "number-theory",
-    "action": "List primes in an interval",
-    "recipe": "prime-list",
-    "family": "structured-breadth",
-    "title": "List primes in an interval",
-    "course": "Course 1",
-    "localGrade": 4,
-    "placement": "grade-assigned",
-    "lessonId": "course-1-en:bank:C1_Section02:scope:5621a345b1e4d157",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "prime-classification",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "set"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "extension: List primes or composites in a specified interval. Test all interval members; honor endpoints."
-    },
-    "samplePrompt": "List all prime numbers strictly between 48 and 65. Separate numbers with commas."
-  },
-  {
     "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00097",
     "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00097",
     "bankId": "course-1-en",
@@ -96354,5 +96319,2086 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "A class surveyed favorite lunches. The tallies give these counts: Pizza 15, Hot Dog 20, Pot Pie 45, Burger 20, Nuggets 50. Draw a bar graph that displays the results of the survey. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00069",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00069",
+    "bankId": "course-1-en",
+    "topic": "number-representation",
+    "action": "Digit in a place of a number with decimals",
+    "recipe": "c1-place",
+    "family": "structured-port87",
+    "title": "Digit in a place of a number with decimals",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:7b9bb3df9a774c14",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "place-values",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which digit in 47,629.513 is in the thousands place? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00083",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00083",
+    "bankId": "course-1-en",
+    "topic": "number-representation",
+    "action": "Digit in a given place of a large number",
+    "recipe": "c1-place",
+    "family": "structured-port87",
+    "title": "Digit in a given place of a large number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:7b9bb3df9a774c14",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "place-values",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which digit is in the hundred-millions place in 572,669,493,186? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00060",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00060",
+    "bankId": "course-1-en",
+    "topic": "number-representation",
+    "action": "Name the period of a digit",
+    "recipe": "c1-place",
+    "family": "structured-port87",
+    "title": "Name the period of a digit",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:7b9bb3df9a774c14",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "place-values",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the place value of the digit 3 in the number 3,284,095,162,970. Name the place."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00120",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00120",
+    "bankId": "course-1-en",
+    "topic": "number-representation",
+    "action": "Name the place of a zero",
+    "recipe": "c1-place",
+    "family": "structured-port87",
+    "title": "Name the place of a zero",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:7b9bb3df9a774c14",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "place-values",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The zero holds what place in 579,309?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00024",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00024",
+    "bankId": "course-1-en",
+    "topic": "number-representation",
+    "action": "Write a numeral from words through billions",
+    "recipe": "c1-numeral",
+    "family": "structured-port87",
+    "title": "Write a numeral from words through billions",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:7b9bb3df9a774c14",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "number-notation-forms",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the numeral for six billion, nine hundred thirty million, seven hundred twelve thousand, three hundred sixty-six. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00121",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00121",
+    "bankId": "course-1-en",
+    "topic": "number-representation",
+    "action": "Write a number in words",
+    "recipe": "c1-numeral",
+    "family": "structured-port87",
+    "title": "Write a number in words",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:7b9bb3df9a774c14",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "number-notation-forms",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 10,000,000 in word form."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00086",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00086",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Product of numbers given in words",
+    "recipe": "c1-numeral",
+    "family": "structured-port87",
+    "title": "Product of numbers given in words",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:7b9bb3df9a774c14",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "number-notation-forms",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the product of nine thousand ten and thirty-eight? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00028",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00028",
+    "bankId": "course-1-en",
+    "topic": "word-equations",
+    "action": "Difference of a product and a sum of three numbers",
+    "recipe": "c1-words-ops",
+    "family": "structured-port87",
+    "title": "Difference of a product and a sum of three numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:7b9bb3df9a774c14",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the difference between the product of 6, 7, and 8 and the sum of 6, 7, and 8? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00084",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00084",
+    "bankId": "course-1-en",
+    "topic": "word-equations",
+    "action": "Sum subtracted from a product",
+    "recipe": "c1-words-ops",
+    "family": "structured-port87",
+    "title": "Sum subtracted from a product",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:7b9bb3df9a774c14",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the difference when the sum of 3 and 7 is subtracted from the product of 5 and 4? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00085",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00085",
+    "bankId": "course-1-en",
+    "topic": "word-equations",
+    "action": "Sum divided by a difference",
+    "recipe": "c1-words-ops",
+    "family": "structured-port87",
+    "title": "Sum divided by a difference",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:7b9bb3df9a774c14",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the quotient when the sum of 16 and 14 is divided by the difference of 16 and 14? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00091",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00091",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Product subtracted from a sum (decimals)",
+    "recipe": "c1-words-ops",
+    "family": "structured-port87",
+    "title": "Product subtracted from a sum (decimals)",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:7b9bb3df9a774c14",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "algebra-language-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the difference when the product of 0.3 and 0.5 is subtracted from the sum of 0.3 and 0.5? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00030",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00030",
+    "bankId": "course-1-en",
+    "topic": "word-equations",
+    "action": "Difference of two heights",
+    "recipe": "c1-elapsed",
+    "family": "structured-port87",
+    "title": "Difference of two heights",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:772ae4122e8a3670",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The height of one building is 1518 feet. The height of a second building is 930 feet. What is the difference, in feet, in their heights? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00034",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00034",
+    "bankId": "course-1-en",
+    "topic": "calendar-time",
+    "action": "The year some decades ago",
+    "recipe": "c1-elapsed",
+    "family": "structured-port87",
+    "title": "The year some decades ago",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:772ae4122e8a3670",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "In 1995, what year would it have been 10 decades ago? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00006",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00006",
+    "bankId": "course-1-en",
+    "topic": "calendar-time",
+    "action": "The year many decades ago",
+    "recipe": "c1-elapsed",
+    "family": "structured-port87",
+    "title": "The year many decades ago",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:772ae4122e8a3670",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "In 1835, what year would it have been 54 decades ago? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00032",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00032",
+    "bankId": "course-1-en",
+    "topic": "calendar-time",
+    "action": "Age difference from birth years",
+    "recipe": "c1-elapsed",
+    "family": "structured-port87",
+    "title": "Age difference from birth years",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:772ae4122e8a3670",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Zanna's cousin was born in 1988. If Zanna was born in 1992, how much older, in years, is the cousin? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00093",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00093",
+    "bankId": "course-1-en",
+    "topic": "calendar-time",
+    "action": "Years between two dates",
+    "recipe": "c1-elapsed",
+    "family": "structured-port87",
+    "title": "Years between two dates",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:772ae4122e8a3670",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How many years were there from 1493 to 1705? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00029",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00029",
+    "bankId": "course-1-en",
+    "topic": "word-equations",
+    "action": "Difference of two temperatures",
+    "recipe": "c1-elapsed",
+    "family": "structured-port87",
+    "title": "Difference of two temperatures",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:772ae4122e8a3670",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "In Bartonville the high temperature was 62\u00b0F. On the same day the high temperature in Cloverton was 46\u00b0F. What was the difference, in degrees Fahrenheit, between the temperatures? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00035",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00035",
+    "bankId": "course-1-en",
+    "topic": "integers",
+    "action": "Move left or right on a number line",
+    "recipe": "c1-integers",
+    "family": "structured-port87",
+    "title": "Move left or right on a number line",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:00aa0ca07e8e8fc4",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 1
+      },
+      {
+        "trackId": "integer-ordering",
+        "level": 1
+      },
+      {
+        "trackId": "integer-ordering",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What number is six spaces to the left of \u22122 on the number line? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00062",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00062",
+    "bankId": "course-1-en",
+    "topic": "integers",
+    "action": "Order integers",
+    "recipe": "c1-integers",
+    "family": "structured-port87",
+    "title": "Order integers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:00aa0ca07e8e8fc4",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 1
+      },
+      {
+        "trackId": "integer-ordering",
+        "level": 1
+      },
+      {
+        "trackId": "integer-ordering",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "int-sequence"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Order these numbers from least to greatest: 5, \u22123, \u22128, \u22122, \u22129, 4, 3. Separate them with commas."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00094",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00094",
+    "bankId": "course-1-en",
+    "topic": "integers",
+    "action": "Rise from a negative temperature",
+    "recipe": "c1-integers",
+    "family": "structured-port87",
+    "title": "Rise from a negative temperature",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:00aa0ca07e8e8fc4",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 1
+      },
+      {
+        "trackId": "integer-ordering",
+        "level": 1
+      },
+      {
+        "trackId": "integer-ordering",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The morning temperature was \u22127\u00b0. By noon the temperature was 5\u00b0. How many degrees had the temperature risen? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00122",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00122",
+    "bankId": "course-1-en",
+    "topic": "integers",
+    "action": "Compare negative numbers",
+    "recipe": "c1-integers",
+    "family": "structured-port87",
+    "title": "Compare negative numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:00aa0ca07e8e8fc4",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 1
+      },
+      {
+        "trackId": "integer-ordering",
+        "level": 1
+      },
+      {
+        "trackId": "integer-ordering",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Compare: \u22126 \u2610 \u22121. Write >, < or =."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00037",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00037",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Equal groups: three digits by two digits",
+    "recipe": "c1-mult-story",
+    "family": "structured-port87",
+    "title": "Equal groups: three digits by two digits",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:d5334b9a8ed6d4d9",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 2
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-division",
+        "level": 1
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A craft store packs 520 pins in each box. Dara ordered 20 boxes of pins. How many pins did Dara order? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00036",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00036",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Equal groups: three digits by one digit",
+    "recipe": "c1-mult-story",
+    "family": "structured-port87",
+    "title": "Equal groups: three digits by one digit",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:d5334b9a8ed6d4d9",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 2
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-division",
+        "level": 1
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Tariq eats about 563 calories at each meal. How many calories will Tariq eat in 6 meals? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00095",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00095",
+    "bankId": "course-1-en",
+    "topic": "whole-arithmetic",
+    "action": "Rolls of pennies",
+    "recipe": "c1-mult-story",
+    "family": "structured-port87",
+    "title": "Rolls of pennies",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:d5334b9a8ed6d4d9",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 2
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-division",
+        "level": 1
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If 1,050 pennies are put into rolls of 50 pennies, how many rolls will be made? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00096",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00096",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Price of a sheet of stamps",
+    "recipe": "c1-mult-story",
+    "family": "structured-port87",
+    "title": "Price of a sheet of stamps",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:d5334b9a8ed6d4d9",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 2
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-division",
+        "level": 1
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The post office sold 37-cent stamps in sheets of 50 stamps. What was the price for one sheet of stamps? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00038",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00038",
+    "bankId": "course-1-en",
+    "topic": "decimal-arithmetic",
+    "action": "Cost of each item",
+    "recipe": "c1-mult-story",
+    "family": "structured-port87",
+    "title": "Cost of each item",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:d5334b9a8ed6d4d9",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 2
+      },
+      {
+        "trackId": "whole-multiplication",
+        "level": 4
+      },
+      {
+        "trackId": "division-divisors",
+        "level": 2
+      },
+      {
+        "trackId": "decimal-division",
+        "level": 1
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Adrianna spent $4.56 on 6 folders that each cost the same. How much did each one cost? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00039",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00039",
+    "bankId": "course-1-en",
+    "topic": "rounding-estimation",
+    "action": "Round to the nearest ten, hundred or thousand",
+    "recipe": "c1-rounding",
+    "family": "structured-port87",
+    "title": "Round to the nearest ten, hundred or thousand",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:32aa52bdc9230601",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rounding",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Round 62 to the nearest ten. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00042",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00042",
+    "bankId": "course-1-en",
+    "topic": "rounding-estimation",
+    "action": "Estimate a product by rounding to tens",
+    "recipe": "c1-rounding",
+    "family": "structured-port87",
+    "title": "Estimate a product by rounding to tens",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:32aa52bdc9230601",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rounding",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use rounded numbers to estimate the product: 57 \u00d7 47. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00043",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00043",
+    "bankId": "course-1-en",
+    "topic": "rounding-estimation",
+    "action": "Estimate a sum by rounding to hundreds",
+    "recipe": "c1-rounding",
+    "family": "structured-port87",
+    "title": "Estimate a sum by rounding to hundreds",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:32aa52bdc9230601",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rounding",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use numbers rounded to the nearest hundred to estimate the sum: 846 + 157. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00102",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00102",
+    "bankId": "course-1-en",
+    "topic": "rounding-estimation",
+    "action": "Estimate a sum by rounding to thousands",
+    "recipe": "c1-rounding",
+    "family": "structured-port87",
+    "title": "Estimate a sum by rounding to thousands",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:32aa52bdc9230601",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rounding",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Estimate the sum of 5183 and 4239 by rounding each number to the nearest thousand. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00070",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00070",
+    "bankId": "course-1-en",
+    "topic": "rounding-estimation",
+    "action": "Choose the division that estimates a quotient",
+    "recipe": "c1-rounding",
+    "family": "structured-port87",
+    "title": "Choose the division that estimates a quotient",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:32aa52bdc9230601",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rounding",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A school has 162 seventh-grade students and about 39 students in each class. Which division gives the best estimate of the number of classes? Write it like 100 \u00f7 20."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00044",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00044",
+    "bankId": "course-1-en",
+    "topic": "rounding-estimation",
+    "action": "Estimate a total from a bar graph",
+    "recipe": "c1-rounding",
+    "family": "structured-port87",
+    "title": "Estimate a total from a bar graph",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:32aa52bdc9230601",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rounding",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The graph shows the number of people who went night skiing over 6 weeks. Rounding each week to the nearest hundred, about how many people skied the last 3 weeks? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00045",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00045",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Measure to the nearest sixteenth inch",
+    "recipe": "c1-fine-measure",
+    "family": "structured-port87",
+    "title": "Measure to the nearest sixteenth inch",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:06fbb7be1014563f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ordering-numbers",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-models",
+        "level": 3
+      },
+      {
+        "trackId": "ruler-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How long is the black bar, to the nearest sixteenth of an inch? Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00064",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00064",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Halfway between two ruler marks",
+    "recipe": "c1-fine-measure",
+    "family": "structured-port87",
+    "title": "Halfway between two ruler marks",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:06fbb7be1014563f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ordering-numbers",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-models",
+        "level": 3
+      },
+      {
+        "trackId": "ruler-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the mark that is halfway between the 2 3/8 inch mark and the 2 1/2 inch mark on an inch ruler. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00063",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00063",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Locate a mixed number on a number line",
+    "recipe": "c1-fine-measure",
+    "family": "structured-port87",
+    "title": "Locate a mixed number on a number line",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:06fbb7be1014563f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ordering-numbers",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-models",
+        "level": 3
+      },
+      {
+        "trackId": "ruler-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which letter represents 2 4/5 on the number line?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00071",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00071",
+    "bankId": "course-1-en",
+    "topic": "number-order",
+    "action": "Order integers, decimals and fractions",
+    "recipe": "c1-fine-measure",
+    "family": "structured-port87",
+    "title": "Order integers, decimals and fractions",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:06fbb7be1014563f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ordering-numbers",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-models",
+        "level": 3
+      },
+      {
+        "trackId": "ruler-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which list shows these numbers from least to greatest? 3, 3/4, 0.6, \u22123. Write the list, separated by commas."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00107",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00107",
+    "bankId": "course-1-en",
+    "topic": "statistics",
+    "action": "Average of four numbers",
+    "recipe": "c1-average",
+    "family": "structured-port87",
+    "title": "Average of four numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:ab7c4b4ce645ba6b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      },
+      {
+        "trackId": "average",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the average of 51, 27, 30, and 68? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00104",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00104",
+    "bankId": "course-1-en",
+    "topic": "statistics",
+    "action": "Average of six numbers",
+    "recipe": "c1-average",
+    "family": "structured-port87",
+    "title": "Average of six numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:ab7c4b4ce645ba6b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      },
+      {
+        "trackId": "average",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the average of 1, 5, 9, 9, 4, and 8? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00108",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00108",
+    "bankId": "course-1-en",
+    "topic": "statistics",
+    "action": "Average of three numbers",
+    "recipe": "c1-average",
+    "family": "structured-port87",
+    "title": "Average of three numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:ab7c4b4ce645ba6b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      },
+      {
+        "trackId": "average",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the average of 64, 98, and 93? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00109",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00109",
+    "bankId": "course-1-en",
+    "topic": "statistics",
+    "action": "Average pages over three days",
+    "recipe": "c1-average",
+    "family": "structured-port87",
+    "title": "Average pages over three days",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:ab7c4b4ce645ba6b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      },
+      {
+        "trackId": "average",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "In three days Kim read 84 pages, 82 pages, and 92 pages. What was the average number of pages read each day? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00048",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00048",
+    "bankId": "course-1-en",
+    "topic": "statistics",
+    "action": "Average pages over four days",
+    "recipe": "c1-average",
+    "family": "structured-port87",
+    "title": "Average pages over four days",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:ab7c4b4ce645ba6b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      },
+      {
+        "trackId": "average",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "On Tuesday Dan read 17 pages, on Wednesday 24 pages, on Thursday 15 pages, and on Friday 12 pages. What was the average number of pages read per day? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00012",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00012",
+    "bankId": "course-1-en",
+    "topic": "statistics",
+    "action": "Average of three prices",
+    "recipe": "c1-average",
+    "family": "structured-port87",
+    "title": "Average of three prices",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:ab7c4b4ce645ba6b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      },
+      {
+        "trackId": "average",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Rae bought 3 sweaters. One cost $7.82, the second cost $7.44, and the third cost $5.29. What was the average cost of the sweaters? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00072",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00072",
+    "bankId": "course-1-en",
+    "topic": "statistics",
+    "action": "The average lies between the least and greatest values",
+    "recipe": "c1-average",
+    "family": "structured-port87",
+    "title": "The average lies between the least and greatest values",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:ab7c4b4ce645ba6b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      },
+      {
+        "trackId": "average",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Kofi punted a football three times. The punts traveled 40 yd, 46 yd, 36 yd. Which is true of the average length of the three punts: less than 36 yd, more than 46 yd, between 36 yd and 46 yd, or cannot tell?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00073",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00073",
+    "bankId": "course-1-en",
+    "topic": "statistics",
+    "action": "Find a missing value from an average",
+    "recipe": "c1-average",
+    "family": "structured-port87",
+    "title": "Find a missing value from an average",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:ab7c4b4ce645ba6b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      },
+      {
+        "trackId": "average",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The average age of three people is 36. If two of the people are 33, how old is the third person? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00105",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00105",
+    "bankId": "course-1-en",
+    "topic": "statistics",
+    "action": "The number halfway between two numbers",
+    "recipe": "c1-average",
+    "family": "structured-port87",
+    "title": "The number halfway between two numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:ab7c4b4ce645ba6b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      },
+      {
+        "trackId": "average",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What number is halfway between 12 and 56? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00050",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00050",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Read a value from a line graph",
+    "recipe": "c1-average",
+    "family": "structured-port87",
+    "title": "Read a value from a line graph",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:ab7c4b4ce645ba6b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      },
+      {
+        "trackId": "average",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The graph shows the number of parts made by a machine over time. How many parts were made in the first 30 minutes? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00049",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00049",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Difference between the greatest and least bars",
+    "recipe": "c1-average",
+    "family": "structured-port87",
+    "title": "Difference between the greatest and least bars",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:ab7c4b4ce645ba6b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      },
+      {
+        "trackId": "average",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The graph shows sales (in millions of dollars) for a company. How much greater were sales, in dollars, in 1996 than in 1997? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00051",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00051",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Greatest value on a line graph",
+    "recipe": "c1-average",
+    "family": "structured-port87",
+    "title": "Greatest value on a line graph",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:ab7c4b4ce645ba6b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      },
+      {
+        "trackId": "average",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The graph shows mortgage rates in July for five years. In which year was the interest rate the greatest? Give the year number. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00106",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00106",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Read a value from a bar graph",
+    "recipe": "c1-average",
+    "family": "structured-port87",
+    "title": "Read a value from a bar graph",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:ab7c4b4ce645ba6b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      },
+      {
+        "trackId": "average",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The bar graph shows how many answers Nora had correct each day. How many answers did Nora have correct on Thursday? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00074",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00074",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Identify a number that is not a factor",
+    "recipe": "c1-primes",
+    "family": "structured-port87",
+    "title": "Identify a number that is not a factor",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:5621a345b1e4d157",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "prime-decomposition",
+        "level": 1
+      },
+      {
+        "trackId": "prime-decomposition",
+        "level": 2
+      },
+      {
+        "trackId": "prime-classification",
+        "level": 1
+      },
+      {
+        "trackId": "prime-classification",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "This rectangle of 24 tiles shows that 6 and 4 are factors of 24. Which of these numbers is not a factor of 24: 2, 4, 6, 19?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00075",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00075",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Identify the number that is not prime",
+    "recipe": "c1-primes",
+    "family": "structured-port87",
+    "title": "Identify the number that is not prime",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:5621a345b1e4d157",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "prime-decomposition",
+        "level": 1
+      },
+      {
+        "trackId": "prime-decomposition",
+        "level": 2
+      },
+      {
+        "trackId": "prime-classification",
+        "level": 1
+      },
+      {
+        "trackId": "prime-classification",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which of these numbers is not a prime number? 3, 7, 9, 11"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00053",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00053",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Identify the prime number",
+    "recipe": "c1-primes",
+    "family": "structured-port87",
+    "title": "Identify the prime number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:5621a345b1e4d157",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "prime-decomposition",
+        "level": 1
+      },
+      {
+        "trackId": "prime-decomposition",
+        "level": 2
+      },
+      {
+        "trackId": "prime-classification",
+        "level": 1
+      },
+      {
+        "trackId": "prime-classification",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which number in this group is a prime number? 21, 22, 23, 24"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00067",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00067",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "List the primes between two numbers",
+    "recipe": "c1-primes",
+    "family": "structured-port87",
+    "title": "List the primes between two numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:5621a345b1e4d157",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "prime-decomposition",
+        "level": 1
+      },
+      {
+        "trackId": "prime-decomposition",
+        "level": 2
+      },
+      {
+        "trackId": "prime-classification",
+        "level": 1
+      },
+      {
+        "trackId": "prime-classification",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "num-set"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "extension: List primes or composites in a specified interval. Test all interval members; honor endpoints."
+    },
+    "samplePrompt": "List all the prime numbers between 12 and 22. Separate them with commas."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00066",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00066",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "List the factors of two numbers",
+    "recipe": "c1-primes",
+    "family": "structured-port87",
+    "title": "List the factors of two numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:5621a345b1e4d157",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "prime-decomposition",
+        "level": 1
+      },
+      {
+        "trackId": "prime-decomposition",
+        "level": 2
+      },
+      {
+        "trackId": "prime-classification",
+        "level": 1
+      },
+      {
+        "trackId": "prime-classification",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "num-lists"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "List the factors of 12 and the factors of 28. Write the factors of 12, a semicolon, then the factors of 28."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00052",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00052",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Count the factors of a number",
+    "recipe": "c1-primes",
+    "family": "structured-port87",
+    "title": "Count the factors of a number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:5621a345b1e4d157",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "prime-decomposition",
+        "level": 1
+      },
+      {
+        "trackId": "prime-decomposition",
+        "level": 2
+      },
+      {
+        "trackId": "prime-classification",
+        "level": 1
+      },
+      {
+        "trackId": "prime-classification",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How many different whole numbers are factors of 42? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00068",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00068",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Write a number as a product of primes",
+    "recipe": "c1-primes",
+    "family": "structured-port87",
+    "title": "Write a number as a product of primes",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:5621a345b1e4d157",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "prime-decomposition",
+        "level": 1
+      },
+      {
+        "trackId": "prime-decomposition",
+        "level": 2
+      },
+      {
+        "trackId": "prime-classification",
+        "level": 1
+      },
+      {
+        "trackId": "prime-classification",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "prime-factors"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 54 as a product of prime numbers."
   }
 ]
