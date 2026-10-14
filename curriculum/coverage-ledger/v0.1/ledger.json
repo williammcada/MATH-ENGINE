@@ -24,6 +24,7 @@
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch8-course87-L71-80.json": "8b20507436d0a3be5df21b0af904eee114ab24f4b6edc2c417c50f3deb00c41b",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch9-course87-L81-90.json": "9fdec8c0fd9dbcf0b44d2115f86753c9816020a63358f9d6caa5062ad5210edc",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-14-c1-batch1-course1-L1-5.json": "c8ae79ba052d7c6c3f9889e583c803a383fa5a7c6ffc3452bfc4af98bdf4810a",
+"curriculum/coverage-ledger/v0.1/decisions/2026-10-14-c1-batch2-course1-L6-11-I1.json": "2ab29d79e4567c46376a09acd9e686a1ad7149f851ede3d8ea8ee600bb5045b9",
 "curriculum/source-mappings/advanced-v0.1.json": "740f9d6e25483a2838d5561a85c66c9eb3f67b7505a8ab9004353e5eb6883aa7",
 "curriculum/source-mappings/algebra-review-v0.1.json": "a4956b61d8353d4258097f2ea5ca8d7baf4031fdd9c090e344ca2ce366a29a0e",
 "curriculum/source-mappings/breadth-v0.1.json": "d8255409d16dcc8db7b45244ab1239896d13ac56ffe4f3eb2ecdd8778f5e4996",
@@ -33,7 +34,7 @@
 "curriculum/source-mappings/linear-equations-v0.1.json": "9e4f9fd37066e63cd74f133bcc76713db8ae30251a22f03f5a672ab535bc7e65",
 "curriculum/source-mappings/linear-equations-v0.2.json": "759f02762a92c18098944bfe8a88f2be5a0a4384f778105cb78239a07df22371",
 "curriculum/source-mappings/measurement-v0.1.json": "3ca7cc1cdb74fb6e1bf8741beea9c2787fe122befe28499e75bfd6d803409451",
-"curriculum/source-mappings/port87-v0.1.json": "80ea21db365e02d38cbf44de996eb131ab9809d0a664e88ef99fcb4b91844d7d",
+"curriculum/source-mappings/port87-v0.1.json": "9993c9b87ceacb8fe1aa063f2332a457bf257233dec7e99239456c26c37d00c5",
 "curriculum/source-mappings/proportions-v0.1.json": "85db6cf773c6c1a6bbad37f83cf3724becf552fee4bbf4154e2ade0bae7751af",
 "curriculum/source-mappings/quadratic-equations-v0.1.json": "51b5a6c7221720481df7ac7a3cf9b4561744ef910fee5427c8cd73d6c027f4a6",
 "curriculum/source-mappings/reasoning-v0.1.json": "b88aeb99d84bd8ab367678d0c6f7d90fdc3cba8dbc087ebf108a3e835ef7f448",
@@ -43,14 +44,14 @@
 "curriculum/source-mappings/statistics-v0.1.json": "a3ba878bad7cc71dea555ef623b6c3e89483a9c8f809d21e4d90efa9ba09ce8d"
 },
 "totals": {
-"open": 4162,
-"covered-provisional": 375,
-"covered": 699,
-"consolidated": 189,
+"open": 4086,
+"covered-provisional": 373,
+"covered": 749,
+"consolidated": 217,
 "retired": 0,
 "records": 5425,
-"percentComplete": 16.4,
-"percentIncludingProvisional": 23.3
+"percentComplete": 17.8,
+"percentIncludingProvisional": 24.7
 },
 "banks": {
 "course-87-en": {
@@ -94,14 +95,14 @@
 "percentIncludingProvisional": 18.8
 },
 "course-1-en": {
-"open": 1223,
-"covered-provisional": 31,
-"covered": 74,
-"consolidated": 25,
+"open": 1147,
+"covered-provisional": 29,
+"covered": 124,
+"consolidated": 53,
 "retired": 0,
 "records": 1353,
-"percentComplete": 7.3,
-"percentIncludingProvisional": 9.6
+"percentComplete": 13.1,
+"percentIncludingProvisional": 15.2
 },
 "intermediate-4-en": {
 "open": 1296,
@@ -4702,14 +4703,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
-"open": 11,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 9,
+"consolidated": 2,
 "retired": 0,
 "records": 11,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -4726,26 +4727,26 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
-"open": 10,
-"covered-provisional": 2,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 10,
+"consolidated": 2,
 "retired": 0,
 "records": 12,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 16.7
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"open": 14,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 5,
+"consolidated": 9,
 "retired": 0,
 "records": 14,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -4774,14 +4775,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
-"open": 13,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 9,
+"consolidated": 4,
 "retired": 0,
 "records": 13,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -4798,14 +4799,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"open": 14,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 7,
+"consolidated": 7,
 "retired": 0,
 "records": 14,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -4822,14 +4823,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:f7301e1a44782601",
-"open": 4,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 3,
+"consolidated": 1,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -4894,14 +4895,14 @@
 {
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
-"open": 10,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 7,
+"consolidated": 3,
 "retired": 0,
 "records": 10,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-1-en",
@@ -22267,72 +22268,119 @@
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00012",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin: fraction of a rectangle not shaded.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00050"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00013",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Name a segment, a ray or a line.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00013"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00014",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Choice form of naming the segments and rays.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00077"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00015",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: read a marked value on an inch ruler.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00054"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00016",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Perimeter of a triangle. The triangle is drawn from the source's side sets.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00016"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00017",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:f7301e1a44782601",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin: order three-digit numbers.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00058"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00018",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin: next three terms of a sequence.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00166"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00019",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin: read a dial thermometer.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00066"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00020",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Choose the frequency table for a data set.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00020"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00021",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Confirmed: choose the histogram for a five-interval frequency table, with a letter answer.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00021"
-],
-"basis": "representations-v0.1.json",
-"family": "structured-representations"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00022",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: choose the bar graph that matches tallied data.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00083"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00023",
@@ -22652,121 +22700,231 @@
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00050",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Fraction of a rectangle not shaded.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00050"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00051",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Days as a fraction of a week.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00051"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00052",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: A unit fraction of a number.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00052"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00053",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin: length to the nearest quarter inch.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00165"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00054",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Read an inch ruler to the eighth inch. The arrow is drawn by the port; the source draws it over a ruler picture.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00054"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00055",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin: perimeter of a rectangle in millimeters.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00147"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00056",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Perimeter of an isosceles triangle.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00056"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00057",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin: side of a square from its perimeter.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00150"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00058",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:f7301e1a44782601",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Order three-digit numbers.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00058"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00059",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:f7301e1a44782601",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Compare three-digit numbers.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00059"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00060",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:f7301e1a44782601",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Compare a sum and a product.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00060"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00061",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: next three terms of a sequence.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00166"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00062",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Identify the odd number.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00062"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00063",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Next term of a sequence.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00063"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00064",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Read a dial scale. The needle is drawn by the port; the source draws it over a dial picture.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00064"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00065",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: read a thermometer marked in two-degree steps.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00156"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00066",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Read a dial thermometer. The needle is drawn by the port; the source draws it over a dial picture.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00066"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00067",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Count scores at or above a value from a frequency table.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00067"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00068",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Compare two rows of a frequency table.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00068"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00069",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Read a bar graph. The source graph is not in the bank; the port draws a bar graph of four subjects totalling 50, as the variables give.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00069"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00070",
@@ -22838,60 +22996,107 @@
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00076",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Define a ray. Also asks for a line or a segment, from the same lesson.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00076"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00077",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Name the segments and rays in a figure.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00077"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00078",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Measure in millimeters or centimeters.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00078"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00079",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Make a tally chart and frequency table. Teacher review; the reference frequencies are given.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00079"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00080",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Make a histogram. Teacher review; the reference histogram is drawn for the teacher.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00080"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00081",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: True or false statements about a histogram.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00081"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00082",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: choose the histogram for a frequency table.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00021"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00083",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Confirmed: choose the bar graph that matches a table, with a letter answer.",
 "by": [
 "course-1-en:bank:C1_Section01:item:C1_S01_00083"
-],
-"basis": "breadth-v0.1.json",
-"family": "structured-breadth"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00084",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Draw a bar graph of survey results. Teacher review; the reference bar graph is drawn for the teacher.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00084"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00085",
@@ -22909,43 +23114,79 @@
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00086",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Choose an appropriate customary unit of length.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00086"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00087",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Identify a line, a segment or a ray.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00087"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00088",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Choose a reasonable metric length.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00088"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00089",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: perimeter of a triangle (picture not recovered).",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00016"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00090",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: side of a square from its perimeter.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00150"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00091",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: A later term of a counting sequence.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00091"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00092",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: identify the odd number.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00062"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00093",
@@ -23497,109 +23738,201 @@
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00140",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Fraction of a circle shaded.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00140"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00141",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: a unit fraction of a number.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00052"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00142",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Fraction of a rectangle shaded.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00142"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00143",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: A unit fraction of a money amount.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00143"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00144",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Name the denominator of a fraction.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00144"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00145",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Fraction of games won.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00145"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00146",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: A fraction of a number.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00146"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00147",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Perimeter of a rectangle.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00147"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00148",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Perimeter of a square.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00148"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00149",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: perimeter of a labelled rectangle.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00147"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00150",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Side of a square from its perimeter.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00150"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00151",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: perimeter of a square from its side.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00148"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00152",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: side of a square from its perimeter.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00150"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00153",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: perimeter of a rectangle (picture not recovered).",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00147"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00154",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: perimeter of a triangle (picture not recovered).",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00016"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00155",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: next term of a sequence.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00063"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00156",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Read a thermometer marked in two-degree steps.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00156"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00157",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: next term of a sequence.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00063"
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00158",
@@ -23685,31 +24018,55 @@
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00165",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Measure to the nearest quarter inch.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00165"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00166",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Next three terms of a sequence.",
+"by": [
+"course-1-en:bank:C1_Section01:item:C1_S01_00166"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section01:item:C1_S01_00167",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: length of a segment to the nearest quarter inch.",
+"into": "course-1-en:bank:C1_Section01:item:C1_S01_00165"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00001",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin: runners story.",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00020"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00002",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin: change from a pizza purchase.",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00022"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00003",
@@ -23805,37 +24162,73 @@
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00018",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Combining story: two-digit plus three-digit.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00018"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00019",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Combining story with coins.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00019"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00020",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Combining story: add two-digit numbers.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00020"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00021",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Separating story.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00021"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00022",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Change from a purchase.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00022"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00023",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: Money left after a withdrawal.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00023"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00024",
@@ -24198,13 +24591,23 @@
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00081",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
-"state": "open"
+"state": "covered",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Ported: How many more to finish.",
+"by": [
+"course-1-en:bank:C1_Section02:item:C1_S02_00081"
+]
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00082",
 "bank": "course-1-en",
 "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
-"state": "open"
+"state": "consolidated",
+"batch": "c1-batch-2 course-1 lessons 6-11 and investigation 1",
+"reviewed": "2026-10-14",
+"note": "Same demand: how many more to finish.",
+"into": "course-1-en:bank:C1_Section02:item:C1_S02_00081"
 },
 {
 "id": "course-1-en:bank:C1_Section02:item:C1_S02_00083",

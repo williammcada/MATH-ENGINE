@@ -10865,5 +10865,773 @@
    "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
    "4e803329910010f26deac308949be8ac7c12efb0c5bed49b5f3f1b0803239320"
   ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00050",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00050",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-fraction-model",
+  "variant": "grid-not",
+  "title": "Fraction of a rectangle not shaded",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "88a2e0b80dc12aba3166cf03246f571c0f37438dbd5b28534ebe07141c99eabc",
+   "36bdab8a07830b3c452afc36b79878565e00989f605d3390e5f6cc39ad1c270c"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00142",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00142",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-fraction-model",
+  "variant": "strip",
+  "title": "Fraction of a rectangle shaded",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "78587faa14a5b90990ec568ea7c76b6315ff0091296f32c5554111c5fd813331"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00140",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00140",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-fraction-model",
+  "variant": "circle",
+  "title": "Fraction of a circle shaded",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "7ba677e3746e1725424ab6b504436d02d9b2037b8dd23d98bd3acb254ea7272b"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00052",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00052",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-fraction-of",
+  "variant": "unit",
+  "title": "A unit fraction of a number",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "11b909d1a29e13244607d15473e7015663d95f250be24c38a0deaddbd2fa08f5",
+   "d038e69ea78d18b1438c86abe4813468d9d1a042c292466ce088322527489ca7"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00146",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00146",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-fraction-of",
+  "variant": "non-unit",
+  "title": "A fraction of a number",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "6d70830bff75a20f7e227169a82da16607c0b23f83a672510bd10d54b74af48d"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00143",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00143",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-fraction-of",
+  "variant": "money-part",
+  "title": "A unit fraction of a money amount",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "3af094370c5b0025576e549046dd167c32817378af1f53bfac98ba88707628a7"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00144",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00144",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-fraction-of",
+  "variant": "denominator",
+  "title": "Name the denominator of a fraction",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "09b265889f81b6077ddbb7a014db390b3e1ad4c5b48172c17b801053f5d6e357"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00145",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00145",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-fraction-of",
+  "variant": "games",
+  "title": "Fraction of games won",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "3cf87539e6f86720310789a3734d4dcb0647f3fb0988266380fa73cd8cf3c1f3"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00051",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00051",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-fraction-of",
+  "variant": "week",
+  "title": "Days as a fraction of a week",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "2d0ba1e8f61209ec0ece11b7c62037639a684297dcf120474643ed80a63de314"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00086",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00086",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-units",
+  "variant": "customary",
+  "title": "Choose an appropriate customary unit of length",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "6d90dfbc1cd71c5c108c88918a88c7a2bc396035cf675376d7ea4afab891bf26"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00088",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00088",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-units",
+  "variant": "metric",
+  "title": "Choose a reasonable metric length",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "fdfce4f080eb8b8eb2d848785e7035d71213688eebaff5c485a9cb204da7a960"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00087",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00087",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-lines",
+  "variant": "choose",
+  "title": "Identify a line, a segment or a ray",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "70dc92f4714638760da511ba6f824c6d2e6b522351a583f5123eeb24e9c2d230"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00013",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00013",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-lines",
+  "variant": "notation",
+  "title": "Name a segment, a ray or a line",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "04d6bf8e404fc304dcfdbda068e385bf922522b0ab75b0ae4d2a4f1c8da34d5b"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00077",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00077",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-lines",
+  "variant": "name",
+  "title": "Name the segments and rays in a figure",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "aa86ad38383543fde214dabc7cdbdc6c9b9f8968493b1cd902fc309ac678fbab",
+   "47984a7aaf94bde5f76bcb68c037100cf55696c56659563edaf791081fde1410"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00076",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00076",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-lines",
+  "variant": "define",
+  "title": "Define a ray",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "265464eba451034da6c40a3f66350a9f074c09ae7f09d34fc2feb6c97ed185c9"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00054",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00054",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-ruler",
+  "variant": "eighths",
+  "title": "Read an inch ruler to the eighth inch",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "14290ffaa23b35678fd5b41d8913214fe39e84846005ab26296fc38a49786059",
+   "047834cfe8ad4a09c8bcae906af1f2212dd78b2de79a3d9105ef8be9cb202879"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00165",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00165",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-ruler",
+  "variant": "segment-inches",
+  "title": "Measure to the nearest quarter inch",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "1c389c7cca8aafb46e01bfba21148d356dbdc8f2869821cf91be20c405ced516"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00078",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00078",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-ruler",
+  "variant": "mm",
+  "title": "Measure in millimeters or centimeters",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "b9e96fc3e9907dd0d6c32c77d5ee9065241f2742d4f06b769c06e172c8444617",
+   "e881e9db8799a7f969fd90fbe350bcc8ff9fc5fc7aa292aca6d703fe54019731"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00016",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00016",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-perimeter",
+  "variant": "triangle",
+  "title": "Perimeter of a triangle",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "baaa2124522acba6c3cabdce50e7d275bea5e0893543bef3a07e7b49415cda6d",
+   "334fcc22c603b8ec34156bd2ef53c0c9187639805f4ffd7bc47265dfe254cb9f"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00056",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00056",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-perimeter",
+  "variant": "isosceles",
+  "title": "Perimeter of an isosceles triangle",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "ee2dc54f79daf1878ae2a8bf263e1ebed473792d16b97b2c9e0939a646a7a388",
+   "41856451a1505fcce215bd975ed367ab55a09cb83d18ebbf26c94c407479ab0f"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00147",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00147",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-perimeter",
+  "variant": "rectangle",
+  "title": "Perimeter of a rectangle",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "01329f90cba4b0e6f3308cf3aeb534841d040a1faf4fadfddda51a10e74aca41"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00148",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00148",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-perimeter",
+  "variant": "square",
+  "title": "Perimeter of a square",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "444ec5931a2a691c0aefd24a1463648604e2b9427bed591611174d9fc3b1484c"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00150",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00150",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-perimeter",
+  "variant": "square-side",
+  "title": "Side of a square from its perimeter",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "f2007e72c7d41073104a5b8aec4644c994d944eea5246b0f78b8be74060a662d"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00058",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00058",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:f7301e1a44782601",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-order-digits",
+  "variant": null,
+  "title": "Order three-digit numbers",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "e2588ca61972beed91d8a0f4769816c1bdaa5cc1b59e1c8be7f43fbeca7c9643",
+   "fd6b2ccfd582159672420143d47e35a89c654dd507407085af93693b6a909a1e"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00059",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00059",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:f7301e1a44782601",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-compare",
+  "variant": "numbers",
+  "title": "Compare three-digit numbers",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "de7d795a6bd9bd4085b5998abdec0b06b9adcdfca12343ce94620bd59ef3fed5",
+   "9ac1a8bf952b8e64126fc7cfea644daf84cbbb4dc6d866e6fed629ef1a3d9d80"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00060",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00060",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:f7301e1a44782601",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-compare",
+  "variant": "sum-product",
+  "title": "Compare a sum and a product",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "6d4361064f2c47e0ac06233f0f2c3d6d54b9a416d5d774da1f355eca1cd5c825",
+   "33fb1a2d9ef9dfea6de6c26b56c1eb18263cdd4fae8c441219d7c77b0ad2d8de"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00166",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00166",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-sequence",
+  "variant": "next-three",
+  "title": "Next three terms of a sequence",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "8b35816ffe2b6e3dc1419833bf2604a4ac98202cac8f35d76efc5e1fb310734c"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00063",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00063",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-sequence",
+  "variant": "next",
+  "title": "Next term of a sequence",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "f22249c12855c45ab9aab07bcf6cf1095a4cfb2fdf7d9d7fb92e329f64ac539c",
+   "9059a28cb2f8e630de5e4b0da3cf24ff630dc2ebf13f5088b27514f640fc28f5"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00091",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00091",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-sequence",
+  "variant": "nth",
+  "title": "A later term of a counting sequence",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "bff6e817765b227f8b08d07c2cbcc4a7ce8b1d0d898887f694e698a487c98d93"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00062",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00062",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-odd",
+  "variant": null,
+  "title": "Identify the odd number",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "5dd3607f122b018a27956cf3a84d30055e1a35fbfa74fce298f7942695276a82",
+   "7b48de4558851ba5edfc33710948de0ef88e0581aadb7f7d26f5fa8dd91d847c"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00066",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00066",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dial",
+  "variant": "temp",
+  "title": "Read a dial thermometer",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "3c6318fba83c8f8c98fb5f4832116c34fc425e07d062b15246818c2d5f07035f"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00064",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00064",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-dial",
+  "variant": "weight",
+  "title": "Read a dial scale",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "0d44410ecd1f38987a098a2d74809b319ce37fc3631dbcc64e98a49907704343",
+   "569e798c630779f6583b5c6da9b6bf3a6f5b21616ae90293d9a6fd606b17a3fa"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00156",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00156",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-thermometer",
+  "variant": null,
+  "title": "Read a thermometer marked in two-degree steps",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "0123e3e3cb78be6751538f20e3769f3d71b5bd3fd00a8f4e85f007f7424d1be7"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00020",
+  "sourceRecord": "course-1-en:bank:C1_Section02:item:C1_S02_00020",
+  "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-story",
+  "variant": "runners",
+  "title": "Combining story: add two-digit numbers",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "d80f93da234847e701f7a1b577db2e3763fea1e79b7a2449f4031d3d033a98e1"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00022",
+  "sourceRecord": "course-1-en:bank:C1_Section02:item:C1_S02_00022",
+  "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-story",
+  "variant": "pizza",
+  "title": "Change from a purchase",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "007b34241edc6a4e39fa19d21554891be47cd74a228e78fab0456ee9422c1f65",
+   "30d9be87ad5067b8b44862d1490fd1ef9fd695750c8cec6c8fc229cc1609e62a"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00018",
+  "sourceRecord": "course-1-en:bank:C1_Section02:item:C1_S02_00018",
+  "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-story",
+  "variant": "candy",
+  "title": "Combining story: two-digit plus three-digit",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "03ec01067c201f1453000cf06c4eb49955f92359fa21e7ae51f27b4e38cfab72",
+   "a2438982b65bbab6d9f989704164e30c2ebeb2c61cca6d5090fb4125a0074d5f"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00019",
+  "sourceRecord": "course-1-en:bank:C1_Section02:item:C1_S02_00019",
+  "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-story",
+  "variant": "coins",
+  "title": "Combining story with coins",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "00042d41b7b702a7d626d93e9c6bef9ff2f5fa7a8833a25f3991464efdb3a2c5",
+   "37c2f5904db421f7d19c03be513bb3a08f48c79362099c703f6055a62bf1949d"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00021",
+  "sourceRecord": "course-1-en:bank:C1_Section02:item:C1_S02_00021",
+  "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-story",
+  "variant": "bus",
+  "title": "Separating story",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "61dc3a49b69fc7de07a88c91f284dc062dbbafa20e79f79586a450a74b147152",
+   "49313562718bb543a0906a6c66923292037d4a2f7bd3dd878a4ae1b850735406"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00081",
+  "sourceRecord": "course-1-en:bank:C1_Section02:item:C1_S02_00081",
+  "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-story",
+  "variant": "steps",
+  "title": "How many more to finish",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "0906947b4b0f47007ee0b13dc3d0a8585d545a93c6378eada74c48d9da71e114"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00023",
+  "sourceRecord": "course-1-en:bank:C1_Section02:item:C1_S02_00023",
+  "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-story",
+  "variant": "bank",
+  "title": "Money left after a withdrawal",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "edcfd6416b1ea1c23c1d0dabf8718db055ff73b72f584f005b6d5e358ec38974"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00020",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00020",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-data",
+  "variant": "choose-table",
+  "title": "Choose the frequency table for a data set",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "a9be817c8268db900a162e426a3571aee5ac0b5275e8f575409adc8b41a65fe7"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00067",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00067",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-data",
+  "variant": "at-least",
+  "title": "Count scores at or above a value from a frequency table",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "b5a377caa76e5cce0db42d1f9d8856559d5bbf4a9010fb6ebbc9611960067ba8",
+   "3beac753d8559b6177bdb6ddb600fc702896c3e0504598f306d257e69ba6290c"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00068",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00068",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-data",
+  "variant": "difference",
+  "title": "Compare two rows of a frequency table",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "f7be8f409ccb4e43b4f65e02f97d99e173b4067da0a8e2aaa6814df8748270a1",
+   "0370dccba36a9d9059a067acb48776fd88d4c92f462480303617396a6b8265f9"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00069",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00069",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-data",
+  "variant": "read-bar",
+  "title": "Read a bar graph",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "099d591e477692739df4a3e4c4950ccebc343686bd42cddf7d21e1aefa99f5d4",
+   "7cee5cf140eccee78e212d4625c5de2fb115035ccf9e82d3c1b83771429caf74"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00081",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00081",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-data",
+  "variant": "true-false",
+  "title": "True or false statements about a histogram",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "b92b173434f2fc4bcb3df3de2cf64e92525151d79e49ab2c3f4b617a12aa1d7c",
+   "0edf573ec53fa387c1f281324304e24fa999991a4a0b07635604e2a81e1017d3"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00079",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00079",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-data",
+  "variant": "tally",
+  "title": "Make a tally chart and frequency table",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "4fb226458fa200e81b86a86b6276af8b8a31c58c6acb3df56025255466b2b736",
+   "508cf3fd5edd80932dad5f5effcbdf9f973d20b05709e7696e4403369d9aca2d"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00080",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00080",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-data",
+  "variant": "make-histogram",
+  "title": "Make a histogram",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "4884b4bbb4f8f2cdfa2c4516522a8bfae37c2bfa4630617b2b29fad5cde93da0"
+  ]
+ },
+ {
+  "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00084",
+  "sourceRecord": "course-1-en:bank:C1_Section01:item:C1_S01_00084",
+  "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+  "course": "Course 1",
+  "family": "structured-port87",
+  "recipe": "c1-data",
+  "variant": "draw-bar",
+  "title": "Draw a bar graph of survey results",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "f1efc6b21e27bbae2bb9bf1b10253b4015733c901a9eb2beda3ca5e9cfb83ad4",
+   "f14ba4367eecf2b45175e76c44dd95158aca4af69a8fa2d851682af67ffaedfd"
+  ]
  }
 ]

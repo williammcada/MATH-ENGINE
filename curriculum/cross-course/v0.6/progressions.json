@@ -486,14 +486,21 @@
           "b/square-perimeter",
           "b/rectangle-perimeter",
           "x/perimeter-rectangle",
-          "f/formula"
+          "f/formula",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00147",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00148"
         ],
         "sourceIds": [
           "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00094",
           "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00099",
           "intermediate-4-en:authored:M2-4780df275944-1",
           "course-1-en:authored:M2-5a92e1ff2ff9-1",
-          "course-1-en:authored:M7-perimeter-rectangle"
+          "course-1-en:authored:M7-perimeter-rectangle",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00016",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00056",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00147",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00148",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00150"
         ]
       },
       {
@@ -503,7 +510,9 @@
         "selectors": [
           "x/perimeter-irregular",
           "c/19.1",
-          "k/quad-perimeter"
+          "k/quad-perimeter",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00016",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00056"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-19.1",
@@ -513,7 +522,12 @@
           "algebra-1-en:authored:M4-3-1",
           "algebra-2-en:authored:M6-0-8",
           "course-87-en:authored:M7-perimeter-irregular",
-          "course-87-en:item:SN870082"
+          "course-87-en:item:SN870082",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00016",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00056",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00147",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00148",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00150"
         ]
       },
       {
@@ -3280,7 +3294,11 @@
         "demand": "Identify points, lines, rays, segments and angles",
         "prerequisites": "Definitions and geometric notation",
         "selectors": [
-          "c/7.2"
+          "c/7.2",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00087",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00013",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00077",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00076"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-7.2",
@@ -3288,7 +3306,11 @@
           "intermediate-4-en:authored:M2-eaafaab5d8a5-2",
           "course-1-en:authored:M2-733cdfd45860-1",
           "algebra-half-en:authored:M3-9-1",
-          "algebra-1-en:authored:M4-1-2"
+          "algebra-1-en:authored:M4-1-2",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00087",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00013",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00077",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00076"
         ]
       },
       {
@@ -3815,7 +3837,10 @@
           "@/course-87-en:item:SX870478",
           "@/course-87-en:item:SX650024",
           "@/course-87-en:item:SN870010",
-          "@/course-87-en:item:SN870011"
+          "@/course-87-en:item:SN870011",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00166",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00063",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00091"
         ],
         "sourceIds": [
           "course-87-en:item:SX870478",
@@ -3825,7 +3850,10 @@
           "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00152",
           "course-87-en:authored:MCADA-2.3",
           "intermediate-4-en:authored:M2-2c25ac3679fc-1",
-          "course-1-en:authored:M2-5609fb540126-1"
+          "course-1-en:authored:M2-5609fb540126-1",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00166",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00063",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00091"
         ]
       },
       {
@@ -4776,7 +4804,10 @@
           "c/60.1",
           "k/fraction-not",
           "=/course-87-en:item:SX650094",
-          "=/course-87-en:item:SN870326"
+          "=/course-87-en:item:SN870326",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00052",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00146",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00143"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-14.1",
@@ -4790,7 +4821,13 @@
           "algebra-half-en:authored:M3-62-1",
           "course-87-en:item:SN870095",
           "course-87-en:item:SX650094",
-          "course-87-en:item:SN870326"
+          "course-87-en:item:SN870326",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00052",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00146",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00143",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00144",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00145",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00051"
         ]
       },
       {
@@ -4849,13 +4886,19 @@
         "selectors": [
           "f/fraction-name",
           "c/8.7",
-          "g/shaded-fraction"
+          "g/shaded-fraction",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00050",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00142",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00140"
         ],
         "sourceIds": [
           "course-87-en:item:SN870031",
           "course-87-en:authored:MCADA-8.7",
           "intermediate-4-en:authored:M2-41a5d35981ab-1",
-          "course-1-en:authored:M2-8ed1d0e24dc2-1"
+          "course-1-en:authored:M2-8ed1d0e24dc2-1",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00050",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00142",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00140"
         ]
       },
       {
@@ -5606,12 +5649,17 @@
         "demand": "Read and draw lengths on a quarter-inch ruler",
         "prerequisites": "Four equal subdivisions per inch",
         "selectors": [
-          "f/ruler-quarter"
+          "f/ruler-quarter",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00054",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00165"
         ],
         "sourceIds": [
           "intermediate-4-en:authored:M2-7e1f14941402-1",
           "intermediate-4-en:authored:M2-5e07ed4e5428-1",
-          "course-1-en:authored:M2-733cdfd45860-2"
+          "course-1-en:authored:M2-733cdfd45860-2",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00054",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00165",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00078"
         ]
       },
       {
@@ -5640,14 +5688,18 @@
         "prerequisites": "Ten subdivisions per centimeter",
         "selectors": [
           "f/metric-ruler",
-          "c/34.1"
+          "c/34.1",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00078"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-34.1",
           "intermediate-4-en:authored:M2-7e1f14941402-2",
           "intermediate-4-en:authored:M2-ba9deaf822ca-1",
           "course-1-en:authored:M2-733cdfd45860-3",
-          "algebra-half-en:authored:M3-113-2"
+          "algebra-half-en:authored:M3-113-2",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00054",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00165",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00078"
         ]
       },
       {
@@ -5918,11 +5970,21 @@
         "demand": "Tabulate frequencies in explicit intervals",
         "prerequisites": "Count every observation once",
         "selectors": [
-          "f/frequency"
+          "f/frequency",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00079",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00020"
         ],
         "sourceIds": [
           "course-1-en:authored:M2-c4f194fd4dd9-1",
-          "course-1-en:authored:M2-1586a2a40f39-1"
+          "course-1-en:authored:M2-1586a2a40f39-1",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00020",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00067",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00068",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00069",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00081",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00079",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00080",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00084"
         ]
       },
       {
@@ -5932,14 +5994,23 @@
         "selectors": [
           "f/histogram",
           "c/INV5.1",
-          "h/histogram10"
+          "h/histogram10",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00080"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-INV5.1",
           "course-1-en:authored:M2-c4f194fd4dd9-2",
           "course-1-en:authored:M2-987e818adcf1-3",
           "algebra-half-en:authored:M3-202-6",
-          "algebra-1-en:authored:M4-85-2"
+          "algebra-1-en:authored:M4-85-2",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00020",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00067",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00068",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00069",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00081",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00079",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00080",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00084"
         ]
       }
     ],
@@ -5957,7 +6028,10 @@
         "selectors": [
           "c/38.1",
           "c/38.2",
-          "@/course-1-en:bank:C1_Section01:item:C1_S01_00164"
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00164",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00067",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00068",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00069"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-38.1",
@@ -5967,7 +6041,15 @@
           "course-1-en:authored:M2-1586a2a40f39-3",
           "algebra-half-en:authored:M3-29-1",
           "algebra-half-en:authored:M3-29-2",
-          "course-1-en:bank:C1_Section01:item:C1_S01_00164"
+          "course-1-en:bank:C1_Section01:item:C1_S01_00164",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00020",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00067",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00068",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00069",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00081",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00079",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00080",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00084"
         ]
       },
       {
@@ -10531,10 +10613,15 @@
         "demand": "Compare two signed integers",
         "prerequisites": "Order on a number line",
         "selectors": [
-          "@/course-87-en:item:SN870017"
+          "@/course-87-en:item:SN870017",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00059",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00058"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870017"
+          "course-87-en:item:SN870017",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00058",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00059",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00060"
         ]
       },
       {
@@ -12985,7 +13072,14 @@
           "=/intermediate-4-en:authored:M2-d41d5223f791-1",
           "c/12.1",
           "@/course-1-en:bank:C1_Section01:item:C1_S01_00095",
-          "@/course-1-en:bank:C1_Section01:item:C1_S01_00127"
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00127",
+          "@/course-1-en:bank:C1_Section02:item:C1_S02_00020",
+          "@/course-1-en:bank:C1_Section02:item:C1_S02_00022",
+          "@/course-1-en:bank:C1_Section02:item:C1_S02_00018",
+          "@/course-1-en:bank:C1_Section02:item:C1_S02_00019",
+          "@/course-1-en:bank:C1_Section02:item:C1_S02_00021",
+          "@/course-1-en:bank:C1_Section02:item:C1_S02_00081",
+          "@/course-1-en:bank:C1_Section02:item:C1_S02_00023"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-11.1",
@@ -13015,7 +13109,14 @@
           "course-1-en:bank:C1_Section01:item:C1_S01_00115",
           "course-1-en:bank:C1_Section01:item:C1_S01_00032",
           "course-1-en:bank:C1_Section01:item:C1_S01_00128",
-          "course-1-en:bank:C1_Section01:item:C1_S01_00127"
+          "course-1-en:bank:C1_Section01:item:C1_S01_00127",
+          "course-1-en:bank:C1_Section02:item:C1_S02_00020",
+          "course-1-en:bank:C1_Section02:item:C1_S02_00022",
+          "course-1-en:bank:C1_Section02:item:C1_S02_00018",
+          "course-1-en:bank:C1_Section02:item:C1_S02_00019",
+          "course-1-en:bank:C1_Section02:item:C1_S02_00021",
+          "course-1-en:bank:C1_Section02:item:C1_S02_00081",
+          "course-1-en:bank:C1_Section02:item:C1_S02_00023"
         ]
       },
       {
@@ -15221,11 +15322,20 @@
         "prerequisites": "Count each observation once and use a consistent frequency scale",
         "selectors": [
           "=/intermediate-4-en:authored:M2-874aeaab47bb-1",
-          "=/course-1-en:authored:M2-1586a2a40f39-2"
+          "=/course-1-en:authored:M2-1586a2a40f39-2",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00084"
         ],
         "sourceIds": [
           "intermediate-4-en:authored:M2-874aeaab47bb-1",
-          "course-1-en:authored:M2-1586a2a40f39-2"
+          "course-1-en:authored:M2-1586a2a40f39-2",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00020",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00067",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00068",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00069",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00081",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00079",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00080",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00084"
         ]
       }
     ],
@@ -16483,12 +16593,18 @@
         "prerequisites": "Equal sides connect perimeter to side length; area is the square of the side",
         "selectors": [
           "=/course-87-en:authored:MCADA-20.7",
-          "=/course-87-en:authored:MCADA-19.2"
+          "=/course-87-en:authored:MCADA-19.2",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00150"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-19.2",
           "course-87-en:authored:MCADA-20.7",
-          "algebra-1-en:authored:M4-3-2"
+          "algebra-1-en:authored:M4-3-2",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00016",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00056",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00147",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00148",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00150"
         ]
       },
       {
@@ -16676,10 +16792,15 @@
         "demand": "Read a Celsius thermometer",
         "prerequisites": "Use the given Celsius-Fahrenheit formula before comparing unlike scales",
         "selectors": [
-          "=/intermediate-4-en:authored:M2-5c0fe4f1443f-1"
+          "=/intermediate-4-en:authored:M2-5c0fe4f1443f-1",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00066",
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00156"
         ],
         "sourceIds": [
-          "intermediate-4-en:authored:M2-5c0fe4f1443f-1"
+          "intermediate-4-en:authored:M2-5c0fe4f1443f-1",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00066",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00064",
+          "course-1-en:bank:C1_Section01:item:C1_S01_00156"
         ]
       },
       {

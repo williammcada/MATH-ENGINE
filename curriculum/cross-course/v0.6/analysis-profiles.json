@@ -94781,5 +94781,1578 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Simplify the expression shown. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00050",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00050",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Fraction of a rectangle not shaded",
+    "recipe": "c1-fraction-model",
+    "family": "structured-port87",
+    "title": "Fraction of a rectangle not shaded",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-models",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What fraction of the rectangle is not shaded? Write a fraction. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00142",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00142",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Fraction of a rectangle shaded",
+    "recipe": "c1-fraction-model",
+    "family": "structured-port87",
+    "title": "Fraction of a rectangle shaded",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-models",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What fraction of this rectangle is shaded? Write a fraction. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00140",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00140",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Fraction of a circle shaded",
+    "recipe": "c1-fraction-model",
+    "family": "structured-port87",
+    "title": "Fraction of a circle shaded",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-models",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What fraction of this circle is shaded? Write a fraction. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00052",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00052",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "A unit fraction of a number",
+    "recipe": "c1-fraction-of",
+    "family": "structured-port87",
+    "title": "A unit fraction of a number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What number is 1/3 of 81? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00146",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00146",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "A fraction of a number",
+    "recipe": "c1-fraction-of",
+    "family": "structured-port87",
+    "title": "A fraction of a number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What number is 3/5 of 35? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00143",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00143",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "A unit fraction of a money amount",
+    "recipe": "c1-fraction-of",
+    "family": "structured-port87",
+    "title": "A unit fraction of a money amount",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What number is 1/2 of $6.10? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00144",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00144",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Name the denominator of a fraction",
+    "recipe": "c1-fraction-of",
+    "family": "structured-port87",
+    "title": "Name the denominator of a fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the denominator of the fraction 1/12? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00145",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00145",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Fraction of games won",
+    "recipe": "c1-fraction-of",
+    "family": "structured-port87",
+    "title": "Fraction of games won",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The school chess club won 3 of its 17 games. What fraction of its games did it win? Write a fraction. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00051",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00051",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Days as a fraction of a week",
+    "recipe": "c1-fraction-of",
+    "family": "structured-port87",
+    "title": "Days as a fraction of a week",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:0bb1de7f6410c971",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Six days is what fraction of a week? Write a fraction. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00086",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00086",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Choose an appropriate customary unit of length",
+    "recipe": "c1-units",
+    "family": "structured-port87",
+    "title": "Choose an appropriate customary unit of length",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which is the most appropriate unit to use to measure the distance between two towns? Choose inches, feet, yards or miles."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00088",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00088",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Choose a reasonable metric length",
+    "recipe": "c1-units",
+    "family": "structured-port87",
+    "title": "Choose a reasonable metric length",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which is the most reasonable measure for the length of a bicycle?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00087",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00087",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Identify a line, a segment or a ray",
+    "recipe": "c1-lines",
+    "family": "structured-port87",
+    "title": "Identify a line, a segment or a ray",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "geometry-vocabulary",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which figure is a ray? Answer with the letter."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00013",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00013",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Name a segment, a ray or a line",
+    "recipe": "c1-lines",
+    "family": "structured-port87",
+    "title": "Name a segment, a ray or a line",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "geometry-vocabulary",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which name fits the figure shown? Write segment, ray or line, then the letters, for example ray RS."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00077",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00077",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Name the segments and rays in a figure",
+    "recipe": "c1-lines",
+    "family": "structured-port87",
+    "title": "Name the segments and rays in a figure",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "geometry-vocabulary",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "seg-rays"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Name the three line segments and the three rays in the figure. Write the segments, a semicolon, then the rays, for example PQ, ... ; PQ, ..."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00076",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00076",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Define a ray",
+    "recipe": "c1-lines",
+    "family": "structured-port87",
+    "title": "Define a ray",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "geometry-vocabulary",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "keywords"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Define a line segment."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00054",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00054",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Read an inch ruler to the eighth inch",
+    "recipe": "c1-ruler",
+    "family": "structured-port87",
+    "title": "Read an inch ruler to the eighth inch",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ruler-reading",
+        "level": 1
+      },
+      {
+        "trackId": "metric-ruler-models",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the value, in inches, to which the arrow points on the ruler. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00165",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00165",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Measure to the nearest quarter inch",
+    "recipe": "c1-ruler",
+    "family": "structured-port87",
+    "title": "Measure to the nearest quarter inch",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ruler-reading",
+        "level": 1
+      },
+      {
+        "trackId": "metric-ruler-models",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How long is the black bar, in inches, to the nearest quarter inch? Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00078",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00078",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Measure in millimeters or centimeters",
+    "recipe": "c1-ruler",
+    "family": "structured-port87",
+    "title": "Measure in millimeters or centimeters",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:7dfdd6c6c383df84",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ruler-reading",
+        "level": 1
+      },
+      {
+        "trackId": "metric-ruler-models",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the length of the bar in centimeters? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00016",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00016",
+    "bankId": "course-1-en",
+    "topic": "perimeter",
+    "action": "Perimeter of a triangle",
+    "recipe": "c1-perimeter",
+    "family": "structured-port87",
+    "title": "Perimeter of a triangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 1
+      },
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "square-inverse-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the perimeter of the triangle? Dimensions are in inches. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00056",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00056",
+    "bankId": "course-1-en",
+    "topic": "perimeter",
+    "action": "Perimeter of an isosceles triangle",
+    "recipe": "c1-perimeter",
+    "family": "structured-port87",
+    "title": "Perimeter of an isosceles triangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 1
+      },
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "square-inverse-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the perimeter of the triangle. Dimensions are in centimeters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00147",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00147",
+    "bankId": "course-1-en",
+    "topic": "perimeter",
+    "action": "Perimeter of a rectangle",
+    "recipe": "c1-perimeter",
+    "family": "structured-port87",
+    "title": "Perimeter of a rectangle",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 1
+      },
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "square-inverse-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the perimeter of this rectangle in millimeters? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00148",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00148",
+    "bankId": "course-1-en",
+    "topic": "perimeter",
+    "action": "Perimeter of a square",
+    "recipe": "c1-perimeter",
+    "family": "structured-port87",
+    "title": "Perimeter of a square",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 1
+      },
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "square-inverse-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the perimeter of this square? Dimensions are in inches. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00150",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00150",
+    "bankId": "course-1-en",
+    "topic": "perimeter",
+    "action": "Side of a square from its perimeter",
+    "recipe": "c1-perimeter",
+    "family": "structured-port87",
+    "title": "Side of a square from its perimeter",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:5044dd247fe8b583",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 1
+      },
+      {
+        "trackId": "perimeter",
+        "level": 2
+      },
+      {
+        "trackId": "square-inverse-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The perimeter of a square is 60 centimeters. What is the length of one side, in centimeters? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00058",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00058",
+    "bankId": "course-1-en",
+    "topic": "number-order",
+    "action": "Order three-digit numbers",
+    "recipe": "c1-order-digits",
+    "family": "structured-port87",
+    "title": "Order three-digit numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:f7301e1a44782601",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-ordering",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "sequence"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Order the numbers 864, 648, 486 from least to greatest. Separate them with commas."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00059",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00059",
+    "bankId": "course-1-en",
+    "topic": "number-order",
+    "action": "Compare three-digit numbers",
+    "recipe": "c1-compare",
+    "family": "structured-port87",
+    "title": "Compare three-digit numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:f7301e1a44782601",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-ordering",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Compare: 573 \u2610 566. Write >, < or =."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00060",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00060",
+    "bankId": "course-1-en",
+    "topic": "number-order",
+    "action": "Compare a sum and a product",
+    "recipe": "c1-compare",
+    "family": "structured-port87",
+    "title": "Compare a sum and a product",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:f7301e1a44782601",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-ordering",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Compare: 11 + 33 \u2610 3 \u00d7 15. Write >, < or =."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00166",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00166",
+    "bankId": "course-1-en",
+    "topic": "functions",
+    "action": "Next three terms of a sequence",
+    "recipe": "c1-sequence",
+    "family": "structured-port87",
+    "title": "Next three terms of a sequence",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "sequences",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "sequence"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What three numbers come next in this sequence? 7, 10, 13, 16, ... Separate them with commas."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00063",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00063",
+    "bankId": "course-1-en",
+    "topic": "functions",
+    "action": "Next term of a sequence",
+    "recipe": "c1-sequence",
+    "family": "structured-port87",
+    "title": "Next term of a sequence",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "sequences",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What number is next in this sequence? 9, 16, 23, 30, 37, ____ Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00091",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00091",
+    "bankId": "course-1-en",
+    "topic": "functions",
+    "action": "A later term of a counting sequence",
+    "recipe": "c1-sequence",
+    "family": "structured-port87",
+    "title": "A later term of a counting sequence",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "sequences",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The ninth number in the sequence 3, 6, 9, 12, ... is what number? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00062",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00062",
+    "bankId": "course-1-en",
+    "topic": "number-theory",
+    "action": "Identify the odd number",
+    "recipe": "c1-odd",
+    "family": "structured-port87",
+    "title": "Identify the odd number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which of these numbers is odd? 516, 791, 840, 910"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00066",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00066",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Read a dial thermometer",
+    "recipe": "c1-dial",
+    "family": "structured-port87",
+    "title": "Read a dial thermometer",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "temperature-comparison",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What temperature does the thermometer show, in degrees Celsius? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00064",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00064",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Read a dial scale",
+    "recipe": "c1-dial",
+    "family": "structured-port87",
+    "title": "Read a dial scale",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "temperature-comparison",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the weight, in pounds, marked by the needle on the scale. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00156",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00156",
+    "bankId": "course-1-en",
+    "topic": "measurement",
+    "action": "Read a thermometer marked in two-degree steps",
+    "recipe": "c1-thermometer",
+    "family": "structured-port87",
+    "title": "Read a thermometer marked in two-degree steps",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:c05082d72a6350b1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "temperature-comparison",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What temperature is shown on this thermometer, in degrees Fahrenheit? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00020",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00020",
+    "bankId": "course-1-en",
+    "topic": "word-equations",
+    "action": "Combining story: add two-digit numbers",
+    "recipe": "c1-story",
+    "family": "structured-port87",
+    "title": "Combining story: add two-digit numbers",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "There were 53 runners entered in a race. On the day of the race, 29 more runners entered. How many runners were entered in the race? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00022",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00022",
+    "bankId": "course-1-en",
+    "topic": "word-equations",
+    "action": "Change from a purchase",
+    "recipe": "c1-story",
+    "family": "structured-port87",
+    "title": "Change from a purchase",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "At Fredo's Pizza, a small pizza costs $5.55. Ben gave the cashier $20.00. How much change should Ben receive? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00018",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00018",
+    "bankId": "course-1-en",
+    "topic": "word-equations",
+    "action": "Combining story: two-digit plus three-digit",
+    "recipe": "c1-story",
+    "family": "structured-port87",
+    "title": "Combining story: two-digit plus three-digit",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The band club sold 91 candy bars the first week of a fund-raiser. In the second week, 550 candy bars were sold. How many candy bars were sold in the two weeks? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00019",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00019",
+    "bankId": "course-1-en",
+    "topic": "word-equations",
+    "action": "Combining story with coins",
+    "recipe": "c1-story",
+    "family": "structured-port87",
+    "title": "Combining story with coins",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Iris had 26 cents, then found 6 quarters. Then a parent gave Iris 14 cents. How many cents does Iris have now? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00021",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00021",
+    "bankId": "course-1-en",
+    "topic": "word-equations",
+    "action": "Separating story",
+    "recipe": "c1-story",
+    "family": "structured-port87",
+    "title": "Separating story",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "At a bus stop, 14 people are waiting. The first bus picks up 9 people. How many people are still at the bus stop? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00081",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00081",
+    "bankId": "course-1-en",
+    "topic": "word-equations",
+    "action": "How many more to finish",
+    "recipe": "c1-story",
+    "family": "structured-port87",
+    "title": "How many more to finish",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "On the way to the top of a tower, Jason stopped at step 97. There are 388 steps in all. How many more steps are left? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00023",
+    "providerSourceId": "course-1-en:bank:C1_Section02:item:C1_S02_00023",
+    "bankId": "course-1-en",
+    "topic": "word-equations",
+    "action": "Money left after a withdrawal",
+    "recipe": "c1-story",
+    "family": "structured-port87",
+    "title": "Money left after a withdrawal",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section02:scope:733fcaebf38f26b1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "one-step-story-demands",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Rosa had $100 in the bank and took $52 out. How much money, in dollars, is left in the bank? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00020",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00020",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Choose the frequency table for a data set",
+    "recipe": "c1-data",
+    "family": "structured-port87",
+    "title": "Choose the frequency table for a data set",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "histogram-production",
+        "level": 1
+      },
+      {
+        "trackId": "histogram-production",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "bar-graph-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which frequency table shows these daily high temperatures for 20 days? 53, 69, 51, 51, 57, 64, 67, 61, 73, 69, 83, 70, 87, 84, 60, 64, 75, 86, 70, 50. Answer with the letter."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00067",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00067",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Count scores at or above a value from a frequency table",
+    "recipe": "c1-data",
+    "family": "structured-port87",
+    "title": "Count scores at or above a value from a frequency table",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "histogram-production",
+        "level": 1
+      },
+      {
+        "trackId": "histogram-production",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "bar-graph-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The table shows the scores on a final exam. How many students had scores of 86 or better? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00068",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00068",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Compare two rows of a frequency table",
+    "recipe": "c1-data",
+    "family": "structured-port87",
+    "title": "Compare two rows of a frequency table",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "histogram-production",
+        "level": 1
+      },
+      {
+        "trackId": "histogram-production",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "bar-graph-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The table shows the results of a class test. How many more students scored 71 to 80 than 81 to 90? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00069",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00069",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Read a bar graph",
+    "recipe": "c1-data",
+    "family": "structured-port87",
+    "title": "Read a bar graph",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "histogram-production",
+        "level": 1
+      },
+      {
+        "trackId": "histogram-production",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "bar-graph-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The bar graph shows the favorite subjects of 50 students. How many students said History was their favorite subject? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00081",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00081",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "True or false statements about a histogram",
+    "recipe": "c1-data",
+    "family": "structured-port87",
+    "title": "True or false statements about a histogram",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "histogram-production",
+        "level": 1
+      },
+      {
+        "trackId": "histogram-production",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "bar-graph-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The histogram shows the heights of students. Decide whether each statement is true or false. (1) The interval 56\u201358 inches has the fewest students. (2) The interval 62\u201364 inches has the most students. (3) Each interval is 3 inches. Answer like True; False; True."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00079",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00079",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Make a tally chart and frequency table",
+    "recipe": "c1-data",
+    "family": "structured-port87",
+    "title": "Make a tally chart and frequency table",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "histogram-production",
+        "level": 1
+      },
+      {
+        "trackId": "histogram-production",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "bar-graph-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Make a tally chart and a frequency table for these retirement ages: 75, 61, 51, 71, 59, 75, 77, 88, 53, 79, 69, 69, 85, 70, 79, 56, 69, 60, 66, 60. Use the intervals 50\u201359, 60\u201369, 70\u201379 and 80\u201389. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00080",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00080",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Make a histogram",
+    "recipe": "c1-data",
+    "family": "structured-port87",
+    "title": "Make a histogram",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "histogram-production",
+        "level": 1
+      },
+      {
+        "trackId": "histogram-production",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "bar-graph-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text with teacher diagram"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The golf scores for the 21 members of a club are: 109, 112, 104, 110, 81, 107, 101, 90, 98, 119, 104, 85, 118, 115, 77, 102, 102, 77, 108, 91, 104. Make a histogram using ten-point intervals (70\u201379, 80\u201389, ...) that shows the frequency distribution of the scores. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00084",
+    "providerSourceId": "course-1-en:bank:C1_Section01:item:C1_S01_00084",
+    "bankId": "course-1-en",
+    "topic": "data-displays",
+    "action": "Draw a bar graph of survey results",
+    "recipe": "c1-data",
+    "family": "structured-port87",
+    "title": "Draw a bar graph of survey results",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section01:scope:33f91ea9dcdfc16d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "histogram-production",
+        "level": 1
+      },
+      {
+        "trackId": "histogram-production",
+        "level": 2
+      },
+      {
+        "trackId": "graph-reading",
+        "level": 1
+      },
+      {
+        "trackId": "bar-graph-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text with teacher diagram"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A class surveyed favorite lunches. The tallies give these counts: Pizza 15, Hot Dog 20, Pot Pie 45, Burger 20, Nuggets 50. Draw a bar graph that displays the results of the survey. Complete the requested work on paper; this task requires teacher review."
   }
 ]

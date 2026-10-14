@@ -470,6 +470,64 @@ const factShow=k=>k.replace(/([+−×÷=])/g,' $1 ');
 function noRegroup(a,b){const A=String(a),B=String(b).padStart(A.length,'0');return Number([...A].map((d,i)=>Math.abs(Number(d)-Number(B[i]))).join(''));}
 // Divisor and quotient pairs whose product is a whole number of thousands (two-digit divisor, three-digit quotient).
 const C1_THOUSANDS=(()=>{const out=[];for(let d=12;d<=48;d++)for(let q=101;q<=999;q++)if(d*q%1000===0&&d*q<10000&&q%100)out.push([d,q]);return out;})();
+// ---------- Course 1, Batch C1-2 helpers ----------
+const SHADE='#7d8f96';
+// A rows × cols grid with whole columns shaded from the left.
+function gridFigure(rows,cols,shadedCols,label){const s=34,x0=20,y0=14;let b='';for(let r=0;r<rows;r++)for(let c=0;c<cols;c++)b+=`<rect x="${x0+c*s}" y="${y0+r*s}" width="${s}" height="${s}" fill="${c<shadedCols?SHADE:'none'}" fill-opacity="0.45" stroke="${INK}" stroke-width="1.5"/>`;return svg(b,label,x0*2+cols*s,y0*2+rows*s);}
+// A strip of n equal parts; the listed parts are shaded.
+function stripFigure(n,shaded,label){const s=44,x0=12;let b='';for(let i=0;i<n;i++)b+=`<rect x="${x0+i*s}" y="10" width="${s}" height="40" fill="${shaded.includes(i)?SHADE:'none'}" fill-opacity="0.45" stroke="${INK}" stroke-width="1.6"/>`;return svg(b,label,x0*2+n*s,60);}
+// A circle cut into n equal sectors; the listed sectors are shaded.
+function sectorsFigure(n,shaded,label){const R=70,cx=90,cy=85;let b='';for(let i=0;i<n;i++){const a0=2*Math.PI*i/n-Math.PI/2,a1=2*Math.PI*(i+1)/n-Math.PI/2,p=a=>[cx+R*Math.cos(a),cy+R*Math.sin(a)];const [x0,y0]=p(a0),[x1,y1]=p(a1);
+ b+=`<path d="M${cx},${cy} L${x0.toFixed(1)},${y0.toFixed(1)} A${R},${R} 0 0 1 ${x1.toFixed(1)},${y1.toFixed(1)} Z" fill="${shaded.includes(i)?SHADE:'none'}" fill-opacity="0.45" stroke="${INK}" stroke-width="1.6"/>`;}return svg(b,label,180,170);}
+// A line, a segment or a ray between x1 and x2 at height y.
+function linear(kind,x1,x2,y){return kind==='line'?ln(x1,y,x2,y,{w:2,start:1,end:1}):kind==='ray'?ln(x1,y,x2,y,{w:2,end:1})+`<circle cx="${x1}" cy="${y}" r="4" fill="${INK}"/>`:ln(x1,y,x2,y,{w:2})+`<circle cx="${x1}" cy="${y}" r="4" fill="${INK}"/><circle cx="${x2}" cy="${y}" r="4" fill="${INK}"/>`;}
+function threeFigures(kinds){let b='';kinds.forEach((k,i)=>{b+=tx(16,34+i*40,`(${'abc'[i]})`,{size:13})+linear(k,44,300,30+i*40);});return svg(b,`Three figures: (a) a ${kinds[0]}, (b) a ${kinds[1]}, (c) a ${kinds[2]}`,320,140);}
+// A figure through two labelled points; for a ray the endpoint is the first point.
+function twoPointFigure(kind,P,Q,rev){let b=kind==='line'?ln(20,40,260,40,{w:2,start:1,end:1}):kind==='segment'?ln(60,40,220,40,{w:2}):rev?ln(220,40,20,40,{w:2,end:1}):ln(60,40,260,40,{w:2,end:1});
+ b+=`<circle cx="60" cy="40" r="4" fill="${INK}"/><circle cx="220" cy="40" r="4" fill="${INK}"/>`+tx(60,64,P,{italic:1,size:15})+tx(220,64,Q,{italic:1,size:15});
+ return svg(b,kind==='ray'?`A ray with endpoint ${rev?Q:P} passing through ${rev?P:Q}`:`A ${kind} through points ${P} and ${Q}`,290,76);}
+// Three points on a ray that starts at the first point.
+function pointsOnRay(L){const xs=[40,150,260];let b=ln(40,40,330,40,{w:2,end:1});xs.forEach((x,i)=>{b+=`<circle cx="${x}" cy="40" r="4" fill="${INK}"/>`+tx(x,64,L[i],{italic:1,size:15});});return svg(b,`A ray that starts at ${L[0]} and passes through ${L[1]} and ${L[2]}`,350,76);}
+// An inch ruler (den marks per inch) or a centimetre ruler with millimetres; a bar from 0 or a marker.
+function c1Ruler(o){const inches=o.unit==='in',len=o.len,den=inches?o.den:10,u=inches?84:84,x0=20,top=40,W=x0*2+len*u+14;let b='';
+ if(o.bar!==undefined)b+=ln(x0,18,x0+u*o.bar,18,{w:4});
+ b+=`<path d="M${x0},${top} H${x0+len*u} l4,12 l-4,12 l4,12 l-4,12 L${x0},${top+48} Z" fill="none" stroke="${INK}" stroke-width="1.5"/>`;
+ for(let k=1;k<len*den;k++){const tl=k%den===0?24:inches?(k%(den/2)===0?17:den>=8&&k%(den/4)===0?12:7):(k%5===0?15:8);b+=ln(x0+k*u/den,top,x0+k*u/den,top+tl,{w:1});}
+ for(let i=0;i<=len;i++)b+=tx(x0+i*u+(i===0?6:i===len?-8:0),top+40,String(i),{size:13});b+=tx(x0+len*u-36,top+42,inches?'in.':'cm',{size:12});
+ if(o.marker!==undefined){const x=x0+u*o.marker;b+=ln(x,6,x,top-2,{w:1.8,end:1});}
+ return svg(b,o.label,W,top+56);}
+// A round dial (thermometer or scale) with a needle.
+function dialFigure(lo,hi,step,major,value,unit,label){const cx=130,cy=125,R=100,a0=-225,a1=45,ang=v=>(a0+(v-lo)/(hi-lo)*(a1-a0))*Math.PI/180,P=(v,r)=>[cx+r*Math.cos(ang(v)),cy+r*Math.sin(ang(v))];
+ let b=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${INK}" stroke-width="1.8"/>`;
+ for(let v=lo;v<=hi;v+=step){const big=(v-lo)%major===0,[x1,y1]=P(v,R),[x2,y2]=P(v,R-(big?14:7));b+=ln(x1,y1,x2,y2,{w:big?1.6:1});if(big){const [x,y]=P(v,R-28);b+=tx(x,y+4,minus(v),{size:12});}}
+ const [nx,ny]=P(value,R-20);b+=ln(cx,cy,nx,ny,{w:2.4,end:1})+`<circle cx="${cx}" cy="${cy}" r="4" fill="${INK}"/>`+tx(cx,cy+R-24,unit,{size:13});
+ return svg(b,label,260,250);}
+// A vertical thermometer from lo to hi with marks every step and labels every 10; filled to value.
+function thermoFigure(lo,hi,step,value,label){const x=70,top=34,H=300,Y=v=>top+H*(hi-v)/(hi-lo);let b=`<rect x="${x-9}" y="${top-8}" width="18" height="${H+16}" rx="9" fill="none" stroke="${INK}" stroke-width="1.6"/><circle cx="${x}" cy="${top+H+24}" r="16" fill="${SHADE}" fill-opacity="0.8" stroke="${INK}" stroke-width="1.6"/>`;
+ b+=`<rect x="${x-5}" y="${Y(value).toFixed(1)}" width="10" height="${(top+H+12-Y(value)).toFixed(1)}" fill="${SHADE}" fill-opacity="0.8"/>`;
+ for(let v=lo;v<=hi;v+=step){const big=(v-lo)%10===0;b+=ln(x+12,Y(v),x+12+(big?18:10),Y(v),{w:big?1.6:1});if(big)b+=tx(x+40,Y(v)+4,minus(v),{size:13,anchor:'start'});}
+ b+=tx(x,top-16,'°F',{size:13});return svg(b,label,170,top+H+50);}
+// Polygons with side labels: a right triangle, an isosceles triangle, a rectangle, a square.
+function sideLabelled(kind,s,unit){const lab=v=>`${v} ${unit}`;
+ if(kind==='right'){const [a,b2,c2]=s,sc=150/Math.max(a,b2),A=[40,30+a*sc],B=[40+b2*sc,30+a*sc],C=[40,30];return svg(`<polygon points="${A} ${B} ${C}" fill="none" stroke="${INK}" stroke-width="1.8"/>`+ln(A[0],A[1]-12,A[0]+12,A[1]-12,{w:1})+ln(A[0]+12,A[1]-12,A[0]+12,A[1],{w:1})+tx(A[0]-8,(A[1]+C[1])/2,lab(a),{size:13,anchor:'end'})+tx((A[0]+B[0])/2,A[1]+20,lab(b2),{size:13})+tx((B[0]+C[0])/2+12,(B[1]+C[1])/2-6,lab(c2),{size:13,anchor:'start'}),`Right triangle with sides ${lab(a)}, ${lab(b2)} and ${lab(c2)}`,40+b2*sc+120,30+a*sc+40);}
+ if(kind==='iso'){const [leg,base]=s,h=Math.sqrt(leg*leg-base*base/4),sc=150/Math.max(base,h),A=[40,30+h*sc],B=[40+base*sc,30+h*sc],C=[40+base*sc/2,30];return svg(`<polygon points="${A} ${B} ${C}" fill="none" stroke="${INK}" stroke-width="1.8"/>`+tx((A[0]+C[0])/2-10,(A[1]+C[1])/2,lab(leg),{size:13,anchor:'end'})+tx((B[0]+C[0])/2+10,(B[1]+C[1])/2,lab(leg),{size:13,anchor:'start'})+tx((A[0]+B[0])/2,A[1]+20,lab(base),{size:13}),`Isosceles triangle with sides ${lab(leg)}, ${lab(leg)} and ${lab(base)}`,40+base*sc+90,30+h*sc+40);}
+ const [w,h]=kind==='square'?[s[0],s[0]]:s,sc=170/Math.max(w,h),W=w*sc,H=h*sc;return svg(`<rect x="30" y="20" width="${W.toFixed(1)}" height="${H.toFixed(1)}" fill="none" stroke="${INK}" stroke-width="1.8"/>`+tx(30+W/2,20+H+20,lab(w),{size:13})+(kind==='square'?'':tx(30+W+8,20+H/2+4,lab(h),{size:13,anchor:'start'})),kind==='square'?`Square with side ${lab(w)}`:`Rectangle ${lab(w)} by ${lab(h)}`,30+W+90,20+H+36);}
+// A two-column table drawn as SVG.
+function tableFigure(head,rows,label,w=[110,110]){const rh=26,W=w[0]+w[1]+2;let b=`<rect x="1" y="1" width="${W-2}" height="${rh*(rows.length+1)}" fill="none" stroke="${INK}" stroke-width="1.5"/>`+ln(1+w[0],1,1+w[0],1+rh*(rows.length+1),{w:1.2});
+ [head,...rows].forEach((r,i)=>{if(i)b+=ln(1,1+rh*i,W-1,1+rh*i,{w:i===1?1.6:1});b+=`<text x="${1+w[0]/2}" y="${1+rh*i+18}" font-size="13" text-anchor="middle" fill="${INK}"${i?'':' font-weight="bold"'}>${esc(r[0])}</text><text x="${1+w[0]+w[1]/2}" y="${1+rh*i+18}" font-size="13" text-anchor="middle" fill="${INK}"${i?'':' font-weight="bold"'}>${esc(r[1])}</text>`;});
+ return svg(b,label,W+2,rh*(rows.length+1)+4);}
+// Four small frequency tables labelled (a)-(d) side by side.
+function fourTables(head,cats,sets,label){const cw=150,rh=22;let b='';sets.forEach((s,k)=>{const x=k*(cw+14)+4;b+=tx(x+cw/2,14,`(${'abcd'[k]})`,{size:13})+`<rect x="${x}" y="22" width="${cw}" height="${rh*(cats.length+1)}" fill="none" stroke="${INK}" stroke-width="1.3"/>`+ln(x+cw*0.6,22,x+cw*0.6,22+rh*(cats.length+1),{w:1});
+  [[head[0],head[1]],...cats.map((c,i)=>[c,String(s[i])])].forEach((r,i)=>{if(i)b+=ln(x,22+rh*i,x+cw,22+rh*i,{w:1});b+=tx(x+cw*0.3,22+rh*i+15,r[0],{size:11})+tx(x+cw*0.8,22+rh*i+15,r[1],{size:11});});});
+ return svg(b,label,4*(cw+14),30+rh*(cats.length+1));}
+// A histogram: adjacent bars over interval labels.
+function histogramFigure(cats,vals,title,yLabel,top,step){const W=380,H=250,x0=50,y0=200,h=160,bw=(W-x0-20)/cats.length,Y=v=>y0-h*v/top;let b=tx(W/2,18,title,{size:14});
+ for(let v=0;v<=top;v+=step)b+=ln(x0,Y(v),W-12,Y(v),{color:'#c9d3d6',w:1})+tx(x0-8,Y(v)+4,String(v),{size:11,anchor:'end'});
+ cats.forEach((c,i)=>{const x=x0+i*bw;b+=`<rect x="${x.toFixed(1)}" y="${Y(vals[i]).toFixed(1)}" width="${bw.toFixed(1)}" height="${(y0-Y(vals[i])).toFixed(1)}" fill="${SHADE}" fill-opacity="0.55" stroke="${INK}" stroke-width="1.2"/>`+tx(x+bw/2,y0+16,c,{size:11});});
+ b+=ln(x0,y0,W-12,y0,{w:1.5})+ln(x0,y0,x0,y0-h-8,{w:1.5})+`<text x="14" y="${y0-h/2}" font-size="12" text-anchor="middle" transform="rotate(-90 14 ${y0-h/2})" fill="${INK}">${esc(yLabel)}</text>`;
+ return svg(b,`${title}: histogram of ${cats.map((c,i)=>c+' '+vals[i]).join(', ')}`,W,H);}
+const SEG_LETTERS=[['A','B','C'],['P','Q','R'],['X','Y','Z'],['D','E','F'],['L','M','N']];
+const twoLetters=s=>String(s).toUpperCase().replace(/[^A-Z]/g,'');
 // ---------- tasks ----------
 const LETTERS='ABCDEGHJKMNPQRSTUVWXYZ';
 function letter(int,ban=''){const pool=[...LETTERS].filter(c=>!ban.includes(c));return pool[int(0,pool.length-1)];}
@@ -2211,6 +2269,160 @@ case 'c1-order-ops':{const v=c.variant;let shown,z,list,sol,mathml='',plain='';
  else if(v==='div-paren'){const d=int(2,4),b=d*int(2,4),q=b/d,a=q*int(3,12);shown=`${a} ÷ (${b} ÷ ${d})`;z=a/q;sol=`${b} ÷ ${d} = ${q}, and ${a} ÷ ${q} = ${z}.`;list=[...(a%b===0&&(a/b)%d===0?[{value:a/b/d,mistake:'Ignored the parentheses and divided from left to right'}]:[]),{value:a*q,mistake:'Multiplied instead of dividing'},...(a%b===0?[{value:a/b,mistake:'Divided by the first number in the parentheses only'}]:[]),{value:z+2,mistake:'Division slip'},{value:z+1,mistake:'Division slip'}];}
  else{let a,b,d;do{d=pick([10,12,15,20,24]);a=int(11,19);b=int(11,24);}while(a*b%d||a%d===0||b%d===0);mathml=math(mfrac(`<mrow><mo>(</mo>${mn(a)}<mo>)</mo><mo>(</mo>${mn(b)}<mo>)</mo></mrow>`,d));plain=`${a} × ${b} ÷ ${d}`;shown=null;z=a*b/d;sol=`${a} × ${b} = ${a*b}, and ${a*b} ÷ ${d} = ${z}.`;list=[{value:a*b,mistake:'Forgot to divide'},{value:(a+b)%d===0?(a+b)/d:z+10,mistake:(a+b)%d===0?'Added the numbers on top instead of multiplying':'Division slip in the tens'},{value:z+1,mistake:'Division slip'}];}
  t=n(shown?`Simplify: ${shown}.`:'Simplify the expression shown.',z,sol,{v,shown,plain},'numbers');if(mathml)t.math=mathml;t.choices=distinct(z,list);break;}
+// ---------- Course 1, Batch C1-2: Lessons 6-11 and Investigation 1 ----------
+case 'c1-fraction-model':{const v=c.variant,fa=(x,y)=>`${x}/${y}`;let N,D,list,p,fig,ask;
+ if(v==='grid-not'){const w=int(2,6),k=int(1,w-1);N=w-k;D=w;p={w,k};ask='What fraction of the rectangle is not shaded?';fig=gridFigure(2,w,k,`A rectangle of 2 rows and ${w} columns; the first ${k} column${k>1?'s are':' is'} shaded`);
+  list=[{value:fa(k,w),mistake:'Gave the shaded fraction'},{value:fa(2*(w-k)+1,2*w),mistake:'Counted one extra unshaded square'},{value:String(2*(w-k)),mistake:'Gave the number of unshaded squares, not a fraction'},{value:fa(w-k,k),mistake:'Compared unshaded to shaded parts instead of to the whole'}];}
+ else if(v==='strip'){const n=int(4,8);let sh;do{sh=[...Array(n).keys()].filter(()=>int(0,2)===0);}while(sh.length<1||sh.length>=n-1);N=sh.length;D=n;p={n,shaded:sh};ask='What fraction of this rectangle is shaded?';fig=stripFigure(n,sh,`A rectangle divided into ${n} equal parts; parts ${sh.map(i=>i+1).join(', ')} are shaded`);
+  list=[{value:fa(n-N,n),mistake:'Gave the unshaded fraction'},{value:fa(N,n-N),mistake:'Compared shaded to unshaded parts instead of to the whole'},{value:fa(N+1,n),mistake:'Miscounted the shaded parts'},{value:fa(N,n+1),mistake:'Counted the lines instead of the parts'}];}
+ else{const n=pick([4,6,8,8]);let sh;do{sh=[...Array(n).keys()].filter(()=>int(0,1)===0);}while(sh.length<1||sh.length>=n||2*sh.length===n);N=sh.length;D=n;p={n,shaded:sh};ask='What fraction of this circle is shaded?';fig=sectorsFigure(n,sh,`A circle divided into ${n} equal parts; ${N} parts are shaded`);
+  list=[{value:fa(n-N,n),mistake:'Gave the unshaded fraction'},{value:fa(N,n-N),mistake:'Compared shaded to unshaded parts instead of to the whole'},{value:fa(N+1,n),mistake:'Miscounted the shaded parts'}];}
+ t=n(ask+' Write a fraction.',R(N,D),`${N} of the ${D} equal parts: ${fa(N,D)}.`,p,'numbers',fig);t.answer.display=fa(N,D);t.choices=wrongOnly(t,list);break;}
+case 'c1-fraction-of':{const v=c.variant,fa=(x,y)=>`${x}/${y}`;
+ if(v==='unit'||v==='non-unit'){const b=v==='unit'?int(2,5):int(3,6),a=v==='unit'?1:int(2,b-1),m=v==='unit'?10*int(1,2)+int(1,9):int(2,12),N=b*m,z=a*m;
+  t=n(`What number is ${fa(a,b)} of ${N}?`,z,`${N} ÷ ${b} = ${m}${a>1?`, and ${a} × ${m} = ${z}`:''}.`,{a,b,N},'numbers');
+  t.choices=distinct(z,v==='unit'?[{value:N*b,mistake:'Multiplied instead of dividing'},{value:z+pick([-10,10]),mistake:'Division slip in the tens'},{value:z+pick([-b,b]),mistake:'Division slip'}]:[{value:m,mistake:'Found only one of the equal parts'},{value:a*N,mistake:'Multiplied by the numerator without dividing'},{value:N-z,mistake:'Found the rest of the group instead'},{value:z+1,mistake:'Arithmetic slip'},{value:z+a,mistake:'Multiplied by one more than the numerator'}]);break;}
+ if(v==='money-part'){const b=pick([2,2,4,5]),m=b===2?5*int(11,99):b===4?5*int(21,99):int(21,199),N=b*m;
+  t=n(`What number is 1/${b} of ${money(N)}?`,R(m,100),`${money(N)} ÷ ${b} = ${money(m)}.`,{b,N},'decimal');t.answer.display=money(m);
+  t.choices=distinct(money(m),[{value:money(N*b),mistake:'Multiplied instead of dividing'},{value:money(m+(m%100>=50?-50:50)),mistake:'Divided the dollars and the cents incorrectly'},{value:money(m+10),mistake:'Division slip in the dimes'},{value:money(m-10),mistake:'Division slip in the dimes'}]);break;}
+ if(v==='denominator'){const b=int(3,12),a=int(1,b-1),top=false;
+  t=n(`What is the ${top?'numerator':'denominator'} of the fraction ${fa(a,b)}?`,top?a:b,`In ${fa(a,b)}, the numerator (top) is ${a} and the denominator (bottom) is ${b}.`,{a,b,top});t.math=math(mfrac(a,b));
+  t.choices=distinct(top?a:b,[{value:top?b:a,mistake:'Mixed up the numerator and the denominator'},{value:a+b,mistake:'Added the numerator and the denominator'},{value:b-a,mistake:'Subtracted the numerator from the denominator'},{value:a*b,mistake:'Multiplied the numerator and the denominator'}]);break;}
+ if(v==='games'){let w,g;do{g=int(8,20);w=int(2,g-2);}while(gcd(w,g)!==1);const team=pick(['A team','A soccer team','The school chess club','A softball team']);
+  t=n(`${team} won ${w} of its ${g} games. What fraction of its games did it win? Write a fraction.`,R(w,g),`It won ${w} out of ${g}: ${fa(w,g)}.`,{w,g},'numbers');t.answer.display=fa(w,g);
+  t.choices=wrongOnly(t,[{value:fa(g-w,g),mistake:'Gave the fraction of games lost'},{value:fa(w,g-w),mistake:'Compared games won to games lost'},{value:fa(g,w),mistake:'Wrote the fraction upside down'}]);break;}
+ // days of a week
+ const d=int(2,6);t=n(`${['','','Two','Three','Four','Five','Six'][d]} days is what fraction of a week? Write a fraction.`,R(d,7),`A week has 7 days, so ${d} days is ${fa(d,7)} of a week.`,{d},'numbers');t.answer.display=fa(d,7);
+ t.choices=wrongOnly(t,[{value:fa(7,d),mistake:'Wrote the fraction upside down'},{value:fa(d,30),mistake:'Used the days in a month instead of a week'},{value:fa(d,5),mistake:'Counted only the school days in a week'}]);break;}
+case 'c1-units':{if(c.variant==='customary'){const [ctx,u]=pick([['the distance between two towns','miles'],['the length of a pencil','inches'],['the height of a classroom door','feet'],['the length of a football field','yards'],['the width of a book','inches']]),all=['inches','feet','yards','miles'];
+  t=text(`Which is the most appropriate unit to use to measure ${ctx}? Choose inches, feet, yards or miles.`,u,`${u[0].toUpperCase()+u.slice(1)} is the most sensible unit for ${ctx}.`,{ctx},'',[u.replace(/s$/,'')]);
+  t.choices=[...all.filter(x=>x!==u).slice(0,2).map(x=>({value:x,mistake:`Chose a unit that is too ${all.indexOf(x)<all.indexOf(u)?'small':'large'}`})),{value:'minutes',mistake:'Chose a unit of time, not length'}];break;}
+ const [obj,num,u]=pick([['a bicycle',2,'m'],['a new pencil',18,'cm'],['a ladybug',6,'mm'],['a classroom door',2,'m'],['a drive between two cities',40,'km'],['a paper clip',3,'cm']]),units=['mm','cm','m','km'];
+ t=text(`Which is the most reasonable measure for the length of ${obj}?`,`${num} ${u}`,`${num} ${u} is a sensible length for ${obj}.`,{obj,num,u},'',[`${num}${u}`]);
+ t.choices=units.filter(x=>x!==u).map(x=>({value:`${num} ${x}`,mistake:`${units.indexOf(x)<units.indexOf(u)?'Chose a unit that is far too small':'Chose a unit that is far too large'}`}));break;}
+case 'c1-lines':{const v=c.variant;
+ if(v==='choose'){const kinds=['line','segment','ray'];for(let i=2;i>0;i--){const j=int(0,i);[kinds[i],kinds[j]]=[kinds[j],kinds[i]];}const want=pick(['segment','ray','line']),k=kinds.indexOf(want);
+  t=text(`Which figure is a ${want === 'segment'?'line segment':want}? Answer with the letter.`,'abc'[k],`A line has arrows at both ends, a segment has two endpoints, and a ray has one endpoint and one arrow: (${'abc'[k]}).`,{kinds,want},threeFigures(kinds),[`(${'abc'[k]})`]);
+  t.choices=[0,1,2].filter(i=>i!==k).map(i=>({value:'abc'[i],mistake:`Chose the ${kinds[i]===('line')?'line':kinds[i]==='ray'?'ray':'line segment'}`}));break;}
+ const [A,B]=pick([['A','B'],['P','Q'],['R','S'],['M','N'],['X','Y']]);
+ if(v==='notation'){const kind=pick(['segment','ray','line']),rev=kind==='ray'&&int(0,1)===1,ans=kind==='ray'?(rev?`ray ${B}${A}`:`ray ${A}${B}`):`${kind} ${A}${B}`;
+  t=text(`Which name fits the figure shown? Write segment, ray or line, then the letters, for example ray ${A}${B}.`,ans,kind==='ray'?`A ray is named from its endpoint: ${ans}.`:`The figure is a ${kind}: ${ans}.`,{kind,rev,A,B},twoPointFigure(kind,A,B,rev),kind==='ray'?[]:[`${kind} ${B}${A}`]);
+  const opts=kind==='ray'?[{value:`ray ${rev?A+B:B+A}`,mistake:'Named the ray from the wrong endpoint'},{value:`segment ${A}${B}`,mistake:'Called a ray a segment'},{value:`line ${A}${B}`,mistake:'Called a ray a line'}]:[{value:`${kind==='line'?'segment':'line'} ${A}${B}`,mistake:kind==='line'?'Called a line a segment':'Called a segment a line'},{value:`ray ${A}${B}`,mistake:`Called a ${kind} a ray`},{value:`ray ${B}${A}`,mistake:`Called a ${kind} a ray`}];
+  t.choices=opts;break;}
+ if(v==='name'){const L=pick(SEG_LETTERS),[X,Y,Z]=L,segs=[X+Y,Y+Z,X+Z],rays=[X+Y,Y+Z,X+Z];
+  t={prompt:`Name the three line segments and the three rays in the figure. Write the segments, a semicolon, then the rays, for example ${X}${Y}, ... ; ${X}${Y}, ...`,answer:{kind:'seg-rays',segs,rays,value:`${segs.join(', ')}; ${rays.join(', ')}`},solution:`Segments: ${segs.join(', ')}. Rays start at an endpoint and go in the arrow's direction: ${rays.join(', ')}.`,parameters:{L},svg:pointsOnRay(L)};
+  t.choices=wrongOnly(t,[{value:`${segs.join(', ')}; ${[Y+X,Z+Y,Z+X].join(', ')}`,mistake:'Named the rays in the wrong direction'},{value:`${segs.slice(0,2).join(', ')}; ${rays.join(', ')}`,mistake:'Missed the segment between the outer points'},{value:`${rays.join(', ')}; ${segs.slice(0,2).join(', ')}`,mistake:'Missed a ray'}]);break;}
+ // define a ray (or a line or a segment, from the same lesson)
+ const what=pick(['ray','ray','line','segment']),D={ray:{need:[['endpoint','end point','one end','starts at a point','starting point','begins at a point'],['one direction','forever','indefinitely','without end','never ends','goes on','extends']],avoid:['two endpoints','both directions','two directions'],value:'A ray is part of a line that has one endpoint and extends without end in one direction.'},
+  line:{need:[['both directions','two directions','each direction','opposite directions'],['forever','indefinitely','without end','never ends','goes on','extends','no end']],avoid:['one endpoint','two endpoints','one direction'],value:'A line is straight and extends without end in both directions.'},
+  segment:{need:[['two endpoints','two end points','two ends','both ends'],['part of a line','straight','between']],avoid:['forever','without end','indefinitely','one endpoint'],value:'A line segment is part of a line with two endpoints.'}}[what];
+ t={prompt:`Define a ${what==='segment'?'line segment':what}.`,answer:{kind:'keywords',need:D.need,avoid:D.avoid,value:D.value},solution:D.value,parameters:{what}};
+ t.choices=wrongOnly(t,[{value:'It has two endpoints and is part of a line.',mistake:'Described a line segment'},{value:'It goes on forever in both directions.',mistake:'Described a line'},{value:'It has one endpoint and goes on forever in one direction.',mistake:'Described a ray'},{value:'It is a curved path.',mistake:'Did not describe a straight figure'}]);break;}
+case 'c1-ruler':{const v=c.variant;
+ if(v==='eighths'){const k=int(9,39),z=mixedText(k,8);
+  t=n('Find the value, in inches, to which the arrow points on the ruler.',R(k,8),`The arrow is ${k} eighths past 0: ${z} inches.`,{k},'mixed',c1Ruler({unit:'in',len:5,den:8,marker:k/8,label:`An inch ruler marked in eighths; an arrow points to ${z} inches`}));
+  t.choices=distinct(z,[{value:mixedText(k+1,8),mistake:'Counted one eighth too many'},{value:mixedText(k-1,8),mistake:'Counted one eighth too few'},{value:mixedText(k+2,8),mistake:'Counted the marks as quarter inches past the last whole inch'}]);break;}
+ if(v==='segment-inches'){const k=pick([3,5,6,7,9,10,11,13,14,15]),z=mixedText(k,4);
+  t=n('How long is the black bar, in inches, to the nearest quarter inch?',R(k,4),`The bar ends ${k} quarter inches past 0: ${z} inches.`,{k},'mixed',c1Ruler({unit:'in',len:4,den:8,bar:k/4,label:`An inch ruler under a bar ${z} inches long`}));
+  t.choices=distinct(z,[{value:mixedText(k+2,4),mistake:'Counted two quarter inches too many'},{value:mixedText(k-2,4),mistake:'Counted two quarter inches too few'},{value:mixedText(2*k-1,8),mistake:'Read an eighth-inch mark instead of the quarter-inch mark'}]);break;}
+ // millimetre ruler
+ const mm=pick([13,18,25,34,47,22,39]),cm=int(0,1)===1,z=cm?R(mm,10):mm,shown=cm?decStr(R(mm,10)):String(mm),k=int(2,4);
+ t=n(`What is the length of the bar in ${cm?'centimeters':'millimeters'}?`,z,`The bar ends at ${mm} mm = ${decStr(R(mm,10))} cm.`,{mm,cm},'decimal',c1Ruler({unit:'cm',len:5,bar:mm/10,label:`A centimeter ruler with millimeter marks under a bar ${mm} mm long`}));
+ t.choices=distinct(shown,cm?[{value:String(mm),mistake:'Gave millimeters instead of centimeters'},{value:decStr(R(mm-k,10)),mistake:'Started counting from the wrong mark'},{value:String(mm-k),mistake:'Gave millimeters and started from the wrong mark'}]:[{value:decStr(R(mm,10)),mistake:'Gave centimeters instead of millimeters'},{value:String(mm-k),mistake:'Started counting from the wrong mark'},{value:decStr(R(mm-k,10)),mistake:'Gave centimeters and started from the wrong mark'}]);break;}
+case 'c1-perimeter':{const v=c.variant;
+ if(v==='triangle'){const [a,b,cc]=pick([[9,12,15],[15,20,25],[18,24,30],[21,28,35],[27,36,45],[6,8,10],[12,16,20]]),u=pick(['cm','in.']),z=a+b+cc;
+  t=n(`What is the perimeter of the triangle? Dimensions are in ${u==='cm'?'centimeters':'inches'}.`,z,`${a} + ${b} + ${cc} = ${z}.`,{s:[a,b,cc],u},'numbers',sideLabelled('right',[a,b,cc],u));
+  t.choices=distinct(z,[{value:a*b/2,mistake:'Found the area instead of the perimeter'},{value:2*(a+b),mistake:'Doubled two sides as for a rectangle'},{value:z-10,mistake:'Addition slip'},{value:z+10,mistake:'Addition slip'}]);break;}
+ if(v==='isosceles'){const f=int(2,9),leg=5*f,base=8*f,z=2*leg+base;
+  t=n('Find the perimeter of the triangle. Dimensions are in centimeters.',z,`${leg} + ${leg} + ${base} = ${z}.`,{leg,base},'numbers',sideLabelled('iso',[leg,base],'cm'));
+  t.choices=distinct(z,[{value:leg+base,mistake:'Added only two of the sides'},{value:leg*base/2,mistake:'Multiplied instead of adding'},{value:2*base+leg,mistake:'Used the base twice instead of the equal sides'}]);break;}
+ if(v==='rectangle'){const w=int(10,19),l=pick([2*w,w+int(2,12)]),z=2*(l+w);
+  t=n('What is the perimeter of this rectangle in millimeters?',z,`2 × ${l} + 2 × ${w} = ${z} mm.`,{l,w},'numbers',sideLabelled('rect',[l,w],'mm'));
+  t.choices=distinct(z,[{value:l+w,mistake:'Added only one length and one width'},{value:4*w,mistake:'Used the width for all four sides'},{value:4*l,mistake:'Used the length for all four sides'},{value:l*w,mistake:'Found the area instead of the perimeter'}]);break;}
+ if(v==='square'){const s=int(8,25),z=4*s,u=pick(['mm','in.','cm']);
+  t=n(`What is the perimeter of this square? Dimensions are in ${{mm:'millimeters','in.':'inches',cm:'centimeters'}[u]}.`,z,`All four sides are ${s}: 4 × ${s} = ${z}.`,{s,u},'numbers',sideLabelled('square',[s],u));
+  t.choices=distinct(z,[{value:s*s,mistake:'Found the area instead of the perimeter'},{value:2*s,mistake:'Added only two sides'},{value:s+4,mistake:'Added 4 instead of multiplying by 4'}]);break;}
+ const s=pick([6,7,8,9,12,15,16,18,24,36,48,72,84]),P=4*s,u=pick(['inches','centimeters']);
+ t=n(`The perimeter of a square is ${P} ${u}. What is the length of one side, in ${u}?`,s,`A square has 4 equal sides: ${P} ÷ 4 = ${s}.`,{P,u},'numbers');
+ t.choices=distinct(s,[{value:P%3===0?P/3:P/2+1,mistake:P%3===0?'Divided by 3 sides instead of 4':'Division slip'},{value:P/2,mistake:'Divided by 2 instead of 4'},{value:P%12===0?P/12:s+1,mistake:P%12===0?'Divided by 12 instead of 4':'Division slip'}]);break;}
+case 'c1-order-digits':{let d;do{d=[int(1,9),int(1,9),int(1,9)];}while(new Set(d).size<3);const [sm,md,lg]=[...d].sort((x,y)=>x-y),last=100*lg+10*md+sm,middle=100*md+10*sm+lg,first=100*sm+10*lg+md,shown=pick([[middle,first,last],[first,last,middle],[last,middle,first]]);
+ t={prompt:`Order the numbers ${shown.join(', ')} from least to greatest. Separate them with commas.`,answer:{kind:'sequence',values:[first,middle,last],value:`${first}, ${middle}, ${last}`},solution:`Compare the hundreds digits: ${first} < ${middle} < ${last}.`,parameters:{shown}};
+ t.choices=wrongOnly(t,[{value:`${middle}, ${first}, ${last}`,mistake:'Compared the tens digits instead of the hundreds digits first'},{value:`${last}, ${middle}, ${first}`,mistake:'Ordered from greatest to least'},{value:`${first}, ${last}, ${middle}`,mistake:'Compared the ones digits instead of the hundreds digits'}]);break;}
+case 'c1-compare':{let a,b,L,Rt;if(c.variant==='sum-product'){const f1=int(3,6),f2=int(8,15),P=f1*f2;let x,y;do{x=int(5,39)*2+1;y=P-x+int(-1,1);}while(y<=0);a=x+y;b=P;L=`${x} + ${y}`;Rt=`${f1} × ${f2}`;}
+ else{const base=100*int(1,8)+10*int(1,9)+int(1,9),step=int(1,9);const x=base+step*int(0,4),y=base+step*int(0,4);a=x;b=y;L=String(x);Rt=String(y);}
+ const sym=a===b?'=':a>b?'>':'<';
+ t=text(`Compare: ${L} ☐ ${Rt}. Write >, < or =.`,sym,`${L}${c.variant==='sum-product'?' = '+a:''} and ${Rt}${c.variant==='sum-product'?' = '+b:''}, so ${L} ${sym} ${Rt}.`,{a,b,L,R:Rt});
+ t.choices=['<','>','='].filter(x=>x!==sym).map(x=>({value:x,mistake:x==='='?'Thought the two sides were equal':'Reversed the comparison'}));break;}
+case 'c1-sequence':{const v=c.variant;
+ if(v==='next-three'){const r=int(3,9),s0=pick([int(1,9),r]),seq=[0,1,2,3].map(i=>s0+i*r),nx=[4,5,6].map(i=>s0+i*r);
+  t={prompt:`What three numbers come next in this sequence? ${seq.join(', ')}, ... Separate them with commas.`,answer:{kind:'sequence',values:nx,value:nx.join(', ')},solution:`Add ${r} each time: ${nx.join(', ')}.`,parameters:{s0,r}};
+  t.choices=wrongOnly(t,[{value:nx.map((x,i)=>x-(i+1)).join(', '),mistake:'Added one less each time'},{value:nx.map((x,i)=>x+(i+1)).join(', '),mistake:'Added one more each time'},{value:nx.map((x,i)=>x+2*(i+1)).join(', '),mistake:'Added two more each time'}]);break;}
+ if(v==='next'){const s0=int(1,9),r=int(2,9),seq=[0,1,2,3,4].map(i=>s0+i*r),z=s0+5*r;
+  t=n(`What number is next in this sequence? ${seq.join(', ')}, ____`,z,`Add ${r} each time: ${seq[4]} + ${r} = ${z}.`,{s0,r});
+  t.choices=distinct(z,[{value:z+r,mistake:'Skipped a term'},{value:z+1,mistake:'Addition slip'},{value:seq[4]+r-1,mistake:'Added one less than the rule'},{value:z-1,mistake:'Addition slip'}]);break;}
+ const r=int(3,9),k=int(6,9),seq=[1,2,3,4].map(i=>i*r),z=k*r,ord=['','','','','','','sixth','seventh','eighth','ninth'][k];
+ t=n(`The ${ord} number in the sequence ${seq.join(', ')}, ... is what number?`,z,`The terms are multiples of ${r}, so the ${ord} term is ${k} × ${r} = ${z}.`,{r,k});
+ t.choices=distinct(z,[{value:(k-1)*r,mistake:'Counted one term too few'},{value:(k+1)*r,mistake:'Counted one term too many'},{value:5*r,mistake:'Gave the next term instead'},{value:k+r,mistake:'Added instead of multiplying'}]);break;}
+case 'c1-odd':{const ev=[];while(ev.length<3){const x=2*int(51,499);if(!ev.includes(x))ev.push(x);}const od=2*int(51,498)+1,all=[...ev,od].sort((x,y)=>x-y);
+ t=text(`Which of these numbers is odd? ${all.join(', ')}`,String(od),`An odd number ends in 1, 3, 5, 7 or 9: ${od}.`,{all});t.choices=ev.map(x=>({value:String(x),mistake:'Chose an even number (it ends in 0, 2, 4, 6 or 8)'}));break;}
+case 'c1-dial':{if(c.variant==='temp'){const T=pick([-14,-3,6,18,37,48,67,72,-8,24,52,61]),z=T;
+  t=n('What temperature does the thermometer show, in degrees Celsius?',z,`The needle points ${T} degrees: count the marks from the nearest labelled number.`,{T},'numbers',dialFigure(-30,90,2,10,T,'°C',`A round Celsius thermometer from −30 to 90 with marks every 2 degrees; the needle points to ${minus(T)}`));
+  t.choices=distinct(z,[{value:z+pick([-2,2]),mistake:'Misread by one mark'},{value:z+pick([-4,4]),mistake:'Misread by two marks'},{value:z+pick([-6,6]),mistake:'Misread by three marks'},{value:z+2,mistake:'Misread by one mark'},{value:z-4,mistake:'Misread by two marks'},{value:z+6,mistake:'Misread by three marks'}]);break;}
+ const k=int(0,6),W=[16,34,46,66,88,114,124][k];
+ t=n('Find the weight, in pounds, marked by the needle on the scale.',W,`The needle points to ${W} pounds.`,{W},'numbers',dialFigure(0,150,2,20,W,'Pounds',`A round scale from 0 to 150 pounds with marks every 2 pounds; the needle points to ${W}`));
+ t.choices=distinct(W,[{value:[18,37,48,68,93,116,131][k],mistake:'Read the wrong mark past the labelled number'},{value:[12,32,44,62,84,110,126][k],mistake:'Counted the marks from the wrong labelled number'},{value:[8,27,43,63,102,112,122][k],mistake:'Counted each mark as the wrong amount'}]);break;}
+case 'c1-thermometer':{const T=2*int(-5,34);
+ t=n('What temperature is shown on this thermometer, in degrees Fahrenheit?',T,`Each mark is 2 degrees; the liquid reaches ${minus(T)}.`,{T},'numbers',thermoFigure(-10,70,2,T,`A Fahrenheit thermometer from −10 to 70 with marks every 2 degrees; it reads ${minus(T)}`));
+ t.choices=distinct(T,[{value:T+1,mistake:'Counted each mark as 1 degree'},{value:T-2,mistake:'Misread by one mark'},{value:T+3,mistake:'Counted each mark as 1 degree from the wrong label'},{value:T+2,mistake:'Misread by one mark'}]);break;}
+case 'c1-story':{const v=c.variant,cash=z=>money(z);
+ if(v==='runners'){let a,b;do{a=10*int(5,9)+int(1,9);b=10*int(1,4)+int(1,9);}while(a%10+b%10<10);const z=a+b;
+  t=n(`There were ${a} runners entered in a race. On the day of the race, ${b} more runners entered. How many runners were entered in the race?`,z,`${a} + ${b} = ${z}.`,{a,b});
+  t.choices=distinct(z,[{value:10*b+a,mistake:'Lined up the numbers in the wrong places'},{value:a-b,mistake:'Subtracted instead of adding'},{value:z+pick([-10,10]),mistake:'Made a carrying error'}]);break;}
+ if(v==='pizza'){const big=int(0,1)===1,p=big?100*int(11,16)+10*int(1,8)+5:100*int(5,7)+10*int(2,9)+5,bill=big?2000:pick([1000,2000]),z=bill-p,[shop,nm]=pick([["Harpo's Pizza",'Phil'],["Fredo's Pizza",'Ben'],["Luna's Pizza",'Ada']]);
+  t=n(`At ${shop}, a ${big?'large':'small'} pizza costs ${cash(p)}. ${nm} gave the cashier ${cash(bill)}. How much change should ${nm} receive?`,R(z,100),`${cash(bill)} − ${cash(p)} = ${cash(z)}.`,{p,bill},'decimal');t.answer.display=cash(z);
+  t.choices=distinct(cash(z),[{value:cash(p),mistake:'Gave the price instead of the change'},{value:cash(z+pick([-10,10])),mistake:'Regrouping slip in the dimes'},{value:cash(z+pick([-100,100])),mistake:'Regrouping slip in the dollars'}]);break;}
+ if(v==='candy'){let a,b;do{a=10*int(5,9)+pick([1,3,5,7,9]);b=100*int(1,8)+10*int(1,9);}while(Math.floor(a/10)+b/10%10<10);const z=a+b;
+  t=n(`The band club sold ${a} candy bars the first week of a fund-raiser. In the second week, ${b} candy bars were sold. How many candy bars were sold in the two weeks?`,z,`${a} + ${b} = ${z}.`,{a,b});
+  t.choices=distinct(z,[{value:z-100,mistake:'Forgot to carry into the hundreds'},{value:z+pick([-10,10]),mistake:'Addition slip in the tens'},{value:z-110,mistake:'Forgot to carry and slipped in the tens'}]);break;}
+ if(v==='coins'){const [coin,cv]=pick([['nickels',5],['dimes',10],['quarters',25]]),k=int(3,6),o1=int(1,9),a=10*int(1,2)+o1,b=10*int(1,2)+(10-o1),z=a+k*cv+b,nm=pick(['Curt','Lena','Sam','Iris']);
+  t=n(`${nm} had ${a} cents, then found ${k} ${coin}. Then a parent gave ${nm} ${b} cents. How many cents does ${nm} have now?`,z,`${k} ${coin} = ${k*cv} cents; ${a} + ${k*cv} + ${b} = ${z} cents.`,{a,k,cv,b});
+  t.choices=distinct(z,[{value:a+k+b,mistake:'Added the number of coins instead of their value'},{value:z+pick([-cv,cv]),mistake:'Counted one coin too many or too few'},{value:z-10,mistake:'Addition slip in the tens'},{value:z+1,mistake:'Addition slip in the ones'},{value:z+10,mistake:'Addition slip in the tens'}]);break;}
+ if(v==='bus'){const a=int(11,15),b=int(6,9),z=a-b;
+  t=n(`At a bus stop, ${a} people are waiting. The first bus picks up ${b} people. How many people are still at the bus stop?`,z,`${a} − ${b} = ${z}.`,{a,b});
+  t.choices=distinct(z,[{value:a+b,mistake:'Added instead of subtracting'},{value:z+10,mistake:'Subtracted the ones the wrong way'},{value:z+pick([-1,1]),mistake:'Subtraction slip'}]);break;}
+ if(v==='steps'){const [what,unit]=pick([['the top of a tower','steps'],['the end of a book','pages'],['the finish of a trail','markers']]);let tot,done;do{tot=int(250,399);done=int(90,tot-60);}while(noRegroup(tot,done)===tot-done);const z=tot-done;
+  t=n(unit==='pages'?`Tom has read ${done} pages of a ${tot}-page book. How many pages does he still need to read?`:`On the way to ${what}, Jason stopped at ${unit==='steps'?'step':'marker'} ${done}. There are ${tot} ${unit} in all. How many more ${unit} are left?`,z,`${tot} − ${done} = ${z}.`,{tot,done});
+  t.choices=distinct(z,[{value:noRegroup(tot,done),mistake:'Subtracted the smaller digit from the larger in each column'},{value:tot+done,mistake:'Added instead of subtracting'},{value:z+pick([-10,10]),mistake:'Regrouping slip'},{value:z+1,mistake:'Subtraction slip in the ones'},{value:z-100,mistake:'Regrouping slip in the hundreds'}]);break;}
+ const k=int(11,89),z=100-k,nm=pick(['Jill','Marcus','Rosa']);
+ t=n(`${nm} had $100 in the bank and took $${k} out. How much money, in dollars, is left in the bank?`,z,`$100 − $${k} = $${z}.`,{k},'numbers');t.answer.display='$'+z;
+ t.choices=distinct('$'+z,[{value:'$'+(100+k),mistake:'Added instead of subtracting'},{value:'$'+(z+10),mistake:'Did not regroup across the zeros correctly'},{value:'$'+(z-1),mistake:'Subtraction slip in the ones'}]);break;}
+case 'c1-data':{const v=c.variant;
+ if(v==='choose-table'){let d;do{d=Array.from({length:20},()=>int(50,89));}while([5,6,7,8].some(t0=>d.filter(x=>Math.floor(x/10)===t0).length<2)||d.filter(x=>Math.floor(x/10)===6).length===d.filter(x=>Math.floor(x/10)===7).length);const cats=['50–59','60–69','70–79','80–89'],f=[5,6,7,8].map(t0=>d.filter(x=>Math.floor(x/10)===t0).length);
+  const swap=[...f];[swap[1],swap[2]]=[swap[2],swap[1]];const off=[...f];off[0]+=1;off[3]-=1;const drop=[...f];drop[2]-=1;const sets=[f,swap,off,drop],order=[0,1,2,3];for(let i=3;i>0;i--){const j=int(0,i);[order[i],order[j]]=[order[j],order[i]];}const shown=order.map(i=>sets[i]),k=order.indexOf(0);
+  t=text(`Which frequency table shows these daily high temperatures for 20 days? ${d.join(', ')}. Answer with the letter.`,'abcd'[k],`Count the values in each interval: ${cats.map((c2,i)=>c2+': '+f[i]).join('; ')}.`,{d,f,order},fourTables(['Temp. (°F)','Frequency'],cats,shown,'Four frequency tables labelled (a) to (d)'),[`(${'abcd'[k]})`]);
+  t.choices=order.map((o,i)=>[o,i]).filter(([o])=>o!==0).map(([o,i])=>({value:'abcd'[i],mistake:['','Swapped the counts for two intervals','Put a value in the wrong interval','Missed one of the values'][o]}));break;}
+ if(v==='at-least'){let f;do{f=Array.from({length:7},()=>int(2,10));}while(f.reduce((x,y)=>x+y,0)!==30);const cats=['66–70','71–75','76–80','81–85','86–90','91–95','96–100'],k=int(2,5),thr=[66,71,76,81,86,91,96][k],sum=i=>f.slice(i).reduce((x,y)=>x+y,0),z=sum(k);
+  t=n(`The table shows the scores on a final exam. How many students had scores of ${thr} or better?`,z,`Add the frequencies from ${cats[k]} up: ${f.slice(k).join(' + ')} = ${z}.`,{f,k},'numbers',tableFigure(['Score','Frequency'],cats.map((c2,i)=>[c2,String(f[i])]),`Frequency table of exam scores: ${cats.map((c2,i)=>c2+' '+f[i]).join(', ')}`));
+  t.choices=distinct(z,[{value:sum(k+1),mistake:'Left out the interval that starts at the given score'},{value:sum(k-1),mistake:'Included one interval below the given score'},{value:sum(k-2),mistake:'Included two intervals below the given score'}]);break;}
+ if(v==='difference'){let f;do{f=Array.from({length:4},()=>int(5,12));}while(f.reduce((x,y)=>x+y,0)!==30||f[1]===f[2]);const cats=['91–100','81–90','71–80','61–70'],more=f[2]>f[1],z=Math.abs(f[2]-f[1]);
+  t=n(`The table shows the results of a class test. How many ${more?'more':'fewer'} students scored 71 to 80 than 81 to 90?`,z,`${f[2]} students scored 71 to 80 and ${f[1]} scored 81 to 90: ${Math.max(f[1],f[2])} − ${Math.min(f[1],f[2])} = ${z}.`,{f},'numbers',tableFigure(['Score','Number of Students'],cats.map((c2,i)=>[c2,String(f[i])]),`Table of test scores: ${cats.map((c2,i)=>c2+' '+f[i]).join(', ')}`,[100,150]));
+  t.choices=distinct(z,[{value:f[1]+f[2],mistake:'Added the two counts'},{value:f[2],mistake:'Gave the count for 71 to 80 only'},{value:f[1],mistake:'Gave the count for 81 to 90 only'},{value:z+1,mistake:'Subtraction slip'}]);break;}
+ if(v==='read-bar'){let f;do{f=Array.from({length:4},()=>int(4,17));}while(f.reduce((x,y)=>x+y,0)!==50||new Set(f).size<4);const subs=['Science','Math','English','History'],k=int(0,3);
+  t=n(`The bar graph shows the favorite subjects of 50 students. How many students said ${subs[k].toLowerCase()==='math'?'math':subs[k]} was their favorite subject?`,f[k],`The ${subs[k]} bar reaches ${f[k]}.`,{f,k},'numbers',barGraph(subs,f,'Favorite Subjects','Students',20,2));
+  t.choices=distinct(f[k],[0,1,2,3].filter(i=>i!==k).map(i=>({value:f[i],mistake:`Read the ${subs[i]} bar`})));break;}
+ if(v==='true-false'){const T=int(1,2),w3=T===1?pick([3,2]):pick([2,3]);let f=[2*int(2,6)+1,2*int(7,12)+1,int(30,45),int(30,45),2*int(7,12)+1,2*int(2,6)+1];while(f[2]===f[3]||f[0]===f[5])f=[2*int(2,6)+1,2*int(7,12)+1,int(30,45),int(30,45),2*int(7,12)+1,2*int(2,6)+1];
+  const width=T===1?3:2,start=56,cats=f.map((_,i)=>`${start+i*width}–${start+i*width+width-1}`),i1=0,i2=2;
+  const s1=f[i1]<f[5],s2=f[i2]>Math.max(...f.filter((_,i)=>i!==i2)),s3=w3===width,yes=b=>b?'True':'False',ans=[yes(s1),yes(s2),yes(s3)].join('; ');
+  t=text(`The histogram shows the heights of students. Decide whether each statement is true or false. (1) The interval ${cats[i1]} inches has the fewest students. (2) The interval ${cats[i2]} inches has the most students. (3) Each interval is ${w3} inches. Answer like True; False; True.`,ans,`Fewest: ${cats[f.indexOf(Math.min(...f))]}; most: ${cats[f.indexOf(Math.max(...f))]}; each interval covers ${width} inches.`,{f,T,w3},histogramFigure(cats,f,'Heights of Students','Students',50,10));
+  const flip=k=>ans.split('; ').map((x,i)=>i===k?(x==='True'?'False':'True'):x).join('; ');t.choices=[{value:flip(0),mistake:'Misread the shortest bar'},{value:flip(1),mistake:'Misread the tallest bar'},{value:flip(2),mistake:'Counted the interval width as the number of labels instead of the inches covered'}];break;}
+ if(v==='tally'){const w=int(1,5),a=[50+int(0,9),...Array.from({length:19},(_,i)=>10*[[6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,8,8,8],[5,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,8,8],[5,5,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,8],[5,5,5,6,6,6,6,6,6,6,7,7,7,7,7,7,7,8,8],[5,5,5,5,6,6,6,6,6,6,6,6,6,6,7,7,7,7,8]][w-1][i]+int(0,9))];const cats=['50–59','60–69','70–79','80–89'],fr=[5,6,7,8].map(t0=>a.filter(x=>Math.floor(x/10)===t0).length);
+  const shuffled=[...a];for(let i=19;i>0;i--){const j=int(0,i);[shuffled[i],shuffled[j]]=[shuffled[j],shuffled[i]];}
+  t=teacher(`Make a tally chart and a frequency table for these retirement ages: ${shuffled.join(', ')}. Use the intervals 50–59, 60–69, 70–79 and 80–89.`,`Frequencies: ${cats.map((c2,i)=>c2+': '+fr[i]).join('; ')}.`,['Uses the four intervals 50–59, 60–69, 70–79 and 80–89.','Tally marks match the data, grouped in fives.',`Frequencies are ${fr.join(', ')} and total 20.`],{ages:shuffled,fr});break;}
+ if(v==='make-histogram'){const sc=Array.from({length:21},()=>int(71,119)),cats=['70–79','80–89','90–99','100–109','110–119'],fr=[7,8,9,10,11].map(t0=>sc.filter(x=>Math.floor(x/10)===t0).length);
+  t=teacher(`The golf scores for the 21 members of a club are: ${sc.join(', ')}. Make a histogram using ten-point intervals (70–79, 80–89, ...) that shows the frequency distribution of the scores.`,`Frequencies: ${cats.map((c2,i)=>c2+': '+fr[i]).join('; ')}.`,['Uses equal ten-point intervals from 70–79 to 110–119 with touching bars.',`Bar heights are ${fr.join(', ')}.`,'Axes are labelled with the score intervals and the frequency.'],{sc,fr},'',histogramFigure(cats,fr,'Golf Scores','Frequency',Math.max(10,2*Math.ceil(Math.max(...fr)/2)),2));break;}
+ // draw a bar graph of tallied lunch votes
+ let f;do{f=Array.from({length:5},()=>5*int(1,12));}while(f.reduce((x,y)=>x+y,0)!==150);const foods=['Pizza','Hot Dog','Pot Pie','Burger','Nuggets'];
+ t=teacher(`A class surveyed favorite lunches. The tallies give these counts: ${foods.map((x,i)=>x+' '+f[i]).join(', ')}. Draw a bar graph that displays the results of the survey.`,`Bars: ${foods.map((x,i)=>x+' '+f[i]).join('; ')}.`,['One bar for each lunch, labelled.','A numbered scale with equal steps (for example by 5 or 10).',`Bar heights match ${f.join(', ')}.`],{f},'',barGraph(foods,f,'Favorite Lunches','Votes',60,10));break;}
 default:throw Error('Unknown port recipe '+c.recipe);}
 return t;}
 
@@ -2222,7 +2434,7 @@ function generate(c,seed,index,int,version){const h={int,index,pick:a=>a[int(0,a
 
 // ---------- answers ----------
 const clean=s=>String(s??'').trim().toLowerCase().replace(/[−–]/g,'-').replace(/[×x*·]/g,'×').replace(/\s+/g,'').replace(/,/g,'');
-function answerText(q){const a=q.answer;if(a.display)return a.display;switch(a.kind){case'property':case'expanded':case'lists':case'equation-pair':case'duration':case'part':case'side-and-number':case'set':case'sequence':case'factorization':case'factorization-root':case'compare-common':case'words':case'ratio':case'fraction-ratio':case'linear':case'repeating':case'compound':case'parts':case'point':case'assignments':case'labels':case'keywords':case'yes-number':case'relation':case'power10':case'poly':case'integer-set':case'unit-expr':case'approx':case'num-pair':case'formula':case'slope-int':case'roots':case'mono-ratio':case'angle-pairs':case'factored':case'prime-factors':case'num-set':case'chord-angle':case'fact-family':case'fact-sentence':case'division-forms':case'quot-rem':return a.value;case'percent-approx':return a.display;default:return U.answerText(q);}}
+function answerText(q){const a=q.answer;if(a.display)return a.display;switch(a.kind){case'property':case'expanded':case'lists':case'equation-pair':case'duration':case'part':case'side-and-number':case'set':case'sequence':case'factorization':case'factorization-root':case'compare-common':case'words':case'ratio':case'fraction-ratio':case'linear':case'repeating':case'compound':case'parts':case'point':case'assignments':case'labels':case'keywords':case'yes-number':case'relation':case'power10':case'poly':case'integer-set':case'unit-expr':case'approx':case'num-pair':case'formula':case'slope-int':case'roots':case'mono-ratio':case'angle-pairs':case'factored':case'prime-factors':case'num-set':case'chord-angle':case'fact-family':case'fact-sentence':case'division-forms':case'quot-rem':case'seg-rays':return a.value;case'percent-approx':return a.display;default:return U.answerText(q);}}
 function nums(s){return s.split(',').map(x=>x.trim()).filter(Boolean);}
 function check(q,response){const a=q.answer;let s=String(response??'');if(s.length>600)return{answerCorrect:false,fullOutcomeVerified:false};
  if(a.kind==='property'){const r=clean(s).replace(/×/g,a.op==='+'?'?':'×'),op=a.op==='+'?'\\+':'×',num='(\\d)';let ok=false;const sides=r.split('=');
@@ -2295,6 +2507,8 @@ function check(q,response){const a=q.answer;let s=String(response??'');if(s.leng
  if(a.kind==='fact-sentence'){const got=parseFacts(s);return okv(!!got&&got.length===1&&a.facts.includes(got[0])&&got[0]!==a.given);}
  if(a.kind==='division-forms'){const ps=String(s).split(/;|\n|,/).map(x=>x.replace(/\s+/g,'').replace(/[‾¯]/g,'')).filter(Boolean),want=[`${a.divisor})${a.dividend}`,`${a.dividend}÷${a.divisor}`,`${a.dividend}/${a.divisor}`];return okv(ps.length===3&&new Set(ps).size===3&&ps.every(x=>want.includes(x)));}
  if(a.kind==='quot-rem'){const m=String(s).replace(/\s+/g,'').toUpperCase().match(/^(\d+)(?:R|REMAINDER)(\d+)$/);return okv(!!m&&Number(m[1])===a.q&&Number(m[2])===a.r);}
+ if(a.kind==='seg-rays'){const ps=String(s).split(';');if(ps.length!==2)return fail;const tok=x=>x.toUpperCase().replace(/\bAND\b/g,',').split(/[\s,]+/).map(w=>w.replace(/[^A-Z]/g,'')).filter(Boolean);const sg=tok(ps[0]),ry=tok(ps[1]);if(sg.some(w=>w.length!==2)||ry.some(w=>w.length!==2))return fail;
+  const key=w=>[...w].sort().join('');return okv(sg.length===3&&new Set(sg.map(key)).size===3&&a.segs.every(w=>sg.map(key).includes(key(w)))&&ry.length===3&&new Set(ry).size===3&&a.rays.every(w=>ry.includes(w)));}
  if(a.kind==='compare-common'){const m=String(s).replace(/\s/g,'').replace(/[−–]/g,'-').match(/^(\d+)\/(\d+)(<|>|=)(\d+)\/(\d+)$/);if(!m)return fail;const [p,k1,sym,q,k2]=[Number(m[1]),Number(m[2]),m[3],Number(m[4]),Number(m[5])];
   return okv(k1===k2&&k1>0&&p*a.a[1]===a.a[0]*k1&&q*a.b[1]===a.b[0]*k2&&sym===a.symbol);}
  if(q.eitherForm){s=s.split(';').map(stripUnits).join('; ');const r=U.check(q,s.replace(/\$/g,''));if(r.answerCorrect)return r;return U.check({...q,answer:{...a,kind:'mixed'}},s);}
