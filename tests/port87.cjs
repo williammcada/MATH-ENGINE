@@ -37,6 +37,48 @@ const oracle={
  'add-to-mixed':(q,p)=>{const total=p.w1!==undefined?p.b+p.c+(p.w1+p.w2)*p.a:p.b+p.c+p.d;const frac=p.w1!==undefined?p.b+p.c:total;assert(frac>p.a&&frac%p.a!==0);return fracEq(q,total,p.a);},
  'improper-to-mixed':(q,p)=>fracEq(q,p.b,p.a),
  'mixed-to-improper':(q,p)=>gcd(p.b,p.c)===1&&p.c<p.b&&fracEq(q,p.a*p.b+p.c,p.b),
+ // Batch 2
+ 'word-add-length':(q,p)=>p.a>=210&&p.a<=590&&p.b>=41&&p.b<=95&&p.a%5&&p.b%5&&fracEq(q,p.a+p.b,1),
+ 'word-add-money-two':(q,p)=>(p.c%100)+(p.e%100)<100&&(p.c%10)+(p.e%10)<10&&fracEq(q,p.c+p.e,100),
+ 'word-add-money-three':(q,p)=>p.b>=498&&p.b<=999&&p.e>=198&&p.e<=399&&p.c>=75&&p.c<=99&&fracEq(q,p.b+p.e+p.c,100),
+ 'word-subtract-count':(q,p)=>p.a%1000&&p.b%1000&&p.a>p.b+111&&fracEq(q,p.a-p.b,1),
+ 'change-due':(q,p)=>p.a%5===0&&p.b<100*p.a&&fracEq(q,100*p.a-p.b,100),
+ 'word-subtract-small':(q,p)=>p.a%5&&p.b%5&&p.b>=31&&p.b<=99&&fracEq(q,p.a-p.b,1),
+ 'product-minus-sum':(q,p)=>fracEq(q,p.a*p.b-p.a-p.b,1),
+ 'pages-left':(q,p)=>p.total-p.b>=90&&p.total-p.b<=150&&fracEq(q,p.total-p.b,1),
+ 'population-increase':(q,p)=>(p.p2-p.p1)%(p.y2-p.y1)===0&&fracEq(q,p.p2-p.p1,1),
+ 'birth-year':(q,p)=>p.age>=62&&p.age<=99&&fracEq(q,p.year-p.age,1),
+ 'years-between':(q,p)=>fracEq(q,p.b-p.a,1),
+ 'elapsed-time':(q,p)=>p.h1>=8&&p.h1<=10&&[11,12].includes(p.h2)&&p.m2>p.m1&&q.answer.minutes===(p.h2*60+p.m2)-(p.h1*60+p.m1)&&E.checkAnswer(q,`${Math.floor(q.answer.minutes/60)} hours ${q.answer.minutes%60} minutes`).answerCorrect&&!E.checkAnswer(q,`${Math.floor(q.answer.minutes/60)+1} hr ${q.answer.minutes%60} min`).answerCorrect,
+ 'equal-groups-product':(q,p)=>fracEq(q,p.a*p.b,1),
+ 'equal-groups-quotient':(q,p)=>{const d=p.b||p.n1;assert(p.total%d===0);return fracEq(q,p.total/d,1);},
+ 'stickers':(q,p)=>p.c>=10&&p.c<=41&&fracEq(q,100*p.a+10*p.b+p.c,1),
+ 'complete-equivalent':(q,p)=>{const [x,y]=p.a,[x2,y2]=p.b;assert(p.d%y===0&&p.d%y2===0);const v=q.answer.values;return v[0].numerator===String(x*p.d/y)&&v[1].numerator===String(x2*p.d/y2);},
+ 'which-not-equal-mixed':(q,p)=>{const val=s=>{const m=s.match(/^(\d+) (\d+)\/(\d+)$/);if(m)return [Number(m[1])*Number(m[3])+Number(m[2]),Number(m[3])];const [a,b]=s.split('/').map(Number);return [a,b];};const target=[p.w*p.b+p.c,p.b];const odd=p.options.filter(o=>{const [a,b]=val(o);return a*target[1]!==target[0]*b;});assert.equal(odd.length,1);return q.answer.value==='abcd'[p.options.indexOf(odd[0])]&&E.checkAnswer(q,odd[0]).answerCorrect;},
+ 'odd-fraction-out':(q,p)=>{const [b,c]=p.base;const odd=p.list.filter(o=>{const [x,y]=o.split('/').map(Number);return x*c!==y*b;});assert.equal(odd.length,1);return q.answer.value==='abcdef'[p.list.indexOf(odd[0])]&&E.checkAnswer(q,odd[0]).answerCorrect;},
+ 'multiply-cancel':(q,p)=>fracEq(q,p.a*p.b*p.d,p.c*p.a*p.e),
+ 'simplify-improper-mixed':(q,p)=>fracEq(q,p.a*p.c+p.b,p.c),
+ 'equivalent-then-subtract':(q,p)=>{const [a,b]=p.f1.split('/').map(Number);assert(p.den%b===0&&a*p.den/b>p.k);return fracEq(q,a*p.den-p.k*b,b*p.den);},
+ 'unit-percent':(q,p)=>q.answer.value.numerator===String(red(100*p.p,p.q)[0])&&q.answer.value.denominator===String(red(100*p.p,p.q)[1])&&(Number.isInteger(100*p.p/p.q)||E.checkAnswer(q,(100*p.p/p.q).toFixed(2)+'%').answerCorrect),
+ 'unit-price':(q,p)=>p.p%p.k===0&&fracEq(q,p.p/p.k,100),
+ 'closest-weight':(q,p)=>q.answer.value===`${Math.round(p.a+p.b/16)} lb`&&p.b!==8,
+ 'protractor-read':(q,p)=>{const m=p.ang.match(/^(A|I)O([A-I])$/),ray=p.rays.find(r=>r[0]===m[2])[1];return fracEq(q,m[1]==='A'?ray:180-ray,1);},
+ 'polygon-name':(q,p)=>q.answer.value==={3:'triangle',4:'quadrilateral',5:'pentagon',6:'hexagon',7:'heptagon',8:'octagon',9:'nonagon',10:'decagon'}[p.k],
+ 'regular-polygon-pick':(q,p)=>{const i=p.figs.findIndex(([n,reg])=>n===p.k&&reg);assert.equal(p.figs.filter(([n,reg])=>n===p.k&&reg).length,1);return q.answer.value==='abcd'[i];},
+ 'false-statement':(q,p)=>{const count={triangle:3,quadrilateral:4,pentagon:5,hexagon:6,octagon:8,decagon:10};const isTrue=st=>{if(/circle/.test(st))return false;const m=st.match(/An? (\w+) has (\d+) (sides|angles)\./);return count[m[1]]===Number(m[2]);};const f=p.options.map((o,i)=>isTrue(o)?null:'abcd'[i]).filter(Boolean);assert.equal(f.length,1);return q.answer.value===f[0];},
+ 'congruent-part':(q,p)=>{const k=p.k;const want=p.angle?p.T1[k]:p.T1[k]+p.T1[(k+1)%3];return q.answer.letters===want&&E.checkAnswer(q,p.angle?'angle '+want:want.split('').reverse().join('')).answerCorrect;},
+ 'square-side-inches':(q,p)=>p.p!==4&&fracEq(q,12*p.p/4,1),
+ 'step-perimeter':(q,p)=>{const pts=[[0,0],[0,p.L],[p.T,p.L],[p.T,p.L-p.D],[p.W,p.L-p.D],[p.W,0]];let per=0;for(let i=0;i<pts.length;i++){const [a,b]=pts[i],[c,d]=pts[(i+1)%pts.length];per+=Math.abs(a-c)+Math.abs(b-d);}return fracEq(q,per,1);},
+ 'square-polygon-sides':(q,p)=>{const per=p.k*p.s;return fracEq(q,p.toSquare?per/4:p.s,1)&&(per%4===0);},
+ 'quad-perimeter':(q,p)=>p.sides.length===4&&fracEq(q,p.sides.reduce((x,y)=>x+y),1),
+ 'power-sum':(q,p)=>p.a!==p.b&&fracEq(q,p.a**p.ea+p.b**p.eb,1),
+ 'power-difference':(q,p)=>p.a**p.b>p.c**p.d&&fracEq(q,p.a**p.b-p.c**p.d,1),
+ 'fraction-power':(q,p)=>fracEq(q,p.a**p.e,p.b**p.e),
+ 'square-area-from-perimeter':(q,p)=>p.s>=4&&p.s<=26&&fracEq(q,p.s*p.s,1),
+ 'rectangle-abcd':(q,p)=>{const opp={AB:'CD',CD:'AB',AD:'BC',BC:'AD'};return q.answer.side===opp[p.s]&&q.answer.number===p.b*p.w&&p.w%2===0&&E.checkAnswer(q,`side ${opp[p.s]}; ${p.b*p.w} mm²`).answerCorrect;},
+ 'square-root':(q,p)=>p.a>=11&&p.a<=25&&fracEq(q,p.a,1),
+ 'power-root-mix':(q,p)=>fracEq(q,p.e===undefined?p.a**p.b-p.c:p.a**p.b-p.c+p.e**p.f,1),
+ 'square-minus-powers':(q,p)=>fracEq(q,p.e**2-p.a**p.b-p.c**p.d-p.g,1),
  'circles-mixed':(q,p)=>q.answer.kind==='teacher'?/fully shaded/.test(q.answer.reference):q.answer.value===`1 ${(()=>{const [x,y]=red(p.extra,p.den);return x+'/'+y;})()} = ${p.den+p.extra}/${p.den}`,
 };
 const checks={};let tasks=0;
@@ -49,15 +91,15 @@ for(const c of P.catalog){tasks++;const seen=new Set();
   else if(c.recipe==='underlined-digit-value'){assert.equal(a.value,`${p.digits[3]}00 million`);assert(p.digits.length===12&&p.digits[3]>0);}
   else if(c.recipe==='expanded-notation'){const v=a.terms.reduce((s,[d,pl])=>s+d*pl,0);assert.equal(v,p.value);assert(E.checkAnswer(q,a.value.replace(/,/g,'')).answerCorrect);assert(!E.checkAnswer(q,a.terms.map(([d,pl])=>String(d*pl)).join(' + ')).answerCorrect,'expanded notation needs multiplication');}
   else if(c.recipe==='words-to-digits'){const text=q.prompt.match(/write (.*)\. Enter/)[1];const parts=text.split(', ');const back=parts.reduce((s,w)=>{const m=w.match(/^(.*) (million|thousand)$/);return s+(m?wordsValue(m[1])*(m[2]==='million'?1e6:1e3):wordsValue(w));},0);assert(fracEq(q,back,1),text);}
-  else if(['property-test','subtraction-number-line','name-linear-figures'].includes(c.recipe)){assert.equal(a.kind,'teacher');assert(a.rubric.length>=2);}
+  else if(['property-test','subtraction-number-line','name-linear-figures','draw-angle','congruent-pairs'].includes(c.recipe)){assert.equal(a.kind,'teacher');assert(a.rubric.length>=2);}
   else throw Error('No oracle for '+c.recipe);
   // Keys check as correct; every distractor checks as wrong and names its mistake.
   if(a.kind!=='teacher')assert(E.checkAnswer(q,E.answerText(q)).answerCorrect,c.sourceId+' key');
   if(q.choices){const vals=q.choices.map(x=>String(x.value));assert.equal(new Set(vals).size,vals.length,'distinct choices');assert(q.choices.length===3||c.recipe==='compare-number-line'&&q.choices.length===2,c.sourceId+' choice count');
    for(const ch of q.choices){assert(ch.mistake&&ch.mistake.length>8,c.sourceId+' named mistake');assert(!/NaN|undefined|Infinity/.test(ch.value));if(a.kind!=='teacher'&&!/→/.test(ch.value))assert(!E.checkAnswer(q,ch.value).answerCorrect,c.sourceId+' distractor accepted: '+ch.value);}}
   // Drawings where the source draws.
-  if(['compare-number-line','percent-shaded-square','percent-grid','ruler-length','angle-kind'].includes(c.recipe)||c.variant==='identify'){assert(/<svg[\s\S]*<\/svg>/.test(q.givens.svg||''),c.sourceId+' drawing');}
-  if(['subtraction-number-line','name-linear-figures'].includes(c.recipe)||c.variant==='draw')assert(/<svg/.test((q.givens.svg||'')+(q.teacherSvg||'')),c.sourceId+' teacher drawing');
+  if(['compare-number-line','percent-shaded-square','percent-grid','ruler-length','angle-kind','protractor-read','regular-polygon-pick','step-perimeter','quad-perimeter','rectangle-abcd'].includes(c.recipe)||c.variant==='identify'){assert(/<svg[\s\S]*<\/svg>/.test(q.givens.svg||''),c.sourceId+' drawing');}
+  if(['subtraction-number-line','name-linear-figures','draw-angle','congruent-pairs'].includes(c.recipe)||c.variant==='draw')assert(/<svg/.test((q.givens.svg||'')+(q.teacherSvg||'')),c.sourceId+' teacher drawing');
   assert(/<div class="engine-question">/.test(E.renderQuestion(q)));
  }
  assert(seen.size>=Math.min(20,seen.size)&&seen.size>1,c.sourceId+' varies');checks[c.sourceId]=seen.size;}

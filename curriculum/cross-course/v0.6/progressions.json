@@ -145,11 +145,14 @@
         "demand": "Multiply two digits by two digits",
         "prerequisites": "Two partial products and place-value shift",
         "selectors": [
-          "f/mul:2:2"
+          "f/mul:2:2",
+          "k/equal-groups-product"
         ],
         "sourceIds": [
           "intermediate-4-en:authored:M2-4a6360e9ec04-1",
-          "intermediate-4-en:authored:M2-6b179e375306-1"
+          "intermediate-4-en:authored:M2-6b179e375306-1",
+          "course-87-en:item:SX870062",
+          "course-87-en:item:SN870162"
         ]
       },
       {
@@ -379,7 +382,8 @@
         "selectors": [
           "c/9.3",
           "f/cancel-factors",
-          "f/cancel-product"
+          "f/cancel-product",
+          "k/multiply-cancel"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-9.3",
@@ -388,7 +392,8 @@
           "course-1-en:authored:M2-1aabc3a6a11d-1",
           "algebra-half-en:authored:M3-18-1",
           "algebra-half-en:authored:M3-19-1",
-          "algebra-1-en:authored:M4-4-1"
+          "algebra-1-en:authored:M4-4-1",
+          "course-87-en:item:SX870066"
         ]
       },
       {
@@ -434,7 +439,8 @@
         "prerequisites": "Track each labelled boundary side rather than assuming equal sides",
         "selectors": [
           "x/perimeter-irregular",
-          "c/19.1"
+          "c/19.1",
+          "k/quad-perimeter"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-19.1",
@@ -443,7 +449,8 @@
           "algebra-half-en:authored:M3-9-3",
           "algebra-1-en:authored:M4-3-1",
           "algebra-2-en:authored:M6-0-8",
-          "course-87-en:authored:M7-perimeter-irregular"
+          "course-87-en:authored:M7-perimeter-irregular",
+          "course-87-en:item:SN870082"
         ]
       },
       {
@@ -452,11 +459,13 @@
         "prerequisites": "Infer missing lengths and follow the complete boundary",
         "selectors": [
           "f/compound-perimeter",
-          "g/compound-perimeter"
+          "g/compound-perimeter",
+          "k/step-perimeter"
         ],
         "sourceIds": [
           "algebra-half-en:node:104",
-          "course-1-en:authored:M2-d99cc82f80a0-1"
+          "course-1-en:authored:M2-d99cc82f80a0-1",
+          "course-87-en:item:SX870313"
         ]
       }
     ],
@@ -474,7 +483,8 @@
         "selectors": [
           "r/rectangle-area",
           "c/20.6",
-          "f/array-area"
+          "f/array-area",
+          "k/rectangle-abcd"
         ],
         "sourceIds": [
           "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00093",
@@ -482,7 +492,8 @@
           "intermediate-4-en:authored:M2-da9ae5ae90fd-1",
           "course-1-en:authored:M2-0cda283fd77c-1",
           "algebra-half-en:authored:M3-17-1",
-          "algebra-1-en:authored:M4-8-1"
+          "algebra-1-en:authored:M4-8-1",
+          "course-87-en:item:SX870073"
         ]
       },
       {
@@ -1437,7 +1448,9 @@
         "selectors": [
           "c/20.3",
           "b/positive-power",
-          "f/power-small"
+          "f/power-small",
+          "k/power-sum",
+          "k/power-difference"
         ],
         "sourceIds": [
           "algebra-1-en:node:242",
@@ -1446,7 +1459,9 @@
           "intermediate-4-en:authored:M2-8df152eb5a39-2",
           "course-1-en:authored:M2-f58728a8465e-3",
           "course-1-en:authored:M2-e40d641cb9a0-2",
-          "algebra-half-en:authored:M3-16-3"
+          "algebra-half-en:authored:M3-16-3",
+          "course-87-en:item:SX870139",
+          "course-87-en:item:SX870075"
         ]
       },
       {
@@ -2335,7 +2350,8 @@
         "selectors": [
           "c/12.4",
           "f/clock-elapsed",
-          "f/schedule"
+          "f/schedule",
+          "k/elapsed-time"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-12.4",
@@ -2343,7 +2359,8 @@
           "intermediate-4-en:authored:M2-6996476dfa85-2",
           "intermediate-4-en:authored:M2-0933e1a23718-1",
           "course-1-en:authored:M2-4f3e9ac74f94-2",
-          "course-1-en:authored:M2-5ee821e20f4b-2"
+          "course-1-en:authored:M2-5ee821e20f4b-2",
+          "course-87-en:item:SN870056"
         ]
       },
       {

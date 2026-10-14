@@ -5,7 +5,7 @@ whole-subtraction|whole-arithmetic|1|Subtract two-digit whole numbers regrouping
 whole-subtraction|whole-arithmetic|2|Subtract three-digit whole numbers, regrouping when needed|Regroup tens and ones|f/sub:3:borrow f/sub:3:zero f/sub:3 @/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00078 @/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00079 @/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00125 @/intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00130
 whole-multiplication|whole-arithmetic|1|Multiply two digits by one digit|Multiplication facts and regrouping|f/mul:2:1
 whole-multiplication|whole-arithmetic|2|Multiply three digits by one digit|Track more places and regrouping|f/mul:3:1
-whole-multiplication|whole-arithmetic|3|Multiply two digits by two digits|Two partial products and place-value shift|f/mul:2:2
+whole-multiplication|whole-arithmetic|3|Multiply two digits by two digits|Two partial products and place-value shift|f/mul:2:2 k/equal-groups-product
 whole-multiplication|whole-arithmetic|4|Multiply three digits by two digits|Combine longer partial products|f/mul:3:2 @/course-87-en:item:SX870017
 division-exact|whole-arithmetic|1|Divide by a one-digit divisor with a two-digit quotient, optionally checking by multiplication|Division facts and place value|f/div:2:exact f/div:2:endzero f/division-check
 division-exact|whole-arithmetic|2|Divide with a three-digit whole-number quotient|Track an additional quotient place|f/div:3:exact f/div:3:insidezero @/course-1-en:bank:C1_Section01:item:C1_S01_00113
@@ -15,13 +15,13 @@ fraction-add-subtract|fractions|1|Add or subtract fractions with a shared denomi
 fraction-add-subtract|fractions|2|Add or subtract fractions, finding a common denominator when needed|Equivalent fractions and common denominators|f/fraction-unlike c/30.3 c/9.1 c/9.2 f/fraction-unlike-method p/fraction-subtract
 fraction-add-subtract|fractions|3|Add or subtract mixed and whole numbers with fractional parts, regrouping when needed|Combine whole and fractional parts; regroup if needed|f/mixed-unlike f/mixed-same c/23.1 c/23.2 @/algebra-1-en:node:4 =/course-87-en:item:SX870053
 fraction-product-chain|fractions|1|Multiply two fractions|Multiply numerators and denominators; simplify|c/9.3 f/cancel-factors f/cancel-product k/multiply-fractions
-fraction-multiply|fractions|1|Multiply two fractions and simplify, with explicit cancellation where requested|Multiply numerators and denominators; simplify|c/9.3 f/cancel-factors f/cancel-product
+fraction-multiply|fractions|1|Multiply two fractions and simplify, with explicit cancellation where requested|Multiply numerators and denominators; simplify|c/9.3 f/cancel-factors f/cancel-product k/multiply-cancel
 fraction-multiply|fractions|2|Multiply mixed numbers|Convert mixed numbers to improper fractions|f/mixed:mul
 fraction-product-chain|fractions|2|Multiply three fractions and simplify|Coordinate cancellation across three factors|f/fraction-three-product h/fraction-product
 perimeter|perimeter|1|Find a square or rectangle perimeter, using a formula when supplied|Add sides or use repeated equal lengths|b/square-perimeter b/rectangle-perimeter x/perimeter-rectangle f/formula
-perimeter|perimeter|2|Find perimeter of an irregular quadrilateral or a labelled polygon|Track each labelled boundary side rather than assuming equal sides|x/perimeter-irregular c/19.1
-perimeter|perimeter|3|Find an L-shaped boundary perimeter with implied sides|Infer missing lengths and follow the complete boundary|f/compound-perimeter g/compound-perimeter
-area-rectilinear|area|1|Find rectangular area using unit squares or perpendicular side lengths|Multiply perpendicular side lengths|r/rectangle-area c/20.6 f/array-area
+perimeter|perimeter|2|Find perimeter of an irregular quadrilateral or a labelled polygon|Track each labelled boundary side rather than assuming equal sides|x/perimeter-irregular c/19.1 k/quad-perimeter
+perimeter|perimeter|3|Find an L-shaped boundary perimeter with implied sides|Infer missing lengths and follow the complete boundary|f/compound-perimeter g/compound-perimeter k/step-perimeter
+area-rectilinear|area|1|Find rectangular area using unit squares or perpendicular side lengths|Multiply perpendicular side lengths|r/rectangle-area c/20.6 f/array-area k/rectangle-abcd
 area-rectilinear|area|2|Find area of a compound rectilinear figure by partitioning or subtraction|Partition without overlap and add component areas|c/37.3 g/compound-area c/37.4
 area-rectilinear|area|3|Find area of a figure combining rectangular and triangular regions|Triangle area and decomposition|c/75.1
 circle-area|circle-measurement|1|Find circle area from a radius|Square the radius and apply the stated pi convention|c/82.1 g/circle-area
@@ -66,7 +66,7 @@ average|statistics|3|Find a combined or weighted average|Weight each group by it
 probability-events|probability|1|Find probability of one event|Count favorable and total outcomes|c/36.3 s/marble-single
 probability-events|probability|2|Find probability of ordered independent events|Multiply independent probabilities|c/94.2
 probability-events|probability|3|Find probability without replacement|Update the sample space after the first draw|c/94.3 m/counting:probability
-powers|powers-roots|1|Evaluate a positive whole-number power|Repeated multiplication|c/20.3 b/positive-power f/power-small
+powers|powers-roots|1|Evaluate a positive whole-number power|Repeated multiplication|c/20.3 b/positive-power f/power-small k/power-sum k/power-difference
 powers|powers-roots|2|Evaluate zero and negative exponents|Reciprocal rule and nonzero-base restriction|c/57.1 b/negative-power
 powers|powers-roots|3|Evaluate negative bases with rational exponents|Real odd roots and exponent restrictions|m/fractional:negative =/algebra-2-en:node:304
 scientific-notation|scientific-notation|1|Convert between large numbers and scientific notation|Powers of ten and a normalized coefficient|c/51.1 c/51.2
@@ -119,7 +119,7 @@ binary|numeral-systems|3|Add binary fractions|Negative powers of two and aligned
 angle-measures|angles|1|Find the third angle of a triangle|Triangle angle sum|c/40.2 r/triangle-angle
 angle-measures|angles|2|Find angles formed by parallel lines and a transversal|Corresponding, alternate and supplementary angles|c/102.1
 clock-time|calendar-time|1|Read an analog clock|Hour and minute hands|b/clock-read
-clock-time|calendar-time|2|Find a start, end or elapsed time within the same day|Hour boundaries and consistent time units|c/12.4 f/clock-elapsed f/schedule
+clock-time|calendar-time|2|Find a start, end or elapsed time within the same day|Hour boundaries and consistent time units|c/12.4 f/clock-elapsed f/schedule k/elapsed-time
 clock-time|calendar-time|3|Calculate elapsed time across midnight|Track the date boundary|b/elapsed-overnight
 complex-operations|complex-numbers|1|Add complex numbers|Combine real and imaginary components|b/complex-add
 complex-operations|complex-numbers|2|Multiply complex numbers|Distribution and i squared equals negative one|b/complex-multiply

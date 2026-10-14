@@ -77746,5 +77746,1300 @@
     ],
     "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
     "samplePrompt": "Write 9 3/10 as an improper fraction. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870047",
+    "providerSourceId": "course-87-en:item:SN870047",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Combine two lengths in a word problem",
+    "recipe": "word-add-length",
+    "family": "structured-port87",
+    "title": "Combine two lengths in a word problem",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:11",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "The harbor boardwalk is 372 feet long. The town council plans to make it 76 feet longer. How long will it be then? Give the length in feet. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:AXG80180",
+    "providerSourceId": "course-87-en:item:AXG80180",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Total cost of two items",
+    "recipe": "word-add-money-two",
+    "family": "structured-port87",
+    "title": "Total cost of two items",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:11",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Theo bought a pair of shorts for $41.41 and a hoodie for $22.16. What was the total cost of the two items? Give the answer in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870055",
+    "providerSourceId": "course-87-en:item:SX870055",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Total cost of three items, one in cents",
+    "recipe": "word-add-money-three",
+    "family": "structured-port87",
+    "title": "Total cost of three items, one in cents",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:11",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Ayla bought a model kit for $8.90, a bottle of paint for $2.83, and a tube of glue for 77\u00a2. How much did she spend in all? Give the answer in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870049",
+    "providerSourceId": "course-87-en:item:SN870049",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Find the part not in a subgroup",
+    "recipe": "word-subtract-count",
+    "family": "structured-port87",
+    "title": "Find the part not in a subgroup",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:11",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "In one month, 5,669 people visited the railway museum. Of these, 3,357 used free passes. How many visitors paid for their tickets? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX760005",
+    "providerSourceId": "course-87-en:item:SX760005",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Change from a bill",
+    "recipe": "change-due",
+    "family": "structured-port87",
+    "title": "Change from a bill",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:11",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Ines paid with a $15 bill for a $13.41 lunch. How much change should she get back? Give the answer in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870050",
+    "providerSourceId": "course-87-en:item:SN870050",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Change from a larger bill",
+    "recipe": "change-due",
+    "family": "structured-port87",
+    "title": "Change from a larger bill",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:11",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Felix paid with a $30 bill for a $6.06 book. How much change should he get back? Give the answer in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870056",
+    "providerSourceId": "course-87-en:item:SX870056",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Tickets sold from those available",
+    "recipe": "word-subtract-small",
+    "family": "structured-port87",
+    "title": "Tickets sold from those available",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:11",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "At the start of the day, 708 tickets were available for the charity raffle. By the end of the day, all but 91 tickets had been sold. How many tickets were sold? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870052",
+    "providerSourceId": "course-87-en:item:SN870052",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Length remaining after part is removed",
+    "recipe": "word-subtract-small",
+    "family": "structured-port87",
+    "title": "Length remaining after part is removed",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:11",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "The boardwalk was 293 feet long. A storm washed away 88 feet from the end. How long was the boardwalk after the storm? Give the length in feet. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870061",
+    "providerSourceId": "course-87-en:item:SX870061",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Compare a product with a sum",
+    "recipe": "product-minus-sum",
+    "family": "structured-port87",
+    "title": "Compare a product with a sum",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:12",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "The product of 3 and 7 is how much greater than the sum of 3 and 7? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX650137",
+    "providerSourceId": "course-87-en:item:SX650137",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Pages left to read",
+    "recipe": "pages-left",
+    "family": "structured-port87",
+    "title": "Pages left to read",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:12",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Kai has read 117 pages of a 209-page book. How many pages does he still have to read? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870479",
+    "providerSourceId": "course-87-en:item:SX870479",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Population increase between two years",
+    "recipe": "population-increase",
+    "family": "structured-port87",
+    "title": "Population increase between two years",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:12",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "The population of Kingsbridge was 23,041 in 2009. In 2006 it was 15,910. By how much did the population increase between 2006 and 2009? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870058",
+    "providerSourceId": "course-87-en:item:SX870058",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Find a birth year from an age",
+    "recipe": "birth-year",
+    "family": "structured-port87",
+    "title": "Find a birth year from an age",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:12",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Grandma Lin celebrated her sixty-second birthday in 2009. In what year was she born? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870178",
+    "providerSourceId": "course-87-en:item:SN870178",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Years between two dates",
+    "recipe": "years-between",
+    "family": "structured-port87",
+    "title": "Years between two dates",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:12",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "How many years were there from 1289 to 1924? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870056",
+    "providerSourceId": "course-87-en:item:SN870056",
+    "bankId": "course-87-en",
+    "topic": "calendar-time",
+    "action": "Elapsed time in hours and minutes",
+    "recipe": "elapsed-time",
+    "family": "structured-port87",
+    "title": "Elapsed time in hours and minutes",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:12",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "clock-time",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "duration"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Bea left home at 10:20 a.m. for track practice and got back at 11:30 a.m. How long was she gone? Answer in hours and minutes, for example 2 hr 15 min."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870062",
+    "providerSourceId": "course-87-en:item:SX870062",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Total in equal groups",
+    "recipe": "equal-groups-product",
+    "family": "structured-port87",
+    "title": "Total in equal groups",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:13",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Dev received a shipment of 27 boxes of wind chimes. Each box held 26 wind chimes. How many wind chimes were in the shipment? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870162",
+    "providerSourceId": "course-87-en:item:SN870162",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Total capacity of equal groups",
+    "recipe": "equal-groups-product",
+    "family": "structured-port87",
+    "title": "Total capacity of equal groups",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:13",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-multiplication",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Sunrise Coaches has 27 fifty-five-passenger buses. How many people can Sunrise Coaches take on a day tour of the coast at one time? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870063",
+    "providerSourceId": "course-87-en:item:SX870063",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Number in each equal group",
+    "recipe": "equal-groups-quotient",
+    "family": "structured-port87",
+    "title": "Number in each equal group",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:13",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "At the Reading Nook, 992 books were packed equally into 31 boxes. How many books were in each box? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870164",
+    "providerSourceId": "course-87-en:item:SN870164",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Distance each hour",
+    "recipe": "equal-groups-quotient",
+    "family": "structured-port87",
+    "title": "Distance each hour",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:13",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "On the third day of their trip, the Lindqvist family drove 441 miles in 9 hours at a steady speed. How many miles did they travel each hour? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870359",
+    "providerSourceId": "course-87-en:item:SN870359",
+    "bankId": "course-87-en",
+    "topic": "word-equations",
+    "action": "Count hundreds, tens and ones",
+    "recipe": "stickers",
+    "family": "structured-port87",
+    "title": "Count hundreds, tens and ones",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:14",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Stickers come in sheets of 100, strips of 10, and single stickers. How many stickers are in 9 sheets, 6 strips, and 40 single stickers? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870136",
+    "providerSourceId": "course-87-en:item:SX870136",
+    "bankId": "course-87-en",
+    "topic": "fraction-equivalence",
+    "action": "Complete two equivalent fractions",
+    "recipe": "complete-equivalent",
+    "family": "structured-port87",
+    "title": "Complete two equivalent fractions",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:15",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Complete each equivalent fraction. (a) 3/5 = ?/45   (b) 7/9 = ?/45 Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870067",
+    "providerSourceId": "course-87-en:item:SN870067",
+    "bankId": "course-87-en",
+    "topic": "fraction-equivalence",
+    "action": "Choose the value not equal to a mixed number",
+    "recipe": "which-not-equal-mixed",
+    "family": "structured-port87",
+    "title": "Choose the value not equal to a mixed number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:15",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which of the following does not equal 5 2/7? (a) 74/14   (b) 37/7   (c) 4 3/8   (d) 5 6/21   Answer with the letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870165",
+    "providerSourceId": "course-87-en:item:SN870165",
+    "bankId": "course-87-en",
+    "topic": "fraction-equivalence",
+    "action": "Find the fraction not equal to the others",
+    "recipe": "odd-fraction-out",
+    "family": "structured-port87",
+    "title": "Find the fraction not equal to the others",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:15",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which fraction is not equal to all the others? (a) 9/12   (b) 3/4   (c) 24/32   (d) 33/48   (e) 27/36   (f) 18/24   Answer with the letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870066",
+    "providerSourceId": "course-87-en:item:SX870066",
+    "bankId": "course-87-en",
+    "topic": "fraction-equivalence",
+    "action": "Multiply fractions, reducing first",
+    "recipe": "multiply-cancel",
+    "family": "structured-port87",
+    "title": "Multiply fractions, reducing first",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:15",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-multiply",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 6/5 \u00b7 4/9 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870069",
+    "providerSourceId": "course-87-en:item:SN870069",
+    "bankId": "course-87-en",
+    "topic": "fraction-equivalence",
+    "action": "Simplify a mixed number with an improper part",
+    "recipe": "simplify-improper-mixed",
+    "family": "structured-port87",
+    "title": "Simplify a mixed number with an improper part",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:15",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: 1 7/4 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:port:SX870068",
+    "providerSourceId": "course-87-en:port:SX870068",
+    "bankId": "course-87-en",
+    "topic": "fraction-equivalence",
+    "action": "Rename a fraction, then subtract",
+    "recipe": "equivalent-then-subtract",
+    "family": "structured-port87",
+    "title": "Rename a fraction, then subtract",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:15",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Find a fraction equal to 1/4 that has a denominator of 8. Then subtract 1/8 from that fraction. What is the difference? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870069",
+    "providerSourceId": "course-87-en:item:SX870069",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "A customary unit as a percent of a larger unit",
+    "recipe": "unit-percent",
+    "family": "structured-port87",
+    "title": "A customary unit as a percent of a larger unit",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:16",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "percent-approx"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "One cup is what percent of one gallon? Give the percent; round to two decimal places if it does not end."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870070",
+    "providerSourceId": "course-87-en:item:SX870070",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Cost per smaller customary unit",
+    "recipe": "unit-price",
+    "family": "structured-port87",
+    "title": "Cost per smaller customary unit",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:16",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "If a quart of milk costs $0.72, what is the cost per pint? Give the answer in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870073",
+    "providerSourceId": "course-87-en:item:SN870073",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Round pounds and ounces to the nearest pound",
+    "recipe": "closest-weight",
+    "family": "structured-port87",
+    "title": "Round pounds and ounces to the nearest pound",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:16",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "At birth, Jude weighed 9 lb 3 oz. Which weight is closest to that? (a) 10 lb   (b) 3 oz   (c) 4 oz   (d) 9 lb"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870184",
+    "providerSourceId": "course-87-en:item:SN870184",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Draw an angle with a protractor",
+    "recipe": "draw-angle",
+    "family": "structured-port87",
+    "title": "Draw an angle with a protractor",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:17",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text with teacher diagram"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Draw a 51\u00b0 angle using a protractor. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:port:SN870075",
+    "providerSourceId": "course-87-en:port:SN870075",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Read angles on a protractor",
+    "recipe": "protractor-read",
+    "family": "structured-port87",
+    "title": "Read angles on a protractor",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:17",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Use the protractor to find the measure of \u2220AOH. Give the measure in degrees. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870594",
+    "providerSourceId": "course-87-en:item:SN870594",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Name a polygon by its number of sides",
+    "recipe": "polygon-name",
+    "family": "structured-port87",
+    "title": "Name a polygon by its number of sides",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:18",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Name a polygon with 5 sides."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870077",
+    "providerSourceId": "course-87-en:item:SN870077",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Identify a regular polygon",
+    "recipe": "regular-polygon-pick",
+    "family": "structured-port87",
+    "title": "Identify a regular polygon",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:18",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which figure is a regular quadrilateral? Answer with its letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870078",
+    "providerSourceId": "course-87-en:item:SN870078",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Find the false statement about polygons",
+    "recipe": "false-statement",
+    "family": "structured-port87",
+    "title": "Find the false statement about polygons",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:18",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which statement is false? (a) A pentagon has 5 angles.  (b) A circle is a polygon.  (c) A pentagon has 5 sides.  (d) A hexagon has 6 angles."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870596",
+    "providerSourceId": "course-87-en:item:SN870596",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Name the corresponding congruent part",
+    "recipe": "congruent-part",
+    "family": "structured-port87",
+    "title": "Name the corresponding congruent part",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:18",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "part"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "If \u25b3EGH \u2245 \u25b3JKL, what is segment LJ congruent to?"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870593",
+    "providerSourceId": "course-87-en:item:SN870593",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "List the congruent corresponding parts",
+    "recipe": "congruent-pairs",
+    "family": "structured-port87",
+    "title": "List the congruent corresponding parts",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:18",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "\u25b3GHJ \u2245 \u25b3JKM. List the six pairs of congruent corresponding parts. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:AHG60626",
+    "providerSourceId": "course-87-en:item:AHG60626",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "List the congruent corresponding angles",
+    "recipe": "congruent-pairs",
+    "family": "structured-port87",
+    "title": "List the congruent corresponding angles",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:18",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "\u25b3BDE \u2245 \u25b3GFE. List the three pairs of congruent angles. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870072",
+    "providerSourceId": "course-87-en:item:SX870072",
+    "bankId": "course-87-en",
+    "topic": "perimeter",
+    "action": "Side of a square in inches from its perimeter in feet",
+    "recipe": "square-side-inches",
+    "family": "structured-port87",
+    "title": "Side of a square in inches from its perimeter in feet",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:19",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "The perimeter of a square is 8 feet. How many inches long is each side of the square? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870313",
+    "providerSourceId": "course-87-en:item:SX870313",
+    "bankId": "course-87-en",
+    "topic": "perimeter",
+    "action": "Perimeter of a stepped rectilinear figure",
+    "recipe": "step-perimeter",
+    "family": "structured-port87",
+    "title": "Perimeter of a stepped rectilinear figure",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:19",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the perimeter of this figure. Dimensions are in feet. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870074",
+    "providerSourceId": "course-87-en:item:SX870074",
+    "bankId": "course-87-en",
+    "topic": "perimeter",
+    "action": "Equal perimeters of a square and a regular polygon",
+    "recipe": "square-polygon-sides",
+    "family": "structured-port87",
+    "title": "Equal perimeters of a square and a regular polygon",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:19",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "The perimeter of a square equals the perimeter of a regular hexagon. Each side of the regular hexagon is 12 cm. How long is each side of the square? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870082",
+    "providerSourceId": "course-87-en:item:SN870082",
+    "bankId": "course-87-en",
+    "topic": "perimeter",
+    "action": "Perimeter of a quadrilateral",
+    "recipe": "quad-perimeter",
+    "family": "structured-port87",
+    "title": "Perimeter of a quadrilateral",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:19",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the perimeter of this figure. Dimensions are in meters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870139",
+    "providerSourceId": "course-87-en:item:SX870139",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Add two powers",
+    "recipe": "power-sum",
+    "family": "structured-port87",
+    "title": "Add two powers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:20",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 5^3 + 2^2 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870075",
+    "providerSourceId": "course-87-en:item:SX870075",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Subtract two powers",
+    "recipe": "power-difference",
+    "family": "structured-port87",
+    "title": "Subtract two powers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:20",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "powers",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 3^3 \u2212 5^2 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870125",
+    "providerSourceId": "course-87-en:item:SX870125",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Raise a fraction to a power",
+    "recipe": "fraction-power",
+    "family": "structured-port87",
+    "title": "Raise a fraction to a power",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:20",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: (3/5)^3 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870086",
+    "providerSourceId": "course-87-en:item:SN870086",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Raise a fraction to a power",
+    "recipe": "fraction-power",
+    "family": "structured-port87",
+    "title": "Raise a fraction to a power",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:20",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: (1/7)^2 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SXA10055",
+    "providerSourceId": "course-87-en:item:SXA10055",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a square from its perimeter",
+    "recipe": "square-area-from-perimeter",
+    "family": "structured-port87",
+    "title": "Area of a square from its perimeter",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:20",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "The perimeter of a square is 84 meters. Find the area of the square in square meters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870073",
+    "providerSourceId": "course-87-en:item:SX870073",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Parallel sides and area of a rectangle",
+    "recipe": "rectangle-abcd",
+    "family": "structured-port87",
+    "title": "Parallel sides and area of a rectangle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:20",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-rectilinear",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "side-and-number"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use rectangle ABCD. (a) Which side is parallel to side BC? (b) If AD is 25 mm and AB is 10 mm, what is the area of the rectangle in square millimeters? Separate the two answers with a semicolon."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870126",
+    "providerSourceId": "course-87-en:item:SX870126",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Square root of a perfect square",
+    "recipe": "square-root",
+    "family": "structured-port87",
+    "title": "Square root of a perfect square",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:20",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: \u221a576 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870077",
+    "providerSourceId": "course-87-en:item:SX870077",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "A power minus a square root",
+    "recipe": "power-root-mix",
+    "family": "structured-port87",
+    "title": "A power minus a square root",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:20",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: 8^3 \u2212 \u221a529 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870078",
+    "providerSourceId": "course-87-en:item:SX870078",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "A square minus powers and a root",
+    "recipe": "square-minus-powers",
+    "family": "structured-port87",
+    "title": "A square minus powers and a root",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:20",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: 16^2 \u2212 4^2 \u2212 2^2 \u2212 \u221a121 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870080",
+    "providerSourceId": "course-87-en:item:SX870080",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Powers and a square root",
+    "recipe": "power-root-mix",
+    "family": "structured-port87",
+    "title": "Powers and a square root",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:20",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: 8^3 \u2212 \u221a225 + 5^2 Enter exact numerical answers without units."
   }
 ]
