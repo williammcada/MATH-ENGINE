@@ -25,7 +25,7 @@ Recorded 2026-10-14. This batch follows the batch protocol in `coverage-programm
 
 ## New tasks
 
-There are 50 new tasks, built from 40 new recipes in `src/port87.js`:
+There are 50 new tasks, built from 43 new recipes in `src/port87.js`:
 
 | Lessons | Topics |
 |---|---|
