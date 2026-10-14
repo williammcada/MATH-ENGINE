@@ -4,7 +4,7 @@ from pathlib import Path
 R=Path(__file__).resolve().parents[1];out=R/'curriculum/cross-course/v0.6'
 placement=json.loads((R/'curriculum/course-placement.json').read_text());coursePlacement={c['bankId']:c for c in placement['courses']}
 cat=json.loads(subprocess.check_output(['node','-e',"console.log(JSON.stringify(require('./src/course-banks').catalog))"],cwd=R,text=True));ids={c['sourceId']:c for c in cat}
-alias=dict(f='structured-foundational-courses',h='structured-algebra-half',a='structured-algebra-one',m='structured-algebra-two',z='structured-algebra-two-completion',q='structured-quadratic',d='structured-domain',p='structured-proportion',t='structured-measurement',s='structured-statistics',g='structured-geometry',b='structured-breadth',v='structured-advanced',r='structured-representations',n='structured-reasoning',l='structured-relations',o='structured-solids',w='structured-algebra-review',x='structured-cross-course',c='structured-curriculum87',e='structured-foundations87')
+alias=dict(f='structured-foundational-courses',h='structured-algebra-half',a='structured-algebra-one',m='structured-algebra-two',z='structured-algebra-two-completion',q='structured-quadratic',d='structured-domain',p='structured-proportion',t='structured-measurement',s='structured-statistics',g='structured-geometry',b='structured-breadth',v='structured-advanced',r='structured-representations',n='structured-reasoning',l='structured-relations',o='structured-solids',w='structured-algebra-review',x='structured-cross-course',c='structured-curriculum87',e='structured-foundations87',k='structured-port87')
 rules=[]
 for line in (out/'topic-rules.txt').read_text().splitlines():
  if not line or line.startswith('#'):continue
@@ -72,6 +72,7 @@ def provider(c):
 def classify(c):
  f=c['family'];recipe=c.get('recipe','')
  if f in simple:return simple[f]
+ if f=='structured-port87':return c['topic']  # each port task records its topic in its catalog entry
  if f=='structured-arithmetic':
   text=json.dumps(c['template']);return 'fractions' if 'fraction' in text or 'rational' in text else 'decimal-arithmetic' if c['template'].get('mode')in ['money','decimal'] or any(n.get('places',0)>0 for n in walk(c['template'])if isinstance(n,dict)) else 'whole-arithmetic'
  if f in ['structured-curriculum87','structured-foundations87']:

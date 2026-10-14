@@ -230,10 +230,15 @@
         "demand": "Identify a digit and its value through trillions",
         "prerequisites": "Large-number periods",
         "selectors": [
-          "f/place:13"
+          "f/place:13",
+          "k/place-of-digit",
+          "k/underlined-digit-value"
         ],
         "sourceIds": [
-          "course-1-en:authored:M2-d8536a67a44d-1"
+          "course-1-en:authored:M2-d8536a67a44d-1",
+          "course-87-en:item:SX870122",
+          "course-87-en:item:SN870023",
+          "course-87-en:item:AHG50141"
         ]
       }
     ],
@@ -250,12 +255,18 @@
         "prerequisites": "Numerators count equal parts",
         "selectors": [
           "f/fraction-same",
-          "f/fraction-simplify"
+          "f/fraction-simplify",
+          "k/add-unit-fraction",
+          "k/subtract-like-fractions",
+          "=/course-87-en:item:SX870052"
         ],
         "sourceIds": [
           "intermediate-4-en:authored:M2-ff6d68f495a0-1",
           "intermediate-4-en:authored:M2-c5e57438c817-1",
-          "course-1-en:authored:M2-c545969a46ec-1"
+          "course-1-en:authored:M2-c545969a46ec-1",
+          "course-87-en:item:SN870037",
+          "course-87-en:item:SN870036",
+          "course-87-en:item:SX870052"
         ]
       },
       {
@@ -292,7 +303,8 @@
           "f/mixed-same",
           "c/23.1",
           "c/23.2",
-          "@/algebra-1-en:node:4"
+          "@/algebra-1-en:node:4",
+          "=/course-87-en:item:SX870053"
         ],
         "sourceIds": [
           "algebra-1-en:node:4",
@@ -306,7 +318,8 @@
           "course-1-en:authored:M2-a4c02c32f8bb-1",
           "algebra-half-en:authored:M3-34-1",
           "algebra-half-en:authored:M3-35-1",
-          "algebra-half-en:authored:M3-35-2"
+          "algebra-half-en:authored:M3-35-2",
+          "course-87-en:item:SX870053"
         ]
       }
     ],
@@ -324,7 +337,8 @@
         "selectors": [
           "c/9.3",
           "f/cancel-factors",
-          "f/cancel-product"
+          "f/cancel-product",
+          "k/multiply-fractions"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-9.3",
@@ -333,7 +347,8 @@
           "course-1-en:authored:M2-1aabc3a6a11d-1",
           "algebra-half-en:authored:M3-18-1",
           "algebra-half-en:authored:M3-19-1",
-          "algebra-1-en:authored:M4-4-1"
+          "algebra-1-en:authored:M4-4-1",
+          "course-87-en:item:SN870035"
         ]
       },
       {
@@ -650,7 +665,8 @@
           "=/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00101",
           "=/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00103",
           "=/intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085",
-          "=/intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086"
+          "=/intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086",
+          "k/missing-dividend"
         ],
         "sourceIds": [
           "course-87-en:item:SN870012",
@@ -706,7 +722,8 @@
           "algebra-half-en:authored:M3-4-4",
           "algebra-half-en:authored:M3-37-1",
           "algebra-half-en:authored:M3-40-3",
-          "algebra-1-en:authored:M4-9-3"
+          "algebra-1-en:authored:M4-9-3",
+          "course-87-en:item:SN870015"
         ]
       },
       {
@@ -1005,7 +1022,9 @@
           "e/1.5",
           "f/evaluation",
           "f/formula",
-          "c/41.1"
+          "c/41.1",
+          "k/evaluate-quotient",
+          "k/evaluate-product-over-sum"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-1.5",
@@ -1013,7 +1032,9 @@
           "intermediate-4-en:authored:M2-18ad031af7a5-1",
           "intermediate-4-en:authored:M2-4780df275944-1",
           "course-1-en:authored:M2-5a92e1ff2ff9-1",
-          "algebra-half-en:authored:M3-32-1"
+          "algebra-half-en:authored:M3-32-1",
+          "course-87-en:item:SN870005",
+          "course-87-en:item:SN870006"
         ]
       },
       {
@@ -1025,7 +1046,8 @@
           "c/52.2",
           "c/COURSE108.1",
           "=/algebra-2-en:node:74",
-          "=/algebra-half-en:authored:M3-47-2"
+          "=/algebra-half-en:authored:M3-47-2",
+          "k/evaluate-product-difference"
         ],
         "sourceIds": [
           "algebra-2-en:node:74",
@@ -1035,7 +1057,8 @@
           "algebra-half-en:authored:M3-32-2",
           "algebra-half-en:authored:M3-47-2",
           "algebra-half-en:authored:M3-82-1",
-          "algebra-1-en:authored:M4-14-1"
+          "algebra-1-en:authored:M4-14-1",
+          "course-87-en:item:SN870181"
         ]
       },
       {
@@ -1065,14 +1088,17 @@
         "selectors": [
           "e/4.3",
           "f/integer-model",
-          "c/59.2"
+          "c/59.2",
+          "k/subtraction-number-line"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-4.3",
           "course-87-en:authored:MCADA-59.2",
           "course-1-en:authored:M2-a004ec80dabe-2",
           "course-1-en:authored:M2-be05244a33a6-1",
-          "algebra-half-en:authored:M3-69-2"
+          "algebra-half-en:authored:M3-69-2",
+          "course-87-en:item:SX870033",
+          "course-87-en:item:SN870156"
         ]
       },
       {
@@ -2676,7 +2702,8 @@
           "@/course-1-en:bank:C1_Section01:item:C1_S01_00112",
           "@/course-1-en:bank:C1_Section04:item:C1_S04_00076",
           "@/course-1-en:bank:C1_Section04:item:C1_S04_00077",
-          "@/course-1-en:bank:C1_Section04:item:C1_S04_00078"
+          "@/course-1-en:bank:C1_Section04:item:C1_S04_00078",
+          "k/money-times"
         ],
         "sourceIds": [
           "course-87-en:item:SX870018",
@@ -2690,7 +2717,8 @@
           "course-1-en:authored:M2-d16989c45698-1",
           "algebra-half-en:authored:M3-7-1",
           "algebra-1-en:authored:M4-4-5",
-          "algebra-2-en:authored:M6-11-1"
+          "algebra-2-en:authored:M6-11-1",
+          "course-87-en:port:SX870018"
         ]
       }
     ],

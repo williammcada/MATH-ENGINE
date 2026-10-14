@@ -76621,5 +76621,1130 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Find the perimeter of this rectangle in centimeters. Use exact fractions or terminating decimals, without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870002",
+    "providerSourceId": "course-87-en:item:SN870002",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide a money amount by a two-digit number",
+    "recipe": "money-divide",
+    "family": "structured-port87",
+    "title": "Divide a money amount by a two-digit number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:1",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: $44.20 \u00f7 65. Give the answer in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:port:SX870018",
+    "providerSourceId": "course-87-en:port:SX870018",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Multiply a money amount by a multiple of ten",
+    "recipe": "money-times",
+    "family": "structured-port87",
+    "title": "Multiply a money amount by a multiple of ten",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-operations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 60($9.86). Give the answer in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870005",
+    "providerSourceId": "course-87-en:item:SN870005",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Evaluate a quotient for a given value",
+    "recipe": "evaluate-quotient",
+    "family": "structured-port87",
+    "title": "Evaluate a quotient for a given value",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the value of x \u00f7 5 if x = 40? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870181",
+    "providerSourceId": "course-87-en:item:SN870181",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Evaluate a(b \u2212 c) with signed and decimal values",
+    "recipe": "evaluate-product-difference",
+    "family": "structured-port87",
+    "title": "Evaluate a(b \u2212 c) with signed and decimal values",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Evaluate r(s \u2212 t) if r = \u22127, s = 3.0, and t = 1.5. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870006",
+    "providerSourceId": "course-87-en:item:SN870006",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Evaluate jk/(j + k)",
+    "recipe": "evaluate-product-over-sum",
+    "family": "structured-port87",
+    "title": "Evaluate jk/(j + k)",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Evaluate (ab)/(a + b) when a = 7 and b = 15. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:port:SX870024",
+    "providerSourceId": "course-87-en:port:SX870024",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Illustrate the commutative property",
+    "recipe": "property-statement",
+    "family": "structured-port87",
+    "title": "Illustrate the commutative property",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:2",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "property"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Use the numbers 9 and 2 to illustrate the commutative property of multiplication. Write a number sentence."
+  },
+  {
+    "sourceId": "course-87-en:port:SX870025",
+    "providerSourceId": "course-87-en:port:SX870025",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Illustrate the associative property",
+    "recipe": "property-statement",
+    "family": "structured-port87",
+    "title": "Illustrate the associative property",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:2",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "property"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Use the numbers 9, 2, and 4 to illustrate the associative property of addition. Write a number sentence."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870153",
+    "providerSourceId": "course-87-en:item:SN870153",
+    "bankId": "course-87-en",
+    "topic": "expressions",
+    "action": "Decide whether an operation is commutative or associative",
+    "recipe": "property-test",
+    "family": "structured-port87",
+    "title": "Decide whether an operation is commutative or associative",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:2",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Is the operation of addition commutative? Answer yes or no, and give an example. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870015",
+    "providerSourceId": "course-87-en:item:SN870015",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Find a missing dividend",
+    "recipe": "missing-dividend",
+    "family": "structured-port87",
+    "title": "Find a missing dividend",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:3",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing number: C \u00f7 9 = 45. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870115",
+    "providerSourceId": "course-87-en:item:SX870115",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Compare integers using a number line",
+    "recipe": "compare-number-line",
+    "family": "structured-port87",
+    "title": "Compare integers using a number line",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:4",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Use the number line to compare the numbers. Write <, >, or = in the box: \u22124 \u2610 \u22125"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870033",
+    "providerSourceId": "course-87-en:item:SX870033",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Show a subtraction on a number line",
+    "recipe": "subtraction-number-line",
+    "family": "structured-port87",
+    "title": "Show a subtraction on a number line",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:4",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Show this subtraction problem on a number line: 9 \u2212 7. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870156",
+    "providerSourceId": "course-87-en:item:SN870156",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Show a signed subtraction on a number line",
+    "recipe": "subtraction-number-line",
+    "family": "structured-port87",
+    "title": "Show a signed subtraction on a number line",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:4",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Show this subtraction problem on a number line: 3 \u2212 6 = \u22123. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870122",
+    "providerSourceId": "course-87-en:item:SX870122",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Name the place of a digit (through trillions)",
+    "recipe": "place-of-digit",
+    "family": "structured-port87",
+    "title": "Name the place of a digit (through trillions)",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:5",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "place-values",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the place value of the digit 3 in the number 1,147,848,925,839."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870023",
+    "providerSourceId": "course-87-en:item:SN870023",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Name the place of a digit in a large number",
+    "recipe": "place-of-digit",
+    "family": "structured-port87",
+    "title": "Name the place of a digit in a large number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:5",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "place-values",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the place value of the digit 8 in the number 9,583,363,471,172."
+  },
+  {
+    "sourceId": "course-87-en:item:AHG50141",
+    "providerSourceId": "course-87-en:item:AHG50141",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Write the value of an underlined digit in short word form",
+    "recipe": "underlined-digit-value",
+    "family": "structured-port87",
+    "title": "Write the value of an underlined digit in short word form",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:5",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "place-values",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write the value of the underlined digit in short word form: 504,1\u033268,393,933"
+  },
+  {
+    "sourceId": "course-87-en:port:SX870001",
+    "providerSourceId": "course-87-en:port:SX870001",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Write a number in expanded notation with multiplication",
+    "recipe": "expanded-notation",
+    "family": "structured-port87",
+    "title": "Write a number in expanded notation with multiplication",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:5",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "expanded"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Write 702,000 in expanded notation, using multiplication, for example (2 \u00d7 100) + (5 \u00d7 10)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870020",
+    "providerSourceId": "course-87-en:item:SN870020",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Write a number given in words using digits",
+    "recipe": "words-to-digits",
+    "family": "structured-port87",
+    "title": "Write a number given in words using digits",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:5",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Use digits to write forty million, two hundred one thousand, three hundred seventeen. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870041",
+    "providerSourceId": "course-87-en:item:SX870041",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "List factors, common factors and the GCF",
+    "recipe": "factor-lists",
+    "family": "structured-port87",
+    "title": "List factors, common factors and the GCF",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:6",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "lists"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "(a) List the factors of 66. (b) List the factors of 10. (c) What numbers are factors of both 66 and 10? (d) What is the greatest common factor of 66 and 10? Separate the four answers with semicolons and the numbers in a list with commas."
+  },
+  {
+    "sourceId": "course-87-en:port:SN870025",
+    "providerSourceId": "course-87-en:port:SN870025",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Find the greatest common factor of two numbers",
+    "recipe": "gcf-two",
+    "family": "structured-port87",
+    "title": "Find the greatest common factor of two numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:6",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "What is the greatest common factor of 40 and 16? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870158",
+    "providerSourceId": "course-87-en:item:SN870158",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Choose the number divisible by a given number",
+    "recipe": "which-divisible",
+    "family": "structured-port87",
+    "title": "Choose the number divisible by a given number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:6",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which number is divisible by 4? (a) 230   (b) 76   (c) 151   (d) 75 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870027",
+    "providerSourceId": "course-87-en:item:SN870027",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Choose the larger number divisible by a given number",
+    "recipe": "which-divisible",
+    "family": "structured-port87",
+    "title": "Choose the larger number divisible by a given number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:6",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which number is divisible by 3? (a) 172   (b) 57   (c) 170   (d) 173 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX760040",
+    "providerSourceId": "course-87-en:item:SX760040",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Decide whether a number is divisible by two numbers",
+    "recipe": "divisible-by-both",
+    "family": "structured-port87",
+    "title": "Decide whether a number is divisible by two numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:6",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Is 210 divisible by both 3 and 5? Answer yes or no."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870179",
+    "providerSourceId": "course-87-en:item:SN870179",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Choose the number with a divisibility property",
+    "recipe": "which-has-property",
+    "family": "structured-port87",
+    "title": "Choose the number with a divisibility property",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:6",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which number is not divisible by 6? (a) 63,615   (b) 37,032   (c) 47,196   (d) 88,896 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870119",
+    "providerSourceId": "course-87-en:item:SX870119",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Name lines, rays and segments with symbols",
+    "recipe": "name-linear-figures",
+    "family": "structured-port87",
+    "title": "Name lines, rays and segments with symbols",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:7",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "What term best describes each figure? Use a symbol and letters to name each figure. (a), (b) and (c) are shown in order. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870592",
+    "providerSourceId": "course-87-en:item:SN870592",
+    "bankId": "course-87-en",
+    "topic": "geometry-properties",
+    "action": "Classify an angle from a straight or right angle",
+    "recipe": "angle-kind",
+    "family": "structured-port87",
+    "title": "Classify an angle from a straight or right angle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:7",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "If \u2220TOS is acute and \u2220TOR is straight, what kind of angle is \u2220ROS?"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870188",
+    "providerSourceId": "course-87-en:item:SN870188",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Percent of a square that is shaded",
+    "recipe": "percent-shaded-square",
+    "family": "structured-port87",
+    "title": "Percent of a square that is shaded",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:8",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "What percentage of the figure is shaded? Give the percent as a number. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870161",
+    "providerSourceId": "course-87-en:item:SN870161",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Estimate the percent of a diagram that is shaded",
+    "recipe": "percent-shaded-square",
+    "family": "structured-port87",
+    "title": "Estimate the percent of a diagram that is shaded",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:8",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "About what percentage of the diagram is shaded? Give the percent as a number. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870358",
+    "providerSourceId": "course-87-en:item:SN870358",
+    "bankId": "course-87-en",
+    "topic": "fraction-decimal-percent",
+    "action": "Percent of a hundred grid that is shaded",
+    "recipe": "percent-grid",
+    "family": "structured-port87",
+    "title": "Percent of a hundred grid that is shaded",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:8",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "What percentage of the square is shaded? Give the percent as a number. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870032",
+    "providerSourceId": "course-87-en:item:SN870032",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Measure a segment to the nearest sixteenth of an inch",
+    "recipe": "ruler-length",
+    "family": "structured-port87",
+    "title": "Measure a segment to the nearest sixteenth of an inch",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:8",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "How long is this segment to the nearest sixteenth of an inch? Give the length in inches. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870183",
+    "providerSourceId": "course-87-en:item:SN870183",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Measure a segment to the nearest eighth of an inch",
+    "recipe": "ruler-length",
+    "family": "structured-port87",
+    "title": "Measure a segment to the nearest eighth of an inch",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:8",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "How long is this segment? Give the length in inches. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870037",
+    "providerSourceId": "course-87-en:item:SN870037",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Add a unit fraction with a like denominator",
+    "recipe": "add-unit-fraction",
+    "family": "structured-port87",
+    "title": "Add a unit fraction with a like denominator",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:9",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 1/3 + 1/3 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870035",
+    "providerSourceId": "course-87-en:item:SN870035",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Multiply two fractions",
+    "recipe": "multiply-fractions",
+    "family": "structured-port87",
+    "title": "Multiply two fractions",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:9",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-product-chain",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 2/3 \u00d7 4/5 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870036",
+    "providerSourceId": "course-87-en:item:SN870036",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Subtract fractions with like denominators",
+    "recipe": "subtract-like-fractions",
+    "family": "structured-port87",
+    "title": "Subtract fractions with like denominators",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:9",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 16/19 \u2212 7/19 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870824",
+    "providerSourceId": "course-87-en:item:SN870824",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Find the reciprocal of a fraction",
+    "recipe": "reciprocal",
+    "family": "structured-port87",
+    "title": "Find the reciprocal of a fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:9",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "What is the reciprocal of 9/17? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870049",
+    "providerSourceId": "course-87-en:item:SX870049",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "How many of a fraction are in one",
+    "recipe": "reciprocal",
+    "family": "structured-port87",
+    "title": "How many of a fraction are in one",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:9",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "How many 7/8s are in 1? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870034",
+    "providerSourceId": "course-87-en:item:SN870034",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Find the reciprocal of a proper or improper fraction",
+    "recipe": "reciprocal",
+    "family": "structured-port87",
+    "title": "Find the reciprocal of a proper or improper fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:9",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "What is the reciprocal of 8/5? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870052",
+    "providerSourceId": "course-87-en:item:SX870052",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Add three like fractions; answer as a mixed number",
+    "recipe": "add-to-mixed",
+    "family": "structured-port87",
+    "title": "Add three like fractions; answer as a mixed number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:10",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify. Express the answer as a mixed number: 1/8 + 7/8 + 1/8 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870053",
+    "providerSourceId": "course-87-en:item:SX870053",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Add two mixed numbers with like denominators",
+    "recipe": "add-to-mixed",
+    "family": "structured-port87",
+    "title": "Add two mixed numbers with like denominators",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:10",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify. Express the answer as a mixed number: 5 5/9 + 5 5/9 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870123",
+    "providerSourceId": "course-87-en:item:SX870123",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Draw shaded circles for a mixed number",
+    "recipe": "circles-mixed",
+    "family": "structured-port87",
+    "title": "Draw shaded circles for a mixed number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:10",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "text with teacher diagram"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Draw shaded circles to show that 1 3/8 = 11/8. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SX540337",
+    "providerSourceId": "course-87-en:item:SX540337",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Name the mixed number and improper fraction shown",
+    "recipe": "circles-mixed",
+    "family": "structured-port87",
+    "title": "Name the mixed number and improper fraction shown",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:10",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "equation-pair"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which mixed number and improper fraction do the shaded circles show? Write them as an equation, for example 1 1/2 = 3/2."
+  },
+  {
+    "sourceId": "course-87-en:item:DBFF0203",
+    "providerSourceId": "course-87-en:item:DBFF0203",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Write a mixed number as an improper fraction",
+    "recipe": "mixed-to-improper",
+    "family": "structured-port87",
+    "title": "Write a mixed number as an improper fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:10",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Write 6 1/5 as an improper fraction. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870043",
+    "providerSourceId": "course-87-en:item:SN870043",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Write a mixed number as an improper fraction",
+    "recipe": "mixed-to-improper",
+    "family": "structured-port87",
+    "title": "Write a mixed number as an improper fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:10",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Write 9 3/10 as an improper fraction. Enter a fraction in lowest terms (or an integer)."
   }
 ]

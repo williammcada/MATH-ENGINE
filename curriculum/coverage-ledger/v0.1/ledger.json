@@ -10,6 +10,7 @@
 "curriculum/course-inventory/v0.1/course-1-en.json": "4b8d876247ccceef6623fcb1973c3d660cf71498d39beae4a5a9db2434f5153e",
 "curriculum/course-inventory/v0.1/course-87-en.json": "ca486563f3e11bb8e9a30c27d08b07663914a3718d5ed56c1293316ac39946c8",
 "curriculum/course-inventory/v0.1/intermediate-4-en.json": "d8759e7d56ef7d611a0f451ea6edc490f468cf75946862bc93c8bc6f9ac5015f",
+"curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch1-course87-L1-10.json": "94bb3d449ad7f49caef9df52b84921b49055d8ed3633e2e1b1aa1ba4d6ac7882",
 "curriculum/source-mappings/advanced-v0.1.json": "740f9d6e25483a2838d5561a85c66c9eb3f67b7505a8ab9004353e5eb6883aa7",
 "curriculum/source-mappings/algebra-review-v0.1.json": "a4956b61d8353d4258097f2ea5ca8d7baf4031fdd9c090e344ca2ce366a29a0e",
 "curriculum/source-mappings/breadth-v0.1.json": "d8255409d16dcc8db7b45244ab1239896d13ac56ffe4f3eb2ecdd8778f5e4996",
@@ -19,6 +20,7 @@
 "curriculum/source-mappings/linear-equations-v0.1.json": "9e4f9fd37066e63cd74f133bcc76713db8ae30251a22f03f5a672ab535bc7e65",
 "curriculum/source-mappings/linear-equations-v0.2.json": "759f02762a92c18098944bfe8a88f2be5a0a4384f778105cb78239a07df22371",
 "curriculum/source-mappings/measurement-v0.1.json": "3ca7cc1cdb74fb6e1bf8741beea9c2787fe122befe28499e75bfd6d803409451",
+"curriculum/source-mappings/port87-v0.1.json": "52626ed0177d206bad30a9524a1481a4d59c8f3a1aca308955d8f1f407158884",
 "curriculum/source-mappings/proportions-v0.1.json": "85db6cf773c6c1a6bbad37f83cf3724becf552fee4bbf4154e2ade0bae7751af",
 "curriculum/source-mappings/quadratic-equations-v0.1.json": "51b5a6c7221720481df7ac7a3cf9b4561744ef910fee5427c8cd73d6c027f4a6",
 "curriculum/source-mappings/reasoning-v0.1.json": "b88aeb99d84bd8ab367678d0c6f7d90fdc3cba8dbc087ebf108a3e835ef7f448",
@@ -28,25 +30,25 @@
 "curriculum/source-mappings/statistics-v0.1.json": "a3ba878bad7cc71dea555ef623b6c3e89483a9c8f809d21e4d90efa9ba09ce8d"
 },
 "totals": {
-"open": 4904,
-"covered-provisional": 521,
-"covered": 0,
-"consolidated": 0,
+"open": 4855,
+"covered-provisional": 498,
+"covered": 58,
+"consolidated": 14,
 "retired": 0,
 "records": 5425,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 9.6
+"percentComplete": 1.3,
+"percentIncludingProvisional": 10.5
 },
 "banks": {
 "course-87-en": {
-"open": 657,
-"covered-provisional": 132,
-"covered": 0,
-"consolidated": 0,
+"open": 608,
+"covered-provisional": 109,
+"covered": 58,
+"consolidated": 14,
 "retired": 0,
 "records": 789,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 16.7
+"percentComplete": 9.1,
+"percentIncludingProvisional": 22.9
 },
 "algebra-half-en": {
 "open": 552,
@@ -6271,26 +6273,26 @@
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:1",
-"open": 5,
-"covered-provisional": 4,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 7,
+"consolidated": 2,
 "retired": 0,
 "records": 9,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 44.4
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:10",
-"open": 7,
-"covered-provisional": 1,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 7,
+"consolidated": 1,
 "retired": 0,
 "records": 8,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 12.5
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
@@ -6655,14 +6657,14 @@
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:2",
-"open": 2,
-"covered-provisional": 6,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 6,
+"consolidated": 2,
 "retired": 0,
 "records": 8,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 75.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
@@ -6943,14 +6945,14 @@
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:3",
-"open": 2,
-"covered-provisional": 3,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 4,
+"consolidated": 1,
 "retired": 0,
 "records": 5,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 60.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
@@ -7075,14 +7077,14 @@
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:4",
-"open": 3,
-"covered-provisional": 1,
-"covered": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 4,
 "consolidated": 0,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 25.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
@@ -7207,14 +7209,14 @@
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:5",
-"open": 6,
-"covered-provisional": 2,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 6,
+"consolidated": 2,
 "retired": 0,
 "records": 8,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 25.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
@@ -7339,14 +7341,14 @@
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:6",
-"open": 6,
-"covered-provisional": 2,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 7,
+"consolidated": 1,
 "retired": 0,
 "records": 8,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 25.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
@@ -7471,14 +7473,14 @@
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:7",
-"open": 3,
-"covered-provisional": 1,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 3,
+"consolidated": 1,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 25.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
@@ -7603,14 +7605,14 @@
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:8",
-"open": 7,
-"covered-provisional": 3,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 8,
+"consolidated": 2,
 "retired": 0,
 "records": 10,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 30.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
@@ -7735,14 +7737,14 @@
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:9",
-"open": 8,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 6,
+"consolidated": 2,
 "retired": 0,
 "records": 8,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
@@ -30475,7 +30477,13 @@
 "id": "course-87-en:item:AHG50141",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:5",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:AHG50141"
+]
 },
 {
 "id": "course-87-en:item:AHG50515",
@@ -30529,7 +30537,11 @@
 "id": "course-87-en:item:AXG80153",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:1",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870006 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SN870006"
 },
 {
 "id": "course-87-en:item:AXG80180",
@@ -30565,7 +30577,13 @@
 "id": "course-87-en:item:DBFF0203",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:10",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:DBFF0203"
+]
 },
 {
 "id": "course-87-en:item:MOOR0907",
@@ -30583,12 +30601,13 @@
 "id": "course-87-en:item:NAV40385",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:6",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same factor pairs and yes/no response.",
 "by": [
 "course-87-en:item:NAV40385"
-],
-"basis": "course-banks catalog (initial adaptations)",
-"family": "factor-check"
+]
 },
 {
 "id": "course-87-en:item:NC070005",
@@ -30645,7 +30664,11 @@
 "id": "course-87-en:item:SAX70390",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:8",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870032 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SN870032"
 },
 {
 "id": "course-87-en:item:SMAH0068",
@@ -30734,229 +30757,327 @@
 "id": "course-87-en:item:SN870001",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:1",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Long division with optional remainder; same ranges as the source. Shown horizontally rather than in a division bracket.",
 "by": [
 "course-87-en:item:SN870001"
-],
-"basis": "course-banks catalog (initial adaptations)",
-"family": "whole-division-remainder"
+]
 },
 {
 "id": "course-87-en:item:SN870002",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:1",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870002"
+]
 },
 {
 "id": "course-87-en:item:SN870004",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:1",
-"state": "covered-provisional",
-"by": [
-"course-87-en:item:SN870004"
-],
-"basis": "course-banks catalog (initial adaptations)",
-"family": "money-product"
+"state": "consolidated",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SX870018 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SX870018"
 },
 {
 "id": "course-87-en:item:SN870005",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:1",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870005"
+]
 },
 {
 "id": "course-87-en:item:SN870006",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:1",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870006"
+]
 },
 {
 "id": "course-87-en:item:SN870008",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:2",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SX870025 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SX870025"
 },
 {
 "id": "course-87-en:item:SN870010",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:2",
-"state": "covered-provisional",
-"by": [
-"course-87-en:item:SN870010"
-],
-"basis": "course-banks catalog (initial adaptations)",
-"family": "sequence-large"
+"state": "consolidated",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SX650024 (same script and question). Served by that task, free response by default. Reviewed distractors are pending the distractor programme (P10).",
+"into": "course-87-en:item:SX650024"
 },
 {
 "id": "course-87-en:item:SN870011",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:2",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same three-term form and ranges.",
 "by": [
 "course-87-en:item:SN870011"
-],
-"basis": "course-banks catalog (initial adaptations)",
-"family": "sequence-short"
+]
 },
 {
 "id": "course-87-en:item:SN870012",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:3",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same ranges; missing minuend or subtrahend. Shown horizontally with n rather than vertically with a letter.",
 "by": [
 "course-87-en:item:SN870012"
-],
-"basis": "course-banks catalog (initial adaptations)",
-"family": "missing-subtraction"
+]
 },
 {
 "id": "course-87-en:item:SN870013",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:3",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same ranges; shown horizontally with n.",
 "by": [
 "course-87-en:item:SN870013"
-],
-"basis": "course-banks catalog (initial adaptations)",
-"family": "missing-large-addend"
+]
 },
 {
 "id": "course-87-en:item:SN870014",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:3",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same factor and quotient ranges; shown horizontally with n.",
 "by": [
 "course-87-en:item:SN870014"
-],
-"basis": "course-banks catalog (initial adaptations)",
-"family": "missing-factor"
+]
 },
 {
 "id": "course-87-en:item:SN870015",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:3",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870015"
+]
 },
 {
 "id": "course-87-en:item:SN870017",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:4",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same integer ranges and response.",
 "by": [
 "course-87-en:item:SN870017"
-],
-"basis": "course-banks catalog (initial adaptations)",
-"family": "integer-compare"
+]
 },
 {
 "id": "course-87-en:item:SN870020",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:5",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870020"
+]
 },
 {
 "id": "course-87-en:item:SN870023",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:5",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870023"
+]
 },
 {
 "id": "course-87-en:item:SN870025",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:6",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation, which used numbers outside the source range.",
 "by": [
-"course-87-en:item:SN870025"
-],
-"basis": "breadth-v0.1.json",
-"family": "structured-breadth"
+"course-87-en:port:SN870025"
+]
 },
 {
 "id": "course-87-en:item:SN870026",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:6",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SX870041 (same script and question). Served by that task, free response by default. The four-part lists are asked free response; their distractors are not reused.",
+"into": "course-87-en:item:SX870041"
 },
 {
 "id": "course-87-en:item:SN870027",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:6",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870027"
+]
 },
 {
 "id": "course-87-en:item:SN870029",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:7",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same six figure types with drawings.",
 "by": [
 "course-87-en:item:SN870029"
-],
-"basis": "representations-v0.1.json",
-"family": "structured-representations"
+]
 },
 {
 "id": "course-87-en:item:SN870031",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:8",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same sector counts with drawing; fraction or decimal accepted.",
 "by": [
 "course-87-en:item:SN870031"
-],
-"basis": "geometry-v0.1.json",
-"family": "structured-geometry"
+]
 },
 {
 "id": "course-87-en:item:SN870032",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:8",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870032"
+]
 },
 {
 "id": "course-87-en:item:SN870034",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:9",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870034"
+]
 },
 {
 "id": "course-87-en:item:SN870035",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:9",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870035"
+]
 },
 {
 "id": "course-87-en:item:SN870036",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:9",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870036"
+]
 },
 {
 "id": "course-87-en:item:SN870037",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:9",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870037"
+]
 },
 {
 "id": "course-87-en:item:SN870039",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:9",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SX870049 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SX870049"
 },
 {
 "id": "course-87-en:item:SN870040",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:10",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same improper fractions; mixed-number answer.",
 "by": [
 "course-87-en:item:SN870040"
-],
-"basis": "proportions-v0.1.json",
-"family": "structured-proportion"
+]
 },
 {
 "id": "course-87-en:item:SN870043",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:10",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870043"
+]
 },
 {
 "id": "course-87-en:item:SN870046",
@@ -31336,31 +31457,59 @@
 "id": "course-87-en:item:SN870153",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:2",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870153"
+]
 },
 {
 "id": "course-87-en:item:SN870156",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:4",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870156"
+]
 },
 {
 "id": "course-87-en:item:SN870158",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:6",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870158"
+]
 },
 {
 "id": "course-87-en:item:SN870160",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:8",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870190 (same script and question). Served by that task, free response by default. Reviewed distractors are pending the distractor programme (P10).",
+"into": "course-87-en:item:SN870190"
 },
 {
 "id": "course-87-en:item:SN870161",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:8",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870161"
+]
 },
 {
 "id": "course-87-en:item:SN870162",
@@ -31431,19 +31580,37 @@
 "id": "course-87-en:item:SN870179",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:6",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870179"
+]
 },
 {
 "id": "course-87-en:item:SN870181",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:1",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870181"
+]
 },
 {
 "id": "course-87-en:item:SN870183",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:8",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870183"
+]
 },
 {
 "id": "course-87-en:item:SN870184",
@@ -31467,18 +31634,25 @@
 "id": "course-87-en:item:SN870188",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:8",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870188"
+]
 },
 {
 "id": "course-87-en:item:SN870190",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:8",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same fractions of a circle with drawing; percent answer.",
 "by": [
 "course-87-en:item:SN870190"
-],
-"basis": "geometry-v0.1.json",
-"family": "structured-geometry"
+]
 },
 {
 "id": "course-87-en:item:SN870192",
@@ -32005,7 +32179,13 @@
 "id": "course-87-en:item:SN870358",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:8",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870358"
+]
 },
 {
 "id": "course-87-en:item:SN870359",
@@ -33017,13 +33197,23 @@
 "id": "course-87-en:item:SN870591",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:7",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870592 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SN870592"
 },
 {
 "id": "course-87-en:item:SN870592",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:7",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870592"
+]
 },
 {
 "id": "course-87-en:item:SN870593",
@@ -33969,7 +34159,13 @@
 "id": "course-87-en:item:SN870824",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:9",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SN870824"
+]
 },
 {
 "id": "course-87-en:item:SN870825",
@@ -34074,18 +34270,25 @@
 "id": "course-87-en:item:SX540337",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:10",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SX540337"
+]
 },
 {
 "id": "course-87-en:item:SX650024",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:2",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same 25/50 steps and range.",
 "by": [
 "course-87-en:item:SX650024"
-],
-"basis": "course-banks catalog (initial adaptations)",
-"family": "sequence-large"
+]
 },
 {
 "id": "course-87-en:item:SX650094",
@@ -34109,12 +34312,13 @@
 "id": "course-87-en:item:SX650185",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:5",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same number ranges; words answer.",
 "by": [
 "course-87-en:item:SX650185"
-],
-"basis": "representations-v0.1.json",
-"family": "structured-representations"
+]
 },
 {
 "id": "course-87-en:item:SX650319",
@@ -34148,7 +34352,13 @@
 "id": "course-87-en:item:SX760040",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:6",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SX760040"
+]
 },
 {
 "id": "course-87-en:item:SX760042",
@@ -34165,7 +34375,11 @@
 "id": "course-87-en:item:SX760043",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:10",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870040 (same script and question). Served by that task, free response by default. Reviewed distractors are pending the distractor programme (P10).",
+"into": "course-87-en:item:SN870040"
 },
 {
 "id": "course-87-en:item:SX760141",
@@ -34205,103 +34419,143 @@
 "id": "course-87-en:item:SX870001",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:5",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation, which asked for a sum of place values without multiplication.",
 "by": [
-"course-87-en:item:SX870001"
-],
-"basis": "representations-v0.1.json",
-"family": "structured-representations"
+"course-87-en:port:SX870001"
+]
 },
 {
 "id": "course-87-en:item:SX870017",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:1",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same factor ranges and form.",
 "by": [
 "course-87-en:item:SX870017"
-],
-"basis": "course-banks catalog (initial adaptations)",
-"family": "whole-product"
+]
 },
 {
 "id": "course-87-en:item:SX870018",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:1",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation, which framed it as a word problem.",
 "by": [
-"course-87-en:item:SX870018"
-],
-"basis": "course-banks catalog (initial adaptations)",
-"family": "money-product"
+"course-87-en:port:SX870018"
+]
 },
 {
 "id": "course-87-en:item:SX870024",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:2",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation, which gave a fill-in template instead of asking for the statement.",
 "by": [
-"course-87-en:item:SX870024"
-],
-"basis": "reasoning-v0.1.json",
-"family": "structured-reasoning"
+"course-87-en:port:SX870024"
+]
 },
 {
 "id": "course-87-en:item:SX870025",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:2",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation, which gave a fill-in template instead of asking for the statement.",
 "by": [
-"course-87-en:item:SX870025"
-],
-"basis": "reasoning-v0.1.json",
-"family": "structured-reasoning"
+"course-87-en:port:SX870025"
+]
 },
 {
 "id": "course-87-en:item:SX870033",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:4",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SX870033"
+]
 },
 {
 "id": "course-87-en:item:SX870040",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:3",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870015 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SN870015"
 },
 {
 "id": "course-87-en:item:SX870041",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:6",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SX870041"
+]
 },
 {
 "id": "course-87-en:item:SX870048",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:8",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Ruler drawing with points A, B, C; difference of segment lengths.",
 "by": [
 "course-87-en:item:SX870048"
-],
-"basis": "solids-v0.1.json",
-"family": "structured-solids"
+]
 },
 {
 "id": "course-87-en:item:SX870049",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:9",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SX870049"
+]
 },
 {
 "id": "course-87-en:item:SX870052",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:10",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SX870052"
+]
 },
 {
 "id": "course-87-en:item:SX870053",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:10",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SX870053"
+]
 },
 {
 "id": "course-87-en:item:SX870055",
@@ -34569,37 +34823,69 @@
 "id": "course-87-en:item:SX870115",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:4",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SX870115"
+]
 },
 {
 "id": "course-87-en:item:SX870117",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:5",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870023 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SN870023"
 },
 {
 "id": "course-87-en:item:SX870118",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:5",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870020 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SN870020"
 },
 {
 "id": "course-87-en:item:SX870119",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:7",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SX870119"
+]
 },
 {
 "id": "course-87-en:item:SX870122",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:5",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SX870122"
+]
 },
 {
 "id": "course-87-en:item:SX870123",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:10",
-"state": "open"
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source.",
+"by": [
+"course-87-en:item:SX870123"
+]
 },
 {
 "id": "course-87-en:item:SX870125",
@@ -34617,7 +34903,11 @@
 "id": "course-87-en:item:SX870134",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:9",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870035 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SN870035"
 },
 {
 "id": "course-87-en:item:SX870136",
@@ -35739,12 +36029,13 @@
 "id": "course-87-en:item:SX870478",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:2",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-1 course-87 lessons 1-10",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same ascending/descending ranges and five-term form.",
 "by": [
 "course-87-en:item:SX870478"
-],
-"basis": "course-banks catalog (initial adaptations)",
-"family": "sequence-small"
+]
 },
 {
 "id": "course-87-en:item:SX870479",

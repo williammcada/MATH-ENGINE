@@ -1,0 +1,555 @@
+{
+ "batch": "batch-1 course-87 lessons 1-10",
+ "date": "2026-10-14",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "course-87-en:item:AHG50141",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:AHG50141"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:AXG80153",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870006",
+   "note": "Choice-only twin of SN870006 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:DBFF0203",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:DBFF0203"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:NAV40385",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:NAV40385"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same factor pairs and yes/no response."
+  },
+  {
+   "id": "course-87-en:item:SAX70390",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870032",
+   "note": "Choice-only twin of SN870032 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870001",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870001"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Long division with optional remainder; same ranges as the source. Shown horizontally rather than in a division bracket."
+  },
+  {
+   "id": "course-87-en:item:SN870002",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870002"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870004",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870018",
+   "note": "Choice-only twin of SX870018 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870005",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870005"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870006",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870006"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870008",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870025",
+   "note": "Choice-only twin of SX870025 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870010",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX650024",
+   "note": "Choice-only twin of SX650024 (same script and question). Served by that task, free response by default. Reviewed distractors are pending the distractor programme (P10)."
+  },
+  {
+   "id": "course-87-en:item:SN870011",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870011"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same three-term form and ranges."
+  },
+  {
+   "id": "course-87-en:item:SN870012",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870012"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same ranges; missing minuend or subtrahend. Shown horizontally with n rather than vertically with a letter."
+  },
+  {
+   "id": "course-87-en:item:SN870013",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870013"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same ranges; shown horizontally with n."
+  },
+  {
+   "id": "course-87-en:item:SN870014",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870014"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same factor and quotient ranges; shown horizontally with n."
+  },
+  {
+   "id": "course-87-en:item:SN870015",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870015"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870017",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870017"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same integer ranges and response."
+  },
+  {
+   "id": "course-87-en:item:SN870020",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870020"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870023",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870023"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870025",
+   "state": "covered",
+   "by": [
+    "course-87-en:port:SN870025"
+   ],
+   "note": "Ported to replace the earlier adaptation, which used numbers outside the source range."
+  },
+  {
+   "id": "course-87-en:item:SN870026",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870041",
+   "note": "Choice-only twin of SX870041 (same script and question). Served by that task, free response by default. The four-part lists are asked free response; their distractors are not reused."
+  },
+  {
+   "id": "course-87-en:item:SN870027",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870027"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870029",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870029"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same six figure types with drawings."
+  },
+  {
+   "id": "course-87-en:item:SN870031",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870031"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same sector counts with drawing; fraction or decimal accepted."
+  },
+  {
+   "id": "course-87-en:item:SN870032",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870032"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870034",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870034"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870035",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870035"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870036",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870036"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870037",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870037"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870039",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870049",
+   "note": "Choice-only twin of SX870049 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870040",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870040"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same improper fractions; mixed-number answer."
+  },
+  {
+   "id": "course-87-en:item:SN870043",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870043"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870153",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870153"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870156",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870156"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870158",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870158"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870160",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870190",
+   "note": "Choice-only twin of SN870190 (same script and question). Served by that task, free response by default. Reviewed distractors are pending the distractor programme (P10)."
+  },
+  {
+   "id": "course-87-en:item:SN870161",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870161"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870179",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870179"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870181",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870181"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870183",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870183"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870188",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870188"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870190",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870190"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same fractions of a circle with drawing; percent answer."
+  },
+  {
+   "id": "course-87-en:item:SN870358",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870358"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870591",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870592",
+   "note": "Choice-only twin of SN870592 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870592",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870592"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870824",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870824"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SX540337",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX540337"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SX650024",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX650024"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same 25/50 steps and range."
+  },
+  {
+   "id": "course-87-en:item:SX650185",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX650185"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same number ranges; words answer."
+  },
+  {
+   "id": "course-87-en:item:SX760040",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX760040"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SX760043",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870040",
+   "note": "Choice-only twin of SN870040 (same script and question). Served by that task, free response by default. Reviewed distractors are pending the distractor programme (P10)."
+  },
+  {
+   "id": "course-87-en:item:SX870001",
+   "state": "covered",
+   "by": [
+    "course-87-en:port:SX870001"
+   ],
+   "note": "Ported to replace the earlier adaptation, which asked for a sum of place values without multiplication."
+  },
+  {
+   "id": "course-87-en:item:SX870017",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870017"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same factor ranges and form."
+  },
+  {
+   "id": "course-87-en:item:SX870018",
+   "state": "covered",
+   "by": [
+    "course-87-en:port:SX870018"
+   ],
+   "note": "Ported to replace the earlier adaptation, which framed it as a word problem."
+  },
+  {
+   "id": "course-87-en:item:SX870024",
+   "state": "covered",
+   "by": [
+    "course-87-en:port:SX870024"
+   ],
+   "note": "Ported to replace the earlier adaptation, which gave a fill-in template instead of asking for the statement."
+  },
+  {
+   "id": "course-87-en:item:SX870025",
+   "state": "covered",
+   "by": [
+    "course-87-en:port:SX870025"
+   ],
+   "note": "Ported to replace the earlier adaptation, which gave a fill-in template instead of asking for the statement."
+  },
+  {
+   "id": "course-87-en:item:SX870033",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870033"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870040",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870015",
+   "note": "Choice-only twin of SN870015 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SX870041",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870041"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870048",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870048"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Ruler drawing with points A, B, C; difference of segment lengths."
+  },
+  {
+   "id": "course-87-en:item:SX870049",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870049"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870052",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870052"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870053",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870053"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870115",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870115"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870117",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870023",
+   "note": "Choice-only twin of SN870023 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SX870118",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870020",
+   "note": "Choice-only twin of SN870020 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SX870119",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870119"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870122",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870122"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870123",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870123"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870134",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870035",
+   "note": "Choice-only twin of SN870035 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SX870478",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870478"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same ascending/descending ranges and five-term form."
+  }
+ ]
+}
