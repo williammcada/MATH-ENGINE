@@ -11,7 +11,9 @@ Usage:
   SAXON_SOURCE_ZIP=/path/Course-Bank-Content-Recovery-v0.2.zip python3 scripts/read-source.py course-87-en:item:SN870002 [...]
   SAXON_SOURCE_ZIP=... python3 scripts/read-source.py --lesson course-87-en:scope:1
 """
-import json, os, sys, zipfile, hashlib
+import base64, json, os, sys, zipfile, hashlib
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import legacy_rich
 zpath = os.environ.get('SAXON_SOURCE_ZIP')
 if not zpath: sys.exit('Set SAXON_SOURCE_ZIP to the private recovery ZIP.')
 EXPECTED = 'f64a35dc9197da639ca28d354f299812cb9d7f6ebcb64134a73c33b2c52682b5'
@@ -19,7 +21,10 @@ if hashlib.sha256(open(zpath, 'rb').read()).hexdigest() != EXPECTED: sys.exit('T
 z = zipfile.ZipFile(zpath)
 cache = {}
 def bank(b):
-    if b not in cache: cache[b] = {i['id']: i for i in json.loads(z.read(b + '.json'))['items']}
+    if b not in cache:
+        items = json.loads(z.read(b + '.json'))['items']
+        cache[b] = {i['id']: i for i in items}
+        cache[b].update({b + ':item:' + i['source_id']: i for i in items if i.get('source_id')})  # bank:item:SOURCEID also works
     return cache[b]
 args = sys.argv[1:]
 if not args: sys.exit(__doc__)
@@ -35,7 +40,18 @@ for rid in ids:
     r = bank(rid.split(':')[0]).get(rid)
     if not r: print('== not found:', rid); continue
     print('==', rid, '|', r.get('title', ''), '| lesson', r.get('lesson_id'))
-    for b in r['blocks']:
+    for b in r.get('blocks', []):
         t = b.get('text', '')
         if not t.strip(): continue
+        # Embedded objects replace the [] placeholders in order: equations decoded to a readable form, pictures marked.
+        objs = legacy_rich.objects(base64.b64decode(b.get('raw_base64', '')), kinds=True)
+        if objs and t.count('[]') == len(objs):
+            parts = t.split('[]')
+            t = parts[0]
+            for o, rest in zip(objs, parts[1:]):
+                if o['kind'] == 'MTEF' and o['data']:
+                    try: t += '⟦' + legacy_rich.linear(legacy_rich.parse(o['data'])[0]) + '⟧'
+                    except legacy_rich.Unsupported as e: t += '⟦equation: ' + str(e) + '⟧'
+                else: t += '⟦' + o['kind'] + ' picture⟧'
+                t += rest
         print('  [' + NAMES.get(b['type'], 'type ' + str(b['type'])) + '] ' + t.replace('\n', '\n      '))

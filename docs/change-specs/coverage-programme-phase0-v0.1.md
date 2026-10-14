@@ -40,13 +40,73 @@ Batches record their results in `curriculum/coverage-ledger/v0.1/decisions/*.jso
 - **How they are read.** `scripts/read-source.py` prints records for a porting session from the private ZIP. It checks the ZIP's SHA-256, and it never writes publisher text into this repository. `private/` is ignored by git.
 - **What may be committed here:** IDs, lesson links, block hashes, and original Engine code and tests.
 
-## 0.3 and 0.4 Equation and diagram decoding: next
+## 0.3 Equation decoding: done (checkpoint 2)
 
-**The problem.** Question blocks keep equations and positioned objects as embedded payloads; `read-source.py` shows them as `[]`. Most generator records need them to port faithfully. For example, 8/7 Lesson 1 item 2 is "Simplify: [equation]".
+`scripts/legacy_rich.py` decodes the equation objects embedded in question and answer blocks. `read-source.py` now shows each decoded equation in place of its `[]`, as a readable form, for example `⟦\frac{`a`}{`b`}⟧`.
 
-**First step.** Reverse-engineer the generator's rich-object encoding from records whose rendered form is known: the owner's exports A1 and B1 (20 items with known output). Produce a decoder to MathML, with a test on those items.
+**What the objects are.** MathType and Equation Editor equations in the MTEF version 2 and 3 layout:
 
-**Legacy drawing code.** Generator scripts draw with commands such as `slate`, `line`, `dot` and `write`. A small interpreter for those commands, writing SVG, is the second step. It is checked against B2 and the A1 drawing items.
+- a five-byte header;
+- a tag byte with the record type in the low nibble and options in the high nibble;
+- 8-bit characters.
+
+Template numbers follow the published MTEF v3 table. Each object record names its kind: MTEF for an equation, or PICT for a QuickDraw picture.
+
+**Coverage, in the four generator banks:**
+
+- 2,466 embedded objects, located one for one with the `[]` placeholders.
+- **2,462 equations, all decoded** to the readable form and to MathML. They use fractions, scripts, roots, fences, overbars, arcs, long division, slash fractions, piles, matrices and embellishments.
+- **4 pictures** (Algebra 1: 3; Algebra 2: 1). These belong to the drawing work.
+- Course 1 and Intermediate 4 have no embedded objects.
+
+**Substitutions.** The generator marks a substitution with character 0xC1 in the text, function or variable style, so `` `name` `` is the value the script computes. Values from `fraction()`, `polynom()`, `mathsym()` and similar functions are typeset by the script, not by the equation.
+
+**Checked against the owner's printed exports:**
+
+- **B1 items 1, 2 and 5:** "$5.72 ÷ 13", "4/5 × 3/7" and "6 2/3", rendered in Chromium with the printed values.
+- **A4 item 3:** "225π cm²", and its choices with and without π.
+- **A2 item 3:** the text-style character 0xB1 prints as a minus sign ("$6.35 – 51¢"). This is used in six items, and every one of their scripts computes a difference.
+
+**Limits.** The MathML is a review rendering. Long division is drawn as a bracket and an overbar, because browsers do not draw `menclose`. Ported items use the Engine's own rendering.
+
+**Tests.** `tests/legacy-rich.py`:
+
+- 34 checks on hand-built objects, which run anywhere.
+- With `SAXON_SOURCE_ZIP` set, also: every object in the four banks; and the export reference items, compared by hash so that no source text is stored here.
+
+## 0.4 Drawing commands and pictures: next
+
+Generator scripts draw with commands. The commands, with the number of records that use each:
+
+| Command | Records |
+|---|---|
+| `slate` | 623 |
+| `line` | 581 |
+| `write` | 439 |
+| `dot` | 205 |
+| `plotx` | 137 |
+| `ticmarks` | 110 |
+| `labels` | 103 |
+| `drawpict` | 90 |
+| `nline` | 79 |
+| `poly` | 79 |
+| `circle` | 65 |
+| `angle` | 34 |
+| `loadpict` | 25 |
+| `axes` | 25 |
+| `flood` | 23 |
+| `box` | 20 |
+| `arc` | 16 |
+| `oval` | 11 |
+| `points` | 8 |
+
+Drawings depend on values the script computes. So 0.4 is an original, sandboxed evaluator for the script language that only draws a preview and is used only for review:
+
+- no file or network access, and nothing from the source is run in its original program;
+- it writes SVG;
+- it is checked against export B2 and the drawing items in A1 and A4.
+
+The four QuickDraw pictures, and the bank pictures that `drawpict` and `loadpict` use, are decoded in the same step.
 
 ## 0.5 Choice-key convention: settled
 
@@ -84,7 +144,7 @@ Every batch follows DESIGN → CHANGE SPEC → IMPLEMENT → CHECKPOINT → VERI
 
 ## Not in this checkpoint
 
-- Decoders (0.3 and 0.4).
+- The drawing and picture decoder (0.4).
 - Batch 1.
 - Studio changes.
 - The Studio's Bank Audit view of the ledger. That comes with the first Studio re-pin.
