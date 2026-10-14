@@ -6763,5 +6763,774 @@
    "097c1ed0167384e14f99da0dc9663b8591272ee00e79281295915d5ce0e02cd5",
    "4ee82badbf82196a0974894306a68c8ab2aeb1e32bcb20cd70c3329d3e5b2437"
   ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870419",
+  "sourceRecord": "course-87-en:item:SX870419",
+  "lessonId": "course-87-en:scope:91",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "signed-eval",
+  "variant": "linear",
+  "title": "Evaluate with signed numbers",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "d25f0359f55168b88bf04251b6864206012556378789248565c53f1c284b7fdb",
+   "14fdb335a2c76b9db71bf49db39cee1d5babb73e4965a18b86fe05fb04d9c6f7",
+   "f4bac995c5d388f9054e05b6fa1b488a26f51e868b4a8e358ca33fe9ded0914b"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870501",
+  "sourceRecord": "course-87-en:item:SN870501",
+  "lessonId": "course-87-en:scope:91",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "signed-eval",
+  "variant": "fraction",
+  "title": "Evaluate a fraction with signed numbers",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "2ab6ee451b21d5d0a236c5034c653d738e23cd3a329d0424c3102bf2ea3b8b8d",
+   "2bacb89d8953574f5a69250c61ebf1ff3bbbdb7fa3c0aa697cb184b98b35efd2",
+   "406cb54c0c28cdd1d301990ae06e02cef42bfa83eec21293dbb5ef3d3187811d",
+   "bee180c1fdcb44115c67b574dd67c2d35df5d53768340996e729332f4dcf2dfb"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870499",
+  "sourceRecord": "course-87-en:item:SN870499",
+  "lessonId": "course-87-en:scope:91",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "signed-eval",
+  "variant": null,
+  "title": "Evaluate with signed numbers",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "e6d9dc58048fc094dd1dc10a89827489131ad4750722d166a3144f5e5b376c69",
+   "018be4dcd01743b3ce85cbd1dc4665fc2050f1f88447012d7e032218166a69fa",
+   "81e85ab38c099684f9ca83ad680d78aeb38357f8b06380d464e8767553ec6532",
+   "19e8896e9dd51c22e90d132b7f168f033e971a3c07a7a49679aed43e2675b3be"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870504",
+  "sourceRecord": "course-87-en:item:SN870504",
+  "lessonId": "course-87-en:scope:91",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "signed-chain",
+  "variant": "four",
+  "title": "Signed numbers without parentheses",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "024bae03af3f68a88ebe2725142dbbe08341210470d85c0910f38ddf50a430e7",
+   "40ad68aa810012ccf5ec8a0b1270b3e2b547d0b82e16d0ffdacbf8c6abc5e711",
+   "08ea30b9c11ff7b32a81c55612010a6993f5f74e5f8295979db457cdbbd7c00c",
+   "1b5dbbc9d787cac0b309e320ccd81c5f517078f21528687e66bc5ecc7f22aa66"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870508",
+  "sourceRecord": "course-87-en:item:SN870508",
+  "lessonId": "course-87-en:scope:91",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "signed-chain",
+  "variant": "double",
+  "title": "Signed numbers without parentheses",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "6e1666546b349360f49e4afdfe351e6fa7a7faed21cd5c97a04aebc5b9f74511",
+   "8d59a747edccf3831bf23dfe8de0ef8e5ffb8b1e6c452e81c81cfde16d757664",
+   "efb6a43903760b7c05cbd16e0e67def419bdbcd07dd2005c43ab694c6ca70688",
+   "501285078ad6677619d89ebcb1989364c67f8c22e0acd81d9cbb2d6fa5faf1ff"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870509",
+  "sourceRecord": "course-87-en:item:SN870509",
+  "lessonId": "course-87-en:scope:91",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "signed-chain",
+  "variant": null,
+  "title": "Order of operations with signed numbers",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "2c47e7a97951b5799a6f76f3635e4fa42eaadc559f928a61d7e21f67ac6908c5",
+   "8efb688bf4ab363028f51c21e016b5436bb83b770058df98da75be7ff280f315",
+   "a546abc76b95097e589489a26dd2db77e2cf6fa2944b7981e010c937a98e6a25",
+   "764e3e09aa0aeec1994833b7d457af458b0101f3aad20106d54e327e8af4cfb4"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870430",
+  "sourceRecord": "course-87-en:item:SX870430",
+  "lessonId": "course-87-en:scope:92",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "percent-change",
+  "variant": null,
+  "title": "Original price before a percent increase",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "8388c25ff5dea5c9d9c253b9703cbf0b58e272055de34d7308f8b5e6992c9a31",
+   "1dda149bc8a10fd81ccda67ded799d17f69591d00422890be7245c47bb99ae4f",
+   "7f46885edefd012f38658a93f38095cb907e905668f2ab2ae718ab715baf31c1"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870513",
+  "sourceRecord": "course-87-en:item:SN870513",
+  "lessonId": "course-87-en:scope:92",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "percent-change",
+  "variant": "sale",
+  "title": "Sale price after a percent discount",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "e858d12f87273e4723d7740fd49ad353c2bbec11498a2c76f0ba6b18f9b392db",
+   "cf7f5f3f1c20281689b06d4ce42f4c6023a223ae6a7257a7983f0dfb4f406f7b",
+   "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870517",
+  "sourceRecord": "course-87-en:item:SN870517",
+  "lessonId": "course-87-en:scope:93",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "two-step",
+  "variant": "decimal",
+  "title": "Two-step equation with decimals",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "194265fed66bbb7ae31ffd746f0318920c2932d02da60b2a8cde060fa9e5c447",
+   "765193e7cfd834ebba1f457f10b38d7688fd49cbda6f305d59de84fa048672b1",
+   "89a7659b7e7b6961d41ea32f0874ee90fe4a751d1e3b42adddabad8bd17e25ec",
+   "3830c609019ad06b6c8d6662dfcb79234e1b730435e34ced3d8dfb4a86bebece"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870518",
+  "sourceRecord": "course-87-en:item:SN870518",
+  "lessonId": "course-87-en:scope:93",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "two-step",
+  "variant": "mixed",
+  "title": "Two-step equation with a mixed-number coefficient",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "194265fed66bbb7ae31ffd746f0318920c2932d02da60b2a8cde060fa9e5c447",
+   "ad060cb1e4ae652a7fb908ed3b8676efa8284c64702b4e65b75887e116eda3eb",
+   "8c393f41706091e97c6c9f8226ca2c9ef1b04fbc98f34fbf25391088d8b515e9",
+   "c7c6c9030b5a46b77c99c924360d2eb3ae9b2e00b4099a054d7fa7a0135b6951"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870516",
+  "sourceRecord": "course-87-en:item:SN870516",
+  "lessonId": "course-87-en:scope:93",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "two-step",
+  "variant": null,
+  "title": "Solve and graph an inequality",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "8081f7e151ed8c952c2382250ea331358f509996859c2f2cb7268108c2043fb2",
+   "4660d0b5c6fd80dbfbf7bbb6b435063bea172c1365e3043a411f752a5ab6e1cb",
+   "024f7fc1d9301ca79afe27997f10dba6b80b1f81b2ef1c7d381a45bd6872626b",
+   "d4eb77d7b091c3af2938b464255f9fc9363f7437658156bc35d657f10ac16206"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870519",
+  "sourceRecord": "course-87-en:item:SN870519",
+  "lessonId": "course-87-en:scope:93",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "two-step",
+  "variant": "choose",
+  "title": "Choose the solution and graph of an inequality",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "137528809650fa587e892d2c516ea1bd26a589a8a4b6f8744c46eb82b40d1032",
+   "7abe2f475442dc40a51bee050336cdf017b4592719a962cbeaf43a8d015d6838",
+   "f5da6cfba4f4637be6cc60511bdb76ff6a5e5bd8369e0a5e49a05c911ead95c7",
+   "61d885f0416f10968525efbb47219e9f7f545bb43648c245b2a79c690d4d6248",
+   "6292a717e8bf13dd1328b9ee94b66d351daacd8df5f823c8a771f0e342cd3e55",
+   "d72415b84a2b15a50c38df49df1687669af8f150d178a09dae5cd9a81b84daa3"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870438",
+  "sourceRecord": "course-87-en:item:SX870438",
+  "lessonId": "course-87-en:scope:94",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "spinner-twice",
+  "variant": null,
+  "title": "Probability of the same result on two spins",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "25a3458796d1066fca43c17a3ca19b393676aef51ff0373cfb3339885e027fc8",
+   "d52ab09886c99e44db709ff5dd411328a0ba7edff948e0f26586863d610ec23f",
+   "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870546",
+  "sourceRecord": "course-87-en:item:SN870546",
+  "lessonId": "course-87-en:scope:95",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "solid-volume",
+  "variant": null,
+  "title": "Volume of a rectangular prism",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "20a52f2a1818e5993cb173003a92f93c7f3de2d8e49d1e52906d794e30d1dc9c",
+   "3d35d043dbe8aa8a0a4264d1ef8e6eaa652d7c41977c0141e541f0ba9c8003dd",
+   "3905d869685a400dd7813a8c898695950315a8b2283965ab4fbc13ab9395c95d"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870542",
+  "sourceRecord": "course-87-en:item:SN870542",
+  "lessonId": "course-87-en:scope:95",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "solid-volume",
+  "variant": "cylinder",
+  "title": "Volume of a cylinder",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "153b142ddefc58593198c2ad7a5b6e83b5f41658c4548f3aa3cb130fd80fdad4",
+   "9cb80ca1182d68a3096eed6963900fda5f5a66f93cd183382934cdafab0701ab",
+   "2327f3d127399c8aad41d89abb1df16bb0b097bd455b0d6849bef891d7c17282"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870544",
+  "sourceRecord": "course-87-en:item:SN870544",
+  "lessonId": "course-87-en:scope:95",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "solid-volume",
+  "variant": "triangle",
+  "title": "Volume of a triangular prism",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "d2a01a526213f9a6dc1acb48f1ace62a07622e3aa54cd4a3484df0326a1e749c",
+   "42b3b1575e2ed686cdfdcca6d67e7cf0926457cf834a8273a426d66d27e57657",
+   "795242ffbabafc341e6d877d243a5e00cd01b9c7b39c1fb2436d75a29fad9944"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870562",
+  "sourceRecord": "course-87-en:item:SN870562",
+  "lessonId": "course-87-en:scope:96",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "angle-estimate",
+  "variant": "complement",
+  "title": "Find an angle from a right angle",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "3e0bade54a62a357be0c6cc8407931eec50b1605113a4cb2dea580dde125b174",
+   "adc566ba72bfd89c4ccf64420f5c8e2aae5db955aa74decd3620c3b6c25d9c13",
+   "900c5341ab69685d82bb22323c55657dce3625871c34e25177b58ecb8fd75072"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870563",
+  "sourceRecord": "course-87-en:item:SN870563",
+  "lessonId": "course-87-en:scope:96",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "angle-estimate",
+  "variant": "truefalse",
+  "title": "Estimate an angle measure",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "0f7c14bddf054bbbe18cd41c12a100b959ca81c9b549a7f7714b360117af0210",
+   "8c42f2b6db46b2f2a398bbf474f39b1c295a6fc187d76ba9d1a2bb1c5e3844bc",
+   "0fa1692a68a8d4c7a9cbcf75af9501afb96eb1faec628bfc951122c4272a6f01"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870564",
+  "sourceRecord": "course-87-en:item:SN870564",
+  "lessonId": "course-87-en:scope:96",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "angle-estimate",
+  "variant": null,
+  "title": "Measure an angle greater than 180 degrees",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "06cef8082b29be1a47190384032f4976b7cd666f448fe533a9c58c51433917ba",
+   "711ae1a48b081b4249d19b960f35e81077f0a3edd91a59e078193775ddd1ded2",
+   "8d009a8d4efc81a5d46e99fda1e24060da8626429bfc394a0e52e809fdabae5a"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870551",
+  "sourceRecord": "course-87-en:item:SN870551",
+  "lessonId": "course-87-en:scope:96",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "distribute-terms",
+  "variant": "letter",
+  "title": "Distributive property with algebraic terms",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "6e1666546b349360f49e4afdfe351e6fa7a7faed21cd5c97a04aebc5b9f74511",
+   "95dbd1b5502f44ca19613f8b8ada594075e84b88fd8ff478b832bfb90ad80151",
+   "e905381e070d7d29ad387708459b1bc0ecadb0b5561a92b67fd1bfb0393208ab",
+   "21a3ca3417e49a0f7ecc8b513b9d7f0c003ebf22291c2f865d931b906983f28f"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870550",
+  "sourceRecord": "course-87-en:item:SN870550",
+  "lessonId": "course-87-en:scope:96",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "distribute-terms",
+  "variant": "common",
+  "title": "Distributive property with algebraic terms",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "024bae03af3f68a88ebe2725142dbbe08341210470d85c0910f38ddf50a430e7",
+   "6a9a65bb3b48eb9603b067861b36a529d90878e4462936169f4276c251ccdf39",
+   "6b1e538a8ce864aa16d8e2bb17e6339c01423340c91bf6ebd64748539fc16835",
+   "476a51456b5b28f1b32f084dc1584542db8375478f6a441c0896af26d481cd59"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870560",
+  "sourceRecord": "course-87-en:item:SN870560",
+  "lessonId": "course-87-en:scope:96",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "distribute-terms",
+  "variant": null,
+  "title": "Distributive property with algebraic terms",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "6e1666546b349360f49e4afdfe351e6fa7a7faed21cd5c97a04aebc5b9f74511",
+   "efa39a534bfc938334f4b5412d1163955ea0044c492456500995971ac286e2bc",
+   "d5f8266428c5cb28f7bf252df4ba2d0a377ff6ad125ff15e22c7b28ef93d3110",
+   "2dde0a7330c61a0ea0f992e7f57c9ef56aeca19826fef2e1855b4f8178134dc3"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870369",
+  "sourceRecord": "course-87-en:item:SN870369",
+  "lessonId": "course-87-en:scope:97",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "similar-sides",
+  "variant": "letters",
+  "title": "Find a side of similar triangles",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "dc44bad17f820f2417ed247dfcdfb19b65f7c0dfbb339a52420c014e1e1bbefe",
+   "a28081262ac90f661ac54667ff7c057961fec4331eca34e0a7dfd013e23fcf74",
+   "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870580",
+  "sourceRecord": "course-87-en:item:SN870580",
+  "lessonId": "course-87-en:scope:97",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "similar-sides",
+  "variant": "abc",
+  "title": "Find a side of similar triangles",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "4e6d26033037d7470c5c45e41d48e504b1881da7f5299d065f1430034c75bf47",
+   "b862292a1a9dec3210fa8def468822a4b0a53da4f3ce2c9fe56b28e9a80bfb6d",
+   "38de7d030c1dc698d4ef82fa7e69361f8b10572686e607795117cd7017d31045"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870567",
+  "sourceRecord": "course-87-en:item:SN870567",
+  "lessonId": "course-87-en:scope:97",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "similar-sides",
+  "variant": null,
+  "title": "Use similar triangles to find x",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "e9e2906b5e7541ec3c878dfcfe79bfabfa7ab7c1e8c18ef814d6a629f07953a6",
+   "fa556e5d5b76a4491da6e2757e246fcc9a77d19e30925b66b0ee29cf1244d112",
+   "caba0f728a6f67c3f9010b421dc87f7f74c92dd876fd9623abf033752b1cafe4"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870370",
+  "sourceRecord": "course-87-en:item:SN870370",
+  "lessonId": "course-87-en:scope:97",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "indirect",
+  "variant": "ladders",
+  "title": "Indirect measure with ladders",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "070d2fb1bb6582be548eb91a83e884bdb1f6b3da6329f0532768b1b76e8b9bc4",
+   "47d8d3931eb8c767858fa966d7dca599aff6d6e1029be166aeb336e11bd06f80",
+   "af760d6cb4d1f7364cf67b01b9df86a84105b5e4c63cf6343766450ce25c161c"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870571",
+  "sourceRecord": "course-87-en:item:SN870571",
+  "lessonId": "course-87-en:scope:97",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "indirect",
+  "variant": "sight",
+  "title": "Indirect measure along a line of sight",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "5ceda300e147adc9839ad1aebe424ec9302817ff6a94567f8af320ea14f6004d",
+   "a964aef97872707137a0bfa9aa7cba4f1d39ef99cc2f36f120b803475154abdc",
+   "914855b14416ae445576fff7e2c081faa94bda4cae004eba0e0709b1037ddbab"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870371",
+  "sourceRecord": "course-87-en:item:SN870371",
+  "lessonId": "course-87-en:scope:97",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "indirect",
+  "variant": null,
+  "title": "Indirect measure with shadows",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "2427eebdb7162cff1c2e78d777d90486f5913debc5006794b61f834b4335947c",
+   "89bdfb2e841e86240270b844476f3f8db266530480c5d4e1bc17936f014d3ddb",
+   "278e5396eb150d510495a0cd4c81197fbf08ed8cfe746237757b5606fcb3da7a"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870574",
+  "sourceRecord": "course-87-en:item:SN870574",
+  "lessonId": "course-87-en:scope:98",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "scale",
+  "variant": "bridge",
+  "title": "Length on a scale drawing",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "b535f36607b35076f031851069bebb171694c7c7a894f69b709eab3bcbd144c5",
+   "fd4d0bd79c555b2e8affa662d70caf40b9031248fa8210718116d89af2c4b36c",
+   "98a9fd277cac96bd0a25a74092e23ca426003441518bbe0493bfe134547a4571"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870576",
+  "sourceRecord": "course-87-en:item:SN870576",
+  "lessonId": "course-87-en:scope:98",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "scale",
+  "variant": "map",
+  "title": "Distance from a map scale",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "c31a60932465f3beb1537a179faa3e36198c8344fb925c0c024b03dfa9f10963",
+   "0b89d7fe1b6efefb8dd14e40ae4e1a3b2a43759f25b01be8f3ade2efd3459634",
+   "955778ebb274040f68e18af37a9b53350858f701f420c9b83e10a0978856d87d"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870398",
+  "sourceRecord": "course-87-en:item:SN870398",
+  "lessonId": "course-87-en:scope:98",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "scale",
+  "variant": null,
+  "title": "Height of a scale model",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "9734a8b7a7f50881ae34ab39f1a03750e04dae91698ad6ffc14ba43d12c518c1",
+   "20d3e2d469a2170f145e73ced84964ffb3213a9adf630f703c6121d75196e545",
+   "6c71d0ebd0c96d4d52fc3c9be59d7d92c040c0e848cef341ff5221c8faf37eb5"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870587",
+  "sourceRecord": "course-87-en:item:SN870587",
+  "lessonId": "course-87-en:scope:98",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "scale-factor",
+  "variant": "triangles",
+  "title": "Scale factor of similar triangles",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "9eb0e2515699a83340fdef3bed60cf73956933831bb8438833188b8cc50d4939",
+   "4a749bf71ab66dcd4b2737e3ba7664d088a9041c76ef201141dc1bec2a1621a9",
+   "328beb5a794757d18399ec9d0f98d165e3f98bbc8699b68e13c2e8f902b8723c",
+   "f02476d11c8e4a17e7d440ffdc7d5468e60c1daa30a95a57eeec4554e6ab03d9"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870401",
+  "sourceRecord": "course-87-en:item:SN870401",
+  "lessonId": "course-87-en:scope:98",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "scale-factor",
+  "variant": "prisms",
+  "title": "Scale factor, area and volume of similar prisms",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "ec3040adb9bdacb588efe3b2254f712a472a81299fc4dd89146c5c15413fc6cc",
+   "d7b9e417e0e42960f8b8dbcac4bc6c85de2cf34662eb944b31b023a0836f003e",
+   "7eb8f18ebd7907a3a11daf4240022d9b4a20e69fb9f7fb43482546132d5dc4d6"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870402",
+  "sourceRecord": "course-87-en:item:SN870402",
+  "lessonId": "course-87-en:scope:98",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "scale-factor",
+  "variant": null,
+  "title": "Scale factor from a ratio",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "a7462c64b22dc4101ec6fd52b074d5cf6967e9e28867748237a46e2d812ac67d",
+   "4416c74352fe99e3407de388e0c91bc5f9fd6a8d1f64e511d8623b1cea3d6d0a",
+   "f877ba8d313c0ddad712510b0c029a9188be356a374ee327ca7670867d52a02e"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SX870506",
+  "sourceRecord": "course-87-en:item:SX870506",
+  "lessonId": "course-87-en:scope:99",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "pythagorean",
+  "variant": null,
+  "title": "Use the Pythagorean theorem to find a side",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "d881a0579629484172d4e37f5ad120ee7511e8d4a75457715c4ccbf146c47a57",
+   "60e51533ce5c0fdca587db20c032f722b5147230af80d6cfb171f64ecb412aa6",
+   "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:AXG80580",
+  "sourceRecord": "course-87-en:item:AXG80580",
+  "lessonId": "course-87-en:scope:99",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "pythagorean",
+  "variant": "perimeter",
+  "title": "Perimeter of a right triangle",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "2936caee897f7a090bcf534f6bc317a796ea8c2267f7c2b9190052bb59ab3b3f",
+   "2888d6e229fe5fe7ca95b7fa23b5431fa7952fc9218aba1872d2e67ed5c7637d",
+   "351ad61c2618e84446ab68476dd2407f8db1c3c488ecf51d4f53d9419a2496e2"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870430",
+  "sourceRecord": "course-87-en:item:SN870430",
+  "lessonId": "course-87-en:scope:99",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "pythagorean",
+  "variant": "area",
+  "title": "Area and hypotenuse of a right triangle",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "553037c94d96556b02762f4ec3b2708bcc42f61682d74cbfd0226292aee95c26",
+   "a3d69cf97738c9949ac56965ea45714efa7a5af4be25690e73c11068228c50e3",
+   "0449f7992b5cab9ecff82ceb296ee4781f63967aaf651bc3d0514c269eace6d6",
+   "2fc697c7327cbc9e62682863ba3f5df8ffb8bb77ab3aa75db3111f1ee669a83e"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870823",
+  "sourceRecord": "course-87-en:item:SN870823",
+  "lessonId": "course-87-en:scope:100",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "root-between",
+  "variant": "closest",
+  "title": "Whole numbers closest to a square root",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "820adc2af0438fce08f5be00b944759d566414be90b5c9f411b4284bd069b1b4",
+   "34522095ebbad960592919e8c5135a314b30a47b59965a706d4faf0dc405adc0",
+   "491b4c9f7827e7d59d1067483e82f304e7598795d87d0f5160faedf64968d8d5"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870452",
+  "sourceRecord": "course-87-en:item:SN870452",
+  "lessonId": "course-87-en:scope:100",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "root-between",
+  "variant": "small",
+  "title": "Consecutive whole numbers around a square root",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "bde087ee38de734d5086266f4b415cfd45a4a6f9398d7f5028548da7877252e5",
+   "32461f4883934f360e7c38e0d35618b272e4c166c07104437f6fcc8433acb632",
+   "a8513b37562ebabeb58927b612c52117d26cfd11360f2fb3a1bbb2084caf8368"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870454",
+  "sourceRecord": "course-87-en:item:SN870454",
+  "lessonId": "course-87-en:scope:100",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "root-between",
+  "variant": null,
+  "title": "Consecutive whole numbers around a square root",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "1b6e68d743fa6071e5befdcb42061b10c8982d3131345ac7a9a7580a605f0578",
+   "e5982c21cc31af52f56d605b0c5e408f4b9b2b535f72376c536ec3e6a9c16bf3",
+   "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870548",
+  "sourceRecord": "course-87-en:item:SN870548",
+  "lessonId": "course-87-en:scope:100",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "irrational-graph",
+  "variant": "locate",
+  "title": "Locate a number on a number line",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "c063ce7edeb84394e1f19020b1c9f9a6e798aebc9033cd68f9d8d7be84b7f107",
+   "d91c2947a803671664c998ec43a723c316a34e0c503d2ba487f19aa57aab4f60",
+   "4d468862ae25ee53e23db376e0e1b8ec0a067f77cd078c44cca7a13781a82ba4"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870583",
+  "sourceRecord": "course-87-en:item:SN870583",
+  "lessonId": "course-87-en:scope:100",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "irrational-graph",
+  "variant": "pair",
+  "title": "Graph two irrational numbers",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "69e5a4d147c14eb44e5cc06003fea8214d9772373029ea5d3b1b4a75aec8ce1a",
+   "2726d92420dccbbcfa01ceb5cadde5cc95d3a5df94b7195ae711b2d99865a65c",
+   "0e66c4c2762e0e2053518f7ded09bdf08a9abd187273fbe4c485c2c9c677aea7",
+   "bb7bbe1d0ceab3675a77d4db6907e6e10983d382c874bcc5acd54f52583f6e0d"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870552",
+  "sourceRecord": "course-87-en:item:SN870552",
+  "lessonId": "course-87-en:scope:100",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "irrational-graph",
+  "variant": null,
+  "title": "Graph a square root and a fraction",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "ad25528b8e9263185ee78b83ba259338b623e36a14e6e68de67f048856a025ad",
+   "b89857ac9a93bd6fc73485f22f74ccb9bbfab984c50aada63e1a5388064000e5",
+   "4971aec7c530cbe451ef105c584c6cf3fca798976e604a4600953c103a7dfce4",
+   "361c1ad14788946582b8a989d8af22786f4a704d6cc668fbefc39ccb4f6577d2"
+  ]
+ },
+ {
+  "sourceId": "course-87-en:item:SN870588",
+  "sourceRecord": "course-87-en:item:SN870588",
+  "lessonId": "course-87-en:scope:100",
+  "course": "Introduction to PreAlgebra (8/7)",
+  "family": "structured-port87",
+  "recipe": "irrational-graph",
+  "variant": "choose",
+  "title": "Choose the graph of a square root and a fraction",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "2743512f889af01cc12e8e1828fabea181d097e6e7c1c2cee5e485fcea122b7e",
+   "031921a19727ba8c314840adc018a540a00b280eb105fdbc847df78b86220fa4",
+   "f5ef9a445c5800a2ce7a22a5f336b3920cd9f12cc69beb8c49932884e6f06e6a",
+   "5680c4356ef375ee137ed50247307ef7b81237337507a3dd478d156a4f143365",
+   "e67f60207655e2d78d5feb7ed5519fbd869361584cf707a6c32811ffb711b357",
+   "9a81cefcf0c300beecc2361c87a8f1885ec8bf753f92689ca32b5e0935d93d4b"
+  ]
  }
 ]

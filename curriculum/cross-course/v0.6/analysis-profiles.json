@@ -6930,36 +6930,6 @@
     "samplePrompt": "35% of 2000 tickets have been sold. How many tickets remain unsold?"
   },
   {
-    "sourceId": "course-87-en:item:SX870430",
-    "providerSourceId": "course-87-en:item:SX870430",
-    "bankId": "course-87-en",
-    "topic": "percent",
-    "action": "Find the original price before an increase",
-    "recipe": "reverse-increase",
-    "family": "structured-proportion",
-    "title": "Find the original price before an increase",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:92",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "percent-unknown",
-        "level": 3
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "samplePrompt": "After a 45% price increase, an item costs 87 cents. What was its original price in cents?"
-  },
-  {
     "sourceId": "course-87-en:item:SX760042",
     "providerSourceId": "course-87-en:item:SX760042",
     "bankId": "course-87-en",
@@ -9839,85 +9809,6 @@
       "disposition": "retained within-course directions"
     },
     "samplePrompt": "Find one exterior angle of the regular polygon, in degrees. Enter the numerical answer without units. Exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870542",
-    "providerSourceId": "course-87-en:item:SN870542",
-    "bankId": "course-87-en",
-    "topic": "volume",
-    "action": "Find right-cylinder volume",
-    "recipe": "cylinder-volume",
-    "family": "structured-geometry",
-    "title": "Find right-cylinder volume",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:95",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "volume-shape-contracts",
-        "level": 1
-      },
-      {
-        "trackId": "c4-circle-base-to-cylinder-to",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "geometry"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Find cylinder volume for radius two through five and height seven through thirteen, using pi=3.14 exactly and perpendicular height. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "validated cross-course prerequisite/extension"
-    },
-    "samplePrompt": "Find the volume of the right circular cylinder in m\u00b3. Use 3.14 for \u03c0; do not round further. Enter the numerical answer without units. Exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870430",
-    "providerSourceId": "course-87-en:item:SN870430",
-    "bankId": "course-87-en",
-    "topic": "area",
-    "action": "Find triangle area and a missing side",
-    "recipe": "triangle-area-hypotenuse",
-    "family": "structured-geometry",
-    "title": "Find triangle area and a missing side",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:99",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "triangle-area-production",
-        "level": 3
-      }
-    ],
-    "answerKinds": [
-      "geometry"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "From a right triangle with Pythagorean-triple legs, find both its area and missing hypotenuse. This adds a second geometric construct to area calculation. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "samplePrompt": "Find (a) the area of the right triangle in m\u00b2 and (b) the unknown side x in m. Enter the numerical answers in the stated order, separated by semicolons, without units. Exact fractions or terminating decimals are accepted."
   },
   {
     "sourceId": "course-87-en:item:SN870672",
@@ -15729,41 +15620,6 @@
       "disposition": "retained within-course directions"
     },
     "samplePrompt": "Read minimum; maximum; lower quartile; upper quartile; median from the plot, in that order. Enter numerical values without units; separate multiple answers with semicolons. Exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870560",
-    "providerSourceId": "course-87-en:item:SN870560",
-    "bankId": "course-87-en",
-    "topic": "expressions",
-    "action": "Distribute and collect linear terms",
-    "recipe": "distribute-linear",
-    "family": "structured-reasoning",
-    "title": "Distribute and collect linear terms",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:96",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "like-terms",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 2,
-      "status": "reviewed",
-      "reason": "Distribute a negative linear coefficient across a group, then collect like variable and constant terms with signs intact."
-    },
-    "samplePrompt": "Simplify 2 + (-6)(-4 + x) + (8)x as Ax + B. Enter A; B. Enter numerical values without units; separate multiple answers with semicolons. Exact fractions or terminating decimals are accepted."
   },
   {
     "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054",
@@ -86669,5 +86525,1477 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Solve: \u221212a = \u2212384 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870419",
+    "providerSourceId": "course-87-en:item:SX870419",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Evaluate with signed numbers",
+    "recipe": "signed-eval",
+    "family": "structured-port87",
+    "title": "Evaluate with signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:91",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If w = \u22121 and x = 6w \u2212 4, then x equals what number? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870501",
+    "providerSourceId": "course-87-en:item:SN870501",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Evaluate a fraction with signed numbers",
+    "recipe": "signed-eval",
+    "family": "structured-port87",
+    "title": "Evaluate a fraction with signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:91",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Evaluate: (w + x)/y if w = \u22125, x = \u22127 and y = \u22127 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870499",
+    "providerSourceId": "course-87-en:item:SN870499",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Evaluate with signed numbers",
+    "recipe": "signed-eval",
+    "family": "structured-port87",
+    "title": "Evaluate with signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:91",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "expression-evaluation",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Evaluate: \u2212t(\u2212r + s) \u2212 rs if r = \u22127, s = \u22129 and t = \u22127 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870504",
+    "providerSourceId": "course-87-en:item:SN870504",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Signed numbers without parentheses",
+    "recipe": "signed-chain",
+    "family": "structured-port87",
+    "title": "Signed numbers without parentheses",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:91",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: \u221215 \u2212 12 + 15 \u2212 17 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870508",
+    "providerSourceId": "course-87-en:item:SN870508",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Signed numbers without parentheses",
+    "recipe": "signed-chain",
+    "family": "structured-port87",
+    "title": "Signed numbers without parentheses",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:91",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: \u2212(\u221229) \u2212 (\u22127) \u2212 22 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870509",
+    "providerSourceId": "course-87-en:item:SN870509",
+    "bankId": "course-87-en",
+    "topic": "integers",
+    "action": "Order of operations with signed numbers",
+    "recipe": "signed-chain",
+    "family": "structured-port87",
+    "title": "Order of operations with signed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:91",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "integer-arithmetic",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: (\u22126) \u2212 (\u22124)(\u22124) \u2212 (6)(\u22123) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870430",
+    "providerSourceId": "course-87-en:item:SX870430",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "Original price before a percent increase",
+    "recipe": "percent-change",
+    "family": "structured-port87",
+    "title": "Original price before a percent increase",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:92",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "percent-unknown",
+        "level": 3
+      },
+      {
+        "trackId": "percent-change-models",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Because of heavy rains, the cost of cherries increased by 50 percent in one month. If the cost after the increase was 78\u00a2 per pound, what was the cost before the increase? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870513",
+    "providerSourceId": "course-87-en:item:SN870513",
+    "bankId": "course-87-en",
+    "topic": "percent",
+    "action": "Sale price after a percent discount",
+    "recipe": "percent-change",
+    "family": "structured-port87",
+    "title": "Sale price after a percent discount",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:92",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "percent-unknown",
+        "level": 3
+      },
+      {
+        "trackId": "percent-change-models",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "An article regularly selling for $67.40 is advertised at 45% off. Find the sale price. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870517",
+    "providerSourceId": "course-87-en:item:SN870517",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Two-step equation with decimals",
+    "recipe": "two-step",
+    "family": "structured-port87",
+    "title": "Two-step equation with decimals",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:93",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 2
+      },
+      {
+        "trackId": "linear-inequalities",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: 0.5s \u2212 1.1 = 0.1 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870518",
+    "providerSourceId": "course-87-en:item:SN870518",
+    "bankId": "course-87-en",
+    "topic": "equations",
+    "action": "Two-step equation with a mixed-number coefficient",
+    "recipe": "two-step",
+    "family": "structured-port87",
+    "title": "Two-step equation with a mixed-number coefficient",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:93",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 2
+      },
+      {
+        "trackId": "linear-inequalities",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: (1 4/5)x \u2212 17 = 10 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870516",
+    "providerSourceId": "course-87-en:item:SN870516",
+    "bankId": "course-87-en",
+    "topic": "inequalities",
+    "action": "Solve and graph an inequality",
+    "recipe": "two-step",
+    "family": "structured-port87",
+    "title": "Solve and graph an inequality",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:93",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 2
+      },
+      {
+        "trackId": "linear-inequalities",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve the inequality and check your solution. Graph the solution on a number line: 5x + 2 \u2264 3(x + 1) Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870519",
+    "providerSourceId": "course-87-en:item:SN870519",
+    "bankId": "course-87-en",
+    "topic": "inequalities",
+    "action": "Choose the solution and graph of an inequality",
+    "recipe": "two-step",
+    "family": "structured-port87",
+    "title": "Choose the solution and graph of an inequality",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:93",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 2
+      },
+      {
+        "trackId": "linear-inequalities",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which choice shows the solution to 4x + 3 \u2265 2(x \u2212 3) with its graph? Answer with the letter. (a) x > \u22129/2  (b) x < \u22129/2  (c) x \u2265 \u22129/2  (d) x \u2264 \u22129/2"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870438",
+    "providerSourceId": "course-87-en:item:SX870438",
+    "bankId": "course-87-en",
+    "topic": "probability",
+    "action": "Probability of the same result on two spins",
+    "recipe": "spinner-twice",
+    "family": "structured-port87",
+    "title": "Probability of the same result on two spins",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:94",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If the spinner is spun twice, what is the probability that the arrow will stop on a consonant both times? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870546",
+    "providerSourceId": "course-87-en:item:SN870546",
+    "bankId": "course-87-en",
+    "topic": "volume",
+    "action": "Volume of a rectangular prism",
+    "recipe": "solid-volume",
+    "family": "structured-port87",
+    "title": "Volume of a rectangular prism",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:95",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 2
+      },
+      {
+        "trackId": "prism-cylinder-volumes",
+        "level": 1
+      },
+      {
+        "trackId": "prism-cylinder-volumes",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the volume of the right solid. Dimensions are in meters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870542",
+    "providerSourceId": "course-87-en:item:SN870542",
+    "bankId": "course-87-en",
+    "topic": "volume",
+    "action": "Volume of a cylinder",
+    "recipe": "solid-volume",
+    "family": "structured-port87",
+    "title": "Volume of a cylinder",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:95",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 2
+      },
+      {
+        "trackId": "prism-cylinder-volumes",
+        "level": 1
+      },
+      {
+        "trackId": "prism-cylinder-volumes",
+        "level": 2
+      },
+      {
+        "trackId": "volume-shape-contracts",
+        "level": 1
+      },
+      {
+        "trackId": "c4-circle-base-to-cylinder-to",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Find cylinder volume for radius two through five and height seven through thirteen, using pi=3.14 exactly and perpendicular height. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "validated cross-course prerequisite/extension"
+    },
+    "samplePrompt": "Find the volume of the right circular cylinder. Use 3.14 for \u03c0. Dimensions are in centimeters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870544",
+    "providerSourceId": "course-87-en:item:SN870544",
+    "bankId": "course-87-en",
+    "topic": "volume",
+    "action": "Volume of a triangular prism",
+    "recipe": "solid-volume",
+    "family": "structured-port87",
+    "title": "Volume of a triangular prism",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:95",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 2
+      },
+      {
+        "trackId": "prism-cylinder-volumes",
+        "level": 1
+      },
+      {
+        "trackId": "prism-cylinder-volumes",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the volume of the right triangular prism. Dimensions are in meters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870562",
+    "providerSourceId": "course-87-en:item:SN870562",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Find an angle from a right angle",
+    "recipe": "angle-estimate",
+    "family": "structured-port87",
+    "title": "Find an angle from a right angle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:96",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-construction",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the measure of \u2220r. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870563",
+    "providerSourceId": "course-87-en:item:SN870563",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Estimate an angle measure",
+    "recipe": "angle-estimate",
+    "family": "structured-port87",
+    "title": "Estimate an angle measure",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:96",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-construction",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "True or false: The measure of angle A is approximately 141\u00b0."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870564",
+    "providerSourceId": "course-87-en:item:SN870564",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Measure an angle greater than 180 degrees",
+    "recipe": "angle-estimate",
+    "family": "structured-port87",
+    "title": "Measure an angle greater than 180 degrees",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:96",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-construction",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "approx"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use a protractor to measure the angle to the nearest 5 degrees."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870551",
+    "providerSourceId": "course-87-en:item:SN870551",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Distributive property with algebraic terms",
+    "recipe": "distribute-terms",
+    "family": "structured-port87",
+    "title": "Distributive property with algebraic terms",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:96",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "like-terms",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "poly"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 6t + 3(t + 7)"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870550",
+    "providerSourceId": "course-87-en:item:SN870550",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Distributive property with algebraic terms",
+    "recipe": "distribute-terms",
+    "family": "structured-port87",
+    "title": "Distributive property with algebraic terms",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:96",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "like-terms",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "poly"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 9(x \u2212 1) + 5(x \u2212 1)"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870560",
+    "providerSourceId": "course-87-en:item:SN870560",
+    "bankId": "course-87-en",
+    "topic": "polynomials",
+    "action": "Distributive property with algebraic terms",
+    "recipe": "distribute-terms",
+    "family": "structured-port87",
+    "title": "Distributive property with algebraic terms",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:96",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "like-terms",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "poly"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 2,
+      "status": "reviewed",
+      "reason": "Distribute a negative linear coefficient across a group, then collect like variable and constant terms with signs intact."
+    },
+    "samplePrompt": "Simplify: 2 \u2212 5(\u22124 + x) + 8x"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870369",
+    "providerSourceId": "course-87-en:item:SN870369",
+    "bankId": "course-87-en",
+    "topic": "similarity-scale",
+    "action": "Find a side of similar triangles",
+    "recipe": "similar-sides",
+    "family": "structured-port87",
+    "title": "Find a side of similar triangles",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:97",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "similar-figures",
+        "level": 1
+      },
+      {
+        "trackId": "similarity-correspondence",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "\u25b3DEF is similar to \u25b3GHJ. Find HJ. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870580",
+    "providerSourceId": "course-87-en:item:SN870580",
+    "bankId": "course-87-en",
+    "topic": "similarity-scale",
+    "action": "Find a side of similar triangles",
+    "recipe": "similar-sides",
+    "family": "structured-port87",
+    "title": "Find a side of similar triangles",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:97",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "similar-figures",
+        "level": 1
+      },
+      {
+        "trackId": "similarity-correspondence",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If \u25b3ABC ~ \u25b3DEF, BC = 6 feet, EF = 11 feet and FD = 4 feet, find AC. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870567",
+    "providerSourceId": "course-87-en:item:SN870567",
+    "bankId": "course-87-en",
+    "topic": "similarity-scale",
+    "action": "Use similar triangles to find x",
+    "recipe": "similar-sides",
+    "family": "structured-port87",
+    "title": "Use similar triangles to find x",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:97",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "similar-figures",
+        "level": 1
+      },
+      {
+        "trackId": "similarity-correspondence",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use similar triangles to find x. Dimensions are in feet. Round to the nearest hundredth if necessary. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870370",
+    "providerSourceId": "course-87-en:item:SN870370",
+    "bankId": "course-87-en",
+    "topic": "similarity-scale",
+    "action": "Indirect measure with ladders",
+    "recipe": "indirect",
+    "family": "structured-port87",
+    "title": "Indirect measure with ladders",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:97",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "similar-figures",
+        "level": 2
+      },
+      {
+        "trackId": "similarity-correspondence",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Two ladders are leaning against a wall at the same angle, as shown. How long is the shorter ladder? Dimensions are in feet. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870571",
+    "providerSourceId": "course-87-en:item:SN870571",
+    "bankId": "course-87-en",
+    "topic": "similarity-scale",
+    "action": "Indirect measure along a line of sight",
+    "recipe": "indirect",
+    "family": "structured-port87",
+    "title": "Indirect measure along a line of sight",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:97",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "similar-figures",
+        "level": 2
+      },
+      {
+        "trackId": "similarity-correspondence",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Sadie wants to find the height of the tallest building in her city. She stands 189 feet away from the building. There is a tree 40 feet in front of her, which she knows is 23 feet tall. How tall is the building? Round to the nearest foot. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870371",
+    "providerSourceId": "course-87-en:item:SN870371",
+    "bankId": "course-87-en",
+    "topic": "similarity-scale",
+    "action": "Indirect measure with shadows",
+    "recipe": "indirect",
+    "family": "structured-port87",
+    "title": "Indirect measure with shadows",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:97",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "similar-figures",
+        "level": 2
+      },
+      {
+        "trackId": "similarity-correspondence",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A building casts a shadow 138 meters long. At the same time, a pole 6 meters high casts a shadow 18 meters long. What is the height of the building? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870574",
+    "providerSourceId": "course-87-en:item:SN870574",
+    "bankId": "course-87-en",
+    "topic": "similarity-scale",
+    "action": "Length on a scale drawing",
+    "recipe": "scale",
+    "family": "structured-port87",
+    "title": "Length on a scale drawing",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:98",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scale-lengths",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A bridge is 830 meters long. A scale drawing of the bridge has a scale of 1 centimeter : 50 meters. How long is the drawing of the bridge? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870576",
+    "providerSourceId": "course-87-en:item:SN870576",
+    "bankId": "course-87-en",
+    "topic": "similarity-scale",
+    "action": "Distance from a map scale",
+    "recipe": "scale",
+    "family": "structured-port87",
+    "title": "Distance from a map scale",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:98",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scale-lengths",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the distance between Tulsa, Oklahoma, and St. Louis, Missouri, if the map distance is 6 inches and the scale is 1 inch : 65 miles? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870398",
+    "providerSourceId": "course-87-en:item:SN870398",
+    "bankId": "course-87-en",
+    "topic": "similarity-scale",
+    "action": "Height of a scale model",
+    "recipe": "scale",
+    "family": "structured-port87",
+    "title": "Height of a scale model",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:98",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "scale-lengths",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Sarah is molding a model of a car from clay. The scale of the model is 1:36. If the height of the car is 8 feet 10 inches, what should be the height of the model in inches? Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870587",
+    "providerSourceId": "course-87-en:item:SN870587",
+    "bankId": "course-87-en",
+    "topic": "similarity-scale",
+    "action": "Scale factor of similar triangles",
+    "recipe": "scale-factor",
+    "family": "structured-port87",
+    "title": "Scale factor of similar triangles",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:98",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "similar-figures",
+        "level": 3
+      },
+      {
+        "trackId": "scale-lengths",
+        "level": 1
+      },
+      {
+        "trackId": "scale-lengths",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Determine the scale factor from \u25b3OMN to \u25b3LJK for this pair of similar triangles. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870401",
+    "providerSourceId": "course-87-en:item:SN870401",
+    "bankId": "course-87-en",
+    "topic": "similarity-scale",
+    "action": "Scale factor, area and volume of similar prisms",
+    "recipe": "scale-factor",
+    "family": "structured-port87",
+    "title": "Scale factor, area and volume of similar prisms",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:98",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "similar-figures",
+        "level": 3
+      },
+      {
+        "trackId": "scale-lengths",
+        "level": 1
+      },
+      {
+        "trackId": "scale-lengths",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The smaller of two similar rectangular prisms has dimensions of 2 cm by 5 cm by 8 cm. The larger has dimensions of 8 cm by 20 cm by 32 cm. (a) What is the scale factor from the smaller to the larger prism? (b) The area of any face of the larger prism is how many times the area of the corresponding face of the smaller prism? (c) The volume of the larger prism is how many times the volume of the smaller prism? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870402",
+    "providerSourceId": "course-87-en:item:SN870402",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Scale factor from a ratio",
+    "recipe": "scale-factor",
+    "family": "structured-port87",
+    "title": "Scale factor from a ratio",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:98",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "similar-figures",
+        "level": 3
+      },
+      {
+        "trackId": "scale-lengths",
+        "level": 1
+      },
+      {
+        "trackId": "scale-lengths",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The ratio of flowers to weeds in the garden was 2 to 5. There were 16 flowers in the garden. (a) What is the scale factor? (b) How many weeds were there? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870506",
+    "providerSourceId": "course-87-en:item:SX870506",
+    "bankId": "course-87-en",
+    "topic": "pythagorean",
+    "action": "Use the Pythagorean theorem to find a side",
+    "recipe": "pythagorean",
+    "family": "structured-port87",
+    "title": "Use the Pythagorean theorem to find a side",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:99",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use the Pythagorean theorem to find x. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:AXG80580",
+    "providerSourceId": "course-87-en:item:AXG80580",
+    "bankId": "course-87-en",
+    "topic": "pythagorean",
+    "action": "Perimeter of a right triangle",
+    "recipe": "pythagorean",
+    "family": "structured-port87",
+    "title": "Perimeter of a right triangle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:99",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the perimeter of the triangle. Round to the nearest tenth. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870430",
+    "providerSourceId": "course-87-en:item:SN870430",
+    "bankId": "course-87-en",
+    "topic": "pythagorean",
+    "action": "Area and hypotenuse of a right triangle",
+    "recipe": "pythagorean",
+    "family": "structured-port87",
+    "title": "Area and hypotenuse of a right triangle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:99",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "right-triangles",
+        "level": 1
+      },
+      {
+        "trackId": "right-triangles",
+        "level": 2
+      },
+      {
+        "trackId": "triangle-area-production",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "From a right triangle with Pythagorean-triple legs, find both its area and missing hypotenuse. This adds a second geometric construct to area calculation. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "samplePrompt": "Find the area of the right triangle, and then find the unknown side. Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870823",
+    "providerSourceId": "course-87-en:item:SN870823",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Whole numbers closest to a square root",
+    "recipe": "root-between",
+    "family": "structured-port87",
+    "title": "Whole numbers closest to a square root",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:100",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "root-evaluation",
+        "level": 3
+      },
+      {
+        "trackId": "root-degrees",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "num-pair"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What are the two whole numbers closest to \u221a88? Give the two numbers, for example \"4 and 5\"."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870452",
+    "providerSourceId": "course-87-en:item:SN870452",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Consecutive whole numbers around a square root",
+    "recipe": "root-between",
+    "family": "structured-port87",
+    "title": "Consecutive whole numbers around a square root",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:100",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "root-evaluation",
+        "level": 3
+      },
+      {
+        "trackId": "root-degrees",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "num-pair"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Between which two consecutive whole numbers is \u221a2? Give the two numbers, for example \"4 and 5\"."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870454",
+    "providerSourceId": "course-87-en:item:SN870454",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Consecutive whole numbers around a square root",
+    "recipe": "root-between",
+    "family": "structured-port87",
+    "title": "Consecutive whole numbers around a square root",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:100",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "root-evaluation",
+        "level": 3
+      },
+      {
+        "trackId": "root-degrees",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "num-pair"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "\u221a215 is between what two consecutive whole numbers? Give the two numbers, for example \"4 and 5\"."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870548",
+    "providerSourceId": "course-87-en:item:SN870548",
+    "bankId": "course-87-en",
+    "topic": "number-order",
+    "action": "Locate a number on a number line",
+    "recipe": "irrational-graph",
+    "family": "structured-port87",
+    "title": "Locate a number on a number line",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:100",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "root-evaluation",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Draw a number line and show the approximate location of \u2212\u221a2. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870583",
+    "providerSourceId": "course-87-en:item:SN870583",
+    "bankId": "course-87-en",
+    "topic": "number-order",
+    "action": "Graph two irrational numbers",
+    "recipe": "irrational-graph",
+    "family": "structured-port87",
+    "title": "Graph two irrational numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:100",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "root-evaluation",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Graph the numbers on a number line: \u2212\u221a17/4, 10/3 Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870552",
+    "providerSourceId": "course-87-en:item:SN870552",
+    "bankId": "course-87-en",
+    "topic": "number-order",
+    "action": "Graph a square root and a fraction",
+    "recipe": "irrational-graph",
+    "family": "structured-port87",
+    "title": "Graph a square root and a fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:100",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "root-evaluation",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Graph \u2212\u221a5 and 13/4 on a number line. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870588",
+    "providerSourceId": "course-87-en:item:SN870588",
+    "bankId": "course-87-en",
+    "topic": "number-order",
+    "action": "Choose the graph of a square root and a fraction",
+    "recipe": "irrational-graph",
+    "family": "structured-port87",
+    "title": "Choose the graph of a square root and a fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:100",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "root-evaluation",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which graph shows \u221a8 and \u221224/5 on a number line? Answer with the letter."
   }
 ]

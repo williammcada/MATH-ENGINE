@@ -791,7 +791,8 @@
           "=/algebra-half-en:node:415",
           "=/algebra-half-en:node:532",
           "=/course-1-en:bank:C1_Section11:item:C1_S11_00060",
-          "=/course-1-en:bank:C1_Section11:item:C1_S11_00074"
+          "=/course-1-en:bank:C1_Section11:item:C1_S11_00074",
+          "k/two-step"
         ],
         "sourceIds": [
           "course-1-en:bank:C1_Section11:item:C1_S11_00060",
@@ -811,7 +812,11 @@
           "algebra-1-en:authored:M4-24-1",
           "algebra-1-en:authored:M4-25-1",
           "algebra-1-en:authored:M4-27-2",
-          "algebra-2-en:authored:M6-6-1"
+          "algebra-2-en:authored:M6-6-1",
+          "course-87-en:item:SN870517",
+          "course-87-en:item:SN870518",
+          "course-87-en:item:SN870516",
+          "course-87-en:item:SN870519"
         ]
       },
       {
@@ -1126,14 +1131,18 @@
         "prerequisites": "Fraction bars, powers and signed arithmetic",
         "selectors": [
           "a/evaluate-hard",
-          "k/signed-order"
+          "k/signed-order",
+          "k/signed-eval"
         ],
         "sourceIds": [
           "algebra-1-en:authored:M4-16-1",
           "algebra-2-en:authored:M6-3-1",
           "course-87-en:item:SN870455",
           "course-87-en:item:SX870397",
-          "course-87-en:item:SN870459"
+          "course-87-en:item:SN870459",
+          "course-87-en:item:SX870419",
+          "course-87-en:item:SN870501",
+          "course-87-en:item:SN870499"
         ]
       }
     ],
@@ -1204,13 +1213,17 @@
         "prerequisites": "Distribute negative signs through groups",
         "selectors": [
           "a/signed-nesting",
-          "k/signed-order"
+          "k/signed-order",
+          "k/signed-chain"
         ],
         "sourceIds": [
           "algebra-1-en:authored:M4-7-2",
           "course-87-en:item:SN870455",
           "course-87-en:item:SX870397",
-          "course-87-en:item:SN870459"
+          "course-87-en:item:SN870459",
+          "course-87-en:item:SN870504",
+          "course-87-en:item:SN870508",
+          "course-87-en:item:SN870509"
         ]
       }
     ],
@@ -1321,14 +1334,15 @@
         "demand": "Recover an original amount before a percent increase",
         "prerequisites": "Model the final amount as a multiplier of the original",
         "selectors": [
-          "p/reverse-increase",
+          "k/percent-change",
           "a/word:percent"
         ],
         "sourceIds": [
-          "course-87-en:item:SX870430",
           "algebra-1-en:authored:M4-58-1",
           "algebra-2-en:authored:M6-7-1",
-          "algebra-2-en:authored:M6-9-1"
+          "algebra-2-en:authored:M6-9-1",
+          "course-87-en:item:SX870430",
+          "course-87-en:item:SN870513"
         ]
       }
     ],
@@ -1507,13 +1521,15 @@
         "demand": "Find probability of ordered independent events",
         "prerequisites": "Multiply independent probabilities",
         "selectors": [
-          "c/94.2"
+          "c/94.2",
+          "k/spinner-twice"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-94.2",
           "course-1-en:authored:M2-4dea1de3dcfa-2",
           "algebra-half-en:authored:M3-114-2",
-          "algebra-2-en:authored:M6-116-4"
+          "algebra-2-en:authored:M6-116-4",
+          "course-87-en:item:SX870438"
         ]
       },
       {
@@ -2007,10 +2023,15 @@
         "demand": "Solve a two-step linear inequality",
         "prerequisites": "Inverse operations and boundary inclusion",
         "selectors": [
-          "c/93.2"
+          "c/93.2",
+          "k/two-step"
         ],
         "sourceIds": [
-          "course-87-en:authored:MCADA-93.2"
+          "course-87-en:authored:MCADA-93.2",
+          "course-87-en:item:SN870517",
+          "course-87-en:item:SN870518",
+          "course-87-en:item:SN870516",
+          "course-87-en:item:SN870519"
         ]
       },
       {
@@ -3474,13 +3495,17 @@
         "demand": "Find a missing side in a right triangle",
         "prerequisites": "Squares and square roots",
         "selectors": [
-          "c/99.1"
+          "c/99.1",
+          "k/pythagorean"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-99.1",
           "algebra-half-en:authored:M3-117-2",
           "algebra-1-en:authored:M4-97-3",
-          "algebra-2-en:authored:M6-10-1"
+          "algebra-2-en:authored:M6-10-1",
+          "course-87-en:item:SX870506",
+          "course-87-en:item:AXG80580",
+          "course-87-en:item:SN870430"
         ]
       },
       {
@@ -3488,10 +3513,14 @@
         "demand": "Apply the right-triangle theorem in a context",
         "prerequisites": "Identify the hidden right triangle",
         "selectors": [
-          "c/COURSE112.1"
+          "c/COURSE112.1",
+          "k/pythagorean"
         ],
         "sourceIds": [
-          "course-87-en:authored:COURSE112.1"
+          "course-87-en:authored:COURSE112.1",
+          "course-87-en:item:SX870506",
+          "course-87-en:item:AXG80580",
+          "course-87-en:item:SN870430"
         ]
       }
     ],
@@ -3743,12 +3772,16 @@
         "demand": "Find a missing corresponding side of similar triangles",
         "prerequisites": "Use a scale factor with matched sides",
         "selectors": [
-          "c/97.2"
+          "c/97.2",
+          "k/similar-sides"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-97.2",
           "course-1-en:authored:M2-9996ee79c132-3",
-          "algebra-half-en:authored:M3-65-2"
+          "algebra-half-en:authored:M3-65-2",
+          "course-87-en:item:SN870369",
+          "course-87-en:item:SN870580",
+          "course-87-en:item:SN870567"
         ]
       },
       {
@@ -3756,10 +3789,14 @@
         "demand": "Find a height by indirect measurement",
         "prerequisites": "Translate a context into similar triangles",
         "selectors": [
-          "c/97.3"
+          "c/97.3",
+          "k/indirect"
         ],
         "sourceIds": [
-          "course-87-en:authored:MCADA-97.3"
+          "course-87-en:authored:MCADA-97.3",
+          "course-87-en:item:SN870370",
+          "course-87-en:item:SN870571",
+          "course-87-en:item:SN870371"
         ]
       },
       {
@@ -3767,10 +3804,14 @@
         "demand": "Connect length, area and volume ratios of similar solids",
         "prerequisites": "Square or cube a linear scale factor, or recover it from a ratio",
         "selectors": [
-          "c/COURSE211.2"
+          "c/COURSE211.2",
+          "k/scale-factor"
         ],
         "sourceIds": [
-          "course-87-en:authored:COURSE211.2"
+          "course-87-en:authored:COURSE211.2",
+          "course-87-en:item:SN870587",
+          "course-87-en:item:SN870401",
+          "course-87-en:item:SN870402"
         ]
       }
     ],
@@ -3916,14 +3957,18 @@
         "demand": "Find volume of a triangular prism",
         "prerequisites": "Find a triangular base area before multiplying by length",
         "selectors": [
-          "c/70.2"
+          "c/70.2",
+          "k/solid-volume"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-70.2",
           "course-1-en:authored:M2-d6a57c1e9476-2",
           "algebra-half-en:authored:M3-45-2",
           "algebra-1-en:authored:M4-20-2",
-          "algebra-1-en:authored:M4-60-3"
+          "algebra-1-en:authored:M4-60-3",
+          "course-87-en:item:SN870546",
+          "course-87-en:item:SN870542",
+          "course-87-en:item:SN870544"
         ]
       },
       {
@@ -4929,13 +4974,16 @@
         "prerequisites": "Multiply every term in a group before collecting",
         "selectors": [
           "c/96.2",
-          "=/course-87-en:item:SN870560"
+          "=/course-87-en:item:SN870560",
+          "k/distribute-terms"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870560",
           "course-87-en:authored:MCADA-96.2",
           "algebra-half-en:authored:M3-103-1",
-          "algebra-2-en:authored:M6-4-1"
+          "algebra-2-en:authored:M6-4-1",
+          "course-87-en:item:SN870551",
+          "course-87-en:item:SN870550",
+          "course-87-en:item:SN870560"
         ]
       }
     ],
@@ -5455,11 +5503,14 @@
         "demand": "Model a percent increase or decrease and its inverse",
         "prerequisites": "Identify which amount represents 100 percent",
         "selectors": [
-          "c/92.2"
+          "c/92.2",
+          "k/percent-change"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-92.2",
-          "algebra-half-en:authored:M3-80-2"
+          "algebra-half-en:authored:M3-80-2",
+          "course-87-en:item:SX870430",
+          "course-87-en:item:SN870513"
         ]
       },
       {
@@ -5759,11 +5810,15 @@
         "demand": "Read and physically draw an angle with a protractor",
         "prerequisites": "Use a correctly aligned baseline and scale",
         "selectors": [
-          "c/17.3"
+          "c/17.3",
+          "k/angle-estimate"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-17.3",
-          "course-1-en:authored:M2-dd5fdf4a8e23-1"
+          "course-1-en:authored:M2-dd5fdf4a8e23-1",
+          "course-87-en:item:SN870562",
+          "course-87-en:item:SN870563",
+          "course-87-en:item:SN870564"
         ]
       }
     ],
@@ -6061,12 +6116,16 @@
         "prerequisites": "Corresponding lengths use one ratio",
         "selectors": [
           "c/98.2",
-          "c/98.3"
+          "c/98.3",
+          "k/scale-factor"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-98.2",
           "course-87-en:authored:MCADA-98.3",
-          "course-1-en:authored:M2-a8fa63ebbf01-2"
+          "course-1-en:authored:M2-a8fa63ebbf01-2",
+          "course-87-en:item:SN870587",
+          "course-87-en:item:SN870401",
+          "course-87-en:item:SN870402"
         ]
       },
       {
@@ -6075,12 +6134,16 @@
         "prerequisites": "Distinguish drawing dimensions from actual dimensions",
         "selectors": [
           "c/98.1",
-          "f/scale-draw"
+          "f/scale-draw",
+          "k/scale"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-98.1",
           "course-1-en:authored:M2-a8fa63ebbf01-1",
-          "course-1-en:authored:M2-a8fa63ebbf01-3"
+          "course-1-en:authored:M2-a8fa63ebbf01-3",
+          "course-87-en:item:SN870574",
+          "course-87-en:item:SN870576",
+          "course-87-en:item:SN870398"
         ]
       },
       {
@@ -6089,11 +6152,15 @@
         "prerequisites": "Square or cube the linear scale factor",
         "selectors": [
           "c/COURSE211.1",
-          "c/COURSE211.2"
+          "c/COURSE211.2",
+          "k/scale-factor"
         ],
         "sourceIds": [
           "course-87-en:authored:COURSE211.1",
-          "course-87-en:authored:COURSE211.2"
+          "course-87-en:authored:COURSE211.2",
+          "course-87-en:item:SN870587",
+          "course-87-en:item:SN870401",
+          "course-87-en:item:SN870402"
         ]
       }
     ],
@@ -6126,7 +6193,8 @@
         "selectors": [
           "c/97.2",
           "z/geometry:parallel-segments",
-          "z/geometry:overlap"
+          "z/geometry:overlap",
+          "k/similar-sides"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-97.2",
@@ -6135,7 +6203,10 @@
           "algebra-2-en:authored:M6-1-5",
           "algebra-2-en:authored:M6-18-2",
           "algebra-2-en:authored:M6-22-2",
-          "algebra-2-en:authored:M6-24-3"
+          "algebra-2-en:authored:M6-24-3",
+          "course-87-en:item:SN870369",
+          "course-87-en:item:SN870580",
+          "course-87-en:item:SN870567"
         ]
       },
       {
@@ -6143,10 +6214,14 @@
         "demand": "Apply similar triangles to indirect measurement",
         "prerequisites": "Identify the triangles in context before scaling",
         "selectors": [
-          "c/97.3"
+          "c/97.3",
+          "k/indirect"
         ],
         "sourceIds": [
-          "course-87-en:authored:MCADA-97.3"
+          "course-87-en:authored:MCADA-97.3",
+          "course-87-en:item:SN870370",
+          "course-87-en:item:SN870571",
+          "course-87-en:item:SN870371"
         ]
       }
     ],
@@ -6200,7 +6275,8 @@
         "selectors": [
           "c/70.1",
           "c/70.2",
-          "k/prism-volume"
+          "k/prism-volume",
+          "k/solid-volume"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-70.1",
@@ -6213,7 +6289,10 @@
           "algebra-1-en:authored:M4-20-1",
           "algebra-1-en:authored:M4-20-2",
           "algebra-1-en:authored:M4-60-3",
-          "course-87-en:item:SN870379"
+          "course-87-en:item:SN870379",
+          "course-87-en:item:SN870546",
+          "course-87-en:item:SN870542",
+          "course-87-en:item:SN870544"
         ]
       },
       {
@@ -6222,13 +6301,17 @@
         "prerequisites": "Use base area times perpendicular height with stated pi",
         "selectors": [
           "c/95.1",
-          "f/cylinder-volume"
+          "f/cylinder-volume",
+          "k/solid-volume"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-95.1",
           "course-1-en:authored:M2-d6a57c1e9476-5",
           "course-1-en:authored:M2-30a1a2f60398-1",
-          "algebra-half-en:authored:M3-73-2"
+          "algebra-half-en:authored:M3-73-2",
+          "course-87-en:item:SN870546",
+          "course-87-en:item:SN870542",
+          "course-87-en:item:SN870544"
         ]
       }
     ],
@@ -6420,7 +6503,9 @@
         "prerequisites": "Bracket by perfect squares and use the stated precision",
         "selectors": [
           "c/100.1",
-          "c/100.2"
+          "c/100.2",
+          "k/root-between",
+          "k/irrational-graph"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-100.1",
@@ -6428,7 +6513,14 @@
           "course-1-en:authored:M2-309a1599e4b1-1",
           "course-1-en:authored:M2-309a1599e4b1-2",
           "algebra-half-en:authored:M3-92-1",
-          "algebra-half-en:authored:M3-92-2"
+          "algebra-half-en:authored:M3-92-2",
+          "course-87-en:item:SN870823",
+          "course-87-en:item:SN870452",
+          "course-87-en:item:SN870454",
+          "course-87-en:item:SN870548",
+          "course-87-en:item:SN870583",
+          "course-87-en:item:SN870552",
+          "course-87-en:item:SN870588"
         ]
       }
     ],
@@ -6926,7 +7018,8 @@
           "h/root-approx:2:2",
           "h/root-approx:2:4",
           "c/100.1",
-          "c/100.2"
+          "c/100.2",
+          "k/root-between"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-100.1",
@@ -6936,7 +7029,10 @@
           "algebra-half-en:authored:M3-92-1",
           "algebra-half-en:authored:M3-92-2",
           "algebra-half-en:authored:M3-205-1",
-          "algebra-half-en:authored:M3-205-2"
+          "algebra-half-en:authored:M3-205-2",
+          "course-87-en:item:SN870823",
+          "course-87-en:item:SN870452",
+          "course-87-en:item:SN870454"
         ]
       },
       {
@@ -14097,14 +14193,14 @@
           "=/course-1-en:authored:M2-30a1a2f60398-1"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870542",
           "algebra-half-en:node:475",
           "course-1-en:bank:C1_Section12:item:C1_S12_00042",
           "course-1-en:authored:M2-d6a57c1e9476-5",
           "course-1-en:authored:M2-30a1a2f60398-1",
           "algebra-half-en:authored:M3-73-2",
           "algebra-1-en:authored:M4-20-3",
-          "algebra-1-en:authored:M4-60-4"
+          "algebra-1-en:authored:M4-60-4",
+          "course-87-en:item:SN870542"
         ]
       },
       {
@@ -16577,7 +16673,6 @@
           "=/course-87-en:authored:MCADA-95.1"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870542",
           "algebra-half-en:node:475",
           "course-1-en:bank:C1_Section12:item:C1_S12_00042",
           "course-87-en:authored:MCADA-95.1",
@@ -16585,7 +16680,8 @@
           "course-1-en:authored:M2-30a1a2f60398-1",
           "algebra-half-en:authored:M3-73-2",
           "algebra-1-en:authored:M4-20-3",
-          "algebra-1-en:authored:M4-60-4"
+          "algebra-1-en:authored:M4-60-4",
+          "course-87-en:item:SN870542"
         ]
       }
     ],

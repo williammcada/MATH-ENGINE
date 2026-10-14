@@ -325,6 +325,50 @@ const oracle={
  'polygon-angles':(q,p)=>{if(p.n!==undefined)return fracEq(q,p.n*(p.n-3)/2/ (p.n/2),1);if(q.prompt.includes('inscribed')){assert(p.a!==7);return fracEq(q,(p.a-2)*180,p.a)&&/<circle/.test(q.givens.svg);}assert([5,6,8,9,10,12].includes(p.a));return fracEq(q,360,p.a);},
  'coef-equation':(q,p)=>{if(p.bb!==undefined){assert(p.b%p.bb!==0);const z=vals(q)[0];return Math.abs(p.b*z/p.bb-Number(q.prompt.match(/= (\d+)/)[1]))<1e-9;}
    if(p.d!==undefined)return fracEq(q,p.b*p.b*p.c,p.d);if(p.e!==undefined)return fracEq(q,p.e*p.c,p.f*(p.c*p.a+p.b));if(p.letter&&p.b<-10)return fracEq(q,p.c,1)&&q.prompt.includes(`= −${-p.b*p.c}`);if(p.letter)return fracEq(q,p.c,10);const lhs=q.prompt.match(/Solve: (\S+) =/)[1].replace('−','-');assert(Math.abs(Number(lhs)-p.b*p.c/10)<1e-9&&Math.abs(p.b)>=2&&Math.abs(p.b)<=9&&(p.b<0||p.c<0));return fracEq(q,p.c,1);},
+ // Batch 10: Lessons 91–100.
+ 'signed-eval':(q,p)=>{if(p.plus!==undefined){assert(p.a>=2&&p.a<=5&&p.b<0&&p.b>=-7);return fracEq(q,p.c*p.b+(p.plus?p.a:-p.a),1);}
+   if(q.prompt.includes(')/')){assert(p.a<0&&p.b<0&&p.c<0);return fracEq(q,-(p.a+p.b),-p.c);}
+   const w=p.a,x=p.b,y=p.c;return fracEq(q,-w*(-x+y)-x*y,1);},
+ 'signed-chain':(q,p)=>{if(p.bk!==undefined)return fracEq(q,-p.bk-p.dk+p.e-p.f,1);if(p.e!==undefined)return fracEq(q,p.a-p.b*p.c-p.d*p.e,1)&&q.prompt.includes(`(${String(p.a).replace('-','−')}) −`);
+   assert(p.a>=22&&p.b>=3&&Math.abs(p.c)>=21);return fracEq(q,p.a+p.b-p.c,1);},
+ 'percent-change':(q,p)=>{if(q.prompt.includes('advertised')){assert(p.b%5===0&&p.a*p.b%100===0);return fracEq(q,p.a*(100-p.b),10000);}
+   assert([25,30,35,40,45,50].includes(p.a)&&q.prompt.includes(`was ${p.b}¢`));return fracEq(q,100*p.b,100+p.a)&&E.checkAnswer(q,`${100*p.b/(100+p.a)} cents`).answerCorrect;},
+ 'two-step':(q,p)=>{if(p.z!==undefined&&p.letter){const m=q.prompt.match(/Solve: ([\d.]+)\w ([−+]) ([\d.]+) = (−?-?[\d.]+)/),A=Fd(m[1]),Bc=Fd(m[3]),D=Fd(m[4].replace(/[−-]/,'')),Dn=/[−-]/.test(m[4])?[-D[0],D[1]]:D,sgn=m[2]==='−'?-1:1;
+     const z=divF((sgn>0?subF:addF)(Dn,Bc),A);return fracEq(q,z[0],z[1])&&fracEq(q,p.z,10);}
+   if(p.letter)return fracEq(q,(p.d+p.c)*p.a,p.b)&&p.b%p.a!==0;
+   const [nm,dn]=red(p.c*p.d-p.b,p.a-p.c),ft=(nm<0?'−':'')+Math.abs(nm)+'/'+dn,sym=p.le?'≤':'≥';assert(dn>1);
+   if(q.answer.kind==='teacher')return q.answer.reference.startsWith(`x ${sym} ${ft};`)&&/<circle/.test(q.teacherSvg)&&q.answer.reference.includes(p.le?'left':'right');
+   return q.prompt.includes(`(${q.answer.value}) x ${sym} ${ft} `)||q.prompt.endsWith(`(${q.answer.value}) x ${sym} ${ft}`);},
+ 'spinner-twice':(q,p)=>{const kind=q.prompt.match(/stop on an? (\w+)/)[1],test={odd:x=>x%2===1,even:x=>x%2===0,consonant:x=>!'AEIOU'.includes(x),vowel:x=>'AEIOU'.includes(x)}[kind];const k=p.labels.filter(test).length;assert(k>0&&k<6&&p.labels.every(l=>q.givens.svg.includes(`>${l}<`)));return fracEq(q,k*k,36);},
+ 'solid-volume':(q,p)=>{if(p.r!==undefined){assert(p.h>=7&&p.h<=13&&p.r>=2&&p.r<=5);return fracEq(q,314*p.r*p.r*p.h,100)&&/<ellipse/.test(q.givens.svg);}
+   if(q.prompt.includes('triangular'))return fracEq(q,p.a*p.b*p.c,2)&&q.givens.svg.includes(`>${p.c}<`);assert(p.a>p.b&&p.b>p.c);return fracEq(q,p.a*p.b*p.c,1)&&E.checkAnswer(q,String(p.a*p.b*p.c)).answerCorrect;},
+ 'angle-estimate':(q,p)=>{if(p.drawn!==undefined){assert([0,20,30].includes(Math.abs(p.a-p.drawn)));return q.answer.value===(p.a===p.drawn?'True':'False')&&q.prompt.includes(`${p.a}°`);}
+   if(q.answer.kind==='approx'){assert(p.z>180&&p.z<360&&p.z%5===0);return E.checkAnswer(q,String(p.z)).answerCorrect&&E.checkAnswer(q,`${p.z+2}°`).answerCorrect&&!E.checkAnswer(q,String(p.z+5)).answerCorrect&&!E.checkAnswer(q,String(360-p.z)).answerCorrect&&/ 1 0 /.test(q.givens.svg);}
+   assert(p.c>=33&&p.c<=60);return fracEq(q,90-p.c,1)&&q.givens.svg.includes(`>${p.c}°<`);},
+ 'distribute-terms':(q,p)=>{const v=(p.expr.match(/[a-z]/)||['x'])[0],js=p.expr.replace(/−/g,'-').replace(/(\d)([a-z(])/g,'$1*$2'),fn=Function(v,'return '+js),b0=fn(0),m=fn(1)-b0;
+   const txt=[[m,v],[b0,'']].filter(([c2])=>c2).map(([c2,s],i)=>(c2<0?'-':i?'+':'')+Math.abs(c2)+s).join('')||'0';assert(m!==0||b0!==0);return E.checkAnswer(q,txt).answerCorrect&&!E.checkAnswer(q,[[m,v],[b0+1,'']].filter(([c2])=>c2).map(([c2,s],i)=>(c2<0?'-':i?'+':'')+Math.abs(c2)+s).join('')).answerCorrect;},
+ 'similar-sides':(q,p)=>{if(p.sides){const [d1,d2,d3]=p.sides;assert(new Set(p.sides).size===3);const known=p.sw?d3:d2;return fracEq(q,p.sw?d2:d3,1)&&[d1*p.m,d2*p.m,d3*p.m,known].every(s=>q.givens.svg.includes(`>${s}<`));}
+   if(p.d!==undefined){assert(p.c>=11&&p.c<=19&&q.prompt.includes(`EF = ${p.c} feet`));return fracEq(q,p.d*p.b,p.c);}
+   const C=Fd(p.c);return fracEq(q,Math.round(100*p.a*p.b*C[1]/C[0]),100)&&[p.a,p.b].every(s=>q.givens.svg.includes(`>${s}<`));},
+ 'indirect':(q,p)=>{if(p.e!==undefined){const L=p.c*p.b,H=p.c*p.a,s=p.e===1?2*p.a:2*p.b;assert([L,H,s].every(x=>q.givens.svg.includes(`>${x}<`)));return p.e===1?fracEq(q,s*L,H):fracEq(q,s*H,L);}
+   if(q.prompt.includes('tree')){assert(p.a>=100&&p.a<=500&&p.b>=30&&p.b<=45&&p.c>=15&&p.c<=25);return fracEq(q,Math.round(p.a*p.c/p.b),1);}
+   return fracEq(q,p.a*p.c,p.b)&&q.prompt.includes(`shadow ${p.a} meters`);},
+ 'scale':(q,p)=>{if(p.w!==undefined){assert(p.v>=5&&p.v<=12);return fracEq(q,p.v*p.w,1)&&q.prompt.includes(`${p.v} inches`)&&q.prompt.includes(`1 inch : ${p.w} miles`);}
+   if(q.prompt.includes('bridge'))return fracEq(q,p.a,p.b)&&q.prompt.includes(`1 centimeter : ${p.b} meters`);
+   assert(q.prompt.includes(`${p.b} feet ${p.b+2} inches`)&&q.prompt.includes(`1:${p.a}`));return fracEq(q,13*p.b+2,p.a);},
+ 'scale-factor':(q,p)=>{if(p.t!==undefined)return fracEq(q,p.t,p.t1)&&[3*p.t,2*p.t,3*p.t1,2*p.t1].every(s=>q.givens.svg.includes(`>${s}<`));
+   if(p.k!==undefined){assert(q.prompt.includes(`${p.a*p.k} cm by ${p.b*p.k} cm by ${p.c*p.k} cm`));return vals(q).join()===[p.k,p.k**2,p.k**3].join();}
+   assert(q.prompt.includes(`There were ${p.a*p.s} flowers`));return vals(q).join()===[p.s,5*p.s].join();},
+ 'pythagorean':(q,p)=>{if(p.A!==undefined){assert(p.A**2===p.B**2+p.C**2);return fracEq(q,[p.A,p.B,p.C][p.k],1);}
+   if(p.e!==undefined){assert(p.f**2+p.g**2===p.e**2);return vals(q).join()===[p.f*p.g/2,p.e].join();}
+   return fracEq(q,10*(p.a+p.b)+Math.round(10*Math.hypot(p.a,p.b)),10);},
+ 'root-between':(q,p)=>{const a=Math.floor(Math.sqrt(p.n));assert(a*a!==p.n&&a===p.a);return E.checkAnswer(q,`${a} and ${a+1}`).answerCorrect&&E.checkAnswer(q,`${a+1}, ${a}`).answerCorrect&&!E.checkAnswer(q,`${a+1} and ${a+2}`).answerCorrect&&!E.checkAnswer(q,`${a-1} and ${a}`).answerCorrect;},
+ 'irrational-graph':(q,p)=>{const X=v=>(30+(v+10)*380/20).toFixed(1),f2=x=>(x<0?'−':'')+Math.abs(x).toFixed(2);
+   if(p.val!==undefined){const want=p.r===1?{0:3.14,1:-3.14,2:3.14,3:-3.9,4:4,5:-3.75,6:3.14,7:-3.7}[p.a]:[1,-1,1,-1,1,-1,1,-1][p.a]*Math.sqrt([2,3,5,7,8,2,3,7][p.a]);assert(Math.abs(want-p.val)<0.01);return q.teacherSvg.includes(`cx="${X(p.val)}"`);}
+   if(p.v1!==undefined){assert((p.v1<0)!==(p.v2<0));return q.answer.reference.includes(f2(p.v1))&&q.answer.reference.includes(f2(p.v2))&&(q.teacherSvg.match(/<circle/g)||[]).length===2;}
+   const s=-Math.sign(p.c)*Math.sqrt(p.a),f=p.c/p.b;assert(Math.abs(f)>Math.sqrt(p.a));
+   if(q.answer.kind==='teacher')return q.answer.reference.includes(f2(s))&&q.answer.reference.includes(f2(f));
+   const g=q.givens.svg.split('<g transform').slice(1)['abcd'.indexOf(q.answer.value)],cx=[...g.matchAll(/<circle cx="([\d.]+)"/g)].map(m=>m[1]).sort().join();return cx===[X(Math.round(100*s)/100),X(Math.round(100*f)/100)].sort().join()||cx===[X(s),X(f)].sort().join();},
 };
 const checks={};let tasks=0;
 for(const c of P.catalog){tasks++;const seen=new Set();
@@ -340,11 +384,11 @@ for(const c of P.catalog){tasks++;const seen=new Set();
   else throw Error('No oracle for '+c.recipe);
   // Keys check as correct; every distractor checks as wrong and names its mistake.
   if(a.kind!=='teacher')assert(E.checkAnswer(q,E.answerText(q)).answerCorrect,c.sourceId+' key');
-  if(q.choices){const vals=q.choices.map(x=>String(x.value));assert.equal(new Set(vals).size,vals.length,'distinct choices');assert(q.choices.length===3||q.choices.length===2&&(['compare-number-line','metric-compare','decimal-compare'].includes(c.recipe)||c.recipe==='fans-ratio'&&E.answerText(q)==='1 to 1'||['estimate-mixed-product','mixed-expression'].includes(c.recipe)&&E.answerText(q)==='1'),c.sourceId+' choice count');
+  if(q.choices){const vals=q.choices.map(x=>String(x.value));assert.equal(new Set(vals).size,vals.length,'distinct choices');assert(q.choices.length===3||q.choices.length===2&&(['compare-number-line','metric-compare','decimal-compare'].includes(c.recipe)||c.recipe==='fans-ratio'&&E.answerText(q)==='1 to 1'||['estimate-mixed-product','mixed-expression'].includes(c.recipe)&&E.answerText(q)==='1')||q.choices.length===1&&c.variant==='truefalse',c.sourceId+' choice count');
    for(const ch of q.choices){assert(ch.mistake&&ch.mistake.length>8,c.sourceId+' named mistake');assert(!/NaN|undefined|Infinity/.test(ch.value));if(a.kind!=='teacher'&&!/→/.test(ch.value))assert(!E.checkAnswer(q,ch.value).answerCorrect,c.sourceId+' distractor accepted: '+ch.value);}}
   // Drawings where the source draws.
-  if(['fdp-table','add-measures','number-line-average','segment-bc','number-line-point','spinner','dart-board','right-triangle-area','diagonal-plot','step-area','l-shape-area','square-triangle-area','tally-votes','histogram-walk','circle-graph','right-triangle-x','isosceles-angle','complementary-expression','right-angle-chain','parallel-zigzag','crossing-triangles','triangle-line-angles','crossing-lines-triangle','compare-number-line','percent-shaded-square','percent-grid','ruler-length','angle-kind','protractor-read','regular-polygon-pick','step-perimeter','quad-perimeter','rectangle-abcd','function-table','number-machine','polygon-symmetry','subtract-measures','parallelogram-area','parallelogram-angle','parallelogram-missing','triangle-classify','circumference-pair','solid-picture','cube-volume','prism-cubes','prism-volume','complex-area','trapezoid-area','inequality-choose','rotation-choose','circle-area','rule-table'].includes(c.recipe)||['describe','choose','inscribed'].includes(c.variant)&&['integer-graph','polygon-angles'].includes(c.recipe)||c.variant==='identify'||c.variant==='choose'){assert(/<svg[\s\S]*<\/svg>/.test(q.givens.svg||''),c.sourceId+' drawing');}
-  if(['subtraction-number-line','name-linear-figures','draw-angle','congruent-pairs','integer-line-add','inequality-graph','transform-graph'].includes(c.recipe)||c.recipe==='integer-graph'&&['negative',undefined].includes(c.variant)||c.variant==='draw')assert(/<svg/.test((q.givens.svg||'')+(q.teacherSvg||'')),c.sourceId+' teacher drawing');
+  if(['fdp-table','add-measures','number-line-average','segment-bc','number-line-point','spinner','dart-board','right-triangle-area','diagonal-plot','step-area','l-shape-area','square-triangle-area','tally-votes','histogram-walk','circle-graph','right-triangle-x','isosceles-angle','complementary-expression','right-angle-chain','parallel-zigzag','crossing-triangles','triangle-line-angles','crossing-lines-triangle','compare-number-line','percent-shaded-square','percent-grid','ruler-length','angle-kind','protractor-read','regular-polygon-pick','step-perimeter','quad-perimeter','rectangle-abcd','function-table','number-machine','polygon-symmetry','subtract-measures','parallelogram-area','parallelogram-angle','parallelogram-missing','triangle-classify','circumference-pair','solid-picture','cube-volume','prism-cubes','prism-volume','complex-area','trapezoid-area','inequality-choose','rotation-choose','circle-area','rule-table','spinner-twice','solid-volume','angle-estimate','pythagorean'].includes(c.recipe)||c.recipe==='similar-sides'&&c.variant!=='abc'||['ladders','sight','triangles'].includes(c.variant)||['describe','choose','inscribed'].includes(c.variant)&&['integer-graph','polygon-angles'].includes(c.recipe)||c.variant==='identify'||c.variant==='choose'){assert(/<svg[\s\S]*<\/svg>/.test(q.givens.svg||''),c.sourceId+' drawing');}
+  if(['subtraction-number-line','name-linear-figures','draw-angle','congruent-pairs','integer-line-add','inequality-graph','transform-graph'].includes(c.recipe)||c.recipe==='irrational-graph'&&c.variant!=='choose'||c.recipe==='two-step'&&!c.variant||c.recipe==='integer-graph'&&['negative',undefined].includes(c.variant)||c.variant==='draw')assert(/<svg/.test((q.givens.svg||'')+(q.teacherSvg||'')),c.sourceId+' teacher drawing');
   assert(/<div class="engine-question">/.test(E.renderQuestion(q)));
  }
  assert(seen.size>=Math.min(20,seen.size)&&seen.size>1,c.sourceId+' varies');checks[c.sourceId]=seen.size;}
