@@ -397,7 +397,11 @@
           "@/course-1-en:bank:C1_Section06:item:C1_S06_00006",
           "@/course-1-en:bank:C1_Section06:item:C1_S06_00025",
           "@/course-1-en:bank:C1_Section06:item:C1_S06_00026",
-          "@/course-1-en:bank:C1_Section06:item:C1_S06_00027"
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00027",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00007",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00030",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00032",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00031"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-9.1",
@@ -414,7 +418,15 @@
           "course-1-en:bank:C1_Section06:item:C1_S06_00006",
           "course-1-en:bank:C1_Section06:item:C1_S06_00025",
           "course-1-en:bank:C1_Section06:item:C1_S06_00026",
-          "course-1-en:bank:C1_Section06:item:C1_S06_00027"
+          "course-1-en:bank:C1_Section06:item:C1_S06_00027",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00007",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00029",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00098",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00045",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00071",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00030",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00032",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00031"
         ]
       },
       {
@@ -439,7 +451,10 @@
           "@/course-1-en:bank:C1_Section04:item:C1_S04_00054",
           "@/course-1-en:bank:C1_Section04:item:C1_S04_00055",
           "@/course-1-en:bank:C1_Section05:item:C1_S05_00040",
-          "@/course-1-en:bank:C1_Section05:item:C1_S05_00136"
+          "@/course-1-en:bank:C1_Section05:item:C1_S05_00136",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00048",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00104",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00103"
         ],
         "sourceIds": [
           "algebra-1-en:node:4",
@@ -469,7 +484,10 @@
           "course-1-en:bank:C1_Section04:item:C1_S04_00054",
           "course-1-en:bank:C1_Section04:item:C1_S04_00055",
           "course-1-en:bank:C1_Section05:item:C1_S05_00040",
-          "course-1-en:bank:C1_Section05:item:C1_S05_00136"
+          "course-1-en:bank:C1_Section05:item:C1_S05_00136",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00048",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00104",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00103"
         ]
       }
     ],
@@ -584,11 +602,16 @@
         "prerequisites": "Convert mixed numbers to improper fractions",
         "selectors": [
           "f/mixed:mul",
-          "k/mixed-times-mixed"
+          "k/mixed-times-mixed",
+          "@/course-1-en:bank:C1_Section07:item:C1_S07_00030",
+          "@/course-1-en:bank:C1_Section07:item:C1_S07_00068"
         ],
         "sourceIds": [
           "course-1-en:authored:M2-f38ba3256fb3-1",
-          "course-87-en:item:SN870108"
+          "course-87-en:item:SN870108",
+          "course-1-en:bank:C1_Section07:item:C1_S07_00015",
+          "course-1-en:bank:C1_Section07:item:C1_S07_00030",
+          "course-1-en:bank:C1_Section07:item:C1_S07_00068"
         ]
       }
     ],
@@ -633,7 +656,9 @@
           "c/19.1",
           "k/quad-perimeter",
           "@/course-1-en:bank:C1_Section01:item:C1_S01_00016",
-          "@/course-1-en:bank:C1_Section01:item:C1_S01_00056"
+          "@/course-1-en:bank:C1_Section01:item:C1_S01_00056",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00090",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00011"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-19.1",
@@ -648,7 +673,12 @@
           "course-1-en:bank:C1_Section01:item:C1_S01_00056",
           "course-1-en:bank:C1_Section01:item:C1_S01_00147",
           "course-1-en:bank:C1_Section01:item:C1_S01_00148",
-          "course-1-en:bank:C1_Section01:item:C1_S01_00150"
+          "course-1-en:bank:C1_Section01:item:C1_S01_00150",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00063",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00090",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00011",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00036",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00049"
         ]
       },
       {
@@ -1777,7 +1807,12 @@
           "c/36.3",
           "k/inv-probability",
           "k/spinner",
-          "k/dart-board"
+          "k/dart-board",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00035",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00107",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00074",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00106",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00009"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-36.3",
@@ -1788,7 +1823,13 @@
           "course-87-en:item:SN870202",
           "course-87-en:item:SN870774",
           "course-87-en:item:SN870834",
-          "course-87-en:item:SN870816"
+          "course-87-en:item:SN870816",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00035",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00107",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00074",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00106",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00009",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00033"
         ]
       },
       {
@@ -3769,14 +3810,21 @@
         "prerequisites": "Use equivalent fractions or cross products",
         "selectors": [
           "c/30.2",
-          "@/course-1-en:bank:C1_Section02:item:C1_S02_00071"
+          "@/course-1-en:bank:C1_Section02:item:C1_S02_00071",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00045",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00071"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-30.2",
           "course-1-en:bank:C1_Section02:item:C1_S02_00045",
           "course-1-en:bank:C1_Section02:item:C1_S02_00064",
           "course-1-en:bank:C1_Section02:item:C1_S02_00063",
-          "course-1-en:bank:C1_Section02:item:C1_S02_00071"
+          "course-1-en:bank:C1_Section02:item:C1_S02_00071",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00007",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00029",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00098",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00045",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00071"
         ]
       }
     ],
@@ -4411,7 +4459,8 @@
           "f/cube-volume",
           "k/cube-volume",
           "k/prism-cubes",
-          "k/prism-volume"
+          "k/prism-volume",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00012"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-70.1",
@@ -4422,7 +4471,15 @@
           "algebra-1-en:authored:M4-20-1",
           "course-87-en:item:SN870540",
           "course-87-en:item:SN870377",
-          "course-87-en:item:SN870379"
+          "course-87-en:item:SN870379",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00012",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00037",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00051",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00053",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00013",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00055",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00057",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00059"
         ]
       },
       {
@@ -5100,7 +5157,9 @@
           "c/30.3",
           "@/course-1-en:bank:C1_Section05:item:C1_S05_00051",
           "@/course-1-en:bank:C1_Section05:item:C1_S05_00050",
-          "@/course-1-en:bank:C1_Section06:item:C1_S06_00043"
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00043",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00029",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00098"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-30.3",
@@ -5114,7 +5173,12 @@
           "course-1-en:bank:C1_Section05:item:C1_S05_00050",
           "course-1-en:bank:C1_Section05:item:C1_S05_00113",
           "course-1-en:bank:C1_Section06:item:C1_S06_00042",
-          "course-1-en:bank:C1_Section06:item:C1_S06_00043"
+          "course-1-en:bank:C1_Section06:item:C1_S06_00043",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00007",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00029",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00098",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00045",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00071"
         ]
       },
       {
@@ -5122,10 +5186,14 @@
         "demand": "Add three fractions with potentially different denominators",
         "prerequisites": "Coordinate a common denominator across three terms",
         "selectors": [
-          "f/fraction-three"
+          "f/fraction-three",
+          "@/course-1-en:bank:C1_Section07:item:C1_S07_00027",
+          "@/course-1-en:bank:C1_Section07:item:C1_S07_00067"
         ],
         "sourceIds": [
-          "course-1-en:authored:M2-9a423a56919b-1"
+          "course-1-en:authored:M2-9a423a56919b-1",
+          "course-1-en:bank:C1_Section07:item:C1_S07_00027",
+          "course-1-en:bank:C1_Section07:item:C1_S07_00067"
         ]
       }
     ],
@@ -5401,13 +5469,17 @@
         "demand": "Convert a mixed number to an improper fraction",
         "prerequisites": "Combine whole and fractional parts over one denominator",
         "selectors": [
-          "c/10.4"
+          "c/10.4",
+          "@/course-1-en:bank:C1_Section07:item:C1_S07_00015"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-10.4",
           "intermediate-4-en:authored:M2-b76e8f40cd31-2",
           "course-1-en:authored:M2-6be3e6bc0786-1",
-          "algebra-half-en:authored:M3-28-2"
+          "algebra-half-en:authored:M3-28-2",
+          "course-1-en:bank:C1_Section07:item:C1_S07_00015",
+          "course-1-en:bank:C1_Section07:item:C1_S07_00030",
+          "course-1-en:bank:C1_Section07:item:C1_S07_00068"
         ]
       },
       {
@@ -7199,13 +7271,22 @@
         "prerequisites": "Join the required faces so they fold without overlap",
         "selectors": [
           "f/net-prism",
-          "f/net-pyramid"
+          "f/net-pyramid",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00059"
         ],
         "sourceIds": [
           "intermediate-4-en:authored:M2-c84f47f1c5c2-1",
           "intermediate-4-en:authored:M2-86261b794369-1",
           "algebra-half-en:authored:M3-121-4",
-          "algebra-half-en:authored:M3-121-5"
+          "algebra-half-en:authored:M3-121-5",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00012",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00037",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00051",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00053",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00013",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00055",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00057",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00059"
         ]
       }
     ],
@@ -10456,12 +10537,19 @@
         "prerequisites": "Subtract given percent from 100",
         "selectors": [
           "p/percent-complement",
-          "k/percent-rest"
+          "k/percent-rest",
+          "@/course-1-en:bank:C1_Section06:item:C1_S06_00033"
         ],
         "sourceIds": [
           "course-87-en:item:SX870064",
           "course-87-en:item:SX870390",
-          "course-87-en:item:SN870526"
+          "course-87-en:item:SN870526",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00035",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00107",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00074",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00106",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00009",
+          "course-1-en:bank:C1_Section06:item:C1_S06_00033"
         ]
       },
       {

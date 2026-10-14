@@ -106346,5 +106346,1163 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Add. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00007",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00007",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Subtract fractions with unlike denominators",
+    "recipe": "c1-unlike",
+    "family": "structured-port87",
+    "title": "Subtract fractions with unlike denominators",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:42789a281e7ae023",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 2
+      },
+      {
+        "trackId": "ordering-numbers",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-sum-chain",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00029",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00029",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add fractions with unlike denominators",
+    "recipe": "c1-unlike",
+    "family": "structured-port87",
+    "title": "Add fractions with unlike denominators",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:42789a281e7ae023",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 2
+      },
+      {
+        "trackId": "ordering-numbers",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-sum-chain",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00098",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00098",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add fractions with unlike denominators to more than 1",
+    "recipe": "c1-unlike",
+    "family": "structured-port87",
+    "title": "Add fractions with unlike denominators to more than 1",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:42789a281e7ae023",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 2
+      },
+      {
+        "trackId": "ordering-numbers",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-sum-chain",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00045",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00045",
+    "bankId": "course-1-en",
+    "topic": "number-order",
+    "action": "Compare two fractions",
+    "recipe": "c1-unlike",
+    "family": "structured-port87",
+    "title": "Compare two fractions",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:42789a281e7ae023",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 2
+      },
+      {
+        "trackId": "ordering-numbers",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-sum-chain",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Compare: 5/6 \u25cb 1/4. Write > or <."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00071",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00071",
+    "bankId": "course-1-en",
+    "topic": "number-order",
+    "action": "Order three fractions",
+    "recipe": "c1-unlike",
+    "family": "structured-port87",
+    "title": "Order three fractions",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:42789a281e7ae023",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 2
+      },
+      {
+        "trackId": "ordering-numbers",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-sum-chain",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Arrange 1/4, 1/8, 2/3 from least to greatest. Separate them with commas."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00030",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00030",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Rename, add and reduce",
+    "recipe": "c1-three-step",
+    "family": "structured-port87",
+    "title": "Rename, add and reduce",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:9a1206f016c4737a",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add. Reduce your answer. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00032",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00032",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Rename, subtract and reduce",
+    "recipe": "c1-three-step",
+    "family": "structured-port87",
+    "title": "Rename, subtract and reduce",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:9a1206f016c4737a",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Subtract. Reduce your answer. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00031",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00031",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add with a common denominator and reduce",
+    "recipe": "c1-three-step",
+    "family": "structured-port87",
+    "title": "Add with a common denominator and reduce",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:9a1206f016c4737a",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add. Reduce your answer. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00035",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00035",
+    "bankId": "course-1-en",
+    "topic": "probability",
+    "action": "Probability of drawing a marble colour",
+    "recipe": "c1-prob",
+    "family": "structured-port87",
+    "title": "Probability of drawing a marble colour",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:f8a6d7d20be4f3c0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "percent-complement",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A bag contains 8 red, 4 white, and 4 blue marbles. What is the probability that a marble drawn from the bag will be blue? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00107",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00107",
+    "bankId": "course-1-en",
+    "topic": "probability",
+    "action": "Probability of an event and its complement",
+    "recipe": "c1-prob",
+    "family": "structured-port87",
+    "title": "Probability of an event and its complement",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:f8a6d7d20be4f3c0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "percent-complement",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A bag contains 3 red marbles, 5 white marbles, and 5 blue marbles. One marble is drawn from the bag. (a) What is the probability that the marble will be red? (b) What is the probability that the marble will not be red? Enter a fraction in lowest terms (or an integer). Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00074",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00074",
+    "bankId": "course-1-en",
+    "topic": "probability",
+    "action": "Probability of rolling greater than a number",
+    "recipe": "c1-prob",
+    "family": "structured-port87",
+    "title": "Probability of rolling greater than a number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:f8a6d7d20be4f3c0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "percent-complement",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A number cube is rolled once. What is the probability of rolling a number greater than 4? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00106",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00106",
+    "bankId": "course-1-en",
+    "topic": "probability",
+    "action": "Spinner probabilities",
+    "recipe": "c1-prob",
+    "family": "structured-port87",
+    "title": "Spinner probabilities",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:f8a6d7d20be4f3c0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "percent-complement",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The face of this spinner is divided into six congruent sectors. The spinner is spun once. (a) What is the probability that it will stop on an even number? (b) What is the probability that it will not stop on an even number? Enter a fraction in lowest terms (or an integer). Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00009",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00009",
+    "bankId": "course-1-en",
+    "topic": "probability",
+    "action": "Probability of a rank or a colour",
+    "recipe": "c1-prob",
+    "family": "structured-port87",
+    "title": "Probability of a rank or a colour",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:f8a6d7d20be4f3c0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "percent-complement",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A card is drawn from a standard deck of 52 cards. What is the probability that the card is either a six or a black card? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00033",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00033",
+    "bankId": "course-1-en",
+    "topic": "probability",
+    "action": "Chance that it will not rain",
+    "recipe": "c1-prob",
+    "family": "structured-port87",
+    "title": "Chance that it will not rain",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:f8a6d7d20be4f3c0",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      },
+      {
+        "trackId": "percent-complement",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If the chance of rain is 60%, what is the chance that it will not rain? Give the percent. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00048",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00048",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add mixed numbers with related denominators",
+    "recipe": "c1-mixed-add",
+    "family": "structured-port87",
+    "title": "Add mixed numbers with related denominators",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:9bf89d6971f6ffa1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add. Write the answer as a simplified mixed number. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00104",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00104",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add mixed numbers with unlike denominators",
+    "recipe": "c1-mixed-add",
+    "family": "structured-port87",
+    "title": "Add mixed numbers with unlike denominators",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:9bf89d6971f6ffa1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add. Write the answer as a simplified mixed number. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00103",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00103",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add two mixed numbers and a whole number",
+    "recipe": "c1-mixed-add",
+    "family": "structured-port87",
+    "title": "Add two mixed numbers and a whole number",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:9bf89d6971f6ffa1",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add: 5 3/4 + 2 + 3 1/2. Write the answer as a simplified mixed number. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00063",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00063",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "True or false about polygons",
+    "recipe": "c1-polygons",
+    "family": "structured-port87",
+    "title": "True or false about polygons",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:363cb547a06f11cc",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "True or false? A pentagon has six sides."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00090",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00090",
+    "bankId": "course-1-en",
+    "topic": "perimeter",
+    "action": "Perimeter of a regular polygon",
+    "recipe": "c1-polygons",
+    "family": "structured-port87",
+    "title": "Perimeter of a regular polygon",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:363cb547a06f11cc",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Each side of a regular quadrilateral is 15 mm. What is the perimeter of the quadrilateral, in mm? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00011",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00011",
+    "bankId": "course-1-en",
+    "topic": "perimeter",
+    "action": "Side of a regular polygon from its perimeter",
+    "recipe": "c1-polygons",
+    "family": "structured-port87",
+    "title": "Side of a regular polygon from its perimeter",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:363cb547a06f11cc",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If the perimeter of a regular hexagon is 24 inches, how long is each side, in inches? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00036",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00036",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Number of sides of a polygon",
+    "recipe": "c1-polygons",
+    "family": "structured-port87",
+    "title": "Number of sides of a polygon",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:363cb547a06f11cc",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How many sides does a triangle have? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00049",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00049",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Name a polygon",
+    "recipe": "c1-polygons",
+    "family": "structured-port87",
+    "title": "Name a polygon",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:363cb547a06f11cc",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "perimeter",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the name of a four-sided polygon?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00012",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00012",
+    "bankId": "course-1-en",
+    "topic": "volume",
+    "action": "Cubes in a rectangular solid",
+    "recipe": "c1-solids",
+    "family": "structured-port87",
+    "title": "Cubes in a rectangular solid",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:f53993bc52fc2c8b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      },
+      {
+        "trackId": "solid-nets",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How many cubes are used to build this rectangular solid? (There are no gaps inside.) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00037",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00037",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Faces, edges or vertices of a solid",
+    "recipe": "c1-solids",
+    "family": "structured-port87",
+    "title": "Faces, edges or vertices of a solid",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:f53993bc52fc2c8b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      },
+      {
+        "trackId": "solid-nets",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How many vertices does this square pyramid have? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00051",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00051",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Faces or edges of prisms and pyramids",
+    "recipe": "c1-solids",
+    "family": "structured-port87",
+    "title": "Faces or edges of prisms and pyramids",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:f53993bc52fc2c8b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      },
+      {
+        "trackId": "solid-nets",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "(a) How many edges does a rectangular prism have? (b) How many edges does a rectangular pyramid have? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00053",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00053",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Parts of cylinders, cones and prisms",
+    "recipe": "c1-solids",
+    "family": "structured-port87",
+    "title": "Parts of cylinders, cones and prisms",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:f53993bc52fc2c8b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      },
+      {
+        "trackId": "solid-nets",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "(a) How many bases does a cylinder have? (b) How many bases does a cone have? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00013",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00013",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Shapes of the bases of solids",
+    "recipe": "c1-solids",
+    "family": "structured-port87",
+    "title": "Shapes of the bases of solids",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:f53993bc52fc2c8b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      },
+      {
+        "trackId": "solid-nets",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What shape do all cylinders and cones have as a base?"
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00055",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00055",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Sketch the views of a solid",
+    "recipe": "c1-solids",
+    "family": "structured-port87",
+    "title": "Sketch the views of a solid",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:f53993bc52fc2c8b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      },
+      {
+        "trackId": "solid-nets",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Sketch the front, back, top, bottom, and side views of this solid made of cubes. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00057",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00057",
+    "bankId": "course-1-en",
+    "topic": "geometry-properties",
+    "action": "Sketch a solid from its views",
+    "recipe": "c1-solids",
+    "family": "structured-port87",
+    "title": "Sketch a solid from its views",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:f53993bc52fc2c8b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      },
+      {
+        "trackId": "solid-nets",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Sketch the solid whose front, side, and top views are shown. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00059",
+    "providerSourceId": "course-1-en:bank:C1_Section06:item:C1_S06_00059",
+    "bankId": "course-1-en",
+    "topic": "surface-area",
+    "action": "Construct a net",
+    "recipe": "c1-solids",
+    "family": "structured-port87",
+    "title": "Construct a net",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section06:scope:f53993bc52fc2c8b",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "solid-volume",
+        "level": 1
+      },
+      {
+        "trackId": "solid-nets",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "teacher"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Construct a net for the cylinder. Complete the requested work on paper; this task requires teacher review."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section07:item:C1_S07_00027",
+    "providerSourceId": "course-1-en:bank:C1_Section07:item:C1_S07_00027",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Add three fractions",
+    "recipe": "c1-add-three",
+    "family": "structured-port87",
+    "title": "Add three fractions",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section07:scope:d34f881822790bfd",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-sum-chain",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Add. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section07:item:C1_S07_00067",
+    "providerSourceId": "course-1-en:bank:C1_Section07:item:C1_S07_00067",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Parts of a gallon as a fraction",
+    "recipe": "c1-add-three",
+    "family": "structured-port87",
+    "title": "Parts of a gallon as a fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section07:scope:d34f881822790bfd",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-sum-chain",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Half of a gallon is a half gallon. Half of a half gallon is a quart. Half of a quart is a pint. Half of a pint is a cup. A cup plus a pint is what fraction of a gallon? Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section07:item:C1_S07_00015",
+    "providerSourceId": "course-1-en:bank:C1_Section07:item:C1_S07_00015",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "A mixed number as an improper fraction",
+    "recipe": "c1-improper",
+    "family": "structured-port87",
+    "title": "A mixed number as an improper fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section07:scope:40bb9b1dd004a68d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-multiply",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-form-changes",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 2 1/5 as an improper fraction. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section07:item:C1_S07_00030",
+    "providerSourceId": "course-1-en:bank:C1_Section07:item:C1_S07_00030",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Multiply mixed numbers as improper fractions",
+    "recipe": "c1-improper",
+    "family": "structured-port87",
+    "title": "Multiply mixed numbers as improper fractions",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section07:scope:40bb9b1dd004a68d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-multiply",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-form-changes",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 3 3/4 and 2 2/5 as improper fractions. Then find their product. Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-1-en:bank:C1_Section07:item:C1_S07_00068",
+    "providerSourceId": "course-1-en:bank:C1_Section07:item:C1_S07_00068",
+    "bankId": "course-1-en",
+    "topic": "fractions",
+    "action": "Multiply a mixed number by a fraction",
+    "recipe": "c1-improper",
+    "family": "structured-port87",
+    "title": "Multiply a mixed number by a fraction",
+    "course": "Course 1",
+    "localGrade": 4,
+    "placement": "grade-assigned",
+    "lessonId": "course-1-en:bank:C1_Section07:scope:40bb9b1dd004a68d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-multiply",
+        "level": 2
+      },
+      {
+        "trackId": "fraction-form-changes",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 1 4/5 as an improper fraction. Then multiply the improper fraction by 1/3. Write the product as a reduced fraction. Enter a fraction in lowest terms (or an integer)."
   }
 ]
