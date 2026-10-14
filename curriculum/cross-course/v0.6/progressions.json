@@ -282,7 +282,8 @@
           "c/9.1",
           "c/9.2",
           "f/fraction-unlike-method",
-          "k/equivalent-then-subtract"
+          "k/equivalent-then-subtract",
+          "k/add-reciprocal-pair"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-9.1",
@@ -294,7 +295,8 @@
           "algebra-half-en:authored:M3-30-2",
           "algebra-half-en:authored:M3-30-4",
           "algebra-1-en:authored:M4-1-1",
-          "course-87-en:item:SX870068"
+          "course-87-en:item:SX870068",
+          "course-87-en:item:SN870172"
         ]
       },
       {
@@ -307,7 +309,10 @@
           "c/23.1",
           "c/23.2",
           "@/algebra-1-en:node:4",
-          "=/course-87-en:item:SX870053"
+          "=/course-87-en:item:SX870053",
+          "k/subtract-mixed-regroup",
+          "k/whole-minus-mixed",
+          "=/course-87-en:item:SN870137"
         ],
         "sourceIds": [
           "algebra-1-en:node:4",
@@ -322,7 +327,11 @@
           "algebra-half-en:authored:M3-34-1",
           "algebra-half-en:authored:M3-35-1",
           "algebra-half-en:authored:M3-35-2",
-          "course-87-en:item:SX870053"
+          "course-87-en:item:SX870053",
+          "course-87-en:item:SX870140",
+          "course-87-en:item:SN870100",
+          "course-87-en:item:SX870141",
+          "course-87-en:item:SN870137"
         ]
       }
     ],
@@ -360,11 +369,13 @@
         "prerequisites": "Coordinate cancellation across three factors",
         "selectors": [
           "f/fraction-three-product",
-          "h/fraction-product"
+          "h/fraction-product",
+          "k/cancel-chain"
         ],
         "sourceIds": [
           "course-1-en:authored:M2-bbebcdfa6e0c-2",
-          "algebra-half-en:authored:M3-22-1"
+          "algebra-half-en:authored:M3-22-1",
+          "course-87-en:item:SX870095"
         ]
       }
     ],
@@ -401,10 +412,12 @@
         "demand": "Multiply mixed numbers",
         "prerequisites": "Convert mixed numbers to improper fractions",
         "selectors": [
-          "f/mixed:mul"
+          "f/mixed:mul",
+          "k/mixed-times-mixed"
         ],
         "sourceIds": [
-          "course-1-en:authored:M2-f38ba3256fb3-1"
+          "course-1-en:authored:M2-f38ba3256fb3-1",
+          "course-87-en:item:SN870108"
         ]
       }
     ],
@@ -1158,14 +1171,17 @@
         "prerequisites": "Find and cancel a common factor",
         "selectors": [
           "f/reduce",
-          "c/15.2"
+          "c/15.2",
+          "k/reduce-product-form"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-15.2",
           "intermediate-4-en:authored:M2-ffe658a96ce4-1",
           "course-1-en:authored:M2-54236ffb40e4-2",
           "course-1-en:authored:M2-289b94018ef7-2",
-          "algebra-half-en:authored:M3-14-3"
+          "algebra-half-en:authored:M3-14-3",
+          "course-87-en:item:SX870097",
+          "course-87-en:item:SN870103"
         ]
       },
       {
@@ -1341,7 +1357,8 @@
         "prerequisites": "Add values and divide by count",
         "selectors": [
           "c/28.2",
-          "f/mean-small"
+          "f/mean-small",
+          "k/average-five"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-28.2",
@@ -1349,7 +1366,9 @@
           "course-1-en:authored:M2-1e4115418038-1",
           "algebra-half-en:authored:M3-21-1",
           "algebra-half-en:authored:M3-26-2",
-          "algebra-2-en:authored:M6-129-2"
+          "algebra-2-en:authored:M6-129-2",
+          "course-87-en:item:SX870110",
+          "course-87-en:item:SN870120"
         ]
       },
       {
@@ -3191,13 +3210,16 @@
         "demand": "Write a prime factorization",
         "prerequisites": "Break composite factors into primes",
         "selectors": [
-          "c/21.3"
+          "c/21.3",
+          "k/prime-factorization"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-21.3",
           "course-1-en:authored:M2-785ae7bc0db4-1",
           "algebra-half-en:authored:M3-12-3",
-          "algebra-1-en:authored:M4-33-1"
+          "algebra-1-en:authored:M4-33-1",
+          "course-87-en:item:SX870082",
+          "course-87-en:item:SN870168"
         ]
       },
       {
@@ -3364,10 +3386,11 @@
           "f/round:9",
           "c/29.1",
           "b/round-whole",
-          "c/29.2"
+          "c/29.2",
+          "k/round-place",
+          "k/round-two-places"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870128",
           "course-1-en:bank:C1_Section02:item:C1_S02_00097",
           "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00090",
           "course-87-en:authored:MCADA-29.1",
@@ -3376,7 +3399,9 @@
           "intermediate-4-en:authored:M2-dbd5635b2478-2",
           "intermediate-4-en:authored:M2-6ece510da748-1",
           "course-1-en:authored:M2-fcc7de9d64b0-1",
-          "algebra-half-en:authored:M3-2-2"
+          "algebra-half-en:authored:M3-2-2",
+          "course-87-en:item:SX870153",
+          "course-87-en:item:SN870128"
         ]
       },
       {
@@ -4169,7 +4194,8 @@
         "prerequisites": "Reciprocal multiplication",
         "selectors": [
           "c/25.2",
-          "c/25.3"
+          "c/25.3",
+          "k/divide-fractions"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-25.2",
@@ -4179,7 +4205,10 @@
           "course-1-en:authored:M2-79c703659846-2",
           "algebra-half-en:authored:M3-19-2",
           "algebra-half-en:authored:M3-19-3",
-          "algebra-1-en:authored:M4-4-2"
+          "algebra-1-en:authored:M4-4-2",
+          "course-87-en:item:SX870143",
+          "course-87-en:item:SN870105",
+          "course-87-en:item:SN870194"
         ]
       },
       {
@@ -4188,12 +4217,14 @@
         "prerequisites": "Rewrite both operands as improper fractions before reciprocal multiplication",
         "selectors": [
           "c/26.1",
-          "f/mixed:div"
+          "f/mixed:div",
+          "k/half-mixed-div"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-26.1",
           "course-1-en:authored:M2-363361f1e180-1",
-          "algebra-half-en:authored:M3-43-1"
+          "algebra-half-en:authored:M3-43-1",
+          "course-87-en:item:SN870109"
         ]
       }
     ],
@@ -4303,7 +4334,8 @@
           "c/14.1",
           "c/14.2",
           "c/22.1",
-          "c/60.1"
+          "c/60.1",
+          "k/fraction-not"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-14.1",
@@ -4314,7 +4346,8 @@
           "intermediate-4-en:authored:M2-c87ef07a1e1a-1",
           "algebra-half-en:authored:M3-18-2",
           "algebra-half-en:authored:M3-48-1",
-          "algebra-half-en:authored:M3-62-1"
+          "algebra-half-en:authored:M3-62-1",
+          "course-87-en:item:SN870095"
         ]
       },
       {
@@ -4325,7 +4358,9 @@
           "c/71.1",
           "c/71.2",
           "c/74.1",
-          "t/whole-from-used"
+          "t/whole-from-used",
+          "k/fraction-of-price",
+          "k/goal-shortfall"
         ],
         "sourceIds": [
           "course-87-en:item:SN870372",
@@ -4334,7 +4369,9 @@
           "course-87-en:authored:MCADA-74.1",
           "course-1-en:authored:M2-c1c7c96159b4-1",
           "course-1-en:authored:M2-c1c7c96159b4-2",
-          "algebra-half-en:authored:M3-62-2"
+          "algebra-half-en:authored:M3-62-2",
+          "course-87-en:item:SX870090",
+          "course-87-en:item:SX870092"
         ]
       },
       {
@@ -4882,13 +4919,13 @@
           "c/27.3",
           "c/27.4",
           "b/lcm",
-          "b/common-multiples"
+          "b/common-multiples",
+          "k/lcm-two",
+          "k/lcm-three"
         ],
         "sourceIds": [
           "algebra-half-en:node:180",
           "algebra-half-en:node:181",
-          "course-87-en:item:SAX70082",
-          "course-87-en:item:SAX70083",
           "course-1-en:bank:C1_Section03:item:C1_S03_00087",
           "course-1-en:bank:C1_Section03:item:C1_S03_00123",
           "course-87-en:authored:MCADA-27.2",
@@ -4897,7 +4934,10 @@
           "course-1-en:authored:M2-c77b19c4729d-1",
           "algebra-half-en:authored:M3-20-2",
           "algebra-half-en:authored:M3-20-3",
-          "algebra-1-en:authored:M4-43-1"
+          "algebra-1-en:authored:M4-43-1",
+          "course-87-en:item:SAX70082",
+          "course-87-en:item:SN870112",
+          "course-87-en:item:SAX70083"
         ]
       }
     ],
@@ -9172,12 +9212,14 @@
         "demand": "Write a prime factorization",
         "prerequisites": "Continue splitting until every factor is prime",
         "selectors": [
-          "b/prime-factorization"
+          "b/prime-factorization",
+          "k/prime-factorization"
         ],
         "sourceIds": [
           "algebra-1-en:node:376",
           "algebra-half-en:node:121",
-          "course-87-en:item:SX870082"
+          "course-87-en:item:SX870082",
+          "course-87-en:item:SN870168"
         ]
       },
       {
@@ -9249,13 +9291,13 @@
         "demand": "Decide whether a whole number is prime or composite",
         "prerequisites": "Exactly two positive factors define prime; one is neither",
         "selectors": [
-          "b/prime-test",
-          "f/prime-small"
+          "f/prime-small",
+          "k/prime-yes-no"
         ],
         "sourceIds": [
-          "course-87-en:item:SN870166",
           "intermediate-4-en:authored:M2-5bc08ea01f1d-1",
-          "course-1-en:authored:M2-8b90adcef0b4-2"
+          "course-1-en:authored:M2-8b90adcef0b4-2",
+          "course-87-en:item:SN870166"
         ]
       },
       {
@@ -9793,12 +9835,14 @@
         "demand": "List the first five multiples of one number",
         "prerequisites": "Repeated multiplication",
         "selectors": [
-          "c/27.1"
+          "c/27.1",
+          "k/first-multiples"
         ],
         "sourceIds": [
           "course-87-en:authored:MCADA-27.1",
           "course-1-en:authored:M2-ab88eed7a47b-2",
-          "algebra-half-en:authored:M3-20-1"
+          "algebra-half-en:authored:M3-20-1",
+          "course-87-en:item:AHG50515"
         ]
       },
       {
@@ -9812,8 +9856,6 @@
         "sourceIds": [
           "algebra-half-en:node:180",
           "algebra-half-en:node:181",
-          "course-87-en:item:SAX70082",
-          "course-87-en:item:SAX70083",
           "course-1-en:bank:C1_Section03:item:C1_S03_00087",
           "course-1-en:bank:C1_Section03:item:C1_S03_00123"
         ]
@@ -9888,10 +9930,14 @@
         "demand": "Estimate products or quotients",
         "prerequisites": "Product label includes division branch",
         "selectors": [
-          "f/estimate:product"
+          "f/estimate:product",
+          "k/estimate-product",
+          "k/estimate-quotient"
         ],
         "sourceIds": [
-          "intermediate-4-en:authored:M2-359d6852d4c5-1"
+          "intermediate-4-en:authored:M2-359d6852d4c5-1",
+          "course-87-en:item:SX870303",
+          "course-87-en:item:SN870133"
         ]
       },
       {
@@ -10387,10 +10433,14 @@
         "demand": "Compare fractions using equivalent forms",
         "prerequisites": "Unlike denominators and method choice",
         "selectors": [
-          "c/30.2"
+          "c/30.2",
+          "k/compare-common"
         ],
         "sourceIds": [
-          "course-87-en:authored:MCADA-30.2"
+          "course-87-en:authored:MCADA-30.2",
+          "course-87-en:item:SX870154",
+          "course-87-en:item:SN870170",
+          "course-87-en:item:SX870155"
         ]
       }
     ],

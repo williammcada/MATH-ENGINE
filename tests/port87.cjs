@@ -8,6 +8,9 @@ const fracEq=(q,n,d)=>{const v=q.answer.values[0],[x,y]=red(n,d);return v.numera
 const isPrime=p=>p>1&&[...Array(p).keys()].slice(2).every(k=>p%k);
 const PLACES=['ones','tens','hundreds','thousands','ten-thousands','hundred-thousands','millions','ten-millions','hundred-millions','billions','ten-billions','hundred-billions','trillions'];
 const words=P.words;
+const lcm=(a,b)=>a*b/gcd(a,b),vals=q=>q.answer.values.map(v=>Number(v.numerator)/Number(v.denominator));
+const factorize=x=>{const f=[];for(let p=2;x>1;)if(x%p===0){f.push(p);x/=p;}else p++;return f;};
+const powerForm=f=>[...new Set(f)].map(p=>{const k=f.filter(x=>x===p).length;return k>1?`${p}^${k}`:String(p);}).join(' · ');
 const oracle={
  'money-divide':(q,p)=>{assert(p.divisor>=11&&p.divisor<=99&&p.divisor%10);const z=p.dividendCents/p.divisor;assert(Number.isInteger(z)&&z>=11&&z<=99&&z%10);return fracEq(q,z,100);},
  'money-times':(q,p)=>{assert(p.cents>=101&&p.cents<=999&&p.cents%100&&p.factor%10===0&&p.factor>=20&&p.factor<=90);return fracEq(q,p.cents*p.factor,100);},
@@ -80,6 +83,50 @@ const oracle={
  'power-root-mix':(q,p)=>fracEq(q,p.e===undefined?p.a**p.b-p.c:p.a**p.b-p.c+p.e**p.f,1),
  'square-minus-powers':(q,p)=>fracEq(q,p.e**2-p.a**p.b-p.c**p.d-p.g,1),
  'circles-mixed':(q,p)=>q.answer.kind==='teacher'?/fully shaded/.test(q.answer.reference):q.answer.value===`1 ${(()=>{const [x,y]=red(p.extra,p.den);return x+'/'+y;})()} = ${p.den+p.extra}/${p.den}`,
+ // Batch 3: Lessons 21–30.
+ 'prime-yes-no':(q,p)=>{assert(p.a>=2&&p.a<=31);return q.answer.value===(isPrime(p.a)?'Yes':'No');},
+ 'composite-list':(q,p)=>{assert.equal(new Set(p.list).size,9);const comp=p.list.filter(x=>x>1&&!isPrime(x));assert(comp.length>=4&&comp.length<=5&&p.list.every(x=>x>=1));
+   const prime=p.list.find(isPrime);return E.checkAnswer(q,[...comp].reverse().join(', ')).answerCorrect&&!E.checkAnswer(q,[...comp,prime].join(', ')).answerCorrect&&!E.checkAnswer(q,comp.slice(1).join(', ')).answerCorrect;},
+ 'not-composite':(q,p)=>{const pr=p.shown.filter(isPrime);assert.equal(pr.length,1);assert.equal(p.shown.length,4);return fracEq(q,pr[0],1);},
+ 'prime-factorization':(q,p)=>{const f=factorize(p.v);assert(p.factors.every(isPrime));return q.answer.number===p.v&&E.checkAnswer(q,powerForm(f)).answerCorrect&&E.checkAnswer(q,[...f].reverse().join(' x ')).answerCorrect&&!E.checkAnswer(q,[f[0]*f[1],...f.slice(2)].join(' × ')).answerCorrect;},
+ 'factor-and-root':(q,p)=>{const r=Math.round(Math.sqrt(p.n));assert.equal(r*r,p.n);return q.answer.root===r&&E.checkAnswer(q,`${powerForm(factorize(p.n))}; ${r}`).answerCorrect&&!E.checkAnswer(q,`${powerForm(factorize(p.n))}; ${r+1}`).answerCorrect&&!E.checkAnswer(q,`${p.n}; ${r}`).answerCorrect;},
+ 'fraction-of-price':(q,p)=>{assert(p.paid%p.num===0);return vals(q).join()===[p.paid*p.den/p.num,100*p.num/p.den].join();},
+ 'goal-shortfall':(q,p)=>{assert(p.raised>=31000&&p.raised<=99000);const goal=p.raised*p.den/p.num;assert(Number.isInteger(goal)&&/<svg/.test(q.teacherSvg||''));return vals(q).join()===[goal,100*(p.den-p.num)/p.den].join();},
+ 'fraction-not':(q,p)=>{assert(p.tot%p.den===0&&p.num<p.den);return fracEq(q,p.tot-p.tot*p.num/p.den,1);},
+ 'subtract-mixed-regroup':(q,p)=>{assert(p.b<p.e&&p.e<p.c&&p.a>p.d);return fracEq(q,(p.a*p.c+p.b)-(p.d*p.c+p.e),p.c);},
+ 'whole-minus-mixed':(q,p)=>{assert(p.a>p.b&&p.c<p.d&&gcd(p.c,p.d)===1);return fracEq(q,p.a*p.d-(p.b*p.d+p.c),p.d);},
+ 'cancel-chain':(q,p)=>fracEq(q,p.a*p.d*p.c,p.d*p.c*p.e),
+ 'reduce-product-form':(q,p)=>{assert(gcd(p.N,p.D)>1);return fracEq(q,p.N,p.D);},
+ 'divide-fractions':(q,p)=>fracEq(q,p.f1[0]*p.f2[1],p.f1[1]*p.f2[0]),
+ 'mixed-div-product':(q,p)=>fracEq(q,p.d*p.a,p.b*p.b*p.c),
+ 'mixed-times-quotient':(q,p)=>{assert(p.d>p.b&&p.e>p.a&&p.c%p.e===0);return fracEq(q,p.d*p.c*p.a,p.b*p.e);},
+ 'mixed-times-mixed':(q,p)=>{assert(p.m>p.c&&p.n>p.f);return fracEq(q,p.m*p.n,p.c*p.f);},
+ 'half-mixed-div':(q,p)=>fracEq(q,(2*p.a+1)*p.b,2*4),
+ 'multiples-sum':(q,p)=>{assert(p.nums.includes(10)&&p.nums.includes(100));return fracEq(q,p.k*p.nums[0]+p.o2*p.nums[1]+p.o3*p.nums[2],1);},
+ 'first-multiples':(q,p)=>{const m=[1,2,3,4,5].map(k=>k*p.a);return E.checkAnswer(q,m.join(',')).answerCorrect&&!E.checkAnswer(q,[...m].reverse().join(', ')).answerCorrect&&!E.checkAnswer(q,[0,...m.slice(0,4)].join(', ')).answerCorrect;},
+ 'is-multiple':(q,p)=>q.answer.value===(p.d%p.a===0?'Yes':'No'),
+ 'lcm-two':(q,p)=>{assert(gcd(p.a,p.b)>1&&p.a!==p.b);return fracEq(q,lcm(p.a,p.b),1);},
+ 'lcm-three':(q,p)=>fracEq(q,lcm(lcm(p.nums[0],p.nums[1]),p.nums[2]),1),
+ 'unit-cost-equivalent':(q,p)=>{assert((p.a/10)%p.b===0&&p.a>=120&&p.a<=300);return fracEq(q,p.a/p.b,100);},
+ 'double-both':(q,p)=>{assert(p.a>=100&&p.a<=980&&(p.a-100)%40===0&&p.b===5);return fracEq(q,2*p.a/(2*p.b),1);},
+ 'divide-by-hundred':(q,p)=>{assert(p.a%200===0&&p.b%100===0&&p.a%p.b===0);return fracEq(q,p.a/p.b,1);},
+ 'subscription-savings':(q,p)=>{assert(p.a%5===0&&p.a%10);return fracEq(q,12*p.a-p.sub,100);},
+ 'average-five':(q,p)=>{assert.equal(p.v.length,5);return fracEq(q,p.v.reduce((x,y)=>x+y),5);},
+ 'laps-average':(q,p)=>{assert(p.s1%60&&p.s1%p.x===0);return vals(q).join()===[p.s1,p.s1/p.x].join()&&q.prompt.includes(`${Math.floor(p.s1/60)} minutes ${p.s1%60} seconds`);},
+ 'round-two-places':(q,p)=>vals(q).join()===[Math.floor(p.num/1000+.5)*1000,Math.floor(p.num/100+.5)*100].join(),
+ 'round-place':(q,p)=>fracEq(q,Math.floor(p.num/p.pl+.5)*p.pl,1),
+ 'round-mixed-whole':(q,p)=>{assert(p.b>=2&&p.b<p.c&&p.c<=10);return fracEq(q,p.a+(2*p.b>=p.c?1:0),1);},
+ 'round-mixed-half':(q,p)=>{const h=Math.round(2*(p.a+p.b/p.c))/2;assert(2*p.b!==p.c);const txt=Number.isInteger(h)?String(h):`${Math.floor(h)} 1/2`;return q.answer.value===txt&&E.checkAnswer(q,String(h)).answerCorrect;},
+ 'true-rounding':(q,p)=>{const ok=p.statements.filter(st=>{const m=st.match(/^(\d+) (\d+)\/(\d+) rounds to (\d+)$/);const x=Number(m[1])+Number(m[2])/Number(m[3]);return Math.round(x)===Number(m[4]);});assert.equal(ok.length,1);return q.answer.value==='abcd'[p.statements.indexOf(ok[0])];},
+ 'estimate-quotient':(q,p)=>{const r=Math.round(p.a/10)*10;assert(p.a%5&&Math.floor(p.c/100)!==p.a);return fracEq(q,Math.round(p.c/r/10)*10,1);},
+ 'estimate-product':(q,p)=>fracEq(q,Math.round(p.a/10)*10*Math.round(p.b/10)*10,1),
+ 'estimate-mixed-product':(q,p)=>fracEq(q,Math.round(p.x.w+p.x.b/p.x.c)*Math.round(p.y.w+p.y.b/p.y.c),1),
+ 'compare-common':(q,p)=>{const [n1,d1]=p.a,[n2,d2]=p.b,sym=n1*d2<n2*d1?'<':n1*d2>n2*d1?'>':'=',K=2*d1*d2,flip={'<':'>','>':'<','=':'<'}[sym];
+   return q.answer.symbol===sym&&E.checkAnswer(q,`${n1*K/d1}/${K} ${sym} ${n2*K/d2}/${K}`).answerCorrect&&!E.checkAnswer(q,`${n1*K/d1}/${K} ${flip} ${n2*K/d2}/${K}`).answerCorrect&&!E.checkAnswer(q,`${n1}/${d1} ${sym} ${n2}/${d2}`).answerCorrect===(d1!==d2);},
+ 'add-reciprocal-pair':(q,p)=>fracEq(q,p.a*p.a+p.b*p.b,p.a*p.b),
+ 'mixed-expression':(q,p)=>{const F=x=>x[0]/x[1],[a,b,c]=[p.f1,p.f2,p.f3];let v,nn,dd;
+   if(p.form==='div-sum'){nn=a[0]*b[1]*c[1];dd=a[1]*(b[0]*c[1]+c[0]*b[1]);}else if(p.form==='minus'){nn=a[0]*b[1]-b[0]*a[1];dd=a[1]*b[1];}else{nn=(a[0]*b[1]+b[0]*a[1])*c[1];dd=a[1]*b[1]*(p.wh*c[1]-c[0]);}
+   v=p.form==='div-sum'?F(a)/(F(b)+F(c)):p.form==='minus'?F(a)-F(b):(F(a)+F(b))/(p.wh-F(c));assert(Math.abs(nn/dd-v)<1e-9&&v>0);return fracEq(q,nn,dd);},
 };
 const checks={};let tasks=0;
 for(const c of P.catalog){tasks++;const seen=new Set();
@@ -95,7 +142,7 @@ for(const c of P.catalog){tasks++;const seen=new Set();
   else throw Error('No oracle for '+c.recipe);
   // Keys check as correct; every distractor checks as wrong and names its mistake.
   if(a.kind!=='teacher')assert(E.checkAnswer(q,E.answerText(q)).answerCorrect,c.sourceId+' key');
-  if(q.choices){const vals=q.choices.map(x=>String(x.value));assert.equal(new Set(vals).size,vals.length,'distinct choices');assert(q.choices.length===3||c.recipe==='compare-number-line'&&q.choices.length===2,c.sourceId+' choice count');
+  if(q.choices){const vals=q.choices.map(x=>String(x.value));assert.equal(new Set(vals).size,vals.length,'distinct choices');assert(q.choices.length===3||q.choices.length===2&&(c.recipe==='compare-number-line'||['estimate-mixed-product','mixed-expression'].includes(c.recipe)&&E.answerText(q)==='1'),c.sourceId+' choice count');
    for(const ch of q.choices){assert(ch.mistake&&ch.mistake.length>8,c.sourceId+' named mistake');assert(!/NaN|undefined|Infinity/.test(ch.value));if(a.kind!=='teacher'&&!/→/.test(ch.value))assert(!E.checkAnswer(q,ch.value).answerCorrect,c.sourceId+' distractor accepted: '+ch.value);}}
   // Drawings where the source draws.
   if(['compare-number-line','percent-shaded-square','percent-grid','ruler-length','angle-kind','protractor-read','regular-polygon-pick','step-perimeter','quad-perimeter','rectangle-abcd'].includes(c.recipe)||c.variant==='identify'){assert(/<svg[\s\S]*<\/svg>/.test(q.givens.svg||''),c.sourceId+' drawing');}

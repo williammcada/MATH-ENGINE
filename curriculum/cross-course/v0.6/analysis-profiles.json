@@ -13442,189 +13442,6 @@
     "samplePrompt": "Write 28 (base ten) in base two. Enter only binary digits, without leading zeros."
   },
   {
-    "sourceId": "course-87-en:item:SN870166",
-    "providerSourceId": "course-87-en:item:SN870166",
-    "bankId": "course-87-en",
-    "topic": "number-theory",
-    "action": "Recognize prime numbers",
-    "recipe": "prime-test",
-    "family": "structured-breadth",
-    "title": "Recognize prime numbers",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:21",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "prime-classification",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "text"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "extension: Decide whether a whole number is prime or composite. Exactly two positive factors define prime; one is neither."
-    },
-    "samplePrompt": "Is 78 a prime number? Enter yes or no."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870082",
-    "providerSourceId": "course-87-en:item:SX870082",
-    "bankId": "course-87-en",
-    "topic": "number-theory",
-    "action": "Write a prime factorization",
-    "recipe": "prime-factorization",
-    "family": "structured-breadth",
-    "title": "Write a prime factorization",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:21",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "prime-decomposition",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "prime-factors"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "extension: Write a prime factorization. Continue splitting until every factor is prime."
-    },
-    "samplePrompt": "Write the prime factorization of 6. Use multiplication signs (* or \u00d7); powers such as 2^3 are allowed."
-  },
-  {
-    "sourceId": "course-87-en:item:SAX70082",
-    "providerSourceId": "course-87-en:item:SAX70082",
-    "bankId": "course-87-en",
-    "topic": "number-theory",
-    "action": "Find a least common multiple",
-    "recipe": "lcm",
-    "family": "structured-breadth",
-    "title": "Find a least common multiple",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:27",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "common-factors-multiples",
-        "level": 2
-      },
-      {
-        "trackId": "multiples-to-common",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "LCM or first common multiples for configured two/three inputs. No strict count ranking across the mixed recipe configurations. extension: Find common multiples of several numbers. Coordinate multiples shared across inputs."
-    },
-    "samplePrompt": "Find the least common multiple of 10, 6. Use exact fractions or terminating decimals, without units."
-  },
-  {
-    "sourceId": "course-87-en:item:SAX70083",
-    "providerSourceId": "course-87-en:item:SAX70083",
-    "bankId": "course-87-en",
-    "topic": "number-theory",
-    "action": "Find the LCM of three numbers",
-    "recipe": "lcm",
-    "family": "structured-breadth",
-    "title": "Find the LCM of three numbers",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:27",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "common-factors-multiples",
-        "level": 2
-      },
-      {
-        "trackId": "multiples-to-common",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "LCM or first common multiples for configured two/three inputs. No strict count ranking across the mixed recipe configurations. extension: Find common multiples of several numbers. Coordinate multiples shared across inputs."
-    },
-    "samplePrompt": "Find the least common multiple of 12, 4, 8. Use exact fractions or terminating decimals, without units."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870128",
-    "providerSourceId": "course-87-en:item:SN870128",
-    "bankId": "course-87-en",
-    "topic": "rounding-estimation",
-    "action": "Round a whole number",
-    "recipe": "round-whole",
-    "family": "structured-breadth",
-    "title": "Round a whole number",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:29",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "rounding",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Whole-number rounding to configured places. Range/places reviewed per entry; shared place-rounding demand."
-    },
-    "samplePrompt": "Round 95088 to the nearest 1000. Halfway values round up. Use exact fractions or terminating decimals, without units."
-  },
-  {
     "sourceId": "course-87-en:item:SX870076",
     "providerSourceId": "course-87-en:item:SX870076",
     "bankId": "course-87-en",
@@ -78862,5 +78679,1448 @@
     ],
     "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
     "samplePrompt": "Simplify: 8^3 \u2212 \u221a225 + 5^2 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870166",
+    "providerSourceId": "course-87-en:item:SN870166",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Decide whether a number is prime",
+    "recipe": "prime-yes-no",
+    "family": "structured-port87",
+    "title": "Decide whether a number is prime",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:21",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "prime-classification",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "extension: Decide whether a whole number is prime or composite. Exactly two positive factors define prime; one is neither."
+    },
+    "samplePrompt": "Is 17 a prime number? Answer yes or no."
+  },
+  {
+    "sourceId": "course-87-en:item:OTG50028",
+    "providerSourceId": "course-87-en:item:OTG50028",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Pick the composite numbers from a list",
+    "recipe": "composite-list",
+    "family": "structured-port87",
+    "title": "Pick the composite numbers from a list",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:21",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "set"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Write the composite numbers from this list, separated by commas: 5, 15, 13, 22, 37, 24, 12, 23, 2"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870192",
+    "providerSourceId": "course-87-en:item:SN870192",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Identify the number that is not composite",
+    "recipe": "not-composite",
+    "family": "structured-port87",
+    "title": "Identify the number that is not composite",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:21",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which of these numbers is not composite? (a) 45   (b) 39   (c) 29   (d) 21 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870082",
+    "providerSourceId": "course-87-en:item:SX870082",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Write a prime factorization",
+    "recipe": "prime-factorization",
+    "family": "structured-port87",
+    "title": "Write a prime factorization",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:21",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "prime-factorization",
+        "level": 2
+      },
+      {
+        "trackId": "prime-decomposition",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "factorization"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "extension: Write a prime factorization. Continue splitting until every factor is prime."
+    },
+    "samplePrompt": "Write the prime factorization of 300."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870168",
+    "providerSourceId": "course-87-en:item:SN870168",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Prime factorization of a product of three primes",
+    "recipe": "prime-factorization",
+    "family": "structured-port87",
+    "title": "Prime factorization of a product of three primes",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:21",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "prime-factorization",
+        "level": 2
+      },
+      {
+        "trackId": "prime-decomposition",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "factorization"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the prime factorization of 182? Show how you arrived at your answer."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870081",
+    "providerSourceId": "course-87-en:item:SX870081",
+    "bankId": "course-87-en",
+    "topic": "powers-roots",
+    "action": "Prime factorization and square root of a perfect square",
+    "recipe": "factor-and-root",
+    "family": "structured-port87",
+    "title": "Prime factorization and square root of a perfect square",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:21",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "factorization-root"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "(a) Write the prime factorization of 1296. (b) Find \u221a1296. Separate the two answers with a semicolon."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870090",
+    "providerSourceId": "course-87-en:item:SX870090",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Regular price and percent paid from a fraction of the price",
+    "recipe": "fraction-of-price",
+    "family": "structured-port87",
+    "title": "Regular price and percent paid from a fraction of the price",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:22",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Blake bought a pair of jeans for $18. This was 3/4 of the regular price. (a) What was the regular price in dollars? (b) Blake paid what percent of the regular price? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870092",
+    "providerSourceId": "course-87-en:item:SX870092",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Diagram a fraction of a goal; find the goal and the shortfall",
+    "recipe": "goal-shortfall",
+    "family": "structured-port87",
+    "title": "Diagram a fraction of a goal; find the goal and the shortfall",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:22",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text with teacher diagram"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Draw a diagram of this statement. Then answer the questions. Ninety-six thousand dollars was raised in a charity drive. This was three fifths of the goal. (a) What was the goal, in dollars? (b) By what percent did the drive fall short of the goal? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870095",
+    "providerSourceId": "course-87-en:item:SN870095",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "How many are not in a fractional part of a group",
+    "recipe": "fraction-not",
+    "family": "structured-port87",
+    "title": "How many are not in a fractional part of a group",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:22",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-whole-unknown",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Four sevenths of the 49 jewels in the display case were emeralds. How many of the jewels were not emeralds? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870140",
+    "providerSourceId": "course-87-en:item:SX870140",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Subtract mixed numbers with regrouping",
+    "recipe": "subtract-mixed-regroup",
+    "family": "structured-port87",
+    "title": "Subtract mixed numbers with regrouping",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:23",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 8 1/3 \u2212 4 2/3 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870100",
+    "providerSourceId": "course-87-en:item:SN870100",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Subtract mixed numbers with regrouping",
+    "recipe": "subtract-mixed-regroup",
+    "family": "structured-port87",
+    "title": "Subtract mixed numbers with regrouping",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:23",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 7 3/10 \u2212 4 6/10 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870141",
+    "providerSourceId": "course-87-en:item:SX870141",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Subtract a mixed number from a whole number",
+    "recipe": "whole-minus-mixed",
+    "family": "structured-port87",
+    "title": "Subtract a mixed number from a whole number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:23",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 7 \u2212 3 3/4 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870095",
+    "providerSourceId": "course-87-en:item:SX870095",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Reduce a product of three fractions by cancelling",
+    "recipe": "cancel-chain",
+    "family": "structured-port87",
+    "title": "Reduce a product of three fractions by cancelling",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:24",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-product-chain",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Reduce: 3/8 \u00b7 8/9 \u00b7 9/10 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870097",
+    "providerSourceId": "course-87-en:item:SX870097",
+    "bankId": "course-87-en",
+    "topic": "fraction-equivalence",
+    "action": "Reduce a fraction with large terms",
+    "recipe": "reduce-product-form",
+    "family": "structured-port87",
+    "title": "Reduce a fraction with large terms",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:24",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Reduce: 120/180 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870103",
+    "providerSourceId": "course-87-en:item:SN870103",
+    "bankId": "course-87-en",
+    "topic": "fraction-equivalence",
+    "action": "Reduce a fraction",
+    "recipe": "reduce-product-form",
+    "family": "structured-port87",
+    "title": "Reduce a fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:24",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-equivalence",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Reduce: 27/54 Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870143",
+    "providerSourceId": "course-87-en:item:SX870143",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Divide fractions",
+    "recipe": "divide-fractions",
+    "family": "structured-port87",
+    "title": "Divide fractions",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:25",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-division",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide: 5/7 \u00f7 7/9 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870105",
+    "providerSourceId": "course-87-en:item:SN870105",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Divide fractions",
+    "recipe": "divide-fractions",
+    "family": "structured-port87",
+    "title": "Divide fractions",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:25",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-division",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide: 1/6 \u00f7 2/3 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870194",
+    "providerSourceId": "course-87-en:item:SN870194",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Divide fractions",
+    "recipe": "divide-fractions",
+    "family": "structured-port87",
+    "title": "Divide fractions",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:25",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-division",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Divide: 20/11 \u00f7 16/3 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870103",
+    "providerSourceId": "course-87-en:item:SX870103",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Divide a mixed number by a product",
+    "recipe": "mixed-div-product",
+    "family": "structured-port87",
+    "title": "Divide a mixed number by a product",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:26",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: 1 1/5 \u00f7 (2 1/2 \u00b7 2) Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870104",
+    "providerSourceId": "course-87-en:item:SX870104",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Multiply a mixed number by a quotient",
+    "recipe": "mixed-times-quotient",
+    "family": "structured-port87",
+    "title": "Multiply a mixed number by a quotient",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:26",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: 1 1/9(7 \u00f7 1 2/5) Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870108",
+    "providerSourceId": "course-87-en:item:SN870108",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Multiply mixed numbers",
+    "recipe": "mixed-times-mixed",
+    "family": "structured-port87",
+    "title": "Multiply mixed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:26",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-multiply",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 1 3/4 \u00b7 4 8/9 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870109",
+    "providerSourceId": "course-87-en:item:SN870109",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Divide mixed numbers",
+    "recipe": "half-mixed-div",
+    "family": "structured-port87",
+    "title": "Divide mixed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:26",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-division",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 6 1/2 \u00f7 4/5 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:AMBM0055",
+    "providerSourceId": "course-87-en:item:AMBM0055",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Sum of named multiples",
+    "recipe": "multiples-sum",
+    "family": "structured-port87",
+    "title": "Sum of named multiples",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:27",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Find the sum of the third multiple of 100, the fourth multiple of 10, and the seventh multiple of 7. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:AHG50515",
+    "providerSourceId": "course-87-en:item:AHG50515",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "List the first five multiples of a number",
+    "recipe": "first-multiples",
+    "family": "structured-port87",
+    "title": "List the first five multiples of a number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:27",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "multiples-to-common",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "sequence"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "List the first five multiples of 3, separated by commas."
+  },
+  {
+    "sourceId": "course-87-en:item:NUY40257",
+    "providerSourceId": "course-87-en:item:NUY40257",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Decide whether a number is a multiple of another",
+    "recipe": "is-multiple",
+    "family": "structured-port87",
+    "title": "Decide whether a number is a multiple of another",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:27",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Is 18 a multiple of 6? Answer yes or no."
+  },
+  {
+    "sourceId": "course-87-en:item:SAX70082",
+    "providerSourceId": "course-87-en:item:SAX70082",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Least common multiple of two numbers",
+    "recipe": "lcm-two",
+    "family": "structured-port87",
+    "title": "Least common multiple of two numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:27",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "common-factors-multiples",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "LCM or first common multiples for configured two/three inputs. No strict count ranking across the mixed recipe configurations. extension: Find common multiples of several numbers. Coordinate multiples shared across inputs."
+    },
+    "samplePrompt": "What is the least common multiple of 8 and 10? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870112",
+    "providerSourceId": "course-87-en:item:SN870112",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Least common multiple of two numbers",
+    "recipe": "lcm-two",
+    "family": "structured-port87",
+    "title": "Least common multiple of two numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:27",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "common-factors-multiples",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "What is the least common multiple of 5 and 25? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SAX70083",
+    "providerSourceId": "course-87-en:item:SAX70083",
+    "bankId": "course-87-en",
+    "topic": "number-theory",
+    "action": "Least common multiple of three numbers",
+    "recipe": "lcm-three",
+    "family": "structured-port87",
+    "title": "Least common multiple of three numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:27",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "common-factors-multiples",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "LCM or first common multiples for configured two/three inputs. No strict count ranking across the mixed recipe configurations. extension: Find common multiples of several numbers. Coordinate multiples shared across inputs."
+    },
+    "samplePrompt": "Find the least common multiple of 5, 10, and 2. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870122",
+    "providerSourceId": "course-87-en:item:SN870122",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Unit cost by an easier equivalent division",
+    "recipe": "unit-cost-equivalent",
+    "family": "structured-port87",
+    "title": "Unit cost by an easier equivalent division",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:27",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "If 4 pens cost $2.40, what is the cost of each one? Write an equivalent division problem that is easier to do mentally, and find the quotient. Give the cost in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870124",
+    "providerSourceId": "course-87-en:item:SN870124",
+    "bankId": "course-87-en",
+    "topic": "whole-arithmetic",
+    "action": "Divide mentally by doubling both numbers",
+    "recipe": "double-both",
+    "family": "structured-port87",
+    "title": "Divide mentally by doubling both numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:27",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Instead of dividing 700 by 5, double both numbers and calculate the quotient mentally. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870126",
+    "providerSourceId": "course-87-en:item:SN870126",
+    "bankId": "course-87-en",
+    "topic": "whole-arithmetic",
+    "action": "Divide mentally by dividing both numbers by 100",
+    "recipe": "divide-by-hundred",
+    "family": "structured-port87",
+    "title": "Divide mentally by dividing both numbers by 100",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:27",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Instead of dividing 7,200 by 200, divide both numbers by 100 and then calculate the quotient mentally. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870151",
+    "providerSourceId": "course-87-en:item:SX870151",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Yearly saving from a subscription",
+    "recipe": "subscription-savings",
+    "family": "structured-port87",
+    "title": "Yearly saving from a subscription",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:28",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "A one-year subscription to a monthly magazine costs $28.80. The newsstand price is $3.05 per issue. How much is saved in a year by subscribing? Give the answer in dollars. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870110",
+    "providerSourceId": "course-87-en:item:SX870110",
+    "bankId": "course-87-en",
+    "topic": "statistics",
+    "action": "Average of five heights",
+    "recipe": "average-five",
+    "family": "structured-port87",
+    "title": "Average of five heights",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:28",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Everyone in the Lindgren family is tall. Their heights are 81, 75, 71, 77, 71 inches. What is the average height of the 5 family members in inches? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870120",
+    "providerSourceId": "course-87-en:item:SN870120",
+    "bankId": "course-87-en",
+    "topic": "statistics",
+    "action": "Average of five heights",
+    "recipe": "average-five",
+    "family": "structured-port87",
+    "title": "Average of five heights",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:28",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "average",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Terry measured the heights of the 5 trees in the yard, in inches: 81, 42, 35, 71, 81. What is the average height of the trees in inches? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870111",
+    "providerSourceId": "course-87-en:item:SX870111",
+    "bankId": "course-87-en",
+    "topic": "statistics",
+    "action": "Total seconds and average lap time",
+    "recipe": "laps-average",
+    "family": "structured-port87",
+    "title": "Total seconds and average lap time",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:28",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Joy ran 4 laps in 5 minutes 28 seconds. (a) How many seconds did it take to run the 4 laps? (b) What was the average time per lap, in seconds? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870153",
+    "providerSourceId": "course-87-en:item:SX870153",
+    "bankId": "course-87-en",
+    "topic": "rounding-estimation",
+    "action": "Round to the nearest thousand and hundred",
+    "recipe": "round-two-places",
+    "family": "structured-port87",
+    "title": "Round to the nearest thousand and hundred",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:29",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rounding",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "(a) Round 71,647 to the nearest thousand. (b) Round 71,647 to the nearest hundred. Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870128",
+    "providerSourceId": "course-87-en:item:SN870128",
+    "bankId": "course-87-en",
+    "topic": "rounding-estimation",
+    "action": "Round to the nearest thousand or ten thousand",
+    "recipe": "round-place",
+    "family": "structured-port87",
+    "title": "Round to the nearest thousand or ten thousand",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:29",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rounding",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Whole-number rounding to configured places. Range/places reviewed per entry; shared place-rounding demand."
+    },
+    "samplePrompt": "Round 39,253 to the nearest thousand. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:AMPA0048",
+    "providerSourceId": "course-87-en:item:AMPA0048",
+    "bankId": "course-87-en",
+    "topic": "rounding-estimation",
+    "action": "Round a mixed number to the nearest whole number",
+    "recipe": "round-mixed-whole",
+    "family": "structured-port87",
+    "title": "Round a mixed number to the nearest whole number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:29",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Round 43 3/8 to the nearest whole number. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870185",
+    "providerSourceId": "course-87-en:item:SN870185",
+    "bankId": "course-87-en",
+    "topic": "rounding-estimation",
+    "action": "Round a mixed number to the nearest half",
+    "recipe": "round-mixed-half",
+    "family": "structured-port87",
+    "title": "Round a mixed number to the nearest half",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:29",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Round 11 5/7 to the nearest half."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870362",
+    "providerSourceId": "course-87-en:item:SN870362",
+    "bankId": "course-87-en",
+    "topic": "rounding-estimation",
+    "action": "Find the true rounding statement",
+    "recipe": "true-rounding",
+    "family": "structured-port87",
+    "title": "Find the true rounding statement",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:29",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Which statement is true? (a) 12 5/7 rounds to 12   (b) 15 9/11 rounds to 15   (c) 5 4/5 rounds to 6   (d) 2 9/13 rounds to 2   Answer with the letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870303",
+    "providerSourceId": "course-87-en:item:SX870303",
+    "bankId": "course-87-en",
+    "topic": "rounding-estimation",
+    "action": "Estimate a quotient",
+    "recipe": "estimate-quotient",
+    "family": "structured-port87",
+    "title": "Estimate a quotient",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:29",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "estimate-operation-types",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Estimate: 7,213 \u00f7 86 Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870133",
+    "providerSourceId": "course-87-en:item:SN870133",
+    "bankId": "course-87-en",
+    "topic": "rounding-estimation",
+    "action": "Estimate a product by rounding to tens",
+    "recipe": "estimate-product",
+    "family": "structured-port87",
+    "title": "Estimate a product by rounding to tens",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:29",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "estimate-operation-types",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Estimate the product of 46 and 59 by rounding each number to the nearest ten. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870134",
+    "providerSourceId": "course-87-en:item:SN870134",
+    "bankId": "course-87-en",
+    "topic": "rounding-estimation",
+    "action": "Estimate a product of mixed numbers",
+    "recipe": "estimate-mixed-product",
+    "family": "structured-port87",
+    "title": "Estimate a product of mixed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:29",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "What is the best estimate of the product of 8 5/6 and 6 1/6? Round each to the nearest whole number first. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870154",
+    "providerSourceId": "course-87-en:item:SX870154",
+    "bankId": "course-87-en",
+    "topic": "number-order",
+    "action": "Compare fractions using a common denominator",
+    "recipe": "compare-common",
+    "family": "structured-port87",
+    "title": "Compare fractions using a common denominator",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:30",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-comparison-methods",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "compare-common"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 5/2 and 2/5 with a common denominator, and compare them with <, >, or =."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870170",
+    "providerSourceId": "course-87-en:item:SN870170",
+    "bankId": "course-87-en",
+    "topic": "number-order",
+    "action": "Compare fractions using a common denominator",
+    "recipe": "compare-common",
+    "family": "structured-port87",
+    "title": "Compare fractions using a common denominator",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:30",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-comparison-methods",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "compare-common"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 3/6 and 4/5 with a common denominator, and compare them with <, >, or =."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870155",
+    "providerSourceId": "course-87-en:item:SX870155",
+    "bankId": "course-87-en",
+    "topic": "number-order",
+    "action": "Compare fractions using a common denominator",
+    "recipe": "compare-common",
+    "family": "structured-port87",
+    "title": "Compare fractions using a common denominator",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:30",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-comparison-methods",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "compare-common"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 3/5 and 2/5 with a common denominator, and compare them with <, >, or =."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870172",
+    "providerSourceId": "course-87-en:item:SN870172",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Add a fraction and its reciprocal",
+    "recipe": "add-reciprocal-pair",
+    "family": "structured-port87",
+    "title": "Add a fraction and its reciprocal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:30",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write 6/3 and 3/6 with a common denominator and add them. Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870164",
+    "providerSourceId": "course-87-en:item:SX870164",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Simplify an expression with mixed numbers",
+    "recipe": "mixed-expression",
+    "family": "structured-port87",
+    "title": "Simplify an expression with mixed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:30",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: (3 1/2 + 2 3/4) \u00f7 (6 \u2212 5 1/4) Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870265",
+    "providerSourceId": "course-87-en:item:SX870265",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Simplify an expression with mixed numbers",
+    "recipe": "mixed-expression",
+    "family": "structured-port87",
+    "title": "Simplify an expression with mixed numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:30",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Simplify: 8 1/6 \u00f7 (3 1/2 + 4 1/12) Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870137",
+    "providerSourceId": "course-87-en:item:SN870137",
+    "bankId": "course-87-en",
+    "topic": "fractions",
+    "action": "Subtract mixed numbers with unlike denominators",
+    "recipe": "mixed-expression",
+    "family": "structured-port87",
+    "title": "Subtract mixed numbers with unlike denominators",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:30",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "mixed"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 4 1/2 \u2212 3 4/5 Enter a simplified mixed number, proper fraction or integer."
   }
 ]

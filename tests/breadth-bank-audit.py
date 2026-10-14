@@ -116,6 +116,7 @@ for line in proc.stdout:
   for svg in re.findall(r'<svg.*?</svg>',row['html']):ET.fromstring(svg);svgs+=1
  count+=1
 assert proc.wait()==0
-# SN870025 (gcf) is now served by its coverage port.
-assert count==16800 and len(recipes)==66 and len(domains)==4 and len(classes)==3 and len(letters)==4 and len(signs)==8
+# Served by coverage ports instead: SN870025 (gcf); SN870166 (prime-test, the only entry of that recipe), SX870082 (prime-factorization),
+# SAX70082 and SAX70083 (lcm) and SN870128 (round-whole).
+assert count==15800 and len(recipes)==65 and len(domains)==4 and len(classes)==3 and len(letters)==4 and len(signs)==8
 print(f'PASS: {count} independent generated cases, {len(recipes)} task recipes, {svgs} parsed SVGs; domain and system branches, inequality signs, unique graph choices, replay and answer checks')
