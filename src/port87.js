@@ -36,7 +36,7 @@ function numberLine(lo,hi,arrows=[],label=''){const W=440,x=v=>30+(v-lo)*(W-60)/
  return svg(b,label||`Number line from ${lo} to ${hi}`,W,base+32);}
 // Angle figure: line TR through O (or ray OR for the right-angle case) with ray OS, as in the source layouts.
 function angleFigure(layout){const W=300,H=170,O=[150,130],sc=9;const P=([x,y])=>[O[0]+x*sc,O[1]-y*sc];let b='',pts;
- if(layout==='right'){const o=[60,140],Q=([x,y])=>[o[0]+x*sc*1.1,o[1]-y*sc*1.1];b+=ln(...Q([0,0]),...Q([12,0]),{end:1})+ln(...Q([0,0]),...Q([0,11]),{end:1})+ln(...Q([0,0]),...Q([9,9*Math.sqrt(3)]),{end:1});
+ if(layout==='right'){const o=[60,140],Q=([x,y])=>[o[0]+x*sc*1.1,o[1]-y*sc*1.1];b+=ln(...Q([0,0]),...Q([12,0]),{end:1})+ln(...Q([0,0]),...Q([0,11]),{end:1})+ln(...Q([0,0]),...Q([10,5*Math.sqrt(3)]),{end:1});
   pts=[['O',[0,0],[0,-1.8]],['R',[7,0],[0,-1.8]],['S',[7,7*Math.sqrt(3)/2],[1.3,-0.6]],['T',[0,7],[-1.2,0]]].map(([nm,p,d])=>{const [x,y]=Q(p),[lx,ly]=Q([p[0]+d[0],p[1]+d[1]]);return dot(x,y)+tx(lx,ly+4,nm,{italic:1,size:12});});return svg(b+pts.join(''),'Rays OR, OS and OT from point O; angle TOR is a right angle',W,H);}
  b+=ln(...P([-14,0]),...P([14,0]),{start:1,end:1});const S=layout==='up'?[0,8]:layout==='right-lean'?[7,7*Math.sqrt(3)/2]:[-7,7*Math.sqrt(3)/2],far=layout==='up'?[0,11.5]:[S[0]*11.5/8.1,S[1]*11.5/8.1];
  b+=ln(...P([0,0]),...P(far),{end:1});pts=[['O',[0,0]],['T',[-8,0]],['R',[8,0]]].map(([nm,p])=>{const [x,y]=P(p);return dot(x,y)+tx(x,y+18,nm,{italic:1,size:12});}).join('');
@@ -221,7 +221,7 @@ case 'percent-grid':{let v;do{v=int(1,89);}while(v%10===0);
  t.choices=distinct(v,[{value:100-v,mistake:'Counted the unshaded squares'},{value:Math.floor(v/10)*10,mistake:'Counted only the full rows'},{value:Math.floor(v/10)+v%10,mistake:'Counted rows and squares as ones'},{value:v%10,mistake:'Counted only the squares in the partial row'},{value:v+10,mistake:'Counted one row too many'},{value:v*10,mistake:'Read each small square as 10%'}]);break;}
 case 'ruler-length':{// to the nearest 1/16 (odd sixteenths) or 1/8 (not a quarter) inch
  const den=c.variant==='eighths'?8:16;let a;if(den===16)a=2*int(1,30)+1;else do{a=int(1,31);}while(a%2===0);
- t=n(`How long is this segment${den===16?' to the nearest sixteenth of an inch':''}? Give the length in inches.`,R(a,den),`The segment ends at ${a} of the ${den} equal marks per inch: ${U.mixed(R(a,den))} in.`,{a,den},'mixed',ruler(den,a));
+ t=n(`How long is this segment${den===16?' to the nearest sixteenth of an inch':''}? Give the length in inches.`,R(a,den),`The segment is ${a} ${den===16?'sixteenths':'eighths'} of an inch long: ${a}/${den} in. = ${U.mixed(R(a,den))} in.`,{a,den},'mixed',ruler(den,a));
  t.choices=distinct(U.mixed(R(a,den)),[{value:U.mixed(R(a+1,den)),mistake:'Counted one mark too many'},{value:U.mixed(R(a-1,den)),mistake:'Counted one mark too few'},{value:U.mixed(R(a,den/2)),mistake:'Read the marks as the next larger unit'},{value:U.mixed(R(a+2,den)),mistake:'Counted two marks too many'},{value:U.mixed(R(a+den,den)),mistake:'Started counting at 1 inch instead of 0'}].map(x=>({value:x.value+' in.',mistake:x.mistake})));break;}
 // Lesson 9
 case 'add-unit-fraction':{
