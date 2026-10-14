@@ -2,8 +2,9 @@
 """Catalog and source mapping for the 8/7 port tasks (coverage programme batches).
 
 Each task names the source record it ports. Open records keep their own ID (course-87-en:item:...), so they
-become working entries; a port that replaces an earlier, less faithful adaptation uses course-87-en:port:...
-so the earlier entry and everything derived from it stay intact.
+become working entries. A port that replaces an earlier, less faithful adaptation takes over the record's ID
+(marked replacesEarlierAdaptation); course-banks.js then drops the earlier entry, so every consumer serves the
+faithful task.
 
 Block hashes come from the private recovery ZIP when SAXON_SOURCE_ZIP is set; otherwise the committed
 mapping is reused. Only IDs and hashes are written here, never source text.
@@ -121,11 +122,13 @@ def main():
     entries, mapping = [], []
     for rec, recipe, variant, title, topic, replaces in TASKS:
         record = 'course-87-en:item:' + rec
-        sid = ('course-87-en:port:' if replaces else 'course-87-en:item:') + rec
+        sid = 'course-87-en:item:' + rec  # a replacement takes over the record's ID; course-banks drops the earlier entry
         e = dict(sourceId=sid, sourceRecord=record, lessonId=lesson[record], course=COURSE, family='structured-port87',
                  recipe=recipe, title=title, topic=topic, origin='original-source-informed-port', exactLegacyReproduction=False)
         if variant:
             e['variant'] = variant
+        if replaces:
+            e['replacesEarlierAdaptation'] = True
         entries.append(e)
         h = hashes.get(record) or old.get(record)
         assert h, 'no block hashes for ' + record + ' (set SAXON_SOURCE_ZIP)'

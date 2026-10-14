@@ -1,4 +1,4 @@
-const E=require('../src/course-banks'),PORT=require('../src/port87-map').length,C=E.connections,assert=require('node:assert/strict'),fs=require('fs');
+const E=require('../src/course-banks'),PORT=require('../src/port87-map').filter(c=>!c.replacesEarlierAdaptation).length,C=E.connections,assert=require('node:assert/strict'),fs=require('fs');
 assert.equal(E.catalog.length,(2184+PORT));assert.equal(C.profiles.length,(2184+PORT));assert.equal(C.topics.length,66);assert(C.tracks.length>=74);assert.equal(new Set(C.profiles.map(p=>p.sourceId)).size,(2184+PORT));
 for(const p of C.profiles){assert(E.catalog.some(c=>c.sourceId===p.sourceId));assert(p.lessonId);assert(C.lookup(p.providerSourceId));assert.equal(p.localGrade,C.coursePlacement.find(c=>c.bankId===p.bankId).localGrade);assert(Object.isFrozen(p));assert(C.browse(p.topic).some(x=>x.sourceId===p.sourceId));assert.equal(C.compare(p.sourceId,p.sourceId).type,'same-source');}
 let comparisons=0;const inverses={harder:'easier',easier:'harder',extension:'prerequisite',prerequisite:'extension','same-scope':'same-scope',related:'related','shared-provider':'shared-provider'};

@@ -2,7 +2,7 @@
 import json,subprocess,pathlib,math,statistics,xml.etree.ElementTree as ET
 from fractions import Fraction as F
 root=pathlib.Path(__file__).resolve().parents[1]
-script="""const E=require('./src/course-banks.js'),C=require('./src/breadth-bank-map.js');for(const c of C)for(let i=0;i<200;i++){const q=E.generate(c.sourceId,{seed:'independent-breadth',index:i});const a=E.answerText(q);if(!E.checkAnswer(q,a).answerCorrect||E.checkAnswer(q,'incorrect').answerCorrect)throw Error(c.sourceId);if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'independent-breadth',index:i})))throw Error('Replay');console.log(JSON.stringify({recipe:c.recipe,q,formatted:a,html:i%40===0?E.renderQuestion(q):null}));}"""
+script="""const E=require('./src/course-banks.js'),C=require('./src/breadth-bank-map.js');for(const c of C.filter(c=>E.catalog.find(x=>x.sourceId===c.sourceId).family===c.family))/* entries replaced by a coverage port are audited by tests/port87.cjs */for(let i=0;i<200;i++){const q=E.generate(c.sourceId,{seed:'independent-breadth',index:i});const a=E.answerText(q);if(!E.checkAnswer(q,a).answerCorrect||E.checkAnswer(q,'incorrect').answerCorrect)throw Error(c.sourceId);if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'independent-breadth',index:i})))throw Error('Replay');console.log(JSON.stringify({recipe:c.recipe,q,formatted:a,html:i%40===0?E.renderQuestion(q):null}));}"""
 def rat(x):return F(int(x['numerator']),int(x['denominator']))
 def prime(n):return n>=2 and all(n%d for d in range(2,math.isqrt(n)+1))
 def fac(n):
@@ -116,5 +116,6 @@ for line in proc.stdout:
   for svg in re.findall(r'<svg.*?</svg>',row['html']):ET.fromstring(svg);svgs+=1
  count+=1
 assert proc.wait()==0
-assert count==17000 and len(recipes)==66 and len(domains)==4 and len(classes)==3 and len(letters)==4 and len(signs)==8
+# SN870025 (gcf) is now served by its coverage port.
+assert count==16800 and len(recipes)==66 and len(domains)==4 and len(classes)==3 and len(letters)==4 and len(signs)==8
 print(f'PASS: {count} independent generated cases, {len(recipes)} task recipes, {svgs} parsed SVGs; domain and system branches, inequality signs, unique graph choices, replay and answer checks')

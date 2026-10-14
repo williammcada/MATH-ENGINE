@@ -2,7 +2,7 @@
 
 Recorded 2026-10-14. This batch follows the batch protocol in `coverage-programme-phase0-v0.1.md` §0.6. Its patterns are the same as Batch 1 (`coverage-batch1-course87-L1-10-v0.1.md`).
 
-**Version:** Engine 0.36.0-rc.1.
+**Version:** Engine 0.36.0-rc.1, and 0.36.0-rc.2 for replacement IDs.
 **Branch:** `claude/coverage-phase0`.
 **Bank module version:** unchanged at `0.33.0-rc.1`, because tasks were only added.
 
@@ -16,7 +16,7 @@ Recorded 2026-10-14. This batch follows the batch protocol in `coverage-programm
 | Consolidated choice-only twin | 14 |
 | Retired | 0 |
 
-**The two replacements:**
+**The two replacements.** As in Batch 1 (0.36.0-rc.2), each takes over its record's ID and the earlier entry is dropped.
 
 - **SX870068** (rename a fraction, then subtract). The earlier version showed only the subtraction and left out the renaming step.
 - **SN870075** (read a protractor). The earlier version had a single angle. The original asks students to choose the right ray among nine, and the right scale.

@@ -255,45 +255,6 @@
     "samplePrompt": "Multiply: 660 \u00d7 12."
   },
   {
-    "sourceId": "course-87-en:item:SX870018",
-    "providerSourceId": "course-87-en:item:SX870018",
-    "bankId": "course-87-en",
-    "topic": "decimal-arithmetic",
-    "action": "Multiply a money amount",
-    "recipe": "money-product",
-    "family": "money-product",
-    "title": "Multiply a money amount",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:1",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "decimal-operations",
-        "level": 2
-      },
-      {
-        "trackId": "money-purchase-change",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "money"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Money or finite-decimal multiplication; decimal point placement, including factors below one. Decimal range min=max=0 is fractional, not constant zero."
-    },
-    "samplePrompt": "Each item costs $4.26. What is the total cost of 50 items? Give your answer in dollars."
-  },
-  {
     "sourceId": "course-87-en:item:SN870004",
     "providerSourceId": "course-87-en:item:SN870004",
     "bankId": "course-87-en",
@@ -6709,41 +6670,6 @@
       "disposition": "retained similar demand"
     },
     "samplePrompt": "3/7 of a trail has been walked. What fraction remains? Give a simplified fraction."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870068",
-    "providerSourceId": "course-87-en:item:SX870068",
-    "bankId": "course-87-en",
-    "topic": "fractions",
-    "action": "Subtract using equivalent fractions",
-    "recipe": "fraction-subtract",
-    "family": "structured-proportion",
-    "title": "Subtract using equivalent fractions",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:15",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "fraction-add-subtract",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Unlike denominator subtraction; one denominator is a multiple of the other."
-    },
-    "samplePrompt": "Subtract. Give a simplified fraction."
   },
   {
     "sourceId": "course-87-en:item:SX870195",
@@ -13516,54 +13442,6 @@
     "samplePrompt": "Write 28 (base ten) in base two. Enter only binary digits, without leading zeros."
   },
   {
-    "sourceId": "course-87-en:item:SN870025",
-    "providerSourceId": "course-87-en:item:SN870025",
-    "bankId": "course-87-en",
-    "topic": "number-theory",
-    "action": "Find a greatest common factor",
-    "recipe": "gcf",
-    "family": "structured-breadth",
-    "title": "Find a greatest common factor",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:6",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "common-factors-multiples",
-        "level": 1
-      },
-      {
-        "trackId": "c4-gcf-to-monomial-from",
-        "level": 1
-      },
-      {
-        "trackId": "c4-prime-factors-to-gcf-to",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Find GCF for configured two or three inputs. Configurations reviewed; related-only methods path does not rank input counts."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "validated cross-course prerequisite/extension"
-    },
-    "samplePrompt": "Find the greatest common factor of 20, 7. Use exact fractions or terminating decimals, without units."
-  },
-  {
     "sourceId": "course-87-en:item:SN870166",
     "providerSourceId": "course-87-en:item:SN870166",
     "bankId": "course-87-en",
@@ -15473,46 +15351,6 @@
     "samplePrompt": "Write log base 4 of 13 minus log base 4 of 8 as log base 4 of a single positive number N. Enter N exactly. Enter numerical values without units; exact fractions or terminating decimals are accepted."
   },
   {
-    "sourceId": "course-87-en:item:SX870001",
-    "providerSourceId": "course-87-en:item:SX870001",
-    "bankId": "course-87-en",
-    "topic": "number-representation",
-    "action": "Write whole-number expanded notation",
-    "recipe": "expanded-large",
-    "family": "structured-representations",
-    "title": "Write whole-number expanded notation",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:5",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "number-notation-forms",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "expanded"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Expanded sums of place values; expanded-large has only two nonzero places and is not automatically harder than dense shorter numbers."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Write 904,000 in expanded form as a sum of its nonzero place values, greatest to least. For example, 205 is 200 + 5. Use + between addends; do not use multiplication."
-  },
-  {
     "sourceId": "course-87-en:item:SX650185",
     "providerSourceId": "course-87-en:item:SX650185",
     "bankId": "course-87-en",
@@ -17043,86 +16881,6 @@
       "disposition": "retained within-course directions"
     },
     "samplePrompt": "For x > 0, rewrite log base 7 of x^2 as K times log base 7 of x. Enter K. Enter numerical values without units; separate multiple answers with semicolons. Exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870024",
-    "providerSourceId": "course-87-en:item:SX870024",
-    "bankId": "course-87-en",
-    "topic": "expressions",
-    "action": "Illustrate the commutative property",
-    "recipe": "commutative",
-    "family": "structured-reasoning",
-    "title": "Illustrate the commutative property",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:2",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "operation-properties",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 2,
-      "status": "reviewed",
-      "reason": "Apply commutative or associative laws to addition or multiplication only; distinguish exchanging operands from changing grouping."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained similar demand"
-    },
-    "samplePrompt": "Complete the commutative-property statement: 6 \u00d7 5 = \u25a1 \u00d7 \u25a1. Enter the two missing numbers in order. Enter numerical values without units; separate multiple answers with semicolons. Exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870025",
-    "providerSourceId": "course-87-en:item:SX870025",
-    "bankId": "course-87-en",
-    "topic": "expressions",
-    "action": "Illustrate the associative property",
-    "recipe": "associative",
-    "family": "structured-reasoning",
-    "title": "Illustrate the associative property",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:2",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "operation-properties",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 2,
-      "status": "reviewed",
-      "reason": "Apply commutative or associative laws to addition or multiplication only; distinguish exchanging operands from changing grouping."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained similar demand"
-    },
-    "samplePrompt": "Complete the associative-property statement: (6 + 5) + 4 = 6 + (\u25a1 + \u25a1). Enter the two missing numbers in order. Enter numerical values without units; separate multiple answers with semicolons. Exact fractions or terminating decimals are accepted."
   },
   {
     "sourceId": "course-87-en:item:SAX70303",
@@ -19358,45 +19116,6 @@
       "disposition": "retained reviewed topic-only"
     },
     "samplePrompt": "Solve 2s = (2/(3p))(6z/t \u2212 4q/r) for t. Assume p, r and z are nonzero, t must be nonzero, and 8*q+6*r*p*s is nonzero. A: t = 12*r*z/(8*q+6*r*p*s). B: t = 12*z/(8*q+6*r*p*s). C: t = 8*q+6*r*p*s/(12*r*z). D: t = 12*r*z/(8*q-6*r*p*s). Enter A, B, C or D. In these choices, * means multiplication."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870075",
-    "providerSourceId": "course-87-en:item:SN870075",
-    "bankId": "course-87-en",
-    "topic": "angles",
-    "action": "Read a protractor from either baseline",
-    "recipe": "protractor-read",
-    "family": "structured-algebra-review",
-    "title": "Read a protractor from either baseline",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:17",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "protractor-response-demands",
-        "level": 1
-      },
-      {
-        "trackId": "angle-estimation-methods",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Read a protractor with baseline zero or 180 degrees; choose the scale aligned with the baseline and give the smaller angle. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "samplePrompt": "Use the protractor to find the smaller angle AOB in degrees. Start from the zero on ray OA. Enter numerical values without units; use semicolons between multiple answers. Exact fractions or terminating decimals are accepted."
   },
   {
     "sourceId": "course-87-en:authored:MCADA-1.1",
@@ -76648,8 +76367,8 @@
     "samplePrompt": "Simplify: $44.20 \u00f7 65. Give the answer in dollars. Enter exact decimal or whole-number answers."
   },
   {
-    "sourceId": "course-87-en:port:SX870018",
-    "providerSourceId": "course-87-en:port:SX870018",
+    "sourceId": "course-87-en:item:SX870018",
+    "providerSourceId": "course-87-en:item:SX870018",
     "bankId": "course-87-en",
     "topic": "decimal-arithmetic",
     "action": "Multiply a money amount by a multiple of ten",
@@ -76666,6 +76385,10 @@
       {
         "trackId": "decimal-operations",
         "level": 2
+      },
+      {
+        "trackId": "money-purchase-change",
+        "level": 1
       }
     ],
     "answerKinds": [
@@ -76675,7 +76398,12 @@
       "text or symbolic expression"
     ],
     "comparisonStatus": "reviewed progression",
-    "samplePrompt": "Simplify: 60($9.86). Give the answer in dollars. Enter exact decimal or whole-number answers."
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Money or finite-decimal multiplication; decimal point placement, including factors below one. Decimal range min=max=0 is fractional, not constant zero."
+    },
+    "samplePrompt": "Simplify: 50($4.26). Give the answer in dollars. Enter exact decimal or whole-number answers."
   },
   {
     "sourceId": "course-87-en:item:SN870005",
@@ -76768,8 +76496,8 @@
     "samplePrompt": "Evaluate (ab)/(a + b) when a = 7 and b = 15. Enter a fraction in lowest terms (or an integer)."
   },
   {
-    "sourceId": "course-87-en:port:SX870024",
-    "providerSourceId": "course-87-en:port:SX870024",
+    "sourceId": "course-87-en:item:SX870024",
+    "providerSourceId": "course-87-en:item:SX870024",
     "bankId": "course-87-en",
     "topic": "expressions",
     "action": "Illustrate the commutative property",
@@ -76782,19 +76510,34 @@
     "lessonId": "course-87-en:scope:2",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "operation-properties",
+        "level": 1
+      }
+    ],
     "answerKinds": [
       "property"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
-    "samplePrompt": "Use the numbers 9 and 2 to illustrate the commutative property of multiplication. Write a number sentence."
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 2,
+      "status": "reviewed",
+      "reason": "Apply commutative or associative laws to addition or multiplication only; distinguish exchanging operands from changing grouping."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained similar demand"
+    },
+    "samplePrompt": "Use the numbers 8 and 5 to illustrate the commutative property of multiplication. Write a number sentence."
   },
   {
-    "sourceId": "course-87-en:port:SX870025",
-    "providerSourceId": "course-87-en:port:SX870025",
+    "sourceId": "course-87-en:item:SX870025",
+    "providerSourceId": "course-87-en:item:SX870025",
     "bankId": "course-87-en",
     "topic": "expressions",
     "action": "Illustrate the associative property",
@@ -76807,15 +76550,30 @@
     "lessonId": "course-87-en:scope:2",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "operation-properties",
+        "level": 1
+      }
+    ],
     "answerKinds": [
       "property"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
-    "samplePrompt": "Use the numbers 9, 2, and 4 to illustrate the associative property of addition. Write a number sentence."
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 2,
+      "status": "reviewed",
+      "reason": "Apply commutative or associative laws to addition or multiplication only; distinguish exchanging operands from changing grouping."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained similar demand"
+    },
+    "samplePrompt": "Use the numbers 7, 3, and 2 to illustrate the associative property of multiplication. Write a number sentence."
   },
   {
     "sourceId": "course-87-en:item:SN870153",
@@ -77048,8 +76806,8 @@
     "samplePrompt": "Write the value of the underlined digit in short word form: 504,1\u033268,393,933"
   },
   {
-    "sourceId": "course-87-en:port:SX870001",
-    "providerSourceId": "course-87-en:port:SX870001",
+    "sourceId": "course-87-en:item:SX870001",
+    "providerSourceId": "course-87-en:item:SX870001",
     "bankId": "course-87-en",
     "topic": "number-representation",
     "action": "Write a number in expanded notation with multiplication",
@@ -77062,15 +76820,30 @@
     "lessonId": "course-87-en:scope:5",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "number-notation-forms",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "expanded"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
-    "samplePrompt": "Write 702,000 in expanded notation, using multiplication, for example (2 \u00d7 100) + (5 \u00d7 10)."
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Expanded sums of place values; expanded-large has only two nonzero places and is not automatically harder than dense shorter numbers."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "Write 408,000 in expanded notation, using multiplication, for example (2 \u00d7 100) + (5 \u00d7 10)."
   },
   {
     "sourceId": "course-87-en:item:SN870020",
@@ -77087,14 +76860,19 @@
     "lessonId": "course-87-en:scope:5",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "number-notation-forms",
+        "level": 3
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Use digits to write forty million, two hundred one thousand, three hundred seventeen. Enter exact numerical answers without units."
   },
   {
@@ -77123,8 +76901,8 @@
     "samplePrompt": "(a) List the factors of 66. (b) List the factors of 10. (c) What numbers are factors of both 66 and 10? (d) What is the greatest common factor of 66 and 10? Separate the four answers with semicolons and the numbers in a list with commas."
   },
   {
-    "sourceId": "course-87-en:port:SN870025",
-    "providerSourceId": "course-87-en:port:SN870025",
+    "sourceId": "course-87-en:item:SN870025",
+    "providerSourceId": "course-87-en:item:SN870025",
     "bankId": "course-87-en",
     "topic": "number-theory",
     "action": "Find the greatest common factor of two numbers",
@@ -77137,15 +76915,34 @@
     "lessonId": "course-87-en:scope:6",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "c4-gcf-to-monomial-from",
+        "level": 1
+      },
+      {
+        "trackId": "c4-prime-factors-to-gcf-to",
+        "level": 1
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
-    "samplePrompt": "What is the greatest common factor of 40 and 16? Enter exact numerical answers without units."
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Find GCF for configured two or three inputs. Configurations reviewed; related-only methods path does not rank input counts."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "validated cross-course prerequisite/extension"
+    },
+    "samplePrompt": "What is the greatest common factor of 60 and 30? Enter exact numerical answers without units."
   },
   {
     "sourceId": "course-87-en:item:SN870158",
@@ -78368,8 +78165,8 @@
     "samplePrompt": "Simplify: 1 7/4 Enter a simplified mixed number, proper fraction or integer."
   },
   {
-    "sourceId": "course-87-en:port:SX870068",
-    "providerSourceId": "course-87-en:port:SX870068",
+    "sourceId": "course-87-en:item:SX870068",
+    "providerSourceId": "course-87-en:item:SX870068",
     "bankId": "course-87-en",
     "topic": "fraction-equivalence",
     "action": "Rename a fraction, then subtract",
@@ -78382,15 +78179,25 @@
     "lessonId": "course-87-en:scope:15",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "fraction-add-subtract",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "fraction"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
-    "samplePrompt": "Find a fraction equal to 1/4 that has a denominator of 8. Then subtract 1/8 from that fraction. What is the difference? Enter a fraction in lowest terms (or an integer)."
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Unlike denominator subtraction; one denominator is a multiple of the other."
+    },
+    "samplePrompt": "Find a fraction equal to 1/4 that has a denominator of 12. Then subtract 1/12 from that fraction. What is the difference? Enter a fraction in lowest terms (or an integer)."
   },
   {
     "sourceId": "course-87-en:item:SX870069",
@@ -78493,8 +78300,8 @@
     "samplePrompt": "Draw a 51\u00b0 angle using a protractor. Complete the requested work on paper; this task requires teacher review."
   },
   {
-    "sourceId": "course-87-en:port:SN870075",
-    "providerSourceId": "course-87-en:port:SN870075",
+    "sourceId": "course-87-en:item:SN870075",
+    "providerSourceId": "course-87-en:item:SN870075",
     "bankId": "course-87-en",
     "topic": "angles",
     "action": "Read angles on a protractor",
@@ -78507,15 +78314,29 @@
     "lessonId": "course-87-en:scope:17",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "protractor-response-demands",
+        "level": 1
+      },
+      {
+        "trackId": "angle-estimation-methods",
+        "level": 1
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
-    "samplePrompt": "Use the protractor to find the measure of \u2220AOH. Give the measure in degrees. Enter exact numerical answers without units."
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Read a protractor with baseline zero or 180 degrees; choose the scale aligned with the baseline and give the smaller angle. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "samplePrompt": "Use the protractor to find the measure of \u2220IOD. Give the measure in degrees. Enter exact numerical answers without units."
   },
   {
     "sourceId": "course-87-en:item:SN870594",

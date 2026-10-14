@@ -10,8 +10,8 @@
 "curriculum/course-inventory/v0.1/course-1-en.json": "4b8d876247ccceef6623fcb1973c3d660cf71498d39beae4a5a9db2434f5153e",
 "curriculum/course-inventory/v0.1/course-87-en.json": "ca486563f3e11bb8e9a30c27d08b07663914a3718d5ed56c1293316ac39946c8",
 "curriculum/course-inventory/v0.1/intermediate-4-en.json": "d8759e7d56ef7d611a0f451ea6edc490f468cf75946862bc93c8bc6f9ac5015f",
-"curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch1-course87-L1-10.json": "94bb3d449ad7f49caef9df52b84921b49055d8ed3633e2e1b1aa1ba4d6ac7882",
-"curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch2-course87-L11-20.json": "0bec61f15e9254b59d51d01e06be45e4d6a7314400dff089c5308915f4fa0841",
+"curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch1-course87-L1-10.json": "ed20aa00e9a96dc4d68527eb67033aeb127ce2ffc78691c38fe89e5fb0091862",
+"curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch2-course87-L11-20.json": "e0a921459d86b73d5ab31b6d9294a2490d426c083a885605ca84c6365069e4ac",
 "curriculum/source-mappings/advanced-v0.1.json": "740f9d6e25483a2838d5561a85c66c9eb3f67b7505a8ab9004353e5eb6883aa7",
 "curriculum/source-mappings/algebra-review-v0.1.json": "a4956b61d8353d4258097f2ea5ca8d7baf4031fdd9c090e344ca2ce366a29a0e",
 "curriculum/source-mappings/breadth-v0.1.json": "d8255409d16dcc8db7b45244ab1239896d13ac56ffe4f3eb2ecdd8778f5e4996",
@@ -21,7 +21,7 @@
 "curriculum/source-mappings/linear-equations-v0.1.json": "9e4f9fd37066e63cd74f133bcc76713db8ae30251a22f03f5a672ab535bc7e65",
 "curriculum/source-mappings/linear-equations-v0.2.json": "759f02762a92c18098944bfe8a88f2be5a0a4384f778105cb78239a07df22371",
 "curriculum/source-mappings/measurement-v0.1.json": "3ca7cc1cdb74fb6e1bf8741beea9c2787fe122befe28499e75bfd6d803409451",
-"curriculum/source-mappings/port87-v0.1.json": "6005b01bce8331292d35839ad1d71606189a94430d559c0b9386b31c65db093c",
+"curriculum/source-mappings/port87-v0.1.json": "b3a876629665d1107c4711215e44893170b4d33389c93812a622e72c6adb74f8",
 "curriculum/source-mappings/proportions-v0.1.json": "85db6cf773c6c1a6bbad37f83cf3724becf552fee4bbf4154e2ade0bae7751af",
 "curriculum/source-mappings/quadratic-equations-v0.1.json": "51b5a6c7221720481df7ac7a3cf9b4561744ef910fee5427c8cd73d6c027f4a6",
 "curriculum/source-mappings/reasoning-v0.1.json": "b88aeb99d84bd8ab367678d0c6f7d90fdc3cba8dbc087ebf108a3e835ef7f448",
@@ -30954,7 +30954,7 @@
 "reviewed": "2026-10-14",
 "note": "Ported to replace the earlier adaptation, which used numbers outside the source range.",
 "by": [
-"course-87-en:port:SN870025"
+"course-87-en:item:SN870025"
 ]
 },
 {
@@ -31264,7 +31264,7 @@
 "reviewed": "2026-10-14",
 "note": "Ported to replace the earlier adaptation: the earlier adaptation read one angle from a two-ray protractor; the original asks students to pick the right ray among nine and the right scale.",
 "by": [
-"course-87-en:port:SN870075"
+"course-87-en:item:SN870075"
 ]
 },
 {
@@ -34627,7 +34627,7 @@
 "reviewed": "2026-10-14",
 "note": "Ported to replace the earlier adaptation, which asked for a sum of place values without multiplication.",
 "by": [
-"course-87-en:port:SX870001"
+"course-87-en:item:SX870001"
 ]
 },
 {
@@ -34651,7 +34651,7 @@
 "reviewed": "2026-10-14",
 "note": "Ported to replace the earlier adaptation, which framed it as a word problem.",
 "by": [
-"course-87-en:port:SX870018"
+"course-87-en:item:SX870018"
 ]
 },
 {
@@ -34663,7 +34663,7 @@
 "reviewed": "2026-10-14",
 "note": "Ported to replace the earlier adaptation, which gave a fill-in template instead of asking for the statement.",
 "by": [
-"course-87-en:port:SX870024"
+"course-87-en:item:SX870024"
 ]
 },
 {
@@ -34675,7 +34675,7 @@
 "reviewed": "2026-10-14",
 "note": "Ported to replace the earlier adaptation, which gave a fill-in template instead of asking for the statement.",
 "by": [
-"course-87-en:port:SX870025"
+"course-87-en:item:SX870025"
 ]
 },
 {
@@ -34877,7 +34877,7 @@
 "reviewed": "2026-10-14",
 "note": "Ported to replace the earlier adaptation: the earlier adaptation showed only the subtraction, leaving out the step of renaming the fraction with the given denominator.",
 "by": [
-"course-87-en:port:SX870068"
+"course-87-en:item:SX870068"
 ]
 },
 {

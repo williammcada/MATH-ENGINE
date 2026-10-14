@@ -2,7 +2,7 @@
 import subprocess,json,pathlib
 from fractions import Fraction as F
 root=pathlib.Path(__file__).resolve().parents[1]
-js="""const E=require('./src/course-banks'),P=require('./src/proportional-bank');for(const c of P.catalog)for(let index=0;index<1000;index++){const q=E.generate(c.sourceId,{seed:'proportion-audit',index});if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'proportion-audit',index})))throw Error('Replay');if(!E.checkAnswer(q,E.answerText(q)).answerCorrect||E.checkAnswer(q,'nonsense').answerCorrect||E.checkAnswer(q,'0').answerCorrect)throw Error('Checker'); console.log(JSON.stringify({recipe:c.recipe,q}));}"""
+js="""const E=require('./src/course-banks'),P=require('./src/proportional-bank');for(const c of P.catalog.filter(c=>E.catalog.find(x=>x.sourceId===c.sourceId).family===c.family))/* entries replaced by a coverage port are audited by tests/port87.cjs */for(let index=0;index<1000;index++){const q=E.generate(c.sourceId,{seed:'proportion-audit',index});if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'proportion-audit',index})))throw Error('Replay');if(!E.checkAnswer(q,E.answerText(q)).answerCorrect||E.checkAnswer(q,'nonsense').answerCorrect||E.checkAnswer(q,'0').answerCorrect)throw Error('Checker'); console.log(JSON.stringify({recipe:c.recipe,q}));}"""
 p=subprocess.Popen(['node','-e',js],cwd=root,stdout=subprocess.PIPE,text=True)
 count=0; seen=set()
 for line in p.stdout:
@@ -44,5 +44,5 @@ for line in p.stdout:
   assert d==1
  assert q['solution'] and q['prompt'] and q['provenance']['exactLegacyReproduction'] is False
  count+=1
-assert p.wait()==0 and count==38000
+assert p.wait()==0 and count==37000  # 38 entries less SX870068, now served by its coverage port
 print(f'PASS: {count:,} independent exact checks across {len(seen)} recipes; replay and checker checks passed')

@@ -98,21 +98,6 @@
     ]
   },
   {
-    "providerSourceId": "course-87-en:item:SX870018",
-    "conceptIds": [
-      "decimal-arithmetic",
-      "focus:decimal-operations",
-      "focus:money-purchase-change"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "3ea6f2eaf3b74bcfc3909d8960e3e9e598505a71cc780f4a4a22f7c204fc9d23",
-    "limits": "Money or finite-decimal multiplication; decimal point placement, including factors below one. Decimal range min=max=0 is fractional, not constant zero.",
-    "sourceIds": [
-      "course-87-en:item:SX870018"
-    ]
-  },
-  {
     "providerSourceId": "course-87-en:item:SN870004",
     "conceptIds": [
       "decimal-arithmetic",
@@ -2588,20 +2573,6 @@
     "limits": "extension: Find the fractional share remaining. Subtract a proper fraction from one.",
     "sourceIds": [
       "course-87-en:item:SN870064"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SX870068",
-    "conceptIds": [
-      "fractions",
-      "focus:fraction-add-subtract"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "5f063e5a210d96dfa23087eed51d488be3275cf45eb9cd1892f6844781575669",
-    "limits": "Unlike denominator subtraction; one denominator is a multiple of the other.",
-    "sourceIds": [
-      "course-87-en:item:SX870068"
     ]
   },
   {
@@ -5186,20 +5157,6 @@
     ]
   },
   {
-    "providerSourceId": "course-87-en:item:SN870025",
-    "conceptIds": [
-      "number-theory",
-      "focus:common-factors-multiples"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "72f4732e5e34b465ffad984ddde0ce2e5c6271220cc5c3aaa58e4aa6ec5c2134",
-    "limits": "Find GCF for configured two or three inputs. Configurations reviewed; related-only methods path does not rank input counts.",
-    "sourceIds": [
-      "course-87-en:item:SN870025"
-    ]
-  },
-  {
     "providerSourceId": "course-87-en:item:SN870166",
     "conceptIds": [
       "number-theory",
@@ -5937,20 +5894,6 @@
     ]
   },
   {
-    "providerSourceId": "course-87-en:item:SX870001",
-    "conceptIds": [
-      "number-representation",
-      "focus:number-notation-forms"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "dad20a7e350960b545dbef56efd549190ce6231ad32855708e748bff51784d00",
-    "limits": "Expanded sums of place values; expanded-large has only two nonzero places and is not automatically harder than dense shorter numbers.",
-    "sourceIds": [
-      "course-87-en:item:SX870001"
-    ]
-  },
-  {
     "providerSourceId": "course-87-en:item:SX650185",
     "conceptIds": [
       "number-representation",
@@ -6528,34 +6471,6 @@
     "limits": "extension: Apply a single logarithm product, quotient or power law. Retain positive arguments and a common base; report the condensed argument or coefficient.",
     "sourceIds": [
       "algebra-2-en:node:843"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SX870024",
-    "conceptIds": [
-      "expressions",
-      "focus:operation-properties"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "f6bd3e8e8688619ed3d62b4da6f7edc6b02d6e3f77a86c11dd3bba264f07456a",
-    "limits": "Apply commutative or associative laws to addition or multiplication only; distinguish exchanging operands from changing grouping.",
-    "sourceIds": [
-      "course-87-en:item:SX870024"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SX870025",
-    "conceptIds": [
-      "expressions",
-      "focus:operation-properties"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "ce1a22568fee92066a70dbc6fc90b37b28b1e5a39e16748600aa69d5034ef953",
-    "limits": "Apply commutative or associative laws to addition or multiplication only; distinguish exchanging operands from changing grouping.",
-    "sourceIds": [
-      "course-87-en:item:SX870025"
     ]
   },
   {
@@ -7376,21 +7291,6 @@
     "limits": "Reviewed related-only: These multiple-choice literal-denominator rearrangements assume nonzero quantities and mix choices of the isolated variable. Existing teacher-produced literal paths require exceptional-case analysis, so a blanket same-scope or easier/harder label is not justified. Retain exact formula and domain contracts for a future narrower comparison.",
     "sourceIds": [
       "algebra-2-en:node:535"
-    ]
-  },
-  {
-    "providerSourceId": "course-87-en:item:SN870075",
-    "conceptIds": [
-      "angles",
-      "focus:angle-estimation-methods",
-      "focus:protractor-response-demands"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "f7e9437006ca7e23bfa91ba39ffe1335d534090b9a70d6520bdeb9ddeeb807c0",
-    "limits": "Read a protractor with baseline zero or 180 degrees; choose the scale aligned with the baseline and give the smaller angle. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
-    "sourceIds": [
-      "course-87-en:item:SN870075"
     ]
   },
   {
@@ -22725,17 +22625,18 @@
     ]
   },
   {
-    "providerSourceId": "course-87-en:port:SX870018",
+    "providerSourceId": "course-87-en:item:SX870018",
     "conceptIds": [
       "decimal-arithmetic",
-      "focus:decimal-operations"
+      "focus:decimal-operations",
+      "focus:money-purchase-change"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "2ee69d8216f695cfe10de8888451a6419d789e04ea8202300d1be69de5eefead",
-    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "evidenceSha256": "3ea6f2eaf3b74bcfc3909d8960e3e9e598505a71cc780f4a4a22f7c204fc9d23",
+    "limits": "Money or finite-decimal multiplication; decimal point placement, including factors below one. Decimal range min=max=0 is fractional, not constant zero.",
     "sourceIds": [
-      "course-87-en:port:SX870018"
+      "course-87-en:item:SX870018"
     ]
   },
   {
@@ -22781,29 +22682,31 @@
     ]
   },
   {
-    "providerSourceId": "course-87-en:port:SX870024",
+    "providerSourceId": "course-87-en:item:SX870024",
     "conceptIds": [
-      "expressions"
+      "expressions",
+      "focus:operation-properties"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "27c09a39a0872bc2caab80f8e2ce491cd5c987d3ab14e73db0c9cedd366739d0",
-    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "evidenceSha256": "f6bd3e8e8688619ed3d62b4da6f7edc6b02d6e3f77a86c11dd3bba264f07456a",
+    "limits": "Apply commutative or associative laws to addition or multiplication only; distinguish exchanging operands from changing grouping.",
     "sourceIds": [
-      "course-87-en:port:SX870024"
+      "course-87-en:item:SX870024"
     ]
   },
   {
-    "providerSourceId": "course-87-en:port:SX870025",
+    "providerSourceId": "course-87-en:item:SX870025",
     "conceptIds": [
-      "expressions"
+      "expressions",
+      "focus:operation-properties"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "743f6ae90055d2776923f4b035be01d4617213fc58655a8263a6bdde93cad431",
-    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "evidenceSha256": "ce1a22568fee92066a70dbc6fc90b37b28b1e5a39e16748600aa69d5034ef953",
+    "limits": "Apply commutative or associative laws to addition or multiplication only; distinguish exchanging operands from changing grouping.",
     "sourceIds": [
-      "course-87-en:port:SX870025"
+      "course-87-en:item:SX870025"
     ]
   },
   {
@@ -22917,26 +22820,28 @@
     ]
   },
   {
-    "providerSourceId": "course-87-en:port:SX870001",
+    "providerSourceId": "course-87-en:item:SX870001",
     "conceptIds": [
-      "number-representation"
+      "number-representation",
+      "focus:number-notation-forms"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "878ebe7065ee88cfe4ae8933e06d0139bb451ce41f4a0f8b87fd9570381b6fd6",
-    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "evidenceSha256": "dad20a7e350960b545dbef56efd549190ce6231ad32855708e748bff51784d00",
+    "limits": "Expanded sums of place values; expanded-large has only two nonzero places and is not automatically harder than dense shorter numbers.",
     "sourceIds": [
-      "course-87-en:port:SX870001"
+      "course-87-en:item:SX870001"
     ]
   },
   {
     "providerSourceId": "course-87-en:item:SN870020",
     "conceptIds": [
-      "number-representation"
+      "number-representation",
+      "focus:number-notation-forms"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "7d5f0edfab013fec92ee36ea7df793af39be1abb793583daaf2ab503bc0b0f07",
+    "evidenceSha256": "0ba90531093adb28c81e66feb924742d60e4f9ed0d0c7bd562322a9879a26f24",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "course-87-en:item:SN870020"
@@ -22956,16 +22861,16 @@
     ]
   },
   {
-    "providerSourceId": "course-87-en:port:SN870025",
+    "providerSourceId": "course-87-en:item:SN870025",
     "conceptIds": [
       "number-theory"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "c5f81e804392751cecc57161c64d0fd9778aa4ab3c956a361ba9d20f039c15b0",
-    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "evidenceSha256": "b2dca2b1c6d82918cb0a125834a6bb107fe82b89b36f927fa2f7d3f9614b0b90",
+    "limits": "Find GCF for configured two or three inputs. Configurations reviewed; related-only methods path does not rank input counts.",
     "sourceIds": [
-      "course-87-en:port:SN870025"
+      "course-87-en:item:SN870025"
     ]
   },
   {
@@ -23592,16 +23497,18 @@
     ]
   },
   {
-    "providerSourceId": "course-87-en:port:SX870068",
+    "providerSourceId": "course-87-en:item:SX870068",
     "conceptIds": [
-      "fraction-equivalence"
+      "fraction-equivalence",
+      "fractions",
+      "focus:fraction-add-subtract"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "23194984267ef93deb584e2220cce3a3958eedc83e6bd40e588e8725927887b3",
-    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "evidenceSha256": "5f063e5a210d96dfa23087eed51d488be3275cf45eb9cd1892f6844781575669",
+    "limits": "Unlike denominator subtraction; one denominator is a multiple of the other.",
     "sourceIds": [
-      "course-87-en:port:SX870068"
+      "course-87-en:item:SX870068"
     ]
   },
   {
@@ -23657,16 +23564,18 @@
     ]
   },
   {
-    "providerSourceId": "course-87-en:port:SN870075",
+    "providerSourceId": "course-87-en:item:SN870075",
     "conceptIds": [
-      "angles"
+      "angles",
+      "focus:angle-estimation-methods",
+      "focus:protractor-response-demands"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "f93e564f2dbfbbe0fd001a31f9909fef4466f7cf62e9502951fd1983438e8d3d",
-    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "evidenceSha256": "f7e9437006ca7e23bfa91ba39ffe1335d534090b9a70d6520bdeb9ddeeb807c0",
+    "limits": "Read a protractor with baseline zero or 180 degrees; choose the scale aligned with the baseline and give the smaller angle. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
     "sourceIds": [
-      "course-87-en:port:SN870075"
+      "course-87-en:item:SN870075"
     ]
   },
   {

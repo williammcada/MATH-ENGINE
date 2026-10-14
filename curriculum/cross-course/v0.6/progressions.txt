@@ -12,7 +12,7 @@ division-exact|whole-arithmetic|2|Divide with a three-digit whole-number quotien
 place-values|number-representation|1|Identify a digit and its value through thousands|Ones, tens, hundreds and thousands|f/place:4
 place-values|number-representation|2|Identify a digit and its value through trillions|Large-number periods|f/place:13 k/place-of-digit k/underlined-digit-value
 fraction-add-subtract|fractions|1|Add or subtract fractions with a shared denominator|Numerators count equal parts|f/fraction-same f/fraction-simplify k/add-unit-fraction k/subtract-like-fractions =/course-87-en:item:SX870052
-fraction-add-subtract|fractions|2|Add or subtract fractions, finding a common denominator when needed|Equivalent fractions and common denominators|f/fraction-unlike c/30.3 c/9.1 c/9.2 f/fraction-unlike-method p/fraction-subtract
+fraction-add-subtract|fractions|2|Add or subtract fractions, finding a common denominator when needed|Equivalent fractions and common denominators|f/fraction-unlike c/30.3 c/9.1 c/9.2 f/fraction-unlike-method k/equivalent-then-subtract
 fraction-add-subtract|fractions|3|Add or subtract mixed and whole numbers with fractional parts, regrouping when needed|Combine whole and fractional parts; regroup if needed|f/mixed-unlike f/mixed-same c/23.1 c/23.2 @/algebra-1-en:node:4 =/course-87-en:item:SX870053
 fraction-product-chain|fractions|1|Multiply two fractions|Multiply numerators and denominators; simplify|c/9.3 f/cancel-factors f/cancel-product k/multiply-fractions
 fraction-multiply|fractions|1|Multiply two fractions and simplify, with explicit cancellation where requested|Multiply numerators and denominators; simplify|c/9.3 f/cancel-factors f/cancel-product k/multiply-cancel
@@ -211,8 +211,8 @@ number-words|number-representation|3|Convert between digits and words through hu
 expanded-notation|number-representation|1|Expand a four-digit whole number by place value|Powers of ten as place values|f/expanded:4
 expanded-notation|number-representation|2|Expand a whole number through trillions|More periods and zero placeholders|f/expanded:13
 number-notation-forms|number-representation|1|Identify a place or digit value|Count digit positions rather than punctuation|e/5.1 e/5.5 f/place:4 f/place:13
-number-notation-forms|number-representation|2|Write a number in expanded notation|Sum nonzero place values|e/5.2 f/expanded:4 f/expanded:13 r/expanded-large r/expanded-small r/expanded-zero
-number-notation-forms|number-representation|3|Convert between number words and digits|Read and compose three-digit periods|e/5.3 e/5.4 f/words:3 f/words:6 f/words:9
+number-notation-forms|number-representation|2|Write a number in expanded notation|Sum nonzero place values|e/5.2 f/expanded:4 f/expanded:13 k/expanded-notation r/expanded-small r/expanded-zero
+number-notation-forms|number-representation|3|Convert between number words and digits|Read and compose three-digit periods|e/5.3 e/5.4 f/words:3 f/words:6 f/words:9 k/words-to-digits
 roman-range|numeral-systems|1|Read and write Roman numerals through 39|I, V, X and subtractive pairs|f/roman:39
 roman-range|numeral-systems|2|Read and write Roman numerals through 3999|Additional symbols and subtractive pairs across places|f/roman:3999
 decimal-division|decimal-arithmetic|1|Divide a decimal by a whole number|Place value and exact division|f/money:div f/decimal:divwhole e/1.7 c/35.3

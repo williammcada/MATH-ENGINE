@@ -18,7 +18,7 @@ Lessons 1–10 of the 8/7 bank hold 72 source records:
 | Decision | Records |
 |---|---|
 | Covered by a new port task: an open record, under its own ID | 37 |
-| Covered by a new port task that replaces a less faithful adaptation, under ID `course-87-en:port:…` | 5 |
+| Covered by a new port task that replaces a less faithful adaptation | 5 |
 | Covered by the existing adaptation, after review | 16 |
 | Consolidated: choice-only twin of a covered record, with the same script and question | 14 |
 | Retired | 0 |
@@ -34,7 +34,9 @@ Lessons 1–10 of the 8/7 bank hold 72 source records:
 | SX870001 | Asked for a sum of place values; the original asks for expanded notation with multiplication. |
 | SN870025 | Used numbers outside the original's range. |
 
-The earlier entries stay in place, so data derived from them is unaffected.
+**Change in 0.36.0-rc.2.** These replacements first had their own `course-87-en:port:…` IDs, with the earlier entries kept. They now take over the record's own ID, marked `replacesEarlierAdaptation`. `course-banks.js` drops the earlier entry, so the Studio, practice and every other consumer serve the faithful task.
+
+The derived data was rebuilt to match. Two progression selectors that named the old recipes now name the port recipes. The old bank audits skip the replaced entries, which `tests/port87.cjs` audits instead.
 
 ## How the tasks were built
 

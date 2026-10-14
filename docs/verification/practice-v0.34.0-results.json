@@ -9,7 +9,7 @@
     },
     "catalog": {
       "status": "Passed",
-      "total": 1847,
+      "total": 1840,
       "k7Skills": 312,
       "k7ByGrade": {
         "1": 19,
@@ -21,7 +21,7 @@
         "7": 33,
         "K": 20
       },
-      "autoCheckedBankEntries": 1525,
+      "autoCheckedBankEntries": 1518,
       "continuitySkills": 10,
       "courses": [
         {
@@ -46,7 +46,7 @@
           "localGrade": 5,
           "placement": "grade-assigned",
           "teacherReviewedExcluded": 124,
-          "count": 471
+          "count": 464
         },
         {
           "bankId": "algebra-half-en",
@@ -76,34 +76,34 @@
     },
     "lesson-labels": {
       "status": "Passed",
-      "entries": 1525,
+      "entries": 1518,
       "lessons": 785,
       "source": "williammcada/test-and-practice-studio@16685a8"
     },
     "generate-all-seeds": {
       "status": "Passed",
-      "count": 92350
+      "count": 92000
     },
     "deterministic": {
       "status": "Passed",
-      "count": 92350
+      "count": 92000
     },
     "own-answer-accepted": {
       "status": "Passed",
-      "count": 92350
+      "count": 92000
     },
     "json-round-trip": {
       "status": "Passed",
-      "count": 92350
+      "count": 92000
     },
     "evaluate-own-answer-valid-and-correct": {
       "status": "Passed",
-      "count": 92350
+      "count": 92000
     },
     "unsimplified-fraction-feedback": {
       "status": "Passed",
-      "count": 8325,
-      "simplestFormRequiredAndFlagged": 6301,
+      "count": 8275,
+      "simplestFormRequiredAndFlagged": 6251,
       "equivalentFormsAllowedByPrompt": {
         "items": 2024,
         "entries": 65
@@ -111,15 +111,15 @@
     },
     "perturbed-answer-rejected": {
       "status": "Passed",
-      "count": 92350
+      "count": 92000
     },
     "keypad-keys-cover-answer": {
       "status": "Passed",
-      "count": 92350
+      "count": 92000
     },
     "studio-items-identical": {
       "status": "Passed",
-      "count": 76250
+      "count": 75900
     },
     "teacher-variant-redraws": {
       "status": "Informational",
@@ -128,7 +128,7 @@
     },
     "bank-input-modes": {
       "status": "Informational",
-      "keypad": 1340,
+      "keypad": 1333,
       "keyboard": 185
     },
     "continuity-independent-oracle": {
@@ -149,8 +149,8 @@
     },
     "bundle-provenance": {
       "status": "Passed",
-      "bundleSha256": "4960e2532726af9c6d6e92ff0b30090b636522986a6e85823f99613969ee1c65",
-      "contentHash": "453534b02386e1221c38fd8a631fcd2f"
+      "bundleSha256": "e36c13ea4f7a34587d8030cdd28a1b63c6c9319282691c855c8e7a1c71ecc5c4",
+      "contentHash": "fc166d11aced7ea927ca48e2e844294c"
     }
   },
   "failures": [],
