@@ -74,39 +74,62 @@ Template numbers follow the published MTEF v3 table. Each object record names it
 - 34 checks on hand-built objects, which run anywhere.
 - With `SAXON_SOURCE_ZIP` set, also: every object in the four banks; and the export reference items, compared by hash so that no source text is stored here.
 
-## 0.4 Drawing commands and pictures: next
+## 0.4 Script preview and drawings: checkpoint 3 (mostly done)
 
-Generator scripts draw with commands. The commands, with the number of records that use each:
+**What was built:**
 
-| Command | Records |
-|---|---|
-| `slate` | 623 |
-| `line` | 581 |
-| `write` | 439 |
-| `dot` | 205 |
-| `plotx` | 137 |
-| `ticmarks` | 110 |
-| `labels` | 103 |
-| `drawpict` | 90 |
-| `nline` | 79 |
-| `poly` | 79 |
-| `circle` | 65 |
-| `angle` | 34 |
-| `loadpict` | 25 |
-| `axes` | 25 |
-| `flood` | 23 |
-| `box` | 20 |
-| `arc` | 16 |
-| `oval` | 11 |
-| `points` | 8 |
+- `scripts/legacy_script.py`: an original, sandboxed evaluator for the generator script language. It has:
+  - its own parser;
+  - no `eval`, no file, network or system access;
+  - bounded loops and restarts.
 
-Drawings depend on values the script computes. So 0.4 is an original, sandboxed evaluator for the script language that only draws a preview and is used only for review:
+  It computes sample values, including typeset values and drawings (written as SVG).
+- `scripts/legacy_preview.py`: writes a **private** HTML page showing records as the original would print them for one seed. This covers:
+  - question, answer, choices and work area;
+  - drawings;
+  - equations filled with the values.
 
-- no file or network access, and nothing from the source is run in its original program;
-- it writes SVG;
-- it is checked against export B2 and the drawing items in A1 and A4.
+  It refuses to write inside the repository except under the git-ignored `private/`.
 
-The four QuickDraw pictures, and the bank pictures that `drawpict` and `loadpict` use, are decoded in the same step.
+**Coverage.** 2,567 of the 2,642 scripts in the four generator banks preview (97%).
+
+**Semantics read from the scripts and checked against the exports:**
+
+- **`slate`:** `slate(name, height in., width in., xmin, xmax, ymin, ymax, …)`.
+- **`write`:** `write(pic, x, y, text, alignment, typeface, size)`, where typeface 3 is the italic variable style.
+- **`line` caps:** `$arrow` or code 4.
+- **`plotx`:** draws conics only inside the window it is given. This is how the original draws arcs and shading. It also draws `$line` "m,b", `$poly` with ascending coefficients, and `$parabola` "a,h,k".
+- **`fraction`:** mode 0 (the default) does not reduce; 1 reduces; 2 reduces and writes improper fractions as mixed numbers.
+- **`literal`:** gives consecutive letters, skipping the excluded ones, starting at the index it is given.
+- **`mode(m, …)`:** gives 0 when no value repeats.
+- **`correct("dN")`:** names a correct choice that is not the first answer block. It appears in 4 scripts, and the preview reports it.
+- **Picture assignment copies.** After `q2=q`, later drawing on `q` does not change `q2`.
+- **Block type 5 is a work area** that the original does not print by default (export B2, item 1).
+
+**Fidelity:**
+
+- **All of B2:** number line, angle figure, inch ruler, shaded circles and protractor angle.
+- **B1:** the equation items.
+- **A1:** the lines-and-angles and ruler items.
+- **A4:** the circle item.
+
+All of these match the printed exports in layout and content, with different random values.
+
+**Still open, reviewed per record when its batch runs:**
+
+- **75 scripts that do not preview:**
+  - restarts that never succeed (25);
+  - bank pictures from `loadpict` (20);
+  - `$power`, `$ratio`, `$rootpoly` and `$gparabola` graphs;
+  - a few one-off functions.
+- **Rough edges:**
+  - some `polynom` exponent layouts;
+  - the 4 QuickDraw pictures and the bank pictures, which are not decoded yet.
+
+**Tests.** `tests/legacy-script.py`:
+
+- 13 checks on scripts written for the test.
+- With `SAXON_SOURCE_ZIP` set, also: at least 2,567 of 2,642 scripts preview.
 
 ## 0.5 Choice-key convention: settled
 
@@ -144,7 +167,7 @@ Every batch follows DESIGN → CHANGE SPEC → IMPLEMENT → CHECKPOINT → VERI
 
 ## Not in this checkpoint
 
-- The drawing and picture decoder (0.4).
+- Bank pictures and QuickDraw pictures (rest of 0.4).
 - Batch 1.
 - Studio changes.
 - The Studio's Bank Audit view of the ledger. That comes with the first Studio re-pin.
