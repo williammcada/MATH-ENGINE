@@ -13,6 +13,7 @@
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch1-course87-L1-10.json": "ed20aa00e9a96dc4d68527eb67033aeb127ce2ffc78691c38fe89e5fb0091862",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch2-course87-L11-20.json": "e0a921459d86b73d5ab31b6d9294a2490d426c083a885605ca84c6365069e4ac",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch3-course87-L21-30.json": "fcf8b1607b30573e8cff8002347c1581506fdd678cf2795d8b1c1e77691bdbdc",
+"curriculum/coverage-ledger/v0.1/decisions/2026-10-14-batch4-course87-L31-40.json": "d71c7ab9e6d27239c01a7f897e6ba16f074d20e1a7c1f1a2c0f56aec5167c079",
 "curriculum/source-mappings/advanced-v0.1.json": "740f9d6e25483a2838d5561a85c66c9eb3f67b7505a8ab9004353e5eb6883aa7",
 "curriculum/source-mappings/algebra-review-v0.1.json": "a4956b61d8353d4258097f2ea5ca8d7baf4031fdd9c090e344ca2ce366a29a0e",
 "curriculum/source-mappings/breadth-v0.1.json": "d8255409d16dcc8db7b45244ab1239896d13ac56ffe4f3eb2ecdd8778f5e4996",
@@ -22,7 +23,7 @@
 "curriculum/source-mappings/linear-equations-v0.1.json": "9e4f9fd37066e63cd74f133bcc76713db8ae30251a22f03f5a672ab535bc7e65",
 "curriculum/source-mappings/linear-equations-v0.2.json": "759f02762a92c18098944bfe8a88f2be5a0a4384f778105cb78239a07df22371",
 "curriculum/source-mappings/measurement-v0.1.json": "3ca7cc1cdb74fb6e1bf8741beea9c2787fe122befe28499e75bfd6d803409451",
-"curriculum/source-mappings/port87-v0.1.json": "5995c4506bc6f5dc172977fb5e3ec4f9b3409ea962c1f63d5c79089583c1a093",
+"curriculum/source-mappings/port87-v0.1.json": "019b04e75f5f1f7d08bcf12b450a31a0aab55fd589b1bc1ca7d15892848080d3",
 "curriculum/source-mappings/proportions-v0.1.json": "85db6cf773c6c1a6bbad37f83cf3724becf552fee4bbf4154e2ade0bae7751af",
 "curriculum/source-mappings/quadratic-equations-v0.1.json": "51b5a6c7221720481df7ac7a3cf9b4561744ef910fee5427c8cd73d6c027f4a6",
 "curriculum/source-mappings/reasoning-v0.1.json": "b88aeb99d84bd8ab367678d0c6f7d90fdc3cba8dbc087ebf108a3e835ef7f448",
@@ -32,25 +33,25 @@
 "curriculum/source-mappings/statistics-v0.1.json": "a3ba878bad7cc71dea555ef623b6c3e89483a9c8f809d21e4d90efa9ba09ce8d"
 },
 "totals": {
-"open": 4731,
-"covered-provisional": 480,
-"covered": 169,
-"consolidated": 45,
+"open": 4681,
+"covered-provisional": 469,
+"covered": 220,
+"consolidated": 55,
 "retired": 0,
 "records": 5425,
-"percentComplete": 3.9,
-"percentIncludingProvisional": 12.8
+"percentComplete": 5.1,
+"percentIncludingProvisional": 13.7
 },
 "banks": {
 "course-87-en": {
-"open": 484,
-"covered-provisional": 91,
-"covered": 169,
-"consolidated": 45,
+"open": 434,
+"covered-provisional": 80,
+"covered": 220,
+"consolidated": 55,
 "retired": 0,
 "records": 789,
-"percentComplete": 27.1,
-"percentIncludingProvisional": 38.7
+"percentComplete": 34.9,
+"percentIncludingProvisional": 45.0
 },
 "algebra-half-en": {
 "open": 552,
@@ -6971,110 +6972,110 @@
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:31",
-"open": 3,
-"covered-provisional": 1,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 3,
+"consolidated": 1,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 25.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:32",
-"open": 4,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 3,
+"consolidated": 1,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:33",
-"open": 8,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 6,
+"consolidated": 2,
 "retired": 0,
 "records": 8,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:34",
-"open": 4,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 3,
+"consolidated": 1,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:35",
-"open": 5,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
+"covered": 5,
 "consolidated": 0,
 "retired": 0,
 "records": 5,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:36",
-"open": 5,
-"covered-provisional": 4,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 7,
+"consolidated": 2,
 "retired": 0,
 "records": 9,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 44.4
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:37",
-"open": 5,
-"covered-provisional": 3,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 7,
+"consolidated": 1,
 "retired": 0,
 "records": 8,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 37.5
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:38",
-"open": 2,
-"covered-provisional": 2,
-"covered": 0,
-"consolidated": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 3,
+"consolidated": 1,
 "retired": 0,
 "records": 4,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 50.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:39",
-"open": 5,
+"open": 0,
 "covered-provisional": 0,
-"covered": 0,
-"consolidated": 0,
+"covered": 4,
+"consolidated": 1,
 "retired": 0,
 "records": 5,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 0.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
@@ -7091,14 +7092,14 @@
 {
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:40",
-"open": 9,
-"covered-provisional": 1,
-"covered": 0,
+"open": 0,
+"covered-provisional": 0,
+"covered": 10,
 "consolidated": 0,
 "retired": 0,
 "records": 10,
-"percentComplete": 0.0,
-"percentIncludingProvisional": 10.0
+"percentComplete": 100.0,
+"percentIncludingProvisional": 100.0
 },
 {
 "bank": "course-87-en",
@@ -30589,7 +30590,13 @@
 "id": "course-87-en:item:AXG80499",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:40",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:AXG80499"
+]
 },
 {
 "id": "course-87-en:item:AXG80580",
@@ -31702,55 +31709,101 @@
 "id": "course-87-en:item:SN870139",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:31",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SX870207 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SX870207"
 },
 {
 "id": "course-87-en:item:SN870140",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:31",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870140"
+]
 },
 {
 "id": "course-87-en:item:SN870141",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:32",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SX870200 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SX870200"
 },
 {
 "id": "course-87-en:item:SN870143",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:32",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870143"
+]
 },
 {
 "id": "course-87-en:item:SN870145",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:33",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870145"
+]
 },
 {
 "id": "course-87-en:item:SN870146",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:33",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870146"
+]
 },
 {
 "id": "course-87-en:item:SN870148",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:33",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SX870168 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SX870168"
 },
 {
 "id": "course-87-en:item:SN870149",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:33",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts. The source adds 0.05 before rounding to tenths, so it keys 20.146 as 20.2; the port rounds correctly.",
+"by": [
+"course-87-en:item:SN870149"
+]
 },
 {
 "id": "course-87-en:item:SN870151",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:34",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SX870194 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SX870194"
 },
 {
 "id": "course-87-en:item:SN870153",
@@ -32048,30 +32101,47 @@
 "id": "course-87-en:item:SN870199",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:36",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation used other fractions (denominators up to 19) and colon notation; the original gives a fraction of the fans with parts from 2 to 9 and asks for the ratio \"a to b\".",
 "by": [
 "course-87-en:item:SN870199"
-],
-"basis": "proportions-v0.1.json",
-"family": "structured-proportion"
+]
 },
 {
 "id": "course-87-en:item:SN870200",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:36",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870200"
+]
 },
 {
 "id": "course-87-en:item:SN870202",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:36",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts. The script excludes its square-with-diagonals case, which keys a wrong answer; the port does the same.",
+"by": [
+"course-87-en:item:SN870202"
+]
 },
 {
 "id": "course-87-en:item:SN870205",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:37",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SX870199 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SX870199"
 },
 {
 "id": "course-87-en:item:SN870216",
@@ -32350,13 +32420,25 @@
 "id": "course-87-en:item:SN870314",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:37",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts. Choice-only record with its own range (20–50 instead of 22–55), so it has its own task.",
+"by": [
+"course-87-en:item:SN870314"
+]
 },
 {
 "id": "course-87-en:item:SN870315",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:37",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870315"
+]
 },
 {
 "id": "course-87-en:item:SN870318",
@@ -32475,35 +32557,45 @@
 "id": "course-87-en:item:SN870341",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:38",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation used a reading-time histogram with a fixed shape; the original walk histogram follows the script's bar constraints.",
 "by": [
 "course-87-en:item:SN870341"
-],
-"basis": "representations-v0.1.json",
-"family": "structured-representations"
+]
 },
 {
 "id": "course-87-en:item:SN870344",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:38",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870345 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SN870345"
 },
 {
 "id": "course-87-en:item:SN870345",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:38",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation used 3,000–3,500 voters; the original uses 10,000–50,000 voters and the script's percent ranges.",
 "by": [
 "course-87-en:item:SN870345"
-],
-"basis": "representations-v0.1.json",
-"family": "structured-representations"
+]
 },
 {
 "id": "course-87-en:item:SN870346",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:36",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870202 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes. Its script also allows a square board with diagonals, where it keys 1/3 for a 1/4 region; that case is not served.",
+"into": "course-87-en:item:SN870202"
 },
 {
 "id": "course-87-en:item:SN870347",
@@ -33576,12 +33668,13 @@
 "id": "course-87-en:item:SN870590",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:40",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same third-angle problem with two angles from 20° to 75°. (The adaptation also allows the two given angles to be equal, which the original excludes; this does not change the demand.)",
 "by": [
 "course-87-en:item:SN870590"
-],
-"basis": "representations-v0.1.json",
-"family": "structured-representations"
+]
 },
 {
 "id": "course-87-en:item:SN870591",
@@ -34457,7 +34550,13 @@
 "id": "course-87-en:item:SN870804",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:40",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts. Choice-only record with its own range (96°–114° instead of 94°–112°), so it has its own task.",
+"by": [
+"course-87-en:item:SN870804"
+]
 },
 {
 "id": "course-87-en:item:SN870805",
@@ -34492,7 +34591,13 @@
 "id": "course-87-en:item:SN870809",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:40",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SN870809"
+]
 },
 {
 "id": "course-87-en:item:SN870810",
@@ -34750,12 +34855,13 @@
 "id": "course-87-en:item:SX650321",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:36",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same die events: a given number, greater than 2–4, less than 2–6, different from 7–13.",
 "by": [
 "course-87-en:item:SX650321"
-],
-"basis": "statistics-v0.1.json",
-"family": "structured-statistics"
+]
 },
 {
 "id": "course-87-en:item:SX760005",
@@ -35272,7 +35378,13 @@
 "id": "course-87-en:item:SX870089",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:36",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870089"
+]
 },
 {
 "id": "course-87-en:item:SX870090",
@@ -35682,171 +35794,299 @@
 "id": "course-87-en:item:SX870166",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:31",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation used numbers up to 999.999; the original writes numbers from 100.112 to 333.999 in words.",
 "by": [
 "course-87-en:item:SX870166"
-],
-"basis": "representations-v0.1.json",
-"family": "structured-representations"
+]
 },
 {
 "id": "course-87-en:item:SX870167",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:32",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870167"
+]
 },
 {
 "id": "course-87-en:item:SX870168",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:33",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870168"
+]
 },
 {
 "id": "course-87-en:item:SX870170",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:34",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870170"
+]
 },
 {
 "id": "course-87-en:item:SX870171",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:35",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870171"
+]
 },
 {
 "id": "course-87-en:item:SX870172",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:35",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870172"
+]
 },
 {
 "id": "course-87-en:item:SX870182",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:35",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870182"
+]
 },
 {
 "id": "course-87-en:item:SX870189",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:35",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870189"
+]
 },
 {
 "id": "course-87-en:item:SX870193",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:35",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts. Choice-only record with no free-response twin: free response by default with distractors.",
+"by": [
+"course-87-en:item:SX870193"
+]
 },
 {
 "id": "course-87-en:item:SX870194",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:34",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts. The script draws its base value in whole steps from 1.01 (1.01, 2.01, …, 20.01); the port does the same.",
+"by": [
+"course-87-en:item:SX870194"
+]
 },
 {
 "id": "course-87-en:item:SX870195",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:36",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation used small, possibly unreduced ratios; the original gives a ratio in lowest terms with terms up to 19.",
 "by": [
 "course-87-en:item:SX870195"
-],
-"basis": "proportions-v0.1.json",
-"family": "structured-proportion"
+]
 },
 {
 "id": "course-87-en:item:SX870196",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:36",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation allowed equal or non-coprime ratio terms; the original uses different, coprime terms (2–9 and 3–9).",
 "by": [
 "course-87-en:item:SX870196"
-],
-"basis": "proportions-v0.1.json",
-"family": "structured-proportion"
+]
 },
 {
 "id": "course-87-en:item:SX870197",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:36",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870199 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SN870199"
 },
 {
 "id": "course-87-en:item:SX870198",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:37",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870198"
+]
 },
 {
 "id": "course-87-en:item:SX870199",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:37",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation scaled other triangles; the original uses its own five square-and-triangle figures.",
 "by": [
 "course-87-en:item:SX870199"
-],
-"basis": "geometry-v0.1.json",
-"family": "structured-geometry"
+]
 },
 {
 "id": "course-87-en:item:SX870200",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:32",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870200"
+]
 },
 {
 "id": "course-87-en:item:SX870201",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:33",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870201"
+]
 },
 {
 "id": "course-87-en:item:SX870202",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:39",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870202"
+]
 },
 {
 "id": "course-87-en:item:SX870203",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:40",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870203"
+]
 },
 {
 "id": "course-87-en:item:SX870204",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:40",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870204"
+]
 },
 {
 "id": "course-87-en:item:SX870205",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:40",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870205"
+]
 },
 {
 "id": "course-87-en:item:SX870206",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:40",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870206"
+]
 },
 {
 "id": "course-87-en:item:SX870207",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:31",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870207"
+]
 },
 {
 "id": "course-87-en:item:SX870208",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:38",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870208"
+]
 },
 {
 "id": "course-87-en:item:SX870214",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:40",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870214"
+]
 },
 {
 "id": "course-87-en:item:SX870215",
@@ -36183,47 +36423,71 @@
 "id": "course-87-en:item:SX870305",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:33",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SN870145 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SN870145"
 },
 {
 "id": "course-87-en:item:SX870306",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:34",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870306"
+]
 },
 {
 "id": "course-87-en:item:SX870307",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:33",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870307"
+]
 },
 {
 "id": "course-87-en:item:SX870309",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:37",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation used four scaled triangles in other units; the original uses its table of Pythagorean triples in meters, with the hypotenuse labelled.",
 "by": [
 "course-87-en:item:SX870309"
-],
-"basis": "geometry-v0.1.json",
-"family": "structured-geometry"
+]
 },
 {
 "id": "course-87-en:item:SX870310",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:37",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported to replace the earlier adaptation: the earlier adaptation was an L-shape with a cut-out; the original is a stepped figure with four labelled sides and ranges from the script.",
 "by": [
 "course-87-en:item:SX870310"
-],
-"basis": "geometry-v0.1.json",
-"family": "structured-geometry"
+]
 },
 {
 "id": "course-87-en:item:SX870312",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:37",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870312"
+]
 },
 {
 "id": "course-87-en:item:SX870313",
@@ -36247,7 +36511,13 @@
 "id": "course-87-en:item:SX870316",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:40",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts. Choice-only record with no free-response twin: free response by default with distractors.",
+"by": [
+"course-87-en:item:SX870316"
+]
 },
 {
 "id": "course-87-en:item:SX870317",
@@ -36440,25 +36710,47 @@
 "id": "course-87-en:item:SX870374",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:39",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870374"
+]
 },
 {
 "id": "course-87-en:item:SX870375",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:39",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870375"
+]
 },
 {
 "id": "course-87-en:item:SX870376",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:39",
-"state": "open"
+"state": "covered",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts.",
+"by": [
+"course-87-en:item:SX870376"
+]
 },
 {
 "id": "course-87-en:item:SX870377",
 "bank": "course-87-en",
 "lessonId": "course-87-en:scope:39",
-"state": "open"
+"state": "consolidated",
+"batch": "batch-4 course-87 lessons 31-40",
+"reviewed": "2026-10-14",
+"note": "Choice-only twin of SX870376 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes.",
+"into": "course-87-en:item:SX870376"
 },
 {
 "id": "course-87-en:item:SX870378",

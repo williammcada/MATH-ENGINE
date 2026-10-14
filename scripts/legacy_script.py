@@ -765,6 +765,8 @@ def d_slate(env, a):
 def d_line(env, a):
     p = pic(env, a[0])
     v = args(env, a[1:])
+    if len(v) == 3:   # line(q, x1, y1, x2): a horizontal segment (seen in SX870214)
+        v = v + [v[1]]
     x1, y1, x2, y2 = [num(t) for t in v[:4]]
     extra = v[4:] + [None] * 6
     thick = None if extra[0] is None else num(extra[0])

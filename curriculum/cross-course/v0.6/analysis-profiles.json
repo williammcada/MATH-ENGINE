@@ -6672,126 +6672,6 @@
     "samplePrompt": "3/7 of a trail has been walked. What fraction remains? Give a simplified fraction."
   },
   {
-    "sourceId": "course-87-en:item:SX870195",
-    "providerSourceId": "course-87-en:item:SX870195",
-    "bankId": "course-87-en",
-    "topic": "ratio-proportion",
-    "action": "Reverse a ratio",
-    "recipe": "ratio-reverse",
-    "family": "structured-proportion",
-    "title": "Reverse a ratio",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:36",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "ratio-forms",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "related: Write ratios in the requested order or notation. Part-to-part and part-to-whole denominators differ."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "The ratio of red counters to green counters is 7:6. Give the ratio of green to red in lowest terms."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870196",
-    "providerSourceId": "course-87-en:item:SX870196",
-    "bankId": "course-87-en",
-    "topic": "ratio-proportion",
-    "action": "Find a fraction from a part-to-part ratio",
-    "recipe": "ratio-part",
-    "family": "structured-proportion",
-    "title": "Find a fraction from a part-to-part ratio",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:36",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "ratio-forms",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "related: Write ratios in the requested order or notation. Part-to-part and part-to-whole denominators differ."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "A box contains only red and green counters, in the ratio 2:9. What fraction are green? Give a simplified fraction."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870199",
-    "providerSourceId": "course-87-en:item:SN870199",
-    "bankId": "course-87-en",
-    "topic": "ratio-proportion",
-    "action": "Convert a fraction to a part-to-part ratio",
-    "recipe": "fraction-ratio",
-    "family": "structured-proportion",
-    "title": "Convert a fraction to a part-to-part ratio",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:36",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "ratio-forms",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "proportional"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "related: Write ratios in the requested order or notation. Part-to-part and part-to-whole denominators differ."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "7/13 of a team are beginners; everyone else is experienced. Give the ratio of beginners to experienced members in lowest terms."
-  },
-  {
     "sourceId": "course-87-en:item:SN870224",
     "providerSourceId": "course-87-en:item:SN870224",
     "bankId": "course-87-en",
@@ -10440,111 +10320,6 @@
       "reason": "From labeled whole-number rectangle sides, calculate both perimeter and area; distinguish linear and square units. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
     },
     "samplePrompt": "Find (a) the perimeter in mm and (b) the area in mm\u00b2 of the rectangle. Enter the numerical answers in the stated order, separated by semicolons, without units. Exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870309",
-    "providerSourceId": "course-87-en:item:SX870309",
-    "bankId": "course-87-en",
-    "topic": "area",
-    "action": "Find right-triangle area",
-    "recipe": "right-triangle-area",
-    "family": "structured-geometry",
-    "title": "Find right-triangle area",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:37",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "triangle-area-production",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "geometry"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Find right-triangle area from the two perpendicular legs. The labeled hypotenuse is a distractor, not an altitude requirement. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "samplePrompt": "Find the area of the right triangle in m\u00b2. Enter the numerical answer without units. Exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870310",
-    "providerSourceId": "course-87-en:item:SX870310",
-    "bankId": "course-87-en",
-    "topic": "area",
-    "action": "Find area of a compound rectilinear figure",
-    "recipe": "compound-area",
-    "family": "structured-geometry",
-    "title": "Find area of a compound rectilinear figure",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:37",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "area-rectilinear",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "geometry"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "samplePrompt": "Find the area of the figure in cm\u00b2. All corners are right angles. Enter the numerical answer without units. Exact fractions or terminating decimals are accepted."
-  },
-  {
-    "sourceId": "course-87-en:item:SX870199",
-    "providerSourceId": "course-87-en:item:SX870199",
-    "bankId": "course-87-en",
-    "topic": "area",
-    "action": "Find area of a square-and-triangle figure",
-    "recipe": "square-triangle-area",
-    "family": "structured-geometry",
-    "title": "Find area of a square-and-triangle figure",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:37",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "composite-area-shapes",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "geometry"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Combine a square and right triangle; infer the triangular base as total length minus square side, then sum component areas. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Find the area of the compound figure in mm\u00b2. The dashed perpendicular separates a square and a right triangle. Enter the numerical answer without units. Exact fractions or terminating decimals are accepted."
   },
   {
     "sourceId": "course-87-en:item:SN870327",
@@ -15203,41 +14978,6 @@
     "samplePrompt": "Write 11,828,862 in words."
   },
   {
-    "sourceId": "course-87-en:item:SX870166",
-    "providerSourceId": "course-87-en:item:SX870166",
-    "bankId": "course-87-en",
-    "topic": "number-representation",
-    "action": "Write a decimal in words",
-    "recipe": "words-decimal",
-    "family": "structured-representations",
-    "title": "Write a decimal in words",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:31",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "decimal-number-words",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "decimal-words"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "extension: Read or write a decimal through thousandths. Name the fractional place as well as the whole part."
-    },
-    "samplePrompt": "Write 562.873 in words. Use \u201cand\u201d only between the whole-number part and the fractional part; name the fractional place value."
-  },
-  {
     "sourceId": "course-87-en:item:SN870029",
     "providerSourceId": "course-87-en:item:SN870029",
     "bankId": "course-87-en",
@@ -15271,81 +15011,6 @@
       "reason": "Recognize segment, ray, line, angle, parallel lines or intersecting lines from endpoint/arrow conventions in a supplied drawing. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
     },
     "samplePrompt": "Name the figure: segment, ray, line, angle, parallel lines, or intersecting lines."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870341",
-    "providerSourceId": "course-87-en:item:SN870341",
-    "bankId": "course-87-en",
-    "topic": "data-displays",
-    "action": "Read a histogram interval",
-    "recipe": "histogram-read",
-    "family": "structured-representations",
-    "title": "Read a histogram interval",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:38",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "histogram-read-depth",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Read one histogram-bin frequency from five intervals with frequencies two through ten; do not interpret a bar as one raw observation. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "samplePrompt": "The histogram shows students' daily reading times in whole minutes. How many students read for 10\u201319 minutes? Enter numerical values without units; use semicolons between multiple answers."
-  },
-  {
-    "sourceId": "course-87-en:item:SN870345",
-    "providerSourceId": "course-87-en:item:SN870345",
-    "bankId": "course-87-en",
-    "topic": "data-displays",
-    "action": "Read a circle graph",
-    "recipe": "pie-read",
-    "family": "structured-representations",
-    "title": "Read a circle graph",
-    "course": "Introduction to PreAlgebra (8/7)",
-    "localGrade": 5,
-    "placement": "grade-assigned",
-    "lessonId": "course-87-en:scope:38",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "circle-graph-production",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Convert a labeled circle-graph percentage into a voter count; the voter total is a multiple of 100. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained within-course directions"
-    },
-    "samplePrompt": "The circle graph shows the ages of 3900 voters. How many voters are 18\u201334 years old? Enter numerical values without units; use semicolons between multiple answers."
   },
   {
     "sourceId": "course-87-en:item:SN870590",
@@ -80122,5 +79787,1527 @@
     ],
     "comparisonStatus": "reviewed progression",
     "samplePrompt": "Simplify: 4 1/2 \u2212 3 4/5 Enter a simplified mixed number, proper fraction or integer."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870166",
+    "providerSourceId": "course-87-en:item:SX870166",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Write a decimal number in words",
+    "recipe": "decimal-words",
+    "family": "structured-port87",
+    "title": "Write a decimal number in words",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:31",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-number-words",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "words"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "extension: Read or write a decimal through thousandths. Name the fractional place as well as the whole part."
+    },
+    "samplePrompt": "Use words to write 220.347."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870140",
+    "providerSourceId": "course-87-en:item:SN870140",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Write a decimal number in words",
+    "recipe": "decimal-words",
+    "family": "structured-port87",
+    "title": "Write a decimal number in words",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:31",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-number-words",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "words"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use words to write 1.9."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870207",
+    "providerSourceId": "course-87-en:item:SX870207",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Write a number named in words as a decimal and a mixed number",
+    "recipe": "decimal-and-mixed",
+    "family": "structured-port87",
+    "title": "Write a number named in words as a decimal and a mixed number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:31",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-number-words",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Write twenty-five and sixty-one hundredths as (a) a decimal number and (b) a mixed number. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870200",
+    "providerSourceId": "course-87-en:item:SX870200",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Convert millimeters to centimeters",
+    "recipe": "mm-to-cm",
+    "family": "structured-port87",
+    "title": "Convert millimeters to centimeters",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:32",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "unit-conversion",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The length of a line segment is 48 mm. How long is the segment in centimeters? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870167",
+    "providerSourceId": "course-87-en:item:SX870167",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Compare metric measures",
+    "recipe": "metric-compare",
+    "family": "structured-port87",
+    "title": "Compare metric measures",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:32",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Compare: 15.2 kg \u25cb 152 g. Answer with <, >, or =."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870143",
+    "providerSourceId": "course-87-en:item:SN870143",
+    "bankId": "course-87-en",
+    "topic": "measurement",
+    "action": "Convert between metric units of length",
+    "recipe": "metric-how-many",
+    "family": "structured-port87",
+    "title": "Convert between metric units of length",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:32",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "unit-conversion",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "How many meters are there in 700 millimeters? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870307",
+    "providerSourceId": "course-87-en:item:SX870307",
+    "bankId": "course-87-en",
+    "topic": "number-order",
+    "action": "Compare decimal numbers",
+    "recipe": "decimal-compare",
+    "family": "structured-port87",
+    "title": "Compare decimal numbers",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:33",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-list-order",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Compare: 49.03 \u25cb 49.1. Answer with <, >, or =."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870145",
+    "providerSourceId": "course-87-en:item:SN870145",
+    "bankId": "course-87-en",
+    "topic": "number-order",
+    "action": "Find the false statement comparing decimals",
+    "recipe": "false-decimal-statement",
+    "family": "structured-port87",
+    "title": "Find the false statement comparing decimals",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:33",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-list-order",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which of the following is not a true statement? (a) 3.60009 < 3.61   (b) 3.394 > 3.384   (c) 26.20 = 26.20000   (d) 24.9900 < 24.99   Answer with the letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870146",
+    "providerSourceId": "course-87-en:item:SN870146",
+    "bankId": "course-87-en",
+    "topic": "number-order",
+    "action": "Find the list of decimals in increasing order",
+    "recipe": "order-decimals",
+    "family": "structured-port87",
+    "title": "Find the list of decimals in increasing order",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:33",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-list-order",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Which of the following is ordered from least to greatest? (a) 0.05   0.22   0.29   0.46   (b) 0.05   0.22   0.46   0.29   (c) 0.10   0.66   0.22   0.05   (d) 0.46   0.29   0.22   0.05   Answer with the letter."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870201",
+    "providerSourceId": "course-87-en:item:SX870201",
+    "bankId": "course-87-en",
+    "topic": "rounding-estimation",
+    "action": "Round to the nearest thousandth",
+    "recipe": "round-thousandth",
+    "family": "structured-port87",
+    "title": "Round to the nearest thousandth",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:33",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rounding",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Round 0.441046 to the nearest thousandth. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870168",
+    "providerSourceId": "course-87-en:item:SX870168",
+    "bankId": "course-87-en",
+    "topic": "rounding-estimation",
+    "action": "Round a decimal to two places",
+    "recipe": "round-decimal-two",
+    "family": "structured-port87",
+    "title": "Round a decimal to two places",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:33",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rounding",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Round 2983.7005 (a) to the nearest hundredth and (b) to the nearest hundred. Enter exact decimal or whole-number answers. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870149",
+    "providerSourceId": "course-87-en:item:SN870149",
+    "bankId": "course-87-en",
+    "topic": "rounding-estimation",
+    "action": "Round to the nearest tenth or hundredth",
+    "recipe": "round-decimal-place",
+    "family": "structured-port87",
+    "title": "Round to the nearest tenth or hundredth",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:33",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "rounding",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Round 35.362 to the nearest tenth. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870170",
+    "providerSourceId": "course-87-en:item:SX870170",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Average of two points on a decimal number line",
+    "recipe": "number-line-average",
+    "family": "structured-port87",
+    "title": "Average of two points on a decimal number line",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:34",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Find the average of the 2 numbers marked by arrows on this number line. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870194",
+    "providerSourceId": "course-87-en:item:SX870194",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Missing segment length with decimals",
+    "recipe": "segment-bc",
+    "family": "structured-port87",
+    "title": "Missing segment length with decimals",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:34",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Segment AB is 56.04 mm long. Segment CD is 14.01 mm long. Segment AD is 98.07 mm long. How long is segment BC? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870306",
+    "providerSourceId": "course-87-en:item:SX870306",
+    "bankId": "course-87-en",
+    "topic": "number-representation",
+    "action": "Name a point on a decimal number line",
+    "recipe": "number-line-point",
+    "family": "structured-port87",
+    "title": "Name a point on a decimal number line",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:34",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "What decimal number names the point marked with an arrow on this number line? Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870171",
+    "providerSourceId": "course-87-en:item:SX870171",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Add decimals and a whole number",
+    "recipe": "decimal-sum",
+    "family": "structured-port87",
+    "title": "Add decimals and a whole number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:35",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 8.25 + 8 + 8.3 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870172",
+    "providerSourceId": "course-87-en:item:SX870172",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Subtract decimals",
+    "recipe": "decimal-difference",
+    "family": "structured-port87",
+    "title": "Subtract decimals",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:35",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 11.89 \u2212 0.792 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870182",
+    "providerSourceId": "course-87-en:item:SX870182",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Multiply a decimal by itself",
+    "recipe": "decimal-square",
+    "family": "structured-port87",
+    "title": "Multiply a decimal by itself",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:35",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-operations",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 1.8 \u00d7 1.8 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870189",
+    "providerSourceId": "course-87-en:item:SX870189",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide a decimal by a whole number",
+    "recipe": "decimal-divide-whole",
+    "family": "structured-port87",
+    "title": "Divide a decimal by a whole number",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:35",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 6.37 \u00f7 7 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870193",
+    "providerSourceId": "course-87-en:item:SX870193",
+    "bankId": "course-87-en",
+    "topic": "decimal-arithmetic",
+    "action": "Divide by a decimal",
+    "recipe": "decimal-divide-decimal",
+    "family": "structured-port87",
+    "title": "Divide by a decimal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:35",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-division",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Simplify: 2.22 \u00f7 0.3 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870195",
+    "providerSourceId": "course-87-en:item:SX870195",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Reverse a ratio",
+    "recipe": "ratio-reverse",
+    "family": "structured-port87",
+    "title": "Reverse a ratio",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:36",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-forms",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "ratio"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "related: Write ratios in the requested order or notation. Part-to-part and part-to-whole denominators differ."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "The ratio of green beans to sweet peas in the garden was 7 to 5. What was the ratio of sweet peas to green beans?"
+  },
+  {
+    "sourceId": "course-87-en:item:SX870196",
+    "providerSourceId": "course-87-en:item:SX870196",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Fraction of a whole from a ratio",
+    "recipe": "ratio-part-fraction",
+    "family": "structured-port87",
+    "title": "Fraction of a whole from a ratio",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:36",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-forms",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "related: Write ratios in the requested order or notation. Part-to-part and part-to-whole denominators differ."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "A box contained only milk chocolates and dark chocolates. If the ratio of milk chocolates to dark chocolates was 8 to 3, what fraction of the chocolates were dark chocolates? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870089",
+    "providerSourceId": "course-87-en:item:SX870089",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Fraction of the rest and a part-to-part ratio",
+    "recipe": "fraction-rest-ratio",
+    "family": "structured-port87",
+    "title": "Fraction of the rest and a part-to-part ratio",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:36",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-forms",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "fraction-ratio"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Five ninths of those who entered the haunted maze at the fair screamed. All the rest laughed. (a) What fraction of those who entered the haunted maze laughed? (b) What was the ratio of those who screamed to those who laughed? Separate the answers with a semicolon."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870199",
+    "providerSourceId": "course-87-en:item:SN870199",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Part-to-part ratio from a fraction",
+    "recipe": "fans-ratio",
+    "family": "structured-port87",
+    "title": "Part-to-part ratio from a fraction",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:36",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "ratio-forms",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "ratio"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "related: Write ratios in the requested order or notation. Part-to-part and part-to-whole denominators differ."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "At the football game 5/12 of the fans were rooting for the Jaguars. The rest were rooting for the Seahawks. What was the ratio of Jaguars fans to Seahawks fans?"
+  },
+  {
+    "sourceId": "course-87-en:item:SN870200",
+    "providerSourceId": "course-87-en:item:SN870200",
+    "bankId": "course-87-en",
+    "topic": "probability",
+    "action": "Probability on a spinner",
+    "recipe": "spinner",
+    "family": "structured-port87",
+    "title": "Probability on a spinner",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:36",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If you spin the spinner, what is the probability that the pointer will land on B? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870202",
+    "providerSourceId": "course-87-en:item:SN870202",
+    "bankId": "course-87-en",
+    "topic": "probability",
+    "action": "Probability of hitting a shaded region",
+    "recipe": "dart-board",
+    "family": "structured-port87",
+    "title": "Probability of hitting a shaded region",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:36",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "probability-events",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "fraction"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "If a randomly thrown dart hits the board below, what is the probability it will hit the shaded region? Enter a fraction in lowest terms (or an integer)."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870309",
+    "providerSourceId": "course-87-en:item:SX870309",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a right triangle",
+    "recipe": "right-triangle-area",
+    "family": "structured-port87",
+    "title": "Area of a right triangle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:37",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "triangle-area-method",
+        "level": 2
+      },
+      {
+        "trackId": "triangle-area-production",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Find right-triangle area from the two perpendicular legs. The labeled hypotenuse is a distractor, not an altitude requirement. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "samplePrompt": "Find the area of this triangle. Dimensions are in meters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870198",
+    "providerSourceId": "course-87-en:item:SX870198",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a triangle from coordinates",
+    "recipe": "coordinate-triangle-area",
+    "family": "structured-port87",
+    "title": "Area of a triangle from coordinates",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:37",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "triangle-area-method",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "The coordinates of the vertices of a triangle are (0, 6), (\u22123, 8), and (\u22123, 6). Find the area of the triangle in square units. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870315",
+    "providerSourceId": "course-87-en:item:SN870315",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of half a rectangle",
+    "recipe": "diagonal-plot",
+    "family": "structured-port87",
+    "title": "Area of half a rectangle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:37",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "triangle-area-method",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A farmer divided his rectangular plot into two equal triangular sections. Find the area of each of the new sections. Dimensions are in meters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870314",
+    "providerSourceId": "course-87-en:item:SN870314",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of half a rectangle",
+    "recipe": "diagonal-plot",
+    "family": "structured-port87",
+    "title": "Area of half a rectangle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:37",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "triangle-area-method",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "A farmer divided his rectangular plot into two equal triangular sections. Find the area of each of the new sections. Dimensions are in meters. Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870310",
+    "providerSourceId": "course-87-en:item:SX870310",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a figure with right-angle corners",
+    "recipe": "step-area",
+    "family": "structured-port87",
+    "title": "Area of a figure with right-angle corners",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:37",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-rectilinear",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of this figure. Dimensions are in meters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870312",
+    "providerSourceId": "course-87-en:item:SX870312",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a square-and-rectangle figure",
+    "recipe": "l-shape-area",
+    "family": "structured-port87",
+    "title": "Area of a square-and-rectangle figure",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:37",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-rectilinear",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the area of this figure. Dimensions are in meters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870199",
+    "providerSourceId": "course-87-en:item:SX870199",
+    "bankId": "course-87-en",
+    "topic": "area",
+    "action": "Area of a square-and-triangle figure",
+    "recipe": "square-triangle-area",
+    "family": "structured-port87",
+    "title": "Area of a square-and-triangle figure",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:37",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "area-rectilinear",
+        "level": 3
+      },
+      {
+        "trackId": "composite-area-shapes",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Combine a square and right triangle; infer the triangular base as total length minus square side, then sum component areas. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "Find the area of this figure. Dimensions are in centimeters. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870208",
+    "providerSourceId": "course-87-en:item:SX870208",
+    "bankId": "course-87-en",
+    "topic": "data-displays",
+    "action": "Read an election tally sheet",
+    "recipe": "tally-votes",
+    "family": "structured-port87",
+    "title": "Read an election tally sheet",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:38",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Refer to the election tally sheet. (a) The first-place candidate received how many more votes than the third-place candidate? (b) What fraction of the votes did Frank receive? Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870341",
+    "providerSourceId": "course-87-en:item:SN870341",
+    "bankId": "course-87-en",
+    "topic": "data-displays",
+    "action": "Read a histogram",
+    "recipe": "histogram-walk",
+    "family": "structured-port87",
+    "title": "Read a histogram",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:38",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "histogram-read-depth",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Read one histogram-bin frequency from five intervals with frequencies two through ten; do not interpret a bar as one raw observation. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "samplePrompt": "The histogram below shows the number of minutes students walked during a fund-raising walk. How many students walked for 10\u201319 minutes? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870345",
+    "providerSourceId": "course-87-en:item:SN870345",
+    "bankId": "course-87-en",
+    "topic": "data-displays",
+    "action": "Use a circle graph to find a number of people",
+    "recipe": "circle-graph",
+    "family": "structured-port87",
+    "title": "Use a circle graph to find a number of people",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:38",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "graph-reading",
+        "level": 3
+      },
+      {
+        "trackId": "circle-graph-production",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Convert a labeled circle-graph percentage into a voter count; the voter total is a multiple of 100. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained within-course directions"
+    },
+    "samplePrompt": "The circle graph was published in the Cane County annual report. If there are 45,890 registered voters in Cane County, how many are 35\u201345 years old? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870374",
+    "providerSourceId": "course-87-en:item:SX870374",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Solve a proportion",
+    "recipe": "proportion-solve",
+    "family": "structured-port87",
+    "title": "Solve a proportion",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:39",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "proportion-number-types",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: j/6 = 36/18 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870375",
+    "providerSourceId": "course-87-en:item:SX870375",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Solve a proportion",
+    "recipe": "proportion-solve",
+    "family": "structured-port87",
+    "title": "Solve a proportion",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:39",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "proportion-number-types",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: 9/5 = d/45 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870202",
+    "providerSourceId": "course-87-en:item:SX870202",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Solve a proportion with a decimal",
+    "recipe": "proportion-solve",
+    "family": "structured-port87",
+    "title": "Solve a proportion with a decimal",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:39",
+    "standard": null,
+    "alias": null,
+    "memberships": [],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "samplePrompt": "Solve: 92/x = 46/4.8 Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870376",
+    "providerSourceId": "course-87-en:item:SX870376",
+    "bankId": "course-87-en",
+    "topic": "ratio-proportion",
+    "action": "Solve a proportion",
+    "recipe": "proportion-solve",
+    "family": "structured-port87",
+    "title": "Solve a proportion",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:39",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "proportion-number-types",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Solve: 4/6 = 8/c Enter exact decimal or whole-number answers."
+  },
+  {
+    "sourceId": "course-87-en:item:AXG80499",
+    "providerSourceId": "course-87-en:item:AXG80499",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Missing acute angle of a right triangle",
+    "recipe": "right-triangle-x",
+    "family": "structured-port87",
+    "title": "Missing acute angle of a right triangle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:40",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the value of x in degrees. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870809",
+    "providerSourceId": "course-87-en:item:SN870809",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Missing angle of an isosceles triangle",
+    "recipe": "isosceles-angle",
+    "family": "structured-port87",
+    "title": "Missing angle of an isosceles triangle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:40",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing angle measure n, in degrees. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SN870804",
+    "providerSourceId": "course-87-en:item:SN870804",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Missing angle of an isosceles triangle",
+    "recipe": "isosceles-angle",
+    "family": "structured-port87",
+    "title": "Missing angle of an isosceles triangle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:40",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-measures",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the missing angle measure n, in degrees. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870203",
+    "providerSourceId": "course-87-en:item:SX870203",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Complementary angles named by expressions",
+    "recipe": "complementary-expression",
+    "family": "structured-port87",
+    "title": "Complementary angles named by expressions",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:40",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-relationship-application",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the measure of \u2220SOX in degrees. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870204",
+    "providerSourceId": "course-87-en:item:SX870204",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Find an angle through a chain of triangles",
+    "recipe": "right-angle-chain",
+    "family": "structured-port87",
+    "title": "Find an angle through a chain of triangles",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:40",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "triangle-angle-interpretations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the measure of \u2220x in degrees. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870205",
+    "providerSourceId": "course-87-en:item:SX870205",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Angle formed by a line crossing a zigzag",
+    "recipe": "parallel-zigzag",
+    "family": "structured-port87",
+    "title": "Angle formed by a line crossing a zigzag",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:40",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-measures",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the measure of \u2220x in degrees. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870206",
+    "providerSourceId": "course-87-en:item:SX870206",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Angles where two triangles meet at crossing lines",
+    "recipe": "crossing-triangles",
+    "family": "structured-port87",
+    "title": "Angles where two triangles meet at crossing lines",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:40",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-relationship-application",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Use the figure. (a) What is m\u2220w in degrees? (b) What is m\u2220z in degrees? Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870214",
+    "providerSourceId": "course-87-en:item:SX870214",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Angles where a triangle side crosses a line",
+    "recipe": "triangle-line-angles",
+    "family": "structured-port87",
+    "title": "Angles where a triangle side crosses a line",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:40",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-relationship-application",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the measures of \u2220a, \u2220b, and \u2220c in degrees. Enter exact numerical answers without units. Separate answers with semicolons."
+  },
+  {
+    "sourceId": "course-87-en:item:SX870316",
+    "providerSourceId": "course-87-en:item:SX870316",
+    "bankId": "course-87-en",
+    "topic": "angles",
+    "action": "Base angle of a triangle from a vertical angle",
+    "recipe": "crossing-lines-triangle",
+    "family": "structured-port87",
+    "title": "Base angle of a triangle from a vertical angle",
+    "course": "Introduction to PreAlgebra (8/7)",
+    "localGrade": 5,
+    "placement": "grade-assigned",
+    "lessonId": "course-87-en:scope:40",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "triangle-angle-interpretations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the measure of \u2220x in degrees. Enter exact numerical answers without units."
   }
 ]

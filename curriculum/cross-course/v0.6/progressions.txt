@@ -22,11 +22,11 @@ perimeter|perimeter|1|Find a square or rectangle perimeter, using a formula when
 perimeter|perimeter|2|Find perimeter of an irregular quadrilateral or a labelled polygon|Track each labelled boundary side rather than assuming equal sides|x/perimeter-irregular c/19.1 k/quad-perimeter
 perimeter|perimeter|3|Find an L-shaped boundary perimeter with implied sides|Infer missing lengths and follow the complete boundary|f/compound-perimeter g/compound-perimeter k/step-perimeter
 area-rectilinear|area|1|Find rectangular area using unit squares or perpendicular side lengths|Multiply perpendicular side lengths|r/rectangle-area c/20.6 f/array-area k/rectangle-abcd
-area-rectilinear|area|2|Find area of a compound rectilinear figure by partitioning or subtraction|Partition without overlap and add component areas|c/37.3 g/compound-area c/37.4
-area-rectilinear|area|3|Find area of a figure combining rectangular and triangular regions|Triangle area and decomposition|c/75.1
+area-rectilinear|area|2|Find area of a compound rectilinear figure by partitioning or subtraction|Partition without overlap and add component areas|c/37.3 g/compound-area c/37.4 k/step-area k/l-shape-area
+area-rectilinear|area|3|Find area of a figure combining rectangular and triangular regions|Triangle area and decomposition|c/75.1 k/square-triangle-area
 circle-area|circle-measurement|1|Find circle area from a radius|Square the radius and apply the stated pi convention|c/82.1 g/circle-area
 circle-area|circle-measurement|2|Find sector area|Use the angle fraction of a whole circle|c/104.3 v/sector-area
-unit-conversion|measurement|1|Convert between two metric units|Metric place-value factors|c/32.2
+unit-conversion|measurement|1|Convert between two metric units|Metric place-value factors|c/32.2 k/mm-to-cm k/metric-how-many
 unit-conversion|measurement|2|Convert with more than one unit multiplier|Cancel intermediate units in a chain|c/88.1
 unit-conversion|measurement|3|Convert square units|Square the linear conversion factor|c/88.2 o/area-units
 unit-conversion|measurement|4|Convert cubic units with six unit multipliers|Cube linear factors and preserve dimensional cancellation|z/units:volume-chain
@@ -63,7 +63,7 @@ ratio-total|ratio-proportion|3|Connect quantities through two ratios|Match and s
 average|statistics|1|Find the arithmetic mean of a list|Add values and divide by count|c/28.2 f/mean-small k/average-five
 average|statistics|2|Find a missing value given the mean|Recover the required total|c/55.2 s/missing-value
 average|statistics|3|Find a combined or weighted average|Weight each group by its size|c/55.3 s/weighted-scores
-probability-events|probability|1|Find probability of one event|Count favorable and total outcomes|c/36.3 s/marble-single
+probability-events|probability|1|Find probability of one event|Count favorable and total outcomes|c/36.3 s/marble-single k/spinner k/dart-board
 probability-events|probability|2|Find probability of ordered independent events|Multiply independent probabilities|c/94.2
 probability-events|probability|3|Find probability without replacement|Update the sample space after the first draw|c/94.3 m/counting:probability
 powers|powers-roots|1|Evaluate a positive whole-number power|Repeated multiplication|c/20.3 b/positive-power f/power-small k/power-sum k/power-difference
@@ -116,8 +116,8 @@ motion|rates|4|Solve a river-current motion model|Use upstream and downstream ef
 binary|numeral-systems|1|Convert between base two and base ten|Powers of two and place value|c/COURSE213.1 c/COURSE213.2 b/binary-read b/binary-write
 binary|numeral-systems|2|Add whole binary numbers|Carry in base two|h/binary:add o/binary-add
 binary|numeral-systems|3|Add binary fractions|Negative powers of two and aligned binary points|h/binary:fraction-add o/binary-fractions
-angle-measures|angles|1|Find the third angle of a triangle|Triangle angle sum|c/40.2 r/triangle-angle
-angle-measures|angles|2|Find angles formed by parallel lines and a transversal|Corresponding, alternate and supplementary angles|c/102.1
+angle-measures|angles|1|Find the third angle of a triangle|Triangle angle sum|c/40.2 r/triangle-angle k/right-triangle-x k/isosceles-angle
+angle-measures|angles|2|Find angles formed by parallel lines and a transversal|Corresponding, alternate and supplementary angles|c/102.1 k/parallel-zigzag
 clock-time|calendar-time|1|Read an analog clock|Hour and minute hands|b/clock-read
 clock-time|calendar-time|2|Find a start, end or elapsed time within the same day|Hour boundaries and consistent time units|c/12.4 f/clock-elapsed f/schedule k/elapsed-time
 clock-time|calendar-time|3|Calculate elapsed time across midnight|Track the date boundary|b/elapsed-overnight
@@ -136,8 +136,8 @@ statistical-displays|data-displays|2|Construct a stem-and-leaf display|Organize 
 statistical-displays|data-displays|3|Construct a box plot|Median, quartiles and extremes|a/boxplot:draw c/INV4.5
 experimental-data|data-displays|1|Plot a given linear equation|Coordinate plotting and line features|a/line:graph
 experimental-data|data-displays|2|Estimate a linear model from experimental data|Choose a trend and distinguish estimate from interpolation|z/data:graph z/data:table
-decimal-operations|decimal-arithmetic|1|Add or subtract decimals|Align decimal places|f/decimal:add f/decimal:sub f/money:add f/money:sub c/35.1 @/course-1-en:bank:C1_Section04:item:C1_S04_00080 @/course-1-en:bank:C1_Section04:item:C1_S04_00081 @/course-1-en:bank:C1_Section04:item:C1_S04_00123 @/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00072 @/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00074 @/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00122 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00071 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00091 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00092 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00106 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00110 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00111 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00115 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00116 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00137 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00141 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00142 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00145 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00146 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00077 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00079 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00081 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00082
-decimal-operations|decimal-arithmetic|2|Multiply decimals|Place-value scaling in a product|f/decimal:mul f/money:mul c/35.2 @/course-87-en:item:SX870018 @/course-87-en:item:SN870004 @/course-1-en:bank:C1_Section01:item:C1_S01_00112 @/course-1-en:bank:C1_Section04:item:C1_S04_00076 @/course-1-en:bank:C1_Section04:item:C1_S04_00077 @/course-1-en:bank:C1_Section04:item:C1_S04_00078 k/money-times
+decimal-operations|decimal-arithmetic|1|Add or subtract decimals|Align decimal places|f/decimal:add f/decimal:sub f/money:add f/money:sub c/35.1 @/course-1-en:bank:C1_Section04:item:C1_S04_00080 @/course-1-en:bank:C1_Section04:item:C1_S04_00081 @/course-1-en:bank:C1_Section04:item:C1_S04_00123 @/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00072 @/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00074 @/intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00122 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00071 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00091 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00092 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00106 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00110 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00111 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00115 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00116 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00137 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00141 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00142 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00145 @/intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00146 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00077 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00079 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00081 @/intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00082 k/decimal-sum k/decimal-difference k/segment-bc
+decimal-operations|decimal-arithmetic|2|Multiply decimals|Place-value scaling in a product|f/decimal:mul f/money:mul c/35.2 @/course-87-en:item:SX870018 @/course-87-en:item:SN870004 @/course-1-en:bank:C1_Section01:item:C1_S01_00112 @/course-1-en:bank:C1_Section04:item:C1_S04_00076 @/course-1-en:bank:C1_Section04:item:C1_S04_00077 @/course-1-en:bank:C1_Section04:item:C1_S04_00078 k/money-times k/decimal-square
 fraction-conversions|fraction-decimal-percent|1|Write a terminating decimal as a simplified fraction|Decimal place values and fraction reduction|c/31.2 c/43.1 p/decimal-fraction-small p/decimal-fraction-fiftieths
 fraction-conversions|fraction-decimal-percent|2|Convert among fractions, decimals and percents|Equivalent forms and division|c/43.4 f/conversions f/percent-fraction c/43.2 c/43.3 c/48.2 p/percent-decimal-large p/percent-decimal-integer p/percent-decimal-small p/circle-percent p/sector-percent
 fraction-conversions|fraction-decimal-percent|3|Convert a repeating decimal to an exact fraction|Scale and subtract the repeated part|a/repeating-decimal b/repeating-fraction
@@ -174,7 +174,7 @@ right-triangles|pythagorean|2|Apply the right-triangle theorem in a context|Iden
 information-sufficiency|reasoning|1|Decide whether information determines an answer|Identify the required quantities|c/79.1
 information-sufficiency|reasoning|2|Assess whether a comparison is determined|Consider more than one admissible case|c/79.2
 rounding|rounding-estimation|1|Round whole numbers to a specified place, explaining when requested|Nearest place-value interval|f/round:3 f/round:4 f/round:9 c/29.1 b/round-whole c/29.2 k/round-place k/round-two-places
-rounding|rounding-estimation|2|Round decimals to a specified place|Decimal place-value intervals|c/33.3
+rounding|rounding-estimation|2|Round decimals to a specified place|Decimal place-value intervals|c/33.3 k/round-thousandth k/round-decimal-two k/round-decimal-place
 rounding|rounding-estimation|3|Estimate a product in scientific notation|Round factors first and normalize the estimate|z/scientific:estimate
 segments|segments|2|Find a missing segment with decimal measurements|Subtract decimal parts from the whole|@/algebra-2-en:node:5
 segments|segments|1|Find a missing segment with whole-number lengths|Part plus part equals whole|f/segment-length
@@ -215,8 +215,8 @@ number-notation-forms|number-representation|2|Write a number in expanded notatio
 number-notation-forms|number-representation|3|Convert between number words and digits|Read and compose three-digit periods|e/5.3 e/5.4 f/words:3 f/words:6 f/words:9 k/words-to-digits
 roman-range|numeral-systems|1|Read and write Roman numerals through 39|I, V, X and subtractive pairs|f/roman:39
 roman-range|numeral-systems|2|Read and write Roman numerals through 3999|Additional symbols and subtractive pairs across places|f/roman:3999
-decimal-division|decimal-arithmetic|1|Divide a decimal by a whole number|Place value and exact division|f/money:div f/decimal:divwhole e/1.7 c/35.3
-decimal-division|decimal-arithmetic|2|Divide by a decimal divisor|Scale both dividend and divisor to make an integer divisor|c/45.1 @/course-1-en:bank:C1_Section05:item:C1_S05_00076 @/course-1-en:bank:C1_Section05:item:C1_S05_00077 @/course-1-en:bank:C1_Section05:item:C1_S05_00078 @/course-1-en:bank:C1_Section05:item:C1_S05_00105
+decimal-division|decimal-arithmetic|1|Divide a decimal by a whole number|Place value and exact division|f/money:div f/decimal:divwhole e/1.7 c/35.3 k/decimal-divide-whole
+decimal-division|decimal-arithmetic|2|Divide by a decimal divisor|Scale both dividend and divisor to make an integer divisor|c/45.1 @/course-1-en:bank:C1_Section05:item:C1_S05_00076 @/course-1-en:bank:C1_Section05:item:C1_S05_00077 @/course-1-en:bank:C1_Section05:item:C1_S05_00078 @/course-1-en:bank:C1_Section05:item:C1_S05_00105 k/decimal-divide-decimal
 decimal-powers-ten|decimal-arithmetic|1|Multiply decimals by powers of ten|Each place changes by a power of ten|f/ten-power:mul c/47.3
 decimal-powers-ten|decimal-arithmetic|2|Divide decimals by powers of ten|Each place changes by a reciprocal power of ten|f/ten-power:div c/47.4
 fraction-division|fractions|1|Divide a whole number or fraction by a fraction|Reciprocal multiplication|c/25.2 c/25.3 k/divide-fractions
@@ -280,7 +280,7 @@ histogram-production|data-displays|1|Tabulate frequencies in explicit intervals|
 histogram-production|data-displays|2|Draw a histogram for explicit intervals|Frequency table, touching bars, labeled axes and scale|f/histogram c/INV5.1 h/histogram10
 graph-reading|data-displays|1|Read and compare quantities on a pictograph or bar graph|Read its key or scale|c/38.1 c/38.2
 graph-reading|data-displays|2|Read values and changes on a line graph|Read axes and distinguish values from differences|c/38.3
-graph-reading|data-displays|3|Read a quantity from a circle graph|Scale a fraction of the whole|c/38.4
+graph-reading|data-displays|3|Read a quantity from a circle graph|Scale a fraction of the whole|c/38.4 k/circle-graph
 box-plot-work|data-displays|1|Read a box plot and its spread|Median, range and interquartile range|c/INV4.6 a/boxplot:read
 box-plot-work|data-displays|2|Construct a box plot from raw observations|Sort, calculate quartiles using the stated convention and draw the scale|c/INV4.5 a/boxplot:draw
 angle-construction|angles|1|Read a supplied protractor|Select the zero aligned with the starting ray|c/17.1 h/angle-measure
@@ -296,7 +296,7 @@ circle-parts-and-length|circle-measurement|1|Identify radius and diameter or fin
 circle-parts-and-length|circle-measurement|2|Calculate circumference|Apply the stated pi value and distinguish radius from diameter|c/66.2
 circle-parts-and-length|circle-measurement|3|Calculate arc length from a central angle|Scale circumference by the angle fraction|c/104.2
 triangle-area-method|area|1|Identify a base and its perpendicular height|The altitude may meet the extended base|c/37.1
-triangle-area-method|area|2|Calculate triangle area from base and perpendicular height|Half of base times height|c/37.2
+triangle-area-method|area|2|Calculate triangle area from base and perpendicular height|Half of base times height|c/37.2 k/right-triangle-area k/coordinate-triangle-area k/diagonal-plot
 area-shape-formulas|area|1|Calculate parallelogram area|Use perpendicular height|c/61.1
 area-shape-formulas|area|2|Calculate trapezoid area|Use the average of the parallel bases and perpendicular height|c/75.2
 area-shape-formulas|area|3|Calculate triangle area|Use half of base times perpendicular height|c/37.2
@@ -337,7 +337,7 @@ fraction-coefficient-equations|equations|2|Solve equations with a displayed mixe
 equations-both-sides|equations|1|Solve a two-step equation with the variable on one side|Inverse operations and signed arithmetic|h/equality-method c/93.1 f/two-step-positive
 equations-both-sides|equations|2|Solve a linear equation with variables on both sides|Collect variable terms by subtracting equal quantities|h/both-sides h/multi-term =/algebra-half-en:node:580
 equations-both-sides|equations|3|Simplify matching quadratic terms before solving a linear equation|Cancel equal higher-degree terms without introducing spurious roots|a/polynomial-equation
-proportion-number-types|ratio-proportion|1|Solve a proportion with whole-number entries|Equivalent ratios and cross products|c/39.2 f/cross-products
+proportion-number-types|ratio-proportion|1|Solve a proportion with whole-number entries|Equivalent ratios and cross products|c/39.2 f/cross-products =/course-87-en:item:SX870374 =/course-87-en:item:SX870375 =/course-87-en:item:SX870376
 proportion-number-types|ratio-proportion|2|Solve a proportion with fractional entries|Multiply and divide exact fractions while cross-multiplying|h/fraction-proportion h/mixed-proportion
 ratio-transfer|ratio-proportion|1|Split a total by a given ratio|Find the value of one ratio part|c/65.1 c/65.2 p/ratio-total-large p/ratio-total-small
 ratio-transfer|ratio-proportion|2|Find a new ratio after transferring some objects|Recover initial counts, adjust both counts and simplify|h/ratio-transfer
@@ -485,8 +485,8 @@ percent-complement|percent|1|Find the percent remaining|Subtract given percent f
 percent-complement|percent|2|Find an unsold count from a percent and total|Scale the total by the complementary rate|p/percent-count-complement
 percent-from-complement|percent|1|Find a percent from a given part and whole|Divide part by whole, multiply by 100|p/percent-part
 percent-from-complement|percent|2|Find the percent outside a known group|Find the complementary count or subtract the known percent from 100|p/percent-count-rest
-ratio-forms|ratio-proportion|1|Write ratios in the requested order or notation|Part-to-part and part-to-whole denominators differ|p/ratio-reverse p/ratio-part p/fraction-ratio c/36.1 c/36.2 h/ratio-compare
-ratio-forms|ratio-proportion|2|Form a ratio after finding a missing group count|Subtract from total, then compare ordered quantities|p/club-ratio
+ratio-forms|ratio-proportion|1|Write ratios in the requested order or notation|Part-to-part and part-to-whole denominators differ|c/36.1 c/36.2 h/ratio-compare k/ratio-reverse k/fans-ratio k/ratio-part-fraction
+ratio-forms|ratio-proportion|2|Form a ratio after finding a missing group count|Subtract from total, then compare ordered quantities|p/club-ratio k/fraction-rest-ratio
 part-reference-forms|fraction-decimal-percent|1|Express a part relative to a reference quantity as a fraction or decimal|Reference quantity is the denominator; fraction-part can exceed one|p/fraction-part p/decimal-part p/decimal-part-eighths
 part-reference-forms|fraction-decimal-percent|2|Express a part relative to a reference quantity as a percent|Percent scales the quotient by 100|p/percent-part p/bill-percent
 fraction-sum-to-percent|fraction-decimal-percent|1|Convert a given fractional share to percent|Multiply by 100|p/circle-percent
@@ -515,7 +515,7 @@ round-money-value|rounding-estimation|2|Round a dollar-and-cent amount to a whol
 powers-in-expressions|powers-roots|1|Evaluate an exact square root or positive power|Perfect powers|c/20.8 c/20.3
 powers-in-expressions|powers-roots|2|Combine roots or powers with arithmetic|Operation order before final sum or difference|b/square-root-difference h/root-operations
 decimal-number-words|number-representation|1|Convert between whole-number digits and words|Three-digit periods|f/words:3
-decimal-number-words|number-representation|2|Read or write a decimal through thousandths|Name the fractional place as well as the whole part|r/words-decimal c/31.4
+decimal-number-words|number-representation|2|Read or write a decimal through thousandths|Name the fractional place as well as the whole part|c/31.4 k/decimal-words k/decimal-and-mixed
 circle-fraction-interpretations|fractions|1|Read the shaded fraction of a circle|Equal sectors define the whole|g/shaded-fraction
 circle-fraction-interpretations|fractions|2|Express an angle as a fraction of a full turn|Use 360 degrees as the whole|r/circle-fraction
 money-notation|number-representation|1|Convert between cents and dollar notation|100 cents per dollar, including values below ten cents|e/1.4
@@ -550,8 +550,8 @@ estimate-operation-types|rounding-estimation|5|Estimate a decimal product using 
 decimal-place-language|number-representation|1|Name a decimal place or identify its digit value|Tenths through thousandths or ten-thousandths; differing response demands|c/31.3 f/decimal-place
 decimal-place-language|number-representation|2|Write a decimal in expanded notation|Decompose whole, tenths and hundredths|f/decimal-expanded
 decimal-place-language|number-representation|3|Explain zero placeholders and trailing zero equivalence|Internal zero and trailing zero branches must both be considered|f/decimal-zero
-decimal-list-order|number-order|1|Compare two decimals|Align place values|c/33.1
-decimal-list-order|number-order|2|Order four decimals|Coordinate comparisons across the full list|c/33.2
+decimal-list-order|number-order|1|Compare two decimals|Align place values|c/33.1 k/decimal-compare k/false-decimal-statement
+decimal-list-order|number-order|2|Order four decimals|Coordinate comparisons across the full list|c/33.2 k/order-decimals
 proportion-validation|ratio-proportion|1|Check whether two ratios form a proportion|Compare cross products, including false cases|c/39.1
 proportion-validation|ratio-proportion|2|Find a missing value in a proportion|Solve the cross-product equality|f/cross-products c/39.2
 repeating-decimal-forms|fraction-decimal-percent|1|Write repetition-bar notation for a repeating decimal|Identify the shortest repeating block|c/42.1
@@ -790,7 +790,7 @@ graph-selection-production|data-displays|1|Select a line graph matching a signed
 graph-selection-production|data-displays|2|Construct a line graph from its equation|Interpret slope and intercept with signed coordinates|=/algebra-1-en:authored:M4-51-1 =/algebra-1-en:authored:M4-75-2
 bar-graph-production|data-displays|1|Match all given table frequencies to a bar graph|Count each observation once and use a consistent frequency scale|=/course-1-en:bank:C1_Section01:item:C1_S01_00083
 bar-graph-production|data-displays|2|Tally raw observations and construct a bar graph|Count each observation once and use a consistent frequency scale|=/intermediate-4-en:authored:M2-874aeaab47bb-1 =/course-1-en:authored:M2-1586a2a40f39-2
-histogram-read-depth|data-displays|1|Read one histogram interval frequency|Read interval frequencies from the vertical scale and add the requested bins|=/course-87-en:item:SN870341
+histogram-read-depth|data-displays|1|Read one histogram interval frequency|Read interval frequencies from the vertical scale and add the requested bins|=/course-87-en:item:SN870341 k/histogram-walk
 histogram-read-depth|data-displays|2|Read and add two interval frequencies|Read interval frequencies from the vertical scale and add the requested bins|=/algebra-half-en:authored:M3-202-7
 histogram-select-produce|data-displays|1|Match all table frequencies to a histogram|Match interval boundaries and frequencies; histogram bars touch|=/course-1-en:bank:C1_Section01:item:C1_S01_00021
 histogram-select-produce|data-displays|2|Tally raw observations and construct a histogram|Match interval boundaries and frequencies; histogram bars touch|=/algebra-half-en:authored:M3-202-6 =/course-1-en:authored:M2-c4f194fd4dd9-2
@@ -820,7 +820,7 @@ angle-classification-work|angles|2|Classify acute right obtuse or straight angle
 clock-angle-interpretation|angles|1|Convert quarter revolutions to degrees|A full revolution is 360 degrees; choose the smaller clock-hand angle|=/intermediate-4-en:authored:M2-9a770361a5f0-1 =/course-1-en:authored:M2-8e79c4526873-1
 clock-angle-interpretation|angles|2|Classify the smaller whole-hour clock-hand angle|A full revolution is 360 degrees; choose the smaller clock-hand angle|=/course-1-en:bank:C1_Section03:item:C1_S03_00063
 angle-relationship-application|angles|1|Name complementary supplementary adjacent or vertical relationships|Distinguish angle position from complementary or supplementary sums|=/course-87-en:authored:MCADA-40.3
-angle-relationship-application|angles|2|Use a complementary supplementary or vertical relationship numerically|Distinguish angle position from complementary or supplementary sums|=/course-87-en:authored:MCADA-40.4
+angle-relationship-application|angles|2|Use a complementary supplementary or vertical relationship numerically|Distinguish angle position from complementary or supplementary sums|=/course-87-en:authored:MCADA-40.4 k/complementary-expression k/triangle-line-angles k/crossing-triangles
 intersecting-angle-output|angles|1|Find one complementary supplementary or vertical angle|Vertical angles are equal and adjacent linear-pair angles sum to 180 degrees|=/course-87-en:authored:MCADA-40.4
 intersecting-angle-output|angles|2|Find all three remaining angles of two intersecting lines|Vertical angles are equal and adjacent linear-pair angles sum to 180 degrees|=/algebra-2-en:authored:M6-0-4 =/algebra-2-en:authored:M6-17-2
 transversal-identification|angles|1|Identify angle-pair positions on a transversal|Use angle positions and the stated parallel-line assumptions|=/course-87-en:authored:MCADA-102.2
@@ -829,7 +829,7 @@ quadrilateral-angle-contracts|angles|1|Use parallelogram opposite and adjacent a
 quadrilateral-angle-contracts|angles|2|Use cyclic-quadrilateral opposite supplements|Use the properties of the specified quadrilateral, not a look-alike diagram|=/algebra-2-en:authored:M6-35-2
 rhombus-angle-extension|angles|1|Find parallelogram angles|Use supplementary adjacent angles, angle bisectors and perpendicular diagonals|=/course-87-en:authored:MCADA-61.2
 rhombus-angle-extension|angles|2|Use rhombus angle bisection and perpendicular diagonals too|Use supplementary adjacent angles, angle bisectors and perpendicular diagonals|=/algebra-2-en:authored:M6-39-5
-triangle-angle-interpretations|angles|1|Find a third interior or exterior angle|Triangle interior angles sum to 180 degrees; distinguish demonstration from proof|=/algebra-2-en:authored:M6-31-3 =/course-87-en:authored:MCADA-40.2
+triangle-angle-interpretations|angles|1|Find a third interior or exterior angle|Triangle interior angles sum to 180 degrees; distinguish demonstration from proof|=/algebra-2-en:authored:M6-31-3 =/course-87-en:authored:MCADA-40.2 k/crossing-lines-triangle k/right-angle-chain
 triangle-angle-interpretations|angles|2|Demonstrate the triangle sum with cut corners|Triangle interior angles sum to 180 degrees; distinguish demonstration from proof|=/course-87-en:authored:MCADA-40.1
 symmetry-line-practice|transformations|1|Draw every line of reflection symmetry|A reflection fixes a symmetry line; point symmetry is a half-turn|=/course-87-en:authored:MCADA-58.1 =/course-87-en:authored:MCADA-INV6.3
 symmetry-line-practice|transformations|2|Explain point symmetry from diagonal midpoints|A reflection fixes a symmetry line; point symmetry is a half-turn|=/course-87-en:authored:MCADA-INV6.4

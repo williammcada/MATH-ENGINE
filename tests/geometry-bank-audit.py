@@ -2,7 +2,7 @@
 import json,pathlib,subprocess,math,re,xml.etree.ElementTree as ET
 from fractions import Fraction as F
 root=pathlib.Path(__file__).resolve().parents[1]
-js="""const E=require('./src/course-banks'),G=require('./src/geometry-bank'),M=require('./src/structured-math');for(const c of G.catalog)for(let index=0;index<1000;index++){const q=E.generate(c.sourceId,{seed:'geometry-audit',index});if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'geometry-audit',index})))throw Error('Replay');if(!E.checkAnswer(q,E.answerText(q)).answerCorrect||E.checkAnswer(q,'nonsense').answerCorrect)throw Error('Checker');const bad={...q,answer:{...q.answer,values:q.answer.values.map((a,i)=>i?a:M.serialize(M.op('add',M.from(a),M.rat(1))))}};if(E.checkAnswer(q,E.answerText(bad)).answerCorrect)throw Error('Changed answer accepted');console.log(JSON.stringify({recipe:c.recipe,q,html:index<20?E.renderQuestion(q):null}));}"""
+js="""const E=require('./src/course-banks'),G=require('./src/geometry-bank'),M=require('./src/structured-math');for(const c of G.catalog.filter(c=>E.catalog.find(x=>x.sourceId===c.sourceId).family===c.family))/* entries replaced by a coverage port are audited by tests/port87.cjs */for(let index=0;index<1000;index++){const q=E.generate(c.sourceId,{seed:'geometry-audit',index});if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'geometry-audit',index})))throw Error('Replay');if(!E.checkAnswer(q,E.answerText(q)).answerCorrect||E.checkAnswer(q,'nonsense').answerCorrect)throw Error('Checker');const bad={...q,answer:{...q.answer,values:q.answer.values.map((a,i)=>i?a:M.serialize(M.op('add',M.from(a),M.rat(1))))}};if(E.checkAnswer(q,E.answerText(bad)).answerCorrect)throw Error('Changed answer accepted');console.log(JSON.stringify({recipe:c.recipe,q,html:index<20?E.renderQuestion(q):null}));}"""
 p=subprocess.Popen(['node','-e',js],cwd=root,stdout=subprocess.PIPE,text=True);count=svg_count=0;types=set()
 def polygon_area(vs):return abs(sum(vs[i][0]*vs[(i+1)%len(vs)][1]-vs[i][1]*vs[(i+1)%len(vs)][0] for i in range(len(vs))))/2
 def perimeter(vs):return sum(math.dist(vs[i],vs[(i+1)%len(vs)]) for i in range(len(vs)))
@@ -46,5 +46,6 @@ for line in p.stdout:
    labels=[n.text for n in nodes if n.attrib.get('data-role')=='dimension'];assert 'x' in labels and str(expected[1]).removesuffix('.0') not in labels
   svg_count+=1
  count+=1
-assert p.wait()==0 and count==27000 and len(types)==13
+# SX870199, SX870309 and SX870310 are served by coverage ports (audited by tests/port87.cjs).
+assert p.wait()==0 and count==24000 and len(types)==12
 print(f'PASS: {count:,} independent geometry cases, {len(types)} diagram types, {svg_count} parsed SVGs with uniform transforms, sector/edge counts and unknown-value checks')
