@@ -44,6 +44,8 @@ The owner's instruction for the overnight Intermediate 4 run: a shared-file chan
 | TX4_S02_00078 | 15 | structured-arithmetic | `i4-sub`, `from-hundreds` |
 | TX4_S02_00147 | 16 | structured-representations | `i4-expanded-form`, `products` |
 | TX4_S02_00082 | 16 | structured-representations | `i4-expanded-form`, `products` (or consolidate into 00147 once ported) |
+| TX4_S03_00076 | 23 | structured-representations | `i4-angle-name`, `type` |
+| TX4_S03_00054 | 27 | structured-breadth | `i4-clock2`, `overnight` |
 
 TX4_S01_00111 was on this list after Batch I4-1; Batch I4-3 consolidated it into the open-record port TX4_S02_00011.
 

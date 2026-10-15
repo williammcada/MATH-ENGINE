@@ -124,6 +124,46 @@ const oracle={
  'i4-coin-fraction':(q,p)=>{const d=variantOf(q)==='dimes'?10:100;return E.checkAnswer(q,`${p.k}/${d}`).answerCorrect&&E.checkAnswer(q,`${2*p.k}/${2*d}`).answerCorrect&&!E.checkAnswer(q,`${p.k}/${d+1}`).answerCorrect;},
  'i4-shaded':(q,p)=>E.checkAnswer(q,`${p.k}/${p.n}`).answerCorrect&&(p.n===2*p.k||!E.checkAnswer(q,`${p.n-p.k}/${p.n}`).answerCorrect),
  'i4-sign':(q,p)=>q.answer.kind==='teacher'&&q.answer.reference.includes(p.c+'¢'),
+ // Batch I4-5
+ 'i4-angle-types':(q,p)=>{const n=p.poly.length;let c={right:0,acute:0,obtuse:0};let area=0;for(let i=0;i<n;i++){const [x1,y1]=p.poly[i],[x2,y2]=p.poly[(i+1)%n];area+=x1*y2-x2*y1;}
+  for(let i=0;i<n;i++){const P=p.poly[i],A=p.poly[(i+n-1)%n],C=p.poly[(i+1)%n],ang=Math.abs(Math.atan2(A[1]-P[1],A[0]-P[0])-Math.atan2(C[1]-P[1],C[0]-P[0]))*180/Math.PI,a=ang>180?360-ang:ang;
+   if(Math.abs(a-90)<1e-9)c.right++;else if(a<90)c.acute++;else c.obtuse++;}
+  return key(q).split(';').map(Number).join()===[c.right,c.acute,c.obtuse].join();},
+ 'i4-shape-pick':(q,p)=>{const ok={perpendicular:['rectangle','square','right trapezoid'],parallel:['rectangle','parallelogram','isosceles trapezoid','right trapezoid']}[p.kind];return p.names.filter(nm=>ok.includes(nm)).length===1&&key(q)==='ABCD'[p.names.findIndex(nm=>ok.includes(nm))];},
+ 'i4-quad-name':(q,p)=>key(q)===p.desc&&['trapezoid','square','rectangle','rhombus','parallelogram'].includes(p.desc),
+ 'i4-angle-name':(q,p)=>p.degs?key(q)==='ABCD'[p.degs.indexOf(90)]&&p.degs.filter(d=>d===90).length===1:key(q)===(p.deg<90?'acute':p.deg===90?'right':p.deg<180?'obtuse':'straight'),
+ 'i4-letters':(q,p)=>{const par=new Set(['E','F','H','M','N','Z']),rt=new Set(['E','F','H','L','T']),ok=p.kind==='no-parallel'?p.letters.filter(l=>!par.has(l)):p.letters.filter(l=>rt.has(l));return ok.length===1&&key(q)===ok[0];},
+ 'i4-line-ray-seg':(q,p)=>E.checkAnswer(q,p.order.map(w=>w==='segment'?'line segment':w).join(', ')).answerCorrect,
+ 'i4-draw-geo':(q,p)=>q.answer.kind==='teacher'&&q.prompt.includes(' '+p.label),
+ 'i4-claim':(q,p)=>q.answer.kind==='teacher'&&q.answer.reference.startsWith('(a) '+p.claim),
+ 'i4-skew':(q,p)=>q.answer.kind==='teacher'&&q.prompt.includes(`edges ${p.edges[0]} and ${p.edges[1]}`),
+ 'i4-streets':(q,p)=>key(q)===(p.perp?p.ew:(p.ask===p.a?p.b:p.a)),
+ 'i4-parallel-sides':(q,p)=>E.checkAnswer(q,`${p.labels[2]}${p.labels[1]} and ${p.labels[0]}${p.labels[3]}`).answerCorrect&&!E.checkAnswer(q,`${p.labels[0]}${p.labels[1]} and ${p.labels[2]}${p.labels[3]}`).answerCorrect,
+ 'i4-fact-letter':(q,p)=>{const L=p.letter,fam=[`${L}+${p.a}=${p.c}`,`${p.a}+${L}=${p.c}`,`${p.c}-${L}=${p.a}`,`${p.c}-${p.a}=${L}`],given=p.given==='add-given'?fam[1]:fam[2];return E.checkAnswer(q,fam.filter(f=>f!==given).reverse().join('; ')).answerCorrect;},
+ 'i4-inverse':(q,p)=>{const v=variantOf(q);if(v==='teen')return is(q,p.s-p.a);if(v==='circle')return is(q,p.r+p.b);if(p.minuend)return is(q,p.total+total(p.parts));return is(q,p.total-total(p.parts));},
+ 'i4-sub-story':(q,p)=>is(q,p.kind==='start'?p.a+p.b:p.a-p.b),
+ 'i4-fraction-pick':(q,p)=>{const want=p.allBut?p.n-(p.n-p.k):p.k;return p.shaded.filter(x=>x===want).length===1&&key(q)==='ABCD'[p.shaded.indexOf(want)];},
+ 'i4-unshaded':(q,p)=>E.checkAnswer(q,`${p.n-p.k}/${p.n}`).answerCorrect&&(2*p.k===p.n||!E.checkAnswer(q,`${p.k}/${p.n}`).answerCorrect),
+ 'i4-draw-fraction':(q,p)=>q.answer.kind==='teacher'&&q.answer.reference.includes(`${p.d} equal parts`),
+ 'i4-clock2':(q,p)=>{const v=variantOf(q),fmt=t=>{t=((t%1440)+1440)%1440;return `${Math.floor(t/60)%12||12}:${String(t%60).padStart(2,'0')} ${t<720?'am':'pm'}`;};
+  if(v==='ago'||v==='ahead')return E.checkAnswer(q,fmt(p.ago?p.start-p.d:p.start+p.d)).answerCorrect;if(v==='words-later')return E.checkAnswer(q,fmt(p.start+p.d)).answerCorrect;
+  if(v==='start-before-noon')return E.checkAnswer(q,fmt(p.arrive-p.ride)).answerCorrect;if(v==='start-from-end')return E.checkAnswer(q,fmt(p.end-p.d)).answerCorrect;
+  const d=(12*60-(p.sh*60+p.sm))+(p.eh*60+p.em);return E.checkAnswer(q,`${Math.floor(d/60)} hours ${d%60} minutes`).answerCorrect;},
+ 'i4-repeated-add':(q,p)=>{const n=(q.prompt.match(new RegExp('\\b'+p.n+'\\b','g'))||[]).length;return n>=p.k&&(variantOf(q)==='rewrite'?E.checkAnswer(q,`${p.n} x ${p.k}`).answerCorrect:E.checkAnswer(q,`${p.n} x ${p.k} = ${p.n*p.k}`).answerCorrect);},
+ 'i4-mult-fact':(q,p)=>is(q,p.a*p.b),
+ 'i4-mult-table':(q,p)=>is(q,p.r*p.c),
+ 'i4-property':(q,p)=>key(q)===p.expr,
+ 'i4-words-sentence':(q,p)=>{const k=key(q).replace(/\s+/g,'').split('=');const ev=x=>x.split('+').map(t=>t.split('×').reduce((u,w)=>u*Number(w),1)).reduce((u,w)=>u+w,0);return k.length===2&&ev(k[0])===ev(k[1]);},
+ 'i4-not-equal':(q,p)=>{const v=key(q).split('×').map(Number);return v[0]*v[1]!==p.T&&p.opts.filter(o=>o[0]*o[1]!==p.T).length===1;},
+ 'i4-estimate-thousands':(q,p)=>key(q)===`${Math.floor((p.a+500)/1000)*1000} and ${Math.floor((p.b+500)/1000)*1000}`,
+ 'i4-greatest-product':(q,p)=>{const v=key(q).split('×').map(Number);return v[0]*v[1]===p.f*Math.max(...p.ms);},
+ 'i4-claim-even':(q,p)=>q.answer.kind==='teacher'&&q.prompt.includes(p.claim),
+ 'i4-sub-3digit':(q,p)=>is(q,p.a-p.b)&&p.a-p.b>99,
+ 'i4-sub-cents':(q,p)=>Math.round(numKey(q)*100)===p.a-p.b,
+ 'i4-change':(q,p)=>Math.round(Number(key(q).replace(/[$¢]/g,''))*(key(q).includes('¢')?1:100))===1000-(p.price-p.off),
+ 'i4-square':(q,p)=>{const v=variantOf(q);if(v==='side')return is(q,p.s);if(v==='root')return is(q,p.r);if(v==='root-sum')return is(q,p.a+p.b);if(v==='squares')return E.checkAnswer(q,p.xs.map(x=>x*x).join('; ')).answerCorrect;return key(q)===[4,5,6,7].map(i=>(p.s+i)**2).join(', ');},
+ 'i4-area':(q,p)=>{const v=variantOf(q);if(v==='square')return is(q,p.s*p.s);if(v==='perim-area')return E.checkAnswer(q,`${2*p.l+2*p.w}; ${p.l*p.w}`).answerCorrect;return is(q,p.l*p.w);},
+ 'i4-array':(q,p)=>{const v=variantOf(q);if(v==='rows-cols-fact')return E.checkAnswer(q,`${p.r}; ${p.c}; ${p.c} x ${p.r} = ${p.r*p.c}`).answerCorrect;if(v==='fact')return E.checkAnswer(q,`${p.c}×${p.r}=${p.r*p.c}`).answerCorrect;if(v==='can-draw')return key(q)===(p.n%p.rows===0?'yes':'no');return q.answer.kind==='teacher'&&q.answer.reference.includes(String(p.a*p.b));},
 };
 
 // The two sides of a comparison prompt ("a − b ☐ c − d"), evaluated separately.

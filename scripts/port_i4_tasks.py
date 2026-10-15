@@ -239,6 +239,86 @@ TASKS_I4 = [
     _t('TX4_S03_00102', 'i4-shaded', 'circle', 'Fraction of a circle shaded', 'fractions'),
     _t('TX4_S03_00101', 'i4-shaded', 'square', 'Fraction of a square grid shaded', 'fractions'),
     _t('TX4_S03_00126', 'i4-sign', None, 'Correct a price sign that mixes dollars and cents', 'decimal-arithmetic'),
+    # Batch I4-5: Lessons 23-30 and Investigation 3
+    # Lesson 23: Lines, Segments, Rays, and Angles
+    _t('TX4_S03_00045', 'i4-angle-types', None, 'Count the right, acute and obtuse angles of a figure', 'angles'),
+    _t('TX4_S03_00061', 'i4-shape-pick', 'perpendicular', 'Which figure has perpendicular sides', 'geometry-properties'),
+    _t('TX4_S03_00062', 'i4-shape-pick', 'parallel', 'Which figure has parallel sides', 'geometry-properties'),
+    _t('TX4_S03_00063', 'i4-quad-name', None, 'Name a quadrilateral from its properties', 'geometry-properties'),
+    _t('TX4_S03_00079', 'i4-angle-name', 'which-right', 'Which angle is a right angle', 'angles'),
+    _t('TX4_S03_00077', 'i4-letters', 'no-parallel', 'Which letter has no parallel segments', 'geometry-properties'),
+    _t('TX4_S03_00129', 'i4-letters', 'right-angle', 'Which letter has a right angle', 'angles'),
+    _t('TX4_S03_00042', 'i4-line-ray-seg', None, 'Line, ray or segment', 'segments'),
+    _t('TX4_S03_00044', 'i4-draw-geo', 'right-angle', 'Draw a right angle', 'angles'),
+    _t('TX4_S03_00128', 'i4-draw-geo', 'perpendicular', 'Draw two perpendicular lines', 'geometry-properties'),
+    _t('TX4_S03_00065', 'i4-claim', None, 'Judge a claim about angles and lines', 'reasoning'),
+    _t('TX4_S03_00066', 'i4-skew', None, 'The flaw in calling two edge lines of a cube parallel', 'reasoning'),
+    _t('TX4_S03_00127', 'i4-streets', None, 'Perpendicular and parallel streets on a map', 'geometry-properties'),
+    _t('TX4_S03_00130', 'i4-parallel-sides', None, 'Which sides of a quadrilateral are parallel', 'geometry-properties'),
+    # Lesson 24: Inverse Operations
+    _t('TX4_S03_00046', 'i4-fact-letter', 'add-given', 'Three more facts from an addition fact with a letter', 'equations'),
+    _t('TX4_S03_00047', 'i4-fact-letter', 'sub-given', 'Three more facts from a subtraction fact with a letter', 'equations'),
+    _t('TX4_S03_00032', 'i4-inverse', 'teen', 'Missing addend with a sum to 21', 'equations'),
+    _t('TX4_S03_00033', 'i4-inverse', 'circle', 'Number in the circle: a missing number subtracted from', 'equations'),
+    _t('TX4_S03_00108', 'i4-inverse', 'addend-big', 'Missing three-digit addend in a column', 'equations'),
+    _t('TX4_S03_00110', 'i4-inverse', 'minuend', 'Missing number subtracted from, three or four digits', 'equations'),
+    _t('TX4_S03_00111', 'i4-inverse', 'addend-three', 'Missing addend among three three-digit addends', 'equations'),
+    _t('TX4_S03_00112', 'i4-inverse', 'addend-three-4digit', 'Missing addend among three four-digit addends', 'equations'),
+    _t('TX4_S03_00113', 'i4-inverse', 'addend-4digit', 'Missing four-digit addend in a column', 'equations'),
+    # Lesson 25: Subtraction Word Problems
+    _t('TX4_S03_00029', 'i4-sub-story', 'take-away', 'How many are left', 'word-equations'),
+    _t('TX4_S03_00030', 'i4-sub-story', 'some-lost', 'How many were lost', 'word-equations'),
+    _t('TX4_S03_00031', 'i4-sub-story', 'had-some', 'How many there were at first', 'word-equations'),
+    # Lesson 26: Drawing Pictures of Fractions
+    _t('TX4_S03_00008', 'i4-fraction-pick', 'all-but', 'Which circle has all but a fraction shaded', 'fractions'),
+    _t('TX4_S03_00082', 'i4-fraction-pick', 'which', 'Which circle has a fraction shaded', 'fractions'),
+    _t('TX4_S03_00028', 'i4-unshaded', None, 'Fraction of a rectangle not shaded', 'fractions'),
+    _t('TX4_S03_00048', 'i4-draw-fraction', 'square', 'Draw a square and shade a fraction', 'fractions'),
+    _t('TX4_S03_00049', 'i4-draw-fraction', 'rectangle', 'Draw a rectangle and shade a fraction', 'fractions'),
+    _t('TX4_S03_00131', 'i4-draw-fraction', 'circle', 'Draw a circle and shade a fraction', 'fractions'),
+    # Lesson 27: Multiplication as Repeated Addition; More Elapsed-Time Problems
+    _t('TX4_S03_00006', 'i4-clock2', 'ago', 'The time some hours and minutes ago', 'calendar-time'),
+    _t('TX4_S03_00052', 'i4-clock2', 'ahead', 'The time some hours and minutes from now', 'calendar-time'),
+    _t('TX4_S03_00083', 'i4-clock2', 'words-later', 'The time later than a time in words', 'calendar-time'),
+    _t('TX4_S03_00137', 'i4-clock2', 'start-before-noon', 'When to start so as to arrive at a time after noon', 'calendar-time'),
+    _t('TX4_S03_00134', 'i4-repeated-add', 'rewrite', 'Write repeated addition as multiplication', 'whole-arithmetic'),
+    _t('TX4_S03_00051', 'i4-repeated-add', 'rewrite-solve', 'Write repeated addition as multiplication and solve', 'whole-arithmetic'),
+    _t('TX4_S03_00027', 'i4-mult-fact', 'nines', 'How much a number of nines is', 'whole-arithmetic'),
+    # Lesson 28: Multiplication Table
+    _t('TX4_S03_00025', 'i4-mult-table', None, 'A missing number in the multiplication table', 'whole-arithmetic'),
+    _t('TX4_S03_00026', 'i4-mult-fact', 'product', 'The product of two numbers', 'whole-arithmetic'),
+    _t('TX4_S03_00086', 'i4-clock2', 'start-from-end', 'Start time from an end time and a length of time', 'calendar-time'),
+    # Lesson 29: Multiplication Facts: 0s, 1s, 2s, 5s
+    _t('TX4_S03_00021', 'i4-mult-fact', 'zero', 'Multiply by zero', 'whole-arithmetic'),
+    _t('TX4_S03_00022', 'i4-mult-fact', 'one', 'Multiply by one', 'whole-arithmetic'),
+    _t('TX4_S03_00023', 'i4-mult-fact', 'two', 'Multiply by two', 'whole-arithmetic'),
+    _t('TX4_S03_00024', 'i4-mult-fact', 'five', 'Multiply by five', 'whole-arithmetic'),
+    _t('TX4_S03_00087', 'i4-property', None, 'Name the property an expression shows', 'expressions'),
+    _t('TX4_S03_00138', 'i4-words-sentence', None, 'Write a sentence about multiplying by 0 or 1 with symbols', 'expressions'),
+    _t('TX4_S03_00089', 'i4-not-equal', None, 'Which product does not equal a number', 'whole-arithmetic'),
+    _t('TX4_S03_00090', 'i4-estimate-thousands', None, 'Estimate a sum by rounding to thousands', 'rounding-estimation'),
+    _t('TX4_S03_00091', 'i4-greatest-product', None, 'Which product is greatest', 'whole-arithmetic'),
+    _t('TX4_S03_00064', 'i4-claim-even', None, 'Is a statement about even numbers always true', 'reasoning'),
+    # Lesson 30: Subtracting Three-Digit Numbers with Regrouping
+    _t('TX4_S03_00018', 'i4-sub-3digit', 'stacked', 'Subtract three-digit numbers in a column, regrouping twice', 'whole-arithmetic'),
+    _t('TX4_S03_00020', 'i4-sub-3digit', 'row', 'Subtract three-digit numbers, regrouping twice', 'whole-arithmetic'),
+    _t('TX4_S03_00019', 'i4-sub-cents', 'row', 'Subtract dollars and cents with regrouping', 'decimal-arithmetic'),
+    _t('TX4_S03_00116', 'i4-sub-cents', 'stacked', 'Subtract dollars and cents in a column', 'decimal-arithmetic'),
+    _t('TX4_S03_00092', 'i4-change', None, 'Change after a sale price', 'decimal-arithmetic'),
+    # Investigation 3: Multiplication Patterns; Area; Squares and Square Roots
+    _t('TX4_S03_00001', 'i4-square', 'side', 'Side of a square from its area', 'powers-roots'),
+    _t('TX4_S03_00014', 'i4-square', 'root', 'Square root of a perfect square', 'powers-roots'),
+    _t('TX4_S03_00096', 'i4-square', 'root-sum', 'Sum of two square roots', 'powers-roots'),
+    _t('TX4_S03_00124', 'i4-square', 'squares', 'Squares of three numbers', 'powers-roots'),
+    _t('TX4_S03_00060', 'i4-square', 'square-seq', 'Next four square numbers', 'powers-roots'),
+    _t('TX4_S03_00002', 'i4-area', 'grid', 'Area of a rectangle on a centimeter grid', 'area'),
+    _t('TX4_S03_00017', 'i4-area', 'rect', 'Area of a labelled rectangle', 'area'),
+    _t('TX4_S03_00097', 'i4-area', 'square', 'Area of a square', 'area'),
+    _t('TX4_S03_00125', 'i4-area', 'perim-area', 'Perimeter and area of a rectangle', 'area'),
+    _t('TX4_S03_00003', 'i4-array', 'rows-cols-fact', 'Rows, columns and the fact for an array', 'whole-arithmetic'),
+    _t('TX4_S03_00056', 'i4-array', 'fact', 'The multiplication fact for an array', 'whole-arithmetic'),
+    _t('TX4_S03_00058', 'i4-array', 'can-draw', 'Whether an array with a number of rows can be drawn', 'whole-arithmetic'),
+    _t('TX4_S03_00123', 'i4-array', 'draw', 'Draw an array of dots for a product', 'whole-arithmetic'),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -306,6 +386,22 @@ CONSOLIDATED_I4 = {
     'TX4_S03_00072': 'TX4_S03_00104', 'TX4_S03_00106': 'TX4_S03_00104', 'TX4_S03_00107': 'TX4_S03_00105',
     'TX4_S03_00074': 'TX4_S03_00105', 'TX4_S03_00071': 'TX4_S03_00038', 'TX4_S03_00075': 'TX4_S03_00038',
     'TX4_S03_00103': 'TX4_S03_00038', 'TX4_S03_00073': 'TX4_S03_00102',
+    # Batch I4-5
+    'TX4_S03_00010': 'TX4_S03_00045', 'TX4_S03_00078': 'TX4_S03_00079', 'TX4_S03_00043': 'TX4_S03_00042',
+    'TX4_S03_00009': 'TX4_S03_00046', 'TX4_S03_00109': 'TX4_S03_00108', 'TX4_S03_00115': 'TX4_S03_00108',
+    'TX4_S03_00080': 'TX4_S03_00108', 'TX4_S03_00114': 'TX4_S03_00110',
+    'TX4_S03_00118': 'TX4_S03_00029', 'TX4_S03_00081': 'TX4_S03_00029', 'TX4_S03_00119': 'TX4_S03_00030',
+    'TX4_S03_00132': 'TX4_S03_00131',
+    'TX4_S03_00053': 'TX4_S03_00006', 'TX4_S03_00136': 'TX4_S03_00006', 'TX4_S03_00133': 'TX4_S03_00052',
+    'TX4_S03_00135': 'TX4_S03_00134', 'TX4_S03_00050': 'TX4_S03_00134', 'TX4_S03_00084': 'TX4_S03_00134',
+    'TX4_S03_00085': 'TX4_S03_00134', 'TX4_S03_00007': 'TX4_S03_00051',
+    'TX4_S03_00005': 'TX4_S03_00025', 'TX4_S03_00055': 'TX4_S03_00025',
+    'TX4_S03_00004': 'TX4_S03_00021', 'TX4_S03_00088': 'TX4_S03_00138',
+    'TX4_S03_00121': 'TX4_S03_00018', 'TX4_S03_00120': 'TX4_S03_00020', 'TX4_S03_00122': 'TX4_S03_00019',
+    'TX4_S03_00015': 'TX4_S03_00001', 'TX4_S03_00094': 'TX4_S03_00014', 'TX4_S03_00095': 'TX4_S03_00014',
+    'TX4_S03_00016': 'TX4_S03_00002', 'TX4_S03_00093': 'TX4_S03_00002', 'TX4_S03_00059': 'TX4_S03_00002',
+    'TX4_S03_00099': 'TX4_S03_00017', 'TX4_S03_00098': 'TX4_S03_00017', 'TX4_S03_00067': 'TX4_S03_00017',
+    'TX4_S03_00057': 'TX4_S03_00003',
 }
 
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a
@@ -317,4 +413,6 @@ PENDING_I4 = {
     # Batch I4-3 (request R3)
     'TX4_S02_00072': 'R3', 'TX4_S02_00074': 'R3', 'TX4_S02_00125': 'R3', 'TX4_S02_00078': 'R3',
     'TX4_S02_00147': 'R3', 'TX4_S02_00082': 'R3',
+    # Batch I4-5 (request R3)
+    'TX4_S03_00076': 'R3', 'TX4_S03_00054': 'R3',
 }
