@@ -1,7 +1,15 @@
 #!/usr/bin/env python3
 """Catalog and source mapping for the port tasks (coverage programme batches): 8/7, then Course 1.
 
-The Course 1 task list is in port_c1_tasks.py.
+The Course 1 task list is in port_c1_tasks.py. The parallel courses (Intermediate 4, Algebra 1/2, Algebra 1,
+Algebra 2) each have their own task list, map and mapping file, listed once in PARALLEL below
+(docs/change-specs/coverage-parallel-courses-v0.1.md).
+
+Usage:
+  python3 scripts/build-port87-map.py                   8/7 and Course 1, then every parallel course
+  python3 scripts/build-port87-map.py --course KEY      one parallel course only (KEY: intermediate-4, algebra-half,
+                                                        algebra-1, algebra-2); the 8/7 and Course 1 files are untouched
+  add --check to compare with the committed files instead of writing them (exit 1 if they differ)
 
 Each task names the source record it ports. Open records keep their own ID (course-87-en:item:...), so they
 become working entries. A port that replaces an earlier, less faithful adaptation takes over the record's ID
@@ -596,6 +604,16 @@ def c1_record(rec):
     return 'course-1-en:bank:C1_Section%s:item:%s' % (rec[4:6], rec)
 
 
+def emit(path, text):
+    """Write a generated file, or in --check mode record whether the committed file differs."""
+    if CHECK:
+        current = path.read_text() if path.exists() else None
+        if current != text:
+            STALE.append(str(path.relative_to(root)))
+    else:
+        path.write_text(text)
+
+
 def main():
     from port_c1_tasks import TASKS_C1
     inv = json.loads((root / 'curriculum/course-inventory/v0.1/course-87-en.json').read_text())
@@ -628,9 +646,85 @@ def main():
                             recipe=recipe, variant=variant, title=title, relationship='original-source-informed-port',
                             exactLegacyReproduction=False, sourceBlockSha256=h))
     assert len({e['sourceId'] for e in entries}) == len(entries)
-    (root / 'src/port87-map.js').write_text('(function(root){const data=' + json.dumps(entries, ensure_ascii=False, separators=(',', ':')) +
+    emit(root / 'src/port87-map.js', '(function(root){const data=' + json.dumps(entries, ensure_ascii=False, separators=(',', ':')) +
         ';if(typeof module!=="undefined"&&module.exports)module.exports=data;root.MathPort87Map=data;})(typeof globalThis!=="undefined"?globalThis:this);\n')
-    mapping_path.write_text(json.dumps(mapping, indent=1, ensure_ascii=False) + '\n')
+    emit(mapping_path, json.dumps(mapping, indent=1, ensure_ascii=False) + '\n')
     print('port tasks:', len(entries), '(8/7:', len(TASKS), '· Course 1:', len(TASKS_C1), ')')
 
-main()
+
+# ---------- parallel courses (coverage-parallel-courses-v0.1) ----------
+# key, task module, list name, course label (as in course-banks), inventory bank, recipe prefix, browser global.
+# Registered once here; a course adds tasks only in its own task list.
+PARALLEL = [
+    ('intermediate-4', 'port_i4_tasks', 'TASKS_I4', 'Intermediate 4', 'intermediate-4-en', 'i4-', 'MathPortIntermediate4Map'),
+    ('algebra-half', 'port_ah_tasks', 'TASKS_AH', 'Algebra 1/2', 'algebra-half-en', 'ah-', 'MathPortAlgebraHalfMap'),
+    ('algebra-1', 'port_a1_tasks', 'TASKS_A1', 'Algebra 1', 'algebra-1-en', 'a1-', 'MathPortAlgebra1Map'),
+    ('algebra-2', 'port_a2_tasks', 'TASKS_A2', 'Algebra 2', 'algebra-2-en', 'a2-', 'MathPortAlgebra2Map'),
+]
+
+
+def zip_hashes(bank):
+    """Block hashes for one bank from the private ZIP: ExamView items give their dynamic-data and rich-question
+    hashes (as Course 1 does); generator-script items give their script, question and answer block hashes (as 8/7)."""
+    zpath = os.environ.get('SAXON_SOURCE_ZIP')
+    if not zpath:
+        return {}
+    items = json.loads(zipfile.ZipFile(zpath).read(bank + '.json'))['items']
+    return {i['id']: ([i['dynamic_data_sha256'], i['question_rich_data_sha256']] if 'dynamic_data_sha256' in i
+                      else [b['sha256'] for b in i['blocks'] if b['type'] in (1, 3, 4, 5, 6, 8)]) for i in items}
+
+
+def build_course(key, module, listname, course, bank, prefix, glob_name):
+    import importlib
+    tasks = getattr(importlib.import_module(module), listname)
+    lesson = {r['id']: r['lessonId'] for r in json.loads((root / 'curriculum/course-inventory/v0.1' / (bank + '.json')).read_text())}
+    mapping_path = root / ('curriculum/source-mappings/port-%s-v0.1.json' % key)
+    old = {m['sourceRecord']: m['sourceBlockSha256'] for m in json.loads(mapping_path.read_text())} if mapping_path.exists() else {}
+    hashes = zip_hashes(bank) if tasks else {}
+    entries, mapping = [], []
+    for t in tasks:
+        assert len(t) == 6, '%s: each task is (record, recipe, variant, title, topic, replaces): %r' % (key, t)
+        record, recipe, variant, title, topic, replaces = t
+        assert record in lesson, '%s: %s is not a record in %s.json (use the full source ID)' % (key, record, bank)
+        assert recipe.startswith(prefix), '%s: recipe %s must start with %s' % (key, recipe, prefix)
+        assert title and topic and isinstance(replaces, bool), '%s: %s needs a title, a topic and True/False' % (key, record)
+        e = dict(sourceId=record, sourceRecord=record, lessonId=lesson[record], course=course, family='structured-port87',
+                 recipe=recipe, title=title, topic=topic, origin='original-source-informed-port', exactLegacyReproduction=False)
+        if variant:
+            e['variant'] = variant
+        if replaces:
+            e['replacesEarlierAdaptation'] = True
+        entries.append(e)
+        h = hashes.get(record) or old.get(record)
+        assert h, 'no block hashes for ' + record + ' (set SAXON_SOURCE_ZIP)'
+        mapping.append(dict(sourceId=record, sourceRecord=record, lessonId=lesson[record], course=course, family='structured-port87',
+                            recipe=recipe, variant=variant, title=title, relationship='original-source-informed-port',
+                            exactLegacyReproduction=False, sourceBlockSha256=h))
+    assert len({e['sourceId'] for e in entries}) == len(entries), key + ': a record is listed twice'
+    emit(root / ('src/port-%s-map.js' % key), '(function(root){const data=' + json.dumps(entries, ensure_ascii=False, separators=(',', ':')) +
+         ';if(typeof module!=="undefined"&&module.exports)module.exports=data;root.%s=data;})(typeof globalThis!=="undefined"?globalThis:this);\n' % glob_name)
+    # The source-mapping file exists only once the course has tasks (the coverage ledger reads every mapping file).
+    if entries:
+        emit(mapping_path, json.dumps(mapping, indent=1, ensure_ascii=False) + '\n')
+    elif mapping_path.exists():
+        if CHECK:
+            STALE.append(str(mapping_path.relative_to(root)))
+        else:
+            mapping_path.unlink()
+    print('port tasks (%s): %d' % (course, len(entries)))
+
+
+args = sys.argv[1:]
+CHECK = '--check' in args
+STALE = []
+only = args[args.index('--course') + 1] if '--course' in args else None
+assert only is None or only in [p[0] for p in PARALLEL], 'unknown course ' + str(only)
+if only is None:
+    main()
+for spec in PARALLEL:
+    if only in (None, spec[0]):
+        build_course(*spec)
+if CHECK:
+    if STALE:
+        sys.exit('Out of date (run the builder): ' + ', '.join(STALE))
+    print('port maps are up to date')

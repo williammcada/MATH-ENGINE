@@ -854,7 +854,9 @@ const oracle={
    if(p.nm!==undefined)return fracEq(q,p.l*p.w+2*p.h*(p.l+p.w),1);return fracEq(q,2*(p.l*p.w+p.l*p.h+p.w*p.h),1);}
 };
 const checks={};let tasks=0;
-for(const c of P.catalog){tasks++;const seen=new Set();
+// 8/7 and Course 1 only: the parallel-course tasks in P.catalog are tested by tests/port-<course>.cjs.
+const BASE=new Set(require('../src/port87-map.js').map(c=>c.sourceId));
+for(const c of P.catalog.filter(c=>BASE.has(c.sourceId))){tasks++;const seen=new Set();
  for(const seed of SEEDS)for(let index=0;index<N;index++){const q=E.generate(c.sourceId,{seed,index}),q2=E.generate(c.sourceId,{seed,index});
   assert.deepEqual(q,q2,'deterministic');assert(Object.isFrozen(q));assert.equal(q.provenance.sourceRecord,c.sourceRecord);seen.add(q.prompt+JSON.stringify(q.givens.parameters));
   const p=q.givens.parameters,a=q.answer;
