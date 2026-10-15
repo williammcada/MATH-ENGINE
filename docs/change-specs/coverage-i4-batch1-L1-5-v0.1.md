@@ -35,12 +35,14 @@ Book order, about 70–110 records a batch. Investigations follow Lessons 10, 20
 
 | Decision | Records |
 |---|---|
-| New port task: an open record, under its own ID | 50 |
-| New port task replacing a less faithful adaptation | 10 |
+| New port task: an open record, under its own ID | 52 |
+| New port task replacing a less faithful adaptation | 8 |
 | Consolidated twin | 41 |
 | Retired | 0 |
 
-**Replacements.** The ten covered-provisional records ported here (TX4_S01_00075, 00077, 00104, 00106, 00111, 00114, 00116, 00119, 00152, 00155) were served by generic equation, arithmetic and sequence adaptations. Those showed no addends in the prompt text, had no choices, and used ranges unlike the source (for example a single-digit unknown where the source has a two-digit one). The ports keep the source structure, ranges and distractors. Four other provisional records (00076, 00078, 00110, 00113) are consolidated into these ports.
+**Replacements.** Eight covered-provisional records are ported under their own IDs (TX4_S01_00075, 00077, 00104, 00106, 00111, 00114, 00116, 00119). They were served by generic equation and arithmetic adaptations that showed no addends in the prompt text, had no choices, and used ranges unlike the source (for example a single-digit unknown where the source has a two-digit one). The ports keep the source structure, ranges and distractors.
+
+**Provisional records kept as they are and consolidated.** Six other provisional records are consolidated into a port task: 00076, 00078, 00110 and 00113, and the two sequence records 00152 and 00155. The sequence ports sit on the open twins 00153 and 00156 instead of replacing 00152 and 00155, because a cross-course progression (track `sequences`) selects the earlier adaptations by their recipes (`b/sequence-next`, `b/sequence-missing`). Replacing them would drop the only entries with those recipes and break the shared cross-course build, which a course branch may not change. The earlier adaptations therefore stay as working entries.
 
 **Consolidated.** 41 records: choice-only twins of a ported free-response record, and repeated fixed items whose values differ but whose demand, response form and number sizes match. The decisions file names the target of every one. Every lesson keeps at least as many distinct task types as the original.
 
@@ -75,4 +77,6 @@ Book order, about 70–110 records a batch. Investigations follow Lessons 10, 20
 
 ## Verification
 
-Recorded in the verified checkpoint below.
+**First integrated run failed.** The first implementation checkpoint (`3ea666c`) replaced 00152 and 00155. `scripts/verify-course.cjs` stopped while regenerating the cross-course data: the progression selector `b/sequence-next` no longer matched any entry. The fix above is in this course's own files only (the task list and the decisions file). A private check of every progression selector against the catalog now reports none broken, and it is run before every later batch.
+
+Results of the passing run are recorded in the verified checkpoint below.

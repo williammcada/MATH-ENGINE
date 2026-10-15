@@ -260,7 +260,7 @@
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00054",
    "state": "consolidated",
-   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00152",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00153",
    "note": "Same demand as the port task it points to (Next three numbers of a counting-up sequence): choice-only twin or repeated fixed item."
   },
   {
@@ -303,7 +303,7 @@
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00076",
    "state": "consolidated",
    "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00075",
-   "note": "Same demand as the port task it points to (Missing addend among three addends): choice-only twin or repeated fixed item."
+   "note": "Same demand as the port task it points to (Missing addend among three addends): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00077",
@@ -317,7 +317,7 @@
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00078",
    "state": "consolidated",
    "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00042",
-   "note": "Same demand as the port task it points to (Missing addend among four addends): choice-only twin or repeated fixed item."
+   "note": "Same demand as the port task it points to (Missing addend among four addends): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00079",
@@ -471,7 +471,7 @@
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00110",
    "state": "consolidated",
    "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106",
-   "note": "Same demand as the port task it points to (Add seven one-digit numbers): choice-only twin or repeated fixed item."
+   "note": "Same demand as the port task it points to (Add seven one-digit numbers): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00111",
@@ -493,7 +493,7 @@
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00113",
    "state": "consolidated",
    "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00075",
-   "note": "Same demand as the port task it points to (Missing addend among three addends): choice-only twin or repeated fixed item."
+   "note": "Same demand as the port task it points to (Missing addend among three addends): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114",
@@ -669,37 +669,37 @@
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00152",
-   "state": "covered",
-   "by": [
-    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00152"
-   ],
-   "note": "Ported, replacing the earlier adaptation: Next three numbers of a counting-up sequence."
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00153",
+   "note": "Same demand as the port task it points to (Next three numbers of a counting-up sequence): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00153",
-   "state": "consolidated",
-   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00152",
-   "note": "Same demand as the port task it points to (Next three numbers of a counting-up sequence): choice-only twin or repeated fixed item."
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00153"
+   ],
+   "note": "Ported: Next three numbers of a counting-up sequence."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00154",
    "state": "consolidated",
-   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00152",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00153",
    "note": "Same demand as the port task it points to (Next three numbers of a counting-up sequence): choice-only twin or repeated fixed item."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00155",
-   "state": "covered",
-   "by": [
-    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00155"
-   ],
-   "note": "Ported, replacing the earlier adaptation: Three missing numbers in a counting sequence."
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00156",
+   "note": "Same demand as the port task it points to (Three missing numbers in a counting sequence): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00156",
-   "state": "consolidated",
-   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00155",
-   "note": "Same demand as the port task it points to (Three missing numbers in a counting sequence): choice-only twin or repeated fixed item."
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00156"
+   ],
+   "note": "Ported: Three missing numbers in a counting sequence."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00157",
