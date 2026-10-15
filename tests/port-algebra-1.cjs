@@ -317,6 +317,50 @@ const oracle={
   const to={centimeters:0.01,feet:0.3048,meters:1,inches:0.0254,yards:0.9144,kilometers:1000},m=/convert [\d,]+ cubic (\w+) to cubic (\w+)/.exec(q.prompt);
   return near(pt.v[0]/pt.v[1],p.b*(to[m[1]]/to[m[2]])**3)&&pt.min===3*p.fs.length&&pt.start===p.b;},
 
+ // Batch A1-7
+ 'a1-system':(q,p)=>{// the key pair satisfies both equations shown in the prompt (read back from the prompt with independent parsing)
+  const pt=P(q),x=pt.v[0][0]/pt.v[0][1],y=pt.v[1][0]/pt.v[1][1],eqs=q.prompt.replace(/^.*?: /,'').replace(/\. Write.*$/,'').split(' and ');
+  return eqs.length===2&&eqs.every(e=>{const [L,R]=e.split(' = ').map(t=>S.parseExpr(t,['x','y']));return L&&R&&near(L({x,y}),R({x,y}));});},
+ 'a1-cfrac':(q,p)=>{const [A,B,C]=p.L,env={[A]:1.7,[B]:2.9,[C]:0.6},a=env[A],b=env[B],c=env[C],want=p.form==='577'?(a/b)/(c/(b+a)):p.cs===1?(a/c)/(1/(a+b)):p.cs===2?(1/(a+b))/(1/c):(a+b)/(1/c);
+  const pt=P(q);if(pt.t==='poly')return near(Object.entries(pt.terms).reduce((t,[k,co])=>t+co*[...k.matchAll(/([a-z])(-?\d+)/g)].reduce((m,[,l,e])=>m*env[l]**Number(e),1),0),want);
+  const num=Object.entries(pt.num).reduce((t,[k,co])=>t+co*[...k.matchAll(/([a-z])(-?\d+)/g)].reduce((m,[,l,e])=>m*env[l]**Number(e),1),0);return near(num/S.parseExpr(pt.den,pt.vars)(env),want);},
+ 'a1-roster':(q,p)=>{const items=P(q).items;return items.length===p.a&&items.every((x,i)=>x===p.c+i)&&p.shown.length===p.b&&new Set(p.shown).size===p.a;},
+ 'a1-member':(q,p)=>p.statements.every((st,i)=>{const [x,sym,nm]=st.split(' '),n=Number(x.replace('−','-')),set=p[nm],truth=sym==='∈'?set.includes(n):!set.includes(n);return P(q,i).alts[0]===String(truth);}),
+ 'a1-rearr':(q,p)=>p.form==='mc'?P(q).alts[0]==='abcd'[p.order.indexOf(0)]:q.answer.kind==='teacher'&&(()=>{const m=p.eq.match(/^(.*) = (-?\d+)$/);const f=S.parseExpr(m[1].replace(/−/g,'-'),['x','y']);return [0,1,2].every(x=>near(f({x,y:p.m*x+p.k}),Number(m[2])));})(),
+ 'a1-negexp-sum':(q,p)=>{const pt=P(q),env={w:1.3,x:1.7,y:2.2,z:0.9};const m1=p.form==='591'?env.x**p.a*env.y**p.b:env.x**p.a*env.y**p.b*env.z**p.c,m2=p.form==='591'?p.h*env.z**p.c:env.w**p.d*env.y**p.e*env.z**p.f;
+  const num=Object.entries(pt.num).reduce((t,[k,co])=>t+co*[...k.matchAll(/([a-z])(-?\d+)/g)].reduce((m,[,l,e])=>m*env[l]**Number(e),1),0);return near(num/S.parseExpr(pt.den,pt.vars)(env),m1+m2)&&Object.keys(pt.num).every(k=>!/-\d/.test(k));},
+ 'a1-pct-word':(q,p)=>{const f=p.form;if(f==='596')return is(P(q),Q(100*p.a*p.b/100,p.a));if(f==='597')return Math.abs(P(q).v[0]/P(q).v[1]-100*p.a/(100-p.b))<0.005;if(f==='598')return is(P(q),[p.g*100,1]);
+  if(f==='599')return is(P(q),[p.d*1000*(100+p.p)/100,1]);if(f==='600')return is(P(q),Q(100*(p.z+p.p*p.z/100),100+p.p));if(f==='601')return is(P(q),[p.n*100*(100+p.p)/100,1]);if(f==='602')return is(P(q),[p.o*10*(100+10*p.p)/100,1]);return is(P(q),Q(100*p.a*p.b,p.a));},
+ 'a1-prism':(q,p)=>{const f=p.form;if(f==='612'){const area=(p.c+(p.c-p.b))*p.b/2;return is(P(q),[2*area+(p.c+(p.c-p.b)+p.b+p.d)*p.a,1]);}
+  if(f==='613')return is(P(q),[p.c*p.b,1]);if(f==='615')return is(P(q),[(p.a*p.b-(p.a-2*p.c)*p.c)*p.d,1]);if(f==='616')return is(P(q),[5*p.a*p.b,1]);
+  const sa=2*(p.a*p.b/2)+p.a*p.c+p.b*p.c+p.d*p.c;if(Math.abs(p.d*p.d-p.a*p.a-p.b*p.b)>0)return false;return f==='mc'?is(P(q),[sa,1]):is(P(q,0),Q(p.a*p.b*p.c,2))&&is(P(q,1),[sa,1]);},
+ 'a1-subset':(q,p)=>{if(p.form==='623'){const rank={Naturals:0,Wholes:1,Integers:2,Rationals:3,Reals:4},N=['Reals','Rationals','Integers','Wholes','Naturals','Irrationals'],sub=(x,y)=>x==='Irrationals'?y==='Reals':y==='Irrationals'?false:rank[x]<rank[y];
+   return P(q,0).alts[0]===String(sub(N[p.i1],N[p.j1]))&&P(q,1).alts[0]===String(sub(N[p.i2],N[p.j2]));}
+  const A=[p.a+1,p.a+2,p.a+3],B=x=>x>=p.a,C=[p.a,p.a+1,p.a+2],inB=xs=>xs.every(B),sub=(X,Y)=>X.every(x=>Y.includes(x)),truth={1:inB(A),2:!sub(A,C),3:inB(C),4:B(p.a+5),5:A.includes(p.a+5),6:sub(A,C),7:sub(C,A),8:!inB(C)};
+  return p.ids.every((k,i)=>P(q,i).alts[0]===String(truth[k]));},
+ 'a1-classify':(q,p)=>{// evaluate each number independently and classify it
+  const cls=x=>{const v=S.parseExpr(x.replace(/∛\(?(−?\d+)\)?/g,(m0,n)=>`(${n.replace('−','-')}<0?-1:1)*${Math.round(Math.cbrt(Math.abs(Number(n.replace('−','-')))))}`),[]);return null;};void cls;
+  const val=x=>{let t=x.replace(/−/g,'-').replace(/·/g,'*').replace(/([⁰¹²³⁴⁵⁶⁷⁸⁹]+)√\(?(-?\d+)\)?/g,(m0,k,n)=>{const e=[...k].map(ch=>'⁰¹²³⁴⁵⁶⁷⁸⁹'.indexOf(ch)).join('');const N=Number(n),r=Math.round(Math.sign(N)*Math.abs(N)**(1/e));return r**Number(e)===N?`(${r})`:`(${Math.sign(N)*Math.abs(N)**(1/e)})`;}).replace(/∛\(?(-?\d+)\)?/g,(m0,n)=>{const N=Number(n),r=Math.round(Math.cbrt(N));return r**3===N?`(${r})`:`(${Math.cbrt(N)})`;}).replace(/√\(?(\d+)\)?/g,(m0,n)=>`(${Math.sqrt(Number(n))})`);return Function('return '+t.replace(/\)\(/g,')*(').replace(/(\d)\(/g,'$1*('))();};
+  const kind=x=>{const v=val(x);if(Math.abs(v-Math.round(v))<1e-9)return Math.round(v)>0?['rational','integer','whole','natural']:Math.round(v)===0?['rational','integer','whole']:['rational','integer'];if(Math.abs(v*2520-Math.round(v*2520))<1e-6)return ['rational'];return ['irrational'];};
+  const same=(a,b)=>a.length===b.length&&a.every(x=>b.includes(x));return same(P(q,0).items,kind(p.x1))&&same(P(q,1).items,kind(p.x2));},
+ 'a1-sqrt-eval':(q,p)=>{const f=p.form;if(f==='629')return is(P(q),Q((p.b+p.a*p.e+p.a)-(p.c+Math.sqrt(p.d0*p.d0)),p.c+p.d0));if(f==='630')return is(P(q),[p.v[0]+p.s[0]*p.v[1]+p.s[1]*p.v[2]+p.s[2]*p.v[3],1]);
+  const r=Math.floor(Math.sqrt(p.c));return is(P(q,0),[r,1])&&is(P(q,1),[r+1,1])&&r*r!==p.c;},
+ 'a1-pm':(q,p)=>{const f=p.form,vals=P(q).vals.map(([re,im])=>re+'|'+im).sort();let w;
+  if(f==='635'){const m=p.a**2-p.b**2;w=[[m-p.c,0],[m+p.c,0]];}else if(f==='636'){const m=-p.a*(-p.b-p.c-1+1+1-1+p.e-p.f-p.g)+0;const m2=-p.a*((-p.b-p.c)-(-1-p.e)-p.f-p.g);w=[[m2-p.i,0],[m2+p.i,0]];void m;}
+  else if(f==='638'){w=[[(-p.b*p.b-p.b)/(2*p.a),0],[(-p.b*p.b+p.b)/(2*p.a),0]];}
+  else{const D=p.b*p.b-4*p.a*p.c;w=D>=0?[[(-p.b-Math.sqrt(D))/(2*p.a),0],[(-p.b+Math.sqrt(D))/(2*p.a),0]]:[[-p.b/(2*p.a),Math.sqrt(-D)/(2*p.a)],[-p.b/(2*p.a),-Math.sqrt(-D)/(2*p.a)]];}
+  const pv=P(q).vals;return w.every(([re,im])=>pv.some(([r2,i2])=>near(re,r2)&&near(im,i2)))&&vals.length===2;},
+ 'a1-rad':(q,p)=>p.form==='642'?near(P(q).v,Math.sqrt(p.d))&&!Number.isInteger(Math.sqrt(p.d)):near(P(q).v,(p.b+p.c-p.d)*Math.sqrt(p.a))&&p.a!==4,
+ 'a1-ratirr':(q,p)=>{if(p.form==='mc')return P(q).alts[0]==='abcd'[p.order.indexOf(0)]&&!Number.isInteger(Math.sqrt(p.a));
+  const items=q.prompt.replace(/^.*?: /,'').replace(/\. Answer.*$/,'').split(/\s{2}(?=\([abcd]\))/).map(x=>x.replace(/^\([abcd]\) /,''));
+  const sq=n=>Number.isInteger(Math.sqrt(n));const rational=it=>{if(/…/.test(it))return true;if(/π/.test(it))return /^−π \+ \d+ \+ π$/.test(it);let m;
+   if((m=it.match(/^√\((\d+) \+ (\d+)\)$/)))return sq(Number(m[1])+Number(m[2]));if((m=it.match(/^√\((\d+)\/(\d+)\)$/)))return sq(Number(m[1])/Number(m[2]));if((m=it.match(/^\d*√(\d+)$/)))return sq(Number(m[1]));return /^−?\d+(\/\d+)?$/.test(it);};
+  return items.every((it,i)=>P(q,i).alts[0]===(rational(it)?'rational':'irrational'));},
+ 'a1-domain':(q,p)=>{const f=p.form;if(f==='650'){const pt=P(q,0);return pt.op===(p.right?'ge':'le')&&pt.b===p.a&&pt.intdom&&P(q,1).t==='kw';}
+  if(f==='651'){const pt=P(q,0);return pt.lo===p.c&&pt.hi===p.d&&(p.a===3?pt.intdom&&pt.loIn&&pt.hiIn:pt.loIn===(p.a===2)&&pt.hiIn===(p.a===1));}
+  if(f==='mc')return P(q).alts[0]==='abcd'[p.order.indexOf(0)];return q.answer.kind==='teacher'&&q.answer.reference.includes(String(p.a).replace('-','−'));},
+ 'a1-wavg':(q,p)=>p.form==='661'?is(P(q),[Math.round(p.sc.reduce((t,x,i)=>t+x*p.w[i],0)/p.w.reduce((a,b)=>a+b,0)),1]):is(P(q),[Math.round((p.a*p.b+p.c*p.d)/100),1])&&p.b+p.d===100,
+
 };
 const near=(x,y)=>Math.abs(x-y)<=1e-9*Math.max(1,Math.abs(y));
 

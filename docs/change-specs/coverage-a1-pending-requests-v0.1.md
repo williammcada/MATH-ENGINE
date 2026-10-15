@@ -51,27 +51,28 @@ Port recipes that keep the source ranges are ready in `src/port-algebra-1.js`: `
 
 **Meanwhile:** the thirteen records stay covered-provisional.
 
-### R3 — Let port tasks replace breadth-bank adaptations (A1-5)
+### R3 — Let port tasks replace breadth-bank adaptations (A1-5, A1-7)
 
-**Records (covered-provisional):** algebra-1-en:node:376.
+**Records (covered-provisional):** algebra-1-en:node:376, node:570.
 
 | Record | Earlier adaptation | The source |
 |---|---|---|
 | node:376 | `prime-factorization`: factors 12, 40, 504 and similar | factors 2ᵃ·3ᵇ·5ᶜ times 7 or 11 (for example 1,320 or 12,600) |
+| node:570 | `system-substitution`: x up to about 50 | keeps the solution's x between −20 and 20 |
 
-Port recipes that keep the source's ranges are ready for node:376 (`a1-primes`).
+Port recipes that keep the source's ranges are ready for node:376 (`a1-primes`), node:570 (`a1-system` variant `570`).
 
 **Why the course chat cannot do it.** Replacing an adaptation removes its catalog entry, and `tests/breadth-bank-audit.py` line 121 asserts fixed totals (`count==14800 and len(recipes)==65`). Checked in an integrated copy on 2026-10-15: with node:376 replaced, that assertion fails; `breadth-bank.cjs`, `grade5.test.cjs` and the other shared tests pass. The later records in this table have the same dependency (each adaptation is a breadth entry).
 
 **Change wanted:** in `tests/breadth-bank-audit.py`, derive the expected count and recipe total from the entries still served by the breadth family, instead of fixed numbers.
 
-**Then, in `scripts/port_a1_tasks.py`:** add each record with `replaces` True (`(N + '376', 'a1-primes', None, 'Write a number as a product of primes', 'number-theory', True)`), oracles for any recipe without one in `tests/port-algebra-1.cjs`, and decisions covering the records.
+**Then, in `scripts/port_a1_tasks.py`:** add each record with `replaces` True (`(N + '376', 'a1-primes', None, 'Write a number as a product of primes', 'number-theory', True)`; `(N + '570', 'a1-system', '570', 'Solve a system by substitution', 'systems', True)`), oracles for any recipe without one in `tests/port-algebra-1.cjs`, and decisions covering the records.
 
 **Meanwhile:** the records stay covered-provisional.
 
-### R4 — Let port tasks replace statistics-bank adaptations (A1-6)
+### R4 — Let port tasks replace statistics-bank adaptations (A1-6, A1-7)
 
-**Records (covered-provisional):** algebra-1-en:node:493, node:494, node:495, node:551, node:552.
+**Records (covered-provisional):** algebra-1-en:node:493, node:494, node:495, node:551, node:552, node:661.
 
 | Record | Earlier adaptation | The source |
 |---|---|---|
@@ -80,14 +81,15 @@ Port recipes that keep the source's ranges are ready for node:376 (`a1-primes`).
 | node:495 | the same, golf scores | the same, golf scores 75 to 90 |
 | node:551 | groups of any size (2 to 7 values) | two groups totalling 15 values, from its table of averages |
 | node:552 | groups of any size | three groups totalling 20 values, from its table of averages |
+| node:661 | weights 1 to 5 for every test | weights 1 to 4 for the first two tests and 2 to 5 for the last two |
 
-Port recipes that keep the source's ranges are ready for node:493 (`a1-stats` variant `493`), node:494 (`a1-stats` variant `494`), node:495 (`a1-stats` variant `495`), node:551 (`a1-overall` variant `551`), node:552 (`a1-overall` variant `552`).
+Port recipes that keep the source's ranges are ready for node:493 (`a1-stats` variant `493`), node:494 (`a1-stats` variant `494`), node:495 (`a1-stats` variant `495`), node:551 (`a1-overall` variant `551`), node:552 (`a1-overall` variant `552`), node:661 (`a1-wavg` variant `661`).
 
 **Why the course chat cannot do it.** Replacing an adaptation removes its catalog entry, and `tests/statistics-bank-audit.py` line 72 asserts a fixed number of checked instances (`count==34000`). Checked in an integrated copy on 2026-10-15: with nodes 493, 494, 495, 551 and 552 replaced, that assertion fails (the audit already skips replaced entries, so its count drops); the other shared tests pass. The later records in this table have the same dependency.
 
 **Change wanted:** in `tests/statistics-bank-audit.py`, derive the expected count from the entries it checks (for example 1,000 instances per entry still served by the statistics family) instead of `34000`.
 
-**Then, in `scripts/port_a1_tasks.py`:** add each record with `replaces` True (`(N + '493', 'a1-stats', '493', 'Range, mean, median and mode', 'statistics', True)`; `(N + '494', 'a1-stats', '494', 'Range, mean, median and mode of weights', 'statistics', True)`; `(N + '495', 'a1-stats', '495', 'Range, mean, median and mode of golf scores', 'statistics', True)`; `(N + '551', 'a1-overall', '551', 'Overall average of two groups', 'statistics', True)`; `(N + '552', 'a1-overall', '552', 'Overall average of three groups', 'statistics', True)`), oracles for any recipe without one in `tests/port-algebra-1.cjs`, and decisions covering the records.
+**Then, in `scripts/port_a1_tasks.py`:** add each record with `replaces` True (`(N + '493', 'a1-stats', '493', 'Range, mean, median and mode', 'statistics', True)`; `(N + '494', 'a1-stats', '494', 'Range, mean, median and mode of weights', 'statistics', True)`; `(N + '495', 'a1-stats', '495', 'Range, mean, median and mode of golf scores', 'statistics', True)`; `(N + '551', 'a1-overall', '551', 'Overall average of two groups', 'statistics', True)`; `(N + '552', 'a1-overall', '552', 'Overall average of three groups', 'statistics', True)`; `(N + '661', 'a1-wavg', '661', 'Weighted average of four tests', 'statistics', True)`), oracles for any recipe without one in `tests/port-algebra-1.cjs`, and decisions covering the records.
 
 **Meanwhile:** the records stay covered-provisional.
 
