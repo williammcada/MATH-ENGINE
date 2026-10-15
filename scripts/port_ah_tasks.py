@@ -268,6 +268,7 @@ TASKS_AH = [
     ('algebra-half-en:node:406', 'ah-proportion-fractions', None, 'Proportion with fractions', 'ratio-proportion', False),
     ('algebra-half-en:node:407', 'ah-proportion-fractions-choice', None, 'Solve a proportion with fractions', 'ratio-proportion', False),
     ('algebra-half-en:node:411', 'ah-circle-choice', None, 'Area or circumference of a circle', 'circle-measurement', False),
+    ('algebra-half-en:node:415', 'ah-two-step-int', None, 'Two-step equation with whole numbers', 'equations', True),
     ('algebra-half-en:node:416', 'ah-two-step-mixed-choice', None, 'Two-step equation with mixed numbers', 'equations', False),
     ('algebra-half-en:node:417', 'ah-two-step-decimal-choice', None, 'Two-step equation with decimals', 'equations', False),
     ('algebra-half-en:node:419', 'ah-ship-length', None, 'Whole from a fractional part', 'fractions', False),

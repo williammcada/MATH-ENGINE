@@ -2,17 +2,17 @@
 
 Recorded 2026-10-15 (Asia/Shanghai). Batch protocol: `coverage-programme-phase0-v0.1.md` §0.6, applied to one course as in `coverage-parallel-courses-v0.1.md`. Branch `claude/coverage-algebra-half`; handbook `6e1f5a4` (U-04, U-06, U-07, U-08, U-14; S-02). Only this course's own files and its decisions file change.
 
-## Result: 55 of the 56 records in Lessons 56–72 are decided; node:415 is left for the owner
+## Result: every one of the 56 records in Lessons 56–72 is decided
 
 | Decision | Records |
 |---|---|
 | New port task: an open record, under its own ID | 46 |
-| Left as a provisional adaptation, pending the owner | 1 |
+| New port task replacing a less faithful adaptation | 1 |
 | Existing adaptation confirmed after review | 8 |
 | Consolidated | 1 |
 | Retired | 0 |
 
-**Left for the owner:** node:415 (two-step equation). The earlier adaptation's solutions reach 30; the source keeps x from 2 to 9, so a faithful port (recipe `ah-two-step-int`, kept in the module) was written to replace it. Verification showed that the shared linear audit (`tests/linear-bank-audit.py`) expects every record in `linear-equations-v0.2.json`, node:415 among them, to stay in the linear family, so the replacement needs a shared change. The task is withdrawn, the record stays provisional, and the request is in `coverage-ah-pending-requests-v0.1.md`.
+**Replacement (completed 2026-10-16):** node:415 (two-step equation). The earlier adaptation's solutions reach 30; the source keeps x from 2 to 9, so the port task `ah-two-step-int` replaces it. Verification first showed that the shared linear audit (`tests/linear-bank-audit.py`) required the record to stay in the linear family; the task was withdrawn and the change requested. The owner approved and made the audit change (commit `ec02b99`: a row may leave the linear family only when a course port task serves it), and the replacement was restored. See `coverage-ah-node415-v0.1.md`.
 
 **Confirmed adaptations:** node:402, 403 (rates), 409, 410 (circles), 413, 414 (two-step equations), 439 (ratio; the only entry for `p/ratio-missing`), 448 (percent whole; the only entry for `p/percent-whole-half`).
 
@@ -20,7 +20,7 @@ Recorded 2026-10-15 (Asia/Shanghai). Batch protocol: `coverage-programme-phase0-
 
 ## New tasks
 
-46 tasks from 42 recipes.
+47 tasks from 43 recipes.
 
 | Lessons | Topics |
 |---|---|

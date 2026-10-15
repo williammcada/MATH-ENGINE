@@ -4,7 +4,9 @@ Recorded during the overnight Algebra 1/2 port (owner instruction, 2026-10-15): 
 
 ## Shared-file changes requested
 
-### 1. Let node:415 move out of the linear audit (Batch AH-5)
+### 1. Let node:415 move out of the linear audit (Batch AH-5) — approved and done 2026-10-16
+
+**Status:** the owner approved this on 2026-10-16 and changed `tests/linear-bank-audit.py` on the branch (commit `ec02b99`): a row may leave the linear family only when a course port task serves that record. The node:415 port task is restored (see `coverage-ah-node415-v0.1.md`). The original request follows.
 
 - **File:** `curriculum/source-mappings/linear-equations-v0.2.json` (and through it `tests/linear-bank-audit.py`).
 - **Change wanted:** remove the `algebra-half-en:node:415` row (or let the audit skip rows whose record is served by a port task), so that the Algebra 1/2 port task can replace the adaptation.

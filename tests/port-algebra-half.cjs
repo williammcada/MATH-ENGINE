@@ -306,6 +306,7 @@ const oracle={
  'ah-proportion-fractions':(q,p)=>{const v=p.N.map(x=>x==='n'?num(q,0):x[0]/x[1]);return near(v[0]*v[3],v[1]*v[2])&&num(q,0)>0;},
  'ah-proportion-fractions-choice':(q,p)=>{const v=p.N.map(x=>x==='n'?num(q,0):x[0]/x[1]);return near(v[0]*v[3],v[1]*v[2])&&num(q,0)>0;},
  'ah-circle-choice':(q,p)=>near(num(q,0),p.area?3.14*p.a*p.a:2*3.14*p.a),
+ 'ah-two-step-int':(q,p)=>p.a*num(q,0)+p.e===p.f,
  'ah-two-step-mixed-choice':(q,p)=>near((p.a/p.b)*num(q,0)-p.c/p.d,(p.a*p.e*p.d-p.b*p.c*p.f)/(p.b*p.f*p.d)),
  'ah-two-step-decimal-choice':(q,p)=>near(p.a*num(q,0)+p.F/10,p.G/10),
  'ah-ship-length':(q,p)=>near(num(q,0)*p.d/p.f,p.a*p.d),
