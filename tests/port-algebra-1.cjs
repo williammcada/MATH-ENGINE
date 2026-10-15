@@ -431,6 +431,42 @@ const oracle={
   if(f==='853'){const Pa=P(q,0).v[0],Mo=P(q,1).v[0];return Pa+Mo===p.a+p.b&&Mo===2*Pa+(p.b-2*p.a);}
   const X=P(q,0).v[0],Y=P(q,1).v[0],tot=Number(q.prompt.match(/found \$(\d+)/)[1]);return X*p.a+Y*p.b===tot&&X-Y===(p.d===1?p.c:-p.c);},
 
+ // Batch A1-10
+ 'a1-sphere':(q,p)=>{const V=4/3*3.14*p.a**3,SA=4*3.14*p.a*p.a,val=pt=>pt.v[0]/pt.v[1];if(p.form==='861')return Math.abs(val(P(q,0))-V)<0.006&&near(val(P(q,1)),SA);return p.vol?Math.abs(val(P(q))-V)<0.006:near(val(P(q)),SA);},
+ 'a1-motion':(q,p)=>{const f=p.form,v=P(q).v,hrs=t0=>{const [H,M]=t0.split(':').map(Number);return H+M/60;};
+  if(f==='865'){const D=v[0]/v[1],m=q.prompt.match(/took (\d+)(?: (\d+)\/(\d+))? hours/),T0=Number(m[1])+(m[2]?Number(m[2])/Number(m[3]):0);return near(D/p.s1+D/p.s2,T0);}
+  if(f==='877'){const t0=hrs(P(q).alts[0])-2;return near(p.a*(t0+2)+p.b*t0,p.d)&&near(t0,p.c);}
+  if(f==='878'){const boat=v[0]/v[1],tb=boat/p.b,tw=(p.c+p.d)/4-tb;return near(p.a*tw+boat,(p.a*p.c+p.b*p.d)/4)&&tw>0;}
+  if(f==='879'){const A=P(q,0).v[0],B=P(q,1).v[0],t0=hrs(p.c)-2;return near((A+B)*t0,p.d)&&B-A===p.b-p.a&&q.prompt.includes(`${p.b-p.a} miles per hour faster`);}
+  if(f==='880'){const Nb=P(q,0).v[0],Sb=P(q,1).v[0];return Nb*p.c+Sb*(p.c-2)===p.d&&Nb-Sb===p.b-p.a;}
+  if(f==='909'){const x=v[0];return (12+p.c-p.b)*x-(12-p.a+p.c)*p.mph===p.miles&&x>=50&&x<=75;}
+  return near(v[0]/v[1],p.a/(p.c-p.b))&&[1,2,4].includes(p.cs);},
+ 'a1-ratmul':(q,p)=>{const f=p.form,pt=P(q),X=pt.t==='ratfn'?pt.v:'x',ev=(str,x)=>S.parseExpr(str,[X])({[X]:x});const sides=q.prompt.replace(/^.*?: /,'').split(/ [×÷] /),op=q.prompt.includes('÷')?'div':'mul';
+  const fr=t=>{const m=t.match(/^\((.*)\)\/\((.*)\)$/);const cl=u=>u.replace(/²/g,'^2').replace(/³/g,'^3').replace(/−/g,'-');return x=>ev(cl(m[1]),x)/ev(cl(m[2]),x);};
+  const L=fr(sides[0].replace(/^x²\//,'(x²)/')),R=fr(sides[1]),want=x=>op==='mul'?L(x)*R(x):L(x)/R(x);
+  const got=x=>pt.t==='num'?pt.v[0]/pt.v[1]:ev(pt.num,x)/ev(pt.den,x);return [-2.31,0.77,1.93,3.41].every(x=>near(got(x),want(x)));},
+ 'a1-shapes':(q,p)=>{const kinds=['V up','V down','parabola up','parabola down','line up','line down','cubic up','cubic down','root up','root down'];if(p.form==='885'){const names=['f','g','h','j','k'];return p.order.every((n,s0)=>q.answer.parts[s0].alts[0]===names[n]&&new RegExp(`${names[n]}\\(x\\) = `).test(q.prompt))&&new Set(p.idx).size===5;}
+  const key=P(q).alts[0];return key.startsWith(p.names[0]+'(x) = ')&&new Set(p.idx).size===4&&kinds.length===10;},
+ 'a1-sqeq':(q,p)=>{const [A,B,C]=q.answer.parts;return near(A.vals[0][0]**2,p.a*p.a)&&near(B.vals[0][0]**2,p.c*p.c*p.e)&&near(C.vals[0][0]**2,p.r)&&[A,B,C].every(x=>near(x.vals[0][0],-x.vals[1][0]));},
+ 'a1-pyth':(q,p)=>{const f=p.form;if(f==='894')return p.t===1?near(P(q).v,Math.sqrt(2*p.a*p.a)):is(P(q),[p.a,1]);
+  if(f==='895'){const L1=Math.min(p.b2**2-p.b1**2,2*p.b1*p.b2),L2=Math.max(p.b2**2-p.b1**2,2*p.b1*p.b2),Hy=Math.sqrt(L1*L1+L2*L2),z=P(q).v[0];return p.cs===1?z===Hy:z*z+(p.cs===2?L2:L1)**2===Hy*Hy;}
+  const TR=[[3,4,5],[6,8,10],[5,12,13],[9,12,15],[8,15,17],[12,16,20],[7,24,25],[15,20,25],[10,24,26]];return p.sel.every((s0,i)=>{const t0=TR[s0],z=q.answer.parts[i].v[0],sides=t0.map((x,j)=>j===p.ks[i]?z:x);return sides[0]**2+sides[1]**2===sides[2]**2;})&&new Set(p.ks).size===3;},
+ 'a1-dist':(q,p)=>near(P(q).v,Math.hypot(p.a-p.c,p.b-p.d)),
+ 'a1-slope':(q,p)=>is(P(q),Q(p.b-p.d,p.a-p.c))&&P(q).v[1]>0,
+ 'a1-round':(q,p)=>{if(p.form==='914'){const x=p.N/1e6,k=10**p.p;return is(P(q),Q(Math.floor(x*k+0.5+1e-9),k));}const x=p.C/1000;return p.ten?is(P(q),[Math.floor(x/10+0.5)*10,1]):is(P(q),Q(Math.floor(x*10+0.5+1e-9),10));},
+ 'a1-ratadd':(q,p)=>{const pt=P(q),X=pt.v,ev=(str,x)=>S.parseExpr(str,[X])({[X]:x});let want;
+  if(p.form==='918')want=x=>p.a/(x+p.b)+p.a/(x*x-p.b*p.b);else{const s0=p.plus?1:-1;want=x=>(p.a*x+p.e)/((x+p.b)*(x+p.c))+s0*(p.d*x+p.f)/(x+p.b);}
+  return [-2.31,0.77,1.93,3.41].every(x=>near(ev(pt.num,x)/ev(pt.den,x),want(x)));},
+ 'a1-absineq':(q,p)=>{// solve the prompt's inequality independently at sample points and compare with the expected region
+  const m=q.prompt.match(/(?:solution of|line:) (.+?) ([<>≤≥]) (−?\d+)(?:\?|\.)/),L=m[1].replace(/−/g,'-').replace(/\|x\|/g,'abs(x)'),r=Number(m[3].replace('−','-')),f=x=>Function('abs','x','return '+L.replace(/(\d)\s*-\s*abs/,'$1-abs'))(Math.abs,x),cmp={'<':(u,w)=>u<w,'>':(u,w)=>u>w,'≤':(u,w)=>u<=w,'≥':(u,w)=>u>=w}[m[2]];
+  const inside=p.b<=2,closed=p.b===2||p.b===3,inRegion=x=>inside?(closed?Math.abs(x)<=p.a:Math.abs(x)<p.a):(closed?Math.abs(x)>=p.a:Math.abs(x)>p.a);if(![-11,-p.a,-p.a+0.5,0,p.a-0.5,p.a,p.a+0.5,11].every(x=>cmp(f(x),r)===inRegion(x)))return false;
+  return p.form==='mc'?P(q).alts[0]==='abcd'[p.order.indexOf(p.b-1)]:q.answer.kind==='teacher';},
+ 'a1-rateq2':(q,p)=>{const x=P(q).v[0]/P(q).v[1],cs=p.cs;if(x===0)return false;if(cs===1)return near((p.a+x)/x+p.b/x,0);if(cs===2)return near((x+p.a)/(p.d*x),p.b/(p.e*x)+p.c/p.f);return near(p.a/(p.b*x),p.c/(x+p.d))&&x!==-p.d;},
+ 'a1-literal2':(q,p)=>{const pt=P(q),m=q.prompt.match(/^Solve for (\w): (.*) = (.*)$/),V=m[1],vars=[...pt.vars,V];const lhs=S.parseExpr(m[2],vars),rhs=S.parseExpr(m[3],vars);
+  return pt.samples.every(([env,y])=>{const e={...env,[V]:y};return isFinite(y)&&near(lhs(e),rhs(e));});},
+ 'a1-group':(q,p)=>{const pt=P(q),env={},ev=P0=>Object.entries(P0).reduce((t,[k,c])=>t+c*[...k.matchAll(/([a-z])(-?\d+)/g)].reduce((m,[,l,e])=>m*env[l]**Number(e),1),0);[...'abcdefghijklmnopqrstuvwxyz'].forEach((l,i)=>{env[l]=1.1+0.13*i;});
+  const want=p.form==='942'?(env[p.j]*env[p.k]+p.a)*(env[p.j]+env[p.l]):(p.a*env[p.e]+p.b)*(p.c*env[p.f]+p.d*env[p.g]);return pt.n===2&&near(ev(pt.poly),want);},
+
 };
 const near=(x,y)=>Math.abs(x-y)<=1e-9*Math.max(1,Math.abs(y));
 
@@ -452,6 +488,8 @@ const wrong={
  'a1-polydiv':q=>[q.answer.value.replace(/ [+−] \d+\/\(.*\)$/,'')+(P(q).r?'':' + 1/(x + 1)')],
  'a1-sciops':q=>[String(P(q).v*10)],
  'a1-domain2':q=>P(q).t==='ineq'?[q.answer.value.replace(/[≤≥]/,c=>c==='≤'?'≥':'≤')]:[],
+ 'a1-ratmul':q=>P(q).t==='ratfn'&&P(q).reduced&&P(q).dden>0?[`(${P(q).num})*(x+17)/((${P(q).den})*(x+17))`.replace(/x\+17/g,P(q).v+'+17')]:[],
+ 'a1-pyth':q=>P(q).t==='exact'?[String(P(q).v.toFixed(2))]:[],
 };
 
 H.run({key:'algebra-1',oracle,wrong,instances:Number(process.argv[2]||250)});
