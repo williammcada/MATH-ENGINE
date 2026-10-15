@@ -91,4 +91,16 @@ Changing either is a shared-file change, which this course branch may not make. 
 
 This checkpoint replaces nothing (see above). Before each later batch, a private check confirms that every progression selector still matches, and the task list sets no replacement flag.
 
-Results of the passing run are recorded in the verified checkpoint below.
+**Passing run** on implementation checkpoint `38d5f4c`, Lessons 1–5 only:
+
+| Check | Result |
+|---|---|
+| Ownership: only Intermediate 4 files changed since `c7538877` | Passed (8 files) |
+| Shared outputs regenerated in a temporary copy (port maps, cross-course, related concepts, ledger, practice and dist) | Passed |
+| Full suite, 79 tests, compared with `docs/verification/parallel-courses-baseline.json` | Passed: every test that passed at the baseline still passes; the 31 failures recorded at the baseline are unchanged |
+| `tests/port-intermediate-4.cjs` through `tests/port-courses.cjs intermediate-4 -- 1000` | Passed: 52 tasks, 52,000 instances; independent keys, distractors rejected and named, drawings, determinism; the decisions file validated |
+| `tests/structured-bank-audit.py` | Passed (94 structured adaptations, unchanged) |
+| Drawings rendered in Chromium and inspected | Passed (contact sheet reviewed privately) |
+| Studio preview, PDF and Word print checks | Not run: the Studio re-pins after the integration pass |
+
+**Ledger after this batch (regenerated in the temporary copy):** Intermediate 4 is 6.8% complete (52 covered, 42 consolidated), 12.9% including the 85 records still covered-provisional; 1,209 records open.
