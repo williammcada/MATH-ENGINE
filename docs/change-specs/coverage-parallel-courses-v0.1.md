@@ -201,8 +201,8 @@ This is the batch protocol of `coverage-programme-phase0-v0.1.md` §0.6, applied
 
 The owner, or a chat the owner names, runs it:
 
-1. **Merge.** Merge the course branches into the integration branch the owner names. Course branches touch disjoint files, so the merges are conflict-free.
-2. **Check the merge.** Run `node scripts/verify-course.cjs <key> --files-only --base <integration base>` for each merged branch.
+1. **Check each course branch before merging it.** On the course branch, run `node scripts/verify-course.cjs <key> --files-only --base <integration base>`. It must report only that course's files. A merged branch contains several courses' files, so this check is run on each course branch, not on the merge.
+2. **Merge.** Merge the course branches into the integration branch the owner names. Course branches touch disjoint files, so the merges are conflict-free.
 3. **Regenerate.** Run `node scripts/regenerate-shared.cjs` in the repository, then bump the `package.json` version.
 4. **Verify.** Run the full suite, and `node scripts/verify-course.cjs all`.
 5. **Record.** Commit the implementation and verified checkpoints. Refresh `docs/verification/parallel-courses-baseline.json` if the set of tests or their baseline results changed.
