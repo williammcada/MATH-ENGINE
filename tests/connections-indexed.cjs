@@ -1,0 +1,9 @@
+// Indexed connection lookups (0.61.1) must return exactly what a full scan of every working entry returns.
+'use strict';const assert=require('node:assert/strict'),X=require('../src/cross-course.js');
+const labels=X.relationLabels,rank={harder:0,easier:1,prerequisite:2,extension:3,'same-scope':4,related:5,'shared-provider':6};
+const distance=(a,b)=>{let best=100;for(const x of a.memberships)for(const y of b.memberships)if(x.trackId===y.trackId)best=Math.min(best,Math.abs(x.level-y.level));return best;},preferred=p=>p.sourceId===p.providerSourceId?0:1;
+function fullScan(id,relation,crossBankOnly,limit){const a=X.lookup(id),c=[];for(const b of X.profiles){if(b.sourceId===id||crossBankOnly!==false&&a.bankId===b.bankId)continue;const r=X.compare(id,b.sourceId);if(r.type==='distinct'||relation!=='all'&&r.type!==relation)continue;if(r.type==='shared-provider'&&relation!=='shared-provider')continue;c.push({...r,sourceId:b.sourceId,profile:b,label:labels[r.type]});}
+ c.sort((x,y)=>rank[x.type]-rank[y.type]||distance(a,x.profile)-distance(a,y.profile)||preferred(x.profile)-preferred(y.profile)||x.sourceId.localeCompare(y.sourceId));const seen=new Set(),out=[];for(const r of c){if(seen.has(r.profile.providerSourceId))continue;seen.add(r.profile.providerSourceId);out.push(r);if(out.length===limit)break;}return out;}
+const plain=x=>JSON.parse(JSON.stringify(x));let n=0;
+X.profiles.forEach((p,i)=>{if(i%9)return;for(const relation of ['harder','easier','prerequisite','extension','same-scope','shared-provider'])for(const crossBankOnly of [false,true])for(const limit of [24,100]){assert.deepEqual(plain(X.suggestions(p.sourceId,{relation,crossBankOnly,limit})),plain(fullScan(p.sourceId,relation,crossBankOnly,limit)),p.sourceId+' '+relation);n++;}});
+console.log('PASS connections-indexed: '+n+' indexed lookups identical to a full scan');

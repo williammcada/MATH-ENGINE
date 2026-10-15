@@ -1,6 +1,6 @@
 {
   "name": "mcada-math-engine",
-  "version": "0.61.0-rc.1",
+  "version": "0.61.1-rc.1",
   "private": true,
   "main": "src/grade5.js",
   "scripts": {
@@ -27,6 +27,7 @@
     "test:phase2": "node tests/phase2-review.cjs && python3 tests/phase2-audit.py",
     "build:practice": "node scripts/build-practice.cjs",
     "test:practice": "node tests/practice.cjs",
-    "test:port87": "node tests/port87.cjs && node tests/coverage-ledger.cjs"
+    "test:port87": "node tests/port87.cjs && node tests/coverage-ledger.cjs",
+    "test:connections": "node tests/connections-indexed.cjs"
   }
 }
