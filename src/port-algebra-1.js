@@ -17,7 +17,8 @@
             proper fraction or integer) | 'frac' (lowest terms or integer) | 'any' (any exact form of the value).
             Trailing unit words and the degree sign are ignored.
      word   {t:'word', alts:[...]}    one of the accepted words or phrases (case, articles and punctuation ignored)
-     kw     {t:'kw', need:[[...],...], avoid:[...]}  a written statement: one phrase from every need group, no avoid phrase
+     kw     {t:'kw', need:[[...],...], avoid:[...]}  a written statement: one phrase from every need group, no avoid phrase,
+            and no number that the need phrases do not use
      pi     {t:'pi', a:[n,d], b:[n,d]} the exact value a + bπ, written with π (or pi) and no decimal approximation
      chain  {t:'chain', v:[n,d], start, min} a measurement times at least `min` unit multipliers, product equal to v
      roster {t:'roster', set:'natural'|'whole'|'integers'} the set in braces with an ellipsis */
@@ -60,7 +61,9 @@ function partOk(p,s){s=String(s).trim();
   if(p.form==='frac')return r.form==='int'||(r.form==='frac'&&r.lowest);
   return true;}
  if(p.t==='word'){const w=normW(s);return p.alts.some(a=>normW(a)===w);}
- if(p.t==='kw'){const r=s.toLowerCase().replace(/[’']/g,"'").replace(/[−–]/g,'-');if(r.length<3)return false;return p.need.every(g=>g.some(w=>r.includes(w)))&&!p.avoid.some(w=>r.includes(w));}
+ if(p.t==='kw'){const r=s.toLowerCase().replace(/[’']/g,"'").replace(/[−–]/g,'-');if(r.length<3)return false;
+  // a written statement may contain only the numbers its key words use (90, 180, ...), so a stray number makes it wrong
+  const allowed=new Set(p.need.flat().join(' ').match(/\d+/g)||[]);if((r.match(/\d+/g)||[]).some(x=>!allowed.has(x)))return false;return p.need.every(g=>g.some(w=>r.includes(w)))&&!p.avoid.some(w=>r.includes(w));}
  if(p.t==='pi'){const r=stripUnit(s.replace(/\bpi\b/gi,'π'));if(!/π/.test(r)||/\d\.\d/.test(r))return false;const f=parseExpr(r,[]);if(!f)return false;const v=f({});return isFinite(v)&&near(v,p.a[0]/p.a[1]+Math.PI*p.b[0]/p.b[1]);}
  if(p.t==='chain'){const r=stripUnit(s).replace(/[×·]/g,'*').replace(/\s+/g,'');if(!r||/[+\-]/.test(r))return false;
   const fs=[];let depth=0,cur='';for(const ch of r){if(ch==='('&&depth===0&&cur&&!cur.endsWith('*')){fs.push(cur);cur='';}if(ch==='*'&&depth===0){if(cur)fs.push(cur);cur='';continue;}if(ch==='(')depth++;if(ch===')')depth--;if(depth<0)return false;cur+=ch;}if(depth)return false;if(cur)fs.push(cur);

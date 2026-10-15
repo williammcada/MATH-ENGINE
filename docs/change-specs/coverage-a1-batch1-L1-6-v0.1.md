@@ -13,15 +13,15 @@ Lessons 1–6: 68 records (67 open, 1 covered-provisional).
 
 | Result | Records |
 |---|---|
-| Covered by a new port task | 65 |
+| Covered by a new port task | 64 |
 | Consolidated into a twin's task | 3 (node:12 → node:10, node:76 → node:74, node:94 → node:93) |
-| Left open | 0 |
+| Left as it was | 1 (node:4, covered-provisional) |
 
-The one provisional record (node:4, mixed-number addition) was reviewed and replaced by a port task that keeps the source's ranges (`replacesEarlierAdaptation`).
+**node:4 (provisional).** Its earlier adaptation does not keep the source's ranges, and the port recipe `a1-mixed-add` that does is ready. Replacing the adaptation removes it from the catalog, and `tests/course-banks.cjs` takes `catalog[1]` (which is that adaptation) as its fraction example, so the shared test fails. Changing that test is a shared change, so node:4 stays provisional and the request is in `coverage-a1-pending-requests-v0.1.md`.
 
 ## What was built
 
-All in `src/port-algebra-1.js`, 33 recipes (prefix `a1-`), and `scripts/port_a1_tasks.py`.
+All in `src/port-algebra-1.js`, 33 recipes (prefix `a1-`; `a1-mixed-add` awaits the integration pass), and `scripts/port_a1_tasks.py`.
 
 **Course answer kind `a1`.** Several records need answers the shared checker does not take. A course-local kind, checked by the module's own `check()`:
 
@@ -29,7 +29,7 @@ All in `src/port-algebra-1.js`, 33 recipes (prefix `a1-`), and `scripts/port_a1_
 |---|---|
 | `num` | numbers with a required form (integer, exact decimal, simplified mixed number, lowest-terms fraction); unit words and ° ignored |
 | `word` | names (acute, heptagon, quotient, natural numbers) |
-| `kw` | definitions, checked by required key words, as the 8/7 definition tasks are |
+| `kw` | definitions, checked by required key words, as the 8/7 definition tasks are; a number the key words do not use makes the answer wrong |
 | `pi` | exact answers of the form a + bπ |
 | `chain` | a measurement times the stated number of unit multipliers, unsimplified, as in the source key |
 | `roster` | a set written in braces with an ellipsis |
@@ -49,10 +49,13 @@ A task with several parts takes one response per part, separated by semicolons.
 
 ## Verification
 
-- `node tests/port-courses.cjs algebra-1 -- 1000` / `node tests/port-algebra-1.cjs 1000`: 65 tasks, 1,000 instances each — independent oracles, distractors rejected and named, drawings titled, determinism.
+- `node tests/port-algebra-1.cjs 1000`: 64 tasks, 1,000 instances each — independent oracles, distractors rejected and named, drawings titled, determinism.
 - Drawings rasterized privately and inspected.
-- `node scripts/verify-course.cjs algebra-1`: see the verified checkpoint commit.
+- `node scripts/verify-course.cjs algebra-1` on the first implementation checkpoint (`2bee6f9`) found two regressions, both fixed in this course's files:
+  - `tests/course-banks.cjs` — caused by replacing node:4 (above).
+  - `tests/practice.cjs` — it appends a digit to every key and expects the result to be rejected; a definition key with a stray number was accepted. Keyword parts now reject numbers their key words do not use.
+- The re-verification is recorded with the verified checkpoint commit.
 
 ## Not in this batch
 
-Nothing in Lessons 1–6 is left open. No shared-file change was needed.
+node:4 stays provisional pending the shared change above. Nothing in Lessons 1–6 is left open.

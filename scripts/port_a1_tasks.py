@@ -17,7 +17,8 @@ Group entries by batch with a comment line: # Batch A1-1: Lessons ...
 N = 'algebra-1-en:node:'
 TASKS_A1 = [
     # Batch A1-1: Lessons 1-6
-    (N + '4', 'a1-mixed-add', None, 'Add two mixed numbers with unlike denominators', 'fractions', True),
+    # node:4 stays on its earlier adaptation until the integration pass (see coverage-a1-pending-requests-v0.1.md);
+    # its port recipe a1-mixed-add is ready: (N + '4', 'a1-mixed-add', None, 'Add two mixed numbers with unlike denominators', 'fractions', True)
     (N + '5', 'a1-mixed-sub', None, 'Subtract mixed numbers with unlike denominators', 'fractions', False),
     (N + '6', 'a1-mixed-three', None, 'Add and subtract three mixed numbers', 'fractions', False),
     (N + '7', 'a1-improper-add', None, 'Add two improper fractions written as mixed numbers', 'fractions', False),

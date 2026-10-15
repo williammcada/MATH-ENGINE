@@ -18,7 +18,6 @@ const between=(x,lo,hi)=>x>=lo&&x<=hi;
 // recipe -> (q, parameters) => true when the key is right. Every recipe in the catalog needs one.
 const oracle={
  // Batch A1-1
- 'a1-mixed-add':(q,p)=>between(p.a,1,8)&&between(p.d,1,8)&&between(p.c,3,10)&&between(p.f,3,10)&&p.c!==p.f&&g(p.b,p.c)===1&&is(P(q),add(mixed(p.a,p.b,p.c),mixed(p.d,p.e,p.f)))&&P(q).form==='mixed',
  'a1-mixed-sub':(q,p)=>p.d<p.a&&is(P(q),sub(mixed(p.a,p.b,p.c),mixed(p.d,p.e,p.f)))&&P(q).v[0]>0,
  'a1-mixed-three':(q,p)=>between(p.d,2,5)&&between(p.e,2,5)&&between(p.f,2,5)&&is(P(q),sub(add(mixed(p.d,p.w,p.A),mixed(p.f,p.y,p.C)),mixed(p.e,p.x,p.B)))&&P(q).v[0]>0,
  'a1-improper-add':(q,p)=>p.b%p.a!==0&&p.d%p.c!==0&&p.b>p.a&&p.d>p.c&&is(P(q),add(Q(p.b,p.a),Q(p.d,p.c))),
@@ -76,7 +75,6 @@ const near=(x,y)=>Math.abs(x-y)<=1e-9*Math.max(1,Math.abs(y));
 
 // Responses that must be marked wrong for a recipe, beyond the distractors (optional): recipe -> q => [strings].
 const wrong={
- 'a1-mixed-add':q=>{const [n,d]=P(q).v;return [`${n}/${d}`,String(n/d)];},                 // improper or decimal forms when a mixed number is asked
  'a1-semi-perim':q=>{const p=P(q);return [String((p.a[0]+Math.PI*p.b[0]).toFixed(2)),`${p.a[0]+p.b[0]}π`];},
  'a1-unit-chain':q=>[String(P(q).v[0]/P(q).v[1])],                                       // the bare converted number
  'a1-sets':()=>['{1, 2, 3}; {0, 1, 2}; {-1, 0, 1}'],
