@@ -14,7 +14,7 @@ const { loadK7Skills, baselineSha256 } = require('./k7-skills.js');
 const INDEX = require('./practice-index.js');
 const CONT = require('./continuity-skills.js');
 
-const version = '0.35.0-rc.1';
+const version = '0.35.1-rc.1';
 const freeze = Object.freeze;
 
 // ---------- deterministic randomness ----------

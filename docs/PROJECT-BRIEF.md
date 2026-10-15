@@ -1,3 +1,7 @@
+## Current checkpoint — Engine 0.35.1-rc.1 implementation checkpoint (2026-10-15)
+
+8/7 objective 21.6 (sum of primes): about half the items now contain 49, 51 and 57; every item has 2–6 primes. See [change spec](change-specs/v0.35.1-prime-sum.md). Not yet a verified release; hosts not yet updated.
+
 ## Current checkpoint — Engine 0.35.0-rc.1 implementation checkpoint (2026-10-15)
 
 Practice catalog entries now carry their recorded standards (228 of 1,441 bank entries, all 8/7), and 8/7 Lesson 9.6 no longer produces negative or zero answers. Practice-layer, main and phase-2 tests pass; Math Arcade v0.9.0 pins this bundle. See [change spec](change-specs/v0.35.0-practice-standards.md). Not yet a verified release. Earlier checkpoints below are historical.
