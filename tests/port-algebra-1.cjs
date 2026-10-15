@@ -14,6 +14,9 @@ const mixed=(w,a,b)=>Q(w*b+a,b);
 const is=(part,x)=>part&&part.t==='num'&&part.v[0]*x[1]===x[0]*part.v[1];          // a numeric answer part equals x
 const P=(q,i=0)=>q.answer.parts[i];
 const between=(x,lo,hi)=>x>=lo&&x<=hi;
+// a polynomial part equals the given terms [[coef, {letter: exponent}], ...] after combining like terms
+const polyIs=(part,list)=>{if(!part||part.t!=='poly')return false;const w={};for(const [c,m] of list){const k=Object.keys(m).filter(l=>m[l]).sort().map(l=>l+m[l]).join('');w[k]=(w[k]||0)+c;}for(const k of Object.keys(w))if(!w[k])delete w[k];
+ return Object.keys(w).length===Object.keys(part.terms).length&&Object.entries(w).every(([k,c])=>part.terms[k]===c);};
 
 // recipe -> (q, parameters) => true when the key is right. Every recipe in the catalog needs one.
 const oracle={
@@ -116,6 +119,36 @@ const oracle={
  'a1-incl':(q,p)=>{const F={paren:()=>p.a-p.b*(p.c+p.s*p.d),'dist-mc':()=>p.a*(p.b+p.c),'two-groups':()=>p.a*(p.b+p.c)-p.d*(p.e-p.f),prod:()=>p.a*(p.b+p.c)*(p.d+p.e)+p.f,'frac-add':()=>p.a+p.b/p.c+p.s*p.d,
    frac1:()=>Q(p.a+p.b+p.c+p.d,p.e+p.s*p.f),frac2:()=>Q(p.i*(p.a+p.b)+p.c+p.d,p.e+p.s*p.j*p.f),frac3:()=>Q(p.a+p.b+p.c*p.d,p.e*p.i+p.s*p.j*p.f),'abs-mix':()=>p.a*p.b+p.s*(p.c+p.d)*(p.e+p.f)+Math.abs(p.g+p.h+p.i),'neg-paren':()=>-p.a-p.b*(p.c-p.d)}[p.form]();
   return is(P(q),Array.isArray(F)?F:[F,1]);},
+ // Batch A1-3
+ 'a1-incl2':(q,p)=>is(P(q),[p.form==='bracket'?p.a*(p.b+p.c)+p.d:(p.a*p.b)/p.b+(p.c*p.d-(p.a+(p.c+1))),1]),
+ 'a1-order-big':(q,p)=>is(P(q),[p.a*(p.b*p.d-(p.c*p.d)/p.d)+p.e*p.f,1]),
+ 'a1-sign-count':(q,p)=>P(q).alts[0]===((-1)**p.a>0?'positive':'negative'),
+ 'a1-sign-products':(q,p)=>{const sgnOf=L=>L.reduce((x,y)=>x*Math.sign(y),1);const pos=[p.P1,p.P2,p.P3].filter(L=>sgnOf(L)>0).length;return is(P(q),[p.np==='positive'?pos:3-pos,1]);},
+ 'a1-eval':(q,p)=>{const a=p.a,b=p.b,c=p.c,s=p.s;const z={'xy+ax':()=>s===1?b*c+a*b:b*c-a*c,'w-sum':()=>s===1?-a*(b+c):-a*(b-c),'w-mix':()=>-a*(-b+c)-b*c,'diff-sq':()=>s===1?-(c+b)*(c-b):-(b-c)*(b+c),bracket:()=>s===1?-a*((b-c)-(a-c)):-a*((b-c)-(b+c)),'bracket-mc':()=>s===1?-b*(-b*(c+b)):-c*(-b*(b-c)),mc:()=>s===1?a*b+c:a*b-c}[p.form]();return is(P(q),[z,1]);},
+ 'a1-cyl':(q,p)=>{const x=P(q);return x.a[0]===0&&near(x.b[0]/x.b[1],p.form==='sa'?2*p.a*p.a+2*p.a*p.b:p.a*p.a*p.b);},
+ 'a1-box-sa':(q,p)=>is(P(q),[2*(p.a*p.b+p.b*p.c+p.a*p.c),1]),
+ 'a1-tri-prism':(q,p)=>{const tri=p.form==='iso'?[2*p.a,p.c,p.d,p.d]:[p.a,p.c,p.a,p.c,p.d];// iso: base 2a, height c, sides d,d; right: legs a,c, hypotenuse d
+  const area=p.form==='iso'?2*p.a*p.c/2:p.a*p.c/2,perim=p.form==='iso'?2*p.a+2*p.d:p.a+p.c+p.d;return p.a**2+p.c**2===p.d**2&&is(P(q),[2*area+perim*p.b,1]);},
+ 'a1-solid-base':(q,p)=>{const x=P(q),f=p.form;
+  if(f==='halfdisk-sa'){const base=Math.PI*(p.a**2+p.b**2)/2,per=Math.PI*(p.a+p.b)+2*(p.b-p.a);return near(x.a[0]/x.a[1]+Math.PI*x.b[0]/x.b[1],2*base+per*p.c);}
+  if(f==='l-sa'||f==='l-vol'){const area=p.a*p.b+(p.a-p.c)*(p.a-p.b);return is(x,[f==='l-sa'?2*area+4*p.a*p.d:area*p.d,1]);}
+  if(f==='semitrap-sa'){const base=p.a*(p.d+p.b+p.d)+Math.PI*p.a*p.a/2,per=p.d+(p.b+p.d)+Math.hypot(2*p.a,p.b)+Math.PI*p.a;return x.t==='exact'&&near(x.v,2*base+per*p.c);}
+  if(f==='trap-vol')return is(x,Q(p.c*(p.a+p.b)*p.d,2));
+  if(f==='semitri-vol')return near(x.a[0]/x.a[1]+Math.PI*x.b[0]/x.b[1],(p.a*p.b+Math.PI*p.a*p.a/2)*p.c);
+  if(f==='semirect-vol')return near(x.a[0]/x.a[1]+Math.PI*x.b[0]/x.b[1],(2*p.a*p.b+Math.PI*p.a*p.a/2)*p.c);
+  if(f==='area-vol')return is(x,[p.a*p.a*p.b,1]);
+  return is(x,Q(p.a*p.b*p.c,2));},
+ 'a1-dist-law':(q)=>P(q).alts.includes('x(y+z)=xy+xz'),
+ 'a1-distribute':(q,p)=>{const k=v=>[...v].sort().join('1')+'1';const t=P(q).terms;if(p.form==='four'){const [pp,w,x,y]=p.L;return t[k(pp+w)]===p.a*p.b&&t[k(pp+x)]===p.a*p.c&&t[k(pp+y)]===p.a*p.d;}const [w,x,y]=p.L;return t[k(w+x)]===p.s*p.b&&t[k(w+y)]===p.s*p.c;},
+ 'a1-like':(q,p)=>{const key=s=>[...s].sort().join(''),like=p.items.filter(([,s])=>p.items.filter(([,s2])=>key(s2)===key(s)).length>1),labs=like.map(x=>'abcde'[p.items.indexOf(x)]);
+  if(p.form==='count')return P(q).alts[0]===(labs.length?String(labs.length):'none');return labs.length===P(q).items.length&&labs.every(x=>P(q).items.includes(x));},
+ 'a1-combine':(q,p)=>{const t=P(q).terms,v=Object.values(t).sort((x,y)=>x-y);const want=p.form==='xy'?[p.b+p.c+p.d+p.e,p.a+p.f]:p.form==='xy3'?[p.e+p.f,p.a+p.c+p.h,p.b+p.d]:[p.a+p.c,p.b+p.d];return JSON.stringify(v)===JSON.stringify(want.filter(x=>x).sort((x,y)=>x-y));},
+ 'a1-power':(q,p)=>is(P(q),[Math.pow(p.a,p.b),1]),
+ 'a1-neg-power':(q,p)=>is(P(q),[p.form==='neg'?-Math.pow(p.a,p.b):Math.pow(-p.a,p.b),1]),
+ 'a1-power-mix':(q,p)=>{const v=p.v;const z={string:()=>-v[0]-v[1]-v[2]-Math.abs(v[3]-v[4]),pair:()=>-v[0]+v[1],roots:()=>-v[0]-v[1]-v[2]+v[3]-v[4],rootpair:()=>v[0]+v[1]}[p.form]();return is(P(q),[z,1]);},
+ 'a1-cube-root':(q,p)=>is(P(q),[Math.round(Math.cbrt(p.a**3)),1])&&Math.abs(p.a)>=2&&Math.abs(p.a)<=5,
+ 'a1-eval-pow':(q,p)=>{const f=p.form;let z;if(f==='three')z=p.av**p.b-p.av**p.c-p.av**p.d;else if(f==='a3b')z=p.av**3*p.bv*(p.av+p.s*p.bv);else if(f==='mix')z=-(p.av**2)+p.bv*(p.av+p.s*p.bv)-p.s*p.cv**2;else if(f==='abs')z=-(p.av**3)+p.s*p.bv*(p.av-p.s*p.bv)+Math.abs(p.bv-p.av);
+  else if(f==='prod')z=(-p.e*p.av-p.bv**2)*(-p.bv-p.av)*(p.f*p.av);else if(f==='abc')z=[p.av*p.bv*p.cv**3,p.av**3*p.bv*p.cv,p.av*p.bv**3*p.cv][p.sw-1];else if(f==='sq')z=p.av**2-p.bv**2;else z=p.a**2+5*p.b-p.c;return is(P(q),[z,1]);},
 };
 const near=(x,y)=>Math.abs(x-y)<=1e-9*Math.max(1,Math.abs(y));
 
@@ -126,6 +159,8 @@ const wrong={
  'a1-sets':()=>['{1, 2, 3}; {0, 1, 2}; {-1, 0, 1}'],
  'a1-zero-div':q=>P(q).alts[0]==='0'?['Undefined','1']:['0','1'],
  'a1-area-chain':q=>[String(P(q).v[0]/P(q).v[1])],
+ 'a1-combine':q=>[P(q).terms&&Object.entries(P(q).terms).map(([k,c])=>c+k.replace(/1/g,'')).join('+')+'+0x'],
+ 'a1-like':q=>q.answer.parts[0].t==='set'?['(a)']:['5'],
 };
 
 H.run({key:'algebra-1',oracle,wrong,instances:Number(process.argv[2]||250)});

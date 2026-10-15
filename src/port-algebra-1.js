@@ -21,7 +21,16 @@
             and no number that the need phrases do not use
      pi     {t:'pi', a:[n,d], b:[n,d]} the exact value a + bπ, written with π (or pi) and no decimal approximation
      chain  {t:'chain', v:[n,d], start, min} a measurement times at least `min` unit multipliers, product equal to v
-     roster {t:'roster', set:'natural'|'whole'|'integers'} the set in braces with an ellipsis */
+     roster {t:'roster', set:'natural'|'whole'|'integers'} the set in braces with an ellipsis
+     poly   {t:'poly', terms, form?}  a polynomial with like terms combined; form 'pos' | 'num' | 'neg' | 'den' (see polyForm)
+     factor {t:'factor', gcf:[key, coef], inner} the greatest common factor times the remaining polynomial in parentheses
+     primes {t:'primes', n}           a product of primes (exponents allowed) equal to n
+     ineq   {t:'ineq', v, mode, op, b | L,R, neg?} a linear inequality: 'set' the same solution set as v op b, 'form' the
+            same two sides; neg requires a negated symbol (≯ ≮ ≰ ≱)
+     solve  {t:'solve', v, vars, samples} "v = expression" in the other variables
+     ratexp {t:'ratexp', num, den, vars} one fraction: numerator polynomial (like terms combined), denominator equal to den
+     conj   {t:'conj', lo, hi, loIn, hiIn} a conjunction lo < x < hi (≤ where included), compound or joined by "and"
+     num also takes pct:true, which allows a trailing percent sign */
 (function(root){'use strict';
 const common=typeof module!=='undefined'&&module.exports;
 const S=common?require('./port-shared'):root.MathPortShared;
@@ -65,7 +74,7 @@ const add2=(x,y)=>red(x[0]*y[1]+y[0]*x[1],x[1]*y[1]),sub=(x,y)=>add2(x,[-y[0],y[
 const stripUnit=s=>String(s).replace(/(?<=[\d)π²³])\s*(?:°|degrees?\b|[a-zA-Z][a-zA-Z.]*(?:\s*[²³23])?)(?:\s+[a-zA-Z][a-zA-Z.]*)*\s*$/,'').trim();
 const normW=s=>String(s).toLowerCase().replace(/[−–]/g,'-').replace(/[.,!;:'’"()]/g,' ').replace(/\b(a|an|the)\b/g,' ').replace(/\s+/g,' ').trim();
 function partOk(p,s){s=String(s).trim();
- if(p.t==='num'){const r=rat(stripUnit(s.replace(/^[a-z]\s*(\([^)]*\))?\s*=\s*/i,'')));if(!r||!sameR(r.v,p.v))return false;
+ if(p.t==='num'){if(p.pct)s=s.replace(/\s*%$/,'');const r=rat(stripUnit(s.replace(/^[a-z]\s*(\([^)]*\))?\s*=\s*/i,'')));if(!r||!sameR(r.v,p.v))return false;
   if(p.form==='int')return r.form==='int';
   if(p.form==='dec')return r.form==='int'||r.form==='dec';
   if(p.form==='mixed')return r.form==='int'||((r.form==='mixed'||r.form==='frac')&&r.lowest&&r.proper);
@@ -83,7 +92,34 @@ function partOk(p,s){s=String(s).trim();
   for(const [i,x] of fs.entries()){const f=parseExpr(x,[]);if(!f)return false;const y=f({});if(!isFinite(y)||(i&&near(y,1)))return false;v*=y;if(i){const e=x.match(/\^\(?(\d)\)?$/);count+=e?Number(e[1]):1;}}
   return count>=p.min&&near(v,p.v[0]/p.v[1]);}
  if(p.t==='poly'){// a polynomial with like terms combined (any order); exponents may be negative; c/monomial is allowed
-  const got=polyParse(s);if(!got)return false;const k1=Object.keys(got).filter(k=>got[k]!==0),k2=Object.keys(p.terms);return k1.length===k2.length&&k2.every(k=>got[k]===p.terms[k]);}
+  const got=polyParse(s);if(!got)return false;const k1=Object.keys(got).filter(k=>got[k]!==0),k2=Object.keys(p.terms);return k1.length===k2.length&&k2.every(k=>k in got&&near(got[k],p.terms[k]))&&polyForm(p.form,s);}
+ if(p.t==='factor'){// GCF(polynomial): the greatest common factor written in front, the remaining polynomial in parentheses
+  const r=caret(s).replace(/[−–]/g,'-').replace(/[\s·*]/g,''),m=r.match(/^([^()]+)\((.+)\)$/);if(!m)return false;const G=polyParse(m[1]),P=polyParse(m[2]);if(!G||!P)return false;
+  const gk=Object.keys(G),ik=Object.keys(P).filter(k=>P[k]!==0),want=Object.keys(p.inner);return gk.length===1&&gk[0]===p.gcf[0]&&G[gk[0]]===p.gcf[1]&&ik.length===want.length&&want.every(k=>P[k]===p.inner[k]);}
+ if(p.t==='primes'){// a product of primes, with or without exponents, equal to n
+  const r=S.supToCaret(s).replace(/(?<=\d)\s*x\s*(?=\d)/g,'*').replace(/[×·*]/g,'*').replace(/\s+/g,'');if(!/^\d+(\^\d+)?(\*\d+(\^\d+)?)+$/.test(r))return false;let v=1;
+  for(const f of r.split('*')){const [b0,e0]=f.split('^').map(Number);if(!S.isPrime(b0)||e0===0)return false;v*=b0**(e0||1);}return v===p.n;}
+ if(p.t==='ineq'){// a linear inequality in p.v: 'set' compares solution sets, 'form' compares the two sides (either way round); p.neg needs a negated symbol
+  const r=ineqParse(s,p.v);if(!r||r.neg!==!!p.neg)return false;
+  if(p.mode==='form'){const kl=parseExpr(p.L,[p.v]),kr=parseExpr(p.R,[p.v]),xs=[-2.3,0.7,3.1],same=(f,g)=>xs.every(x=>near(f({[p.v]:x}),g({[p.v]:x})));
+   return (r.op===p.op&&same(r.L,kl)&&same(r.R,kr))||(r.op===FLIP[p.op]&&same(r.L,kr)&&same(r.R,kl));}
+  const c0=r.f(0),m=r.f(1)-c0;if(!isFinite(c0)||!isFinite(m)||Math.abs(m)<1e-12||!near(r.f(2.5),c0+2.5*m))return false;return near(-c0/m,p.b)&&(m>0?r.op:FLIP[r.op])===p.op;}
+ if(p.t==='ratexp'){// one fraction: the numerator a polynomial with like terms combined, the denominator equal to the key's (any form)
+  const r=caret(s).replace(/[−–]/g,'-').replace(/\s+/g,'');let dep=0,at=-1;for(let i=0;i<r.length;i++){const ch=r[i];if(ch==='(')dep++;else if(ch===')')dep--;else if(ch==='/'&&dep===0){if(at>=0)return false;at=i;}}if(at<0)return false;
+  const unwrap=x=>{if(!/^\(.*\)$/.test(x))return x;let d=0;for(let i=0;i<x.length-1;i++){if(x[i]==='(')d++;else if(x[i]===')')d--;if(d===0)return x;}return x.slice(1,-1);};
+  const N=polyParse(unwrap(r.slice(0,at)));if(!N)return false;const nk=Object.keys(N).filter(k=>N[k]!==0),want=Object.keys(p.num);if(nk.length!==want.length||!want.every(k=>k in N&&near(N[k],p.num[k])))return false;
+  const fd=parseExpr(r.slice(at+1),p.vars),fk=parseExpr(p.den,p.vars);if(!fd||!fk)return false;return S.fsamples(p.vars,()=>0).every(([env])=>{const a=fd(env),b=fk(env);return isFinite(a)&&near(a,b);});}
+ if(p.t==='conj'){// a conjunction lo < x ≤ hi (either symbol at each end), written as one compound inequality or two joined by "and"
+  const r=String(s).replace(/[−–]/g,'-').replace(/\s+/g,'').toLowerCase();let lo=null,hi=null;
+  const one=(sym,side,val,incl)=>{if(side==='lo')lo=[val,incl];else hi=[val,incl];};
+  let m=r.match(/^(-?\d+)(<=|≤|<)x(<=|≤|<)(-?\d+)$/);
+  if(m){one(0,'lo',Number(m[1]),m[2]!=='<');one(0,'hi',Number(m[4]),m[3]!=='<');}
+  else{const sides=r.split(/and|&/);if(sides.length!==2)return false;for(const x of sides){const q=ineqParse(x,'x');if(!q||q.neg)return false;const c0=q.f(0),k=q.f(1)-c0;if(Math.abs(k)<1e-12)return false;const b=-c0/k,op=k>0?q.op:FLIP[q.op];
+    if(op==='gt'||op==='ge')one(0,'lo',b,op==='ge');else one(0,'hi',b,op==='le');}}
+  return !!(lo&&hi)&&near(lo[0],p.lo)&&near(hi[0],p.hi)&&lo[1]===p.loIn&&hi[1]===p.hiIn;}
+ if(p.t==='solve'){// "v = expression" with the expression in the other variables only, equal to the key at sample points
+  const r=s.replace(/[−–]/g,'-'),m=r.match(/^\s*([a-zA-Z])\s*=(.+)$/);if(!m||m[1]!==p.v||m[2].includes(p.v)||!p.vars.every(x=>m[2].includes(x)))return false;const f=parseExpr(m[2],p.vars);if(!f)return false;
+  return p.samples.every(([env,y])=>{const g=f(env);return isFinite(g)&&near(g,y);});}
  if(p.t==='expr'){// an expression in the given variables, equal to the key at sample points; it must use the variables
   const r=s.replace(/[−–]/g,'-');if(!p.vars.every(x=>r.includes(x)))return false;const f=parseExpr(r,p.vars);if(!f)return false;return p.samples.every(([env,y])=>{const g=f(env);return isFinite(g)&&near(g,y);});}
  if(p.t==='set'){// labels such as (a), (c) and (d), in any order
@@ -113,9 +149,9 @@ const caret=x=>String(x).replace(/[⁻⁰¹²³⁴⁵⁶⁷⁸⁹]+/g,m=>'^'+[..
 const mkey=vars=>Object.keys(vars).filter(k=>vars[k]!==0).sort().map(k=>k+vars[k]).join('');
 function monoParse(t){const m=t.match(/^(\d*)((?:[a-zA-Z](?:\^\(?~?\d+\)?)?)*)$/);if(!m||(!m[1]&&!m[2]))return null;const vars={};
  for(const v of m[2].matchAll(/([a-zA-Z])(?:\^\(?(~?\d+)\)?)?/g)){if(v[1] in vars)return null;vars[v[1]]=v[2]===undefined?1:Number(v[2].replace('~','-'));}return [m[1]===''?1:Number(m[1]),vars];}
-function polyParse(src){let r=caret(src).replace(/[−–]/g,'-').replace(/[\s·*]/g,'').replace(/\^\(?-(\d+)\)?/g,'^~$1');if(!r||!/^[+-]?[^+-]/.test(r))return null;const got={};
+function polyParse(src){let r=caret(src).replace(/[−–]/g,'-').replace(/[\s·*]/g,'').replace(/\^\(-(\d+)\)/g,'^~$1').replace(/\^-(\d+)/g,'^~$1');if(!r||!/^[+-]?[^+-]/.test(r))return null;const got={};
  for(const tm of r.match(/[+-]?[^+-]+/g)){const sign=tm[0]==='-'?-1:1,body=tm.replace(/^[+-]/,'');let c0,vars;
-  if(body.includes('/')){const [nu,de]=body.split('/');if(body.split('/').length!==2)return null;const A=monoParse(nu),B=monoParse(de.replace(/^\((.*)\)$/,'$1'));if(!A||!B||!B[0]||A[0]%B[0])return null;c0=A[0]/B[0];vars={...A[1]};for(const [k,e] of Object.entries(B[1]))vars[k]=(vars[k]||0)-e;}
+  if(body.includes('/')){const [nu,de]=body.split('/');if(body.split('/').length!==2)return null;const A=monoParse(nu),B=monoParse(de.replace(/^\((.*)\)$/,'$1'));if(!A||!B||!B[0]||(A[0]%B[0]&&gcd(A[0],B[0])!==1))return null;c0=A[0]/B[0];vars={...A[1]};for(const [k,e] of Object.entries(B[1]))vars[k]=(vars[k]||0)-e;}
   else{const A=monoParse(body);if(!A||!A[0])return null;[c0,vars]=A;}
   const k=mkey(vars);if(k in got)return null;got[k]=sign*c0;}
  return got;}
@@ -165,6 +201,53 @@ function boxFig3(a,b,c,lab){const k=Math.max(a,b,c),dw=b*0.55*Math.cos(Math.PI/6
  const F=Fig().poly([[0,0],[a,0],[a,c],[0,c]]).seg([a,0],o([a,0])).seg(o([a,0]),o([a,c])).seg([a,c],o([a,c])).seg([0,c],o([0,c])).seg(o([0,c]),o([a,c])).seg([0,0],o([0,0]),{dash:'4,3',w:1}).seg(o([0,0]),o([a,0]),{dash:'4,3',w:1}).seg(o([0,0]),o([0,c]),{dash:'4,3',w:1})
   .txt([a/2,-0.07*k-0.3],lab[0]).txt([a+dw/2+0.04*k,dh/2-0.03*k],lab[1],{anchor:'start'}).txt([-0.04*k-0.2,c/2],lab[2],{anchor:'end'});
  return F.render(`A rectangular box ${lab[0]} wide, ${lab[1]} deep and ${lab[2]} high`,320,200);}
+
+// ---------- Batch A1-5 helpers ----------
+// Form required of a polynomial response: 'pos' no negative exponents; 'num' every letter in the numerator (no fraction bar);
+// 'neg' every letter written with a negative exponent; 'den' one term, a number over the letters.
+function polyForm(form,s){if(!form)return true;const r=caret(s).replace(/[−–]/g,'-').replace(/[\s·*]/g,'');
+ if(form==='pos')return !/\^\(?-/.test(r);
+ if(form==='num')return !r.includes('/');
+ if(form==='neg')return !/[a-zA-Z](?!\^\(?-)/.test(r);
+ if(form==='den')return /^-?\d+\/\(?[a-zA-Z]/.test(r)&&!/[+-]/.test(r.replace(/^-/,'').replace(/\^\(?-/g,'^'));
+ return true;}
+const FLIP={lt:'gt',gt:'lt',le:'ge',ge:'le'};
+const OPSYM={lt:'<',gt:'>',le:'≤',ge:'≥'},NEGSYM={le:'≯',ge:'≮',gt:'≰',lt:'≱'};
+// Inequality reader: one relation symbol (≤ ≥ < > or a negated one: ≯ ≮ ≰ ≱, !> !< !>= !<=, "not >"), two sides in the variable v.
+const INEQ_OPS=[['≯','le',1],['≮','ge',1],['≰','gt',1],['≱','lt',1],['!>=','lt',1],['!<=','gt',1],['!>','le',1],['!<','ge',1],['<=','le'],['>=','ge'],['≤','le'],['≥','ge'],['<','lt'],['>','gt']];
+function ineqParse(s,v){const r=String(s).replace(/[−–]/g,'-').replace(/\bnot\s*/gi,'!').trim();
+ for(const [sym,op,ng] of INEQ_OPS){const i=r.indexOf(sym);if(i<0)continue;const L=r.slice(0,i),Rt=r.slice(i+sym.length);if(/[<>≤≥≯≮≰≱!=]/.test(L+Rt))return null;
+  const fl=parseExpr(L,[v]),fr=parseExpr(Rt,[v]);if(!fl||!fr)return null;return {op,neg:!!ng,L:fl,R:fr,f:x=>fl({[v]:x})-fr({[v]:x})};}
+ return null;}
+// MathML: a power (negative exponents kept), a monomial c·∏letter^e, a fraction of two monomials, a power of a group.
+const mlE=e=>e<0?`<mrow><mo>−</mo><mn>${-e}</mn></mrow>`:`<mn>${e}</mn>`;
+const mlPow=(l,e)=>e===1?`<mi>${l}</mi>`:`<msup><mi>${l}</mi>${mlE(e)}</msup>`;
+const mlMono=(c0,vs)=>{const v=vs.filter(([,e])=>e!==0).map(([l,e])=>mlPow(l,e)).join('');const k=c0<0?`<mo>−</mo><mn>${-c0}</mn>`:`<mn>${c0}</mn>`;if(!v)return k;return (c0===1?'':c0===-1?'<mo>−</mo>':k)+v;};
+const mlQ=(nu,de)=>mfrac(`<mrow>${nu}</mrow>`,`<mrow>${de}</mrow>`);
+const mlGrp=(inner,e)=>`<msup><mrow><mo>(</mo>${inner}<mo>)</mo></mrow>${mlE(e)}</msup>`;
+// A rational term {nu:[c,[[l,e],...]], de:[c,[[l,e],...]]?} as MathML, and its value as [c, {letter: exponent}].
+const mlT=t=>t.de?mlQ(mlMono(...t.nu),mlMono(...t.de)):mlMono(...t.nu);
+const tVal=t=>{const m={};for(const [l,e] of t.nu[1])m[l]=(m[l]||0)+e;if(t.de)for(const [l,e] of t.de[1])m[l]=(m[l]||0)-e;return [t.nu[0]/(t.de?t.de[0]:1),m];};
+const tMul=(x,y)=>{const m={...x[1]};for(const [l,e] of Object.entries(y[1]))m[l]=(m[l]||0)+e;return [x[0]*y[0],m];};
+// Text of terms [[c, {letter: e}], ...] (letters alphabetical, zero exponents dropped) in a required form.
+const wrapD=s=>/^[a-zA-Z][⁰¹²³⁴⁵⁶⁷⁸⁹⁻]*$/.test(s)?s:`(${s})`;
+const FMT={
+ pos:(c0,vs)=>{const nu=vs.filter(([,e])=>e>0),de=vs.filter(([,e])=>e<0).map(([l,e])=>[l,-e]);const top=monoX(c0,nu);return de.length?`${top}/${wrapD(monoX(1,de))}`:top;},
+ num:(c0,vs)=>monoX(c0,vs),
+ neg:(c0,vs)=>{const nu=vs.filter(([,e])=>e<0),de=vs.filter(([,e])=>e>0).map(([l,e])=>[l,-e]);const top=monoX(c0,nu);return de.length?`${top}/${wrapD(monoX(1,de))}`:top;},
+ den:(c0,vs)=>{const de=vs.filter(([,e])=>e!==0).map(([l,e])=>[l,-e]);return de.length?`${minus(c0)}/${wrapD(monoX(1,de))}`:minus(c0);}};
+const sortV=m=>Object.keys(m).filter(k=>m[k]!==0).sort().map(k=>[k,m[k]]);
+const sumTxt=(terms,form)=>terms.filter(([c0])=>c0).map(([c0,m],i)=>{const t=FMT[form](Math.abs(c0),sortV(m));return i===0?(c0<0?'−'+t:t):(c0<0?' − ':' + ')+t;}).join('')||'0';
+// Combine like terms of [[c, {letter: e}], ...], keeping first-appearance order.
+const combine=terms=>{const out=[],at={};for(const [c0,m] of terms){const k=mkey(m);if(k in at)out[at[k]][0]+=c0;else{at[k]=out.length;out.push([c0,{...m}]);}}return out.filter(([c0])=>c0);};
+// Expansion task: front × (signed inner terms), or (inner) × front when after is set; key in the requested form.
+function expandTask(front,inner,form,how,p,after=false){const F=tVal(front),terms=combine(inner.map(([sg,t])=>{const v=tMul(F,tVal(t));return [sg*v[0],v[1]];}));
+ const inML=inner.map(([sg,t],i)=>(i===0?(sg<0?'<mo>−</mo>':''):`<mo>${sg<0?'−':'+'}</mo>`)+mlT(t)).join(''),grp=`<mo>(</mo>${inML}<mo>)</mo>`;
+ const key=sumTxt(terms,form);
+ return T(`Expand by using the distributive property. Write the answer ${how}.`,[{...polyPart(terms.map(([c0,m])=>[c0,m])),form}],key,`Multiply each term by ${after?'the factor after the parentheses':'the factor in front'}, adding exponents of like letters: ${key}.`,p,{math:math(`<mrow>${after?grp+mlT(front):mlT(front)+grp}</mrow>`)});}
+const HOW={pos:'with all exponents positive',num:'with all variables in the numerator',neg:'with all exponents negative',den:'with all variables in the denominator'};
+// "v = expression" key text: (terms)/den with a positive denominator.
+function solveTxt(v,list,den){if(den<0){den=-den;list=list.map(([c0,l])=>[-c0,l]);}const nu=termsTxt(list);return `${v} = ${den===1?nu:list.filter(([c0])=>c0).length>1?`(${nu})/${den}`:`${nu}/${den}`}`;}
 
 // ---------- recipes ----------
 function build(c,h){const {int,pick}=h;let t;const v=c.variant;
@@ -554,6 +637,164 @@ case 'a1-incl':{const sp=x=>x<0?'− '+Math.abs(x):'+ '+x;
  else{const a=int(-9,-2),b=int(2,9);let cc,d;do{cc=int(3,11);d=int(2,10);}while(d>=cc);const z=-a-b*(cc-d);
   t=T(`Simplify: −(${minus(a)}) − ${b}(${cc} − ${d})`,[num(z,1,'int')],minus(z),`−(${minus(a)}) = ${-a}; ${b}(${cc} − ${d}) = ${b*(cc-d)}; ${-a} − ${b*(cc-d)} = ${minus(z)}.`,{a,b,c:cc,d});
   t.choices=opts(t,[{value:minus(-a+b*(cc-d)),mistake:`Added ${b}(${cc} − ${d}) instead of subtracting it`},{value:minus(-a-b*(cc+d)),mistake:'Added inside the parentheses'},{value:minus(-a-b*cc-d),mistake:'Multiplied only the first number in the parentheses'}],h);}
+ break;}
+// Batch A1-3: Lessons 13-20
+case 'a1-incl2':{
+ if(v==='bracket'){const a=int(2,9),b=int(2,9),cc=int(2,9),d=int(2,9),z=a*(b+cc)+d;
+  t=T(`Simplify: [${a} × (${b} + ${cc})] + ${d}`,[num(z,1,'int')],String(z),`Innermost first: ${b} + ${cc} = ${b+cc}; ${a} × ${b+cc} = ${a*(b+cc)}; + ${d} = ${z}.`,{a,b,c:cc,d});}
+ else{let a,b,cc,d;if(v==='brace-mc'){[a,b,cc,d]=pick(zip([2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,6,6,6,6,6,6],[3,3,3,4,4,5,5,6,2,2,2,4,4,4,5,5,5,6,6,2,2,3,3,3,5,5,6,6,2,2,3,3,3,4,4,6,2,3,3,4,4,5],[4,5,6,5,6,4,6,5,4,5,6,2,5,6,2,4,6,2,5,5,6,2,5,6,2,6,2,5,4,6,2,4,6,2,6,2,5,2,5,2,5,2],[6,7,8,7,8,6,8,7,6,7,8,9,7,8,9,6,8,9,7,7,8,9,7,8,9,8,9,7,6,8,9,6,8,9,8,9,7,9,7,9,7,9]));}
+  else{do{a=int(2,5);b=int(2,5);cc=int(2,5);d=int(6,9);}while(cc*d<=a+cc+1);}
+  const e=a*b,z=cc*d-cc-1,[L,Rb]=v==='brace-mc'?['{','}']:['(',')'];
+  t=T(`Simplify: ${e} ÷ ${b} + ${L}${cc} · ${d} − [${a} + (${cc} + 1)]${Rb}`,[num(z,1,'int')],minus(z),`${e} ÷ ${b} = ${a}; inside: ${cc*d} − [${a} + ${cc+1}] = ${cc*d-a-cc-1}; total ${a} + ${cc*d-a-cc-1} = ${minus(z)}.`,{a,b,c:cc,d});
+  if(v==='brace-mc')t.choices=opts(t,[{value:minus(cc*d+cc+1),mistake:'Subtracted only the first number inside the brackets'},{value:minus(cc*d-a-cc-1),mistake:`Left out ${e} ÷ ${b}`},{value:minus(e-b+cc*d-a-cc-1),mistake:`Subtracted ${b} instead of dividing by it`}],h);}
+ break;}
+case 'a1-order-big':{const a=int(11,49),b=int(11,19),cc=int(2,9),d=int(2,9),e=int(2,9),f=int(2,9),z=a*(b*d-cc)+e*f;
+ t=T(`Simplify: ${a}(${b*d} − ${cc*d} ÷ ${d}) + ${e} · ${f}`,[num(z,1,'int')],S.comma(z),`Inside the parentheses, divide first: ${cc*d} ÷ ${d} = ${cc}, so ${b*d} − ${cc} = ${b*d-cc}. Then ${a}(${b*d-cc}) + ${e*f} = ${S.comma(z)}.`,{a,b,c:cc,d,e,f});
+ t.choices=opts(t,[{value:S.comma(a*b*d+e*f),mistake:`Left out ${cc*d} ÷ ${d}`},{value:S.comma((a*b*d-a*cc+e)*f),mistake:`Added ${e} before multiplying by ${f}`},{value:S.comma(a*(b-cc)+e*f),mistake:`Divided ${b*d} − ${cc*d} by ${d}`}],h);break;}
+case 'a1-sign-count':{const a=int(2,21),b=int(2,21),first=pick(['neg','pos']),z=a%2===0?'positive':'negative';
+ t=T(`Is the product of ${first==='neg'?`${a} negative numbers and ${b} positive numbers`:`${b} positive numbers and ${a} negative numbers`} a positive number or a negative number?`,[word(z,z+' number')],z,`An ${a%2===0?'even':'odd'} number of negative factors (${a}) gives a ${z} product.`,{a,b,first});break;}
+case 'a1-sign-products':{const r=()=>int(1,9)*pick([1,-1]),P1=[r(),r(),r(),r()],P2=[r(),r(),r(),r(),r(),r()],P3=[r(),r(),r()],np=pick(['positive','negative']);
+ const pos=[P1,P2,P3].filter(L=>L.reduce((x,y)=>x*y,1)>0).length,z=np==='positive'?pos:3-pos,f=L=>L.map(x=>`(${sgn(x)})`).join('');
+ t=T(`How many of these products are ${np}? I. ${f(P1)} II. ${f(P2)} III. ${f(P3)}`,[num(z,1,'int')],String(z),`Count the negative factors in each product: ${[P1,P2,P3].map(L=>L.filter(x=>x<0).length).join(', ')}. An even count gives a positive product. ${z} ${z===1?'is':'are'} ${np}.`,{P1,P2,P3,np});
+ t.choices=opts(t,[0,1,2,3].filter(x=>x!==z).map(x=>({value:String(x),mistake:Math.abs(x-z)===1?'Misjudged the sign of one product':'Counted the products of the other sign'})),h);break;}
+case 'a1-eval':{const sg=()=>pick([1,-1]);
+ if(v==='xy+ax'){const [x,y]=letters(int,2),a=int(2,5),b=int(1,7)*sg(),cc=int(2,7)*sg(),s1=pick([1,2]),z=s1===1?cc*b+a*b:cc*b-a*cc,e=s1===1?`${x}${y} + ${a}${x}`:`${x}${y} − ${a}${y}`;
+  t=T(`Evaluate ${e} if ${x} = ${minus(b)} and ${y} = ${minus(cc)}.`,[num(z,1,'int')],minus(z),`Substitute: ${s1===1?`(${minus(b)})(${minus(cc)}) + ${a}(${minus(b)})`:`(${minus(b)})(${minus(cc)}) − ${a}(${minus(cc)})`} = ${minus(z)}.`,{a,b,c:cc,s:s1});}
+ else if(v==='w-sum'||v==='w-mix'){const [x,y,w]=letters(int,3),a=int(1,7)*sg(),b=int(1,7)*sg(),cc=int(1,7)*sg(),s1=v==='w-mix'?3:pick([1,2]);
+  const z=s1===1?-a*(b+cc):s1===2?-a*(b-cc):-a*(-b+cc)-b*cc,e=s1===1?`−${w}(${x} + ${y})`:s1===2?`−${w}(${x} − ${y})`:`−${w}(−${x} + ${y}) − ${x}${y}`;
+  t=T(`Evaluate ${e} if ${w} = ${minus(a)}, ${x} = ${minus(b)} and ${y} = ${minus(cc)}.`,[num(z,1,'int')],minus(z),`Substitute and simplify: ${minus(z)}.`,{a,b,c:cc,s:s1});}
+ else if(v==='diff-sq'){const [x,y]=letters(int,2);let b,cc;do{b=int(1,7)*sg();cc=int(1,7)*sg();}while(b+cc===0||b-cc===0);const s1=pick([1,2]),z=s1===2?-(b-cc)*(b+cc):-(cc+b)*(cc-b),e=s1===1?`−(${y} + ${x})(${y} − ${x})`:`−(${x} − ${y})(${x} + ${y})`;
+  t=T(`Evaluate ${e} if ${x} = ${minus(b)} and ${y} = ${minus(cc)}.`,[num(z,1,'int')],minus(z),`Substitute and simplify: ${minus(z)}.`,{b,c:cc,s:s1});}
+ else if(v==='bracket'){const [x,y,w]=letters(int,3),a=int(1,7)*sg(),b=int(1,7)*sg(),cc=int(1,7)*sg(),s1=pick([1,2]),z=s1===1?-a*(b-a):-a*(-2*cc),e=s1===1?`−${w}[(${x} − ${y}) − (${w} − ${y})]`:`−${w}[(${x} − ${y}) − (${x} + ${y})]`;
+  t=T(`Evaluate ${e} if ${w} = ${minus(a)}, ${x} = ${minus(b)} and ${y} = ${minus(cc)}.`,[num(z,1,'int')],minus(z),`Simplify inside the brackets first, then multiply by −${w}: ${minus(z)}.`,{a,b,c:cc,s:s1});}
+ else if(v==='bracket-mc'){const [x,y]=letters(int,2);let b,cc,s1,z,d1,d2,d3;do{b=int(1,7)*sg();cc=int(1,7)*sg();s1=pick([1,2]);if(s1===1){z=b*b*(b+cc);d1=b*b*b+cc;d2=z!==0?-z:-b-b*cc+b;d3=-b-b*(cc+b);}else{z=cc*b*(b-cc);d1=cc*b*b-cc;d2=d1!==0?-d1:-cc-b*(b-cc);d3=-cc-b*b-cc;}}while(new Set([z,d1,d2,d3]).size<4);
+  const e=s1===1?`−${x}[−${x}(${y} + ${x})]`:`−${y}[−${x}(${x} − ${y})]`;
+  t=T(`Evaluate ${e} if ${x} = ${minus(b)} and ${y} = ${minus(cc)}.`,[num(z,1,'int')],minus(z),`Work from the inside out: ${minus(z)}.`,{b,c:cc,s:s1});
+  t.choices=opts(t,[{value:minus(d1),mistake:'Multiplied only the first term inside the parentheses'},{value:minus(d2),mistake:'Lost a negative sign'},{value:minus(d3),mistake:'Added where the expression multiplies'}],h);}
+ else{// 'mc': ax ± y
+  const [x,y]=letters(int,2);let a,b,cc,s1,z,d1,d2,d3;do{a=int(2,5);b=int(1,15);cc=int(1,15);s1=pick([1,2]);if(s1===1){z=a*b+cc;d1=a*(b+cc);d2=Math.abs(a*b-cc);d3=a*cc+b;}else{z=a*b-cc;d1=Math.abs(a*(b-cc));d2=Math.abs(a*cc-b);d3=a*b+cc;}}while(z<0||new Set([z,d1,d2,d3]).size<4);
+  t=T(`Evaluate ${a}${x} ${s1===1?'+':'−'} ${y} if ${x} = ${b} and ${y} = ${cc}.`,[num(z,1,'int')],String(z),`${a}(${b}) ${s1===1?'+':'−'} ${cc} = ${z}.`,{a,b,c:cc,s:s1});
+  t.choices=opts(t,[{value:String(d1),mistake:s1===1?`Multiplied ${a} by the sum of ${x} and ${y}`:`Multiplied ${a} by the difference of ${x} and ${y}`},{value:String(d2),mistake:'Substituted the values for the wrong letters'},{value:String(d3),mistake:s1===1?'Substituted the values for the wrong letters':'Added instead of subtracting'}],h);}
+ break;}
+case 'a1-cyl':{const [u,ab]=pick([['inches','in.'],['feet','ft'],['meters','m'],['yards','yd'],['centimeters','cm']]);
+ if(v==='sa'){const a=int(10,20),b=int(a+2,a+5),z=2*a*b+2*a*a;
+  t=T(`Find the surface area of this right circular cylinder. Dimensions are in ${u}. Give the exact answer in terms of π.`,[{t:'pi',a:[0,1],b:[z,1]}],`${S.comma(z)}π ${ab}²`,`Two bases 2π(${a})² = ${2*a*a}π, plus the side 2π(${a})(${b}) = ${2*a*b}π: ${S.comma(z)}π.`,{a,b,u},{svg:S.cylinderFigure(a,b,u)});}
+ else{const mc=v==='vol-mc',a=int(2,5),b=mc?int(7,13):int(7,12),uu=mc?['inches','in.']:[u,ab],z=a*a*b;
+  t=T(`Find the volume of the right circular cylinder. Dimensions are in ${uu[0]}. Give the exact answer in terms of π.`,[{t:'pi',a:[0,1],b:[z,1]}],`${z}π ${uu[1]}³`,`V = (area of base)(height) = π(${a})²(${b}) = ${z}π.`,{a,b,u:uu[0]},{svg:S.cylinderFigure(a,b,uu[1])});
+  if(mc)t.choices=opts(t,[{value:`${a*b}π ${uu[1]}³`,mistake:'Did not square the radius'},{value:`${z+12}π ${uu[1]}³`,mistake:'Arithmetic slip when multiplying'},{value:`${2*a*a*b}π ${uu[1]}³`,mistake:'Used the diameter in place of the radius once'},{value:`${2*a*b}π ${uu[1]}³`,mistake:'Found the area of the curved side instead of the volume'}],h);}
+ break;}
+case 'a1-box-sa':{const [u,ab]=pick([['inches','in.'],['centimeters','cm'],['millimeters','mm'],['feet','ft'],['meters','m'],['yards','yd']]);
+ if(v==='mc'){const a=int(9,15),b=int(9,15),cc=int(1,4),z=2*(b*cc+b*a+cc*a);
+  t=T('Find the surface area of the rectangular box. Dimensions are in centimeters.',[num(z,1,'int')],`${S.comma(z)} cm²`,`Three pairs of faces: 2(${a} × ${b}) + 2(${a} × ${cc}) + 2(${b} × ${cc}) = ${z} cm².`,{a,b,c:cc},{svg:boxFig3(a,b,cc,[`${a} cm`,`${b} cm`,`${cc} cm`])});
+  t.choices=opts(t,[{value:`${a*b*cc} cm²`,mistake:'Found the volume instead of the surface area'},{value:`${4*(a+b+cc)} cm²`,mistake:'Added the lengths of all twelve edges'},{value:`${a*b+b*cc+cc*a} cm²`,mistake:'Counted only one face of each pair'}],h);}
+ else{const a=int(4,20),b=int(4,20),cc=int(4,20),z=2*a*cc+2*b*cc+2*a*b;
+  t=T(`Find the surface area of this right rectangular prism. Dimensions are in ${u}.`,[num(z,1,'int')],`${S.comma(z)} ${ab}²`,`2(${a} × ${cc}) + 2(${b} × ${cc}) + 2(${a} × ${b}) = ${z}.`,{a,b,c:cc,u},{svg:boxFig3(a,b,cc,[String(a),String(b),String(cc)])});}
+ break;}
+case 'a1-tri-prism':{const [a,cc,d]=pick(zip([6,5,9,8,12,15,8,12,12,15,16,20],[8,12,12,15,16,20,6,5,9,8,12,15],[10,13,15,17,20,25,10,13,15,17,20,25])),b=int(a,Math.min(2*a,25)),[u,ab]=pick([['inches','in.'],['centimeters','cm'],['millimeters','mm'],['feet','ft'],['meters','m'],['yards','yd']]);
+ if(v==='iso'){const z=2*(a*cc+b*d+a*b),w=b*Math.cos(15*Math.PI/180)*0.8,hh=b*Math.sin(15*Math.PI/180)*0.8,o=p=>[p[0]+w,p[1]+hh];
+  const F=Fig().poly([[-a,0],[a,0],[0,cc]]).seg([a,0],o([a,0])).seg(o([a,0]),o([0,cc])).seg([0,cc],o([0,cc])).seg([0,0],[0,cc],{dash:'4,3',w:1}).right([0,0],0,90,7).txt([a/2,-0.08*cc-0.5],String(a)).txt([-a/2,-0.08*cc-0.5],String(a)).txt([0.6,cc*0.4],String(cc),{anchor:'start'}).txt([a/2+0.3,cc*0.55+0.3],String(d),{anchor:'start'}).txt([-a/2-0.3,cc*0.55+0.3],String(d),{anchor:'end'}).txt([a+w/2+0.4,hh/2-0.4],String(b),{anchor:'start'});
+  t=T(`Find the surface area of the triangular prism. Dimensions are in ${u}.`,[num(z,1,'int')],`${S.comma(z)} ${ab}²`,`Two triangles 2 × ½ × ${2*a} × ${cc} = ${2*a*cc}; two slanted faces 2 × ${d} × ${b} = ${2*b*d}; the bottom ${2*a} × ${b} = ${2*a*b}. Total ${z}.`,{a,b,c:cc,d,u},{svg:F.render(`A prism ${b} long whose ends are isosceles triangles with base ${2*a}, height ${cc} and equal sides ${d}`,330,200)});}
+ else{const z=a*cc+b*d+a*b+cc*b;
+  t=T(`Find the surface area of this right triangular prism. Dimensions are in ${u}.`,[num(z,1,'int')],`${S.comma(z)} ${ab}²`,`Two triangles 2 × ½ × ${a} × ${cc} = ${a*cc}; three rectangles ${b}(${a} + ${cc} + ${d}) = ${b*(a+cc+d)}. Total ${z}.`,{a,b,c:cc,d,u},{svg:S.rightTriPrism(a,cc,d,b)});}
+ break;}
+case 'a1-solid-base':{// a labelled base of a right solid; surface area or volume
+ const [u,ab]=pick([['inches','in.'],['centimeters','cm'],['millimeters','mm'],['feet','ft'],['meters','m'],['yards','yd']]);
+ if(v==='halfdisk-sa'){const a=int(6,20),b=int(Math.floor(a/4),Math.floor(a/2))+a,cc=int(Math.floor(0.6*b),Math.floor(1.5*b));
+  const F=Fig().poly(arcPts([0,0],b,0,180),{w:1.6}).poly(arcPts([0,0],a,180,360)).seg([-b,0],[-a,0]).seg([a,0],[b,0]).seg([-a,0],[a,0],{dash:'4,3',w:1}).dot([0,0]).seg([0,0],pt([0,0],45,b),{w:1}).seg([0,0],pt([0,0],-45,a),{w:1}).txt(pt([0,0],45,b*0.5),String(b),{anchor:'end',dx:-4}).txt(pt([0,0],-45,a*0.55),String(a),{anchor:'end',dx:-4});
+  const A=2*cc*(b-a),B=cc*(a+b)+a*a+b*b;
+  t=T(`A base of a right solid whose height is ${cc} ${u} is shown: half of a circle of radius ${b} joined to half of a circle of radius ${a}. Find the surface area of the solid. Dimensions are in ${u}. Give the exact answer in terms of π.`,[{t:'pi',a:[A,1],b:[B,1]}],`(${piT([A,1],[B,1])}) ${ab}²`,`Two bases: 2(½π${b}² + ½π${a}²) = ${a*a+b*b}π. Lateral area = height × perimeter = ${cc}(π${b} + π${a} + 2(${b-a})) = ${cc*(a+b)}π + ${A}. Total ${piT([A,1],[B,1])}.`,{a,b,c:cc,u},{svg:F.render(`The base: a half circle of radius ${b} above a half circle of radius ${a}, sharing a center`,300,220)});}
+ else if(v==='l-sa'||v==='l-vol'){const a=int(6,20),b=int(Math.floor(a/2),Math.floor(2*a/3)),cc=int(Math.floor(a/2),Math.floor(2*a/3)),d=int(Math.floor(0.6*a),Math.floor(1.5*a)),area=a*a+b*cc-a*cc;
+  const F=Fig().poly([[0,0],[a,0],[a,a],[cc,a],[cc,b],[0,b]]).right([0,0],0,90,7).right([a,0],90,180,7).right([a,a],180,270,7).right([0,b],270,0,7).txt([a/2,-0.08*a-0.4],String(a)).txt([-0.4,b/2],String(b),{anchor:'end'}).txt([cc/2,b+0.4],String(cc)).txt([cc-0.4,(a+b)/2],String(a-b),{anchor:'end'});
+  const sa=v==='l-sa',z=sa?2*area+4*a*d:area*d;
+  t=T(`A base of a right solid whose height is ${d} ${u} is shown. Find the ${sa?'surface area':'volume'} of the solid. Dimensions are in ${u}. All angles are right angles.`,[num(z,1,'int')],`${S.comma(z)} ${ab}${sa?'²':'³'}`,sa?`Base area ${a}(${b}) + (${a-cc})(${a-b}) = ${area}; two bases ${2*area}. Perimeter ${4*a}; lateral area ${4*a} × ${d} = ${4*a*d}. Total ${S.comma(z)}.`:`V = (area of base)(height) = ${area} × ${d} = ${S.comma(z)}.`,{a,b,c:cc,d,u},{svg:F.render(`The base: a ${a} by ${a} square with a ${a-cc} by ${a-b} corner missing; sides ${a}, ${b}, ${cc}, ${a-b}`,260,220)});}
+ else if(v==='semitrap-sa'){const [b,a]=pick(zip([4,5,6,6,7,8,7,8,9,10,9,10,11,12,10,11,12,13,14,12,13,14,15,16,13,14,15,16,17,18,15,16,17,18,19,20],[3,3,3,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,7,8,8,8,8,8,9,9,9,9,9,9,10,10,10,10,10,10]));
+  const cc=int(a,Math.round(3*a/2)),d=int(a,Math.round(3*a/2)),[k,rr]=sqrtParts(4*a*a+b*b),[kc,rc]=sqrtParts(cc*cc*(4*a*a+b*b));
+  const F=Fig().poly([[-d,a],[0,a],...arcPts([0,0],a,90,-90).slice(1,-1),[0,-a],[-d-b,-a]]).seg([0,a],[0,-a],{dash:'4,3',w:1}).dot([0,0]).seg([0,0],pt([0,0],45,a),{w:1}).txt(pt([0,0],0,a*0.5),String(a),{dy:14}).txt([(-b-d)/2,-a-0.5],String(b+d)).txt([-d/2,a+0.3],String(d)).txt([-d-b/2-0.4,0],rr===1?String(k):`${k===1?'':k}√${rr}`,{anchor:'end'});
+  const A=b*cc+2*a*b+4*a*d+2*d*cc,Bp=a*cc+a*a,val=rr===1?piT([A+kc,1],[Bp,1]):`${A} + ${kc===1?'':kc}√${rc} + ${Bp}π`,vNum=A+kc*Math.sqrt(rc)+Bp*Math.PI;
+  t=T(`A base of a right solid whose height is ${cc} ${u} is shown: a trapezoid joined to half of a circle of radius ${a}. Find the surface area of the solid. Dimensions are in ${u}. Give the exact answer in terms of π, with radicals simplified.`,[{t:'exact',v:vNum,need:rr===1?['π']:['π','√']}],`(${val}) ${ab}²`,`Base area: trapezoid ${a}(${b+2*d}) = ${a*(b+2*d)} plus half circle ${fracT(a*a,2)}π; two bases ${2*a*(b+2*d)} + ${a*a}π. Perimeter: ${d} + ${b+d} + ${rr===1?k:`${k===1?'':k}√${rr}`} + ${a}π; times the height ${cc}. Total ${val}.`,{a,b,c:cc,d,u},{svg:F.render(`The base: a trapezoid with parallel sides ${d} and ${b+d} joined to a half circle of radius ${a}`,320,220)});}
+ else if(v==='trap-vol'){const [b,cc,a]=pick(zip([10,10,11,11,12,12,13,13,14,14,15,15,16,16,11,11,13,13,15,15,12,12,13,13,14,14,15,15,16,16,13,13,15,15,14,14,15,15,16,16,15,15],[9,11,10,12,11,13,12,14,13,15,14,16,15,17,10,12,12,14,14,16,11,13,12,14,13,15,14,16,15,17,12,14,14,16,13,15,14,16,15,17,14,16],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,7,7,7,7,8,8,8,8,8,8,9,9])),d=int(a,b),z=[d*(a+b)*cc,2];
+  const F=Fig().poly([[0,0],[b,0],[(b+a)/2,cc],[(b-a)/2,cc]]).seg([1.15*b,0],[1.15*b,cc],{w:1,start:1,end:1}).txt([b/2,-0.08*cc-0.3],String(b)).txt([b/2,cc+0.3],String(a)).txt([1.15*b+0.3,cc/2],String(cc),{anchor:'start'});
+  t=T(`A base of a right solid whose height is ${d} ${u} is shown. Find the volume of the solid. Dimensions are in ${u}.`,[num(...z,'dec')],`${S.comma(decT(...z))} ${ab}³`,`Base area ½ × ${cc} × (${a} + ${b}) = ${decT((a+b)*cc,2)}; V = ${decT((a+b)*cc,2)} × ${d} = ${decT(...z)}.`,{a,b,c:cc,d,u},{svg:F.render(`The base: a trapezoid with parallel sides ${a} and ${b} and height ${cc}`,300,170)});}
+ else if(v==='semitri-vol'){const [b,a]=pick(zip([4,5,6,6,7,8,7,8,9,10,9,10,11,12,10,11,12,13,14,12,13,14,15,16,13,14,15,16,17,18,15,16,17,18,19,20],[3,3,3,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,7,8,8,8,8,8,9,9,9,9,9,9,10,10,10,10,10,10])),cc=int(a,Math.round(3*a/2));
+  const F=Fig().poly([[0,a],...arcPts([0,0],a,90,-90).slice(1,-1),[0,-a],[-b,-a]]).seg([0,a],[0,-a],{dash:'4,3',w:1}).right([0,-a],180,90,7).dot([0,0]).seg([0,0],pt([0,0],45,a),{w:1}).txt(pt([0,0],0,a*0.5),String(a),{dy:14}).txt([-b/2,-a-0.5],String(b));
+  t=T(`A base of a right solid whose height is ${cc} ${u} is shown: a right triangle joined to half of a circle of radius ${a}. Find the volume of the solid. Dimensions are in ${u}. Give the exact answer in terms of π.`,[{t:'pi',a:[a*b*cc,1],b:[a*a*cc,2]}],`(${piT([a*b*cc,1],[a*a*cc,2])}) ${ab}³`,`Base area: triangle ½ × ${b} × ${2*a} = ${a*b} plus half circle ${fracT(a*a,2)}π. V = ${cc}(${a*b} + ${fracT(a*a,2)}π) = ${piT([a*b*cc,1],[a*a*cc,2])}.`,{a,b,c:cc,u},{svg:F.render(`The base: a right triangle with legs ${b} and ${2*a} joined to a half circle of radius ${a}`,300,220)});}
+ else if(v==='semirect-vol'){const rows=[];for(const [A0,lo] of [[2,3],[3,3],[4,3],[5,3],[6,3]])for(let B=lo;B<=12;B++)if(!(A0===2&&B>8))rows.push([A0,B]);const [a,b]=pick(rows),cc=int(3,12),[u2,ab2]=pick([['inches','in.'],['feet','ft'],['meters','m'],['centimeters','cm']]);
+  t=T(`Find the volume of the figure. The base is shown; the height of the figure is ${cc} ${u2}. Dimensions are in ${u2}. Give the exact answer in terms of π.`,[{t:'pi',a:[2*a*b*cc,1],b:[a*a*cc,2]}],`(${piT([2*a*b*cc,1],[a*a*cc,2])}) ${ab2}³`,`Base area ${b} × ${2*a} + ½π(${a})² = ${2*a*b} + ${fracT(a*a,2)}π; times ${cc}: ${piT([2*a*b*cc,1],[a*a*cc,2])}.`,{a,b,c:cc,u:u2},{svg:semiFig(a,b,'one','left')});}
+ else if(v==='area-vol'){const a=int(5,10),b=int(a,Math.floor(3*a/2)),[un]=pick([['in.'],['cm'],['mm'],['ft'],['m'],['yd']]);
+  const F=Fig().poly([[0,0],[10,0],[10,5],[0,10],...arcPts([0,2.5],2.5,90,-90).slice(1,-1)]).txt([4.5,3.5],`${a*a} ${un}²`);
+  t=T(`A base of a right solid has an area of ${a*a} ${un}². The height of the solid is ${b} ${un}. Find the volume of the solid.`,[num(a*a*b,1,'int')],`${S.comma(a*a*b)} ${un}³`,`V = (area of base)(height) = ${a*a} × ${b} = ${S.comma(a*a*b)}.`,{a,b},{svg:F.render(`The base of the solid, an irregular shape with area ${a*a} square ${un}`,220,200)});}
+ else{// 'tri-vol': isosceles triangle base
+  const a=int(5,14),b=int(2*a,3*a),cc=int(2*a,3*a),[un]=pick([['in.'],['cm'],['mm'],['ft'],['m'],['yd']]),z=[a*b*cc,2];
+  const F=Fig().poly([[-a/2,0],[a/2,0],[0,b]]).seg([0,0],[0,b],{dash:'4,3',w:1}).right([0,0],0,90,7).txt([0,-0.06*b-0.3],`${a} ${un}`).txt([a/2+0.15*b,b/2],`${b} ${un}`,{anchor:'start'}).seg([a/2+0.1*b,0],[a/2+0.1*b,b],{w:1,start:1,end:1});
+  t=T(`A base of a right prism is the isosceles triangle shown. The height of the prism is ${cc} ${un}. Find the volume of the prism.`,[num(...z,'any')],`${Number.isInteger(z[0]/2)?S.comma(z[0]/2):fracT(...z)} ${un}³`,`Base area ½ × ${a} × ${b} = ${decT(a*b,2)}; V = ${decT(a*b,2)} × ${cc} = ${decT(...z)}.`,{a,b,c:cc},{svg:F.render(`An isosceles triangle with base ${a} ${un} and height ${b} ${un}`,220,220)});}
+ break;}
+case 'a1-dist-law':{t=T('Use the letters x, y and z, and parentheses, to write the distributive property.',[{t:'compact',alts:['x(y+z)=xy+xz','x(y+z)=xz+xy','xy+xz=x(y+z)','xz+xy=x(y+z)','(y+z)x=yx+zx','(y+z)x=xy+xz','x(z+y)=xz+xy','x(z+y)=xy+xz']}],'x(y + z) = xy + xz','Multiplying a sum by a number gives the same result as multiplying each addend and adding: x(y + z) = xy + xz.',{form:pick(['a','b'])});break;}
+case 'a1-distribute':{
+ if(v==='four'){const [p,w,x,y]=letters(int,4);let a,b,cc,d;do{a=int(-5,-2);b=int(2,4);cc=int(2,5)*pick([1,-1]);d=int(2,5)*pick([1,-1]);}while(cc>0&&d>0);
+  const terms=[[a*b,{[p]:1,[w]:1}],[a*cc,{[p]:1,[x]:1}],[a*d,{[p]:1,[y]:1}]];
+  t=T(`Use the distributive property to expand ${minus(a)}${p}(${b}${w} ${cc<0?'−':'+'} ${Math.abs(cc)}${x} ${d<0?'−':'+'} ${Math.abs(d)}${y}).`,[polyPart(terms)],polyStr(terms),`Multiply each term by ${minus(a)}${p}: ${polyStr(terms)}.`,{a,b,c:cc,d,L:[p,w,x,y]});}
+ else{const [w,x,y]=letters(int,3);let b,cc;do{b=int(3,9);cc=int(1,8)*pick([1,-1]);}while(Math.abs(cc)===b);const s1=pick([1,-1]),terms=[[s1*b,{[w]:1,[x]:1}],[s1*cc,{[w]:1,[y]:1}]];
+  t=T(`Expand by using the distributive property: ${s1<0?'−':''}${w}(${b}${x} ${cc<0?'−':'+'} ${Math.abs(cc)===1?'':Math.abs(cc)}${y})`,[polyPart(terms)],polyStr(terms),`Multiply each term by ${s1<0?'−':''}${w}: ${polyStr(terms)}.`,{b,c:cc,s:s1,L:[w,x,y]});
+  t.choices=opts(t,[{value:polyStr([[s1*b,{[w]:1,[x]:1}],[cc,{[y]:1}]]),mistake:'Multiplied only the first term'},{value:polyStr([[s1*b,{[w]:1,[x]:1}],[-s1*cc,{[w]:1,[y]:1}]]),mistake:'Used the wrong sign on the second term'},{value:polyStr([[b,{[x]:1}],[s1*cc,{[w]:1,[y]:1}]]),mistake:'Multiplied only the second term'}],h);}
+ break;}
+case 'a1-like':{const pool=[...'fghjkmnpqrstuvwxyz'],pk=()=>{const i=int(0,pool.length-1);return pool.splice(i,1)[0];},F=pk(),G=pk(),Hh=pk(),I=pk(),J=pk(),cf=()=>int(1,7)*pick([1,-1]);
+ const like=[F+G+Hh,F+Hh+G,G+F+Hh,G+Hh+F,Hh+G+F,Hh+F+G],unlike=[pick([I+G+Hh,I+Hh+G]),pick([Hh+I+F,F+I+Hh]),pick([G+F+I,F+G+I]),pick([J+G+Hh,J+Hh+G]),pick([Hh+J+F,F+J+Hh]),pick([G+F+J,F+G+J])];
+ const [nAll,nLike]=v==='count'?pick([[4,2],[4,3],[5,2],[5,3],[5,4],[4,0],[5,0]]):pick([[4,2],[4,3],[5,2],[5,3],[5,4]]);
+ const L=[...like].sort(()=>0).slice(0,6),chosen=[];const li=[0,1,2,3,4,5].map(()=>int(0,999));const order=[0,1,2,3,4,5].sort((p,q)=>li[p]-li[q]);for(let k=0;k<nLike;k++)chosen.push({s:like[order[k]],like:true});
+ const ui=[0,1,2,3,4,5].map(()=>int(0,999)),uo=[0,1,2,3,4,5].sort((p,q)=>ui[p]-ui[q]).filter(k=>v==='count'||k<3);for(let k=0;k<nAll-nLike;k++)chosen.push({s:unlike[uo[k]],like:false});
+ const pos=chosen.map(()=>int(0,999)),items=chosen.map((x,i)=>({...x,k:pos[i]})).sort((p,q)=>p.k-q.k).map((x,i)=>({...x,lab:'abcde'[i],c:cf()}));
+ const show=items.map(x=>`(${x.lab}) ${monoTxt(x.c,x.s)}`).join(' '),likeLabs=items.filter(x=>x.like).map(x=>x.lab);
+ if(v==='count'){const z=nLike,alts=z===0?['none','0','zero','none of them']:[String(z),['','','two','three','four'][z]];
+  t=T(`How many of the following terms are like terms? ${show}`,[word(...alts)],z===0?'none':String(z),z===0?'No two of the terms have the same variables.':`${z} terms have exactly the same variables (${likeLabs.map(x=>'('+x+')').join(', ')}).`,{items:items.map(x=>[x.c,x.s,x.like])});
+  t.choices=opts(t,['none','2','3','4'].filter(x=>x!==(z===0?'none':String(z))).map(x=>({value:x,mistake:x==='none'?'Thought the order of the variables makes terms unlike':'Miscounted which terms have exactly the same variables'})),h);}
+ else{const val=likeLabs.length===2?`(${likeLabs[0]}) and (${likeLabs[1]})`:likeLabs.slice(0,-1).map(x=>`(${x})`).join(', ')+` and (${likeLabs[likeLabs.length-1]})`;
+  t=T(`Which of the following terms are like terms? Give their letters. ${show}`,[{t:'set',items:likeLabs}],val,`Like terms have exactly the same variables; the order of the factors does not matter. ${val} are like terms.`,{items:items.map(x=>[x.c,x.s,x.like])});}
+ break;}
+case 'a1-combine':{const r=(lo,hi)=>int(lo,hi)*pick([1,-1]);
+ if(v==='xy'){const [x,y]=letters(int,2);let a,f,b,cc,d,e;do{a=r(1,8);f=r(1,9);b=r(1,8);cc=r(1,8);d=r(1,8);e=r(1,8);}while(a+f===0||b+cc+d+e===0);
+  const XY={[x]:1,[y]:1},src=termsTxt([[b,y+x],[cc,x+y],[a,''],[d,y+x],[e,x+y],[f,'']]),ans=[[b+cc+d+e,XY],[a+f,{}]];
+  t=T(`Simplify by adding like terms: ${src}`,[polyPart(ans)],polyStr(ans),`${x}${y} and ${y}${x} are like terms: ${b} + ${cc} + ${d} + ${e} = ${b+cc+d+e}; the numbers add to ${a+f}. Result: ${polyStr(ans)}.`,{a,b,c:cc,d,e,f});
+  t.choices=opts(t,[{value:termsTxt([[e+cc,x+y],[d+b,y+x],[a+f,'']]),mistake:`Did not combine ${x}${y} with ${y}${x}`},{value:termsTxt([[b+cc+d+e,x],[b+cc+d+e,y],[a+f,'']]),mistake:`Wrote ${x}${y} as ${x} + ${y}`},{value:termsTxt([[e+cc,x],[d+b,y],[a+f,'']]),mistake:`Treated ${x}${y} and ${y}${x} as single variables`}],h);}
+ else if(v==='xy3'){const [x,y]=letters(int,2);let a=int(2,9),cc=int(-9,-1),hh=pick([1,-1]),d=r(1,9),b=r(1,9),e=r(1,9),f=r(1,9);if(cc+a+hh===0)a+=2;if(b+d===0)d=-d;if(e+f===0){e+=1;f-=1;}
+  const ans=[[e+f,{[x]:1,[y]:1}],[a+cc+hh,{[x]:1}],[b+d,{[y]:1}]];
+  t=T(`Simplify by adding like terms: ${termsTxt([[a,x],[f,x+y],[b,y],[e,x+y],[cc,x],[d,y],[hh,x]])}`,[polyPart(ans)],polyStr(ans),`Add the ${x}${y} terms, the ${x} terms and the ${y} terms separately: ${polyStr(ans)}.`,{a,b,c:cc,d,e,f,h:hh});}
+ else{const [w,x,y]=letters(int,3);let a=r(2,9),b=r(1,9),cc=int(-9,-1),d=r(1,9);if(cc+a===0)cc-=1;if(b+d===0)d+=2;
+  const ans=[[a+cc,{[w]:1,[x]:1}],[b+d,{[x]:1,[y]:1}]];
+  t=T(`Simplify by adding like terms: ${termsTxt([[a,x+w],[b,x+y],[cc,w+x],[d,y+x]])}`,[polyPart(ans)],polyStr(ans),`${x}${w} and ${w}${x} are like terms, and so are ${x}${y} and ${y}${x}: ${polyStr(ans)}.`,{a,b,c:cc,d});}
+ break;}
+case 'a1-power':{const rows=v==='mc'?[[2,3],[2,4],[3,2],[3,3],[3,4]]:[[2,2],[2,3],[2,4],[3,2],[3,3],[3,4],[5,2],[6,2]],[a,b]=pick(rows),z=a**b;
+ t=T(`Evaluate: ${a}${S.sup(b)}`,[num(z,1,'int')],String(z),`${a}${S.sup(b)} = ${Array(b).fill(a).join(' · ')} = ${z}.`,{a,b},{math:math(`<msup><mn>${a}</mn><mn>${b}</mn></msup>`)});
+ if(v==='mc')t.choices=opts(t,[{value:String(a*b),mistake:'Multiplied the base by the exponent'},{value:String(b**a),mistake:'Switched the base and the exponent'},{value:String(z*a),mistake:'Used the base as a factor one extra time'},{value:String(z+1),mistake:'Arithmetic slip'}],h);break;}
+case 'a1-neg-power':{let a,b;do{a=int(2,4);b=int(2,4);}while(a===4&&b===4);const form=v==='mc'?pick(['paren','neg']):'paren',z=form==='paren'?(-a)**b:-(a**b),shown=form==='paren'?`(−${a})${S.sup(b)}`:`−(${a})${S.sup(b)}`;
+ t=T(`Simplify: ${shown}`,[num(z,1,'int')],minus(z),form==='paren'?`The base is −${a}: ${minus(z)}.`:`The exponent applies to ${a} only, then take the opposite: −${a**b}.`,{a,b,form},{math:math(form==='paren'?`<msup><mrow>${mo('(')}${mo('−')}<mn>${a}</mn>${mo(')')}</mrow><mn>${b}</mn></msup>`:`<mrow>${mo('−')}<msup><mrow>${mo('(')}<mn>${a}</mn>${mo(')')}</mrow><mn>${b}</mn></msup></mrow>`)});
+ if(v==='mc'){const d2=Math.abs(a*b)===Math.abs(z)?3*b:a*b;t.choices=opts(t,[{value:minus(-z),mistake:form==='paren'?'Treated the negative sign as outside the power':'Raised the negative number to the power'},{value:minus(d2),mistake:'Multiplied the base by the exponent'},{value:minus(-d2),mistake:'Multiplied the base by the exponent and used the wrong sign'}],h);}
+ break;}
+case 'a1-power-mix':{const P=[['2²',4],['2³',8],['2⁴',16],['3²',9],['3³',27]],N=[['(−2)²',4],['(−2)³',-8],['(−2)⁴',16],['(−3)²',9],['(−3)³',-27]];
+ if(v==='string'){const [q1,q3,q5]=[pick(P),pick(P),pick(P)],[q2,q4]=[pick(N),pick(N)],z=-q1[1]-q2[1]-q3[1]-Math.abs(q4[1]-q5[1]);
+  t=T(`Simplify: −${q1[0]} − ${q2[0]} − ${q3[0]} − |${q4[0]} − ${q5[0]}|`,[num(z,1,'int')],minus(z),`Evaluate each power: −${q1[1]} − (${minus(q2[1])}) − ${q3[1]} − |${minus(q4[1])} − ${q5[1]}| = ${minus(z)}.`,{v:[q1[1],q2[1],q3[1],q4[1],q5[1]]});}
+ else if(v==='pair'){const k=int(0,9),pair=[[P[0],N[0]],[N[0],P[0]],[P[1],N[1]],[N[1],P[1]],[P[2],N[2]],[N[2],P[2]],[P[3],N[3]],[N[3],P[3]],[P[4],N[4]],[N[4],P[4]]][k],z=-pair[0][1]+pair[1][1];
+  t=T(`Simplify: −${pair[0][0]} + ${pair[1][0]}`,[num(z,1,'int')],minus(z),`−(${minus(pair[0][1])}) + (${minus(pair[1][1])}) = ${minus(z)}.`,{v:[pair[0][1],pair[1][1]]});}
+ else if(v==='roots'){const P6=[...P,['4²',16]],q1=pick(P6);let b1,b2;do{b1=int(0,4);b2=int(0,4);}while(b1===b2);const q4=pick([['∛8',2],['∛27',3],['∛64',4]]),q5=pick([['∜16',2],['∜81',3]]),z=-q1[1]-N[b1][1]-N[b2][1]+q4[1]-q5[1];
+  t=T(`Simplify: −${q1[0]} − ${N[b1][0]} − ${N[b2][0]} + ${q4[0]} − ${q5[0]}`,[num(z,1,'int')],minus(z),`−${q1[1]} − (${minus(N[b1][1])}) − (${minus(N[b2][1])}) + ${q4[1]} − ${q5[1]} = ${minus(z)}.`,{v:[q1[1],N[b1][1],N[b2][1],q4[1],q5[1]]});}
+ else{const a=int(1,4),aa=pick([1,2]),cs=int(1,5),bb=pick([1,2]);
+  const two=[['2²',4],['2³',8],['(−2)²',4],['(−2)³',-8]][a-1],tre=[['3²',9],['3³',27],['(−3)²',9],['(−3)³',-27]][a-1],twr=aa===1?['∛8',2]:['∛(−8)',-2],trr=aa===1?['∛(−27)',-3]:['∛27',3],fp=bb===1?['4²',16]:['(−4)²',16],fr=bb===1?['∛64',4]:['∛(−64)',-4];
+  const [q1,q2]=cs<=2?[two,twr]:cs<=4?[tre,trr]:[fp,fr],z=q1[1]+q2[1];
+  t=T(`Simplify: ${q1[0]} + ${q2[0]}`,[num(z,1,'int')],minus(z),`${minus(q1[1])} + (${minus(q2[1])}) = ${minus(z)}.`,{v:[q1[1],q2[1]]});}
+ break;}
+case 'a1-cube-root':{const a=pick([-5,-4,-3,-2,2,3,4,5]);
+ t=T(`Evaluate: ∛(${minus(a**3)})`,[num(a,1,'int')],minus(a),`${minus(a)} × ${minus(a)} × ${minus(a)} = ${minus(a**3)}, so the cube root is ${minus(a)}.`,{a},{math:math(`<mroot><mn>${minus(a**3)}</mn><mn>3</mn></mroot>`)});
+ t.choices=opts(t,[{value:minus(-a),mistake:'Used the wrong sign'},{value:minus(a*a),mistake:'Squared the cube root'},{value:minus(-a*a),mistake:'Squared the cube root and used the wrong sign'}],h);break;}
+case 'a1-eval-pow':{const L=letters(int,3,'foil'),[A,B,C]=L,r=(lo,hi)=>int(lo,hi)*pick([1,-1]),sp=(n,e)=>`${n}${S.sup(e)}`;let e,z,p;
+ if(v==='three'){const b=int(2,4),cc=int(2,4),d=int(2,4),av=pick([-1,2,-2]);z=av**b-av**cc-av**d;e=`${sp(A,b)} − ${sp(A,cc)} − ${sp(A,d)}`;p={av,b,c:cc,d};t=T(`Evaluate ${e} if ${A} = ${minus(av)}.`,[num(z,1,'int')],minus(z),`Substitute ${minus(av)}: ${minus(av**b)} − (${minus(av**cc)}) − (${minus(av**d)}) = ${minus(z)}.`,p);}
+ else if(v==='a3b'){let av=r(1,3),bv=r(1,4);if(av>0&&bv>0)av=-av;const s1=pick([1,-1]);z=(av+s1*bv)*bv*av**3;e=`${sp(A,3)}${B}(${A} ${s1<0?'−':'+'} ${B})`;p={av,bv,s:s1};t=T(`Evaluate ${e} if ${A} = ${minus(av)} and ${B} = ${minus(bv)}.`,[num(z,1,'int')],minus(z),`(${minus(av)})³(${minus(bv)})(${minus(av+s1*bv)}) = ${minus(z)}.`,p);}
+ else if(v==='mix'){let av=r(1,4),bv=r(1,5),cv=r(1,4);if(av>0&&bv>0&&cv>0)cv=-cv;const s1=pick([1,-1]);z=(av+s1*bv)*bv-s1*cv*cv-av*av;e=`−${sp(A,2)} + ${B}(${A} ${s1<0?'−':'+'} ${B}) ${s1<0?'+':'−'} ${sp(C,2)}`;p={av,bv,cv,s:s1};t=T(`Evaluate ${e} if ${A} = ${minus(av)}, ${B} = ${minus(bv)} and ${C} = ${minus(cv)}.`,[num(z,1,'int')],minus(z),`Substitute and follow the order of operations: ${minus(z)}.`,p);}
+ else if(v==='abs'){let av=r(1,4),bv=r(1,4);if(av>0&&bv>0)av=-av;const s1=pick([1,-1]);z=-(av**3)+s1*bv*(av-s1*bv)+Math.abs(bv-av);e=`−${sp(A,3)} ${s1<0?'−':'+'} ${B}(${A} ${s1<0?'+':'−'} ${B}) + |${B} − ${A}|`;p={av,bv,s:s1};t=T(`Evaluate ${e} if ${A} = ${minus(av)} and ${B} = ${minus(bv)}.`,[num(z,1,'int')],minus(z),`Substitute and follow the order of operations: ${minus(z)}.`,p);}
+ else if(v==='prod'){let av=r(1,4),bv=r(1,4);if(av>0&&bv>0)av=-av;const ee=int(2,3),f=int(2,3);z=(-ee*av-bv*bv)*(-bv-av)*(f*av);e=`(−${ee}${A} − ${sp(B,2)})(−${B} − ${A})(${f}${A})`;p={av,bv,e:ee,f};t=T(`Evaluate ${e} if ${A} = ${minus(av)} and ${B} = ${minus(bv)}.`,[num(z,1,'int')],minus(z),`(${minus(-ee*av-bv*bv)})(${minus(-bv-av)})(${minus(f*av)}) = ${minus(z)}.`,p);}
+ else if(v==='abc'){let av=r(1,4),bv=r(1,4),cv=r(1,4);if(av>0&&bv>0&&cv>0)cv=-cv;const sw=int(1,3);z=sw===1?av*bv*cv**3:sw===2?av**3*bv*cv:av*bv**3*cv;e=sw===1?`${A}${B}${sp(C,3)}`:sw===2?`${sp(A,3)}${B}${C}`:`${A}${sp(B,3)}${C}`;p={av,bv,cv,sw};t=T(`Evaluate ${e} if ${A} = ${minus(av)}, ${B} = ${minus(bv)} and ${C} = ${minus(cv)}.`,[num(z,1,'int')],minus(z),`Substitute and multiply: ${minus(z)}.`,p);}
+ else if(v==='sq'){const av=r(1,4),bv=r(1,4);z=av*av-bv*bv;e=`${sp(A,2)} − ${sp(B,2)}`;p={av,bv};t=T(`Evaluate ${e} if ${A} = ${minus(av)} and ${B} = ${minus(bv)}.`,[num(z,1,'int')],minus(z),`(${minus(av)})² − (${minus(bv)})² = ${av*av} − ${bv*bv} = ${minus(z)}.`,p);}
+ else{let a,b,cc,d1,d2,d3;do{a=int(3,9);b=int(1,9);cc=int(1,9);z=a*a+5*b-cc;d1=a*a+5+b-cc;d2=2*a+5*b-cc;d3=(a*a+5)*b-cc;}while(new Set([z,d1,d2,d3]).size<4);
+  t=T(`Evaluate x² + 5y − z when x = ${a}, y = ${b} and z = ${cc}.`,[num(z,1,'int')],String(z),`${a}² + 5(${b}) − ${cc} = ${a*a} + ${5*b} − ${cc} = ${z}.`,{a,b,c:cc});
+  t.choices=opts(t,[{value:String(d1),mistake:'Added 5 and y instead of multiplying'},{value:String(d2),mistake:'Doubled x instead of squaring it'},{value:String(d3),mistake:'Added before multiplying by y'}],h);}
  break;}
 default:throw Error('Unknown Algebra 1 port recipe '+c.recipe);}
 if(v&&t.parameters&&t.parameters.form===undefined)t.parameters.form=v;   // the record's variant, for the oracles
