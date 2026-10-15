@@ -56,4 +56,16 @@ Existing shared forms reused: fact family, words, relation, number set, integer 
 
 **Pre-check before every commit from here on.** A private script copies the tree, regenerates the shared outputs and runs every test except `tests/port87.cjs` (8/7 and Course 1 only, about 14 minutes), in about 7 minutes. The real verification follows each implementation checkpoint.
 
-Results of the passing run are recorded in the verified checkpoint below.
+**Passing run** on implementation checkpoint `40aace9`, through Batch I4-2:
+
+| Check | Result |
+|---|---|
+| Ownership: only Intermediate 4 files changed since `c7538877` | Passed (10 files) |
+| Shared outputs regenerated in a temporary copy | Passed |
+| Full suite, 79 tests, compared with the parallel-courses baseline | Passed: every test that passed at the baseline still passes; the 31 baseline failures are unchanged |
+| `tests/port-courses.cjs intermediate-4 -- 1000` | Passed: 102 tasks, 102,000 instances; decision files validated |
+| `tests/practice.cjs` (own answer accepted, answer + "7" rejected, keypad keys, determinism) | Passed |
+| Drawings rendered in Chromium and inspected | Passed |
+| Studio preview, PDF and Word print checks | Not run: the Studio re-pins after the integration pass |
+
+**Ledger after this batch (regenerated in the temporary copy):** Intermediate 4 is 12.0% complete (102 covered, 65 consolidated), 17.9% including the 82 records still covered-provisional; 1139 open.
