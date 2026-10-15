@@ -25,6 +25,12 @@ const num=(q,i)=>Number(q.answer.values[i].numerator)/Number(q.answer.values[i].
 // Perimeter of a polygon from its vertices.
 const perim=pts=>pts.reduce((s,p,i)=>{const r=pts[(i+1)%pts.length];return s+Math.hypot(r[0]-p[0],r[1]-p[1]);},0);
 
+// Evaluates a printed signed-number expression: true minus, brackets and braces, and juxtaposed factors.
+const evalPrinted=e=>Function('return ('+e.replace(/−/g,'-').replace(/[\[{]/g,'(').replace(/[\]}]/g,')').replace(/\)\s*\(/g,')*(')+');')();
+const exprOf2=q=>q.prompt.match(/simplify: (.*?) Enter/)[1];
+const exprOf=q=>q.prompt.match(/(?:Add|Simplify): (.*?) Enter/)[1];
+const sciOk=(q,v)=>{const pt=q.answer.parts[0];return near(pt.m[0]/pt.m[1]*10**pt.e,v)&&pt.m[0]>=pt.m[1]&&pt.m[0]<10*pt.m[1];};
+const samplesOk=(part,fn)=>part.samples.every(([x,v])=>near(v,fn(x.N)));
 // recipe -> (q, parameters) => true when the key is right. Every recipe in the catalog needs one.
 const oracle={
  // Batch AH-1
@@ -100,6 +106,56 @@ const oracle={
  'ah-divisibility-lists':(q,p)=>p.ord.every((k,i)=>JSON.stringify([...q.answer.lists[i]].sort((x,y)=>x-y))===JSON.stringify(p.T.filter(x=>x%k===0).sort((x,y)=>x-y))),
  'ah-not-divisible':(q,p)=>{const not=p.shown.filter(x=>x%p.k!==0);return not.length===1&&eq(q,0,not[0]);},
  'ah-divisible-both':(q,p)=>{const both=p.shown.filter(x=>x%p.a===0&&x%p.b===0);return both.length===1&&eq(q,0,both[0]);},
+ // Batch AH-2
+ 'ah-word-boxes':(q,p)=>eq(q,0,p.a*p.b),
+ 'ah-word-buses':(q,p)=>num(q,0)*p.b>=p.a&&(num(q,0)-1)*p.b<p.a,
+ 'ah-word-classes':(q,p)=>num(q,0)*p.b===p.s&&q.prompt.includes(say(p.s)),
+ 'ah-select-primes':(q,p)=>{const pr=p.list.filter(x=>{if(x<2)return false;for(let d=2;d<x;d++)if(x%d===0)return false;return true;});return JSON.stringify([...q.answer.set].sort((a,b)=>a-b))===JSON.stringify(pr.sort((a,b)=>a-b));},
+ 'ah-which-prime':(q,p)=>{const isP=x=>{for(let d=2;d<x;d++)if(x%d===0)return false;return x>1;};const hit=p.shown.filter(x=>isP(x)===p.is);return hit.length===1&&eq(q,0,hit[0]);},
+ 'ah-prime-product':(q,p)=>q.answer.number===2**p.b*3**p.c*5**p.d&&q.answer.value.split(' × ').map(Number).reduce((x,y)=>x*y,1)===q.answer.number,
+ 'ah-common-factors-gcf':(q,p)=>{const com=[];for(let x=1;x<=Math.min(p.f,p.g);x++)if(p.f%x===0&&p.g%x===0)com.push(x);return JSON.stringify(q.answer.lists)===JSON.stringify([com,[com[com.length-1]]]);},
+ 'ah-gcf-choice':(q,p)=>{let g=1;for(let x=1;x<=p.f;x++)if(p.f%x===0&&p.g%x===0)g=x;return eq(q,0,g);},
+ 'ah-word-nails':(q,p)=>eq(q,0,p.n1*(1+p.f)),
+ 'ah-word-votes':(q,p)=>eq(q,0,p.nv+p.t1*p.nv+p.t2*p.nv),
+ 'ah-word-beads':(q,p)=>eq(q,0,p.p*p.b),
+ 'ah-expand-two':(q,p)=>q.answer.parts[0][1]===p.d&&q.answer.parts[0][0]*p.y1===p.x1*p.d&&q.answer.parts[1][1]===p.d&&q.answer.parts[1][0]*p.y2===p.x2*p.d,
+ 'ah-reduce':(q,p)=>eq(q,0,p.N,p.D),
+ 'ah-equivalent-choice':(q,p)=>q.answer.parts[0][1]===p.d&&q.answer.parts[0][0]*p.y===p.x*p.d,
+ 'ah-reduce-choice':(q,p)=>eq(q,0,p.c,p.d),
+ 'ah-fractions-to-decimals':(q,p)=>eqs(q,[[p.a,p.b],[p.f2[0],p.f2[1]]])&&[8,20,25].includes(p.b),
+ 'ah-repeating-choice':(q,p)=>{const s=q.answer.value.replace(/̅/g,'');const m=s.match(/^0\.(\d*)(\d)$/);const nonrep=m[1],r=Number(m[2]),k=nonrep.length;const val=(Number(nonrep||0)*9+r)/(10**k*9);return near(val,p.nn/p.dd)&&q.answer.n===p.nn&&q.answer.d===p.dd;},
+ 'ah-round-repeater':(q,p)=>{const x=p.d+p.a/p.den;return near(num(q,0),Math.floor(x*10**p.p+0.5)/10**p.p);},
+ 'ah-round-repeater-millionth':(q,p)=>{const x=p.a+Number(p.bb)/(10**p.L-1);return near(num(q,0),Math.floor(x*1e6+0.5)/1e6);},
+ 'ah-decimal-to-fraction-choice':(q,p)=>eq(q,0,p.a,10**p.b)&&p.a%10===5,
+ 'ah-evaluate-powers':(q,p)=>eqs(q,[[p.c*p.c,100],[p.a**p.b,1],[1,1]]),
+ 'ah-prime-exponents':(q,p)=>q.answer.number===2**p.b*3**p.a*p.c&&[5,7,11].includes(p.c),
+ 'ah-power-choice':(q,p)=>{let v=1;for(let i=0;i<p.b;i++)v*=p.a;return eq(q,0,v);},
+ 'ah-prime-exponents-choice':(q,p)=>q.answer.number===2**p.b*3**p.a*p.c,
+ 'ah-tiles':(q,p)=>eq(q,0,p.a*p.b),
+ 'ah-area-l':(q,p)=>eq(q,0,p.a*p.a+p.b*p.c),
+ 'ah-fraction-of':(q,p)=>p.a%p.b===0&&eq(q,0,p.c*p.a,p.b),
+ 'ah-fraction-of-mixed':(q,p)=>eq(q,0,p.g*p.c,p.f),
+ 'ah-fraction-of-choice':(q,p)=>eq(q,0,p.c*p.a,p.b),
+ 'ah-multiply-fractions':(q,p)=>eq(q,0,p.c*p.d,p.a*p.b),
+ 'ah-fraction-power':(q,p)=>eq(q,0,p.a**p.c,p.b**p.c),
+ 'ah-multiply-cancel':(q,p)=>eq(q,0,p.a*p.e,p.b*p.d),
+ 'ah-multiply-cancel-choice':(q,p)=>eq(q,0,p.b*p.d,p.a*p.d*p.c),
+ 'ah-divide-fractions':(q,p)=>eq(q,0,(p.a*p.c)*p.b,(p.b*p.e)*(p.a*p.d)),
+ 'ah-divide-fractions-choice':(q,p)=>eq(q,0,(p.a*p.c)*p.b,(p.b*p.e)*(p.a*p.d)),
+ 'ah-factors-of':(q,p)=>{const f=[];for(let x=1;x<=p.a;x++)if(p.a%x===0)f.push(x);return JSON.stringify([...q.answer.set].sort((a,b)=>a-b))===JSON.stringify(f);},
+ 'ah-multiples-between':(q,p)=>{const m=[];for(let x=p.small+1;x<p.big;x++)if(x%p.a===0)m.push(x);return m.length>0&&JSON.stringify([...q.answer.set].sort((a,b)=>a-b))===JSON.stringify(m);},
+ 'ah-not-multiple':(q,p)=>{const not=p.shown.filter(x=>x%p.a!==0);return not.length===1&&eq(q,0,not[0]);},
+ 'ah-lcm-factored':(q,p)=>{let L=p.ns[0];while(!p.ns.every(x=>L%x===0))L+=p.ns[0];return eq(q,0,L);},
+ 'ah-lcm-choice':(q,p)=>{let L=p.b;while(L%p.a)L+=p.b;return eq(q,0,L)&&p.a<p.b;},
+ 'ah-average-eight':(q,p)=>p.v.length===8&&eq(q,0,p.v.reduce((x,y)=>x+y,0),8),
+ 'ah-average-missing-cost':(q,p)=>eq(q,0,p.g*p.H-p.A.reduce((x,y)=>x+y,0),100)&&p.A.length===p.g-1,
+ 'ah-three-fractions':(q,p)=>eq(q,0,p.F1[0]*p.F2[0]*p.F3[0],p.F1[1]*p.F2[1]*p.F3[1]),
+ 'ah-fractions-times-divide':(q,p)=>eq(q,0,p.a*p.b*p.a*p.c,p.a*p.c*p.b*p.d),
+ 'ah-three-fractions-choice':(q,p)=>eq(q,0,p.F1[0]*p.F2[0]*p.F3[1],p.F1[1]*p.F2[1]*p.F3[0]),
+ 'ah-pounds-to-tons':(q,p)=>eq(q,0,p.q,2000),
+ 'ah-miles-to-feet':(q,p)=>eq(q,0,p.a*5280,10),
+ 'ah-tons-to-pounds':(q,p)=>eq(q,0,p.q*2000),
+ 'ah-metric-choice':(q,p)=>{const per={millimeters:1,centimeters:10,meters:1000};const m=q.prompt.match(/How many (\w+) are in (\d+) (\w+)\?/);return near(num(q,0),Number(m[2])*per[m[3]]/per[m[1]]);},
 };
 
 // Responses that must be marked wrong for a recipe, beyond the distractors (optional): recipe -> q => [strings].

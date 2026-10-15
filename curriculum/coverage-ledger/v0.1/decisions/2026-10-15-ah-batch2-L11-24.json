@@ -1,0 +1,535 @@
+{
+ "batch": "AH-2 algebra-half lessons 11-24",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "algebra-half-en:node:111",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:111"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:112",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:112"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:113",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:113"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:116",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:116"
+   ],
+   "note": "Ported: same ten rows and four orders as the source; the key is computed from the list, so 1 (listed as prime in one source row) is never keyed as prime."
+  },
+  {
+   "id": "algebra-half-en:node:117",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:117"
+   ],
+   "note": "Existing adaptation confirmed after review: lists the primes strictly between two numbers, same response form and similar ranges."
+  },
+  {
+   "id": "algebra-half-en:node:118",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:118"
+   ],
+   "note": "Existing adaptation confirmed after review: sum of the primes between two numbers, same response form and ranges."
+  },
+  {
+   "id": "algebra-half-en:node:119",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:119"
+   ],
+   "note": "Ported: the four numbers are listed in the prompt; the key is the one that is (or is not) prime."
+  },
+  {
+   "id": "algebra-half-en:node:121",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:121"
+   ],
+   "note": "Existing adaptation confirmed after review: prime factorization of a number built from 2, 3, 5 and 7, same response form."
+  },
+  {
+   "id": "algebra-half-en:node:122",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:122"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:125",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:125"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:126",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:126"
+   ],
+   "note": "Existing adaptation confirmed after review: GCF of two numbers, same response form; its numbers are drawn at random rather than from the source table."
+  },
+  {
+   "id": "algebra-half-en:node:127",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:127"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:129",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:129"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:130",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:130"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:131",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:131"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:135",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:135"
+   ],
+   "note": "Ported: same fraction and denominator rules; the key must be written over the given denominator."
+  },
+  {
+   "id": "algebra-half-en:node:136",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:136"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:137",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:137"
+   ],
+   "note": "Ported: same rules; the key must be written over the given denominator."
+  },
+  {
+   "id": "algebra-half-en:node:138",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:138"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:142",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:142"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:143",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:143"
+   ],
+   "note": "Ported: same ten fractions; the answer is written with a bar or parentheses on the repeating digit."
+  },
+  {
+   "id": "algebra-half-en:node:145",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:145"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:146",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:146"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:148",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:148"
+   ],
+   "note": "Existing adaptation confirmed after review: a decimal in fiftieths written as a simplified fraction, same range."
+  },
+  {
+   "id": "algebra-half-en:node:149",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:149"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:151",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:151"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:152",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:152"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:153",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:153"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:154",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:154"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:156",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:156"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:157",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:157"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:161",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:161"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:162",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:162"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:163",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:163"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:167",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:167"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:168",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:168"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:169",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:169"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:170",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:170"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:172",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:172"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:173",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:173"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:176",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:176"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:177",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:177"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:178",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:178"
+   ],
+   "note": "Ported: the four numbers are listed in the prompt; the key is the one that is not a multiple."
+  },
+  {
+   "id": "algebra-half-en:node:180",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:180"
+   ],
+   "note": "Existing adaptation confirmed after review: LCM of three numbers, same response form."
+  },
+  {
+   "id": "algebra-half-en:node:181",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:181"
+   ],
+   "note": "Existing adaptation confirmed after review: the first three common multiples of three numbers, same response form."
+  },
+  {
+   "id": "algebra-half-en:node:182",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:182"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:183",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:183"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:185",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:185"
+   ],
+   "note": "Existing adaptation confirmed after review: mean of four numbers of the same sizes; the adaptation gives the exact mean where the source rounded without saying so."
+  },
+  {
+   "id": "algebra-half-en:node:186",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:186"
+   ],
+   "note": "Existing adaptation confirmed after review: missing value from a mean, three to five numbers."
+  },
+  {
+   "id": "algebra-half-en:node:187",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:187"
+   ],
+   "note": "Existing adaptation confirmed after review: missing price from an average price, in dollars and cents."
+  },
+  {
+   "id": "algebra-half-en:node:188",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:188"
+   ],
+   "note": "Ported: same eight number ranges; the key is the exact mean (the source rounded to hundredths without saying so)."
+  },
+  {
+   "id": "algebra-half-en:node:189",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:189"
+   ],
+   "note": "Ported: same item counts and price ranges, in dollars and cents."
+  },
+  {
+   "id": "algebra-half-en:node:191",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:191"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:192",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:192"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:193",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:193"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:197",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:197"
+   ],
+   "note": "Existing adaptation confirmed after review: yards to feet, same ranges."
+  },
+  {
+   "id": "algebra-half-en:node:198",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:198"
+   ],
+   "note": "Existing adaptation confirmed after review: feet to yards, same ranges."
+  },
+  {
+   "id": "algebra-half-en:node:199",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:199"
+   ],
+   "note": "Existing adaptation confirmed after review: inches to feet, same ranges."
+  },
+  {
+   "id": "algebra-half-en:node:200",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:200"
+   ],
+   "note": "Existing adaptation confirmed after review: feet to inches, same ranges."
+  },
+  {
+   "id": "algebra-half-en:node:201",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:201"
+   ],
+   "note": "Existing adaptation confirmed after review: feet to miles, tenths of a mile from 2 to 10."
+  },
+  {
+   "id": "algebra-half-en:node:202",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:202"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:203",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:203"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:204",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:204"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:206",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:206"
+   ],
+   "note": "Existing adaptation confirmed after review: centimeters to meters, same range."
+  },
+  {
+   "id": "algebra-half-en:node:207",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:207"
+   ],
+   "note": "Existing adaptation confirmed after review: grams to kilograms, same range."
+  },
+  {
+   "id": "algebra-half-en:node:208",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:208"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  }
+ ]
+}
