@@ -1,0 +1,575 @@
+{
+ "batch": "AH-8 algebra-half lessons 107-123",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "algebra-half-en:node:655",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:655"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:656",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:656"
+   ],
+   "note": "Existing adaptation confirmed after review: writing a Roman numeral in standard form."
+  },
+  {
+   "id": "algebra-half-en:node:657",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:657"
+   ],
+   "note": "Existing adaptation confirmed after review: reading a Roman numeral."
+  },
+  {
+   "id": "algebra-half-en:node:658",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:658"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:659",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:659"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:661",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:661"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:662",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:662"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:663",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:663"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:664",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:664"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:665",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:665"
+   ],
+   "note": "Ported: the source draws the percents and class sizes from fixed tables; the port generates mixed-number percents (halves, fourths, fifths, eighths) and class sizes that give a whole number of students."
+  },
+  {
+   "id": "algebra-half-en:node:668",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:668"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:669",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:669"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:671",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:671"
+   ],
+   "note": "Ported: the amount is asked to the nearest cent (the source shows up to three decimal places of a dollar)."
+  },
+  {
+   "id": "algebra-half-en:node:672",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:672"
+   ],
+   "note": "Ported: the amount is asked to the nearest cent."
+  },
+  {
+   "id": "algebra-half-en:node:674",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:674"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:675",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:675"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:676",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:676"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:679",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:679"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:680",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:680"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:682",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:682"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:683",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:683"
+   ],
+   "note": "Ported: a loss is written as a negative number, as in the source key."
+  },
+  {
+   "id": "algebra-half-en:node:685",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:685"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:686",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:686"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:687",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:687"
+   ],
+   "note": "Existing adaptation confirmed after review: probability of either of two colors of marble."
+  },
+  {
+   "id": "algebra-half-en:node:688",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:688"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:691",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:691"
+   ],
+   "note": "Existing adaptation confirmed after review: reading an inch scale to sixteenths."
+  },
+  {
+   "id": "algebra-half-en:node:692",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:692"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:694",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:694"
+   ],
+   "note": "Existing adaptation confirmed after review: reading a metric scale."
+  },
+  {
+   "id": "algebra-half-en:node:695",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:695"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:696",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:696"
+   ],
+   "note": "Ported as teacher review with a rubric."
+  },
+  {
+   "id": "algebra-half-en:node:697",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:697"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:699",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:699"
+   ],
+   "note": "Existing adaptation confirmed after review: repeated coin tosses."
+  },
+  {
+   "id": "algebra-half-en:node:700",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:700"
+   ],
+   "note": "Existing adaptation confirmed after review: a die roll after earlier independent rolls."
+  },
+  {
+   "id": "algebra-half-en:node:701",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:701"
+   ],
+   "note": "Existing adaptation confirmed after review: two draws with replacement."
+  },
+  {
+   "id": "algebra-half-en:node:702",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:702"
+   ],
+   "note": "Existing adaptation confirmed after review: two cards without replacement."
+  },
+  {
+   "id": "algebra-half-en:node:703",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:703"
+   ],
+   "note": "Ported: the source spinner pictures were not recovered; the port draws spinners with 3 to 6 equal numbered sections."
+  },
+  {
+   "id": "algebra-half-en:node:706",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:706"
+   ],
+   "note": "Ported as teacher review: the fourteen source polygons are drawn with their marks; for the rhombus the source lists \"regular quadrilateral\", which is wrong, and the port leaves it out."
+  },
+  {
+   "id": "algebra-half-en:node:707",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:707"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:709",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:709"
+   ],
+   "note": "Ported as teacher review: the source pictures were not recovered; the port draws five pairs of congruent L-shapes related by stated motions."
+  },
+  {
+   "id": "algebra-half-en:node:710",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:710"
+   ],
+   "note": "Ported: the five source triangle pairs; the transformations are accepted in either order."
+  },
+  {
+   "id": "algebra-half-en:node:712",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:712"
+   ],
+   "note": "Existing adaptation confirmed after review: parallelogram area from a perpendicular height."
+  },
+  {
+   "id": "algebra-half-en:node:713",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:713"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:714",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:714"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:715",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:715"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:718",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:718"
+   ],
+   "note": "Existing adaptation confirmed after review: x² equal to a perfect square."
+  },
+  {
+   "id": "algebra-half-en:node:719",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:719"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:721",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:721"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:722",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:722"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:723",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:723"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:726",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:726"
+   ],
+   "note": "Ported: the value of the conversion is asked for (the source key is the unevaluated unit-multiplier expression)."
+  },
+  {
+   "id": "algebra-half-en:node:727",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:727"
+   ],
+   "note": "Ported: the value of the conversion is asked for."
+  },
+  {
+   "id": "algebra-half-en:node:728",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:728"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:730",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:730"
+   ],
+   "note": "Existing adaptation confirmed after review: milliliters to liters."
+  },
+  {
+   "id": "algebra-half-en:node:731",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:731"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:732",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:732"
+   ],
+   "note": "Ported: the answer is in scientific notation, as in the source key."
+  },
+  {
+   "id": "algebra-half-en:node:733",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:733"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:734",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:734"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:737",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:737"
+   ],
+   "note": "Existing adaptation confirmed after review: volume of a square pyramid."
+  },
+  {
+   "id": "algebra-half-en:node:738",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:738"
+   ],
+   "note": "Existing adaptation confirmed after review: volume of a cone with 3.14 for π."
+  },
+  {
+   "id": "algebra-half-en:node:739",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:739"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:741",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:741"
+   ],
+   "note": "Existing adaptation confirmed after review: surface area of a square pyramid."
+  },
+  {
+   "id": "algebra-half-en:node:742",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:742"
+   ],
+   "note": "Existing adaptation confirmed after review: surface area of a cone with 3.14 for π."
+  },
+  {
+   "id": "algebra-half-en:node:745",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:745"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:746",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:746"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:748",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:748"
+   ],
+   "note": "Ported as teacher review with an answer-key drawing."
+  },
+  {
+   "id": "algebra-half-en:node:749",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:749"
+   ],
+   "note": "Ported: the nine source figures are redrawn."
+  },
+  {
+   "id": "algebra-half-en:node:750",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:750"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:752",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:752"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:753",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:753"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:757",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:757"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:758",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:758"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  }
+ ]
+}
