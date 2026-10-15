@@ -417,8 +417,8 @@ case 'ah-reduce':{let a,cc,d;do{a=int(21,45);cc=int(1,5);d=int(cc+1,cc+4);}while
  t.choices=wrongOnly(t,[{value:`${N/gcd(N,D)*2}/${D/gcd(N,D)*2}`,mistake:'Did not divide by the greatest common factor'},{value:`${N-a}/${D-a}`,mistake:'Subtracted from the top and bottom instead of dividing'},{value:`${D/g}/${N/g}`,mistake:'Inverted the fraction'}]);break;}
 case 'ah-equivalent-choice':{let a,aa,b,bb,d;do{a=int(4,8);aa=int(3,8);b=int(a+1,9);bb=int(aa+1,9);const g=gcd(b,bb);d=[b*bb,b/g*bb,b*(bb/g),b*bb/g][int(0,3)];}while(a===aa||d===b||d===bb);
  const g1=gcd(a,b),x=a/g1,y=b/g1,z=x*d/y;
- t={prompt:`What is the fraction equivalent to ${x}/${y} that has a denominator of ${d}?`,answer:{kind:'ah-den',parts:[[z,d]],value:`${z}/${d}`},solution:`${d} ÷ ${y} = ${d/y}, so multiply the numerator by ${d/y}: ${x}/${y} = ${z}/${d}.`,parameters:{x,y,d}};
- t.choices=wrongOnly(t,[{value:`${z+pick([-1,1])*x}/${d}`,mistake:'Multiplied the numerator by the wrong number'},{value:`${x}/${d}`,mistake:'Changed the denominator but not the numerator'},{value:`${d-1}/${d}`,mistake:'Wrote one less than the denominator'}]);break;}
+ t=whole(`The fraction equivalent to ${x}/${y} has a denominator of ${d}: ${x}/${y} = ?/${d}. What is its numerator?`,z,`${d} ÷ ${y} = ${d/y}, so multiply the numerator by ${d/y}: ${x}/${y} = ${z}/${d}.`,{x,y,d});
+ t.choices=wrongOnly(t,[{value:String(z+pick([-1,1])*x),mistake:'Multiplied the numerator by the wrong number'},{value:String(x),mistake:'Changed the denominator but not the numerator'},{value:String(d-1),mistake:'Wrote one less than the denominator'}]);break;}
 case 'ah-reduce-choice':{const ROWS=[[2,2,2,3],[2,2,2,5],[2,2,3,4],[2,2,3,6],[2,2,4,6],[2,3,2,3],[2,3,2,5],[2,3,3,4],[2,3,3,6],[2,3,4,6],[2,4,2,5],[2,4,3,4],[2,4,3,6],[2,4,4,6],[3,3,2,5],[3,3,3,4],[3,3,3,6],[3,3,4,6],[3,4,3,4],[3,4,3,6],[3,4,4,6],[4,4,2,5],[4,4,3,4],[4,4,3,6],[4,4,4,6]],[a,b,cc,d]=pick(ROWS),N=a*b*cc,D=a*b*d,g=gcd(cc,d);
  t=n(`Reduce ${N}/${D} to lowest terms.`,R(N,D),`${N}/${D} = ${cc/g}/${d/g} after dividing the numerator and denominator by ${gcd(N,D)}.`,{a,b,c:cc,d},'fraction');t.math=S.math(S.mfrac(N,D));
  t.choices=wrongOnly(t,[{value:`${cc*a}/${d*a}`,mistake:'Divided by a common factor but not the greatest one'},{value:`${(a+cc)/gcd(a+cc,a+d)}/${(a+d)/gcd(a+cc,a+d)}`,mistake:'Added instead of multiplying the factors'},{value:`${(d+1)/gcd(d+1,a*b*cc)}/${a*b*cc/gcd(d+1,a*b*cc)}`,mistake:'Mixed up the numerator and denominator factors'},{value:`${d/g}/${cc/g}`,mistake:'Inverted the fraction'}]);break;}
@@ -549,12 +549,20 @@ return t;}
 // ---------- answer kinds that exist only in this course ----------
 // ah-seq: an ordered list of signed decimals or integers. ah-lists: whole-number sets, one per part, separated by
 // semicolons. ah-words: word answers, one per part, separated by semicolons.
+// ah-power: powers of whole numbers, as base^exponent factors. ah-mono: one product of variable powers (negative
+// exponents allowed; a single fraction bar allowed). ah-names: names of one angle. ah-wordset: words in any order.
+const caretS=s=>String(s).replace(/[⁻⁰¹²³⁴⁵⁶⁷⁸⁹]+/g,m=>'^'+[...m].map(ch=>ch==='⁻'?'-':S.UNSUP[ch]).join(''));
 function ownCheck(q,s){const a=q.answer,okv=v=>({answerCorrect:!!v,fullOutcomeVerified:false});
  if(a.kind==='ah-seq'){const toks=s.replace(/<|;/g,',').split(',').map(x=>x.trim()).filter(Boolean);if(toks.length!==a.values.length)return okv(false);return okv(toks.every((x,i)=>sameNum(parseNum(x),a.values[i])));}
  if(a.kind==='ah-lists'){const ps=s.split(';');if(ps.length!==a.lists.length)return okv(false);return okv(ps.every((p,i)=>{const r=p.replace(/^\s*\([a-z]\)\s*/i,'').replace(/(\d),(?=\d{3}(?!\d))/g,'$1').replace(/\band\b/gi,',');if(/[^\d,\s]/.test(r))return false;const g=(r.match(/\d+/g)||[]).map(Number),w=a.lists[i];return g.length===w.length&&new Set(g).size===g.length&&w.every(x=>g.includes(x));}));}
  if(a.kind==='ah-den'){const ps=s.split(';');if(ps.length!==a.parts.length)return okv(false);return okv(ps.every((p,i)=>{const m=p.replace(/^\s*\([a-z]\)\s*/i,'').trim().match(/^(\d+)\s*\/\s*(\d+)$/);return !!m&&Number(m[1])===a.parts[i][0]&&Number(m[2])===a.parts[i][1];}));}
  if(a.kind==='ah-points'){const ps=s.split(';');if(ps.length!==a.points.length)return okv(false);return okv(ps.every((p,i)=>{const m=p.replace(/^\s*\([a-d]\)\s*(?=\()/i,'').match(/^\s*\(?\s*(-?\d+)\s*,\s*(-?\d+)\s*\)?\s*$/);return !!m&&Number(m[1])===a.points[i][0]&&Number(m[2])===a.points[i][1];}));}
  if(a.kind==='ah-exprs'){const ps=s.split(';');if(ps.length!==a.parts.length)return okv(false);return okv(ps.every((p,i)=>{const r=p.replace(/^\s*\([a-d]\)\s*/i,'').trim();if(!r||/=/.test(r))return false;const fn=S.parseExpr(r,a.parts[i].vars);if(!fn)return false;return a.parts[i].samples.every(([env,v])=>{const g=fn(env);return Number.isFinite(g)&&Math.abs(g-v)<1e-9*Math.max(1,Math.abs(v));});}));}
+ if(a.kind==='ah-power'){const r=caretS(s).replace(/\s+/g,''),toks=r.match(/\(?\d+\)?\^\(?-?\d+\)?/g)||[];if(r.replace(/\(?\d+\)?\^\(?-?\d+\)?/g,'').replace(/[×x·*()]/g,'')!=='')return okv(false);const got=toks.map(x=>x.replace(/[()]/g,'').split('^').map(Number)).map(([b,e])=>b+'^'+e).sort(),want=a.factors.map(([b,e])=>b+'^'+e).sort();return okv(got.join()===want.join());}
+ if(a.kind==='ah-mono'){const r=caretS(s).replace(/\s+/g,'').replace(/[×·*]/g,''),sides=r.split('/');if(sides.length>2)return okv(false);const net={},seen=[{},{}];for(let k=0;k<sides.length;k++){const sd=sides[k].replace(/^\((.*)\)$/,'$1');if(sd==='1'&&(k===1||sides.length===2))continue;if(!/^(?:\(?[a-z](?:\^\(?-?\d+\)?)?\)?)+$/.test(sd))return okv(false);for(const m of sd.matchAll(/\(?([a-z])(?:\^\(?(-?\d+)\)?)?\)?/g)){const l=m[1],e=m[2]===undefined?1:Number(m[2]);if(!e||seen[k][l])return okv(false);seen[k][l]=1;net[l]=(net[l]||0)+(k?-e:e);}}
+  if(Object.keys(seen[0]).some(l=>seen[1][l]))return okv(false);const want=a.exps,keys=new Set([...Object.keys(net),...Object.keys(want)]);return okv([...keys].every(l=>(net[l]||0)===(want[l]||0)));}
+ if(a.kind==='ah-names'){const toks=s.split(/,|;|\bor\b|\band\b/i).map(x=>x.replace(/∠|angle|m(?=\s*∠)/gi,'').replace(/\s+/g,'').toUpperCase()).filter(Boolean);const valid=a.valid.map(x=>x.toUpperCase());return okv(toks.length===a.need&&new Set(toks).size===toks.length&&toks.every(x=>valid.includes(x)));}
+ if(a.kind==='ah-wordset'){const w=wnorm(s).split(' ').filter(x=>x&&!['and','a','an','triangle','it','is'].includes(x));return okv(w.length===a.words.length&&a.words.every(x=>w.includes(x)));}
  if(a.kind==='ah-words'){const ps=s.split(';');if(ps.length!==a.parts.length)return okv(false);return okv(ps.every((p,i)=>wnorm(p.replace(/^\s*\([a-z]\)\s*/i,''))===wnorm(a.parts[i])));}
  return undefined;}
 function check(q,response){let s=String(response??'');if(s.length>600)return{answerCorrect:false,fullOutcomeVerified:false};
@@ -564,7 +572,7 @@ function check(q,response){let s=String(response??'');if(s.length>600)return{ans
  const own=ownCheck(q,s2);if(own!==undefined)return own;
  if(s2!==s)return P().check({...q,givens:{...(q.givens||{}),recipe:'ah-'}},s2);
  return undefined;}
-function answerText(q){const a=q.answer;if(a&&['ah-seq','ah-lists','ah-words','ah-den','ah-points','ah-exprs'].includes(a.kind))return a.value;return undefined;}
+function answerText(q){const a=q.answer;if(a&&['ah-seq','ah-lists','ah-words','ah-den','ah-points','ah-exprs','ah-power','ah-mono','ah-names','ah-wordset'].includes(a.kind))return a.value;return undefined;}
 
 const api=Object.freeze({key:'algebra-half',course:'Algebra 1/2',prefix:'ah-',batchPrefix:'AH',catalog,build,check,answerText});
 if(common)module.exports=api;root.MathPortAlgebraHalf=api;

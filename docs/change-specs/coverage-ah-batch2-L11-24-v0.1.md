@@ -42,6 +42,7 @@ Recorded 2026-10-15 (Asia/Shanghai). Batch protocol: `coverage-programme-phase0-
 | node:116 | One of its ten rows lists 1 among the primes in the key | The key is computed from the list, so 1 is never keyed as prime |
 | node:188 | Rounds the mean to hundredths without saying so | The key is the exact mean (U-04) |
 | node:119, 178 | Choice-only: the numbers appear only as choices | The four numbers are in the prompt; free response with the others as distractors |
+| node:137 | Asks for the fraction with a given denominator | Asks for its numerator (a whole number). Found in verification: a fraction key with a fixed denominator fails the shared practice rule that a doubled fraction must be accepted or flagged as unreduced |
 | node:143 | Some distractors are whole numbers with a bar | Each distractor is a repeating decimal with a named mistake |
 
 ## Verification

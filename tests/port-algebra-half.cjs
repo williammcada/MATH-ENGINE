@@ -31,6 +31,19 @@ const exprOf2=q=>q.prompt.match(/simplify: (.*?) Enter/)[1];
 const exprOf=q=>q.prompt.match(/(?:Add|Simplify): (.*?) Enter/)[1];
 const sciOk=(q,v)=>{const pt=q.answer.parts[0];return near(pt.m[0]/pt.m[1]*10**pt.e,v)&&pt.m[0]>=pt.m[1]&&pt.m[0]<10*pt.m[1];};
 const samplesOk=(part,fn)=>part.samples.every(([x,v])=>near(v,fn(x.N)));
+// A small independent expression evaluator for printed prompts: + − × ÷ / ^, superscripts, brackets, implicit products.
+function evalExpr(src,env={}){const SUPS='⁰¹²³⁴⁵⁶⁷⁸⁹';let s=String(src).replace(/[−–]/g,'-').replace(/×|·/g,'*').replace(/÷/g,'/').replace(/[\[{]/g,'(').replace(/[\]}]/g,')').replace(/⁻?[⁰¹²³⁴⁵⁶⁷⁸⁹]+/g,m=>'^('+[...m].map(c=>c==='⁻'?'-':SUPS.indexOf(c)).join('')+')').replace(/\s+/g,'');let i=0;
+ const peek=()=>s[i],eat=c=>{if(s[i]!==c)throw Error('expected '+c+' at '+i+' in '+s);i++;};
+ function expr(){let v=term();while(peek()==='+'||peek()==='-'){const o=s[i++],w=term();v=o==='+'?v+w:v-w;}return v;}
+ function term(){let v=factor();for(;;){if(peek()==='*'){i++;v*=factor();}else if(peek()==='/'){i++;v/=factor();}else if(peek()&&/[0-9a-z(.]/i.test(peek())){v*=factor();}else return v;}}
+ function factor(){if(peek()==='-'){i++;return -factor();}if(peek()==='+'){i++;return factor();}let b=atom();if(peek()==='^'){i++;const e=factor();b=Math.pow(b,e);}return b;}
+ function atom(){if(peek()==='('){i++;const v=expr();eat(')');return v;}const m=s.slice(i).match(/^\d+(?:\.\d+)?/);if(m){i+=m[0].length;return Number(m[0]);}const ch=s[i];if(ch&&/[a-z]/i.test(ch)){i++;if(!(ch in env))throw Error('unknown '+ch);return env[ch];}throw Error('bad token at '+i+' in '+s);}
+ const v=expr();if(i!==s.length)throw Error('trailing at '+i+' in '+s);return v;}
+const lettersOf=x=>[...new Set(String(x).match(/[a-z]/gi)||[])];
+const polyVal=(terms,env)=>terms.reduce((acc,[cf,vars])=>acc+cf*Object.entries(vars).reduce((p,[l,e])=>p*env[l]**e,1),0);
+// The key polynomial equals the printed expression at several points.
+const polyMatches=(q,expr)=>{const L=lettersOf(expr);return [[1.3,2.1,0.7],[-0.6,1.9,3.2],[2.5,-1.1,0.4]].every(vals=>{const env={};L.forEach((l,k)=>env[l]=vals[k%3]+k*0.17);return near(polyVal(q.answer.terms,env),evalExpr(expr,env));});};
+const afterColon=q=>q.prompt.replace(/ Enter .*$/,'').replace(/^.*?: /,'').replace(/\?$/,'');
 // recipe -> (q, parameters) => true when the key is right. Every recipe in the catalog needs one.
 const oracle={
  // Batch AH-1
@@ -120,7 +133,7 @@ const oracle={
  'ah-word-beads':(q,p)=>eq(q,0,p.p*p.b),
  'ah-expand-two':(q,p)=>q.answer.parts[0][1]===p.d&&q.answer.parts[0][0]*p.y1===p.x1*p.d&&q.answer.parts[1][1]===p.d&&q.answer.parts[1][0]*p.y2===p.x2*p.d,
  'ah-reduce':(q,p)=>eq(q,0,p.N,p.D),
- 'ah-equivalent-choice':(q,p)=>q.answer.parts[0][1]===p.d&&q.answer.parts[0][0]*p.y===p.x*p.d,
+ 'ah-equivalent-choice':(q,p)=>num(q,0)*p.y===p.x*p.d&&q.prompt.includes(`= ?/${p.d}`),
  'ah-reduce-choice':(q,p)=>eq(q,0,p.c,p.d),
  'ah-fractions-to-decimals':(q,p)=>eqs(q,[[p.a,p.b],[p.f2[0],p.f2[1]]])&&[8,20,25].includes(p.b),
  'ah-repeating-choice':(q,p)=>{const s=q.answer.value.replace(/̅/g,'');const m=s.match(/^0\.(\d*)(\d)$/);const nonrep=m[1],r=Number(m[2]),k=nonrep.length;const val=(Number(nonrep||0)*9+r)/(10**k*9);return near(val,p.nn/p.dd)&&q.answer.n===p.nn&&q.answer.d===p.dd;},
