@@ -7,14 +7,16 @@
  *   - Course banks: Intermediate 4 → Algebra 2 entries whose answers are auto-checked
  *     (spec decision D2). Teacher-reviewed tasks are not game-eligible.
  * Hosts must not generate or check mathematics themselves.
+ * Every keypad item uses the one universal answer pad (src/answer-pad.js, handbook U-18, Engine 0.36.0).
  */
 'use strict';
 const banks = require('./course-banks.js');
 const { loadK7Skills, baselineSha256 } = require('./k7-skills.js');
 const INDEX = require('./practice-index.js');
 const CONT = require('./continuity-skills.js');
+const PAD = require('./answer-pad.js');
 
-const version = '0.35.0-rc.1';
+const version = '0.36.0-rc.1';
 const freeze = Object.freeze;
 
 // ---------- deterministic randomness ----------
@@ -59,24 +61,19 @@ const courses = freeze(INDEX.courses.map(c => freeze({ ...c, count: bankEntries.
 const find = id => byId.get(id) || null;
 
 // ---------- answer entry ----------
-const BASE_KEYS = ['7', '8', '9', 'back', '4', '5', '6', 'clear', '1', '2', '3', '-', '0', '.', '/', ' '];
-const KEYPAD_EXTRAS = ['R', ':', ';', ',', '<', '>', '=', '$', '+', '×', '(', ')', '{', '}', '^', '%'];
+// One pad for every question (U-18). The keys never depend on the correct answer.
+const padItem = () => ({ inputMode: 'keypad', keys: PAD.keys.slice() });
 function bankEntryMode(answerText) {
-  const extra = new Set();
-  for (const ch of String(answerText)) {
-    if (/[0-9.\/\- ]/.test(ch)) continue;
-    if (KEYPAD_EXTRAS.includes(ch)) { extra.add(ch); continue; }
-    return { inputMode: 'keyboard', keys: [] };
-  }
-  return { inputMode: 'keypad', keys: [...BASE_KEYS, ...KEYPAD_EXTRAS.filter(k => extra.has(k))] };
+  // Pad when the answer can be typed with pad keys (sqrt(...) and * written as √ and ×); otherwise
+  // the answer is words, letters or Roman numerals and uses a text box (U-18 boundary).
+  return PAD.onlyPadCharacters(PAD.padForm(answerText)) ? padItem() : { inputMode: 'keyboard', keys: [] };
 }
 
 // ---------- items ----------
 function fromSkill(skill, raw, meta) {
   const item = { ...raw, engine: version, id: skill.id, layer: 'skill', ...meta };
   item.html = K7.formatItem(raw);
-  item.inputMode = 'keypad';
-  item.keys = K7.keypadKeys(raw.type);
+  Object.assign(item, padItem());
   // Display/report text only; checking still uses the baseline's own answer and tolerance.
   item.answerText = typeof raw.answer === 'number' ? String(Number(raw.answer.toPrecision(12))) : String(raw.answer).replace(/^(-?\d+)\/1$/, '$1');
   // Show expression answers with the keypad's × (the baseline stores *, and accepts ×, * or juxtaposition).
@@ -89,7 +86,7 @@ function fromBank(entry, raw, meta) {
   return { engine: version, id: entry.id, layer: 'bank', ...meta, prompt: raw.prompt, type: 'bank', html: banks.renderQuestion(raw), ...bankEntryMode(answerText), answerText, solution: raw.solution || '', raw };
 }
 function fromContinuity(entry, raw, meta) {
-  const keys = raw.kind === 'choice' ? [] : raw.kind === 'fraction' ? BASE_KEYS.slice() : BASE_KEYS.slice();
+  const keys = raw.kind === 'choice' ? [] : PAD.keys.slice();
   return { engine: version, id: entry.id, layer: 'continuity', ...meta, prompt: raw.prompt, type: raw.kind, kind: raw.kind,
     html: `<div class="engine-question"><p>${raw.promptHTML || CONT.esc(raw.prompt)}</p></div>`,
     inputMode: raw.kind === 'choice' ? 'choice' : 'keypad', keys, choices: raw.choices || null,
@@ -140,7 +137,7 @@ function nextItem(id, state = {}) {
 /** The only answer validator hosts use. Accepts items after a JSON round trip. */
 function checkAnswer(item, response) {
   if (!item || typeof item !== 'object') return false;
-  const text = typeof response === 'string' ? response : response == null ? '' : String(response);
+  const text = PAD.normalizeTyped(typeof response === 'string' ? response : response == null ? '' : String(response));
   if (!text.trim()) return false;
   if (item.layer === 'bank') {
     try { return banks.checkAnswer(item.raw, text).answerCorrect === true; } catch { return false; }
@@ -151,7 +148,7 @@ function checkAnswer(item, response) {
 const MESSAGES = Object.freeze({
   empty: 'Enter an answer.',
   tooLong: 'That answer is too long.',
-  keys: 'Use only the answer keys shown for this question.',
+  keys: 'Use the answer keys on the pad.',
   choice: 'Choose one of the answers shown.',
   unsimplified: 'Your value is correct, but the fraction is not in simplest form. Simplify it and try again.',
   wrong: 'Not yet. Check your work, then try again.'
@@ -178,13 +175,11 @@ function evaluate(item, response) {
   if (item && item.inputMode === 'choice') {
     const ok = (item.choices || []).some(c => String(c).toLowerCase() === normalized.toLowerCase());
     if (!ok) return { valid: false, correct: false, reason: 'not-a-choice', message: MESSAGES.choice, normalized };
-  } else if (item && item.inputMode === 'keypad' && Array.isArray(item.keys) && item.keys.length) {
-    const allowed = new Set([...item.keys.filter(k => k !== 'back' && k !== 'clear').join('').toLowerCase(), ' ', '−']);
-    if (allowed.has('×')) allowed.add('*');
-    if ([...normalized.toLowerCase()].some(ch => !allowed.has(ch))) return { valid: false, correct: false, reason: 'invalid-characters', message: MESSAGES.keys, normalized };
+  } else if (item && item.inputMode === 'keypad') {
+    if (!PAD.onlyPadCharacters(PAD.padForm(normalized))) return { valid: false, correct: false, reason: 'invalid-characters', message: MESSAGES.keys, normalized };
   }
   if (item && item.layer === 'continuity') {
-    const r = CONT.check(item, normalized);
+    const r = CONT.check(item, PAD.normalizeTyped(normalized));
     if (!r.valid) return { valid: false, correct: false, reason: 'invalid-format', message: MESSAGES.wrong, normalized };
     if (r.equivalentUnsimplified) return { valid: true, correct: false, reason: 'equivalent-unsimplified', message: MESSAGES.unsimplified, normalized };
     return r.correct ? { valid: true, correct: true, reason: null, message: '', normalized } : { valid: true, correct: false, reason: 'wrong-value', message: MESSAGES.wrong, normalized };
@@ -194,7 +189,8 @@ function evaluate(item, response) {
   if (simpler && checkAnswer(item, simpler)) return { valid: true, correct: false, reason: 'equivalent-unsimplified', message: MESSAGES.unsimplified, normalized };
   return { valid: true, correct: false, reason: 'wrong-value', message: MESSAGES.wrong, normalized };
 }
-function keypadKeys(item) { return item && Array.isArray(item.keys) ? item.keys.slice() : BASE_KEYS.slice(); }
+/** The universal pad's keys (U-18). The item argument is accepted for compatibility and does not change the keys. */
+function keypadKeys() { return PAD.keys.slice(); }
 
 // ---------- easier / harder ----------
 /** Reviewed links only. Returns game-eligible ids, nearest first; empty when none. */
@@ -290,7 +286,7 @@ function contentHash() {
 }
 const api = freeze({
   version, bankVersion: banks.version, k7Version: 'megaman-v0.7', k7BaselineSha256: baselineSha256,
-  catalog, courses, find, generate, nextItem, checkAnswer, evaluate, related, keypadKeys,
+  catalog, courses, find, generate, nextItem, checkAnswer, evaluate, related, keypadKeys, answerPad: PAD,
   Practice, freshMath, configError, formatMath: K7.formatMath, contentHash: contentHash()
 });
 module.exports = api;

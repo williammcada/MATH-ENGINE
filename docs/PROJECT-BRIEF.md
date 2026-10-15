@@ -1,4 +1,8 @@
-## Current checkpoint — Engine 0.35.0-rc.1 implementation checkpoint (2026-10-15)
+## Current checkpoint — Engine 0.36.0-rc.1 implementation checkpoint (2026-10-15)
+
+The Engine now owns the one universal answer pad (handbook U-18, approved 2026-10-15; U-14 amended so the Engine owns the pad). `src/answer-pad.js` holds the two-tab pad (123 first, Algebra second). Every keypad question carries the same full key list, so keys no longer depend on, or give away, the answer. Pad-typed answers (−, √, ×, R, AM/PM) are accepted. Algebra radical items moved from a text box to the pad. Practice, main and phase-2 tests pass; browser check passed; physical iPad Not run. MathQuest and Math Arcade still draw their own pads until they migrate. See [change spec](change-specs/v0.36.0-answer-pad.md) and [verification](verification/answer-pad-v0.36.0.md). Not yet a verified release. Handbook consulted: v0.1.12 `9d9c80f`.
+
+## Previous checkpoint — Engine 0.35.0-rc.1 implementation checkpoint (2026-10-15)
 
 Practice catalog entries now carry their recorded standards (228 of 1,441 bank entries, all 8/7), and 8/7 Lesson 9.6 no longer produces negative or zero answers. Practice-layer, main and phase-2 tests pass; Math Arcade v0.9.0 pins this bundle. See [change spec](change-specs/v0.35.0-practice-standards.md). Not yet a verified release. Earlier checkpoints below are historical.
 
