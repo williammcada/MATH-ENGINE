@@ -53,9 +53,9 @@ Port recipes that keep the source ranges are ready in `src/port-algebra-1.js`: `
 
 **Meanwhile:** the thirteen records (seventeen from A1-9) stay covered-provisional.
 
-### R3 — Let port tasks replace breadth-bank adaptations (A1-5, A1-7, A1-8, A1-9, A1-10)
+### R3 — Let port tasks replace breadth-bank adaptations (A1-5, A1-7, A1-8, A1-9, A1-10, A1-11)
 
-**Records (covered-provisional):** algebra-1-en:node:376, node:570, node:690, node:742, node:752, node:820, node:859, node:905.
+**Records (covered-provisional):** algebra-1-en:node:376, node:570, node:690, node:742, node:752, node:820, node:859, node:905, node:948, node:955.
 
 | Record | Earlier adaptation | The source |
 |---|---|---|
@@ -67,14 +67,16 @@ Port recipes that keep the source ranges are ready in `src/port-algebra-1.js`: `
 | node:820 | `polynomial-division`: asks for the four numbers A; B; C; R, with a remainder | divides exactly and asks for the quotient written as a polynomial |
 | node:859 | `inequality-graph-choice`: real-number solutions only | includes the domains {Integers}, {Positive integers} and {Negative integers}, graphed as dots |
 | node:905 | `slope-points`: coordinates include 0 (for example (0, 0)) | coordinates from ±1 to ±9, never 0 |
+| node:948 | `line-points`: fractional slopes such as −4/3 | an integer slope from ±1 to ±5, through (a, b) and (a + 2, ·) with a and b from ±1 to ±5 |
+| node:955 | `line-point-slope`: fractional slopes and points with a 0 coordinate | an integer slope from ±1 to ±5 and a point with coordinates from ±1 to ±5 (y from ±2 to ±5) |
 
-Port recipes that keep the source's ranges are ready for node:376 (`a1-primes`), node:570 (`a1-system` variant `570`), node:690 (`a1-trinom` variant `690`), node:742 (`a1-sci` variant `742`), node:752 (`a1-graph3` variant `752`), node:820 (`a1-polydiv` variant `820`), node:859 (`a1-domain` variant `859`), node:905 (`a1-slope` variant `905`).
+Port recipes that keep the source's ranges are ready for node:376 (`a1-primes`), node:570 (`a1-system` variant `570`), node:690 (`a1-trinom` variant `690`), node:742 (`a1-sci` variant `742`), node:752 (`a1-graph3` variant `752`), node:820 (`a1-polydiv` variant `820`), node:859 (`a1-domain` variant `859`), node:905 (`a1-slope` variant `905`), node:948 (`a1-line2` variant `948`), node:955 (`a1-line2` variant `955`).
 
 **Why the course chat cannot do it.** Replacing an adaptation removes its catalog entry, and `tests/breadth-bank-audit.py` line 121 asserts fixed totals (`count==14800 and len(recipes)==65`). Checked in an integrated copy on 2026-10-15: with node:376 replaced, that assertion fails; `breadth-bank.cjs`, `grade5.test.cjs` and the other shared tests pass. The later records in this table have the same dependency (each adaptation is a breadth entry).
 
 **Change wanted:** in `tests/breadth-bank-audit.py`, derive the expected count and recipe total from the entries still served by the breadth family, instead of fixed numbers.
 
-**Then, in `scripts/port_a1_tasks.py`:** add each record with `replaces` True (`(N + '376', 'a1-primes', None, 'Write a number as a product of primes', 'number-theory', True)`; `(N + '570', 'a1-system', '570', 'Solve a system by substitution', 'systems', True)`; `(N + '690', 'a1-trinom', '690', 'Factor a trinomial with a negative constant', 'factoring', True)`; `(N + '742', 'a1-sci', '742', 'Write a number in scientific notation', 'scientific-notation', True)`; `(N + '752', 'a1-graph3', '752', 'Choose the graph of a line from its slope and intercept', 'lines-slope', True)`; `(N + '820', 'a1-polydiv', '820', 'Divide a cubic by a binomial', 'polynomials', True)`; `(N + '859', 'a1-domain', '859', 'Choose the graph of an inequality ax + b < c with a domain', 'inequalities', True)`; `(N + '905', 'a1-slope', '905', 'Slope through two points', 'lines-slope', True)`), oracles for any recipe without one in `tests/port-algebra-1.cjs`, and decisions covering the records.
+**Then, in `scripts/port_a1_tasks.py`:** add each record with `replaces` True (`(N + '376', 'a1-primes', None, 'Write a number as a product of primes', 'number-theory', True)`; `(N + '570', 'a1-system', '570', 'Solve a system by substitution', 'systems', True)`; `(N + '690', 'a1-trinom', '690', 'Factor a trinomial with a negative constant', 'factoring', True)`; `(N + '742', 'a1-sci', '742', 'Write a number in scientific notation', 'scientific-notation', True)`; `(N + '752', 'a1-graph3', '752', 'Choose the graph of a line from its slope and intercept', 'lines-slope', True)`; `(N + '820', 'a1-polydiv', '820', 'Divide a cubic by a binomial', 'polynomials', True)`; `(N + '859', 'a1-domain', '859', 'Choose the graph of an inequality ax + b < c with a domain', 'inequalities', True)`; `(N + '905', 'a1-slope', '905', 'Slope through two points', 'lines-slope', True)`; `(N + '948', 'a1-line2', '948', 'Equation of a line through two points', 'lines-slope', True)`; `(N + '955', 'a1-line2', '955', 'Equation of a line from a point and a slope', 'lines-slope', True)`), oracles for any recipe without one in `tests/port-algebra-1.cjs`, and decisions covering the records.
 
 **Meanwhile:** the records stay covered-provisional.
 
@@ -104,22 +106,23 @@ Port recipes that keep the source's ranges are ready for node:493 (`a1-stats` va
 
 **Meanwhile:** the records stay covered-provisional.
 
-### R5 — Let port tasks replace domain-bank adaptations (A1-10)
+### R5 — Let port tasks replace domain-bank adaptations (A1-10, A1-11)
 
-**Records (covered-provisional):** algebra-1-en:node:929, node:930.
+**Records (covered-provisional):** algebra-1-en:node:929, node:930, node:960.
 
 | Record | Earlier adaptation | The source |
 |---|---|---|
 | node:929 | `three-fractions`: denominators such as 5x that the source never uses | (x + a)/(dx) = b/(ex) + c/f from its table of 48 rows (d is 2, 3, 4 or 6) |
 | node:930 | `cross-products`: coefficient pairs outside the source's table (for example 4/(6x)) | a/(bx) = c/(x + d) from its table of 42 rows |
+| node:960 | `root-substitution`: includes a = b = 1, which the source excludes | c√x + ax + b = 0 from its table of 33 (a, b) pairs |
 
-Port recipes that keep the source's ranges are ready for node:929 (`a1-rateq2` variant `929`), node:930 (`a1-rateq2` variant `930`).
+Port recipes that keep the source's ranges are ready for node:929 (`a1-rateq2` variant `929`), node:930 (`a1-rateq2` variant `930`), node:960 (`a1-radeq` variant `960`).
 
 **Why the course chat cannot do it.** Replacing an adaptation removes its catalog entry, and `tests/domain-bank-audit.py` line 52 asserts fixed totals (`len(seen)==6 and count==18000`). Found by reading the audit; the replacement was not tried in an integrated copy.
 
 **Change wanted:** in `tests/domain-bank-audit.py`, derive the expected entry count and instance total from the entries still served by the domain family.
 
-**Then, in `scripts/port_a1_tasks.py`:** add each record with `replaces` True (`(N + '929', 'a1-rateq2', '929', 'Solve a rational equation with three fractions', 'rational-equations', True)`; `(N + '930', 'a1-rateq2', '930', 'Solve a rational equation by cross products', 'rational-equations', True)`), oracles for any recipe without one in `tests/port-algebra-1.cjs`, and decisions covering the records.
+**Then, in `scripts/port_a1_tasks.py`:** add each record with `replaces` True (`(N + '929', 'a1-rateq2', '929', 'Solve a rational equation with three fractions', 'rational-equations', True)`; `(N + '930', 'a1-rateq2', '930', 'Solve a rational equation by cross products', 'rational-equations', True)`; `(N + '960', 'a1-radeq', '960', 'Solve an equation in √x and x', 'radical-equations', True)`), oracles for any recipe without one in `tests/port-algebra-1.cjs`, and decisions covering the records.
 
 **Meanwhile:** the records stay covered-provisional.
 

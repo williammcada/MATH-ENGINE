@@ -467,6 +467,33 @@ const oracle={
  'a1-group':(q,p)=>{const pt=P(q),env={},ev=P0=>Object.entries(P0).reduce((t,[k,c])=>t+c*[...k.matchAll(/([a-z])(-?\d+)/g)].reduce((m,[,l,e])=>m*env[l]**Number(e),1),0);[...'abcdefghijklmnopqrstuvwxyz'].forEach((l,i)=>{env[l]=1.1+0.13*i;});
   const want=p.form==='942'?(env[p.j]*env[p.k]+p.a)*(env[p.j]+env[p.l]):(p.a*env[p.e]+p.b)*(p.c*env[p.f]+p.d*env[p.g]);return pt.n===2&&near(ev(pt.poly),want);},
 
+ // Batch A1-11
+ 'a1-line2':(q,p)=>{// the key line must pass through the prompt's point(s) and have the required slope
+  const pt=P(q),y=x=>pt.samples.find(([e])=>e.x===x)?null:null,line=x=>{const [[e1,y1],[e2,y2]]=pt.samples;return y1+(y2-y1)*(x-e1.x)/(e2.x-e1.x);};void y;const m=(line(1)-line(0)),pts=[...q.prompt.matchAll(/\((−?\d+), (−?\d+)\)/g)].map(r=>[Number(r[1].replace('−','-')),Number(r[2].replace('−','-'))]);
+  if(!pts.every(([x0,y0])=>near(line(x0),y0)))return false;const sl=q.prompt.match(/slope (−?\d+)/),par=q.prompt.match(/parallel to the line y = (−?\d*)x/);
+  if(sl)return near(m,Number(sl[1].replace('−','-')));if(par){const k=par[1].replace('−','-');return near(m,k===''?1:k==='-'?-1:Number(k));}return pts.length===2;},
+ 'a1-radeq':(q,p)=>{const pt=P(q);if(p.form==='960'){const C=[-1-p.a*p.b,p.a,p.b],f=x=>C[0]*Math.sqrt(x)+C[1]*x+C[2],cands=[1/(p.a*p.a),p.b*p.b];const want=cands.filter(x=>Math.abs(f(x))<1e-9);return pt.vals.length===new Set(want.map(x=>x.toFixed(9))).size&&pt.vals.every(([n,d])=>Math.abs(f(n/d))<1e-9);}
+  if(p.form==='961'){const f=x=>x+p.a>=0?Math.sqrt(x+p.a)+p.b-p.c:NaN;return pt.vals.length?Math.abs(f(pt.vals[0][0]))<1e-9:p.c<p.b;}
+  const x=pt.v[0]/pt.v[1];return near(Math.sqrt(p.a*x+p.b),p.c*p.c);},
+ 'a1-trinom2':(q,p)=>{const pt=P(q),poly=q.prompt.replace(/^.*?: /,'').replace(/²/g,'^2').replace(/−/g,'-'),f=S.parseExpr(poly,['x']),env={x:1.37},ev=P0=>Object.entries(P0).reduce((t,[k,c])=>t+c*[...k.matchAll(/([a-z])(-?\d+)/g)].reduce((m,[,l,e])=>m*env[l]**Number(e),1),0);return pt.n===2&&near(f(env),ev(pt.poly))&&near(f({x:1/(p.form==='966'?p.a:1)})*0+1,1);},
+ 'a1-shift':(q,p)=>{if(q.answer.kind==='teacher')return q.answer.reference.includes(`${p.a} units`);const dir=['up','down','right','left'][p.b-1];return P(q).need[0][0]===dir&&q.answer.value.includes(dir)&&q.answer.value.includes(S.words?'units':'units');},
+ 'a1-conj2':(q,p)=>{// solve the prompt's compound inequality at integer points and compare with the expected set
+  const m=q.prompt.replace(/−/g,'-').match(/(?:line:|shows) (.*); D = \{(\w+)\}/),parts=m[1].split(' or '),test=x=>{const one=s0=>{const t=s0.replace(/x ([+-]) (\d+)/,(u,sg,n)=>String(x+(sg==='+'?1:-1)*Number(n))).replace(/^x$/,String(x)).split(/ (<=|≤|<|>=|≥|>) /);let ok=true;for(let i=1;i<t.length;i+=2){const L=Number(t[i-1]),R=Number(t[i+1]),o=t[i];ok=ok&&({'<':L<R,'≤':L<=R,'>':L>R,'≥':L>=R}[o]);}return ok;};return parts.some(one);};
+  const disj=parts.length===2,lC=p.d===1||p.d===3,hC=p.d===1||p.d===2,want=x=>disj?(lC?x<=p.c:x<p.c)||(hC?x>=p.b:x>p.b):(lC?x>=p.c:x>p.c)&&(hC?x<=p.b:x<p.b);
+  if(!Array.from({length:21},(_,i)=>i-10).every(x=>test(x)===want(x)))return false;return q.answer.kind==='teacher'?true:P(q).alts[0]==='abcd'[p.order.indexOf([[true,true],[false,true],[true,false],[false,false]].findIndex(([u,w])=>u===lC&&w===hC))];},
+ 'a1-radsq':(q,p)=>{if(p.form==='984')return near(P(q,0).v,(p.a-Math.sqrt(p.b))*(p.c+Math.sqrt(p.b)))&&near(P(q,1).v,(p.a1-Math.sqrt(p.ba))**2);return near(P(q).v,(p.a+Math.sqrt(p.b))**2);},
+ 'a1-vary':(q,p)=>{const f=p.form,pt=P(q),val=pt.t==='num'?pt.v[0]/pt.v[1]:null;if(f==='988')return val===p.a/p.b*p.c;if(f==='989')return p.cs===1?pt.t==='word':near(val*100,p.A*p.c);if(f==='991')return near(val,p.a*p.b/p.c);if(f==='992')return Math.abs(val-p.a*p.b/p.c)<=0.005+1e-9;if(f==='1017')return near(val*p.c**3,p.a*p.b**3);
+  return Math.abs(val-Math.sqrt(p.c*p.b*p.b/p.a))<=0.0005+1e-9;},
+ 'a1-expkey':(q,p)=>{const w=[p.A**p.d,p.B**(1/p.e),p.C**(p.f+0.5)];return q.answer.parts.every((pt,i)=>Math.abs(pt.v[0]/pt.v[1]-w[i])<=0.0005+1e-9);},
+ 'a1-growth':(q,p)=>{const f=p.form,A=n=>p.b*(1+p.c/100)**n;if(f==='998')return Math.abs(P(q).v[0]/P(q).v[1]-(A(p.d)-p.b))<=0.005+1e-9;if(f==='999')return P(q,0).samples.every(([e,y])=>near(y,A(e.n)))&&Math.abs(P(q,1).v[0]/P(q,1).v[1]-A(p.d))<=0.005+1e-9&&Math.abs(P(q,2).v[0]/P(q,2).v[1]-(A(p.d)-p.b))<=0.005+1e-9;
+  return Math.abs(P(q).v[0]-A(p.d))<=0.5;},
+ 'a1-expgraph':(q,p)=>q.answer.kind==='teacher'?q.answer.reference.includes(`(1, ${p.a})`):P(q).alts[0]==='abcd'[p.order.indexOf(0)],
+ 'a1-region':(q,p)=>q.answer.kind==='teacher'?/shaded/.test(q.answer.reference)&&(/[<>] /.test(p.ineq)===/dashed/.test(q.answer.reference)):P(q).alts[0]==='abcd'[p.order.indexOf(0)],
+ 'a1-radquot':(q,p)=>p.form==='1012'?near(P(q).v,(p.a*p.b+p.a*p.e*Math.sqrt(p.c*p.d))/(p.a*Math.sqrt(p.c))):near(P(q).v,(p.a*p.b*Math.sqrt(p.c)+p.a*p.e*Math.sqrt(p.c*p.d))/(p.a*Math.sqrt(p.c))),
+ 'a1-csq':(q,p)=>P(q).items.every(x=>x*x+(p.a+p.b)*x+p.a*p.b===0)&&new Set(P(q).items).size===2,
+ 'a1-qf':(q,p)=>P(q).vals.every(([x])=>near(p.a*x*x-p.c,p.b*x))&&!near(P(q).vals[0][0],P(q).vals[1][0]),
+ 'a1-boxplot':(q,p)=>{if(q.answer.kind==='teacher'){const s0=[...p.data].sort((x,y)=>x-y);return q.answer.reference.includes(`median ${s0[7]}`)&&q.answer.reference.includes(`first quartile ${s0[3]}`)&&q.answer.reference.includes(`third quartile ${s0[11]}`);}
+  const s0=[...P(q).items].sort((x,y)=>x-y),five=[s0[0],s0[1],s0[3],s0[5],s0[6]],title=q.givens.svg.match(/<title>([^<]*)<\/title>/)[1];return title.includes(`minimum ${five[0]}, first quartile ${five[1]}, median ${five[2]}, third quartile ${five[3]}, maximum ${five[4]}`);},
 };
 const near=(x,y)=>Math.abs(x-y)<=1e-9*Math.max(1,Math.abs(y));
 
