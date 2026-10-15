@@ -10,7 +10,8 @@ const WORDS=require('../src/port-shared.js').words;
 
 // The key as typed, normalised: numbers lose commas, "$" and units; words are lower case.
 const key=q=>String(E.answerText(q)).trim();
-const numKey=q=>Number(key(q).replace(/[$,]/g,'').replace(/\s*[a-z]+$/i,''));
+// The leading number of the key (after a dollar sign and thousands commas); units after it are ignored.
+const numKey=q=>{const m=key(q).replace(/[$,]/g,'').replace(/^−/,'-').match(/^-?\d+(?:\.\d+)?/);return m?Number(m[0]):NaN;};
 const is=(q,v)=>numKey(q)===v;
 const total=a=>a.reduce((x,y)=>x+y,0);
 const inRange=(x,lo,hi)=>Number.isInteger(x)&&x>=lo&&x<=hi;
@@ -102,6 +103,27 @@ const oracle={
   if(v==='products'){const terms=d.map((x,i)=>[x,10**(k-1-i)]).filter(t=>t[0]);return E.checkAnswer(q,terms.slice().reverse().map(([x,pl])=>`(${x} x ${pl})`).join('+')).answerCorrect&&!E.checkAnswer(q,String(p.n)).answerCorrect;}
   const parts=d.map((x,i)=>x*10**(k-1-i));return E.checkAnswer(q,parts.slice().reverse().join(' + ')).answerCorrect&&!E.checkAnswer(q,parts.slice(1).join(' + ')).answerCorrect;},
  'i4-missing-3digit':(q,p)=>is(q,p.kind==='addend'?p.total-p.a:p.kind==='subtrahend'?p.a-p.total:p.a+p.total),
+ // Batch I4-4
+ 'i4-add-column':(q,p)=>is(q,total(p.terms)),
+ 'i4-thermo':(q,p)=>E.checkAnswer(q,String(p.value)).answerCorrect&&E.checkAnswer(q,p.value+' degrees').answerCorrect&&!E.checkAnswer(q,String(p.value+p.step)).answerCorrect&&p.value>=p.lo&&p.value<=p.hi&&(p.value-p.lo)%p.step===0&&key(q).endsWith('°'+p.unit),
+ 'i4-speed':(q,p)=>is(q,p.value)&&p.value%5===0&&p.value<=70,
+ 'i4-temp-change':(q,p)=>is(q,p.b-p.a),
+ 'i4-clock':(q,p)=>{const v=variantOf(q);
+  if(v==='later'){const t=p.h*60+p.m+p.add,hh=Math.floor(t/60)%12||12,mm=t%60;return E.checkAnswer(q,`${hh}:${String(mm).padStart(2,'0')} pm`).answerCorrect&&!E.checkAnswer(q,`${hh}:${String(mm).padStart(2,'0')} am`).answerCorrect;}
+  if(v==='elapsed')return E.checkAnswer(q,`${Math.floor(p.dur/60)} hours ${p.dur%60} minutes`).answerCorrect;
+  const s=`${p.h}:${String(p.m).padStart(2,'0')}`;return v==='read'?E.checkAnswer(q,s).answerCorrect:E.checkAnswer(q,s+(p.pm?' p.m.':' a.m.')).answerCorrect&&!E.checkAnswer(q,s+(p.pm?' a.m.':' p.m.')).answerCorrect&&!E.checkAnswer(q,s).answerCorrect;},
+ 'i4-round':(q,p)=>{const v=variantOf(q);if(v.startsWith('dollar'))return is(q,Math.floor((p.cents+50)/100));if(v==='round-add'){const r=x=>Math.floor((x+5)/10)*10;return E.checkAnswer(q,`${r(p.a)}+${r(p.b)}=${r(p.a)+r(p.b)}`).answerCorrect;}return is(q,Math.floor((p.n+5)/10)*10);},
+ 'i4-measure':(q,p)=>variantOf(q)==='cm'?is(q,p.cm):E.checkAnswer(q,`${Math.round(p.cm/2.54)}; ${p.cm}; ${10*p.cm}`).answerCorrect,
+ 'i4-perimeter':(q,p)=>{const v=variantOf(q);if(v==='triangle')return is(q,p.a+p.b+p.c);if(v==='rectangle')return is(q,2*p.l+2*p.w);if(v==='polygon')return is(q,2*(p.w1+p.h1+p.h2));if(v==='regular')return is(q,p.k*p.s);return is(q,p.p/4);},
+ 'i4-units':(q,p)=>{const v=variantOf(q);if(v==='facts')return is(q,p.answer);if(v==='m-to-cm')return is(q,100*p.m);if(v==='yd-to-ft')return is(q,3*p.k);return ({'the width of a book':'inch','the length of a classroom':'foot','the length of a football field':'yard','the length of a pencil':'inch','the height of a door':'foot'})[p.item]===key(q);},
+ 'i4-perimeter-meaning':(q,p)=>key(q)===p.ctx&&['wooden frame','fence','metal border','sidewalk'].includes(p.ctx),
+ 'i4-circle':(q,p)=>{const v=variantOf(q);return is(q,v==='diameter'?2*p.r:v==='diameter-yards'?2*p.r/3:6*p.r);},
+ 'i4-draw-triangle':(q,p)=>q.answer.kind==='teacher'&&q.prompt.includes(p.s+' centimeters'),
+ 'i4-add-cents':(q,p)=>Math.round(numKey(q)*100)===p.a+p.b,
+ 'i4-estimate-money':(q,p)=>is(q,Math.floor((p.a+50)/100)+Math.floor((p.b+50)/100)),
+ 'i4-coin-fraction':(q,p)=>{const d=variantOf(q)==='dimes'?10:100;return E.checkAnswer(q,`${p.k}/${d}`).answerCorrect&&E.checkAnswer(q,`${2*p.k}/${2*d}`).answerCorrect&&!E.checkAnswer(q,`${p.k}/${d+1}`).answerCorrect;},
+ 'i4-shaded':(q,p)=>E.checkAnswer(q,`${p.k}/${p.n}`).answerCorrect&&(p.n===2*p.k||!E.checkAnswer(q,`${p.n-p.k}/${p.n}`).answerCorrect),
+ 'i4-sign':(q,p)=>q.answer.kind==='teacher'&&q.answer.reference.includes(p.c+'¢'),
 };
 
 // The two sides of a comparison prompt ("a − b ☐ c − d"), evaluated separately.

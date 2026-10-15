@@ -184,6 +184,61 @@ TASKS_I4 = [
     _t('TX4_S02_00133', 'i4-missing-3digit', 'subtrahend-stacked', 'Missing three-digit number subtracted, in a column', 'equations'),
     _t('TX4_S02_00134', 'i4-missing-3digit', 'minuend', 'Missing three-digit number subtracted from, in a column', 'equations'),
     _t('TX4_S02_00034', 'i4-missing-3digit', 'minuend-row', 'Missing number subtracted from, with two-digit parts', 'equations'),
+    # Batch I4-4: Lessons 17-20, Investigation 2, Lessons 21-22
+    # Lesson 17: Adding Columns of Numbers with Regrouping
+    _t('TX4_S02_00007', 'i4-add-column', 'mixed-money', 'Add a three-, a two- and a one-digit dollar amount', 'whole-arithmetic'),
+    _t('TX4_S02_00084', 'i4-add-column', 'four-story', 'Add four class sizes in a story', 'whole-arithmetic'),
+    _t('TX4_S02_00030', 'i4-add-column', 'four-row', 'Add four two-digit numbers in a row', 'whole-arithmetic'),
+    _t('TX4_S02_00032', 'i4-add-column', 'four-stacked', 'Add a column of four two-digit numbers', 'whole-arithmetic'),
+    # Lesson 18: Temperature
+    _t('TX4_S02_00085', 'i4-thermo', 'f-2', 'Read a Fahrenheit thermometer marked in 2s', 'measurement'),
+    _t('TX4_S02_00028', 'i4-thermo', 'f-low', 'Read a Fahrenheit thermometer near freezing', 'measurement'),
+    _t('TX4_S02_00054', 'i4-thermo', 'c', 'Read a Celsius thermometer', 'measurement'),
+    _t('TX4_S02_00006', 'i4-speed', None, 'Read a speedometer marked in fives', 'measurement'),
+    # Lesson 19: Elapsed-Time Problems
+    _t('TX4_S02_00086', 'i4-temp-change', None, 'How much warmer it became', 'whole-arithmetic'),
+    _t('TX4_S02_00087', 'i4-clock', 'later', 'The time some minutes after a clock time', 'calendar-time'),
+    _t('TX4_S02_00148', 'i4-clock', 'read-ampm', 'Read a clock to the minute, with a.m. or p.m.', 'calendar-time'),
+    _t('TX4_S02_00056', 'i4-clock', 'read', 'Read a clock', 'calendar-time'),
+    # Lesson 20: Rounding
+    _t('TX4_S02_00024', 'i4-round', 'dollar-small', 'Round dollars and cents to the nearest dollar', 'rounding-estimation'),
+    _t('TX4_S02_00003', 'i4-round', 'dollar-3digit', 'Round hundreds of dollars and cents to the nearest dollar', 'rounding-estimation'),
+    _t('TX4_S02_00025', 'i4-round', 'ten-2digit', 'Round a two-digit number to the nearest ten', 'rounding-estimation'),
+    _t('TX4_S02_00026', 'i4-round', 'ten-3digit', 'Round a three-digit number to the nearest ten', 'rounding-estimation'),
+    _t('TX4_S02_00027', 'i4-round', 'cents', 'Round cents to the nearest ten cents', 'rounding-estimation'),
+    _t('TX4_S02_00150', 'i4-round', 'round-add', 'Round two numbers to tens and add', 'rounding-estimation'),
+    _t('TX4_S02_00089', 'i4-clock', 'elapsed', 'Elapsed time between two clocks', 'calendar-time'),
+    # Investigation 2: Units of Length and Perimeter
+    _t('TX4_S02_00093', 'i4-measure', 'cm', 'Measure an object with a centimeter ruler', 'measurement'),
+    _t('TX4_S02_00058', 'i4-measure', 'three-units', 'Measure an object in inches, centimeters and millimeters', 'measurement'),
+    _t('TX4_S02_00020', 'i4-perimeter', 'triangle', 'Perimeter of a triangle', 'perimeter'),
+    _t('TX4_S02_00019', 'i4-perimeter', 'rectangle', 'Perimeter of a rectangle', 'perimeter'),
+    _t('TX4_S02_00100', 'i4-perimeter', 'polygon', 'Perimeter of a six-sided shape', 'perimeter'),
+    _t('TX4_S02_00102', 'i4-perimeter', 'regular', 'Perimeter of a regular polygon', 'perimeter'),
+    _t('TX4_S02_00105', 'i4-perimeter', 'square-side', 'Side of a square from its perimeter', 'perimeter'),
+    _t('TX4_S02_00095', 'i4-units', 'facts', 'Unit equivalents for length', 'measurement'),
+    _t('TX4_S02_00098', 'i4-units', 'm-to-cm', 'Meters to centimeters', 'measurement'),
+    _t('TX4_S02_00101', 'i4-units', 'yd-to-ft', 'Yards to feet', 'measurement'),
+    _t('TX4_S02_00059', 'i4-units', 'choose', 'The most appropriate unit of length', 'measurement'),
+    _t('TX4_S02_00060', 'i4-perimeter-meaning', None, 'What represents the perimeter', 'perimeter'),
+    # Lesson 21: Triangles, Rectangles, Squares, and Circles
+    _t('TX4_S03_00013', 'i4-circle', 'diameter', 'Diameter from a radius', 'circle-measurement'),
+    _t('TX4_S03_00068', 'i4-circle', 'diameter-yards', 'Diameter in yards from a radius in feet', 'circle-measurement'),
+    _t('TX4_S03_00100', 'i4-circle', 'diameter-feet', 'Diameter in feet from a radius in yards', 'circle-measurement'),
+    _t('TX4_S03_00040', 'i4-draw-triangle', None, 'Draw a triangle with equal sides', 'geometry-properties'),
+    # Lesson 22: Naming Fractions; Adding Dollars and Cents
+    _t('TX4_S03_00034', 'i4-add-cents', 'stacked-small', 'Add dollars and cents in a column', 'decimal-arithmetic'),
+    _t('TX4_S03_00035', 'i4-add-cents', 'row', 'Add dollars and cents in a row', 'decimal-arithmetic'),
+    _t('TX4_S03_00069', 'i4-add-cents', 'story', 'Add dollars and cents in a story', 'decimal-arithmetic'),
+    _t('TX4_S03_00104', 'i4-add-cents', 'two-digit', 'Add tens of dollars and cents in a column', 'decimal-arithmetic'),
+    _t('TX4_S03_00105', 'i4-add-cents', 'three-digit', 'Add hundreds of dollars and cents in a column', 'decimal-arithmetic'),
+    _t('TX4_S03_00070', 'i4-estimate-money', None, 'Estimate a total of dollars and cents', 'rounding-estimation'),
+    _t('TX4_S03_00012', 'i4-coin-fraction', 'dimes', 'Dimes as a fraction of a dollar', 'fractions'),
+    _t('TX4_S03_00037', 'i4-coin-fraction', 'pennies', 'Pennies as a fraction of a dollar', 'fractions'),
+    _t('TX4_S03_00038', 'i4-shaded', 'rect', 'Fraction of a rectangle shaded', 'fractions'),
+    _t('TX4_S03_00102', 'i4-shaded', 'circle', 'Fraction of a circle shaded', 'fractions'),
+    _t('TX4_S03_00101', 'i4-shaded', 'square', 'Fraction of a square grid shaded', 'fractions'),
+    _t('TX4_S03_00126', 'i4-sign', None, 'Correct a price sign that mixes dollars and cents', 'decimal-arithmetic'),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -233,6 +288,24 @@ CONSOLIDATED_I4 = {
     'TX4_S02_00120': 'TX4_S02_00126', 'TX4_S02_00135': 'TX4_S02_00133',
     'TX4_S02_00140': 'TX4_S02_00133', 'TX4_S02_00136': 'TX4_S02_00134', 'TX4_S02_00128': 'TX4_S02_00046',
     'TX4_S01_00111': 'TX4_S02_00011',
+    # Batch I4-4
+    'TX4_S02_00083': 'TX4_S02_00007', 'TX4_S02_00031': 'TX4_S02_00007', 'TX4_S02_00121': 'TX4_S02_00030',
+    'TX4_S02_00141': 'TX4_S02_00032', 'TX4_S02_00142': 'TX4_S02_00085', 'TX4_S02_00029': 'TX4_S02_00006',
+    'TX4_S02_00005': 'TX4_S02_00148', 'TX4_S02_00149': 'TX4_S02_00148', 'TX4_S02_00055': 'TX4_S02_00148',
+    'TX4_S02_00057': 'TX4_S02_00056', 'TX4_S02_00088': 'TX4_S02_00024', 'TX4_S02_00091': 'TX4_S02_00024',
+    'TX4_S02_00022': 'TX4_S02_00024', 'TX4_S02_00144': 'TX4_S02_00024', 'TX4_S02_00146': 'TX4_S02_00024',
+    'TX4_S02_00023': 'TX4_S02_00003', 'TX4_S02_00143': 'TX4_S02_00025', 'TX4_S02_00145': 'TX4_S02_00025',
+    'TX4_S02_00004': 'TX4_S02_00026', 'TX4_S02_00090': 'TX4_S02_00026', 'TX4_S02_00151': 'TX4_S02_00150',
+    'TX4_S02_00096': 'TX4_S02_00093', 'TX4_S02_00061': 'TX4_S02_00093', 'TX4_S02_00002': 'TX4_S02_00058',
+    'TX4_S02_00062': 'TX4_S02_00020', 'TX4_S02_00097': 'TX4_S02_00020', 'TX4_S02_00064': 'TX4_S02_00019',
+    'TX4_S02_00092': 'TX4_S02_00019', 'TX4_S02_00103': 'TX4_S02_00019', 'TX4_S02_00099': 'TX4_S02_00019',
+    'TX4_S02_00094': 'TX4_S02_00019', 'TX4_S02_00106': 'TX4_S02_00105', 'TX4_S02_00063': 'TX4_S02_00105',
+    'TX4_S02_00021': 'TX4_S02_00095', 'TX4_S02_00104': 'TX4_S02_00098', 'TX4_S02_00001': 'TX4_S02_00060',
+    'TX4_S03_00039': 'TX4_S03_00013', 'TX4_S03_00041': 'TX4_S03_00040',
+    'TX4_S03_00036': 'TX4_S03_00034', 'TX4_S03_00011': 'TX4_S03_00034', 'TX4_S03_00117': 'TX4_S03_00034',
+    'TX4_S03_00072': 'TX4_S03_00104', 'TX4_S03_00106': 'TX4_S03_00104', 'TX4_S03_00107': 'TX4_S03_00105',
+    'TX4_S03_00074': 'TX4_S03_00105', 'TX4_S03_00071': 'TX4_S03_00038', 'TX4_S03_00075': 'TX4_S03_00038',
+    'TX4_S03_00103': 'TX4_S03_00038', 'TX4_S03_00073': 'TX4_S03_00102',
 }
 
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a
