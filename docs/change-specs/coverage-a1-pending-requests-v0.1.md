@@ -25,6 +25,32 @@ restore the `a1-mixed-add` oracle in `tests/port-algebra-1.cjs`, and add decisio
 
 **Meanwhile:** the three records stay covered-provisional; nothing else depends on them.
 
+### R2 — Let port tasks replace thirteen earlier linear adaptations (A1-4)
+
+**Records (all covered-provisional):** algebra-1-en:node:293, 304, 305, 316, 317, 355, 358, 359, 360, 361, 362, 363 and 364.
+
+**Why they need replacing.** Their earlier `structured-linear` adaptations do not keep the source's ranges or forms:
+
+| Records | Difference from the source |
+|---|---|
+| 293, 304, 305 | The source uses mixed numbers with denominators up to 12; the adaptations use thirds and sixths only. |
+| 316, 317, 359 | The source's answers are short decimals (such as 0.5 or 0.05); the adaptations give answers such as 0.753125. |
+| 355, 358, 360–364 | The source keeps the solution a small integer (for example −2 to 0 in node:360, ±1 to ±3 in nodes 361–362); the adaptations give solutions such as 21, −26 or 20. |
+
+Port recipes that keep the source ranges are ready in `src/port-algebra-1.js`: `a1-add-eq` (variant `frac`), `a1-frac-eq` (`mixed`, `plusx`), `a1-dec-eq` (`one`, `two`) and `a1-paren-eq` (`355`, `358`–`364`).
+
+**Why the course chat cannot do it.** `tests/linear-bank-audit.py` reads every row of `curriculum/source-mappings/linear-equations-v0.2.json` and requires each one to be served by a `structured-linear` catalog entry (`seen==set(rows)`). Replacing an adaptation removes its entry, so the audit fails. Checked in an integrated copy on 2026-10-15: the cross-course regeneration and the other shared tests pass with the replacements; only this audit fails.
+
+**Change wanted (either):**
+- in `tests/linear-bank-audit.py`, compare against the rows whose source ID is still served by a `structured-linear` entry, for example `served={c.sourceId for c in E.catalog if c.family=='structured-linear'}` and `seen==set(rows)&served`; or
+- drop the thirteen rows from `curriculum/source-mappings/linear-equations-v0.2.json` and the linear bank map in the integration pass.
+
+**Then, in `scripts/port_a1_tasks.py`:** add the thirteen entries with `replaces` True (the comment under `# Batch A1-4` lists the recipe and variant for each), restore the `a1-frac-eq` oracle in `tests/port-algebra-1.cjs`, and add decisions covering the records.
+
+**Reviewed and kept:** the earlier adaptations for nodes 297, 298, 302, 303, 309, 354, 356 and 357 match the source and are recorded as covered in the A1-4 decisions.
+
+**Meanwhile:** the thirteen records stay covered-provisional.
+
 ## Records proposed for retirement
 
 None so far.

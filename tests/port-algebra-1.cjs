@@ -5,6 +5,7 @@
 'use strict';
 const assert=require('node:assert/strict');
 const H=require('./port-course-harness.cjs');
+const S=require('../src/port-shared.js');
 
 // ---- independent arithmetic (exact rationals as [numerator, denominator]) ----
 const g=(a,b)=>b?g(b,a%b):Math.abs(a);
@@ -149,6 +150,53 @@ const oracle={
  'a1-cube-root':(q,p)=>is(P(q),[Math.round(Math.cbrt(p.a**3)),1])&&Math.abs(p.a)>=2&&Math.abs(p.a)<=5,
  'a1-eval-pow':(q,p)=>{const f=p.form;let z;if(f==='three')z=p.av**p.b-p.av**p.c-p.av**p.d;else if(f==='a3b')z=p.av**3*p.bv*(p.av+p.s*p.bv);else if(f==='mix')z=-(p.av**2)+p.bv*(p.av+p.s*p.bv)-p.s*p.cv**2;else if(f==='abs')z=-(p.av**3)+p.s*p.bv*(p.av-p.s*p.bv)+Math.abs(p.bv-p.av);
   else if(f==='prod')z=(-p.e*p.av-p.bv**2)*(-p.bv-p.av)*(p.f*p.av);else if(f==='abc')z=[p.av*p.bv*p.cv**3,p.av**3*p.bv*p.cv,p.av*p.bv**3*p.cv][p.sw-1];else if(f==='sq')z=p.av**2-p.bv**2;else z=p.a**2+5*p.b-p.c;return is(P(q),[z,1]);},
+ // Batch A1-4
+ 'a1-prod-rule':(q,p)=>{const E=[0,0,0];for(const [l,e] of p.fs)E[p.L.indexOf(l)]+=e;const t=P(q).terms,k=p.L.filter((l,i)=>E[i]).map(l=>l+E[p.L.indexOf(l)]).join('');return Object.keys(t).length===1&&t[k]===1;},
+ 'a1-like-exp':(q,p)=>{const t=P(q).terms,[A,B,C]=p.L;
+  if(p.form==='split'){const k=[[A,p.e1],[B,p.e2]].filter(([,e])=>e).sort().map(([l,e])=>l+e).join('');return t[k]===p.cs.reduce((x,y)=>x+y,0)&&Object.keys(t).length===1;}
+  if(p.form==='split3'){const k=[[A,p.ex1],[B,p.ex2]].filter(([,e])=>e).sort().map(([l,e])=>l+e).join('');return t[k]===p.cs.reduce((x,y)=>x+y,0)&&Object.keys(t).length===1;}
+  const k=[[A,p.e1],[B,p.e2],[C,1]].filter(([,e])=>e).sort().map(([l,e])=>l+e).join(''),[c1,c2,c3,c4]=p.co;
+  return p.form==='pos'?t[k]===c1+c2+c3&&t[C+'1']===c4:t[k]===c1+c2+c3+c4;},
+ 'a1-like-xy-mc':(q,p)=>{const t=P(q).terms;return t['x'+p.g+'y1']===p.b+p.d&&t['x1y1']===p.c+p.e&&t['']===p.a+p.f;},
+ 'a1-cond':(q,p)=>is(P(q),[p.form==='mc'?p.c-p.b:-p.b,1]),
+ 'a1-add-eq':(q,p)=>{if(p.form==='frac'){const F1=Q(p.g*p.b+p.a,p.b),F2=Q(p.e*p.d+p.c,p.d);return is(P(q),p.f===1?add(F2,F1):sub(F2,F1));}return is(P(q),[p.s<0?p.a+p.b:p.a-p.b,1]);},
+ 'a1-mul-eq':(q,p)=>p.form==='div'?is(P(q),[p.i*p.b,1]):is(P(q),Q(p.a,p.b)),
+ 'a1-two-step':(q,p)=>p.form==='mc'?is(P(q),Q(p.a*p.b+p.c-p.c,p.b)):is(P(q),Q(p.a*p.c+p.b-p.b,p.a)),
+ 'a1-collect':(q,p)=>is(P(q),Q(p.e+p.h-p.b-p.d,p.a+p.c-p.f-p.g)),
+ 'a1-dist-exp':(q,p)=>{const t=P(q).terms;if(p.form==='mc')return t['x1y'+(p.a+2)]===p.c&&t['x1y'+p.a]===p.b;const [i,j]=p.L;return t[i+(p.e+1)+j+'3']===p.a&&t[i+(p.e+2)+j+'2']===p.b;},
+ 'a1-dec-eq':(q,p)=>{if(p.form==='one')return is(P(q),Q(p.A[0],p.A[1]));const lhs=x=>add(sub(mul(Q(p.a,10),x),Q(p.b,100)),mul(Q(p.c,10),x));const D=Q(p.D[0],p.D[1]),rhs=lhs(D);return is(P(q),D)&&lhs(Q(P(q).v[0],P(q).v[1]))[0]*rhs[1]===rhs[0]*lhs(Q(P(q).v[0],P(q).v[1]))[1];},
+ 'a1-frac-of':(q,p)=>is(P(q),Q(p.a,p.b)),
+ 'a1-frac-what':(q,p)=>is(P(q),p.form==='frac'?div(Q(p.c,p.e),Q(p.a,p.b)):div([p.c,1],Q(p.a,p.b))),
+ 'a1-funcnot':(q,p)=>{const f={lin:()=>p.c*p.b+p.d,lin2:()=>p.d+p.c*p.b,cubic:()=>p.a*p.a*p.a+p.a*p.a+p.a,quad:()=>p.a*p.d*p.d+p.c,neg:()=>-p.c*(p.a+p.s*p.c),root:()=>-p.a,mc:()=>p.c*p.c+p.a*p.c+p.b}[p.form];
+  if(p.form==='recip'){const x=p.k===1?Q(-p.a,p.b):Q(-p.b,p.a);return is(P(q),div([-1,1],x));}return is(P(q),[f(),1]);},
+ 'a1-dist-negexp':(q,p)=>{const t=P(q).terms,[I,J]=p.L,k=(o)=>Object.entries(o).filter(([,e])=>e).sort().map(([l,e])=>l+e).join('');
+  if(p.form==='zero'){const cf=p.k===1?p.c:1,ei=p.k===1?-2:0,ej=p.k===1?0:-2;return t[k({[I]:1+ei,[J]:2+ej})]===p.a*cf&&t[k({[I]:2+ei,[J]:1+ej})]===p.b*cf;}
+  return t[k({[I]:p.e+p.m,[J]:5})]===p.a*p.c&&t[k({[I]:p.e+2,[J]:3+p.k})]===p.b*p.c;},
+ 'a1-neg-exp-mc':(q,p)=>{const t=P(q).terms,d=p.a+p.b+p.c;return Object.keys(t).length===1&&t['a'+d]===1;},
+ 'a1-zero-exp':(q,p)=>{const f=p.form;if(f==='three'){const v=p.B**p.e;return is(P(q,0),[v,1])&&is(P(q,1),Q(1,v))&&is(P(q,2),[1,1]);}
+  if(f==='mix'){const want=[-(p.a**2),p.a**2,1,Math.abs(-p.a+p.dS*p.a)].sort((x,y)=>x-y).join();return p.vals.slice().sort((x,y)=>x-y).join()===want&&is(P(q),[p.vals[0]+p.signs[0]*p.vals[1]+p.signs[1]*p.vals[2]+p.vals[3],1]);}
+  if(f==='eval')return is(P(q),[p.k===1?p.av*(p.bv-1)*(-p.e*p.bv-p.f*p.av):p.av*(1-p.av)*(-p.e*p.bv-p.f*p.av),1]);
+  return is(P(q),p.k===1?Q(1,p.b**p.y):Q(1,p.a**p.x));},
+ 'a1-phrases':(q,p)=>{const x=1.7;const ok=(i,y)=>near(P(q,i).samples.find(([e])=>Math.abs(e.N-2.7)<1e-9)[1],y(2.7));
+  if(p.form==='mc')return p.k===1?ok(0,n=>-p.e*n+p.a):ok(0,n=>p.b*(p.e*n+p.a));return ok(0,n=>-p.e*n+p.a)&&ok(1,n=>p.b*(p.c*n+p.d));},
+ 'a1-dec-of':(q,p)=>is(P(q),p.form==='what'?Q(60*p.b,p.a):p.form==='times'?Q(p.a*p.b,100000):[10*p.a,1]),
+ 'a1-paren-eq':(q,p)=>{// substitute the key back into the equation (both sides as exact rationals)
+  const z=Q(...P(q).v),Z=x=>mul(z,[x,1]),k=x=>[x,1],f=p.form;let L,R;
+  if(f==='354'){L=sub(Z(p.a),mul(k(p.b),add(Z(p.c),k(p.d))));R=add(Z(p.e),k(p.f));}
+  else if(f==='355'){L=sub(z,mul(k(p.a),sub(z,k(p.b))));R=sub(k(p.f),add(Z(p.d),k(p.e)));}
+  else if(f==='356'){L=add(mul(k(p.a),sub(k(p.b),z)),mul(k(p.c),sub(z,k(p.d))));R=mul(k(-1),sub(Z(p.e),k(p.f)));}
+  else if(f==='357'){L=k(-(p.a**2)-p.b**2);R=mul(k(-p.c),sub(Z(-p.d),k(p.e)));}
+  else if(f==='358'){L=add(mul(k(-1),add(z,k(p.a))),mul(k(p.b),add(z,k(p.c))));R=k(p.K);}
+  else if(f==='359'){L=add(mul(Q(p.b,10),z),Q(10*p.d*p.c-p.a*(10*p.d+p.b),100));R=mul(k(p.d),add(mul(k(-1),z),Q(p.c,10)));}
+  else if(f==='360'){L=mul(k(-1),sub(mul(k(-p.a),sub(z,k(p.b))),k(p.c)));R=add(Z(p.d),k(p.e));}
+  else if(f==='361'){L=add(mul(k(-(p.a**3)),sub(mul(k(-1),z),k(p.b))),k(p.c));R=mul(k(-p.d),add(z,k(1)));}
+  else if(f==='362'){L=add(Z(-p.a),mul(k(p.b),add(Z(p.c),k(p.d))));R=add(mul(k(p.e),sub(Z(p.f),k(p.g))),k(p.h));}
+  else if(f==='363'){L=sub(mul(k(-p.a),sub(mul(sub(z,k(p.b)),k(-p.c)),k(p.d**2))),k(p.e));R=mul(k(-1),sub(k(-p.f),Z(p.g)));}
+  else if(f==='364'){L=mul(k(-1),sub(mul(k(-p.a),sub(k(-p.e),z)),k(p.b**2)));R=mul(k(-1),sub(add(k(-p.d),z),Z(p.c)));}
+  else if(f==='365'){L=sub(mul(k(-p.a),sub(mul(k(-(p.b**p.c)),sub(z,k(p.d))),mul(k(p.e),add(Z(-p.e),k(p.f))))),add(Z(p.g),k(p.i)));R=add(Z(p.h),k(p.j));}
+  else if(f==='366'){L=sub(mul(k(p.a),add(k(-p.b),Z(p.c))),mul(k(p.d**2),z));R=add(mul(Z(-p.e),k(-1-(-1))),k(p.f));}
+  else{L=Z(p.a);R=add(mul(k(p.b),sub(Z(p.c),add(Z(p.d),add(Z(p.e),k(p.f))))),k(p.g));}
+  return L[0]*R[1]===R[0]*L[1];},
 };
 const near=(x,y)=>Math.abs(x-y)<=1e-9*Math.max(1,Math.abs(y));
 

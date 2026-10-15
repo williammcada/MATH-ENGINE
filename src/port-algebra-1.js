@@ -22,7 +22,8 @@
      pi     {t:'pi', a:[n,d], b:[n,d]} the exact value a + bπ, written with π (or pi) and no decimal approximation
      chain  {t:'chain', v:[n,d], start, min} a measurement times at least `min` unit multipliers, product equal to v
      roster {t:'roster', set:'natural'|'whole'|'integers'} the set in braces with an ellipsis
-     poly   {t:'poly', terms, form?}  a polynomial with like terms combined; form 'pos' | 'num' | 'neg' | 'den' (see polyForm)
+     poly   {t:'poly', terms, form?, order?}  a polynomial with like terms combined; form 'pos' | 'num' | 'neg' | 'den'
+            (see polyForm); order 'desc' requires the terms in descending degree
      factor {t:'factor', gcf:[key, coef], inner} the greatest common factor times the remaining polynomial in parentheses
      primes {t:'primes', n}           a product of primes (exponents allowed) equal to n
      ineq   {t:'ineq', v, mode, op, b | L,R, neg?} a linear inequality: 'set' the same solution set as v op b, 'form' the
@@ -30,7 +31,12 @@
      solve  {t:'solve', v, vars, samples} "v = expression" in the other variables
      ratexp {t:'ratexp', num, den, vars} one fraction: numerator polynomial (like terms combined), denominator equal to den
      conj   {t:'conj', lo, hi, loIn, hiIn} a conjunction lo < x < hi (≤ where included), compound or joined by "and"
-     num also takes pct:true, which allows a trailing percent sign */
+     num also takes pct:true, which allows a trailing percent sign
+     pair   {t:'pair', v:[[n,d],[n,d]]}  an ordered pair (x, y)
+     pm     {t:'pm', vals:[[re,im],[re,im]]} two exact values ("a ± b" or two values), i for imaginary parts
+     numset {t:'numset', items}       a set of integers in braces, any order
+     sets   {t:'sets', items}         names of number sets (rational, irrational, integer, whole, natural), any order
+     ineq and conj take intdom:true for the integer domain, where x > 2 and x ≥ 3 are the same */
 (function(root){'use strict';
 const common=typeof module!=='undefined'&&module.exports;
 const S=common?require('./port-shared'):root.MathPortShared;
@@ -74,7 +80,7 @@ const add2=(x,y)=>red(x[0]*y[1]+y[0]*x[1],x[1]*y[1]),sub=(x,y)=>add2(x,[-y[0],y[
 const stripUnit=s=>String(s).replace(/(?<=[\d)π²³])\s*(?:°|degrees?\b|[a-zA-Z][a-zA-Z.]*(?:\s*[²³23])?)(?:\s+[a-zA-Z][a-zA-Z.]*)*\s*$/,'').trim();
 const normW=s=>String(s).toLowerCase().replace(/[−–]/g,'-').replace(/[.,!;:'’"()]/g,' ').replace(/\b(a|an|the)\b/g,' ').replace(/\s+/g,' ').trim();
 function partOk(p,s){s=String(s).trim();
- if(p.t==='num'){if(p.pct)s=s.replace(/\s*%$/,'');const r=rat(stripUnit(s.replace(/^[a-z]\s*(\([^)]*\))?\s*=\s*/i,'')));if(!r||!sameR(r.v,p.v))return false;
+ if(p.t==='num'){if(p.pct)s=s.replace(/\s*%$/,'');s=s.replace(/^\$\s*/,'');const r=rat(stripUnit(s.replace(/^[a-z]+\s*(\([^)]*\))?\s*=\s*/i,'')));if(!r||!sameR(r.v,p.v))return false;
   if(p.form==='int')return r.form==='int';
   if(p.form==='dec')return r.form==='int'||r.form==='dec';
   if(p.form==='mixed')return r.form==='int'||((r.form==='mixed'||r.form==='frac')&&r.lowest&&r.proper);
@@ -92,7 +98,8 @@ function partOk(p,s){s=String(s).trim();
   for(const [i,x] of fs.entries()){const f=parseExpr(x,[]);if(!f)return false;const y=f({});if(!isFinite(y)||(i&&near(y,1)))return false;v*=y;if(i){const e=x.match(/\^\(?(\d)\)?$/);count+=e?Number(e[1]):1;}}
   return count>=p.min&&near(v,p.v[0]/p.v[1]);}
  if(p.t==='poly'){// a polynomial with like terms combined (any order); exponents may be negative; c/monomial is allowed
-  const got=polyParse(s);if(!got)return false;const k1=Object.keys(got).filter(k=>got[k]!==0),k2=Object.keys(p.terms);return k1.length===k2.length&&k2.every(k=>k in got&&near(got[k],p.terms[k]))&&polyForm(p.form,s);}
+  const got=polyParse(s);if(!got)return false;const k1=Object.keys(got).filter(k=>got[k]!==0),k2=Object.keys(p.terms);if(p.order==='desc'){const deg=k=>(k.match(/-?\d+/g)||[]).reduce((x,y)=>x+Number(y),0),ks=Object.keys(got);if(!ks.every((k,i)=>!i||deg(ks[i-1])>=deg(k)))return false;}
+  return k1.length===k2.length&&k2.every(k=>k in got&&near(got[k],p.terms[k]))&&polyForm(p.form,s);}
  if(p.t==='factor'){// GCF(polynomial): the greatest common factor written in front, the remaining polynomial in parentheses
   const r=caret(s).replace(/[−–]/g,'-').replace(/[\s·*]/g,''),m=r.match(/^([^()]+)\((.+)\)$/);if(!m)return false;const G=polyParse(m[1]),P=polyParse(m[2]);if(!G||!P)return false;
   const gk=Object.keys(G),ik=Object.keys(P).filter(k=>P[k]!==0),want=Object.keys(p.inner);return gk.length===1&&gk[0]===p.gcf[0]&&G[gk[0]]===p.gcf[1]&&ik.length===want.length&&want.every(k=>P[k]===p.inner[k]);}
@@ -103,12 +110,17 @@ function partOk(p,s){s=String(s).trim();
   const r=ineqParse(s,p.v);if(!r||r.neg!==!!p.neg)return false;
   if(p.mode==='form'){const kl=parseExpr(p.L,[p.v]),kr=parseExpr(p.R,[p.v]),xs=[-2.3,0.7,3.1],same=(f,g)=>xs.every(x=>near(f({[p.v]:x}),g({[p.v]:x})));
    return (r.op===p.op&&same(r.L,kl)&&same(r.R,kr))||(r.op===FLIP[p.op]&&same(r.L,kr)&&same(r.R,kl));}
-  const c0=r.f(0),m=r.f(1)-c0;if(!isFinite(c0)||!isFinite(m)||Math.abs(m)<1e-12||!near(r.f(2.5),c0+2.5*m))return false;return near(-c0/m,p.b)&&(m>0?r.op:FLIP[r.op])===p.op;}
+  const c0=r.f(0),m=r.f(1)-c0;if(!isFinite(c0)||!isFinite(m)||Math.abs(m)<1e-12||!near(r.f(2.5),c0+2.5*m))return false;const op=m>0?r.op:FLIP[r.op],bd=-c0/m;
+  if(p.intdom){const nrm=(o,b)=>o==='gt'?['ge',Math.floor(b+1e-9)+1]:o==='ge'?['ge',Math.ceil(b-1e-9)]:o==='lt'?['le',Math.ceil(b-1e-9)-1]:['le',Math.floor(b+1e-9)],[o1,b1]=nrm(op,bd),[o2,b2]=nrm(p.op,p.b);return o1===o2&&b1===b2;}
+  return near(bd,p.b)&&op===p.op;}
  if(p.t==='ratexp'){// one fraction: the numerator a polynomial with like terms combined, the denominator equal to the key's (any form)
   const r=caret(s).replace(/[−–]/g,'-').replace(/\s+/g,'');let dep=0,at=-1;for(let i=0;i<r.length;i++){const ch=r[i];if(ch==='(')dep++;else if(ch===')')dep--;else if(ch==='/'&&dep===0){if(at>=0)return false;at=i;}}if(at<0)return false;
   const unwrap=x=>{if(!/^\(.*\)$/.test(x))return x;let d=0;for(let i=0;i<x.length-1;i++){if(x[i]==='(')d++;else if(x[i]===')')d--;if(d===0)return x;}return x.slice(1,-1);};
-  const N=polyParse(unwrap(r.slice(0,at)));if(!N)return false;const nk=Object.keys(N).filter(k=>N[k]!==0),want=Object.keys(p.num);if(nk.length!==want.length||!want.every(k=>k in N&&near(N[k],p.num[k])))return false;
-  const fd=parseExpr(r.slice(at+1),p.vars),fk=parseExpr(p.den,p.vars);if(!fd||!fk)return false;return S.fsamples(p.vars,()=>0).every(([env])=>{const a=fd(env),b=fk(env);return isFinite(a)&&near(a,b);});}
+  // a numerator or denominator with more than one term must be in parentheses
+  const top=x=>{let d=0;for(let i=0;i<x.length;i++){const ch=x[i];if(ch==='(')d++;else if(ch===')')d--;else if(d===0&&i>0&&/[+-]/.test(ch)&&!/[\^(]/.test(x[i-1]))return true;}return false;};
+  const nr=r.slice(0,at),dr=r.slice(at+1);if((unwrap(nr)===nr&&top(nr))||(unwrap(dr)===dr&&top(dr)))return false;
+  const N=polyParse(unwrap(nr));if(!N)return false;const nk=Object.keys(N).filter(k=>N[k]!==0),want=Object.keys(p.num);if(nk.length!==want.length||!want.every(k=>k in N&&near(N[k],p.num[k])))return false;
+  const fd=parseExpr(r.slice(at+1),p.vars),fk=parseExpr(p.den,p.vars);if(!fd||!fk)return false;return RAT_POOLS.every(pool=>{const env={};p.vars.forEach((x,i)=>{env[x]=pool[i%pool.length]+0.37*Math.floor(i/pool.length);});const a=fd(env),b=fk(env);return isFinite(a)&&near(a,b);});}
  if(p.t==='conj'){// a conjunction lo < x ≤ hi (either symbol at each end), written as one compound inequality or two joined by "and"
   const r=String(s).replace(/[−–]/g,'-').replace(/\s+/g,'').toLowerCase();let lo=null,hi=null;
   const one=(sym,side,val,incl)=>{if(side==='lo')lo=[val,incl];else hi=[val,incl];};
@@ -116,7 +128,21 @@ function partOk(p,s){s=String(s).trim();
   if(m){one(0,'lo',Number(m[1]),m[2]!=='<');one(0,'hi',Number(m[4]),m[3]!=='<');}
   else{const sides=r.split(/and|&/);if(sides.length!==2)return false;for(const x of sides){const q=ineqParse(x,'x');if(!q||q.neg)return false;const c0=q.f(0),k=q.f(1)-c0;if(Math.abs(k)<1e-12)return false;const b=-c0/k,op=k>0?q.op:FLIP[q.op];
     if(op==='gt'||op==='ge')one(0,'lo',b,op==='ge');else one(0,'hi',b,op==='le');}}
-  return !!(lo&&hi)&&near(lo[0],p.lo)&&near(hi[0],p.hi)&&lo[1]===p.loIn&&hi[1]===p.hiIn;}
+  if(!(lo&&hi))return false;if(p.intdom){const L=lo[1]?Math.ceil(lo[0]-1e-9):Math.floor(lo[0]+1e-9)+1,H=hi[1]?Math.floor(hi[0]+1e-9):Math.ceil(hi[0]-1e-9)-1,L0=p.loIn?p.lo:p.lo+1,H0=p.hiIn?p.hi:p.hi-1;return L===L0&&H===H0;}
+  return near(lo[0],p.lo)&&near(hi[0],p.hi)&&lo[1]===p.loIn&&hi[1]===p.hiIn;}
+ if(p.t==='pair'){// an ordered pair (x, y) of exact numbers
+  const r=String(s).replace(/[−–]/g,'-').trim().replace(/^\((.*)\)$/,'$1'),xy=r.split(/\s*,\s*/);if(xy.length!==2)return false;const A=rat(xy[0]),B=rat(xy[1]);return !!(A&&B)&&sameR(A.v,p.v[0])&&sameR(B.v,p.v[1]);}
+ if(p.t==='pm'){// two values, exact (radicals simplified, i for imaginary): "a ± b" or two values separated by a comma, "and" or "or"
+  const r=String(s).replace(/[−–]/g,'-').replace(/\bpi\b/g,'π').replace(/sqrt/gi,'√').replace(/\s+/g,'');if(!r||/\d\.\d/.test(r)||!S.rootsSimplified(r))return false;
+  let parts;if(r.includes('±')){if(r.split('±').length!==2)return false;parts=[r.replace('±','+'),r.replace('±','-')];}else{parts=r.split(/,|and|or/);if(parts.length!==2)return false;}
+  const got=parts.map(cParse);if(got.some(x=>!x))return false;const eq=(x,y)=>near(x[0],y[0])&&near(x[1],y[1]);
+  return (eq(got[0],p.vals[0])&&eq(got[1],p.vals[1]))||(eq(got[0],p.vals[1])&&eq(got[1],p.vals[0]));}
+ if(p.t==='numset'){// a set of integers in braces, any order, no repeats
+  const r=String(s).replace(/[−–]/g,'-').replace(/\s+/g,'').replace(/^[a-z]=/i,'');const m=r.match(/^\{(.*)\}$/);if(!m)return false;const el=m[1].split(',');if(!el.every(x=>/^-?\d+$/.test(x)))return false;
+  const v=el.map(Number);return new Set(v).size===v.length&&v.length===p.items.length&&p.items.every(x=>v.includes(x));}
+ if(p.t==='sets'){// names of number sets (rational, integers, ...), any order; "real" may be added
+  const r=String(s).toLowerCase().replace(/numbers?/g,'').replace(/[{}]/g,' ');const names=r.split(/,|\band\b|;/).map(x=>x.trim()).filter(Boolean);const map=x=>SETNAME[x.replace(/s$/,'')]||null;
+  const got=names.map(map);if(got.some(x=>!x))return false;const g2=new Set(got.filter(x=>x!=='real'));return g2.size===p.items.length&&p.items.every(x=>g2.has(x))&&got.length===new Set(got).size;}
  if(p.t==='solve'){// "v = expression" with the expression in the other variables only, equal to the key at sample points
   const r=s.replace(/[−–]/g,'-'),m=r.match(/^\s*([a-zA-Z])\s*=(.+)$/);if(!m||m[1]!==p.v||m[2].includes(p.v)||!p.vars.every(x=>m[2].includes(x)))return false;const f=parseExpr(m[2],p.vars);if(!f)return false;
   return p.samples.every(([env,y])=>{const g=f(env);return isFinite(g)&&near(g,y);});}
@@ -209,9 +235,10 @@ function polyForm(form,s){if(!form)return true;const r=caret(s).replace(/[−–
  if(form==='pos')return !/\^\(?-/.test(r);
  if(form==='num')return !r.includes('/');
  if(form==='neg')return !/[a-zA-Z](?!\^\(?-)/.test(r);
- if(form==='den')return /^-?\d+\/\(?[a-zA-Z]/.test(r)&&!/[+-]/.test(r.replace(/^-/,'').replace(/\^\(?-/g,'^'));
+ if(form==='den')return /^-?\d+\/\(?\d*[a-zA-Z]/.test(r)&&!/[+-]/.test(r.replace(/^-/,'').replace(/\^\(?-/g,'^'));
  return true;}
 const FLIP={lt:'gt',gt:'lt',le:'ge',ge:'le'};
+const RAT_POOLS=[[2.7,1.9,3.4,1.3,2.2,4.6],[4.1,2.3,1.7,5.2,3.1,1.4],[1.6,3.8,2.9,2.2,4.4,2.6]];   // sample values for checking a denominator
 const OPSYM={lt:'<',gt:'>',le:'≤',ge:'≥'},NEGSYM={le:'≯',ge:'≮',gt:'≰',lt:'≱'};
 // Inequality reader: one relation symbol (≤ ≥ < > or a negated one: ≯ ≮ ≰ ≱, !> !< !>= !<=, "not >"), two sides in the variable v.
 const INEQ_OPS=[['≯','le',1],['≮','ge',1],['≰','gt',1],['≱','lt',1],['!>=','lt',1],['!<=','gt',1],['!>','le',1],['!<','ge',1],['<=','le'],['>=','ge'],['≤','le'],['≥','ge'],['<','lt'],['>','gt']];
@@ -248,6 +275,46 @@ function expandTask(front,inner,form,how,p,after=false){const F=tVal(front),term
 const HOW={pos:'with all exponents positive',num:'with all variables in the numerator',neg:'with all exponents negative',den:'with all variables in the denominator'};
 // "v = expression" key text: (terms)/den with a positive denominator.
 function solveTxt(v,list,den){if(den<0){den=-den;list=list.map(([c0,l])=>[-c0,l]);}const nu=termsTxt(list);return `${v} = ${den===1?nu:list.filter(([c0])=>c0).length>1?`(${nu})/${den}`:`${nu}/${den}`}`;}
+
+// ---------- Batch A1-6 helpers ----------
+const lcm2=(x,y)=>x/gcd(x,y)*y;
+// MathML and parser text for a polynomial [[c, [[letter, e], ...]], ...].
+const mlPoly=list=>list.filter(([c0])=>c0).map(([c0,vs],i)=>(i===0?(c0<0?'<mo>−</mo>':''):`<mo>${c0<0?'−':'+'}</mo>`)+mlMono(Math.abs(c0),vs)).join('');
+const asciiPoly=list=>list.filter(([c0])=>c0).map(([c0,vs])=>`(${c0})`+vs.filter(([,e])=>e).map(([l,e])=>`*${l}^(${e})`).join('')).join('+');
+const objPoly=list=>list.map(([c0,vs])=>[c0,Object.fromEntries(vs.filter(([,e])=>e))]);
+// A single-fraction answer (numerator over denominator, both polynomials in polyX form).
+const ratPart=(num,den,vars)=>({t:'ratexp',num:polyPart(objPoly(num)).terms,den:asciiPoly(den),vars});
+const ratTxt=(num,den)=>`(${polyX(num)})/(${polyX(den)})`;
+// A number line from −10 to 10 with a segment from lo to hi; open ends drawn as open circles.
+function conjBody(lo,hi,loOpen,hiOpen,y0){const W=440,x=v=>30+(v+10)*(W-60)/20;let b=ln(10,y0,W-10,y0,{start:1,end:1});
+ for(let v=-10;v<=10;v++)b+=ln(x(v),y0-(v%2?4:7),x(v),y0+(v%2?4:7),{w:1})+(v%2===0?tx(x(v),y0+22,minus(v),{size:11}):'');
+ b+=`<line x1="${x(lo).toFixed(1)}" y1="${y0}" x2="${x(hi).toFixed(1)}" y2="${y0}" stroke="${INK}" stroke-width="4"/>`;
+ for(const [v,o] of [[lo,loOpen],[hi,hiOpen]])b+=`<circle cx="${x(v).toFixed(1)}" cy="${y0}" r="6" fill="${o?'#fff':INK}" stroke="${INK}" stroke-width="2"/>`;return b;}
+const conjDesc=(lo,hi,loOpen,hiOpen)=>`the segment from ${minus(lo)} to ${minus(hi)} shaded, with ${loOpen?'an open':'a closed'} circle at ${minus(lo)} and ${hiOpen?'an open':'a closed'} circle at ${minus(hi)}`;
+const conjLine=(lo,hi,loOpen,hiOpen)=>svg(conjBody(lo,hi,loOpen,hiOpen,24),'Number line from −10 to 10 with '+conjDesc(lo,hi,loOpen,hiOpen),440,56);
+function conjLines(list){let b='';list.forEach(([lo,hi,lO,hO],i)=>{b+=`<g transform="translate(0,${i*66})">`+tx(12,16,'('+'abcd'[i]+')',{size:13,anchor:'start'})+conjBody(lo,hi,lO,hO,34)+'</g>';});return svg(b,'Four number lines (a) to (d), each with a shaded segment: '+list.map(([lo,hi,lO,hO],i)=>`(${'abcd'[i]}) ${conjDesc(lo,hi,lO,hO)}`).join('; '),440,66*list.length);}
+const fmtN=x=>Number.isInteger(x)?S.comma(x):String(Number(x.toFixed(6)));
+// Shuffle with the task's own integers (deterministic).
+const shuffle=(int,list)=>{const k=list.map(()=>int(0,9999));return list.map((x,i)=>[k[i],x]).sort((p,q)=>p[0]-q[0]).map(x=>x[1]);};
+
+// ---------- Batch A1-7 helpers ----------
+const SETNAME={real:'real',rational:'rational',irrational:'irrational',integer:'integer',whole:'whole',natural:'natural',counting:'natural','positive integer':'natural'};
+// Complex-number reader for ± answers: numbers, i, √, + − × / ^ (whole exponents), parentheses, implicit products. Returns [re, im] or null.
+function cParse(src){const s=String(src).replace(/[×·*]/g,'*').replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]+/g,m=>'^'+[...m].map(ch=>SUPMAP[ch]).join(''));let i=0;
+ const add=(a,b)=>[a[0]+b[0],a[1]+b[1]],mul=(a,b)=>[a[0]*b[0]-a[1]*b[1],a[0]*b[1]+a[1]*b[0]],dv=(a,b)=>{const d=b[0]*b[0]+b[1]*b[1];return d?[(a[0]*b[0]+a[1]*b[1])/d,(a[1]*b[0]-a[0]*b[1])/d]:null;};
+ function atom(){const ch=s[i];if(ch==='('){i++;const v=expr();if(!v||s[i]!==')')return null;i++;return v;}
+  if(ch==='√'){i++;const v=atom();if(!v||Math.abs(v[1])>1e-12)return null;return v[0]>=0?[Math.sqrt(v[0]),0]:[0,Math.sqrt(-v[0])];}
+  if(ch==='i'){i++;return [0,1];}const m=s.slice(i).match(/^\d+(\.\d+)?/);if(m){i+=m[0].length;return [Number(m[0]),0];}return null;}
+ function power(){let v=atom();if(!v)return null;if(s[i]==='^'){i++;const m=s.slice(i).match(/^\d+/);if(!m)return null;i+=m[0].length;let r=[1,0];for(let k=0;k<Number(m[0]);k++)r=mul(r,v);v=r;}return v;}
+ function unary(){if(s[i]==='-'){i++;const v=unary();return v&&[-v[0],-v[1]];}if(s[i]==='+'){i++;return unary();}return power();}
+ function term(){let v=unary();while(v&&i<s.length){const ch=s[i];if(ch==='*'||ch==='/'){i++;const w=unary();if(!w)return null;v=ch==='*'?mul(v,w):dv(v,w);}else if(/[\d(√i]/.test(ch)){const w=power();if(!w)return null;v=mul(v,w);}else break;}return v;}
+ function expr(){let v=term();while(v&&(s[i]==='+'||s[i]==='-')){const ch=s[i++],w=term();if(!w)return null;v=ch==='+'?add(v,w):add(v,[-w[0],-w[1]]);}return v;}
+ const v=expr();return v&&i===s.length&&isFinite(v[0])&&isFinite(v[1])?v:null;}
+// Exact text for (p ± q√r)/d or (p ± qi√r)/d, simplified; r = 1 gives two rational values.
+function pmText(p0,q0,r0,d0,imag){[q0,r0]=[q0*sqrtParts(r0)[0],sqrtParts(r0)[1]];const g0=[p0,q0,d0].filter(x=>x).reduce((x,y)=>gcd(Math.abs(x),Math.abs(y)));let P=p0/g0,Qn=q0/g0,D=d0/g0;if(D<0){P=-P;D=-D;}
+ if(r0===1&&!imag){const a=red(p0-q0,d0),b=red(p0+q0,d0);return `${fracT(...a)}, ${fracT(...b)}`;}
+ const rad=`${Qn===1?'':Qn}${imag?'i':''}${r0===1?'':'√'+r0}`||'1',top=P?`${minus(P)} ± ${rad}`:`±${rad}`;return D===1?top:`(${top})/${D}`;}
+const tf=b=>b?'true':'false';
 
 // ---------- recipes ----------
 function build(c,h){const {int,pick}=h;let t;const v=c.variant;
@@ -795,6 +862,186 @@ case 'a1-eval-pow':{const L=letters(int,3,'foil'),[A,B,C]=L,r=(lo,hi)=>int(lo,hi
  else{let a,b,cc,d1,d2,d3;do{a=int(3,9);b=int(1,9);cc=int(1,9);z=a*a+5*b-cc;d1=a*a+5+b-cc;d2=2*a+5*b-cc;d3=(a*a+5)*b-cc;}while(new Set([z,d1,d2,d3]).size<4);
   t=T(`Evaluate x² + 5y − z when x = ${a}, y = ${b} and z = ${cc}.`,[num(z,1,'int')],String(z),`${a}² + 5(${b}) − ${cc} = ${a*a} + ${5*b} − ${cc} = ${z}.`,{a,b,c:cc});
   t.choices=opts(t,[{value:String(d1),mistake:'Added 5 and y instead of multiplying'},{value:String(d2),mistake:'Doubled x instead of squaring it'},{value:String(d3),mistake:'Added before multiplying by y'}],h);}
+ break;}
+// Batch A1-4: Lessons 21-31
+case 'a1-prod-rule':{const L=pick([['a','b','c'],['x','y','z']]);let n,fs,E;do{n=int(8,12);fs=[];E=[0,0,0];for(let k=0;k<n;k++){const s1=int(1,15),li=Math.floor((s1-1)/5),e=(s1-1)%5+1;fs.push([L[li],e]);E[li]+=e;}}while(v==='mc'&&E.includes(0));
+ const terms=[[1,{[L[0]]:E[0],[L[1]]:E[1],[L[2]]:E[2]}]],key=monoX(1,L.map((l,i)=>[l,E[i]]));
+ t=T(`Simplify: ${fs.map(([l,e])=>l+(e===1?'':S.sup(e))).join('')}`,[polyPart(terms)],key,`Add the exponents of each letter: ${L.map((l,i)=>`${l}: ${E[i]}`).join(', ')}. Result: ${key}.`,{fs,L,E});
+ if(v==='mc'){const f=(d)=>monoX(1,L.map((l,i)=>[l,E[i]+d[i]]));t.choices=opts(t,[{value:f([1,1,1]),mistake:'Counted one extra factor of each letter'},{value:f([0,2,0]),mistake:`Miscounted the factors of ${L[1]}`},{value:f([2,0,2]),mistake:`Miscounted the factors of ${L[0]} and ${L[2]}`}],h);}
+ break;}
+case 'a1-like-exp':{const [A,B]=pick([['a','b'],['x','y']]),C=pick([...'mnpqrst']),r=(lo,hi)=>int(lo,hi)*pick([1,-1]);
+ if(v==='pos'||v==='neg'){let e1,e2,c1,c2,c3,c4,c5;do{e1=v==='pos'?int(1,5):r(1,4);e2=v==='pos'?int(1,5):r(1,4);c1=r(1,9);c2=r(1,9);c3=r(1,9);c4=r(1,9);c5=v==='pos'?c1+c2+c3:c1+c2+c3+c4;}while(c5===0);
+  const pp=[[c1,[[A,e1],[B,e2],[C,1]]],[c2,[[B,e2],[C,1],[A,e1]]],[c3,[[C,1],[A,e1],[B,e2]]],v==='pos'?[c4,[[C,1]]]:[c4,[[C,1],[B,e2],[A,e1]]]],mix=int(0,2),src=[0,1,2,3].map(k=>pp[(k+mix)%4]);
+  const ans=v==='pos'?[[c5,{[A]:e1,[B]:e2,[C]:1}],[c4,{[C]:1}]]:[[c5,{[A]:e1,[B]:e2,[C]:1}]],key=polyX(v==='pos'?[[c5,[[A,e1],[B,e2],[C,1]]],[c4,[[C,1]]]]:[[c5,[[A,e1],[B,e2],[C,1]]]]);
+  t=T(`Simplify: ${polyX(src)}`,[polyPart(ans)],key,`The order of the factors does not matter, so the terms with ${monoX(1,[[A,e1],[B,e2],[C,1]])} are like terms: ${key}.`,{e1,e2,co:[c1,c2,c3,c4],L:[A,B,C]});}
+ else if(v==='split3'){// three terms, each exponent written as a sum of three
+  let ex1,ex2,cs,co;do{ex1=r(1,6);ex2=r(1,6);cs=[r(1,9),r(1,9),r(1,9)];co=cs[0]+cs[1]+cs[2];}while(co===0);
+  const sp3=(tot)=>{const x=r(1,Math.abs(tot)),y=r(1,Math.abs(tot));return [x,y,tot-x-y];};let e,ee,f,ff;do{e=sp3(ex1);ee=sp3(ex2);f=sp3(ex1);ff=sp3(ex2);}while(f[0]===e[0]||ff[2]===ee[2]);
+  const raw=(c0,vs)=>(Math.abs(c0)===1?'':String(Math.abs(c0)))+vs.map(([l,x])=>l+(x===1?'':S.sup(x))).join('');
+  const pp=[[cs[0],raw(cs[0],[[A,ex1],[B,ff[0]],[B,ff[1]],[B,ff[2]]])],[cs[1],raw(cs[1],[[B,ee[0]],[B,ee[1]],[B,ee[2]],[A,e[0]],[A,e[1]],[A,e[2]]])],[cs[2],raw(cs[2],[[A,f[1]],[A,f[0]],[A,f[2]],[B,ex2]])]];
+  const mix=int(1,3),ord=mix===1?[0,1,2]:mix===2?[1,2,0]:[2,1,0],src=ord.map((k,i)=>(pp[k][0]<0?(i?' − ':'−'):(i?' + ':''))+pp[k][1]).join(''),key=polyX([[co,[[A,ex1],[B,ex2]]]]);
+  t=T(`Simplify: ${src}`,[polyPart([[co,{[A]:ex1,[B]:ex2}]])],key,`Add the exponents of each letter in every term: each term is a multiple of ${monoX(1,[[A,ex1],[B,ex2]])}. Add the coefficients: ${key}.`,{ex1,ex2,cs,L:[A,B]});}
+ else{// 'split': factors of the same letter written separately
+  let e1,e2,ex,c,cs;const sp=(tot,lim)=>{const x=r(1,lim);return [x,tot-x];};
+  do{e1=r(2,5);e2=r(2,5);cs=[r(1,9),r(1,9),r(1,9),r(1,9)];}while(cs.reduce((x,y)=>x+y,0)===0);
+  const [p3,p5]=sp(e2,Math.abs(e1)-1),[p4,p6]=sp(e1,Math.abs(e2)-1),[q3,q5]=sp(e2,Math.abs(e1)-1),[q4,q6]=sp(e1,Math.abs(e2)-1),[w3,w5]=sp(e2,Math.abs(e1)-1),[w4,w6]=sp(e1,Math.abs(e2)-1);
+  const raw=(c0,vs)=>(c0===1?'':c0===-1?'−':minus(c0))+vs.map(([l,e])=>l+(e===1?'':S.sup(e))).join(''),pp=[raw(cs[0],[[A,e1],[B,e2]]),raw(cs[1],[[B,p5],[B,p3],[A,p4],[A,p6]]),raw(cs[2],[[A,q6],[A,q4],[B,q3],[B,q5]]),raw(cs[3],[[B,w3],[B,w5],[A,w4],[A,w6]])];
+  const mix=int(0,3),src=[0,1,2,3].map(k=>pp[(k+mix)%4]).map((x,i)=>i===0?x:(x[0]==='−'?' − '+x.slice(1):' + '+x)).join(''),co=cs.reduce((x,y)=>x+y,0),key=polyX([[co,[[A,e1],[B,e2]]]]);
+  t=T(`Simplify: ${src}`,[polyPart([[co,{[A]:e1,[B]:e2}]])],key,`Add the exponents of each letter in every term: each term is a multiple of ${monoX(1,[[A,e1],[B,e2]])}. Add the coefficients: ${key}.`,{e1,e2,cs,L:[A,B]});}
+ break;}
+case 'a1-like-xy-mc':{const r=(lo,hi)=>int(lo,hi)*pick([1,-1]);let g,a,b,cc,d,e,f;do{g=int(2,9);a=r(1,8);b=r(1,8);cc=r(1,8);d=r(1,8);e=r(1,8);f=r(1,9);}while(Math.abs(b)===Math.abs(d)||Math.abs(b+d)<2||Math.abs(cc+e)<2||a+f===0);
+ const H=b+d,I=cc+e,J=a+f,X=[['x',g],['y',1]],XY=[['x',1],['y',1]],src=polyX([[a,[]],[b,X],[cc,XY],[d,X],[e,XY],[f,[]]]),ans=[[H,X],[I,XY],[J,[]]];
+ t=T(`Simplify: ${src}`,[polyPart([[H,{x:g,y:1}],[I,{x:1,y:1}],[J,{}]])],polyX(ans),`Add the coefficients of like terms: ${polyX(ans)}.`,{a,b,c:cc,d,e,f,g});
+ t.choices=opts(t,[{value:polyX([[H,[['x',2*g],['y',2]]],[-I,XY],[-J,[]]]),mistake:'Added the exponents of like terms and changed signs'},{value:polyX([[b-d,X],[cc-e,XY],[J,[]]]),mistake:'Subtracted the coefficients of like terms'},{value:polyX([[b-d,X],[cc-e,[['x',2],['y',2]]],[-J,[]]]),mistake:'Subtracted coefficients and added exponents'}],h);break;}
+case 'a1-cond':{const r=(lo,hi)=>int(lo,hi)*pick([1,-1]);
+ if(v==='mc'){let b,cc;do{b=int(-7,9);cc=int(-7,9);}while(b===0||cc===0||cc===b);const z=cc-b,s1=pick([1,-1]);let d2=(cc+b)*s1;if(d2===0)d2=Math.abs(z+1);
+  t=T(`Which number is a solution of the equation x ${b<0?'−':'+'} ${Math.abs(b)} = ${minus(cc)}?`,[num(z,1,'int')],minus(z),`x = ${minus(cc)} ${b<0?'+':'−'} ${Math.abs(b)} = ${minus(z)}.`,{b,c:cc});
+  t.choices=opts(t,[{value:minus(-z),mistake:'Used the wrong sign'},{value:minus(d2),mistake:`${b<0?'Subtracted':'Added'} ${Math.abs(b)} instead of ${b<0?'adding':'subtracting'} it`},{value:minus(-d2),mistake:'Moved the number to the wrong side and used the wrong sign'}],h);}
+ else{const b=r(1,9),first=pick([1,2]),pair=first===1?[-b,b]:[b,-b];
+  t=T(`Which number satisfies the equation x ${b<0?'−':'+'} ${Math.abs(b)} = 0: ${minus(pair[0])} or ${minus(pair[1])}?`,[num(-b,1,'int')],`${minus(-b)} satisfies the equation`,`${minus(-b)} ${b<0?'−':'+'} ${Math.abs(b)} = 0, so ${minus(-b)} satisfies it.`,{b,first});}
+ break;}
+case 'a1-add-eq':{
+ if(v==='frac'){const b=int(2,6),tt=int(2,5),d=b*tt,a=int(1,b-1),cc=int(1,d-1),e=int(2,6),g=int(1,e-1),f=pick([1,2]),F1=[g*b+a,b],F2=[e*d+cc,d],z=f===1?[F2[0]*b+F1[0]*d,b*d]:[F2[0]*b-F1[0]*d,b*d];
+  t=T(`Solve: x ${f===1?'−':'+'} ${mixT(...F1)} = ${mixT(...F2)}. Give an exact answer as a mixed number, fraction or integer.`,[num(...z,'any')],mixT(...z),`${f===1?'Add':'Subtract'} ${mixT(...F1)} ${f===1?'to':'from'} both sides: x = ${mixT(...z)}.`,{a,b,c:cc,d,e,g,f},{math:math(`<mrow><mi>x</mi>${mo(f===1?'−':'+')}${mixML(...F1)}${mo('=')}${mixML(...F2)}</mrow>`)});}
+ else{const a=int(10,30),b=int(1,7),s1=pick([1,-1]),z=s1<0?a+b:a-b;
+  t=T(`Solve: ${a} = m ${s1<0?'−':'+'} ${b}`,[num(z,1,'int')],`m = ${z}`,`${s1<0?'Add':'Subtract'} ${b} ${s1<0?'to':'from'} both sides: m = ${z}.`,{a,b,s:s1});
+  const rr=int(1,2)*pick([1,-1]);t.choices=opts(t,[{value:String(s1<0?a-b:a+b),mistake:`${s1<0?'Subtracted':'Added'} ${b} instead of ${s1<0?'adding':'subtracting'} it`},{value:String(a*b),mistake:'Multiplied the numbers'},{value:String(z+rr),mistake:'Arithmetic slip'}],h);}
+ break;}
+case 'a1-mul-eq':{
+ if(v==='div'){const i=int(3,9),b=int(4,10),[r0]=letters(int,1);t=T(`Solve: ${r0}/${i} = ${b}`,[num(i*b,1,'int')],`${r0} = ${i*b}`,`Multiply both sides by ${i}: ${r0} = ${i*b}.`,{i,b},{math:math(`<mrow>${mfrac(`<mi>${r0}</mi>`,i)}${mo('=')}${mn(b)}</mrow>`)});}
+ else{const b=int(3,9),cc=v==='mul-mc'?int(4,9):int(2,9),a=b*cc;t=T(`Solve: ${a} = ${b}y`,[num(cc,1,'int')],`y = ${cc}`,`Divide both sides by ${b}: y = ${cc}.`,{a,b,c:cc});
+  if(v==='mul-mc'){const r0=pick([1,2]),j=pick([-1,1]),d2=r0===1?cc+j:a-b;t.choices=opts(t,[{value:String(a+b),mistake:`Added ${b} instead of dividing`},{value:String(d2),mistake:r0===1?'Division slip':`Subtracted ${b} instead of dividing`},{value:r0===1?`1/${cc}`:`1/${d2}`,mistake:'Divided the wrong way'}],h);}}
+ break;}
+case 'a1-two-step':{let a,b,cc;do{a=int(2,5);b=int(1,7)*pick([1,-1]);cc=int(1,7);}while(gcd(a,Math.abs(b))!==1||a*cc<b);const d=a*cc+b;
+ if(v==='mc'){const a0=int(3,10),b0=2*int(1,5),c0=int(1,9),d0=a0*b0+c0,n0=pick([1,2]),rr=int(1,3)*pick([1,-1]);
+  t=T(`Solve: ${b0}x + ${c0} = ${d0}`,[num(a0,1,'int')],`x = ${a0}`,`Subtract ${c0}: ${b0}x = ${d0-c0}; divide by ${b0}: x = ${a0}.`,{a:a0,b:b0,c:c0});
+  t.choices=opts(t,[{value:String(a0+rr===0?a0-rr:a0+rr),mistake:'Arithmetic slip'},{value:String(Math.abs(a0*b0+2*c0)),mistake:`Added ${c0} instead of subtracting it`},{value:String(n0===1?a0*b0:a0+b0-c0),mistake:`Did not divide by ${b0}`}],h);}
+ else t=T(`Solve: ${a}x ${b<0?'−':'+'} ${Math.abs(b)} = ${d}`,[num(cc,1,'int')],`x = ${cc}`,`${b<0?'Add':'Subtract'} ${Math.abs(b)}: ${a}x = ${a*cc}; divide by ${a}: x = ${cc}.`,{a,b,c:cc});
+ break;}
+case 'a1-frac-eq':{
+ if(v==='twelfths'){const r11=()=>int(1,11)*pick([1,-1]);let a,b,cc;do{a=r11();b=r11();cc=r11();}while(b===a||cc===a||cc===b);const F=x=>fracT(x,12),z=red(cc-b,a);
+  t=T(`Solve: ${F(a)}x ${b<0?'−':'+'} ${fracT(Math.abs(b),12)} = ${F(cc)}. Give an exact answer as a fraction or integer.`,[num(...z,'any')],fracT(...z),`Multiply both sides by 12: ${a}x ${b<0?'−':'+'} ${Math.abs(b)} = ${cc}, so x = ${cc-b}/${a} = ${fracT(...z)}.`,{a,b,c:cc});}
+ else{const R=zip([2,3,2,4,2,5,2,2,2,3,3,3,4,4,4,6,6,6],[3,2,4,2,5,2,3,4,6,2,4,6,2,3,6,2,3,4],[6,6,8,8,10,10,12,12,12,12,12,12,12,12,12,12,12,12]),[a0,b0,f0]=pick(R),cop=m=>{let x;do{x=int(1,m-1);}while(gcd(x,m)!==1);return x;};
+  const rr=cop(a0),ss=cop(b0),tt=cop(f0),sa=pick([1,-1]),sb=pick([1,-1]),sf=pick([1,-1]),cc=int(1,3),d=int(1,3),e=int(1,3),F1=[sa*(a0*cc+rr),a0],F2=[b0*d+ss,b0],F3=[sf*(f0*e+tt),f0],op=sb<0?'−':'+';
+  if(v==='mixed'){const z=div(sub(F3,F1),[sb*F2[0],F2[1]]);
+   t=T(`Solve: ${mixT(...F1)} ${op} ${mixT(...F2)}x = ${mixT(...F3)}. Give an exact answer as a mixed number, fraction or integer.`,[num(...z,'any')],mixT(...z),`Subtract ${mixT(...F1)} from both sides, then divide by ${sb<0?'−':''}${mixT(...F2)}: x = ${mixT(...z)}.`,{F1,F2,F3,sb});}
+  else{const gg=pick([a0,b0]),z=div(sub(F3,[sb*F2[0],F2[1]]),add2(F1,[1,gg]));
+   t=T(`Solve: ${mixT(...F1)}x ${op} ${mixT(...F2)} + (1/${gg})x = ${mixT(...F3)}. Give an exact answer as a mixed number, fraction or integer.`,[num(...z,'any')],mixT(...z),`Collect the x terms: (${mixT(...F1)} + 1/${gg})x = ${mixT(...F3)} ${sb<0?'+':'−'} ${mixT(...F2)}, so x = ${mixT(...z)}.`,{F1,F2,F3,sb,g:gg});}}
+ break;}
+case 'a1-collect':{const r=(lo,hi)=>int(lo,hi)*pick([1,-1]);let a,b,cc,d,e,f,g,hh,N,D;do{a=r(1,6);b=r(1,5);cc=r(1,6);d=r(1,5);e=r(1,5);f=r(1,4);g=r(1,4);hh=r(1,5);N=e+hh-b-d;D=a+cc-f-g;}while(D===0||(v==='mc'&&(N===0||Math.abs(N)===Math.abs(D))));
+ const z=red(N,D),Lft=polyX([[a,[['x',1]]],[b,[]],[cc,[['x',1]]],[d,[]]]),Rgt=polyX([[e,[]],[f,[['x',1]]],[g,[['x',1]]],[hh,[]]]);
+ t=T(`Solve: ${Lft} = ${Rgt}. Give an exact answer as a mixed number, fraction or integer.`,[num(...z,'any')],mixT(...z),`Collect like terms: ${D}x ${N>=0?'':''}= ${N}, so x = ${mixT(...z)}.`.replace(`${D}x`,`${minus(D)}x`).replace(`= ${N},`,`= ${minus(N)},`),{a,b,c:cc,d,e,f,g,h:hh});
+ if(v==='mc')t.choices=opts(t,[{value:mixT(-N,D),mistake:'Used the wrong sign when moving the numbers'},{value:mixT(D,N),mistake:'Divided the wrong way'},{value:mixT(-D,N),mistake:'Divided the wrong way and used the wrong sign'}],h);break;}
+case 'a1-dist-exp':{const [i0,j0]=letters(int,2);
+ if(v==='mc'){const a=int(2,3),b=int(-9,-2),cc=int(2,9),hp=pick([1,2]),e=-b,g=hp===1?b:e,j=hp===1?e:b,ans=[[cc,[['x',1],['y',a+2]]],[b,[['x',1],['y',a]]]];
+  t=T(`Expand by using the distributive property: ${monoX(1,[['x',1],['y',a]])}(${cc}y² ${b<0?'−':'+'} ${Math.abs(b)})`,[polyPart([[cc,{x:1,y:a+2}],[b,{x:1,y:a}]])],polyX(ans),`Multiply each term by ${monoX(1,[['x',1],['y',a]])}, adding exponents of y: ${polyX(ans)}.`,{a,b,c:cc});
+  t.choices=opts(t,[{value:polyX([[cc,[['x',1],['y',a]]],[j,[['x',1],['y',a]]]]),mistake:'Did not add the exponents of y'},{value:polyX([[cc,[['x',1],['y',a+2]]],[b,[]]]),mistake:'Multiplied only the first term'},{value:polyX([[cc,[['x',1],['y',2]]],[g,[['x',1],['y',a]]]]),mistake:'Kept the exponent of y from inside the parentheses'}],h);}
+ else{let a,b;do{a=int(2,5);b=int(2,5);}while(gcd(a,b)!==1);b*=pick([1,-1]);const e=int(1,3),ans=[[a,[[i0,e+1],[j0,3]]],[b,[[i0,e+2],[j0,2]]]];
+  t=T(`Expand by using the distributive property: ${monoX(1,[[i0,e],[j0,1]])}(${a}${i0}${j0}² ${b<0?'−':'+'} ${Math.abs(b)}${i0}²${j0})`,[polyPart([[a,{[i0]:e+1,[j0]:3}],[b,{[i0]:e+2,[j0]:2}]])],polyX(ans),`Multiply each term, adding exponents of like letters: ${polyX(ans)}.`,{a,b,e,L:[i0,j0]});}
+ break;}
+case 'a1-dec-eq':{
+ if(v==='one'){let b,d;do{b=int(21,59);}while(b%10===0);do{d=int(2,19)*pick([1,-1]);}while(d%10===0);const sc=pick([1,10,100]),an=int(2,9),A=[an,sc],t3=add2(mul2(A,[b,10]),[d,10]);
+  t=T(`Solve: ${decT(b,10)}x ${d<0?'−':'+'} ${decT(Math.abs(d),10)} = ${decT(...t3)}`,[num(...A,'dec')],`x = ${decT(...A)}`,`${d<0?'Add':'Subtract'} ${decT(Math.abs(d),10)}: ${decT(b,10)}x = ${decT(...mul2(A,[b,10]))}; divide by ${decT(b,10)}: x = ${decT(...A)}.`,{b,d,A});}
+ else{let a,cc;do{a=int(1,6);cc=int(1,6);}while(a===cc||a+cc===10);const b=int(2,7),sc=pick([1,10,100]),dn=int(2,7),D=[dn,sc],[f0]=letters(int,1),rhs=add2(mul2([a+cc,10],D),[-b,100]);
+  t=T(`Solve: ${decT(a,10)}${f0} − ${decT(b,100)} + ${decT(cc,10)}${f0} = ${decT(...rhs)}`,[num(...D,'dec')],`${f0} = ${decT(...D)}`,`Collect: ${decT(a+cc,10)}${f0} − ${decT(b,100)} = ${decT(...rhs)}; add ${decT(b,100)} and divide by ${decT(a+cc,10)}: ${f0} = ${decT(...D)}.`,{a,b,c:cc,D});
+  if(v==='mc'){const d2=(a*dn/sc/10+cc*dn/sc/10-2*b/100)/((a+cc)/10),g3=x=>minus(Number(x.toPrecision(3)));t.choices=opts(t,[{value:decT(-dn,sc),mistake:'Used the wrong sign'},{value:g3(d2),mistake:`Subtracted ${decT(b,100)} again instead of adding it`},{value:g3(-d2),mistake:'Subtracted again and used the wrong sign'},{value:decT(dn*10,sc),mistake:'Misplaced the decimal point'},{value:decT(dn,sc*10),mistake:'Misplaced the decimal point the other way'}],h);}}
+ break;}
+case 'a1-frac-of':{const R=zip([72,99,72,76,88,92,96,98,72,76,84,88,92,85,76,78,81,84,88,92,96,99,72,78,96,98,72,76,84,92,96,72,75,81,99,72,76,78,84,88,92],[27,27,28,28,28,28,28,28,32,32,32,32,32,34,36,36,36,36,36,36,36,36,42,42,42,42,44,44,44,44,44,45,45,45,45,48,48,48,48,48,48]),[b,a]=pick(R),z=red(a,b);
+ t=T(`What fraction of ${b} is ${a}? Write the fraction in lowest terms.`,[num(...z,'frac')],fracT(...z),`${a}/${b} = ${fracT(...z)}.`,{a,b});break;}
+case 'a1-frac-what':{const P8=[3,5,7,11,13,17,19,23],a=pick(P8),b=int(2,a-1);
+ if(v==='frac'){let cc;do{cc=pick(P8);}while(cc===a);const e=int(2,cc-1),z=red(b*cc,a*e);
+  t=T(`${mixT(a,b)} of what number is ${mixT(cc,e)}? Give an exact answer as a mixed number, fraction or integer.`,[num(...z,'any')],mixT(...z),`Divide: ${mixT(cc,e)} ÷ ${mixT(a,b)} = ${fracT(cc,e)} × ${fracT(b,a)} = ${mixT(...z)}.`,{a,b,c:cc,e});}
+ else{const cc=int(11,19),z=red(b*cc,a);
+  t=T(`${mixT(a,b)} of what number is ${cc}? Give an exact answer as a mixed number, fraction or integer.`,[num(...z,'any')],mixT(...z),`Divide: ${cc} ÷ ${mixT(a,b)} = ${cc} × ${fracT(b,a)} = ${mixT(...z)}.`,{a,b,c:cc});
+  t.choices=opts(t,[{value:mixT(b*a,cc),mistake:'Divided the fraction by the number'},{value:mixT(a,b*cc),mistake:'Divided the fraction by the number the wrong way'},{value:mixT(cc,b*a),mistake:'Divided by the numerator and the denominator'},{value:mixT(a*cc,b),mistake:'Multiplied instead of dividing'}],h);}
+ break;}
+case 'a1-funcnot':{const r=(lo,hi)=>int(lo,hi)*pick([1,-1]),F=pick(['f','g','h']);
+ if(v==='lin'||v==='lin2'){let cc,d,b;do{cc=r(1,5);d=r(1,5);}while(cc===d);b=r(1,6);if(b===1)b+=int(1,4)*pick([1,-1]);const z=b*cc+d,rule=v==='lin'?polyX([[cc,[['x',1]]],[d,[]]]):polyX([[d,[]],[cc,[['x',1]]]]);
+  t=T(`If ${F}(x) = ${rule}, find ${F}(${minus(b)}).`,[num(z,1,'int')],`${F}(${minus(b)}) = ${minus(z)}`,`${F}(${minus(b)}) = ${v==='lin'?`${minus(cc)}(${minus(b)}) ${d<0?'−':'+'} ${Math.abs(d)}`:`${minus(d)} ${cc<0?'−':'+'} ${Math.abs(cc)}(${minus(b)})`} = ${minus(z)}.`,{b,c:cc,d,F});}
+ else if(v==='cubic'){const a=int(-5,-1),z=a**3+a**2+a;t=T(`If f(x) = ${polyX([[a,[['x',2]]],[a,[['x',1]]],[a,[]]])}, find f(${minus(a)}).`,[num(z,1,'int')],minus(z),`f(${minus(a)}) = ${minus(a)}(${minus(a)})² + ${par(a)}(${minus(a)}) + ${par(a)} = ${minus(z)}.`,{a});}
+ else if(v==='quad'){const a=r(1,4),cc=r(1,30),d=r(2,5),z=a*d*d+cc;t=T(`If f(x) = ${polyX([[a,[['x',2]]],[cc,[]]])}, find f(${minus(d)}).`,[num(z,1,'int')],minus(z),`f(${minus(d)}) = ${minus(a)}(${minus(d)})² ${cc<0?'−':'+'} ${Math.abs(cc)} = ${minus(z)}.`,{a,c:cc,d});}
+ else if(v==='neg'){let a,cc;do{a=r(1,6);cc=r(1,5);if(cc===1)cc=6;}while(a+cc===0);const s1=pick([1,-1]),z=-cc*(a+s1*cc);
+  t=T(`If ${F}(x) = −x(${minus(a)} ${s1<0?'−':'+'} x), find ${F}(${minus(cc)}).`,[num(z,1,'int')],minus(z),`${F}(${minus(cc)}) = −(${minus(cc)})(${minus(a)} ${s1<0?'−':'+'} (${minus(cc)})) = ${minus(z)}.`,{a,c:cc,s:s1,F});}
+ else if(v==='root'){const a=int(2,12),[Y]=letters(int,1,'xoil');t=T(`If ${Y}(x) = −√x, find ${Y}(${a*a}).`,[num(-a,1,'int')],`${Y}(${a*a}) = −${a}`,`√${a*a} = ${a}, so ${Y}(${a*a}) = −${a}.`,{a});}
+ else if(v==='recip'){let a,b;do{a=int(3,9);b=int(2,a-1);}while(gcd(a,b)!==1);const k=pick([1,2]),x=k===1?[-a,b]:[-b,a],z=k===1?[b,a]:[a,b];
+  t=T(`If f(x) = −1/x, find f(${fracT(...x)}).`,[num(...z,'frac')],fracT(...z),`f(${fracT(...x)}) = −1 ÷ (${fracT(...x)}) = ${fracT(...z)}.`,{a,b,k},{math:math(`<mrow><mi>f</mi>${mo('(')}<mi>x</mi>${mo(')')}${mo('=')}${mo('−')}${mfrac('<mn>1</mn>','<mi>x</mi>')}</mrow>`)});}
+ else{let a,cc,b,z,d1,d2,d3;do{a=r(1,6);cc=r(1,4);b=r(1,6);z=cc*cc+a*cc+b;d1=-z;d2=cc*cc-a*cc+b;d3=-cc*cc-a*cc+b;}while(a+cc===0||new Set([z,d1,d2,d3]).size<4);const P0=pick(['P','Q','R']);
+  t=T(`If ${P0}(x) = ${polyX([[1,[['x',2]]],[a,[['x',1]]],[b,[]]])}, find ${P0}(${minus(cc)}).`,[num(z,1,'int')],minus(z),`${P0}(${minus(cc)}) = (${minus(cc)})² ${a<0?'−':'+'} ${Math.abs(a)}(${minus(cc)}) ${b<0?'−':'+'} ${Math.abs(b)} = ${minus(z)}.`,{a,b,c:cc});
+  t.choices=opts(t,[{value:minus(d1),mistake:'Gave the opposite of the value'},{value:minus(d2),mistake:'Used the wrong sign for the middle term'},{value:minus(d3),mistake:'Squared the negative number incorrectly and used the wrong sign'}],h);}
+ break;}
+case 'a1-dist-negexp':{const [I,J]=letters(int,2);let a,b;do{a=int(2,5);b=int(2,5);}while(gcd(a,b)!==1);b*=pick([1,-1]);const cc=int(2,9)*pick([1,-1]);
+ if(v==='zero'){const k=pick([1,2]),e=k===1?-2:0,kk=k===1?0:-2,coef=k===1?cc:1,front=k===1?`${monoX(cc,[[I,e]])}(${J})⁰`:`(${cc}${I})⁰${monoX(1,[[J,kk]])}`;
+  const ans=k===1?[[a*cc,[[I,-1],[J,2]]],[b*cc,[[J,1]]]]:[[a,[[I,1]]],[b,[[I,2],[J,-1]]]],parts=k===1?[[a*cc,{[I]:-1,[J]:2}],[b*cc,{[J]:1}]]:[[a,{[I]:1}],[b,{[I]:2,[J]:-1}]];
+  t=T(`Expand by using the distributive property: (${a}${I}${J}² ${b<0?'−':'+'} ${Math.abs(b)}${I}²${J})${front}`,[polyPart(parts)],polyX(ans),`A power with exponent 0 equals 1. Multiply each term and add exponents: ${polyX(ans)}.`,{a,b,c:cc,k,L:[I,J]});}
+ else{const e=int(2,5),m=int(-e+1,-1),k=int(-2,-1),ans=[[a*cc,[[I,e+m],[J,5]]],[b*cc,[[I,e+2],[J,3+k]]]];
+  t=T(`Expand by using the distributive property: ${monoX(cc,[[I,e],[J,3]])}(${monoX(a,[[I,m],[J,2]])} ${b<0?'−':'+'} ${monoX(Math.abs(b),[[I,2],[J,k]])})`,[polyPart([[a*cc,{[I]:e+m,[J]:5}],[b*cc,{[I]:e+2,[J]:3+k}]])],polyX(ans),`Multiply each term, adding exponents (including the negative ones): ${polyX(ans)}.`,{a,b,c:cc,e,m,k,L:[I,J]});}
+ break;}
+case 'a1-neg-exp-mc':{let a,b,cc,d,rr;do{a=int(-6,-1);b=int(-5,-1);cc=int(2,5);d=a+b+cc;rr=pick([-1,1]);}while(d===0||Math.abs(d)+rr===0||Math.abs(a*b*cc)===Math.abs(d));const f=Math.abs(d),sh=e=>`a${S.sup(e)}`;
+ const key=d<0?`1/a${S.sup(f)}`:`a${S.sup(f)}`;
+ t=T(`Multiply: ${sh(a)}(${sh(cc)})(${sh(b)})`,[polyPart([[1,{a:d}]])],key,`Add the exponents: ${a} + ${cc} + (${b}) = ${d}, so the product is ${key}.`,{a,b,c:cc});
+ t.choices=opts(t,[{value:d<0?`a${S.sup(f)}`:`1/a${S.sup(f)}`,mistake:'Used the wrong sign for the exponent'},{value:`a${S.sup(Math.abs(a*b*cc))}`,mistake:'Multiplied the exponents'},{value:`1/a${S.sup(f+rr)}`,mistake:'Added the exponents incorrectly'}],h);break;}
+case 'a1-zero-exp':{
+ if(v==='three'){const B=pick([2,3,4,5,2])*pick([1,-1]),e=Math.abs(B)<5?2:3,bs=B<0?`(${minus(B)})`:String(B),za=B**e,zb=red(1,B**e);
+  t=T(`Simplify each: (a) 1/${bs}${S.sup(-e)} (b) ${bs}${S.sup(-e)} (c) ${bs}⁰. Answer all three parts, separated by semicolons.`,[num(za,1,'int'),num(...zb,'frac'),num(1,1,'int')],`(a) ${minus(za)}; (b) ${fracT(...zb)}; (c) 1`,`A negative exponent means the reciprocal: (a) ${minus(za)}, (b) ${fracT(...zb)}; any nonzero number to the power 0 is 1.`,{B,e});}
+ else if(v==='mix'){const a=int(2,5),bS=pick([1,-1]),cS=pick([1,-1]),dS=pick([1,-1]),items=[[`−${a}²`,-a*a,true],[`(−${a})²`,a*a],[`${a}⁰`,1],[`|−${a} ${dS<0?'−':'+'} ${a}|`,Math.abs(-a+dS*a)]],ord=[0,1,2,3].map(()=>int(0,999)),o=[0,1,2,3].sort((p,q)=>ord[p]-ord[q]).map(k=>items[k]);
+  const show=o.map((x,i)=>x[2]&&i>0?`(${x[0]})`:x[0]),z=o[0][1]+bS*o[1][1]+cS*o[2][1]+o[3][1];
+  t=T(`Simplify: ${show[0]} ${bS<0?'−':'+'} ${show[1]} ${cS<0?'−':'+'} ${show[2]} + ${show[3]}`,[num(z,1,'int')],minus(z),`−${a}² = ${-a*a}, (−${a})² = ${a*a}, ${a}⁰ = 1 and |−${a} ${dS<0?'−':'+'} ${a}| = ${Math.abs(-a+dS*a)}. Combine: ${minus(z)}.`,{a,dS,vals:o.map(x=>x[1]),signs:[bS,cS]});}
+ else if(v==='eval'){const [A,B]=letters(int,2,'foil');let av=int(1,4)*pick([1,-1]),bv=int(1,4)*pick([1,-1]);if(av>0&&bv>0)av=-av;const e=int(2,3),f=int(2,3),k=pick([1,2]),z=k===1?av*(bv-1)*(-e*bv-f*av):av*(1-av)*(-e*bv-f*av);
+  t=T(`Evaluate ${A}(${k===1?`${B} − ${A}⁰`:`${B}⁰ − ${A}`})(−${e}${B} − ${f}${A}) if ${A} = ${minus(av)} and ${B} = ${minus(bv)}.`,[num(z,1,'int')],minus(z),`${k===1?`${A}⁰`:`${B}⁰`} = 1. Substitute: ${minus(z)}.`,{av,bv,e,f,k});}
+ else{let a,b,x,y;do{a=int(2,7);b=int(3,7);x=int(2,Math.floor(Math.log(100)/Math.log(a)));y=int(2,Math.floor(Math.log(100)/Math.log(b)));}while(a===b||a**x===b**y);const k=pick([1,2]),z=k===1?[1,b**y]:[1,a**x];
+  t=T(`Evaluate when x = ${a} and y = ${b}: ${k===1?`x⁰y${S.sup(-y)}`:`x${S.sup(-x)}y⁰`}`,[num(...z,'frac')],fracT(...z),`The factor with exponent 0 is 1; ${k===1?`${b}${S.sup(-y)} = 1/${b**y}`:`${a}${S.sup(-x)} = 1/${a**x}`}.`,{a,b,x,y,k});
+  t.choices=opts(t,[{value:k===1?`1/${a**x}`:`1/${b**y}`,mistake:'Evaluated the wrong factor'},{value:String(k===1?-a*x:-b*y).replace('-','−'),mistake:'Multiplied the base by the negative exponent'},{value:'0',mistake:'Thought a zero exponent gives 0'}],h);}
+ break;}
+case 'a1-phrases':{const N=['N'],sm=fn=>S.fsamples(N,env=>fn(env.N));
+ if(v==='mc'){let a=int(1,9)*pick([1,-1]),b=int(2,9)*pick([1,-1]),e=int(2,6);if(a===e)a+=2;const k=pick([1,2]);
+  if(k===1){const w=S.words(e),key=`${e}(−N) ${a<0?'−':'+'} ${Math.abs(a)}`;t=T(`Which algebraic phrase corresponds to the word phrase: the sum of ${w} times the opposite of a number and ${minus(a)}? Use N for the number.`,[{t:'expr',vars:N,samples:sm(n=>e*-n+a)}],key,`${w} times the opposite of N is ${e}(−N); add ${minus(a)}: ${key}.`,{a,e,k});
+   t.choices=opts(t,[{value:`N − ${e} ${a<0?'−':'+'} ${Math.abs(a)}`,mistake:'Subtracted instead of multiplying by the opposite'},{value:`${'(−N)'.repeat(Math.min(e,4))} ${a<0?'−':'+'} ${Math.abs(a)}`,mistake:'Wrote a power instead of a product with the number'},{value:`${minus(a)}(−N) + ${e}`,mistake:'Switched the two numbers'}],h);}
+  else{const key=`${minus(b)}(${e}N ${a<0?'−':'+'} ${Math.abs(a)})`;t=T(`Which algebraic phrase corresponds to the word phrase: the product of ${minus(b)} and the sum of ${e} times a number and ${minus(a)}? Use N for the number.`,[{t:'expr',vars:N,samples:sm(n=>b*(e*n+a))}],key,`The sum is ${e}N ${a<0?'−':'+'} ${Math.abs(a)}; multiply it by ${minus(b)}: ${key}.`,{a,b,e,k});
+   t.choices=opts(t,[{value:`${minus(b)} + ${e}N ${a<0?'−':'+'} ${Math.abs(a)}`,mistake:'Added instead of multiplying'},{value:`${minus(b)}(${e}N) ${a<0?'−':'+'} ${Math.abs(a)}`,mistake:'Multiplied only the first part of the sum'},{value:`${'N'.repeat(Math.min(e,4))} ${a<0?'−':'+'} ${Math.abs(a)}`,mistake:'Wrote repeated factors instead of a product with the number'}],h);}}
+ else{const a=int(1,9)*pick([1,-1]),b=int(2,9)*pick([1,-1]),cc=int(2,9),d=int(1,9)*pick([1,-1]),e=int(2,9),w=S.words(e),k1=`${e}(−N) ${a<0?'−':'+'} ${Math.abs(a)}`,k2=`${minus(b)}(${cc}N ${d<0?'−':'+'} ${Math.abs(d)})`;
+  t=T(`Write the algebraic phrases, using N for the number. (a) The sum of ${w} times the opposite of a number and ${minus(a)}. (b) The product of ${minus(b)} and the sum of ${cc} times a number and ${minus(d)}. Answer both parts, separated by a semicolon.`,[{t:'expr',vars:N,samples:sm(n=>e*-n+a)},{t:'expr',vars:N,samples:sm(n=>b*(cc*n+d))}],`(a) ${k1}; (b) ${k2}`,`(a) ${k1} (b) ${k2}`,{a,b,c:cc,d,e});}
+ break;}
+case 'a1-dec-of':{
+ if(v==='what'){let a,b;do{a=int(2,6);b=int(10,50);}while(6*b===10*a);const cc=6*b,z=10*cc/a;
+  t=T(`${(a/10).toFixed(2)} of what number is ${cc}?`,[num(z,1,'dec')],S.comma(z),`Divide: ${cc} ÷ ${(a/10).toFixed(2)} = ${S.comma(z)}.`,{a,b});}
+ else if(v==='times'){const a=int(101,199),b=int(1,999),z=[a*b,100000];t=T(`${decT(a,100)} of ${decT(b,1000)} is what number?`,[num(...z,'dec')],decT(...z),`Multiply: ${decT(a,100)} × ${decT(b,1000)} = ${decT(...z)}.`,{a,b});}
+ else{const a=int(1,20),b=int(2,9),q0=b*a,z=a*10;t=T(`${decT(b,10)} of what number is ${q0}?`,[num(z,1,'dec')],String(z),`Divide: ${q0} ÷ ${decT(b,10)} = ${z}.`,{a,b});
+  t.choices=opts(t,[{value:decT(q0*b,10),mistake:'Multiplied instead of dividing'},{value:S.comma(q0*b*10),mistake:'Multiplied by the whole number instead of the decimal'},{value:decT(z,100),mistake:'Placed the decimal point incorrectly'}],h);}
+ break;}
+case 'a1-paren-eq':{const [X]=letters(int,1),sg=x=>x<0?'−':'+';let str,z,p;
+ const fin=(s0,z0,p0)=>{str=s0;z=z0;p=p0;};
+ if(v==='354'){const R=zip([2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5],[2,2,2,2,3,3,3,4,4,5,2,2,2,2,2,2,2,3,3,3,4,4,4,5,5,2,2,2,2,2,2,2,2,3,3,3,3,3,4,4,4,5,5,5,2,2,2,2],[2,2,2,3,2,2,3,2,3,2,2,2,2,2,3,3,4,2,2,3,2,2,3,2,2,2,2,2,2,3,3,3,4,2,2,2,3,3,2,2,3,2,2,3,2,2,2,3],[3,4,5,5,3,5,5,4,5,4,2,3,4,5,3,5,5,3,4,5,3,4,5,4,5,2,2,3,5,3,4,5,4,2,3,4,4,5,3,4,4,3,4,5,2,3,5,2],[3,4,4,2,3,2,3,4,2,4,2,2,3,3,2,2,2,4,5,3,3,5,3,4,3,2,4,5,4,2,3,3,2,2,4,5,2,5,3,3,2,3,5,3,4,4,5,3],[4,4,2,2,5,3,5,4,4,4,2,3,4,2,4,5,4,5,4,3,4,4,4,2,5,2,4,4,2,2,2,5,4,2,3,2,2,5,2,5,4,3,2,3,2,3,2,4]),[a,b,cc,d,e,f]=pick(R);
+  fin(`${a}${X} − ${b}(${cc}${X} + ${d}) = ${e}${X} + ${f}`,red(f+b*d,a-b*cc-e),{a,b,c:cc,d,e,f});}
+ else if(v==='355'){const R=zip([2,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6],[2,3,4,5,6,3,4,5,6,2,4,5,6,2,3,5,6,2,3,4,6]),[a,d]=pick(R);let b,e,zz,f;do{b=int(2,6);int(2,6);e=int(2,6);zz=int(-6,6);f=(d+1-a)*zz+e+a*b;}while(Math.abs(f)>10||f===0);
+  fin(`x − ${a}(x − ${b}) = ${minus(f)} − (${d}x + ${e})`,[zz,1],{a,b,d,e,f});}
+ else if(v==='356'){const R=zip([2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],[2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,5,5,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4,5,5,5,5,5,5,5],[2,2,2,2,3,3,2,2,2,3,3,3,2,2,3,3,3,2,3,2,2,2,2,3,3,2,2,2,2,2,3,3,2,2,2,2,3,3,2,2,2,2,3,3,3],[3,3,4,5,3,4,4,4,5,3,4,5,5,5,4,4,5,5,5,2,3,3,4,2,3,2,3,4,5,5,4,5,2,3,3,5,2,5,2,3,4,5,2,2,5],[2,3,3,3,2,3,2,3,3,2,2,3,2,3,2,3,3,2,2,2,2,3,3,2,3,2,2,2,2,3,2,3,3,2,3,2,2,2,3,3,2,2,2,3,2],[2,4,2,3,4,4,2,4,2,3,3,3,2,4,2,4,5,4,4,4,2,4,4,4,3,2,5,4,2,5,3,3,2,3,2,4,2,3,5,5,5,2,3,3,4]),[a,b,cc,d,e,f]=pick(R);
+  fin(`${a}(${b} − ${X}) − (−${cc})(${X} − ${d}) = −(${e}${X} − ${f})`,red(cc*d+f-a*b,cc+e-a),{a,b,c:cc,d,e,f});}
+ else if(v==='357'){const R=zip([2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5],[2,2,2,2,2,2,2,4,4,4,4,4,4,4,4,4,3,3,3,3,4,4,4,2,2,2,2,2,2,2,2,2,3,3,3,4,4,5,5],[2,2,2,2,4,4,4,2,2,4,4,4,5,5,5,5,2,3,3,3,5,5,5,2,2,4,4,4,5,5,5,5,5,5,5,4,4,5,5],[2,3,3,4,2,2,3,4,5,3,4,5,2,3,3,4,4,3,4,5,3,4,5,4,5,3,4,5,2,3,3,4,3,4,5,4,5,4,5],[2,2,5,4,2,4,4,2,5,4,3,5,2,2,5,4,3,3,2,4,4,3,5,2,5,4,3,5,2,2,5,4,4,3,5,4,2,2,5]),[a,b,cc,d,e]=pick(R);
+  fin(`−(−${a})² − ${b}² = −${cc}(−${d}x − ${e})`,red(-cc*e-a*a-b*b,cc*d),{a,b,c:cc,d,e});}
+ else if(v==='358'){const R=zip([1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5],[2,2,2,3,3,3,4,4,4,5,5,5,3,3,3,4,4,4,5,5,5,2,2,2,4,4,4,5,5,5,2,2,2,3,3,3,5,5,5,2,2,2,3,3,3,4,4,4],[3,4,5,2,4,5,2,3,5,2,3,4,1,4,5,1,3,5,1,3,4,1,4,5,1,2,5,1,2,4,1,3,5,1,2,5,1,2,3,1,3,4,1,2,4,1,2,3]),[a0,b0,c0]=pick(R),a=-a0,b=-b0,cc=-c0,zz=int(1,9)*pick([1,-1]),K=-(zz+a)+b*(zz+cc);
+  fin(`−(x − ${a0}) − ${b0}(x − ${c0}) = ${minus(K)}`,[zz,1],{a,b,c:cc,K});}
+ else if(v==='359'){const a=int(2,9),b=int(1,9),cc=int(2,8),d=int(2,5);let e=d*cc*10-a*(d*10+b);if(e===0){e=1;}const ee=[d*cc*10-a*(d*10+b),100];
+  if(ee[0]===0)return build({...c,recipe:'a1-paren-eq'},h);
+  fin(`${decT(b,10)}x ${ee[0]<0?'−':'+'} ${decT(Math.abs(ee[0]),100)} = ${d}(−x + ${decT(cc,10)})`,[a,10],{a,b,c:cc,d});}
+ else if(v==='360'){const R=zip([0,0,-1,0,0,0,0,-1,-1,-1,0,-1,0,-1,-1,0,0,-1,-1,-1,0,0,-2,-1,-1,-1,-1,-2,-1,0,0,0,0,-1,-1,-1,-2,-1,-2,-1,-1,-2,-2,-2],[3,4,3,3,4,3,4,3,4,3,3,4,4,3,4,2,4,2,4,2,2,4,2,2,2,4,4,2,4,2,3,2,3,3,2,3,2,3,2,2,3,2,2,3],[3,3,2,2,2,3,3,2,2,3,3,3,3,2,3,2,2,2,2,3,3,3,2,2,3,3,2,3,3,2,2,3,3,2,3,3,2,2,3,3,3,2,3,3],[1,1,2,2,2,2,2,3,3,3,3,3,3,4,4,1,1,2,2,2,2,2,3,3,3,3,4,4,4,1,1,1,1,2,2,2,3,3,3,3,3,4,4,4],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4]),[zz,d,cc,b,a]=pick(R),e=a*zz-a*b+cc-d*zz;
+  fin(`−[−${a}(x − ${b}) − |−${cc}|] = ${d}x ${sg(e)} ${Math.abs(e)}`,[zz,1],{a,b,c:cc,d,e});}
+ else if(v==='361'){let a,b,d,e,zz,cc;do{a=int(1,5);b=int(2,9);d=int(2,9);e=int(2,9);zz=int(1,3)*pick([1,-1]);cc=-d*(zz+1)+a**3*(-zz-b);}while(Math.abs(cc)>20||cc===0);
+  fin(`(−${a})³(−x − ${b}) ${sg(cc)} |−${Math.abs(cc)}| = −${d}(x + ${e}⁰)`,[zz,1],{a,b,c:cc,d,e});}
+ else if(v==='362'){let a,b,cc,d,e,f,g,zz,hh;do{a=int(2,9);b=int(2,9);cc=int(2,9);d=int(2,9);e=int(2,9);f=int(2,9);g=int(2,9);zz=int(1,3)*pick([1,-1]);hh=-a*zz+b*cc*zz+b*d-e*f*zz+e*g;}while(Math.abs(hh)>20||-a+b*cc-e*f===0);
+  fin(`−[−(−${a}x)] + ${b}(${cc}x + ${d}) = ${e}(${f}x − ${g}) ${sg(hh)} ${Math.abs(hh)}`,[zz,1],{a,b,c:cc,d,e,f,g,h:hh});}
+ else if(v==='363'){const a=int(2,5);let b,cc,d,f,g,zz,e;do{b=int(1,5);cc=int(2,5);d=int(1,5);f=int(2,5);g=int(2,5);zz=int(1,5)*pick([1,-1]);e=-a*((zz-b)*(-cc)-d*d)-f-g*zz;}while(e<1||e>20||a*cc===g);
+  fin(`−${a}[(${X} − ${b})(−${cc}) − ${d}²] − [−(−${e})] = −(−${f} − ${g}${X})`,[zz,1],{a,b,c:cc,d,e,f,g});}
+ else if(v==='364'){const a=int(2,5),b=int(1,5),cc=int(2,5),zz=int(1,5)*pick([1,-1]);let d=b*b-a*zz+zz-cc*zz,i=d;while(Math.trunc(i/a)*a!==i)i-=Math.sign(i);let e=i/a;d=d-e*a;while(d===0||e===0){e+=1;d-=a;}
+  fin(`−[−|−${a}|(${minus(-e)} − x) − ${b}²] = −[(${minus(-d)} + x) − ${cc}x]`,[zz,1],{a,b,c:cc,d,e});}
+ else if(v==='365'){let a,b,cc,d,e,f,g,hh,zz,i;do{a=int(2,3);b=int(2,3);cc=int(2,3);d=int(2,5);e=int(2,5);f=int(2,5);g=int(2,6);hh=int(1,3);zz=int(-5,5);i=a*b**cc*zz-a*b**cc*d-a*e*e*zz+a*e*f-g*zz-hh*zz;}while(Math.abs(i)>40||Math.abs(i)<2);
+  const j=Math.trunc(i/2),i2=i-j;fin(`−${a}[−${b}${S.sup(cc)}(x − ${d}x⁰) − ${e}(−${e}x + ${f})] − (${g}x ${sg(i2)} ${Math.abs(i2)}) = ${hh}x ${sg(j)} ${Math.abs(j)}`,[zz,1],{a,b,c:cc,d,e,f,g,h:hh,i:i2,j});}
+ else if(v==='366'){let a,b,cc,d,e,zz,f;do{a=int(2,5);b=int(2,5);cc=int(2,5);d=int(2,5);e=int(2,5);zz=int(-5,5);f=-a*b+a*cc*zz-d*d*zz;}while(Math.abs(f)>40||Math.abs(f)<1||a*cc-d*d===0);
+  fin(`|−${a}|(−${b} + ${cc}x) − [−(−${d}²)]x = −${e}x[−2⁰ − (−1³)] ${sg(f)} |−${Math.abs(f)}|`,[zz,1],{a,b,c:cc,d,e,f});}
+ else{let a,b,cc,d,e,f,g,H;do{a=int(1,8);b=int(2,20);cc=int(1,8);d=int(1,8);e=int(1,8);f=-int(1,8);g=int(1,8);H=a-b*(cc-d-e);}while(H===0||new Set([g-b*f,g+b*f,-g+b*f,-g-b*f].map(x=>x/H)).size<4);
+  const zr=red(g-b*f,H);str=`${a}a = ${b}(${cc}a − [${d}a + (${e}a ${sg(f)} ${Math.abs(f)})]) + ${g}`;z=zr;p={a,b,c:cc,d,e,f,g};
+  t=T(`Solve: ${str}. Give an exact answer as a mixed number, fraction or integer.`,[num(...zr,'any')],`a = ${mixT(...zr)}`,`Simplify the grouping symbols from the inside out, then collect the a terms: a = ${mixT(...zr)}.`,p);
+  t.choices=opts(t,[{value:mixT(g+b*f,H),mistake:'Used the wrong sign for the number in the parentheses'},{value:mixT(-g+b*f,H),mistake:`Moved ${g} to the wrong side`},{value:mixT(-g-b*f,H),mistake:'Used the wrong signs for both numbers'}],h);break;}
+ t=T(`Solve: ${str}${z[1]===1?'':'. Give an exact answer as a mixed number, fraction or integer'}`,[num(...z,'any')],`${str.includes(X+' ')||str.includes(X+')')?X:'x'} = ${mixT(...z)}`,`Simplify each side, starting with the innermost grouping symbols, then solve: ${mixT(...z)}.`,p);
  break;}
 default:throw Error('Unknown Algebra 1 port recipe '+c.recipe);}
 if(v&&t.parameters&&t.parameters.form===undefined)t.parameters.form=v;   // the record's variant, for the oracles
