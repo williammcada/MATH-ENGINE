@@ -35,7 +35,21 @@ const sameNum=(a,[p,q])=>!!a&&a[0]*q===p*a[1];
 const PLN=['','tenths','hundredths','thousandths','ten-thousandths','hundred-thousandths','millionths'];
 // w and f/10^k in words: "forty-five and seven hundredths".
 function decWords(w,f,k){return(w?words(w)+' and ':'')+words(f)+' '+(f===1?PLN[k].replace(/s$/,''):PLN[k]);}
+const isPrime=x=>{if(x<2)return false;for(let d=2;d*d<=x;d++)if(x%d===0)return false;return true;};
+const smallFactor=x=>{for(let d=2;d*d<=x;d++)if(x%d===0)return d;return x;};
+const letterRun2=(int,k,ban)=>{const L=[...'abcdefghijklmnopqrstuvwxyz'].filter(ch=>!ban.includes(ch)),st=int(0,L.length-k);return L.slice(st,st+k);};
+const numWordCap=x=>{const w=words(x);return w[0].toUpperCase()+w.slice(1);};
+// n() with an exact-number answer list whose parts may be decimals.
+const n2=(prompt,vals,sol,p)=>{const t=n(prompt,vals,sol,p,'decimal');t.answer.display=vals.map(v=>U.dec(v)).join('; ');return t;};
 const wnorm=x=>String(x).toLowerCase().replace(/[‐-―-]/g,' ').replace(/[.,;:]/g,' ').replace(/\s+/g,' ').trim();
+
+// A coordinate grid from −R to R with labelled points: pts = [[x, y, label]]. extra(X,Y) adds more drawing.
+function grid(pts,R=10,label='Coordinate plane',extra=null,sc=13){const O=(R+1)*sc+8,X=v=>O+v*sc,Y=v=>O-v*sc,W=2*O;let b='';
+ for(let v=-R;v<=R;v++)b+=ln(X(v),Y(-R),X(v),Y(R),{w:0.4,color:'#c3cacf'})+ln(X(-R),Y(v),X(R),Y(v),{w:0.4,color:'#c3cacf'});
+ b+=ln(X(-R-0.8),O,X(R+0.8),O,{w:1.2,start:1,end:1})+ln(O,Y(-R-0.8),O,Y(R+0.8),{w:1.2,start:1,end:1})+tx(X(R+0.7),O+15,'x',{italic:1,size:12})+tx(O-11,Y(R+0.5),'y',{italic:1,size:12});
+ for(let v=-R;v<=R;v++)if(v&&(R<=6||v%2===0))b+=tx(X(v),O+13,minus(v),{size:9})+tx(O-5,Y(v)+3,minus(v),{size:9,anchor:'end'});
+ if(extra)b+=extra(X,Y);for(const [x,y,l] of pts){b+=dot(X(x),Y(y));if(l)b+=tx(X(x)+(x<0?-6:6),Y(y)-6,l,{size:11,anchor:x<0?'end':'start'});}
+ return svg(b,label,W,W);}
 
 // ---------- recipes ----------
 function build(c,h){const {int,pick}=h;let t;
@@ -194,11 +208,11 @@ case 'ah-word-lengthen':{let a,b;do{a=int(210,590);b=int(41,95);}while(a%5===0||
  t=whole(`${ctx[0]} is ${a} ${ctx[3]} long. By how many ${ctx[3]} must ${ctx[1]} be lengthened if the ${ctx[2]} to make it ${hh} ${ctx[3]} long?`,b,`${hh} − ${a} = ${b} ${ctx[4]}.`,{a,h:hh,g});
  t.choices=wrongOnly(t,[{value:String(b+10*int(2,5)),mistake:'Regrouping slip in the tens'},{value:String(b-10),mistake:'Regrouping slip in the tens'},{value:String(b+100),mistake:'Regrouping slip in the hundreds'}]);break;}
 // Lesson 6
-case 'ah-decimal-words':{// (a) three decimal places; (b) a seven-digit whole number and hundred-thousandths
- let A;do{A=int(100112,333999);}while(A%10===0);let B=int(1111111,9999999),C;do{C=int(11111,99999);}while(C%10===0);
- const pa=decWords(Math.floor(A/1000),A%1000,3),pb=decWords(B,C,5);
- t={prompt:`Use words to write these numbers: (a) ${ds(A,3)} (b) ${ds(B*100000+C,5)}. Separate the two answers with a semicolon.`,answer:{kind:'ah-words',parts:[pa,pb],value:`(a) ${pa}; (b) ${pb}`},solution:`Read the whole number, say "and" for the decimal point, then read the decimal digits and name the last place: (a) ${pa}; (b) ${pb}.`,parameters:{A,B,C}};
- t.choices=wrongOnly(t,[{value:`(a) ${pa.replace(' and ',' ')}; (b) ${pb.replace(' and ',' ')}`,mistake:'Left out "and" for the decimal point'},{value:`(a) ${pa.replace('thousandths','hundredths')}; (b) ${pb.replace('hundred-thousandths','ten-thousandths')}`,mistake:'Named the wrong last place'},{value:`(a) ${words(A)}; (b) ${words(B)}`,mistake:'Read the digits as one whole number'}]);break;}
+case 'ah-decimal-words':{// either a number with three decimal places or a seven-digit whole number with hundred-thousandths
+ const big=int(0,1)===1;let A,B,C,shown,ref;if(!big){do{A=int(100112,333999);}while(A%10===0);shown=ds(A,3);ref=decWords(Math.floor(A/1000),A%1000,3);}else{B=int(1111111,9999999);do{C=int(11111,99999);}while(C%10===0);shown=ds(B*100000+C,5);ref=decWords(B,C,5);}
+ const whole=big?B:Math.floor(A/1000),frac=big?C:A%1000,k=big?5:3;
+ t={prompt:`Use words to write this number: ${shown}`,answer:{kind:'words',value:ref},solution:`Read the whole number, say "and" for the decimal point, then read the decimal digits and name the last place: ${ref}.`,parameters:{big,A,B,C}};
+ t.choices=wrongOnly(t,[{value:ref.replace(' and ',' '),mistake:'Left out "and" for the decimal point'},{value:decWords(whole,frac,k-1),mistake:'Named the wrong last place'},{value:`${words(whole)} point ${words(frac)}`,mistake:'Read the decimal part as a whole number after "point"'}]);break;}
 case 'ah-words-to-decimals':{// (a) whole and hundredths; (b) about 100–200 and thousandths
  let a,b;do{a=int(21,99);b=int(1,99);}while(a%10===0||b%10===0);const z1=100*a+b,cc=int(1,9),d=int(1,9),e=int(1,9),z2=1000*(100+cc+10*d+e)+100*int(1,9)+10*int(1,9)+int(1,9);
  t=n(`Use digits and a decimal point to write these numbers: (a) ${decWords(a,b,2)} (b) ${decWords(Math.floor(z2/1000),z2%1000,3)}`,[R(z1,100),R(z2,1000)],`"and" marks the decimal point; the last place named tells how many decimal places: (a) ${ds(z1,2)}; (b) ${ds(z2,3)}.`,{z1,z2},'decimal');
@@ -311,13 +325,6 @@ case 'ah-classify-angle':{// an angle drawn with its two rays; right angles carr
  const type=z<90?'acute':z===90?'right':z<180?'obtuse':'straight',rad=z*Math.PI/180,F=Fig();F.seg([0,0],[9,0],{end:1}).seg([0,0],[9*Math.cos(rad),9*Math.sin(rad)],{end:1}).dot([0,0]);if(z===90)F.right([0,0],0,90);
  t=text(`Classify this angle as acute, right, obtuse, or straight.`,type,`The angle measures ${z===90?'exactly 90°':z===180?'180°':z<90?'less than 90°':'more than 90° and less than 180°'}, so it is ${type}.`,{z},F.render(`An angle of ${z} degrees`,240,140),[type+' angle','an '+type+' angle','a '+type+' angle']);
  t.choices=['acute','right','obtuse','straight'].filter(x=>x!==type).map(x=>({value:x,mistake:{acute:'Called an angle acute without checking it is less than a right angle',right:'Called the angle right without a right-angle mark',obtuse:'Called an angle obtuse without checking it is greater than a right angle',straight:'Called the angle straight although its rays are not opposite'}[x]}));break;}
-case 'ah-perimeter-l':{// an L-shaped figure, all angles right angles, every side labelled
- let left,down,top,top2;do{left=int(5,9);down=int(2,left-1);top=int(1,4);top2=int(Math.min(4,top+2),11-top);}while(top===left-down||top2-top<=1||left/top2+0.4>1.3);
- const m=int(0,5),unit=['units','centimeters','meters','inches','feet','yards'][m],u2=['units','cm','m','in.','ft','yd'][m],z=2*left+2*top2;
- const F=Fig();F.poly([[0,0],[0,left],[top,left],[top,left-down],[top2,left-down],[top2,0]]);
- F.txt([top/2,left+0.5],String(top)).txt([(top+top2)/2,left-down+0.5],String(top2-top)).txt([top+0.4,left-down/2],String(down),{anchor:'start'}).txt([-0.4,left/2],String(left),{anchor:'end'}).txt([top2/2,-0.9],String(top2)).txt([top2+0.4,(left-down)/2],String(left-down),{anchor:'start'});
- t=whole(`Find the perimeter of this figure. Dimensions are in ${unit}. All angles are right angles.`,z,`Add all six sides: ${top} + ${top2-top} + ${down} + ${left-down} + ${top2} + ${left} = ${z} ${u2}.`,{left,down,top,top2},F.render('An L-shaped figure with all six sides labelled',260,220));
- t.choices=wrongOnly(t,[{value:String(left*top2),mistake:'Found the area of the enclosing rectangle'},{value:String(left+top2),mistake:'Added only two sides'},{value:String(z-down),mistake:'Left out one side'}]);break;}
 case 'ah-perimeter-notch':{// a rectangle with a notch cut from the top; every side labelled with its true length
  const rows=[[21,[4,5,6]],[27,[5,6,7,8]],[30,[6,7,8,9,10]],[36,[7,8,9,10,11]],[39,[8,9,10,11,12,13]],[45,[9,10,11,12,13,14,15]],[51,[10,11,12,13,14,15,16]]],[a,bs]=pick(rows),b=pick(bs),f=a-b,cc=a/3,p=Math.round(f/2);
  const k=int(0,3),unit=['inches','feet','meters','centimeters'][k],u2=['in.','ft','m','cm'][k],z=2*a+2*f+2*p;
@@ -347,6 +354,8 @@ return t;}
 function ownCheck(q,s){const a=q.answer,okv=v=>({answerCorrect:!!v,fullOutcomeVerified:false});
  if(a.kind==='ah-seq'){const toks=s.replace(/<|;/g,',').split(',').map(x=>x.trim()).filter(Boolean);if(toks.length!==a.values.length)return okv(false);return okv(toks.every((x,i)=>sameNum(parseNum(x),a.values[i])));}
  if(a.kind==='ah-lists'){const ps=s.split(';');if(ps.length!==a.lists.length)return okv(false);return okv(ps.every((p,i)=>{const r=p.replace(/^\s*\([a-z]\)\s*/i,'').replace(/(\d),(?=\d{3}(?!\d))/g,'$1').replace(/\band\b/gi,',');if(/[^\d,\s]/.test(r))return false;const g=(r.match(/\d+/g)||[]).map(Number),w=a.lists[i];return g.length===w.length&&new Set(g).size===g.length&&w.every(x=>g.includes(x));}));}
+ if(a.kind==='ah-den'){const ps=s.split(';');if(ps.length!==a.parts.length)return okv(false);return okv(ps.every((p,i)=>{const m=p.replace(/^\s*\([a-z]\)\s*/i,'').trim().match(/^(\d+)\s*\/\s*(\d+)$/);return !!m&&Number(m[1])===a.parts[i][0]&&Number(m[2])===a.parts[i][1];}));}
+ if(a.kind==='ah-points'){const ps=s.split(';');if(ps.length!==a.points.length)return okv(false);return okv(ps.every((p,i)=>{const m=p.replace(/^\s*\([a-d]\)\s*(?=\()/i,'').match(/^\s*\(?\s*(-?\d+)\s*,\s*(-?\d+)\s*\)?\s*$/);return !!m&&Number(m[1])===a.points[i][0]&&Number(m[2])===a.points[i][1];}));}
  if(a.kind==='ah-words'){const ps=s.split(';');if(ps.length!==a.parts.length)return okv(false);return okv(ps.every((p,i)=>wnorm(p.replace(/^\s*\([a-z]\)\s*/i,''))===wnorm(a.parts[i])));}
  return undefined;}
 function check(q,response){let s=String(response??'');if(s.length>600)return{answerCorrect:false,fullOutcomeVerified:false};
@@ -356,7 +365,7 @@ function check(q,response){let s=String(response??'');if(s.length>600)return{ans
  const own=ownCheck(q,s2);if(own!==undefined)return own;
  if(s2!==s)return P().check({...q,givens:{...(q.givens||{}),recipe:'ah-'}},s2);
  return undefined;}
-function answerText(q){const a=q.answer;if(a&&(a.kind==='ah-seq'||a.kind==='ah-lists'||a.kind==='ah-words'))return a.value;return undefined;}
+function answerText(q){const a=q.answer;if(a&&['ah-seq','ah-lists','ah-words','ah-den','ah-points'].includes(a.kind))return a.value;return undefined;}
 
 const api=Object.freeze({key:'algebra-half',course:'Algebra 1/2',prefix:'ah-',batchPrefix:'AH',catalog,build,check,answerText});
 if(common)module.exports=api;root.MathPortAlgebraHalf=api;

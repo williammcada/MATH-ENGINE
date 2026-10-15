@@ -65,7 +65,7 @@ const oracle={
  'ah-word-runners':(q,p)=>eq(q,0,p.z-p.x),
  'ah-word-price':(q,p)=>eq(q,0,p.a*1000+p.c+p.b+p.d),
  'ah-word-lengthen':(q,p)=>eq(q,0,p.h-p.a),
- 'ah-decimal-words':(q,p)=>q.answer.parts.length===2&&norm(q.answer.parts[0])===norm(sayDec(Math.floor(p.A/1000),p.A%1000,3))&&norm(q.answer.parts[1])===norm(sayDec(p.B,p.C,5)),
+ 'ah-decimal-words':(q,p)=>norm(q.answer.value)===norm(p.big?sayDec(p.B,p.C,5):sayDec(Math.floor(p.A/1000),p.A%1000,3)),
  'ah-words-to-decimals':(q,p)=>eqs(q,[[p.z1,100],[p.z2,1000]])&&q.prompt.includes(say(Math.floor(p.z1/100))),
  'ah-ten-thousandths':(q,p)=>eq(q,0,p.B*10000+p.c,10000),
  'ah-decimal-add2':(q,p)=>eq(q,0,p.A+p.D,1000),
@@ -96,7 +96,6 @@ const oracle={
  'ah-angle-definition':(q,p)=>q.answer.reference.toLowerCase().startsWith(['an acute','an obtuse','a right','a straight'][p.k]),
  'ah-angle-degrees':(q,p)=>p.first?eqs(q,[[180,1],[90,1]]):eqs(q,[[90,1],[180,1]]),
  'ah-classify-angle':(q,p)=>q.answer.value===(p.z<90?'acute':p.z===90?'right':p.z<180?'obtuse':'straight')&&!(p.z>=80&&p.z<=100&&p.z!==90),
- 'ah-perimeter-l':(q,p)=>eq(q,0,perim([[0,0],[0,p.left],[p.top,p.left],[p.top,p.left-p.down],[p.top2,p.left-p.down],[p.top2,0]])),
  'ah-perimeter-notch':(q,p)=>eq(q,0,perim([[0,0],[p.a,0],[p.a,p.f],[p.a-p.c,p.f],[p.a-p.c,p.f-p.p],[p.c,p.f-p.p],[p.c,p.f],[0,p.f]]))&&p.c*3===p.a,
  'ah-divisibility-lists':(q,p)=>p.ord.every((k,i)=>JSON.stringify([...q.answer.lists[i]].sort((x,y)=>x-y))===JSON.stringify(p.T.filter(x=>x%k===0).sort((x,y)=>x-y))),
  'ah-not-divisible':(q,p)=>{const not=p.shown.filter(x=>x%p.k!==0);return not.length===1&&eq(q,0,not[0]);},
@@ -107,7 +106,6 @@ const oracle={
 const wrong={
  'ah-order-line':q=>[q.answer.values.slice().reverse().join(', ')],
  'ah-divisibility-lists':q=>[q.answer.lists.map(l=>l.slice(1).join(', ')).join('; ')],
- 'ah-decimal-words':q=>[q.answer.parts.join(' ')],
 };
 
 H.run({key:'algebra-half',oracle,wrong,instances:Number(process.argv[2]||250)});

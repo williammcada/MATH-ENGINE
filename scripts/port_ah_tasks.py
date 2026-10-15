@@ -87,7 +87,6 @@ TASKS_AH = [
     ('algebra-half-en:node:100', 'ah-angle-definition', None, 'Define a type of angle', 'angles', False),
     ('algebra-half-en:node:101', 'ah-angle-degrees', None, 'Degrees in right and straight angles', 'angles', False),
     ('algebra-half-en:node:102', 'ah-classify-angle', None, 'Classify an angle', 'angles', False),
-    ('algebra-half-en:node:104', 'ah-perimeter-l', None, 'Perimeter of an L-shaped figure', 'perimeter', True),
     ('algebra-half-en:node:105', 'ah-perimeter-notch', None, 'Perimeter of a notched rectangle', 'perimeter', False),
     ('algebra-half-en:node:107', 'ah-divisibility-lists', None, 'Divisibility by 2, 3, 5 and 10', 'number-theory', False),
     ('algebra-half-en:node:108', 'ah-not-divisible', None, 'Number not divisible by 2, 3, 5 or 10', 'number-theory', False),
