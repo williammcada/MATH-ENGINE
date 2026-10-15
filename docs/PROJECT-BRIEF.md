@@ -1,3 +1,7 @@
+## Current checkpoint — Engine 0.35.0-rc.1 implementation checkpoint (2026-10-15)
+
+Practice catalog entries now carry their recorded standards (228 of 1,441 bank entries, all 8/7), and 8/7 Lesson 9.6 no longer produces negative or zero answers. Practice-layer, main and phase-2 tests pass; Math Arcade v0.9.0 pins this bundle. See [change spec](change-specs/v0.35.0-practice-standards.md). Not yet a verified release. Earlier checkpoints below are historical.
+
 ## Current checkpoint — Related Concepts verified (2026-10-09)
 
 Engine 0.33.0-rc.1 / Studio 0.35.0-rc.1 maps all 2,184 working entries across Grade 3 through Algebra 2. The teacher finder supports concept search, course filters, explained connections, repeated-generator grouping and batch selection into existing packets. All 331 Grade 5 codes and prior progression relationships remain.
