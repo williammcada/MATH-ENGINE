@@ -1,0 +1,545 @@
+{
+ "batch": "I4-2 intermediate-4 lessons 6-10 and investigation 1",
+ "date": "2026-10-16",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00001",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00001"
+   ],
+   "note": "Ported: A set of odd numbers."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00002",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00002"
+   ],
+   "note": "Ported: A total that fits two equal rows."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00003",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00003"
+   ],
+   "note": "Ported: Add two-digit dollar amounts in a column, with regrouping."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00004",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00004"
+   ],
+   "note": "Ported: Add two dollar amounts in a story."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00005",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00005"
+   ],
+   "note": "Ported: Number shown by hundred flats and unit squares."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00006",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00060",
+   "note": "Same demand as the port task it points to (Write the fact family for three numbers): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00007",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00007"
+   ],
+   "note": "Ported: The difference when a small number is subtracted."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00017",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00017"
+   ],
+   "note": "Ported: A total that cannot fit two equal rows."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00018",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00018"
+   ],
+   "note": "Ported: Add two-digit dollar amounts in a row, with regrouping."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00019",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00019"
+   ],
+   "note": "Ported: Add dollar amounts in a column, total near $100."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00020",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00020"
+   ],
+   "note": "Ported: Add two-digit numbers in a column, with regrouping."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00021",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00021"
+   ],
+   "note": "Ported: Add two dollar amounts with a total over $100."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00022",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00022"
+   ],
+   "note": "Ported: Add a one-digit dollar amount in a column, with regrouping."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00023",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00023"
+   ],
+   "note": "Ported: Add two-digit dollar amounts in a row."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00024",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00005",
+   "note": "Same demand as the port task it points to (Number shown by hundred flats and unit squares): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00025",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00025"
+   ],
+   "note": "Ported: Write a three-digit number from words."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00026",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00026"
+   ],
+   "note": "Ported: Subtraction facts in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00027",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00026",
+   "note": "Same demand as the port task it points to (Subtraction facts in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00028",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00028"
+   ],
+   "note": "Ported: Subtract a one-digit number from a number in the twenties."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00058",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00058"
+   ],
+   "note": "Ported: Finish a fact family."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00059",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00059"
+   ],
+   "note": "Ported: Are two facts in the same fact family?."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00060",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00060"
+   ],
+   "note": "Ported: Write the fact family for three numbers."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00061",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00163",
+   "note": "Same demand as the port task it points to (Write a three-digit number in words): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00062",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00062"
+   ],
+   "note": "Ported: Is a number even (or odd): yes or no."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00063",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00063"
+   ],
+   "note": "Ported: A set of even numbers."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00064",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00064"
+   ],
+   "note": "Ported: Write an odd or even number in a range."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00065",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00001",
+   "note": "Same demand as the port task it points to (A set of odd numbers): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00066",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00167",
+   "note": "Same demand as the port task it points to (Is a number odd or even): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00067",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00067"
+   ],
+   "note": "Ported: Name the set of numbers graphed."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00068",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00068"
+   ],
+   "note": "Ported: Compare two negative numbers."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00069",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00069"
+   ],
+   "note": "Ported: Next three terms and the tenth term of a sequence."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00070",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00070"
+   ],
+   "note": "Ported: Write a comparison with negative numbers in words."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00071",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00071"
+   ],
+   "note": "Ported: Write a comparison with a negative number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00072",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00072"
+   ],
+   "note": "Ported: A remainder is less than the divisor."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00073",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00073"
+   ],
+   "note": "Ported: Which arrow points to a number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00087",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00087"
+   ],
+   "note": "Ported: The third number from least to greatest."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00088",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00088"
+   ],
+   "note": "Ported: Add two dollar amounts in a story, with regrouping."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00089",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00089"
+   ],
+   "note": "Ported: Add 1 to make the next ten in a story."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00090",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00090"
+   ],
+   "note": "Ported: Which number is even."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00091",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00091"
+   ],
+   "note": "Ported: Which arrangement of three digits is even."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00092",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00002",
+   "note": "Same demand as the port task it points to (A total that fits two equal rows): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00093",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00090",
+   "note": "Same demand as the port task it points to (Which number is even): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00094",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00094"
+   ],
+   "note": "Ported: Read a number line marked in tens."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00095",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00095"
+   ],
+   "note": "Ported: Read a number line marked in fives."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00096",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00096"
+   ],
+   "note": "Ported: Read a number line marked in twenty-fives."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00138",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00026",
+   "note": "Same demand as the port task it points to (Subtraction facts in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00139",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00026",
+   "note": "Same demand as the port task it points to (Subtraction facts in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00140",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00025",
+   "note": "Same demand as the port task it points to (Write a three-digit number from words): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00141",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00025",
+   "note": "Same demand as the port task it points to (Write a three-digit number from words): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00142",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00142"
+   ],
+   "note": "Ported: Add two two-digit numbers written in words."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00143",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00025",
+   "note": "Same demand as the port task it points to (Write a three-digit number from words): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00144",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00004",
+   "note": "Same demand as the port task it points to (Add two dollar amounts in a story): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00145",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00023",
+   "note": "Same demand as the port task it points to (Add two-digit dollar amounts in a row): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00146",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00020",
+   "note": "Same demand as the port task it points to (Add two-digit numbers in a column, with regrouping): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00147",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00147"
+   ],
+   "note": "Ported: Make an even number from three digits."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00148",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00148"
+   ],
+   "note": "Ported: Make an even number in a range from four digits."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00149",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00149"
+   ],
+   "note": "Ported: Read a negative number on a number line."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00150",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00150"
+   ],
+   "note": "Ported: Write a comparison sentence with a symbol."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00151",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00151"
+   ],
+   "note": "Ported: Compare two numbers written in words, with a symbol."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00161",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00060",
+   "note": "Same demand as the port task it points to (Write the fact family for three numbers): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00162",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00060",
+   "note": "Same demand as the port task it points to (Write the fact family for three numbers): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00163",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00163"
+   ],
+   "note": "Ported: Write a three-digit number in words."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00164",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00163",
+   "note": "Same demand as the port task it points to (Write a three-digit number in words): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00165",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00163",
+   "note": "Same demand as the port task it points to (Write a three-digit number in words): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00166",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00163",
+   "note": "Same demand as the port task it points to (Write a three-digit number in words): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00167",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00167"
+   ],
+   "note": "Ported: Is a number odd or even."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00168",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00168"
+   ],
+   "note": "Ported: Compare three-digit numbers."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00169",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00168",
+   "note": "Same demand as the port task it points to (Compare three-digit numbers): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00170",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00168",
+   "note": "Same demand as the port task it points to (Compare three-digit numbers): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00171",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00171"
+   ],
+   "note": "Ported: Compare numbers written in words."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00172",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00172"
+   ],
+   "note": "Ported: Compare two differences."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00173",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00173"
+   ],
+   "note": "Ported: Compare a sum with a product."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00174",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00174"
+   ],
+   "note": "Ported: Compare two sums."
+  }
+ ]
+}

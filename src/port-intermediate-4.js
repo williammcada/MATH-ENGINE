@@ -29,8 +29,9 @@ function names(h,k){const out=[];while(out.length<k){const x=h.pick(NAMES);if(!o
 // Choices: the source's distractors (each with its named mistake) that the checker rejects, topped up from the
 // fallback list when a source distractor coincides with the key or another choice. Non-positive numbers are dropped.
 // Answer kinds of this course are checked here, because the task has no givens yet while its choices are built.
-// Zero is kept only when zeroOk (digits); negative numbers are always dropped.
-function mc(h,t,list,fallback=[],zeroOk=false){const chk=(q,v)=>{const r=check(q,v);return r!==undefined?r:h.check(q,v);},ok=x=>!(typeof x.value==='number'&&!(zeroOk?x.value>=0:x.value>0));let ch=S.wrongOnlyBy(chk,t,list.filter(ok));
+// Zero is kept only when zeroOk is true (digits); negative numbers only when zeroOk is 'any' (integers).
+// A question with only one possible wrong answer (yes or no, odd or even) gets no choices: it stays free response.
+function mc(h,t,list,fallback=[],zeroOk=false){const chk=(q,v)=>{const r=check(q,v);return r!==undefined?r:h.check(q,v);},ok=x=>!(typeof x.value==='number'&&!(zeroOk==='any'||(zeroOk?x.value>=0:x.value>0)));let ch=S.wrongOnlyBy(chk,t,list.filter(ok));
  for(const x of fallback.filter(ok)){if(ch.length>=3)break;const v=String(x.value);if(ch.some(c=>String(c.value)===v)||chk(t,v).answerCorrect)continue;ch.push(x);}
  if(ch.length<2)throw Error('Intermediate 4: too few distractors for '+t.prompt);t.choices=ch;return t;}
 const near=(z,step=1)=>[{value:z+step,mistake:'Counting slip: one step too many'},{value:z-step,mistake:'Counting slip: one step too few'},{value:z+2*step,mistake:'Counting slip: two steps too many'}];
@@ -72,6 +73,9 @@ R['i4-add-story']=(v,{int,pick},h)=>{
  if(v==='two-small'){let a,b;do{a=int(2,8);b=int(2,8);}while(a===b);const [A,B]=names(h,2),z=a+b;
   const prompt=pick([`${A} was at the petting zoo. ${A} saw ${a} rabbits in one pen and ${b} more in another pen. How many rabbits did ${A} see in all?`,`${A} caught ${a} grasshoppers. ${B} caught ${b} grasshoppers. How many grasshoppers did they catch in all?`,`${A} solved ${a} problems before lunch and ${b} problems after lunch. Altogether how many problems did ${A} solve?`]);
   return mc(h,num(prompt,z,`${a} + ${b} = ${z}.`,{a,b}),[{value:Math.abs(a-b),mistake:'Subtracted the two numbers instead of adding'},{value:z+1,mistake:'Counted on one too many'},{value:z-1,mistake:'Counted on one too few'}]);}
+ if(v==='two-2digit'){let a,b;do{a=int(21,79);b=int(11,29);}while(a%10+b%10>9||a+b>99);
+  const prompt=pick([`An aquarium has ${W(a)} angel fish and ${W(b)} butterfly fish. How many fish are in the aquarium?`,`A jar holds ${W(a)} red marbles and ${W(b)} blue marbles. How many marbles are in the jar?`,`A park has ${W(a)} oak trees and ${W(b)} maple trees. How many trees are in the park?`]);
+  return mc(h,num(prompt,a+b,`${a} + ${b} = ${a+b}.`,{a,b}),[{value:a-b,mistake:'Subtracted instead of adding'},{value:a+b+10,mistake:'Carried a ten that was not there'},{value:a+b-1,mistake:'Slip adding the ones'}]);}
  if(v==='three-2digit'||v==='three-2digit-over'){const over=v.endsWith('over');let a,b,c,z;
   do{a=int(11,49);b=int(11,49);c=over?int(50,90):int(11,49);z=a+b+c;}while(new Set([a,b,c]).size<3||(over?z<101||z>199:z>99));
   const [thing,p1,p2,p3,q]=pick([['books','were on the top bookshelf','were on the second shelf','were on the third shelf','Altogether how many books were on those three shelves?'],['students','sat in the first row','sat in the second row','sat in the third row','Altogether how many students sat in the first three rows?'],['students','were in room 5','were in room 7','were in room 9','How many students were in all three rooms?']]);
@@ -211,6 +215,119 @@ R['i4-dates']=(v,{int,pick},h)=>{const [A]=names(h,1);
 R['i4-order-least']=(v,{int},h)=>{let a;do{const base=100*int(1,7)+int(15,59);a=[base,base+int(-10,10),base+int(-10,10),base+int(-10,10)];}while(new Set(a).size<4);const s=[...a].sort((x,y)=>x-y),onesLow=[...a].sort((x,y)=>x%10-y%10)[0];
  return mc(h,num(`If you put the numbers ${a.join(', ')} in order from smallest to largest, which number would be first?`,s[0],`In order: ${s.join(', ')}. The first is ${s[0]}.`,{nums:a}),[{value:s[3],mistake:'Chose the largest number instead of the smallest'},{value:s[1],mistake:'Chose the second number in order'},{value:onesLow,mistake:'Compared only the ones digits'}],[{value:s[2],mistake:'Chose the third number in order'}]);};
 
+// Batch I4-2
+// A number line with tick marks every `minor`, labels on the values in `labels`, and labelled arrows above.
+function tickLine(lo,hi,minor,labels,arrows){const Wd=440,x=v=>30+(v-lo)*(Wd-60)/(hi-lo),base=arrows.length?92:40;let b=ln(8,base,Wd-8,base,{start:1,end:1});
+ for(let v=lo;v<=hi+1e-9;v+=minor){const big=labels.includes(v);b+=ln(x(v),base-(big?9:6),x(v),base+(big?9:6),{w:big?1.6:1});if(big)b+=tx(x(v),base+28,S.minus(v),{size:16});}
+ for(const a of arrows){b+=ln(x(a.v),base-58,x(a.v),base-12,{w:1.8,end:1});if(a.label)b+=tx(x(a.v),base-64,a.label,{size:16});}
+ return svg(b,`Number line from ${lo} to ${hi} with tick marks every ${minor}`+(arrows.length?`; ${arrows.length===1&&!arrows[0].label?'an arrow points to a tick mark':'arrows '+arrows.map(a=>a.label).join(', ')+' point to tick marks'}`:''),Wd,base+40);}
+// Hundred flats (10 by 10 grids) and unit squares.
+function blocksFigure(H,O){let b='',x=10;for(let i=0;i<H;i++){for(let k=0;k<=10;k++){b+=ln(x+k*8,10,x+k*8,90,{w:k%10?0.6:1.4})+ln(x,10+k*8,x+80,10+k*8,{w:k%10?0.6:1.4});}x+=92;}
+ for(let j=0;j<O;j++){const c=j%3,r=Math.floor(j/3);b+=`<rect x="${x+c*14}" y="${10+r*14}" width="10" height="10" fill="none" stroke="${INK}" stroke-width="1.2"/>`;}
+ return svg(b,`${H} hundred flat${H>1?'s':''} and ${O} unit squares`,x+48,100);}
+const FACTS=k=>S.factShow(k);
+R['i4-fact-family']=(v,{int,pick},h)=>{let a,b;do{a=int(2,9);b=int(2,9);}while(a===b);const c=a+b,facts=S.familyFacts(a,b,false),show=f=>f.map(FACTS).join('; ');
+ if(v==='finish'){const shown=[facts[0],facts[1],facts[2]],miss=facts[3];
+  const t={prompt:`Finish the fact family: ${shown.map(FACTS).join('; ')}; ____ . Write the missing fact.`,answer:{kind:'i4-fact',fact:miss,value:FACTS(miss)},solution:`The missing fact is ${FACTS(miss)}.`,parameters:{a,b}};
+  return mc(h,t,[{value:FACTS(S.factKey(b,'−',a,b-a>0?b-a:a-b)),mistake:'Subtracted the two addends'},{value:FACTS(facts[2]),mistake:'Repeated a fact already given'},{value:FACTS(S.factKey(c,'+',a,c+a)),mistake:'Added instead of subtracting'}]);}
+ if(v==='same'){const same=int(0,1)===1,f1=facts[2],f2=same?pick([facts[0],facts[1]]):S.factKey(b,'+',c,b+c);
+  const t=S.text(`Are these in the same fact family? ${FACTS(f1)} and ${FACTS(f2)}. Answer yes or no.`,same?'yes':'no',same?`Both use ${a}, ${b} and ${c}.`:`${FACTS(f2)} uses ${b+c}, which is not in the family of ${a}, ${b} and ${c}.`,{a,b,same},'',[same?'yes, they are':'no, they are not']);
+  return t;}
+ const nums=pick([[a,b,c],[a,c,b],[c,a,b]]),t={prompt:`Write the fact family for ${nums.join(', ')}: two addition facts and two subtraction facts. Separate them with semicolons.`,answer:{kind:'fact-family',facts,value:show(facts)},solution:`${show(facts)}.`,parameters:{a,b}};
+ const r3=a+1,r4=b-1;
+ return mc(h,t,[{value:show([S.factKey(a,'+',c,a+c),S.factKey(c,'+',a,a+c),S.factKey(c,'−',a,b),S.factKey(c,'−',b,a)]),mistake:'Added the largest number to another number in the first two facts'},{value:show([S.factKey(r3,'+',r4,c),S.factKey(r4,'+',r3,c),S.factKey(c,'−',r3,r4),S.factKey(c,'−',r4,r3)]),mistake:'Used a different pair of numbers with the same sum'},{value:show([facts[0],facts[1],facts[2],facts[2]]),mistake:'Repeated one subtraction fact instead of writing both'}]);};
+R['i4-subtract']=(v,{int},h)=>{let a,b;if(v==='when-small'){b=int(1,7);a=int(b+5,b+12);}else if(v==='when-20s'){a=int(21,29);b=int(2,8);}else{a=int(11,19);b=int(3,9);if(a-b>9)b=a-int(2,9);}const z=a-b;
+ const t=v==='facts'?num('Subtract.',z,`${a} − ${b} = ${z}.`,{a,b},S.stackFigure([String(a),String(b)],'−',undefined,`${a} minus ${b}, written in a column`)):num(`When ${b} is subtracted from ${a}, what is the difference?`,z,`${a} − ${b} = ${z}.`,{a,b});
+ return mc(h,t,[{value:z-1,mistake:'Counted back one too many'},{value:z+1,mistake:'Counted back one too few'},{value:z+2,mistake:'Counted back two too few'}],[{value:a+b,mistake:'Added instead of subtracting'}]);};
+R['i4-order']=(v,{int},h)=>{let a;do{a=[int(1,9)*100+int(0,9),int(1,9)*100+int(0,9)*10,int(11,99),int(11,99)];}while(new Set(a).size<4||new Set(a.map(n=>String(n).split('').sort().join())).size<4);
+ const order=[...a].sort((x,y)=>x-y),shown=[a[0],a[2],a[1],a[3]];
+ return mc(h,num(`If these numbers are arranged from least to greatest, what is the third number in the list? ${shown.join(', ')}`,order[2],`From least to greatest: ${order.join(', ')}. The third number is ${order[2]}.`,{nums:shown}),[{value:order[1],mistake:'Gave the second number'},{value:order[3],mistake:'Gave the greatest number'},{value:order[0],mistake:'Gave the least number'}]);};
+R['i4-blocks']=(v,{int},h)=>{const H=int(1,3),O=int(2,8),z=100*H+O;
+ return mc(h,num(`Use digits to write the number shown by this model.`,z,`${H} hundred${H>1?'s':''} and ${O} ones is ${z}; there are no tens.`,{hundreds:H,ones:O},blocksFigure(H,O)),[{value:100*H+10*O,mistake:'Read the unit squares as tens'},{value:z+1,mistake:'Counted one unit square too many'},{value:100*H+10*O+1,mistake:'Read the unit squares as tens and miscounted'}]);};
+R['i4-words-number']=(v,{int,pick},h)=>{const H=int(1,9),r=pick([int(11,19),10*int(1,9),int(21,99),int(1,9)]),z=100*H+r,w=W(z);
+ if(v==='to-digits'){const t=num(`Use digits to write the number ${w}.`,z,`${w} is ${H} hundreds and ${r}: ${z}.`,{n:z});
+  return mc(h,t,[{value:Number(`${H}00${r}`),mistake:'Wrote the hundred as 00 before the rest of the number'},{value:100*H+(r<10?10*r:r%10*10+Math.floor(r/10)),mistake:'Mixed up the tens and ones'},{value:H*10+r,mistake:'Left out the hundreds place'}]);}
+ const t={prompt:`Use words to write the number ${z}.`,answer:{kind:'words',value:w},solution:`${z} is ${w}.`,parameters:{n:z}};
+ return mc(h,t,[{value:W(100*H)+' and '+W(r),mistake:'Added "and" between the hundreds and the rest'},{value:W(H)+' '+W(r),mistake:'Left out the word hundred'},{value:W(r>20&&r%10&&r%10!==Math.floor(r/10)?100*H+(r%10)*10+Math.floor(r/10):z+10),mistake:r>20&&r%10&&r%10!==Math.floor(r/10)?'Mixed up the tens and ones':'Wrote the tens one too many'}]);};
+R['i4-money-add']=(v,{int,pick},h)=>{const [A,B]=names(h,2),d=x=>'$'+x;let a,b;
+ const ones=(lo,hi)=>int(lo,hi);
+ if(v==='story-small'){a=10*int(2,5)+int(1,4);b=10*int(2,3)+int(1,4);}else if(v==='story-regroup'){do{a=int(31,69);b=int(11,29);}while(a%10+b%10<10);}else if(v==='story-over'){a=int(61,89);b=int(25,39);}
+ else if(v==='stacked-one'){do{a=10*int(1,6)+int(3,9);b=int(1,9);}while(a%10+b<10);}else if(v==='row-noregroup'){do{a=10*int(1,4)+int(3,7);b=10*int(1,4)+int(1,6);}while(a%10+b%10>9||a===b);}
+ else if(v==='stacked-regroup'){do{a=10*int(2,4)+int(3,9);b=10*int(2,4)+int(1,9);}while(a%10+b%10<10||a===b);}else if(v==='stacked-big'){do{a=10*int(1,2)+int(3,9);b=10*int(5,7)+int(1,9);}while(a%10+b%10<10);}
+ else{do{a=10*int(1,2)+int(3,9);b=10*int(5,6)+int(1,9);}while(a%10+b%10<10);}
+ const z=a+b,stack=['stacked-one','stacked-regroup','stacked-big'].includes(v);let prompt;
+ if(v.startsWith('story')){const [i1,i2]=pick([['skirt','blouse'],['pair of slacks','shirt'],['jacket','hat'],['game','book']]);prompt=v==='story-regroup'?`${A} saved ${d(a)} walking dogs. ${A}'s parents gave ${d(b)} more as a reward. How much money did ${A} have altogether?`:pick([`${A} bought a ${i1} for ${d(a)} and a ${i2} for ${d(b)}. What was the total cost of these items?`,`${A} has ${d(a)}. ${B} has ${d(b)}. Together how much money do they have?`]);}
+ else prompt=stack?'Add.':`Add: ${d(a)} + ${d(b)}.`;
+ const t=num(prompt,z,`${d(a)} + ${d(b)} = ${d(z)}.`,{a,b},stack?S.stackFigure([d(a),d(b)],'+',undefined,`${d(a)} plus ${d(b)}, written in a column`):'',d(z));
+ const carry=a%10+b%10>=10;
+ return mc(h,t,[carry?{value:d(z-10),mistake:'Forgot to carry the ten'}:{value:d(z+10),mistake:'Carried a ten that was not there'},{value:d(z+int(2,5)),mistake:'Added the ones incorrectly'},{value:d(z-int(2,5)),mistake:'Added the ones incorrectly'}],[{value:d(Math.abs(a-b)),mistake:'Subtracted instead of adding'},{value:d(a),mistake:'Gave one of the amounts'}]);};
+R['i4-add-2digit']=(v,{int,pick},h)=>{
+ if(v==='to-ten'){const a=10*int(2,8)+9,b=1,z=a+b,[thing,unit]=pick([['pumpkins','pounds'],['watermelons','pounds'],['dogs','pounds']]);
+  return mc(h,num(`One of the largest ${thing} at the fair weighed ${a} ${unit}. One of the smallest weighed ${b} ${unit === 'pounds' && b===1?'pound':unit}. How much did the two ${thing} weigh together?`,z,`${a} + ${b} = ${z}.`,{a,b},'',`${z} ${unit}`),[{value:`${a-b} ${unit}`,mistake:'Subtracted instead of adding'},{value:`${a} ${unit}`,mistake:'Did not add the small one'},{value:`${(z/2)} ${unit}`,mistake:'Found half of the total'}]);}
+ let a,b;do{a=10*int(1,4)+int(3,9);b=10*int(5,6)+int(1,9);}while(a%10+b%10<10);const z=a+b;
+ return mc(h,num('Add.',z,`${a} + ${b} = ${z}.`,{a,b},S.stackFigure([String(a),String(b)],'+',undefined,`${a} plus ${b}, written in a column`)),[{value:z-10,mistake:'Forgot to carry the ten'},{value:(Math.floor(a/10)+Math.floor(b/10))*10+(a%10+b%10),mistake:'Wrote the ones sum without carrying'},{value:z+10,mistake:'Carried two tens'}]);};
+R['i4-even-odd']=(v,{int,pick},h)=>{const odd=()=>2*int(0,4)+1,even=()=>2*int(0,4);
+ if(v==='which-even'){const dig=pick([2,3]);const mk=par=>{const lo=dig===3?100:10;let x;do{x=int(lo,10*lo-1);}while(x%2!==par);return x;};let e,o;do{e=mk(0);o=[mk(1),mk(1),mk(1)];}while(new Set(o).size<3);
+  return mc(h,num('Which of these numbers is an even number?',e,`${e} ends in ${e%10}, an even digit.`,{even:e,odds:o}),o.map(x=>({value:x,mistake:`Chose a number ending in ${x%10}, an odd digit`})));}
+ if(v==='digits'){let d;do{d=[int(1,9),int(1,9),int(1,9)];}while(new Set(d).size<3||d.filter(x=>x%2===0).length!==1);const ev=d.find(x=>x%2===0),others=d.filter(x=>x!==ev);
+  const e=Number(`${others[0]}${others[1]}${ev}`),wr=[Number(`${ev}${others[0]}${others[1]}`),Number(`${others[1]}${ev}${others[0]}`),Number(`${ev}${others[1]}${others[0]}`)];
+  return mc(h,num(`Which of these numbers is an even number? ${pick([[e,...wr],[wr[0],e,wr[1],wr[2]]]).join(', ')}`,e,`An even number ends in an even digit: ${e}.`,{digits:d}),wr.map(x=>({value:x,mistake:'Looked at the first or middle digit instead of the last'})));}
+ if(v==='two-rows'||v==='two-rows-not'){const not=v==='two-rows-not',[thing]=pick([['math books'],['chairs'],['students']]);let z,o;do{z=not?2*int(10,29)+1:2*int(11,30);o=[0,0,0].map(()=>not?2*int(11,29):2*int(9,27)+1);}while(new Set([z,...o]).size<4);
+  return mc(h,num(`All of the ${thing} were lined up in two equal rows. Which could ${not?'NOT ':''}be the total number of ${thing}?`,z,not?`${z} is odd, so it cannot be split into two equal rows.`:`${z} is even: two equal rows of ${z/2}.`,{total:z,others:o}),o.map(x=>({value:x,mistake:not?`${x} is even, so it can be split into two equal rows`:`${x} is odd, so it cannot be split into two equal rows`})));}
+ if(v==='set-odd'||v==='set-even'){const want=v==='set-odd'?1:0,pool=(par)=>{const s=new Set();while(s.size<4)s.add(par?2*int(0,48)+1:2*int(1,48));return [...s];};
+  const good=pool(want),mix=k=>{const g=pool(want),b=pool(1-want);return [...g.slice(0,4-k),...b.slice(0,k)];};
+  const t={prompt:`Which is a set of ${want?'odd':'even'} numbers?`,answer:{kind:'num-set',set:good,value:good.join(', ')},solution:`Every number in ${good.join(', ')} ends in an ${want?'odd':'even'} digit.`,parameters:{set:good,odd:!!want}};
+  return mc(h,t,[{value:mix(1).join(', '),mistake:`Missed one ${want?'even':'odd'} number in the set`},{value:mix(2).join(', '),mistake:`Missed two ${want?'even':'odd'} numbers in the set`},{value:pool(1-want).join(', '),mistake:`Chose a set of ${want?'even':'odd'} numbers`}]);}
+ if(v==='make-even-3'){let d;do{d=[int(1,9),int(1,9),int(1,9)];}while(new Set(d).size<3||d.filter(x=>x%2===0).length<1);const big=Math.max(...d),lo=100*big;
+  const ok=[];for(const p of [[0,1,2],[0,2,1],[1,0,2],[1,2,0],[2,0,1],[2,1,0]]){const n=Number(p.map(i=>d[i]).join(''));if(n%2===0&&n>lo)ok.push(n);}if(!ok.length)return R['i4-even-odd'](v,{int,pick},h);
+  const t={prompt:`Use the digits ${d.join(', ')} once each to make an even number greater than ${lo}.`,answer:{kind:'i4-digit-build',digits:d,parity:0,lo,hi:null,value:String(Math.max(...ok))},solution:`It must start with ${big} and end in an even digit: ${ok.join(' or ')}.`,parameters:{digits:d,lo}};
+  const odd3=[0,1,2,3,4,5].map(k=>[[0,1,2],[0,2,1],[1,0,2],[1,2,0],[2,0,1],[2,1,0]][k].map(i=>d[i]).join('')).map(Number).filter(n=>n%2===1);
+  return mc(h,t,[...(odd3.length?[{value:Math.max(...odd3),mistake:'Made a large number but it ends in an odd digit'}]:[]),{value:Math.min(...[0,1,2,3,4,5].map(k=>Number([[0,1,2],[0,2,1],[1,0,2],[1,2,0],[2,0,1],[2,1,0]][k].map(i=>d[i]).join('')))),mistake:`Made the smallest number, which is not greater than ${lo}`},{value:Number(`${big}${big}${d.find(x=>x%2===0)}`),mistake:'Used a digit twice'}]);}
+ if(v==='make-even-4'){let d,ok=[],lo,hi;do{d=[int(1,9),int(1,9),int(1,9),int(1,9)];if(new Set(d).size<4)continue;const s=[...d].sort((x,y)=>x-y);lo=1000*s[2]+100*s[1];hi=lo+200;ok=[];
+   const perm=(a)=>a.length<=1?[a]:a.flatMap((x,i)=>perm([...a.slice(0,i),...a.slice(i+1)]).map(r=>[x,...r]));for(const p of perm(d)){const n=Number(p.join(''));if(n%2===0&&n>lo&&n<hi)ok.push(n);}}while(new Set(d).size<4||!ok.length);
+  const t={prompt:`Use the digits ${d.join(', ')} once each to write an even number between ${lo} and ${hi}.`,answer:{kind:'i4-digit-build',digits:d,parity:0,lo,hi,value:String(ok[0])},solution:`Numbers that work: ${ok.join(', ')}.`,parameters:{digits:d,lo,hi}};
+  const perm=(q)=>q.length<=1?[q]:q.flatMap((x,i)=>perm([...q.slice(0,i),...q.slice(i+1)]).map(r=>[x,...r])),oddIn=perm(d).map(p=>Number(p.join(''))).filter(n=>n%2===1&&n>lo&&n<hi);
+  return mc(h,t,[{value:oddIn.length?oddIn[0]:ok[0]+1,mistake:'Ended the number in an odd digit'},{value:Number([...d].sort((x,y)=>y-x).join('')),mistake:'Made the largest number instead of one in the range'},{value:Number([...d].sort((x,y)=>x-y).join('')),mistake:'Made the smallest number instead of one in the range'}]);}
+ if(v==='odd-or-even'){const n=int(101,999),ans=n%2?'odd':'even';return S.text(`Is ${n} an odd number or an even number?`,ans,`${n} ends in ${n%10}, so it is ${ans}.`,{n},'',[ans+' number']);}
+ if(v==='yes-no'){const asked=pick(['even','odd']),n=int(101,899),yes=(n%2===0)===(asked==='even');return S.text(`Is the number ${n} ${asked}? Answer yes or no.`,yes?'yes':'no',`${n} ends in ${n%10}, so it is ${n%2?'odd':'even'}.`,{n,asked},'',[yes?'yes, it is':'no, it is not']);}
+ if(v==='between'){const want=pick(['odd','even']),lo=100*int(11,89),hi=lo+200;const t={prompt:`Write an ${want} number between ${lo} and ${hi}.`,answer:{kind:'i4-in-range',parity:want==='odd'?1:0,lo,hi,value:String(lo+(want==='odd'?101:100))},solution:`Any ${want} number greater than ${lo} and less than ${hi}, for example ${lo+(want==='odd'?101:100)}.`,parameters:{lo,hi,odd:want==='odd'}};
+  return mc(h,t,[{value:lo+(want==='odd'?100:101),mistake:`Wrote an ${want==='odd'?'even':'odd'} number`},{value:hi+(want==='odd'?1:2),mistake:'Wrote a number outside the range'},{value:lo-(want==='odd'?1:2),mistake:'Wrote a number below the range'}]);}
+ const dv=int(2,9),[A]=names(h,1);return {prompt:`If ${A} divides a number by ${dv}, will the remainder be greater than ${dv} or less than ${dv}?`,answer:{kind:'i4-less',value:`The remainder will be less than ${dv}.`},solution:`A remainder is always less than the divisor, ${dv}; otherwise another ${dv} could be taken out.`,parameters:{d:dv}};};
+R['i4-numline']=(v,{int,pick},h)=>{
+ if(v==='which-arrow'){// Arrows sit between tick marks, at least six apart; the asked number is within 1 of one arrow.
+  const lo=10*int(2,8),arr=[lo+2,lo+17,lo+23,lo+34],labs='ABCD',best=int(1,2),target=arr[best]+pick([-1,0,1]);
+  const fig=tickLine(lo-5,lo+40,5,[lo,lo+10,lo+20,lo+30],arr.map((x,i)=>({v:x,label:labs[i]})));
+  const t=S.text(`Which arrow could be pointing to ${target} on this number line?`,`arrow ${labs[best]}`,`${target} is between ${10*Math.floor(target/10)} and ${10*Math.floor(target/10)+10}; arrow ${labs[best]} is the one nearest to it.`,{lo,target,arrows:arr},fig,[labs[best],labs[best].toLowerCase()]);
+  return mc(h,t,[0,1,2,3].filter(i=>i!==best).map(i=>({value:`arrow ${labs[i]}`,mistake:i<best?'Chose an arrow before the number':'Chose an arrow past the number'})));}
+ const cfg={tens:[10,4,[0,4]],fives:[5,10,[0,5,10]],'twenty-fives':[25,8,[0,4,8]],integers:[1,10,[0,5,10]]}[v];const [step,n,labIdx]=cfg;
+ const lo=v==='integers'?-5:v==='twenty-fives'?0:v==='tens'?10*int(1,6):5*int(30,40),hi=lo+n*step,k=pick([...Array(n+1).keys()].filter(i=>!labIdx.includes(i)&&(v!=='integers'||i<5))),z=lo+k*step;
+ const fig=tickLine(lo,hi,step,labIdx.map(i=>lo+i*step),[{v:z,label:''}]);
+ return mc(h,num(pick(['To what number is the arrow pointing?','The arrow is pointing to what number on this number line?']),z,`The tick marks are ${step} apart, so the arrow points to ${S.minus(z)}.`,{lo,step,k},fig),[{value:z+step,mistake:'Counted one tick mark too many'},{value:z-step,mistake:'Counted one tick mark too few'},{value:lo+k,mistake:'Counted each tick mark as 1'}],[{value:-z,mistake:'Read the number on the wrong side of zero'}],'any');};
+R['i4-compare']=(v,{int,pick},h)=>{let a,b,show;
+ const rel=(x,y)=>x>y?'>':x<y?'<':'=';
+ if(v==='three-digit'){do{a=int(100,999);const d=String(a).split(''),[i,j]=pick([[0,1],[1,2],[0,2]]);[d[i],d[j]]=[d[j],d[i]];b=Number(d.join(''));}while(a===b||b<100);show=`${a} ☐ ${b}`;}
+ else if(v==='words'){a=100*int(1,9)+int(0,99);b=a+pick([-1,1])*int(1,30);if(b<100)b=a+11;show=`${W(a)} ☐ ${W(b)}`;}
+ else if(v==='expr-sub'){const p=[int(11,19),int(2,9)],q=[int(11,19),int(2,9)];a=p[0]-p[1];b=q[0]-q[1];if(a===b)q[1]--,b++;show=`${p[0]} − ${p[1]} ☐ ${q[0]} − ${q[1]}`;}
+ else if(v==='expr-mixed'){const p=[int(11,29),int(11,29),int(11,29)],m=int(5,9);a=p[0]+p[1]+p[2];b=m*m;if(a===b)p[0]++,a++;show=`${p.join(' + ')} ☐ ${m} × ${m}`;}
+ else if(v==='expr-add'){const x=int(6,8)*10+int(1,8),y=int(1,3)*10+int(1,8),swap=int(0,2)>0;const x2=swap?10*Math.floor(x/10)+y%10:x+1,y2=swap?10*Math.floor(y/10)+x%10:y;a=x+y;b=x2+y2;show=`${x} + ${y} ☐ ${x2} + ${y2}`;}
+ else{do{a=-int(1,9);b=-int(1,9);}while(a===b);show=`${S.minus(a)} ☐ ${S.minus(b)}`;}
+ const r=rel(a,b),t={prompt:`Compare. Write >, <, or = for the box: ${show}`,answer:{kind:'relation',rel:r,value:r},solution:v.startsWith('expr')?`The left side is ${a} and the right side is ${b}, so ${r}.`:`${S.minus(a)} ${r} ${S.minus(b)}.`,parameters:{a,b}};
+ return mc(h,t,['<','>','='].filter(x=>x!==r).map(x=>({value:x,mistake:x==='='?'Thought the two sides were equal':v==='negatives'?'Compared the numbers without their signs':'Turned the comparison symbol the wrong way'})));};
+R['i4-write-compare']=(v,{int,pick},h)=>{let a,b,phrase;const rel=(x,y)=>x>y?'>':'<',word={'>':'is greater than','<':'is less than'};
+ if(v==='one-digit'){do{a=int(1,9);b=int(1,9);}while(a===b);}else if(v==='three-digit'){do{a=int(100,999);b=int(100,999);}while(a===b);}else{do{a=int(-9,9);b=int(-9,9);}while(a===b||(a>=0&&b>=0));}
+ const r=rel(a,b),nm=x=>x<0?'negative '+W(-x):W(x);
+ if(v==='three-digit')phrase=`Use digits and symbols to compare ${nm(a)} and ${nm(b)}.`;else phrase=`Use digits and a comparison symbol to write “${cap(nm(a))} ${word[r]} ${nm(b)}.”`;
+ const t={prompt:phrase,answer:{kind:'i4-compare-sentence',a,b,rel:r,strict:v!=='three-digit',value:`${S.minus(a)} ${r} ${S.minus(b)}`},solution:`${S.minus(a)} ${r} ${S.minus(b)}.`,parameters:{a,b}};
+ return mc(h,t,[{value:`${S.minus(a)} ${r==='>'?'<':'>'} ${S.minus(b)}`,mistake:'Turned the comparison symbol the wrong way'},{value:`${S.minus(a)} = ${S.minus(b)}`,mistake:'Used the equals sign'},{value:`${S.minus(Math.abs(a))} ${rel(Math.abs(a),Math.abs(b))===r?(r==='>'?'<':'>'):rel(Math.abs(a),Math.abs(b))} ${S.minus(b)}`,mistake:'Left out the negative sign'}]);};
+R['i4-compare-words']=(v,{int},h)=>{let a,b;do{a=int(-9,9);b=int(-9,9);}while(a===b||(a>=0&&b>=0));const r=a>b?'>':'<',nm=x=>x<0?'negative '+W(-x):W(x),w=`${nm(a)} is ${r==='>'?'greater':'less'} than ${nm(b)}`;
+ const t={prompt:`Write the comparison in words: ${S.minus(a)} ${r} ${S.minus(b)}`,answer:{kind:'words',value:w},solution:`${cap(w)}.`,parameters:{a,b}};
+ return mc(h,t,[{value:`${nm(a)} is ${r==='>'?'less':'greater'} than ${nm(b)}`,mistake:'Read the symbol the wrong way'},{value:`${W(Math.abs(a))} is ${r==='>'?'greater':'less'} than ${W(Math.abs(b))}`,mistake:'Left out the word negative'}]);};
+R['i4-graphed-set']=(v,{int},h)=>{const s=[int(-9,-4),int(-3,3),int(4,9)];const t={prompt:'Name the set of numbers graphed. Write the numbers inside braces, for example {1, 2, 3}.',answer:{kind:'num-set',set:s,value:`{${s.map(S.minus).join(', ')}}`},solution:`The dots are at ${s.map(S.minus).join(', ')}.`,parameters:{set:s},svg:S.dotLine(-10,10,s)};
+ return mc(h,t,[{value:`{${s.map(x=>S.minus(Math.abs(x))).join(', ')}}`,mistake:'Left out the negative signs'},{value:`{${[s[0]+1,s[1],s[2]].map(S.minus).join(', ')}}`,mistake:'Misread one dot by one tick mark'},{value:`{${[s[0],s[1],s[2]-1].map(S.minus).join(', ')}}`,mistake:'Misread one dot by one tick mark'}]);};
+R['i4-seq-tenth']=(v,{int},h)=>{const d=int(2,3),s=d*int(5,8),shown=[0,1,2,3].map(i=>s-d*i),next=[4,5,6].map(i=>s-d*i),tenth=s-9*d;
+ const t={prompt:`Find the next three terms and the 10th term of the sequence. ${shown.join(', ')}, . . . Write the three terms, then a semicolon, then the 10th term.`,answer:{kind:'int-sequence',values:[...next,tenth],value:`${next.join(', ')}; ${S.minus(tenth)}`},solution:`The terms go down by ${d}: ${[...shown,...next].join(', ')}, …; the 10th term is ${s} − 9 × ${d} = ${S.minus(tenth)}.`,parameters:{start:s,step:-d}};
+ return mc(h,t,[{value:`${next.join(', ')}; ${S.minus(s-10*d)}`,mistake:'Subtracted the step 10 times instead of 9'},{value:`${next.join(', ')}; ${S.minus(s-8*d)}`,mistake:'Counted the 10th term one place short'},{value:`${next.map(x=>x+2*d).join(', ')}; ${S.minus(tenth)}`,mistake:'Started the next terms too early'}]);};
+
 function build(c,h){const {int,pick,index}=h;const f=R[c.recipe];if(!f)throw Error('Unknown Intermediate 4 port recipe '+c.recipe);return f(c.variant,{int,pick,index},h);}
 
 // ---------- answer kinds that exist only in this course ----------
@@ -224,8 +341,14 @@ function check(q,response){const a=q&&q.answer;if(!a)return undefined;const s=St
   for(const x of parts){const p=parseSentence(x);if(!p||p.total!==a.total||p.adds.length!==3||!sameMultiset(p.adds,a.addends))return fail;seen.add(p.adds.join());}return okv(seen.size===6);}
  if(a.kind==='i4-places'){const got=(s.toLowerCase().replace(/ten-thousands|hundred-thousands/g,'x').match(/\b(ones|tens|hundreds|thousands)\b/g)||[]);if(/\d/.test(s.replace(/\([abc]\)/gi,'')))return fail;return okv(got.length===a.places.length&&got.every((w,i)=>w===a.places[i]));}
  if(a.kind==='i4-month-year'){const r=s.toLowerCase(),years=r.match(/\b\d{4}\b/g)||[],mons=MONTHS.filter(m=>r.includes(m.toLowerCase())||new RegExp('\\b'+m.slice(0,3).toLowerCase()+'\\b').test(r));const digits=r.replace(/\(\w\)/g,'').match(/\d+/g)||[];return okv(digits.length===1&&years.length===1&&Number(years[0])===a.year&&mons.length===1&&mons[0]===MONTHS[a.month-1]);}
+ if(a.kind==='i4-fact'){const got=S.parseFacts(s);return okv(!!got&&got.length===1&&got[0]===a.fact);}
+ if(a.kind==='i4-digit-build'){const r=s.replace(/,/g,'').trim();if(!/^\d+$/.test(r))return fail;const n=Number(r);return okv(sameMultiset(r.split('').map(Number),a.digits)&&n%2===a.parity&&n>a.lo&&(a.hi===null||n<a.hi));}
+ if(a.kind==='i4-in-range'){const r=s.replace(/,/g,'').trim();if(!/^\d+$/.test(r))return fail;const n=Number(r);return okv(n%2===a.parity&&n>a.lo&&n<a.hi);}
+ if(a.kind==='i4-less'){const r=s.toLowerCase();return okv(/\bless\b|\bsmaller\b/.test(r)&&!/greater|bigger|more|larger|equal/.test(r));}
+ if(a.kind==='i4-compare-sentence'){const m=s.replace(/[−–]/g,'-').replace(/\s+/g,'').match(/^(-?\d+)(<|>)(-?\d+)$/);if(!m)return fail;const x=Number(m[1]),y=Number(m[3]),ok=m[2]==='>'?x>y:x<y;
+  return okv(ok&&(m[2]===a.rel&&x===a.a&&y===a.b||!a.strict&&x===a.b&&y===a.a));}
  return undefined;}
-function answerText(q){const a=q&&q.answer;if(a&&['i4-sentence','i4-six-ways','i4-places','i4-month-year'].includes(a.kind))return a.value;return undefined;}
+function answerText(q){const a=q&&q.answer;if(a&&a.kind&&a.kind.startsWith('i4-'))return a.value;return undefined;}
 
 const api=Object.freeze({key:'intermediate-4',course:'Intermediate 4',prefix:'i4-',batchPrefix:'I4',catalog,build,check,answerText});
 if(common)module.exports=api;root.MathPortIntermediate4=api;

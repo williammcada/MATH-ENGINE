@@ -84,6 +84,63 @@ TASKS_I4 = [
     _t('TX4_S01_00057', 'i4-dates', 'month-year', 'The month and year in a written date', 'calendar-time'),
     _t('TX4_S01_00030', 'i4-dates', 'days', 'The number of days in a month', 'calendar-time'),
     _t('TX4_S01_00029', 'i4-dates', 'count-months', 'How many months have 30 or 31 days', 'calendar-time'),
+    # Batch I4-2: Lessons 6-10 and Investigation 1
+    # Lesson 6: Review of Subtraction
+    _t('TX4_S01_00007', 'i4-subtract', 'when-small', 'The difference when a small number is subtracted', 'whole-arithmetic'),
+    _t('TX4_S01_00028', 'i4-subtract', 'when-20s', 'Subtract a one-digit number from a number in the twenties', 'whole-arithmetic'),
+    _t('TX4_S01_00026', 'i4-subtract', 'facts', 'Subtraction facts in a column', 'whole-arithmetic'),
+    _t('TX4_S01_00060', 'i4-fact-family', 'write', 'Write the fact family for three numbers', 'whole-arithmetic'),
+    _t('TX4_S01_00058', 'i4-fact-family', 'finish', 'Finish a fact family', 'whole-arithmetic'),
+    _t('TX4_S01_00059', 'i4-fact-family', 'same', 'Are two facts in the same fact family?', 'whole-arithmetic'),
+    # Lesson 7: Writing Numbers Through 999
+    _t('TX4_S01_00087', 'i4-order', 'third', 'The third number from least to greatest', 'number-order'),
+    _t('TX4_S01_00005', 'i4-blocks', None, 'Number shown by hundred flats and unit squares', 'number-representation'),
+    _t('TX4_S01_00025', 'i4-words-number', 'to-digits', 'Write a three-digit number from words', 'number-representation'),
+    _t('TX4_S01_00163', 'i4-words-number', 'to-words', 'Write a three-digit number in words', 'number-representation'),
+    _t('TX4_S01_00142', 'i4-add-story', 'two-2digit', 'Add two two-digit numbers written in words', 'whole-arithmetic'),
+    # Lesson 8: Adding Money
+    _t('TX4_S01_00088', 'i4-money-add', 'story-regroup', 'Add two dollar amounts in a story, with regrouping', 'whole-arithmetic'),
+    _t('TX4_S01_00004', 'i4-money-add', 'story-small', 'Add two dollar amounts in a story', 'whole-arithmetic'),
+    _t('TX4_S01_00021', 'i4-money-add', 'story-over', 'Add two dollar amounts with a total over $100', 'whole-arithmetic'),
+    _t('TX4_S01_00022', 'i4-money-add', 'stacked-one', 'Add a one-digit dollar amount in a column, with regrouping', 'whole-arithmetic'),
+    _t('TX4_S01_00023', 'i4-money-add', 'row-noregroup', 'Add two-digit dollar amounts in a row', 'whole-arithmetic'),
+    # Lesson 9: Adding with Regrouping
+    _t('TX4_S01_00089', 'i4-add-2digit', 'to-ten', 'Add 1 to make the next ten in a story', 'whole-arithmetic'),
+    _t('TX4_S01_00003', 'i4-money-add', 'stacked-regroup', 'Add two-digit dollar amounts in a column, with regrouping', 'whole-arithmetic'),
+    _t('TX4_S01_00019', 'i4-money-add', 'stacked-big', 'Add dollar amounts in a column, total near $100', 'whole-arithmetic'),
+    _t('TX4_S01_00018', 'i4-money-add', 'row-regroup', 'Add two-digit dollar amounts in a row, with regrouping', 'whole-arithmetic'),
+    _t('TX4_S01_00020', 'i4-add-2digit', 'stacked', 'Add two-digit numbers in a column, with regrouping', 'whole-arithmetic'),
+    # Lesson 10: Even and Odd Numbers
+    _t('TX4_S01_00090', 'i4-even-odd', 'which-even', 'Which number is even', 'number-theory'),
+    _t('TX4_S01_00091', 'i4-even-odd', 'digits', 'Which arrangement of three digits is even', 'number-theory'),
+    _t('TX4_S01_00002', 'i4-even-odd', 'two-rows', 'A total that fits two equal rows', 'number-theory'),
+    _t('TX4_S01_00017', 'i4-even-odd', 'two-rows-not', 'A total that cannot fit two equal rows', 'number-theory'),
+    _t('TX4_S01_00001', 'i4-even-odd', 'set-odd', 'A set of odd numbers', 'number-theory'),
+    _t('TX4_S01_00063', 'i4-even-odd', 'set-even', 'A set of even numbers', 'number-theory'),
+    _t('TX4_S01_00147', 'i4-even-odd', 'make-even-3', 'Make an even number from three digits', 'number-theory'),
+    _t('TX4_S01_00148', 'i4-even-odd', 'make-even-4', 'Make an even number in a range from four digits', 'number-theory'),
+    _t('TX4_S01_00167', 'i4-even-odd', 'odd-or-even', 'Is a number odd or even', 'number-theory'),
+    _t('TX4_S01_00062', 'i4-even-odd', 'yes-no', 'Is a number even (or odd): yes or no', 'number-theory'),
+    _t('TX4_S01_00064', 'i4-even-odd', 'between', 'Write an odd or even number in a range', 'number-theory'),
+    _t('TX4_S01_00072', 'i4-even-odd', 'remainder', 'A remainder is less than the divisor', 'number-theory'),
+    # Investigation 1: Number Lines
+    _t('TX4_S01_00073', 'i4-numline', 'which-arrow', 'Which arrow points to a number', 'number-order'),
+    _t('TX4_S01_00094', 'i4-numline', 'tens', 'Read a number line marked in tens', 'number-order'),
+    _t('TX4_S01_00095', 'i4-numline', 'fives', 'Read a number line marked in fives', 'number-order'),
+    _t('TX4_S01_00096', 'i4-numline', 'twenty-fives', 'Read a number line marked in twenty-fives', 'number-order'),
+    _t('TX4_S01_00149', 'i4-numline', 'integers', 'Read a negative number on a number line', 'integers'),
+    _t('TX4_S01_00150', 'i4-write-compare', 'one-digit', 'Write a comparison sentence with a symbol', 'number-order'),
+    _t('TX4_S01_00151', 'i4-write-compare', 'three-digit', 'Compare two numbers written in words, with a symbol', 'number-order'),
+    _t('TX4_S01_00071', 'i4-write-compare', 'negative', 'Write a comparison with a negative number', 'integers'),
+    _t('TX4_S01_00168', 'i4-compare', 'three-digit', 'Compare three-digit numbers', 'number-order'),
+    _t('TX4_S01_00171', 'i4-compare', 'words', 'Compare numbers written in words', 'number-order'),
+    _t('TX4_S01_00172', 'i4-compare', 'expr-sub', 'Compare two differences', 'number-order'),
+    _t('TX4_S01_00173', 'i4-compare', 'expr-mixed', 'Compare a sum with a product', 'number-order'),
+    _t('TX4_S01_00174', 'i4-compare', 'expr-add', 'Compare two sums', 'number-order'),
+    _t('TX4_S01_00068', 'i4-compare', 'negatives', 'Compare two negative numbers', 'integers'),
+    _t('TX4_S01_00067', 'i4-graphed-set', None, 'Name the set of numbers graphed', 'integers'),
+    _t('TX4_S01_00069', 'i4-seq-tenth', None, 'Next three terms and the tenth term of a sequence', 'sequences'),
+    _t('TX4_S01_00070', 'i4-compare-words', None, 'Write a comparison with negative numbers in words', 'integers'),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -106,6 +163,15 @@ CONSOLIDATED_I4 = {
     'TX4_S01_00085': 'TX4_S01_00084', 'TX4_S01_00159': 'TX4_S01_00157', 'TX4_S01_00036': 'TX4_S01_00133',
     'TX4_S01_00086': 'TX4_S01_00135', 'TX4_S01_00009': 'TX4_S01_00135', 'TX4_S01_00136': 'TX4_S01_00135',
     'TX4_S01_00137': 'TX4_S01_00135', 'TX4_S01_00031': 'TX4_S01_00135', 'TX4_S01_00160': 'TX4_S01_00057',
+    # Batch I4-2
+    'TX4_S01_00006': 'TX4_S01_00060', 'TX4_S01_00161': 'TX4_S01_00060', 'TX4_S01_00162': 'TX4_S01_00060',
+    'TX4_S01_00027': 'TX4_S01_00026', 'TX4_S01_00138': 'TX4_S01_00026', 'TX4_S01_00139': 'TX4_S01_00026',
+    'TX4_S01_00024': 'TX4_S01_00005', 'TX4_S01_00140': 'TX4_S01_00025', 'TX4_S01_00141': 'TX4_S01_00025',
+    'TX4_S01_00143': 'TX4_S01_00025', 'TX4_S01_00165': 'TX4_S01_00163', 'TX4_S01_00164': 'TX4_S01_00163',
+    'TX4_S01_00061': 'TX4_S01_00163', 'TX4_S01_00166': 'TX4_S01_00163', 'TX4_S01_00144': 'TX4_S01_00004',
+    'TX4_S01_00145': 'TX4_S01_00023', 'TX4_S01_00146': 'TX4_S01_00020', 'TX4_S01_00093': 'TX4_S01_00090',
+    'TX4_S01_00092': 'TX4_S01_00002', 'TX4_S01_00065': 'TX4_S01_00001', 'TX4_S01_00066': 'TX4_S01_00167',
+    'TX4_S01_00169': 'TX4_S01_00168', 'TX4_S01_00170': 'TX4_S01_00168',
 }
 
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a
