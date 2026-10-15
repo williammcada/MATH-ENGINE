@@ -44,6 +44,15 @@ const polyVal=(terms,env)=>terms.reduce((acc,[cf,vars])=>acc+cf*Object.entries(v
 // The key polynomial equals the printed expression at several points.
 const polyMatches=(q,expr)=>{const L=lettersOf(expr);return [[1.3,2.1,0.7],[-0.6,1.9,3.2],[2.5,-1.1,0.4]].every(vals=>{const env={};L.forEach((l,k)=>env[l]=vals[k%3]+k*0.17);return near(polyVal(q.answer.terms,env),evalExpr(expr,env));});};
 const afterColon=q=>q.prompt.replace(/ Enter .*$/,'').replace(/^.*?: /,'').replace(/\?$/,'');
+// Roman numerals read by an independent additive/subtractive scan.
+const romanVal=r=>{const V={I:1,V:5,X:10,L:50,C:100,D:500,M:1000};let t=0;for(let i=0;i<r.length;i++){const v=V[r[i]],w=V[r[i+1]]||0;t+=v<w?-v:v;}return t;};
+const romanOk=r=>/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(r);
+const money=q=>Number(String(q.answer.display||'').replace(/[$,]/g,'').replace('−','-'));
+// Base-2 text (with an optional point) read by place values.
+const binVal=t=>{const [w,f='']=String(t).split('.');if(!/^[01]+$/.test(w)||!/^[01]*$/.test(f))return NaN;return parseInt(w,2)+[...f].reduce((s,d,i)=>s+Number(d)/2**(i+1),0);};
+const nthRootRounded=(q,n,d)=>{let k=Math.floor(q**(1/n)*10**d);while((k+1)**n<=q*10**(n*d))k++;while(k**n>q*10**(n*d))k--;return ((2*k+1)**n<=q*10**(n*d)*2**n)?k+1:k;};
+const polyFromPrompt=q=>q.prompt.replace(/^[^:]*: /,'').replace(/ Enter .*$/,'');
+const trig4=(f,d)=>Math.round(Math[f](d*Math.PI/180)*10000);
 // recipe -> (q, parameters) => true when the key is right. Every recipe in the catalog needs one.
 const oracle={
  // Batch AH-1
@@ -169,6 +178,62 @@ const oracle={
  'ah-miles-to-feet':(q,p)=>eq(q,0,p.a*5280,10),
  'ah-tons-to-pounds':(q,p)=>eq(q,0,p.q*2000),
  'ah-metric-choice':(q,p)=>{const per={millimeters:1,centimeters:10,meters:1000};const m=q.prompt.match(/How many (\w+) are in (\d+) (\w+)\?/);return near(num(q,0),Number(m[2])*per[m[3]]/per[m[1]]);},
+ // Batch AH-3
+ 'ah-area-difference-h':(q,p)=>eq(q,0,(2*p.b+p.d)*p.a-2*p.c*p.d),
+ 'ah-mode-median-mean-range':(q,p)=>{const v=[...p.v].sort((x,y)=>x-y),n=v.length,cnt=new Map();v.forEach(x=>cnt.set(x,(cnt.get(x)||0)+1));const mx=Math.max(...cnt.values()),modes=[...cnt].filter(([,c])=>c===mx).map(([k])=>k);
+  const med=n%2?v[(n-1)/2]:(v[n/2-1]+v[n/2])/2,mean=v.reduce((a,b)=>a+b,0)/n;return modes.length===1&&mx>1&&eq(q,0,v[n-1]-v[0])&&eq(q,1,modes[0])&&near(num(q,2),med)&&eq(q,3,Math.round(mean*100),100);},
+ 'ah-contribution-stat':(q,p)=>{const v=[...p.vals].sort((x,y)=>x-y),cnt={};p.vals.forEach(x=>cnt[x]=(cnt[x]||0)+1);const mode=Number(Object.keys(cnt).find(k=>cnt[k]===2));return eq(q,0,[p.vals.reduce((a,b)=>a+b,0)/5,v[2],mode][p.g]);},
+ 'ah-bowling-average':(q,p)=>(p.a+p.b+num(q,0))/3===p.c,
+ 'ah-isosceles-area':(q,p)=>eq(q,0,2*p.a*p.b/2),
+ 'ah-right-triangle-area':(q,p)=>p.s1**2+p.s2**2===p.s3**2&&eq(q,0,p.s1*p.s2,2),
+ 'ah-improper-to-mixed':(q,p)=>eqs(q,p.F.map(([x,y])=>[x,y])),
+ 'ah-mixed-to-improper':(q,p)=>eqs(q,p.F.map(([x,y])=>[x,y]))&&p.F.every(([x,y])=>x>y),
+ 'ah-mixed-to-decimals':(q,p)=>eqs(q,[[p.c*p.b+p.a,p.b],[p.f*p.e+p.d,p.e]]),
+ 'ah-decimal-to-mixed':(q,p)=>eq(q,0,p.N,100),
+ 'ah-mixed-to-improper-choice':(q,p)=>eq(q,0,p.a*p.b+p.c,p.b),
+ 'ah-mixed-to-decimal-choice':(q,p)=>near(num(q,0),p.w+p.nn/p.d),
+ 'ah-bar-graph-read':(q,p)=>{const sub=p.v.slice(p.m1-1,p.m2);return eq(q,0,Math.max(...p.v)-Math.min(...p.v))&&eq(q,1,sub.reduce((a,b)=>a+b,0),sub.length)&&p.v.filter(x=>x===Math.max(...p.v)).length===1;},
+ 'ah-make-graphs':(q,p)=>p.v.length===5&&q.teacherSvg.includes('<rect')&&p.v.every(x=>q.answer.reference.includes(' '+x)),
+ 'ah-circle-graph':(q,p)=>eq(q,0,p.vals[p.hi]-p.vals[p.lo])&&p.vals[p.hi]>p.vals[p.lo],
+ 'ah-fraction-plus-unit':(q,p)=>eq(q,0,(p.a-1)*p.b+(p.plus?1:-1)*p.a,p.a*p.b),
+ 'ah-three-fractions-add':(q,p)=>eq(q,0,p.d*p.b*p.c+p.g*p.e*p.a*p.c+p.h*p.f*p.a*p.b,p.a*p.b*p.c)&&num(q,0)>0,
+ 'ah-fractions-three-choice':(q,p)=>near(num(q,0),p.n1/(p.a*p.b)+p.n2/(p.b*p.c)-p.n3/p.a),
+ 'ah-order-ops':(q,p)=>eq(q,0,p.a-(p.b*p.c)+(p.d*p.e)),
+ 'ah-order-ops-choice':(q,p)=>eq(q,0,p.a+(p.b*p.c)-(p.d*p.e)+(p.f*p.g)),
+ 'ah-evaluate-xy':(q,p)=>eq(q,0,p.x*p.y+(p.plus?1:-1)*(p.last==='y'?p.y:p.x)),
+ 'ah-evaluate-fractions':(q,p)=>{const x=p.n1/(p.b*p.c),y=p.n2/p.a;return near(num(q,0),p.plus?x*y+p.n3*y:p.n3*y-x*y)&&num(q,0)>0;},
+ 'ah-evaluate-decimals':(q,p)=>near(num(q,0),p.e/100+p.p1*p.g/100+p.p2*(p.f/100)*(p.g/100))&&num(q,0)>0,
+ 'ah-evaluate-quotient':(q,p)=>eq(q,0,p.m*p.n+(p.plus?1:-1)*p.m/p.n),
+ 'ah-evaluate-xyz':(q,p)=>{const f=q.prompt.match(/xyz ([+−]) (yz|xz) ([+−]) (y|x) if/);const v={x:p.x,y:p.y,z:p.z},sg=c=>c==='+'?1:-1;return eq(q,0,p.x*p.y*p.z+sg(f[1])*v[f[2][0]]*v[f[2][1]]+sg(f[3])*v[f[4]]);},
+ 'ah-two-multipliers-yards':(q,p)=>p.a===1?eq(q,0,p.b,36):eq(q,0,p.b*36),
+ 'ah-two-multipliers-metric':(q,p)=>p.a===5?eq(q,0,p.b,100000):eq(q,0,p.b*100000),
+ 'ah-inches-miles':(q,p)=>p.a===1?eq(q,0,p.b,12*5280):eq(q,0,p.b*12*5280),
+ 'ah-sq-ft-to-sq-in':(q,p)=>eq(q,0,p.a*12*12),
+ 'ah-sq-m-to-sq-cm':(q,p)=>eq(q,0,p.C*100*100,10),
+ 'ah-sq-to-larger':(q,p)=>p.a===1?eq(q,0,p.b,144):eq(q,0,p.b,10000),
+ 'ah-add-three-mixed':(q,p)=>near(num(q,0),p.fs.reduce((s,[x,y])=>s+x/y,0)),
+ 'ah-add-two-mixed':(q,p)=>near(num(q,0),p.A+p.b/p.c+p.aa+p.e/p.f),
+ 'ah-rate-km':(q,p)=>eqs(q,[[p.a*p.b/p.a,1],[p.a,p.a*p.b]]),
+ 'ah-rate-hotel':(q,p)=>p.perNight?eq(q,0,p.c/p.b):eq(q,0,p.b,p.c),
+ 'ah-subtract-mixed':(q,p)=>near(num(q,0),p.a+p.b/p.c-(p.d+p.e/p.f))&&num(q,0)>0,
+ 'ah-subtract-mixed-choice':(q,p)=>near(num(q,0),p.a+p.b/p.c-(p.d+p.e/p.f))&&num(q,0)>0,
+ 'ah-rate-tea':(q,p)=>eq(q,0,(p.b+p.d)*p.a/((p.a*p.b)/p.b)),
+ 'ah-rate-points':(q,p)=>eqs(q,[[p.b,1],[1,p.b],[p.b*p.d,1]]),
+ 'ah-rate-spice':(q,p)=>eq(q,0,p.e*(p.a*p.b)/p.b),
+ 'ah-solve-x-plus':(q,p)=>num(q,0)+p.b===p.a,
+ 'ah-solve-x-minus':(q,p)=>num(q,0)-p.b===p.a,
+ 'ah-read-points':(q,p)=>JSON.stringify(q.answer.points)===JSON.stringify(p.P)&&q.givens.svg.includes('(d)'),
+ 'ah-graph-points':(q,p)=>p.P.every(([x,y])=>q.answer.reference.includes(`(${x<0?'−'+(-x):x}, ${y<0?'−'+(-y):y})`)),
+ 'ah-rect-vertices':(q,p)=>{const xs=p.V.map(v=>v[0]),ys=p.V.map(v=>v[1]),w=Math.max(...xs)-Math.min(...xs),h=Math.max(...ys)-Math.min(...ys);return eqs(q,[[2*(w+h),1],[w*h,1]]);},
+ 'ah-which-graph':(q,p)=>'ABCD'[p.ord.indexOf(0)]===q.answer.value,
+ 'ah-solve-fraction-add':(q,p)=>near(num(q,0)+p.b/p.a,p.c/p.d),
+ 'ah-solve-fraction-sub':(q,p)=>near(num(q,0)-p.a/p.b,p.c/p.d),
+ 'ah-solve-decimal-choice':(q,p)=>near(num(q,0)+p.F/10,p.G/10),
+ 'ah-reciprocal':(q,p)=>near(num(q,0)*p.a/p.b,1),
+ 'ah-solve-times':(q,p)=>p.b*num(q,0)===p.a,
+ 'ah-solve-divided':(q,p)=>num(q,0)/p.y===p.x,
+ 'ah-solve-coef':(q,p)=>p.b*num(q,0)===p.a,
+ 'ah-solve-decimal-coef':(q,p)=>near(p.a/100*num(q,0),p.num1),
 };
 
 // Responses that must be marked wrong for a recipe, beyond the distractors (optional): recipe -> q => [strings].
