@@ -361,6 +361,34 @@ const oracle={
   if(f==='mc')return P(q).alts[0]==='abcd'[p.order.indexOf(0)];return q.answer.kind==='teacher'&&q.answer.reference.includes(String(p.a).replace('-','−'));},
  'a1-wavg':(q,p)=>p.form==='661'?is(P(q),[Math.round(p.sc.reduce((t,x,i)=>t+x*p.w[i],0)/p.w.reduce((a,b)=>a+b,0)),1]):is(P(q),[Math.round((p.a*p.b+p.c*p.d)/100),1])&&p.b+p.d===100,
 
+ // Batch A1-8
+ 'a1-radexpr':(q,p)=>{const f=p.form,r2=Math.SQRT2,r3=Math.sqrt(3);if(f==='666')return near(P(q).v,p.a*Math.sqrt(2*p.b*p.b)-Math.sqrt(3*p.c*p.c)+p.d*r2+p.e*Math.sqrt(3*p.f*p.f));
+  if(f==='667')return near(P(q).v,p.a*Math.sqrt(p.b)-p.f*Math.sqrt(p.c*p.c)+p.d*Math.sqrt(p.e*p.e*p.b));if(f==='670')return near(P(q).v,p.a*Math.sqrt(p.b)-p.f*Math.sqrt(p.c*p.c*p.b)+p.d*Math.sqrt(p.e*p.e*p.b));
+  return is(P(q),[Math.round(Math.sqrt(p.a*p.a*10**(2*p.b))),1]);},
+ 'a1-elim':(q,p)=>{const pt=P(q),X=pt.v[0][0],Y=pt.v[1][0],eqs=q.prompt.replace(/^.*?: /,'').replace(/\. Write.*$/,'').replace(/N_Q/g,'x').replace(/N_D/g,'y').split(' and ');
+  return X===p.m&&Y===p.n&&eqs.every(e=>{const [L,R]=e.split(' = ').map(t=>S.parseExpr(t,['x','y']));return near(L({x:X,y:Y}),R({x:X,y:Y}));});},
+ 'a1-cfrac2':(q,p)=>{// evaluate the original complex fraction directly from the parameters and compare with the key fraction
+  const f=p.form,pt=P(q),[A,B]=p.L||['a','b'];const ev=(P0,env)=>Object.entries(P0).reduce((t,[k,c])=>t+c*[...k.matchAll(/([a-z])(-?\d+)/g)].reduce((m,[,l,e])=>m*env[l]**Number(e),1),0);
+  const env={a:1.3,b:1.7,x:0.9,y:1.6,z:1.2,[A]:1.3,[B]:1.7},a0=env[A],b0=env[B];let want;
+  if(f==='680')want=(p.c/a0+a0/b0)/(p.d/b0);else if(f==='681')want=(a0**-p.c+b0**p.d*a0**(-p.c-1))/(a0**-p.c*b0**p.e);else if(f==='682')want=(p.c-a0/b0)/(p.d/b0+(p.e===1?b0:a0));else if(f==='683')want=(a0**-p.c+b0**-p.d)/(p.e===1?a0**-p.c:b0**-p.d);
+  else if(f==='685'){const {a:A0,b:B0,x:X0}=env;want=(A0**p.a*X0**p.b+A0**p.c*B0**p.d*X0**p.e)/(p.f+B0**p.g*X0**p.h-A0**p.i*B0**p.j*X0**p.k);}
+  else if(f==='686'){const {a:A0,b:B0,x:X0,y:Y0}=env;want=(A0**p.a*X0**p.b*Y0**p.c/(p.d*B0**p.e)-p.f*A0**p.g/X0**p.h)/(p.i-A0**p.j*B0**p.k/X0**p.h);}
+  else{const {x:X0,y:Y0,z:Z0}=env;want=(X0**p.a*Y0**p.b*Z0**p.c-Y0**p.d*Z0**p.e)/(p.i*X0**p.f-X0**p.g*Y0**p.h);}
+  const terms=[...Object.keys(pt.num),...Object.keys(pt.den)];return near(ev(pt.num,env)/ev(pt.den,env),want)&&terms.every(k=>!/-\d/.test(k));},
+ 'a1-trinom':(q,p)=>{// expand the key's factors independently and compare with the polynomial in the prompt
+  const pt=P(q),show=q.prompt.replace('Factor completely: ',''),vars=[...new Set(show.match(/[a-z]/g))],f=S.parseExpr(show.replace(/([a-z])\(/g,'$1*('),vars),env={};vars.forEach((v,i)=>{env[v]=1.1+0.37*i;});
+  const ev=P0=>Object.entries(P0).reduce((t,[k,c])=>t+c*[...k.matchAll(/([a-z])(-?\d+)/g)].reduce((m,[,l,e])=>m*env[l]**Number(e),1),0);return f&&near(f(env),ev(pt.poly))&&pt.n===(p.form==='720'?3:2);},
+ 'a1-prob':(q,p)=>{const f=p.form;if(f==='700'){const c=[p.b1,p.b2,p.b3][p.a-1];return is(P(q),Q(c,p.b1+p.b2+p.b3));}if(f==='703')return is(P(q),Q(1,4**p.a))&&p.seq.length===p.a;
+  if(f==='738')return is(P(q),Q(p.c*p.a,(p.a+p.c)*(p.a+p.c-1)));const cnt={green:p.a,red:p.b,blue:p.c},t=p.a+p.b+p.c;return is(P(q),Q(cnt[p.e]*cnt[p.f],t*t));},
+ 'a1-solid2':(q,p)=>{const f=p.form,v=P(q).v[0]/P(q).v[1];if(f==='723')return near(v,p.a*p.a+4*(p.a*p.b/2));if(f==='724')return near(v,3.14*p.a*p.a+3.14*p.a*p.b);if(f==='725')return near(v,p.a*p.b*p.c/3);
+  if(f==='726')return Math.abs(v-3.14*p.a*p.a*p.b/3)<0.006;return Math.abs(v-Math.PI*p.a*p.a*p.b/3)<0.006;},
+ 'a1-sci':(q,p)=>{const v1=p.a*10**(p.c-2),v2=p.a*10**(p.f-2),chk=(pt,v)=>{const e=Math.floor(Math.log10(v)+1e-9);return pt.e===e&&near(pt.m,v/10**e);};return chk(P(q,0),v1)&&chk(P(q,1),v2)&&Math.sign(p.c)!==Math.sign(p.f);},
+ 'a1-lineq':(q,p)=>{// every key equation must pass through two points of the corresponding drawn line, read from the drawing's line items
+  const at=(pt,x)=>pt.samples.length===1&&!pt.vars.length?pt.samples[0][1]:null;const pts=q.answer.parts;if(p.form==='mc'){const pt=pts[0];if(p.cs<=2)return pt.v===(p.cs===1?'x':'y')&&pt.samples[0][1]===p.a;const m={3:p.d,4:-p.d,5:0.5,6:0.5,7:-0.5,8:-0.5}[p.cs],k={3:0,4:0,5:1,6:-1,7:1,8:-1}[p.cs];return pt.samples.every(([e,y])=>near(y,m*e.x+k));}
+  void at;const b=pts[1];return pts[0].v==='y'&&b.samples.length===1&&(p.form==='746'?b.samples[0][1]===p.A:b.samples[0][1]===p.a);},
+ 'a1-graph3':(q,p)=>q.answer.kind==='teacher'&&(p.form==='750'?q.answer.reference.includes(`(${p.b}, ${String(p.c+p.a).replace('-','−')})`):q.answer.reference.includes(`(0, ${String(p.d).replace('-','−')})`)),
+ 'a1-consec':(q,p)=>p.form==='755'?P(q).items.join()===[2*p.b-1,2*p.b,2*p.b+1].join()&&P(q).items.reduce((x,y)=>x+y,0)===6*p.b:is(P(q),[p.c+1,1]),
+
 };
 const near=(x,y)=>Math.abs(x-y)<=1e-9*Math.max(1,Math.abs(y));
 
