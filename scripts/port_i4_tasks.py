@@ -141,6 +141,49 @@ TASKS_I4 = [
     _t('TX4_S01_00067', 'i4-graphed-set', None, 'Name the set of numbers graphed', 'integers'),
     _t('TX4_S01_00069', 'i4-seq-tenth', None, 'Next three terms and the tenth term of a sequence', 'sequences'),
     _t('TX4_S01_00070', 'i4-compare-words', None, 'Write a comparison with negative numbers in words', 'integers'),
+    # Batch I4-3: Lessons 11-16
+    # Lesson 11: Addition Word Problems with Missing Addends
+    _t('TX4_S02_00015', 'i4-missing-story', 'small', 'Missing addend in a story (totals to 31)', 'word-equations'),
+    _t('TX4_S02_00051', 'i4-missing-story', 'two-digit', 'Missing addend in a story (totals 35 to 46)', 'word-equations'),
+    _t('TX4_S02_00066', 'i4-missing-story', 'words-money', 'How much more money is needed (amounts in words)', 'word-equations'),
+    _t('TX4_S02_00108', 'i4-missing-story', 'words-2digit', 'Missing two-digit addend in a story in words', 'word-equations'),
+    _t('TX4_S02_00110', 'i4-missing-story', 'words-3digit', 'Missing addend with a three-digit total in words', 'word-equations'),
+    _t('TX4_S02_00111', 'i4-missing-story', 'map', 'Distance between two towns west of a third', 'word-equations'),
+    _t('TX4_S02_00069', 'i4-missing-story', 'two-takeaways', 'How many are left after two amounts are given away', 'word-equations'),
+    # Lesson 12: Missing Numbers in Subtraction
+    _t('TX4_S02_00070', 'i4-add-3digit', 'story-2', 'Add a two-digit amount to a three-digit amount in a story', 'whole-arithmetic'),
+    _t('TX4_S02_00137', 'i4-missing-sub', 'subtrahend-small', 'Missing number subtracted from a teen number', 'equations'),
+    _t('TX4_S02_00014', 'i4-missing-sub', 'subtrahend-2digit', 'Missing two-digit number subtracted, in a column', 'equations'),
+    _t('TX4_S02_00046', 'i4-missing-sub', 'minuend-2digit', 'Missing two-digit number subtracted from, in a column', 'equations'),
+    _t('TX4_S02_00047', 'i4-missing-sub', 'minuend-row', 'Missing number subtracted from, in a sentence', 'equations'),
+    # Lesson 13: Adding Three-Digit Numbers
+    _t('TX4_S02_00013', 'i4-add-3digit', 'money-three-big', 'Add three dollar amounts with a total over $1000', 'whole-arithmetic'),
+    _t('TX4_S02_00045', 'i4-add-3digit', 'money-three', 'Add three three-digit dollar amounts', 'whole-arithmetic'),
+    _t('TX4_S02_00043', 'i4-add-3digit', 'stacked', 'Add three-digit numbers in a column', 'whole-arithmetic'),
+    _t('TX4_S02_00044', 'i4-add-3digit', 'money-stacked', 'Add three-digit dollar amounts in a column', 'whole-arithmetic'),
+    _t('TX4_S02_00114', 'i4-add-3digit', 'story', 'Add two three-digit dollar amounts in a story', 'whole-arithmetic'),
+    _t('TX4_S02_00122', 'i4-add-3digit', 'over-1000', 'Add three-digit numbers with a sum over 1000', 'whole-arithmetic'),
+    # Lesson 14: Subtracting Two-Digit and Three-Digit Numbers; Missing Two-Digit Addends
+    _t('TX4_S02_00012', 'i4-sub', 'no-regroup-3', 'Subtract three-digit numbers without regrouping', 'whole-arithmetic'),
+    _t('TX4_S02_00016', 'i4-sub', 'no-regroup-2', 'Subtract two-digit numbers in a column without regrouping', 'whole-arithmetic'),
+    _t('TX4_S02_00018', 'i4-sub', 'regroup-2', 'Subtract two-digit numbers in a column with regrouping', 'whole-arithmetic'),
+    _t('TX4_S02_00011', 'i4-missing-2digit', 'row', 'Missing two-digit addend without regrouping', 'equations'),
+    _t('TX4_S02_00126', 'i4-missing-2digit', 'stacked', 'Missing two-digit addend in a column', 'equations'),
+    # Lesson 15: Subtracting Two-Digit Numbers with Regrouping
+    _t('TX4_S02_00077', 'i4-sub', 'story-money', 'Subtract dollar amounts in a story, with regrouping', 'whole-arithmetic'),
+    _t('TX4_S02_00131', 'i4-sub', 'money-regroup-stacked', 'Subtract two-digit dollar amounts in a column, with regrouping', 'whole-arithmetic'),
+    _t('TX4_S02_00010', 'i4-sub', 'regroup-2', 'Subtract two-digit numbers in a column with regrouping', 'whole-arithmetic'),
+    _t('TX4_S02_00039', 'i4-sub', 'regroup-small', 'Two-digit subtraction with a one-digit difference', 'whole-arithmetic'),
+    # Lesson 16: Expanded Form; More on Missing Numbers in Subtraction
+    _t('TX4_S02_00053', 'i4-expanded-form', 'sum-3', 'Expanded form of a three-digit number', 'number-representation'),
+    _t('TX4_S02_00009', 'i4-expanded-form', 'sum-4', 'Expanded form of a four-digit number', 'number-representation'),
+    _t('TX4_S02_00036', 'i4-expanded-form', 'standard', 'The number for an expanded form', 'number-representation'),
+    _t('TX4_S02_00127', 'i4-missing-sub', 'subtrahend-2digit', 'Missing two-digit number subtracted, in a column', 'equations'),
+    _t('TX4_S02_00008', 'i4-missing-3digit', 'addend', 'Missing three-digit addend in a column', 'equations'),
+    _t('TX4_S02_00033', 'i4-missing-3digit', 'subtrahend', 'Missing three-digit number subtracted', 'equations'),
+    _t('TX4_S02_00133', 'i4-missing-3digit', 'subtrahend-stacked', 'Missing three-digit number subtracted, in a column', 'equations'),
+    _t('TX4_S02_00134', 'i4-missing-3digit', 'minuend', 'Missing three-digit number subtracted from, in a column', 'equations'),
+    _t('TX4_S02_00034', 'i4-missing-3digit', 'minuend-row', 'Missing number subtracted from, with two-digit parts', 'equations'),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -172,12 +215,33 @@ CONSOLIDATED_I4 = {
     'TX4_S01_00145': 'TX4_S01_00023', 'TX4_S01_00146': 'TX4_S01_00020', 'TX4_S01_00093': 'TX4_S01_00090',
     'TX4_S01_00092': 'TX4_S01_00002', 'TX4_S01_00065': 'TX4_S01_00001', 'TX4_S01_00066': 'TX4_S01_00167',
     'TX4_S01_00169': 'TX4_S01_00168', 'TX4_S01_00170': 'TX4_S01_00168',
+    # Batch I4-3
+    'TX4_S02_00065': 'TX4_S02_00015', 'TX4_S02_00068': 'TX4_S02_00015', 'TX4_S02_00050': 'TX4_S02_00015',
+    'TX4_S02_00049': 'TX4_S02_00015', 'TX4_S02_00107': 'TX4_S02_00015', 'TX4_S02_00067': 'TX4_S02_00015',
+    'TX4_S02_00109': 'TX4_S02_00066', 'TX4_S02_00112': 'TX4_S02_00110',
+    'TX4_S02_00048': 'TX4_S02_00014', 'TX4_S02_00071': 'TX4_S02_00137', 'TX4_S02_00138': 'TX4_S02_00047',
+    'TX4_S02_00115': 'TX4_S02_00043', 'TX4_S02_00116': 'TX4_S02_00043', 'TX4_S02_00123': 'TX4_S02_00045',
+    'TX4_S02_00113': 'TX4_S02_00044',
+    'TX4_S02_00017': 'TX4_S02_00012', 'TX4_S02_00118': 'TX4_S02_00012',
+    'TX4_S02_00124': 'TX4_S02_00016', 'TX4_S02_00041': 'TX4_S02_00011', 'TX4_S02_00040': 'TX4_S02_00011',
+    'TX4_S02_00075': 'TX4_S02_00126', 'TX4_S02_00076': 'TX4_S02_00126', 'TX4_S02_00139': 'TX4_S02_00126', 'TX4_S02_00042': 'TX4_S02_00126',
+    'TX4_S02_00117': 'TX4_S02_00014',
+    'TX4_S02_00079': 'TX4_S02_00131', 'TX4_S02_00073': 'TX4_S02_00044', 'TX4_S02_00037': 'TX4_S02_00010', 'TX4_S02_00038': 'TX4_S02_00010',
+    'TX4_S02_00119': 'TX4_S02_00010', 'TX4_S02_00130': 'TX4_S02_00010', 'TX4_S02_00132': 'TX4_S02_00010',
+    'TX4_S02_00080': 'TX4_S01_00025', 'TX4_S02_00081': 'TX4_S02_00127', 'TX4_S02_00129': 'TX4_S02_00127',
+    'TX4_S02_00052': 'TX4_S02_00009', 'TX4_S02_00035': 'TX4_S02_00008',
+    'TX4_S02_00120': 'TX4_S02_00126', 'TX4_S02_00135': 'TX4_S02_00133',
+    'TX4_S02_00140': 'TX4_S02_00133', 'TX4_S02_00136': 'TX4_S02_00134', 'TX4_S02_00128': 'TX4_S02_00046',
+    'TX4_S01_00111': 'TX4_S02_00011',
 }
 
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a
 # shared-file change: see docs/change-specs/coverage-i4-pending-requests-v0.1.md. Not read by the map builder.
 PENDING_I4 = {
     # Batch I4-1 (request R3: replacing these earlier adaptations changes the count in tests/structured-bank-audit.py)
-    'TX4_S01_00104': 'R3', 'TX4_S01_00106': 'R3', 'TX4_S01_00110': 'R3', 'TX4_S01_00111': 'R3',
+    'TX4_S01_00104': 'R3', 'TX4_S01_00106': 'R3', 'TX4_S01_00110': 'R3',
     'TX4_S01_00114': 'R3', 'TX4_S01_00116': 'R3', 'TX4_S01_00119': 'R3',
+    # Batch I4-3 (request R3)
+    'TX4_S02_00072': 'R3', 'TX4_S02_00074': 'R3', 'TX4_S02_00125': 'R3', 'TX4_S02_00078': 'R3',
+    'TX4_S02_00147': 'R3', 'TX4_S02_00082': 'R3',
 }

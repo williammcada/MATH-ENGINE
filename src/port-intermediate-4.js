@@ -328,6 +328,96 @@ R['i4-seq-tenth']=(v,{int},h)=>{const d=int(2,3),s=d*int(5,8),shown=[0,1,2,3].ma
  const t={prompt:`Find the next three terms and the 10th term of the sequence. ${shown.join(', ')}, . . . Write the three terms, then a semicolon, then the 10th term.`,answer:{kind:'int-sequence',values:[...next,tenth],value:`${next.join(', ')}; ${S.minus(tenth)}`},solution:`The terms go down by ${d}: ${[...shown,...next].join(', ')}, …; the 10th term is ${s} − 9 × ${d} = ${S.minus(tenth)}.`,parameters:{start:s,step:-d}};
  return mc(h,t,[{value:`${next.join(', ')}; ${S.minus(s-10*d)}`,mistake:'Subtracted the step 10 times instead of 9'},{value:`${next.join(', ')}; ${S.minus(s-8*d)}`,mistake:'Counted the 10th term one place short'},{value:`${next.map(x=>x+2*d).join(', ')}; ${S.minus(tenth)}`,mistake:'Started the next terms too early'}]);};
 
+// Batch I4-3
+// Subtraction with each column's smaller digit taken from the larger (no regrouping), the classic slip.
+const absCols=(a,b)=>{let r=0,p=1;while(a||b){r+=p*Math.abs(a%10-b%10);a=Math.floor(a/10);b=Math.floor(b/10);p*=10;}return r;};
+const dl=x=>'$'+x;
+// Towns on a west-east line with a compass, distances from the east town.
+function townLine(far,near,east,F,N){const x=v=>360-v*300/F;let b=ln(x(F),60,360,60,{w:1.6});for(const [nm,v,y] of [[far,F,40],[near,N,86],[east,0,40]]){b+=`<circle cx="${x(v).toFixed(1)}" cy="60" r="5" fill="${INK}"/>`+tx(x(v),y,nm,{size:14});}
+ b+=ln(440,30,440,90,{w:1})+ln(410,60,470,60,{w:1})+tx(440,24,'N',{size:11})+tx(440,104,'S',{size:11})+tx(400,64,'W',{size:11})+tx(480,64,'E',{size:11});
+ return svg(b,`${far}, ${near} and ${east} on a road running west to east`,500,112);}
+R['i4-missing-story']=(v,{int,pick},h)=>{const [A,B]=names(h,2);
+ if(v==='small'||v==='two-digit'){let a,T;if(v==='small'){a=int(3,11);T=int(12,31);}else{a=int(15,19);T=int(35,46);}const b=T-a;
+  const prompt=pick([`${A} had ${a} rocks. ${A} found some more. Now ${A} has a total of ${T} rocks. How many rocks did ${A} find?`,`${A} has ${a} pencils. How many more pencils does ${A} need to buy in order to have ${T} pencils?`,`${A} has ${a} goldfish and some guppies. ${A} has ${T} fish in all. How many guppies does ${A} have?`,`${A} saw ${T} coins on the table. Only ${a} coins showed heads. How many coins showed tails?`,`${T} people are invited to a party. ${a} of them are girls. How many are boys?`]);
+  return mc(h,num(prompt,b,`${a} + ? = ${T}, and ${T} − ${a} = ${b}.`,{a,total:T}),[{value:T+a,mistake:'Added the two numbers instead of finding the missing addend'},{value:b+1,mistake:'Counted up one too many'},{value:b-1,mistake:'Counted up one too few'}],[{value:b+2,mistake:'Counted up two too many'}]);}
+ if(v==='words-money'){let P,Sv;do{P=int(30,49);Sv=int(11,29);}while(Sv%10<=P%10||P-Sv<5);const thing=pick(['soccer ball','video game','pair of skates','board game']);
+  return mc(h,num(`The ${thing} costs ${W(P)} dollars. ${A} has saved ${W(Sv)} dollars. How much more money does ${A} need to buy the ${thing}?`,P-Sv,`${dl(Sv)} + ? = ${dl(P)}, and ${dl(P)} − ${dl(Sv)} = ${dl(P-Sv)}.`,{a:Sv,total:P},'',dl(P-Sv)),[{value:dl(P+Sv),mistake:'Added the two amounts'},{value:dl(absCols(P,Sv)),mistake:'Subtracted the smaller digit from the larger in each column'},{value:dl(Sv),mistake:'Gave the amount already saved'}]);}
+ if(v==='words-2digit'){let a,T;do{a=int(21,49);T=int(60,99);}while(T-a<11);
+  return mc(h,num(`On the first day ${A} found ${W(a)} seashells. On the second day ${A} found some more. If ${A} found ${W(T)} seashells in the two days, how many were found on the second day?`,T-a,`${a} + ? = ${T}, and ${T} − ${a} = ${T-a}.`,{a,total:T}),[{value:T+a,mistake:'Added the two numbers'},{value:absCols(T,a),mistake:'Subtracted the smaller digit from the larger in each column'},{value:T-a+10,mistake:'Slip in the tens'}],[{value:T-a-1,mistake:'Slip in the ones'}]);}
+ if(v==='words-3digit'){let a,T;do{T=10*int(10,30);a=int(11,199);}while(T-a<11||a%10===0);
+  const prompt=pick([`It is ${W(T)} miles from ${A}'s house to the lake. ${A} has driven only ${W(a)} of those miles. How many miles does ${A} have left to drive?`,`${cap(W(a))} tourists arrived on the first boat. Altogether ${W(T)} tourists arrived on two boats. How many tourists arrived on the second boat?`]);
+  return mc(h,num(prompt,T-a,`${a} + ? = ${T}, and ${T} − ${a} = ${T-a}.`,{a,total:T}),[{value:T+a,mistake:'Added the two numbers'},{value:absCols(T,a),mistake:'Subtracted the smaller digit from the larger in each column'},{value:T-a+10,mistake:'Did not reduce the tens after regrouping'}]);}
+ if(v==='map'){const F=int(120,220),N=int(30,90),[far,near,east]=pick([['Ashford','Brookton','Clayville'],['Pine Hill','Dover Falls','Easton'],['Westfield','Millbrook','Harbor City']]);
+  return mc(h,num(`${far} is ${F} miles west of ${east}. ${near} is ${N} miles west of ${east}. How far, in miles, is it from ${near} to ${far}?`,F-N,`${N} + ? = ${F}, and ${F} − ${N} = ${F-N} miles.`,{far:F,near:N},townLine(far,near,east,F,N)),[{value:F+N,mistake:'Added the two distances'},{value:F,mistake:`Gave the distance from ${east} instead`},{value:absCols(F,N),mistake:'Subtracted the smaller digit from the larger in each column'}]);}
+ // two-takeaways
+ const T=int(20,30),a=int(2,6),b=int(1,4),z=T-a-b,[verb,thing]=pick([['baked','cookies'],['baked','muffins'],['made','bracelets'],['painted','cards']]);
+ return mc(h,num(`${A} ${verb} ${T} ${thing} for the class. ${A} gave ${a} to a parent and ${b} to a friend. How many ${thing} did ${A} have left?`,z,`${T} − ${a} − ${b} = ${z}.`,{total:T,a,b}),[{value:a+b,mistake:'Gave the number given away'},{value:T-a,mistake:'Subtracted only the first amount'},{value:T-b,mistake:'Subtracted only the second amount'}],[{value:a,mistake:'Gave one of the amounts'}]);};
+R['i4-missing-sub']=(v,{int,pick},h)=>{const L=pick(['a','b','g','m','p','w']);let a,b,r,ans,unk;
+ if(v==='subtrahend-small'){a=int(11,19);r=int(2,9);b=a-r;ans=b;unk='sub';}
+ else if(v==='subtrahend-2digit'){do{a=int(51,89);b=int(12,45);}while(a%10<b%10);r=a-b;ans=b;unk='sub';}
+ else if(v==='minuend-2digit'){do{b=int(21,49);r=int(10,25);}while((b%10)+(r%10)<10);a=b+r;ans=a;unk='min';}
+ else{b=int(2,9);r=int(21,55);a=b+r;ans=a;unk='min';}
+ const shownA=unk==='min'?L:a,shownB=unk==='sub'?L:b,stack=v.endsWith('2digit');
+ const t=num(stack?`Find the missing number ${L}.`:`What is the missing number in this number sentence? ${shownA} − ${shownB} = ${r}`,ans,unk==='sub'?`${a} − ${L} = ${r}, so ${L} = ${a} − ${r} = ${ans}.`:`${L} − ${b} = ${r}, so ${L} = ${r} + ${b} = ${ans}.`,{a,b,r,unknown:unk},stack?S.stackFigure([String(shownA),String(shownB)],'−',String(r),`${shownA} minus ${shownB} equals ${r}, written in a column`):'');
+ return mc(h,t,unk==='sub'?[{value:a+r,mistake:'Added the two numbers shown'},{value:ans+1,mistake:'Counted back one too many'},{value:ans-1,mistake:'Counted back one too few'}]:[{value:Math.abs(r-b),mistake:'Subtracted the two numbers shown'},{value:ans-10,mistake:'Forgot to carry the ten'},{value:ans+1,mistake:'Slip adding the ones'}],[{value:ans+10,mistake:'Slip in the tens'}]);};
+R['i4-add-3digit']=(v,{int,pick},h)=>{let a,b,c=0;const carry1=(x,y)=>x%10+y%10>=10;
+ if(v==='plus-2digit'){do{a=int(301,899);b=int(41,99);}while(!carry1(a,b)||Math.floor(a/10)%10+Math.floor(b/10)%10+1<10);}
+ else if(v==='money-row'){do{a=int(501,699);b=int(151,299);}while(!carry1(a,b)||Math.floor(a/10)%10+Math.floor(b/10)%10+1<10);}
+ else if(v==='money-three-big'){a=5*int(131,155);b=2*int(176,236);c=50*int(2,8);}
+ else if(v==='stacked'){a=int(225,375);b=int(425,575);}
+ else if(v==='money-three'){a=5*int(23,35);b=int(130,199);c=2*int(101,150);}
+ else if(v==='money-stacked'){a=int(125,215);b=int(325,415);}
+ else if(v==='story'||v==='story-2'){do{a=int(301,399);b=v==='story'?int(201,299):int(51,99);}while(!carry1(a,b));}
+ else{do{a=int(301,499);b=int(701,899);}while(a+b<1000||!carry1(a,b));}
+ const z=a+b+c,money=v.startsWith('money')||v.startsWith('story'),f=x=>money?dl(x):x,[A]=names(h,1),stack=v==='stacked'||v==='money-stacked'||v==='over-1000';
+ const terms=c?[a,b,c]:[a,b];let prompt;
+ if(v==='story')prompt=`${A} had ${dl(a)}. For winning a race, ${A} was paid ${dl(b)}. Then how much money did ${A} have?`;
+ else if(v==='story-2')prompt=`${A} spent ${dl(a)} on new clothes and ${dl(b)} on school supplies. How much money did ${A} spend altogether?`;
+ else if(stack)prompt='Add.';else prompt=`Add: ${terms.map(f).join(' + ')}.`;
+ const t=num(prompt,z,`${terms.map(f).join(' + ')} = ${f(z)}.`,{terms},stack?S.stackFigure(terms.map(x=>String(f(x))),'+',undefined,`${terms.map(f).join(' plus ')}, written in a column`):'',money?dl(z):undefined);
+ const nc=c?z:noCarry(a,b);
+ return mc(h,t,[...(c?[]:[{value:f(nc),mistake:'Wrote each column sum without carrying'}]),{value:f(z-10),mistake:'Forgot to carry into the tens'},{value:f(z-100),mistake:'Forgot to carry into the hundreds'},...(c?[{value:f(a+b),mistake:'Left out the third amount'}]:[{value:f(a-b>0?a-b:z+10),mistake:a-b>0?'Subtracted instead of adding':'Carried an extra ten'}])],[{value:f(z+10),mistake:'Carried an extra ten'},{value:f(z+100),mistake:'Carried an extra hundred'}]);};
+R['i4-sub']=(v,{int,pick},h)=>{let a,b;const [A]=names(h,1);
+ if(v==='tens-money'){do{a=10*int(50,99);b=10*int(11,49);}while(a%100<b%100);}
+ else if(v==='no-regroup-3'){do{a=int(450,800);b=int(250,700);}while(!(a%100>b%100&&a%10>b%10&&a-b>99));}
+ else if(v==='no-regroup-2'){do{a=int(66,85);b=int(15,25);}while(a%10<b%10);}
+ else if(v==='regroup-2'){do{a=int(25,95);b=int(12,69);}while(!(a%10<b%10&&a-b>9));}
+ else if(v==='regroup-small'){do{a=int(45,64);b=int(36,55);}while(!(a%10<b%10&&a-b>0&&a-b<10));}
+ else if(v==='money-regroup'||v==='money-regroup-stacked'||v==='story-money'){do{a=int(30,59);b=int(11,29);}while(!(a%10<b%10&&a-b>9));}
+ else{a=100*int(3,9);do{b=int(101,a-1);}while(b%10===0||Math.floor(b/10)%10===0);}
+ const z=a-b,money=['tens-money','money-regroup','money-regroup-stacked','story-money','from-hundreds'].includes(v),f=x=>money?dl(x):x,stack=['no-regroup-2','regroup-2','money-regroup-stacked'].includes(v);
+ const prompt=v==='story-money'?`${A} earned ${dl(a)} walking dogs and spent ${dl(b)} on a new toy. How much money did ${A} have left?`:stack?'Subtract.':`Subtract: ${f(a)} − ${f(b)}.`;
+ const t=num(prompt,z,`${f(a)} − ${f(b)} = ${f(z)}.`,{a,b},stack?S.stackFigure([String(f(a)),String(f(b))],'−',undefined,`${f(a)} minus ${f(b)}, written in a column`):'',money?dl(z):undefined);
+ return mc(h,t,[{value:f(a+b),mistake:'Added instead of subtracting'},...(absCols(a,b)!==z?[{value:f(absCols(a,b)),mistake:'Subtracted the smaller digit from the larger in each column'}]:[]),{value:f(z+10),mistake:'Did not reduce the tens after regrouping'},{value:f(z-100),mistake:'Slip in the hundreds'}],[{value:f(z+1),mistake:'Slip in the ones'},{value:f(z-10),mistake:'Slip in the tens'}]);};
+R['i4-missing-2digit']=(v,{int,pick},h)=>{const L=pick(['B','J','N','x','d','t']);let a,s;
+ if(v==='row'){do{a=int(21,59);s=int(81,99);}while(s%10<=a%10);}else{do{a=int(16,49);s=int(39,79);}while(s%10>=a%10||s-a<11);}
+ const b=s-a,stack=v==='stacked',order=stack&&int(0,1)?'first':'second',rows=order==='first'?[L,String(a)]:[String(a),L];
+ const t=num(stack?`Find the missing addend ${L}.`:`If ${a} + ${L} = ${s}, then what number is ${L}?`,b,`${s} − ${a} = ${b}, so ${L} = ${b}.`,{a,s},stack?S.stackFigure(rows,'+',String(s),`${rows.join(' plus ')} equals ${s}, written in a column`):'');
+ return mc(h,t,[{value:s+a,mistake:'Added the two numbers shown'},...(absCols(s,a)!==b?[{value:absCols(s,a),mistake:'Subtracted the smaller digit from the larger in each column'}]:[]),{value:b-1,mistake:'Slip in the ones'},{value:b+10,mistake:'Did not reduce the tens after regrouping'}],[{value:b+1,mistake:'Slip in the ones'}]);};
+R['i4-expanded-form']=(v,{int,pick},h)=>{
+ if(v==='products'){let d;do{d=[int(1,9),pick([0,int(1,9)]),pick([0,int(1,9)])];}while(d[1]===0&&d[2]===0);const N=Number(d.join('')),terms=[[d[0],100],[d[1],10],[d[2],1]].filter(x=>x[0]);
+  const show=ts=>ts.map(([x,p])=>p===1?String(x):`(${x} × ${p})`).join(' + ');
+  const t={prompt:`Write ${N} in expanded form, using multiplication, for example (3 × 100) + (5 × 10) + 2.`,answer:{kind:'i4-expanded-products',number:N,value:show(terms)},solution:`${N} = ${show(terms)}.`,parameters:{n:N}};
+  return mc(h,t,[{value:`(${d[0]} × 100) + ${10*d[1]+d[2]}`,mistake:'Did not split the tens and ones'},{value:show(terms.map(([x,p])=>[x,p===1?1:p/10])),mistake:'Used each place one place too small'},{value:`(${d[0]} × ${10*(d[1]||1)}) + ${d[2]||d[1]}`,mistake:'Multiplied by the wrong place value'}]);}
+ if(v==='sum-3'||v==='sum-4'){const k=v==='sum-3'?3:4,d=[int(1,9),...Array.from({length:k-1},()=>int(1,9))],N=Number(d.join('')),parts=d.map((x,i)=>x*10**(k-1-i)),show=p=>p.map(S.comma).join(' + ');
+  const t={prompt:`Write ${S.comma(N)} in expanded form.`,answer:{kind:'i4-expanded-sum',number:N,value:show(parts)},solution:`${S.comma(N)} = ${show(parts)}.`,parameters:{n:N}};
+  const wrong=k===3?[{value:show([parts[0],parts[1]*10,parts[2]]),mistake:'Wrote the tens digit as hundreds'},{value:show([parts[0]/10,parts[1],parts[2]]),mistake:'Wrote the hundreds digit as tens'},{value:show([parts[0]+parts[1],parts[2]]),mistake:'Did not split the hundreds and tens'}]
+   :[{value:show([parts[0]*10,parts[1]*10,parts[2],parts[3]]),mistake:'Wrote the thousands and hundreds one place too large'},{value:show([parts[0],parts[1]/10,parts[2]/10]),mistake:'Moved the hundreds and tens one place to the right and dropped the ones'},{value:show([parts[0]*10+parts[1]*10,parts[1],parts[3]]),mistake:'Joined the thousands and hundreds'}];
+  return mc(h,t,wrong);}
+ const d=[int(1,9),int(1,9),int(1,9)],parts=[100*d[0],10*d[1],d[2]],N=sum(parts);
+ return mc(h,num(`Write the number for ${parts.join(' + ')}.`,N,`${parts.join(' + ')} = ${N}.`,{parts}),[{value:Number(parts.join('')),mistake:'Wrote the parts side by side'},{value:100*d[0]+10*d[2]+d[1],mistake:'Swapped the tens and ones'},{value:d[0]+d[1]+d[2],mistake:'Added the digits'}]);};
+R['i4-missing-3digit']=(v,{int,pick},h)=>{const L=pick(['N','T','S','x','y','n']);let a,b,r,ans,rows,prompt,fig='';
+ if(v==='addend'){b=int(111,299);const T=pick([int(401,599),int(601,799)]);ans=T-b;rows=[L,String(b)];prompt=`Find the missing number ${L}.`;fig=S.stackFigure(rows,'+',String(T),`${L} plus ${b} equals ${T}, written in a column`);
+  return mc(h,num(prompt,ans,`${T} − ${b} = ${ans}.`,{a:b,total:T,kind:'addend'},fig),[{value:T+b,mistake:'Added the two numbers shown'},...(absCols(T,b)!==ans?[{value:absCols(T,b),mistake:'Subtracted the smaller digit from the larger in each column'}]:[]),{value:ans+10,mistake:'Did not reduce the tens after regrouping'},{value:ans-100,mistake:'Slip in the hundreds'}]);}
+ if(v==='subtrahend'){let n,T;do{n=int(101,299);T=int(101,199);}while(!(T<n&&(n-T)%10>n%10&&(n-T)%100>n%100&&n-T>9));ans=n-T;
+  return mc(h,num(`Find the missing number: ${T} = ${n} − ${L}`,ans,`${n} − ${L} = ${T}, so ${L} = ${n} − ${T} = ${ans}.`,{a:n,total:T,kind:'subtrahend'}),[{value:n+T,mistake:'Added the two numbers shown'},{value:absCols(n,T),mistake:'Subtracted the smaller digit from the larger in each column'},{value:ans+10,mistake:'Did not reduce the tens after regrouping'}],[{value:ans+100,mistake:'Did not reduce the hundreds after regrouping'}]);}
+ if(v==='subtrahend-stacked'){let n,T;do{n=int(301,999);T=int(101,n-101);}while(!(n%10>=T%10&&Math.floor(n/10)%10>=Math.floor(T/10)%10));ans=n-T;
+  return mc(h,num(`Find the missing number ${L}.`,ans,`${n} − ${L} = ${T}, so ${L} = ${n} − ${T} = ${ans}.`,{a:n,total:T,kind:'subtrahend'},S.stackFigure([String(n),L],'−',String(T),`${n} minus ${L} equals ${T}, written in a column`)),[{value:n+T,mistake:'Added the two numbers shown'},{value:ans+10,mistake:'Slip in the tens'},{value:ans-1,mistake:'Slip in the ones'}],[{value:ans+100,mistake:'Slip in the hundreds'}]);}
+ if(v==='minuend'){b=int(201,499);r=int(101,499);if(b+r>999)r=999-b;ans=b+r;
+  return mc(h,num(`Find the missing number ${L}.`,ans,`${L} − ${b} = ${r}, so ${L} = ${r} + ${b} = ${ans}.`,{a:b,total:r,kind:'minuend'},S.stackFigure([L,String(b)],'−',String(r),`${L} minus ${b} equals ${r}, written in a column`)),[{value:Math.abs(r-b)||ans+10,mistake:'Subtracted the two numbers shown'},{value:ans-10,mistake:'Forgot to carry the ten'},{value:ans+100,mistake:'Slip in the hundreds'}]);}
+ b=int(51,99);r=int(51,99);ans=b+r;
+ return mc(h,num(`Find the missing number: ${L} − ${b} = ${r}`,ans,`${L} = ${r} + ${b} = ${ans}.`,{a:b,total:r,kind:'minuend'}),[{value:Math.abs(r-b)||ans+10,mistake:'Subtracted the two numbers shown'},{value:ans-10,mistake:'Forgot to carry the ten'},{value:ans-100,mistake:'Forgot to carry into the hundreds'}]);};
+
 function build(c,h){const {int,pick,index}=h;const f=R[c.recipe];if(!f)throw Error('Unknown Intermediate 4 port recipe '+c.recipe);return f(c.variant,{int,pick,index},h);}
 
 // ---------- answer kinds that exist only in this course ----------
@@ -341,6 +431,11 @@ function check(q,response){const a=q&&q.answer;if(!a)return undefined;const s=St
   for(const x of parts){const p=parseSentence(x);if(!p||p.total!==a.total||p.adds.length!==3||!sameMultiset(p.adds,a.addends))return fail;seen.add(p.adds.join());}return okv(seen.size===6);}
  if(a.kind==='i4-places'){const got=(s.toLowerCase().replace(/ten-thousands|hundred-thousands/g,'x').match(/\b(ones|tens|hundreds|thousands)\b/g)||[]);if(/\d/.test(s.replace(/\([abc]\)/gi,'')))return fail;return okv(got.length===a.places.length&&got.every((w,i)=>w===a.places[i]));}
  if(a.kind==='i4-month-year'){const r=s.toLowerCase(),years=r.match(/\b\d{4}\b/g)||[],mons=MONTHS.filter(m=>r.includes(m.toLowerCase())||new RegExp('\\b'+m.slice(0,3).toLowerCase()+'\\b').test(r));const digits=r.replace(/\(\w\)/g,'').match(/\d+/g)||[];return okv(digits.length===1&&years.length===1&&Number(years[0])===a.year&&mons.length===1&&mons[0]===MONTHS[a.month-1]);}
+ // Expanded form with multiplication: terms (d × place) or a bare ones digit, any order, each place once, value equal.
+ if(a.kind==='i4-expanded-products'){const terms=s.replace(/[−–]/g,'-').replace(/\s+/g,'').split('+');if(!terms.length)return fail;let tot=0;const seen=new Set();
+  for(const t of terms){let m=t.match(/^\(?(\d)[×x*·](1|10|100|1000)\)?$/i),d,p;if(m){d=Number(m[1]);p=Number(m[2]);}else if(/^\d$/.test(t)){d=Number(t);p=1;}else return fail;if(!d||seen.has(p))return fail;seen.add(p);tot+=d*p;}return okv(tot===a.number);}
+ // Expanded form as a sum of place values: each term one nonzero digit followed by zeros, each place once, sum equal.
+ if(a.kind==='i4-expanded-sum'){const terms=s.replace(/,/g,'').replace(/\s+/g,'').split('+');let tot=0;const seen=new Set();for(const t of terms){if(!/^[1-9]0*$/.test(t)||seen.has(t.length))return fail;seen.add(t.length);tot+=Number(t);}return okv(terms.length>1&&tot===a.number);}
  if(a.kind==='i4-fact'){const got=S.parseFacts(s);return okv(!!got&&got.length===1&&got[0]===a.fact);}
  if(a.kind==='i4-digit-build'){const r=s.replace(/,/g,'').trim();if(!/^\d+$/.test(r))return fail;const n=Number(r);return okv(sameMultiset(r.split('').map(Number),a.digits)&&n%2===a.parity&&n>a.lo&&(a.hi===null||n<a.hi));}
  if(a.kind==='i4-in-range'){const r=s.replace(/,/g,'').trim();if(!/^\d+$/.test(r))return fail;const n=Number(r);return okv(n%2===a.parity&&n>a.lo&&n<a.hi);}

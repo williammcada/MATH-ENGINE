@@ -92,6 +92,16 @@ const oracle={
  'i4-compare-words':(q,p)=>{const nm=x=>x<0?'negative '+WORDS(-x):WORDS(x);return key(q)===`${nm(p.a)} is ${p.a>p.b?'greater':'less'} than ${nm(p.b)}`;},
  'i4-graphed-set':(q,p)=>E.checkAnswer(q,'{'+[...p.set].reverse().join(', ')+'}').answerCorrect&&p.set.every(x=>q.givens.svg.includes(String(x).replace('-','−'))),
  'i4-seq-tenth':(q,p)=>{const t=i=>p.start+(i-1)*p.step;return E.checkAnswer(q,`${t(5)}, ${t(6)}, ${t(7)}; ${t(10)}`).answerCorrect;},
+ // Batch I4-3
+ 'i4-missing-story':(q,p)=>{const v=variantOf(q);if(v==='map')return is(q,p.far-p.near);if(v==='two-takeaways')return is(q,p.total-p.a-p.b);return p.total-p.a>0&&is(q,p.total-p.a);},
+ 'i4-missing-sub':(q,p)=>p.a-p.b===p.r&&is(q,p.unknown==='sub'?p.a-p.r:p.r+p.b),
+ 'i4-add-3digit':(q,p)=>is(q,total(p.terms))&&p.terms.every(x=>x>0),
+ 'i4-sub':(q,p)=>p.a>p.b&&is(q,p.a-p.b),
+ 'i4-missing-2digit':(q,p)=>is(q,p.s-p.a)&&p.s-p.a>9,
+ 'i4-expanded-form':(q,p)=>{const v=variantOf(q);if(v==='standard')return is(q,total(p.parts));const d=String(p.n).split('').map(Number),k=d.length;
+  if(v==='products'){const terms=d.map((x,i)=>[x,10**(k-1-i)]).filter(t=>t[0]);return E.checkAnswer(q,terms.slice().reverse().map(([x,pl])=>`(${x} x ${pl})`).join('+')).answerCorrect&&!E.checkAnswer(q,String(p.n)).answerCorrect;}
+  const parts=d.map((x,i)=>x*10**(k-1-i));return E.checkAnswer(q,parts.slice().reverse().join(' + ')).answerCorrect&&!E.checkAnswer(q,parts.slice(1).join(' + ')).answerCorrect;},
+ 'i4-missing-3digit':(q,p)=>is(q,p.kind==='addend'?p.total-p.a:p.kind==='subtrahend'?p.a-p.total:p.a+p.total),
 };
 
 // The two sides of a comparison prompt ("a − b ☐ c − d"), evaluated separately.
