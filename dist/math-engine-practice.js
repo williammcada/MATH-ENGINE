@@ -18,7 +18,7 @@ const { loadK7Skills, baselineSha256 } = __req(68);
 const INDEX = __req(69);
 const CONT = __req(70);
 
-const version = '0.34.0-rc.3';
+const version = '0.35.0-rc.1';
 const freeze = Object.freeze;
 
 // ---------- deterministic randomness ----------
@@ -48,10 +48,12 @@ const skillEntries = K7.catalog.map(s => {
   for (const [k, v] of Object.entries(s)) if (typeof v !== 'function' && !(k in e)) e[k] = v;
   return freeze(e);
 });
-const bankEntries = INDEX.entries.map(x => freeze({
+// Standards come from the bank catalog; only entries with a recorded outcome have one (Engine 0.35.0).
+const bankStandards = new Map(banks.catalog.map(b => [b.sourceId, b]));
+const bankEntries = INDEX.entries.map(x => { const src = bankStandards.get(x.sourceId) || {}; return freeze({
   id: 'bank:' + x.sourceId, layer: 'bank', sourceId: x.sourceId, name: x.title, grade: x.localGrade, gradeLabel: gradeLabel(x.localGrade),
-  standard: '', prereq: null, course: x.course, bankId: x.bankId, lessonId: x.lessonId, lessonLabel: x.lessonLabel, lessonOrder: x.lessonOrder, topic: x.topic
-}));
+  standard: src.standard || '', standardAlias: src.alias || '', prereq: null, course: x.course, bankId: x.bankId, lessonId: x.lessonId, lessonLabel: x.lessonLabel, lessonOrder: x.lessonOrder, topic: x.topic
+}); });
 const continuityEntries = CONT.SKILLS.map(c => freeze({ id: c.id, layer: 'continuity', name: c.name, grade: c.grade, gradeLabel: gradeLabel(c.grade), standard: '', prereq: c.easier, course: null, bankId: null, lessonId: null, topic: null }));
 const continuityById = new Map(CONT.SKILLS.map(c => [c.id, c]));
 const catalog = freeze([...skillEntries, ...bankEntries, ...continuityEntries]);
@@ -1720,7 +1722,7 @@ const review=(prompt,ref,rubric,p={},svg='',key='')=>finish(teacher(prompt,ref,r
 const txt=(prompt,value,solution,p={},svg='',alts=[])=>finish(text(prompt,value,solution,p,svg,alts));
 const triangle=(base,height,shift=0)=>{const scale=180/Math.max(base,height),x=90,y=220,xx=x+shift*scale,yy=y-height*scale;return U.svg(`<polygon points="${x},${y} ${x+base*scale},${y} ${xx},${yy}" fill="#e6f2ef" stroke="#31535c" stroke-width="2"/>`+U.line(xx,yy,xx,y,'4 3')+U.line(Math.min(x,xx),y,Math.max(x+base*scale,xx),y,'4 3')+U.label(x+base*scale/2,y+24,base+' cm')+U.label(xx+30,(yy+y)/2,height+' cm')+U.label(xx,yy-12,'A')+U.label(x-14,y,'B')+U.label(x+base*scale+14,y,'C'),'Triangle ABC with base BC and perpendicular altitude to its supporting line.',260);};
 switch(code){
-case '9.6':{const x=R(int(1,7),8),y=R(int(1,4),5),z=R(int(1,5),6),branch=k%4,sign=branch<2?'+':'−',grouped=branch%2===1,value=grouped?T(branch<2?A(x,y):D(x,y),z):(branch<2?A(x,T(y,z)):D(x,T(y,z)));return num(`Simplify ${grouped?'(':''}${f(x)} ${sign} ${f(y)}${grouped?')':''} × ${f(z)}.`,value,`${grouped?'Grouping first, then multiplication':'Multiplication first, then addition/subtraction'} gives ${f(value)}.`,{x:f(x),y:f(y),z:f(z),branch},'fraction');}
+case '9.6':{const branch=k%4,sign=branch<2?'+':'−',grouped=branch%2===1,calc=(x,y,z)=>grouped?T(branch<2?A(x,y):D(x,y),z):(branch<2?A(x,T(y,z)):D(x,T(y,z)));let x=R(int(1,7),8),y=R(int(1,4),5),z=R(int(1,5),6),value=calc(x,y,z);/* Grade 5: subtraction branches must give a positive result (Engine 0.35.0). */for(let attempt=0;attempt<64&&Number(value.n)<=0;attempt++){x=R(int(1,7),8);y=R(int(1,4),5);z=R(int(1,5),6);value=calc(x,y,z);}if(Number(value.n)<=0){x=R(7,8);value=calc(x,y,z);}return num(`Simplify ${grouped?'(':''}${f(x)} ${sign} ${f(y)}${grouped?')':''} × ${f(z)}.`,value,`${grouped?'Grouping first, then multiplication':'Multiplication first, then addition/subtraction'} gives ${f(value)}.`,{x:f(x),y:f(y),z:f(z),branch},'fraction');}
 case '15.3':{a=int(1,5);d=a+int(2,6);const g=U.gcd(a,d);a/=g;d/=g;const wrong=k%3,options=[`${a*2}/${d*2}`,`${a*3}/${d*3}`,`${a+1}/${d}`];[options[wrong],options[2]]=[options[2],options[wrong]];return txt(`Which fraction is NOT equivalent to ${a}/${d}? ${options.map((v,i)=>'ABC'[i]+': '+v).join('; ')}. Enter A, B or C.`,'ABC'[wrong],`Reduce each fraction. ${options[wrong]} differs from ${a}/${d}; the other two multiply numerator and denominator by the same factor.`,{a,d,options,wrong,branch:wrong});}
 case '16.1':{const rows=[['yards','feet',3],['feet','inches',12],['pounds','ounces',16],['gallons','quarts',4],['quarts','pints',2],['pints','cups',2],['cups','fluid ounces',8]],row=rows[k%7],reverse=Math.floor(k/7)%2===1,amount=int(2,30);return num(`Convert ${amount} ${row[reverse?1:0]} to ${row[reverse?0:1]}. Use ${row[2]} ${row[1]} per ${row[0]==='feet'?'foot':row[0].slice(0,-1)}.`,reverse?R(amount,row[2]):R(amount*row[2]),`${reverse?'Divide':'Multiply'} by ${row[2]}: ${f(reverse?R(amount,row[2]):R(amount*row[2]))}.`,{amount,factor:row[2],reverse,branch:k%14});}
 case '18.6':{const statements=[['Corresponding angles in similar polygons have equal measures.',true],['All similar polygons are congruent.',false],['Corresponding sides in similar polygons share one common scale factor.',true],['Every pair of rectangles is similar.',false],['Similar polygons always have equal perimeters.',false],['Congruent polygons are similar with scale factor 1.',true]],s=statements[k%6];return txt('True or false: '+s[0],String(s[1]),s[1]?'This follows from matching angles and proportional corresponding sides.':'Similarity allows a scale factor other than 1, and requires all corresponding side ratios to agree.',{branch:k%6});}

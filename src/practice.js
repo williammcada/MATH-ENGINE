@@ -14,7 +14,7 @@ const { loadK7Skills, baselineSha256 } = require('./k7-skills.js');
 const INDEX = require('./practice-index.js');
 const CONT = require('./continuity-skills.js');
 
-const version = '0.34.0-rc.3';
+const version = '0.35.0-rc.1';
 const freeze = Object.freeze;
 
 // ---------- deterministic randomness ----------
@@ -44,10 +44,12 @@ const skillEntries = K7.catalog.map(s => {
   for (const [k, v] of Object.entries(s)) if (typeof v !== 'function' && !(k in e)) e[k] = v;
   return freeze(e);
 });
-const bankEntries = INDEX.entries.map(x => freeze({
+// Standards come from the bank catalog; only entries with a recorded outcome have one (Engine 0.35.0).
+const bankStandards = new Map(banks.catalog.map(b => [b.sourceId, b]));
+const bankEntries = INDEX.entries.map(x => { const src = bankStandards.get(x.sourceId) || {}; return freeze({
   id: 'bank:' + x.sourceId, layer: 'bank', sourceId: x.sourceId, name: x.title, grade: x.localGrade, gradeLabel: gradeLabel(x.localGrade),
-  standard: '', prereq: null, course: x.course, bankId: x.bankId, lessonId: x.lessonId, lessonLabel: x.lessonLabel, lessonOrder: x.lessonOrder, topic: x.topic
-}));
+  standard: src.standard || '', standardAlias: src.alias || '', prereq: null, course: x.course, bankId: x.bankId, lessonId: x.lessonId, lessonLabel: x.lessonLabel, lessonOrder: x.lessonOrder, topic: x.topic
+}); });
 const continuityEntries = CONT.SKILLS.map(c => freeze({ id: c.id, layer: 'continuity', name: c.name, grade: c.grade, gradeLabel: gradeLabel(c.grade), standard: '', prereq: c.easier, course: null, bankId: null, lessonId: null, topic: null }));
 const continuityById = new Map(CONT.SKILLS.map(c => [c.id, c]));
 const catalog = freeze([...skillEntries, ...bankEntries, ...continuityEntries]);

@@ -1,5 +1,5 @@
-/* Verification for the host practice layer (host-integration-v0.1, Engine 0.34.0).
- * Run: node tests/practice.cjs [seedsPerItem=50]  — writes docs/verification/practice-v0.34.0-results.json */
+/* Verification for the host practice layer (host-integration-v0.1, Engine 0.34.0; standards and 9.6 guard, Engine 0.35.0).
+ * Run: node tests/practice.cjs [seedsPerItem=50]  — writes docs/verification/practice-v0.35.0-results.json */
 'use strict';
 const fs = require('fs'), path = require('path'), crypto = require('crypto'), assert = require('assert');
 const root = path.join(__dirname, '..');
@@ -140,6 +140,21 @@ pass('related-links', { links: relatedLinks, itemsWithEasier: withEasier, itemsW
   pass('practice-gates', { k7Gate: 'complete', mixedTargetedGate: 'complete', invalidIdRejected: true });
 }
 
+// 5b. Engine 0.35.0: standards reach the practice catalog; 9.6 never gives a non-positive answer
+{
+  const banksCat = require(path.join(root, 'src/course-banks.js')).catalog;
+  const expected = new Map(banksCat.filter(b => b.standard).map(b => [b.sourceId, b.standard]));
+  const rows = P.catalog.filter(e => e.layer === 'bank');
+  const withStd = rows.filter(e => e.standard);
+  for (const e of rows) { const want = expected.get(e.sourceId) || ''; if (e.standard !== want) results.failures.push({ check: 'bank-standards', id: e.id, got: e.standard, want }); }
+  const s96 = P.catalog.find(e => e.id === 'bank:course-87-en:authored:MCADA-9.6');
+  assert.strictEqual(s96.standard, 'PS.MAT.G5.NF.9.6'); assert.strictEqual(s96.standardAlias, 'PS.MAT.G5.9.6');
+  let nonPositive = 0;
+  for (let i = 0; i < 2000; i++) { const q = P.generate(s96.id, { seed: 'g96-' + i, index: i }); const a = String(q.answerText).trim(); if (/^[-−]/.test(a) || a === '0') nonPositive++; }
+  if (nonPositive) results.failures.push({ check: 'g96-positive', nonPositive });
+  pass('bank-standards', { bankRows: rows.length, withStandard: withStd.length, g96Samples: 2000, g96NonPositive: nonPositive });
+}
+
 // 6. Built bundle is current
 const bundle = fs.readFileSync(path.join(root, 'dist/math-engine-practice.js'), 'utf8');
 const bprov = JSON.parse(fs.readFileSync(path.join(root, 'dist/math-engine-practice.provenance.json'), 'utf8'));
@@ -149,6 +164,6 @@ pass('bundle-provenance', { bundleSha256: bprov.bundleSha256, contentHash: P.con
 results.status = results.failures.length || Object.values(results.checks).some(c => c.status === 'Failed') ? 'Failed' : 'Passed';
 results.failures = results.failures.slice(0, 200);
 fs.mkdirSync(path.join(root, 'docs/verification'), { recursive: true });
-fs.writeFileSync(path.join(root, 'docs/verification/practice-v0.34.0-results.json'), JSON.stringify(results, null, 2) + '\n');
+fs.writeFileSync(path.join(root, 'docs/verification/practice-v0.35.0-results.json'), JSON.stringify(results, null, 2) + '\n');
 console.log(JSON.stringify({ status: results.status, failures: results.failures.length, checks: Object.fromEntries(Object.entries(results.checks).map(([k, v]) => [k, v.status])) }, null, 1));
 if (results.status !== 'Passed') { console.log(JSON.stringify(results.failures.slice(0, 15), null, 1)); process.exit(1); }
