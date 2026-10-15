@@ -49,11 +49,13 @@ Port recipes that keep the source ranges are ready in `src/port-algebra-1.js`: `
 
 **Reviewed and kept:** the earlier adaptations for nodes 297, 298, 302, 303, 309, 354, 356 and 357 match the source and are recorded as covered in the A1-4 decisions.
 
-**Meanwhile:** the thirteen records stay covered-provisional.
+**Added in A1-9:** algebra-1-en:node:768, 769, 770 and 771 (equations with fractions) are covered-provisional by `structured-linear` adaptations with the same dependency. The source takes their coefficients from fixed tables (for example first denominators 4, 6, 8 or 9 in node:770, and three different denominators in node:771); the adaptations give combinations the source never uses, such as x/7 in node:770 and two equal denominators in node:771. Port recipe `a1-rateq` variants `768`, `769`, `770` and `771` keep the source's tables. Entries to add with `replaces` True: `(N + '768', 'a1-rateq', '768', 'Solve an equation with fractions', 'equations', True)`, `(N + '769', 'a1-rateq', '769', 'Solve an equation with binomial numerators', 'equations', True)`, `(N + '770', 'a1-rateq', '770', 'Solve an equation with a fraction on the right', 'equations', True)`, `(N + '771', 'a1-rateq', '771', 'Solve an equation in a with fractions', 'equations', True)`.
 
-### R3 — Let port tasks replace breadth-bank adaptations (A1-5, A1-7, A1-8)
+**Meanwhile:** the thirteen records (seventeen from A1-9) stay covered-provisional.
 
-**Records (covered-provisional):** algebra-1-en:node:376, node:570, node:690, node:742, node:752.
+### R3 — Let port tasks replace breadth-bank adaptations (A1-5, A1-7, A1-8, A1-9)
+
+**Records (covered-provisional):** algebra-1-en:node:376, node:570, node:690, node:742, node:752, node:820.
 
 | Record | Earlier adaptation | The source |
 |---|---|---|
@@ -62,14 +64,15 @@ Port recipes that keep the source ranges are ready in `src/port-algebra-1.js`: `
 | node:690 | `factor-trinomial`: asks for the two numbers p and q, includes x² − 64 | asks for the factored form (x + a)(x + b), with a + b ≠ 0 |
 | node:742 | `scientific-normalize`: one-digit numbers such as 0.0007; answer as two numbers | two significant digits (11 to 99) with exponents ±2 to ±7; answer written as m × 10ⁿ |
 | node:752 | `line-graph-choice`: negative slopes and decimal slopes | positive fractional slopes from its table and y-intercepts ±2 to ±5 |
+| node:820 | `polynomial-division`: asks for the four numbers A; B; C; R, with a remainder | divides exactly and asks for the quotient written as a polynomial |
 
-Port recipes that keep the source's ranges are ready for node:376 (`a1-primes`), node:570 (`a1-system` variant `570`), node:690 (`a1-trinom` variant `690`), node:742 (`a1-sci` variant `742`), node:752 (`a1-graph3` variant `752`).
+Port recipes that keep the source's ranges are ready for node:376 (`a1-primes`), node:570 (`a1-system` variant `570`), node:690 (`a1-trinom` variant `690`), node:742 (`a1-sci` variant `742`), node:752 (`a1-graph3` variant `752`), node:820 (`a1-polydiv` variant `820`).
 
 **Why the course chat cannot do it.** Replacing an adaptation removes its catalog entry, and `tests/breadth-bank-audit.py` line 121 asserts fixed totals (`count==14800 and len(recipes)==65`). Checked in an integrated copy on 2026-10-15: with node:376 replaced, that assertion fails; `breadth-bank.cjs`, `grade5.test.cjs` and the other shared tests pass. The later records in this table have the same dependency (each adaptation is a breadth entry).
 
 **Change wanted:** in `tests/breadth-bank-audit.py`, derive the expected count and recipe total from the entries still served by the breadth family, instead of fixed numbers.
 
-**Then, in `scripts/port_a1_tasks.py`:** add each record with `replaces` True (`(N + '376', 'a1-primes', None, 'Write a number as a product of primes', 'number-theory', True)`; `(N + '570', 'a1-system', '570', 'Solve a system by substitution', 'systems', True)`; `(N + '690', 'a1-trinom', '690', 'Factor a trinomial with a negative constant', 'factoring', True)`; `(N + '742', 'a1-sci', '742', 'Write a number in scientific notation', 'scientific-notation', True)`; `(N + '752', 'a1-graph3', '752', 'Choose the graph of a line from its slope and intercept', 'lines-slope', True)`), oracles for any recipe without one in `tests/port-algebra-1.cjs`, and decisions covering the records.
+**Then, in `scripts/port_a1_tasks.py`:** add each record with `replaces` True (`(N + '376', 'a1-primes', None, 'Write a number as a product of primes', 'number-theory', True)`; `(N + '570', 'a1-system', '570', 'Solve a system by substitution', 'systems', True)`; `(N + '690', 'a1-trinom', '690', 'Factor a trinomial with a negative constant', 'factoring', True)`; `(N + '742', 'a1-sci', '742', 'Write a number in scientific notation', 'scientific-notation', True)`; `(N + '752', 'a1-graph3', '752', 'Choose the graph of a line from its slope and intercept', 'lines-slope', True)`; `(N + '820', 'a1-polydiv', '820', 'Divide a cubic by a binomial', 'polynomials', True)`), oracles for any recipe without one in `tests/port-algebra-1.cjs`, and decisions covering the records.
 
 **Meanwhile:** the records stay covered-provisional.
 

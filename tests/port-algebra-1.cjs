@@ -389,6 +389,48 @@ const oracle={
  'a1-graph3':(q,p)=>q.answer.kind==='teacher'&&(p.form==='750'?q.answer.reference.includes(`(${p.b}, ${String(p.c+p.a).replace('-','−')})`):q.answer.reference.includes(`(0, ${String(p.d).replace('-','−')})`)),
  'a1-consec':(q,p)=>p.form==='755'?P(q).items.join()===[2*p.b-1,2*p.b,2*p.b+1].join()&&P(q).items.reduce((x,y)=>x+y,0)===6*p.b:is(P(q),[p.c+1,1]),
 
+ // Batch A1-9
+ 'a1-consec2':(q,p)=>{const it=P(q).items;if(p.form==='759'){const [x,y,z]=it,f=p.f;return x%2!==0&&y===x+2&&z===x+4&&(p.q===2?x+z===y+y:p.d*(x+y)-p.e*z===f);}
+  if(p.form==='760'){const [w,x,y,z]=it;return w%2===0&&x===w+2&&y===w+4&&z===w+6&&(p.q===1?p.d*(w+y):p.d*(w+x))-p.e*z===p.f;}
+  return (p.k===2?p.c%2===0:p.c%2!==0)&&is(P(q),[p.c+2,1])&&q.prompt.includes(`is ${3*p.c}.`);},
+ 'a1-fracword':(q,p)=>is(P(q),div([p.b*p.a,1],Q(p.b,p.d))),
+ 'a1-rateq':(q,p)=>{const z=P(q).v,L=div(add(z,[p.e,1]),[p.a,1]),R=div(sub(mul([p.f,1],z),[p.g,1]),[p.c,1]);const lhs=sub(L,Q(p.d,p.b));return lhs[0]===R[0]&&lhs[1]===R[1];},
+ 'a1-subsys':(q,p)=>{const X=P(q,0).v,Y=P(q,1).v,nums=(q.prompt.match(/-?\d+/g)||[]).map(Number);
+  if(p.form==='775'){const m=q.prompt.match(/R_A = (\d+), R_B = (\d+) and T_B = (\d+) − T_A/);const [a,b,c]=m.slice(1).map(Number);const l=mul([a,1],X),r=mul([b,1],Y),t=add(X,Y);return l[0]===r[0]&&l[1]===r[1]&&t[0]===c&&t[1]===1;}
+  if(p.form==='828'){const m=q.prompt.match(/= (\d+), T_m = (\d+), T_n = (\d+) and R_m − R_n = (\d+)/).slice(1).map(Number);return X[1]===1&&Y[1]===1&&X[0]*m[1]+Y[0]*m[2]===m[0]&&X[0]-Y[0]===m[3];}
+  const m=q.prompt.match(/= (\d+), R_A = (\d+), R_B = (\d+) and T_A = T_B ([+−]) (\d+)/);const k=(m[4]==='−'?-1:1)*Number(m[5]);void nums;return X[1]===1&&Y[1]===1&&Number(m[2])*X[0]+Number(m[3])*Y[0]===Number(m[1])&&X[0]-Y[0]===k;},
+ 'a1-sciops':(q,p)=>{const sup={'⁰':0,'¹':1,'²':2,'³':3,'⁴':4,'⁵':5,'⁶':6,'⁷':7,'⁸':8,'⁹':9};const rd=t=>{t=t.trim();const m=t.match(/^(\d) × 10([⁻]?)([⁰-⁹¹²³]+)$/);if(m){const e=Number([...m[3]].map(c=>sup[c]).join(''));return Number(m[1])*10**(m[2]?-e:e);}return Number(t.replace(/,/g,''));};
+  const m=q.prompt.match(/^Simplify: \((.*?)\)\((.*?)\) \/ \[\((.*?)\)\((.*?)\)\]/).slice(1).map(rd),want=m[0]*m[1]/(m[2]*m[3]);return Math.abs(P(q).v-want)<=1e-9*Math.abs(want);},
+ 'a1-graphsys':(q,p)=>{const ok=p.a*p.e+p.c===p.f&&p.b*p.e+p.d===p.f&&p.a!==p.b;if(q.answer.kind==='teacher')return ok&&q.answer.reference.includes(`(${String(p.e).replace('-','−')}, ${String(p.f).replace('-','−')})`)&&(p.form!=='783'||p.c===0||p.d===0);
+  const pt=P(q),X=pt.v[0][0]/pt.v[0][1],Y=pt.v[1][0]/pt.v[1][1],eqs=q.prompt.replace(/^.*?: /,'').replace(/\. Write.*$/,'').split(' and ');return ok&&eqs.every(e=>{const [L,R]=e.split(' = ').map(t=>S.parseExpr(t,['x','y']));return near(L({x:X,y:Y}),R({x:X,y:Y}));});},
+ 'a1-systype':(q,p)=>{const det=p.a*p.e-p.b*p.d,kind=det!==0?'consistent':p.a*p.f===p.c*p.d&&p.b*p.f===p.c*p.e?'dependent':'inconsistent';return P(q).alts[0]===kind&&(p.form!=='mc'||kind!=='consistent');},
+ 'a1-funceval':(q,p)=>p.form==='792'?polyIs(P(q),[[p.a,{[p.X]:2}],[2*p.a*p.c,{[p.X]:1}],[p.a*p.c*p.c+p.b,{}]]):polyIs(P(q),[[1,{[p.A]:2}],[2*p.J,{[p.A]:1}],[p.J*p.J,{}],[p.p,{[p.A]:1}],[p.p*p.J,{}]]),
+ 'a1-domain2':(q,p)=>{const pt=P(q);if(p.form==='796'){const fv=x=>0.25*(x-p.h)**2+p.m,lo=Math.min(fv(p.L),fv(p.R),p.m),hi=Math.max(fv(p.L),fv(p.R));const r=q.answer.parts[1];
+   return pt.lo===p.L&&pt.hi===p.R&&pt.loIn===!p.lo&&pt.hiIn===!p.ro&&r.lo===lo&&r.hi===hi&&r.loIn&&p.h>p.L&&p.h<p.R;}
+  if(p.form==='795'){const m1=p.fx.match(/√\((\d+) − x\)/),m2=p.fx.match(/√\((\d+)x ([+−]) (\d+)\)/);if(m1)return pt.op==='le'&&near(pt.b,Number(m1[1]));return pt.op==='ge'&&near(pt.b,-(m2[2]==='−'?-1:1)*Number(m2[3])/Number(m2[1]));}
+  return pt.op==='ge'&&pt.b===p.a*p.a*(p.b<0?1:-1);},
+ 'a1-coins':(q,p)=>{const X=P(q,0).v[0],Y=P(q,1).v[0],cents=Math.round(Number(q.prompt.match(/\$(\d+(?:\.\d+)?)/)[1])*100);if(X*p.v1+Y*p.v2!==cents)return false;
+  if(p.form==='801'){const m=q.prompt.match(/there were (\d+) more/);return Math.abs(X-Y)===Number(m[1]);}return X+Y===Number(q.prompt.match(/there were (\d+) coins/)[1]);},
+ 'a1-radmul':(q,p)=>{const r=Math.sqrt;if(p.form==='806')return near(P(q).v,p.f*r(p.a)*(p.g*r(p.a*p.c*p.c)+p.h*r(p.b*p.d*p.d))+r(p.b*p.e*p.a));return near(P(q).v,p.a*r(p.b)*(p.c*r(p.d)-p.e*r(p.f)));},
+ 'a1-functest':(q,p)=>{const fn=t=>{const pr=[...t.matchAll(/(\d+)(?:, | → )(\d+)/g)].map(m=>[m[1],m[2]]);return pr.length>=3&&pr.every(([x,y])=>pr.every(([x2,y2])=>x!==x2||y===y2));};
+  const parts=q.prompt.split(/\s\([a-d]\)\s/).slice(1);if(p.form==='809'||p.form==='831')return parts.every((t,i)=>q.answer.parts[i].alts[0]===((/graph/.test(t)?p.g:fn(t))?'yes':'no'));
+  const k='abcd'.indexOf(P(q).alts[0]);return parts.length===4&&parts.every((t,i)=>fn(t)===(i===k?p.want:!p.want));},
+ 'a1-stemleaf':(q,p)=>{const d=p.data;if(p.form==='813'){const mean=d.reduce((x,y)=>x+y,0)/16,rng=Math.max(...d)-Math.min(...d);return d.length===16&&q.answer.reference.includes(`Mean ${mean}`)&&q.answer.reference.includes(`range ${rng}`);}
+  return d.length===20&&is(P(q),[d.filter(x=>x>p.cut).length,1]);},
+ 'a1-histo':(q,p)=>{const c=p.counts;if(p.form==='816')return q.answer.reference.includes(c.join(', '))&&p.scores.length===c.reduce((x,y)=>x+y,0)&&[0,1,2,3,4].every(i=>p.scores.filter(x=>x>=70+10*i&&x<80+10*i).length===c[i]);
+  return is(P(q),[p.f===8?c[1]+c[2]:c[2],1]);},
+ 'a1-polydiv':(q,p)=>{const pt=P(q),ev=(P0,x)=>Object.entries(P0).reduce((t,[k,c])=>t+c*[...k.matchAll(/([a-z])(-?\d+)/g)].reduce((m,[,,e])=>m*x**Number(e),1),0),f=p.form;let Pf,d;
+  if(f==='821'){Pf=x=>p.a*x**3+p.b*x+p.c;d=p.d;}else if(f==='824'){Pf=x=>(x+p.d)*(p.a*x*x+p.b*x+p.c)+p.e;d=p.d;}else if(f==='822'){Pf=x=>x**3+p.a**3;d=p.a;}else{Pf=x=>p.g*x**3+(p.g*p.d+p.e)*x*x+(p.d*p.e+p.f)*x+p.d*p.f;d=p.d;}
+  return [-2.3,0.7,1.9].every(x=>near(ev(pt.q,x)*(x+d)+pt.r,Pf(x)))&&ev(pt.div,0.7)===0.7+d&&(f!=='821'||pt.r!==0);},
+ 'a1-quadfac':(q,p)=>P(q).items.length===2&&P(q).items.every(x=>p.a*p.a*x===x*x)&&new Set(P(q).items).size===2,
+ 'a1-value':(q,p)=>{const tot=Math.round(Number(q.prompt.match(/(?:spent|total of|totalled) \$(\d+(?:\.\d+)?)/)[1])*100);if(p.form==='846'){const nC=P(q).v[0],nM=p.d===1?nC-p.c:nC+p.c;return nM>0&&p.a*nC+p.b*nM===tot;}
+  if(p.form==='847'){const b=p.a-1.5;return is(P(q),[p.ask===1?p.c1:p.c2,1])&&Math.round((p.a*p.c1+b*p.c2)*100)===tot;}
+  const A=P(q,0).v[0],St=P(q,1).v[0];return A+St===Number(q.prompt.match(/sold (\d+) tickets/)[1])&&p.b*A+p.a*St===tot/100;},
+ 'a1-twoeq':(q,p)=>{const f=p.form;if(f==='851'){const [x,y]=[...P(q).items].sort((u,v)=>u-v);return x+y===p.a+p.b&&y-x===p.b-p.a;}
+  if(f==='852'){const T=(2*p.a+p.b-p.b)/2;return is(P(q),[p.e===1?T:T+p.b,1]);}
+  if(f==='853'){const Pa=P(q,0).v[0],Mo=P(q,1).v[0];return Pa+Mo===p.a+p.b&&Mo===2*Pa+(p.b-2*p.a);}
+  const X=P(q,0).v[0],Y=P(q,1).v[0],tot=Number(q.prompt.match(/found \$(\d+)/)[1]);return X*p.a+Y*p.b===tot&&X-Y===(p.d===1?p.c:-p.c);},
+
 };
 const near=(x,y)=>Math.abs(x-y)<=1e-9*Math.max(1,Math.abs(y));
 
@@ -407,6 +449,9 @@ const wrong={
  'a1-multivar':q=>P(q).t==='solve'?[q.answer.value.replace(/^\s*\w\s*=\s*/,'')]:[],
  'a1-rat-add':q=>[q.answer.value.replace(/\)\/\(.*$/,')')],
  'a1-conj':q=>q.answer.parts&&P(q).t==='conj'?[`${P(q).lo} < x`]:[],
+ 'a1-polydiv':q=>[q.answer.value.replace(/ [+−] \d+\/\(.*\)$/,'')+(P(q).r?'':' + 1/(x + 1)')],
+ 'a1-sciops':q=>[String(P(q).v*10)],
+ 'a1-domain2':q=>P(q).t==='ineq'?[q.answer.value.replace(/[≤≥]/,c=>c==='≤'?'≥':'≤')]:[],
 };
 
 H.run({key:'algebra-1',oracle,wrong,instances:Number(process.argv[2]||250)});

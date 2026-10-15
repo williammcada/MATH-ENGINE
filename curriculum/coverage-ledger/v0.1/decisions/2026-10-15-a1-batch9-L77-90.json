@@ -1,0 +1,461 @@
+{
+ "batch": "A1-9 algebra-1 lessons 77-90",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "algebra-1-en:node:759",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:759"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. The integers in any order."
+  },
+  {
+   "id": "algebra-1-en:node:760",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:760"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:761",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:761"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:763",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:763"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:764",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:764"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:765",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:764",
+   "note": "Choice-only twin of node:764 (same ranges and question). Served by that task, free response by default."
+  },
+  {
+   "id": "algebra-1-en:node:772",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:772"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Free response by default; an exact mixed number, fraction or integer."
+  },
+  {
+   "id": "algebra-1-en:node:775",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:775"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Variables T_A and T_B; both values, separated by a semicolon."
+  },
+  {
+   "id": "algebra-1-en:node:776",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:776"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:779",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:779"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. An ordinary number or scientific notation is accepted."
+  },
+  {
+   "id": "algebra-1-en:node:780",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:780"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:783",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:783"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed graph with a rubric; shared coordinate-plane drawing."
+  },
+  {
+   "id": "algebra-1-en:node:784",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:784"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed graph with a rubric."
+  },
+  {
+   "id": "algebra-1-en:node:785",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:785"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Free response by default: the ordered pair (x, y); the lines are drawn."
+  },
+  {
+   "id": "algebra-1-en:node:788",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:788"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. One word: consistent, inconsistent or dependent."
+  },
+  {
+   "id": "algebra-1-en:node:789",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:789"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:792",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:792"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. A polynomial with like terms combined."
+  },
+  {
+   "id": "algebra-1-en:node:793",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:793"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:795",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:795"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. An inequality in x; the forms D = {x ∈ ℝ | …} and {x | …} are accepted."
+  },
+  {
+   "id": "algebra-1-en:node:796",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:796"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Original drawing: a curve with open or closed endpoints; domain and range as two inequalities."
+  },
+  {
+   "id": "algebra-1-en:node:797",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:797"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:800",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:800"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:801",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:801"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:802",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:802"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:805",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:805"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Exact answer with simplified radicals."
+  },
+  {
+   "id": "algebra-1-en:node:806",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:806"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:807",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:805",
+   "note": "Choice-only twin of node:805 (same ranges and question). Served by that task, free response by default."
+  },
+  {
+   "id": "algebra-1-en:node:809",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:809"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Yes or no for each relation."
+  },
+  {
+   "id": "algebra-1-en:node:810",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:810"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:813",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:813"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed plot with a rubric; shared stem-and-leaf drawing for the reference."
+  },
+  {
+   "id": "algebra-1-en:node:814",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:814"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:816",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:816"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed histogram with a rubric; shared histogram drawing for the reference."
+  },
+  {
+   "id": "algebra-1-en:node:817",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:817"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:821",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:821"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. The quotient with the remainder written over the divisor (Q + r/(x + d)); \"Q R r\" is also accepted."
+  },
+  {
+   "id": "algebra-1-en:node:822",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:822"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:823",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:823"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:824",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:824"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:825",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:821",
+   "note": "Choice-only twin of node:821 (same ranges and question). Served by that task, free response by default."
+  },
+  {
+   "id": "algebra-1-en:node:828",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:828"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:829",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:828",
+   "note": "Choice-only twin of node:828 (same ranges and question). Served by that task, free response by default."
+  },
+  {
+   "id": "algebra-1-en:node:831",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:831"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Yes or no for each relation; the third is a drawn graph (vertical line test)."
+  },
+  {
+   "id": "algebra-1-en:node:832",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:832"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:836",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:836"
+   ],
+   "note": "Reviewed against the source: the existing quadratic adaptation (opposite-roots) asks the same thing in the same response form with the source's ranges (x² + (a − b)x = ab with a from 2 to 9 and b from 3 to 9). Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:837",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:837"
+   ],
+   "note": "Reviewed against the source: the existing quadratic adaptation (square-integer) asks the same thing in the same response form with the source's ranges (x² = a² with a from the source's list 2, 3, 5, 6, 7, 10, 11, 13). Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:838",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:838"
+   ],
+   "note": "Reviewed against the source: the existing quadratic adaptation (square-fraction) asks the same thing in the same response form with the source's ranges (b² = a²x² with a from 2 to 10, b from 2 to 9, relatively prime). Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:839",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:839"
+   ],
+   "note": "Reviewed against the source: the existing quadratic adaptation (signed-rearranged) asks the same thing in the same response form with the source's ranges (roots −a and −b, a from ±1 to ±9 and b from ±2 to ±9, rearranged with the x² term on the right). Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:840",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:840"
+   ],
+   "note": "Reviewed against the source: the existing quadratic adaptation (signed-reversed) asks the same thing in the same response form with the source's ranges (the same roots, written as (a + b)x = −ab − x²). Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:841",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:841"
+   ],
+   "note": "Reviewed against the source: the existing quadratic adaptation (negative-roots) asks the same thing in the same response form with the source's ranges (x² + (a + b)x = −ab with a from 1 to 9 and b from 1 to 8). Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:842",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:842"
+   ],
+   "note": "Reviewed against the source: the existing quadratic adaptation (scaled-roots) asks the same thing in the same response form with the source's ranges (a common factor 2 to 4, with a repeated root or two roots). Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:843",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:843"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Free response by default: both solutions, in any order."
+  },
+  {
+   "id": "algebra-1-en:node:846",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:846"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:847",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:847"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:848",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:848"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:851",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:851"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. The two numbers in any order."
+  },
+  {
+   "id": "algebra-1-en:node:852",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:852"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:853",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:853"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:854",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:854"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:855",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:853",
+   "note": "Choice-only twin of node:853 (same ranges and question). Served by that task, free response by default."
+  }
+ ]
+}
