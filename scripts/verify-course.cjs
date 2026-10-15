@@ -22,7 +22,21 @@ const COURSES = { 'intermediate-4': 'i4', 'algebra-half': 'ah', 'algebra-1': 'a1
 const args = process.argv.slice(2), key = args[0];
 if (!(key in COURSES) && key !== 'all') { console.error('Usage: node scripts/verify-course.cjs <' + Object.keys(COURSES).join('|') + '|all> [--base REF] [--files-only] [--keep]'); process.exit(2); }
 const opt = n => { const i = args.indexOf(n); return i < 0 ? null : args[i + 1]; };
-const git = (...a) => execFileSync('git', a, { cwd: root, encoding: 'utf8' }).trim();
+const gitRaw = (...a) => execFileSync('git', a, { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+const git = (...a) => gitRaw(...a).trim();
+const SETUP = 'claude/coverage-parallel-setup';
+// Where the course branch started: --base, else its merge-base with the setup branch. A single-branch or shallow clone
+// may not have that history, so fetch it (bounded depth) once before giving up.
+function findBase() {
+  const tryRefs = () => { for (const ref of ['origin/' + SETUP, SETUP]) { try { return git('merge-base', 'HEAD', ref); } catch (e) { /* next */ } } return null; };
+  let b = tryRefs(); if (b) return b;
+  try {
+    gitRaw('fetch', '-q', '--depth=1000', 'origin', `${SETUP}:refs/remotes/origin/${SETUP}`);
+    const cur = git('rev-parse', '--abbrev-ref', 'HEAD');
+    if (cur !== 'HEAD') { try { gitRaw('fetch', '-q', '--depth=1000', 'origin', cur); } catch (e) { /* not pushed yet */ } }
+  } catch (e) { /* offline */ }
+  return tryRefs();
+}
 
 // Files a course chat owns. Everything else is shared and changes only in the integration pass.
 function OWNED(k) {
@@ -39,15 +53,13 @@ function OWNED(k) {
 
 let failed = false;
 if (key !== 'all') {
-  let base = opt('--base');
-  if (!base) for (const ref of ['origin/claude/coverage-parallel-setup', 'claude/coverage-parallel-setup']) {
-    try { base = git('merge-base', 'HEAD', ref); break; } catch (e) { /* try the next */ }
-  }
-  if (!base) { console.error('Could not find where this branch started; pass --base <commit>.'); process.exit(2); }
-  const changed = [...new Set([
-    ...git('diff', '--name-only', base, 'HEAD').split('\n'),
-    ...git('status', '--porcelain', '--untracked-files=all').split('\n').map(l => l.slice(3).replace(/^.* -> /, '')),
-  ].filter(Boolean))].sort();
+  const base = opt('--base') || findBase();
+  if (!base) { console.error(`Could not find where this branch started. Run: git fetch --depth=1000 origin ${SETUP}  — or pass --base <commit>.`); process.exit(2); }
+  // Committed changes since the base, plus uncommitted and untracked ones (porcelain -z: "XY path", renames add the old path).
+  const status = gitRaw('status', '--porcelain', '-z', '--untracked-files=all').split('\0').filter(Boolean);
+  const pending = [];
+  for (let i = 0; i < status.length; i++) { pending.push(status[i].slice(3)); if (/^R|^C/.test(status[i])) i++; }
+  const changed = [...new Set([...git('diff', '--name-only', base, 'HEAD').split('\n'), ...pending].filter(Boolean))].sort();
   const owned = OWNED(key), foreign = changed.filter(f => !owned.some(r => r.test(f)));
   console.log(`Ownership (${key}, since ${base.slice(0, 7)}): ${changed.length} changed file(s)`);
   if (foreign.length) { failed = true; console.log('FAIL  shared or other-course files changed — stop and ask the owner:\n  ' + foreign.join('\n  ')); }
