@@ -1,9 +1,11 @@
-/* Verification for the host practice layer (host-integration-v0.1, Engine 0.34.0; standards and 9.6 guard, Engine 0.35.0).
- * Run: node tests/practice.cjs [seedsPerItem=50]  — writes docs/verification/practice-v0.35.0-results.json */
+/* Verification for the host practice layer (host-integration-v0.1, Engine 0.34.0; standards and 9.6 guard, Engine 0.35.0;
+ * universal answer pad U-18, Engine 0.36.0).
+ * Run: node tests/practice.cjs [seedsPerItem=50]  — writes docs/verification/practice-v0.36.0-results.json */
 'use strict';
 const fs = require('fs'), path = require('path'), crypto = require('crypto'), assert = require('assert');
 const root = path.join(__dirname, '..');
 const P = require('../src/practice.js');
+const PAD = require('../src/answer-pad.js'), PAD_KEYS = JSON.stringify(PAD.keys);
 const banks = require('../src/course-banks.js');
 const SEEDS = Number(process.argv[2] || 50);
 const sha = t => crypto.createHash('sha256').update(t).digest('hex');
@@ -33,7 +35,7 @@ pass('catalog', { total: P.catalog.length, k7Skills: skills.length, k7ByGrade: g
 }
 
 // 3. Every game-eligible item, every seed
-let unsimplifiedAccepted = 0; const unsimplifiedAcceptedIds = new Set(); let redrawn = 0, evaluated = 0, fractionItems = 0, unsimplifiedFlagged = 0, generated = 0, selfChecked = 0, roundTrip = 0, perturbedRejected = 0, deterministic = 0, keypadCovered = 0, studioIdentical = 0;
+let unsimplifiedAccepted = 0; const unsimplifiedAcceptedIds = new Set(); let redrawn = 0, evaluated = 0, fractionItems = 0, unsimplifiedFlagged = 0, generated = 0, selfChecked = 0, roundTrip = 0, perturbedRejected = 0, deterministic = 0, keypadCovered = 0, studioIdentical = 0, padUniform = 0, padTypedAccepted = 0, keypadItems = 0;
 const perturb = text => text + '7';
 for (const entry of P.catalog) {
   for (let s = 0; s < SEEDS; s++) {
@@ -59,8 +61,12 @@ for (const entry of P.catalog) {
     if (!P.checkAnswer(item, perturb(item.answerText))) perturbedRejected++; else fail('perturbed-answer-accepted', { id: entry.id, seed, answer: item.answerText });
     if (!item.prompt || !item.html) fail('display', { id: entry.id, seed });
     if (item.inputMode === 'keypad') {
-      const keys = new Set(item.keys), ok = [...item.answerText].every(ch => keys.has(ch) || ch === ' ');
-      if (ok || entry.layer === 'skill') keypadCovered++; else fail('keypad-keys', { id: entry.id, seed, answer: item.answerText });
+      // U-18: every layer, K–7 skills included. The answer, written with pad keys, is typeable on the pad and accepted.
+      keypadItems++;
+      const typed = PAD.padForm(item.answerText).replace(/-/g, '−');
+      if (PAD.onlyPadCharacters(typed)) keypadCovered++; else fail('keypad-keys', { id: entry.id, seed, answer: item.answerText, typed });
+      if (JSON.stringify(item.keys) === PAD_KEYS) padUniform++; else fail('answer-pad-uniform', { id: entry.id, seed, keys: item.keys });
+      if (P.evaluate(item, typed).correct) padTypedAccepted++; else fail('pad-typed-answer-accepted', { id: entry.id, seed, answer: item.answerText, typed, reason: P.evaluate(item, typed).reason });
     } else keypadCovered++;
     if (entry.layer === 'bank') {
       if (item.raw.answer.kind === 'teacher') fail('teacher-kind-leaked', { id: entry.id, seed });
@@ -82,6 +88,8 @@ results.checks['unsimplified-fraction-feedback'].simplestFormRequiredAndFlagged 
 results.checks['unsimplified-fraction-feedback'].equivalentFormsAllowedByPrompt = { items: unsimplifiedAccepted, entries: unsimplifiedAcceptedIds.size };
 record('perturbed-answer-rejected', perturbedRejected, n);
 record('keypad-keys-cover-answer', keypadCovered, n);
+record('answer-pad-uniform', padUniform, keypadItems);
+record('pad-typed-answers-accepted', padTypedAccepted, keypadItems);
 record('studio-items-identical', studioIdentical, nb);
 results.checks['teacher-variant-redraws'] = { status: 'Informational', count: redrawn, note: 'Studio draw was teacher-reviewed for this seed; engine redrew deterministically.' };
 const modes = {}; for (const e of bankRows) { const m = P.generate(e.id, { seed: 'mode' }).inputMode; modes[m] = (modes[m] || 0) + 1; }
@@ -114,6 +122,34 @@ results.checks['bank-input-modes'] = { status: 'Informational', ...modes };
     if (it.inputMode === 'choice') { const wrongChoice = it.choices.find(c => c !== it.answerText); if (P.evaluate(it, wrongChoice).correct || P.evaluate(it, 'not listed').valid) fail('choice-evaluate', { id: e.id }); }
   }
   pass('continuity-independent-oracle', { items: checked });
+}
+
+// 3c. Universal answer pad (U-18)
+{
+  const flat = PAD.tabs.map(t => t.rows.flat());
+  assert.deepStrictEqual(PAD.tabs.map(t => t.label), ['123', 'Algebra']);
+  assert.deepStrictEqual(flat[0], ['7', '8', '9', 'back', '4', '5', '6', 'clear', '1', '2', '3', '/', '0', '.', '−', 'R', ':', ';', ',', ' ']);
+  assert.deepStrictEqual(flat[1], ['x', 'y', '^', 'back', '+', '−', '×', '÷', '(', ')', '√', 'clear', '=', '<', '>', '%', '≤', '≥', '{', '}', '$', 'AM', 'PM', ' ']);
+  assert.deepStrictEqual(P.keypadKeys(), PAD.keys); assert.deepStrictEqual(P.keypadKeys({ keys: ['1'] }), PAD.keys);
+  pass('answer-pad-layout', { keys: PAD.keys.length, tabs: PAD.tabs.map(t => t.label) });
+  // Radicals are pad items and accept √ entry, with or without a written ×.
+  const radicalIds = bankRows.filter(e => /sqrt\(/.test(P.generate(e.id, { seed: 'rad' }).answerText)).map(e => e.id);
+  let radicalOk = 0;
+  for (const id of radicalIds) {
+    const it = P.generate(id, { seed: 'rad' }), a = PAD.padForm(it.answerText);
+    if (it.inputMode === 'keypad' && P.checkAnswer(it, a) && P.checkAnswer(it, a.replace(/×(?=√)/g, ''))) radicalOk++; else fail('radicals-on-pad', { id, answer: it.answerText });
+  }
+  record('radicals-on-pad', radicalOk, radicalIds.length);
+  // The keys never give the answer away: zero- and nonzero-remainder division items get identical keys.
+  const div = bankRows.find(e => e.sourceId === 'course-87-en:item:SN870001');
+  const seen = new Map();
+  for (let s = 0; s < 200 && seen.size < 2; s++) { const it = P.generate(div.id, { seed: 'rem-' + s }); seen.set(/ R /.test(it.answerText), it.keys); }
+  if (seen.size === 2 && JSON.stringify(seen.get(true)) === JSON.stringify(seen.get(false)) && P.evaluate(P.generate(div.id, { seed: 'rem-0' }), P.generate(div.id, { seed: 'rem-0' }).answerText.replace(/ R /, 'R')).correct) pass('no-answer-leak', { entry: div.id });
+  else fail('no-answer-leak', { entry: div && div.id, cases: seen.size });
+  // Pad-typed forms: minus sign, R without spaces, AM without a space, × for *.
+  const forms = [['g4-div-2by1-remainder', a => a.replace(/ /g, '')], ['g1-time', a => a.replace(' ', '')], ['g7-inequality', a => a.replace(/-/g, '−')], ['g5-write', a => a]];
+  for (const [id, f] of forms) { const it = P.generate(id, { seed: 'forms' }); if (!P.evaluate(it, f(it.answerText)).correct) fail('pad-forms', { id, answer: it.answerText }); }
+  pass('pad-forms', { cases: forms.length });
 }
 
 // 4. Related easier/harder return only game-eligible ids
@@ -164,6 +200,6 @@ pass('bundle-provenance', { bundleSha256: bprov.bundleSha256, contentHash: P.con
 results.status = results.failures.length || Object.values(results.checks).some(c => c.status === 'Failed') ? 'Failed' : 'Passed';
 results.failures = results.failures.slice(0, 200);
 fs.mkdirSync(path.join(root, 'docs/verification'), { recursive: true });
-fs.writeFileSync(path.join(root, 'docs/verification/practice-v0.35.0-results.json'), JSON.stringify(results, null, 2) + '\n');
+fs.writeFileSync(path.join(root, 'docs/verification/practice-v0.36.0-results.json'), JSON.stringify(results, null, 2) + '\n');
 console.log(JSON.stringify({ status: results.status, failures: results.failures.length, checks: Object.fromEntries(Object.entries(results.checks).map(([k, v]) => [k, v.status])) }, null, 1));
 if (results.status !== 'Passed') { console.log(JSON.stringify(results.failures.slice(0, 15), null, 1)); process.exit(1); }

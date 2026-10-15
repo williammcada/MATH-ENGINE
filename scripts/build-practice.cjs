@@ -74,7 +74,7 @@ const __cache = {};
 function __req(id) { if (__cache[id]) return __cache[id].exports; const module = { exports: {} }; __cache[id] = module; __defs[id].call(globalThis, module, module.exports, __req); return module.exports; }
 const MathEnginePractice = __req(${entry});
 export default MathEnginePractice;
-export const { version, bankVersion, k7Version, k7BaselineSha256, catalog, courses, find, generate, nextItem, checkAnswer, evaluate, related, keypadKeys, Practice, freshMath, configError, formatMath, contentHash } = MathEnginePractice;
+export const { version, bankVersion, k7Version, k7BaselineSha256, catalog, courses, find, generate, nextItem, checkAnswer, evaluate, related, keypadKeys, answerPad, Practice, freshMath, configError, formatMath, contentHash } = MathEnginePractice;
 `;
 fs.mkdirSync(path.join(root, 'dist'), { recursive: true });
 fs.writeFileSync(path.join(root, 'dist/math-engine-practice.js'), bundle);

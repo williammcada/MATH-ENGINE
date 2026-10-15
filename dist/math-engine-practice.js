@@ -11,14 +11,16 @@ const __defs = {
  *   - Course banks: Intermediate 4 → Algebra 2 entries whose answers are auto-checked
  *     (spec decision D2). Teacher-reviewed tasks are not game-eligible.
  * Hosts must not generate or check mathematics themselves.
+ * Every keypad item uses the one universal answer pad (src/answer-pad.js, handbook U-18, Engine 0.36.0).
  */
 'use strict';
 const banks = __req(1);
 const { loadK7Skills, baselineSha256 } = __req(68);
 const INDEX = __req(69);
 const CONT = __req(70);
+const PAD = __req(71);
 
-const version = '0.35.0-rc.1';
+const version = '0.36.0-rc.1';
 const freeze = Object.freeze;
 
 // ---------- deterministic randomness ----------
@@ -63,24 +65,19 @@ const courses = freeze(INDEX.courses.map(c => freeze({ ...c, count: bankEntries.
 const find = id => byId.get(id) || null;
 
 // ---------- answer entry ----------
-const BASE_KEYS = ['7', '8', '9', 'back', '4', '5', '6', 'clear', '1', '2', '3', '-', '0', '.', '/', ' '];
-const KEYPAD_EXTRAS = ['R', ':', ';', ',', '<', '>', '=', '$', '+', '×', '(', ')', '{', '}', '^', '%'];
+// One pad for every question (U-18). The keys never depend on the correct answer.
+const padItem = () => ({ inputMode: 'keypad', keys: PAD.keys.slice() });
 function bankEntryMode(answerText) {
-  const extra = new Set();
-  for (const ch of String(answerText)) {
-    if (/[0-9.\/\- ]/.test(ch)) continue;
-    if (KEYPAD_EXTRAS.includes(ch)) { extra.add(ch); continue; }
-    return { inputMode: 'keyboard', keys: [] };
-  }
-  return { inputMode: 'keypad', keys: [...BASE_KEYS, ...KEYPAD_EXTRAS.filter(k => extra.has(k))] };
+  // Pad when the answer can be typed with pad keys (sqrt(...) and * written as √ and ×); otherwise
+  // the answer is words, letters or Roman numerals and uses a text box (U-18 boundary).
+  return PAD.onlyPadCharacters(PAD.padForm(answerText)) ? padItem() : { inputMode: 'keyboard', keys: [] };
 }
 
 // ---------- items ----------
 function fromSkill(skill, raw, meta) {
   const item = { ...raw, engine: version, id: skill.id, layer: 'skill', ...meta };
   item.html = K7.formatItem(raw);
-  item.inputMode = 'keypad';
-  item.keys = K7.keypadKeys(raw.type);
+  Object.assign(item, padItem());
   // Display/report text only; checking still uses the baseline's own answer and tolerance.
   item.answerText = typeof raw.answer === 'number' ? String(Number(raw.answer.toPrecision(12))) : String(raw.answer).replace(/^(-?\d+)\/1$/, '$1');
   // Show expression answers with the keypad's × (the baseline stores *, and accepts ×, * or juxtaposition).
@@ -93,7 +90,7 @@ function fromBank(entry, raw, meta) {
   return { engine: version, id: entry.id, layer: 'bank', ...meta, prompt: raw.prompt, type: 'bank', html: banks.renderQuestion(raw), ...bankEntryMode(answerText), answerText, solution: raw.solution || '', raw };
 }
 function fromContinuity(entry, raw, meta) {
-  const keys = raw.kind === 'choice' ? [] : raw.kind === 'fraction' ? BASE_KEYS.slice() : BASE_KEYS.slice();
+  const keys = raw.kind === 'choice' ? [] : PAD.keys.slice();
   return { engine: version, id: entry.id, layer: 'continuity', ...meta, prompt: raw.prompt, type: raw.kind, kind: raw.kind,
     html: `<div class="engine-question"><p>${raw.promptHTML || CONT.esc(raw.prompt)}</p></div>`,
     inputMode: raw.kind === 'choice' ? 'choice' : 'keypad', keys, choices: raw.choices || null,
@@ -144,7 +141,7 @@ function nextItem(id, state = {}) {
 /** The only answer validator hosts use. Accepts items after a JSON round trip. */
 function checkAnswer(item, response) {
   if (!item || typeof item !== 'object') return false;
-  const text = typeof response === 'string' ? response : response == null ? '' : String(response);
+  const text = PAD.normalizeTyped(typeof response === 'string' ? response : response == null ? '' : String(response));
   if (!text.trim()) return false;
   if (item.layer === 'bank') {
     try { return banks.checkAnswer(item.raw, text).answerCorrect === true; } catch { return false; }
@@ -155,7 +152,7 @@ function checkAnswer(item, response) {
 const MESSAGES = Object.freeze({
   empty: 'Enter an answer.',
   tooLong: 'That answer is too long.',
-  keys: 'Use only the answer keys shown for this question.',
+  keys: 'Use the answer keys on the pad.',
   choice: 'Choose one of the answers shown.',
   unsimplified: 'Your value is correct, but the fraction is not in simplest form. Simplify it and try again.',
   wrong: 'Not yet. Check your work, then try again.'
@@ -182,13 +179,11 @@ function evaluate(item, response) {
   if (item && item.inputMode === 'choice') {
     const ok = (item.choices || []).some(c => String(c).toLowerCase() === normalized.toLowerCase());
     if (!ok) return { valid: false, correct: false, reason: 'not-a-choice', message: MESSAGES.choice, normalized };
-  } else if (item && item.inputMode === 'keypad' && Array.isArray(item.keys) && item.keys.length) {
-    const allowed = new Set([...item.keys.filter(k => k !== 'back' && k !== 'clear').join('').toLowerCase(), ' ', '−']);
-    if (allowed.has('×')) allowed.add('*');
-    if ([...normalized.toLowerCase()].some(ch => !allowed.has(ch))) return { valid: false, correct: false, reason: 'invalid-characters', message: MESSAGES.keys, normalized };
+  } else if (item && item.inputMode === 'keypad') {
+    if (!PAD.onlyPadCharacters(PAD.padForm(normalized))) return { valid: false, correct: false, reason: 'invalid-characters', message: MESSAGES.keys, normalized };
   }
   if (item && item.layer === 'continuity') {
-    const r = CONT.check(item, normalized);
+    const r = CONT.check(item, PAD.normalizeTyped(normalized));
     if (!r.valid) return { valid: false, correct: false, reason: 'invalid-format', message: MESSAGES.wrong, normalized };
     if (r.equivalentUnsimplified) return { valid: true, correct: false, reason: 'equivalent-unsimplified', message: MESSAGES.unsimplified, normalized };
     return r.correct ? { valid: true, correct: true, reason: null, message: '', normalized } : { valid: true, correct: false, reason: 'wrong-value', message: MESSAGES.wrong, normalized };
@@ -198,7 +193,8 @@ function evaluate(item, response) {
   if (simpler && checkAnswer(item, simpler)) return { valid: true, correct: false, reason: 'equivalent-unsimplified', message: MESSAGES.unsimplified, normalized };
   return { valid: true, correct: false, reason: 'wrong-value', message: MESSAGES.wrong, normalized };
 }
-function keypadKeys(item) { return item && Array.isArray(item.keys) ? item.keys.slice() : BASE_KEYS.slice(); }
+/** The universal pad's keys (U-18). The item argument is accepted for compatibility and does not change the keys. */
+function keypadKeys() { return PAD.keys.slice(); }
 
 // ---------- easier / harder ----------
 /** Reviewed links only. Returns game-eligible ids, nearest first; empty when none. */
@@ -294,7 +290,7 @@ function contentHash() {
 }
 const api = freeze({
   version, bankVersion: banks.version, k7Version: 'megaman-v0.7', k7BaselineSha256: baselineSha256,
-  catalog, courses, find, generate, nextItem, checkAnswer, evaluate, related, keypadKeys,
+  catalog, courses, find, generate, nextItem, checkAnswer, evaluate, related, keypadKeys, answerPad: PAD,
   Practice, freshMath, configError, formatMath: K7.formatMath, contentHash: contentHash()
 });
 module.exports = api;
@@ -4323,10 +4319,172 @@ function check(item, response) {
 
 module.exports = Object.freeze({ SKILLS, check, esc });
 
+},
+/* src/answer-pad.js */
+71: function (module, exports, __req) {
+/*
+ * The universal answer pad (handbook U-18, Engine 0.36.0).
+ *
+ * Every math answer pad in every product is this pad. It always shows the full key set,
+ * whatever the question; the keys never depend on the correct answer. Two tabs, 123 first.
+ * Hosts may size and colour it (CSS custom properties --answer-pad-*) but keep its keys,
+ * their order and the two tabs.
+ *
+ * The data part runs anywhere (Node, Workers). mountAnswerPad() needs a browser DOM.
+ */
+'use strict';
+
+const BACK = 'back', CLEAR = 'clear', SPACE = ' ';
+const freeze = Object.freeze;
+
+const tabs = freeze([
+  freeze({ id: '123', label: '123', rows: freeze([
+    freeze(['7', '8', '9', BACK]),
+    freeze(['4', '5', '6', CLEAR]),
+    freeze(['1', '2', '3', '/']),
+    freeze(['0', '.', '−', 'R']),
+    freeze([':', ';', ',', SPACE])
+  ]) }),
+  freeze({ id: 'algebra', label: 'Algebra', rows: freeze([
+    freeze(['x', 'y', '^', BACK]),
+    freeze(['+', '−', '×', '÷']),
+    freeze(['(', ')', '√', CLEAR]),
+    freeze(['=', '<', '>', '%']),
+    freeze(['≤', '≥', '{', '}']),
+    freeze(['$', 'AM', 'PM', SPACE])
+  ]) })
+]);
+
+/** Every key, in pad order, once each (123 tab first). Includes the 'back' and 'clear' actions. */
+const keys = freeze([...new Set(tabs.flatMap(t => t.rows.flat()))]);
+
+/** What a key types. Actions (back, clear) type nothing. AM/PM get a leading space when needed. */
+function textFor(key, current = '') {
+  if (key === BACK || key === CLEAR) return '';
+  if ((key === 'AM' || key === 'PM') && current && !/\s$/.test(current)) return ' ' + key;
+  return key;
+}
+const labelFor = key => key === BACK ? '⌫' : key === CLEAR ? 'Clear' : key === SPACE ? 'Space' : key;
+const ariaFor = key => ({ [BACK]: 'Delete', [CLEAR]: 'Clear answer', [SPACE]: 'Space', '−': 'Minus', '×': 'Times', '÷': 'Divided by', '√': 'Square root', '^': 'To the power of', '≤': 'Less than or equal to', '≥': 'Greater than or equal to', '<': 'Less than', '>': 'Greater than', R: 'R for remainder' })[key] || key;
+
+/** Characters the pad can type, plus keyboard equivalents (* for ×, - for −). Lower case. */
+const allowedCharacters = freeze(new Set([...keys.filter(k => k !== BACK && k !== CLEAR).join('').toLowerCase(), '*', '-']));
+function onlyPadCharacters(text) { return [...String(text).toLowerCase()].every(ch => allowedCharacters.has(ch)); }
+
+/**
+ * Turn text typed on the pad into the forms the Engine's checkers already accept.
+ * − → -, ÷ → /, √N / √(…) → sqrt(N) / sqrt(…), with * inserted after a coefficient (1/6√37 → 1/6*sqrt(37)).
+ * In answers containing √, × becomes * (the radical checkers read *).
+ */
+function normalizeTyped(text) {
+  let t = String(text).replace(/−/g, '-').replace(/÷/g, '/');
+  if (!t.includes('√')) return t;
+  t = t.replace(/√\s*(\((?:[^()]|\([^()]*\))*\)|\d+(?:\.\d+)?|[a-z])/gi, (m, arg) => 'sqrt(' + (arg[0] === '(' ? arg.slice(1, -1) : arg) + ')');
+  // The radical checkers read * for multiplication.
+  return t.replace(/([0-9a-z)])\s*(?=sqrt\()/gi, '$1*').replace(/\s*×\s*/g, '*');
+}
+
+/** The answer as a student would type it on the pad (− for minus, √ for sqrt, × for *). */
+function padForm(answerText) {
+  return String(answerText).replace(/\*?sqrt\(([^()]*)\)/g, (m, arg) => (m[0] === '*' ? '×' : '') + (/^\d+$|^[a-z]$/i.test(arg) ? '√' + arg : '√(' + arg + ')')).replace(/\*/g, '×');
+}
+
+// ---------- browser ----------
+const STYLE_ID = 'math-engine-answer-pad-style';
+const CSS = `
+.answer-pad{--answer-pad-gap:6px;--answer-pad-key-min:44px;--answer-pad-font:20px;--answer-pad-radius:10px;--answer-pad-key-bg:#f4f5f8;--answer-pad-key-fg:#111827;--answer-pad-key-border:#c7cbd4;--answer-pad-action-bg:#e5e7ee;--answer-pad-tab-bg:#e5e7ee;--answer-pad-tab-active-bg:#1f2937;--answer-pad-tab-active-fg:#fff;
+  display:flex;flex-direction:column;gap:var(--answer-pad-gap);width:100%;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-action:manipulation}
+.answer-pad *{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent;box-sizing:border-box}
+.answer-pad-tabs{display:grid;grid-template-columns:1fr 1fr;gap:var(--answer-pad-gap)}
+.answer-pad-tab{min-height:36px;border:1px solid var(--answer-pad-key-border);border-radius:var(--answer-pad-radius);background:var(--answer-pad-tab-bg);color:var(--answer-pad-key-fg);font:600 16px system-ui,sans-serif;cursor:pointer}
+.answer-pad-tab[aria-selected="true"]{background:var(--answer-pad-tab-active-bg);color:var(--answer-pad-tab-active-fg);border-color:var(--answer-pad-tab-active-bg)}
+.answer-pad-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--answer-pad-gap)}
+.answer-pad-grid[hidden]{display:none}
+.answer-pad-key{min-height:var(--answer-pad-key-min);min-width:0;padding:4px;border:1px solid var(--answer-pad-key-border);border-radius:var(--answer-pad-radius);background:var(--answer-pad-key-bg);color:var(--answer-pad-key-fg);font:600 var(--answer-pad-font)/1 system-ui,sans-serif;cursor:pointer}
+.answer-pad-key[data-action]{background:var(--answer-pad-action-bg);font-size:calc(var(--answer-pad-font)*.8)}
+.answer-pad-key:active{filter:brightness(.88)}
+`;
+
+function ensureStyle(doc) {
+  if (doc.getElementById(STYLE_ID)) return;
+  const style = doc.createElement('style'); style.id = STYLE_ID; style.textContent = CSS;
+  (doc.head || doc.documentElement).appendChild(style);
+}
+
+/**
+ * Draw the pad into `container`.
+ * options.input     – a text input the pad types into (its value is the answer), or
+ * options.onChange  – called with the new answer text (use with options.value for the start text)
+ * options.onSubmit  – called on Enter from a physical keyboard
+ * options.keyboard  – listen for physical keys on this target (default: the container's document)
+ * Returns { reset, destroy, value, setValue, showTab }. Call reset() for every new question.
+ */
+function mountAnswerPad(container, options = {}) {
+  if (!container || !container.ownerDocument) throw Error('mountAnswerPad needs a DOM element.');
+  const doc = container.ownerDocument, input = options.input || null;
+  let value = input ? String(input.value || '') : String(options.value || '');
+  ensureStyle(doc);
+  const root = doc.createElement('div'); root.className = 'answer-pad'; root.setAttribute('role', 'group'); root.setAttribute('aria-label', 'Answer keypad');
+  const tabBar = doc.createElement('div'); tabBar.className = 'answer-pad-tabs'; tabBar.setAttribute('role', 'tablist');
+  const grids = {}, tabButtons = {};
+  for (const tab of tabs) {
+    const b = doc.createElement('button'); b.type = 'button'; b.className = 'answer-pad-tab'; b.textContent = tab.label;
+    b.setAttribute('role', 'tab'); b.dataset.padTab = tab.id; tabButtons[tab.id] = b; tabBar.appendChild(b);
+    const grid = doc.createElement('div'); grid.className = 'answer-pad-grid'; grid.setAttribute('role', 'tabpanel'); grid.dataset.padPanel = tab.id;
+    for (const key of tab.rows.flat()) {
+      const k = doc.createElement('button'); k.type = 'button'; k.className = 'answer-pad-key'; k.dataset.padKey = key;
+      if (key === BACK || key === CLEAR) k.dataset.action = key;
+      k.textContent = labelFor(key); k.setAttribute('aria-label', ariaFor(key)); grid.appendChild(k);
+    }
+    grids[tab.id] = grid;
+  }
+  root.appendChild(tabBar); for (const tab of tabs) root.appendChild(grids[tab.id]);
+  container.appendChild(root);
+
+  const sync = () => { if (input) { input.value = value; input.dispatchEvent(new Event('input', { bubbles: true })); } if (options.onChange) options.onChange(value); };
+  const press = key => {
+    if (key === BACK) value = value.slice(0, -1);
+    else if (key === CLEAR) value = '';
+    else if (value.length < 200) value += textFor(key, value);
+    sync();
+  };
+  function showTab(id) { for (const tab of tabs) { const on = tab.id === id; grids[tab.id].hidden = !on; tabButtons[tab.id].setAttribute('aria-selected', String(on)); } }
+  showTab('123');
+
+  // A tap is one press. Prevent the browser's long-press selection, magnifier and context menu (U-10).
+  const onClick = e => { const k = e.target.closest('[data-pad-key]'), t = e.target.closest('[data-pad-tab]'); if (k && root.contains(k)) { e.preventDefault(); press(k.dataset.padKey); } else if (t && root.contains(t)) { e.preventDefault(); showTab(t.dataset.padTab); } };
+  const block = e => e.preventDefault();
+  root.addEventListener('click', onClick); root.addEventListener('contextmenu', block); root.addEventListener('selectstart', block);
+  if (input) { input.readOnly = true; input.setAttribute('inputmode', 'none'); input.setAttribute('autocomplete', 'off'); }
+
+  const named = { Backspace: BACK, Delete: CLEAR, Escape: CLEAR, ' ': SPACE, '-': '−', '*': '×', r: 'R', R: 'R', x: 'x', X: 'x', y: 'y', Y: 'y', a: 'AM', A: 'AM', p: 'PM', P: 'PM' };
+  const onKey = e => {
+    if (e.defaultPrevented || e.ctrlKey || e.metaKey || e.altKey || !root.isConnected) return;
+    const active = doc.activeElement;
+    if (active && active !== input && (/^(INPUT|TEXTAREA|SELECT)$/.test(active.tagName) || active.isContentEditable)) return;
+    if (e.key === 'Enter') { if (options.onSubmit) { e.preventDefault(); options.onSubmit(value); } return; }
+    const key = named[e.key] || (e.key.length === 1 && !/[a-z]/i.test(e.key) && keys.includes(e.key) ? e.key : null);
+    if (key) { e.preventDefault(); press(key); }
+  };
+  const keyTarget = options.keyboard || doc;
+  if (options.keyboard !== false) keyTarget.addEventListener('keydown', onKey);
+
+  return {
+    element: root,
+    get value() { return value; },
+    setValue(text) { value = String(text ?? '').slice(0, 200); sync(); },
+    reset() { value = ''; showTab('123'); sync(); },
+    showTab,
+    destroy() { root.removeEventListener('click', onClick); if (options.keyboard !== false) keyTarget.removeEventListener('keydown', onKey); root.remove(); }
+  };
+}
+
+module.exports = freeze({ tabs, keys, textFor, labelFor, allowedCharacters, onlyPadCharacters, normalizeTyped, padForm, mountAnswerPad, css: CSS });
+
 }
 };
 const __cache = {};
 function __req(id) { if (__cache[id]) return __cache[id].exports; const module = { exports: {} }; __cache[id] = module; __defs[id].call(globalThis, module, module.exports, __req); return module.exports; }
 const MathEnginePractice = __req(0);
 export default MathEnginePractice;
-export const { version, bankVersion, k7Version, k7BaselineSha256, catalog, courses, find, generate, nextItem, checkAnswer, evaluate, related, keypadKeys, Practice, freshMath, configError, formatMath, contentHash } = MathEnginePractice;
+export const { version, bankVersion, k7Version, k7BaselineSha256, catalog, courses, find, generate, nextItem, checkAnswer, evaluate, related, keypadKeys, answerPad, Practice, freshMath, configError, formatMath, contentHash } = MathEnginePractice;
