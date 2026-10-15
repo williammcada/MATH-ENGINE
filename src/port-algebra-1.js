@@ -41,6 +41,9 @@
      sci    {t:'sci', m, e}           scientific notation m × 10^e
      nums   {t:'nums', items}         several integers separated by commas, any order
      simple {t:'simple', num, den, vars} one fraction, no negative exponents, no common factor, equal to num/den
+     ratfn  {t:'ratfn', v, num, den, dden, reduced} one fraction in v equal to num/den; reduced: denominator of degree dden
+     solset {t:'solset', vals}       a solution set of exact numbers in any order; ∅ (or "no solution") when vals is empty
+     exact takes rat:true (no radical left in a denominator); expr ignores a leading "A(n) =" label
      divq   {t:'divq', q, r, div}     a quotient polynomial plus remainder over the divisor ("Q + r/(x + d)" or "Q R r")
      sci2   {t:'sci2', v}             a number, as an ordinary number or in scientific notation
      ineq takes strip:true (a domain written "D = {x ∈ ℝ | x ≥ 2}" or "{x | x ≥ 2}"); conj takes v for a variable other than x */
@@ -141,7 +144,7 @@ function partOk(p,s){s=String(s).trim();
  if(p.t==='pair'){// an ordered pair (x, y) of exact numbers
   const r=String(s).replace(/[−–]/g,'-').trim().replace(/^\((.*)\)$/,'$1'),xy=r.split(/\s*,\s*/);if(xy.length!==2)return false;const A=rat(xy[0]),B=rat(xy[1]);return !!(A&&B)&&sameR(A.v,p.v[0])&&sameR(B.v,p.v[1]);}
  if(p.t==='pm'){// two values, exact (radicals simplified, i for imaginary): "a ± b" or two values separated by a comma, "and" or "or"
-  const r=String(s).replace(/[−–]/g,'-').replace(/\bpi\b/g,'π').replace(/sqrt/gi,'√').replace(/\s+/g,'');if(!r||/\d\.\d/.test(r)||!S.rootsSimplified(r))return false;
+  const r=String(s).replace(/[−–]/g,'-').replace(/\bpi\b/g,'π').replace(/sqrt/gi,'√').replace(/\s+/g,'').replace(/^[a-z]=/i,'');if(!r||/\d\.\d/.test(r)||!S.rootsSimplified(r))return false;
   let parts;if(r.includes('±')){if(r.split('±').length!==2)return false;parts=[r.replace('±','+'),r.replace('±','-')];}else{parts=r.split(/,|and|or/);if(parts.length!==2)return false;}
   const got=parts.map(cParse);if(got.some(x=>!x))return false;const eq=(x,y)=>near(x[0],y[0])&&near(x[1],y[1]);
   return (eq(got[0],p.vals[0])&&eq(got[1],p.vals[1]))||(eq(got[0],p.vals[1])&&eq(got[1],p.vals[0]));}
@@ -182,16 +185,25 @@ function partOk(p,s){s=String(s).trim();
   const m=r.match(/^(-?\d+(?:\.\d+)?)[x×·*]10\^\(?(-?\d+)\)?$/);if(m){const a=Number(m[1]);if(Math.abs(a)<1||Math.abs(a)>=10)return false;x=Number(m[1]+'e'+m[2]);}
   else if(/^-?(\d+(\.\d*)?|\.\d+)$/.test(r))x=Number(r);
   return x!==null&&Math.abs(x-p.v)<=1e-9*Math.abs(p.v);}
+ if(p.t==='ratfn'){// one fraction in p.v (or a polynomial when the key has no denominator), equal to the key; reduced: the denominator has the key's degree, so no common factor is left
+  const r=caret(s).replace(/[−–]/g,'-').replace(/\s+/g,'');if(!r)return false;let dep=0,at=-1;for(let i=0;i<r.length;i++){const ch=r[i];if(ch==='(')dep++;else if(ch===')')dep--;else if(ch==='/'&&dep===0){if(at>=0)return false;at=i;}}
+  if(at<0&&p.dden!==0)return false;const V=[p.v],nf=parseExpr(at<0?r:r.slice(0,at),V),df=at<0?(()=>1):parseExpr(r.slice(at+1),V),kn=parseExpr(p.num,V),kd=parseExpr(p.den,V);if(!nf||!df||!kn||!kd)return false;
+  const E=x=>({[p.v]:x});if(![-3.37,-1.21,0.53,1.77,2.91,4.13].every(x=>{const a=nf(E(x))/df(E(x)),b=kn(E(x))/kd(E(x));return isFinite(a)&&isFinite(b)&&near(a,b);}))return false;
+  if(!p.reduced)return true;const deg=f=>Math.round(Math.log2(Math.abs(f(E(2000)))/Math.abs(f(E(1000)))));return deg(df)===p.dden;}
+ if(p.t==='solset'){// a solution set of exact numbers: "{1/4, 9}" or "1/4, 9" in any order; for no solution "∅", "{ }", "no solution", "the empty set" or "none"
+  const r=String(s).replace(/[−–]/g,'-').trim().replace(/^[a-z]\s*=\s*/i,'');if(!p.vals.length)return /^(∅|\{\s*\}|no (real )?solutions?|(the )?empty set|none)$/i.test(r);
+  const m=r.replace(/^\{(.*)\}$/,'$1'),el=m.split(/,|\bor\b|\band\b/).map(x=>x.trim().replace(/^[a-z]\s*=\s*/i,'')).filter(Boolean);if(el.length!==p.vals.length)return false;const got=el.map(rat);if(got.some(x=>!x))return false;
+  const used=new Set();return p.vals.every(v=>{const i=got.findIndex((g,k)=>!used.has(k)&&sameR(g.v,v));if(i<0)return false;used.add(i);return true;});}
  if(p.t==='solve'){// "v = expression" with the expression in the other variables only, equal to the key at sample points
   const r=s.replace(/[−–]/g,'-'),m=r.match(/^\s*([a-zA-Z])\s*=(.+)$/);if(!m||m[1]!==p.v||m[2].includes(p.v)||!p.vars.every(x=>m[2].includes(x)))return false;const f=parseExpr(m[2],p.vars);if(!f)return false;
   return p.samples.every(([env,y])=>{const g=f(env);return isFinite(g)&&near(g,y);});}
- if(p.t==='expr'){// an expression in the given variables, equal to the key at sample points; it must use the variables
-  const r=s.replace(/[−–]/g,'-');if(!p.vars.every(x=>r.includes(x)))return false;const f=parseExpr(r,p.vars);if(!f)return false;return p.samples.every(([env,y])=>{const g=f(env);return isFinite(g)&&near(g,y);});}
+ if(p.t==='expr'){// an expression in the given variables, equal to the key at sample points; it must use the variables (a leading "A(n) =" is ignored)
+  const r=s.replace(/[−–]/g,'-').replace(/^\s*[A-Za-z]\s*\(\s*[a-z]\s*\)\s*=\s*/,'');if(!p.vars.every(x=>r.includes(x)))return false;const f=parseExpr(r,p.vars);if(!f)return false;return p.samples.every(([env,y])=>{const g=f(env);return isFinite(g)&&near(g,y);});}
  if(p.t==='set'){// labels such as (a), (c) and (d), in any order
   const r=s.toLowerCase().replace(/\band\b/g,',').replace(/[()\s]/g,'').replace(/,+/g,',');if(!/^[a-z](,[a-z])*$/.test(r))return false;const got=r.split(',');return new Set(got).size===got.length&&got.length===p.items.length&&p.items.every(x=>got.includes(x));}
  if(p.t==='compact'){const c=x=>String(x).toLowerCase().replace(/[−–]/g,'-').replace(/[\s*·]/g,'');return p.alts.some(a=>c(a)===c(s));}
  if(p.t==='exact'){// an exact value written with the needed symbols (π, √); radicals simplified
-  const r=stripUnit(s.replace(/\bpi\b/gi,'π').replace(/sqrt/gi,'√')).replace(/(\d),(?=\d{3}\b)/g,'$1');if(!p.need.every(x=>r.includes(x))||!S.rootsSimplified(r))return false;const f=parseExpr(r,[]);if(!f)return false;const y=f({});return isFinite(y)&&near(y,p.v);}
+  const r=stripUnit(s.replace(/\bpi\b/gi,'π').replace(/sqrt/gi,'√')).replace(/(\d),(?=\d{3}\b)/g,'$1');if(!p.need.every(x=>r.includes(x))||!S.rootsSimplified(r)||(p.rat&&/\/[^/]*√/.test(r)))return false;const f=parseExpr(r,[]);if(!f)return false;const y=f({});return isFinite(y)&&near(y,p.v);}
  if(p.t==='roster'){const r=s.replace(/[−–]/g,'-').replace(/…/g,'...').replace(/\s+/g,'');const m=r.match(/^\{(.*)\}$/);if(!m)return false;const el=m[1].split(',');
   const lead3=el[0]==='...',tail=el[el.length-1]==='...';const nums=el.filter(x=>x!=='...');if(!tail||nums.length<3||nums.some(x=>!/^-?\d+$/.test(x)))return false;const v=nums.map(Number);if(!v.every((x,i)=>!i||x===v[i-1]+1))return false;
   if(p.set==='natural')return !lead3&&v[0]===1&&el.length===v.length+1;
@@ -380,6 +392,44 @@ const isFunc=pairs=>pairs.every(([x,y])=>pairs.every(([x2,y2])=>x!==x2||y===y2))
 // Six relations built from five numbers (three of them functions), as in the source: f1-f3 are functions, nf1-nf3 are not.
 const relations=(a,b,c,d,e,f,four)=>{const R=[[[a,b],[d,b],[c,e],[e,a]],[[a,b],[d,f],[c,e],[e,b]],[[a,b],[d,b],[c,b],[e,c]],[[a,b],[a,f],[c,e],[e,d]],[[a,b],[d,f],[d,e],[e,e]],[[a,d],[c,e],[c,b],[e,a]]];return four?R:R.map(x=>x.slice(0,3));};
 
+// ---------- Batch A1-10 helpers ----------
+const lin=(v,k)=>k===0?v:`${v} ${k<0?'−':'+'} ${Math.abs(k)}`;                   // "x + 3", "x − 3"
+// |x| inequalities on a number line: inside (a segment from −a to a) or outside (two rays); closed or open circles.
+const absBody=(a,inside,closed,y0)=>{if(inside)return conjBody(-a,a,!closed,!closed,y0);const W=440,x=v=>30+(v+10)*(W-60)/20,ray=(m,dir)=>{const end=dir==='right'?W-22:22,tip=dir==='right'?W-10:10;return `<line x1="${x(m).toFixed(1)}" y1="${y0}" x2="${end}" y2="${y0}" stroke="${INK}" stroke-width="4"/><polygon points="${tip},${y0} ${end},${y0-7} ${end},${y0+7}" fill="${INK}"/>`;};
+ return S.inequalityBody(0,null,false,y0)+ray(-a,'left')+ray(a,'right')+[-a,a].map(m=>`<circle cx="${x(m).toFixed(1)}" cy="${y0}" r="6" fill="${closed?INK:'#fff'}" stroke="${INK}" stroke-width="2"/>`).join('');};
+const absDesc=(a,inside,closed)=>inside?conjDesc(-a,a,!closed,!closed):`rays shaded to the left from ${minus(-a)} and to the right from ${minus(a)}, with ${closed?'closed':'open'} circles`;
+// Ten basic shapes (Lesson 95), drawn centered on the origin: [formula with A for its constant, graph function, description].
+const SHAPES=[['|x| + A',x=>Math.abs(x),'a V shape opening upward'],['A − |x|',x=>-Math.abs(x),'a V shape opening downward'],['x² + A',x=>0.18*x*x-8,'a parabola opening upward'],['A − x²',x=>8-0.18*x*x,'a parabola opening downward'],
+ ['x + A',x=>x,'a straight line rising to the right'],['A − x',x=>-x,'a straight line falling to the right'],['x³ + A',x=>0.01*x**3,'a cubic curve rising to the right'],['A − x³',x=>-0.01*x**3,'a cubic curve falling to the right'],
+ ['√x',x=>x<-10?NaN:2.2*Math.sqrt(x+10),'half of a sideways parabola, starting at a point and rising to the right'],['−√x',x=>x<-10?NaN:-2.2*Math.sqrt(x+10),'half of a sideways parabola, starting at a point and falling to the right']];
+const multiGraph=(list,label)=>{const s=8,w=22*s+20;let b='';list.forEach((items,i)=>{b+=`<g transform="translate(${(i%3)*(w+16)},${Math.floor(i/3)*(w+30)})">`+tx(4,12,'('+'abcde'[i]+')',{size:12,anchor:'start'})+`<g transform="translate(0,18)">${S.graphBody(items,s)}</g></g>`;});return svg(b,label,3*w+32,Math.ceil(list.length/3)*(w+30));};
+// Several drawings side by side (each an <svg> string), labelled (a), (b), (c).
+const sideBySide=(list,label,w,h)=>svg(list.map((g,i)=>`<g transform="translate(${i*w},0)">${tx(10,14,'('+'abc'[i]+')',{size:13,anchor:'start'})}<g transform="translate(0,16)">${g.replace(/^<svg[^>]*>/,'').replace(/<\/svg>$/,'').replace(/<title>[\s\S]*?<\/title>/,'')}</g></g>`).join(''),label,w*list.length,h+16);
+const timeAdd=(h0,hrs)=>{const m=Math.round((h0+hrs)*60),H=Math.floor(m/60),M=m%60;return `${H>12?H-12:H}:${String(M).padStart(2,'0')}`;};
+const samplesN=(vars,fn)=>[[2.7,1.9,3.4,1.3,2.2,0.6],[4.1,2.3,1.7,5.2,0.8,3.1],[1.6,3.8,2.9,2.2,1.1,4.4]].map(pool=>{const env={};vars.forEach((x,i)=>{env[x]=pool[i];});return [env,fn(env)];});   // sample points for up to six variables
+const timeHrs=t0=>{const [H,M]=t0.split(':').map(Number);return H+M/60;};
+const T877=zip(["3:30","4:00","4:00","3:15","3:30","3:45","4:00","4:00","3:30","4:00","4:00","3:15","3:30","3:45","4:00","4:00","3:15","3:30","3:45","4:00","4:00","3:30","4:00","4:00","3:15","3:30","3:45","4:00","4:00","3:15","3:30","3:45","4:00","4:00","3:30","4:00","4:00","3:15","3:30","3:45","4:00","4:00","3:30","4:00"],[1.5,2,2,1.25,1.5,1.75,2,2,1.5,2,2,1.25,1.5,1.75,2,2,1.25,1.5,1.75,2,2,1.5,2,2,1.25,1.5,1.75,2,2,1.25,1.5,1.75,2,2,1.5,2,2,1.25,1.5,1.75,2,2,1.5,2],[30,30,35,40,40,40,40,45,50,50,55,60,60,60,60,30,35,35,35,35,40,45,45,50,55,55,55,55,60,30,30,30,30,35,40,40,45,50,50,50,50,55,60,60],[8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]);
+const T879=zip(["3:30","4:30","3:15","3:30","3:45","4:15","4:30","4:45","5:15","3:30","4:30","3:15","3:30","3:45","4:15","4:30","4:45","5:15","3:30","4:30","3:30","4:30","3:15","3:30","3:45","4:15","4:30","4:45","5:15","3:15","3:30","3:45","4:15","4:30","4:45","5:15","3:30","4:30"],[40,40,50,50,50,50,50,50,50,60,60,45,45,45,45,45,45,45,55,55,50,50,60,60,60,60,60,60,60,55,55,55,55,55,55,55,60,60],[105,175,100,120,140,180,200,220,260,135,225,100,120,140,180,200,220,260,135,225,135,225,125,150,175,225,250,275,325,125,150,175,225,250,275,325,165,275],[30,30,30,30,30,30,30,30,30,30,30,35,35,35,35,35,35,35,35,35,40,40,40,40,40,40,40,40,40,45,45,45,45,45,45,45,50,50]);
+const T880=zip([220,290,360,240,315,390,260,340,420,280,365,450,300,390,480,250,330,410,270,355,440,290,380,470,310,405,500,280,370,460,300,395,490,320,420,520,310,410,510,330,435,540,340,450,560],[4,5,6,4,5,6,4,5,6,4,5,6,4,5,6,4,5,6,4,5,6,4,5,6,4,5,6,4,5,6,4,5,6,4,5,6,4,5,6,4,5,6,4,5,6],[40,40,40,45,45,45,50,50,50,55,55,55,60,60,60,45,45,45,50,50,50,55,55,55,60,60,60,50,50,50,55,55,55,60,60,60,55,55,55,60,60,60,60,60,60],[30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,35,35,35,35,35,35,35,35,35,35,35,35,40,40,40,40,40,40,40,40,40,45,45,45,45,45,45,50,50,50]);
+const T929=zip([6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,4,4,4,4,4,4,4,4],[3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2],[2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,6,6,6,6,6,6,6,6],[1,5,1,5,1,5,1,5,1,1,1,5,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1],[2,2,1,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,2,1,2,2,1,2,1,1,2,1,2,1,1,1,1,1,1,1,1],[-2,-2,2,2,4,4,4,4,-5,-4,-3,-3,-2,3,4,5,-5,-5,-4,-3,-2,3,4,5,-5,-5,-4,-4,-3,-3,-2,-2,-2,2,2,3,4,4,5,5,-5,-4,-4,-3,-2,2,4,5]);
+const T930=zip([-6,6,-8,-6,-4,4,6,8,-7,7,-5,5,-6,6,-8,8,-7,7,-8,8,-6,-3,3,6,-8,8,-7,7,-5,5,-8,-4,4,8,-5,5,-7,7,-5,5,-7,7],[2,2,2,2,2,2,2,2,3,3,2,2,3,3,2,2,2,2,3,3,2,2,2,2,4,4,2,2,2,2,2,2,2,2,3,3,2,2,2,2,4,4],[2,2,3,3,3,3,3,3,3,3,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,6,6,7,7,7,7,7,7,7,7,9,9,9,9,9,9],[1,1,2,2,2,2,2,2,2,2,3,3,3,3,2,2,3,3,3,3,4,4,4,4,4,4,5,5,4,4,6,6,6,6,6,6,4,4,8,8,8,8]);
+// ---------- Batch A1-11 helpers ----------
+// Two rays on a number line: to the left from lo and to the right from hi (a disjunction), closed or open at each end.
+const raysBody=(lo,hi,loClosed,hiClosed,y0)=>{const W=440,x=v=>30+(v+10)*(W-60)/20,ray=(m,dir)=>{const end=dir==='right'?W-22:22,tip=dir==='right'?W-10:10;return `<line x1="${x(m).toFixed(1)}" y1="${y0}" x2="${end}" y2="${y0}" stroke="${INK}" stroke-width="4"/><polygon points="${tip},${y0} ${end},${y0-7} ${end},${y0+7}" fill="${INK}"/>`;};
+ return S.inequalityBody(0,null,false,y0)+ray(lo,'left')+ray(hi,'right')+[[lo,loClosed],[hi,hiClosed]].map(([m,c0])=>`<circle cx="${x(m).toFixed(1)}" cy="${y0}" r="6" fill="${c0?INK:'#fff'}" stroke="${INK}" stroke-width="2"/>`).join('');};
+const raysDesc=(lo,hi,loC,hiC)=>`rays shaded to the left from ${minus(lo)} (${loC?'closed':'open'} circle) and to the right from ${minus(hi)} (${hiC?'closed':'open'} circle)`;
+const range=(lo,hi)=>Array.from({length:Math.max(0,hi-lo+1)},(_,i)=>lo+i);
+// Four labelled number lines stacked, from [body(y0) functions].
+const fourLines=(bodies,label)=>svg(bodies.map((f,j)=>`<g transform="translate(0,${j*66})">${tx(12,16,'('+'abcd'[j]+')',{size:13,anchor:'start'})}${f(34)}</g>`).join(''),label,440,66*bodies.length);
+// A box-and-whisker plot over a number line from lo to hi with labels every `step`.
+const boxPlot=(lo,hi,step,[mn,q1,md,q3,mx])=>{const W=440,x=v=>30+(v-lo)*(W-60)/(hi-lo),y0=90;let b=ln(10,y0,W-10,y0,{start:1,end:1});for(let v=lo;v<=hi;v++)b+=ln(x(v),y0-(v%step?3:6),x(v),y0+(v%step?3:6),{w:1})+(v%step===0?tx(x(v),y0+20,minus(v),{size:11}):'');
+ b+=ln(x(mn),45,x(q1),45,{w:1.6})+ln(x(q3),45,x(mx),45,{w:1.6})+ln(x(mn),37,x(mn),53,{w:1.6})+ln(x(mx),37,x(mx),53,{w:1.6})+`<rect x="${x(q1).toFixed(1)}" y="28" width="${(x(q3)-x(q1)).toFixed(1)}" height="34" fill="none" stroke="${INK}" stroke-width="1.8"/>`+ln(x(md),28,x(md),62,{w:1.8});
+ return svg(b,`Box-and-whisker plot: minimum ${mn}, first quartile ${q1}, median ${md}, third quartile ${q3}, maximum ${mx}`,W,115);};
+const BASES=[['e',Math.E],['π',Math.PI],['√2',Math.SQRT2],['√3',Math.sqrt(3)],['√5',Math.sqrt(5)],['√6',Math.sqrt(6)]];
+const money2=c0=>'$'+S.comma(Math.floor(c0/100))+'.'+String(c0%100).padStart(2,'0');   // cents → "$1,234.05"
+const T952=zip([-3,-2,3,-3,2,3,-3,-2,2,3,-3,-2,3,-3,-2,2,3,-3,2,3,-3,2,3,-3,-2,2,3,-3,-2,3,-3,-2,2,3,-3,2,3,-3,-2,3],[-1,-1,-1,1,1,1,2,2,2,2,-2,-2,-2,1,1,1,1,2,2,2,-2,-2,-2,-1,-1,-1,-1,2,2,2,-2,-2,-2,-2,-1,-1,-1,1,1,1],[-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2]);
+const T953=zip([-2,2,3,-2,2,-2,2,-3,-2,2,-3,-2,3,-3,2,3,-3,-2,3,-3,2,3,-3,2,3,-3,-2,3,-3,2,3,-3,-2,3,-3,-2,2,-2,2,-2,2,-2,2,3],[-2,-2,-2,-1,-1,1,1,2,2,2,-1,-1,-1,1,1,1,-2,-2,-2,2,2,2,-2,-2,-2,2,2,2,-1,-1,-1,1,1,1,-2,-2,-2,-1,-1,1,1,2,2,2],[-3,-3,-3,-3,-3,-3,-3,-3,-3,-3,-2,-2,-2,-2,-2,-2,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3]);
+const T960=zip([-3,-2,-1,1,2,3,-3,-2,-1,1,2,3,-3,-2,-1,2,3,-3,-2,2,3,-3,-2,-1,1,2,3,-3,-2,-1,1,2,3],[-3,-3,-3,-3,-3,-3,-2,-2,-2,-2,-2,-2,-1,-1,-1,-1,-1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3]);
 // ---------- recipes ----------
 function build(c,h){const {int,pick}=h;let t;const v=c.variant;
 switch(c.recipe){
@@ -1300,6 +1350,176 @@ case 'a1-multivar':{const smp=(vars,fn)=>S.fsamples(vars,fn);
   t=T(`Solve for ${S1}: ${eqL} = ${eqR}`,[{t:'solve',v:S1,vars:[O],samples:smp([O],en=>nu*en[O]/de)}],key,`Collect: ${minus(a-1)}u = ${minus(b+1)}w; divide: ${key}.`,{a,b,c:cc});
   if(v==='mc'){const [qn,qd]=red(de,nu),dn=x=>x<0?`(${minus(x)})`:String(x);t.choices=opts(t,[{value:solveTxt(S1,[[qn,O]],qd),mistake:'Divided the wrong way'},{value:`${S1} = (${termsTxt([[1,S1],[rn,O]])})/${dn(a)}`,mistake:`Left ${S1} on both sides of the equation`},{value:`${S1} = (${termsTxt([[1-a,O],[1,S1]])})/${dn(b)}`,mistake:`Moved only some terms and left ${S1} on both sides`}],h);}}
  break;}
+// Batch A1-6: Lessons 43-53
+case 'a1-lcm':{let a,b,cc;do{a=v==='mc'?int(21,30):int(11,20);b=int(2,10);cc=int(11,20);}while(gcd(a,b)===1||a===cc);const z=lcm2(lcm2(a,b),cc);
+ t=T(`Find the least common multiple of ${a}, ${b}, and ${cc}.`,[num(z,1,'int')],S.comma(z),`Use prime factors: the LCM takes the highest power of each prime in ${a}, ${b} and ${cc}: ${S.comma(z)}.`,{a,b,c:cc});
+ if(v==='mc'){const o=pick([-2,2]),alt=[{value:String(a+b+cc),mistake:'Added the three numbers'},{value:S.comma(z+o),mistake:'Arithmetic slip'}];if(pick([0,1]))alt.reverse();t.choices=opts(t,[{value:S.comma(a*b*cc),mistake:'Multiplied the three numbers'},{value:String(Math.min(a,b,cc)),mistake:'Gave the smallest number'},...alt],h);}
+ break;}
+case 'a1-lcm-mono':{const [J,K,L3]=letters(int,3);let a,cc;do{a=int(3,6);cc=int(3,6);}while(gcd(a,cc)!==1);const b=int(2,4),d=int(2,4),e=v==='477'?int(2,3):int(2,4),r=lcm2(a*b,b*cc);let list,ans,p;
+ if(v==='479'){const f=int(1,3);list=[[a*b,[[J,1],[K,e],[L3,f]]],[b*cc,[[J,d],[K,1],[L3,f-1]]]];ans=[r,[[J,d],[K,e],[L3,f]]];p={a,b,c:cc,d,e,f,L:[J,K,L3]};}
+ else if(v==='mc'){list=[[a*b,[[J,1],[K,1]]],[b*cc,[[J,d]]]];ans=[r,[[J,d],[K,1]]];p={a,b,c:cc,d,L:[J,K]};}
+ else{list=[[a*b,[[J,1],[K,e]]],[b*cc,[[J,d],[K,1]]]];if(v==='478')list.push([b,[[J,d-1],[K,e-1]]]);ans=[r,[[J,d],[K,e]]];p={a,b,c:cc,d,e,L:[J,K]};}
+ const names=list.map(([c0,vs])=>monoX(c0,vs)),key=monoX(...ans);
+ t=T(`Find the least common multiple (LCM) of ${names.length===3?`${names[0]}, ${names[1]}, and ${names[2]}`:`${names[0]} and ${names[1]}`}.`,[polyPart(objPoly([ans]))],key,`The LCM of the numbers is ${r}; take the highest power of each letter: ${key}.`,p);
+ if(v==='mc'){const s0=a*b*b*cc;t.choices=opts(t,[r%2===0&&pick([0,1])?{value:monoX(r/2,[[J,d],[K,1]]),mistake:'Left out a factor of 2 from the LCM of the numbers'}:{value:monoX(s0,[[J,d],[K,1]]),mistake:'Multiplied the numbers instead of finding their LCM'},{value:monoX(b,[[J,1]]),mistake:'Gave the greatest common factor'},{value:monoX(r,[[J,1],[K,1]]),mistake:`Used the smallest power of ${J}`}],h);}
+ break;}
+case 'a1-rat-add':{const sgM=c0=>`<mo>${c0<0?'−':'+'}</mo>`;let num0,den0,vars,ml,p,ds=null,ask='Add:';
+ if(v==='483'||v==='mc'){const add=v==='mc'?1:-1,r9=()=>int(1,9)*pick([1,-1]),a=r9();let b,cc,d,e,hh,i;
+  for(;;){b=r9();cc=r9();d=r9();if(a+add*cc===0&&b+add*d===0)continue;hh=a+add*cc;i=b+add*d;e=int(2,9);if([e,hh,i].filter(x=>x).reduce((x,y)=>gcd(Math.abs(x),Math.abs(y)))===1)break;}
+  const f=int(2,5),g=int(2,5),D=[[e,[['x',f],['y',g]]]];num0=[[i,[['x',1]]],[hh,[['y',1]]]];den0=D;vars=['x','y'];
+  ml=mlQ(mlPoly([[a,[['y',1]]],[b,[['x',1]]]]),mlMono(...D[0]))+sgM(add)+mlQ(mlPoly([[cc,[['y',1]]],[d,[['x',1]]]]),mlMono(...D[0]));p={a,b,c:cc,d,e,f,g,add};
+  if(v==='mc'){const D2=[[2*e,[['x',f],['y',g]]]],n2=[[i,[['x',1]]],[a,[['y',1]]]];ds=[{value:ratTxt(num0,D2),mistake:'Added the denominators as well as the numerators'},{value:ratTxt(n2,D),mistake:'Added only one pair of like terms'},{value:ratTxt(n2,D2),mistake:'Added only one pair of like terms and added the denominators'}];}}
+ else if(v==='486'){const [X,Y]=letters(int,2),a=int(2,5),b=int(2,5),cc=int(2,5);let d;do{d=int(cc+1,9);}while(gcd(cc,d)!==1);
+  num0=[[b*d,[[X,1]]],[a*d,[[Y,1]]],[cc,[[X,1],[Y,1]]]];den0=[[d,[[X,1],[Y,1]]]];vars=[X,Y];ml=mlQ(`<mn>${a}</mn>`,`<mi>${X}</mi>`)+'<mo>+</mo>'+mlQ(`<mn>${b}</mn>`,`<mi>${Y}</mi>`)+'<mo>+</mo>'+mlQ(`<mn>${cc}</mn>`,`<mn>${d}</mn>`);p={a,b,c:cc,d,L:[X,Y]};}
+ else if(v==='487'){const [R0,S0,T0,U0,V0]=letters(int,5),a=int(2,5),b=int(2,5),sg=pick([-1,1]),first=int(1,2),P1=mlQ(`<mi>${S0}</mi>`,mlMono(1,[[U0,a],[V0,b]])),P2=mlQ(`<mi>${R0}</mi>`,`<mi>${U0}</mi>`);
+  num0=[[1,[[R0,1],[U0,a-1],[V0,b]]],[1,[[S0,1]]],[sg,[[T0,1],[U0,a],[V0,b]]]];den0=[[1,[[U0,a],[V0,b]]]];vars=[R0,S0,T0,U0,V0];ml=(first===1?P1+'<mo>+</mo>'+P2:P2+'<mo>+</mo>'+P1)+sgM(sg)+`<mi>${T0}</mi>`;p={a,b,sg,first,L:[R0,S0,T0,U0,V0]};}
+ else if(v==='488'||v==='489'){const [R0,S0,T0,U0]=letters(int,4),a=int(2,5),b=int(2,5),cc=int(1,2),d=int(1,2);den0=[[1,[[T0,2],[U0,2]]]];vars=[R0,S0,T0,U0];p={a,b,c:cc,d,L:[R0,S0,T0,U0]};
+  if(v==='488'){num0=[[a,[[R0,1],[T0,2-cc],[U0,2-d]]],[-b,[[T0,cc-1],[U0,d-1]]],[1,[[S0,1],[T0,cc-1],[U0,2-d]]]];
+   ml=mlQ(mlMono(a,[[R0,1]]),mlMono(1,[[T0,cc],[U0,d]]))+'<mo>−</mo>'+mlQ(`<mn>${b}</mn>`,mlMono(1,[[U0,3-d],[T0,3-cc]]))+'<mo>+</mo>'+mlQ(`<mi>${S0}</mi>`,mlMono(1,[[T0,3-cc],[U0,d]]));}
+  else{num0=[[a,[[T0,2-cc],[U0,2-d]]],[1,[[R0,1],[T0,cc-1],[U0,d-1]]],[1,[[S0,1],[T0,cc-1],[U0,2-d]]],[-b,[[T0,2-cc],[U0,d-1]]]];
+   ml=mlQ(`<mn>${a}</mn>`,mlMono(1,[[T0,cc],[U0,d]]))+'<mo>+</mo>'+mlQ(`<mi>${R0}</mi>`,mlMono(1,[[T0,3-cc],[U0,3-d]]))+'<mo>+</mo>'+mlQ(`<mi>${S0}</mi>`,mlMono(1,[[T0,3-cc],[U0,d]]))+'<mo>−</mo>'+mlQ(`<mn>${b}</mn>`,mlMono(1,[[T0,cc],[U0,3-d]]));}}
+ else if(v==='490'){let a,b,cc,e,d,f,g,hh;for(;;){a=int(2,9)*pick([1,-1]);b=int(2,9)*pick([1,-1]);cc=int(2,5);e=int(2,5);d=int(2,5);f=int(2,5);if(cc===e||d===f)continue;g=Math.max(cc,e);hh=Math.max(d,f);if(g===cc&&hh===f)continue;break;}
+  num0=[[a,[['x',1],['y',g-cc],['z',hh-d]]],[b,[['y',g-e],['z',hh-f]]]];den0=[[1,[['y',g],['z',hh]]]];vars=['x','y','z'];
+  ml=mlQ(mlMono(a,[['x',1]]),mlMono(1,[['y',cc],['z',d]]))+sgM(b)+mlQ(`<mn>${Math.abs(b)}</mn>`,mlMono(1,[['y',e],['z',f]]));p={a,b,c:cc,d,e,f};
+  const DP=[[1,[['y',cc+e],['z',d+f]]]];ds=[{value:ratTxt([[a,[['x',1],['y',e],['z',f]]],[b,[['y',cc],['z',d]]]],DP),mistake:'Used the product of the denominators instead of the least common denominator'},{value:ratTxt([[a,[['x',1],['y',g-cc],['z',hh-d]]],[b,[]]],den0),mistake:'Did not multiply the second numerator'},{value:ratTxt([[a,[['x',1]]],[b,[]]],DP),mistake:'Added the numerators and multiplied the denominators'}];}
+ else if(v==='549'){const [a,b,cc]=pick(zip([1,1,1,2,2,2,2,2,2,2,3,3,3,4,4,4,4,4,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,7,7,8,8,8,9,9,9,9],[4,6,6,1,3,3,5,5,7,9,2,4,8,1,1,3,3,5,7,7,9,9,2,6,6,8,1,5,5,7,2,2,4,4,6,8,3,5,9,2,4,8,8],[7,2,8,5,1,8,3,9,4,5,7,5,6,2,8,2,9,7,1,8,2,8,4,2,9,3,5,1,8,4,1,8,2,9,3,1,4,4,3,5,6,2,7]));
+  num0=[[a+b,[['x',1]]],[cc*(b-a),[]]];den0=[[1,[['x',2]]],[-cc*cc,[]]];vars=['x'];ml=mlQ(`<mn>${a}</mn>`,mlPoly([[1,[['x',1]]],[cc,[]]]))+'<mo>+</mo>'+mlQ(`<mn>${b}</mn>`,mlPoly([[1,[['x',1]]],[-cc,[]]]));p={a,b,c:cc};
+  ds=[{value:ratTxt([[a+b,[]]],den0),mistake:'Added the numerators and multiplied the denominators'},{value:ratTxt([[a+b,[]]],[[1,[['x',1]]],[cc,[]]]),mistake:'Added the numerators and kept one denominator'},{value:ratTxt(num0,[[a+b,[]]]),mistake:'Divided by the sum of the numerators'}];}
+ else{// Lesson 52: one denominator is a binomial
+  const a=int(2,6),b0=int(2,5)*pick([1,-1]),d=pick([1,-1]),three=v==='547',[X,Y,W]=letters(int,3);vars=three?[X,Y,W]:[X,Y];let b=b0;
+  if(v==='544'){const cc=int(2,5)*pick([1,-1]);num0=[[a,[[Y,1]]],[a*d,[[X,1]]],[b,[[X,1],[Y,2]]],[cc,[[Y,2]]],[cc*d,[[X,1],[Y,1]]]];den0=[[1,[[Y,3]]],[d,[[X,1],[Y,2]]]];
+   ml=mlQ(`<mn>${a}</mn>`,mlPow(Y,2))+sgM(b)+mlQ(mlMono(Math.abs(b),[[X,1]]),mlPoly([[1,[[Y,1]]],[d,[[X,1]]]]))+sgM(cc)+mlQ(`<mn>${Math.abs(cc)}</mn>`,`<mi>${Y}</mi>`);p={a,b,c:cc,d,L:[X,Y]};}
+  else if(v==='545'){const cc=int(1,2);if(cc===1){num0=[[a+b,[[X,1]]],[b*d,[[Y,1]]]];den0=[[1,[[X,2]]],[d,[[X,1],[Y,1]]]];}else{num0=[[b,[[X,1]]],[a+b*d,[[Y,1]]]];den0=[[1,[[X,1],[Y,1]]],[d,[[Y,2]]]];}
+   ml=mlQ(`<mn>${a}</mn>`,mlPoly([[1,[[X,1]]],[d,[[Y,1]]]]))+sgM(b)+mlQ(`<mn>${Math.abs(b)}</mn>`,`<mi>${cc===1?X:Y}</mi>`);p={a,b,c:cc,d,L:[X,Y]};}
+  else if(v==='546'){const cc=int(2,5)*pick([1,-1]);num0=[[a,[[X,2]]],[a*d+b,[[X,1],[Y,1]]],[b*d,[[Y,2]]],[cc,[[X,2],[Y,1]]]];den0=[[1,[[X,3],[Y,1]]],[d,[[X,2],[Y,2]]]];
+   ml=mlQ(`<mn>${a}</mn>`,mlMono(1,[[X,1],[Y,1]]))+sgM(b)+mlQ(`<mn>${Math.abs(b)}</mn>`,mlPow(X,2))+sgM(cc)+mlQ(`<mn>${Math.abs(cc)}</mn>`,mlPoly([[1,[[X,1]]],[d,[[Y,1]]]]));p={a,b,c:cc,d,L:[X,Y]};}
+  else if(v==='547'){const cc=int(2,5)*pick([1,-1]);num0=[[a,[[X,1],[Y,1]]],[a*d,[[X,1],[W,1]]],[b,[[Y,2]]],[cc,[[Y,3]]],[cc*d,[[Y,2],[W,1]]]];den0=[[1,[[Y,3]]],[d,[[Y,2],[W,1]]]];
+   ml=mlQ(mlMono(a,[[X,1]]),mlPow(Y,2))+sgM(b)+mlQ(`<mn>${Math.abs(b)}</mn>`,mlPoly([[1,[[Y,1]]],[d,[[W,1]]]]))+sgM(cc)+`<mn>${Math.abs(cc)}</mn>`;p={a,b,c:cc,d,L:[X,Y,W]};}
+  else{while(a+b===0)b=int(2,5)*pick([1,-1]);const cc=int(2,5)*pick([1,-1]);num0=[[a+b,[[X,1]]],[a*d,[[Y,1]]],[cc,[[X,2]]],[cc*d,[[X,1],[Y,1]]]];den0=[[1,[[X,2]]],[d,[[X,1],[Y,1]]]];
+   ml=mlQ(`<mn>${a}</mn>`,`<mi>${X}</mi>`)+sgM(b)+mlQ(`<mn>${Math.abs(b)}</mn>`,mlPoly([[1,[[X,1]]],[d,[[Y,1]]]]))+sgM(cc)+`<mn>${Math.abs(cc)}</mn>`;p={a,b,c:cc,d,L:[X,Y]};}}
+ const key=ratTxt(num0,den0);
+ t=T(`${ask.replace(':','.')} Write the answer as one fraction over the least common denominator, (numerator)/(denominator), with like terms in the numerator combined.`,[ratPart(num0,den0,vars)],key,`Rewrite each fraction over the least common denominator ${polyX(den0)} and add the numerators: ${key}.`,p,{math:math(`<mrow>${ml}</mrow>`)});
+ if(ds)t.choices=opts(t,ds,h);break;}
+case 'a1-stat-mc':{let a,b,cc,d,z,d1,d2,d3,g;const NM=['Carlos','Dana','Hank','Priya','June'];
+ for(;;){const pool=shuffle(int,[10,20,30,40,50,60,70,80,90,100]);[a,b,cc,d]=pool;g=int(1,3);const L=[a,b,cc,d,a],srt=[...L].sort((x,y)=>x-y),mean=L.reduce((x,y)=>x+y,0)/5,med=srt[2],rng=srt[4]-srt[0];
+  z=[mean,med,a][g-1];d1=[med,a,mean][g-1];d2=[a,mean,rng][g-1];d3=[rng,rng,med][g-1];if(new Set([z,d1,d2,d3]).size===4)break;}
+ const f=int(1,4),order=[[a,b,cc,d,a],[a,a,cc,d,b],[a,b,a,d,cc],[a,b,cc,a,d]][f-1],P0=pick(NM),stat=['mean (average)','median','mode'][g-1];
+ t=T(`${P0} collected contributions for the food bank: ${order.map(x=>'$'+x).join(', ')}. The next contributor asked what amount would be in line with the others. If ${P0} answers with the ${stat}, what amount is that?`,[num(z,1,'dec')],`$${z}`,`The ${stat} of ${order.map(x=>'$'+x).join(', ')} is $${z}.`,{a,b,c:cc,d,g,f});
+ const lab={[d1]:['Gave the median','Gave the mode','Gave the mean'][g-1],[d2]:['Gave the mode','Gave the mean','Gave the range'][g-1],[d3]:['Gave the range','Gave the range','Gave the median'][g-1]};
+ t.choices=opts(t,[d1,d2,d3].map(x=>({value:'$'+x,mistake:lab[x]})),h);break;}
+case 'a1-conj':{
+ if(v==='500'){const [cc,d]=pick(zip([-5,-5,-5,-5,-5,-5,-5,-5,-4,-4,-4,-4,-4,-4,-4,-3,-3,-3,-3,-3,-3,-2,-2,-2,-2,-2,-2,2,2,2,2,3,3,3,4,4,5],[-3,-2,2,3,4,5,6,7,-2,2,3,4,5,6,7,2,3,4,5,6,7,2,3,4,5,6,7,4,5,6,7,5,6,7,6,7,7])),a=int(1,2),loOpen=a===1,hiOpen=a===2;
+  t=S.U.teacher(`Graph on a number line: ${minus(cc)} ${loOpen?'<':'≤'} x ${hiOpen?'<':'≤'} ${minus(d)}.`,`The segment from ${minus(cc)} to ${minus(d)} shaded, with ${loOpen?'an open':'a closed'} circle at ${minus(cc)} and ${hiOpen?'an open':'a closed'} circle at ${minus(d)}.`,[`The shading runs from ${minus(cc)} to ${minus(d)} only.`,`The circle at ${minus(cc)} is ${loOpen?'open':'closed'} and the circle at ${minus(d)} is ${hiOpen?'open':'closed'}.`,'Nothing outside the segment is shaded.'],{c:cc,d,a},S.inequalityLine(),conjLine(cc,d,loOpen,hiOpen));}
+ else if(v==='501'){let cc,d;do{cc=int(2,5)*pick([1,-1]);d=int(cc+2,7);}while(Math.abs(d)<2);const a=int(1,2),loOpen=a===1,hiOpen=a===2,key=`${minus(cc)} ${loOpen?'<':'≤'} x ${hiOpen?'<':'≤'} ${minus(d)}`;
+  t=T('Write a conjunction that describes this graph (for example −2 < x ≤ 5).',[{t:'conj',lo:cc,hi:d,loIn:!loOpen,hiIn:!hiOpen}],key,`The graph is ${conjDesc(cc,d,loOpen,hiOpen)}: ${key}.`,{c:cc,d,a},{svg:conjLine(cc,d,loOpen,hiOpen)});}
+ else{const a=int(-8,3),b=int(a+3,8),cs=int(1,4),O=true,C=false,ends=[[O,O],[C,C],[C,O],[O,C]][cs-1],f3=[C,O,O,C][cs-1],f4=[C,O,C,O][cs-1],[f1,f2]=ends;
+  const optsL=[[f1,f2],cs>2?[f2,f1]:[f3,f3],[f3,f2],[f1,f4]],order=shuffle(int,[0,1,2,3]),key='abcd'[order.indexOf(0)],s1=f1?'<':'≤',s2=f2?'<':'≤';
+  t=T(`Which number line shows the graph of ${minus(a)} ${s1} x ${s2} ${minus(b)}? Answer with the letter.`,[word(key)],`(${key})`,`The graph is ${conjDesc(a,b,f1,f2)}: (${key}).`,{a,b,cs,order},{svg:conjLines(order.map(i=>[a,b,...optsL[i]]))});}
+ break;}
+case 'a1-pct':{
+ if(v==='505'){const a=100*int(11,19),z=pick([2,5]),e=a*z/100;t=T(`What percent of ${S.comma(a)} is ${e}?`,[{...num(z,1,'dec'),pct:true}],`${z}%`,`${e} ÷ ${S.comma(a)} = ${z/100}, which is ${z}%.`,{a,z});}
+ else if(v==='506'||v==='mc'){let a,b;do{a=int(2,6);b=int(10,50);}while(6*b===10*a);const cc=6*b,e=10*a,z=10*cc/a;
+  t=T(`${cc} is ${e}% of what number?`,[num(z,1,'dec')],S.comma(z),`Divide: ${cc} ÷ ${(e/100).toFixed(2).replace(/0$/,'')} = ${S.comma(z)}.`,{a,b});
+  if(v==='mc'){const d1=e*cc/100,up=pick([0,1]);t.choices=opts(t,[{value:fmtN(d1),mistake:'Multiplied by the percent instead of dividing'},{value:fmtN(up?d1*10:d1/10),mistake:'Multiplied by the percent and misplaced the decimal point'},{value:fmtN(up?z/10:z*10),mistake:'Misplaced the decimal point'}],h);}}
+ else if(v==='509'){const a=10*int(11,19),b=10*int(2,9),z=a*b/100;t=T(`Find ${a}% of ${b}.`,[num(z,1,'dec')],fmtN(z),`${a}% of ${b} = ${a/100} × ${b} = ${fmtN(z)}.`,{a,b});}
+ else{const a=10*int(11,19);let b;do{b=10*int(2,29);}while(b%100===0);const z=a*b/100;t=T(`What number is ${a}% of ${b}?`,[num(z,1,'dec')],fmtN(z),`${a/100} × ${b} = ${fmtN(z)}.`,{a,b});
+  t.choices=opts(t,[{value:fmtN(Math.round(100*b/a)),mistake:'Divided by the percent instead of multiplying'},{value:fmtN(a*b),mistake:'Did not divide by 100'},{value:fmtN(Math.round(10000*b/a)),mistake:'Divided by the percent and did not divide by 100'}],h);}
+ break;}
+case 'a1-degree':{
+ if(v==='mc'){const r=(lo,hi)=>int(lo,hi)*pick([1,-1]),a=r(1,9),b=r(1,3),cc=r(1,3),d=r(1,3),e=int(1,4);
+  const P=[[[a,[['x',1]]],[b,[]]],[[a,[['x',2]]],[b,[['x',1]]],[cc,[]]],[[b,[['x',2]]],[cc,[['x',1]]],[a,[['x',3]]],[d,[]]],[[b,[]],[a,[['x',4]]],[cc,[['x',2]]]]][e-1],nterms=P.length;
+  t=T(`Find the degree: ${polyX(P)}`,[num(e,1,'int')],String(e),`The highest power of x is ${e}, so the degree is ${e}.`,{a,b,c:cc,d,e});
+  t.choices=opts(t,[nterms!==e?{value:String(nterms),mistake:'Counted the terms instead of finding the highest exponent'}:null,...[1,2,3,4].filter(x=>x!==e&&x!==nterms).map(x=>({value:String(x),mistake:'Did not use the highest exponent of x'}))].filter(Boolean),h);}
+ else{const [J,K]=letters(int,2),a=int(2,9),cs=[];while(cs.length<4){const x=int(1,15)*pick([1,-1]);if(!cs.includes(x))cs.push(x);}const [b,cc,d,e]=cs;let b1,b2;do{b1=int(4,9);b2=int(4,9);}while(b1===b2);
+  const P=[[a,[[J,b1-1],[K,b2-2]]],[b,[[J,b1-2],[K,b2-1]]],[cc,[[J,b1-1],[K,b2-1]]],[d,[[J,1],[K,b2]]],[e,[[J,b1],[K,1]]]],z=b1+b2-2;
+  t=T(`Find the degree: ${polyX(P)}`,[num(z,1,'int')],String(z),`Add the exponents in each term; the greatest sum is ${b1-1} + ${b2-1} = ${z}.`,{a,b,c:cc,d,e,b1,b2,L:[J,K]});}
+ break;}
+case 'a1-poly-add':{const odd=(lo,hi)=>(2*int(lo,hi)+1)*pick([1,-1]),sym=pick([1,-1]),op=sym>0?'+':'−';let A,B,ans,p,mul=1,show;
+ if(v==='mc'){const r5=()=>int(1,5)*pick([1,-1]);let a,b,cc,d,e,f;do{[a,b,cc,d,e,f]=[r5(),r5(),r5(),r5(),r5(),r5()];}while(a+d===0&&b+e===0&&cc+f===0);A=[[a,[['x',2]]],[b,[['x',1]]],[cc,[]]];B=[[d,[['x',2]]],[e,[['x',1]]],[f,[]]];ans=[[a+d,[['x',2]]],[b+e,[['x',1]]],[cc+f,[]]];
+  t=T(`Add: (${polyX(A)}) + (${polyX(B)})`,[polyPart(objPoly(ans))],polyX(ans),`Add like terms: ${polyX(ans)}.`,{a,b,c:cc,d,e,f});
+  t.choices=opts(t,[{value:polyX([[a-d,[['x',2]]],[b+e,[['x',1]]],[cc-f,[]]]),mistake:'Subtracted the x² terms and the numbers instead of adding'},{value:polyX([[a-d,[['x',2]]],[b-e,[['x',1]]],[cc+f,[]]]),mistake:'Subtracted the x² terms and the x terms instead of adding'},{value:polyX([[a+d,[['x',2]]],[b-e,[['x',1]]],[cc-f,[]]]),mistake:'Subtracted the x terms and the numbers instead of adding'}],h);break;}
+ if(v==='520'){const r6=()=>int(1,6)*pick([1,-1]),c1=[r6(),r6(),r6(),r6(),r6(),r6()],c2=[r6(),r6(),r6(),r6(),r6()],l=int(2,4),m=int(2,4);
+  A=c1.map((c0,i)=>[c0,[['x',5-i]]]);B=c2.map((c0,i)=>[c0,[['x',4-i]]]);ans=[[l*c1[0],[['x',5]]],...c2.map((c0,i)=>[l*c1[i+1]+sym*m*c0,[['x',4-i]]])];
+  show=`${l}(${polyX(A)}) ${op} ${m}(${polyX(B)})`;p={c1,c2,l,m,sym};}
+ else{let a,b,cc,d,e,f,g,hh,i=0,e1;for(;;){a=odd(1,3);b=odd(1,3);cc=odd(1,4);d=odd(1,4);e=odd(1,4);f=odd(1,4);if(e===f)continue;hh=int(3,6);g=v==='517'?int(1,hh-1):int(2,hh-1);if(v==='518')i=odd(1,4);if(v==='519')mul=int(2,6);e1=b+sym*mul*d;if(e1!==0)break;}
+  if(v==='517'){A=[[a,[['x',g]]],[b,[['x',hh]]],[cc,[]]];B=[[d,[['x',hh]]],[e,[]],[f,[['x',g]]]];ans=[[e1,[['x',hh]]],[a+sym*f,[['x',g]]],[cc+sym*e,[]]];}
+  else if(v==='518'){A=[[b,[['x',hh]]],[a,[['x',g]]],[i,[['x',1]]],[cc,[]]];B=[[d,[['x',hh]]],[f,[['x',g]]],[e,[]]];ans=[[e1,[['x',hh]]],[a+sym*f,[['x',g]]],[i,[['x',1]]],[cc+sym*e,[]]];}
+  else{A=[[b,[['x',hh]]],[a,[['x',g]]],[cc,[]]];B=[[d,[['x',hh]]],[f,[['x',g]]],[1,[['x',1]]],[e,[]]];ans=[[e1,[['x',hh]]],[a+sym*mul*f,[['x',g]]],[sym*mul,[['x',1]]],[cc+sym*mul*e,[]]];}
+  show=`(${polyX(A)}) ${op} ${mul>1?mul:''}(${polyX(B)})`;p={a,b,c:cc,d,e,f,g,h:hh,i,m:mul,sym};}
+ const key=polyX(ans.filter(([c0])=>c0));t=T(`${v==='517'?'Add. Write the answer in descending order of the variable':'Add'}: ${show}`,[{...polyPart(objPoly(ans)),order:v==='517'?'desc':undefined}],key,`${sym<0?'Subtract each term of the second polynomial':'Add like terms'}${mul>1||v==='520'?' after distributing':''}: ${key}.`,p);break;}
+case 'a1-poly-mul':{let ans,show,p;
+ if(v==='524'){const a=int(2,8),b=int(2,5);ans=[[a*a,[['x',4]]],[-2*a*b,[['x',2]]],[b*b,[]]];show=`(${a}x² − ${b})²`;p={a,b};}
+ else if(v==='525'){let a,b,cc,d;do{a=int(2,5);b=int(1,9)*pick([1,-1]);cc=int(2,5);d=int(1,9)*pick([1,-1]);}while(gcd(a,Math.abs(b))!==1||gcd(cc,Math.abs(d))!==1||Math.abs(a*d)===Math.abs(b*cc));
+  ans=[[a*cc,[['x',2]]],[a*d+b*cc,[['x',1]]],[b*d,[]]];show=`(${polyX([[a,[['x',1]]],[b,[]]])})(${polyX([[cc,[['x',1]]],[d,[]]])})`;p={a,b,c:cc,d};}
+ else{const a=int(1,5)*pick([1,-1]),b=int(1,4)*pick([1,-1]),cc=int(1,6)*pick([1,-1]),i=v==='mc'?int(2,4):1;ans=[[i,[['x',3]]],[a*i+b,[['x',2]]],[cc+a*b,[['x',1]]],[a*cc,[]]];
+  show=`(${polyX([[1,[['x',1]]],[a,[]]])})(${polyX([[i,[['x',2]]],[b,[['x',1]]],[cc,[]]])})`;p={a,b,c:cc,i};}
+ const key=polyX(ans.filter(([c0])=>c0));t=T(`Multiply: ${show}`,[polyPart(objPoly(ans))],key,`Multiply each term of the first factor by each term of the second and combine like terms: ${key}.`,p);
+ if(v==='mc'){const {a,b,c:cc,i}=p;t.choices=opts(t,[{value:polyX([[i,[['x',3]]],[b,[['x',2]]],[a*cc,[]]]),mistake:'Multiplied only the first terms and the last terms'},{value:polyX([[i,[['x',3]]],[a*i+b,[['x',2]]],[a*b,[['x',1]]],[a*cc,[]]]),mistake:'Left out a product when collecting the x terms'},{value:polyX([[i,[['x',2]]],[b-1,[['x',1]]],[a*cc,[]]]),mistake:'Did not multiply x by each term'}],h);}
+ break;}
+case 'a1-graph-pt':{const a=int(1,4)*pick([1,-1]);let b=int(1,5)*pick([1,-1]);if(v==='mc')while(b===a)b=int(1,5)*pick([1,-1]);
+ if(v==='mc'){const list=[[a,b],[b,a],[a,-b],[-a,b]],order=shuffle(int,[0,1,2,3]),key='abcd'[order.indexOf(0)];
+  t=T(`Which graph shows the point C(${minus(a)}, ${minus(b)})? Answer with the letter.`,[word(key)],`(${key})`,`Move ${Math.abs(a)} ${a>0?'right':'left'} and ${Math.abs(b)} ${b>0?'up':'down'}: (${key}).`,{a,b,order},{svg:S.graphPlanes(order.map(i=>[{pt:list[i]}]),'Four coordinate planes (a) to (d), each with one point: '+order.map((i,j)=>`(${'abcd'[j]}) (${minus(list[i][0])}, ${minus(list[i][1])})`).join(', '))});}
+ else t=S.U.teacher(`Graph the ordered pair C(${minus(a)}, ${minus(b)}).`,`A dot at (${minus(a)}, ${minus(b)}), labelled C.`,[`The dot is ${Math.abs(a)} units ${a>0?'right':'left'} of the origin.`,`The dot is ${Math.abs(b)} units ${b>0?'up':'down'} from the x-axis.`,'The point is labelled C.'],{a,b},S.coordPlane([],'Blank coordinate plane from −10 to 10'),S.graphPlane([{pt:[a,b],label:[a,b,'C']}],`Point C(${minus(a)}, ${minus(b)}) on a coordinate plane`));
+ break;}
+case 'a1-graph-line':{
+ if(v==='536'||v==='537'){let a,b;if(v==='536'){b=int(1,5)*pick([1,-1]);a=pick([1,-1]);}else{a=int(1,5)*pick([1,-1]);b=int(1,Math.floor(9/Math.abs(a)))*a;}
+  const eq=`y = ${polyX([[a,[['x',1]]],[b,[]]])}`;t=S.U.teacher(`Graph: ${eq}.`,`A straight line through (0, ${minus(b)}) and (1, ${minus(a+b)}), with slope ${minus(a)}.`,[`The line crosses the y-axis at ${minus(b)}.`,`The line goes ${a>0?'up':'down'} ${Math.abs(a)} for every 1 to the right.`,'The line is drawn straight across the grid with arrows or to the edges.'],{a,b},S.coordPlane([],'Blank coordinate plane from −10 to 10'),S.graphPlane([{line:[a,b]}],`The line ${eq}`));}
+ else if(v==='540'){const a=int(1,9)*pick([1,-1]),vert=int(1,2)===1,eq=`${vert?'x':'y'} = ${minus(a)}`;
+  t=S.U.teacher(`Graph: ${eq}.`,`A ${vert?'vertical':'horizontal'} line through ${vert?`(${minus(a)}, 0)`:`(0, ${minus(a)})`}.`,[`The line is ${vert?'vertical':'horizontal'}.`,`It crosses the ${vert?'x':'y'}-axis at ${minus(a)}.`,'It is drawn across the whole grid.'],{a,vert},S.coordPlane([],'Blank coordinate plane from −10 to 10'),S.graphPlane([vert?{vline:a}:{line:[0,a]}],`The line ${eq}`));}
+ else if(v==='mc'){const cc=pick([2,3,4,5,-2,-3,-4,-5]),list=[cc,-cc,1/cc,-1/cc],order=shuffle(int,[0,1,2,3]),key='abcd'[order.indexOf(0)];
+  t=T(`Which graph shows y = ${minus(cc)}x? Answer with the letter.`,[word(key)],`(${key})`,`The line passes through the origin and (1, ${minus(cc)}): (${key}).`,{c:cc,order},{svg:S.graphPlanes(order.map(i=>[{line:[list[i],0]}]),'Four coordinate planes (a) to (d), each with a line through the origin: '+order.map((i,j)=>`(${'abcd'[j]}) slope ${fracT(...red(Math.round(list[i]*cc*cc),cc*cc))}`).join(', '))});}
+ else{const a=int(1,9)*pick([1,-1]),vert=int(1,2)===1,list=[vert?{vline:a}:{line:[0,a]},vert?{line:[0,a]}:{vline:a},{line:[1,a]}],order=shuffle(int,[0,1,2]),key='abc'[order.indexOf(0)],nm=['vertical line','horizontal line'],eq=`${vert?'x':'y'} = ${minus(a)}`;
+  t=T(`Which graph shows ${eq}? Answer with the letter, or (d) if none of these.`,[word(key)],`(${key})`,`${eq} is a ${vert?'vertical':'horizontal'} line through ${minus(a)} on the ${vert?'x':'y'}-axis: (${key}).`,{a,vert,order},{svg:S.graphPlanes(order.map(i=>[list[i]]),'Three coordinate planes (a) to (c): '+order.map((i,j)=>`(${'abc'[j]}) ${i===2?`the line y = x ${a<0?'−':'+'} ${Math.abs(a)}`:`a ${nm[(i===0)===vert?0:1]} through ${minus(a)}`}`).join(', '))});}
+ break;}
+case 'a1-avg-target':{let a,b,nw,z;do{a=int(3,7);b=int(72,79);nw=b+int(5,9);z=(nw*(a+5)-a*b)/5;}while(!Number.isInteger(z));let d1;do{d1=z+int(1,5)*pick([1,-1]);}while(d1>100);
+ t=T(`After taking ${a} quizzes, your average is ${b} out of 100. What must your average score be on the next five quizzes to raise your average to ${nw}?`,[num(z,1,'int')],String(z),`You need ${nw} × ${a+5} = ${nw*(a+5)} points in all; you have ${a} × ${b} = ${a*b}, so the five quizzes need ${nw*(a+5)-a*b}, an average of ${z}.`,{a,b,new:nw});
+ t.choices=opts(t,[{value:String(d1),mistake:'Arithmetic slip'},{value:String(Math.floor((b+nw)/2)),mistake:'Averaged the old and new averages'},{value:String(nw),mistake:'Gave the new average itself'}],h);break;}
+case 'a1-power-rule':{let ml,terms,form,p,ds=null,parts=null,key=null;const r=(lo,hi)=>int(lo,hi)*pick([1,-1]);
+ if(v==='556'){const a=r(2,6),b=int(2,5),cc=int(2,5),d=int(1,5),e=r(1,4),f=r(1,5),g=r(1,5),hh=r(1,5),i=r(1,5),j=b+e-2*d+2,k=cc-f;
+  terms=[[a,{x:-b,y:cc}]];form='pos';p={a,b,c:cc,d,e,f,g,h:hh,i};
+  ml=mlQ(`${mlMono(a**3,[['x',e],['y',-2]])}${mlGrp(mlPow('x',d),-2)}${mlMono(1,[['y',k],['x',2],['y',f]])}`,`${mlGrp(`<mn>${a<0?'−'+(-a):a}</mn><msup><mi>x</mi><mn>0</mn></msup>`,2)}${mlMono(1,[['x',j],['y',-2]])}${mlGrp(mlMono(g,[['x',hh],['y',i]]),0)}`);}
+ else if(v==='557'){const a=int(4,6),b=int(4,5),cc=int(1,5),d=int(1,5),e=int(1,5),f=int(1,3),g=int(1,2),hh=int(2,3),i=int(1,3),j=int(1,3),k=int(1,5),l=int(1,5),m=int(1,2),n0=int(1,2),o=int(1,3);
+  terms=[[1,{x:a-d*cc+e-i-j+l,y:b-f-k,z:-g*hh-m*n0}]];form='pos';p={a,b,c:cc,d,e,f,g,h:hh,i,j,k,l,m,n:n0,o};
+  ml=mlQ(`${mlMono(1,[['x',a],['y',b]])}<msup><mi>z</mi><mn>0</mn></msup>${mlGrp(`${mlPow('x',cc)}<msup><mi>y</mi><mn>0</mn></msup>`,-d)}${mlMono(1,[['x',e],['y',-f]])}${mlGrp(mlPow('z',-g),hh)}`,`${mlPow('x',i)}${mlGrp(mlPow('y',-o),0)}${mlMono(1,[['x',j],['y',k],['x',-l]])}${mlGrp(mlPow('z',-m),-n0)}`);}
+ else if(v==='558'){const [a,b,cc,d,e,f,g,hh,i,j,k]=Array.from({length:11},()=>int(2,5));terms=[[d**f*g/j,{x:hh-b*f,y:cc*f+k,z:-e*f-i}]];form='den';p={a,b,c:cc,d,e,f,g,h:hh,i,j,k};
+  ml=`${mlGrp(mlQ(`<msup><mn>${a}</mn><mn>0</mn></msup>${mlMono(1,[['x',b],['y',-cc]])}`,mlMono(d,[['z',-e]])),-f)}${mlQ(mlMono(g,[['x',hh],['z',-i]]),mlMono(j,[['y',-k]]))}`;
+  const G=gcd(d**f*g,j);key=`${(d**f*g)/G}/(${monoX(j/G,[['x',b*f-hh],['y',-cc*f-k],['z',e*f+i]])})`;}
+ else if(v==='559'){const a=int(2,5),b=int(2,5),cc=int(2,5),d=int(2,5),e=int(2,3),f=int(2,5),g=int(2,5),hh=int(2,5),i=int(2,5);terms=[[1/a**e,{x:b*e+hh*i,y:-(d*e+f*i),p:-(cc*e+g*i)}]];form='pos';p={a,b,c:cc,d,e,f,g,h:hh,i};
+  ml=`${mlGrp(mlQ(mlMono(a,[['x',-b],['p',cc]]),mlPow('y',-d)),-e)}${mlGrp(mlQ(mlMono(1,[['y',f],['p',g]]),mlPow('x',hh)),-i)}`;key=`x${S.sup(b*e+hh*i)}/(${monoX(a**e,[['p',cc*e+g*i],['y',d*e+f*i]])})`;}
+ else if(v==='560'){const b=r(1,5),sb=b>0?1:-1,cc=-sb*int(1,5),d=r(1,5),e=int(2,5),f=int(2,5),g=-sb*int(1,5),hh=r(1,5),i=r(1,5),j=int(2,5),a=int(2,5);
+  const t1=[[1,{x:-b*e,y:-cc*e,z:-d*e}]],t2=[[1,{x:-g*j,y:i*j,z:-hh*j}]];parts=[{...polyPart(t1),form:'den'},{...polyPart(t2),form:'den'}];p={a,b,c:cc,d,e,f,g,h:hh,i,j};
+  key=`(a) ${sumTxt(t1,'den')}; (b) ${sumTxt(t2,'den')}`;
+  ml=`<mtext>a) </mtext>${mlGrp(`<msup><mn>${a}</mn><mn>0</mn></msup>${mlMono(1,[['x',b],['y',cc],['z',d]])}`,-e)}<mtext>      b) </mtext>${mlGrp(mlQ(`<msup><mn>${f}</mn><mn>0</mn></msup>${mlMono(1,[['x',g],['z',hh]])}`,mlPow('y',i)),-j)}`;}
+ else{const [A,B]=pick([[3,2],[5,3],[7,5],[2,7]]);let cc=int(2,5);const d=int(2,5);if(cc===d)cc++;const e=int(2,5),f=int(e+1,6),g=int(3,9);let hh;do{hh=int(2,5);}while(hh*(d-cc)===-2);
+  const sg=hh%2?-1:1,ea=hh*(d-cc),eb=hh*(f-e),ec=hh*g;terms=[[sg*B**hh/A**hh,{a:ea,b:eb,c:ec}]];form='pos';p={A,B,c:cc,d,e,f,g,h:hh};
+  const lt=list=>{const s0=monoX(1,list);return s0==='1'?'':s0;},sgT=sg<0?'−':'',fr=(n0,top,d0,bot)=>`${sgT}${n0}${lt(top)}/${lt(bot)?`(${d0}${lt(bot)})`:d0}`,pa=[['a',Math.max(ea,0)]],na=[['a',Math.max(-ea,0)]],bc=[['b',eb],['c',ec]];
+  key=fr(B**hh,[...pa,...bc],A**hh,na);
+  ds=[{value:fr(B**hh,[...na,...bc],A**hh,pa),mistake:'Put the power of a on the wrong side of the fraction bar'},{value:fr(B**hh,pa,A**hh,[...na,...bc]),mistake:'Put the powers of b and c on the wrong side of the fraction bar'},{value:fr(A**hh,[...pa,...bc],B**hh,na),mistake:'Wrote the number part upside down'}];
+  ml=mlGrp(mlQ(`<mo>−</mo><mn>${A}</mn>${mlMono(1,[['a',cc],['b',e]])}<msup><mi>c</mi><mn>0</mn></msup>`,`<mn>${B}</mn>${mlMono(1,[['a',d],['b',f],['c',g]])}`),-hh);}
+ if(!parts)parts=[{...polyPart(terms),form}];if(!key)key=sumTxt(terms,form);
+ t=T(`Simplify. Write the answer${parts.length>1?'s':''} ${HOW[form||'den']}${parts.length>1?'; answer both parts, separated by a semicolon':''}.`,parts,key,`Use the power rule (multiply exponents), then add exponents for products and subtract for quotients: ${key}.`,p,{math:math(`<mrow>${ml}</mrow>`)});
+ if(ds)t.choices=opts(t,ds,h);break;}
+case 'a1-vol-chain':{const M={'(1/2.54)':1/2.54,'(12)':12,'(100)':100,'(2.54)':2.54,'(3)':3,'(1/12)':1/12,'(1/100)':1/100,'(1/3)':1/3,'(1000)':1000,'(1/1000)':1/1000};
+ const C=v==='564'?[['meters','feet','ft³',['(100)','(1/2.54)','(1/12)']],['feet','meters','m³',['(12)','(2.54)','(1/100)']],['kilometers','inches','in.³',['(1000)','(100)','(1/2.54)']],['inches','kilometers','km³',['(2.54)','(1/100)','(1/1000)']]]
+  :[['centimeters','feet','ft³',['(1/2.54)','(1/12)']],['feet','centimeters','cm³',['(12)','(2.54)']],['meters','inches','in.³',['(100)','(1/2.54)']],['inches','meters','m³',['(2.54)','(1/100)']],['yards','inches','in.³',['(3)','(12)']],['inches','yards','yd³',['(1/12)','(1/3)']]];
+ const k=int(0,C.length-1),[u1,u2,ab,fs]=C[k];let b=int(20,59);if(u1==='inches'&&(u2==='meters'||u2==='kilometers'))b*=1000;const m=3*fs.length,val=fs.reduce((x,f)=>x*M[f]**3,b),cube=f=>f+'³';
+ t=T(`Use ${m===6?'six':'nine'} unit multipliers to convert ${S.comma(b)} cubic ${u1} to cubic ${u2}. Write the measurement times the unit multipliers (a cubed multiplier counts as three); you do not need to multiply them out.`,[{t:'chain',v:[val,1],start:b,min:m}],`${S.comma(b)}${fs.map(cube).join('')} ${ab}`,`Each linear unit multiplier is used three times for cubic units: ${S.comma(b)} × ${fs.map(cube).join(' × ')} ${ab}.`,{b,k,fs});
+ break;}
+case 'a1-stats':{// 493 numbers 40-75, 494 bag weights 4-15, 495 golf scores 75-90; the mean comes out whole and there is one mode
+ const [lo,hi,alo,ahi]=v==='494'?[4,15,4,15]:v==='495'?[75,90,72,100]:[40,75,40,75];let data,e1;
+ for(;;){e1=int(7,10);const A=[];while(A.length<e1){const x=int(lo,hi);if(!A.includes(x))A.push(x);}const b1=int(0,e1-1),b2=int(2,3);for(let k=0;k<b2;k++)A[int(0,e1-1)]=A[b1];
+  const tot=A.reduce((x,y)=>x+y,0),a0=v==='494'?(Math.floor(tot/(e1+1))+1)*(e1+1)-tot:Math.floor(tot/e1)*(e1+1)-tot;if(a0<alo||a0>ahi)continue;data=[a0,...A];
+  const cnt={};for(const x of data)cnt[x]=(cnt[x]||0)+1;const top=Math.max(...Object.values(cnt));if(Object.values(cnt).filter(c0=>c0===top).length===1&&top>1)break;}
+ const srt=[...data].sort((x,y)=>x-y),n0=srt.length,rng=srt[n0-1]-srt[0],mean=red(data.reduce((x,y)=>x+y,0),n0),med=n0%2?[srt[(n0-1)/2],1]:red(srt[n0/2-1]+srt[n0/2],2),cnt={};for(const x of data)cnt[x]=(cnt[x]||0)+1;const mode=Number(Object.keys(cnt).sort((x,y)=>cnt[y]-cnt[x])[0]);
+ const list=data.join(', '),P0=pick(['Harold','Faith','Erin','Munroe']),ask='Answer all four, separated by semicolons: range; mean; median; mode.';
+ const prompt=v==='494'?`${P0} weighed ${n0} bags of flour for the craft show and found their weights (in pounds) to be ${list}. Find the range, mean, median, and mode of their weights. ${ask}`:v==='495'?`Bob's last ${S.words(n0)} golf scores on a par 72 course were ${list}. Find the range, mean, median, and mode of the scores. ${ask}`:`Find the range, mean, median, and mode of the following numbers: ${list}. ${ask}`;
+ t=T(prompt,[num(rng,1,'int'),num(...mean,'dec'),num(...med,'dec'),num(mode,1,'int')],`range = ${rng}; mean = ${decT(...mean)}; median = ${decT(...med)}; mode = ${mode}`,`In order: ${srt.join(', ')}. Range ${srt[n0-1]} − ${srt[0]} = ${rng}; mean ${data.reduce((x,y)=>x+y,0)} ÷ ${n0} = ${decT(...mean)}; median ${decT(...med)}; mode ${mode}.`,{data});break;}
+case 'a1-overall':{const f=int(1,3),thing=['weights','numbers','weights'][f-1],u=['',' pounds','',' ounces'][f];let groups,tot;
+ if(v==='552'){const k=int(0,38),A1=[25,26,27,25,26,27,25,25,26,26,27,25,25,25,26,26,27,25,25,26,27,25,26,25,26,27,25,25,26,25,25,25,26,26,27,27,25,26,27][k],A2=[31,32,33,30,31,32,30,30,31,31,32,30,31,32,31,33,32,30,34,31,32,33,34,32,33,34,31,32,33,30,31,32,31,32,32,33,30,31,32][k],
+  A3=[37,38,39,35,36,37,36,38,37,39,38,35,39,38,36,39,37,35,39,36,37,38,39,37,38,39,39,38,39,35,37,39,36,38,37,39,37,38,39][k],B=[4,4,4,6,6,6,6,6,6,6,6,8,8,8,8,8,8,6,6,6,6,7,7,8,8,8,7,7,7,8,8,8,8,8,8,8,8,8,8][k],A=[3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,7,7,7][k];groups=[[A,A1],[B,A2],[20-A-B,A3]];tot=20;}
+ else{const k=int(0,40),A1=[25,25,26,26,27,27,28,28,29,29,31,25,25,25,25,25,26,26,26,27,27,27,28,28,28,29,29,31,31,25,25,26,26,27,27,28,28,29,29,31,25][k],A2=[35,40,31,36,32,37,33,38,34,39,36,40,31,34,37,40,32,35,38,33,36,39,34,37,40,35,38,37,40,35,40,31,36,32,37,33,38,34,39,36,40][k],A=[3,3,3,3,3,3,3,3,3,3,3,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,7][k];groups=[[A,A1],[15-A,A2]];tot=15;}
+ const z=red(groups.reduce((x,[n0,m])=>x+n0*m,0),tot),words=['first','next','last'];
+ t=T(`The average of the ${words[0]} ${groups[0][0]} ${thing} was ${groups[0][1]}${u}. ${groups.slice(1).map(([n0,m],i)=>`The average of the ${groups.length===3&&i===1?'last':'next'} ${n0} ${thing} was ${m}${u}.`).join(' ')} What was the overall average of the ${thing}?${tot===15?' Give an exact answer (a mixed number or fraction if it does not come out even).':''}`,[num(...z,tot===15?'any':'dec')],`${tot===15?mixT(...z):decT(...z)}${u}`,`Total: ${groups.map(([n0,m])=>`${n0} × ${m}`).join(' + ')} = ${groups.reduce((x,[n0,m])=>x+n0*m,0)}; divide by ${tot}: ${tot===15?mixT(...z):decT(...z)}.`,{groups,f});break;}
 default:throw Error('Unknown Algebra 1 port recipe '+c.recipe);}
 if(v&&t.parameters&&t.parameters.form===undefined)t.parameters.form=v;   // the record's variant, for the oracles
 return t;}

@@ -268,6 +268,55 @@ const oracle={
   else{v0=p.c===1?'u':'w';y=p.c===1?(p.b+1)*X/(p.a-1):(p.a-1)*X/(p.b+1);}
   return pt.v===v0&&near(s[1],y);},
 
+ // Batch A1-6
+ 'a1-lcm':(q,p)=>{const l=(x,y)=>x/g(x,y)*y;return is(P(q),[l(l(p.a,p.b),p.c),1])&&g(p.a,p.b)>1&&between(p.a,p.form==='mc'?21:11,p.form==='mc'?30:20);},
+ 'a1-lcm-mono':(q,p)=>{const [J,K,L]=p.L,r=p.a*p.b*p.c;const w=p.form==='479'?{[J]:p.d,[K]:p.e,[L]:p.f}:p.form==='mc'?{[J]:p.d,[K]:1}:{[J]:p.d,[K]:p.e};return polyIs(P(q),[[r,w]])&&g(p.a,p.c)===1;},
+ 'a1-rat-add':(q,p)=>{// numerator rebuilt independently; the denominator checked as the product it should equal
+  const f=p.form,pt=P(q);if(!pt||pt.t!=='ratexp')return false;const [X,Y,Z,U,V]=p.L||['x','y','z'];let N,D;
+  if(f==='483'||f==='mc'){N=[[p.b+p.add*p.d,{x:1}],[p.a+p.add*p.c,{y:1}]];D=e=>p.e*e.x**p.f*e.y**p.g;}
+  else if(f==='486'){N=[[p.b*p.d,{[X]:1}],[p.a*p.d,{[Y]:1}],[p.c,{[X]:1,[Y]:1}]];D=e=>p.d*e[X]*e[Y];}
+  else if(f==='487'){const [R0,S0,T0,U0,V0]=p.L;N=[[1,{[R0]:1,[U0]:p.a-1,[V0]:p.b}],[1,{[S0]:1}],[p.sg,{[T0]:1,[U0]:p.a,[V0]:p.b}]];D=e=>e[U0]**p.a*e[V0]**p.b;}
+  else if(f==='488'||f==='489'){const [R0,S0,T0,U0]=p.L,c=p.c,d=p.d;N=f==='488'?[[p.a,{[R0]:1,[T0]:2-c,[U0]:2-d}],[-p.b,{[T0]:c-1,[U0]:d-1}],[1,{[S0]:1,[T0]:c-1,[U0]:2-d}]]:[[p.a,{[T0]:2-c,[U0]:2-d}],[1,{[R0]:1,[T0]:c-1,[U0]:d-1}],[1,{[S0]:1,[T0]:c-1,[U0]:2-d}],[-p.b,{[T0]:2-c,[U0]:d-1}]];D=e=>e[T0]**2*e[U0]**2;}
+  else if(f==='490'){const G=Math.max(p.c,p.e),H=Math.max(p.d,p.f);N=[[p.a,{x:1,y:G-p.c,z:H-p.d}],[p.b,{y:G-p.e,z:H-p.f}]];D=e=>e.y**G*e.z**H;}
+  else if(f==='549'){N=[[p.a+p.b,{x:1}],[p.c*(p.b-p.a),{}]];D=e=>(e.x+p.c)*(e.x-p.c);}
+  else if(f==='544'){N=[[p.a,{[Y]:1}],[p.a*p.d,{[X]:1}],[p.b,{[X]:1,[Y]:2}],[p.c,{[Y]:2}],[p.c*p.d,{[X]:1,[Y]:1}]];D=e=>e[Y]**2*(e[Y]+p.d*e[X]);}
+  else if(f==='545'){N=p.c===1?[[p.a+p.b,{[X]:1}],[p.b*p.d,{[Y]:1}]]:[[p.b,{[X]:1}],[p.a+p.b*p.d,{[Y]:1}]];D=e=>(p.c===1?e[X]:e[Y])*(e[X]+p.d*e[Y]);}
+  else if(f==='546'){N=[[p.a,{[X]:2}],[p.a*p.d+p.b,{[X]:1,[Y]:1}],[p.b*p.d,{[Y]:2}],[p.c,{[X]:2,[Y]:1}]];D=e=>e[X]**2*e[Y]*(e[X]+p.d*e[Y]);}
+  else if(f==='547'){const W=p.L[2];N=[[p.a,{[X]:1,[Y]:1}],[p.a*p.d,{[X]:1,[W]:1}],[p.b,{[Y]:2}],[p.c,{[Y]:3}],[p.c*p.d,{[Y]:2,[W]:1}]];D=e=>e[Y]**2*(e[Y]+p.d*e[W]);}
+  else{N=[[p.a+p.b,{[X]:1}],[p.a*p.d,{[Y]:1}],[p.c,{[X]:2}],[p.c*p.d,{[X]:1,[Y]:1}]];D=e=>e[X]*(e[X]+p.d*e[Y]);}
+  if(!polyIs({t:'poly',terms:pt.num},N))return false;const fk=S.parseExpr(pt.den,pt.vars),env={};pt.vars.forEach((v,i)=>{env[v]=1.3+0.71*i;});return near(fk(env),D(env));},
+ 'a1-stat-mc':(q,p)=>{const L=[p.a,p.b,p.c,p.d,p.a],s=[...L].sort((x,y)=>x-y);return is(P(q),[[L.reduce((x,y)=>x+y,0)/5,s[2],p.a][p.g-1],1])&&new Set([p.a,p.b,p.c,p.d]).size===4;},
+ 'a1-conj':(q,p)=>{if(p.form==='500')return q.answer.kind==='teacher'&&q.answer.reference.includes(`${p.a===1?'an open':'a closed'} circle at ${String(p.c).replace('-','−')}`);
+  if(p.form==='501'){const pt=P(q),open=/an open circle at (\S+) and/.exec(q.givens.svg);return pt.lo===p.c&&pt.hi===p.d&&pt.loIn===!open&&pt.hiIn===(p.a!==2);}
+  return P(q).alts[0]==='abcd'[p.order.indexOf(0)]&&p.b>=p.a+3;},
+ 'a1-pct':(q,p)=>{const f=p.form;if(f==='505')return is(P(q),[p.z,1])&&P(q).pct&&[2,5].includes(p.z);if(f==='506'||f==='mc')return is(P(q),Q(60*p.b,p.a));return is(P(q),Q(p.a*p.b,100))&&(f==='509'||p.b%100!==0);},
+ 'a1-degree':(q,p)=>p.form==='mc'?is(P(q),[p.e,1]):is(P(q),[p.b1+p.b2-2,1])&&p.b1!==p.b2,
+ 'a1-poly-add':(q,p)=>{const f=p.form;let w;
+  if(f==='mc')w=[[p.a+p.d,{x:2}],[p.b+p.e,{x:1}],[p.c+p.f,{}]];
+  else if(f==='520')w=[...p.c1.map((c,i)=>[p.l*c,{x:5-i}]),...p.c2.map((c,i)=>[p.sym*p.m*c,{x:4-i}])];
+  else if(f==='517')w=[[p.a,{x:p.g}],[p.b,{x:p.h}],[p.c,{}],[p.sym*p.d,{x:p.h}],[p.sym*p.e,{}],[p.sym*p.f,{x:p.g}]];
+  else if(f==='518')w=[[p.b,{x:p.h}],[p.a,{x:p.g}],[p.i,{x:1}],[p.c,{}],[p.sym*p.d,{x:p.h}],[p.sym*p.f,{x:p.g}],[p.sym*p.e,{}]];
+  else w=[[p.b,{x:p.h}],[p.a,{x:p.g}],[p.c,{}],[p.sym*p.m*p.d,{x:p.h}],[p.sym*p.m*p.f,{x:p.g}],[p.sym*p.m,{x:1}],[p.sym*p.m*p.e,{}]];
+  return polyIs(P(q),w)&&(f!=='517'||P(q).order==='desc');},
+ 'a1-poly-mul':(q,p)=>{const mul=(A,B)=>A.flatMap(([c1,e1])=>B.map(([c2,e2])=>[c1*c2,{x:e1+e2}]));let A,B;
+  if(p.form==='524'){A=[[p.a,2],[-p.b,0]];B=A;}else if(p.form==='525'){A=[[p.a,1],[p.b,0]];B=[[p.c,1],[p.d,0]];}else{A=[[1,1],[p.a,0]];B=[[p.i,2],[p.b,1],[p.c,0]];}
+  return polyIs(P(q),mul(A,B));},
+ 'a1-graph-pt':(q,p)=>p.form==='mc'?P(q).alts[0]==='abcd'[p.order.indexOf(0)]&&q.givens.svg.includes(`(${String(p.a).replace('-','−')}, ${String(p.b).replace('-','−')})`):q.answer.kind==='teacher'&&q.answer.reference.includes(`(${String(p.a).replace('-','−')}, ${String(p.b).replace('-','−')})`),
+ 'a1-graph-line':(q,p)=>{const f=p.form;if(f==='536'||f==='537')return q.answer.kind==='teacher'&&q.answer.reference.includes(`(1, ${String(p.a+p.b).replace('-','−')})`)&&(f==='537'?p.b%p.a===0&&p.b/p.a>0:Math.abs(p.a)===1);
+  if(f==='540')return q.answer.kind==='teacher'&&q.answer.reference.includes(p.vert?'vertical':'horizontal');
+  if(f==='mc')return P(q).alts[0]==='abcd'[p.order.indexOf(0)];return P(q).alts[0]==='abc'[p.order.indexOf(0)];},
+ 'a1-avg-target':(q,p)=>is(P(q),Q(p.new*(p.a+5)-p.a*p.b,5))&&P(q).v[1]===1,
+ 'a1-power-rule':(q,p)=>{const f=p.form;
+  if(f==='556')return polyIs(P(q),[[p.a,{x:-p.b,y:p.c}]]);
+  if(f==='557')return polyIs(P(q),[[1,{x:p.a-p.c*p.d+p.e-p.i-p.j+p.l,y:p.b-p.f-p.k,z:-p.g*p.h-p.m*p.n}]]);
+  if(f==='558'){const t=P(q).terms,k=Object.keys(t);return k.length===1&&near(t[k[0]],p.d**p.f*p.g/p.j)&&k[0]===['x'+(p.h-p.b*p.f),'y'+(p.c*p.f+p.k),'z'+(-p.e*p.f-p.i)].filter(x=>!/^\D0$/.test(x)).join('');}
+  if(f==='559'){const t=P(q).terms;return near(t[`p${-(p.c*p.e+p.g*p.i)}x${p.b*p.e+p.h*p.i}y${-(p.d*p.e+p.f*p.i)}`],1/p.a**p.e);}
+  if(f==='560')return polyIs(P(q,0),[[1,{x:-p.b*p.e,y:-p.c*p.e,z:-p.d*p.e}]])&&polyIs(P(q,1),[[1,{x:-p.g*p.j,y:p.i*p.j,z:-p.h*p.j}]]);
+  const t=P(q).terms,k=Object.keys(t);return k.length===1&&near(t[k[0]],(-1)**p.h*p.B**p.h/p.A**p.h)&&k[0]===['a'+p.h*(p.d-p.c),'b'+p.h*(p.f-p.e),'c'+p.h*p.g].filter(x=>!/^\D0$/.test(x)).join('');},
+ 'a1-vol-chain':(q,p)=>{const M={'(1/2.54)':1/2.54,'(12)':12,'(100)':100,'(2.54)':2.54,'(3)':3,'(1/12)':1/12,'(1/100)':1/100,'(1/3)':1/3,'(1000)':1000,'(1/1000)':1/1000},pt=P(q);
+  const to={centimeters:0.01,feet:0.3048,meters:1,inches:0.0254,yards:0.9144,kilometers:1000},m=/convert [\d,]+ cubic (\w+) to cubic (\w+)/.exec(q.prompt);
+  return near(pt.v[0]/pt.v[1],p.b*(to[m[1]]/to[m[2]])**3)&&pt.min===3*p.fs.length&&pt.start===p.b;},
+
 };
 const near=(x,y)=>Math.abs(x-y)<=1e-9*Math.max(1,Math.abs(y));
 
@@ -284,6 +333,8 @@ const wrong={
  'a1-factor':q=>[q.answer.value.replace(/\(.*\)/,'')],
  'a1-ineq-read':q=>q.answer.parts.length>1?[q.answer.value.split(';')[0]+';'+q.answer.value.split(';')[0]]:[],
  'a1-multivar':q=>P(q).t==='solve'?[q.answer.value.replace(/^\s*\w\s*=\s*/,'')]:[],
+ 'a1-rat-add':q=>[q.answer.value.replace(/\)\/\(.*$/,')')],
+ 'a1-conj':q=>q.answer.parts&&P(q).t==='conj'?[`${P(q).lo} < x`]:[],
 };
 
 H.run({key:'algebra-1',oracle,wrong,instances:Number(process.argv[2]||250)});

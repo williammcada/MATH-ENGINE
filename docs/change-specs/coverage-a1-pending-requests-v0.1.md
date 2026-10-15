@@ -69,6 +69,28 @@ Port recipes that keep the source's ranges are ready for node:376 (`a1-primes`).
 
 **Meanwhile:** the records stay covered-provisional.
 
+### R4 — Let port tasks replace statistics-bank adaptations (A1-6)
+
+**Records (covered-provisional):** algebra-1-en:node:493, node:494, node:495, node:551, node:552.
+
+| Record | Earlier adaptation | The source |
+|---|---|---|
+| node:493 | range, mean, median and mode with fractional means | builds each data set so the mean is whole and there is one mode |
+| node:494 | the same, bag weights | the same, bag weights 4 to 15 |
+| node:495 | the same, golf scores | the same, golf scores 75 to 90 |
+| node:551 | groups of any size (2 to 7 values) | two groups totalling 15 values, from its table of averages |
+| node:552 | groups of any size | three groups totalling 20 values, from its table of averages |
+
+Port recipes that keep the source's ranges are ready for node:493 (`a1-stats` variant `493`), node:494 (`a1-stats` variant `494`), node:495 (`a1-stats` variant `495`), node:551 (`a1-overall` variant `551`), node:552 (`a1-overall` variant `552`).
+
+**Why the course chat cannot do it.** Replacing an adaptation removes its catalog entry, and `tests/statistics-bank-audit.py` line 72 asserts a fixed number of checked instances (`count==34000`). Checked in an integrated copy on 2026-10-15: with nodes 493, 494, 495, 551 and 552 replaced, that assertion fails (the audit already skips replaced entries, so its count drops); the other shared tests pass. The later records in this table have the same dependency.
+
+**Change wanted:** in `tests/statistics-bank-audit.py`, derive the expected count from the entries it checks (for example 1,000 instances per entry still served by the statistics family) instead of `34000`.
+
+**Then, in `scripts/port_a1_tasks.py`:** add each record with `replaces` True (`(N + '493', 'a1-stats', '493', 'Range, mean, median and mode', 'statistics', True)`; `(N + '494', 'a1-stats', '494', 'Range, mean, median and mode of weights', 'statistics', True)`; `(N + '495', 'a1-stats', '495', 'Range, mean, median and mode of golf scores', 'statistics', True)`; `(N + '551', 'a1-overall', '551', 'Overall average of two groups', 'statistics', True)`; `(N + '552', 'a1-overall', '552', 'Overall average of three groups', 'statistics', True)`), oracles for any recipe without one in `tests/port-algebra-1.cjs`, and decisions covering the records.
+
+**Meanwhile:** the records stay covered-provisional.
+
 ## Records proposed for retirement
 
 None so far.
