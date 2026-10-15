@@ -51,6 +51,24 @@ Port recipes that keep the source ranges are ready in `src/port-algebra-1.js`: `
 
 **Meanwhile:** the thirteen records stay covered-provisional.
 
+### R3 — Let port tasks replace breadth-bank adaptations (A1-5)
+
+**Records (covered-provisional):** algebra-1-en:node:376.
+
+| Record | Earlier adaptation | The source |
+|---|---|---|
+| node:376 | `prime-factorization`: factors 12, 40, 504 and similar | factors 2ᵃ·3ᵇ·5ᶜ times 7 or 11 (for example 1,320 or 12,600) |
+
+Port recipes that keep the source's ranges are ready for node:376 (`a1-primes`).
+
+**Why the course chat cannot do it.** Replacing an adaptation removes its catalog entry, and `tests/breadth-bank-audit.py` line 121 asserts fixed totals (`count==14800 and len(recipes)==65`). Checked in an integrated copy on 2026-10-15: with node:376 replaced, that assertion fails; `breadth-bank.cjs`, `grade5.test.cjs` and the other shared tests pass. The later records in this table have the same dependency (each adaptation is a breadth entry).
+
+**Change wanted:** in `tests/breadth-bank-audit.py`, derive the expected count and recipe total from the entries still served by the breadth family, instead of fixed numbers.
+
+**Then, in `scripts/port_a1_tasks.py`:** add each record with `replaces` True (`(N + '376', 'a1-primes', None, 'Write a number as a product of primes', 'number-theory', True)`), oracles for any recipe without one in `tests/port-algebra-1.cjs`, and decisions covering the records.
+
+**Meanwhile:** the records stay covered-provisional.
+
 ## Records proposed for retirement
 
 None so far.

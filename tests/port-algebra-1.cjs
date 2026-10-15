@@ -197,6 +197,77 @@ const oracle={
   else if(f==='366'){L=sub(mul(k(p.a),add(k(-p.b),Z(p.c))),mul(k(p.d**2),z));R=add(mul(Z(-p.e),k(-1-(-1))),k(p.f));}
   else{L=Z(p.a);R=add(mul(k(p.b),sub(Z(p.c),add(Z(p.d),add(Z(p.e),k(p.f))))),k(p.g));}
   return L[0]*R[1]===R[0]*L[1];},
+ // Batch A1-5
+ 'a1-word':(q,p)=>{const M=x=>String(x).replace('-','−');
+  if(p.form==='370'){const r=p.z*p.k+p.e*p.n;return is(P(q),Q(r-p.e*p.n,p.k))&&q.prompt.includes(`is ${M(r)}.`)&&between(p.z,-20,40);}
+  if(p.form==='371'){const r=p.a*(p.z+p.b);return is(P(q),Q(r-p.a*p.b,p.a))&&q.prompt.includes(`equals ${M(r)}.`)&&p.b!==0;}
+  if(p.form==='372'){const r=p.z*p.a+p.b*p.e;return is(P(q),Q(r-p.b*p.e,p.a))&&q.prompt.includes(`result of ${M(r)}.`);}
+  const r=p.b*(p.z+p.e)+p.a*p.d;return is(P(q),Q(r-p.a*p.d-p.b*p.e,p.b))&&q.prompt.includes(`is ${M(r)}.`);},
+ 'a1-primes':(q,p)=>{const n=2**p.a*3**p.b*5**p.c*p.big;return P(q).n===n&&n===p.g&&[7,11].includes(p.big)&&between(p.a,1,3)&&between(p.b,0,2)&&between(p.c,1,2);},
+ 'a1-unequal':(q,p)=>{if(p.form==='379')return is(P(q),Q(p.d*p.n,3))&&p.n%3===0;
+  if(p.form==='380')return is(P(q),Q(p.b-p.a,3))&&q.prompt.includes(String(Math.abs(p.b)));
+  if(p.form==='382')return is(P(q),Q(p.b-p.r,p.a+2))&&p.r===-(p.a+2)*p.z+p.b;
+  return is(P(q),Q(p.c-p.b,p.a-p.d))&&p.d<p.a;},
+ 'a1-gcf':(q,p)=>{const t=P(q).terms;if(p.form==='mc')return Object.keys(t).length===1&&t.x1===p.a;return Object.keys(t).length===1&&t[`a${Math.min(p.b,p.e)}b1`]===g(p.A,p.D);},
+ 'a1-factor':(q,p)=>{// rebuild the polynomial from the parameters, find its GCF independently, and divide
+  let poly;const [I,J,K]=p.L||['x','y',p.form==='mc'?'z':'p'];
+  if(p.form==='390')poly=[[p.a*p.d,{[I]:p.e+1,[J]:3,[K]:2}],[p.b*p.d,{[I]:p.e+2,[J]:2,[K]:1}],[p.c*p.d,{[I]:p.e,[J]:1,[K]:3}]];
+  else if(p.form==='391')poly=[[p.a*p.d,{x:p.b+1,y:p.c+1,p:1}],[p.a*p.e,{x:p.b,y:p.c,p:2}],[p.a*p.f,{x:p.b+p.g,y:p.c+p.h,p:1}],[p.a*p.c,{x:p.b,y:p.c,p:1}]];
+  else if(p.form==='mc')poly=[[p.a*p.d,{x:p.b+1,y:p.c+1,z:2}],[p.a*p.e,{x:p.b,y:p.c,z:3}],[p.a*p.f,{x:p.b+p.g,y:p.c+p.h,z:1}]];
+  else poly=[[p.a*p.b,{x:p.b2,y:p.b3,z:2}],[p.a*p.c,{x:p.b1+p.b2,y:2,z:p.b4}]];
+  const G=poly.map(t=>t[0]).reduce((x,y)=>g(x,y)),lets=[...new Set(poly.flatMap(t=>Object.keys(t[1])))].sort(),mins={};for(const l of lets)mins[l]=Math.min(...poly.map(t=>t[1][l]||0));
+  const key=m=>Object.keys(m).filter(l=>m[l]).sort().map(l=>l+m[l]).join(''),inner={};for(const [c,m] of poly){const d={};for(const l of lets)d[l]=(m[l]||0)-mins[l];inner[key(d)]=c/G;}
+  const pt=P(q);return pt.t==='factor'&&pt.gcf[0]===key(mins)&&pt.gcf[1]===G&&Object.keys(inner).length===Object.keys(pt.inner).length&&Object.entries(inner).every(([k,c])=>pt.inner[k]===c);},
+ 'a1-cancel':(q,p)=>{let nu,de;
+  if(p.form==='395'){nu=[[p.a,{[p.j]:1}],[-p.a*p.b,{[p.j]:2}]];de=[p.a,{[p.j]:1}];}
+  else if(p.form==='397'){nu=[[p.a*p.b,{x:p.c,y:p.d}],[p.b*p.c,{x:p.e+1,y:2}]];de=[p.b,{x:p.e,y:1}];}
+  else if(p.form==='398'){nu=[[p.a*p.b,{x:p.b1+p.b5-1,y:p.b2+p.b6-1,z:2}],[p.a*p.c,{x:p.b3+p.b5-1,y:p.b4+p.b6-1,z:1}]];de=[p.a,{x:p.b5,y:p.b6,z:1}];}
+  else{nu=[[p.a*p.b,{x:p.b1,y:p.b2}],[p.a*p.c,{x:p.b3,y:p.b4}]];de=[p.a,{x:1,y:1}];}
+  const t=P(q).terms,want={};for(const [c,m] of nu){const d={};for(const l of new Set([...Object.keys(m),...Object.keys(de[1])]))d[l]=(m[l]||0)-(de[1][l]||0);want[Object.keys(d).filter(l=>d[l]).sort().map(l=>l+d[l]).join('')]=c/de[0];}
+  return Object.keys(t).length===Object.keys(want).length&&Object.entries(want).every(([k,c])=>t[k]===c);},
+ 'a1-dist-rat':(q,p)=>polyIs(P(q),[[p.c,{x:p.a-p.e,y:p.d,z:-p.b}],[-p.f,{x:p.a+p.g,y:-p.h,z:-p.b}]])&&P(q).form==='pos'&&(p.form!=='mc'||p.a!==p.e),
+ 'a1-negbase':(q,p)=>{const A=(-p.a)**(-p.b),B=p.a**(-p.b);
+  if(p.form==='405')return is(P(q,0),p.k1===1?Q(1,A):Q(-1,B))&&is(P(q,1),p.k2===1?[A,1]:[-B,1]);
+  if(p.form==='406'){const N=add(Q(-(p.a**p.c),(-p.a)**p.b),Q(p.d**p.f,(-p.d)**p.e));return is(P(q),div(N,[p.a**p.b-p.d*p.g,1]));}
+  if(p.form==='407')return is(P(q,0),Q(-p.b-1+p.d-p.e*p.e,p.f-p.g*p.g))&&is(P(q,1),[p.h*p.h+p.i,1]);
+  return is(P(q),[Q(1,A),Q(-1,B),[A,1],[-B,1]][p.k-1]);},
+ 'a1-ineq-words':(q,p)=>{const pt=P(q);return pt.mode==='form'&&pt.op===(p.more>0?'gt':'lt')&&pt.L===`x ${p.inc>0?'+':'-'} ${p.b}`&&Number(pt.R)===p.d;},
+ 'a1-ineq-tf':(q,p)=>P(q).alts[0]===String(p.op==='lt'?p.b<p.c:p.op==='le'?p.b<=p.c:p.op==='gt'?p.b>p.c:p.b>=p.c),
+ 'a1-compare':(q,p)=>P(q).alts[0]===(p.a<p.b?'<':p.a>p.b?'>':'='),
+ 'a1-ineq-graph':(q,p)=>q.answer.kind==='teacher'&&q.answer.reference.includes(['le','ge'].includes(p.op)?'closed':'open circle')&&q.answer.reference.includes(['le','lt'].includes(p.op)?'left':'right'),
+ 'a1-ineq-pick':(q,p)=>P(q).alts[0]==='abcd'[p.order.indexOf(0)]&&q.givens.svg.includes('(d)'),
+ 'a1-ratio':(q,p)=>p.form==='total'?is(P(q),[p.e*(p.first===1?p.a:p.b),1])&&between(p.e,110,260):is(P(q),[p.e*(p.first===1?p.b:p.a),1])&&g(p.a,p.b)===1,
+ 'a1-ineq-read':(q,p)=>{const closed=/closed circle/.test(q.givens.svg),left=/to the left/.test(q.givens.svg),op=left?(closed?'le':'lt'):(closed?'ge':'gt');return q.answer.parts.every(x=>x.mode==='set'&&x.op===op&&x.b===p.a)&&(p.form==='mc'||P(q,1).neg===true);},
+ 'a1-quot':(q,p)=>p.form==='mc'?polyIs(P(q),[[p.c,{x:p.d-p.f,y:p.g-p.i,z:p.b1+p.b3}]])&&p.A===p.c*p.B:polyIs(P(q),[[1,{x:p.a+p.b,y:p.c+p.g,z:p.e+p.f-p.d}]])&&P(q).form===(p.form==='433'?'pos':'num'),
+ 'a1-dist-neg':(q,p)=>{const f=p.form;let w;
+  if(f==='437')w=[[1,{x:p.a+p.c-1,y:p.b+p.d}],[-p.e,{x:p.a-2,y:p.b+p.f}]];
+  else if(f==='438'||f==='442')w=[[1,{a:p.a+p.c-1,b:p.b+p.d}],[-p.e,{a:p.a+2,b:p.b-p.f,c:1}]];
+  else if(f==='439'||f==='mc')w=[[1,{a:p.a+p.m,b:p.b+p.n}],[-1,{a:p.a+p.c-1,b:p.b+p.d}],[-p.e,{a:p.a+2,b:p.b-p.f,c:1}]];
+  else if(f==='440')w=[[1,{w:p.d-p.c,x:p.a,z:p.e}],[1,{w:p.f-p.c,x:p.a+p.g,z:p.h+1-p.i}]];
+  else if(f==='441')w=[[p.e*p.e1,{x:p.a+p.m,y:p.b+1-p.n,z:-1}],[p.e*p.e2,{x:p.a+p.c-1,y:p.b+p.d+1,z:-1}],[-p.e*p.e3,{x:p.a+2,y:p.b+1-p.f}]];
+  else w=[[p.r,{a:p.a+p.c-1,b:p.b+p.d}],[3*p.r,{a:p.a+2,b:p.b+1,c:2}],[-p.e*p.r,{a:p.a-2,b:p.b+p.f}]];
+  return polyIs(P(q),w)&&P(q).form===(f==='442'?'neg':f==='443'?'num':'pos');},
+ 'a1-like-rat':(q,p)=>{const f=p.form,L=f==='449'?'n':'z';
+  if(f==='447'||f==='449')return polyIs(P(q),[[p.a+p.c,{x:p.e,y:p.f,[L]:p.g}],[p.b+p.d,{x:p.h,y:p.i,[L]:p.j}]]);
+  if(f==='448')return polyIs(P(q),[[p.a+9,{a:-p.c*p.e,b:-p.d*p.e}],[p.b-1,{a:-p.f,b:-p.g}]])&&P(q).form==='neg';
+  return polyIs(P(q),[[p.a+p.b+p.c,{x:p.d,y:p.e,z:-p.f}]])&&P(q).form==='den';},
+ 'a1-two-eval':(q,p)=>{const f=p.form;
+  if(f==='453')return is(P(q),[p.g*p.a+p.h,1])&&between(p.a,-5,5);
+  if(f==='454')return is(P(q),sub(sub(Q(1,p.a**p.d),[p.b**p.e*(1-p.b),1]),[Math.abs(p.a),1]));
+  if(f==='455')return is(P(q),[p.a**3+p.c,1]);
+  if(f==='458')return is(P(q),[p.a**p.d-Math.abs(p.a**p.e)*p.a**p.f-p.b,1]);
+  if(f==='459')return is(P(q),[(Math.abs(p.a)+Math.abs(p.b))*(Math.abs(p.a)-Math.abs(p.b)),1]);
+  if(p.cs===1)return is(P(q),[p.b**p.d-p.a*p.b-Math.abs(p.b+p.g*p.a)+p.a**p.e,1]);
+  return is(P(q),[Math.abs(p.b**p.d)*(p.b-p.a)+p.b**p.e+p.a,1]);},
+ 'a1-multivar':(q,p)=>{const f=p.form,pt=P(q);if(f==='464')return is(pt,Q((p.c-p.b)*p.e+p.d,p.a));
+  const s=pt.samples.find(([e])=>Object.values(e).includes(2.7)),X=2.7;if(!s)return false;let v0,y;
+  if(f==='466'){v0='y';y=(p.a*X-p.c)/p.b;}
+  else if(f==='470'){v0=p.cs===1?'y':'x';y=p.a*X+p.d;}
+  else if(f==='468'){v0=p.c===1?'x':'y';y=p.c===1?((p.b+1)*X-p.d)/(p.a-1):((p.a-1)*X+p.d)/(p.b+1);}
+  else if(f==='469'){v0=p.c===1?'x':'y';y=p.c===1?((p.b+1)*X+p.d)/p.a:(p.a*X-p.d)/(p.b+1);}
+  else{v0=p.c===1?'u':'w';y=p.c===1?(p.b+1)*X/(p.a-1):(p.a-1)*X/(p.b+1);}
+  return pt.v===v0&&near(s[1],y);},
+
 };
 const near=(x,y)=>Math.abs(x-y)<=1e-9*Math.max(1,Math.abs(y));
 
@@ -209,6 +280,10 @@ const wrong={
  'a1-area-chain':q=>[String(P(q).v[0]/P(q).v[1])],
  'a1-combine':q=>[P(q).terms&&Object.entries(P(q).terms).map(([k,c])=>c+k.replace(/1/g,'')).join('+')+'+0x'],
  'a1-like':q=>q.answer.parts[0].t==='set'?['(a)']:['5'],
+ 'a1-primes':q=>[String(P(q).n),'1 × '+q.answer.value],
+ 'a1-factor':q=>[q.answer.value.replace(/\(.*\)/,'')],
+ 'a1-ineq-read':q=>q.answer.parts.length>1?[q.answer.value.split(';')[0]+';'+q.answer.value.split(';')[0]]:[],
+ 'a1-multivar':q=>P(q).t==='solve'?[q.answer.value.replace(/^\s*\w\s*=\s*/,'')]:[],
 };
 
 H.run({key:'algebra-1',oracle,wrong,instances:Number(process.argv[2]||250)});
