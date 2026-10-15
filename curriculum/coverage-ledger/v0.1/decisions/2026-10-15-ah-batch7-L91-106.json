@@ -1,0 +1,511 @@
+{
+ "batch": "AH-7 algebra-half lessons 91-106",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "algebra-half-en:node:564",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:564"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:565",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:565"
+   ],
+   "note": "Ported: same expression form and ranges; (f + g)h is printed with a times sign."
+  },
+  {
+   "id": "algebra-half-en:node:567",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:567"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:568",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:568"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:569",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:569"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:571",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:571"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:572",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:572"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:576",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:576"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:577",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:577"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:578",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:578"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:580",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:580"
+   ],
+   "note": "Existing adaptation confirmed after review: variables on both sides with an integer answer, same ranges."
+  },
+  {
+   "id": "algebra-half-en:node:581",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:581"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:583",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:583"
+   ],
+   "note": "Existing adaptation confirmed after review: multiple-term equation with an integer answer."
+  },
+  {
+   "id": "algebra-half-en:node:584",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:584"
+   ],
+   "note": "Existing adaptation confirmed after review: multiple-term equation with a fraction answer."
+  },
+  {
+   "id": "algebra-half-en:node:585",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:585"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:587",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:587"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:588",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:588"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:589",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:589"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:592",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:592"
+   ],
+   "note": "Ported: the angle is labelled with a number inside it instead of a symbol-font letter; any three of the four names are accepted."
+  },
+  {
+   "id": "algebra-half-en:node:593",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:593"
+   ],
+   "note": "Ported as free response: the four names in any order (the source offers four lists as choices)."
+  },
+  {
+   "id": "algebra-half-en:node:595",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:595"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:596",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:596"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:597",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:597"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:598",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:598"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:600",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:600"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:601",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:601"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:602",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:602"
+   ],
+   "note": "Ported: the same protractor figure, rays and fifteen asked angles."
+  },
+  {
+   "id": "algebra-half-en:node:604",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:604"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:605",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:605"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:607",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:607"
+   ],
+   "note": "Existing adaptation confirmed after review: dividing a total in a ratio (also the only entry for the shared selector p/ratio-total-large)."
+  },
+  {
+   "id": "algebra-half-en:node:608",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:608"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:609",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:609"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:612",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:612"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:613",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:613"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:614",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:614"
+   ],
+   "note": "Ported: asks to simplify or leave unchanged; bases 2 and 4 and equal exponents are excluded, since those products can be written as one power (the source keys them as unchanged)."
+  },
+  {
+   "id": "algebra-half-en:node:616",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:616"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:617",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:617"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:619",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:619"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:620",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:620"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:621",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:621"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:623",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:623"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:624",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:624"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:627",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:627"
+   ],
+   "note": "Ported as teacher review with a rubric."
+  },
+  {
+   "id": "algebra-half-en:node:628",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:628"
+   ],
+   "note": "Ported: the seven source triangles are drawn with their angle measures and tick marks; the side type and angle type are accepted in either order."
+  },
+  {
+   "id": "algebra-half-en:node:630",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:630"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:631",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:631"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:632",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:632"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:634",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:634"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:635",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:635"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:636",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:636"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:637",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:637"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:640",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:640"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:641",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:641"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:643",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:643"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:644",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:644"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:645",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:645"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:646",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:646"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:647",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:647"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:649",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:649"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:650",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:650"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:651",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:651"
+   ],
+   "note": "Ported: the root and powers are written in words and shown in MathML."
+  },
+  {
+   "id": "algebra-half-en:node:652",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:652"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-half-en:node:653",
+   "state": "covered",
+   "by": [
+    "algebra-half-en:node:653"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  }
+ ]
+}
