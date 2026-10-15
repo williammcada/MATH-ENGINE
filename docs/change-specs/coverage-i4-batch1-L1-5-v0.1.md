@@ -31,29 +31,36 @@ Book order, about 70–110 records a batch. Investigations follow Lessons 10, 20
 | I4-14 | Lessons 101–110, Investigation 11 | 81 |
 | I4-15 | Lessons 111–120, Investigation 12, Appendices A and B | 65 |
 
-## Result: every one of the 101 records in Lessons 1–5 is decided
+## Result: 94 of the 101 records in Lessons 1–5 are decided; 7 stay as they are, pending the owner
 
 | Decision | Records |
 |---|---|
 | New port task: an open record, under its own ID | 52 |
-| New port task replacing a less faithful adaptation | 8 |
-| Consolidated twin | 41 |
+| New port task replacing a less faithful adaptation | 0 |
+| Consolidated twin | 42 |
 | Retired | 0 |
+| Left covered-provisional (pending request R3) | 7 |
 
-**Replacements.** Eight covered-provisional records are ported under their own IDs (TX4_S01_00075, 00077, 00104, 00106, 00111, 00114, 00116, 00119). They were served by generic equation and arithmetic adaptations that showed no addends in the prompt text, had no choices, and used ranges unlike the source (for example a single-digit unknown where the source has a two-digit one). The ports keep the source structure, ranges and distractors.
+**No replacements on this branch.** A port that replaces an earlier adaptation removes that adaptation's catalog entry. Shared files depend on those entries:
 
-**Provisional records kept as they are and consolidated.** Six other provisional records are consolidated into a port task: 00076, 00078, 00110 and 00113, and the two sequence records 00152 and 00155. The sequence ports sit on the open twins 00153 and 00156 instead of replacing 00152 and 00155, because a cross-course progression (track `sequences`) selects the earlier adaptations by their recipes (`b/sequence-next`, `b/sequence-missing`). Replacing them would drop the only entries with those recipes and break the shared cross-course build, which a course branch may not change. The earlier adaptations therefore stay as working entries.
+- `tests/structured-bank-audit.py` counts the structured arithmetic and equation adaptations (it expects 94);
+- the cross-course progressions select some adaptations by their recipe (for example `b/sequence-next`).
 
-**Consolidated.** 41 records: choice-only twins of a ported free-response record, and repeated fixed items whose values differ but whose demand, response form and number sizes match. The decisions file names the target of every one. Every lesson keeps at least as many distinct task types as the original.
+Changing either is a shared-file change, which this course branch may not make. So no task here replaces an earlier adaptation:
+
+- **Consolidated where an open twin exists.** The provisional records 00075, 00076, 00077, 00078 and 00113 (a missing addend among three to five addends) are consolidated into the port of the open record 00042 (four addends). The sequence records 00152 and 00155 are consolidated into ports on their open twins 00153 and 00156. Their earlier adaptations stay as working entries.
+- **Left as they are where no open twin exists:** 00104, 00106 and 00110 (adding rows of six or seven digits), 00111 (a two-digit missing addend), 00114, 00116 and 00119 (missing addends with two-digit addends or a two-digit unknown). Their ports are written (recipes `i4-add-row`, `i4-missing-addend` variant `two-digit`, `i4-missing-row` variants `to-100`, `big` and `nine`) but have no task yet. Request R3 in `coverage-i4-pending-requests-v0.1.md` asks the owner for the audit change that lets them replace the earlier adaptations. 00111 may instead be consolidated into the Lesson 14 two-digit missing-addend port when Batch I4-3 runs.
+
+**Consolidated.** 42 records: choice-only twins of a ported free-response record, and repeated fixed items whose values differ but whose demand, response form and number sizes match. The decisions file names the target of every one. Every lesson keeps at least as many distinct task types as the original.
 
 ## New tasks
 
-60 tasks from 18 recipes, in `src/port-intermediate-4.js`:
+52 tasks from 17 recipes, in `src/port-intermediate-4.js`:
 
 | Lesson | Tasks |
 |---|---|
-| 1 | Missing addends (shown addend 2–4, 5–6 and 7–9; in a column; two-digit); addition stories (two small numbers; three two-digit numbers in words, with sums under and over 100; three hundreds; two three-digit numbers); a column of four digits; a column with a missing number; rows of six and seven digits; number sentences for groups of balls, four number cubes, two boxes of dots and a three-addend story; adding two groups of shapes; six ways to add three numbers |
-| 2 | Missing addends among three, four, five, seven and nine addends; with two-digit addends summing to 100 or to a three-digit total; missing addends in columns of three and six |
+| 1 | Missing addends (shown addend 2–4, 5–6 and 7–9; in a column); addition stories (two small numbers; three two-digit numbers in words, with sums under and over 100; three hundreds; two three-digit numbers); a column of four digits; a column with a missing number; number sentences for groups of balls, four number cubes, two boxes of dots and a three-addend story; adding two groups of shapes; six ways to add three numbers |
+| 2 | Missing addends among four and seven addends; missing addends in columns of three and six |
 | 3 | Hundreds and tens written as products; the next three numbers of counting sequences, up and down; one and three missing numbers in a counting sequence; the next circled number; counting nickels, dimes, pairs and a pattern of X's; how many digits, the first digit and the last digit |
 | 4 | The place of a digit (three- and four-digit numbers, and one digit in three numbers); the digit in a place; a number from hundreds, tens and ones; money shown by bills; comparing two amounts of bills; drawing an amount with bills (teacher-scored, as in the source) |
 | 5 | People between, in front of and behind places in line; the smallest of four close numbers; the month, and the month and year, in a written date; days in a month; how many months have 30 or 31 days |
@@ -77,6 +84,11 @@ Book order, about 70–110 records a batch. Investigations follow Lessons 10, 20
 
 ## Verification
 
-**First integrated run failed.** The first implementation checkpoint (`3ea666c`) replaced 00152 and 00155. `scripts/verify-course.cjs` stopped while regenerating the cross-course data: the progression selector `b/sequence-next` no longer matched any entry. The fix above is in this course's own files only (the task list and the decisions file). A private check of every progression selector against the catalog now reports none broken, and it is run before every later batch.
+**Two integrated runs failed before this one; both fixes are in this course's files only.**
+
+1. `3ea666c` replaced the adaptations of 00152 and 00155. Regenerating the cross-course data stopped: the progression selector `b/sequence-next` matched nothing.
+2. `480529b` moved those two ports to open twins, but still replaced eight structured adaptations. Every test but one passed; `tests/structured-bank-audit.py` found 86 structured adaptations instead of 94.
+
+This checkpoint replaces nothing (see above). Before each later batch, a private check confirms that every progression selector still matches, and the task list sets no replacement flag.
 
 Results of the passing run are recorded in the verified checkpoint below.

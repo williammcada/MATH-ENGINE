@@ -293,25 +293,21 @@
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00075",
-   "state": "covered",
-   "by": [
-    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00075"
-   ],
-   "note": "Ported, replacing the earlier adaptation: Missing addend among three addends."
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00042",
+   "note": "Same demand as the port task it points to (Missing addend among four addends): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00076",
    "state": "consolidated",
-   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00075",
-   "note": "Same demand as the port task it points to (Missing addend among three addends): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00042",
+   "note": "Same demand as the port task it points to (Missing addend among four addends): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00077",
-   "state": "covered",
-   "by": [
-    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00077"
-   ],
-   "note": "Ported, replacing the earlier adaptation: Missing addend among five addends."
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00042",
+   "note": "Same demand as the port task it points to (Missing addend among four addends): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00078",
@@ -420,28 +416,12 @@
    "note": "Same demand as the port task it points to (Add two small numbers in a story): choice-only twin or repeated fixed item."
   },
   {
-   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00104",
-   "state": "covered",
-   "by": [
-    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00104"
-   ],
-   "note": "Ported, replacing the earlier adaptation: Add six one-digit numbers."
-  },
-  {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00105",
    "state": "covered",
    "by": [
     "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00105"
    ],
    "note": "Ported: Number sentence for four number cubes."
-  },
-  {
-   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106",
-   "state": "covered",
-   "by": [
-    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106"
-   ],
-   "note": "Ported, replacing the earlier adaptation: Add seven one-digit numbers."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00107",
@@ -468,20 +448,6 @@
    "note": "Ported: Add three numbers in words with a sum over 100."
   },
   {
-   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00110",
-   "state": "consolidated",
-   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106",
-   "note": "Same demand as the port task it points to (Add seven one-digit numbers): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
-  },
-  {
-   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00111",
-   "state": "covered",
-   "by": [
-    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00111"
-   ],
-   "note": "Ported, replacing the earlier adaptation: Find a two-digit missing addend."
-  },
-  {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00112",
    "state": "covered",
    "by": [
@@ -492,30 +458,14 @@
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00113",
    "state": "consolidated",
-   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00075",
-   "note": "Same demand as the port task it points to (Missing addend among three addends): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
-  },
-  {
-   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114",
-   "state": "covered",
-   "by": [
-    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114"
-   ],
-   "note": "Ported, replacing the earlier adaptation: Missing addend with two-digit addends and a sum of 100."
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00042",
+   "note": "Same demand as the port task it points to (Missing addend among four addends): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00115",
    "state": "consolidated",
    "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00040",
    "note": "Same demand as the port task it points to (Find the missing addend in a column of three): choice-only twin or repeated fixed item."
-  },
-  {
-   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116",
-   "state": "covered",
-   "by": [
-    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116"
-   ],
-   "note": "Ported, replacing the earlier adaptation: Missing addend with two-digit addends and a three-digit sum."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00117",
@@ -532,14 +482,6 @@
     "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00118"
    ],
    "note": "Ported: Find a two-digit missing addend in a column of six."
-  },
-  {
-   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119",
-   "state": "covered",
-   "by": [
-    "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119"
-   ],
-   "note": "Ported, replacing the earlier adaptation: Two-digit missing addend among nine addends."
   },
   {
    "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00120",

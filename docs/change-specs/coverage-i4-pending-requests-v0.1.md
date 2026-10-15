@@ -22,6 +22,26 @@ The owner's instruction for the overnight Intermediate 4 run: a shared-file chan
 - **Meanwhile:** the session lists the UTF-16 strings privately to read the counts and labels. No records are held open by this.
 - **Records affected:** none held open.
 
+### R3. Let Intermediate 4 ports replace earlier structured adaptations
+
+- **Files:** `tests/structured-bank-audit.py` (shared). Possibly also `curriculum/cross-course/v0.6/progressions.txt` if a replaced adaptation is selected there by recipe; none of the R3 records is.
+- **Change wanted:** the audit expects exactly 94 entries in the families `structured-arithmetic` and `structured-equation` (line 42: `len(ids)==94`). Each Intermediate 4 record below that gets its port replaces one such entry, so the expected count falls by one per record. For the seven records below: `len(ids)==87`. Its comment would add that these entries were replaced by Intermediate 4 port tasks and are audited by `tests/port-intermediate-4.cjs`. Alternatively the audit could count every structured entry that is not replaced by a port, so that later replacements need no edit.
+- **Why:** the earlier adaptations show no addends in the prompt, offer no choices and use ranges unlike the source. The ports are faithful (source ranges, structure and named distractors).
+- **Meanwhile:** the records stay covered-provisional, served by their earlier adaptations. The port recipes are written and tested in this course's module; once the owner approves, each record gets its task line with the replacement flag set.
+- **Records affected (left as they are):**
+
+| Record | Lesson | Ready port (recipe, variant) |
+|---|---|---|
+| TX4_S01_00104 | 1 | `i4-add-row`, `six` |
+| TX4_S01_00106 | 1 | `i4-add-row`, `seven` |
+| TX4_S01_00110 | 1 | `i4-add-row`, `seven` (or consolidate into 00106 once ported) |
+| TX4_S01_00111 | 1 | `i4-missing-addend`, `two-digit` |
+| TX4_S01_00114 | 2 | `i4-missing-row`, `to-100` |
+| TX4_S01_00116 | 2 | `i4-missing-row`, `big` |
+| TX4_S01_00119 | 2 | `i4-missing-row`, `nine` |
+
+The oracle for `i4-add-row` (removed from the test while it has no task, because the harness rejects an oracle with no task) is: the addends shown in the prompt match the parameters, and the key is their sum.
+
 ## Proposed retirements
 
 None yet.

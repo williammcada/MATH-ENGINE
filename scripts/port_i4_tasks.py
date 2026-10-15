@@ -32,7 +32,6 @@ TASKS_I4 = [
     _t('TX4_S01_00043', 'i4-missing-addend', 'mid', 'Find a missing addend (shown addend 5 or 6)', 'equations'),
     _t('TX4_S01_00044', 'i4-missing-addend', 'large', 'Find a missing addend (shown addend 7 to 9)', 'equations'),
     _t('TX4_S01_00045', 'i4-missing-addend', 'stacked', 'Find a missing addend in a column', 'equations'),
-    _t('TX4_S01_00111', 'i4-missing-addend', 'two-digit', 'Find a two-digit missing addend', 'equations', True),
     _t('TX4_S01_00047', 'i4-add-story', 'two-small', 'Add two small numbers in a story', 'whole-arithmetic'),
     _t('TX4_S01_00108', 'i4-add-story', 'three-2digit', 'Add three two-digit numbers written in words', 'whole-arithmetic'),
     _t('TX4_S01_00109', 'i4-add-story', 'three-2digit-over', 'Add three numbers in words with a sum over 100', 'whole-arithmetic'),
@@ -40,8 +39,6 @@ TASKS_I4 = [
     _t('TX4_S01_00112', 'i4-add-story', 'two-3digit', 'Add two three-digit numbers written in words', 'whole-arithmetic'),
     _t('TX4_S01_00097', 'i4-column-add', 'four', 'Add a column of four one-digit numbers', 'whole-arithmetic'),
     _t('TX4_S01_00099', 'i4-column-missing', 'three', 'Find the missing number in a column addition', 'equations'),
-    _t('TX4_S01_00104', 'i4-add-row', 'six', 'Add six one-digit numbers', 'whole-arithmetic', True),
-    _t('TX4_S01_00106', 'i4-add-row', 'seven', 'Add seven one-digit numbers', 'whole-arithmetic', True),
     _t('TX4_S01_00016', 'i4-pic-sentence', 'balls', 'Number sentence for groups of balls', 'whole-arithmetic'),
     _t('TX4_S01_00105', 'i4-pic-sentence', 'dice', 'Number sentence for four number cubes', 'whole-arithmetic'),
     _t('TX4_S01_00049', 'i4-pic-sentence', 'domino', 'Number sentence for two boxes of dots', 'whole-arithmetic'),
@@ -49,13 +46,8 @@ TASKS_I4 = [
     _t('TX4_S01_00052', 'i4-pic-sentence', 'story', 'Number sentence for a three-addend story', 'whole-arithmetic'),
     _t('TX4_S01_00051', 'i4-six-ways', None, 'Six ways to add three numbers', 'whole-arithmetic'),
     # Lesson 2: Missing Addends
-    _t('TX4_S01_00075', 'i4-missing-row', 'three', 'Missing addend among three addends', 'equations', True),
     _t('TX4_S01_00042', 'i4-missing-row', 'four', 'Missing addend among four addends', 'equations'),
-    _t('TX4_S01_00077', 'i4-missing-row', 'five', 'Missing addend among five addends', 'equations', True),
     _t('TX4_S01_00013', 'i4-missing-row', 'seven', 'Missing addend among seven addends', 'equations'),
-    _t('TX4_S01_00119', 'i4-missing-row', 'nine', 'Two-digit missing addend among nine addends', 'equations', True),
-    _t('TX4_S01_00114', 'i4-missing-row', 'to-100', 'Missing addend with two-digit addends and a sum of 100', 'equations', True),
-    _t('TX4_S01_00116', 'i4-missing-row', 'big', 'Missing addend with two-digit addends and a three-digit sum', 'equations', True),
     _t('TX4_S01_00040', 'i4-column-missing', 'three', 'Find the missing addend in a column of three', 'equations'),
     _t('TX4_S01_00117', 'i4-column-missing', 'six', 'Find the missing addend in a column of six', 'equations'),
     _t('TX4_S01_00118', 'i4-column-missing', 'six-2digit', 'Find a two-digit missing addend in a column of six', 'equations'),
@@ -100,8 +92,9 @@ CONSOLIDATED_I4 = {
     # Batch I4-1
     'TX4_S01_00074': 'TX4_S01_00108', 'TX4_S01_00015': 'TX4_S01_00052', 'TX4_S01_00048': 'TX4_S01_00047',
     'TX4_S01_00103': 'TX4_S01_00047', 'TX4_S01_00098': 'TX4_S01_00097', 'TX4_S01_00100': 'TX4_S01_00099',
-    'TX4_S01_00110': 'TX4_S01_00106', 'TX4_S01_00050': 'TX4_S01_00016',
-    'TX4_S01_00076': 'TX4_S01_00075', 'TX4_S01_00113': 'TX4_S01_00075', 'TX4_S01_00078': 'TX4_S01_00042',
+    'TX4_S01_00050': 'TX4_S01_00016',
+    'TX4_S01_00075': 'TX4_S01_00042', 'TX4_S01_00076': 'TX4_S01_00042', 'TX4_S01_00077': 'TX4_S01_00042',
+    'TX4_S01_00113': 'TX4_S01_00042', 'TX4_S01_00078': 'TX4_S01_00042',
     'TX4_S01_00041': 'TX4_S01_00013', 'TX4_S01_00101': 'TX4_S01_00040', 'TX4_S01_00102': 'TX4_S01_00040',
     'TX4_S01_00115': 'TX4_S01_00040',
     'TX4_S01_00080': 'TX4_S01_00012', 'TX4_S01_00053': 'TX4_S01_00012', 'TX4_S01_00055': 'TX4_S01_00012',
@@ -113,4 +106,12 @@ CONSOLIDATED_I4 = {
     'TX4_S01_00085': 'TX4_S01_00084', 'TX4_S01_00159': 'TX4_S01_00157', 'TX4_S01_00036': 'TX4_S01_00133',
     'TX4_S01_00086': 'TX4_S01_00135', 'TX4_S01_00009': 'TX4_S01_00135', 'TX4_S01_00136': 'TX4_S01_00135',
     'TX4_S01_00137': 'TX4_S01_00135', 'TX4_S01_00031': 'TX4_S01_00135', 'TX4_S01_00160': 'TX4_S01_00057',
+}
+
+# Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a
+# shared-file change: see docs/change-specs/coverage-i4-pending-requests-v0.1.md. Not read by the map builder.
+PENDING_I4 = {
+    # Batch I4-1 (request R3: replacing these earlier adaptations changes the count in tests/structured-bank-audit.py)
+    'TX4_S01_00104': 'R3', 'TX4_S01_00106': 'R3', 'TX4_S01_00110': 'R3', 'TX4_S01_00111': 'R3',
+    'TX4_S01_00114': 'R3', 'TX4_S01_00116': 'R3', 'TX4_S01_00119': 'R3',
 }
