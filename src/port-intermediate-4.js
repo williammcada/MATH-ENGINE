@@ -292,7 +292,7 @@ R['i4-even-odd']=(v,{int,pick},h)=>{const odd=()=>2*int(0,4)+1,even=()=>2*int(0,
  if(v==='yes-no'){const asked=pick(['even','odd']),n=int(101,899),yes=(n%2===0)===(asked==='even');return S.text(`Is the number ${n} ${asked}? Answer yes or no.`,yes?'yes':'no',`${n} ends in ${n%10}, so it is ${n%2?'odd':'even'}.`,{n,asked},'',[yes?'yes, it is':'no, it is not']);}
  if(v==='between'){const want=pick(['odd','even']),lo=100*int(11,89),hi=lo+200;const t={prompt:`Write an ${want} number between ${lo} and ${hi}.`,answer:{kind:'i4-in-range',parity:want==='odd'?1:0,lo,hi,value:String(lo+(want==='odd'?101:100))},solution:`Any ${want} number greater than ${lo} and less than ${hi}, for example ${lo+(want==='odd'?101:100)}.`,parameters:{lo,hi,odd:want==='odd'}};
   return mc(h,t,[{value:lo+(want==='odd'?100:101),mistake:`Wrote an ${want==='odd'?'even':'odd'} number`},{value:hi+(want==='odd'?1:2),mistake:'Wrote a number outside the range'},{value:lo-(want==='odd'?1:2),mistake:'Wrote a number below the range'}]);}
- const dv=int(2,9),[A]=names(h,1);return {prompt:`If ${A} divides a number by ${dv}, will the remainder be greater than ${dv} or less than ${dv}?`,answer:{kind:'i4-less',value:`The remainder will be less than ${dv}.`},solution:`A remainder is always less than the divisor, ${dv}; otherwise another ${dv} could be taken out.`,parameters:{d:dv}};};
+ const dv=int(2,9),[A]=names(h,1);return {prompt:`If ${A} divides a number by ${dv}, will the remainder be greater than ${dv} or less than ${dv}?`,answer:{kind:'i4-less',d:dv,value:`The remainder will be less than ${dv}.`},solution:`A remainder is always less than the divisor, ${dv}; otherwise another ${dv} could be taken out.`,parameters:{d:dv}};};
 R['i4-numline']=(v,{int,pick},h)=>{
  if(v==='which-arrow'){// Arrows sit between tick marks, at least six apart; the asked number is within 1 of one arrow.
   const lo=10*int(2,8),arr=[lo+2,lo+17,lo+23,lo+34],labs='ABCD',best=int(1,2),target=arr[best]+pick([-1,0,1]);
@@ -344,7 +344,8 @@ function check(q,response){const a=q&&q.answer;if(!a)return undefined;const s=St
  if(a.kind==='i4-fact'){const got=S.parseFacts(s);return okv(!!got&&got.length===1&&got[0]===a.fact);}
  if(a.kind==='i4-digit-build'){const r=s.replace(/,/g,'').trim();if(!/^\d+$/.test(r))return fail;const n=Number(r);return okv(sameMultiset(r.split('').map(Number),a.digits)&&n%2===a.parity&&n>a.lo&&(a.hi===null||n<a.hi));}
  if(a.kind==='i4-in-range'){const r=s.replace(/,/g,'').trim();if(!/^\d+$/.test(r))return fail;const n=Number(r);return okv(n%2===a.parity&&n>a.lo&&n<a.hi);}
- if(a.kind==='i4-less'){const r=s.toLowerCase();return okv(/\bless\b|\bsmaller\b/.test(r)&&!/greater|bigger|more|larger|equal/.test(r));}
+ // Says "less" (or "smaller") and nothing that contradicts it; any number written must be the divisor.
+ if(a.kind==='i4-less'){const r=s.toLowerCase(),nums=r.match(/\d+(?:\.\d+)?/g)||[];return okv(/\bless\b|\bsmaller\b/.test(r)&&!/greater|bigger|more|larger|equal/.test(r)&&nums.every(x=>Number(x)===a.d));}
  if(a.kind==='i4-compare-sentence'){const m=s.replace(/[−–]/g,'-').replace(/\s+/g,'').match(/^(-?\d+)(<|>)(-?\d+)$/);if(!m)return fail;const x=Number(m[1]),y=Number(m[3]),ok=m[2]==='>'?x>y:x<y;
   return okv(ok&&(m[2]===a.rel&&x===a.a&&y===a.b||!a.strict&&x===a.b&&y===a.a));}
  return undefined;}

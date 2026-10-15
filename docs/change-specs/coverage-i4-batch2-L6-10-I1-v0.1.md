@@ -52,4 +52,8 @@ Existing shared forms reused: fact family, words, relation, number set, integer 
 
 ## Verification
 
-Recorded in the verified checkpoint below.
+**First integrated run failed** (on `8b2f32b`). `tests/practice.cjs` appends "7" to every key and expects the result to be rejected. The remainder question (TX4_S01_00072) accepted "The remainder will be less than 87." because its checker looked only for the word "less". The checker now also requires any number written to be the divisor. The fix is in this course's module only.
+
+**Pre-check before every commit from here on.** A private script copies the tree, regenerates the shared outputs and runs every test except `tests/port87.cjs` (8/7 and Course 1 only, about 14 minutes), in about 7 minutes. The real verification follows each implementation checkpoint.
+
+Results of the passing run are recorded in the verified checkpoint below.
