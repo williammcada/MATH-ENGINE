@@ -2,13 +2,15 @@
 
 Recorded 2026-10-15 (Asia/Shanghai), during the overnight Algebra 1 port on `claude/coverage-algebra-1`.
 
+**Status (2026-10-16): all five requests approved by the owner and made on branch `claude/a1-shared-requests`** (change spec `coverage-a1-requests-R1-R5-integration-v0.1.md`). The text below is kept as the record of what was asked.
+
 The owner asked that anything needing a decision be recorded here instead of stopping the run. The records named below keep their current ledger state (open, or covered-provisional where an earlier adaptation serves them) until the owner decides.
 
 ## Shared-file changes requested
 
 ### R1 — Let port tasks replace three earlier Algebra 1 adaptations (A1-1, A1-3)
 
-**Records:** algebra-1-en:node:4 (mixed-number addition), node:242 (whole-number powers), node:250 (cube roots). All three are covered-provisional: their earlier adaptations do not keep the source's ranges (node:242 gives powers such as 5³ and 5⁴ that the source never asks; node:250 gives only positive cube roots, some outside the source's range). Port recipes that keep the source ranges are ready in `src/port-algebra-1.js`: `a1-mixed-add`, `a1-power` and `a1-cube-root`.
+**Records:** algebra-1-en:node:4 (mixed-number addition), node:242 (whole-number powers), node:250 (cube roots). All three are covered-provisional: their earlier adaptations do not keep the source's ranges (node:242 gives powers such as 5³ and 5⁴ that the source never asks; node:250 gives cube roots up to ±9, outside the source's ±2 to ±5). Port recipes that keep the source ranges are ready in `src/port-algebra-1.js`: `a1-mixed-add`, `a1-power` and `a1-cube-root`.
 
 **Why the course chat cannot do it.** Marking a task `replacesEarlierAdaptation` removes the earlier entry from the catalog, which two shared files depend on:
 

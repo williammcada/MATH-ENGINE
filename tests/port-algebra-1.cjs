@@ -358,7 +358,7 @@ const oracle={
   return items.every((it,i)=>P(q,i).alts[0]===(rational(it)?'rational':'irrational'));},
  'a1-domain':(q,p)=>{const f=p.form;if(f==='650'){const pt=P(q,0);return pt.op===(p.right?'ge':'le')&&pt.b===p.a&&pt.intdom&&P(q,1).t==='kw';}
   if(f==='651'){const pt=P(q,0);return pt.lo===p.c&&pt.hi===p.d&&(p.a===3?pt.intdom&&pt.loIn&&pt.hiIn:pt.loIn===(p.a===2)&&pt.hiIn===(p.a===1));}
-  if(f==='mc')return P(q).alts[0]==='abcd'[p.order.indexOf(0)];return q.answer.kind==='teacher'&&q.answer.reference.includes(String(p.a).replace('-','−'));},
+  if(f==='mc'||f==='859')return P(q).alts[0]==='abcd'[p.order.indexOf(0)];return q.answer.kind==='teacher'&&q.answer.reference.includes(String(p.a).replace('-','−'));},
  'a1-wavg':(q,p)=>p.form==='661'?is(P(q),[Math.round(p.sc.reduce((t,x,i)=>t+x*p.w[i],0)/p.w.reduce((a,b)=>a+b,0)),1]):is(P(q),[Math.round((p.a*p.b+p.c*p.d)/100),1])&&p.b+p.d===100,
 
  // Batch A1-8
@@ -379,14 +379,15 @@ const oracle={
   const pt=P(q),show=q.prompt.replace('Factor completely: ',''),vars=[...new Set(show.match(/[a-z]/g))],f=S.parseExpr(show.replace(/([a-z])\(/g,'$1*('),vars),env={};vars.forEach((v,i)=>{env[v]=1.1+0.37*i;});
   const ev=P0=>Object.entries(P0).reduce((t,[k,c])=>t+c*[...k.matchAll(/([a-z])(-?\d+)/g)].reduce((m,[,l,e])=>m*env[l]**Number(e),1),0);return f&&near(f(env),ev(pt.poly))&&pt.n===(p.form==='720'?3:2);},
  'a1-prob':(q,p)=>{const f=p.form;if(f==='700'){const c=[p.b1,p.b2,p.b3][p.a-1];return is(P(q),Q(c,p.b1+p.b2+p.b3));}if(f==='703')return is(P(q),Q(1,4**p.a))&&p.seq.length===p.a;
-  if(f==='738')return is(P(q),Q(p.c*p.a,(p.a+p.c)*(p.a+p.c-1)));const cnt={green:p.a,red:p.b,blue:p.c},t=p.a+p.b+p.c;return is(P(q),Q(cnt[p.e]*cnt[p.f],t*t));},
+  if(f==='738'||f==='735')return is(P(q),Q(p.c*p.a,(p.a+p.c)*(p.a+p.c-1)));if(f==='699')return is(P(q),Q(p.ask===1?p.a:p.b,p.a+p.b))&&p.a>=3&&p.b<=6;
+  if(f==='737'){const n=p.g===1?p.b:p.a,t=p.a+p.b;return is(P(q,0),Q(n*(n-1),t*(t-1)))&&is(P(q,1),Q(n*n,t*t));}const cnt={green:p.a,red:p.b,blue:p.c},t=p.a+p.b+p.c;return is(P(q),Q(cnt[p.e]*cnt[p.f],t*t));},
  'a1-solid2':(q,p)=>{const f=p.form,v=P(q).v[0]/P(q).v[1];if(f==='723')return near(v,p.a*p.a+4*(p.a*p.b/2));if(f==='724')return near(v,3.14*p.a*p.a+3.14*p.a*p.b);if(f==='725')return near(v,p.a*p.b*p.c/3);
   if(f==='726')return Math.abs(v-3.14*p.a*p.a*p.b/3)<0.006;return Math.abs(v-Math.PI*p.a*p.a*p.b/3)<0.006;},
- 'a1-sci':(q,p)=>{const v1=p.a*10**(p.c-2),v2=p.a*10**(p.f-2),chk=(pt,v)=>{const e=Math.floor(Math.log10(v)+1e-9);return pt.e===e&&near(pt.m,v/10**e);};return chk(P(q,0),v1)&&chk(P(q,1),v2)&&Math.sign(p.c)!==Math.sign(p.f);},
+ 'a1-sci':(q,p)=>{if(p.form==='742'){const v=p.b>0?p.a*10**p.b:p.a*10**(p.b-2),e=Math.floor(Math.log10(v)+1e-9);return P(q).e===e&&near(P(q).m,p.a/10)&&p.a>=11&&p.a<=99;}const v1=p.a*10**(p.c-2),v2=p.a*10**(p.f-2),chk=(pt,v)=>{const e=Math.floor(Math.log10(v)+1e-9);return pt.e===e&&near(pt.m,v/10**e);};return chk(P(q,0),v1)&&chk(P(q,1),v2)&&Math.sign(p.c)!==Math.sign(p.f);},
  'a1-lineq':(q,p)=>{// every key equation must pass through two points of the corresponding drawn line, read from the drawing's line items
   const at=(pt,x)=>pt.samples.length===1&&!pt.vars.length?pt.samples[0][1]:null;const pts=q.answer.parts;if(p.form==='mc'){const pt=pts[0];if(p.cs<=2)return pt.v===(p.cs===1?'x':'y')&&pt.samples[0][1]===p.a;const m={3:p.d,4:-p.d,5:0.5,6:0.5,7:-0.5,8:-0.5}[p.cs],k={3:0,4:0,5:1,6:-1,7:1,8:-1}[p.cs];return pt.samples.every(([e,y])=>near(y,m*e.x+k));}
   void at;const b=pts[1];return pts[0].v==='y'&&b.samples.length===1&&(p.form==='746'?b.samples[0][1]===p.A:b.samples[0][1]===p.a);},
- 'a1-graph3':(q,p)=>q.answer.kind==='teacher'&&(p.form==='750'?q.answer.reference.includes(`(${p.b}, ${String(p.c+p.a).replace('-','−')})`):q.answer.reference.includes(`(0, ${String(p.d).replace('-','−')})`)),
+ 'a1-graph3':(q,p)=>p.form==='752'?P(q).alts[0]==='abcd'[p.order.indexOf(0)]&&p.b/p.c>0:q.answer.kind==='teacher'&&(p.form==='750'?q.answer.reference.includes(`(${p.b}, ${String(p.c+p.a).replace('-','−')})`):q.answer.reference.includes(`(0, ${String(p.d).replace('-','−')})`)),
  'a1-consec':(q,p)=>p.form==='755'?P(q).items.join()===[2*p.b-1,2*p.b,2*p.b+1].join()&&P(q).items.reduce((x,y)=>x+y,0)===6*p.b:is(P(q),[p.c+1,1]),
 
  // Batch A1-9
@@ -394,7 +395,8 @@ const oracle={
   if(p.form==='760'){const [w,x,y,z]=it;return w%2===0&&x===w+2&&y===w+4&&z===w+6&&(p.q===1?p.d*(w+y):p.d*(w+x))-p.e*z===p.f;}
   return (p.k===2?p.c%2===0:p.c%2!==0)&&is(P(q),[p.c+2,1])&&q.prompt.includes(`is ${3*p.c}.`);},
  'a1-fracword':(q,p)=>is(P(q),div([p.b*p.a,1],Q(p.b,p.d))),
- 'a1-rateq':(q,p)=>{const z=P(q).v,L=div(add(z,[p.e,1]),[p.a,1]),R=div(sub(mul([p.f,1],z),[p.g,1]),[p.c,1]);const lhs=sub(L,Q(p.d,p.b));return lhs[0]===R[0]&&lhs[1]===R[1];},
+ 'a1-rateq':(q,p)=>{if(['768','769','770'].includes(p.form)){const x=P(q).v[0]/P(q).v[1];if(p.form==='768')return near(x/p.a-(p.b+x)/p.c,p.d);if(p.form==='769')return near((x+p.a)/p.b-(x+p.c)/p.d,p.e);return near(x/p.a-(x+p.b)/p.c,p.d/p.e);}
+  const z=P(q).v,L=div(add(z,[p.e,1]),[p.a,1]),R=div(sub(mul([p.f,1],z),[p.g,1]),[p.c,1]);const lhs=sub(L,Q(p.d,p.b));return lhs[0]===R[0]&&lhs[1]===R[1];},
  'a1-subsys':(q,p)=>{const X=P(q,0).v,Y=P(q,1).v,nums=(q.prompt.match(/-?\d+/g)||[]).map(Number);
   if(p.form==='775'){const m=q.prompt.match(/R_A = (\d+), R_B = (\d+) and T_B = (\d+) − T_A/);const [a,b,c]=m.slice(1).map(Number);const l=mul([a,1],X),r=mul([b,1],Y),t=add(X,Y);return l[0]===r[0]&&l[1]===r[1]&&t[0]===c&&t[1]===1;}
   if(p.form==='828'){const m=q.prompt.match(/= (\d+), T_m = (\d+), T_n = (\d+) and R_m − R_n = (\d+)/).slice(1).map(Number);return X[1]===1&&Y[1]===1&&X[0]*m[1]+Y[0]*m[2]===m[0]&&X[0]-Y[0]===m[3];}
@@ -494,6 +496,13 @@ const oracle={
  'a1-qf':(q,p)=>P(q).vals.every(([x])=>near(p.a*x*x-p.c,p.b*x))&&!near(P(q).vals[0][0],P(q).vals[1][0]),
  'a1-boxplot':(q,p)=>{if(q.answer.kind==='teacher'){const s0=[...p.data].sort((x,y)=>x-y);return q.answer.reference.includes(`median ${s0[7]}`)&&q.answer.reference.includes(`first quartile ${s0[3]}`)&&q.answer.reference.includes(`third quartile ${s0[11]}`);}
   const s0=[...P(q).items].sort((x,y)=>x-y),five=[s0[0],s0[1],s0[3],s0[5],s0[6]],title=q.givens.svg.match(/<title>([^<]*)<\/title>/)[1];return title.includes(`minimum ${five[0]}, first quartile ${five[1]}, median ${five[2]}, third quartile ${five[3]}, maximum ${five[4]}`);},
+
+ // Integration of requests R1-R5
+ 'a1-mixed-add':(q,p)=>between(p.a,1,8)&&between(p.d,1,8)&&between(p.c,3,10)&&between(p.f,3,10)&&p.c!==p.f&&g(p.b,p.c)===1&&is(P(q),add(mixed(p.a,p.b,p.c),mixed(p.d,p.e,p.f)))&&P(q).form==='mixed',
+ 'a1-frac-eq':(q,p)=>{const x=P(q).v,F2=[p.sb*p.F2[0],p.F2[1]],L=p.g===undefined?add(p.F1,mul(F2,x)):add(add(mul(p.F1,x),F2),mul([1,p.g],x));return L[0]*p.F3[1]===p.F3[0]*L[1];},
+ 'a1-stats':(q,p)=>{const d=[...p.data].sort((a,b)=>a-b),n=d.length,sum=d.reduce((a,b)=>a+b,0),cnt={};d.forEach(x=>{cnt[x]=(cnt[x]||0)+1;});const top=Math.max(...Object.values(cnt)),modes=Object.keys(cnt).filter(k=>cnt[k]===top);
+  return sum%n===0&&modes.length===1&&top>1&&is(P(q,0),[d[n-1]-d[0],1])&&is(P(q,1),Q(sum,n))&&is(P(q,2),n%2?[d[(n-1)/2],1]:Q(d[n/2-1]+d[n/2],2))&&is(P(q,3),[Number(modes[0]),1]);},
+ 'a1-overall':(q,p)=>{const n=p.groups.reduce((a,[k])=>a+k,0);return [15,20].includes(n)&&is(P(q),Q(p.groups.reduce((a,[k,m])=>a+k*m,0),n));},
 };
 const near=(x,y)=>Math.abs(x-y)<=1e-9*Math.max(1,Math.abs(y));
 
@@ -517,6 +526,7 @@ const wrong={
  'a1-domain2':q=>P(q).t==='ineq'?[q.answer.value.replace(/[≤≥]/,c=>c==='≤'?'≥':'≤')]:[],
  'a1-ratmul':q=>P(q).t==='ratfn'&&P(q).reduced&&P(q).dden>0?[`(${P(q).num})*(x+17)/((${P(q).den})*(x+17))`.replace(/x\+17/g,P(q).v+'+17')]:[],
  'a1-pyth':q=>P(q).t==='exact'?[String(P(q).v.toFixed(2))]:[],
+ 'a1-mixed-add':q=>{const [n,d]=P(q).v;return [`${n}/${d}`,String(n/d)];},
 };
 
 H.run({key:'algebra-1',oracle,wrong,instances:Number(process.argv[2]||250)});

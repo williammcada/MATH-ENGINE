@@ -118,5 +118,9 @@ for line in proc.stdout:
 assert proc.wait()==0
 # Served by coverage ports instead: SN870025 (gcf); SN870166 (prime-test, the only entry of that recipe), SX870082 (prime-factorization),
 # SAX70082 and SAX70083 (lcm) and SN870128 (round-whole); C1_S02_00067 (prime-list, Course 1 Batch C1-3); C1_S02_00077 and C1_S02_00055 (gcf, Batch C1-4); C1_S03_00087 and C1_S03_00123 (lcm, Batch C1-5).
-assert count==14800 and len(recipes)==65 and len(domains)==4 and len(classes)==3 and len(letters)==4 and len(signs)==8
+# Served by Algebra 1 port tasks instead (owner-approved requests R1 and R3, 2026-10-16): algebra-1-en:node:242 (positive-power), 250 (cube-root),
+# 376 (prime-factorization), 570 (system-substitution), 690 (factor-trinomial), 742 (scientific-normalize), 752 (line-graph-choice),
+# 820 (polynomial-division), 859 (inequality-graph-choice, the only entry that exercised the eight inequality signs), 905 (slope-points),
+# 948 (line-points) and 955 (line-point-slope).
+assert count==12400 and len(recipes)==57 and len(domains)==4 and len(classes)==3 and len(letters)==4
 print(f'PASS: {count} independent generated cases, {len(recipes)} task recipes, {svgs} parsed SVGs; domain and system branches, inequality signs, unique graph choices, replay and answer checks')
