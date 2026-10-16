@@ -1,0 +1,541 @@
+{
+ "batch": "batch-3 course-87 lessons 21-30",
+ "date": "2026-10-14",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "course-87-en:item:AHG50515",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:AHG50515"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:AMBM0055",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:AMBM0055"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:AMP40086",
+   "state": "consolidated",
+   "into": "course-87-en:item:AMBM0055",
+   "note": "Choice-only twin of AMBM0055 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:AMPA0048",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:AMPA0048"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:NC070005",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870168",
+   "note": "Choice-only twin of SN870168 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:NUY40257",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:NUY40257"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts. The source table intends yes and no cases, but its index range only reached the first rows, so it always keyed \"Yes\"; the port draws from the whole table."
+  },
+  {
+   "id": "course-87-en:item:OTG50028",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:OTG50028"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SAX70082",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SAX70082"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used a general pair generator; the original requires two numbers from 2–10 and 3–10 that share a factor and are different."
+  },
+  {
+   "id": "course-87-en:item:SAX70083",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SAX70083"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used other number triples such as 12, 27, 6; the original draws from its own table of 45 triples up to 12."
+  },
+  {
+   "id": "course-87-en:item:SN870095",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870095"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870096",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870092",
+   "note": "Choice-only twin of SX870092 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870098",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870140",
+   "note": "Choice-only twin of SX870140 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870100",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870100"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870102",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870097",
+   "note": "Choice-only twin of SX870097 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870103",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870103"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870105",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870105"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870107",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870104",
+   "note": "Choice-only twin of SX870104 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870108",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870108"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870109",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870109"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870110",
+   "state": "consolidated",
+   "into": "course-87-en:item:SAX70082",
+   "note": "Choice-only twin of SAX70082 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870112",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870112"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870114",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870151",
+   "note": "Choice-only twin of SX870151 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870116",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870116"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same two-step price-per-pound problem: pounds 2–5, price $0.50–0.90, paid with a $5, $10 or $20 bill."
+  },
+  {
+   "id": "course-87-en:item:SN870118",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870111",
+   "note": "Choice-only twin of SX870111 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870120",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870120"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870121",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870122",
+   "note": "Choice-only twin of SN870122 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870122",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870122"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870124",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870124"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870126",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870126"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870127",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870153",
+   "note": "Choice-only twin of SX870153 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870128",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870128"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation rounded four-digit numbers to a given place; the original rounds a five-digit number with no zero digits to the nearest thousand or ten thousand."
+  },
+  {
+   "id": "course-87-en:item:SN870129",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870128",
+   "note": "Choice-only twin of SN870128 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870131",
+   "state": "consolidated",
+   "into": "course-87-en:item:AMPA0048",
+   "note": "Choice-only twin of AMPA0048 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870133",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870133"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870134",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870134"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870135",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870164",
+   "note": "Choice-only twin of SX870164 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870137",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870137"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870166",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870166"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation drew from a general prime test; the original uses its own lists of primes up to 31 and composites from 9 to 30."
+  },
+  {
+   "id": "course-87-en:item:SN870168",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870168"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts. Distractors stop before every factor is prime, or multiply to the wrong number."
+  },
+  {
+   "id": "course-87-en:item:SN870170",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870170"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870172",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870172"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870175",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870134",
+   "note": "Choice-only twin of SN870134 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870185",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870185"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870192",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870192"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870194",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870194"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870362",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870362"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870081",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870081"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870082",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870082"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation factored small numbers such as 14; the original factors numbers of the form 2^b·3^c·5^d (b from 2 to 4) such as 600."
+  },
+  {
+   "id": "course-87-en:item:SX870090",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870090"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870092",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870092"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts. Teacher reference diagram included; the questions are auto-checked."
+  },
+  {
+   "id": "course-87-en:item:SX870095",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870095"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870097",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870097"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870103",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870103"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870104",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870104"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870110",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870110"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870111",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870111"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870112",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870112"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same average of four weekly grocery bills from $85.90 to $134.59, with a whole-cent average."
+  },
+  {
+   "id": "course-87-en:item:SX870140",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870140"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870141",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870141"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870143",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870143"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870144",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870105",
+   "note": "Choice-only twin of SN870105 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SX870149",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870149"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same lap-time problem: one minute and some seconds, then a faster runner, answer in seconds."
+  },
+  {
+   "id": "course-87-en:item:SX870151",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870151"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870152",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870152"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same change-from-ten-dollars problem: 4–9 pounds at 50–99 cents a pound."
+  },
+  {
+   "id": "course-87-en:item:SX870153",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870153"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870154",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870154"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870155",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870155"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870164",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870164"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870265",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870265"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870302",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870192",
+   "note": "Choice-only twin of SN870192 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SX870303",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870303"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  }
+ ]
+}

@@ -1,0 +1,379 @@
+{
+ "batch": "A1-10 algebra-1 lessons 91-105",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "algebra-1-en:node:858",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:858"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed graph with a rubric; the coefficient of x may be negative, so the symbol reverses when dividing."
+  },
+  {
+   "id": "algebra-1-en:node:861",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:861"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Volume rounded to the hundredth and surface area, with 3.14 for π; shared sphere drawing."
+  },
+  {
+   "id": "algebra-1-en:node:862",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:862"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:865",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:865"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Free response; the source's verbs and names."
+  },
+  {
+   "id": "algebra-1-en:node:866",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:865",
+   "note": "Choice-only twin of node:865 (same ranges and question). Served by that task, free response by default."
+  },
+  {
+   "id": "algebra-1-en:node:869",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:869"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. One fraction with every common factor cancelled (checked by value and by the degree of the denominator); any arrangement of the factors."
+  },
+  {
+   "id": "algebra-1-en:node:870",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:870"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:872",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:872"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:873",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:873"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:874",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:874"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:877",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:877"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. The time is answered as h:mm (p.m. optional)."
+  },
+  {
+   "id": "algebra-1-en:node:878",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:878"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:879",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:879"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Neutral names for the travellers; both speeds, slower first."
+  },
+  {
+   "id": "algebra-1-en:node:880",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:880"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Both speeds: northbound; southbound."
+  },
+  {
+   "id": "algebra-1-en:node:881",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:880",
+   "note": "Choice-only version of nodes 879 and 880 (the same tables of speeds, distances and times). Served by node:880's task, free response by default."
+  },
+  {
+   "id": "algebra-1-en:node:885",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:885"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Original drawings of the ten basic shapes; five shown, each answered with a function name."
+  },
+  {
+   "id": "algebra-1-en:node:886",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:886"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:889",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:889"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Each answer written with ± and radicals simplified."
+  },
+  {
+   "id": "algebra-1-en:node:890",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:889",
+   "note": "Choice-only version of one part of node:889 (same ranges). Served by that task, free response by default."
+  },
+  {
+   "id": "algebra-1-en:node:894",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:894"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Original drawing (shared right-triangle drawing) of an isosceles right triangle."
+  },
+  {
+   "id": "algebra-1-en:node:895",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:895"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:896",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:895",
+   "note": "Choice-only twin of node:895 (same ranges and question). Served by that task, free response by default."
+  },
+  {
+   "id": "algebra-1-en:node:898",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:898"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Three triangles drawn side by side."
+  },
+  {
+   "id": "algebra-1-en:node:899",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:898",
+   "note": "Choice-only version of one triangle of node:898 (the same triples). Served by that task, free response by default."
+  },
+  {
+   "id": "algebra-1-en:node:902",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:902"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Exact answer with a simplified radical."
+  },
+  {
+   "id": "algebra-1-en:node:903",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:903"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:906",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:906"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:909",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:909"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Generic vehicle names instead of brand names."
+  },
+  {
+   "id": "algebra-1-en:node:910",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:910"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. The choices are named mistakes (adding the speeds, dividing the wrong way, using one speed) instead of the source's fixed fractions."
+  },
+  {
+   "id": "algebra-1-en:node:914",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:914"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. The source's digits 1–9; the answer to the requested place."
+  },
+  {
+   "id": "algebra-1-en:node:915",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:915"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:918",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:918"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. One fraction; the denominator may be written factored or multiplied out."
+  },
+  {
+   "id": "algebra-1-en:node:919",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:919"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Any equivalent single fraction is accepted."
+  },
+  {
+   "id": "algebra-1-en:node:920",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:920"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Any equivalent single fraction is accepted."
+  },
+  {
+   "id": "algebra-1-en:node:921",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:918",
+   "note": "Choice-only twin of node:918 (same ranges and question). Served by that task, free response by default."
+  },
+  {
+   "id": "algebra-1-en:node:924",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:924"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed graph with a rubric; original number-line drawing for the reference."
+  },
+  {
+   "id": "algebra-1-en:node:925",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:925"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Free response by default: the letter of the graph."
+  },
+  {
+   "id": "algebra-1-en:node:928",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:928"
+   ],
+   "note": "Reviewed against the source: the existing domain adaptation (shared-denominator) asks the same thing in the same response form with the source's ranges ((a + x)/x + b/x = 0 with a and b from ±1 to ±5, a + b ≠ 0). Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:931",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:931"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Free response by default; any of the three equation forms."
+  },
+  {
+   "id": "algebra-1-en:node:934",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:934"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Any equivalent formula for the requested letter."
+  },
+  {
+   "id": "algebra-1-en:node:935",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:935"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:936",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:936"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:937",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:937"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:938",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:938"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:939",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:939"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Free response by default; any of the four equation forms."
+  },
+  {
+   "id": "algebra-1-en:node:942",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:942"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Factored form; the product is checked and each factor must have no common factor left."
+  },
+  {
+   "id": "algebra-1-en:node:943",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:943"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:944",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:944"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  }
+ ]
+}

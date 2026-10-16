@@ -1,0 +1,675 @@
+{
+ "batch": "c1-batch-15 course-1 lessons 111-120, investigation 12",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00019",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00019"
+   ],
+   "note": "Ported: Cars needed: round the quotient up."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00021",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00021"
+   ],
+   "note": "Ported: Equal shares of a payment."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00020",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00020"
+   ],
+   "note": "Ported: Books affordable: round the quotient down."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00089",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00089"
+   ],
+   "note": "Ported: Students shared among rooms as equally as possible."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00002",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00002"
+   ],
+   "note": "Ported: Divide a negative integer by a positive integer."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00061",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00061"
+   ],
+   "note": "Ported: Multiply signed integers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00062",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00062"
+   ],
+   "note": "Ported: Divide a negative integer by a negative integer. The bank's key marks the negative quotient; the port uses the correct positive quotient."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00087",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00087"
+   ],
+   "note": "Ported: Signed division written with a fraction bar."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00003",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00003"
+   ],
+   "note": "Ported: Subtract feet and inches."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00064",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00064"
+   ],
+   "note": "Ported: Add feet and inches."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00065",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00065"
+   ],
+   "note": "Ported: Add hours and minutes."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00088",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00088"
+   ],
+   "note": "Ported: A mixed number of millions as a standard numeral."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00024",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00024"
+   ],
+   "note": "Ported: A decimal number of millions in standard notation."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00023",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00023"
+   ],
+   "note": "Ported: Millions, billions and trillions in standard notation."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00004",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00004"
+   ],
+   "note": "Ported: A decimal times a power of ten in standard notation."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00085",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00085"
+   ],
+   "note": "Ported: An equal metric length."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00028",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00028"
+   ],
+   "note": "Ported: Unit multiplier: tons to pounds."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00026",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00026"
+   ],
+   "note": "Ported: Unit multiplier: ounces to pounds."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00027",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00027"
+   ],
+   "note": "Ported: Unit multiplier: yards to feet."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00090",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00090"
+   ],
+   "note": "Ported: Unit multiplier: quarts to gallons."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00006",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00006"
+   ],
+   "note": "Ported: A percent with a mixed number (eighths and sixths) as a fraction."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00030",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00030"
+   ],
+   "note": "Ported: A fractional percent as a fraction."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00029",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00029"
+   ],
+   "note": "Ported: A percent with thirds as a fraction."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00031",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00031"
+   ],
+   "note": "Ported: A percent with fourths as a fraction."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00007",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00007"
+   ],
+   "note": "Ported: Compound interest compounded annually."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00035",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00035"
+   ],
+   "note": "Ported: Class size from the fraction that are boys."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00036",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00036"
+   ],
+   "note": "Ported: Town population from the fraction that voted."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00037",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00037"
+   ],
+   "note": "Ported: A fraction of what number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00041",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00041"
+   ],
+   "note": "Ported: A population from a percent and a part."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00039",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00039"
+   ],
+   "note": "Ported: A number is a percent of what number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00040",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00040"
+   ],
+   "note": "Ported: A percent of what number is a number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00038",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00038"
+   ],
+   "note": "Ported: Area of a shaded figure from squares of 10 square inches."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00066",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00066"
+   ],
+   "note": "Ported: Estimate an area from whole and half squares."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00011",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00011"
+   ],
+   "note": "Ported: Cylinder volume from the diameter, to the nearest tenth."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00044",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00044"
+   ],
+   "note": "Ported: Volume of a soup can."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00073",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00073"
+   ],
+   "note": "Ported: Estimate the volume of a sphere."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00013",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00013"
+   ],
+   "note": "Ported: The volume formula for a solid."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00014",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00014"
+   ],
+   "note": "Ported: The solid for a volume formula."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00070",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00070"
+   ],
+   "note": "Ported: Why the cube and prism volume formulas agree."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00015",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00015"
+   ],
+   "note": "Ported: Estimate the volume of a cube."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00016",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00016"
+   ],
+   "note": "Ported: Estimate the volume of a cylinder inside a cube."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00017",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00017"
+   ],
+   "note": "Ported: Cones that fill a cylinder."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00060",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00060"
+   ],
+   "note": "Ported: Pyramids that fill a prism."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00047",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00047"
+   ],
+   "note": "Ported: Volume of a cone."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00046",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00046"
+   ],
+   "note": "Ported: Volume of a pyramid."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00050",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00050"
+   ],
+   "note": "Ported: Milliliters of water in a cube."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00052",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00052"
+   ],
+   "note": "Ported: Storage space in an attic shaped like a triangular prism."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00045",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00045"
+   ],
+   "note": "Ported: Volume of a prism with an isosceles triangle base."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00051",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00051"
+   ],
+   "note": "Ported: Paper in a roll of paper towels, in terms of π."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00012",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00012"
+   ],
+   "note": "Ported: Surface area of a cylinder, to the nearest hundredth."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00055",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00055"
+   ],
+   "note": "Ported: Surface area of a drawn cylinder from its diameter."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00018",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00018"
+   ],
+   "note": "Ported: Estimate the surface area of a cylinder."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00049",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00049"
+   ],
+   "note": "Ported: Surface area of a drawn rectangular prism."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00058",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00058"
+   ],
+   "note": "Ported: Glass in a fish tank with no top."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00075",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00075"
+   ],
+   "note": "Ported: Surface area of a rectangular prism from its net."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00057",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00057"
+   ],
+   "note": "Ported: Paper left after covering a soda can."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00077",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00077"
+   ],
+   "note": "Ported: Surface area of a cylinder in terms of π."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00069",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00069"
+   ],
+   "note": "Ported: Surface area of a drawn cylinder in terms of π."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00068",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00068"
+   ],
+   "note": "Ported: Volume of a drawn cylinder in terms of π."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00048",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00048"
+   ],
+   "note": "Ported: Surface area of a right triangular prism."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00080",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00080"
+   ],
+   "note": "Ported: Surface area of a square pyramid."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00081",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00081"
+   ],
+   "note": "Ported: Enough wrapping paper for a box."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00042",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00042"
+   ],
+   "note": "Confirmed: cylinder volume from a radius and height in meters, using 3.14 (existing structured adaptation, reviewed and kept; it asks for the same quantity in the same units)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00056",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section12:item:C1_S12_00056"
+   ],
+   "note": "Confirmed: rectangular-prism surface area in square centimeters (existing structured adaptation, reviewed and kept; it asks for the same quantity in the same units)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00001",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00019",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00083",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00061",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00086",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00061",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00022",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00002",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00084",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00088",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00025",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00004",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00063",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00003",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00005",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00028",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00032",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00007",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00033",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00007",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00034",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00007",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00008",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00035",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00009",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00066",
+   "note": "The figure is missing from the bank; estimating an area by counting whole and half squares matches the drawn grid task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00067",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00066",
+   "note": "The figure cannot be read from the bank; estimating an area by counting whole and half squares matches the drawn grid task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00010",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00041",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00043",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00011",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00059",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00017",
+   "note": "The same fact (three cones fill a cylinder with the same base and height) as the task it points to."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00071",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00017",
+   "note": "The same fact (three cones fill a cylinder with the same base and height), stated with the formulas, as the task it points to."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00054",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00049",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00078",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00049",
+   "note": "The figure is missing from the bank; the surface area of a rectangular prism matches the drawn prism task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00053",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00075",
+   "note": "The figure is missing from the bank; the surface area of a rectangular prism from its net matches the net task with given dimensions."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00074",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00077",
+   "note": "Drawing the net is shown in the solution; the surface area of a cylinder in terms of π matches the diameter task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00076",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00077",
+   "note": "Drawing the net is shown in the solution; the surface area of a cylinder in terms of π matches the diameter task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00072",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00045",
+   "note": "The figure cannot be read from the bank; the volume of a triangular prism (half of a rectangular prism) matches the drawn triangular-prism task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00079",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00048",
+   "note": "The figure is missing from the bank; the surface area of a triangular prism matches the drawn right-triangular-prism task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section12:item:C1_S12_00082",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section12:item:C1_S12_00069",
+   "note": "Two surface areas of a cylinder in a box: the cylinder part matches the drawn cylinder task (in terms of π) and the box part matches the drawn rectangular-prism task."
+  }
+ ]
+}

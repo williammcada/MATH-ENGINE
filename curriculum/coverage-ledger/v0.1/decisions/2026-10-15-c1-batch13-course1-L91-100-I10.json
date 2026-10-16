@@ -1,0 +1,695 @@
+{
+ "batch": "c1-batch-13 course-1 lessons 91-100, investigation 10",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00036",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00036"
+   ],
+   "note": "Ported: Formula and area of a parallelogram."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00037",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00037"
+   ],
+   "note": "Ported: Formula and perimeter of a triangle."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00038",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00038"
+   ],
+   "note": "Ported: Formula and area of a square."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00060",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00060"
+   ],
+   "note": "Ported: Multiply powers of ten."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00061",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00061"
+   ],
+   "note": "Ported: Find c from a² + b² = c²."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00002",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00002"
+   ],
+   "note": "Ported: Order of operations with a square, a root and a product."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00003",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00003"
+   ],
+   "note": "Ported: A mixed number raised to a power."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00019",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00019"
+   ],
+   "note": "Ported: A fraction raised to a power."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00015",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00015"
+   ],
+   "note": "Ported: Standard notation from powers of ten."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00040",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00040"
+   ],
+   "note": "Ported: Expanded notation with exponents."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00016",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00016"
+   ],
+   "note": "Ported: A square minus a square root."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00017",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00017"
+   ],
+   "note": "Ported: A square root plus a power."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00069",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00069"
+   ],
+   "note": "Ported: Order of operations with an exponent."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00062",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00062"
+   ],
+   "note": "Ported: Classify a triangle by its angles."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00063",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00063"
+   ],
+   "note": "Ported: Which triangle is equilateral."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00004",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00004"
+   ],
+   "note": "Ported: Classify a triangle by its sides."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00020",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00020"
+   ],
+   "note": "Ported: Perimeter of an obtuse triangle."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00076",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00076"
+   ],
+   "note": "Ported: Perimeter of an equilateral triangle."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00005",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00005"
+   ],
+   "note": "Ported: Thirds, sixths and ninths as percents."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00021",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00021"
+   ],
+   "note": "Ported: A mixed number as a percent."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00022",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00022"
+   ],
+   "note": "Ported: A decimal greater than 1 as a percent."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00006",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00006"
+   ],
+   "note": "Ported: Hours times kilometers per hour."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00025",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00025"
+   ],
+   "note": "Ported: Meters times centimeters per meter."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00023",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00023"
+   ],
+   "note": "Ported: Feet times inches per foot."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00064",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00064"
+   ],
+   "note": "Ported: Evaluate a product of variables."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00065",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00065"
+   ],
+   "note": "Ported: Missing number in a function table."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00014",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00014"
+   ],
+   "note": "Ported: A property a proportional graph does not have."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00051",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00051"
+   ],
+   "note": "Ported: Complete a function table and plot its points."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00057",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00057"
+   ],
+   "note": "Ported: Graph a proportional relationship."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00052",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00052"
+   ],
+   "note": "Ported: Relationship between two angles at parallel lines."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00026",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00026"
+   ],
+   "note": "Ported: Angle measure at parallel lines."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00053",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00053"
+   ],
+   "note": "Ported: The corresponding angle."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00066",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00066"
+   ],
+   "note": "Ported: The other acute angle of a right triangle."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00010",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00010"
+   ],
+   "note": "Ported: Missing angle of a quadrilateral."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00027",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00027"
+   ],
+   "note": "Ported: Missing angle of a triangle."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00078",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00078"
+   ],
+   "note": "Ported: Top angle of an isosceles triangle."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00067",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00067"
+   ],
+   "note": "Ported: Which form is not equivalent to a percent."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00030",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00030"
+   ],
+   "note": "Ported: The decimal in a fraction-decimal-percent table."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00031",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00031"
+   ],
+   "note": "Ported: The fraction in a fraction-decimal-percent table."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00086",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00086"
+   ],
+   "note": "Ported: Fraction and percent from a decimal."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00087",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00087"
+   ],
+   "note": "Ported: Fraction and decimal from a percent."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00088",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00088"
+   ],
+   "note": "Ported: Decimal and percent from a fraction."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00054",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00054"
+   ],
+   "note": "Ported: Fraction, decimal and percent for hundredths."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00084",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00084"
+   ],
+   "note": "Ported: Order a fraction, a negative integer and a decimal."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00012",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00012"
+   ],
+   "note": "Ported: Add a positive and a negative integer."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00056",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00056"
+   ],
+   "note": "Ported: Add two negative integers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00073",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00073"
+   ],
+   "note": "Ported: Subtract a negative integer."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00079",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00079"
+   ],
+   "note": "Ported: Temperature rise from below zero."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00013",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00013"
+   ],
+   "note": "Ported: Two draws without replacement."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00033",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00033"
+   ],
+   "note": "Ported: A coin and a number cube."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00080",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00080"
+   ],
+   "note": "Ported: The same event on two rolls."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00081",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00081"
+   ],
+   "note": "Ported: Both marbles the same colour without replacement."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00034",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00034"
+   ],
+   "note": "Ported: Two cards without replacement."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00047",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00047"
+   ],
+   "note": "Confirmed: a function table with a subtraction rule (existing structured adaptation, reviewed and kept; it shows the table or expression)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00048",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00048"
+   ],
+   "note": "Confirmed: a function table with an addition rule (existing structured adaptation, reviewed and kept; it shows the table or expression)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00068",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section10:item:C1_S10_00068"
+   ],
+   "note": "Confirmed: adding three integers (existing structured adaptation, reviewed and kept; it shows the table or expression)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00001",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00036",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00018",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00002",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00074",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00002",
+   "note": "Order of operations with a square, a square root and a product."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00041",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00003",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00042",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00003",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00083",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00003",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00039",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00040",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00070",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00016",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00071",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00069",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00075",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00069",
+   "note": "The expression in the bank is incomplete; the answer and the lesson point to order of operations with exponents."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00043",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00062",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00044",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00004",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00045",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00021",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00085",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00005",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00024",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00006",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00007",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00047",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00046",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00047",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00008",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00051",
+   "note": "The choices are pictures of tables and graphs; completing a table and plotting its points is covered by the teacher-review task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00049",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00051",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00050",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00051",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00059",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00057",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00058",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00057",
+   "note": "The two example graphs are missing from the bank; the characteristics of a proportional graph are covered by the graphing task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00009",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00052",
+   "note": "The figure (two transversals) is missing from the bank; naming the relationship between two angles at parallel lines matches the drawn task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00077",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00026",
+   "note": "Finding an angle at parallel lines cut by a transversal matches the drawn task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00028",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00066",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00029",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00010",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00011",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00054",
+   "note": "The table choices are missing from the bank; completing a fraction-decimal-percent row matches the hundredths task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00089",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00086",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00092",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00086",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00095",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00086",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00090",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00087",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00093",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00087",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00096",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00087",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00091",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00088",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00094",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00088",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00055",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00012",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00072",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00056",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00032",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00073",
+   "note": "Subtracting an integer from itself; covered by subtracting signed integers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00035",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00013",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section10:item:C1_S10_00082",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section10:item:C1_S10_00081",
+   "note": "Drawing two marbles at once is the same as drawing without replacement."
+  }
+ ]
+}

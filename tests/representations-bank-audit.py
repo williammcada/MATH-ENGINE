@@ -3,7 +3,7 @@ from pathlib import Path
 from fractions import Fraction as F
 import subprocess,json,re,xml.etree.ElementTree as ET
 root=Path(__file__).resolve().parents[1]
-js="""const E=require('./src/course-banks'),C=require('./src/representations-bank-map');for(const c of C)for(let index=0;index<200;index++){const q=E.generate(c.sourceId,{seed:'independent-representations',index});if(!E.checkAnswer(q,E.answerText(q)).answerCorrect)throw Error(c.recipe);if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'independent-representations',index})))throw Error('Replay');console.log(JSON.stringify({recipe:c.recipe,q,html:index<5?E.renderQuestion(q):null}));}"""
+js="""const E=require('./src/course-banks'),C=require('./src/representations-bank-map');for(const c of C.filter(c=>E.catalog.find(x=>x.sourceId===c.sourceId).family===c.family))/* entries replaced by a coverage port are audited by tests/port87.cjs */for(let index=0;index<200;index++){const q=E.generate(c.sourceId,{seed:'independent-representations',index});if(!E.checkAnswer(q,E.answerText(q)).answerCorrect)throw Error(c.recipe);if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'independent-representations',index})))throw Error('Replay');console.log(JSON.stringify({recipe:c.recipe,q,html:index<5?E.renderQuestion(q):null}));}"""
 lines=subprocess.check_output(['node','-e',js],cwd=root,text=True).splitlines()
 units=dict(zip('zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen'.split(),range(20)));units.update(dict(zip('twenty thirty forty fifty sixty seventy eighty ninety'.split(),range(20,100,10))))
 def parse_words(s):

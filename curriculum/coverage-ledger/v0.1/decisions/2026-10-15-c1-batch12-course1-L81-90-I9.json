@@ -1,0 +1,581 @@
+{
+ "batch": "c1-batch-12 course-1 lessons 81-90, investigation 9",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00039",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00039"
+   ],
+   "note": "Ported: Divide miles by gallons."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00041",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00041"
+   ],
+   "note": "Ported: Multiply centimeters by centimeters."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00063",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00063"
+   ],
+   "note": "Ported: Subtract inches from feet."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00040",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00040"
+   ],
+   "note": "Ported: Add yards and feet."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00001",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00001"
+   ],
+   "note": "Ported: Sugar cubes to build a rectangular prism."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00015",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00015"
+   ],
+   "note": "Ported: Volume of a rectangular prism."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00014",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00014"
+   ],
+   "note": "Ported: Volume of a cube."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00011",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00011"
+   ],
+   "note": "Ported: Units for perimeter."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00012",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00012"
+   ],
+   "note": "Ported: Units for volume."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00048",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00048"
+   ],
+   "note": "Ported: Perimeter, area and volume."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00016",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00016"
+   ],
+   "note": "Ported: How many pairs are proportions."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00017",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00017"
+   ],
+   "note": "Ported: Which fraction does not form a proportion."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00042",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00042"
+   ],
+   "note": "Ported: Write a proportion with digits."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00018",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00018"
+   ],
+   "note": "Ported: Order of operations with four operations."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00019",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00019"
+   ],
+   "note": "Ported: Divide, add and multiply in order."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00020",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00020"
+   ],
+   "note": "Ported: Difference of two decimal quotients."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00004",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00004"
+   ],
+   "note": "Ported: A is to B as C is to what number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00021",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00021"
+   ],
+   "note": "Ported: Complete a proportion: missing denominator."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00022",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00022"
+   ],
+   "note": "Ported: Complete a proportion: missing numerator."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00070",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00070"
+   ],
+   "note": "Ported: Solve a proportion with cross products."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00005",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00005"
+   ],
+   "note": "Ported: Area of a circle from its diameter, to the hundredth."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00025",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00025"
+   ],
+   "note": "Ported: Area of a circle from its radius."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00057",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00057"
+   ],
+   "note": "Ported: Approximate area of a circular rug."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00006",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00006"
+   ],
+   "note": "Ported: Solve a decimal equation by dividing."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00028",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00028"
+   ],
+   "note": "Ported: Solve a whole-number coefficient equation with a decimal answer."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00043",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00043"
+   ],
+   "note": "Ported: Solve with a mixed-number answer."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00007",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00007"
+   ],
+   "note": "Ported: Dragons and knights ratio problem."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00030",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00030"
+   ],
+   "note": "Ported: Ratio word problem."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00037",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00037"
+   ],
+   "note": "Ported: Distance from d = rt with hours and minutes."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00038",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00038"
+   ],
+   "note": "Ported: A side from the area formula."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00050",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00050"
+   ],
+   "note": "Ported: Complete a force table with f = ma."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00051",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00051"
+   ],
+   "note": "Ported: Constant of proportionality."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00044",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00044"
+   ],
+   "note": "Ported: Consecutive whole numbers around a square root."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00032",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00032"
+   ],
+   "note": "Ported: Approximate a square root to two decimal places."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00045",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00045"
+   ],
+   "note": "Ported: Direction after two turns."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00081",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00081"
+   ],
+   "note": "Ported: Total of the turns around a closed path."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00035",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00035"
+   ],
+   "note": "Ported: Average turn on a lap."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00034",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00034"
+   ],
+   "note": "Ported: Degrees of a counterclockwise turn."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00010",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00010"
+   ],
+   "note": "Ported: Theoretical and experimental probability."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00046",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00046"
+   ],
+   "note": "Ported: Frequency table with relative frequencies."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00036",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section09:item:C1_S09_00036"
+   ],
+   "note": "Ported: Estimate a count from relative frequency."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00013",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00001",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00067",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00001",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00052",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00015",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00053",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00015",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00064",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00015",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00065",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00015",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00066",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00015",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00068",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00015",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00049",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00048",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00002",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00016",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00054",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00018",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00069",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00019",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00003",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00020",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00023",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00004",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00055",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00070",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00071",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00070",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00073",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00070",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00072",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00022",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00024",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00005",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00075",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00005",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00076",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00005",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00026",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00025",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00056",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00025",
+   "note": "The figure is missing from the bank; the answer (78.5 cm²) is the area of a circle of radius 5 cm."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00074",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00025",
+   "note": "The figure is missing from the bank; the answer (314 cm²) is the area of a circle of radius 10 cm."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00027",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00006",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00077",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00028",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00058",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00028",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00082",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00043",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00029",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00007",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00031",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00007",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00059",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00030",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00078",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00030",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00079",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00030",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00060",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00044",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00061",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00044",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00062",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00044",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00008",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00032",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00033",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section04:item:C1_S04_00032",
+   "note": "The square root of a perfect square (Lesson 38)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00080",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section04:item:C1_S04_00032",
+   "note": "The square root of a perfect square (Lesson 38)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00009",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00045",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section09:item:C1_S09_00047",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section09:item:C1_S09_00010",
+   "note": "Theoretical and experimental probability of a number-cube roll (Lesson 90)."
+  }
+ ]
+}

@@ -3,7 +3,7 @@ from pathlib import Path
 from fractions import Fraction as F
 import subprocess,json,math,ast,re,xml.etree.ElementTree as ET
 root=Path(__file__).resolve().parents[1]
-js="""const E=require('./src/course-banks'),C=require('./src/algebra-review-bank-map');for(const c of C)for(let index=0;index<300;index++){const q=E.generate(c.sourceId,{seed:'independent-algebra-review',index});if(!E.checkAnswer(q,E.answerText(q)).answerCorrect)throw Error(c.recipe);if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'independent-algebra-review',index})))throw Error('Replay');console.log(JSON.stringify({recipe:c.recipe,q,html:index<10?E.renderQuestion(q):null}));}"""
+js="""const E=require('./src/course-banks'),C=require('./src/algebra-review-bank-map');for(const c of C.filter(c=>E.catalog.find(x=>x.sourceId===c.sourceId).family===c.family))/* entries replaced by a coverage port are audited by tests/port87.cjs */for(let index=0;index<300;index++){const q=E.generate(c.sourceId,{seed:'independent-algebra-review',index});if(!E.checkAnswer(q,E.answerText(q)).answerCorrect)throw Error(c.recipe);if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'independent-algebra-review',index})))throw Error('Replay');console.log(JSON.stringify({recipe:c.recipe,q,html:index<10?E.renderQuestion(q):null}));}"""
 lines=subprocess.check_output(['node','-e',js],cwd=root,text=True).splitlines()
 def rounded(v):return F(math.floor(v*100+.5),100)
 def squarefree(n):return all(n%(k*k) for k in range(2,math.isqrt(n)+1))
@@ -75,5 +75,6 @@ for line in lines:
    el=ET.fromstring(svg);assert el.attrib.get('role')=='img';assert 'NaN' not in svg;svgs+=1
    if r=='protractor-read':
     rays=[l for l in el.findall('.//{*}line') if l.attrib.get('stroke')=='#007569'];angles=[round(math.degrees(math.atan2(225-float(l.attrib['y2']),float(l.attrib['x2'])-200))) for l in rays];assert angles==[p['baseline'],p['angle']];assert str(abs(p['angle']-p['baseline'])) not in [t.text for t in el.findall('.//{*}text')]
-assert {'baseline0','baseline180',(False,False),(False,True),(True,False),(True,True)}<=branches
+# SN870075 (the only protractor-read entry) is now served by its coverage port; its baseline branches are audited there.
+assert {(False,False),(False,True),(True,False),(True,True)}<=branches
 print(f'PASS: {len(lines)} independent cases; {svgs} SVGs; {substitutions} rational symbolic substitutions; complex roots, polar quadrants, interval endpoints and protractor rays')

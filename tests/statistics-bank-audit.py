@@ -2,7 +2,7 @@
 import json,pathlib,subprocess,itertools,collections,functools
 from fractions import Fraction as F
 root=pathlib.Path(__file__).resolve().parents[1]
-js="""const E=require('./src/course-banks'),U=require('./src/statistics-bank'),M=require('./src/structured-math');for(const c of U.catalog)for(let index=0;index<1000;index++){const q=E.generate(c.sourceId,{seed:'statistics-audit',index});if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'statistics-audit',index})))throw Error('Replay');if(!E.checkAnswer(q,E.answerText(q)).answerCorrect||E.checkAnswer(q,'nonsense').answerCorrect)throw Error('Checker');const bad={...q,answer:{...q.answer,values:q.answer.values.map((v,i)=>i?v:M.serialize(M.op('add',M.from(v),M.rat(1))))}};if(E.checkAnswer(q,E.answerText(bad)).answerCorrect)throw Error('Wrong value accepted');console.log(JSON.stringify({recipe:c.recipe,q}));}"""
+js="""const E=require('./src/course-banks'),U=require('./src/statistics-bank'),M=require('./src/structured-math');for(const c of U.catalog.filter(c=>E.catalog.find(x=>x.sourceId===c.sourceId).family===c.family))/* entries replaced by a coverage port are audited by tests/port87.cjs */for(let index=0;index<1000;index++){const q=E.generate(c.sourceId,{seed:'statistics-audit',index});if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'statistics-audit',index})))throw Error('Replay');if(!E.checkAnswer(q,E.answerText(q)).answerCorrect||E.checkAnswer(q,'nonsense').answerCorrect)throw Error('Checker');const bad={...q,answer:{...q.answer,values:q.answer.values.map((v,i)=>i?v:M.serialize(M.op('add',M.from(v),M.rat(1))))}};if(E.checkAnswer(q,E.answerText(bad)).answerCorrect)throw Error('Wrong value accepted');console.log(JSON.stringify({recipe:c.recipe,q}));}"""
 @functools.lru_cache(None)
 def cards(event,suit,color,rank,unordered):
  deck=list(itertools.product(['hearts','diamonds','spades','clubs'],range(1,14)));target={'ace':1,'five':5,'seven':7,'ten':10}[rank]
@@ -68,5 +68,8 @@ for line in p.stdout:
  if q['answer']['form']=='probability':
   assert all(0<=v<=1 for v in a);zeros+=sum(v==0 for v in a);ones+=sum(v==1 for v in a)
  assert q['solution'] and q['prompt'];count+=1
-assert p.wait()==0 and count==38000 and odd and even and zeros and ones and ties and len(card_events)==10
+# SN870774, SN870816 and SN870834 are served by coverage ports (audited by tests/port87.cjs).
+# Served by Algebra 1 port tasks instead (owner-approved request R4, 2026-10-16): algebra-1-en:node:493, 494 and 495 (the data-set entries that
+# exercised odd and even data sets), 551, 552, 661, 699, 735 and 737.
+assert p.wait()==0 and count==25000 and zeros and ones and ties and len(card_events)==10
 print(f'PASS: {count:,} independent cases; {len(seen)} recipes; {ties} rounding ties; {zeros} impossible and {ones} certain outcomes; {odd} odd/{even} even data sets; all 10 card event/order classes enumerated')

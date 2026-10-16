@@ -1,0 +1,559 @@
+{
+ "batch": "c1-batch-14 course-1 lessons 101-110, investigation 11",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00014",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00014"
+   ],
+   "note": "Ported: Students from a survey ratio."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00016",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00016"
+   ],
+   "note": "Ported: A part from a ratio and a total."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00058",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00058"
+   ],
+   "note": "Ported: The total from a ratio and one part."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00063",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00063"
+   ],
+   "note": "Ported: A ratio from a total and one part."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00002",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00002"
+   ],
+   "note": "Ported: Pounds to ounces."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00017",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00017"
+   ],
+   "note": "Ported: Kilograms to grams."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00064",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00064"
+   ],
+   "note": "Ported: Tons to pounds."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00043",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00043"
+   ],
+   "note": "Ported: Add pounds and ounces."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00044",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00044"
+   ],
+   "note": "Ported: Subtract pounds and ounces."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00003",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00003"
+   ],
+   "note": "Ported: Perimeter of an L-shaped figure."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00020",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00020"
+   ],
+   "note": "Ported: Perimeter of a figure with a notch."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00004",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00004"
+   ],
+   "note": "Ported: Simplify four signed terms."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00070",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00070"
+   ],
+   "note": "Ported: Simplify three signed terms."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00025",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00025"
+   ],
+   "note": "Ported: The total from a part and a percent."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00026",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00026"
+   ],
+   "note": "Ported: How many played, from a percent."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00042",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00042"
+   ],
+   "note": "Ported: Use a constant of proportionality."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00057",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00057"
+   ],
+   "note": "Ported: Constant of proportionality from a table."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00072",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00072"
+   ],
+   "note": "Ported: Solve a proportion with a decimal."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00073",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00073"
+   ],
+   "note": "Ported: A price from a payment and the remaining percent."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00028",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00028"
+   ],
+   "note": "Ported: Solve ax + b = c."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00029",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00029"
+   ],
+   "note": "Ported: Solve ax − b = c."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00030",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00030"
+   ],
+   "note": "Ported: Area of a rectangle with an added square."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00032",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00032"
+   ],
+   "note": "Ported: Area of a stepped figure."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00031",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00031"
+   ],
+   "note": "Ported: Area of a rectangle with a notch."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00008",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00008"
+   ],
+   "note": "Ported: Name a transformation."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00033",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00033"
+   ],
+   "note": "Ported: Area of congruent isosceles right triangles."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00036",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00036"
+   ],
+   "note": "Ported: An angle of similar triangles."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00034",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00034"
+   ],
+   "note": "Ported: Perimeter of congruent triangles."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00035",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00035"
+   ],
+   "note": "Ported: A side of similar triangles."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00049",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00049"
+   ],
+   "note": "Ported: Corresponding angles of congruent triangles."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00061",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00061"
+   ],
+   "note": "Ported: Which triangle is similar."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00011",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00011"
+   ],
+   "note": "Ported: A letter with a line of symmetry."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00037",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00037"
+   ],
+   "note": "Ported: Lines of symmetry of a figure."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00078",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00078"
+   ],
+   "note": "Ported: Draw the line of symmetry of an isosceles triangle."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00079",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00079"
+   ],
+   "note": "Ported: A letter with rotational symmetry."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00012",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00012"
+   ],
+   "note": "Ported: Actual perimeter from a scale drawing."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00040",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00040"
+   ],
+   "note": "Ported: Distance from a map scale."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00038",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00038"
+   ],
+   "note": "Ported: Actual height from a drawing scale."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00052",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section11:item:C1_S11_00052"
+   ],
+   "note": "Ported: Create a scale drawing."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00001",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00014",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00015",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00016",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00076",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00016",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00018",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00002",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00021",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00003",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00019",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00003",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00059",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00003",
+   "note": "The figure is missing from the bank; the perimeter of a rectilinear figure matches the drawn L-shape task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00065",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00003",
+   "note": "The figure is missing from the bank; the perimeter of a rectilinear figure matches the drawn L-shape task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00066",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00003",
+   "note": "The hexagon is missing from the bank; the perimeter of a rectilinear figure matches the drawn L-shape task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00068",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00003",
+   "note": "The hexagon is missing from the bank; the perimeter of a rectilinear figure matches the drawn L-shape task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00022",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00004",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00023",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00004",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00045",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00004",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00071",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00070",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00005",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00025",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00024",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00025",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00077",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00025",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00041",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00057",
+   "note": "The relationship is missing from the bank; finding k matches the table task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00056",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00057",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00006",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00028",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00027",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00028",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00074",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00028",
+   "note": "Previously covered provisionally by a structured adaptation; the two-step equation port covers it with the source's form."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00060",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00029",
+   "note": "Previously covered provisionally by a structured adaptation; the two-step equation port covers it with the source's form."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00007",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00030",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00067",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00030",
+   "note": "The hexagon is missing from the bank; the area of a rectilinear figure matches the drawn task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00069",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00030",
+   "note": "The hexagon is missing from the bank; the area of a rectilinear figure matches the drawn task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00048",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00008",
+   "note": "Naming a reflection matches the drawn transformation task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00047",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00008",
+   "note": "Naming a reflection matches the drawn transformation task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00046",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00008",
+   "note": "The figure is missing from the bank; naming transformations matches the drawn task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00009",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00033",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00010",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00036",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00075",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00034",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00050",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00061",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00051",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00011",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00062",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00079",
+   "note": "The bank's key gives Z, but X is the letter with both reflective and rotational symmetry; rotational symmetry of letters is covered by the corrected task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00013",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00037",
+   "note": "The pictures are missing from the bank; lines of symmetry are covered by the drawn task."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00039",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00012",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00053",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00052",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00054",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00052",
+   "note": "Same demand as the task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section11:item:C1_S11_00055",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section11:item:C1_S11_00052",
+   "note": "Scaling a figure is covered by the scale-drawing task."
+  }
+ ]
+}

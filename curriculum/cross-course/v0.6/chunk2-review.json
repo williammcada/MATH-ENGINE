@@ -204,7 +204,9 @@
       "src/structured-bank.js": "075320d71981a3e7ed9f167a4c2bfc466deb6f015b04bbe585f16e2ff5d47f63"
     },
     "trackIds": [
-      "linear-equations"
+      "linear-equations",
+      "signed-equations",
+      "unknown-sum-length"
     ],
     "disposition": "reviewed path"
   },
@@ -390,7 +392,9 @@
       "src/structured-bank.js": "075320d71981a3e7ed9f167a4c2bfc466deb6f015b04bbe585f16e2ff5d47f63"
     },
     "trackIds": [
-      "linear-equations"
+      "linear-equations",
+      "signed-equations",
+      "unknown-sum-length"
     ],
     "disposition": "reviewed path"
   },
@@ -16911,6 +16915,9 @@
       "src/solids-bank.js": "7516a8091979f2af33cc5ab30960d3e1200b72fe0d150a1a3f8e9f797e83d48b"
     },
     "trackIds": [
+      "literal-formulas",
+      "literal-formula-basics",
+      "formula-selection-production",
       "formula-selection-production"
     ],
     "disposition": "reviewed path"
