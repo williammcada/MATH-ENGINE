@@ -137,10 +137,15 @@ function nextItem(id, state = {}) {
 /** The only answer validator hosts use. Accepts items after a JSON round trip. */
 function checkAnswer(item, response) {
   if (!item || typeof item !== 'object') return false;
-  const text = PAD.normalizeTyped(typeof response === 'string' ? response : response == null ? '' : String(response));
+  const typed = typeof response === 'string' ? response : response == null ? '' : String(response);
+  const text = PAD.normalizeTyped(typed);
   if (!text.trim()) return false;
   if (item.layer === 'bank') {
-    try { return banks.checkAnswer(item.raw, text).answerCorrect === true; } catch { return false; }
+    // Bank checkers see the pad-normalized answer first; an answer whose form matters (for example a
+    // division written with ÷, which normalization turns into /) is also checked as typed.
+    try { if (banks.checkAnswer(item.raw, text).answerCorrect === true) return true; } catch { /* try as typed */ }
+    if (typed === text) return false;
+    try { return banks.checkAnswer(item.raw, typed.replace(/−/g, '-')).answerCorrect === true; } catch { return false; }
   }
   if (item.layer === 'continuity') return CONT.check(item, text).correct === true;
   try { return !!K7.checkAnswer(item, text); } catch { return false; }
