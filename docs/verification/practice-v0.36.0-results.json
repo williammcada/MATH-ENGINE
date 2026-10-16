@@ -1,0 +1,193 @@
+{
+  "engine": "0.63.0",
+  "bankVersion": "0.33.0-rc.1",
+  "seedsPerItem": 50,
+  "checks": {
+    "k7-baseline-unedited": {
+      "status": "Passed",
+      "sha256": "78841274e50b07c6640913bb84fdd821247ed47030b575feb27760d35fcff1a0"
+    },
+    "catalog": {
+      "status": "Passed",
+      "total": 3940,
+      "k7Skills": 312,
+      "k7ByGrade": {
+        "1": 19,
+        "2": 21,
+        "3": 68,
+        "4": 64,
+        "5": 36,
+        "6": 51,
+        "7": 33,
+        "K": 20
+      },
+      "autoCheckedBankEntries": 3618,
+      "continuitySkills": 10,
+      "courses": [
+        {
+          "bankId": "intermediate-4-en",
+          "course": "Intermediate 4",
+          "localGrade": 3,
+          "placement": "grade-assigned",
+          "teacherReviewedExcluded": 50,
+          "count": 210
+        },
+        {
+          "bankId": "course-1-en",
+          "course": "Course 1",
+          "localGrade": 4,
+          "placement": "grade-assigned",
+          "teacherReviewedExcluded": 99,
+          "count": 864
+        },
+        {
+          "bankId": "course-87-en",
+          "course": "Introduction to PreAlgebra (8/7)",
+          "localGrade": 5,
+          "placement": "grade-assigned",
+          "teacherReviewedExcluded": 162,
+          "count": 837
+        },
+        {
+          "bankId": "algebra-half-en",
+          "course": "Algebra 1/2",
+          "localGrade": null,
+          "placement": "tracked-not-grade-locked",
+          "teacherReviewedExcluded": 115,
+          "count": 813
+        },
+        {
+          "bankId": "algebra-1-en",
+          "course": "Algebra 1",
+          "localGrade": null,
+          "placement": "tracked-not-grade-locked",
+          "teacherReviewedExcluded": 171,
+          "count": 702
+        },
+        {
+          "bankId": "algebra-2-en",
+          "course": "Algebra 2",
+          "localGrade": null,
+          "placement": "tracked-not-grade-locked",
+          "teacherReviewedExcluded": 264,
+          "count": 192
+        }
+      ]
+    },
+    "lesson-labels": {
+      "status": "Passed",
+      "entries": 3618,
+      "lessons": 785,
+      "source": "williammcada/test-and-practice-studio@16685a8"
+    },
+    "generate-all-seeds": {
+      "status": "Passed",
+      "count": 197000
+    },
+    "deterministic": {
+      "status": "Passed",
+      "count": 197000
+    },
+    "own-answer-accepted": {
+      "status": "Passed",
+      "count": 197000
+    },
+    "json-round-trip": {
+      "status": "Passed",
+      "count": 197000
+    },
+    "evaluate-own-answer-valid-and-correct": {
+      "status": "Passed",
+      "count": 197000
+    },
+    "unsimplified-fraction-feedback": {
+      "status": "Passed",
+      "count": 16382,
+      "simplestFormRequiredAndFlagged": 14625,
+      "equivalentFormsAllowedByPrompt": {
+        "items": 1757,
+        "entries": 57
+      }
+    },
+    "perturbed-answer-rejected": {
+      "status": "Passed",
+      "count": 197000
+    },
+    "keypad-keys-cover-answer": {
+      "status": "Passed",
+      "count": 197000
+    },
+    "answer-pad-uniform": {
+      "status": "Passed",
+      "count": 155675
+    },
+    "pad-typed-answers-accepted": {
+      "status": "Passed",
+      "count": 155675
+    },
+    "studio-items-identical": {
+      "status": "Passed",
+      "count": 180900
+    },
+    "teacher-variant-redraws": {
+      "status": "Informational",
+      "count": 0,
+      "note": "Studio draw was teacher-reviewed for this seed; engine redrew deterministically."
+    },
+    "bank-input-modes": {
+      "status": "Informational",
+      "keypad": 2809,
+      "keyboard": 809
+    },
+    "continuity-independent-oracle": {
+      "status": "Passed",
+      "items": 2000
+    },
+    "answer-pad-layout": {
+      "status": "Passed",
+      "keys": 40,
+      "tabs": [
+        "123",
+        "Algebra"
+      ]
+    },
+    "radicals-on-pad": {
+      "status": "Passed",
+      "count": 3
+    },
+    "no-answer-leak": {
+      "status": "Passed",
+      "entry": "bank:course-87-en:item:SN870001"
+    },
+    "pad-forms": {
+      "status": "Passed",
+      "cases": 4
+    },
+    "related-links": {
+      "status": "Passed",
+      "links": 9851,
+      "itemsWithEasier": 815,
+      "itemsWithHarder": 852
+    },
+    "practice-gates": {
+      "status": "Passed",
+      "k7Gate": "complete",
+      "mixedTargetedGate": "complete",
+      "invalidIdRejected": true
+    },
+    "bank-standards": {
+      "status": "Passed",
+      "bankRows": 3618,
+      "withStandard": 228,
+      "g96Samples": 2000,
+      "g96NonPositive": 0
+    },
+    "bundle-provenance": {
+      "status": "Passed",
+      "bundleSha256": "53be55a9065fd59ea5dc804f3eeb8f533bf8ecfe13636c9de9b9a7c8fb982e1f",
+      "contentHash": "c219b23a96ee4b1474ec805a8db24983"
+    }
+  },
+  "failures": [],
+  "status": "Passed"
+}

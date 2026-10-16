@@ -6,15 +6,20 @@
  *     seeded Math object so a seed always gives the same question.
  *   - Course banks: Intermediate 4 → Algebra 2 entries whose answers are auto-checked
  *     (spec decision D2). Teacher-reviewed tasks are not game-eligible.
+ *   - Single-answer entries only (Engine 0.37.0): entries tagged multi-part by src/answer-shape.js
+ *     (lists, every solution, set members, "a; n") are not game-eligible. gameExclusion(id) says why.
  * Hosts must not generate or check mathematics themselves.
+ * Every keypad item uses the one universal answer pad (src/answer-pad.js, handbook U-18, Engine 0.36.0).
  */
 'use strict';
 const banks = require('./course-banks.js');
 const { loadK7Skills, baselineSha256 } = require('./k7-skills.js');
 const INDEX = require('./practice-index.js');
 const CONT = require('./continuity-skills.js');
+const PAD = require('./answer-pad.js');
+const SHAPE = require('./answer-shape.js');
 
-const version = '0.34.0-rc.3';
+const version = '0.63.0';
 const freeze = Object.freeze;
 
 // ---------- deterministic randomness ----------
@@ -44,10 +49,12 @@ const skillEntries = K7.catalog.map(s => {
   for (const [k, v] of Object.entries(s)) if (typeof v !== 'function' && !(k in e)) e[k] = v;
   return freeze(e);
 });
-const bankEntries = INDEX.entries.map(x => freeze({
+// Standards come from the bank catalog; only entries with a recorded outcome have one (Engine 0.35.0).
+const bankStandards = new Map(banks.catalog.map(b => [b.sourceId, b]));
+const bankEntries = INDEX.entries.map(x => { const src = bankStandards.get(x.sourceId) || {}; return freeze({
   id: 'bank:' + x.sourceId, layer: 'bank', sourceId: x.sourceId, name: x.title, grade: x.localGrade, gradeLabel: gradeLabel(x.localGrade),
-  standard: '', prereq: null, course: x.course, bankId: x.bankId, lessonId: x.lessonId, lessonLabel: x.lessonLabel, lessonOrder: x.lessonOrder, topic: x.topic
-}));
+  standard: src.standard || '', standardAlias: src.alias || '', prereq: null, course: x.course, bankId: x.bankId, lessonId: x.lessonId, lessonLabel: x.lessonLabel, lessonOrder: x.lessonOrder, topic: x.topic
+}); });
 const continuityEntries = CONT.SKILLS.map(c => freeze({ id: c.id, layer: 'continuity', name: c.name, grade: c.grade, gradeLabel: gradeLabel(c.grade), standard: '', prereq: c.easier, course: null, bankId: null, lessonId: null, topic: null }));
 const continuityById = new Map(CONT.SKILLS.map(c => [c.id, c]));
 const catalog = freeze([...skillEntries, ...bankEntries, ...continuityEntries]);
@@ -55,26 +62,26 @@ const byId = new Map(catalog.map(e => [e.id, e]));
 const skillById = new Map(K7.catalog.map(s => [s.id, s]));
 const courses = freeze(INDEX.courses.map(c => freeze({ ...c, count: bankEntries.filter(e => e.bankId === c.bankId).length })));
 const find = id => byId.get(id) || null;
+// Engine 0.37.0: why a known Math Engine id is not offered to games ('multi-part' | 'teacher-reviewed'),
+// or null. Hosts use it to drop saved selections that are no longer game-eligible and to explain why.
+const GAME_EXCLUDED = INDEX.gameExcluded || {};
+const gameExclusion = id => byId.has(id) ? null : (GAME_EXCLUDED[id] || null);
+const gameExcludedCounts = freeze(Object.values(GAME_EXCLUDED).reduce((o, r) => (o[r] = (o[r] || 0) + 1, o), {}));
 
 // ---------- answer entry ----------
-const BASE_KEYS = ['7', '8', '9', 'back', '4', '5', '6', 'clear', '1', '2', '3', '-', '0', '.', '/', ' '];
-const KEYPAD_EXTRAS = ['R', ':', ';', ',', '<', '>', '=', '$', '+', '×', '(', ')', '{', '}', '^', '%'];
+// One pad for every question (U-18). The keys never depend on the correct answer.
+const padItem = () => ({ inputMode: 'keypad', keys: PAD.keys.slice() });
 function bankEntryMode(answerText) {
-  const extra = new Set();
-  for (const ch of String(answerText)) {
-    if (/[0-9.\/\- ]/.test(ch)) continue;
-    if (KEYPAD_EXTRAS.includes(ch)) { extra.add(ch); continue; }
-    return { inputMode: 'keyboard', keys: [] };
-  }
-  return { inputMode: 'keypad', keys: [...BASE_KEYS, ...KEYPAD_EXTRAS.filter(k => extra.has(k))] };
+  // Pad when the answer can be typed with pad keys (sqrt(...) and * written as √ and ×); otherwise
+  // the answer is words, letters or Roman numerals and uses a text box (U-18 boundary).
+  return PAD.onlyPadCharacters(PAD.padForm(answerText)) ? padItem() : { inputMode: 'keyboard', keys: [] };
 }
 
 // ---------- items ----------
 function fromSkill(skill, raw, meta) {
   const item = { ...raw, engine: version, id: skill.id, layer: 'skill', ...meta };
   item.html = K7.formatItem(raw);
-  item.inputMode = 'keypad';
-  item.keys = K7.keypadKeys(raw.type);
+  Object.assign(item, padItem());
   // Display/report text only; checking still uses the baseline's own answer and tolerance.
   item.answerText = typeof raw.answer === 'number' ? String(Number(raw.answer.toPrecision(12))) : String(raw.answer).replace(/^(-?\d+)\/1$/, '$1');
   // Show expression answers with the keypad's × (the baseline stores *, and accepts ×, * or juxtaposition).
@@ -87,7 +94,7 @@ function fromBank(entry, raw, meta) {
   return { engine: version, id: entry.id, layer: 'bank', ...meta, prompt: raw.prompt, type: 'bank', html: banks.renderQuestion(raw), ...bankEntryMode(answerText), answerText, solution: raw.solution || '', raw };
 }
 function fromContinuity(entry, raw, meta) {
-  const keys = raw.kind === 'choice' ? [] : raw.kind === 'fraction' ? BASE_KEYS.slice() : BASE_KEYS.slice();
+  const keys = raw.kind === 'choice' ? [] : PAD.keys.slice();
   return { engine: version, id: entry.id, layer: 'continuity', ...meta, prompt: raw.prompt, type: raw.kind, kind: raw.kind,
     html: `<div class="engine-question"><p>${raw.promptHTML || CONT.esc(raw.prompt)}</p></div>`,
     inputMode: raw.kind === 'choice' ? 'choice' : 'keypad', keys, choices: raw.choices || null,
@@ -95,7 +102,10 @@ function fromContinuity(entry, raw, meta) {
 }
 function requireEntry(id) {
   const entry = find(id);
-  if (!entry) throw Error('Unknown or non-game Math Engine item: ' + id);
+  if (!entry) {
+    const why = GAME_EXCLUDED[id];
+    throw Error(why ? `Not a game item (${why}): ${id}` : 'Unknown or non-game Math Engine item: ' + id);
+  }
   return entry;
 }
 function cleanSeed(seed) {
@@ -116,11 +126,12 @@ function generate(id, options = {}) {
   return fromBank(entry, bankDraw(entry, seed, index), meta);
 }
 // A few entries switch to a teacher-reviewed variant for some seeds. Those are excluded from the
-// index when seen at build time; this deterministic redraw is the runtime safety net.
+// index when seen at build time; this deterministic redraw is the runtime safety net. The same net
+// skips any multi-part variant (Engine 0.37.0), although the build already excludes such entries.
 function bankDraw(entry, seed, index) {
   for (let k = 0; k < 12; k++) {
     const raw = banks.generate(entry.sourceId, { seed, index: index + k * 100000 });
-    if (raw.answer.kind !== 'teacher') return raw;
+    if (raw.answer.kind !== 'teacher' && SHAPE.itemShape(raw, banks.answerText(raw)) === 'single') return raw;
   }
   throw Error('No auto-checked variant for ' + entry.id);
 }
@@ -138,10 +149,15 @@ function nextItem(id, state = {}) {
 /** The only answer validator hosts use. Accepts items after a JSON round trip. */
 function checkAnswer(item, response) {
   if (!item || typeof item !== 'object') return false;
-  const text = typeof response === 'string' ? response : response == null ? '' : String(response);
+  const typed = typeof response === 'string' ? response : response == null ? '' : String(response);
+  const text = PAD.normalizeTyped(typed);
   if (!text.trim()) return false;
   if (item.layer === 'bank') {
-    try { return banks.checkAnswer(item.raw, text).answerCorrect === true; } catch { return false; }
+    // Bank checkers see the pad-normalized answer first; an answer whose form matters (for example a
+    // division written with ÷, which normalization turns into /) is also checked as typed.
+    try { if (banks.checkAnswer(item.raw, text).answerCorrect === true) return true; } catch { /* try as typed */ }
+    if (typed === text) return false;
+    try { return banks.checkAnswer(item.raw, typed.replace(/−/g, '-')).answerCorrect === true; } catch { return false; }
   }
   if (item.layer === 'continuity') return CONT.check(item, text).correct === true;
   try { return !!K7.checkAnswer(item, text); } catch { return false; }
@@ -149,7 +165,7 @@ function checkAnswer(item, response) {
 const MESSAGES = Object.freeze({
   empty: 'Enter an answer.',
   tooLong: 'That answer is too long.',
-  keys: 'Use only the answer keys shown for this question.',
+  keys: 'Use the answer keys on the pad.',
   choice: 'Choose one of the answers shown.',
   unsimplified: 'Your value is correct, but the fraction is not in simplest form. Simplify it and try again.',
   wrong: 'Not yet. Check your work, then try again.'
@@ -176,13 +192,11 @@ function evaluate(item, response) {
   if (item && item.inputMode === 'choice') {
     const ok = (item.choices || []).some(c => String(c).toLowerCase() === normalized.toLowerCase());
     if (!ok) return { valid: false, correct: false, reason: 'not-a-choice', message: MESSAGES.choice, normalized };
-  } else if (item && item.inputMode === 'keypad' && Array.isArray(item.keys) && item.keys.length) {
-    const allowed = new Set([...item.keys.filter(k => k !== 'back' && k !== 'clear').join('').toLowerCase(), ' ', '−']);
-    if (allowed.has('×')) allowed.add('*');
-    if ([...normalized.toLowerCase()].some(ch => !allowed.has(ch))) return { valid: false, correct: false, reason: 'invalid-characters', message: MESSAGES.keys, normalized };
+  } else if (item && item.inputMode === 'keypad') {
+    if (!PAD.onlyPadCharacters(PAD.padForm(normalized))) return { valid: false, correct: false, reason: 'invalid-characters', message: MESSAGES.keys, normalized };
   }
   if (item && item.layer === 'continuity') {
-    const r = CONT.check(item, normalized);
+    const r = CONT.check(item, PAD.normalizeTyped(normalized));
     if (!r.valid) return { valid: false, correct: false, reason: 'invalid-format', message: MESSAGES.wrong, normalized };
     if (r.equivalentUnsimplified) return { valid: true, correct: false, reason: 'equivalent-unsimplified', message: MESSAGES.unsimplified, normalized };
     return r.correct ? { valid: true, correct: true, reason: null, message: '', normalized } : { valid: true, correct: false, reason: 'wrong-value', message: MESSAGES.wrong, normalized };
@@ -193,7 +207,8 @@ function evaluate(item, response) {
   if (simpler && (checkAnswer(item, simpler) || (/^-?\d+$/.test(simpler) && checkAnswer(item, simpler + '/1')))) return { valid: true, correct: false, reason: 'equivalent-unsimplified', message: MESSAGES.unsimplified, normalized };
   return { valid: true, correct: false, reason: 'wrong-value', message: MESSAGES.wrong, normalized };
 }
-function keypadKeys(item) { return item && Array.isArray(item.keys) ? item.keys.slice() : BASE_KEYS.slice(); }
+/** The universal pad's keys (U-18). The item argument is accepted for compatibility and does not change the keys. */
+function keypadKeys() { return PAD.keys.slice(); }
 
 // ---------- easier / harder ----------
 /** Reviewed links only. Returns game-eligible ids, nearest first; empty when none. */
@@ -289,7 +304,7 @@ function contentHash() {
 }
 const api = freeze({
   version, bankVersion: banks.version, k7Version: 'megaman-v0.7', k7BaselineSha256: baselineSha256,
-  catalog, courses, find, generate, nextItem, checkAnswer, evaluate, related, keypadKeys,
+  catalog, courses, find, gameExclusion, gameExcludedCounts, generate, nextItem, checkAnswer, evaluate, related, keypadKeys, answerPad: PAD,
   Practice, freshMath, configError, formatMath: K7.formatMath, contentHash: contentHash()
 });
 module.exports = api;

@@ -1,0 +1,359 @@
+{
+ "batch": "A1-11 algebra-1 lessons 106-120",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "algebra-1-en:node:949",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:949"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Free response by default; any equivalent equation of the line is accepted."
+  },
+  {
+   "id": "algebra-1-en:node:952",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:952"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Any equivalent equation of the line is accepted."
+  },
+  {
+   "id": "algebra-1-en:node:953",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:953"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:956",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:956"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:961",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:961"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. When the square root would have to be negative, the answer is ∅ (no solution)."
+  },
+  {
+   "id": "algebra-1-en:node:962",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:962"
+   ],
+   "note": "Reviewed against the source: the existing domain adaptation (isolate-root) asks the same thing in the same response form with the source's ranges (√(p + a²) + a = p with a from 1 to 5). Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:963",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:963"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:966",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:966"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Factored form; the product is checked and each factor must have no common factor left."
+  },
+  {
+   "id": "algebra-1-en:node:967",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:967"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:973",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:973"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed sketches with a rubric; original drawings of the four graphs for the reference."
+  },
+  {
+   "id": "algebra-1-en:node:974",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:974"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Free response by default: a statement naming the direction and the number of units."
+  },
+  {
+   "id": "algebra-1-en:node:977",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:977"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed graph with a rubric; dots for the integer domain."
+  },
+  {
+   "id": "algebra-1-en:node:978",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:978"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:980",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:980"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed graph with a rubric; two rays, or dots for the integer domain."
+  },
+  {
+   "id": "algebra-1-en:node:981",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:981"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:984",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:984"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Exact answers with simplified radicals."
+  },
+  {
+   "id": "algebra-1-en:node:985",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:985"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:988",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:988"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:989",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:989"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. As in the source, \"none of these\" is the answer about one time in five."
+  },
+  {
+   "id": "algebra-1-en:node:991",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:991"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:992",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:992"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:995",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:995"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Answers to three decimal places, from the bases as printed (rounded to three decimals)."
+  },
+  {
+   "id": "algebra-1-en:node:996",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:996"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:998",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:998"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:999",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:999"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. U-04: the source writes the growth factor as 1.0c, which gives 1.010 instead of 1.10 when the rate is 10%; the port writes 1 + r correctly. Part (a) accepts any equivalent expression in n."
+  },
+  {
+   "id": "algebra-1-en:node:1000",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1000"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:1002",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1002"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:1003",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1003"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:1006",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1006"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed graph with a rubric; shared coordinate-plane drawing with the region shaded for the reference."
+  },
+  {
+   "id": "algebra-1-en:node:1007",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1007"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:1008",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1008"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The boundary of a strict inequality is dashed."
+  },
+  {
+   "id": "algebra-1-en:node:1009",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1009"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:1012",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1012"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Exact answer with the denominator rationalized."
+  },
+  {
+   "id": "algebra-1-en:node:1013",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1013"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:1016",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1016"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:1017",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1017"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:1018",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1018"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:1021",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1021"
+   ],
+   "note": "Reviewed against the source: the existing quadratic adaptation (opposite-roots) asks the same thing in the same response form with the source's ranges (x² + (a − b)x = ab with a from 2 to 9 and b from 3 to 9). Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:1022",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1022"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:1026",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1026"
+   ],
+   "note": "Reviewed against the source: the existing quadratic adaptation (formula-standard) asks the same thing in the same response form with the source's ranges (a from 2 to 8, b from ±3 to ±12 relatively prime to a, c from ±1 to ±5, a discriminant that is not a perfect square and has no square factor). Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:1027",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1027"
+   ],
+   "note": "Reviewed against the source: the existing quadratic adaptation (formula-rearranged) asks the same thing in the same response form with the source's ranges (ax² − c = bx with a 2 or 3, b from 5 to 7 and c = ±1, both discriminants not perfect squares). Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:1028",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1028"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:1031",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1031"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed plot with a rubric; original box-and-whisker drawing for the reference."
+  },
+  {
+   "id": "algebra-1-en:node:1032",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:1032"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Original box-and-whisker drawing; the data set may be listed in any order."
+  }
+ ]
+}

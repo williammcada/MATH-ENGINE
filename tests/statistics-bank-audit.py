@@ -69,5 +69,7 @@ for line in p.stdout:
   assert all(0<=v<=1 for v in a);zeros+=sum(v==0 for v in a);ones+=sum(v==1 for v in a)
  assert q['solution'] and q['prompt'];count+=1
 # SN870774, SN870816 and SN870834 are served by coverage ports (audited by tests/port87.cjs).
-assert p.wait()==0 and count==34000 and odd and even and zeros and ones and ties and len(card_events)==10
+# Served by Algebra 1 port tasks instead (owner-approved request R4, 2026-10-16): algebra-1-en:node:493, 494 and 495 (the data-set entries that
+# exercised odd and even data sets), 551, 552, 661, 699, 735 and 737.
+assert p.wait()==0 and count==25000 and zeros and ones and ties and len(card_events)==10
 print(f'PASS: {count:,} independent cases; {len(seen)} recipes; {ties} rounding ties; {zeros} impossible and {ones} certain outcomes; {odd} odd/{even} even data sets; all 10 card event/order classes enumerated')

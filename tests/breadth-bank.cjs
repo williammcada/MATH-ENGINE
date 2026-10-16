@@ -1,9 +1,11 @@
 'use strict';
 const assert=require('node:assert/strict'),E=require('../src/course-banks.js'),B=require('../src/breadth-bank.js'),H=require('../src/graph-svg.js');
-const get=(recipe,index=0)=>E.generate(B.catalog.find(x=>x.recipe===recipe).sourceId,{seed:'boundaries',index}),yes=(q,a)=>assert.equal(E.checkAnswer(q,a).answerCorrect,true,a),no=(q,a)=>assert.equal(E.checkAnswer(q,a).answerCorrect,false,a);
-for(const c of B.catalog){for(let i=0;i<20;i++){const q=E.generate(c.sourceId,{seed:'contracts',index:i});yes(q,E.answerText(q));no(q,'');no(q,'<script>alert(1)</script>');no(q,'1;2;3;4;5;6;7;8;9');assert.ok(Object.isFrozen(q.givens.parameters));assert.equal(E.checkAnswer(q,E.answerText(q)).fullOutcomeVerified,false);}}
-let q=get('scientific-normalize'),[a,n]=E.answerText(q).split(';').map(Number);no(q,`${a*10};${n-1}`);no(q,`${a};${n}.0`);no(q,`${a};${n};0`);
-q=get('prime-factorization');no(q,q.givens.parameters.n);yes(q,E.answerText(q).replace(/ × /g,'*'));no(q,'1*'+E.answerText(q));no(q,'2^0*'+E.answerText(q));
+// Boundary checks use entries still served by the breadth family; Algebra 1 port tasks now serve some records (requests R1 and R3, 2026-10-16).
+const served=new Set(E.catalog.filter(c=>c.family==='structured-breadth').map(c=>c.sourceId));
+const get=(recipe,index=0)=>E.generate(B.catalog.find(x=>x.recipe===recipe&&served.has(x.sourceId)).sourceId,{seed:'boundaries',index}),yes=(q,a)=>assert.equal(E.checkAnswer(q,a).answerCorrect,true,a),no=(q,a)=>assert.equal(E.checkAnswer(q,a).answerCorrect,false,a);
+for(const c of B.catalog.filter(x=>served.has(x.sourceId))){for(let i=0;i<20;i++){const q=E.generate(c.sourceId,{seed:'contracts',index:i});yes(q,E.answerText(q));no(q,'');no(q,'<script>alert(1)</script>');no(q,'1;2;3;4;5;6;7;8;9');assert.ok(Object.isFrozen(q.givens.parameters));assert.equal(E.checkAnswer(q,E.answerText(q)).fullOutcomeVerified,false);}}
+// scientific-normalize: its only entry (algebra-1-en:node:742) is now an Algebra 1 port task, audited by tests/port-algebra-1.cjs.
+let q=get('prime-factorization');no(q,q.givens.parameters.n);yes(q,E.answerText(q).replace(/ × /g,'*'));no(q,'1*'+E.answerText(q));no(q,'2^0*'+E.answerText(q));
 q=get('repeating-fraction');const r=q.answer.values[0];no(q,`${2*Number(r.numerator)}/${2*Number(r.denominator)}`);no(q,Number(r.numerator)/Number(r.denominator));
 q=get('factor-trinomial');yes(q,E.answerText(q).split(';').reverse().join(';'));const cs=q.answer.values.map(v=>Number(v.numerator)/Number(v.denominator));if(cs[0]+cs[1]!==0)no(q,cs.map(x=>-x).join(';'));
 q=get('set-union');yes(q,'{'+[...q.answer.values].reverse().join(',')+'}');no(q,'{'+[...q.answer.values,q.answer.values[0]].join(',')+'}');no(q,'{'+q.answer.values.join(',')+',999}');

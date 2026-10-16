@@ -1,0 +1,459 @@
+{
+ "batch": "A1-6 algebra-1 lessons 43-53",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "algebra-1-en:node:474",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:474"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:475",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:475"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Free response by default; distractors are the product, the smallest number and the sum or a slip."
+  },
+  {
+   "id": "algebra-1-en:node:477",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:477"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:478",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:478"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:479",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:479"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:480",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:480"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:483",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:483"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. The answer is one fraction over the least common denominator; the numerator is checked term by term, the denominator in any equivalent form (for example factored)."
+  },
+  {
+   "id": "algebra-1-en:node:484",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:484"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:486",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:486"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:487",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:487"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:488",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:488"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:489",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:489"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:490",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:490"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:496",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:496"
+   ],
+   "note": "Reviewed against the source: the existing statistics adaptation (mean-from-total) asks the same thing in the same response form with the source's ranges (four numbers from 80.1 to 250.1, their sum and two of them given, the mean asked). Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:497",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:497"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Free response by default; the distractors are the other statistics and the range."
+  },
+  {
+   "id": "algebra-1-en:node:500",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:500"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed drawing with a rubric (shading between the numbers only, open and closed circles)."
+  },
+  {
+   "id": "algebra-1-en:node:501",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:501"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The conjunction may be written as one compound inequality or as two joined by \"and\"."
+  },
+  {
+   "id": "algebra-1-en:node:502",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:502"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The four graphs are shown as labelled number lines (a)-(d); the response is the letter."
+  },
+  {
+   "id": "algebra-1-en:node:505",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:505"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. A percent sign is accepted."
+  },
+  {
+   "id": "algebra-1-en:node:506",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:506"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:507",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:506",
+   "note": "Choice-only twin of node:506 (same ranges and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "algebra-1-en:node:509",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:509"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:510",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:510"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:514",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:514"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:515",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:515"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:517",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:517"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. The source asks for descending order; the checker requires the terms in descending degree."
+  },
+  {
+   "id": "algebra-1-en:node:518",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:518"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:519",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:519"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:520",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:520"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:521",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:521"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:524",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:524"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:525",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:525"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:526",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:526"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:527",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:527"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:532",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:532"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed graph with a rubric, as in the 8/7 ports."
+  },
+  {
+   "id": "algebra-1-en:node:533",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:533"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The four graphs are shown as labelled coordinate planes; the response is the letter."
+  },
+  {
+   "id": "algebra-1-en:node:536",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:536"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed graph with a rubric."
+  },
+  {
+   "id": "algebra-1-en:node:537",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:537"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed graph with a rubric."
+  },
+  {
+   "id": "algebra-1-en:node:538",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:538"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The four graphs are shown as labelled coordinate planes; the response is the letter."
+  },
+  {
+   "id": "algebra-1-en:node:540",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:540"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Teacher-reviewed graph with a rubric."
+  },
+  {
+   "id": "algebra-1-en:node:541",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:541"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. Three graphs are shown as labelled coordinate planes, with (d) \"none of these\"; the response is the letter."
+  },
+  {
+   "id": "algebra-1-en:node:544",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:544"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:545",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:545"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. U-04: when the second denominator is x, the source key drops the sign of the y term when the binomial is x − y; the port's key gives the correct numerator."
+  },
+  {
+   "id": "algebra-1-en:node:546",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:546"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:547",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:547"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:548",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:548"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:549",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:549"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:553",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:553"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Distractors: an arithmetic slip, the average of the two averages, and the new average itself."
+  },
+  {
+   "id": "algebra-1-en:node:556",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:556"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:557",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:557"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:558",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:558"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. A number over a monomial; the fraction is in lowest terms."
+  },
+  {
+   "id": "algebra-1-en:node:559",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:559"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:560",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:560"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:561",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:561"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Free response by default; the distractors put powers on the wrong side of the fraction bar."
+  },
+  {
+   "id": "algebra-1-en:node:563",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:563"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:564",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:564"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. U-04: the source converts kilometers with (100) where (1000) is needed; the port uses (1000)³."
+  },
+  {
+   "id": "algebra-1-en:node:565",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:563",
+   "note": "Choice-only twin of node:563 (same conversions and ranges). Served by that task."
+  }
+ ]
+}

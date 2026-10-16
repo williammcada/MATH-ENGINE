@@ -460,7 +460,6 @@
           "@/course-1-en:bank:C1_Section07:item:C1_S07_00056"
         ],
         "sourceIds": [
-          "algebra-1-en:node:4",
           "course-87-en:authored:MCADA-23.1",
           "course-87-en:authored:MCADA-23.2",
           "intermediate-4-en:authored:M2-4816384d7b52-1",
@@ -493,7 +492,8 @@
           "course-1-en:bank:C1_Section06:item:C1_S06_00103",
           "course-1-en:bank:C1_Section07:item:C1_S07_00002",
           "course-1-en:bank:C1_Section07:item:C1_S07_00032",
-          "course-1-en:bank:C1_Section07:item:C1_S07_00056"
+          "course-1-en:bank:C1_Section07:item:C1_S07_00056",
+          "algebra-1-en:node:4"
         ]
       }
     ],
@@ -1122,9 +1122,7 @@
           "course-1-en:bank:C1_Section11:item:C1_S11_00060",
           "course-1-en:bank:C1_Section11:item:C1_S11_00074",
           "algebra-1-en:node:302",
-          "algebra-1-en:node:316",
           "algebra-half-en:node:413",
-          "algebra-half-en:node:415",
           "algebra-half-en:node:532",
           "course-87-en:authored:MCADA-93.1",
           "intermediate-4-en:authored:M2-4078157a9e82-2",
@@ -1142,7 +1140,9 @@
           "course-87-en:item:SN870516",
           "course-87-en:item:SN870519",
           "course-1-en:bank:C1_Section11:item:C1_S11_00028",
-          "course-1-en:bank:C1_Section11:item:C1_S11_00029"
+          "course-1-en:bank:C1_Section11:item:C1_S11_00029",
+          "algebra-half-en:node:415",
+          "algebra-1-en:node:316"
         ]
       },
       {
@@ -1320,9 +1320,9 @@
         ],
         "sourceIds": [
           "algebra-1-en:node:928",
-          "algebra-1-en:node:930",
           "algebra-1-en:authored:M4-78-1",
-          "algebra-2-en:authored:M6-24-2"
+          "algebra-2-en:authored:M6-24-2",
+          "algebra-1-en:node:930"
         ]
       },
       {
@@ -1334,8 +1334,8 @@
           "=/algebra-1-en:node:929"
         ],
         "sourceIds": [
-          "algebra-1-en:node:929",
-          "algebra-1-en:authored:M4-103-1"
+          "algebra-1-en:authored:M4-103-1",
+          "algebra-1-en:node:929"
         ]
       },
       {
@@ -1952,17 +1952,18 @@
         "prerequisites": "Weight each group by its size",
         "selectors": [
           "c/55.3",
-          "s/weighted-scores",
+          "@/algebra-1-en:node:661",
           "k/combined-average",
           "k/wage-average"
         ],
         "sourceIds": [
-          "algebra-1-en:node:661",
           "course-87-en:authored:MCADA-55.3",
           "algebra-half-en:authored:M3-41-1",
           "algebra-1-en:authored:M4-65-2",
           "course-87-en:item:SX870283",
-          "course-87-en:item:SX870286"
+          "course-87-en:item:SX870286",
+          "algebra-1-en:node:663",
+          "algebra-1-en:node:661"
         ]
       }
     ],
@@ -2079,7 +2080,7 @@
         "prerequisites": "Repeated multiplication",
         "selectors": [
           "c/20.3",
-          "b/positive-power",
+          "@/algebra-1-en:node:242",
           "f/power-small",
           "k/power-sum",
           "k/power-difference",
@@ -2092,7 +2093,6 @@
           "@/course-1-en:bank:C1_Section10:item:C1_S10_00017"
         ],
         "sourceIds": [
-          "algebra-1-en:node:242",
           "course-87-en:authored:MCADA-20.3",
           "intermediate-4-en:authored:M2-da9ae5ae90fd-3",
           "intermediate-4-en:authored:M2-8df152eb5a39-2",
@@ -2116,7 +2116,9 @@
           "course-1-en:bank:C1_Section10:item:C1_S10_00040",
           "course-1-en:bank:C1_Section10:item:C1_S10_00016",
           "course-1-en:bank:C1_Section10:item:C1_S10_00017",
-          "course-1-en:bank:C1_Section10:item:C1_S10_00069"
+          "course-1-en:bank:C1_Section10:item:C1_S10_00069",
+          "algebra-1-en:node:243",
+          "algebra-1-en:node:242"
         ]
       },
       {
@@ -2378,9 +2380,9 @@
         ],
         "sourceIds": [
           "algebra-2-en:node:228",
-          "algebra-1-en:node:690",
           "algebra-1-en:authored:M4-69-1",
-          "algebra-2-en:authored:M6-26-1"
+          "algebra-2-en:authored:M6-26-1",
+          "algebra-1-en:node:690"
         ]
       },
       {
@@ -2458,9 +2460,9 @@
         ],
         "sourceIds": [
           "algebra-2-en:node:159",
-          "algebra-1-en:node:820",
           "algebra-1-en:authored:M4-86-1",
-          "algebra-2-en:authored:M6-16-2"
+          "algebra-2-en:authored:M6-16-2",
+          "algebra-1-en:node:820"
         ]
       },
       {
@@ -2631,14 +2633,14 @@
           "k/slope"
         ],
         "sourceIds": [
-          "algebra-1-en:node:905",
           "course-87-en:authored:COURSE107.1",
           "algebra-half-en:authored:M3-209-1",
           "algebra-half-en:authored:M3-209-3",
           "algebra-1-en:authored:M4-98-2",
           "course-87-en:item:SN870687",
           "course-87-en:item:SN870685",
-          "course-87-en:item:SN870686"
+          "course-87-en:item:SN870686",
+          "algebra-1-en:node:905"
         ]
       },
       {
@@ -2650,10 +2652,10 @@
           "=/algebra-1-en:node:948"
         ],
         "sourceIds": [
-          "algebra-1-en:node:948",
           "algebra-1-en:authored:M4-106-1",
           "algebra-2-en:authored:M6-12-2",
-          "algebra-2-en:authored:M6-14-1"
+          "algebra-2-en:authored:M6-14-1",
+          "algebra-1-en:node:948"
         ]
       }
     ],
@@ -8213,16 +8215,17 @@
         "selectors": [
           "c/105.4",
           "c/COURSE109.2",
-          "b/cube-root",
+          "@/algebra-1-en:node:250",
           "k/roots-more"
         ],
         "sourceIds": [
-          "algebra-1-en:node:250",
           "course-87-en:authored:MCADA-105.4",
           "course-87-en:authored:COURSE109.2",
           "course-87-en:item:SX870456",
           "course-87-en:item:SN870659",
-          "course-87-en:item:SN870660"
+          "course-87-en:item:SN870660",
+          "algebra-1-en:node:253",
+          "algebra-1-en:node:250"
         ]
       }
     ],
@@ -9340,11 +9343,11 @@
           "=/algebra-1-en:node:570"
         ],
         "sourceIds": [
-          "algebra-1-en:node:570",
           "algebra-1-en:authored:M4-54-1",
           "algebra-1-en:authored:M4-59-1",
           "algebra-2-en:authored:M6-13-1",
-          "algebra-2-en:authored:M6-97-1"
+          "algebra-2-en:authored:M6-97-1",
+          "algebra-1-en:node:570"
         ]
       },
       {
@@ -9526,11 +9529,11 @@
           "=/algebra-1-en:node:955"
         ],
         "sourceIds": [
-          "algebra-1-en:node:955",
           "algebra-1-en:authored:M4-75-1",
           "algebra-1-en:authored:M4-107-2",
           "algebra-2-en:authored:M6-12-1",
-          "algebra-2-en:authored:M6-87-1"
+          "algebra-2-en:authored:M6-87-1",
+          "algebra-1-en:node:955"
         ]
       },
       {
@@ -9542,10 +9545,10 @@
           "=/algebra-1-en:node:948"
         ],
         "sourceIds": [
-          "algebra-1-en:node:948",
           "algebra-1-en:authored:M4-106-1",
           "algebra-2-en:authored:M6-12-2",
-          "algebra-2-en:authored:M6-14-1"
+          "algebra-2-en:authored:M6-14-1",
+          "algebra-1-en:node:948"
         ]
       }
     ],
@@ -10030,18 +10033,19 @@
         "demand": "Find a combined mean from group means and counts",
         "prerequisites": "Weight means by their group sizes",
         "selectors": [
-          "s/weighted-scores",
+          "@/algebra-1-en:node:661",
           "c/55.3",
           "k/combined-average",
           "k/wage-average"
         ],
         "sourceIds": [
-          "algebra-1-en:node:661",
           "course-87-en:authored:MCADA-55.3",
           "algebra-half-en:authored:M3-41-1",
           "algebra-1-en:authored:M4-65-2",
           "course-87-en:item:SX870283",
-          "course-87-en:item:SX870286"
+          "course-87-en:item:SX870286",
+          "algebra-1-en:node:663",
+          "algebra-1-en:node:661"
         ]
       },
       {
@@ -10795,9 +10799,9 @@
           "@/algebra-half-en:node:4"
         ],
         "sourceIds": [
-          "algebra-half-en:node:4",
           "intermediate-4-en:authored:M2-0faa8be94286-1",
-          "course-1-en:authored:M2-d8536a67a44d-1"
+          "course-1-en:authored:M2-d8536a67a44d-1",
+          "algebra-half-en:node:4"
         ]
       }
     ],
@@ -11580,7 +11584,6 @@
           "@/course-1-en:bank:C1_Section02:item:C1_S02_00068"
         ],
         "sourceIds": [
-          "algebra-1-en:node:376",
           "algebra-half-en:node:121",
           "course-87-en:item:SX870082",
           "course-87-en:item:SN870168",
@@ -11643,14 +11646,15 @@
         "demand": "Normalize a nonstandard scientific expression",
         "prerequisites": "Generator includes both exponent signs; not solely a small-number task",
         "selectors": [
-          "b/scientific-normalize",
+          "@/algebra-1-en:node:742",
           "k/sci-renormalize"
         ],
         "sourceIds": [
-          "algebra-1-en:node:742",
           "course-87-en:item:SX870337",
           "course-87-en:item:SN870384",
-          "course-87-en:item:SN870386"
+          "course-87-en:item:SN870386",
+          "algebra-1-en:node:741",
+          "algebra-1-en:node:742"
         ]
       }
     ],
@@ -13583,7 +13587,6 @@
           "@/course-1-en:bank:C1_Section05:item:C1_S05_00115"
         ],
         "sourceIds": [
-          "algebra-1-en:node:293",
           "algebra-half-en:node:276",
           "algebra-half-en:node:277",
           "course-87-en:item:SX870378",
@@ -13600,7 +13603,8 @@
           "course-1-en:bank:C1_Section05:item:C1_S05_00005",
           "course-1-en:bank:C1_Section05:item:C1_S05_00022",
           "course-1-en:bank:C1_Section05:item:C1_S05_00023",
-          "course-1-en:bank:C1_Section05:item:C1_S05_00115"
+          "course-1-en:bank:C1_Section05:item:C1_S05_00115",
+          "algebra-1-en:node:293"
         ]
       },
       {
@@ -13615,9 +13619,9 @@
         ],
         "sourceIds": [
           "algebra-1-en:node:303",
-          "algebra-1-en:node:304",
           "algebra-half-en:node:414",
-          "algebra-half-en:node:533"
+          "algebra-half-en:node:533",
+          "algebra-1-en:node:304"
         ]
       }
     ],
@@ -13695,13 +13699,13 @@
         ],
         "sourceIds": [
           "algebra-1-en:node:354",
-          "algebra-1-en:node:355",
           "algebra-1-en:node:356",
-          "algebra-1-en:node:362",
           "course-87-en:item:SN870627",
           "course-87-en:item:SN870626",
           "course-87-en:item:SN870635",
-          "course-87-en:item:SN870629"
+          "course-87-en:item:SN870629",
+          "algebra-1-en:node:355",
+          "algebra-1-en:node:362"
         ]
       }
     ],
@@ -13723,10 +13727,10 @@
           "=/algebra-2-en:node:209"
         ],
         "sourceIds": [
+          "algebra-2-en:node:209",
           "algebra-1-en:node:768",
           "algebra-1-en:node:769",
-          "algebra-1-en:node:770",
-          "algebra-2-en:node:209"
+          "algebra-1-en:node:770"
         ]
       },
       {
@@ -13738,8 +13742,8 @@
           "=/algebra-2-en:node:210"
         ],
         "sourceIds": [
-          "algebra-1-en:node:771",
-          "algebra-2-en:node:210"
+          "algebra-2-en:node:210",
+          "algebra-1-en:node:771"
         ]
       }
     ],
@@ -15879,13 +15883,13 @@
           "=/algebra-1-en:node:661"
         ],
         "sourceIds": [
-          "algebra-1-en:node:551",
-          "algebra-1-en:node:661",
           "algebra-1-en:node:662",
           "algebra-1-en:authored:M4-52-2",
           "algebra-1-en:authored:M4-65-2",
           "course-87-en:item:SX870283",
-          "course-87-en:item:SX870286"
+          "course-87-en:item:SX870286",
+          "algebra-1-en:node:551",
+          "algebra-1-en:node:661"
         ]
       },
       {
@@ -15917,8 +15921,8 @@
           "=/algebra-1-en:node:551"
         ],
         "sourceIds": [
-          "algebra-1-en:node:551",
-          "algebra-1-en:authored:M4-52-2"
+          "algebra-1-en:authored:M4-52-2",
+          "algebra-1-en:node:551"
         ]
       },
       {
@@ -15970,9 +15974,6 @@
           "@/course-1-en:bank:C1_Section05:item:C1_S05_00065"
         ],
         "sourceIds": [
-          "algebra-1-en:node:493",
-          "algebra-1-en:node:494",
-          "algebra-1-en:node:495",
           "intermediate-4-en:authored:M2-4a7871efe9f0-1",
           "algebra-1-en:authored:M4-45-1",
           "course-1-en:bank:C1_Section05:item:C1_S05_00017",
@@ -15980,7 +15981,10 @@
           "course-1-en:bank:C1_Section05:item:C1_S05_00065",
           "course-1-en:bank:C1_Section05:item:C1_S05_00062",
           "course-1-en:bank:C1_Section05:item:C1_S05_00063",
-          "course-1-en:bank:C1_Section05:item:C1_S05_00064"
+          "course-1-en:bank:C1_Section05:item:C1_S05_00064",
+          "algebra-1-en:node:493",
+          "algebra-1-en:node:494",
+          "algebra-1-en:node:495"
         ]
       },
       {
@@ -16132,8 +16136,8 @@
         ],
         "sourceIds": [
           "algebra-half-en:node:701",
-          "algebra-1-en:node:735",
-          "algebra-1-en:authored:M4-73-2"
+          "algebra-1-en:authored:M4-73-2",
+          "algebra-1-en:node:735"
         ]
       },
       {
@@ -17000,11 +17004,11 @@
         ],
         "sourceIds": [
           "algebra-2-en:node:119",
-          "algebra-1-en:node:752",
           "course-87-en:item:SN870766",
           "course-87-en:item:SN870767",
           "course-87-en:item:SN870768",
-          "course-87-en:item:SN870761"
+          "course-87-en:item:SN870761",
+          "algebra-1-en:node:752"
         ]
       },
       {
@@ -19163,9 +19167,9 @@
         ],
         "sourceIds": [
           "algebra-2-en:node:57",
-          "algebra-1-en:node:242",
           "course-87-en:authored:MCADA-57.1",
-          "algebra-half-en:authored:M3-106-2"
+          "algebra-half-en:authored:M3-106-2",
+          "algebra-1-en:node:242"
         ]
       }
     ],
@@ -19525,10 +19529,10 @@
           "=/course-87-en:authored:MCADA-20.3"
         ],
         "sourceIds": [
-          "algebra-1-en:node:242",
           "course-87-en:authored:MCADA-20.3",
           "course-1-en:authored:M2-e40d641cb9a0-2",
-          "algebra-half-en:authored:M3-16-3"
+          "algebra-half-en:authored:M3-16-3",
+          "algebra-1-en:node:242"
         ]
       }
     ],

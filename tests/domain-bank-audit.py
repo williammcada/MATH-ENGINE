@@ -49,5 +49,7 @@ for line in p.stdout:
   if check['accepted']:assert frac(check['left'])==left(x) and frac(check['right'])==right(x)
  assert {frac(r['candidate']) for r in g['checks']}==candidates
  empty+=not got;two+=len(got)==2;extra+=len(candidates-got);count+=1;seen.add(q['sourceId'])
-assert p.wait()==0 and len(seen)==6 and count==18000 and empty>0 and two>0 and extra>0
+# Served by Algebra 1 port tasks instead (owner-approved request R5, 2026-10-16): algebra-1-en:node:929 (three-fractions), 930 (cross-products)
+# and 960 (root-substitution, the only entry with two solutions).
+assert p.wait()==0 and len(seen)==3 and count==9000 and empty>0 and extra>0
 print(json.dumps({'passed':True,'sourceMappings':6,'independentChecks':count,'noSolutionCases':empty,'twoSolutionCases':two,'rejectedCandidates':extra}))

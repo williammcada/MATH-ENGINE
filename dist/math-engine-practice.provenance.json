@@ -1,10 +1,10 @@
 {
   "module": "dist/math-engine-practice.js",
-  "engineVersion": "0.34.0-rc.3",
+  "engineVersion": "0.63.0",
   "bankVersion": "0.33.0-rc.1",
   "k7Version": "megaman-v0.7",
-  "bundleSha256": "d36ac4a83f23bb22c923736ebbb3499b47917a45022d3ea6d5688f1cf0083f8e",
-  "contentHash": "c70ed6261be50034ff22a909194ce05a",
+  "bundleSha256": "b79c4eae4ea31489159b9e7a5ca69c6f6e3ebd16373949095069e032bbc7f865",
+  "contentHash": "4c46d4bdd9c86d8e1ff530eba0bfd847",
   "baseline": "baselines/megaman-v0.7/shared-math.js",
   "baselineSha256": "78841274e50b07c6640913bb84fdd821247ed47030b575feb27760d35fcff1a0",
   "sources": [
@@ -90,12 +90,18 @@
     "src/curriculum87-assessment-map.js",
     "src/k7-skills.js",
     "src/practice-index.js",
-    "src/continuity-skills.js"
+    "src/continuity-skills.js",
+    "src/answer-pad.js",
+    "src/answer-shape.js"
   ],
+  "gameExcluded": {
+    "teacher-reviewed": 861,
+    "multi-part": 464
+  },
   "catalog": {
-    "total": 2879,
+    "total": 3476,
     "k7": 312,
-    "bank": 2557,
+    "bank": 3154,
     "continuity": 10
   }
 }

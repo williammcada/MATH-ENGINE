@@ -1,3 +1,15 @@
+## Current checkpoint — Engine 0.37.0-rc.1 implementation checkpoint (2026-10-16)
+
+Games now receive only questions with one discrete answer. `src/answer-shape.js` tags bank entries whose answer is several parts (lists, every solution, set members, "a; n"); 283 are tagged and removed from the game index (bank game entries 1,441 → 1,158). Tags are recorded in `curriculum/answer-shape/v0.1/answer-shape.json`; Studio packets are unaffected. Hosts can call `gameExclusion(id)` to prune saved selections. MathQuest and Math Arcade get this only when each syncs. See [change spec](change-specs/v0.37.0-single-answer-games.md) and [verification](verification/single-answer-games-v0.37.0.md). Not yet a verified release. Handbook consulted: v0.1.12 `9d9c80f`.
+
+## Previous checkpoint — Engine 0.36.0-rc.1 implementation checkpoint (2026-10-15)
+
+The Engine now owns the one universal answer pad (handbook U-18, approved 2026-10-15; U-14 amended so the Engine owns the pad). `src/answer-pad.js` holds the two-tab pad (123 first, Algebra second). Every keypad question carries the same full key list, so keys no longer depend on, or give away, the answer. Pad-typed answers (−, √, ×, R, AM/PM) are accepted. Algebra radical items moved from a text box to the pad. Practice, main and phase-2 tests pass; browser check passed; physical iPad Not run. MathQuest and Math Arcade still draw their own pads until they migrate. See [change spec](change-specs/v0.36.0-answer-pad.md) and [verification](verification/answer-pad-v0.36.0.md). Not yet a verified release. Handbook consulted: v0.1.12 `9d9c80f`.
+
+## Previous checkpoint — Engine 0.35.0-rc.1 implementation checkpoint (2026-10-15)
+
+Practice catalog entries now carry their recorded standards (228 of 1,441 bank entries, all 8/7), and 8/7 Lesson 9.6 no longer produces negative or zero answers. Practice-layer, main and phase-2 tests pass; Math Arcade v0.9.0 pins this bundle. See [change spec](change-specs/v0.35.0-practice-standards.md). Not yet a verified release. Earlier checkpoints below are historical.
+
 ## Current checkpoint — Related Concepts verified (2026-10-09)
 
 Engine 0.33.0-rc.1 / Studio 0.35.0-rc.1 maps all 2,184 working entries across Grade 3 through Algebra 2. The teacher finder supports concept search, course filters, explained connections, repeated-generator grouping and batch selection into existing packets. All 331 Grade 5 codes and prior progression relationships remain.
@@ -215,3 +227,7 @@ U-01–U-08 are seeded guidance, not globally ratified rules. Apply relevant mat
 ## Release workflow
 DESIGN → CHANGE SPEC → IMPLEMENT → CHECKPOINT → VERIFY → VERIFIED CHECKPOINT → RELEASE → DEPLOY.
 This commit documents design only. No executable implementation, verified release or deployment is claimed. Preserve the exact source before extended testing and the exact candidate that passes. Packaging failures must recover that candidate.
+
+## v0.63.0 (2026-10-16)
+
+Release that brings the parallel-course work onto `main`: the course setup, Algebra 1 (all 679 records decided; requests R1–R5 integrated) and Algebra 1/2, merged with v0.36.0's universal answer pad and v0.37.0's single-answer games. Bank answers are now checked on the pad-normalized answer and, if that fails, as typed (so ÷ answers work). Intermediate 4 follows in a later release. Verification: `docs/verification/v0.63.0-release-verify.md`.
