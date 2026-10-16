@@ -672,6 +672,74 @@ TASKS_I4 = [
     _t('TX4_S08_00052', 'i4-weight', 'scale', 'Read a scale in grams', 'measurement'),
     _t('TX4_S08_00053', 'i4-weight', 'heaviest', 'Which unit weighs the most', 'measurement'),
     _t('TX4_S08_00054', 'i4-weight', 'reasonable', 'A reasonable weight for an object', 'measurement'),
+    # Batch I4-12: Lessons 78-80, Investigation 8, Lessons 81-89
+    # Lesson 78: Classifying Triangles
+    _t('TX4_S08_00066', 'i4-tri-class', 'pick', 'Which triangle is scalene, equilateral or isosceles', 'geometry-properties'),
+    _t('TX4_S08_00004', 'i4-tri-class', 'pair', 'Classify a triangle by sides and angles', 'geometry-properties'),
+    _t('TX4_S08_00041', 'i4-tri-class', 'angles', 'Classify a triangle by its angles', 'geometry-properties'),
+    _t('TX4_S08_00042', 'i4-tri-class', 'blank', 'The word for a kind of triangle', 'geometry-properties'),
+    # Lesson 79: Symmetry
+    _t('TX4_S08_00068', 'i4-symmetry', 'letter-pick', 'Which letter has no line of symmetry', 'geometry-properties'),
+    _t('TX4_S08_00044', 'i4-symmetry', 'letter-yn', 'Does a letter have a line of symmetry', 'geometry-properties'),
+    _t('TX4_S08_00003', 'i4-symmetry', 'shape-pick', 'Which figure has no line of symmetry', 'geometry-properties'),
+    _t('TX4_S08_00091', 'i4-symmetry', 'draw', 'Draw a figure and its line of symmetry', 'geometry-properties'),
+    # Lesson 80: Division with Zeros in Three-Digit Answers
+    _t('TX4_S08_00069', 'i4-div-zero', 'money', 'Divide money with a zero in the answer', 'decimal-arithmetic'),
+    _t('TX4_S08_00070', 'i4-div-zero', 'zero-middle', 'A zero in the middle of the quotient', 'whole-arithmetic'),
+    _t('TX4_S08_00012', 'i4-div-zero', 'zero-end', 'A zero at the end of a three-digit quotient', 'whole-arithmetic'),
+    _t('TX4_S08_00002', 'i4-div-zero', 'zero-rem', 'A quotient ending in zero, with a remainder', 'whole-arithmetic'),
+    _t('TX4_S08_00085', 'i4-div-zero', 'power', 'Divide by a square', 'powers-roots'),
+    # Investigation 8: Analyzing and Graphing Relationships
+    _t('TX4_S08_00001', 'i4-graph2', 'extend', 'Continue a pattern in a table', 'sequences'),
+    _t('TX4_S08_00049', 'i4-graph2', 'point', 'The letter at an ordered pair', 'number-representation'),
+    _t('TX4_S08_00051', 'i4-graph2', 'graph-pick', 'Which graph shows letters and their positions', 'statistics'),
+    _t('TX4_S08_00048', 'i4-graph2', 'trend', 'Graph pairs and describe the trend', 'statistics'),
+    _t('TX4_S08_00058', 'i4-graph2', 'missing', 'Which data is missing from a chart', 'statistics'),
+    # Lesson 81: Angle Measures
+    _t('TX4_S09_00005', 'i4-angle-est', 'clock', 'The angle between clock hands and a time after a turn', 'angles'),
+    _t('TX4_S09_00034', 'i4-angle-est', 'clock-hand', 'Where the minute hand points after a turn', 'angles'),
+    _t('TX4_S09_00053', 'i4-angle-est', 'right-pick', 'Which angle is 90 degrees', 'angles'),
+    _t('TX4_S09_00035', 'i4-angle-est', 'estimate', 'Estimate an angle', 'angles'),
+    # Lesson 82: Tessellations
+    _t('TX4_S09_00012', 'i4-tessellate', 'pick', 'Which figure tessellates', 'geometry-properties'),
+    _t('TX4_S09_00036', 'i4-tessellate', 'yn', 'Does a figure tessellate', 'geometry-properties'),
+    # Lesson 83: Sales Tax
+    _t('TX4_S09_00011', 'i4-tax', 'tax', 'Sales tax from a rate in cents per dollar', 'decimal-arithmetic'),
+    _t('TX4_S09_00010', 'i4-tax', 'change', 'Change after a price and tax', 'decimal-arithmetic'),
+    _t('TX4_S09_00021', 'i4-tax', 'total', 'The total for several items and tax', 'decimal-arithmetic'),
+    _t('TX4_S09_00055', 'i4-tax', 'cost', 'A cost from a dollar and the change', 'decimal-arithmetic'),
+    _t('TX4_S09_00065', 'i4-tax', 'multi-change', 'Change for several items and tax', 'decimal-arithmetic'),
+    _t('TX4_S09_00080', 'i4-tax', 'two-part', 'Total price and change', 'decimal-arithmetic'),
+    # Lesson 84: Decimal Numbers to Thousandths
+    _t('TX4_S09_00009', 'i4-thousandths', 'pick', 'Thousandths as a decimal and in words', 'number-representation'),
+    _t('TX4_S09_00039', 'i4-thousandths', 'write', 'Write thousandths as a decimal and in words', 'number-representation'),
+    _t('TX4_S09_00067', 'i4-thousandths', 'to-dec', 'Thousandths as a decimal', 'number-representation'),
+    _t('TX4_S09_00068', 'i4-thousandths', 'to-frac', 'A decimal in thousandths as a fraction', 'number-representation'),
+    _t('TX4_S09_00041', 'i4-thousandths', 'frac-words', 'A decimal as a fraction and in words', 'number-representation'),
+    # Lesson 85: Multiplying by 10, by 100, and by 1000
+    _t('TX4_S09_00008', 'i4-times10', 'money1000', 'Money times 1000', 'decimal-arithmetic'),
+    _t('TX4_S09_00015', 'i4-times10', 'money10', 'Money times 10', 'decimal-arithmetic'),
+    _t('TX4_S09_00043', 'i4-times10', 'cents100', 'Cents times 100', 'decimal-arithmetic'),
+    _t('TX4_S09_00014', 'i4-times10', 'whole10', 'A whole number times 10', 'whole-arithmetic'),
+    _t('TX4_S09_00052', 'i4-times10', 'equiv', 'Which division equals another', 'whole-arithmetic'),
+    # Lesson 86: Multiplying Multiples of 10 and 100
+    _t('TX4_S09_00007', 'i4-mult-tens3', 'money', 'Tens times whole dollars', 'decimal-arithmetic'),
+    _t('TX4_S09_00024', 'i4-mult-tens3', 'hh', 'Hundreds times hundreds', 'whole-arithmetic'),
+    _t('TX4_S09_00022', 'i4-mult-tens3', 'ht', 'Multiples of 10 and 100', 'whole-arithmetic'),
+    # Lesson 87: Multiplying Two Two-Digit Numbers, Part 1
+    _t('TX4_S09_00006', 'i4-mult22', 'row', 'Multiply two two-digit numbers', 'whole-arithmetic'),
+    _t('TX4_S09_00026', 'i4-mult22', 'col', 'Multiply two two-digit numbers in a column', 'whole-arithmetic'),
+    # Lesson 88: Remainders in Word Problems About Equal Groups
+    _t('TX4_S09_00004', 'i4-rem-story', 'stacks', 'Full stacks, extras and a short stack', 'whole-arithmetic'),
+    _t('TX4_S09_00046', 'i4-rem-story', 'cars', 'Cars filled and cars needed', 'whole-arithmetic'),
+    _t('TX4_S09_00044', 'i4-rem-story', 'packages', 'Packages filled and left over', 'whole-arithmetic'),
+    _t('TX4_S09_00060', 'i4-rem-story', 'even-split', 'Groups as even as possible', 'whole-arithmetic'),
+    _t('TX4_S09_00075', 'i4-rem-story', 'no-ride', 'How many are left without a place', 'whole-arithmetic'),
+    # Lesson 89: Mixed Numbers and Improper Fractions
+    _t('TX4_S09_00003', 'i4-improper', 'pick', 'An improper fraction and a mixed number for shaded parts', 'fractions'),
+    _t('TX4_S09_00049', 'i4-improper', 'write', 'Write an improper fraction and a mixed number', 'fractions'),
+    _t('TX4_S09_00061', 'i4-improper', 'statement', 'What shaded circles show', 'fractions'),
+    _t('TX4_S09_00047', 'i4-improper', 'draw', 'Draw a mixed number and an improper fraction', 'fractions'),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -843,6 +911,19 @@ CONSOLIDATED_I4 = {
     'TX4_S08_00020': 'TX4_S08_00006', 'TX4_S08_00022': 'TX4_S08_00021', 'TX4_S08_00077': 'TX4_S08_00021', 'TX4_S08_00079': 'TX4_S08_00021',
     'TX4_S08_00080': 'TX4_S08_00023', 'TX4_S08_00081': 'TX4_S08_00024', 'TX4_S08_00025': 'TX4_S08_00005', 'TX4_S08_00028': 'TX4_S08_00026',
     'TX4_S08_00057': 'TX4_S08_00054', 'TX4_S08_00065': 'TX4_S08_00054', 'TX4_S08_00090': 'TX4_S08_00054', 'TX4_S08_00027': 'TX4_S08_00054',
+    # Batch I4-12
+    'TX4_S08_00067': 'TX4_S08_00066', 'TX4_S08_00043': 'TX4_S08_00004', 'TX4_S08_00046': 'TX4_S08_00003', 'TX4_S08_00092': 'TX4_S08_00091',
+    'TX4_S08_00045': 'TX4_S08_00091', 'TX4_S08_00083': 'TX4_S08_00069', 'TX4_S08_00086': 'TX4_S08_00069', 'TX4_S08_00082': 'TX4_S08_00070',
+    'TX4_S08_00084': 'TX4_S08_00012', 'TX4_S08_00013': 'TX4_S08_00012', 'TX4_S08_00047': 'TX4_S08_00002', 'TX4_S08_00050': 'TX4_S08_00001',
+    'TX4_S09_00033': 'TX4_S09_00005', 'TX4_S09_00054': 'TX4_S09_00053', 'TX4_S09_00037': 'TX4_S09_00036', 'TX4_S09_00038': 'TX4_S09_00036',
+    'TX4_S09_00020': 'TX4_S09_00011', 'TX4_S09_00016': 'TX4_S09_00010', 'TX4_S09_00017': 'TX4_S09_00010', 'TX4_S09_00018': 'TX4_S09_00010',
+    'TX4_S09_00056': 'TX4_S09_00010', 'TX4_S09_00019': 'TX4_S09_00021', 'TX4_S09_00064': 'TX4_S09_00055', 'TX4_S09_00066': 'TX4_S09_00065',
+    'TX4_S09_00040': 'TX4_S09_00039', 'TX4_S09_00042': 'TX4_S09_00041',
+    'TX4_S09_00057': 'TX4_S09_00015', 'TX4_S09_00059': 'TX4_S09_00015', 'TX4_S09_00070': 'TX4_S09_00015', 'TX4_S09_00069': 'TX4_S09_00014',
+    'TX4_S09_00058': 'TX4_S09_00022', 'TX4_S09_00023': 'TX4_S09_00007', 'TX4_S09_00071': 'TX4_S09_00022', 'TX4_S09_00072': 'TX4_S09_00022',
+    'TX4_S09_00073': 'TX4_S09_00022', 'TX4_S09_00074': 'TX4_S09_00022', 'TX4_S09_00027': 'TX4_S09_00006', 'TX4_S09_00025': 'TX4_S09_00026',
+    'TX4_S09_00045': 'TX4_S09_00004', 'TX4_S09_00081': 'TX4_S09_00060', 'TX4_S09_00082': 'TX4_S09_00060',
+    'TX4_S09_00048': 'TX4_S09_00003', 'TX4_S09_00083': 'TX4_S09_00047', 'TX4_S09_00084': 'TX4_S09_00047',
 }
 
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a

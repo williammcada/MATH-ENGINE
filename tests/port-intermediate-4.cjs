@@ -299,6 +299,31 @@ const oracle={
   if(v==='clock'){const t=((p.hh*60+p.m+p.delta)%720+720)%720;return E.checkAnswer(q,`${Math.floor(t/60)||12}:${String(t%60).padStart(2,'0')}`).answerCorrect;}if(v==='quarter'||v==='segment')return is(q,p.deg);return q.answer.kind==='teacher';},
  'i4-weight':(q,p)=>{const v=variantOf(q);if(v==='tons')return is(q,2000*p.t0);if(v==='ton-frac'){const [a,b]=p.f.split('/').map(Number);return is(q,2000*a/b);}if(v==='oz')return is(q,16*p.p);if(v==='nearest-lb')return is(q,Math.round((16*p.p+p.o)/16));
   if(v==='kg-g')return is(q,1000*p.k);if(v==='scale')return is(q,p.g);if(v==='heaviest')return key(q)===['ton','kilogram','pound','ounce'][p.k];return key(q)===['5 pounds','1 kilogram','4 tons','1 gram','2 ounces','70 kilograms','1500 kilograms','1 gram','25 pounds'][p.k];},
+ // Batch I4-12
+ 'i4-tri-class':(q,p)=>{const v=variantOf(q),K={equilateral:['equilateral','acute'],isosceles:['isosceles','acute'],scalene:['scalene','acute'],right:['scalene','right'],obtuse:['scalene','obtuse'],'right-iso':['isosceles','right'],'obtuse-iso':['isosceles','obtuse']};
+  if(v==='blank')return q.prompt.includes(key(q)==='equilateral'?'Three sides':key(q)==='isosceles'?'two sides':key(q)==='scalene'?'No two':key(q)==='right'?'90°':'greater than 90');
+  if(v==='pick'){const hits=p.shapes.map(x=>p.want==='isosceles'?['isosceles','equilateral'].includes(K[x][0]):K[x][0]===p.want);return hits.filter(Boolean).length===1&&key(q)==='ABCD'[hits.indexOf(true)];}
+  if(v==='angles')return key(q)===K[p.kk][1];return E.checkAnswer(q,`${K[p.kk][0]}; ${K[p.kk][1]}`).answerCorrect;},
+ 'i4-symmetry':(q,p)=>{const v=variantOf(q),Y='ADHWYMTUVXBCEO';if(v==='letter-pick')return p.opts.filter(x=>!Y.includes(x)).length===1&&!Y.includes(key(q));if(v==='letter-yn')return key(q)===(Y.includes(p.Lt)?'yes':'no');
+  if(v==='draw')return q.answer.kind==='teacher';const bad=['flag','bolt','blob','stair'];return p.shapes.filter(x=>bad.includes(x)).length===1&&key(q)==='ABCD'[p.shapes.findIndex(x=>bad.includes(x))];},
+ 'i4-div-zero':(q,p)=>{const v=variantOf(q);if(v==='money')return Math.round(numKey(q)*100)*p.d===p.n&&String(Math.round(numKey(q)*100)).includes('0');if(v==='power')return is(q,p.n/(p.a*p.a));
+  const qq=Math.floor(p.n/p.d),r=p.n%p.d;return String(qq).includes('0')&&(r?E.checkAnswer(q,`${qq} R ${r}`).answerCorrect:is(q,qq));},
+ 'i4-graph2':(q,p)=>{const v=variantOf(q);if(v==='point'){const pt=p.pts[p.k];return key(q)===pt[0]&&q.prompt.includes(`(${pt[1]}, ${pt[2]})`);}if(v==='extend')return is(q,p.d1+(p.ask-1)*p.inc);
+  if(v==='graph-pick')return key(q)==='ABCD'[p.k];if(v==='missing')return is(q,p.miss)&&!q.givens.svg.includes('#'+p.miss+' ')&&!new RegExp('#'+p.miss+'<').test(q.givens.svg);return q.answer.kind==='teacher';},
+ 'i4-angle-est':(q,p)=>{const v=variantOf(q);if(v==='right-pick')return key(q)==='ABCD'[p.degs.indexOf(90)];if(v==='clock-hand')return is(q,((p.st%12)+p.deg/30)%12||12);if(v==='estimate')return E.checkAnswer(q,String(p.d+10)).answerCorrect&&!E.checkAnswer(q,String(p.d+20)).answerCorrect;
+  const deg=30*Math.min(p.hh%12,12-p.hh%12),t=((p.hh*60-p.mv/6)%720+720)%720;return E.checkAnswer(q,`${deg}; ${Math.floor(t/60)||12}:${String(t%60).padStart(2,'0')}`).answerCorrect;},
+ 'i4-tessellate':(q,p)=>{const yes=['square','equilateral triangle','regular hexagon','rectangle'];if(variantOf(q)==='pick')return key(q)==='ABCD'[p.opts.findIndex(o=>yes.includes(o))];return key(q)===(yes.includes(p.nm)?'yes':'no');},
+ 'i4-tax':(q,p)=>{const v=variantOf(q),c=Math.round(numKey(q)*100);if(v==='tax')return c===p.p*p.r;if(v==='cost')return c===100-p.c;if(v==='total')return c===p.k*p.u+p.tax;if(v==='multi-change')return c===p.pay-p.k*p.u-p.tax;
+  if(v==='two-part'){const tot=p.k*p.u+p.tax;return E.checkAnswer(q,`${tot/100}; ${(2000-tot)/100}`).answerCorrect;}return c===p.pay-p.c-p.tax;},
+ 'i4-thousandths':(q,p)=>{const v=variantOf(q);if(v==='to-dec')return Math.round(Number(key(q))*1000)===p.n;if(v==='to-frac')return E.checkAnswer(q,`${2*p.n}/2000`).answerCorrect;
+  const words=(p.w?`${WORDS(p.w)} and `:'')+WORDS(p.n)+(p.n===1?' thousandth':' thousandths');return E.checkAnswer(q,`${v==='frac-words'?(p.w?p.w+' ':'')+p.n+'/1000':(p.w+p.n/1000).toFixed(3)}; ${words}`).answerCorrect;},
+ 'i4-times10':(q,p)=>{const v=variantOf(q);if(v==='equiv')return key(q)==='ABCD'[p.ord.indexOf(0)];if(v==='cents100')return is(q,p.c);if(v==='whole10')return is(q,10*p.n);return Math.round(numKey(q)*100)===p.c*p.k;},
+ 'i4-mult-tens3':(q,p)=>variantOf(q)==='money'?Math.round(numKey(q))===p.a*p.b:is(q,p.a*p.b),
+ 'i4-mult22':(q,p)=>is(q,p.a*p.b),
+ 'i4-rem-story':(q,p)=>{const v=variantOf(q);if(v==='stacks'){const g=Math.floor(p.n/p.s0);return E.checkAnswer(q,`${g}; ${p.n%p.s0}; ${g+1}`).answerCorrect;}if(v==='cars'){const g=Math.floor(p.n/p.s0);return E.checkAnswer(q,`${g}; ${g+1}`).answerCorrect;}
+  if(v==='packages')return E.checkAnswer(q,`${Math.floor(p.n/p.s0)}; ${p.n%p.s0}`).answerCorrect;if(v==='no-ride')return is(q,p.n-p.per*p.vans);const r=p.n%p.groups;return E.checkAnswer(q,`${p.groups-r}; ${r}`).answerCorrect;},
+ 'i4-improper':(q,p)=>{const v=variantOf(q);if(v==='draw')return q.answer.kind==='teacher'&&q.prompt.includes(`${p.n}/${p.d}`);if(v==='statement')return key(q)==='ABCD'[p.ord.indexOf(0)];
+  return E.checkAnswer(q,`${2*p.n}/${2*p.d}; ${Math.floor(p.n/p.d)} ${p.n%p.d}/${p.d}`).answerCorrect;},
 };
 
 // The two sides of a comparison prompt ("a − b ☐ c − d"), evaluated separately.
