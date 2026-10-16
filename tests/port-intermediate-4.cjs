@@ -324,6 +324,28 @@ const oracle={
   if(v==='packages')return E.checkAnswer(q,`${Math.floor(p.n/p.s0)}; ${p.n%p.s0}`).answerCorrect;if(v==='no-ride')return is(q,p.n-p.per*p.vans);const r=p.n%p.groups;return E.checkAnswer(q,`${p.groups-r}; ${r}`).answerCorrect;},
  'i4-improper':(q,p)=>{const v=variantOf(q);if(v==='draw')return q.answer.kind==='teacher'&&q.prompt.includes(`${p.n}/${p.d}`);if(v==='statement')return key(q)==='ABCD'[p.ord.indexOf(0)];
   return E.checkAnswer(q,`${2*p.n}/${2*p.d}; ${Math.floor(p.n/p.d)} ${p.n%p.d}/${p.d}`).answerCorrect;},
+ // Batch I4-13
+ 'i4-mult22b':(q,p)=>is(q,p.a*p.b)&&p.b%10>=3,
+ 'i4-manip':(q,p)=>{const v=variantOf(q);if(v==='all-but')return is(q,100-100*p.k/p.d);if(v==='add-same')return E.checkAnswer(q,`${p.a+p.b}/${p.d}`).answerCorrect;
+  if(v==='add-halves'){const n=p.half?2*p.a+p.b:p.a+2*p.b;return E.checkAnswer(q,`${n}/4`).answerCorrect;}return key(q)===(p.a>p.b?'>':'<');},
+ 'i4-dec-place2':(q,p)=>{const v=variantOf(q);if(v==='compare'){const a=Number(p.s1),b=Number(p.s2);return key(q)===(a>b?'>':a<b?'<':'=');}if(v==='digit')return is(q,p.d[p.k]);if(v==='same-place')return is(q,p.d[p.k]);return Math.round(Number(key(q))*100)===9*p.a;},
+ 'i4-quads':(q,p)=>{const v=variantOf(q),N={square:['quadrilateral','parallelogram','rectangle','rhombus','square'],rectangle:['quadrilateral','parallelogram','rectangle'],rhombus:['quadrilateral','parallelogram','rhombus'],parallelogram:['quadrilateral','parallelogram'],trapezoid:['quadrilateral','trapezoid'],quadrilateral:['quadrilateral']};
+  if(v==='name')return key(q)===p.kind;if(v==='not-describe')return key(q)===p.bad&&!N[p.kind].includes(p.bad);if(v==='is-para')return key(q)===(N[p.kind].includes('parallelogram')?'yes':'no');if(v==='all-names')return E.checkAnswer(q,[...N[p.kind]].reverse().join(', ')).answerCorrect;return q.answer.kind==='teacher';},
+ 'i4-estimate2':(q,p)=>{const v=variantOf(q);if(v==='div-hundred')return is(q,Math.round(p.n/100)*100/p.d);if(v==='div-ten')return is(q,Math.round(p.n/10)*10/p.d);return E.checkAnswer(q,`${Math.round(p.a/10)*Math.round(p.b/10)*100}; ${p.a*p.b}`).answerCorrect;},
+ 'i4-two-step2':(q,p)=>{const v=variantOf(q),c=Math.round(numKey(q)*100);if(v==='per-pound')return c*p.k===2000-p.ch;if(v==='square-area')return is(q,(p.P/4)**2);if(v==='ages')return is(q,p.j-p.n1+p.n2);
+  if(v==='times-plus')return is(q,(p.half?p.t0/2:p.t0*p.k)+p.plus);if(v==='toll')return c===p.toll-10*p.di-5*p.ni;return c===p.na*p.ad+p.ns*p.st;},
+ 'i4-frac-group2':(q,p)=>variantOf(q)==='pieces'?is(q,p.L0*3/p.k):is(q,p.k*p.n/p.d),
+ 'i4-average':(q,p)=>is(q,total(p.xs)/p.xs.length)&&total(p.xs)%p.xs.length===0,
+ 'i4-stats':(q,p)=>{const s=[...p.xs].sort((a,b)=>a-b),n=s.length;if(p.name==='range')return is(q,s[n-1]-s[0]);if(p.name==='mean')return is(q,Math.round(total(s)/n));if(p.name==='median')return is(q,n%2?s[(n-1)/2]:(s[n/2-1]+s[n/2])/2);
+  const c={};s.forEach(x=>c[x]=(c[x]||0)+1);const top=Math.max(...Object.values(c));return Object.values(c).filter(x=>x===top).length===1&&is(q,Number(Object.keys(c).find(k=>c[k]===top)));},
+ 'i4-solids':(q,p)=>{const v=variantOf(q),NM=['cube','cube','rectangular prism','rectangular prism','pyramid','pyramid','cylinder','cylinder','sphere','cone'],VFE={cube:[8,6,12],'rectangular prism':[8,6,12],'square pyramid':[5,5,8],'triangular pyramid':[4,4,6],'triangular prism':[6,5,9],'pentagonal prism':[10,7,15],'hexagonal prism':[12,8,18]};
+  if(v==='name')return key(q)===NM[p.k];if(v==='name-two')return E.checkAnswer(q,p.ks.map(k=>NM[k]).join(', ')).answerCorrect;if(v==='pick')return key(q)==='ABCD'[p.k];if(v==='cubes')return is(q,p.w*p.hh*p.d);
+  if(v==='vfe')return E.checkAnswer(q,VFE[p.nm].join('; ')).answerCorrect;if(v==='count')return is(q,VFE[p.nm][{vertices:0,faces:1,edges:2}[p.what]]);if(v==='faces-compare'){const F=VFE[p.nm][1];return E.checkAnswer(q,`${F}; ${F>6?'more':F===6?'the same':'fewer'}`).answerCorrect;}
+  if(v==='cube-qs')return is(q,/corners/.test(p.q0)?8:/edges/.test(p.q0)?12:6);return q.answer.kind==='teacher';},
+ 'i4-prisms':(q,p)=>{const v=variantOf(q);if(v==='edges')return E.checkAnswer(q,p.par?'C and A':'B and A').answerCorrect;if(v==='planes')return /^(Top|Front|Bottom) and (Side|Front)$/.test(p.opts[p.k])&&key(q)==='ABCD'[p.k];
+  if(v==='parallel-count')return is(q,3);if(v==='perp-faces')return is(q,4);if(v==='net')return key(q)===p.nm;return q.answer.kind==='teacher';},
+ 'i4-probability':(q,p)=>{const v=variantOf(q);if(v==='cans')return E.checkAnswer(q,`${p.cnt[p.k]}/${total(p.cnt)}`).answerCorrect;if(v==='spinner'){const V='AEIOUaeiou',f={'a lowercase letter or a vowel':x=>x===x.toLowerCase()||V.includes(x),'a consonant or a lowercase letter':x=>!V.includes(x)||x===x.toLowerCase(),'an uppercase letter':x=>x===x.toUpperCase(),'a vowel':x=>V.includes(x)}[p.c];return E.checkAnswer(q,`${p.letters.filter(f).length}/5`).answerCorrect;}
+  return E.checkAnswer(q,`${p.n}/${p.d}`).answerCorrect;},
 };
 
 // The two sides of a comparison prompt ("a − b ☐ c − d"), evaluated separately.

@@ -54,6 +54,7 @@ The owner's instruction for the overnight Intermediate 4 run: a shared-file chan
 | TX4_S05_00101 | 41 | structured-equation | As 00099 |
 | TX4_S05_00088 | 50 | structured-arithmetic | Not yet written: a decimal minus a sum of decimals in parentheses, such as 5.46 − (1.2 + 3.12) (a new `i4-dec-add` variant); 00139 would consolidate into it |
 | TX4_S05_00139 | 50 | structured-arithmetic | As 00088 |
+| TX4_S10_00080 | 91 | structured-arithmetic | As TX4_S05_00088 (4.5 − (3.4 + 0.27)); would consolidate into it once ported |
 | TX4_S05_00143 | 50 | structured-arithmetic | Not yet written: whole dollars minus a difference of money in parentheses, such as $27 − ($24.17 − 58¢) |
 | TX4_S06_00054 | 54 | structured-reasoning | Not yet written: the month between two months (a new `i4-dates` variant) |
 | TX4_S07_00085 | 64 | structured-equation | Not yet written: a missing factor with a two-digit answer, such as 4r = 52 (the same new `i4-missing-factor` variant as TX4_S05_00099) |

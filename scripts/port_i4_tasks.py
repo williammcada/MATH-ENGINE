@@ -740,6 +740,72 @@ TASKS_I4 = [
     _t('TX4_S09_00049', 'i4-improper', 'write', 'Write an improper fraction and a mixed number', 'fractions'),
     _t('TX4_S09_00061', 'i4-improper', 'statement', 'What shaded circles show', 'fractions'),
     _t('TX4_S09_00047', 'i4-improper', 'draw', 'Draw a mixed number and an improper fraction', 'fractions'),
+    # Batch I4-13: Lesson 90, Investigation 9, Lessons 91-100, Investigation 10
+    # Lesson 90: Multiplying Two Two-Digit Numbers, Part 2
+    _t('TX4_S09_00002', 'i4-mult22b', 'row', 'Multiply two two-digit numbers with regrouping', 'whole-arithmetic'),
+    _t('TX4_S09_00028', 'i4-mult22b', 'col', 'Multiply two two-digit numbers with regrouping in a column', 'whole-arithmetic'),
+    # Investigation 9: Investigating Fractions with Manipulatives
+    _t('TX4_S09_00001', 'i4-manip', 'all-but', 'The percent shaded when all but a fraction is shaded', 'fractions'),
+    _t('TX4_S09_00032', 'i4-manip', 'add-same', 'Add fractions with the same denominator', 'fractions'),
+    _t('TX4_S09_00013', 'i4-manip', 'add-halves', 'Add halves and fourths', 'fractions'),
+    _t('TX4_S09_00051', 'i4-manip', 'compare-dec', 'Compare decimals in tenths and thousandths', 'number-order'),
+    # Lesson 91: Decimal Place Value
+    _t('TX4_S10_00013', 'i4-dec-place2', 'compare', 'Compare decimals with different numbers of places', 'number-order'),
+    _t('TX4_S10_00038', 'i4-dec-place2', 'digit', 'The digit in a decimal place', 'number-representation'),
+    _t('TX4_S10_00078', 'i4-dec-place2', 'same-place', 'The digit in the same decimal place', 'number-representation'),
+    _t('TX4_S10_00039', 'i4-dec-place2', 'sub', 'Subtract a decimal with more places', 'decimal-arithmetic'),
+    # Lesson 92: Classifying Quadrilaterals
+    _t('TX4_S10_00012', 'i4-quads', 'not-describe', 'Which word does not describe a quadrilateral', 'geometry-properties'),
+    _t('TX4_S10_00069', 'i4-quads', 'name', 'Name a quadrilateral', 'geometry-properties'),
+    _t('TX4_S10_00047', 'i4-quads', 'is-para', 'Is a quadrilateral a parallelogram', 'geometry-properties'),
+    _t('TX4_S10_00048', 'i4-quads', 'all-names', 'All the names for a quadrilateral', 'geometry-properties'),
+    _t('TX4_S10_00066', 'i4-quads', 'describe', 'Describe a polygon exactly', 'geometry-properties'),
+    _t('TX4_S10_00067', 'i4-quads', 'decompose', 'The shapes a drawing is made of', 'geometry-properties'),
+    _t('TX4_S10_00093', 'i4-quads', 'draw', 'Draw a special quadrilateral', 'geometry-properties'),
+    # Lesson 93: Estimating Multiplication and Division Answers
+    _t('TX4_S10_00011', 'i4-estimate2', 'div-hundred', 'Estimate a quotient by rounding to hundreds', 'rounding-estimation'),
+    _t('TX4_S10_00040', 'i4-estimate2', 'div-ten', 'Estimate a quotient by rounding to tens', 'rounding-estimation'),
+    _t('TX4_S10_00049', 'i4-estimate2', 'est-exact', 'Estimate a product, then find it exactly', 'rounding-estimation'),
+    # Lesson 94: Two-Step Word Problems
+    _t('TX4_S10_00010', 'i4-two-step2', 'per-pound', 'The price per pound from the change', 'decimal-arithmetic'),
+    _t('TX4_S10_00035', 'i4-two-step2', 'square-area', 'The area of a square from its perimeter', 'area'),
+    _t('TX4_S10_00037', 'i4-two-step2', 'ages', 'An age from two comparisons', 'whole-arithmetic'),
+    _t('TX4_S10_00084', 'i4-two-step2', 'times-plus', 'A number from a multiple or half and a difference', 'whole-arithmetic'),
+    _t('TX4_S10_00085', 'i4-two-step2', 'toll', 'The money still needed for a toll', 'decimal-arithmetic'),
+    _t('TX4_S10_00087', 'i4-two-step2', 'tickets', 'The cost of adult and student tickets', 'decimal-arithmetic'),
+    # Lesson 95: Two-Step Problems About a Fraction of a Group
+    _t('TX4_S10_00009', 'i4-frac-group2', 'of', 'A fraction of a group', 'fractions'),
+    _t('TX4_S10_00032', 'i4-frac-group2', 'pieces', 'How many pieces of a fraction of a meter', 'fractions'),
+    # Lesson 96: Average
+    _t('TX4_S10_00008', 'i4-average', 'stacks', 'Equal stacks from unequal stacks', 'statistics'),
+    _t('TX4_S10_00029', 'i4-average', 'grades', 'The average of some scores', 'statistics'),
+    # Lesson 97: Mean, Median, Range, and Mode
+    _t('TX4_S10_00005', 'i4-stats', 'mode', 'The mode of a set of data', 'statistics'),
+    _t('TX4_S10_00006', 'i4-stats', 'median', 'The median of an odd number of data', 'statistics'),
+    _t('TX4_S10_00027', 'i4-stats', 'median-even', 'The median of an even number of data', 'statistics'),
+    _t('TX4_S10_00007', 'i4-stats', 'mean', 'The mean of a set of data', 'statistics'),
+    _t('TX4_S10_00021', 'i4-stats', 'range', 'The range of a set of data', 'statistics'),
+    # Lesson 98: Geometric Solids
+    _t('TX4_S10_00004', 'i4-solids', 'name-two', 'Name two geometric solids', 'geometry-properties'),
+    _t('TX4_S10_00050', 'i4-solids', 'name', 'Name a geometric solid', 'geometry-properties'),
+    _t('TX4_S10_00059', 'i4-solids', 'pick', 'Which shape is a given solid', 'geometry-properties'),
+    _t('TX4_S10_00020', 'i4-solids', 'cubes', 'How many cubes build a solid', 'geometry-properties'),
+    _t('TX4_S10_00062', 'i4-solids', 'faces-compare', 'Faces of a solid compared with a cube', 'geometry-properties'),
+    _t('TX4_S10_00065', 'i4-solids', 'count', 'Faces, edges or vertices of a solid', 'geometry-properties'),
+    _t('TX4_S10_00052', 'i4-solids', 'vfe', 'Vertices, faces and edges of a solid', 'geometry-properties'),
+    _t('TX4_S10_00063', 'i4-solids', 'cube-qs', 'Vertices, edges or faces of a cube', 'geometry-properties'),
+    _t('TX4_S10_00064', 'i4-solids', 'explain', 'Explain how two shapes differ', 'geometry-properties'),
+    # Lesson 99: Constructing Prisms
+    _t('TX4_S10_00057', 'i4-prisms', 'edges', 'Parallel or perpendicular edges of a prism', 'geometry-properties'),
+    _t('TX4_S10_00058', 'i4-prisms', 'planes', 'Perpendicular faces of a prism', 'geometry-properties'),
+    _t('TX4_S10_00060', 'i4-prisms', 'parallel-count', 'Edges parallel to one edge', 'geometry-properties'),
+    _t('TX4_S10_00061', 'i4-prisms', 'perp-faces', 'Faces perpendicular to one face', 'geometry-properties'),
+    _t('TX4_S10_00054', 'i4-prisms', 'net', 'The solid made by folding a net', 'geometry-properties'),
+    _t('TX4_S10_00056', 'i4-prisms', 'draw', 'Draw the solid made from given faces', 'geometry-properties'),
+    # Investigation 10: Probability
+    _t('TX4_S10_00003', 'i4-probability', 'spinner', 'The probability on a spinner', 'statistics'),
+    _t('TX4_S10_00016', 'i4-probability', 'cube', 'The probability with a number cube or coin', 'statistics'),
+    _t('TX4_S10_00014', 'i4-probability', 'cans', 'The probability of choosing one kind', 'statistics'),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -924,6 +990,23 @@ CONSOLIDATED_I4 = {
     'TX4_S09_00073': 'TX4_S09_00022', 'TX4_S09_00074': 'TX4_S09_00022', 'TX4_S09_00027': 'TX4_S09_00006', 'TX4_S09_00025': 'TX4_S09_00026',
     'TX4_S09_00045': 'TX4_S09_00004', 'TX4_S09_00081': 'TX4_S09_00060', 'TX4_S09_00082': 'TX4_S09_00060',
     'TX4_S09_00048': 'TX4_S09_00003', 'TX4_S09_00083': 'TX4_S09_00047', 'TX4_S09_00084': 'TX4_S09_00047',
+    # Batch I4-13
+    'TX4_S09_00029': 'TX4_S09_00002', 'TX4_S09_00062': 'TX4_S09_00002', 'TX4_S09_00063': 'TX4_S09_00002', 'TX4_S09_00030': 'TX4_S09_00002',
+    'TX4_S09_00079': 'TX4_S09_00002', 'TX4_S09_00076': 'TX4_S09_00028', 'TX4_S09_00077': 'TX4_S09_00028', 'TX4_S09_00078': 'TX4_S09_00028',
+    'TX4_S09_00050': 'TX4_S09_00001', 'TX4_S09_00031': 'TX4_S03_00102',
+    'TX4_S10_00045': 'TX4_S10_00013', 'TX4_S10_00076': 'TX4_S10_00038', 'TX4_S10_00077': 'TX4_S10_00039', 'TX4_S10_00079': 'TX4_S10_00039',
+    'TX4_S10_00081': 'TX4_S10_00039', 'TX4_S10_00082': 'TX4_S10_00039', 'TX4_S10_00046': 'TX4_S10_00069',
+    'TX4_S10_00041': 'TX4_S10_00011', 'TX4_S10_00094': 'TX4_S10_00049', 'TX4_S10_00083': 'TX4_S06_00092',
+    'TX4_S10_00036': 'TX4_S10_00010', 'TX4_S10_00086': 'TX4_S10_00084',
+    'TX4_S10_00033': 'TX4_S10_00009', 'TX4_S10_00070': 'TX4_S10_00009', 'TX4_S10_00034': 'TX4_S10_00009', 'TX4_S10_00088': 'TX4_S10_00009',
+    'TX4_S10_00089': 'TX4_S10_00009', 'TX4_S10_00090': 'TX4_S10_00009',
+    'TX4_S10_00031': 'TX4_S10_00008', 'TX4_S10_00030': 'TX4_S10_00029', 'TX4_S10_00071': 'TX4_S10_00029', 'TX4_S10_00091': 'TX4_S10_00029',
+    'TX4_S10_00023': 'TX4_S10_00005', 'TX4_S10_00024': 'TX4_S10_00005', 'TX4_S10_00025': 'TX4_S10_00005', 'TX4_S10_00026': 'TX4_S10_00006',
+    'TX4_S10_00072': 'TX4_S10_00006', 'TX4_S10_00092': 'TX4_S10_00006', 'TX4_S10_00028': 'TX4_S10_00027', 'TX4_S10_00042': 'TX4_S10_00007',
+    'TX4_S10_00043': 'TX4_S10_00007', 'TX4_S10_00044': 'TX4_S10_00007', 'TX4_S10_00022': 'TX4_S10_00021',
+    'TX4_S10_00051': 'TX4_S10_00004', 'TX4_S10_00073': 'TX4_S10_00050', 'TX4_S10_00074': 'TX4_S10_00050', 'TX4_S10_00019': 'TX4_S10_00065',
+    'TX4_S10_00055': 'TX4_S10_00054', 'TX4_S10_00002': 'TX4_S10_00054',
+    'TX4_S10_00015': 'TX4_S10_00003', 'TX4_S10_00068': 'TX4_S10_00016', 'TX4_S10_00075': 'TX4_S10_00016',
 }
 
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a
@@ -946,4 +1029,6 @@ PENDING_I4 = {
     'TX4_S06_00054': 'R3',
     # Batch I4-10 (request R3)
     'TX4_S07_00085': 'R3', 'TX4_S07_00086': 'R3',
+    # Batch I4-13 (request R3)
+    'TX4_S10_00080': 'R3',
 }
