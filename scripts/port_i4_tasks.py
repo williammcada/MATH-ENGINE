@@ -319,6 +319,79 @@ TASKS_I4 = [
     _t('TX4_S03_00056', 'i4-array', 'fact', 'The multiplication fact for an array', 'whole-arithmetic'),
     _t('TX4_S03_00058', 'i4-array', 'can-draw', 'Whether an array with a number of rows can be drawn', 'whole-arithmetic'),
     _t('TX4_S03_00123', 'i4-array', 'draw', 'Draw an array of dots for a product', 'whole-arithmetic'),
+    # Batch I4-6: Lessons 31-40 and Investigations 4A, 4B
+    # Lesson 31: Word Problems About Comparing
+    _t('TX4_S04_00054', 'i4-compare-story', 'small', 'How many more: two-digit numbers', 'whole-arithmetic'),
+    _t('TX4_S04_00025', 'i4-compare-story', 'three-digit', 'How many more points: three-digit numbers', 'whole-arithmetic'),
+    _t('TX4_S04_00024', 'i4-compare-table', None, 'How many more or fewer, from a table', 'whole-arithmetic'),
+    _t('TX4_S04_00071', 'i4-compare-story', 'how-much-less', 'How much less, numbers in words', 'whole-arithmetic'),
+    _t('TX4_S04_00072', 'i4-compare-story', 'words-3digit', 'How many more: three-digit numbers in words', 'whole-arithmetic'),
+    _t('TX4_S04_00074', 'i4-compare-story', 'words-4digit', 'How much greater: four-digit numbers in words', 'whole-arithmetic'),
+    # Lesson 32: Multiplication Facts 9s, 10s, 11s, 12s
+    _t('TX4_S04_00011', 'i4-mult2', 'first-digit', 'The first digit of a product', 'whole-arithmetic'),
+    _t('TX4_S04_00026', 'i4-mult2', 'digit-sum', 'Complete a number from the sum of its digits', 'number-representation'),
+    _t('TX4_S04_00027', 'i4-mult2', 'fact-big', 'Multiplication facts with 7, 8 or 9', 'whole-arithmetic'),
+    # Lesson 33: Writing Numbers Through Hundred Thousands
+    _t('TX4_S04_00030', 'i4-big-words', 'six', 'Write a six-digit number in words', 'number-representation'),
+    _t('TX4_S04_00031', 'i4-big-words', 'nine', 'Write a nine-digit number in words', 'number-representation'),
+    _t('TX4_S04_00029', 'i4-digit-place', None, 'The digit in a place of a six-digit number', 'number-representation'),
+    _t('TX4_S04_00033', 'i4-compare-big', None, 'Compare seven-digit numbers', 'number-order'),
+    _t('TX4_S04_00057', 'i4-compare-big', 'reason', 'Why one six-digit number is greater', 'number-order'),
+    _t('TX4_S04_00032', 'i4-expanded6', None, 'Expanded form of a six-digit number', 'number-representation'),
+    # Lesson 34: Writing Numbers Through Hundred Millions
+    _t('TX4_S04_00021', 'i4-big-digits', 'six', 'Write a six-digit number in digits', 'number-representation'),
+    _t('TX4_S04_00023', 'i4-big-digits', 'millions', 'Write a number in the millions in digits', 'number-representation'),
+    _t('TX4_S04_00009', 'i4-big-digits', 'mixed', 'Millions, hundred thousands and hundreds in digits', 'number-representation'),
+    _t('TX4_S04_00058', 'i4-compare-big', 'greatest', 'The greatest of millions and thousands', 'number-order'),
+    _t('TX4_S04_00076', 'i4-compare-story', 'words-5digit-money', 'How much greater: dollar amounts in words', 'whole-arithmetic'),
+    # Lesson 35: Naming Mixed Numbers and Money
+    _t('TX4_S04_00007', 'i4-money-words', 'dollars-sign', 'Dollars and cents in words to a dollar sign', 'decimal-arithmetic'),
+    _t('TX4_S04_00019', 'i4-money-words', 'cents-sign', 'Dollars and cents with a cent sign', 'decimal-arithmetic'),
+    _t('TX4_S04_00018', 'i4-money-words', 'cents-to-dollars', 'Cents with a dollar sign and decimal point', 'decimal-arithmetic'),
+    _t('TX4_S04_00037', 'i4-money-words', 'to-words', 'A money amount in words', 'decimal-arithmetic'),
+    _t('TX4_S04_00078', 'i4-coins', 'mixed', 'The value of quarters, dimes, nickels and pennies', 'decimal-arithmetic'),
+    _t('TX4_S04_00086', 'i4-coins', 'odd-even', 'Is the value of some coins odd or even', 'decimal-arithmetic'),
+    _t('TX4_S10_00018', 'i4-coins', 'dollars-dimes-pennies', 'Dollars, dimes and pennies', 'decimal-arithmetic'),
+    _t('TX4_S10_00017', 'i4-cents-sub', None, 'Subtract cents from dollars', 'decimal-arithmetic'),
+    _t('TX4_S04_00034', 'i4-mixed-pic', 'rects', 'The mixed number shown by shaded rectangles', 'fractions'),
+    _t('TX4_S04_00090', 'i4-mixed-pic', 'circles', 'The mixed number shown by shaded circles', 'fractions'),
+    _t('TX4_S04_00087', 'i4-mixed-words', None, 'A mixed number in words', 'fractions'),
+    _t('TX4_S04_00089', 'i4-draw-mixed', None, 'Draw circles to show a mixed number', 'fractions'),
+    _t('TX4_S10_00001', 'i4-sign-pick', None, 'Which price sign is wrong', 'decimal-arithmetic'),
+    # Lesson 36: Fractions of a Dollar
+    _t('TX4_S04_00006', 'i4-coin-fraction2', 'dimes-dollar', 'Dimes as a fraction of a dollar and in dollars', 'decimal-arithmetic'),
+    _t('TX4_S04_00039', 'i4-coin-fraction2', 'coin-for', 'The coin that is a fraction of a dollar', 'decimal-arithmetic'),
+    _t('TX4_S04_00062', 'i4-coin-fraction2', 'quarters-value', 'The value of quarters', 'decimal-arithmetic'),
+    _t('TX4_S04_00040', 'i4-coin-fraction2', 'compare-unit', 'Compare unit fractions of a dollar', 'decimal-arithmetic'),
+    # Lesson 37: Reading Fractions and Mixed Numbers from a Number Line
+    _t('TX4_S04_00041', 'i4-frac-line', 'letter', 'Which letter shows a mixed number on a number line', 'fractions'),
+    _t('TX4_S04_00092', 'i4-frac-line', 'arrow', 'The mixed number at an arrow on a number line', 'fractions'),
+    _t('TX4_S04_00017', 'i4-frac-line', 'fraction', 'The fraction at an arrow on a number line', 'fractions'),
+    # Lesson 38: Multiplication Facts (Memory Group)
+    _t('TX4_S04_00004', 'i4-mult2', 'square', 'A number times itself', 'whole-arithmetic'),
+    _t('TX4_S04_00015', 'i4-mult2', 'fact', 'Multiplication facts with 5 or 6', 'whole-arithmetic'),
+    _t('TX4_S04_00093', 'i4-mult2', 'times-four', 'Three facts times four', 'whole-arithmetic'),
+    # Lesson 39: Reading an Inch Scale to the Nearest Fourth
+    _t('TX4_S04_00003', 'i4-ruler-quarter', None, 'Measure to the nearest quarter inch', 'measurement'),
+    _t('TX4_S04_00044', 'i4-draw-two', None, 'Draw two circles showing fractions', 'fractions'),
+    # Lesson 40: Capacity
+    _t('TX4_S04_00002', 'i4-capacity', 'compare', 'Compare amounts in two units of capacity', 'measurement'),
+    _t('TX4_S04_00013', 'i4-capacity', 'liters', 'Liters to milliliters', 'measurement'),
+    _t('TX4_S04_00067', 'i4-capacity', 'gallons', 'Quarts to gallons', 'measurement'),
+    _t('TX4_S04_00080', 'i4-capacity', 'facts', 'Units of capacity', 'measurement'),
+    _t('TX4_S04_00045', 'i4-capacity', 'true-false', 'True or false: units of capacity', 'measurement'),
+    _t('TX4_S04_00094', 'i4-capacity', 'ounces', 'Compare the ounces in two units', 'measurement'),
+    # Investigation 4A: Tenths and Hundredths
+    _t('TX4_S04_00051', 'i4-money-pic', 'bills-coins', 'The amount shown by bills and coins', 'decimal-arithmetic'),
+    _t('TX4_S04_00053', 'i4-money-pic', 'coins', 'The amount shown by coins', 'decimal-arithmetic'),
+    _t('TX4_S04_00082', 'i4-decimal-words', None, 'A decimal number in words', 'number-representation'),
+    # Investigation 4B: Relating Fractions and Decimals
+    _t('TX4_S04_00001', 'i4-unit-cost', None, 'The cost of each item', 'decimal-arithmetic'),
+    _t('TX4_S04_00069', 'i4-frac-decimal', 'hundredths', 'Hundredths as a decimal', 'number-representation'),
+    _t('TX4_S04_00070', 'i4-frac-decimal', 'mixed-tenths', 'A mixed number in tenths as a decimal', 'number-representation'),
+    _t('TX4_S04_00047', 'i4-grid100', 'frac-dec', 'The shaded part of a hundred square as a fraction and a decimal', 'number-representation'),
+    _t('TX4_S04_00084', 'i4-grid100', 'shaded-unshaded', 'Shaded and unshaded parts of a hundred square as decimals', 'number-representation'),
+    _t('TX4_S04_00048', 'i4-decimal-order', None, 'Order decimals from greatest to least', 'number-representation'),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -402,6 +475,19 @@ CONSOLIDATED_I4 = {
     'TX4_S03_00016': 'TX4_S03_00002', 'TX4_S03_00093': 'TX4_S03_00002', 'TX4_S03_00059': 'TX4_S03_00002',
     'TX4_S03_00099': 'TX4_S03_00017', 'TX4_S03_00098': 'TX4_S03_00017', 'TX4_S03_00067': 'TX4_S03_00017',
     'TX4_S03_00057': 'TX4_S03_00003',
+    # Batch I4-6
+    'TX4_S04_00073': 'TX4_S04_00072', 'TX4_S04_00055': 'TX4_S04_00074', 'TX4_S04_00028': 'TX4_S04_00011',
+    'TX4_S04_00085': 'TX4_S04_00030', 'TX4_S04_00010': 'TX4_S04_00031', 'TX4_S04_00056': 'TX4_S04_00029',
+    'TX4_S04_00022': 'TX4_S04_00021', 'TX4_S04_00059': 'TX4_S04_00021', 'TX4_S04_00060': 'TX4_S04_00023', 'TX4_S04_00075': 'TX4_S04_00023',
+    'TX4_S04_00020': 'TX4_S04_00007', 'TX4_S04_00061': 'TX4_S04_00078', 'TX4_S04_00077': 'TX4_S04_00078', 'TX4_S04_00079': 'TX4_S04_00078',
+    'TX4_S04_00008': 'TX4_S04_00034', 'TX4_S04_00088': 'TX4_S04_00034', 'TX4_S04_00035': 'TX4_S04_00087', 'TX4_S04_00036': 'TX4_S04_00087',
+    'TX4_S10_00053': 'TX4_S03_00126', 'TX4_S04_00038': 'TX4_S04_00006',
+    'TX4_S04_00005': 'TX4_S04_00041', 'TX4_S04_00043': 'TX4_S04_00041', 'TX4_S04_00042': 'TX4_S04_00092', 'TX4_S04_00091': 'TX4_S04_00092',
+    'TX4_S04_00014': 'TX4_S04_00015', 'TX4_S04_00063': 'TX4_S04_00015', 'TX4_S04_00016': 'TX4_S03_00021',
+    'TX4_S04_00064': 'TX4_S04_00003', 'TX4_S04_00065': 'TX4_S04_00003', 'TX4_S04_00066': 'TX4_S04_00003',
+    'TX4_S04_00046': 'TX4_S04_00002', 'TX4_S04_00068': 'TX4_S04_00080',
+    'TX4_S04_00050': 'TX4_S04_00051', 'TX4_S04_00052': 'TX4_S04_00051', 'TX4_S04_00081': 'TX4_S04_00082', 'TX4_S04_00083': 'TX4_S04_00082',
+    'TX4_S04_00012': 'TX4_S04_00001', 'TX4_S04_00049': 'TX4_S04_00082',
 }
 
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a

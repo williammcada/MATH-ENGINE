@@ -164,6 +164,43 @@ const oracle={
  'i4-square':(q,p)=>{const v=variantOf(q);if(v==='side')return is(q,p.s);if(v==='root')return is(q,p.r);if(v==='root-sum')return is(q,p.a+p.b);if(v==='squares')return E.checkAnswer(q,p.xs.map(x=>x*x).join('; ')).answerCorrect;return key(q)===[4,5,6,7].map(i=>(p.s+i)**2).join(', ');},
  'i4-area':(q,p)=>{const v=variantOf(q);if(v==='square')return is(q,p.s*p.s);if(v==='perim-area')return E.checkAnswer(q,`${2*p.l+2*p.w}; ${p.l*p.w}`).answerCorrect;return is(q,p.l*p.w);},
  'i4-array':(q,p)=>{const v=variantOf(q);if(v==='rows-cols-fact')return E.checkAnswer(q,`${p.r}; ${p.c}; ${p.c} x ${p.r} = ${p.r*p.c}`).answerCorrect;if(v==='fact')return E.checkAnswer(q,`${p.c}×${p.r}=${p.r*p.c}`).answerCorrect;if(v==='can-draw')return key(q)===(p.n%p.rows===0?'yes':'no');return q.answer.kind==='teacher'&&q.answer.reference.includes(String(p.a*p.b));},
+ // Batch I4-6
+ 'i4-compare-story':(q,p)=>p.b>p.a&&is(q,p.b-p.a),
+ 'i4-compare-table':(q,p)=>p.i!==p.j&&is(q,Math.abs(p.vals[p.i]-p.vals[p.j]))&&(p.vals[p.i]>p.vals[p.j])===q.prompt.includes(' more ')&&q.givens.svg.includes('>'+p.vals[p.i]+'<'),
+ 'i4-mult2':(q,p)=>{const v=variantOf(q);if(v==='first-digit')return is(q,Number(String(p.a*p.b)[0]));if(v==='digit-sum')return is(q,p.s-p.a)&&p.s-p.a<10;
+  if(v==='times-four')return E.checkAnswer(q,p.xs.map(x=>4*x).join('; ')).answerCorrect;if(v==='square')return p.a===p.b&&is(q,p.a*p.a);
+  return (v==='fact'?inRange(p.a,5,6):inRange(p.a,7,9))&&p.a!==p.b&&is(q,p.a*p.b);},
+ 'i4-big-words':(q,p)=>E.checkAnswer(q,WORDS(p.n)).answerCorrect&&!E.checkAnswer(q,WORDS(p.n+1)).answerCorrect&&(variantOf(q)==='six'?inRange(p.n,100000,999999):inRange(p.n,100000000,999999999)),
+ 'i4-digit-place':(q,p)=>is(q,Math.floor(p.n/10**p.place)%10),
+ 'i4-compare-big':(q,p)=>{const v=variantOf(q);if(v==='greatest')return key(q)===`${Math.max(...p.ms)} million`;
+  if(v==='reason'){const tt=x=>Math.floor(x/10000)%10;return E.checkAnswer(q,`${tt(p.a)} > ${tt(p.b)}`).answerCorrect&&p.a>p.b;}return key(q)===(p.a>p.b?'>':'<');},
+ 'i4-expanded6':(q,p)=>E.checkAnswer(q,digits(p.n).map((d,i)=>d*10**(5-i)).join(' + ')).answerCorrect,
+ 'i4-big-digits':(q,p)=>is(q,p.n),
+ 'i4-money-words':(q,p)=>{const v=variantOf(q);if(v==='dollars-sign')return is(q,p.val/100);if(v==='cents-sign')return is(q,100*p.d+p.c);if(v==='cents-to-dollars')return is(q,p.c/100);
+  return E.checkAnswer(q,`${WORDS(p.d)} dollars and ${WORDS(p.c)} cents`).answerCorrect;},
+ 'i4-coins':(q,p)=>{const v=variantOf(q);if(v==='odd-even')return key(q)===((5*p.n+10*p.d)%2?'odd':'even');if(v==='dollars-dimes-pennies')return is(q,(100*p.D+10*p.di+p.p)/100);return is(q,(25*p.q+10*p.di+5*p.n+p.p)/100);},
+ 'i4-cents-sub':(q,p)=>p.a>p.c&&is(q,(p.a-p.c)/100),
+ 'i4-mixed-pic':(q,p)=>E.checkAnswer(q,`${p.w} ${p.k}/${p.d}`).answerCorrect&&(2*p.k===p.d||!E.checkAnswer(q,`${p.w} ${p.d-p.k}/${p.d}`).answerCorrect),
+ 'i4-mixed-words':(q,p)=>{const dn={2:['half','halves'],3:['third','thirds'],4:['fourth','fourths'],10:['tenth','tenths']}[p.d];return E.checkAnswer(q,`${WORDS(p.w)} and ${WORDS(p.k)} ${dn[p.k===1?0:1]}`).answerCorrect;},
+ 'i4-draw-mixed':(q,p)=>q.answer.kind==='teacher'&&q.prompt.includes(`${p.w} ${p.k}/${p.d}`),
+ 'i4-sign-pick':(q,p)=>key(q)==='ABC'[p.pos]&&q.givens.svg.includes(`0.${String(p.c).padStart(2,'0')}¢`),
+ 'i4-coin-fraction2':(q,p)=>{const v=variantOf(q);if(v==='dimes-dollar'){const g=p.k%2?1:2;return E.checkAnswer(q,`${p.k/g}/${10/g}; $0.${p.k}0`).answerCorrect&&E.checkAnswer(q,`${p.k/g}/${10/g}; ${10*p.k}¢`).answerCorrect;}
+  if(v==='coin-for'){const F={penny:'hundredth',nickel:'twentieth',dime:'tenth',quarter:'fourth','half-dollar':'half'};return q.prompt.includes('one '+F[p.frac]+' ')&&E.checkAnswer(q,p.frac).answerCorrect;}
+  if(v==='quarters-value')return is(q,25*p.k/100);return key(q)===(p.a<p.b?'>':'<');},
+ 'i4-frac-line':(q,p)=>{const v=variantOf(q);if(v==='letter'){const x=p.vals[p.k];return key(q)===p.labels[p.k]&&q.prompt.includes(`${Math.floor(x/5)} ${x%5}/5 `);}
+  if(v==='arrow')return E.checkAnswer(q,`${p.a} ${p.k}/${p.d}`).answerCorrect;return E.checkAnswer(q,`${p.k}/${p.d}`).answerCorrect;},
+ 'i4-ruler-quarter':(Q,p)=>E.checkAnswer(Q,`${p.w} ${p.q}/4 in.`).answerCorrect&&E.checkAnswer(Q,`${p.w} ${p.q}/4`).answerCorrect,
+ 'i4-draw-two':(q,p)=>q.answer.kind==='teacher'&&q.prompt.includes(`${p.k1}/${p.d} and ${p.k1+1}/${p.d}`),
+ 'i4-capacity':(q,p)=>{const v=variantOf(q),CUPS={cup:1,pint:2,quart:4,gallon:16},OZ={cup:8,pint:16,quart:32};
+  if(v==='compare')return key(q)===(p.f*p.n>p.m?'>':p.f*p.n<p.m?'<':'=');if(v==='liters')return is(q,1000*p.n);if(v==='gallons')return is(q,p.qt/4);
+  if(v==='facts')return is(q,CUPS[p.to]/CUPS[p.from.replace(/s$/,'')]);if(v==='true-false')return key(q)===(p.n*CUPS[p.u1]===CUPS[p.u2]?'true':'false');
+  const r=OZ[p.u1]>OZ[p.u2]?'>':'<';return E.checkAnswer(q,`${OZ[p.u1]} ounces in 1 ${p.u1} ${r} ${OZ[p.u2]} ounces in 1 ${p.u2}`).answerCorrect&&E.checkAnswer(q,`${OZ[p.u1]} ${r} ${OZ[p.u2]}`).answerCorrect;},
+ 'i4-money-pic':(q,p)=>is(q,(p.bills.reduce((s,[v,k])=>s+100*v*k,0)+p.coins.reduce((s,[v,k])=>s+v*k,0))/100),
+ 'i4-decimal-words':(q,p)=>{const T=['','one','two','three','four','five','six','seven','eight','nine'],part=p.places===1?`${T[p.f]} tenth${p.f===1?'':'s'}`:`${WORDS(p.f)} hundredth${p.f===1?'':'s'}`;return E.checkAnswer(q,`${WORDS(p.w)} and ${part}`).answerCorrect;},
+ 'i4-unit-cost':(q,p)=>p.tot%p.k===0&&is(q,p.tot/p.k/100),
+ 'i4-frac-decimal':(q,p)=>variantOf(q)==='hundredths'?is(q,p.n/100)&&q.prompt.includes(p.n+'/100'):is(q,(10*p.w+p.k)/10)&&q.prompt.includes(`${p.w} ${p.k}/10`),
+ 'i4-grid100':(q,p)=>variantOf(q)==='frac-dec'?E.checkAnswer(q,`${p.k}/100; ${p.k/100}`).answerCorrect:E.checkAnswer(q,`${p.k/100}; ${(100-p.k)/100}`).answerCorrect,
+ 'i4-decimal-order':(q,p)=>E.checkAnswer(q,[p.a/100,p.b/10,p.c/100].sort((x,y)=>y-x).join(', ')).answerCorrect,
 };
 
 // The two sides of a comparison prompt ("a − b ☐ c − d"), evaluated separately.
