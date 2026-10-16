@@ -10510,5 +10510,917 @@
    "ab21c39f8b07f82cac3818f6aede6e38f1d8f85108bd94f383fac0e29df98783",
    "3f3cf516bf4ca51bef6ee8bcef24d0876788264e9ca30cd35cb956c20459686a"
   ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00012",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00012",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:41b9cb16d5d0b10b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-tables",
+  "variant": "hours-open",
+  "title": "How long a place is open on a day, from a schedule",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "0c7f0d98281cdb40a05b77452e783e021c92c713967f2d0600650c1bea8adffe",
+   "3c42d3de4698ccd93f4c2065072a2dbea441b36ae33484ee416d09db8415438c"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00025",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00025",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:41b9cb16d5d0b10b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-tables",
+  "variant": "minutes-more",
+  "title": "How many more minutes one place is open than another",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "40ff712fe9273856875cb9254cfb5c1992bd197d16073c1d7dee0cc7eb5eebf6",
+   "82da456e360e97670955fd56c74986226d0e3b232743426736293bd22ecb7f19"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00040",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00040",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:41b9cb16d5d0b10b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-tables",
+  "variant": "day-diff",
+  "title": "How much longer a place is open on one day than another",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "f9d30a2c195a305d16da6b316adc9c1b7f3b2c3c0c22da98b641982afc74f868"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00013",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00013",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:41b9cb16d5d0b10b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-tables",
+  "variant": "weights",
+  "title": "The difference of two weights in a table",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "8aa547225f08f5dfdfe6658079709b1747ac6749bc8ee3ed54aa7b674150980f",
+   "c046ed134d252beb6d791a3e790c9c0a2895c2d592e06d0be8b8c00a1c8156c2"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00022",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00022",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:41b9cb16d5d0b10b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-tables",
+  "variant": "calories",
+  "title": "The difference of two entries in a table of calories",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "b533f3559d4c38158d18d93000267743ac19bdcf5b9cd27f1d5d44d93b340fa5",
+   "412345596cc53f0affcf4db081785a17a5f8d307291b54db1d921d6f7813f8bb"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00023",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00023",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:41b9cb16d5d0b10b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-tables",
+  "variant": "waterfall",
+  "title": "The difference of two heights in a table",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "f67370e9c7b88b50c0a56a2ada4ce544588e92e9ccd5e63b08a0e32f2bd424be",
+   "a451087a59ec8313363e5a7a8bab2f69e964933d1c6081fa1009669f974c9747"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00065",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00065",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:41b9cb16d5d0b10b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-tables",
+  "variant": "ship-cost",
+  "title": "A shipping cost read from a table",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "ebf60eced94f5e4c599d8a6cdf8da96ba01add4411c7a7771628e9159173592a"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00066",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00066",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:41b9cb16d5d0b10b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-tables",
+  "variant": "ship-diff",
+  "title": "The difference of two shipping costs in a table",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "2fb20f14b30ba68212f7e167879db8e45c17558a2f9f9f9a10507408fad3cf18"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00039",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00039",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:41b9cb16d5d0b10b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-tables",
+  "variant": "which-row",
+  "title": "Which exhibit is judged at a given time",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "b09485a620cf0760412a5aa06b8d269c74cfd66627336e2ab3a9da1b573331b3"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00026",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00026",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:26d158f357545fb2",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-tenths",
+  "variant": "arrow",
+  "title": "The decimal at a point on a number line",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "b46d390e420830a39d6663ca83f04819598b61b6dc689f3ec48e0758344e58dc",
+   "15bb9dc3ec431a04b8bcf8190e6059b379f611997be21dc52d73894108f9adae"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00027",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00027",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:26d158f357545fb2",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-tenths",
+  "variant": "cm-m",
+  "title": "A height in centimeters written in meters",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "537ace6599f59a6e76c0e862a86d0a0235fdefc2bf72126bb09d8c13eb9ca8e7",
+   "ce18ea3cb75612e82567757cbfb1c16d2cfa12119b16b489a4451a6fd8566bed"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00073",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00073",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:26d158f357545fb2",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-tenths",
+  "variant": "mm-cm",
+  "title": "A segment in millimeters and in centimeters",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "c2d6546b14e96f69048633d99578adc3ab1bd016df10ecfdfb0ab65966fab019"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00041",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00041",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:26d158f357545fb2",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-tenths",
+  "variant": "round",
+  "title": "Round decimals to the nearest whole number and tenth",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "5aec2efd986893ec54e46f0f14c218468a7ca7b1a88163bd46622a750119c5e7"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00061",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00061",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:73129d6425c4c238",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac1",
+  "variant": "not-half",
+  "title": "Which fraction does not equal 1/2",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "4d7deda9be34c14f9043f0abfcdba1b521353060240e1228b467509857763bb1"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00062",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00062",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:73129d6425c4c238",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac1",
+  "variant": "not-one",
+  "title": "Which number does not equal 1",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "591a27fd576f22d0e322523cf8ae014b53a367dfc41638c711c2d390dd782f0d"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00010",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00010",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:73129d6425c4c238",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac1",
+  "variant": "equiv-den",
+  "title": "A fraction equal to a unit fraction with a given denominator",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "5aca39809424a2c56bcf65396802c83c900b03085cbb23d244d27f15e7d05eb9",
+   "b80bd201715e16051d80289fa28146f5843e3a8cec6f23e2cb7ce54a5f058ca4"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00011",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00011",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:73129d6425c4c238",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac1",
+  "variant": "shown-one",
+  "title": "The fraction name for 1 shown by a picture",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "63fe46c4305bdc5bbe9899a7a0326be4a624a968415ccdb90b7cda87d881647a",
+   "9b39d9b2f9647f9d43e48d25afdbb47b980b93e3b4e825a6685c33907666dce0"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00028",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00028",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:73129d6425c4c238",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac1",
+  "variant": "which-one",
+  "title": "Which fraction equals 1",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "e77119954ce369ce3cc523fd4de28aa0c1b55e4e0d2e6ce51128f8fbac8a09ec",
+   "a1f3c66ce4d4604329c9e14976b24f269beadb0bc386115987c9f5319210449c"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00029",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00029",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:73129d6425c4c238",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac1",
+  "variant": "one-den",
+  "title": "A fraction equal to 1 with a given denominator",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "8c925d4f965ee752b2e22074a18cd5b215997058d486cd89b503933a4a5595e5",
+   "7b32ff25bfc8639f5821eddba06b36920d0f7a4dd8670bec12e02a04c5c4b9ea"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00032",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00032",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:73129d6425c4c238",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac1",
+  "variant": "half-den",
+  "title": "A fraction equal to 1/2 with a given denominator",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "90ddd76ab9f74e54dc7f4b3a6b1ef81b56ecb714ed635d6151013a5c5a392d33",
+   "6aa7f352bd243e4bdefaa138b492a1de6eef73b2f206f3f3d0ca0b0054b33068"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00033",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00033",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:73129d6425c4c238",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac1",
+  "variant": "round-mixed",
+  "title": "Round a mixed number to the nearest whole number",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "20f693921357ed7eda5fb16786728106e079ee0ff2d472a9611dbc86c6187df3",
+   "2484e56a6d3ede58e93134751c5d71ddd6d63ba710d47052aac1682a585318bf"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00042",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00042",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:73129d6425c4c238",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac1",
+  "variant": "write-half",
+  "title": "Write a fraction equal to 1/2 or to 1",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "0016e41914f212992ea25d13d2849047f7bc386c5b18107b9af5348978551725"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00043",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00043",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:73129d6425c4c238",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac1",
+  "variant": "compare-half",
+  "title": "Compare a fraction with 1/2",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "b23f1eb207a946b8f1109c49876d265354ae47bf570a7dce0e841339e17e69e6"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00075",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00075",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:0258d609ecb538fb",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-to-mixed",
+  "variant": null,
+  "title": "Change an improper fraction to a mixed number",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "689990521e19634634fefbc95c4151f39ea316b96ed3c71c6a7f3a309ea7bdd4"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00063",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00063",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:8554ab8d7bfb319e",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div10",
+  "variant": "whole",
+  "title": "Divide a multiple of 10 by 10",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "dc16e0372faca7e4be5231a77d9e656fde8f2b27e4e294f2d6eb937db4932c42"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00046",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00046",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:8554ab8d7bfb319e",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div10",
+  "variant": "dec",
+  "title": "Divide a two-digit number by 10 as a decimal",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "74a8085ff8c4456ec3626a47b7e9981c5597cf8e3b0016cf4c626cdcf0aceec3",
+   "340d40c7207c11d275bfa56ef0a0537115d7fdad9249a766b2c7883206033e17"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00008",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00008",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:8554ab8d7bfb319e",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div10",
+  "variant": "tens-rem",
+  "title": "Divide by a multiple of 10 with a remainder",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "c91ee73a979c7b969afc273d583992057317b81aeda8d36784ddc942651185d6",
+   "6a63183b6e9de6333cd3c5ee6bcb929562db8b5b51331289b93a8ee94859972f"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00047",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00047",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:8554ab8d7bfb319e",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div10",
+  "variant": "rem10",
+  "title": "Divide by 10 with a remainder",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "d8effa6da26dc51de1292005afe74979626ebe4171393a42b9565cfa8825c54a",
+   "8ff0ff24358832de4a51f1fa6e07bac3d0f6ae3593612fdb43761bc4d546a049"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00048",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00048",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:8554ab8d7bfb319e",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div10",
+  "variant": "any",
+  "title": "A number that 10 divides without a remainder",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "4f77c63914e44cafb048f104d95ebe913460a114e3c00cb78ae2241861ea92cd"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00007",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00007",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:80db538669328836",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-evaluate",
+  "variant": "sqrt",
+  "title": "Evaluate the square root of x",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "52b248e83730009d34ab0cdbd68d5fcfc2a4202cb294637d6324c6d3da346098",
+   "2b3cc0665460c2919e7503b4c08b67bb8b5230b0a4b76b68fb927b7b37dc8ad4"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00018",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00018",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:80db538669328836",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-evaluate",
+  "variant": "minus",
+  "title": "Evaluate a difference with a letter",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "0f6fc2378eb56e3b3f18a3131a6ee9271c396545f5bf1e615f063c3b29a7e13f",
+   "5997aff7769f3a71eb8661728314b8c214a386d2b522e4eb0d8d2c008d780a8f"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00019",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00019",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:80db538669328836",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-evaluate",
+  "variant": "product",
+  "title": "Evaluate a product of two letters",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "a48b3eb58325606f19622a4deaec9540d30c3a4ea828e862d5a4c0df272890df",
+   "389a718293ba855ca258e6cd1d5b7f129e1333c99094da083cd0c64de4fef352"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00021",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00021",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:80db538669328836",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-evaluate",
+  "variant": "quotient",
+  "title": "Evaluate x/y",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "5387db0ab2c7af8b7d7f6edc1de589b2cc94b6cbadd2b4711565a201bf9d1865"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00064",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00064",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:3c264d6ac8fbb36c",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac-as",
+  "variant": "add",
+  "title": "Add fractions with a common denominator",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "5875a4bbeef47dc3f3081cf4d31705aca59991904951fb3072a07e5fb1f8c444"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00017",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00017",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:3c264d6ac8fbb36c",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac-as",
+  "variant": "sub",
+  "title": "Subtract fractions with a common denominator",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "56c9ce301fcbb5754146269565d44073376331a1b39faea2ba636c37af3aaddf",
+   "bfd1d7a18cf7a227f5d198e366325bc822c7b58c7c6f2bac3e239192723e3ac9"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00006",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00006",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:3c264d6ac8fbb36c",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac-as",
+  "variant": "sub-mixed",
+  "title": "Subtract mixed numbers with a common denominator",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "8f31d6add782d1b97c70f8eaa69d14fc01100556153b25999e6e035d519311cd",
+   "2340e40ac9605bdb0c534ac089084c8fe781ac575a3f34a470e61e676d4f6682"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00049",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00049",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:3c264d6ac8fbb36c",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac-as",
+  "variant": "add-mixed",
+  "title": "Add mixed numbers whose fractions make more than 1",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "b2d4d235457389458dd765402ac1cbd7601e725da69da2e171fbfcdb10244b03",
+   "4cbcc7a7d2492e68fccc88ec84358a4cadb6cb0e571d5b63d22c8c492e416d31"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00060",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00060",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:3c264d6ac8fbb36c",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-frac-as",
+  "variant": "words",
+  "title": "Add two fractions described in words",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "e015769dd8dbc7802c2dda3136f75e5c57b4b6b1e6b91336507a72e007059af0",
+   "05893b4f7efecf5e66658d7f950a06b0708f2ce18616586c51d7fb1c6931a592"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00004",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00004",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:67495bad3ebfd6d4",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-formulas",
+  "variant": "missing",
+  "title": "The missing number in a distributive-property sentence",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "33b0c706a4a92ed1bf8c65d3d846498c6e51ae3fce5f62808ee43f518a7f9761",
+   "290fb16318a52388e0f2ba0eca6cf425f2d0925c23657ef46839b540baad9109"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00005",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00005",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:67495bad3ebfd6d4",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-formulas",
+  "variant": "formula-what",
+  "title": "What a formula is for",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "0a0397592d76aebaabc98a304bb825a2ce2fec6608e6f99de0a842bb306df0d8",
+   "5de47de9b76ef391dd79cb661c6806231e2cd71b69a8ca29f1e04bc2f18536c5"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00051",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00051",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:67495bad3ebfd6d4",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-formulas",
+  "variant": "formula-for",
+  "title": "The formula for an area or a perimeter",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "2f69b554eb144685a387eb8a1387ff74a524d87e3d3046eac645eec0715a5111",
+   "c7c0cbb7bc96612eda70d9149749720e817671c346f625a1ef38c82336eac33b"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00035",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00035",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:67495bad3ebfd6d4",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-formulas",
+  "variant": "distribute",
+  "title": "Multiply using the distributive property",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "a3a72558fdc4d573c50e0f19b4fda1331db0e047191cceff90d60d57b01c37f9",
+   "2dd66f55ee64b8c95ec3913a2ed115b7d701d65f139e147d0afeadcb5a4de2b5"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00054",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00054",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:67495bad3ebfd6d4",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-formulas",
+  "variant": "rewrite",
+  "title": "Rewrite a product with the distributive property and simplify",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "32bf89f118836f474a910002eca014c85866a477d7410b179d818a155359c5f1"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00052",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00052",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:67495bad3ebfd6d4",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-formulas",
+  "variant": "square",
+  "title": "The formula for the area or perimeter of a square, then use it",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "217f8223f6fe7bc50e9afd45c80a2b3fcd425faf98a2a28a4c012d2d75f9cc30",
+   "3a3c04a191dfccced7ff80deb501b2781bcb8e27c00c5742bf87a02c5336b76d"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00053",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00053",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:67495bad3ebfd6d4",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-formulas",
+  "variant": "triangle",
+  "title": "The formula for the area of a triangle, then use it",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "ccffae724c755b19553d63768a9b72a8bec7e6cd462453a286901022ba00d02b"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00003",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00003",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:2f6e62ddd8550ad5",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-equiv",
+  "variant": "four",
+  "title": "Four equivalent fractions from given multipliers",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "2f58ac598dfbf188f0a7538d70518472b796b7833b0c18d0d1f22223206ec36f",
+   "e51da8ab594f57a1c0b1d73128d648eb69c575ac3f1b249def9ebb6891b13e78"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00015",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00015",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:2f6e62ddd8550ad5",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-equiv",
+  "variant": "complete",
+  "title": "Complete an equivalent fraction",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "eef6a385d18ee250c792029db55909a73943f7da2106d31f19d3135ebbedce0a",
+   "f2f9b9f21804b719ec46359ba5c9f3da2bfef0df446d56cc3cab0b8f4b6113fd"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00055",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00055",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:2f6e62ddd8550ad5",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-equiv",
+  "variant": "name-pair",
+  "title": "Name the equivalent fractions shown by two circles",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "dac155e4b45a7d042d092de1eb365bf96c0d95e6f2dbdb624f716b9d6ec9ea4d",
+   "741ae6b52955844fa1d58588ac3ea2a1b6dbb40935e3d16a9fe3b2a243d9b48e"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00080",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00080",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:2f6e62ddd8550ad5",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-equiv",
+  "variant": "draw",
+  "title": "Draw a picture of two equivalent fractions",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "108e24ff091e1195655eff6ce9fb9147f4e4909277c811e08368770e23ed6c9b"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00056",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00056",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:2f6e62ddd8550ad5",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-equiv",
+  "variant": "three",
+  "title": "Write three equivalent fractions",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "ee23d5977df46755acce5d701479c56e06840e021040f94b5e4781e137e4777d",
+   "e1371b5db18285abb14ca4dab37e5776a7f02085d9e280698078c10f1c5d5135"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00002",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00002",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:2ca882789416615a",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div-tens",
+  "variant": "rem",
+  "title": "Divide by a multiple of 10 with a remainder",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "0381ebf303a25d19315ed207d4d0ec2d81030f550e6f41946fce70c7966213fb",
+   "009ffff564e528d8248179cfe7d00851a8f6d7d92908b74e16f24d0493ce1d78"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00014",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00014",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:2ca882789416615a",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div-tens",
+  "variant": "by10",
+  "title": "Divide a three-digit multiple of 10 by 10",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "26fb14210026e881c05d09b304c9c326023f9cf04a164b493718249e9eda91f7",
+   "7683f9a46289bf59404cb570ef5ff166ac2936b6550f3d6cecacdc18dd103de5"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00072",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00072",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:2ca882789416615a",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div-tens",
+  "variant": "even",
+  "title": "Divide by a multiple of 10 with no remainder",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "9c5c1441b4ec899bdf3dd8db12c921fa489572ae497bafff35cbc53638e228ab"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00001",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00001",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:5d80ed5fec678fcb",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-volume",
+  "variant": "cube-units",
+  "title": "The volume of a solid of cubes of a given volume",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "cf1a7f449e36e5176803c1587fdc65dd70c7910fff5b2ceb9b978e7f77eb9521",
+   "dcd45bedc9bf39108643ab9f4443a9b775a8371560256865e0c4f33d44c570ce"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00036",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00036",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:5d80ed5fec678fcb",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-volume",
+  "variant": "cube",
+  "title": "The volume of a cube",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "366fede81964e4a8f3cf6991b724fad00505e3a4a40d88ee064db053d66fca7e",
+   "0dbad7e230723da92a90dd26c30e473176b952ccf0cdbeb20e5a003500617f11"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00037",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00037",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:5d80ed5fec678fcb",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-volume",
+  "variant": "count",
+  "title": "The volume of a solid of centimeter cubes",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "dc3afdd44928f38f3d8d54442d745df899e66c20e44a753d434d3622dfb6f245",
+   "1b177ec7b9001a7470efb1cc2d2e96231ad3d06a6721dcd31187b02b432a6378"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00038",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00038",
+  "lessonId": "intermediate-4-en:bank:Int4_Section11:scope:5d80ed5fec678fcb",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-volume",
+  "variant": "prism",
+  "title": "The volume of a rectangular solid",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "41fd107cf98ea0e5774e730a980ecbc85de14520251cd0664d9d78af0881f66a"
+  ]
  }
 ]

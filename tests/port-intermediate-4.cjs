@@ -346,6 +346,43 @@ const oracle={
   if(v==='parallel-count')return is(q,3);if(v==='perp-faces')return is(q,4);if(v==='net')return key(q)===p.nm;return q.answer.kind==='teacher';},
  'i4-probability':(q,p)=>{const v=variantOf(q);if(v==='cans')return E.checkAnswer(q,`${p.cnt[p.k]}/${total(p.cnt)}`).answerCorrect;if(v==='spinner'){const V='AEIOUaeiou',f={'a lowercase letter or a vowel':x=>x===x.toLowerCase()||V.includes(x),'a consonant or a lowercase letter':x=>!V.includes(x)||x===x.toLowerCase(),'an uppercase letter':x=>x===x.toUpperCase(),'a vowel':x=>V.includes(x)}[p.c];return E.checkAnswer(q,`${p.letters.filter(f).length}/5`).answerCorrect;}
   return E.checkAnswer(q,`${p.n}/${p.d}`).answerCorrect;},
+ // Batch I4-14
+ 'i4-tables':(q,p)=>{const v=variantOf(q),dur=(pl,day)=>{const t=!pl.split||day<pl.split[0]?pl.times[0]:pl.times[1];return t[1]-t[0];},find=n=>p.sch.find(x=>x.name===n),hm=t=>E.checkAnswer(q,`${Math.floor(t/60)} hours ${t%60} minutes`).answerCorrect;
+  if(v==='hours-open')return hm(dur(find(p.p),p.day));if(v==='minutes-more')return is(q,dur(find(p.a),p.day)-dur(find(p.b),p.day));
+  if(v==='day-diff'){const pl=find(p.p);return hm(Math.abs((pl.times[0][1]-pl.times[0][0])-(pl.times[1][1]-pl.times[1][0])));}
+  if(v==='weights')return is(q,p.w[p.i]-p.w[p.j])&&p.w[p.i]>p.w[p.j];if(v==='calories')return is(q,p.c[p.i][p.a]-p.c[p.j][p.b]);
+  if(v==='waterfall'){const ft=[3212,3110,2425,1904,354,188],m=[979,948,739,580,108,57];return is(q,(p.m?m:ft)[p.i]-(p.m?m:ft)[p.j]);}
+  if(v==='ship-cost')return Math.round(numKey(q)*100)===p.base[p.zz]+p.inc[p.zz]*(p.w-1);
+  if(v==='ship-diff')return Math.round(numKey(q)*100)===(p.base[p.z2]-p.base[p.z1])+(p.inc[p.z2]-p.inc[p.z1])*(p.w-1);
+  return key(q).toLowerCase()===(p.food?p.fd:p.lv)[p.k];},
+ 'i4-tenths':(q,p)=>{const v=variantOf(q);if(v==='arrow')return Math.round(Number(key(q))*10)===p.c*10+p.k;if(v==='cm-m')return Math.round(Number(key(q))*100)===p.n;
+  if(v==='mm-cm')return E.checkAnswer(q,`${p.L}; ${p.L/10}`).answerCorrect;return E.checkAnswer(q,`${Math.floor(p.a/10)+(p.a%10>=5?1:0)}; ${(Math.floor(p.b/10)+(p.b%10>=5?1:0))/10}`).answerCorrect;},
+ 'i4-frac1':(q,p)=>{const v=variantOf(q),k=key(q),chosen=()=>p.opts[p.ord['ABCD'.indexOf(k)]],val=x=>{const m=x.split('/').map(Number);return m.length===1?m[0]:m[0]/m[1];};
+  if(v==='not-half'||v==='not-one'){const t=p.half?0.5:1;return p.opts.filter(x=>val(x)!==t).length===1&&val(chosen())!==t;}
+  if(v==='shown-one')return chosen()===`${p.n}/${p.n}`;if(v==='which-one')return val(chosen())===1&&p.opts.filter(x=>val(x)===1).length===1;
+  if(v==='equiv-den')return numKey(q)*p.a===p.a*p.b&&q.prompt.includes(`☐/${p.a*p.b}`);if(v==='one-den')return is(q,p.n);
+  if(v==='half-den')return numKey(q)*2===p.d;if(v==='round-mixed')return is(q,p.w+(p.k/p.d>0.5?1:0));
+  if(v==='write-half')return E.checkAnswer(q,p.one?'7/7':'7/14').answerCorrect&&!E.checkAnswer(q,p.one?'1/1':'1/2').answerCorrect;
+  return k===(p.a*2>p.d?'>':p.a*2<p.d?'<':'=');},
+ 'i4-to-mixed':(q,p)=>E.checkAnswer(q,`${Math.floor(p.n/p.d)} ${p.n%p.d}/${p.d}`).answerCorrect,
+ 'i4-div10':(q,p)=>{const v=variantOf(q);if(v==='whole')return is(q,p.n/10);if(v==='dec')return Math.round(Number(key(q))*10)===p.n;
+  if(v==='tens-rem')return E.checkAnswer(q,`${Math.floor(p.n/p.d)} R ${p.n%p.d}`).answerCorrect&&p.n%p.d>0;if(v==='rem10')return E.checkAnswer(q,`${Math.floor(p.n/10)} R ${p.n%10}`).answerCorrect;
+  return E.checkAnswer(q,String(p.lo+10)).answerCorrect&&!E.checkAnswer(q,String(p.lo+5)).answerCorrect&&!E.checkAnswer(q,String(p.hi+10)).answerCorrect;},
+ 'i4-evaluate':(q,p)=>{const v=variantOf(q);if(v==='sqrt')return numKey(q)**2===p.x;if(v==='minus')return is(q,p.b-p.c);if(v==='product')return is(q,p.p*p.q);return is(q,p.x/p.y);},
+ 'i4-frac-as':(q,p)=>{const v=variantOf(q);if(v==='add')return E.checkAnswer(q,`${2*(p.a+p.b)}/${2*p.d}`).answerCorrect;if(v==='sub')return E.checkAnswer(q,`${2*(p.a-p.b)}/${2*p.d}`).answerCorrect;
+  if(v==='sub-mixed'){const n=(p.w1*p.d+p.a)-(p.w2*p.d+p.b);return E.checkAnswer(q,`${Math.floor(n/p.d)} ${n%p.d}/${p.d}`).answerCorrect||n%p.d===0&&is(q,n/p.d);}
+  if(v==='add-mixed'){const n=(p.w1*p.d+p.a)+(p.w2*p.d+p.b);return E.checkAnswer(q,`${Math.floor(n/p.d)} ${n%p.d}/${p.d}`).answerCorrect||n%p.d===0&&is(q,n/p.d);}
+  return E.checkAnswer(q,`${p.a+p.b}/${p.d}`).answerCorrect;},
+ 'i4-formulas':(q,p)=>{const v=variantOf(q);if(v==='missing')return is(q,[p.c,p.c,p.a][p.pos]);
+  const F=['the area of a square','the area of a rectangle','the perimeter of a square','the perimeter of a rectangle','the area of a triangle','the perimeter of an equilateral triangle'],G=['A=s^2','A=l*w','P=4*s','P=2*l+2*w','A=1/2*b*h','P=3*s'];
+  if(v==='formula-what')return key(q).toLowerCase()===F[p.i];if(v==='formula-for')return E.checkAnswer(q,G[p.i]).answerCorrect;
+  if(v==='distribute')return is(q,p.a*p.b+p.a*p.c);if(v==='rewrite')return E.checkAnswer(q,`${p.a} × ${p.c}; ${p.a} × ${p.b}; ${p.a*p.b+p.a*p.c}`).answerCorrect;
+  if(v==='square')return E.checkAnswer(q,p.area?`A = s^2; ${p.s*p.s}`:`P = 4 * s; ${4*p.s}`).answerCorrect;return E.checkAnswer(q,`A = 1/2 b h; ${p.b*p.ht/2}`).answerCorrect;},
+ 'i4-equiv':(q,p)=>{const v=variantOf(q);if(v==='four')return E.checkAnswer(q,[0,1,2,3].map(i=>`${p.a*(p.f+i)}/${p.b*(p.f+i)}`).join('; ')).answerCorrect;
+  if(v==='complete')return is(q,p.top?p.a*p.k:p.b*p.k);if(v==='name-pair')return E.checkAnswer(q,`${p.a*p.m}/${p.b*p.m}=${p.a}/${p.b}`).answerCorrect;if(v==='draw')return q.answer.kind==='teacher'&&q.prompt.includes(`${p.a*p.m}/${p.b*p.m}`);
+  return E.checkAnswer(q,[5,6,7].map(m=>`${p.a*m}/${p.b*m}`).join(' and ')).answerCorrect&&!E.checkAnswer(q,[1,2,3].map(m=>`${p.a*m}/${p.b*m}`).join(', ')).answerCorrect;},
+ 'i4-div-tens':(q,p)=>{const v=variantOf(q);if(v==='rem')return E.checkAnswer(q,`${Math.floor(p.n/p.d)} R ${p.n%p.d}`).answerCorrect&&p.n%p.d>0;if(v==='by10')return is(q,p.n/10);return is(q,p.n/p.d)&&p.n%p.d===0;},
+ 'i4-volume':(q,p)=>{const v=variantOf(q);if(v==='cube-units')return is(q,p.w*p.ht*p.d*p.k);if(v==='cube')return is(q,p.s*p.s*p.s);if(v==='count')return is(q,p.w*p.ht*p.d);return is(q,p.l*p.w*p.ht);},
 };
 
 // The two sides of a comparison prompt ("a − b ☐ c − d"), evaluated separately.

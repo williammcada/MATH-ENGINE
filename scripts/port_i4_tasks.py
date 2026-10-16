@@ -806,6 +806,75 @@ TASKS_I4 = [
     _t('TX4_S10_00003', 'i4-probability', 'spinner', 'The probability on a spinner', 'statistics'),
     _t('TX4_S10_00016', 'i4-probability', 'cube', 'The probability with a number cube or coin', 'statistics'),
     _t('TX4_S10_00014', 'i4-probability', 'cans', 'The probability of choosing one kind', 'statistics'),
+    # Batch I4-14: Lessons 101-110, Investigation 11
+    # Lesson 101: Tables and Schedules
+    _t('TX4_S11_00012', 'i4-tables', 'hours-open', 'How long a place is open on a day, from a schedule', 'calendar-time'),
+    _t('TX4_S11_00025', 'i4-tables', 'minutes-more', 'How many more minutes one place is open than another', 'calendar-time'),
+    _t('TX4_S11_00040', 'i4-tables', 'day-diff', 'How much longer a place is open on one day than another', 'calendar-time'),
+    _t('TX4_S11_00013', 'i4-tables', 'weights', 'The difference of two weights in a table', 'whole-arithmetic'),
+    _t('TX4_S11_00022', 'i4-tables', 'calories', 'The difference of two entries in a table of calories', 'whole-arithmetic'),
+    _t('TX4_S11_00023', 'i4-tables', 'waterfall', 'The difference of two heights in a table', 'whole-arithmetic'),
+    _t('TX4_S11_00065', 'i4-tables', 'ship-cost', 'A shipping cost read from a table', 'decimal-arithmetic'),
+    _t('TX4_S11_00066', 'i4-tables', 'ship-diff', 'The difference of two shipping costs in a table', 'decimal-arithmetic'),
+    _t('TX4_S11_00039', 'i4-tables', 'which-row', 'Which exhibit is judged at a given time', 'calendar-time'),
+    # Lesson 102: Tenths and Hundredths on a Number Line
+    _t('TX4_S11_00026', 'i4-tenths', 'arrow', 'The decimal at a point on a number line', 'number-representation'),
+    _t('TX4_S11_00027', 'i4-tenths', 'cm-m', 'A height in centimeters written in meters', 'measurement'),
+    _t('TX4_S11_00073', 'i4-tenths', 'mm-cm', 'A segment in millimeters and in centimeters', 'measurement'),
+    _t('TX4_S11_00041', 'i4-tenths', 'round', 'Round decimals to the nearest whole number and tenth', 'rounding-estimation'),
+    # Lesson 103: Fractions Equal to 1 and Fractions Equal to 1/2
+    _t('TX4_S11_00061', 'i4-frac1', 'not-half', 'Which fraction does not equal 1/2', 'fractions'),
+    _t('TX4_S11_00062', 'i4-frac1', 'not-one', 'Which number does not equal 1', 'fractions'),
+    _t('TX4_S11_00010', 'i4-frac1', 'equiv-den', 'A fraction equal to a unit fraction with a given denominator', 'fractions'),
+    _t('TX4_S11_00011', 'i4-frac1', 'shown-one', 'The fraction name for 1 shown by a picture', 'fractions'),
+    _t('TX4_S11_00028', 'i4-frac1', 'which-one', 'Which fraction equals 1', 'fractions'),
+    _t('TX4_S11_00029', 'i4-frac1', 'one-den', 'A fraction equal to 1 with a given denominator', 'fractions'),
+    _t('TX4_S11_00032', 'i4-frac1', 'half-den', 'A fraction equal to 1/2 with a given denominator', 'fractions'),
+    _t('TX4_S11_00033', 'i4-frac1', 'round-mixed', 'Round a mixed number to the nearest whole number', 'rounding-estimation'),
+    _t('TX4_S11_00042', 'i4-frac1', 'write-half', 'Write a fraction equal to 1/2 or to 1', 'fractions'),
+    _t('TX4_S11_00043', 'i4-frac1', 'compare-half', 'Compare a fraction with 1/2', 'fractions'),
+    # Lesson 104: Changing Improper Fractions to Whole or Mixed Numbers
+    _t('TX4_S11_00075', 'i4-to-mixed', None, 'Change an improper fraction to a mixed number', 'fractions'),
+    # Lesson 105: Dividing by 10
+    _t('TX4_S11_00063', 'i4-div10', 'whole', 'Divide a multiple of 10 by 10', 'whole-arithmetic'),
+    _t('TX4_S11_00046', 'i4-div10', 'dec', 'Divide a two-digit number by 10 as a decimal', 'decimal-arithmetic'),
+    _t('TX4_S11_00008', 'i4-div10', 'tens-rem', 'Divide by a multiple of 10 with a remainder', 'whole-arithmetic'),
+    _t('TX4_S11_00047', 'i4-div10', 'rem10', 'Divide by 10 with a remainder', 'whole-arithmetic'),
+    _t('TX4_S11_00048', 'i4-div10', 'any', 'A number that 10 divides without a remainder', 'number-theory'),
+    # Lesson 106: Evaluating Expressions
+    _t('TX4_S11_00007', 'i4-evaluate', 'sqrt', 'Evaluate the square root of x', 'powers-roots'),
+    _t('TX4_S11_00018', 'i4-evaluate', 'minus', 'Evaluate a difference with a letter', 'expressions'),
+    _t('TX4_S11_00019', 'i4-evaluate', 'product', 'Evaluate a product of two letters', 'expressions'),
+    _t('TX4_S11_00021', 'i4-evaluate', 'quotient', 'Evaluate x/y', 'expressions'),
+    # Lesson 107: Adding and Subtracting Fractions with Common Denominators
+    _t('TX4_S11_00064', 'i4-frac-as', 'add', 'Add fractions with a common denominator', 'fractions'),
+    _t('TX4_S11_00017', 'i4-frac-as', 'sub', 'Subtract fractions with a common denominator', 'fractions'),
+    _t('TX4_S11_00006', 'i4-frac-as', 'sub-mixed', 'Subtract mixed numbers with a common denominator', 'fractions'),
+    _t('TX4_S11_00049', 'i4-frac-as', 'add-mixed', 'Add mixed numbers whose fractions make more than 1', 'fractions'),
+    _t('TX4_S11_00060', 'i4-frac-as', 'words', 'Add two fractions described in words', 'fractions'),
+    # Lesson 108: Formulas; Distributive Property
+    _t('TX4_S11_00004', 'i4-formulas', 'missing', 'The missing number in a distributive-property sentence', 'expressions'),
+    _t('TX4_S11_00005', 'i4-formulas', 'formula-what', 'What a formula is for', 'expressions'),
+    _t('TX4_S11_00051', 'i4-formulas', 'formula-for', 'The formula for an area or a perimeter', 'expressions'),
+    _t('TX4_S11_00035', 'i4-formulas', 'distribute', 'Multiply using the distributive property', 'whole-arithmetic'),
+    _t('TX4_S11_00054', 'i4-formulas', 'rewrite', 'Rewrite a product with the distributive property and simplify', 'expressions'),
+    _t('TX4_S11_00052', 'i4-formulas', 'square', 'The formula for the area or perimeter of a square, then use it', 'area'),
+    _t('TX4_S11_00053', 'i4-formulas', 'triangle', 'The formula for the area of a triangle, then use it', 'area'),
+    # Lesson 109: Equivalent Fractions
+    _t('TX4_S11_00003', 'i4-equiv', 'four', 'Four equivalent fractions from given multipliers', 'fractions'),
+    _t('TX4_S11_00015', 'i4-equiv', 'complete', 'Complete an equivalent fraction', 'fractions'),
+    _t('TX4_S11_00055', 'i4-equiv', 'name-pair', 'Name the equivalent fractions shown by two circles', 'fractions'),
+    _t('TX4_S11_00080', 'i4-equiv', 'draw', 'Draw a picture of two equivalent fractions', 'fractions'),
+    _t('TX4_S11_00056', 'i4-equiv', 'three', 'Write three equivalent fractions', 'fractions'),
+    # Lesson 110: Dividing by Multiples of 10
+    _t('TX4_S11_00002', 'i4-div-tens', 'rem', 'Divide by a multiple of 10 with a remainder', 'whole-arithmetic'),
+    _t('TX4_S11_00014', 'i4-div-tens', 'by10', 'Divide a three-digit multiple of 10 by 10', 'whole-arithmetic'),
+    _t('TX4_S11_00072', 'i4-div-tens', 'even', 'Divide by a multiple of 10 with no remainder', 'whole-arithmetic'),
+    # Investigation 11: Volume
+    _t('TX4_S11_00001', 'i4-volume', 'cube-units', 'The volume of a solid of cubes of a given volume', 'measurement'),
+    _t('TX4_S11_00036', 'i4-volume', 'cube', 'The volume of a cube', 'measurement'),
+    _t('TX4_S11_00037', 'i4-volume', 'count', 'The volume of a solid of centimeter cubes', 'measurement'),
+    _t('TX4_S11_00038', 'i4-volume', 'prism', 'The volume of a rectangular solid', 'measurement'),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -1007,6 +1076,16 @@ CONSOLIDATED_I4 = {
     'TX4_S10_00051': 'TX4_S10_00004', 'TX4_S10_00073': 'TX4_S10_00050', 'TX4_S10_00074': 'TX4_S10_00050', 'TX4_S10_00019': 'TX4_S10_00065',
     'TX4_S10_00055': 'TX4_S10_00054', 'TX4_S10_00002': 'TX4_S10_00054',
     'TX4_S10_00015': 'TX4_S10_00003', 'TX4_S10_00068': 'TX4_S10_00016', 'TX4_S10_00075': 'TX4_S10_00016',
+    # Batch I4-14
+    'TX4_S11_00024': 'TX4_S11_00013', 'TX4_S11_00074': 'TX4_S11_00073',
+    'TX4_S11_00030': 'TX4_S11_00011', 'TX4_S11_00031': 'TX4_S11_00011', 'TX4_S11_00067': 'TX4_S11_00011', 'TX4_S11_00068': 'TX4_S11_00029',
+    'TX4_S11_00009': 'TX4_S09_00003', 'TX4_S11_00044': 'TX4_S09_00003', 'TX4_S11_00045': 'TX4_S09_00049', 'TX4_S11_00076': 'TX4_S11_00075',
+    'TX4_S11_00077': 'TX4_S11_00047', 'TX4_S11_00078': 'TX4_S11_00047',
+    'TX4_S11_00020': 'TX4_S11_00007', 'TX4_S11_00069': 'TX4_S11_00019',
+    'TX4_S11_00070': 'TX4_S11_00064', 'TX4_S11_00016': 'TX4_S11_00064', 'TX4_S11_00071': 'TX4_S11_00017', 'TX4_S11_00050': 'TX4_S11_00006',
+    'TX4_S11_00034': 'TX4_S11_00004',
+    'TX4_S11_00057': 'TX4_S11_00003', 'TX4_S11_00079': 'TX4_S11_00003',
+    'TX4_S11_00081': 'TX4_S11_00002', 'TX4_S11_00058': 'TX4_S11_00002', 'TX4_S11_00059': 'TX4_S11_00002',
 }
 
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a
