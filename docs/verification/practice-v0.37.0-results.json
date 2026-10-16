@@ -1,5 +1,5 @@
 {
-  "engine": "0.37.0-rc.1",
+  "engine": "0.63.0",
   "bankVersion": "0.33.0-rc.1",
   "seedsPerItem": 50,
   "checks": {
@@ -9,7 +9,7 @@
     },
     "catalog": {
       "status": "Passed",
-      "total": 1480,
+      "total": 3476,
       "k7Skills": 312,
       "k7ByGrade": {
         "1": 19,
@@ -21,7 +21,7 @@
         "7": 33,
         "K": 20
       },
-      "autoCheckedBankEntries": 1158,
+      "autoCheckedBankEntries": 3154,
       "continuitySkills": 10,
       "courses": [
         {
@@ -38,36 +38,36 @@
           "course": "Course 1",
           "localGrade": 4,
           "placement": "grade-assigned",
-          "teacherReviewedExcluded": 80,
-          "multiPartExcluded": 29,
-          "count": 169
+          "teacherReviewedExcluded": 99,
+          "multiPartExcluded": 61,
+          "count": 803
         },
         {
           "bankId": "course-87-en",
           "course": "Introduction to PreAlgebra (8/7)",
           "localGrade": 5,
           "placement": "grade-assigned",
-          "teacherReviewedExcluded": 116,
-          "multiPartExcluded": 72,
-          "count": 315
+          "teacherReviewedExcluded": 162,
+          "multiPartExcluded": 108,
+          "count": 729
         },
         {
           "bankId": "algebra-half-en",
           "course": "Algebra 1/2",
           "localGrade": null,
           "placement": "tracked-not-grade-locked",
-          "teacherReviewedExcluded": 87,
-          "multiPartExcluded": 49,
-          "count": 242
+          "teacherReviewedExcluded": 115,
+          "multiPartExcluded": 116,
+          "count": 697
         },
         {
           "bankId": "algebra-1-en",
           "course": "Algebra 1",
           "localGrade": null,
           "placement": "tracked-not-grade-locked",
-          "teacherReviewedExcluded": 146,
-          "multiPartExcluded": 41,
-          "count": 122
+          "teacherReviewedExcluded": 171,
+          "multiPartExcluded": 87,
+          "count": 615
         },
         {
           "bankId": "algebra-2-en",
@@ -82,62 +82,62 @@
     },
     "lesson-labels": {
       "status": "Passed",
-      "entries": 1158,
+      "entries": 3154,
       "lessons": 785,
       "source": "williammcada/test-and-practice-studio@16685a8"
     },
     "generate-all-seeds": {
       "status": "Passed",
-      "count": 74000
+      "count": 173800
     },
     "deterministic": {
       "status": "Passed",
-      "count": 74000
+      "count": 173800
     },
     "own-answer-accepted": {
       "status": "Passed",
-      "count": 74000
+      "count": 173800
     },
     "json-round-trip": {
       "status": "Passed",
-      "count": 74000
+      "count": 173800
     },
     "evaluate-own-answer-valid-and-correct": {
       "status": "Passed",
-      "count": 74000
+      "count": 173800
     },
     "unsimplified-fraction-feedback": {
       "status": "Passed",
-      "count": 7554,
-      "simplestFormRequiredAndFlagged": 5627,
+      "count": 16362,
+      "simplestFormRequiredAndFlagged": 14625,
       "equivalentFormsAllowedByPrompt": {
-        "items": 1927,
-        "entries": 61
+        "items": 1737,
+        "entries": 56
       }
     },
     "perturbed-answer-rejected": {
       "status": "Passed",
-      "count": 74000
+      "count": 173800
     },
     "single-answer-only": {
       "status": "Passed",
-      "count": 74000
+      "count": 173800
     },
     "keypad-keys-cover-answer": {
       "status": "Passed",
-      "count": 74000
+      "count": 173800
     },
     "answer-pad-uniform": {
       "status": "Passed",
-      "count": 66676
+      "count": 136838
     },
     "pad-typed-answers-accepted": {
       "status": "Passed",
-      "count": 66676
+      "count": 136838
     },
     "studio-items-identical": {
       "status": "Passed",
-      "count": 57900
+      "count": 157700
     },
     "teacher-variant-redraws": {
       "status": "Informational",
@@ -146,8 +146,8 @@
     },
     "bank-input-modes": {
       "status": "Informational",
-      "keypad": 1021,
-      "keyboard": 137
+      "keypad": 2433,
+      "keyboard": 721
     },
     "continuity-independent-oracle": {
       "status": "Passed",
@@ -175,20 +175,20 @@
     },
     "multi-part-tags": {
       "status": "Passed",
-      "tagged": 283,
-      "absent": 283,
-      "explained": 283,
-      "refused": 283,
-      "confirmed": 283,
-      "teacherReviewed": 743,
-      "gameBankEntries": 1158,
-      "bankEntries": 2184
+      "tagged": 464,
+      "absent": 464,
+      "explained": 464,
+      "refused": 464,
+      "confirmed": 464,
+      "teacherReviewed": 861,
+      "gameBankEntries": 3154,
+      "bankEntries": 4479
     },
     "related-links": {
       "status": "Passed",
-      "links": 2327,
-      "itemsWithEasier": 452,
-      "itemsWithHarder": 400
+      "links": 8833,
+      "itemsWithEasier": 729,
+      "itemsWithHarder": 768
     },
     "practice-gates": {
       "status": "Passed",
@@ -198,15 +198,15 @@
     },
     "bank-standards": {
       "status": "Passed",
-      "bankRows": 1158,
+      "bankRows": 3154,
       "withStandard": 185,
       "g96Samples": 2000,
       "g96NonPositive": 0
     },
     "bundle-provenance": {
       "status": "Passed",
-      "bundleSha256": "cac9401e7c6015f55da7eb329648b966e4a2bae6ac7721974f824da4c2f81ca0",
-      "contentHash": "788f8f2df05930dd5f176bc700e992b4"
+      "bundleSha256": "b79c4eae4ea31489159b9e7a5ca69c6f6e3ebd16373949095069e032bbc7f865",
+      "contentHash": "4c46d4bdd9c86d8e1ff530eba0bfd847"
     }
   },
   "failures": [],

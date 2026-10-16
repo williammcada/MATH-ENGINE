@@ -230,4 +230,4 @@ This commit documents design only. No executable implementation, verified releas
 
 ## v0.63.0 (2026-10-16)
 
-Release that brings the parallel-course work onto `main`: the course setup, Algebra 1 (all 679 records decided; requests R1–R5 integrated) and Algebra 1/2, merged with v0.36.0's universal answer pad. Bank answers are now checked on the pad-normalized answer and, if that fails, as typed (so ÷ answers work). Intermediate 4 follows in a later release. Verification: `docs/verification/v0.63.0-release-verify.md`.
+Release that brings the parallel-course work onto `main`: the course setup, Algebra 1 (all 679 records decided; requests R1–R5 integrated) and Algebra 1/2, merged with v0.36.0's universal answer pad and v0.37.0's single-answer games. Bank answers are now checked on the pad-normalized answer and, if that fails, as typed (so ÷ answers work). Intermediate 4 follows in a later release. Verification: `docs/verification/v0.63.0-release-verify.md`.
