@@ -6,6 +6,8 @@
  *     seeded Math object so a seed always gives the same question.
  *   - Course banks: Intermediate 4 → Algebra 2 entries whose answers are auto-checked
  *     (spec decision D2). Teacher-reviewed tasks are not game-eligible.
+ *   - Single-answer entries only (Engine 0.37.0): entries tagged multi-part by src/answer-shape.js
+ *     (lists, every solution, set members, "a; n") are not game-eligible. gameExclusion(id) says why.
  * Hosts must not generate or check mathematics themselves.
  * Every keypad item uses the one universal answer pad (src/answer-pad.js, handbook U-18, Engine 0.36.0).
  */
@@ -15,8 +17,9 @@ const { loadK7Skills, baselineSha256 } = require('./k7-skills.js');
 const INDEX = require('./practice-index.js');
 const CONT = require('./continuity-skills.js');
 const PAD = require('./answer-pad.js');
+const SHAPE = require('./answer-shape.js');
 
-const version = '0.36.0-rc.1';
+const version = '0.37.0-rc.1';
 const freeze = Object.freeze;
 
 // ---------- deterministic randomness ----------
@@ -59,6 +62,11 @@ const byId = new Map(catalog.map(e => [e.id, e]));
 const skillById = new Map(K7.catalog.map(s => [s.id, s]));
 const courses = freeze(INDEX.courses.map(c => freeze({ ...c, count: bankEntries.filter(e => e.bankId === c.bankId).length })));
 const find = id => byId.get(id) || null;
+// Engine 0.37.0: why a known Math Engine id is not offered to games ('multi-part' | 'teacher-reviewed'),
+// or null. Hosts use it to drop saved selections that are no longer game-eligible and to explain why.
+const GAME_EXCLUDED = INDEX.gameExcluded || {};
+const gameExclusion = id => byId.has(id) ? null : (GAME_EXCLUDED[id] || null);
+const gameExcludedCounts = freeze(Object.values(GAME_EXCLUDED).reduce((o, r) => (o[r] = (o[r] || 0) + 1, o), {}));
 
 // ---------- answer entry ----------
 // One pad for every question (U-18). The keys never depend on the correct answer.
@@ -94,7 +102,10 @@ function fromContinuity(entry, raw, meta) {
 }
 function requireEntry(id) {
   const entry = find(id);
-  if (!entry) throw Error('Unknown or non-game Math Engine item: ' + id);
+  if (!entry) {
+    const why = GAME_EXCLUDED[id];
+    throw Error(why ? `Not a game item (${why}): ${id}` : 'Unknown or non-game Math Engine item: ' + id);
+  }
   return entry;
 }
 function cleanSeed(seed) {
@@ -115,11 +126,12 @@ function generate(id, options = {}) {
   return fromBank(entry, bankDraw(entry, seed, index), meta);
 }
 // A few entries switch to a teacher-reviewed variant for some seeds. Those are excluded from the
-// index when seen at build time; this deterministic redraw is the runtime safety net.
+// index when seen at build time; this deterministic redraw is the runtime safety net. The same net
+// skips any multi-part variant (Engine 0.37.0), although the build already excludes such entries.
 function bankDraw(entry, seed, index) {
   for (let k = 0; k < 12; k++) {
     const raw = banks.generate(entry.sourceId, { seed, index: index + k * 100000 });
-    if (raw.answer.kind !== 'teacher') return raw;
+    if (raw.answer.kind !== 'teacher' && SHAPE.itemShape(raw, banks.answerText(raw)) === 'single') return raw;
   }
   throw Error('No auto-checked variant for ' + entry.id);
 }
@@ -286,7 +298,7 @@ function contentHash() {
 }
 const api = freeze({
   version, bankVersion: banks.version, k7Version: 'megaman-v0.7', k7BaselineSha256: baselineSha256,
-  catalog, courses, find, generate, nextItem, checkAnswer, evaluate, related, keypadKeys, answerPad: PAD,
+  catalog, courses, find, gameExclusion, gameExcludedCounts, generate, nextItem, checkAnswer, evaluate, related, keypadKeys, answerPad: PAD,
   Practice, freshMath, configError, formatMath: K7.formatMath, contentHash: contentHash()
 });
 module.exports = api;
