@@ -68,4 +68,4 @@ The oracle for `i4-add-row` (removed from the test while it has no task, because
 
 ## Proposed retirements
 
-None yet.
+None. Every Intermediate 4 record was either ported, consolidated, or (the 27 records in the R3 table) left covered-provisional; no record called for retirement.

@@ -875,6 +875,62 @@ TASKS_I4 = [
     _t('TX4_S11_00036', 'i4-volume', 'cube', 'The volume of a cube', 'measurement'),
     _t('TX4_S11_00037', 'i4-volume', 'count', 'The volume of a solid of centimeter cubes', 'measurement'),
     _t('TX4_S11_00038', 'i4-volume', 'prism', 'The volume of a rectangular solid', 'measurement'),
+    # Batch I4-15: Lessons 111-120, Investigation 12, Appendices A and B
+    # Lesson 111: Estimating Perimeter, Area, and Volume
+    _t('TX4_S12_00014', 'i4-area-est', 'grid', 'The area of a figure drawn on a grid', 'area'),
+    _t('TX4_S12_00069', 'i4-area-est', 'triangle', 'Estimate the area of a triangle on a grid', 'area'),
+    _t('TX4_S12_00041', 'i4-area-est', 'circle', 'Estimate the area of a circle on a grid', 'area'),
+    # Lesson 112: Reducing Fractions
+    _t('TX4_S12_00067', 'i4-reduce', 'reduce', 'Reduce a fraction to lowest terms', 'fractions'),
+    _t('TX4_S12_00013', 'i4-reduce', 'which', 'Which fraction simplifies to a unit fraction', 'fractions'),
+    _t('TX4_S12_00042', 'i4-reduce', 'find', 'A fraction that simplifies to a given fraction', 'fractions'),
+    _t('TX4_S12_00018', 'i4-reduce', 'reduce3', 'Reduce three fractions', 'fractions'),
+    _t('TX4_S12_00065', 'i4-method', 'frac', 'The fastest way to add two easy fractions', 'reasoning'),
+    # Lesson 113: Multiplying a Three-Digit Number by a Two-Digit Number
+    _t('TX4_S12_00033', 'i4-mult32', 'row', 'Multiply a three-digit number by a two-digit number', 'whole-arithmetic'),
+    _t('TX4_S12_00034', 'i4-mult32', 'col', 'Multiply a three-digit number by a two-digit number in a column', 'whole-arithmetic'),
+    _t('TX4_S12_00012', 'i4-mult32', 'money', 'Multiply an amount of money by a two-digit number', 'decimal-arithmetic'),
+    _t('TX4_S12_00066', 'i4-method', 'mult', 'Whether to multiply mentally or with a calculator', 'reasoning'),
+    # Lesson 114: Simplifying Fraction Answers
+    _t('TX4_S12_00011', 'i4-simplify', 'sub-mixed', 'Subtract mixed numbers and simplify', 'fractions'),
+    _t('TX4_S12_00031', 'i4-simplify', 'sub', 'Subtract fractions and simplify', 'fractions'),
+    _t('TX4_S12_00043', 'i4-simplify', 'add', 'Add fractions and write the sum as a mixed number', 'fractions'),
+    _t('TX4_S12_00032', 'i4-simplify', 'halves', 'Add two mixed numbers with halves', 'fractions'),
+    _t('TX4_S12_00016', 'i4-simplify', 'whole', 'Add mixed numbers whose fractions make 1', 'fractions'),
+    # Lesson 115: Renaming Fractions
+    _t('TX4_S12_00010', 'i4-rename', 'two-equiv', 'Which two fractions are equivalent to a unit fraction', 'fractions'),
+    _t('TX4_S12_00062', 'i4-rename', 'div-equiv', 'Which division is equivalent to another', 'whole-arithmetic'),
+    _t('TX4_S12_00045', 'i4-rename', 'yes-no', 'Whether two fractions are equivalent', 'fractions'),
+    # Lesson 116: Common Denominators
+    _t('TX4_S12_00046', 'i4-common', 'rename', 'Rename two fractions with a common denominator', 'fractions'),
+    _t('TX4_S12_00063', 'i4-common', 'same', 'Whether dividing both numbers keeps the quotient', 'reasoning'),
+    _t('TX4_S12_00064', 'i4-common', 'divide', 'A number to divide both numbers by, then the quotient', 'whole-arithmetic'),
+    # Lesson 117: Rounding Whole Numbers Through Hundred Millions
+    _t('TX4_S12_00009', 'i4-round-big', 'hundred-million', 'Round to the nearest hundred million', 'rounding-estimation'),
+    _t('TX4_S12_00026', 'i4-round-big', 'hundred-thousand', 'Round to the nearest hundred thousand', 'rounding-estimation'),
+    _t('TX4_S12_00027', 'i4-round-big', 'ten-million', 'Round to the nearest ten million', 'rounding-estimation'),
+    _t('TX4_S12_00028', 'i4-round-big', 'ten-thousand', 'Round to the nearest ten thousand', 'rounding-estimation'),
+    # Lesson 118: Dividing by Two-Digit Numbers
+    _t('TX4_S12_00008', 'i4-div2d', 'rem2', 'Divide by a two-digit number: a two-digit quotient and a remainder', 'whole-arithmetic'),
+    _t('TX4_S12_00050', 'i4-div2d', 'rem1', 'Divide by a two-digit number: a one-digit quotient and a remainder', 'whole-arithmetic'),
+    _t('TX4_S12_00025', 'i4-div2d', 'exact', 'Divide by a two-digit number with no remainder', 'whole-arithmetic'),
+    # Lesson 119: Adding and Subtracting Fractions with Different Denominators
+    _t('TX4_S12_00007', 'i4-unlike', 'sub', 'Subtract fractions with different denominators', 'fractions'),
+    _t('TX4_S12_00022', 'i4-unlike', 'add', 'Add two unit fractions with different denominators', 'fractions'),
+    _t('TX4_S12_00023', 'i4-unlike', 'sub-improper', 'Subtract from an improper fraction with a different denominator', 'fractions'),
+    # Lesson 120: Adding and Subtracting Mixed Numbers with Different Denominators
+    _t('TX4_S12_00006', 'i4-unlike-mixed', 'sub', 'Subtract mixed numbers with different denominators', 'fractions'),
+    _t('TX4_S12_00054', 'i4-unlike-mixed', 'add', 'Add mixed numbers with different denominators', 'fractions'),
+    # Investigation 12: Solving Balanced Equations
+    _t('TX4_S12_00005', 'i4-balance', 'frac', 'Solve an equation with a fraction coefficient', 'equations'),
+    _t('TX4_S12_00019', 'i4-balance', 'whole', 'Solve an equation with a whole-number coefficient', 'equations'),
+    # Appendix A: Roman Numerals Through 39
+    _t('TX4_S12_00003', 'i4-roman', 'to39', 'Write a number through 39 in Roman numerals', 'number-representation'),
+    # Appendix B: Roman Numerals Through Thousands
+    _t('TX4_S12_00055', 'i4-roman', 'letter', 'The value of a Roman numeral letter', 'number-representation'),
+    _t('TX4_S12_00040', 'i4-roman', 'from', 'The number a Roman numeral represents', 'number-representation'),
+    _t('TX4_S12_00058', 'i4-roman', 'to', 'Write a number through 1999 in Roman numerals', 'number-representation'),
+    _t('TX4_S12_00002', 'i4-roman', 'both', 'A Roman numeral to a number, and a number to Roman numerals', 'number-representation'),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -1086,6 +1142,19 @@ CONSOLIDATED_I4 = {
     'TX4_S11_00034': 'TX4_S11_00004',
     'TX4_S11_00057': 'TX4_S11_00003', 'TX4_S11_00079': 'TX4_S11_00003',
     'TX4_S11_00081': 'TX4_S11_00002', 'TX4_S11_00058': 'TX4_S11_00002', 'TX4_S11_00059': 'TX4_S11_00002',
+    # Batch I4-15
+    'TX4_S12_00038': 'TX4_S12_00014', 'TX4_S12_00039': 'TX4_S12_00069',
+    'TX4_S12_00036': 'TX4_S12_00067', 'TX4_S12_00037': 'TX4_S12_00067',
+    'TX4_S12_00035': 'TX4_S12_00012', 'TX4_S12_00004': 'TX4_S12_00012',
+    'TX4_S12_00044': 'TX4_S12_00011',
+    'TX4_S12_00029': 'TX4_S11_00010', 'TX4_S12_00030': 'TX4_S11_00015', 'TX4_S12_00017': 'TX4_S11_00015',
+    'TX4_S12_00047': 'TX4_S12_00046', 'TX4_S12_00048': 'TX4_S12_00046',
+    'TX4_S12_00049': 'TX4_S12_00008', 'TX4_S12_00051': 'TX4_S12_00008',
+    'TX4_S12_00024': 'TX4_S12_00007',
+    'TX4_S12_00052': 'TX4_S12_00006', 'TX4_S12_00053': 'TX4_S12_00006',
+    'TX4_S12_00020': 'TX4_S12_00005', 'TX4_S12_00021': 'TX4_S12_00019',
+    'TX4_S12_00056': 'TX4_S12_00003', 'TX4_S12_00057': 'TX4_S12_00003',
+    'TX4_S12_00059': 'TX4_S12_00002', 'TX4_S12_00068': 'TX4_S12_00040',
 }
 
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a

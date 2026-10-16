@@ -383,6 +383,31 @@ const oracle={
   return E.checkAnswer(q,[5,6,7].map(m=>`${p.a*m}/${p.b*m}`).join(' and ')).answerCorrect&&!E.checkAnswer(q,[1,2,3].map(m=>`${p.a*m}/${p.b*m}`).join(', ')).answerCorrect;},
  'i4-div-tens':(q,p)=>{const v=variantOf(q);if(v==='rem')return E.checkAnswer(q,`${Math.floor(p.n/p.d)} R ${p.n%p.d}`).answerCorrect&&p.n%p.d>0;if(v==='by10')return is(q,p.n/10);return is(q,p.n/p.d)&&p.n%p.d===0;},
  'i4-volume':(q,p)=>{const v=variantOf(q);if(v==='cube-units')return is(q,p.w*p.ht*p.d*p.k);if(v==='cube')return is(q,p.s*p.s*p.s);if(v==='count')return is(q,p.w*p.ht*p.d);return is(q,p.l*p.w*p.ht);},
+ // Batch I4-15
+ 'i4-area-est':(q,p)=>{const v=variantOf(q);if(v==='grid')return is(q,total(p.hs));if(v==='triangle'){const z=p.a*p.b/2;return E.checkAnswer(q,String(z)).answerCorrect&&!E.checkAnswer(q,String(p.a*p.b)).answerCorrect;}
+  const z=Math.PI*p.r*p.r;return E.checkAnswer(q,String(Math.round(z))).answerCorrect&&!E.checkAnswer(q,String(4*p.r*p.r)).answerCorrect;},
+ 'i4-reduce':(q,p)=>{const v=variantOf(q),g=(x,y)=>y?g(y,x%y):x;if(v==='reduce'){const k=g(p.a*p.k,p.b*p.k);return key(q)===`${p.a*p.k/k}/${p.b*p.k/k}`;}
+  if(v==='which'){const [m,n]=p.opts[p.ord['ABCD'.indexOf(key(q))]].split('/').map(Number);return n===m*p.d&&p.opts.filter(x=>{const [c,e]=x.split('/').map(Number);return e===c*p.d;}).length===1;}
+  if(v==='find')return E.checkAnswer(q,`${3*p.a}/${3*p.b}`).answerCorrect&&!E.checkAnswer(q,`${p.a}/${p.b}`).answerCorrect;
+  return E.checkAnswer(q,p.fs.map(([a,b,k])=>{const x=g(a*k,b*k);return `${a*k/x}/${b*k/x}`;}).join('; ')).answerCorrect;},
+ 'i4-method':(q,p)=>{const v=variantOf(q);if(v==='frac')return E.checkAnswer(q,'mentally').answerCorrect;return E.checkAnswer(q,p.easy?'mentally':'calculator').answerCorrect&&(p.easy===(p.b===10||p.b===100));},
+ 'i4-mult32':(q,p)=>{const v=variantOf(q);if(v==='money')return Math.round(numKey(q)*100)===p.c*p.n;return is(q,p.a*p.b);},
+ 'i4-simplify':(q,p)=>{const v=variantOf(q),g=(x,y)=>y?g(y,x%y):x,mixed=(n,d)=>{const w=Math.floor(n/d),r=n%d,k=g(r,d);return r?(w?`${w} ${r/k}/${d/k}`:`${r/k}/${d/k}`):String(w);};
+  if(v==='sub'||v==='sub-mixed')return E.checkAnswer(q,mixed((p.w1*p.d+p.a)-(p.w2*p.d+p.b),p.d)).answerCorrect;if(v==='add')return E.checkAnswer(q,mixed(p.a+p.b,p.d)).answerCorrect;
+  if(v==='halves')return is(q,p.a+p.b+1);return is(q,p.a+p.b+1)&&p.k<p.d;},
+ 'i4-rename':(q,p)=>{const v=variantOf(q);if(v==='two-equiv')return E.checkAnswer(q,`${3}/${3*p.d}, ${2}/${2*p.d}`).answerCorrect;if(v==='div-equiv'){const [x,y]=key(q).split('÷').map(Number);return x*p.b===p.a*y&&x===p.a/10;}
+  return key(q).toLowerCase()===(p.c*p.b===p.a*p.d?'yes':'no');},
+ 'i4-common':(q,p)=>{const v=variantOf(q);if(v==='rename'){const l=p.d1*p.d2/((x,y)=>{while(y)[x,y]=[y,x%y];return x;})(p.d1,p.d2);return E.checkAnswer(q,`${p.a*l/p.d1}/${l}, ${p.b*l/p.d2}/${l}`).answerCorrect;}
+  if(v==='same')return key(q).toLowerCase()===((p.a/p.p)/(p.c/p.e2)===p.a/p.c?'yes':'no');let k=2;while(p.a%k||p.b%k)k++;return E.checkAnswer(q,`${k}; ${p.a/p.b}`).answerCorrect;},
+ 'i4-round-big':(q,p)=>{const u=10**p.e,r=p.n%u;return is(q,p.n-r+(2*r>=u?u:0));},
+ 'i4-div2d':(q,p)=>{const v=variantOf(q);if(v==='exact')return is(q,p.n/p.d)&&p.n%p.d===0;return E.checkAnswer(q,`${Math.floor(p.n/p.d)} R ${p.n%p.d}`).answerCorrect&&(v==='rem1'?p.n<10*p.d:p.n>=10*p.d);},
+ 'i4-unlike':(q,p)=>{const v=variantOf(q);if(v==='add')return E.checkAnswer(q,`${6}/${4*p.d}`).answerCorrect;
+  const g=(x,y)=>y?g(y,x%y):x,low=(n,d)=>{const k=g(n,d);return `${n/k}/${d/k}`;};if(v==='sub-improper')return E.checkAnswer(q,low(2*p.a-1,2*p.d)).answerCorrect;return E.checkAnswer(q,low(p.a-p.b*p.k,p.d2*p.k)).answerCorrect;},
+ 'i4-unlike-mixed':(q,p)=>{const v=variantOf(q),g=(x,y)=>y?g(y,x%y):x,D=p.d1*p.d2,x=(p.w1*p.d1+p.a)*p.d2,y=(p.w2*p.d2+p.b)*p.d1,n=v==='add'?x+y:x-y,w=Math.floor(n/D),r=n%D,k=g(r,D);return E.checkAnswer(q,`${w} ${r/k}/${D/k}`).answerCorrect;},
+ 'i4-balance':(q,p)=>{const v=variantOf(q);if(v==='frac')return numKey(q)*p.n===p.c*p.d;return numKey(q)*p.a===p.a*p.x&&promptNums(q).includes(p.a*p.x);},
+ 'i4-roman':(q,p)=>{const v=variantOf(q),V={I:1,V:5,X:10,L:50,C:100,D:500,M:1000},val=r=>[...r].reduce((s,c,i)=>s+(V[r[i+1]]>V[c]?-V[c]:V[c]),0);
+  if(v==='to39')return val(key(q))===p.n&&/^X{0,3}(IX|IV|V?I{0,3})$/.test(key(q));if(v==='letter')return is(q,V[p.L]);if(v==='from')return is(q,val(p.r));if(v==='to')return val(key(q))===p.n&&/^M?(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(key(q));
+  const [a,b]=key(q).split(';').map(x=>x.trim());return Number(a)===p.m&&val(b)===p.n;},
 };
 
 // The two sides of a comparison prompt ("a − b ☐ c − d"), evaluated separately.

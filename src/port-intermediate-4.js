@@ -1826,6 +1826,127 @@ R['i4-volume']=(v,{int,pick},h)=>{
  const l=int(4,12),w=int(2,9),ht=int(2,9),z=l*w*ht;const t=nu('Find the volume of the rectangular solid in cubic meters.',z,['m³','m3','cubic meters','cubic m'],`${z} m³`,`${l} × ${w} × ${ht} = ${z} cubic meters.`,{l,w,ht});t.svg=S.prismFigure(l,ht,w,[`${l} m`,`${ht} m`,`${w} m`]);
  return mc(h,t,[{value:`${l*w} m³`,mistake:'Multiplied only two edges'},{value:`${l+w+ht} m³`,mistake:'Added the edges'},{value:`${2*(l*w+l*ht+w*ht)} m³`,mistake:'Found the surface area'}]);};
 
+// Batch I4-15
+// A square grid (cols by rows) with shaded cells (a set of "c,r" from the bottom left) and an optional extra drawing in grid units.
+function cellGrid(cols,rows,cells,extra,label){const s=26,X=10,Y=10;let b='';for(const k of cells){const [c,r]=k.split(',').map(Number);b+=`<rect x="${X+c*s}" y="${Y+(rows-1-r)*s}" width="${s}" height="${s}" fill="${S.SHADE}" fill-opacity="0.5" stroke="none"/>`;}
+ for(let i=0;i<=cols;i++)b+=ln(X+i*s,Y,X+i*s,Y+rows*s,{w:0.7});for(let j=0;j<=rows;j++)b+=ln(X,Y+j*s,X+cols*s,Y+j*s,{w:0.7});
+ if(extra)b+=extra((u,v)=>[X+u*s,Y+(rows-v)*s]);return svg(b,label,X*2+cols*s,Y*2+rows*s);}
+R['i4-area-est']=(v,{int,pick},h)=>{
+ if(v==='grid'){const w=int(4,8),hs=[];for(let c=0;c<w;c++)hs.push(int(2,6));const z=sum(hs),cells=[];hs.forEach((k,c)=>{for(let r=0;r<k;r++)cells.push(`${c},${r}`);});
+  const t=nu('If each square is one square unit, what is the area of the shaded figure drawn on the grid?',z,['square units','units²','units2','sq units','sq. units','units'],`${z} square units`,`Count the squares in each column: ${hs.join(' + ')} = ${z} square units.`,{hs});t.svg=cellGrid(w+2,8,cells,null,`A shaded figure on a grid made of ${z} whole squares`);
+  return mc(h,t,[{value:`${z+w} square units`,mistake:'Counted a row of squares twice'},{value:`${2*(w+Math.max(...hs))} square units`,mistake:'Found the perimeter instead'},{value:`${w*Math.max(...hs)} square units`,mistake:'Counted the whole rectangle around the figure'}].filter(x=>x.value!==`${z} square units`),[{value:`${z-1} square units`,mistake:'Missed one square'}]);}
+ if(v==='triangle'){let a,b;do{a=int(3,9);b=int(3,7);}while((a*b)%2);const z=a*b/2,tol=Math.max(2,Math.round(z*0.15));
+  const t={prompt:'Estimate the area, in square centimeters, of this triangle. Each small square represents one square centimeter.',answer:{kind:'i4-est',v:z,tol,value:String(z)},solution:`The triangle is half of a ${a} by ${b} rectangle: about ${a*b} ÷ 2 = ${z} square centimeters. Counting whole and half squares gives an estimate close to this.`,parameters:{a,b},svg:cellGrid(a+2,b+2,[],P=>{const p=[P(1,1),P(1+a,1),P(1,1+b)];return `<polygon points="${p.map(q=>q.join(',')).join(' ')}" fill="${S.SHADE}" fill-opacity="0.5" stroke="${INK}" stroke-width="2"/>`;},`A right triangle on a centimeter grid, ${a} squares wide and ${b} squares tall`)};
+  return mc(h,t,[{value:String(a*b),mistake:'Counted the whole rectangle'},{value:String(a+b),mistake:'Added the sides'},{value:String(2*a*b),mistake:'Doubled instead of halving'}].filter(x=>Math.abs(Number(x.value)-z)>tol));}
+ const r=int(3,5),z=Math.round(3.14*r*r),tol=Math.round(z*0.15);
+ const t={prompt:'What is a good estimate of the area of the circle? Each small square is one square unit.',answer:{kind:'i4-est',v:z,tol,value:String(z)},solution:`Count the whole squares inside the circle and add about half of the part squares: about ${z} square units.`,parameters:{r},svg:cellGrid(2*r+2,2*r+2,[],P=>{const [cx,cy]=P(r+1,r+1),[ex]=P(2*r+1,r+1);return `<circle cx="${cx}" cy="${cy}" r="${ex-cx}" fill="${S.SHADE}" fill-opacity="0.5" stroke="${INK}" stroke-width="2"/>`;},`A circle on a grid, ${2*r} squares across`)};
+ return mc(h,t,[{value:String(4*r*r),mistake:'Counted every square in the square around the circle'},{value:String(2*r*r),mistake:'Counted only about half the squares'},{value:String(4*r),mistake:'Counted only the squares across the middle'}].filter(x=>Math.abs(Number(x.value)-z)>tol));};
+
+R['i4-reduce']=(v,{int,pick},h)=>{const g=S.gcd,lowest=()=>{let a,b;do{b=int(3,9);a=int(1,b-1);}while(g(a,b)!==1);return [a,b];};
+ if(v==='reduce'){const [a,b]=lowest(),k=int(2,8),f=[2,3,5,7].find(x=>k%x===0&&x<k);const t={prompt:`Reduce ${a*k}/${b*k} to lowest terms.`,answer:{kind:'i4-simplest',n:a,d:b,value:fx(a,b)},solution:`Divide the numerator and the denominator by ${k}: ${a*k}/${b*k} = ${a}/${b}.`,parameters:{a,b,k}};
+  return mc(h,t,[...(f?[{value:fx(a*k/f,b*k/f),mistake:'Did not reduce all the way'}]:[]),{value:fx(a,b+1),mistake:'Slip dividing the denominator'},{value:fx(a+1,b),mistake:'Slip dividing the numerator'}].filter(x=>{const [m,n]=x.value.split('/').map(Number);return !(m*b===a*n&&g(m,n)===1);}),[{value:fx(a*k,b),mistake:'Divided only the denominator'}]);}
+ if(v==='which'){const d=int(3,9),k=pick([3,4,5]),list=[fx(k,k*d),fx(2,k*d),fx(k,2*d),fx(10*d-10,10*d)];return letterPick(h,int,`Which fraction simplifies to 1/${d}?`,list,0,`${k}/${k*d}: divide both terms by ${k} to get 1/${d}.`,{d,k},x=>`${x} does not simplify to 1/${d}`);}
+ if(v==='find'){const [a,b]=lowest();const t={prompt:`Write a fraction that is equal to ${a}/${b} but has a greater denominator.`,answer:{kind:'i4-frac-other',n:a,d:b,value:fx(5*a,5*b)},solution:`Multiply both terms by the same number, for example ${a}/${b} = ${5*a}/${5*b}; it reduces back to ${a}/${b}.`,parameters:{a,b}};
+  return mc(h,t,[{value:fx(a+5,b+5),mistake:'Added the same number to both terms'},{value:fx(5*a,b),mistake:'Multiplied only the numerator'},{value:fx(a,5*b),mistake:'Multiplied only the denominator'}]);}
+ const fs=[0,1,2].map(()=>{const [a,b]=lowest(),k=int(2,9);return [a,b,k];});const t={prompt:`Reduce each fraction: (a) ${fs.map(([a,b,k],i)=>`(${'abc'[i]}) ${a*k}/${b*k}`).join(' ').slice(4)}. Write the three answers, separated by commas.`,answer:{kind:'i4-frac-seq',fr:fs.map(([a,b])=>[a,b]),value:fs.map(([a,b])=>fx(a,b)).join(', ')},solution:fs.map(([a,b,k])=>`${a*k}/${b*k} = ${a}/${b} (divide by ${k})`).join('; ')+'.',parameters:{fs}};
+ return mc(h,t,[{value:fs.map(([a,b],i)=>i?fx(a,b):fx(a+1,b)).join(', '),mistake:'Slip reducing the first fraction'},{value:fs.map(([a,b,k])=>fx(b,a)).join(', '),mistake:'Turned the fractions upside down'},{value:fs.map(([a,b,k])=>fx(a*k,b*k)).join(', '),mistake:'Did not reduce the fractions'}]);};
+
+// Which way to calculate is fastest: mentally, with paper and pencil, or with a calculator.
+R['i4-method']=(v,{int,pick},h)=>{const opts=' mentally, with paper and pencil, or with a calculator',M1=['mentally','mental math','in her head','in his head','in my head','in your head','mental'],C1=['with a calculator','calculator','a calculator','use a calculator'];
+ if(v==='frac'){const [p,q]=pick([['2/4','5/10'],['3/6','4/8'],['1/2','6/12'],['5/10','50/100'],['1/4','3/4'],['2/8','6/8']]);const t=S.text(`What is the fastest way to find ${p} + ${q}:${opts}?`,'mentally',`${p} and ${q} are easy fractions to add in your head (the sum is 1), so mentally is fastest.`,{p,q},'',M1);
+  return mc(h,t,[{value:'with a calculator',mistake:'A calculator is slower for easy fractions'},{value:'with paper and pencil',mistake:'Paper and pencil is slower for easy fractions'}]);}
+ const a=100*int(2,3)+10*int(1,8)+int(1,9),easy=int(0,1)===1,b=easy?pick([10,100]):10*int(1,8)+int(1,9),[A]=names(h,1);
+ const t=S.text(`${A} wants to multiply ${a} by ${b} as quickly as possible. Should ${A} multiply${opts}?`,easy?'mentally':'with a calculator',easy?`Multiplying by ${b} only adds zeros: ${a} × ${b} = ${a*b}. Mentally is fastest.`:`${a} × ${b} has many steps; a calculator is quickest for large numbers.`,{a,b,easy},'',easy?M1:C1);
+ return mc(h,t,easy?[{value:'with a calculator',mistake:`Multiplying by ${b} is easy to do in your head`},{value:'with paper and pencil',mistake:`Multiplying by ${b} is easy to do in your head`}]:[{value:'mentally',mistake:'The numbers are too large to multiply quickly in your head'},{value:'with paper and pencil',mistake:'Paper and pencil is slower than a calculator here'}]);};
+
+R['i4-mult32']=(v,{int},h)=>{
+ if(v==='money'){const c=100*int(1,4)+int(10,99),n=10*int(1,3)+int(1,9),z=c*n;return mc(h,mon(`Multiply: ${S.money(c)} × ${n}`,z,`${c} × ${n} = ${z} cents = ${S.money(z)}.`,{c,n}),[{value:S.money(c*(n+2)),mistake:'Multiplied by a number two too large'},{value:S.money(z+100),mistake:'Slip carrying'},{value:S.money(z*10),mistake:'Put the decimal point in the wrong place'}]);}
+ const a=int(201,699),b=10*int(2,7)+int(1,9),z=a*b,col=v==='col';
+ return mc(h,num(col?'Multiply.':`Multiply: ${a} × ${b}`,z,`${a} × ${b%10} = ${a*(b%10)}; ${a} × ${b-b%10} = ${a*(b-b%10)}; ${a*(b%10)} + ${a*(b-b%10)} = ${z}.`,{a,b},col?S.stackFigure([String(a),String(b)],'×',undefined,`${a} times ${b}, written in a column`):''),[{value:z+b,mistake:'Slip: one extra group'},{value:z-b,mistake:'Slip: one group too few'},{value:a*(b%10)+a*Math.floor(b/10),mistake:'Did not write the zero for the tens row'}],[{value:z+100,mistake:'Slip carrying'}]);};
+
+R['i4-simplify']=(v,{int,pick},h)=>{const g=S.gcd,sv=(n,d)=>{const w=Math.floor(n/d),[p,q]=S.red(n%d,d);return n%d?(w?`${w} ${p}/${q}`:`${p}/${q}`):String(w);};
+ if(v==='sub'||v==='sub-mixed'){const mixed=v==='sub-mixed';let d,a,b;do{d=mixed?pick([12,14,15,16]):int(5,12);b=int(1,d-3);a=int(b+1,d-1);}while(g(a,d)!==1||g(b,d)!==1||g(a-b,d)===1);const w1=mixed?int(4,9):0,w2=mixed?int(2,w1-2):0,n=(w1-w2)*d+a-b;
+  const t={prompt:`Subtract. Write the answer in simplest form: ${mixed?`${w1} ${a}/${d} − ${w2} ${b}/${d}`:`${a}/${d} − ${b}/${d}`}`,answer:{kind:'i4-simplest',n,d,value:sv(n,d)},solution:`${mixed?`${w1} − ${w2} = ${w1-w2}; `:''}${a}/${d} − ${b}/${d} = ${a-b}/${d}, which reduces: ${sv(n,d)}.`,parameters:{w1,w2,a,b,d}};
+  const W=mixed?`${w1-w2} `:'';return mc(h,t,[{value:`${W}${a-b}/${d}`,mistake:'Did not reduce the answer'},{value:sv(n+1,d),mistake:'Slip subtracting the numerators'},{value:mixed?sv(n+d,d):sv(a+b,2*d),mistake:mixed?'Slip subtracting the whole numbers':'Added instead of subtracting'}].filter(x=>x.value!==sv(n,d)),[{value:sv(Math.max(1,n-1),d),mistake:'Slip subtracting the numerators'}]);}
+ if(v==='add'){let d,a,b;do{d=int(5,12);a=int(2,d-1);b=int(2,d-1);}while(g(a,d)!==1||g(b,d)!==1||a===b||a+b<=d);const n=a+b;
+  const t={prompt:`Add. Write the answer in simplest form: ${a}/${d} + ${b}/${d}`,answer:{kind:'i4-simplest',n,d,value:sv(n,d)},solution:`${a}/${d} + ${b}/${d} = ${n}/${d} = ${sv(n,d)}.`,parameters:{a,b,d}};
+  return mc(h,t,[{value:`${n}/${d}`,mistake:'Did not change the improper fraction to a mixed number'},{value:sv(n,2*d),mistake:'Added the denominators too'},{value:sv(n+1,d),mistake:'Slip adding the numerators'}].filter(x=>x.value!==sv(n,d)));}
+ if(v==='halves'){let a,b;do{a=int(2,8);b=int(2,8);}while(a===b);const n=2*(a+b)+2;
+  const t={prompt:`Add. Write the answer in simplest form: ${a} 1/2 + ${b} 1/2`,answer:{kind:'i4-simplest',n,d:2,value:String(a+b+1)},solution:`1/2 + 1/2 = 1, so ${a} + ${b} + 1 = ${a+b+1}.`,parameters:{a,b}};
+  return mc(h,t,[{value:`${a+b} 2/2`,mistake:'Did not simplify 2/2'},{value:`${a+b} 1/4`,mistake:'Added the denominators'},{value:String(a+b),mistake:'Left out the two halves'}]);}
+ // whole: mixed numbers whose fractions make 1.
+ const d=pick([2,3,4,5,6,8]);let k;do{k=int(1,d-1);}while(g(k,d)!==1&&d>2);const a=int(1,6),b=int(1,6),n=(a+b+1)*d;
+ const t={prompt:`Add. Write the answer in simplest form: ${a} ${k}/${d} + ${b} ${d-k}/${d}`,answer:{kind:'i4-simplest',n,d,value:String(a+b+1)},solution:`${k}/${d} + ${d-k}/${d} = ${d}/${d} = 1, so ${a} + ${b} + 1 = ${a+b+1}.`,parameters:{a,b,k,d}};
+ return mc(h,t,[{value:`${a+b} ${d}/${d}`,mistake:`Did not simplify ${d}/${d}`},{value:String(a+b),mistake:'Left out the fractions'},{value:`${a+b} ${d}/${2*d}`,mistake:'Added the denominators'}]);};
+
+R['i4-rename']=(v,{int,pick},h)=>{
+ if(v==='two-equiv'){const d=int(3,8),ok=[fx(2,2*d),fx(3,3*d)],list=[fx(1,2*d),fx(2,2*d),fx(3,3*d),fx(2,4*d)];const L=[...list];for(let i=L.length-1;i>0;i--){const j=int(0,i);[L[i],L[j]]=[L[j],L[i]];}
+  const t={prompt:`Which two fractions are equivalent to 1/${d}: ${L.join(', ')}? Write the two, separated by "and".`,answer:{kind:'i4-frac-two',pairs:ok,value:`${ok[0]} and ${ok[1]}`},solution:`2/${2*d} and 3/${3*d} each reduce to 1/${d}.`,parameters:{d,list:L}};
+  return mc(h,t,[{value:`${fx(1,2*d)} and ${fx(2,2*d)}`,mistake:`1/${2*d} is half of 1/${d}`},{value:`${fx(3,3*d)} and ${fx(2,4*d)}`,mistake:`2/${4*d} is half of 1/${d}`},{value:`${fx(1,2*d)} and ${fx(2,4*d)}`,mistake:'Both are half of the fraction'}]);}
+ if(v==='div-equiv'){const b=10*int(3,8),a=b*int(3,7),list=[`${a} ÷ ${b/10}`,`${a/10} ÷ ${b/10}`,`${a/10} ÷ ${b}`,`${a/10} ÷ 10`];const L=[...list];for(let i=L.length-1;i>0;i--){const j=int(0,i);[L[i],L[j]]=[L[j],L[i]];}
+  const t={prompt:`Which expression is equivalent to ${a} ÷ ${b}: ${L.join(', ')}?`,answer:{kind:'i4-pick',value:list[1]},solution:`Dividing both numbers by 10 keeps the quotient: ${a} ÷ ${b} = ${a/10} ÷ ${b/10} = ${a/b}.`,parameters:{a,b,list:L}};
+  return mc(h,t,[0,2,3].map(i=>({value:list[i],mistake:'Divided only one of the numbers by 10'})));}
+ // yes-no: are two fractions equivalent?
+ const g=S.gcd;let a,b;do{b=int(3,9);a=int(1,b-1);}while(g(a,b)!==1);const k=int(2,5),eq=int(0,1)===1,c=eq?a*k:a*k+pick([-1,1]),d=b*k;
+ const t=S.text(`Are the fractions ${a}/${b} and ${c}/${d} equivalent? Answer yes or no.`,eq?'yes':'no',eq?`${a}/${b} × ${k}/${k} = ${a*k}/${d}, so yes.`:`${a}/${b} × ${k}/${k} = ${a*k}/${d}, not ${c}/${d}, so no.`,{a,b,c,d,k},'',eq?['yes, they are equivalent','yes they are']:['no, they are not equivalent','no they are not']);
+ return mc(h,t,[{value:eq?'no':'yes',mistake:eq?`${a}/${b} × ${k}/${k} = ${c}/${d}`:`${c}/${d} is not ${a}/${b} times ${k}/${k}`}],[{value:'maybe',mistake:'The answer is yes or no'}]);};
+
+R['i4-common']=(v,{int,pick},h)=>{const g=S.gcd;
+ if(v==='rename'){let d1,d2,a,b;do{d1=int(3,8);d2=int(3,8);a=int(1,d1-1);b=int(1,d2-1);}while(d1===d2||g(a,d1)!==1||g(b,d2)!==1);const L=d1*d2/g(d1,d2);
+  const t={prompt:`Rename ${a}/${d1} and ${b}/${d2} so that they have a common denominator of ${L}. Write the two fractions, separated by a semicolon.`,answer:{kind:'i4-frac-seq',fr:[[a*L/d1,L],[b*L/d2,L]],value:`${a*L/d1}/${L}; ${b*L/d2}/${L}`},solution:`${a}/${d1} × ${L/d1}/${L/d1} = ${a*L/d1}/${L}; ${b}/${d2} × ${L/d2}/${L/d2} = ${b*L/d2}/${L}.`,parameters:{a,b,d1,d2}};
+  return mc(h,t,[{value:`${a}/${L}; ${b}/${L}`,mistake:'Changed only the denominators'},{value:`${a*L/d2}/${L}; ${b*L/d1}/${L}`,mistake:'Multiplied by the wrong numbers'},{value:`${a+L-d1}/${L}; ${b+L-d2}/${L}`,mistake:'Added instead of multiplying'}].filter(x=>x.value!==`${a*L/d1}/${L}; ${b*L/d2}/${L}`));}
+ if(v==='same'){let p,q;do{p=int(2,5);q=int(2,5);}while(p===q);const c=p*q,a=c*int(5,12),yes=int(0,1)===1,e2=yes?p:q,[A]=names(h,1);
+  const t=S.text(`${A} divided ${a} by ${c} and got an answer. Does (${a} ÷ ${p}) ÷ (${c} ÷ ${e2}) give the same answer? Answer yes or no.`,yes?'yes':'no',yes?`Dividing both numbers by ${p} keeps the quotient: both give ${a/c}.`:`The two numbers are divided by different numbers: ${a} ÷ ${c} = ${a/c}, but ${a/p} ÷ ${c/e2} = ${(a/p)/(c/e2)}.`,{a,c,p,e2,yes},'',[]);
+  return mc(h,t,[{value:yes?'no':'yes',mistake:yes?'Dividing both numbers by the same number keeps the quotient':'The two quotients are different'}],[{value:'maybe',mistake:'The answer is yes or no'}]);}
+ // divide: a common divisor that makes a division easy, then the quotient.
+ const q=int(2,9),b=pick([12,16,18,24,27,32,36,45,48]),a=b*q,[A]=names(h,1);if(a>500)return R['i4-common'](v,{int,pick},h);const ds=[];for(let k=2;k<b;k++)if(b%k===0)ds.push(k);
+ const t={prompt:`${A} has to divide ${a} by ${b} mentally. ${A} knows that dividing ${a} and ${b} by the same number gives two new numbers with the same quotient. What number could ${A} divide both by, and what is the answer to ${a} ÷ ${b}? Write the two numbers, separated by a semicolon.`,answer:{kind:'i4-common-div',a,b,value:`${ds[0]}; ${q}`},solution:`Any of ${ds.join(', ')} divides both numbers; for example ${a} ÷ ${ds[0]} = ${a/ds[0]} and ${b} ÷ ${ds[0]} = ${b/ds[0]}, and ${a/ds[0]} ÷ ${b/ds[0]} = ${q}.`,parameters:{a,b,q}};
+ return mc(h,t,[{value:`${ds[0]}; ${q+1}`,mistake:'Slip dividing'},{value:`${b+1}; ${q}`,mistake:`${b+1} does not divide both numbers`},{value:`${ds[0]}; ${a/ds[0]}`,mistake:'Gave the new dividend instead of the quotient'}].filter(x=>x.value!==`${ds[0]}; ${q}`));};
+
+R['i4-round-big']=(v,{int},h)=>{const P={'ten-thousand':[4,5],'hundred-thousand':[5,6],'ten-million':[7,8],'hundred-million':[8,9]}[v],[e,len]=P,u=10**e;let n;do{n=int(2,8)*10**(len-1)+int(0,10**(len-1)-1);}while(Math.floor(n/(u/10))%10===5);
+ const z=Math.round(n/u)*u,nm=v.replace('-',' ');return mc(h,num(`Round ${S.comma(n)} to the nearest ${nm}.`,z,`Look at the digit after the ${nm}s place: ${Math.floor(n/(u/10))%10}. ${Math.floor(n/(u/10))%10>=5?'Round up':'Round down'}: ${S.comma(z)}.`,{n,e}),
+  [{value:z===Math.floor(n/u)*u?z+u:z-u,mistake:'Rounded the wrong way'},{value:Math.round(n/(u/10))*(u/10),mistake:'Rounded to the next smaller place'},{value:Math.round(n/(u/100))*(u/100),mistake:'Rounded to a place two smaller'}].filter(x=>x.value!==z),[{value:z+2*u,mistake:'Rounded up too far'}]);};
+
+R['i4-div2d']=(v,{int},h)=>{const boxed=(dv,dd)=>svg(boxDiv(dv,dd,60,40),`${dd} divided by ${dv}, written with a division box`,170,60);
+ if(v==='exact'){const d=int(11,19),q=int(11,19);if(d*q>=1000)return R['i4-div2d'](v,{int},h);const n=d*q;return mc(h,num('Divide.',q,`${d} × ${q} = ${n}.`,{n,d},boxed(d,n)),[{value:q+1,mistake:'Slip dividing'},{value:q-1,mistake:'Slip dividing'},{value:q+10,mistake:'Slip in the tens of the quotient'}]);}
+ const d=int(11,19);let q;do{q=v==='rem1'?int(4,9):int(21,89);}while(q%10===0||d*q>=1000);const r=int(1,d-1),n=d*q+r;
+ const t={prompt:'Divide. Write the answer with a remainder, like 7 R 3.',answer:{kind:'i4-rem',q,r,value:`${q} R ${r}`},solution:`${d} × ${q} = ${d*q}, and ${n} − ${d*q} = ${r}: ${q} R ${r}.`,parameters:{n,d},svg:boxed(d,n)};
+ return mc(h,t,[{value:`${q} R ${r===d-1?r-1:r+1}`,mistake:'Slip finding the remainder'},{value:`${q-1} R ${r+d}`,mistake:'Remainder larger than the divisor'},{value:`${q+1} R ${r}`,mistake:'One too many in the quotient'}]);};
+
+R['i4-unlike']=(v,{int,pick},h)=>{const g=S.gcd,sf=(n,d)=>{const [p,q]=S.red(n,d);return q===1?String(p):fx(p,q);};
+ if(v==='add'){const d=int(2,8),D=2*d,n=3;const t={prompt:`Add: 1/${d} + 1/${D}`,answer:{kind:'i4-frac-any',n,d:D,value:sf(n,D)},solution:`1/${d} = 2/${D}; 2/${D} + 1/${D} = 3/${D}.`,parameters:{d}};
+  return mc(h,t,[{value:fx(2,d+D),mistake:'Added the numerators and the denominators'},{value:fx(2,D),mistake:'Did not rename 1/'+d},{value:fx(1,d*D),mistake:'Multiplied the fractions'}]);}
+ if(v==='sub-improper'){const d=int(2,6),D=2*d;let a;do{a=int(d+1,2*d-1);}while(g(a,d)!==1);const n=2*a-1;const t={prompt:`Subtract. Reduce the answer if possible, but do not change it to a mixed number: ${a}/${d} − 1/${D}`,answer:{kind:'i4-simplest-frac',n,d:D,value:sf(n,D)},solution:`${a}/${d} = ${2*a}/${D}; ${2*a}/${D} − 1/${D} = ${n}/${D}${sf(n,D)!==fx(n,D)?` = ${sf(n,D)}`:''}.`,parameters:{a,d}};
+  return mc(h,t,[{value:sf(a-1,D),mistake:'Did not rename the first fraction'},{value:sf(a-1,d),mistake:'Subtracted the numerators and the denominators'},{value:sf(2*a+1,D),mistake:'Added instead of subtracting'}].filter(x=>x.value!==sf(n,D)));}
+ // sub: denominators where one is a multiple of the other.
+ let d2,k,a,b;do{d2=int(2,5);k=int(2,4);b=int(1,d2-1);a=int(b*k+1,d2*k-1);}while(g(a,d2*k)!==1||g(b,d2)!==1);const D=d2*k,n=a-b*k;
+ const t={prompt:`Subtract. Reduce the answer if possible: ${a}/${D} − ${b}/${d2}`,answer:{kind:'i4-simplest-frac',n,d:D,value:sf(n,D)},solution:`${b}/${d2} = ${b*k}/${D}; ${a}/${D} − ${b*k}/${D} = ${n}/${D}${sf(n,D)!==fx(n,D)?` = ${sf(n,D)}`:''}.`,parameters:{a,b,d2,k}};
+ return mc(h,t,[{value:sf(a-b,D-d2),mistake:'Subtracted the numerators and the denominators'},{value:sf(a+b,D+d2),mistake:'Added the numerators and the denominators'},{value:sf(n+d2,D),mistake:'Slip renaming the second fraction'}].filter(x=>x.value!==sf(n,D)),[{value:sf(Math.abs(a-b),D),mistake:'Did not rename the second fraction'}]);};
+
+R['i4-unlike-mixed']=(v,{int,pick},h)=>{const g=S.gcd,add=v==='add',sv=(n,d)=>{const w=Math.floor(n/d),[p,q]=S.red(n%d,d);return n%d?`${w} ${p}/${q}`:String(w);};
+ let d1,d2,a,b,w1,w2;do{d1=int(2,4);d2=pick([d1+1,d1+2,2*d1,3*d1]);a=int(1,d1-1);b=int(1,d2-1);w1=int(5,9);w2=int(2,4);}while(g(a,d1)!==1||g(b,d2)!==1||(add?false:a*d2<=b*d1)||(a*d2+b*d1*(add?1:-1))%(d1*d2)===0);
+ const D=d1*d2,n=add?(w1*d1+a)*d2+(w2*d2+b)*d1:(w1*d1+a)*d2-(w2*d2+b)*d1;
+ const t={prompt:`${add?'Add':'Subtract'}. Reduce the answer if possible: ${w1} ${a}/${d1} ${add?'+':'−'} ${w2} ${b}/${d2}`,answer:{kind:'i4-simplest',n,d:D,value:sv(n,D)},solution:`Rename with the denominator ${D}: ${w1} ${a*d2}/${D} ${add?'+':'−'} ${w2} ${b*d1}/${D} = ${sv(n,D)}.`,parameters:{w1,w2,a,b,d1,d2}};
+ return mc(h,t,[{value:sv(n+2,D),mistake:'Slip renaming a fraction'},{value:sv(n-1,D),mistake:'Slip renaming a fraction'},{value:String(Math.round(n/D)),mistake:'Rounded to a whole number'},{value:`${add?w1+w2:w1-w2} ${add?a+b:Math.abs(a-b)||1}/${d1+d2}`,mistake:'Added the denominators'}].filter(x=>x.value!==sv(n,D)));};
+
+R['i4-balance']=(v,{int,pick},h)=>{
+ if(v==='frac'){const d=int(3,9);let n;do{n=int(2,2*d-1);}while(S.gcd(n,d)!==1||n===d);const x=d*int(2,9),c=n*x/d,L=pick(['x','y','n','m']);
+  return mc(h,num(`Solve: (${n}/${d})${L} = ${c}`,x,`Multiply both sides by ${d}/${n}: ${L} = ${c} × ${d} ÷ ${n} = ${x}.`,{n,d,c}),[{value:n,mistake:'Gave the numerator'},{value:d,mistake:'Gave the denominator'},{value:x+d,mistake:'Slip dividing'},{value:c*n/d,mistake:'Multiplied by the fraction instead of dividing'}].filter(z=>z.value!==x&&Number.isInteger(z.value)));}
+ const a=int(4,12),x=int(3,12),L=pick(['x','y','n','w']),left=int(0,1)===1;if(a===x)return R['i4-balance'](v,{int,pick},h);
+ return mc(h,num(`Solve: ${left?`${a*x} = ${a}${L}`:`${a}${L} = ${a*x}`}`,x,`Divide both sides by ${a}: ${L} = ${a*x} ÷ ${a} = ${x}.`,{a,x,left}),[{value:a*x-a,mistake:'Subtracted instead of dividing'},{value:a*x*a,mistake:'Multiplied instead of dividing'},{value:x+1,mistake:'Slip dividing'}]);};
+
+const ROMAN_VAL={I:1,V:5,X:10,L:50,C:100,D:500,M:1000};
+R['i4-roman']=(v,{int,pick},h)=>{const Rn=S.toRoman;
+ if(v==='to39'){const n=int(1,39),z=Rn(n),U=xs=>xs.filter((x,i)=>x.value!==z&&xs.findIndex(y=>y.value===x.value)===i);const t=S.text(`Write ${n} in Roman numerals.`,z,`${n} = ${z}.`,{n},'',[]);
+  return mc(h,t,U([{value:Rn(n>10?n-10:n+10),mistake:'Wrong number of tens'},{value:z.includes('IV')?z.replace('IV','VI'):z.includes('IX')?z.replace('IX','XI'):Rn(n===39?37:n+1),mistake:z.includes('IV')||z.includes('IX')?'Wrote the smaller letter on the wrong side':'Miscounted the ones'},{value:Rn(n%10&&n>10?n%10:n+20),mistake:n>10?'Left out the tens':'Added two tens'}]),[{value:Rn(n===39?38:n+1),mistake:'Counted one too many'}]);}
+ if(v==='letter'){const Ls='IVXLCDM',i=int(0,6),z=ROMAN_VAL[Ls[i]];return mc(h,num(`Write the number represented by the Roman numeral ${Ls[i]}.`,z,`${Ls[i]} stands for ${z}.`,{L:Ls[i]}),[0,1,2,3,4,5,6].filter(j=>j!==i).slice(0,3).map(j=>({value:ROMAN_VAL[Ls[j]],mistake:`That is the value of ${Ls[j]}`})));}
+ if(v==='from'){const n=int(101,1999),r=Rn(n);return mc(h,num(`Write the number represented by the Roman numeral ${r}.`,n,`${r} = ${n}.`,{r}),[{value:n+10,mistake:'Counted one ten too many'},{value:n-10,mistake:'Counted one ten too few'},{value:n+100,mistake:'Counted one hundred too many'}].filter(x=>x.value>0));}
+ if(v==='to'){const n=int(101,1999),z=Rn(n);const t=S.text(`Write the Roman numeral for ${n}.`,z,`${n} = ${z}.`,{n},'',[]);return mc(h,t,[{value:Rn(n+10),mistake:'Miscounted the tens'},{value:Rn(n+100),mistake:'Miscounted the hundreds'},{value:Rn(n+1),mistake:'Miscounted the ones'}]);}
+ // both: a Roman numeral to a number, then a number to Roman numerals.
+ const m=pick([40,90,400,900,4,9,14,19,44,49,94,99,140,190,440,490,940,990]),n=int(101,1999),rm=Rn(m),rn=Rn(n);
+ const t={prompt:`(a) What is ${rm} in our number system? (b) What is ${n} in Roman numerals? Write the two answers, separated by a semicolon.`,answer:{kind:'i4-roman2',m,r:rn,value:`${m}; ${rn}`},solution:`(a) ${rm} = ${m} (b) ${n} = ${rn}.`,parameters:{m,n}};
+ const rev=rm.length===2?ROMAN_VAL[rm[0]]+ROMAN_VAL[rm[1]]:m+2;return mc(h,t,[{value:`${rev}; ${rn}`,mistake:'Added a letter that should be subtracted'},{value:`${m}; ${Rn(n+10)}`,mistake:'Miscounted the tens in part (b)'},{value:`${m+1}; ${rn}`,mistake:'Miscounted in part (a)'}].filter(x=>x.value!==`${m}; ${rn}`));};
+
 function check(q,response){const a=q&&q.answer;if(!a)return undefined;const s=String(response??'');if(s.length>600)return fail;
  if(a.kind==='i4-sentence'){const p=parseSentence(s);return okv(!!p&&p.total===a.total&&sameMultiset(p.adds,a.addends));}
  if(a.kind==='i4-six-ways'){const parts=s.split(/;|\n/).map(x=>x.trim()).filter(Boolean);if(parts.length!==6)return fail;const seen=new Set();
@@ -1963,6 +2084,19 @@ function check(q,response){const a=q&&q.answer;if(!a)return undefined;const s=St
  // k different fractions, each equal to n/d and none written as n/d itself.
  if(a.kind==='i4-equiv-list'){const ps=s.split(/[,;]|\band\b/).map(x=>x.replace(/\s+/g,'')).filter(Boolean);if(ps.length!==a.k)return fail;const fs=ps.map(x=>x.match(/^(\d+)\/(\d+)$/));if(!fs.every(Boolean))return fail;
   return okv(new Set(fs.map(m=>Number(m[2]))).size===a.k&&fs.every(m=>Number(m[2])>0&&Number(m[2])!==a.d&&Number(m[1])*a.d===a.n*Number(m[2])));}
+ // Batch I4-15
+ // An estimate within tol of the key, with an optional area unit.
+ if(a.kind==='i4-est'){const m=s.trim().toLowerCase().replace(/^about\s+/,'').match(/^(\d+(?:\.\d+)?)\s*(.*)$/);if(!m)return fail;const u=m[2].trim().replace(/\.$/,'');if(u&&!/^(square |sq\.? )?(units?|cm|centimeters?)( ?(²|2|squared))?$/.test(u))return fail;return okv(Math.abs(Number(m[1])-a.v)<=a.tol);}
+ // A whole number, a proper fraction in lowest terms, or a mixed number whose fraction is proper and in lowest terms, equal to n/d.
+ if(a.kind==='i4-simplest'){const r=s.trim().replace(/\s+/g,' '),m=r.match(/^(?:(\d+) )?(\d+)\/(\d+)$/),w=r.match(/^\d+$/);if(w)return okv(Number(r)*a.d===a.n);if(!m)return fail;const W=Number(m[1]||0),p=Number(m[2]),q=Number(m[3]);if(!q||!p||p>=q||S.gcd(p,q)!==1)return fail;return okv((W*q+p)*a.d===a.n*q);}
+ // A fraction in lowest terms (improper allowed) equal to n/d.
+ if(a.kind==='i4-simplest-frac'){const m=s.replace(/\s+/g,'').match(/^(\d+)\/(\d+)$/);if(!m)return fail;const p=Number(m[1]),q=Number(m[2]);return okv(q>0&&p>0&&S.gcd(p,q)===1&&p*a.d===a.n*q);}
+ // Exactly the two listed fractions, in either order, joined by "and" or a comma.
+ if(a.kind==='i4-frac-two'){const ps=s.split(/,|;|\band\b/).map(x=>x.replace(/\s+/g,'')).filter(Boolean);return okv(ps.length===2&&ps[0]!==ps[1]&&ps.every(x=>a.pairs.includes(x)));}
+ // A number greater than 1 that divides both a and b; then the quotient a ÷ b.
+ if(a.kind==='i4-common-div'){const ps=s.split(';').map(x=>x.trim());if(ps.length!==2||!/^\d+$/.test(ps[0])||!/^\d+$/.test(ps[1]))return fail;const k=Number(ps[0]);return okv(k>1&&a.a%k===0&&a.b%k===0&&Number(ps[1])*a.b===a.a);}
+ // A number; then a Roman numeral (any case).
+ if(a.kind==='i4-roman2'){const ps=s.split(';').map(x=>x.trim());if(ps.length!==2)return fail;return okv(Number(ps[0].replace(/,/g,''))===a.m&&/^\d/.test(ps[0])&&ps[1].toUpperCase()===a.r);}
  return undefined;}
 function answerText(q){const a=q&&q.answer;if(a&&a.kind&&a.kind.startsWith('i4-'))return a.value;return undefined;}
 
