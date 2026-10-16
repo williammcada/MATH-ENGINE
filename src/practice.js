@@ -16,7 +16,7 @@ const INDEX = require('./practice-index.js');
 const CONT = require('./continuity-skills.js');
 const PAD = require('./answer-pad.js');
 
-const version = '0.36.0-rc.1';
+const version = '0.63.0';
 const freeze = Object.freeze;
 
 // ---------- deterministic randomness ----------
