@@ -223,3 +223,7 @@ U-01–U-08 are seeded guidance, not globally ratified rules. Apply relevant mat
 ## Release workflow
 DESIGN → CHANGE SPEC → IMPLEMENT → CHECKPOINT → VERIFY → VERIFIED CHECKPOINT → RELEASE → DEPLOY.
 This commit documents design only. No executable implementation, verified release or deployment is claimed. Preserve the exact source before extended testing and the exact candidate that passes. Packaging failures must recover that candidate.
+
+## v0.63.0 (2026-10-16)
+
+Release that brings the parallel-course work onto `main`: the course setup, Algebra 1 (all 679 records decided; requests R1–R5 integrated) and Algebra 1/2, merged with v0.36.0's universal answer pad. Bank answers are now checked on the pad-normalized answer and, if that fails, as typed (so ÷ answers work). Intermediate 4 follows in a later release. Verification: `docs/verification/v0.63.0-release-verify.md`.
