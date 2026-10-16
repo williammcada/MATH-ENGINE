@@ -440,6 +440,57 @@ TASKS_I4 = [
     _t('TX4_S05_00075', 'i4-diameter', None, 'Which segment is a diameter', 'circle-measurement'),
     _t('TX4_S05_00078', 'i4-seg-length', 'four', 'A segment length from three others', 'segments'),
     _t('TX4_S05_00119', 'i4-seg-length', 'three', 'A segment length from two others', 'segments'),
+    # Batch I4-8: Lessons 46-50, Investigation 5, Lessons 51-52
+    # Lesson 46: Relating Multiplication and Division, Part 1
+    _t('TX4_S05_00005', 'i4-divide', 'box', 'Divide, written with a division box', 'whole-arithmetic'),
+    _t('TX4_S05_00080', 'i4-paren', 'root-div', 'A square root divided by a number', 'expressions'),
+    _t('TX4_S05_00082', 'i4-share-story', 'each', 'How many in each equal group', 'whole-arithmetic'),
+    _t('TX4_S05_00153', 'i4-divide', 'three-forms', 'Divide, written three ways', 'whole-arithmetic'),
+    # Lesson 47: Relating Multiplication and Division, Part 2
+    _t('TX4_S05_00023', 'i4-divide', 'sign', 'Divide, written with a division sign', 'whole-arithmetic'),
+    _t('TX4_S05_00024', 'i4-divide', 'bar', 'Divide, written as a fraction', 'whole-arithmetic'),
+    _t('TX4_S05_00025', 'i4-div-forms', None, 'Which form does not mean the same division', 'whole-arithmetic'),
+    _t('TX4_S05_00061', 'i4-fact-family-x', None, 'Multiplication and division facts for three numbers', 'whole-arithmetic'),
+    # Lesson 48: Multiplying Two-Digit Numbers, Part 2
+    _t('TX4_S05_00004', 'i4-mult21', 'low', 'Multiply a number from 25 to 40 by a one-digit number', 'whole-arithmetic'),
+    _t('TX4_S05_00053', 'i4-mult21', 'high', 'Multiply a number from 51 to 71 by 7, 8 or 9', 'whole-arithmetic'),
+    _t('TX4_S05_00055', 'i4-mult21', 'money', 'Multiply dollars by a one-digit number', 'whole-arithmetic'),
+    # Lesson 49: Word Problems About Equal Groups, Part 1
+    _t('TX4_S05_00003', 'i4-mult-story', 'bike', 'Distance from hours and miles per hour', 'whole-arithmetic'),
+    _t('TX4_S05_00019', 'i4-mult-story', 'groups', 'How many in all, equal groups', 'whole-arithmetic'),
+    _t('TX4_S05_00087', 'i4-mult-story', 'units', 'Dozens, weeks, years or feet in smaller units', 'measurement'),
+    # Lesson 50: Adding and Subtracting Decimal Numbers, Part 2
+    _t('TX4_S05_00002', 'i4-dec-add', 'three', 'Add three decimal numbers', 'decimal-arithmetic'),
+    _t('TX4_S05_00018', 'i4-dec-add', 'sub', 'Subtract decimals with different numbers of places', 'decimal-arithmetic'),
+    _t('TX4_S05_00066', 'i4-dec-add', 'times', 'The weight of some blocks in tenths of a pound', 'decimal-arithmetic'),
+    _t('TX4_S05_00016', 'i4-dec-place', None, 'The digit in a place of a decimal number', 'number-representation'),
+    # Investigation 5: Percents
+    _t('TX4_S05_00001', 'i4-percent', 'figure', 'Estimate the percent of a square a figure encloses', 'number-representation'),
+    _t('TX4_S05_00063', 'i4-percent', 'compare-frac', 'Compare a percent and a fraction', 'number-order'),
+    _t('TX4_S05_00155', 'i4-percent', 'of-compare', 'Compare a percent of a number with a product', 'number-order'),
+    _t('TX4_S05_00067', 'i4-percent', 'hour', 'A percent of an hour in minutes', 'number-representation'),
+    _t('TX4_S05_00015', 'i4-percent', 'pennies', 'Pennies as a percent of a dollar', 'number-representation'),
+    _t('TX4_S05_00095', 'i4-percent', 'coin', 'A coin as a percent of a dollar', 'number-representation'),
+    _t('TX4_S05_00093', 'i4-percent', 'rest', 'The percent that is left', 'number-representation'),
+    _t('TX4_S05_00064', 'i4-percent', 'more', 'More boys or more girls, from a percent', 'reasoning'),
+    _t('TX4_S05_00149', 'i4-percent', 'shade', 'Draw a rectangle and shade a percent of it', 'number-representation'),
+    # Lesson 51: Adding Numbers with More Than Three Digits; Checking One-Digit Division
+    _t('TX4_S06_00013', 'i4-add-big', 'four', 'Add four numbers of different sizes', 'whole-arithmetic'),
+    _t('TX4_S06_00071', 'i4-add-big', 'story', 'Add the counts for five days', 'whole-arithmetic'),
+    _t('TX4_S06_00022', 'i4-add-big', 'col5', 'Add five-digit numbers in a column', 'whole-arithmetic'),
+    _t('TX4_S06_00024', 'i4-add-big', 'col4', 'Add four-digit numbers in a column', 'whole-arithmetic'),
+    _t('TX4_S06_00103', 'i4-add-big', 'words', 'The sum of two numbers written in words', 'whole-arithmetic'),
+    _t('TX4_S06_00015', 'i4-divide', 'check', 'Divide and check by multiplying', 'whole-arithmetic'),
+    # Lesson 52: Subtracting Numbers with More Than Three Digits; Word Problems About Equal Groups, Part 2
+    _t('TX4_S06_00014', 'i4-sub-big', 'six-five', 'Subtract a five-digit number from a six-digit number', 'whole-arithmetic'),
+    _t('TX4_S06_00018', 'i4-sub-big', 'six-six', 'Subtract six-digit numbers', 'whole-arithmetic'),
+    _t('TX4_S06_00020', 'i4-sub-big', 'five-three', 'Subtract a three-digit number from a five-digit number', 'whole-arithmetic'),
+    _t('TX4_S06_00105', 'i4-sub-big', 'five-five', 'Subtract five-digit numbers in a column', 'whole-arithmetic'),
+    _t('TX4_S06_00017', 'i4-sub-money', 'col', 'Subtract money from whole dollars in a column', 'decimal-arithmetic'),
+    _t('TX4_S06_00021', 'i4-sub-money', 'row', 'Subtract dollars and cents', 'decimal-arithmetic'),
+    _t('TX4_S06_00012', 'i4-share-story', 'bouquets', 'How many groups of a given size', 'whole-arithmetic'),
+    _t('TX4_S06_00028', 'i4-share-story', 'laps', 'How many laps in some minutes', 'whole-arithmetic'),
+    _t('TX4_S06_00030', 'i4-share-story', 'ants', 'How many ants from the number of legs', 'whole-arithmetic'),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -548,6 +599,25 @@ CONSOLIDATED_I4 = {
     'TX4_S05_00032': 'TX4_S05_00008', 'TX4_S05_00076': 'TX4_S05_00031', 'TX4_S05_00123': 'TX4_S05_00031', 'TX4_S05_00029': 'TX4_S05_00030',
     'TX4_S05_00060': 'TX4_S05_00058', 'TX4_S05_00152': 'TX4_S05_00075', 'TX4_S05_00127': 'TX4_S05_00078', 'TX4_S05_00124': 'TX4_S05_00119',
     'TX4_S05_00151': 'TX4_S04_00003',
+    # Batch I4-8
+    'TX4_S05_00026': 'TX4_S05_00005', 'TX4_S05_00027': 'TX4_S05_00005', 'TX4_S05_00028': 'TX4_S05_00005', 'TX4_S05_00022': 'TX4_S05_00005',
+    'TX4_S05_00128': 'TX4_S05_00080', 'TX4_S05_00081': 'TX4_S05_00024', 'TX4_S05_00129': 'TX4_S05_00126',
+    'TX4_S06_00104': 'TX4_S05_00082', 'TX4_S06_00108': 'TX4_S05_00082', 'TX4_S06_00110': 'TX4_S05_00082',
+    'TX4_S05_00054': 'TX4_S05_00004', 'TX4_S05_00114': 'TX4_S05_00034', 'TX4_S05_00130': 'TX4_S05_00034', 'TX4_S05_00084': 'TX4_S05_00055',
+    'TX4_S05_00083': 'TX4_S06_00028', 'TX4_S06_00073': 'TX4_S06_00028',
+    'TX4_S05_00020': 'TX4_S05_00003', 'TX4_S05_00021': 'TX4_S05_00019', 'TX4_S05_00085': 'TX4_S05_00019', 'TX4_S05_00086': 'TX4_S05_00019',
+    'TX4_S05_00131': 'TX4_S05_00019', 'TX4_S05_00132': 'TX4_S05_00019', 'TX4_S05_00133': 'TX4_S05_00019', 'TX4_S05_00135': 'TX4_S05_00019',
+    'TX4_S05_00136': 'TX4_S05_00019', 'TX4_S05_00134': 'TX4_S05_00087',
+    'TX4_S05_00017': 'TX4_S05_00002', 'TX4_S05_00089': 'TX4_S05_00002', 'TX4_S05_00137': 'TX4_S05_00002', 'TX4_S05_00141': 'TX4_S05_00002',
+    'TX4_S05_00144': 'TX4_S05_00002', 'TX4_S05_00147': 'TX4_S05_00002', 'TX4_S05_00148': 'TX4_S05_00002', 'TX4_S05_00092': 'TX4_S05_00002',
+    'TX4_S05_00115': 'TX4_S05_00002', 'TX4_S05_00145': 'TX4_S05_00002', 'TX4_S05_00146': 'TX4_S05_00002',
+    'TX4_S05_00091': 'TX4_S05_00018', 'TX4_S05_00116': 'TX4_S05_00018', 'TX4_S05_00142': 'TX4_S05_00018',
+    'TX4_S05_00138': 'TX4_S05_00016', 'TX4_S05_00090': 'TX4_S01_00084', 'TX4_S05_00140': 'TX4_S10_00017',
+    'TX4_S05_00062': 'TX4_S05_00001', 'TX4_S05_00154': 'TX4_S05_00063', 'TX4_S05_00094': 'TX4_S05_00093', 'TX4_S05_00150': 'TX4_S05_00149',
+    'TX4_S06_00023': 'TX4_S06_00013', 'TX4_S06_00100': 'TX4_S06_00024', 'TX4_S06_00101': 'TX4_S06_00022', 'TX4_S06_00102': 'TX4_S06_00022',
+    'TX4_S06_00025': 'TX4_S06_00015', 'TX4_S06_00026': 'TX4_S06_00015', 'TX4_S06_00027': 'TX4_S06_00015',
+    'TX4_S06_00019': 'TX4_S06_00014', 'TX4_S06_00072': 'TX4_S06_00018', 'TX4_S06_00109': 'TX4_S06_00020', 'TX4_S06_00074': 'TX4_S06_00020',
+    'TX4_S06_00106': 'TX4_S06_00105', 'TX4_S06_00111': 'TX4_S06_00105', 'TX4_S06_00029': 'TX4_S06_00012', 'TX4_S06_00107': 'TX4_S06_00012',
 }
 
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a
@@ -564,4 +634,6 @@ PENDING_I4 = {
     # Batch I4-7 (request R3)
     'TX4_S05_00099': 'R3', 'TX4_S05_00100': 'R3', 'TX4_S05_00101': 'R3',
     'TX4_S05_00074': 'R3', 'TX4_S05_00039': 'R3', 'TX4_S05_00079': 'R3',
+    # Batch I4-8 (request R3)
+    'TX4_S05_00088': 'R3', 'TX4_S05_00139': 'R3', 'TX4_S05_00143': 'R3',
 }

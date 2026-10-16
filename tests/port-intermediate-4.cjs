@@ -217,6 +217,23 @@ const oracle={
  'i4-draw-lines':(q,p)=>q.answer.kind==='teacher'&&(p.two?/line \w\w and line \w\w/.test(q.prompt):/^Draw line \w\w\./.test(q.prompt)),
  'i4-diameter':(q,p)=>E.checkAnswer(q,p.D1+p.D2).answerCorrect&&E.checkAnswer(q,p.D2+p.D1).answerCorrect&&!E.checkAnswer(q,p.M+p.Q).answerCorrect,
  'i4-seg-length':(q,p)=>variantOf(q)==='four'?is(q,p.T-p.a-p.b):is(q,p.T-p.a),
+ // Batch I4-8
+ 'i4-divide':(q,p)=>variantOf(q)==='three-forms'?E.checkAnswer(q,p.d.map((d,i)=>(d*p.q[i])/d).join('; ')).answerCorrect:p.n%p.d===0&&is(q,p.n/p.d)&&(q.prompt.includes(`${p.n} ÷ ${p.d}`)||(q.givens.svg||'').includes('>'+p.n+'<')),
+ 'i4-div-forms':(q,p)=>key(q)==='ABCD'[p.order.indexOf(1)],
+ 'i4-share-story':(q,p)=>p.n%p.d===0&&is(q,p.n/p.d)&&q.prompt.includes(String(p.n)),
+ 'i4-fact-family-x':(q,p)=>{const c=p.a*p.b;return E.checkAnswer(q,`${c}/${p.b}=${p.a}; ${p.b}x${p.a}=${c}; ${c}÷${p.a}=${p.b}; ${p.a}*${p.b}=${c}`).answerCorrect&&!E.checkAnswer(q,`${p.a}x${p.b}=${c}; ${p.b}x${p.a}=${c}; ${c}÷${p.a}=${p.b}`).answerCorrect;},
+ 'i4-mult-story':(q,p)=>is(q,p.a*p.b),
+ 'i4-dec-add':(q,p)=>{const v=variantOf(q);if(v==='times')return Math.round(numKey(q)*10)===p.w*p.n;if(v==='sub')return Math.round(Number(key(q))*100)===p.a-p.b;return Math.round(Number(key(q))*100)===p.a+p.b+p.c;},
+ 'i4-dec-place':(q,p)=>{const i=['hundreds','tens','ones','tenths','hundredths'].indexOf(p.place);return is(q,p.d[i])&&q.prompt.includes(`${p.d[0]}${p.d[1]}${p.d[2]}.${p.d[3]}${p.d[4]}`);},
+ 'i4-percent':(q,p)=>{const v=variantOf(q);
+  if(v==='figure'){const out=2*p.c*p.c;return E.checkAnswer(q,String(p.not?out:100-out)).answerCorrect&&!E.checkAnswer(q,String(p.not?100-out:out)).answerCorrect;}
+  if(v==='compare-frac'){const fp=100*p.fn/p.fd,l=p.first?p.P:fp,r=p.first?fp:p.P;return key(q)===(l>r?'>':l<r?'<':'=');}
+  if(v==='of-compare'){const l=p.P*p.N/100,r=p.a*p.b;return key(q)===(l>r?'>':l<r?'<':'=');}
+  if(v==='hour')return is(q,60*p.P/100);if(v==='pennies')return is(q,p.k);if(v==='coin')return is(q,{nickel:5,dime:10,quarter:25,'half-dollar':50}[p.coin]);
+  if(v==='rest')return is(q,100-p.P);if(v==='more')return key(q)===(p.P<50?'girls':'boys');return q.answer.kind==='teacher'&&q.prompt.includes(p.P+'%');},
+ 'i4-add-big':(q,p)=>is(q,total(p.nums)),
+ 'i4-sub-big':(q,p)=>p.a>p.b&&is(q,p.a-p.b),
+ 'i4-sub-money':(q,p)=>Math.round(numKey(q)*100)===p.a-p.b,
 };
 
 // The two sides of a comparison prompt ("a − b ☐ c − d"), evaluated separately.
