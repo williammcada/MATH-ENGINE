@@ -539,6 +539,64 @@ TASKS_I4 = [
     _t('TX4_S06_00045', 'i4-estimate', 'product10', 'Estimate a product by rounding to tens', 'rounding-estimation'),
     _t('TX4_S06_00092', 'i4-estimate', 'product-both', 'Estimate a product by rounding both numbers', 'rounding-estimation'),
     _t('TX4_S06_00137', 'i4-estimate', 'sum1000', 'Estimate a sum by rounding to thousands', 'rounding-estimation'),
+    # Batch I4-10: Lesson 60, Investigation 6, Lessons 61-65
+    # Lesson 60: Rate Problems with a Given Total
+    _t('TX4_S06_00002', 'i4-rate-total', 'mph-10', 'Miles per hour from the miles in 10 hours', 'whole-arithmetic'),
+    _t('TX4_S06_00049', 'i4-rate-total', 'mph', 'Miles per hour from a total distance and time', 'whole-arithmetic'),
+    _t('TX4_S06_00047', 'i4-rate-total', 'per-day', 'An average per day from a total', 'whole-arithmetic'),
+    _t('TX4_S06_00048', 'i4-rate-total', 'per-hour', 'An amount per hour from a total', 'whole-arithmetic'),
+    _t('TX4_S06_00093', 'i4-rate-total', 'min-per-mile', 'Minutes for each mile at a steady speed', 'whole-arithmetic'),
+    _t('TX4_S06_00095', 'i4-rate-total', 'scale', 'How many in some minutes at a rate per seconds', 'whole-arithmetic'),
+    _t('TX4_S06_00150', 'i4-rate-total', 'two-part', 'A rate from a total, then a distance at that rate', 'whole-arithmetic'),
+    # Investigation 6: Displaying Data Using Graphs
+    _t('TX4_S06_00001', 'i4-graph', 'pict-total', 'The total shown by a pictograph', 'statistics'),
+    _t('TX4_S06_00067', 'i4-graph', 'pict-most', 'The greatest kind in a pictograph', 'statistics'),
+    _t('TX4_S06_00016', 'i4-graph', 'bar-read', 'Read a bar graph', 'statistics'),
+    _t('TX4_S06_00096', 'i4-graph', 'bar-sum', 'Add two bars of a bar graph', 'statistics'),
+    _t('TX4_S06_00068', 'i4-graph', 'circle-pick', 'Which circle graph shows the percents', 'statistics'),
+    _t('TX4_S06_00069', 'i4-graph', 'line-pick', 'Which line graph shows a relationship', 'statistics'),
+    _t('TX4_S06_00070', 'i4-graph', 'temps', 'Which bar graph matches the temperatures', 'statistics'),
+    _t('TX4_S06_00050', 'i4-graph', 'circle-not', 'How many did not choose one part of a circle graph', 'statistics'),
+    _t('TX4_S06_00066', 'i4-graph', 'tide', 'The hour of the greatest rise on a line graph', 'statistics'),
+    _t('TX4_S06_00098', 'i4-graph', 'holly-fraction', 'A fraction of a day from a circle graph', 'statistics'),
+    _t('TX4_S06_00099', 'i4-graph', 'holly-sum', 'Hours for two activities from a circle graph', 'statistics'),
+    _t('TX4_S06_00144', 'i4-graph', 'holly-end', 'An end time from hours on a circle graph', 'calendar-time'),
+    # Lesson 61: Remaining Fraction; Two-Step Equations
+    _t('TX4_S07_00014', 'i4-two-step', 'plus', 'A missing addend equal to a product', 'equations'),
+    _t('TX4_S07_00021', 'i4-two-step', 'times', 'A missing factor equal to a product', 'equations'),
+    _t('TX4_S07_00022', 'i4-two-step', 'sum', 'A missing factor equal to a sum', 'equations'),
+    _t('TX4_S07_00015', 'i4-rem-frac', 'used', 'The fraction of equal parts used', 'fractions'),
+    _t('TX4_S07_00018', 'i4-rem-frac', 'not', 'The fraction that is not a kind', 'fractions'),
+    _t('TX4_S07_00019', 'i4-rem-frac', 'cake', 'The fraction of a cake eaten', 'fractions'),
+    _t('TX4_S07_00069', 'i4-rem-frac', 'rest', 'The remaining fraction', 'fractions'),
+    # Lesson 62: Multiplying Three or More Factors; Exponents
+    _t('TX4_S07_00012', 'i4-exponent', 'sum-sq', 'The sum of two squares', 'powers-roots'),
+    _t('TX4_S07_00027', 'i4-exponent', 'sq-cube', 'A square plus a cube', 'powers-roots'),
+    _t('TX4_S07_00028', 'i4-exponent', 'cube-sq', 'A cube minus a square', 'powers-roots'),
+    _t('TX4_S07_00070', 'i4-exponent', 'sq-root', 'A power and a square root', 'powers-roots'),
+    _t('TX4_S07_00071', 'i4-exponent', 'square', 'The value of a square', 'powers-roots'),
+    _t('TX4_S07_00044', 'i4-exponent', 'write', 'Write a product using an exponent', 'powers-roots'),
+    _t('TX4_S07_00107', 'i4-exponent', 'compare', 'Compare expressions with a square and square roots', 'powers-roots'),
+    _t('TX4_S07_00024', 'i4-three-factors', None, 'Multiply three factors', 'whole-arithmetic'),
+    _t('TX4_S07_00013', 'i4-three-factors', 'tens', 'Multiply two factors by 10 or 100', 'whole-arithmetic'),
+    # Lesson 63: Polygons
+    _t('TX4_S07_00010', 'i4-polygon', 'not', 'Which figure is not a polygon', 'geometry-properties'),
+    _t('TX4_S07_00047', 'i4-polygon', 'name-sides', 'Name a polygon from its number of sides', 'geometry-properties'),
+    _t('TX4_S07_00072', 'i4-polygon', 'name-pic', 'Name a polygon from a picture', 'geometry-properties'),
+    _t('TX4_S07_00049', 'i4-polygon', 'more-vertices', 'How many more vertices one polygon has', 'geometry-properties'),
+    _t('TX4_S07_00084', 'i4-polygon', 'total-sides', 'The total number of sides of two polygons', 'geometry-properties'),
+    _t('TX4_S07_00046', 'i4-polygon', 'draw', 'Draw a polygon', 'geometry-properties'),
+    _t('TX4_S07_00068', 'i4-polygon', 'parallel', 'Pairs of parallel sides of a regular polygon', 'geometry-properties'),
+    # Lesson 64: Division with Two-Digit Answers, Part 1
+    _t('TX4_S07_00029', 'i4-div2', 'sign', 'Divide for a two-digit answer, division sign', 'whole-arithmetic'),
+    _t('TX4_S07_00030', 'i4-div2', 'box', 'Divide for an answer from 11 to 19, division box', 'whole-arithmetic'),
+    _t('TX4_S07_00009', 'i4-div2', 'divisible-pick', 'Which number divides with no remainder', 'number-theory'),
+    _t('TX4_S07_00050', 'i4-div2', 'divisible-tf', 'True or false: divides with no remainder', 'number-theory'),
+    _t('TX4_S07_00067', 'i4-div2', 'mental', 'Why mental math wins for a division', 'reasoning'),
+    # Lesson 65: Division with Two-Digit Answers, Part 2
+    _t('TX4_S07_00007', 'i4-div2', 'box2', 'Divide for an answer from 21 to 99, division box', 'whole-arithmetic'),
+    _t('TX4_S07_00008', 'i4-div-terms', None, 'Name the divisor, dividend or quotient', 'whole-arithmetic'),
+    _t('TX4_S07_00031', 'i4-div-terms', 'find', 'Find the divisor, dividend or quotient from the other two', 'whole-arithmetic'),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -683,6 +741,18 @@ CONSOLIDATED_I4 = {
     'TX4_S06_00046': 'TX4_S06_00003', 'TX4_S06_00089': 'TX4_S06_00044', 'TX4_S06_00091': 'TX4_S06_00044', 'TX4_S06_00135': 'TX4_S06_00044',
     'TX4_S06_00149': 'TX4_S06_00044', 'TX4_S06_00090': 'TX4_S06_00045', 'TX4_S06_00136': 'TX4_S06_00045', 'TX4_S06_00140': 'TX4_S06_00092',
     'TX4_S06_00139': 'TX4_S06_00137',
+    # Batch I4-10
+    'TX4_S06_00094': 'TX4_S06_00047', 'TX4_S06_00142': 'TX4_S06_00047', 'TX4_S06_00143': 'TX4_S06_00048', 'TX4_S06_00141': 'TX4_S06_00093',
+    'TX4_S06_00097': 'TX4_S06_00099',
+    'TX4_S07_00023': 'TX4_S07_00014', 'TX4_S07_00020': 'TX4_S07_00015', 'TX4_S07_00016': 'TX4_S03_00038', 'TX4_S07_00017': 'TX4_S03_00102',
+    'TX4_S07_00076': 'TX4_S07_00069', 'TX4_S07_00077': 'TX4_S07_00069',
+    'TX4_S07_00079': 'TX4_S07_00012', 'TX4_S07_00080': 'TX4_S07_00070', 'TX4_S07_00082': 'TX4_S07_00070', 'TX4_S07_00083': 'TX4_S07_00070',
+    'TX4_S07_00045': 'TX4_S07_00044', 'TX4_S07_00025': 'TX4_S07_00024', 'TX4_S07_00078': 'TX4_S07_00024', 'TX4_S07_00081': 'TX4_S07_00024',
+    'TX4_S07_00026': 'TX4_S07_00013',
+    'TX4_S07_00011': 'TX4_S07_00010', 'TX4_S07_00102': 'TX4_S07_00072', 'TX4_S07_00048': 'TX4_S07_00046',
+    'TX4_S07_00073': 'TX4_S07_00029',
+    'TX4_S07_00036': 'TX4_S07_00007', 'TX4_S07_00087': 'TX4_S07_00007', 'TX4_S07_00088': 'TX4_S07_00007', 'TX4_S07_00089': 'TX4_S07_00007',
+    'TX4_S07_00035': 'TX4_S07_00007', 'TX4_S07_00032': 'TX4_S07_00008', 'TX4_S07_00033': 'TX4_S07_00008', 'TX4_S07_00034': 'TX4_S07_00008',
 }
 
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a
@@ -703,4 +773,6 @@ PENDING_I4 = {
     'TX4_S05_00088': 'R3', 'TX4_S05_00139': 'R3', 'TX4_S05_00143': 'R3',
     # Batch I4-9 (request R3)
     'TX4_S06_00054': 'R3',
+    # Batch I4-10 (request R3)
+    'TX4_S07_00085': 'R3', 'TX4_S07_00086': 'R3',
 }

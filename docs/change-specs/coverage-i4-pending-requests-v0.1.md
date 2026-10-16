@@ -56,6 +56,8 @@ The owner's instruction for the overnight Intermediate 4 run: a shared-file chan
 | TX4_S05_00139 | 50 | structured-arithmetic | As 00088 |
 | TX4_S05_00143 | 50 | structured-arithmetic | Not yet written: whole dollars minus a difference of money in parentheses, such as $27 − ($24.17 − 58¢) |
 | TX4_S06_00054 | 54 | structured-reasoning | Not yet written: the month between two months (a new `i4-dates` variant) |
+| TX4_S07_00085 | 64 | structured-equation | Not yet written: a missing factor with a two-digit answer, such as 4r = 52 (the same new `i4-missing-factor` variant as TX4_S05_00099) |
+| TX4_S07_00086 | 64 | structured-equation | As TX4_S07_00085 |
 
 TX4_S01_00111 was on this list after Batch I4-1; Batch I4-3 consolidated it into the open-record port TX4_S02_00011.
 

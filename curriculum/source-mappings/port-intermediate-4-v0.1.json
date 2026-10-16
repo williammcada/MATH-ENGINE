@@ -7022,5 +7022,805 @@
    "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
    "d6fc5f86ce14525432f60ba3d9155d3de3f5eaf9ae4ad5ad8228fc165eb5b458"
   ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00002",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00002",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:b12d04f18f54dcf3",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-rate-total",
+  "variant": "mph-10",
+  "title": "Miles per hour from the miles in 10 hours",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "93b61e43e1a3db57f4859e43f7aefcddf7dac30a3ea6d538fdd9b7d4a8f99c98",
+   "545fa93176a776268902f01b569cd3ad953f4ca8eff8d91664395e9a986892cc"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00049",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00049",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:b12d04f18f54dcf3",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-rate-total",
+  "variant": "mph",
+  "title": "Miles per hour from a total distance and time",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "1c3acc4cba475d5892d1791b6ea03c9b68a915ee85c30b0c0206836e47f9dc99",
+   "458ae34b295c225bd58aecb3f8edb8de724d107288a81f045d837443d5ff01f8"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00047",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00047",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:b12d04f18f54dcf3",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-rate-total",
+  "variant": "per-day",
+  "title": "An average per day from a total",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "42e6df0c661cea86a266670d793822b8f1d35b909e64c3e5ca2392e5a75d6296",
+   "874f2190debccc64c00c851c8c3020acd203b94424613fe1044c417967757fd2"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00048",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00048",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:b12d04f18f54dcf3",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-rate-total",
+  "variant": "per-hour",
+  "title": "An amount per hour from a total",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "c2edd0ba70ba1cae597e4c237cd67f374fe9443233d073d96c04a68e3b865979",
+   "6348c45889db5c2a0421648ba060f80c7e7ce8876afd7446dd836bad6ecedb57"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00093",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00093",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:b12d04f18f54dcf3",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-rate-total",
+  "variant": "min-per-mile",
+  "title": "Minutes for each mile at a steady speed",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "3633667d5921432df971efcde0cc901297fafeb0c7316e3b875567ee5c051699"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00095",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00095",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:b12d04f18f54dcf3",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-rate-total",
+  "variant": "scale",
+  "title": "How many in some minutes at a rate per seconds",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "f4b24b13b94dffedd7c66f946c855fcb4f1fcb27d31c89a6199488f18b6d270f"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00150",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00150",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:b12d04f18f54dcf3",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-rate-total",
+  "variant": "two-part",
+  "title": "A rate from a total, then a distance at that rate",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "316077e29991e78e30960bec6e090e44e4c4f9c7e96a0979afaba5a5abadaf65"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00001",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00001",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:f8fb41af40ffdb57",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-graph",
+  "variant": "pict-total",
+  "title": "The total shown by a pictograph",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "7985486abec66d4a1201a9622f6b227143d826c4425bfe6a3bccce7c8cbf50dc",
+   "c5aceb6664cb4356728260c76c071d36e3534ad93787ed0aee11cba9a96e8cfd"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00067",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00067",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:f8fb41af40ffdb57",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-graph",
+  "variant": "pict-most",
+  "title": "The greatest kind in a pictograph",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "0695c32824792507e17f30638139a52696dc9f1ad090b6b8c03b7ee938eb6df6"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00016",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00016",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:f8fb41af40ffdb57",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-graph",
+  "variant": "bar-read",
+  "title": "Read a bar graph",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "635edb9a460aacc4747b948355143e900f179c5d44caa2f34ed2aeb5e4446dfc",
+   "937c971b3017814189904ebb6315245682e26101bd85457c606539c7162cd8cd"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00096",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00096",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:f8fb41af40ffdb57",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-graph",
+  "variant": "bar-sum",
+  "title": "Add two bars of a bar graph",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "b1420440192244b3b4abbfac25c3b531b17f24e0fd6f1b16bcea89a7053b64f7"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00068",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00068",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:f8fb41af40ffdb57",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-graph",
+  "variant": "circle-pick",
+  "title": "Which circle graph shows the percents",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "3a6229afd202a460867564f73d56538f1a87ba7f1417f30ba76adac70f55607c",
+   "d260207404690dabc74b03a042915030f309b532f4b8efd170cc7edcbf308f85"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00069",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00069",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:f8fb41af40ffdb57",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-graph",
+  "variant": "line-pick",
+  "title": "Which line graph shows a relationship",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "a1b7c317f55dfd4857a5a9784fad7f79a82ef013a4111a4765f3dc433d5e86e7",
+   "d7480e3855aea20e7a3ea293173ef8044362692d5893fbf3e2d220ee561589c3"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00070",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00070",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:f8fb41af40ffdb57",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-graph",
+  "variant": "temps",
+  "title": "Which bar graph matches the temperatures",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "b8f76ea2b7ce5601f74d0ce180fd194b520b5115aba078a8ede1b14e2c5b03fe",
+   "645ebbf4528d1e60628631031fcaeeca13a81c6c9cf842c5e236db164c5b90c2"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00050",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00050",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:f8fb41af40ffdb57",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-graph",
+  "variant": "circle-not",
+  "title": "How many did not choose one part of a circle graph",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "2633ad7584df268f8d0c365e99f44c6128ebc530f800bb95637c158fe15c5202",
+   "1e1f54b44d6849ee10a368bcb968e9a0c3fe85115336724b0a1634f56b2dbcf3"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00066",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00066",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:f8fb41af40ffdb57",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-graph",
+  "variant": "tide",
+  "title": "The hour of the greatest rise on a line graph",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "b1c1c5dc9dc5fe82ef56b898c2c63ef74e322b4a45ed5f9f8d808b98c0e5c7f6"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00098",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00098",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:f8fb41af40ffdb57",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-graph",
+  "variant": "holly-fraction",
+  "title": "A fraction of a day from a circle graph",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "661e20be6697daf08c57ca34004eb9ee17676c41d390c11fdaa3ad01b2573c65"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00099",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00099",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:f8fb41af40ffdb57",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-graph",
+  "variant": "holly-sum",
+  "title": "Hours for two activities from a circle graph",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "bcfaf4a8bf8548bf24a1cbec8812794562efe39695eb104f00302c8fe7b4911a"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00144",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00144",
+  "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:f8fb41af40ffdb57",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-graph",
+  "variant": "holly-end",
+  "title": "An end time from hours on a circle graph",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "27f8022c81fdbef1190b6bdaea4e02efbf6a7d771c818fc1acb627c3bc289cba"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00014",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00014",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:5aa0e425c3b650c6",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-two-step",
+  "variant": "plus",
+  "title": "A missing addend equal to a product",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "d32ba397edc5420c3191a6160a3b9145f462fc058a56242e2020d287c5fbd5d3",
+   "c90be7865f0f8f342d7fc76cc9f8b6cc3e28e20974682e169fc48c59fd32a64e"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00021",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00021",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:5aa0e425c3b650c6",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-two-step",
+  "variant": "times",
+  "title": "A missing factor equal to a product",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "4c5cb2b5ad854a3a260f00292917d81c0982032cc4d8a99d902254c0e79d66ad",
+   "7d344f6a4f98314b964a77680882be1bf9c8cb6f71d16999857ae57c40153b77"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00022",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00022",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:5aa0e425c3b650c6",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-two-step",
+  "variant": "sum",
+  "title": "A missing factor equal to a sum",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "41afd56a96f0a5af8750a4b353ad19d8580fc3d0e040d60eb37e959ec4259a51",
+   "88551f8f68c43c882b0e9358e1c7d32e72e82e139e8a76be74e53958a405257b"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00015",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00015",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:5aa0e425c3b650c6",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-rem-frac",
+  "variant": "used",
+  "title": "The fraction of equal parts used",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "5a47af1d045aeeea2fd84b8ce3e89cdbb3c1d62eb133fab200225fdf61f00e75",
+   "24ff5a87023ebf32d32c764172cd04705abd270ab1cdea7755c00d0aa68785eb"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00018",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00018",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:5aa0e425c3b650c6",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-rem-frac",
+  "variant": "not",
+  "title": "The fraction that is not a kind",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "4a8d2dabb9f6a3b554637d32bf4bef9fe29207aefc7864b4619935bc78c45388",
+   "fdae68397782847d23d157b1402b445d090f713f2267c4d5068c45a606fde124"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00019",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00019",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:5aa0e425c3b650c6",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-rem-frac",
+  "variant": "cake",
+  "title": "The fraction of a cake eaten",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "9c4726b706c64786123ea28e3551547f0b6f91dce27bfbba97e7b0f9c6c6b99f",
+   "1082de6b3ad41245b5ffbf1269f26777118f5b530def1004331dbc5c16cc0016"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00069",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00069",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:5aa0e425c3b650c6",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-rem-frac",
+  "variant": "rest",
+  "title": "The remaining fraction",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "241020005636c5d8a314f2e4af9a534baf7c2415f0f09b15ec31f913a9cb05d4"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00012",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00012",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:6ec801aed136aa4b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-exponent",
+  "variant": "sum-sq",
+  "title": "The sum of two squares",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "965b1ac4f0d4cb1c9fd95feb7dfbae93616f2e6d1a0c4bcb5432bfe931ed2b7c",
+   "19cb52660417a8ec0876a853d22c2d32e599f7cab79b75514cd82234690b616a"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00027",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00027",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:6ec801aed136aa4b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-exponent",
+  "variant": "sq-cube",
+  "title": "A square plus a cube",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "275391032356e45598d96a2b13c5c22cd4ba5abc874824bad3593506f5fa2506",
+   "0c8e86a1fe77da3f29466f0bef9e4a0e55eb3d72e07096a2c9da78455043e96e"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00028",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00028",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:6ec801aed136aa4b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-exponent",
+  "variant": "cube-sq",
+  "title": "A cube minus a square",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "5a2428abe90a38b933ba0a41b447053c5ec02541ead2410a8dda68a15e000bc7",
+   "0b0065f43818f74e1aa21d053b6679784099962e0f9fa3f26d2c250d77bbc4d3"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00070",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00070",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:6ec801aed136aa4b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-exponent",
+  "variant": "sq-root",
+  "title": "A power and a square root",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "769ff1f716c238c56ff60c5a4198b3bcd3c3bca73b007997f89798578728affc"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00071",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00071",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:6ec801aed136aa4b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-exponent",
+  "variant": "square",
+  "title": "The value of a square",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "4c8b00bab23e732331872c02944d3cffec394fed9fb150da7d4c16f94c79e066"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00044",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00044",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:6ec801aed136aa4b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-exponent",
+  "variant": "write",
+  "title": "Write a product using an exponent",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "31c73fd3f56035630e07cd6f20d4a75fb42464e820036bf70329787727d0481c"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00107",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00107",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:6ec801aed136aa4b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-exponent",
+  "variant": "compare",
+  "title": "Compare expressions with a square and square roots",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "147ada2bdb6092f7a1cb4aaca19ce6b48c90ff6a4a6f87e08081ae328cc30d9b"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00024",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00024",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:6ec801aed136aa4b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-three-factors",
+  "variant": null,
+  "title": "Multiply three factors",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "6165ceb7764e0c3a9ac290780fb65ba219d7879c8b06c5b5ca41b9bd17e46526",
+   "ff19fcc91ea0d93d9bbcbc16174821db637cb8f1cc9cf04f7ef33e44975da62c"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00013",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00013",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:6ec801aed136aa4b",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-three-factors",
+  "variant": "tens",
+  "title": "Multiply two factors by 10 or 100",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "4780e1a915d5302f53bf1754cb8dc90b5fc7d16d58dd0e36ae3dba556c46b996",
+   "b160f223ab1bc04a60435531e2a7b864fe41d6e80eca94a75a4756a411701f65"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00010",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00010",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:07cf324dd76e8c7f",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-polygon",
+  "variant": "not",
+  "title": "Which figure is not a polygon",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "023dfaea2dee6a7d726f20dca1b3453843ea7f5ce5b472082e125c1f8ec72be8",
+   "3f67a883ba6e0ef32c043f219fa3451522e5744965194129a6d6e1a6536eec0e"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00047",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00047",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:07cf324dd76e8c7f",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-polygon",
+  "variant": "name-sides",
+  "title": "Name a polygon from its number of sides",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "8b065e6ac3f03cb40a0441acc93b09b4457fee1d0cce405f1f6722dfc9682147",
+   "d9e90173af6ef7caa81020295c9afb4dc6aaffcc91e1def1cc11884ddcf3b25b"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00072",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00072",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:07cf324dd76e8c7f",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-polygon",
+  "variant": "name-pic",
+  "title": "Name a polygon from a picture",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "d6035ea31b6411646ccbf8f47e18a627eaeb66ae3d96d7781bf0cee93261db48"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00049",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00049",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:07cf324dd76e8c7f",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-polygon",
+  "variant": "more-vertices",
+  "title": "How many more vertices one polygon has",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "6752d8a42d3189a7a68dde3a2ba64a01436ffe4472bcd120b0e3b5efb90714c8",
+   "34ad7e1604e16abbb0d1b119e09e799ade0bf22df6fafbf0bb0f03edf5f5d3f6"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00084",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00084",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:07cf324dd76e8c7f",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-polygon",
+  "variant": "total-sides",
+  "title": "The total number of sides of two polygons",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "79f9f56419ecc830b13aed08956a6589427ae05a4e5bce5304a6d567ddc76c64"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00046",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00046",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:07cf324dd76e8c7f",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-polygon",
+  "variant": "draw",
+  "title": "Draw a polygon",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "19f5d0d3866a71bda3e18ab7914b9e06698d5020848a559feeff22c7d688dc98"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00068",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00068",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:07cf324dd76e8c7f",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-polygon",
+  "variant": "parallel",
+  "title": "Pairs of parallel sides of a regular polygon",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "05acf33f96eaa555eacf622dd0864ebbd23ba060835d8d43b7981b20ba326bac"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00029",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00029",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:58a28320f52ecff5",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div2",
+  "variant": "sign",
+  "title": "Divide for a two-digit answer, division sign",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "6b6894abb73fc1670c77239d7cab670f891671d9a097fe5368d8b50f2fa2e01b",
+   "7be7eb360719fec0e3c70e0705299ae290cf14527043e48cfeecc465aa2f9016"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00030",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00030",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:58a28320f52ecff5",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div2",
+  "variant": "box",
+  "title": "Divide for an answer from 11 to 19, division box",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "8cf784dbc1f8f2652cea012861eed2f1bb4163c5a7ddd39602659e9c5bde364f"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00009",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00009",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:58a28320f52ecff5",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div2",
+  "variant": "divisible-pick",
+  "title": "Which number divides with no remainder",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "f2c1375bc1fe6211339a471b27500f6756f48331ca9a1dc162dd2928709e33e5",
+   "6b0db6d5b9b9cae1ee5183ed87b94bf84b496b09f87f5a9a45136b9e981427b5"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00050",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00050",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:58a28320f52ecff5",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div2",
+  "variant": "divisible-tf",
+  "title": "True or false: divides with no remainder",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "d12df9e10ade4452979b68b001ea523dd3887c674d488648009896efbab4009c",
+   "a1e024b7c9dbaf10a1ca91ae4d0a6b632087fc526b8b0fddaa8fd72853ef7571"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00067",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00067",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:58a28320f52ecff5",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div2",
+  "variant": "mental",
+  "title": "Why mental math wins for a division",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+   "c69364eeb9a81c6e6071055ae6b5714d665a9c0bd6ddc3ed58bb5d0a4b112e76"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00007",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00007",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:08be777ca6d0dd19",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div2",
+  "variant": "box2",
+  "title": "Divide for an answer from 21 to 99, division box",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "7688a7ceec9108b35624ef2393ac5cc8042e79028ecaa81fd13cea6055d73fb3",
+   "9e3eb4ddbf8fa3910f059910975208651f020980282fd08f3557c061ad708a97"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00008",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00008",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:08be777ca6d0dd19",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div-terms",
+  "variant": null,
+  "title": "Name the divisor, dividend or quotient",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "7ca8fccbdbad4ffe5d3e1758e198d9ae587e6810f65dbaba1d9b4c807042b4fe",
+   "a27fd64b81c3e4a5b082a977d311efd083136022a616de5e9fe1698294ac0dd5"
+  ]
+ },
+ {
+  "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00031",
+  "sourceRecord": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00031",
+  "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:08be777ca6d0dd19",
+  "course": "Intermediate 4",
+  "family": "structured-port87",
+  "recipe": "i4-div-terms",
+  "variant": "find",
+  "title": "Find the divisor, dividend or quotient from the other two",
+  "relationship": "original-source-informed-port",
+  "exactLegacyReproduction": false,
+  "sourceBlockSha256": [
+   "1adc4522dabd300bd37d58095636f098cc77bb0ebf2d8e97e2fa9074699cc7be",
+   "d3e1324c7579414f76907f54e3ebfebe50c0957376c254a65d09c8d37382d326"
+  ]
  }
 ]

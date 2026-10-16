@@ -254,6 +254,29 @@ const oracle={
  'i4-mult3':(q,p)=>{const v=variantOf(q);if(v==='whole')return is(q,p.a*p.b);return Math.round(numKey(q)*100)===p.a*p.b;},
  'i4-estimate':(q,p)=>{const v=variantOf(q),r=(x,u)=>u*Math.floor((x+u/2)/u);if(v==='div')return is(q,Math.round(p.n/p.d));if(v==='sum100'||v==='sum1000')return is(q,r(p.a,p.p)+r(p.b,p.p));
   if(v==='product10')return is(q,p.m*r(p.b,10));return is(q,r(p.a,10)*r(p.b,10));},
+ // Batch I4-10
+ 'i4-rate-total':(q,p)=>{const v=variantOf(q);if(v==='scale')return is(q,p.n*60*p.mins/p.s);if(v==='two-part')return E.checkAnswer(q,`${p.m/p.t}; ${p.m/p.t*p.k}`).answerCorrect;return p.m%p.t===0&&is(q,p.m/p.t);},
+ 'i4-graph':(q,p)=>{const v=variantOf(q);
+  if(v==='pict-total')return is(q,total(p.vals));if(v==='pict-most'){const k=p.vals.indexOf(Math.max(...p.vals));return E.checkAnswer(q,`${['maple','fir','oak'][k]}; ${p.vals[k]}`).answerCorrect;}
+  if(v==='bar-read')return is(q,p.vals[p.k])&&q.givens.svg.includes(['Soccer','Baseball','Volleyball','Football'][p.k]);if(v==='bar-sum')return is(q,p.vals[p.i]+p.vals[p.j]);
+  if(v==='circle-pick'||v==='temps')return key(q)==='ABCD'[p.k];if(v==='line-pick')return key(q)==='ABCD'[p.order.indexOf(p.ask==='stop'?0:1)];
+  if(v==='circle-not')return is(q,100-p.p[2])&&total(p.p)===100;
+  if(v==='tide'){const d=p.lv.slice(1).map((x,i)=>x-p.lv[i]),k=d.indexOf(Math.max(...d)),f=x=>x===12?'12 noon':`${x%12||12} ${x<12?'am':'pm'}`;return E.checkAnswer(q,`from ${f(9+k)} to ${f(10+k)}`).answerCorrect;}
+  if(v==='holly-fraction')return E.checkAnswer(q,`${p.hrs[0]}/24`).answerCorrect&&total(p.hrs)===24;if(v==='holly-sum')return is(q,p.hrs[1]+p.hrs[2]);
+  const en=p.st+p.hrs[1];return E.checkAnswer(q,`${en-12}:00 pm`).answerCorrect;},
+ 'i4-two-step':(q,p)=>{const v=variantOf(q);if(v==='times')return is(q,p.b*p.c/p.k);if(v==='sum')return is(q,(p.b+p.c)/p.k);return is(q,p.a*p.b-p.n);},
+ 'i4-rem-frac':(q,p)=>E.checkAnswer(q,`${p.n}/${p.d}`).answerCorrect&&(2*p.n===p.d||!E.checkAnswer(q,`${p.d-p.n}/${p.d}`).answerCorrect),
+ 'i4-exponent':(q,p)=>{const v=variantOf(q);if(v==='write')return E.checkAnswer(q,`${p.a}^${p.k}`).answerCorrect&&!E.checkAnswer(q,String(p.a**p.k)).answerCorrect;
+  if(v==='compare'){const l=p.a*p.b*p.b,r=p.c*p.d;return key(q)===(l>r?'>':l<r?'<':'=');}
+  const ex=p.expr.replace(/(\d+)²/g,'($1**2)').replace(/(\d+)³/g,'($1**3)').replace(/√(\d+)/g,'Math.sqrt($1)').replace(/−/g,'-');return is(q,Function('return '+ex)());},
+ 'i4-three-factors':(q,p)=>variantOf(q)==='tens'?is(q,p.a*p.b*10**p.tens):is(q,p.a*p.b*p.c),
+ 'i4-polygon':(q,p)=>{const v=variantOf(q),S={triangle:3,quadrilateral:4,pentagon:5,hexagon:6,octagon:8,decagon:10};
+  if(v==='not'||v==='is'){const isPoly=x=>x in S;const hits=p.shapes.map((x,i)=>p.want?!isPoly(x):isPoly(x));return hits.filter(Boolean).length===1&&key(q)==='ABCD'[hits.indexOf(true)];}
+  if(v==='name-sides'){const n=Number(q.prompt.match(/(\d+) sides/)[1]);return S[key(q)]===n;}if(v==='name-pic')return key(q)===p.nm&&q.givens.svg.includes(`${S[p.nm]} sides`);
+  if(v==='more-vertices')return is(q,S[p.a]-S[p.b]);if(v==='total-sides')return is(q,S[p.a]+S[p.b]);if(v==='parallel')return is(q,p.n%2?0:p.n/2);return q.answer.kind==='teacher'&&q.prompt.includes(p.nm);},
+ 'i4-div2':(q,p)=>{const v=variantOf(q);if(v==='divisible-pick')return p.opts.filter(x=>x%p.d===0).length===1&&is(q,p.opts.find(x=>x%p.d===0));if(v==='divisible-tf')return key(q)===(p.n%p.d===0?'true':'false');
+  if(v==='mental')return key(q)==='ABCD'[p.pos]&&p.n/p.d===Number(String(p.n/p.d)[0].repeat(4));return p.n%p.d===0&&is(q,p.n/p.d);},
+ 'i4-div-terms':(q,p)=>is(q,{divisor:p.d,dividend:p.d*p.q,quotient:p.q}[p.ask]),
 };
 
 // The two sides of a comparison prompt ("a − b ☐ c − d"), evaluated separately.
