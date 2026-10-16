@@ -491,6 +491,54 @@ TASKS_I4 = [
     _t('TX4_S06_00012', 'i4-share-story', 'bouquets', 'How many groups of a given size', 'whole-arithmetic'),
     _t('TX4_S06_00028', 'i4-share-story', 'laps', 'How many laps in some minutes', 'whole-arithmetic'),
     _t('TX4_S06_00030', 'i4-share-story', 'ants', 'How many ants from the number of legs', 'whole-arithmetic'),
+    # Batch I4-9: Lessons 53-59
+    # Lesson 53: One-Digit Division with a Remainder
+    _t('TX4_S06_00011', 'i4-div-rem', 'sign', 'Divide with a remainder, division sign', 'whole-arithmetic'),
+    _t('TX4_S06_00051', 'i4-div-rem', 'box-small', 'Divide with a remainder by 3 to 6, division box', 'whole-arithmetic'),
+    _t('TX4_S06_00052', 'i4-div-rem', 'box-big', 'Divide with a remainder by 7 to 11, division box', 'whole-arithmetic'),
+    _t('TX4_S06_00075', 'i4-div-rem', 'remainder', 'The remainder of a division', 'whole-arithmetic'),
+    # Lesson 54: The Calendar; Rounding Numbers to the Nearest Thousand
+    _t('TX4_S06_00033', 'i4-round1000', 'four', 'Round a four-digit number to the nearest thousand', 'rounding-estimation'),
+    _t('TX4_S06_00034', 'i4-round1000', 'five', 'Round a five-digit number to the nearest thousand', 'rounding-estimation'),
+    _t('TX4_S06_00009', 'i4-round1000', 'three-ways', 'Round to the nearest thousand, hundred and ten', 'rounding-estimation'),
+    _t('TX4_S06_00010', 'i4-years-between', 'near', 'How many years from one year to another', 'calendar-time'),
+    _t('TX4_S06_00076', 'i4-time-units', None, 'Centuries, decades, years, weeks and days', 'calendar-time'),
+    _t('TX4_S06_00055', 'i4-calendar', 'weekday', 'The day of the week of a date on a calendar', 'calendar-time'),
+    _t('TX4_S06_00056', 'i4-calendar', 'nth', 'The date of the first, second, third or fourth weekday', 'calendar-time'),
+    # Lesson 55: Prime and Composite Numbers
+    _t('TX4_S06_00007', 'i4-factors', 'list-pick', 'Which list shows all the factors', 'number-theory'),
+    _t('TX4_S06_00059', 'i4-factors', 'list-write', 'List all the factors of a number', 'number-theory'),
+    _t('TX4_S06_00079', 'i4-factors', 'not-factor', 'Which number is not a factor', 'number-theory'),
+    _t('TX4_S06_00035', 'i4-multiples', 'nth', 'A given multiple of a number', 'number-theory'),
+    _t('TX4_S06_00078', 'i4-multiples', 'nth-less', 'A multiple of a number, then subtract', 'number-theory'),
+    _t('TX4_S06_00058', 'i4-multiples', 'first-five', 'The first five multiples of a number', 'number-theory'),
+    _t('TX4_S06_00060', 'i4-multiples', 'example', 'An example of a multiple', 'number-theory'),
+    # Lesson 56: Using Models and Pictures to Compare Fractions
+    _t('TX4_S06_00006', 'i4-frac-compare', 'pictures', 'Compare the fractions shaded in two shapes', 'fractions'),
+    _t('TX4_S06_00063', 'i4-frac-compare', 'fourths', 'Compare two fractions in fourths', 'fractions'),
+    _t('TX4_S06_00081', 'i4-frac-compare', 'pick', 'Which comparison of fractions is or is not correct', 'fractions'),
+    _t('TX4_S06_00082', 'i4-frac-compare', 'greatest', 'The greatest of four fractions', 'fractions'),
+    _t('TX4_S06_00065', 'i4-frac-compare', 'draw', 'Draw two congruent shapes to compare fractions', 'fractions'),
+    # Lesson 57: Rate Word Problems
+    _t('TX4_S06_00005', 'i4-rate', 'drive', 'Distance at a rate of miles each hour', 'whole-arithmetic'),
+    _t('TX4_S06_00037', 'i4-rate', 'laps', 'Laps at a rate per hour', 'whole-arithmetic'),
+    _t('TX4_S06_00039', 'i4-rate', 'week', 'Pages read in a week', 'whole-arithmetic'),
+    _t('TX4_S06_00120', 'i4-rate', 'price', 'The price of some pounds at a price per pound', 'decimal-arithmetic'),
+    _t('TX4_S06_00121', 'i4-rate', 'per-hour', 'Miles in an hour from minutes per mile', 'whole-arithmetic'),
+    _t('TX4_S06_00125', 'i4-rate', 'scale', 'Distance in a longer time at the same speed', 'whole-arithmetic'),
+    _t('TX4_S06_00123', 'i4-rate', 'cans-day', 'How many each day from a weekly amount', 'whole-arithmetic'),
+    _t('TX4_S06_00124', 'i4-rate', 'cost-day', 'The cost per day', 'decimal-arithmetic'),
+    # Lesson 58: Multiplying Three-Digit Numbers
+    _t('TX4_S06_00004', 'i4-mult3', 'money-small', 'Multiply dollars and cents in a column', 'decimal-arithmetic'),
+    _t('TX4_S06_00041', 'i4-mult3', 'money-row', 'Multiply dollars and cents', 'decimal-arithmetic'),
+    _t('TX4_S06_00040', 'i4-mult3', 'dollars', 'Multiply hundreds of dollars', 'whole-arithmetic'),
+    _t('TX4_S06_00043', 'i4-mult3', 'whole', 'Multiply a three-digit number by a one-digit number', 'whole-arithmetic'),
+    # Lesson 59: Estimating Arithmetic Answers
+    _t('TX4_S06_00003', 'i4-estimate', 'div', 'Estimate a quotient', 'rounding-estimation'),
+    _t('TX4_S06_00044', 'i4-estimate', 'sum100', 'Estimate a sum by rounding to hundreds', 'rounding-estimation'),
+    _t('TX4_S06_00045', 'i4-estimate', 'product10', 'Estimate a product by rounding to tens', 'rounding-estimation'),
+    _t('TX4_S06_00092', 'i4-estimate', 'product-both', 'Estimate a product by rounding both numbers', 'rounding-estimation'),
+    _t('TX4_S06_00137', 'i4-estimate', 'sum1000', 'Estimate a sum by rounding to thousands', 'rounding-estimation'),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -618,6 +666,23 @@ CONSOLIDATED_I4 = {
     'TX4_S06_00025': 'TX4_S06_00015', 'TX4_S06_00026': 'TX4_S06_00015', 'TX4_S06_00027': 'TX4_S06_00015',
     'TX4_S06_00019': 'TX4_S06_00014', 'TX4_S06_00072': 'TX4_S06_00018', 'TX4_S06_00109': 'TX4_S06_00020', 'TX4_S06_00074': 'TX4_S06_00020',
     'TX4_S06_00106': 'TX4_S06_00105', 'TX4_S06_00111': 'TX4_S06_00105', 'TX4_S06_00029': 'TX4_S06_00012', 'TX4_S06_00107': 'TX4_S06_00012',
+    # Batch I4-9
+    'TX4_S06_00053': 'TX4_S06_00011', 'TX4_S06_00145': 'TX4_S06_00011', 'TX4_S06_00146': 'TX4_S06_00051',
+    'TX4_S06_00077': 'TX4_S06_00034', 'TX4_S06_00114': 'TX4_S06_00033', 'TX4_S06_00138': 'TX4_S06_00033', 'TX4_S06_00057': 'TX4_S06_00009',
+    'TX4_S06_00032': 'TX4_S06_00010', 'TX4_S06_00031': 'TX4_S06_00076', 'TX4_S06_00112': 'TX4_S06_00076', 'TX4_S06_00113': 'TX4_S06_00076',
+    'TX4_S06_00115': 'TX4_S06_00076',
+    'TX4_S06_00008': 'TX4_S06_00007', 'TX4_S06_00061': 'TX4_S06_00059', 'TX4_S06_00062': 'TX4_S06_00059', 'TX4_S06_00147': 'TX4_S06_00059',
+    'TX4_S06_00080': 'TX4_S06_00079', 'TX4_S06_00036': 'TX4_S06_00079', 'TX4_S06_00116': 'TX4_S06_00078', 'TX4_S06_00117': 'TX4_S06_00078',
+    'TX4_S06_00064': 'TX4_S06_00063', 'TX4_S06_00083': 'TX4_S06_00081', 'TX4_S06_00148': 'TX4_S06_00065', 'TX4_S06_00151': 'TX4_S06_00065',
+    'TX4_S06_00038': 'TX4_S06_00005', 'TX4_S06_00084': 'TX4_S06_00005', 'TX4_S06_00085': 'TX4_S06_00005', 'TX4_S06_00118': 'TX4_S06_00005',
+    'TX4_S06_00119': 'TX4_S06_00005', 'TX4_S06_00122': 'TX4_S06_00120',
+    'TX4_S06_00086': 'TX4_S06_00043', 'TX4_S06_00087': 'TX4_S06_00043', 'TX4_S06_00088': 'TX4_S06_00043', 'TX4_S06_00126': 'TX4_S06_00043',
+    'TX4_S06_00127': 'TX4_S06_00043', 'TX4_S06_00128': 'TX4_S06_00043', 'TX4_S06_00132': 'TX4_S06_00043',
+    'TX4_S06_00042': 'TX4_S06_00004', 'TX4_S06_00129': 'TX4_S06_00004', 'TX4_S06_00134': 'TX4_S06_00004',
+    'TX4_S06_00130': 'TX4_S06_00041', 'TX4_S06_00131': 'TX4_S06_00041', 'TX4_S06_00133': 'TX4_S06_00041',
+    'TX4_S06_00046': 'TX4_S06_00003', 'TX4_S06_00089': 'TX4_S06_00044', 'TX4_S06_00091': 'TX4_S06_00044', 'TX4_S06_00135': 'TX4_S06_00044',
+    'TX4_S06_00149': 'TX4_S06_00044', 'TX4_S06_00090': 'TX4_S06_00045', 'TX4_S06_00136': 'TX4_S06_00045', 'TX4_S06_00140': 'TX4_S06_00092',
+    'TX4_S06_00139': 'TX4_S06_00137',
 }
 
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a
@@ -636,4 +701,6 @@ PENDING_I4 = {
     'TX4_S05_00074': 'R3', 'TX4_S05_00039': 'R3', 'TX4_S05_00079': 'R3',
     # Batch I4-8 (request R3)
     'TX4_S05_00088': 'R3', 'TX4_S05_00139': 'R3', 'TX4_S05_00143': 'R3',
+    # Batch I4-9 (request R3)
+    'TX4_S06_00054': 'R3',
 }

@@ -55,10 +55,11 @@ The owner's instruction for the overnight Intermediate 4 run: a shared-file chan
 | TX4_S05_00088 | 50 | structured-arithmetic | Not yet written: a decimal minus a sum of decimals in parentheses, such as 5.46 − (1.2 + 3.12) (a new `i4-dec-add` variant); 00139 would consolidate into it |
 | TX4_S05_00139 | 50 | structured-arithmetic | As 00088 |
 | TX4_S05_00143 | 50 | structured-arithmetic | Not yet written: whole dollars minus a difference of money in parentheses, such as $27 − ($24.17 − 58¢) |
+| TX4_S06_00054 | 54 | structured-reasoning | Not yet written: the month between two months (a new `i4-dates` variant) |
 
 TX4_S01_00111 was on this list after Batch I4-1; Batch I4-3 consolidated it into the open-record port TX4_S02_00011.
 
-For the two `structured-representations` records, `tests/representations-bank-audit.py` and `tests/representations-source-links.py` should be checked for the same kind of count before the replacement is made (the second already fails at the parallel-courses baseline).
+For the two `structured-representations` records, `tests/representations-bank-audit.py` and `tests/representations-source-links.py` should be checked for the same kind of count before the replacement is made (the second already fails at the parallel-courses baseline). For the `structured-reasoning` record (TX4_S06_00054), `tests/reasoning-bank-audit.py` and `tests/reasoning-source-links.py` should be checked in the same way (the second also fails at the baseline).
 
 The oracle for `i4-add-row` (removed from the test while it has no task, because the harness rejects an oracle with no task) is: the addends shown in the prompt match the parameters, and the key is their sum.
 

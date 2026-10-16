@@ -234,6 +234,26 @@ const oracle={
  'i4-add-big':(q,p)=>is(q,total(p.nums)),
  'i4-sub-big':(q,p)=>p.a>p.b&&is(q,p.a-p.b),
  'i4-sub-money':(q,p)=>Math.round(numKey(q)*100)===p.a-p.b,
+ // Batch I4-9
+ 'i4-div-rem':(q,p)=>variantOf(q)==='remainder'?is(q,p.n%p.d):E.checkAnswer(q,`${Math.floor(p.n/p.d)} R ${p.n%p.d}`).answerCorrect&&p.n%p.d>0,
+ 'i4-round1000':(q,p)=>{const r=(x,u)=>u*Math.floor((x+u/2)/u);return variantOf(q)==='three-ways'?E.checkAnswer(q,`${r(p.n,1000)}; ${r(p.n,100)}; ${r(p.n,10)}`).answerCorrect:is(q,r(p.n,1000));},
+ 'i4-years-between':(q,p)=>is(q,p.b-p.a),
+ 'i4-time-units':(q,p)=>{const Y={centuries:100,decades:10,years:1},D={weeks:7,days:1};const f=p.from in Y?Y[p.from]/Y[p.to]:D[p.from]/D[p.to];return is(q,Math.round(p.k*f));},
+ 'i4-calendar':(q,p)=>{const WD=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];if(variantOf(q)==='weekday')return key(q)===WD[(p.start+p.d-1)%7];
+  let c=0,d=0;for(let x=1;x<=31;x++)if((p.start+x-1)%7===p.wd&&++c===p.k){d=x;break;}return E.checkAnswer(q,String(d)).answerCorrect;},
+ 'i4-factors':(q,p)=>{const f=[];for(let k=1;k<=p.n;k++)if(p.n%k===0)f.push(k);if(variantOf(q)==='not-factor')return p.n%numKey(q)!==0&&p.opts.filter(x=>p.n%x!==0).length===1;return E.checkAnswer(q,[...f].reverse().join(', ')).answerCorrect;},
+ 'i4-multiples':(q,p)=>{const v=variantOf(q);if(v==='first-five')return E.checkAnswer(q,[5,4,3,2,1].map(k=>k*p.n).join(' ')).answerCorrect;if(v==='example')return E.checkAnswer(q,String(p.n*7)).answerCorrect&&!E.checkAnswer(q,String(p.n*7+1)).answerCorrect;
+  if(v==='nth-less')return is(q,p.k*p.n-p.s);return is(q,p.k*p.n);},
+ 'i4-frac-compare':(q,p)=>{const v=variantOf(q),rel=(a,b,c,d)=>a*d>c*b?'>':a*d<c*b?'<':'=';
+  if(v==='draw')return q.answer.kind==='teacher'&&q.prompt.includes(`${p.a}/${p.b} and ${p.c}/${p.d}`);if(v==='fourths')return key(q)===rel(p.a,p.b,p.c,p.d);
+  if(v==='pictures')return E.checkAnswer(q,`${p.n1}/${p.d1} ${rel(p.n1,p.d1,p.n2,p.d2)} ${p.n2}/${p.d2}`).answerCorrect;
+  if(v==='greatest'){const best=p.fr.reduce((m,f)=>f[0]/f[1]>m[0]/m[1]?f:m);return E.checkAnswer(q,`${best[0]}/${best[1]}`).answerCorrect;}
+  const items=[...q.prompt.matchAll(/([ABCD])\. (\d+)\/(\d+) ([<>=]) (\d+)\/(\d+)/g)].map(m=>({L:m[1],ok:rel(+m[2],+m[3],+m[5],+m[6])===m[4]})),hits=items.filter(x=>p.wrongOne?!x.ok:x.ok);return items.length===4&&hits.length===1&&key(q)===hits[0].L;},
+ 'i4-rate':(q,p)=>{const v=variantOf(q),cents=()=>Math.round(numKey(q)*100);if(v==='price')return cents()===p.pr*p.lb;if(v==='cost-day')return cents()===p.c*p.pr;
+  if(v==='per-hour')return is(q,60/p.m);if(v==='scale')return is(q,p.r*p.k);if(v==='cans-day')return is(q,p.wk/7);return is(q,p.r*p.t);},
+ 'i4-mult3':(q,p)=>{const v=variantOf(q);if(v==='whole')return is(q,p.a*p.b);return Math.round(numKey(q)*100)===p.a*p.b;},
+ 'i4-estimate':(q,p)=>{const v=variantOf(q),r=(x,u)=>u*Math.floor((x+u/2)/u);if(v==='div')return is(q,Math.round(p.n/p.d));if(v==='sum100'||v==='sum1000')return is(q,r(p.a,p.p)+r(p.b,p.p));
+  if(v==='product10')return is(q,p.m*r(p.b,10));return is(q,r(p.a,10)*r(p.b,10));},
 };
 
 // The two sides of a comparison prompt ("a − b ☐ c − d"), evaluated separately.
