@@ -55,4 +55,16 @@ Recorded 2026-10-16 (Asia/Shanghai). Same protocol and rules as Batch I4-1 (`cov
 
 ## Verification
 
-Recorded in the verified checkpoint below.
+**Passing run** on implementation checkpoint `46c026e`, through Batch I4-5 (preceded by the private pre-check):
+
+| Check | Result |
+|---|---|
+| Ownership: only Intermediate 4 files changed since `c7538877` | Passed |
+| Shared outputs regenerated in a temporary copy | Passed |
+| Full suite, 79 tests, compared with the parallel-courses baseline | Passed: every test that passed at the baseline still passes; the 31 baseline failures are unchanged |
+| `tests/port-courses.cjs intermediate-4 -- 1000` | Passed; decision files validated |
+| `tests/practice.cjs` and `tests/structured-bank-audit.py` | Passed |
+| Drawings rendered in Chromium and inspected | Passed |
+| Studio preview, PDF and Word print checks | Not run: the Studio re-pins after the integration pass |
+
+**Ledger after this batch (regenerated in the temporary copy):** Intermediate 4 is 32.3% complete (255 covered, 194 consolidated), 36.7% including the 60 records still covered-provisional; 879 open.
