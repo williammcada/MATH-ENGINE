@@ -55,4 +55,16 @@ Shared forms reused: numbers, decimal, parts, relation, text; this course's any-
 
 ## Verification
 
-Recorded in the verified checkpoint below.
+**Passing run** on implementation checkpoint `ed4fce1`, through Batch I4-13 (preceded by the private pre-check):
+
+| Check | Result |
+|---|---|
+| Ownership: only Intermediate 4 files changed since `c7538877` | Passed |
+| Shared outputs regenerated in a temporary copy | Passed |
+| Full suite, 79 tests, compared with the parallel-courses baseline | Passed: every test that passed at the baseline still passes; the 31 baseline failures are unchanged |
+| `tests/port-courses.cjs intermediate-4 -- 1000` | Passed; decision files validated |
+| `tests/practice.cjs` and `tests/structured-bank-audit.py` | Passed |
+| Drawings rendered in Chromium and inspected | Passed |
+| Studio preview, PDF and Word print checks | Not run: the Studio re-pins after the integration pass |
+
+**Ledger after this batch (regenerated in the temporary copy):** Intermediate 4 is 87.5% complete (657 covered, 558 consolidated), 89.6% including the 29 records still covered-provisional; 144 open.
