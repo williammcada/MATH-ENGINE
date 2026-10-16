@@ -597,6 +597,81 @@ TASKS_I4 = [
     _t('TX4_S07_00007', 'i4-div2', 'box2', 'Divide for an answer from 21 to 99, division box', 'whole-arithmetic'),
     _t('TX4_S07_00008', 'i4-div-terms', None, 'Name the divisor, dividend or quotient', 'whole-arithmetic'),
     _t('TX4_S07_00031', 'i4-div-terms', 'find', 'Find the divisor, dividend or quotient from the other two', 'whole-arithmetic'),
+    # Batch I4-11: Lessons 66-70, Investigation 7, Lessons 71-77
+    # Lesson 66: Similar and Congruent Figures
+    _t('TX4_S07_00006', 'i4-congruent', 'pick', 'Which two figures are congruent', 'geometry-properties'),
+    _t('TX4_S07_00052', 'i4-congruent', 'similar', 'Which two figures are similar but not congruent', 'geometry-properties'),
+    _t('TX4_S07_00053', 'i4-congruent', 'tf', 'True or false: congruent and similar', 'geometry-properties'),
+    # Lesson 67: Multiplying by Multiples of 10
+    _t('TX4_S07_00005', 'i4-mult-ten2', 'factor-10', 'Write a product with a factor of 10, then multiply', 'whole-arithmetic'),
+    _t('TX4_S07_00037', 'i4-mult-ten2', 'money', 'Multiply money by a multiple of 10', 'decimal-arithmetic'),
+    _t('TX4_S07_00038', 'i4-mult-ten2', 'col', 'Multiply a two-digit number by a multiple of 10', 'whole-arithmetic'),
+    _t('TX4_S07_00063', 'i4-mult-ten2', 'tenths', 'Slices of 0.1 of a pie in whole pies', 'decimal-arithmetic'),
+    # Lesson 68: Division with Two-Digit Answers and a Remainder
+    _t('TX4_S07_00004', 'i4-div-rem2', 'two-sign', 'Divide for a two-digit answer with a remainder, division sign', 'whole-arithmetic'),
+    _t('TX4_S07_00055', 'i4-div-rem2', 'two-box', 'Divide for a two-digit answer with a remainder, division box', 'whole-arithmetic'),
+    # Lesson 69: Millimeters
+    _t('TX4_S07_00003', 'i4-mm', 'cm-mm', 'Centimeters to millimeters', 'measurement'),
+    _t('TX4_S07_00039', 'i4-mm', 'measure', 'Measure a segment in millimeters', 'measurement'),
+    _t('TX4_S07_00093', 'i4-mm', 'perimeter', 'Perimeter of a triangle in millimeters', 'perimeter'),
+    _t('TX4_S07_00059', 'i4-mm', 'unit', 'Millimeters or centimeters', 'measurement'),
+    _t('TX4_S07_00060', 'i4-mm', 'cm-and-mm', 'A segment in centimeters and millimeters', 'measurement'),
+    _t('TX4_S07_00106', 'i4-mm', 'circle', 'Radius in millimeters and diameter in centimeters', 'circle-measurement'),
+    # Lesson 70: Word Problems About a Fraction of a Group
+    _t('TX4_S07_00002', 'i4-frac-group', 'twelfths', 'Twelfths of a group', 'fractions'),
+    _t('TX4_S07_00041', 'i4-frac-group', 'unit', 'A unit fraction of a group', 'fractions'),
+    _t('TX4_S07_00043', 'i4-frac-group', 'of', 'A fraction of a number', 'fractions'),
+    _t('TX4_S07_00096', 'i4-frac-group', 'unit-of-time', 'A unit fraction of an hour, a meter or a day', 'fractions'),
+    _t('TX4_S07_00098', 'i4-frac-group', 'area-half', 'A fraction of the area of a rectangle', 'area'),
+    # Investigation 7: Collecting Data with Surveys
+    _t('TX4_S07_00001', 'i4-survey', 'biased', 'Which survey question is biased', 'statistics'),
+    _t('TX4_S07_00064', 'i4-survey', 'solvable', 'Can the problem be solved', 'reasoning'),
+    _t('TX4_S07_00062', 'i4-survey', 'sample', 'Population and sample', 'statistics'),
+    _t('TX4_S07_00065', 'i4-survey', 'dup-names', 'Duplicated entries in a list', 'statistics'),
+    _t('TX4_S07_00066', 'i4-survey', 'dup-num', 'A duplicated number in a list', 'statistics'),
+    # Lesson 71: Division Answers Ending with Zero
+    _t('TX4_S08_00010', 'i4-div-rem2', 'zero-rem', 'A quotient ending in zero, with a remainder', 'whole-arithmetic'),
+    _t('TX4_S08_00018', 'i4-div-rem2', 'zero-even', 'A quotient ending in zero', 'whole-arithmetic'),
+    # Lesson 72: Finding Information to Solve Problems
+    _t('TX4_S08_00031', 'i4-info', 'trip', 'Cars, cost and savings for a field trip', 'whole-arithmetic'),
+    _t('TX4_S08_00032', 'i4-info', 'yard', 'Hours and pay for yard work', 'whole-arithmetic'),
+    _t('TX4_S08_00033', 'i4-info', 'election', 'Votes, the winner and a date', 'whole-arithmetic'),
+    _t('TX4_S08_00071', 'i4-info', 'colors', 'Read a bar graph of favorite colors', 'statistics'),
+    _t('TX4_S08_00088', 'i4-info', 'fewest', 'The fewest votes on a bar graph', 'statistics'),
+    _t('TX4_S08_00073', 'i4-info', 'darts', 'A missing score from a sum', 'whole-arithmetic'),
+    _t('TX4_S08_00074', 'i4-info', 'unit-price', 'The cost of more items at the same price', 'decimal-arithmetic'),
+    _t('TX4_S08_00059', 'i4-info', 'angles', 'Judge an argument about angles', 'angles'),
+    # Lesson 73: Geometric Transformations
+    _t('TX4_S08_00011', 'i4-transform', 'pick', 'The transformations that move one figure onto another', 'geometry-properties'),
+    _t('TX4_S08_00035', 'i4-transform', 'name', 'Translation, reflection or rotation', 'geometry-properties'),
+    _t('TX4_S08_00036', 'i4-transform', 'common', 'Common names of transformations', 'geometry-properties'),
+    # Lesson 74: Fraction of a Set
+    _t('TX4_S08_00009', 'i4-frac-set', 'letter', 'The fraction of the letters in a word', 'fractions'),
+    _t('TX4_S08_00076', 'i4-frac-set', 'not', 'The fraction of the letters that are not a letter', 'fractions'),
+    _t('TX4_S08_00016', 'i4-frac-set', 'class', 'The fraction of a class', 'fractions'),
+    _t('TX4_S08_00015', 'i4-frac-set', 'shaded', 'The fraction of a group shaded', 'fractions'),
+    # Lesson 75: Measuring Turns
+    _t('TX4_S08_00037', 'i4-turns', 'direction', 'The direction after a turn', 'angles'),
+    _t('TX4_S08_00008', 'i4-turns', 'clock', 'The time after turning the minute hand', 'angles'),
+    _t('TX4_S08_00019', 'i4-turns', 'quarter', 'Degrees in part of a rotation', 'angles'),
+    _t('TX4_S08_00060', 'i4-turns', 'segment', 'Degrees a segment is rotated', 'angles'),
+    _t('TX4_S08_00061', 'i4-turns', 'lost', 'Why turning 180 degrees helps', 'angles'),
+    # Lesson 76: Division with Three-Digit Answers
+    _t('TX4_S08_00007', 'i4-div-rem2', 'three-box', 'Divide for a three-digit answer with a remainder', 'whole-arithmetic'),
+    _t('TX4_S08_00014', 'i4-div-rem2', 'three-even', 'Divide for a three-digit answer', 'whole-arithmetic'),
+    _t('TX4_S08_00006', 'i4-div-money', 'sign', 'Divide money, division sign', 'decimal-arithmetic'),
+    _t('TX4_S08_00021', 'i4-div-money', 'box', 'Divide money, division box', 'decimal-arithmetic'),
+    _t('TX4_S08_00055', 'i4-div-money', 'feet', 'Divide a length in tenths of a foot', 'decimal-arithmetic'),
+    _t('TX4_S08_00056', 'i4-div-grid', None, 'Which picture shows a decimal divided by 2', 'decimal-arithmetic'),
+    # Lesson 77: Mass and Weight
+    _t('TX4_S08_00064', 'i4-weight', 'ton-frac', 'A fraction of a ton in pounds', 'measurement'),
+    _t('TX4_S08_00023', 'i4-weight', 'tons', 'Tons to pounds', 'measurement'),
+    _t('TX4_S08_00024', 'i4-weight', 'oz', 'Pounds to ounces', 'measurement'),
+    _t('TX4_S08_00005', 'i4-weight', 'nearest-lb', 'Pounds and ounces to the nearest pound', 'measurement'),
+    _t('TX4_S08_00026', 'i4-weight', 'kg-g', 'Kilograms to grams', 'measurement'),
+    _t('TX4_S08_00052', 'i4-weight', 'scale', 'Read a scale in grams', 'measurement'),
+    _t('TX4_S08_00053', 'i4-weight', 'heaviest', 'Which unit weighs the most', 'measurement'),
+    _t('TX4_S08_00054', 'i4-weight', 'reasonable', 'A reasonable weight for an object', 'measurement'),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -753,6 +828,21 @@ CONSOLIDATED_I4 = {
     'TX4_S07_00073': 'TX4_S07_00029',
     'TX4_S07_00036': 'TX4_S07_00007', 'TX4_S07_00087': 'TX4_S07_00007', 'TX4_S07_00088': 'TX4_S07_00007', 'TX4_S07_00089': 'TX4_S07_00007',
     'TX4_S07_00035': 'TX4_S07_00007', 'TX4_S07_00032': 'TX4_S07_00008', 'TX4_S07_00033': 'TX4_S07_00008', 'TX4_S07_00034': 'TX4_S07_00008',
+    # Batch I4-11
+    'TX4_S07_00051': 'TX4_S07_00006', 'TX4_S07_00054': 'TX4_S07_00005', 'TX4_S07_00090': 'TX4_S07_00038', 'TX4_S07_00091': 'TX4_S07_00038',
+    'TX4_S07_00092': 'TX4_S07_00038', 'TX4_S07_00056': 'TX4_S07_00004', 'TX4_S07_00058': 'TX4_S07_00004', 'TX4_S07_00103': 'TX4_S07_00004',
+    'TX4_S07_00057': 'TX4_S07_00055', 'TX4_S07_00104': 'TX4_S07_00055', 'TX4_S07_00040': 'TX4_S07_00003', 'TX4_S07_00074': 'TX4_S07_00003',
+    'TX4_S07_00105': 'TX4_S07_00060',
+    'TX4_S07_00042': 'TX4_S07_00041', 'TX4_S07_00075': 'TX4_S07_00041', 'TX4_S07_00094': 'TX4_S07_00041', 'TX4_S07_00095': 'TX4_S07_00041',
+    'TX4_S07_00097': 'TX4_S07_00041', 'TX4_S07_00099': 'TX4_S07_00041', 'TX4_S07_00100': 'TX4_S07_00096', 'TX4_S07_00101': 'TX4_S07_00098',
+    'TX4_S07_00061': 'TX4_S07_00001',
+    'TX4_S08_00029': 'TX4_S08_00010', 'TX4_S08_00030': 'TX4_S08_00010', 'TX4_S08_00087': 'TX4_S08_00010', 'TX4_S08_00072': 'TX4_S08_00071',
+    'TX4_S08_00034': 'TX4_S08_00011', 'TX4_S08_00017': 'TX4_S08_00009', 'TX4_S08_00062': 'TX4_S08_00009', 'TX4_S08_00075': 'TX4_S08_00009',
+    'TX4_S08_00063': 'TX4_S08_00037', 'TX4_S08_00038': 'TX4_S08_00008',
+    'TX4_S08_00039': 'TX4_S08_00007', 'TX4_S08_00040': 'TX4_S08_00007', 'TX4_S08_00089': 'TX4_S08_00007', 'TX4_S08_00078': 'TX4_S08_00014',
+    'TX4_S08_00020': 'TX4_S08_00006', 'TX4_S08_00022': 'TX4_S08_00021', 'TX4_S08_00077': 'TX4_S08_00021', 'TX4_S08_00079': 'TX4_S08_00021',
+    'TX4_S08_00080': 'TX4_S08_00023', 'TX4_S08_00081': 'TX4_S08_00024', 'TX4_S08_00025': 'TX4_S08_00005', 'TX4_S08_00028': 'TX4_S08_00026',
+    'TX4_S08_00057': 'TX4_S08_00054', 'TX4_S08_00065': 'TX4_S08_00054', 'TX4_S08_00090': 'TX4_S08_00054', 'TX4_S08_00027': 'TX4_S08_00054',
 }
 
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a

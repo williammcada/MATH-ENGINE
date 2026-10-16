@@ -277,6 +277,28 @@ const oracle={
  'i4-div2':(q,p)=>{const v=variantOf(q);if(v==='divisible-pick')return p.opts.filter(x=>x%p.d===0).length===1&&is(q,p.opts.find(x=>x%p.d===0));if(v==='divisible-tf')return key(q)===(p.n%p.d===0?'true':'false');
   if(v==='mental')return key(q)==='ABCD'[p.pos]&&p.n/p.d===Number(String(p.n/p.d)[0].repeat(4));return p.n%p.d===0&&is(q,p.n/p.d);},
  'i4-div-terms':(q,p)=>is(q,{divisor:p.d,dividend:p.d*p.q,quotient:p.q}[p.ask]),
+ // Batch I4-11
+ 'i4-congruent':(q,p)=>variantOf(q)==='tf'?key(q)===(p.same?'true':'false'):E.checkAnswer(q,`${p.j0} and ${p.i0}`).answerCorrect&&p.i0!==p.j0&&p.j0<=p.n,
+ 'i4-mult-ten2':(q,p)=>{const v=variantOf(q);if(v==='factor-10')return E.checkAnswer(q,`10 x ${p.t/10} x ${p.a}; ${p.a*p.t}`).answerCorrect;if(v==='tenths')return Number(key(q))===p.n/10;if(v==='money')return Math.round(numKey(q)*100)===p.c*p.q;return is(q,p.a*p.t);},
+ 'i4-div-rem2':(q,p)=>{const qq=Math.floor(p.n/p.d),r=p.n%p.d,v=variantOf(q);if(v==='zero-rem'||v==='zero-even')if(qq%10!==0)return false;return r?E.checkAnswer(q,`${qq} R ${r}`).answerCorrect:is(q,qq);},
+ 'i4-div-money':(q,p)=>variantOf(q)==='feet'?Math.round(numKey(q)*10)*p.d===p.n:Math.round(numKey(q)*100)*p.d===p.n,
+ 'i4-div-grid':(q,p)=>key(q)==='ABCD'[p.vals.indexOf(5*p.a)]&&p.vals.filter(x=>x===5*p.a).length===1,
+ 'i4-mm':(q,p)=>{const v=variantOf(q);if(v==='cm-mm')return is(q,Math.round(p.c*10));if(v==='measure')return is(q,p.L)&&E.checkAnswer(q,`${p.L} mm`).answerCorrect&&!E.checkAnswer(q,`${p.L} cm`).answerCorrect;
+  if(v==='cm-and-mm')return E.checkAnswer(q,`${p.L/10}; ${p.L}`).answerCorrect;if(v==='perimeter')return is(q,total(p.s));if(v==='circle')return E.checkAnswer(q,`${p.rr}; ${2*p.rr/10}`).answerCorrect;
+  return key(q)===(/eyelash|coin|rice/.test(p.thing)?'millimeters':'centimeters');},
+ 'i4-frac-group':(q,p)=>{const v=variantOf(q);if(v==='twelfths')return is(q,p.k*p.n/12);if(v==='of')return is(q,p.k*p.n/p.d);if(v==='unit-of-time')return is(q,p.tot/p.d);if(v==='area-half')return is(q,p.l*p.w/p.p);return is(q,p.n/p.d);},
+ 'i4-survey':(q,p)=>{const v=variantOf(q);if(v==='biased')return key(q)==='ABCD'[p.k]&&/tear down|wonderful|improve our|greasy/.test(q.prompt.split(`${'ABCD'[p.k]}. `)[1].split('"')[1]);if(v==='solvable')return key(q)===(p.ok?'yes':'no');
+  if(v==='sample')return q.answer.kind==='teacher';if(v==='dup-names')return E.checkAnswer(q,`${p.dups[1]}, ${p.dups[0]}`).answerCorrect;const seen=new Set();let d;for(const x of p.all){if(seen.has(x))d=x;seen.add(x);}return E.checkAnswer(q,String(d)).answerCorrect;},
+ 'i4-info':(q,p)=>{const v=variantOf(q);if(v==='trip')return E.checkAnswer(q,`${p.st/p.car}; ${p.st*p.cost}; ${(100*p.cost-p.saved)/100}`).answerCorrect;if(v==='yard')return E.checkAnswer(q,`${p.m+p.a}; ${p.a*p.p}; ${(p.m+p.a)*p.p}`).answerCorrect;
+  if(v==='election'){const don=p.mig+p.dif;return E.checkAnswer(q,`${don}; ${p.lucy>don?'Lucy':'Don'}; March ${p.date-p.days}`).answerCorrect;}if(v==='colors')return is(q,p.vals[p.k]);if(v==='fewest')return key(q)===['red','blue','green','yellow'][p.vals.indexOf(Math.min(...p.vals))];
+  if(v==='darts')return is(q,p.tot-p.j);if(v==='unit-price')return Math.round(numKey(q)*100)===p.tot/p.k*p.m;return q.answer.kind==='teacher';},
+ 'i4-transform':(q,p)=>{const v=variantOf(q);if(v==='common')return E.checkAnswer(q,p.ord.map(x=>({reflection:'flip',rotation:'turn',translation:'slide'})[x]).join(', ')).answerCorrect;if(v==='name')return key(q)===p.kind;return E.checkAnswer(q,p.kind.split(' and ').reverse().join(' and ')).answerCorrect;},
+ 'i4-frac-set':(q,p)=>{const v=variantOf(q);if(v==='class')return E.checkAnswer(q,`${p.tot-p.g}/${p.tot}`).answerCorrect;if(v==='shaded')return E.checkAnswer(q,`${p.k}/${p.d}`).answerCorrect;
+  const k=[...p.W].filter(c=>c===p.L).length;return E.checkAnswer(q,`${p.not?p.W.length-k:k}/${p.W.length}`).answerCorrect;},
+ 'i4-turns':(q,p)=>{const v=variantOf(q),D=['north','east','south','west'];if(v==='direction')return key(q)===D[((p.s+(p.cw?1:-1)*p.deg/90)%4+4)%4];
+  if(v==='clock'){const t=((p.hh*60+p.m+p.delta)%720+720)%720;return E.checkAnswer(q,`${Math.floor(t/60)||12}:${String(t%60).padStart(2,'0')}`).answerCorrect;}if(v==='quarter'||v==='segment')return is(q,p.deg);return q.answer.kind==='teacher';},
+ 'i4-weight':(q,p)=>{const v=variantOf(q);if(v==='tons')return is(q,2000*p.t0);if(v==='ton-frac'){const [a,b]=p.f.split('/').map(Number);return is(q,2000*a/b);}if(v==='oz')return is(q,16*p.p);if(v==='nearest-lb')return is(q,Math.round((16*p.p+p.o)/16));
+  if(v==='kg-g')return is(q,1000*p.k);if(v==='scale')return is(q,p.g);if(v==='heaviest')return key(q)===['ton','kilogram','pound','ounce'][p.k];return key(q)===['5 pounds','1 kilogram','4 tons','1 gram','2 ounces','70 kilograms','1500 kilograms','1 gram','25 pounds'][p.k];},
 };
 
 // The two sides of a comparison prompt ("a − b ☐ c − d"), evaluated separately.
