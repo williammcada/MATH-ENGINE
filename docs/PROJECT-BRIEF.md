@@ -1,4 +1,8 @@
-## Current checkpoint — Engine 0.36.0-rc.1 implementation checkpoint (2026-10-15)
+## Current checkpoint — Engine 0.37.0-rc.1 implementation checkpoint (2026-10-16)
+
+Games now receive only questions with one discrete answer. `src/answer-shape.js` tags bank entries whose answer is several parts (lists, every solution, set members, "a; n"); 283 are tagged and removed from the game index (bank game entries 1,441 → 1,158). Tags are recorded in `curriculum/answer-shape/v0.1/answer-shape.json`; Studio packets are unaffected. Hosts can call `gameExclusion(id)` to prune saved selections. MathQuest and Math Arcade get this only when each syncs. See [change spec](change-specs/v0.37.0-single-answer-games.md) and [verification](verification/single-answer-games-v0.37.0.md). Not yet a verified release. Handbook consulted: v0.1.12 `9d9c80f`.
+
+## Previous checkpoint — Engine 0.36.0-rc.1 implementation checkpoint (2026-10-15)
 
 The Engine now owns the one universal answer pad (handbook U-18, approved 2026-10-15; U-14 amended so the Engine owns the pad). `src/answer-pad.js` holds the two-tab pad (123 first, Algebra second). Every keypad question carries the same full key list, so keys no longer depend on, or give away, the answer. Pad-typed answers (−, √, ×, R, AM/PM) are accepted. Algebra radical items moved from a text box to the pad. Practice, main and phase-2 tests pass; browser check passed; physical iPad Not run. MathQuest and Math Arcade still draw their own pads until they migrate. See [change spec](change-specs/v0.36.0-answer-pad.md) and [verification](verification/answer-pad-v0.36.0.md). Not yet a verified release. Handbook consulted: v0.1.12 `9d9c80f`.
 
