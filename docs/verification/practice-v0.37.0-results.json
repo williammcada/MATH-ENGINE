@@ -1,5 +1,5 @@
 {
-  "engine": "0.63.0",
+  "engine": "0.64.0-rc.1",
   "bankVersion": "0.33.0-rc.1",
   "seedsPerItem": 50,
   "checks": {
@@ -161,6 +161,13 @@
         "Algebra"
       ]
     },
+    "time-money-percent-on-123": {
+      "status": "Passed",
+      "items": 741,
+      "time": 60,
+      "money": 548,
+      "percent": 133
+    },
     "radicals-on-pad": {
       "status": "Passed",
       "count": 0
@@ -205,8 +212,8 @@
     },
     "bundle-provenance": {
       "status": "Passed",
-      "bundleSha256": "b79c4eae4ea31489159b9e7a5ca69c6f6e3ebd16373949095069e032bbc7f865",
-      "contentHash": "4c46d4bdd9c86d8e1ff530eba0bfd847"
+      "bundleSha256": "93754c1605c55e3e6d66dfdbbca2be9645530649c4878021cc841996eb8ef04a",
+      "contentHash": "f87c68835261a69ed543b13e0e5884ba"
     }
   },
   "failures": [],

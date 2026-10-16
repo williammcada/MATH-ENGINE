@@ -133,10 +133,25 @@ results.checks['bank-input-modes'] = { status: 'Informational', ...modes };
 {
   const flat = PAD.tabs.map(t => t.rows.flat());
   assert.deepStrictEqual(PAD.tabs.map(t => t.label), ['123', 'Algebra']);
-  assert.deepStrictEqual(flat[0], ['7', '8', '9', 'back', '4', '5', '6', 'clear', '1', '2', '3', '/', '0', '.', '−', 'R', ':', ';', ',', ' ']);
-  assert.deepStrictEqual(flat[1], ['x', 'y', '^', 'back', '+', '−', '×', '÷', '(', ')', '√', 'clear', '=', '<', '>', '%', '≤', '≥', '{', '}', '$', 'AM', 'PM', ' ']);
+  assert.deepStrictEqual(flat[0], ['7', '8', '9', 'back', '4', '5', '6', 'clear', '1', '2', '3', '/', '0', '.', '−', 'R', ':', ';', ',', ' ', 'AM', 'PM', '$', '%']);
+  assert.deepStrictEqual(flat[1], ['x', 'y', '^', 'back', '+', '−', '×', '÷', '(', ')', '√', 'clear', '=', '<', '>', ' ', '≤', '≥', '{', '}']);
+  // U-18 amended 2026-10-16: every time, money and percent answer can be typed on the 123 tab alone.
+  for (const ch of ['AM', 'PM', '$', '%', ':', ' ']) assert.ok(flat[0].includes(ch), ch + ' on the 123 tab');
   assert.deepStrictEqual(P.keypadKeys(), PAD.keys); assert.deepStrictEqual(P.keypadKeys({ keys: ['1'] }), PAD.keys);
   pass('answer-pad-layout', { keys: PAD.keys.length, tabs: PAD.tabs.map(t => t.label) });
+  // Time, money and percent answers need no tab switch (U-18 amended 2026-10-16, after the Mega Man Math AM/PM report).
+  {
+    const on123 = new Set(flat[0].filter(k => k !== 'back' && k !== 'clear'));
+    const typeable = text => { const t = PAD.padForm(text).replace(/-/g, '−'); let i = 0; while (i < t.length) { if (t.startsWith('AM', i) || t.startsWith('PM', i)) { if (!on123.has(t.slice(i, i + 2))) return false; i += 2; } else { if (!on123.has(t[i])) return false; i++; } } return true; };
+    let checked = 0, kinds = { time: 0, money: 0, percent: 0 };
+    for (const e of P.catalog) for (let s = 0; s < 5; s++) {
+      const it = P.generate(e.id, { seed: 'tab123-' + s }); if (it.inputMode !== 'keypad') continue;
+      const a = String(it.answerText), kind = /\d:\d\d\s?[AP]M$/.test(a) ? 'time' : /^-?\$/.test(a) ? 'money' : /^-?[\d.]+%$/.test(a) ? 'percent' : null;
+      if (!kind) continue; kinds[kind]++; checked++;
+      if (!typeable(a)) fail('time-money-percent-on-123', { id: e.id, answer: a });
+    }
+    if (kinds.time && kinds.money && kinds.percent) pass('time-money-percent-on-123', { items: checked, ...kinds }); else fail('time-money-percent-on-123', { reason: 'sample missing a kind', ...kinds });
+  }
   // Radicals are pad items and accept √ entry, with or without a written ×.
   const radicalIds = bankRows.filter(e => /sqrt\(/.test(P.generate(e.id, { seed: 'rad' }).answerText)).map(e => e.id);
   let radicalOk = 0;
