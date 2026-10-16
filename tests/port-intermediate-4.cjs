@@ -201,6 +201,22 @@ const oracle={
  'i4-frac-decimal':(q,p)=>variantOf(q)==='hundredths'?is(q,p.n/100)&&q.prompt.includes(p.n+'/100'):is(q,(10*p.w+p.k)/10)&&q.prompt.includes(`${p.w} ${p.k}/10`),
  'i4-grid100':(q,p)=>variantOf(q)==='frac-dec'?E.checkAnswer(q,`${p.k}/100; ${p.k/100}`).answerCorrect:E.checkAnswer(q,`${p.k/100}; ${(100-p.k)/100}`).answerCorrect,
  'i4-decimal-order':(q,p)=>E.checkAnswer(q,[p.a/100,p.b/10,p.c/100].sort((x,y)=>y-x).join(', ')).answerCorrect,
+ // Batch I4-7
+ 'i4-missing-factor':(q,p)=>p.p%p.a===0&&is(q,p.p/p.a)&&q.prompt.includes(String(p.p))+(q.givens.svg||'').includes('>'+p.p+'<')>0,
+ 'i4-sub-zero':(q,p)=>{const v=variantOf(q);if(v==='whole')return is(q,p.a-p.b)&&String(p.a).includes('0');return Math.round(numKey(q)*100)===p.a-p.b&&p.a%100<p.b%100;},
+ 'i4-round100':(q,p)=>{const r=x=>100*Math.floor((x+50)/100);return variantOf(q)==='add'?is(q,r(p.a)+r(p.b)):is(q,r(p.n))&&p.n%100!==50;},
+ 'i4-mult-tens':(q,p)=>variantOf(q)==='three'?E.checkAnswer(q,`${p.a*p.b}; ${p.a*p.b}0; ${p.a*p.b}00`).answerCorrect:is(q,p.a*p.b)&&(p.a%10===0||p.b%100===0),
+ 'i4-add-money':(q,p)=>Math.round(numKey(q)*100)===(variantOf(q)==='three'?p.a+p.b+p.c:p.a+100*p.d+p.c),
+ 'i4-decimal-col':(q,p)=>variantOf(q)==='sub'?Math.round(Number(key(q))*100)===p.a-p.b:Math.round(Number(key(q))*1000)===p.a+p.b,
+ 'i4-mult21':(q,p)=>is(q,p.a*p.b)&&inRange(p.a,10,99)&&inRange(p.b,2,9),
+ 'i4-paren':(q,p)=>{const ex=p.expr.replace(/√(\d+)/g,(m,n)=>`Math.sqrt(${n})`).replace(/−/g,'-').replace(/×/g,'*').replace(/÷/g,'/');return is(q,Function('return '+ex)());},
+ 'i4-paren-compare':(q,p)=>{const ev=x=>Function('return '+x.replace(/(\d+)²/g,'($1*$1)').replace(/√(\d+)/g,'Math.sqrt($1)').replace(/−/g,'-').replace(/×/g,'*').replace(/÷/g,'/'))(),l=ev(p.left),r=ev(p.right);return key(q)===(l>r?'>':l<r?'<':'=');},
+ 'i4-assoc':(q,p)=>{const v=variantOf(q);if(v==='missing')return is(q,p.b);if(v==='property')return E.checkAnswer(q,`${p.k<2?'associative':'commutative'} property of ${p.k%2?'multiplication':'addition'}`).answerCorrect;
+  return E.checkAnswer(q,`(${p.a}+${p.b})+${p.c}`).answerCorrect&&!E.checkAnswer(q,`${p.a}+(${p.b}+${p.c})`).answerCorrect;},
+ 'i4-name-figure':(q,p)=>E.checkAnswer(q,`${p.type} ${p.A}${p.B}`).answerCorrect&&E.checkAnswer(q,`${p.type} ${p.B}${p.A}`).answerCorrect===(p.type!=='ray')&&q.givens.svg.includes(`A ${p.type} through`),
+ 'i4-draw-lines':(q,p)=>q.answer.kind==='teacher'&&(p.two?/line \w\w and line \w\w/.test(q.prompt):/^Draw line \w\w\./.test(q.prompt)),
+ 'i4-diameter':(q,p)=>E.checkAnswer(q,p.D1+p.D2).answerCorrect&&E.checkAnswer(q,p.D2+p.D1).answerCorrect&&!E.checkAnswer(q,p.M+p.Q).answerCorrect,
+ 'i4-seg-length':(q,p)=>variantOf(q)==='four'?is(q,p.T-p.a-p.b):is(q,p.T-p.a),
 };
 
 // The two sides of a comparison prompt ("a − b ☐ c − d"), evaluated separately.

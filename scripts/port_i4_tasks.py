@@ -392,6 +392,54 @@ TASKS_I4 = [
     _t('TX4_S04_00047', 'i4-grid100', 'frac-dec', 'The shaded part of a hundred square as a fraction and a decimal', 'number-representation'),
     _t('TX4_S04_00084', 'i4-grid100', 'shaded-unshaded', 'Shaded and unshaded parts of a hundred square as decimals', 'number-representation'),
     _t('TX4_S04_00048', 'i4-decimal-order', None, 'Order decimals from greatest to least', 'number-representation'),
+    # Batch I4-7: Lessons 41-45
+    # Lesson 41: Subtracting Across Zero; Missing Factors
+    _t('TX4_S05_00012', 'i4-missing-factor', 'letter', 'The missing factor in an equation like 6n = 24', 'equations'),
+    _t('TX4_S05_00044', 'i4-missing-factor', 'ten', 'The missing factor times 10', 'equations'),
+    _t('TX4_S05_00045', 'i4-missing-factor', 'column', 'The missing factor in a column', 'equations'),
+    _t('TX4_S05_00013', 'i4-sub-zero', 'money-cents', 'Subtract money across a zero', 'decimal-arithmetic'),
+    _t('TX4_S05_00047', 'i4-sub-zero', 'money-whole', 'Subtract money from whole dollars', 'decimal-arithmetic'),
+    _t('TX4_S05_00049', 'i4-sub-zero', 'whole', 'Subtract across a zero', 'whole-arithmetic'),
+    _t('TX4_S05_00096', 'i4-sub-zero', 'money-tens', 'Subtract money from tens of dollars', 'decimal-arithmetic'),
+    _t('TX4_S05_00097', 'i4-sub-zero', 'change', 'Change from a payment', 'decimal-arithmetic'),
+    # Lesson 42: Rounding Numbers to Estimate
+    _t('TX4_S05_00072', 'i4-missing-factor', 'rows-story', 'How many in each of some equal rows', 'equations'),
+    _t('TX4_S05_00011', 'i4-round100', 'four-digit', 'Round a four-digit number to the nearest hundred', 'rounding-estimation'),
+    _t('TX4_S05_00041', 'i4-round100', 'three-digit', 'Round a three-digit number to the nearest hundred', 'rounding-estimation'),
+    _t('TX4_S05_00043', 'i4-round100', 'add', 'Round to the nearest hundred, then add', 'rounding-estimation'),
+    _t('TX4_S05_00014', 'i4-mult-tens', 'three', 'Products with ones, tens and hundreds', 'whole-arithmetic'),
+    _t('TX4_S05_00051', 'i4-mult-tens', 'hundreds', 'Multiply hundreds by a one-digit number', 'whole-arithmetic'),
+    _t('TX4_S05_00052', 'i4-mult-tens', 'tens', 'Multiply tens by a one-digit number', 'whole-arithmetic'),
+    # Lesson 43: Adding and Subtracting Decimal Numbers, Part 1
+    _t('TX4_S05_00010', 'i4-add-money', 'dollars-cents', 'Add dollars and cents written different ways', 'decimal-arithmetic'),
+    _t('TX4_S05_00037', 'i4-add-money', 'three', 'Add three money amounts', 'decimal-arithmetic'),
+    _t('TX4_S05_00040', 'i4-decimal-col', 'sub', 'Subtract decimals to hundredths', 'decimal-arithmetic'),
+    _t('TX4_S05_00117', 'i4-decimal-col', 'add-thousandths', 'Add decimals to thousandths', 'decimal-arithmetic'),
+    # Lesson 44: Multiplying Two-Digit Numbers, Part 1
+    _t('TX4_S05_00009', 'i4-mult21', 'row', 'Multiply a two-digit number by a one-digit number', 'whole-arithmetic'),
+    _t('TX4_S05_00034', 'i4-mult21', 'column', 'Multiply a two-digit number by a one-digit number in a column', 'whole-arithmetic'),
+    # Lesson 45: Parentheses and the Associative Property; Naming Lines and Segments
+    _t('TX4_S05_00008', 'i4-paren', 'minus-sum', 'Subtract a sum in parentheses', 'expressions'),
+    _t('TX4_S05_00033', 'i4-paren', 'diff-minus', 'Subtract from a difference in parentheses', 'expressions'),
+    _t('TX4_S05_00031', 'i4-paren', 'minus-product', 'Subtract a product in parentheses', 'expressions'),
+    _t('TX4_S05_00125', 'i4-paren', 'minus-product-big', 'Subtract a larger product in parentheses', 'expressions'),
+    _t('TX4_S05_00121', 'i4-paren', 'plus-product', 'Add a product in parentheses', 'expressions'),
+    _t('TX4_S05_00122', 'i4-paren', 'times-sum', 'Multiply a sum in parentheses', 'expressions'),
+    _t('TX4_S05_00077', 'i4-paren', 'times-diff-plus', 'Multiply a difference in parentheses, then add', 'expressions'),
+    _t('TX4_S05_00126', 'i4-paren', 'div-div', 'Divide by a quotient in parentheses', 'expressions'),
+    _t('TX4_S05_00120', 'i4-paren', 'root-plus', 'A square root plus a quotient', 'expressions'),
+    _t('TX4_S05_00156', 'i4-paren-compare', 'minus-times', 'Compare two groupings of the same numbers', 'expressions'),
+    _t('TX4_S05_00057', 'i4-paren-compare', 'assoc', 'Compare associative groupings', 'expressions'),
+    _t('TX4_S05_00157', 'i4-paren-compare', 'root', 'Compare expressions with powers and square roots', 'expressions'),
+    _t('TX4_S05_00007', 'i4-assoc', 'pick', 'A sum grouped another way', 'expressions'),
+    _t('TX4_S05_00030', 'i4-assoc', 'missing', 'The missing number in the Associative Property', 'expressions'),
+    _t('TX4_S05_00065', 'i4-assoc', 'property', 'Associative or Commutative Property', 'expressions'),
+    _t('TX4_S05_00006', 'i4-name-figure', 'pick', 'Name a line, ray or segment', 'segments'),
+    _t('TX4_S05_00059', 'i4-name-figure', 'write', 'Write the name of a line, ray or segment', 'segments'),
+    _t('TX4_S05_00058', 'i4-draw-lines', None, 'Draw and label lines', 'segments'),
+    _t('TX4_S05_00075', 'i4-diameter', None, 'Which segment is a diameter', 'circle-measurement'),
+    _t('TX4_S05_00078', 'i4-seg-length', 'four', 'A segment length from three others', 'segments'),
+    _t('TX4_S05_00119', 'i4-seg-length', 'three', 'A segment length from two others', 'segments'),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -488,6 +536,18 @@ CONSOLIDATED_I4 = {
     'TX4_S04_00046': 'TX4_S04_00002', 'TX4_S04_00068': 'TX4_S04_00080',
     'TX4_S04_00050': 'TX4_S04_00051', 'TX4_S04_00052': 'TX4_S04_00051', 'TX4_S04_00081': 'TX4_S04_00082', 'TX4_S04_00083': 'TX4_S04_00082',
     'TX4_S04_00012': 'TX4_S04_00001', 'TX4_S04_00049': 'TX4_S04_00082',
+    # Batch I4-7 (request R3)
+    'TX4_S05_00046': 'TX4_S05_00012', 'TX4_S05_00098': 'TX4_S05_00012', 'TX4_S05_00068': 'TX4_S05_00012', 'TX4_S05_00069': 'TX4_S05_00012',
+    'TX4_S05_00103': 'TX4_S05_00012', 'TX4_S05_00048': 'TX4_S05_00013', 'TX4_S05_00102': 'TX4_S05_00013', 'TX4_S05_00050': 'TX4_S05_00049',
+    'TX4_S05_00071': 'TX4_S05_00047', 'TX4_S05_00104': 'TX4_S05_00096', 'TX4_S05_00105': 'TX4_S05_00096', 'TX4_S05_00106': 'TX4_S05_00096',
+    'TX4_S05_00070': 'TX4_S04_00025',
+    'TX4_S05_00042': 'TX4_S05_00011', 'TX4_S05_00073': 'TX4_S05_00011', 'TX4_S05_00107': 'TX4_S05_00041', 'TX4_S05_00109': 'TX4_S05_00041',
+    'TX4_S05_00056': 'TX4_S05_00014', 'TX4_S05_00108': 'TX4_S05_00052',
+    'TX4_S05_00038': 'TX4_S05_00010', 'TX4_S05_00110': 'TX4_S05_00010', 'TX4_S05_00112': 'TX4_S05_00010', 'TX4_S05_00111': 'TX4_S05_00040',
+    'TX4_S05_00035': 'TX4_S05_00009', 'TX4_S05_00036': 'TX4_S05_00009', 'TX4_S05_00113': 'TX4_S05_00034', 'TX4_S05_00118': 'TX4_S05_00034',
+    'TX4_S05_00032': 'TX4_S05_00008', 'TX4_S05_00076': 'TX4_S05_00031', 'TX4_S05_00123': 'TX4_S05_00031', 'TX4_S05_00029': 'TX4_S05_00030',
+    'TX4_S05_00060': 'TX4_S05_00058', 'TX4_S05_00152': 'TX4_S05_00075', 'TX4_S05_00127': 'TX4_S05_00078', 'TX4_S05_00124': 'TX4_S05_00119',
+    'TX4_S05_00151': 'TX4_S04_00003',
 }
 
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a
@@ -501,4 +561,7 @@ PENDING_I4 = {
     'TX4_S02_00147': 'R3', 'TX4_S02_00082': 'R3',
     # Batch I4-5 (request R3)
     'TX4_S03_00076': 'R3', 'TX4_S03_00054': 'R3',
+    # Batch I4-7 (request R3)
+    'TX4_S05_00099': 'R3', 'TX4_S05_00100': 'R3', 'TX4_S05_00101': 'R3',
+    'TX4_S05_00074': 'R3', 'TX4_S05_00039': 'R3', 'TX4_S05_00079': 'R3',
 }

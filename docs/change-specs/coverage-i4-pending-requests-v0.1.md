@@ -27,7 +27,7 @@ The owner's instruction for the overnight Intermediate 4 run: a shared-file chan
 - **Files:** `tests/structured-bank-audit.py` (shared). Possibly also `curriculum/cross-course/v0.6/progressions.txt` if a replaced adaptation is selected there by recipe; none of the R3 records is.
 - **Change wanted:** the audit expects exactly 94 entries in the families `structured-arithmetic` and `structured-equation` (line 42: `len(ids)==94`). Each Intermediate 4 record below that gets its port replaces one such entry, so the expected count falls by one per record. For the records below that are structured adaptations, the count falls by one each (see the family column). Its comment would add that these entries were replaced by Intermediate 4 port tasks and are audited by `tests/port-intermediate-4.cjs`. Alternatively the audit could count every structured entry that is not replaced by a port, so that later replacements need no edit.
 - **Why:** the earlier adaptations show no addends in the prompt, offer no choices and use ranges unlike the source. The ports are faithful (source ranges, structure and named distractors).
-- **Meanwhile:** the records stay covered-provisional, served by their earlier adaptations. The port recipes are written and tested in this course's module; once the owner approves, each record gets its task line with the replacement flag set.
+- **Meanwhile:** the records stay covered-provisional, served by their earlier adaptations. For the records up to Batch I4-5 the port recipes are written and tested in this course's module; for the Batch I4-7 records the table says what is still to be written. Once the owner approves, each record gets its task line with the replacement flag set.
 - **Records affected (left as they are):**
 
 | Record | Lesson | Earlier adaptation's family | Ready port (recipe, variant) |
@@ -46,6 +46,12 @@ The owner's instruction for the overnight Intermediate 4 run: a shared-file chan
 | TX4_S02_00082 | 16 | structured-representations | `i4-expanded-form`, `products` (or consolidate into 00147 once ported) |
 | TX4_S03_00076 | 23 | structured-representations | `i4-angle-name`, `type` |
 | TX4_S03_00054 | 27 | structured-breadth | `i4-clock2`, `overnight` |
+| TX4_S05_00039 | 43 | structured-arithmetic | Not yet written: whole dollars subtracted from a money amount (a new `i4-sub-zero` variant); 00074 would consolidate into it |
+| TX4_S05_00074 | 43 | structured-arithmetic | As 00039 (consolidate once 00039 is ported) |
+| TX4_S05_00079 | 45 | structured-arithmetic | Not yet written: `a − (b − c)` (a new `i4-paren` variant) |
+| TX4_S05_00099 | 41 | structured-equation | Not yet written: a missing factor with a product in tens, such as 4a = 240 (a new `i4-missing-factor` variant); 00100 and 00101 would consolidate into it |
+| TX4_S05_00100 | 41 | structured-equation | As 00099 |
+| TX4_S05_00101 | 41 | structured-equation | As 00099 |
 
 TX4_S01_00111 was on this list after Batch I4-1; Batch I4-3 consolidated it into the open-record port TX4_S02_00011.
 
