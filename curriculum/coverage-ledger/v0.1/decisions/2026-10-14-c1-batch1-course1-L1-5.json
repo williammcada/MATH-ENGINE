@@ -1,0 +1,749 @@
+{
+ "batch": "c1-batch-1 course-1 lessons 1-5",
+ "date": "2026-10-14",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00024",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00024"
+   ],
+   "note": "Ported: Add two prices in a story."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00025",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00025"
+   ],
+   "note": "Ported: Add three money amounts."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00100",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00100"
+   ],
+   "note": "Ported: Add whole dollars and money amounts. Replaces the earlier adaptation, which dropped the dollar signs and named the amounts as multipliers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00125",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00125"
+   ],
+   "note": "Ported: Total cost of three items."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00002",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00002"
+   ],
+   "note": "Ported: Subtract money amounts (stacked) with regrouping."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00026",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00026"
+   ],
+   "note": "Ported: Subtract cents from whole dollars (stacked)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00102",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00102"
+   ],
+   "note": "Ported: Subtract cents written with a cent sign from dollars."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00028",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00028"
+   ],
+   "note": "Ported: Change from a bill."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00023",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00023"
+   ],
+   "note": "Ported: Add three whole numbers (stacked)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00098",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00098"
+   ],
+   "note": "Ported: Add two four-digit numbers (stacked)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00027",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00027"
+   ],
+   "note": "Ported: Subtract a three-digit number from a four-digit number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00099",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00099"
+   ],
+   "note": "Ported: Subtract four-digit numbers (stacked), regrouping across zero."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00095",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00095"
+   ],
+   "note": "Ported: Dozens less some."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00158",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00158"
+   ],
+   "note": "Ported: Write an addition and subtraction fact family."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00071",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00071"
+   ],
+   "note": "Ported: Complete an addition and subtraction fact family."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00073",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00073"
+   ],
+   "note": "Ported: Write a number sentence in the same fact family (addition)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00160",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00160"
+   ],
+   "note": "Ported: Write a multiplication and division fact family."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00074",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00074"
+   ],
+   "note": "Ported: Write a number sentence in the same fact family (division)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00161",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00161"
+   ],
+   "note": "Ported: Three ways to show a division."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00004",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00004"
+   ],
+   "note": "Ported: Multiply money by a multiple of ten (stacked)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00030",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00030"
+   ],
+   "note": "Ported: Multiply two two-digit numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00108",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00108"
+   ],
+   "note": "Ported: Multiply two two-digit numbers (stacked)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00111",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00111"
+   ],
+   "note": "Ported: Multiply two two-digit numbers written in parentheses."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00104",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00104"
+   ],
+   "note": "Ported: Multiply a three-digit number by a two-digit number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00105",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00105"
+   ],
+   "note": "Ported: Multiply a three-digit number with a zero by a two-digit number (stacked)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00031",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00031"
+   ],
+   "note": "Ported: Cost of several tickets."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00129",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00129"
+   ],
+   "note": "Ported: Cost of ten items."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00034",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00034"
+   ],
+   "note": "Ported: Multiply a money amount by a one-digit number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00112",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00112"
+   ],
+   "note": "Ported: Multiply dollars and cents by a one-digit number. Replaces the earlier adaptation, which dropped the dollar sign."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00103",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00103"
+   ],
+   "note": "Ported: Repeated addition as multiplication."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00005",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00005"
+   ],
+   "note": "Ported: Long division with a remainder."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00106",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00106"
+   ],
+   "note": "Ported: Division written as a fraction (one-digit divisor)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00109",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00109"
+   ],
+   "note": "Ported: Division written as a fraction (two-digit divisor)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00124",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00124"
+   ],
+   "note": "Ported: Division written as a fraction, zeros in the quotient."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00107",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00107"
+   ],
+   "note": "Ported: Long division by a two-digit number into thousands."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00110",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00110"
+   ],
+   "note": "Ported: Long division with a zero in the quotient."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00113",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00113"
+   ],
+   "note": "Ported: Divide a four-digit number by a one-digit number (zero in the quotient). Replaces the earlier adaptation, which allowed a divisor of 1 and had no zero in the quotient."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00114",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00114"
+   ],
+   "note": "Ported: Divide a three-digit number by a two-digit number. Replaces the earlier adaptation, which used four-digit dividends."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00115",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00115"
+   ],
+   "note": "Ported: Divide a money amount by 10."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00032",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00032"
+   ],
+   "note": "Ported: Quotient from a named divisor and dividend."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00128",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00128"
+   ],
+   "note": "Ported: Number of equal groups."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00127",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00127"
+   ],
+   "note": "Ported: Coins in a roll."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00035",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00035"
+   ],
+   "note": "Ported: Find a missing addend in a sum of four numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00008",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00008"
+   ],
+   "note": "Ported: Find a missing subtrahend."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00040",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00040"
+   ],
+   "note": "Ported: Find a missing subtrahend (regrouping)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00133",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00133"
+   ],
+   "note": "Ported: Find a number subtracted from 1000. Replaces the earlier adaptation, which subtracted from four-digit numbers instead of 1000."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00037",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00037"
+   ],
+   "note": "Ported: Find a missing addend (stacked)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00130",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00130"
+   ],
+   "note": "Ported: Find a missing addend."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00038",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00038"
+   ],
+   "note": "Ported: Find a missing minuend."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00041",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00041"
+   ],
+   "note": "Ported: Find a missing factor."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00043",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00043"
+   ],
+   "note": "Ported: Find a missing factor with a multiple of ten."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00042",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00042"
+   ],
+   "note": "Ported: Find a missing factor (product on the left)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00046",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00046"
+   ],
+   "note": "Ported: Find a missing divisor."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00044",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00044"
+   ],
+   "note": "Ported: Find a missing dividend (fraction form)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00045",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00045"
+   ],
+   "note": "Ported: Find a missing dividend."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00136",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00136"
+   ],
+   "note": "Ported: Solve a one-step multiplication equation."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00085",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00085"
+   ],
+   "note": "Ported: Find the unknown in a multiplication equation. Replaces the earlier adaptation, which had no choices."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00163",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00163"
+   ],
+   "note": "Ported: List the whole-number factors."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00164",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00164"
+   ],
+   "note": "Ported: Read the highest score from a bar graph."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00011",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00011"
+   ],
+   "note": "Ported: Multiply in parentheses, then divide."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00120",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00120"
+   ],
+   "note": "Ported: Multiply and divide from left to right."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00047",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00047"
+   ],
+   "note": "Ported: Divide a sum written over a fraction bar."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00048",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00048"
+   ],
+   "note": "Ported: Add after subtracting in parentheses."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00116",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00116"
+   ],
+   "note": "Ported: Subtract a difference in parentheses."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00117",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00117"
+   ],
+   "note": "Ported: Divide by a quotient in parentheses."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00121",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00121"
+   ],
+   "note": "Ported: Divide a product written over a fraction bar."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00093",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00093"
+   ],
+   "note": "Confirmed: three addends of four, three and four digits, as in the source."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00101",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00101"
+   ],
+   "note": "Confirmed: four-, five- and three-digit addends, as in the source."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00118",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00118"
+   ],
+   "note": "Confirmed: a − (b − c) with small whole numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00132",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00132"
+   ],
+   "note": "Confirmed: two-digit addend with a three-digit sum."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00134",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00134"
+   ],
+   "note": "Confirmed: find the minuend, two-digit numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00137",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00137"
+   ],
+   "note": "Confirmed: one-digit coefficient, two-digit answer."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00138",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00138"
+   ],
+   "note": "Confirmed: multiplication fact form."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00139",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section01:item:C1_S01_00139"
+   ],
+   "note": "Confirmed: one-digit coefficient, two-digit answer."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00001",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00024",
+   "note": "Choice-only twin of the two-price story; its distractors are served by the port."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00003",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00158",
+   "note": "Choice form of the addition fact family; the port offers the families as choices."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00159",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00158",
+   "note": "Same demand: an addition fact family from three given numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00072",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00158",
+   "note": "Same demand: an addition fact family from three given numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00070",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00073",
+   "note": "Same demand: another sentence in the fact family of a given addition."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00096",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00025",
+   "note": "Same demand: add three money amounts written in a row."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00094",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00028",
+   "note": "Same demand: change from a bill."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00097",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00027",
+   "note": "Same demand: subtract a three-digit number from a four-digit number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00006",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00160",
+   "note": "Choice form of the multiplication fact family."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00162",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00160",
+   "note": "Same demand: a multiplication fact family from three given numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00075",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00160",
+   "note": "Same demand: a multiplication fact family from three given numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00126",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00031",
+   "note": "Same demand: cost of several tickets at one price."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00029",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00004",
+   "note": "Same demand: multiply a money amount by a multiple of ten."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00122",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00106",
+   "note": "Same demand: division written as a fraction with a one-digit divisor."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00123",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00106",
+   "note": "Same demand: division written as a fraction with a one-digit divisor."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00033",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00005",
+   "note": "Same demand: long division with a three-digit quotient and a remainder."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00007",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00035",
+   "note": "Choice-only twin: missing addend in a sum of four numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00039",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00038",
+   "note": "Choice-only twin: missing minuend."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00135",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00038",
+   "note": "Same demand: missing minuend."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00131",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00133",
+   "note": "Same demand: a number subtracted from 1000."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00036",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00130",
+   "note": "Same demand: missing addend."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00009",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00041",
+   "note": "Choice-only twin: missing factor."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00010",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00046",
+   "note": "Choice-only twin: missing divisor."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00049",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00011",
+   "note": "Same demand: multiply in parentheses, then divide."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section01:item:C1_S01_00119",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00117",
+   "note": "Same demand: divide by a quotient in parentheses."
+  }
+ ]
+}

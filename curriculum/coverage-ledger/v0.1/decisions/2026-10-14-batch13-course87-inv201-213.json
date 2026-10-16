@@ -1,0 +1,477 @@
+{
+ "batch": "batch-13 course-87 investigations 201-213",
+ "date": "2026-10-14",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "course-87-en:item:AXA10097",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:AXA10097"
+   ],
+   "note": "Ported: same eight cases as the source (four quadrants and two axes)."
+  },
+  {
+   "id": "course-87-en:item:AXG70449",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:AXG70449"
+   ],
+   "note": "Ported with its own range: the free-response twin AXG70450 needs teacher review, so the choice form is ported separately and checked automatically, with the source's three graphs and \"none of these\"."
+  },
+  {
+   "id": "course-87-en:item:AXG70450",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:AXG70450"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to make a circle graph. Same ranges as the source; the teacher sees a reference graph."
+  },
+  {
+   "id": "course-87-en:item:SMAH0365",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SMAH0365"
+   ],
+   "note": "Ported: same range as the source (1 to 39)."
+  },
+  {
+   "id": "course-87-en:item:SMAH0366",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SMAH0366"
+   ],
+   "note": "Ported: same range as the source (1 to 39)."
+  },
+  {
+   "id": "course-87-en:item:SMAH0367",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SMAH0367"
+   ],
+   "note": "Ported: the source's first case is ported exactly; its second case builds a Roman numeral piece by piece, which the port replaces with a number from 400 to 3,999 of the same kind."
+  },
+  {
+   "id": "course-87-en:item:SMAH0406",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SMAH0406"
+   ],
+   "note": "Ported: same 28 leg pairs as the source. The answer must be in simplest radical form."
+  },
+  {
+   "id": "course-87-en:item:SMAH0407",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870780",
+   "note": "Choice-only twin of SN870780 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SMAH0446",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SMAH0446"
+   ],
+   "note": "Ported: same range as the source (six-digit base 2 numerals)."
+  },
+  {
+   "id": "course-87-en:item:SMAH0451",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SMAH0451"
+   ],
+   "note": "Ported: same 30 numbers as the source."
+  },
+  {
+   "id": "course-87-en:item:SMAH0535",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SMAH0535"
+   ],
+   "note": "Ported: same range as the source (7 to 31). The port writes the base 2 numeral without a leading zero."
+  },
+  {
+   "id": "course-87-en:item:SN870730",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870730"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used its own fractions (such as 2/4); the original uses its table of 22 sums of halves, fourths and tenths of a circle, named in words."
+  },
+  {
+   "id": "course-87-en:item:SN870733",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870734",
+   "note": "Choice-only twin of SN870734 (same ranges). It points to the confirmed adaptation; its distractors are pending the distractor programme."
+  },
+  {
+   "id": "course-87-en:item:SN870734",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870734"
+   ],
+   "note": "Reviewed against the source: existing adaptation uses the same divisions (halves to sixths)."
+  },
+  {
+   "id": "course-87-en:item:SN870742",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870742"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used 15 values on stems 2 to 5; the original uses three consecutive stems with three, three and two leaves."
+  },
+  {
+   "id": "course-87-en:item:SN870744",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870744"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used nine values; the original reads a box-and-whisker plot of 11 values on the source's number-line scales. The port uses 11 different values so the quartiles are unambiguous."
+  },
+  {
+   "id": "course-87-en:item:SN870745",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870806",
+   "note": "Choice-only twin of SN870806 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SN870748",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870748"
+   ],
+   "note": "Ported: same four figures as the source; the student gives the number of lines of symmetry (0, \"none\" or a number)."
+  },
+  {
+   "id": "course-87-en:item:SN870752",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870380",
+   "note": "Choice-only twin of SX870380 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SN870753",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870753"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to construct a segment bisector. The prompt shows the segment; the teacher sees the criteria."
+  },
+  {
+   "id": "course-87-en:item:SN870763",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870763"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to graph a table and describe the trend. Same rules for the values as the source (bamboo height or pond depth over five weeks)."
+  },
+  {
+   "id": "course-87-en:item:SN870769",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870771",
+   "note": "Choice-only twin of SN870771 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SN870770",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870770"
+   ],
+   "note": "Ported: same demand as the source (each central angle, and the area of the square from the radius 2 to 8); the port draws the figure."
+  },
+  {
+   "id": "course-87-en:item:SN870771",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870771"
+   ],
+   "note": "Ported: same seven angles as the source; the port draws the inscribed octagon."
+  },
+  {
+   "id": "course-87-en:item:SN870772",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870772"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to write a function rule and graph it. Same ranges as the source; the teacher sees a reference graph."
+  },
+  {
+   "id": "course-87-en:item:SN870774",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870774"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used odds outside the source's table (such as 9 to 8); the original uses its table of 43 cases, for winning or not winning."
+  },
+  {
+   "id": "course-87-en:item:SN870775",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870775"
+   ],
+   "note": "Ported: same 13 cases as the source; the student answers A, B or C."
+  },
+  {
+   "id": "course-87-en:item:SN870778",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870778"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to prove the Pythagorean theorem by one of three methods. The source's pictures for two methods were not recovered; the port draws all three."
+  },
+  {
+   "id": "course-87-en:item:SN870780",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870780"
+   ],
+   "note": "Ported: same nine triples and three orientations as the source; the port draws the triangle."
+  },
+  {
+   "id": "course-87-en:item:SN870805",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870805"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to graph three points. Same ranges as the source; the prompt carries a blank grid, and the teacher sees a reference graph."
+  },
+  {
+   "id": "course-87-en:item:SN870806",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870806"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used nine values; the original reads the five-number summary from a box-and-whisker plot of 11 values. The port uses 11 different values so the quartiles are unambiguous."
+  },
+  {
+   "id": "course-87-en:item:SN870807",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870807"
+   ],
+   "note": "Ported with its own range: the free-response twin SN870772 needs teacher review, so the choice form is ported separately with the source's three graphs and \"not enough information\"; checked automatically."
+  },
+  {
+   "id": "course-87-en:item:SN870808",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870808"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to complete a function table and graph the function. Same ranges as the source; the teacher sees a reference graph."
+  },
+  {
+   "id": "course-87-en:item:SN870810",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870810"
+   ],
+   "note": "Reviewed against the source: existing adaptation uses 15 values from 20 to 59, as the source does."
+  },
+  {
+   "id": "course-87-en:item:SN870811",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870812",
+   "note": "Choice-only twin of SN870812 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SN870812",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870812"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used nine listed values; the original builds a plot of three to five stems with two to six leaves each and a single mode, which the port draws."
+  },
+  {
+   "id": "course-87-en:item:SN870814",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870748",
+   "note": "Choice-only twin of SN870748 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SN870815",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870816",
+   "note": "Choice-only twin of SN870816 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SN870816",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870816"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation allowed two colors with the same count; the original uses three different counts."
+  },
+  {
+   "id": "course-87-en:item:SN870817",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870818",
+   "note": "Choice-only twin of SN870818 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SN870818",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870818"
+   ],
+   "note": "Ported: same ranges as the source (scale 1 cm to 0.5 to 0.8 m). The answer is the exact volume."
+  },
+  {
+   "id": "course-87-en:item:SN870829",
+   "state": "consolidated",
+   "into": "course-87-en:item:AXA10097",
+   "note": "Choice-only twin of AXA10097 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SN870831",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870831"
+   ],
+   "note": "Ported: same ranges as the source (five bars, with the source's height rules); the port draws the histogram."
+  },
+  {
+   "id": "course-87-en:item:SN870833",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870833"
+   ],
+   "note": "Ported: same graph data as the source (Yuma and Miami, April 11 to 20) and the same four questions. The source picture was redrawn by the port; dates may be listed in any order."
+  },
+  {
+   "id": "course-87-en:item:SN870834",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870834"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used odds that are not in lowest terms (such as 9 to 6); the original uses totals 3 to 12 with odds in lowest terms."
+  },
+  {
+   "id": "course-87-en:item:SN870838",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870838"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation asked the student to choose a plot; the original asks the student to draw the box-and-whisker plot for nine values, so it needs teacher review."
+  },
+  {
+   "id": "course-87-en:item:SN870841",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870841"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to construct an angle bisector. Same angles as the source (24° to 40°); the prompt shows the angle."
+  },
+  {
+   "id": "course-87-en:item:SNAH0575",
+   "state": "consolidated",
+   "into": "course-87-en:item:SMAH0366",
+   "note": "Choice-only twin of SMAH0366 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SNAH0645",
+   "state": "consolidated",
+   "into": "course-87-en:item:SMAH0451",
+   "note": "Choice-only twin of SMAH0451 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SX650140",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870730",
+   "note": "Choice-only twin of SN870730 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SX760042",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX760042"
+   ],
+   "note": "Reviewed against the source: existing adaptation asks the same thing (a fraction of a circle as a percent)."
+  },
+  {
+   "id": "course-87-en:item:SX760144",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX760144"
+   ],
+   "note": "Reviewed against the source: existing adaptation uses the same range (chance of rain 1% to 100%)."
+  },
+  {
+   "id": "course-87-en:item:SX870105",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870105"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to inscribe a hexagon or triangle, or divide a circle into thirds or sixths. Same four constructions as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870106",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870106"
+   ],
+   "note": "Ported: same three cases as the source (the diameter, and an inscribed right angle or a central obtuse or acute angle); the port draws the circle. The diameter may be named in either order, and the angle with its endpoints in either order."
+  },
+  {
+   "id": "course-87-en:item:SX870108",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870108"
+   ],
+   "note": "Reviewed against the source: existing adaptation asks for the fourth vertex and the area of a rectangle with the source's ranges; the answer is entered as the two coordinates and the area."
+  },
+  {
+   "id": "course-87-en:item:SX870296",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870296"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to name a quadrilateral and explain why. Same six figures as the source (the source removed the kite)."
+  },
+  {
+   "id": "course-87-en:item:SX870315",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870315"
+   ],
+   "note": "Ported: same 15 pairs of fractions as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870378",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870378"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870379",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870379"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870380",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870380"
+   ],
+   "note": "Ported: same 48 equations as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870466",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870466"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used side lengths outside the source's table; the original uses its 15 pairs of cubes."
+  },
+  {
+   "id": "course-87-en:item:SX870477",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870477"
+   ],
+   "note": "Ported: same five properties and names as the source."
+  }
+ ]
+}

@@ -1,0 +1,449 @@
+{
+ "batch": "A1-3 algebra-1 lessons 13-20",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "algebra-1-en:node:193",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:193"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:194",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:194"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:195",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:195"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:197",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:197"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:198",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:197",
+   "note": "Choice-only twin of node:197 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "algebra-1-en:node:200",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:200"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:201",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:201"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:204",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:204"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:205",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:205"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:206",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:206"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:207",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:207"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:208",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:208"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:211",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:211"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The source key gives the surface area in terms of π; the prompt now asks for the exact answer in terms of π (U-04)."
+  },
+  {
+   "id": "algebra-1-en:node:212",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:212"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:213",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:213"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:214",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:214"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:215",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:215"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The port draws the labelled base and states the solid's height and the base's parts in the prompt; the source also shows the solid in perspective."
+  },
+  {
+   "id": "algebra-1-en:node:216",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:216"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The port draws the labelled base and states the height in the prompt; the source also shows the solid in perspective."
+  },
+  {
+   "id": "algebra-1-en:node:217",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:217"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The port draws the labelled base and states the height in the prompt; the source also shows the solid in perspective. The exact answer includes a simplified radical and π."
+  },
+  {
+   "id": "algebra-1-en:node:218",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:218"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing."
+  },
+  {
+   "id": "algebra-1-en:node:221",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:221"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:222",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:222"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:227",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:227"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Accepted in any of the equivalent standard forms (either side first, either order of terms)."
+  },
+  {
+   "id": "algebra-1-en:node:228",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:228"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:229",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:229"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:230",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:229",
+   "note": "Choice-only twin of node:229 (same ranges and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "algebra-1-en:node:233",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:233"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. The answer is the set of letters of the like terms, in any order."
+  },
+  {
+   "id": "algebra-1-en:node:234",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:234"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:236",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:236"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:237",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:237"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:238",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:238"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:239",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:236",
+   "note": "Choice-only twin of node:236 (same terms and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "algebra-1-en:node:243",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:243"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:245",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:245"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:246",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:246"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:247",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:247"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:248",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:248"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:251",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:251"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:252",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:252"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:253",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:253"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Ported as its own task: node:250 (the free-response record with the same range) stays on its earlier adaptation pending request R1."
+  },
+  {
+   "id": "algebra-1-en:node:255",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:255"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:256",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:256"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:257",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:257"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:258",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:258"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:259",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:259"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:260",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:260"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:261",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:261"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:262",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:262"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:265",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:265"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The source key gives the volume in terms of π; the prompt now asks for the exact answer in terms of π (U-04)."
+  },
+  {
+   "id": "algebra-1-en:node:266",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:266"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The port draws the labelled base and states the height; the source also shows the solid in perspective."
+  },
+  {
+   "id": "algebra-1-en:node:267",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:267"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The port draws the labelled base and states the height; the source also shows the solid in perspective."
+  },
+  {
+   "id": "algebra-1-en:node:268",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:268"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The port draws the labelled base and states the height; the source also shows the solid in perspective."
+  },
+  {
+   "id": "algebra-1-en:node:269",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:269"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The port draws the labelled base and states the height; the source also shows the solid in perspective."
+  },
+  {
+   "id": "algebra-1-en:node:270",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:270"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The port draws a base and states its area and the height; the source also shows the solid in perspective."
+  },
+  {
+   "id": "algebra-1-en:node:271",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:271"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The port draws the labelled base and states the height; the source also shows the solid in perspective."
+  },
+  {
+   "id": "algebra-1-en:node:272",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:272"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording and drawing. The source's choices differ only in the unit (cubic or square inches); free response asks for the number in terms of π, with reviewed distractors."
+  }
+ ]
+}

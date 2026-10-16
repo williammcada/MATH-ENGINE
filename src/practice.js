@@ -19,7 +19,7 @@ const CONT = require('./continuity-skills.js');
 const PAD = require('./answer-pad.js');
 const SHAPE = require('./answer-shape.js');
 
-const version = '0.37.0-rc.1';
+const version = '0.63.0';
 const freeze = Object.freeze;
 
 // ---------- deterministic randomness ----------
@@ -149,10 +149,15 @@ function nextItem(id, state = {}) {
 /** The only answer validator hosts use. Accepts items after a JSON round trip. */
 function checkAnswer(item, response) {
   if (!item || typeof item !== 'object') return false;
-  const text = PAD.normalizeTyped(typeof response === 'string' ? response : response == null ? '' : String(response));
+  const typed = typeof response === 'string' ? response : response == null ? '' : String(response);
+  const text = PAD.normalizeTyped(typed);
   if (!text.trim()) return false;
   if (item.layer === 'bank') {
-    try { return banks.checkAnswer(item.raw, text).answerCorrect === true; } catch { return false; }
+    // Bank checkers see the pad-normalized answer first; an answer whose form matters (for example a
+    // division written with ÷, which normalization turns into /) is also checked as typed.
+    try { if (banks.checkAnswer(item.raw, text).answerCorrect === true) return true; } catch { /* try as typed */ }
+    if (typed === text) return false;
+    try { return banks.checkAnswer(item.raw, typed.replace(/−/g, '-')).answerCorrect === true; } catch { return false; }
   }
   if (item.layer === 'continuity') return CONT.check(item, text).correct === true;
   try { return !!K7.checkAnswer(item, text); } catch { return false; }
@@ -198,7 +203,8 @@ function evaluate(item, response) {
   }
   if (checkAnswer(item, normalized)) return { valid: true, correct: true, reason: null, message: '', normalized };
   const simpler = simplifiedForm(normalized);
-  if (simpler && checkAnswer(item, simpler)) return { valid: true, correct: false, reason: 'equivalent-unsimplified', message: MESSAGES.unsimplified, normalized };
+  // A whole-number ratio such as 4/2 simplifies to 4/1 as well as to 2.
+  if (simpler && (checkAnswer(item, simpler) || (/^-?\d+$/.test(simpler) && checkAnswer(item, simpler + '/1')))) return { valid: true, correct: false, reason: 'equivalent-unsimplified', message: MESSAGES.unsimplified, normalized };
   return { valid: true, correct: false, reason: 'wrong-value', message: MESSAGES.wrong, normalized };
 }
 /** The universal pad's keys (U-18). The item argument is accepted for compatibility and does not change the keys. */

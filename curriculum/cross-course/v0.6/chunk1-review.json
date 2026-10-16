@@ -436,6 +436,7 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
+      "decimal-sum-length",
       "decimal-sum-length"
     ],
     "disposition": "reviewed path",
@@ -643,7 +644,12 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
-      "decimal-operations"
+      "whole-multiplication",
+      "whole-multiplication",
+      "decimal-operations",
+      "money-purchase-change",
+      "multiplication-number-forms",
+      "multiplication-fact-formats"
     ],
     "disposition": "reviewed path",
     "providerContract": {
@@ -735,7 +741,12 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
-      "division-exact"
+      "division-exact",
+      "division-divisors",
+      "decimal-powers-ten",
+      "division-answer-forms",
+      "whole-powers-ten-shortcuts",
+      "one-step-story-demands"
     ],
     "disposition": "reviewed path",
     "providerContract": {
@@ -832,7 +843,12 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
-      "division-divisors"
+      "division-exact",
+      "division-divisors",
+      "decimal-powers-ten",
+      "division-answer-forms",
+      "whole-powers-ten-shortcuts",
+      "one-step-story-demands"
     ],
     "disposition": "reviewed path",
     "providerContract": {
@@ -7976,8 +7992,7 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
-      "ratio-total",
-      "chemical-mass-proportions"
+      "ratio-total"
     ],
     "disposition": "reviewed path",
     "providerContract": {
@@ -8547,6 +8562,8 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
+      "percent-unknown",
+      "percent-complement",
       "percent-from-complement"
     ],
     "disposition": "reviewed path",
@@ -8642,6 +8659,7 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
+      "fraction-operation-order",
       "fraction-sum-to-percent"
     ],
     "disposition": "reviewed path",
@@ -9018,7 +9036,8 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
-      "fraction-whole-unknown"
+      "fraction-whole-unknown",
+      "mixed-part-whole-models"
     ],
     "disposition": "reviewed path",
     "providerContract": {
@@ -9563,10 +9582,8 @@
       ]
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
-    "trackIds": [
-      "prime-decomposition"
-    ],
-    "disposition": "reviewed path",
+    "trackIds": [],
+    "disposition": "reviewed related-only; no ranked counterpart validated",
     "providerContract": {
       "sourceId": "algebra-1-en:node:376",
       "lessonId": "algebra-1-en:scope:33",
@@ -9676,6 +9693,7 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
+      "prime-factorization",
       "prime-decomposition"
     ],
     "disposition": "reviewed path",
@@ -9840,6 +9858,9 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
+      "prime-decomposition",
+      "prime-decomposition",
+      "prime-classification",
       "prime-classification"
     ],
     "disposition": "reviewed path",
@@ -10012,7 +10033,6 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
-      "common-factors-multiples",
       "c4-gcf-to-monomial-from",
       "c4-prime-factors-to-gcf-to"
     ],
@@ -10251,8 +10271,7 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
-      "common-factors-multiples",
-      "multiples-to-common"
+      "common-factors-multiples"
     ],
     "disposition": "reviewed path",
     "providerContract": {
@@ -10315,8 +10334,7 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
-      "common-factors-multiples",
-      "multiples-to-common"
+      "common-factors-multiples"
     ],
     "disposition": "reviewed path",
     "providerContract": {
@@ -10376,8 +10394,7 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
-      "common-factors-multiples",
-      "multiples-to-common"
+      "common-factors-multiples"
     ],
     "disposition": "reviewed path",
     "providerContract": {
@@ -10434,8 +10451,7 @@
     },
     "scope": "complete executable range, branches, representations and required methods; no grade ranking",
     "trackIds": [
-      "common-factors-multiples",
-      "multiples-to-common"
+      "common-factors-multiples"
     ],
     "disposition": "reviewed path",
     "providerContract": {

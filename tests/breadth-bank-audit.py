@@ -2,7 +2,7 @@
 import json,subprocess,pathlib,math,statistics,xml.etree.ElementTree as ET
 from fractions import Fraction as F
 root=pathlib.Path(__file__).resolve().parents[1]
-script="""const E=require('./src/course-banks.js'),C=require('./src/breadth-bank-map.js');for(const c of C)for(let i=0;i<200;i++){const q=E.generate(c.sourceId,{seed:'independent-breadth',index:i});const a=E.answerText(q);if(!E.checkAnswer(q,a).answerCorrect||E.checkAnswer(q,'incorrect').answerCorrect)throw Error(c.sourceId);if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'independent-breadth',index:i})))throw Error('Replay');console.log(JSON.stringify({recipe:c.recipe,q,formatted:a,html:i%40===0?E.renderQuestion(q):null}));}"""
+script="""const E=require('./src/course-banks.js'),C=require('./src/breadth-bank-map.js');for(const c of C.filter(c=>E.catalog.find(x=>x.sourceId===c.sourceId).family===c.family))/* entries replaced by a coverage port are audited by tests/port87.cjs */for(let i=0;i<200;i++){const q=E.generate(c.sourceId,{seed:'independent-breadth',index:i});const a=E.answerText(q);if(!E.checkAnswer(q,a).answerCorrect||E.checkAnswer(q,'incorrect').answerCorrect)throw Error(c.sourceId);if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'independent-breadth',index:i})))throw Error('Replay');console.log(JSON.stringify({recipe:c.recipe,q,formatted:a,html:i%40===0?E.renderQuestion(q):null}));}"""
 def rat(x):return F(int(x['numerator']),int(x['denominator']))
 def prime(n):return n>=2 and all(n%d for d in range(2,math.isqrt(n)+1))
 def fac(n):
@@ -116,5 +116,11 @@ for line in proc.stdout:
   for svg in re.findall(r'<svg.*?</svg>',row['html']):ET.fromstring(svg);svgs+=1
  count+=1
 assert proc.wait()==0
-assert count==17000 and len(recipes)==66 and len(domains)==4 and len(classes)==3 and len(letters)==4 and len(signs)==8
+# Served by coverage ports instead: SN870025 (gcf); SN870166 (prime-test, the only entry of that recipe), SX870082 (prime-factorization),
+# SAX70082 and SAX70083 (lcm) and SN870128 (round-whole); C1_S02_00067 (prime-list, Course 1 Batch C1-3); C1_S02_00077 and C1_S02_00055 (gcf, Batch C1-4); C1_S03_00087 and C1_S03_00123 (lcm, Batch C1-5).
+# Served by Algebra 1 port tasks instead (owner-approved requests R1 and R3, 2026-10-16): algebra-1-en:node:242 (positive-power), 250 (cube-root),
+# 376 (prime-factorization), 570 (system-substitution), 690 (factor-trinomial), 742 (scientific-normalize), 752 (line-graph-choice),
+# 820 (polynomial-division), 859 (inequality-graph-choice, the only entry that exercised the eight inequality signs), 905 (slope-points),
+# 948 (line-points) and 955 (line-point-slope).
+assert count==12400 and len(recipes)==57 and len(domains)==4 and len(classes)==3 and len(letters)==4
 print(f'PASS: {count} independent generated cases, {len(recipes)} task recipes, {svgs} parsed SVGs; domain and system branches, inequality signs, unique graph choices, replay and answer checks')

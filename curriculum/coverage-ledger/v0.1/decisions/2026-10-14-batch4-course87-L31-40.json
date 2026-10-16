@@ -1,0 +1,475 @@
+{
+ "batch": "batch-4 course-87 lessons 31-40",
+ "date": "2026-10-14",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "course-87-en:item:AXG80499",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:AXG80499"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870139",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870207",
+   "note": "Choice-only twin of SX870207 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870140",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870140"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870141",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870200",
+   "note": "Choice-only twin of SX870200 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870143",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870143"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870145",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870145"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870146",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870146"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870148",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870168",
+   "note": "Choice-only twin of SX870168 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870149",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870149"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts. The source adds 0.05 before rounding to tenths, so it keys 20.146 as 20.2; the port rounds correctly."
+  },
+  {
+   "id": "course-87-en:item:SN870151",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870194",
+   "note": "Choice-only twin of SX870194 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870199",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870199"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used other fractions (denominators up to 19) and colon notation; the original gives a fraction of the fans with parts from 2 to 9 and asks for the ratio \"a to b\"."
+  },
+  {
+   "id": "course-87-en:item:SN870200",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870200"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870202",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870202"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts. The script excludes its square-with-diagonals case, which keys a wrong answer; the port does the same."
+  },
+  {
+   "id": "course-87-en:item:SN870205",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870199",
+   "note": "Choice-only twin of SX870199 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870314",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870314"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts. Choice-only record with its own range (20–50 instead of 22–55), so it has its own task."
+  },
+  {
+   "id": "course-87-en:item:SN870315",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870315"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870341",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870341"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used a reading-time histogram with a fixed shape; the original walk histogram follows the script's bar constraints."
+  },
+  {
+   "id": "course-87-en:item:SN870344",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870345",
+   "note": "Choice-only twin of SN870345 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SN870345",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870345"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used 3,000–3,500 voters; the original uses 10,000–50,000 voters and the script's percent ranges."
+  },
+  {
+   "id": "course-87-en:item:SN870346",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870202",
+   "note": "Choice-only twin of SN870202 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes. Its script also allows a square board with diagonals, where it keys 1/3 for a 1/4 region; that case is not served."
+  },
+  {
+   "id": "course-87-en:item:SN870590",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870590"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same third-angle problem with two angles from 20° to 75°. (The adaptation also allows the two given angles to be equal, which the original excludes; this does not change the demand.)"
+  },
+  {
+   "id": "course-87-en:item:SN870804",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870804"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts. Choice-only record with its own range (96°–114° instead of 94°–112°), so it has its own task."
+  },
+  {
+   "id": "course-87-en:item:SN870809",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870809"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX650321",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX650321"
+   ],
+   "note": "Reviewed against the source and its preview: existing adaptation asks the same thing. Same die events: a given number, greater than 2–4, less than 2–6, different from 7–13."
+  },
+  {
+   "id": "course-87-en:item:SX870089",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870089"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870166",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870166"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used numbers up to 999.999; the original writes numbers from 100.112 to 333.999 in words."
+  },
+  {
+   "id": "course-87-en:item:SX870167",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870167"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870168",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870168"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870170",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870170"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870171",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870171"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870172",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870172"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870182",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870182"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870189",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870189"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870193",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870193"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts. Choice-only record with no free-response twin: free response by default with distractors."
+  },
+  {
+   "id": "course-87-en:item:SX870194",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870194"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts. The script draws its base value in whole steps from 1.01 (1.01, 2.01, …, 20.01); the port does the same."
+  },
+  {
+   "id": "course-87-en:item:SX870195",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870195"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used small, possibly unreduced ratios; the original gives a ratio in lowest terms with terms up to 19."
+  },
+  {
+   "id": "course-87-en:item:SX870196",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870196"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation allowed equal or non-coprime ratio terms; the original uses different, coprime terms (2–9 and 3–9)."
+  },
+  {
+   "id": "course-87-en:item:SX870197",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870199",
+   "note": "Choice-only twin of SN870199 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SX870198",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870198"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870199",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870199"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation scaled other triangles; the original uses its own five square-and-triangle figures."
+  },
+  {
+   "id": "course-87-en:item:SX870200",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870200"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870201",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870201"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870202",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870202"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870203",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870203"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870204",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870204"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870205",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870205"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870206",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870206"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870207",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870207"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870208",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870208"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870214",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870214"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870305",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870145",
+   "note": "Choice-only twin of SN870145 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "course-87-en:item:SX870306",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870306"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870307",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870307"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870309",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870309"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used four scaled triangles in other units; the original uses its table of Pythagorean triples in meters, with the hypotenuse labelled."
+  },
+  {
+   "id": "course-87-en:item:SX870310",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870310"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation was an L-shape with a cut-out; the original is a stepped figure with four labelled sides and ranges from the script."
+  },
+  {
+   "id": "course-87-en:item:SX870312",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870312"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870316",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870316"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts. Choice-only record with no free-response twin: free response by default with distractors."
+  },
+  {
+   "id": "course-87-en:item:SX870374",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870374"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870375",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870375"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870376",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870376"
+   ],
+   "note": "Ported: same demand, response form, ranges and diagram as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SX870377",
+   "state": "consolidated",
+   "into": "course-87-en:item:SX870376",
+   "note": "Choice-only twin of SX870376 (same script and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  }
+ ]
+}

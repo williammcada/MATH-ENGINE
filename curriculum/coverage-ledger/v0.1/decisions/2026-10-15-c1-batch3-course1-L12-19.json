@@ -1,0 +1,673 @@
+{
+ "batch": "c1-batch-3 course-1 lessons 12-19",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00069",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00069"
+   ],
+   "note": "Ported: Digit in a place of a number with decimals."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00083",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00083"
+   ],
+   "note": "Ported: Digit in a given place of a large number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00060",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00060"
+   ],
+   "note": "Ported: Name the period of a digit."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00120",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00120"
+   ],
+   "note": "Ported: Name the place of a zero."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00024",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00024"
+   ],
+   "note": "Ported: Write a numeral from words through billions."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00121",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00121"
+   ],
+   "note": "Ported: Write a number in words."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00086",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00086"
+   ],
+   "note": "Ported: Product of numbers given in words."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00028",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00028"
+   ],
+   "note": "Ported: Difference of a product and a sum of three numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00084",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00084"
+   ],
+   "note": "Ported: Sum subtracted from a product."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00085",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00085"
+   ],
+   "note": "Ported: Sum divided by a difference."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00091",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00091"
+   ],
+   "note": "Ported: Product subtracted from a sum (decimals)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00030",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00030"
+   ],
+   "note": "Ported: Difference of two heights."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00034",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00034"
+   ],
+   "note": "Ported: The year some decades ago."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00006",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00006"
+   ],
+   "note": "Ported: The year many decades ago."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00032",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00032"
+   ],
+   "note": "Ported: Age difference from birth years."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00093",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00093"
+   ],
+   "note": "Ported: Years between two dates."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00029",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00029"
+   ],
+   "note": "Ported: Difference of two temperatures."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00035",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00035"
+   ],
+   "note": "Ported: Move left or right on a number line."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00062",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00062"
+   ],
+   "note": "Ported: Order integers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00094",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00094"
+   ],
+   "note": "Ported: Rise from a negative temperature."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00122",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00122"
+   ],
+   "note": "Ported: Compare negative numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00037",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00037"
+   ],
+   "note": "Ported: Equal groups: three digits by two digits."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00036",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00036"
+   ],
+   "note": "Ported: Equal groups: three digits by one digit."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00095",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00095"
+   ],
+   "note": "Ported: Rolls of pennies."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00096",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00096"
+   ],
+   "note": "Ported: Price of a sheet of stamps."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00038",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00038"
+   ],
+   "note": "Ported: Cost of each item."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00039",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00039"
+   ],
+   "note": "Ported: Round to the nearest ten, hundred or thousand."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00042",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00042"
+   ],
+   "note": "Ported: Estimate a product by rounding to tens."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00043",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00043"
+   ],
+   "note": "Ported: Estimate a sum by rounding to hundreds."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00102",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00102"
+   ],
+   "note": "Ported: Estimate a sum by rounding to thousands."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00070",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00070"
+   ],
+   "note": "Ported: Choose the division that estimates a quotient."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00044",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00044"
+   ],
+   "note": "Ported: Estimate a total from a bar graph. The bar graph is drawn from the source ranges."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00045",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00045"
+   ],
+   "note": "Ported: Measure to the nearest sixteenth inch."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00064",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00064"
+   ],
+   "note": "Ported: Halfway between two ruler marks."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00063",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00063"
+   ],
+   "note": "Ported: Locate a mixed number on a number line."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00071",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00071"
+   ],
+   "note": "Ported: Order integers, decimals and fractions."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00107",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00107"
+   ],
+   "note": "Ported: Average of four numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00104",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00104"
+   ],
+   "note": "Ported: Average of six numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00108",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00108"
+   ],
+   "note": "Ported: Average of three numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00109",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00109"
+   ],
+   "note": "Ported: Average pages over three days."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00048",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00048"
+   ],
+   "note": "Ported: Average pages over four days."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00012",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00012"
+   ],
+   "note": "Ported: Average of three prices."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00072",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00072"
+   ],
+   "note": "Ported: The average lies between the least and greatest values."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00073",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00073"
+   ],
+   "note": "Ported: Find a missing value from an average."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00105",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00105"
+   ],
+   "note": "Ported: The number halfway between two numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00050",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00050"
+   ],
+   "note": "Ported: Read a value from a line graph. The line graph is drawn from the source rates."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00049",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00049"
+   ],
+   "note": "Ported: Difference between the greatest and least bars."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00051",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00051"
+   ],
+   "note": "Ported: Greatest value on a line graph. The source graph values are not in the bank; the port draws a five-year line graph."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00106",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00106"
+   ],
+   "note": "Ported: Read a value from a bar graph. The source graph is not in the bank; the port draws a five-day bar graph."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00074",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00074"
+   ],
+   "note": "Ported: Identify a number that is not a factor."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00075",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00075"
+   ],
+   "note": "Ported: Identify the number that is not prime."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00053",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00053"
+   ],
+   "note": "Ported: Identify the prime number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00067",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00067"
+   ],
+   "note": "Ported: List the primes between two numbers. Replaces the earlier adaptation, whose ranges ran to 67; the port keeps the source range up to 30."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00066",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00066"
+   ],
+   "note": "Ported: List the factors of two numbers."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00052",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00052"
+   ],
+   "note": "Ported: Count the factors of a number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00068",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00068"
+   ],
+   "note": "Ported: Write a number as a product of primes."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00097",
+   "state": "covered",
+   "by": [
+    "course-1-en:bank:C1_Section02:item:C1_S02_00097"
+   ],
+   "note": "Confirmed: round a five-digit number to the nearest thousand."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00025",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00083",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00088",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00083",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00092",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00083",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00003",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00024",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00090",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00024",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00004",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00028",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00026",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00084",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00089",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00084",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00027",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00085",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00087",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00085",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00005",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00030",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00031",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00030",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00033",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00093",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00007",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00035",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00061",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00122",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00008",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00037",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00009",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00039",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00040",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00039",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00101",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00039",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00041",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00039",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00010",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00042",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00098",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00042",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00099",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00042",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00100",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00042",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00103",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00102",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00011",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00045",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00046",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00107",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00110",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00108",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00047",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00105",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00013",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00050",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00076",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00075",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00015",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00067",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00014",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section02:item:C1_S02_00066",
+   "note": "Same demand as the port task it points to (choice-only twin or repeated fixed item)."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00065",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00163",
+   "note": "Same demand: list the whole-number factors of a number."
+  },
+  {
+   "id": "course-1-en:bank:C1_Section02:item:C1_S02_00123",
+   "state": "consolidated",
+   "into": "course-1-en:bank:C1_Section01:item:C1_S01_00163",
+   "note": "Same demand: list the whole-number factors of a number."
+  }
+ ]
+}

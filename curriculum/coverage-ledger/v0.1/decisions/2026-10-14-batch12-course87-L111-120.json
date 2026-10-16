@@ -1,0 +1,331 @@
+{
+ "batch": "batch-12 course-87 lessons 111-120",
+ "date": "2026-10-14",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "course-87-en:item:SN870708",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870710",
+   "note": "Choice-only twin of SN870710 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SN870709",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870709"
+   ],
+   "note": "Ported: same 28 exponent pairs as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870710",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870710"
+   ],
+   "note": "Ported: same 28 exponent pairs as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870712",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870712"
+   ],
+   "note": "Ported: same 48 Pythagorean triples and place names as the source; the port draws the map."
+  },
+  {
+   "id": "course-87-en:item:SN870714",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870717",
+   "note": "Choice-only twin of SN870717 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SN870716",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870716"
+   ],
+   "note": "Ported: same 48 triples (times 25) as the source; the port draws the map."
+  },
+  {
+   "id": "course-87-en:item:SN870717",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870717"
+   ],
+   "note": "Ported: same 48 triples (times 10) as the source; the port draws the triangle."
+  },
+  {
+   "id": "course-87-en:item:SN870720",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870724",
+   "note": "Choice-only twin of SN870724 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SN870721",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870721"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation used its own sizes; the original uses a table of 44 pyramids, a table of 12 cones and spheres of radius 2 to 9 m. The cone and sphere answers are rounded to the nearest hundredth, and the prompt now says so."
+  },
+  {
+   "id": "course-87-en:item:SN870722",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870722"
+   ],
+   "note": "Ported: same range as the source. The source picture was not recovered, so the prompt states that the cone's diameter and depth equal the side of the cube; the port draws the cube."
+  },
+  {
+   "id": "course-87-en:item:SN870723",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870723"
+   ],
+   "note": "Ported: same range as the source. The source labels the answer in cm²; the port uses cm³ and asks for rounding to the nearest hundredth."
+  },
+  {
+   "id": "course-87-en:item:SN870724",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870724"
+   ],
+   "note": "Ported: same range as the source. The source labels the answer in in.²; the port uses in.³ and asks for rounding to the nearest hundredth."
+  },
+  {
+   "id": "course-87-en:item:SN870726",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870726"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870731",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870731"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870738",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870738"
+   ],
+   "note": "Ported: same demand as the source, with four lettered graphs labelled with their inequalities; checked automatically."
+  },
+  {
+   "id": "course-87-en:item:SN870739",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870739"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to write and graph an inequality. Same ranges as the source; the prompt carries a blank grid, and the teacher sees a reference graph and criteria."
+  },
+  {
+   "id": "course-87-en:item:SN870740",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870740"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to write and graph an inequality. Same ranges as the source; the prompt carries a blank grid, and the teacher sees a reference graph and criteria."
+  },
+  {
+   "id": "course-87-en:item:SN870741",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870741"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to write and graph two inequalities. Same ranges as the source; the prompt carries a blank grid, and the teacher sees a reference graph and criteria."
+  },
+  {
+   "id": "course-87-en:item:SN870758",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870758"
+   ],
+   "note": "Ported: same ranges as the source. The source keys x·y·y·y for xy when the y exponent is 1; the port keys the correct factorization. Factors may be written in any order, and repeated variables may use exponents."
+  },
+  {
+   "id": "course-87-en:item:SN870761",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870761"
+   ],
+   "note": "Ported: same demand as the source, with four lettered graphs (the line and lines with the slope or intercept sign changed); checked automatically."
+  },
+  {
+   "id": "course-87-en:item:SN870765",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870765"
+   ],
+   "note": "Ported: same 44 coefficient triples as the source, with three different variable parts. The greatest common factor must be factored out; the terms inside may be in any order."
+  },
+  {
+   "id": "course-87-en:item:SN870766",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870766"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870767",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870767"
+   ],
+   "note": "Ported: same four forms of the equation as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870768",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870768"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to graph a line. Same ranges as the source; the prompt carries a blank grid, and the teacher sees a reference graph and criteria."
+  },
+  {
+   "id": "course-87-en:item:SN870781",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870781"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to graph y = bx² + a. Same ranges as the source; the prompt carries a blank grid, and the teacher sees a reference graph and criteria."
+  },
+  {
+   "id": "course-87-en:item:SN870783",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870783"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to graph y = a/x. Same range as the source; the prompt carries a blank grid, and the teacher sees a reference graph and criteria."
+  },
+  {
+   "id": "course-87-en:item:SN870785",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870785"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to graph y = ax². Same range as the source; the prompt carries a blank grid, and the teacher sees a reference graph and criteria."
+  },
+  {
+   "id": "course-87-en:item:SN870786",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870786"
+   ],
+   "note": "Ported: same ranges as the source. Both numbers are required, in any order."
+  },
+  {
+   "id": "course-87-en:item:SN870789",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870789"
+   ],
+   "note": "Ported: same six cases as the source, with four lettered constructions drawn by the port; checked automatically."
+  },
+  {
+   "id": "course-87-en:item:SN870790",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870790"
+   ],
+   "note": "Ported: same ranges as the source. The source misspells \"cannot\"; the port spells it correctly."
+  },
+  {
+   "id": "course-87-en:item:SN870792",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870792"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original contexts."
+  },
+  {
+   "id": "course-87-en:item:SN870794",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870794"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to explain why one arrangement is not a division fact. Same ranges as the source."
+  },
+  {
+   "id": "course-87-en:item:SN870802",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SN870802"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to draw and copy an angle with a protractor, compass and straightedge. Same angles as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870468",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870468"
+   ],
+   "note": "Ported to replace the earlier adaptation: the earlier adaptation split the answer into a number and an exponent; the original asks for the quotient in scientific notation, with the source's factors and exponents."
+  },
+  {
+   "id": "course-87-en:item:SX870475",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870475"
+   ],
+   "note": "Ported: same 48 aquariums as the source; the port draws the aquarium."
+  },
+  {
+   "id": "course-87-en:item:SX870476",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870726",
+   "note": "Choice-only twin of SN870726 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SX870481",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870481"
+   ],
+   "note": "Ported: same 46 coefficient pairs as the source. The greatest common factor must be factored out; the terms inside may be in any order."
+  },
+  {
+   "id": "course-87-en:item:SX870482",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870765",
+   "note": "Choice-only twin of SN870765 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SX870483",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870483"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to draw and copy an angle with a protractor, compass and straightedge. Same angles as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870484",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870484"
+   ],
+   "note": "Ported as a teacher-reviewed task: the source asks the student to draw and copy a triangle with a protractor, compass and straightedge. Same 44 triangles as the source."
+  },
+  {
+   "id": "course-87-en:item:SX870486",
+   "state": "consolidated",
+   "into": "course-87-en:item:SN870786",
+   "note": "Choice-only twin of SN870786 (same ranges). The port's distractors cover the choice form."
+  },
+  {
+   "id": "course-87-en:item:SX870489",
+   "state": "covered",
+   "by": [
+    "course-87-en:item:SX870489"
+   ],
+   "note": "Ported: same range as the source, with four lettered parabolas; checked automatically. The source's fourth graph used an unrecovered curve; the port uses y = x² + a."
+  }
+ ]
+}

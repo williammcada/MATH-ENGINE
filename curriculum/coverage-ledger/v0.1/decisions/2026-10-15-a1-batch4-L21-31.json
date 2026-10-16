@@ -1,0 +1,419 @@
+{
+ "batch": "A1-4 algebra-1 lessons 21-31",
+ "date": "2026-10-15",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "algebra-1-en:node:275",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:275"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:276",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:276"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:278",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:278"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:279",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:279"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:280",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:280"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:281",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:281"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:282",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:282"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:287",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:287"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. The source asks which of two numbers satisfies the equation; the response is that number."
+  },
+  {
+   "id": "algebra-1-en:node:288",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:288"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:292",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:292"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:294",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:292",
+   "note": "Choice-only twin of node:292 (same ranges and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "algebra-1-en:node:297",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:297"
+   ],
+   "note": "Reviewed against the source: the existing linear adaptation asks the same thing in the same response form with the source's ranges (x/a = b, a 3–9, b 4–10); only the variable letter may differ. Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:298",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:298"
+   ],
+   "note": "Reviewed against the source: the existing linear adaptation asks the same thing in the same response form with the source's ranges (a = bx, b 3–9, x 2–9); only the variable letter may differ. Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:299",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:299"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:302",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:302"
+   ],
+   "note": "Reviewed against the source: the existing linear adaptation asks the same thing in the same response form with the source's ranges (ax + b = c, a 2–5, b ±1–7); only the variable letter may differ. Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:303",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:303"
+   ],
+   "note": "Reviewed against the source: the existing linear adaptation asks the same thing in the same response form with the source's ranges (twelfths, ±1–11); only the variable letter may differ. Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:306",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:306"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:309",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:309"
+   ],
+   "note": "Reviewed against the source: the existing linear adaptation asks the same thing in the same response form with the source's ranges (four x terms and four constants, the source ranges); only the variable letter may differ. Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:310",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:310"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:313",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:313"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:314",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:314"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:318",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:318"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:321",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:321"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:322",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:322"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:323",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:323"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:324",
+   "state": "consolidated",
+   "into": "algebra-1-en:node:322",
+   "note": "Choice-only twin of node:322 (same ranges and question). Served by that task, free response by default with reviewed distractors tied to named mistakes."
+  },
+  {
+   "id": "algebra-1-en:node:326",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:326"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:327",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:327"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:328",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:328"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:329",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:329"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:330",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:330"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:331",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:331"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. The source asks to 'find y(x) = 81'; the port asks for y(81), which is what its key gives (U-04)."
+  },
+  {
+   "id": "algebra-1-en:node:332",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:332"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:333",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:333"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:336",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:336"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:337",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:337"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:339",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:339"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:340",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:340"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:341",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:341"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. In half of the source versions the key keeps the factor c although (cx)⁰ = 1, so the key is wrong; the port's key drops it (U-04)."
+  },
+  {
+   "id": "algebra-1-en:node:342",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:342"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:343",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:343"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:346",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:346"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Each phrase is accepted in any equivalent form that uses N; checked at sample values."
+  },
+  {
+   "id": "algebra-1-en:node:347",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:347"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording. Accepted in any equivalent form that uses N; checked at sample values."
+  },
+  {
+   "id": "algebra-1-en:node:349",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:349"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:350",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:350"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:351",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:351"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:354",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:354"
+   ],
+   "note": "Reviewed against the source: the existing linear adaptation asks the same thing in the same response form with the source's ranges (the coefficients 2–5); only the variable letter may differ. Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:356",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:356"
+   ],
+   "note": "Reviewed against the source: the existing linear adaptation asks the same thing in the same response form with the source's ranges (the coefficients 2–5); only the variable letter may differ. Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:357",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:357"
+   ],
+   "note": "Reviewed against the source: the existing linear adaptation asks the same thing in the same response form with the source's ranges (the coefficients 2–5); only the variable letter may differ. Covered as it is."
+  },
+  {
+   "id": "algebra-1-en:node:365",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:365"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:366",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:366"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  },
+  {
+   "id": "algebra-1-en:node:367",
+   "state": "covered",
+   "by": [
+    "algebra-1-en:node:367"
+   ],
+   "note": "Ported: same demand, response form and ranges as the source, with original wording."
+  }
+ ]
+}

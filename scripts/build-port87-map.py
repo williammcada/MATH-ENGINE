@@ -1,0 +1,730 @@
+#!/usr/bin/env python3
+"""Catalog and source mapping for the port tasks (coverage programme batches): 8/7, then Course 1.
+
+The Course 1 task list is in port_c1_tasks.py. The parallel courses (Intermediate 4, Algebra 1/2, Algebra 1,
+Algebra 2) each have their own task list, map and mapping file, listed once in PARALLEL below
+(docs/change-specs/coverage-parallel-courses-v0.1.md).
+
+Usage:
+  python3 scripts/build-port87-map.py                   8/7 and Course 1, then every parallel course
+  python3 scripts/build-port87-map.py --course KEY      one parallel course only (KEY: intermediate-4, algebra-half,
+                                                        algebra-1, algebra-2); the 8/7 and Course 1 files are untouched
+  add --check to compare with the committed files instead of writing them (exit 1 if they differ)
+
+Each task names the source record it ports. Open records keep their own ID (course-87-en:item:...), so they
+become working entries. A port that replaces an earlier, less faithful adaptation takes over the record's ID
+(marked replacesEarlierAdaptation); course-banks.js then drops the earlier entry, so every consumer serves the
+faithful task.
+
+Block hashes come from the private recovery ZIP when SAXON_SOURCE_ZIP is set; otherwise the committed
+mapping is reused. Only IDs and hashes are written here, never source text.
+"""
+import hashlib, json, os, pathlib, sys, zipfile
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+root = pathlib.Path(__file__).resolve().parents[1]
+COURSE = 'Introduction to PreAlgebra (8/7)'
+# (record, recipe, variant, title, topic, replaces-earlier-adaptation)
+TASKS = [
+ ('SN870002', 'money-divide', None, 'Divide a money amount by a two-digit number', 'decimal-arithmetic', False),
+ ('SX870018', 'money-times', None, 'Multiply a money amount by a multiple of ten', 'decimal-arithmetic', True),
+ ('SN870005', 'evaluate-quotient', None, 'Evaluate a quotient for a given value', 'expressions', False),
+ ('SN870181', 'evaluate-product-difference', None, 'Evaluate a(b − c) with signed and decimal values', 'expressions', False),
+ ('SN870006', 'evaluate-product-over-sum', None, 'Evaluate jk/(j + k)', 'expressions', False),
+ ('SX870024', 'property-statement', 'commutative', 'Illustrate the commutative property', 'expressions', True),
+ ('SX870025', 'property-statement', 'associative', 'Illustrate the associative property', 'expressions', True),
+ ('SN870153', 'property-test', None, 'Decide whether an operation is commutative or associative', 'expressions', False),
+ ('SN870015', 'missing-dividend', None, 'Find a missing dividend', 'equations', False),
+ ('SX870115', 'compare-number-line', None, 'Compare integers using a number line', 'integers', False),
+ ('SX870033', 'subtraction-number-line', None, 'Show a subtraction on a number line', 'integers', False),
+ ('SN870156', 'subtraction-number-line', 'signed', 'Show a signed subtraction on a number line', 'integers', False),
+ ('SX870122', 'place-of-digit', None, 'Name the place of a digit (through trillions)', 'number-representation', False),
+ ('SN870023', 'place-of-digit', 'mid', 'Name the place of a digit in a large number', 'number-representation', False),
+ ('AHG50141', 'underlined-digit-value', None, 'Write the value of an underlined digit in short word form', 'number-representation', False),
+ ('SX870001', 'expanded-notation', None, 'Write a number in expanded notation with multiplication', 'number-representation', True),
+ ('SN870020', 'words-to-digits', None, 'Write a number given in words using digits', 'number-representation', False),
+ ('SX870041', 'factor-lists', None, 'List factors, common factors and the GCF', 'number-theory', False),
+ ('SN870025', 'gcf-two', None, 'Find the greatest common factor of two numbers', 'number-theory', True),
+ ('SN870158', 'which-divisible', None, 'Choose the number divisible by a given number', 'number-theory', False),
+ ('SN870027', 'which-divisible', 'large', 'Choose the larger number divisible by a given number', 'number-theory', False),
+ ('SX760040', 'divisible-by-both', None, 'Decide whether a number is divisible by two numbers', 'number-theory', False),
+ ('SN870179', 'which-has-property', None, 'Choose the number with a divisibility property', 'number-theory', False),
+ ('SX870119', 'name-linear-figures', None, 'Name lines, rays and segments with symbols', 'geometry-properties', False),
+ ('SN870592', 'angle-kind', None, 'Classify an angle from a straight or right angle', 'geometry-properties', False),
+ ('SN870188', 'percent-shaded-square', None, 'Percent of a square that is shaded', 'fraction-decimal-percent', False),
+ ('SN870161', 'percent-shaded-square', 'about', 'Estimate the percent of a diagram that is shaded', 'fraction-decimal-percent', False),
+ ('SN870358', 'percent-grid', None, 'Percent of a hundred grid that is shaded', 'fraction-decimal-percent', False),
+ ('SN870032', 'ruler-length', None, 'Measure a segment to the nearest sixteenth of an inch', 'measurement', False),
+ ('SN870183', 'ruler-length', 'eighths', 'Measure a segment to the nearest eighth of an inch', 'measurement', False),
+ ('SN870037', 'add-unit-fraction', None, 'Add a unit fraction with a like denominator', 'fractions', False),
+ ('SN870035', 'multiply-fractions', None, 'Multiply two fractions', 'fractions', False),
+ ('SN870036', 'subtract-like-fractions', None, 'Subtract fractions with like denominators', 'fractions', False),
+ ('SN870824', 'reciprocal', 'prime-den', 'Find the reciprocal of a fraction', 'fractions', False),
+ ('SX870049', 'reciprocal', 'how-many', 'How many of a fraction are in one', 'fractions', False),
+ ('SN870034', 'reciprocal', None, 'Find the reciprocal of a proper or improper fraction', 'fractions', False),
+ ('SX870052', 'add-to-mixed', None, 'Add three like fractions; answer as a mixed number', 'fractions', False),
+ ('SX870053', 'add-to-mixed', 'mixed-numbers', 'Add two mixed numbers with like denominators', 'fractions', False),
+ ('SX870123', 'circles-mixed', 'draw', 'Draw shaded circles for a mixed number', 'fractions', False),
+ ('SX540337', 'circles-mixed', 'identify', 'Name the mixed number and improper fraction shown', 'fractions', False),
+ ('DBFF0203', 'mixed-to-improper', 'wide', 'Write a mixed number as an improper fraction', 'fractions', False),
+ ('SN870043', 'mixed-to-improper', None, 'Write a mixed number as an improper fraction', 'fractions', False),
+ # Batch 2: Lessons 11-20
+ ('SN870047', 'word-add-length', None, 'Combine two lengths in a word problem', 'word-equations', False),
+ ('AXG80180', 'word-add-money-two', None, 'Total cost of two items', 'word-equations', False),
+ ('SX870055', 'word-add-money-three', None, 'Total cost of three items, one in cents', 'word-equations', False),
+ ('SN870049', 'word-subtract-count', None, 'Find the part not in a subgroup', 'word-equations', False),
+ ('SX760005', 'change-due', None, 'Change from a bill', 'word-equations', False),
+ ('SN870050', 'change-due', 'large', 'Change from a larger bill', 'word-equations', False),
+ ('SX870056', 'word-subtract-small', None, 'Tickets sold from those available', 'word-equations', False),
+ ('SN870052', 'word-subtract-small', 'length', 'Length remaining after part is removed', 'word-equations', False),
+ ('SX870061', 'product-minus-sum', None, 'Compare a product with a sum', 'word-equations', False),
+ ('SX650137', 'pages-left', None, 'Pages left to read', 'word-equations', False),
+ ('SX870479', 'population-increase', None, 'Population increase between two years', 'word-equations', False),
+ ('SX870058', 'birth-year', None, 'Find a birth year from an age', 'word-equations', False),
+ ('SN870178', 'years-between', None, 'Years between two dates', 'word-equations', False),
+ ('SN870056', 'elapsed-time', None, 'Elapsed time in hours and minutes', 'calendar-time', False),
+ ('SX870062', 'equal-groups-product', None, 'Total in equal groups', 'word-equations', False),
+ ('SN870162', 'equal-groups-product', 'buses', 'Total capacity of equal groups', 'word-equations', False),
+ ('SX870063', 'equal-groups-quotient', None, 'Number in each equal group', 'word-equations', False),
+ ('SN870164', 'equal-groups-quotient', 'rate', 'Distance each hour', 'word-equations', False),
+ ('SN870359', 'stickers', None, 'Count hundreds, tens and ones', 'word-equations', False),
+ ('SX870136', 'complete-equivalent', None, 'Complete two equivalent fractions', 'fraction-equivalence', False),
+ ('SN870067', 'which-not-equal-mixed', None, 'Choose the value not equal to a mixed number', 'fraction-equivalence', False),
+ ('SN870165', 'odd-fraction-out', None, 'Find the fraction not equal to the others', 'fraction-equivalence', False),
+ ('SX870066', 'multiply-cancel', None, 'Multiply fractions, reducing first', 'fraction-equivalence', False),
+ ('SN870069', 'simplify-improper-mixed', None, 'Simplify a mixed number with an improper part', 'fraction-equivalence', False),
+ ('SX870068', 'equivalent-then-subtract', None, 'Rename a fraction, then subtract', 'fraction-equivalence', True),
+ ('SX870069', 'unit-percent', None, 'A customary unit as a percent of a larger unit', 'measurement', False),
+ ('SX870070', 'unit-price', None, 'Cost per smaller customary unit', 'measurement', False),
+ ('SN870073', 'closest-weight', None, 'Round pounds and ounces to the nearest pound', 'measurement', False),
+ ('SN870184', 'draw-angle', None, 'Draw an angle with a protractor', 'angles', False),
+ ('SN870075', 'protractor-read', None, 'Read angles on a protractor', 'angles', True),
+ ('SN870594', 'polygon-name', None, 'Name a polygon by its number of sides', 'geometry-properties', False),
+ ('SN870077', 'regular-polygon-pick', None, 'Identify a regular polygon', 'geometry-properties', False),
+ ('SN870078', 'false-statement', None, 'Find the false statement about polygons', 'geometry-properties', False),
+ ('SN870596', 'congruent-part', None, 'Name the corresponding congruent part', 'geometry-properties', False),
+ ('SN870593', 'congruent-pairs', None, 'List the congruent corresponding parts', 'geometry-properties', False),
+ ('AHG60626', 'congruent-pairs', 'angles', 'List the congruent corresponding angles', 'geometry-properties', False),
+ ('SX870072', 'square-side-inches', None, 'Side of a square in inches from its perimeter in feet', 'perimeter', False),
+ ('SX870313', 'step-perimeter', None, 'Perimeter of a stepped rectilinear figure', 'perimeter', False),
+ ('SX870074', 'square-polygon-sides', None, 'Equal perimeters of a square and a regular polygon', 'perimeter', False),
+ ('SN870082', 'quad-perimeter', None, 'Perimeter of a quadrilateral', 'perimeter', False),
+ ('SX870139', 'power-sum', None, 'Add two powers', 'powers-roots', False),
+ ('SX870075', 'power-difference', None, 'Subtract two powers', 'powers-roots', False),
+ ('SX870125', 'fraction-power', None, 'Raise a fraction to a power', 'powers-roots', False),
+ ('SN870086', 'fraction-power', 'table', 'Raise a fraction to a power', 'powers-roots', False),
+ ('SXA10055', 'square-area-from-perimeter', None, 'Area of a square from its perimeter', 'area', False),
+ ('SX870073', 'rectangle-abcd', None, 'Parallel sides and area of a rectangle', 'area', False),
+ ('SX870126', 'square-root', None, 'Square root of a perfect square', 'powers-roots', False),
+ ('SX870077', 'power-root-mix', 'minus-root', 'A power minus a square root', 'powers-roots', False),
+ ('SX870078', 'square-minus-powers', None, 'A square minus powers and a root', 'powers-roots', False),
+ ('SX870080', 'power-root-mix', None, 'Powers and a square root', 'powers-roots', False),
+ # Batch 3: Lessons 21-30
+ ('SN870166', 'prime-yes-no', None, 'Decide whether a number is prime', 'number-theory', True),
+ ('OTG50028', 'composite-list', None, 'Pick the composite numbers from a list', 'number-theory', False),
+ ('SN870192', 'not-composite', None, 'Identify the number that is not composite', 'number-theory', False),
+ ('SX870082', 'prime-factorization', None, 'Write a prime factorization', 'number-theory', True),
+ ('SN870168', 'prime-factorization', 'three-primes', 'Prime factorization of a product of three primes', 'number-theory', False),
+ ('SX870081', 'factor-and-root', None, 'Prime factorization and square root of a perfect square', 'powers-roots', False),
+ ('SX870090', 'fraction-of-price', None, 'Regular price and percent paid from a fraction of the price', 'ratio-proportion', False),
+ ('SX870092', 'goal-shortfall', None, 'Diagram a fraction of a goal; find the goal and the shortfall', 'ratio-proportion', False),
+ ('SN870095', 'fraction-not', None, 'How many are not in a fractional part of a group', 'ratio-proportion', False),
+ ('SX870140', 'subtract-mixed-regroup', None, 'Subtract mixed numbers with regrouping', 'fractions', False),
+ ('SN870100', 'subtract-mixed-regroup', 'listed', 'Subtract mixed numbers with regrouping', 'fractions', False),
+ ('SX870141', 'whole-minus-mixed', None, 'Subtract a mixed number from a whole number', 'fractions', False),
+ ('SX870095', 'cancel-chain', None, 'Reduce a product of three fractions by cancelling', 'fractions', False),
+ ('SX870097', 'reduce-product-form', 'tens', 'Reduce a fraction with large terms', 'fraction-equivalence', False),
+ ('SN870103', 'reduce-product-form', None, 'Reduce a fraction', 'fraction-equivalence', False),
+ ('SX870143', 'divide-fractions', None, 'Divide fractions', 'fractions', False),
+ ('SN870105', 'divide-fractions', 'unit', 'Divide fractions', 'fractions', False),
+ ('SN870194', 'divide-fractions', 'reduce', 'Divide fractions', 'fractions', False),
+ ('SX870103', 'mixed-div-product', None, 'Divide a mixed number by a product', 'fractions', False),
+ ('SX870104', 'mixed-times-quotient', None, 'Multiply a mixed number by a quotient', 'fractions', False),
+ ('SN870108', 'mixed-times-mixed', None, 'Multiply mixed numbers', 'fractions', False),
+ ('SN870109', 'half-mixed-div', None, 'Divide mixed numbers', 'fractions', False),
+ ('AMBM0055', 'multiples-sum', None, 'Sum of named multiples', 'number-theory', False),
+ ('AHG50515', 'first-multiples', None, 'List the first five multiples of a number', 'number-theory', False),
+ ('NUY40257', 'is-multiple', None, 'Decide whether a number is a multiple of another', 'number-theory', False),
+ ('SAX70082', 'lcm-two', None, 'Least common multiple of two numbers', 'number-theory', True),
+ ('SN870112', 'lcm-two', 'wide', 'Least common multiple of two numbers', 'number-theory', False),
+ ('SAX70083', 'lcm-three', None, 'Least common multiple of three numbers', 'number-theory', True),
+ ('SN870122', 'unit-cost-equivalent', None, 'Unit cost by an easier equivalent division', 'decimal-arithmetic', False),
+ ('SN870124', 'double-both', None, 'Divide mentally by doubling both numbers', 'whole-arithmetic', False),
+ ('SN870126', 'divide-by-hundred', None, 'Divide mentally by dividing both numbers by 100', 'whole-arithmetic', False),
+ ('SX870151', 'subscription-savings', None, 'Yearly saving from a subscription', 'decimal-arithmetic', False),
+ ('SX870110', 'average-five', None, 'Average of five heights', 'statistics', False),
+ ('SN870120', 'average-five', 'trees', 'Average of five heights', 'statistics', False),
+ ('SX870111', 'laps-average', None, 'Total seconds and average lap time', 'statistics', False),
+ ('SX870153', 'round-two-places', None, 'Round to the nearest thousand and hundred', 'rounding-estimation', False),
+ ('SN870128', 'round-place', None, 'Round to the nearest thousand or ten thousand', 'rounding-estimation', True),
+ ('AMPA0048', 'round-mixed-whole', None, 'Round a mixed number to the nearest whole number', 'rounding-estimation', False),
+ ('SN870185', 'round-mixed-half', None, 'Round a mixed number to the nearest half', 'rounding-estimation', False),
+ ('SN870362', 'true-rounding', None, 'Find the true rounding statement', 'rounding-estimation', False),
+ ('SX870303', 'estimate-quotient', None, 'Estimate a quotient', 'rounding-estimation', False),
+ ('SN870133', 'estimate-product', None, 'Estimate a product by rounding to tens', 'rounding-estimation', False),
+ ('SN870134', 'estimate-mixed-product', None, 'Estimate a product of mixed numbers', 'rounding-estimation', False),
+ ('SX870154', 'compare-common', 'reciprocals', 'Compare fractions using a common denominator', 'number-order', False),
+ ('SN870170', 'compare-common', 'table', 'Compare fractions using a common denominator', 'number-order', False),
+ ('SX870155', 'compare-common', None, 'Compare fractions using a common denominator', 'number-order', False),
+ ('SN870172', 'add-reciprocal-pair', None, 'Add a fraction and its reciprocal', 'fractions', False),
+ ('SX870164', 'mixed-expression', None, 'Simplify an expression with mixed numbers', 'fractions', False),
+ ('SX870265', 'mixed-expression', 'div-sum', 'Simplify an expression with mixed numbers', 'fractions', False),
+ ('SN870137', 'mixed-expression', 'minus', 'Subtract mixed numbers with unlike denominators', 'fractions', False),
+ # Batch 4: Lessons 31-40
+ ('SX870166', 'decimal-words', None, 'Write a decimal number in words', 'number-representation', True),
+ ('SN870140', 'decimal-words', 'tenths', 'Write a decimal number in words', 'number-representation', False),
+ ('SX870207', 'decimal-and-mixed', None, 'Write a number named in words as a decimal and a mixed number', 'number-representation', False),
+ ('SX870200', 'mm-to-cm', None, 'Convert millimeters to centimeters', 'measurement', False),
+ ('SX870167', 'metric-compare', None, 'Compare metric measures', 'measurement', False),
+ ('SN870143', 'metric-how-many', None, 'Convert between metric units of length', 'measurement', False),
+ ('SX870307', 'decimal-compare', None, 'Compare decimal numbers', 'number-order', False),
+ ('SN870145', 'false-decimal-statement', None, 'Find the false statement comparing decimals', 'number-order', False),
+ ('SN870146', 'order-decimals', None, 'Find the list of decimals in increasing order', 'number-order', False),
+ ('SX870201', 'round-thousandth', None, 'Round to the nearest thousandth', 'rounding-estimation', False),
+ ('SX870168', 'round-decimal-two', None, 'Round a decimal to two places', 'rounding-estimation', False),
+ ('SN870149', 'round-decimal-place', None, 'Round to the nearest tenth or hundredth', 'rounding-estimation', False),
+ ('SX870170', 'number-line-average', None, 'Average of two points on a decimal number line', 'number-representation', False),
+ ('SX870194', 'segment-bc', None, 'Missing segment length with decimals', 'decimal-arithmetic', False),
+ ('SX870306', 'number-line-point', None, 'Name a point on a decimal number line', 'number-representation', False),
+ ('SX870171', 'decimal-sum', None, 'Add decimals and a whole number', 'decimal-arithmetic', False),
+ ('SX870172', 'decimal-difference', None, 'Subtract decimals', 'decimal-arithmetic', False),
+ ('SX870182', 'decimal-square', None, 'Multiply a decimal by itself', 'decimal-arithmetic', False),
+ ('SX870189', 'decimal-divide-whole', None, 'Divide a decimal by a whole number', 'decimal-arithmetic', False),
+ ('SX870193', 'decimal-divide-decimal', None, 'Divide by a decimal', 'decimal-arithmetic', False),
+ ('SX870195', 'ratio-reverse', None, 'Reverse a ratio', 'ratio-proportion', True),
+ ('SX870196', 'ratio-part-fraction', None, 'Fraction of a whole from a ratio', 'ratio-proportion', True),
+ ('SX870089', 'fraction-rest-ratio', None, 'Fraction of the rest and a part-to-part ratio', 'ratio-proportion', False),
+ ('SN870199', 'fans-ratio', None, 'Part-to-part ratio from a fraction', 'ratio-proportion', True),
+ ('SN870200', 'spinner', None, 'Probability on a spinner', 'probability', False),
+ ('SN870202', 'dart-board', None, 'Probability of hitting a shaded region', 'probability', False),
+ ('SX870309', 'right-triangle-area', None, 'Area of a right triangle', 'area', True),
+ ('SX870198', 'coordinate-triangle-area', None, 'Area of a triangle from coordinates', 'area', False),
+ ('SN870315', 'diagonal-plot', None, 'Area of half a rectangle', 'area', False),
+ ('SN870314', 'diagonal-plot', 'choice', 'Area of half a rectangle', 'area', False),
+ ('SX870310', 'step-area', None, 'Area of a figure with right-angle corners', 'area', True),
+ ('SX870312', 'l-shape-area', None, 'Area of a square-and-rectangle figure', 'area', False),
+ ('SX870199', 'square-triangle-area', None, 'Area of a square-and-triangle figure', 'area', True),
+ ('SX870208', 'tally-votes', None, 'Read an election tally sheet', 'data-displays', False),
+ ('SN870341', 'histogram-walk', None, 'Read a histogram', 'data-displays', True),
+ ('SN870345', 'circle-graph', None, 'Use a circle graph to find a number of people', 'data-displays', True),
+ ('SX870374', 'proportion-solve', 'scaled', 'Solve a proportion', 'ratio-proportion', False),
+ ('SX870375', 'proportion-solve', 'denominator', 'Solve a proportion', 'ratio-proportion', False),
+ ('SX870202', 'proportion-solve', 'decimal', 'Solve a proportion with a decimal', 'ratio-proportion', False),
+ ('SX870376', 'proportion-solve', None, 'Solve a proportion', 'ratio-proportion', False),
+ ('AXG80499', 'right-triangle-x', None, 'Missing acute angle of a right triangle', 'angles', False),
+ ('SN870809', 'isosceles-angle', None, 'Missing angle of an isosceles triangle', 'angles', False),
+ ('SN870804', 'isosceles-angle', 'choice', 'Missing angle of an isosceles triangle', 'angles', False),
+ ('SX870203', 'complementary-expression', None, 'Complementary angles named by expressions', 'angles', False),
+ ('SX870204', 'right-angle-chain', None, 'Find an angle through a chain of triangles', 'angles', False),
+ ('SX870205', 'parallel-zigzag', None, 'Angle formed by a line crossing a zigzag', 'angles', False),
+ ('SX870206', 'crossing-triangles', None, 'Angles where two triangles meet at crossing lines', 'angles', False),
+ ('SX870214', 'triangle-line-angles', None, 'Angles where a triangle side crosses a line', 'angles', False),
+ ('SX870316', 'crossing-lines-triangle', None, 'Base angle of a triangle from a vertical angle', 'angles', False),
+ # Batch 5: Lessons 41-50
+ ('SX870215', 'evaluate-xy', None, 'Evaluate an expression with three variables', 'expressions', False),
+ ('SN870216', 'evaluate-xy', 'decimal-sum', 'Evaluate an expression with decimal values', 'expressions', False),
+ ('SN870347', 'evaluate-paren', None, 'Evaluate an expression with parentheses', 'expressions', False),
+ ('SX870217', 'evaluate-paren', 'decimal', 'Evaluate an expression with parentheses and decimals', 'expressions', False),
+ ('SN870218', 'evaluate-paren', 'minus', 'Evaluate an expression with parentheses', 'expressions', False),
+ ('SN870349', 'distribute', None, 'Expand with the distributive property', 'expressions', False),
+ ('SX870219', 'round-repeating', None, 'Round a repeating decimal', 'fraction-decimal-percent', False),
+ ('SX870220', 'divide-repeating', None, 'Divide and write a repeating decimal with a bar', 'fraction-decimal-percent', False),
+ ('SN870220', 'fraction-repeating', None, 'Write a fraction as a repeating decimal', 'fraction-decimal-percent', False),
+ ('SN870224', 'decimal-to-fraction', 'fiveths', 'Write a decimal as a fraction', 'fraction-decimal-percent', True),
+ ('SMAH0596', 'decimal-to-fraction', None, 'Write a decimal as a mixed number', 'fraction-decimal-percent', False),
+ ('SNAH0208', 'decimal-to-mixed-thousandths', None, 'Write a decimal as a mixed number in lowest terms', 'fraction-decimal-percent', False),
+ ('SX870366', 'fraction-to-decimal', 'improper', 'Write a fraction as a decimal', 'fraction-decimal-percent', False),
+ ('SN870604', 'fraction-to-decimal', 'tenths', 'Write a fraction as a decimal', 'fraction-decimal-percent', False),
+ ('SN870606', 'fraction-to-decimal', 'eighths', 'Write a fraction as a decimal', 'fraction-decimal-percent', False),
+ ('SN870605', 'fraction-to-decimal', None, 'Write a fraction as a decimal', 'fraction-decimal-percent', False),
+ ('SN870232', 'chairs-rows', None, 'Interpret a remainder: chairs in rows', 'whole-arithmetic', False),
+ ('SN870319', 'capsules', None, 'Divide and round to the nearest hundredth', 'decimal-arithmetic', False),
+ ('SX870227', 'divide-by-decimal', 'round', 'Divide by a decimal and round', 'decimal-arithmetic', False),
+ ('SX870228', 'divide-by-decimal', 'thousandths', 'Divide by a decimal', 'decimal-arithmetic', False),
+ ('SX870229', 'divide-by-decimal', 'hundredths', 'Divide by a decimal', 'decimal-arithmetic', False),
+ ('SN870237', 'divide-by-decimal', None, 'Divide by a decimal', 'decimal-arithmetic', False),
+ ('SX870230', 'solve-decimal-coefficient', None, 'Solve an equation with a decimal coefficient', 'equations', False),
+ ('SX870150', 'yogurt-saving', None, 'Saving per item when buying by the case', 'rates', False),
+ ('SX870368', 'cost-each', None, 'Unit price of a collection', 'rates', False),
+ ('SN870241', 'stationery-each', None, 'Unit price from a total', 'rates', False),
+ ('SX870232', 'round-trip-speed', None, 'Average speed for a round trip', 'rates', False),
+ ('SX870233', 'trail-speed', None, 'Average speed with a mixed-number distance', 'rates', False),
+ ('SX870234', 'tip', None, 'A 15% tip', 'percent', False),
+ ('SX870238', 'tax-total', None, 'Sales tax and total price', 'percent', False),
+ ('SN870248', 'powers-of-ten-quotient', None, 'Divide powers of 10', 'powers-roots', False),
+ ('SN870250', 'missing-exponent', None, 'Missing exponent in a product of powers of 10', 'powers-roots', False),
+ ('SN870251', 'number-names-standard', None, 'Write a number named in millions, billions or trillions in standard form', 'number-representation', False),
+ ('SX870245', 'fdp-table', 'percent-and-fraction', 'Complete a fraction-decimal-percent table', 'fraction-decimal-percent', False),
+ ('SX870246', 'fdp-table', 'fraction-and-decimal', 'Complete a fraction-decimal-percent table', 'fraction-decimal-percent', False),
+ ('SX870247', 'fdp-table', None, 'Complete a fraction-decimal-percent table', 'fraction-decimal-percent', False),
+ ('SX870253', 'add-measures', None, 'Add yards, feet and inches', 'measurement', False),
+ ('SX870254', 'add-measures', 'inches', 'Add inches to yards, feet and inches', 'measurement', False),
+ ('SX870255', 'add-measures', 'time', 'Add hours, minutes and seconds', 'measurement', False),
+ ('SN870259', 'add-measures', 'time-2', 'Add hours, minutes and seconds', 'measurement', False),
+ ('SX870264', 'yards-to-feet', None, 'Convert yards to feet with a unit multiplier', 'measurement', True),
+ ('SX870269', 'wage-per-hour', None, 'Chain unit multipliers: dollars per hour', 'rates', False),
+ ('SN870262', 'tons-pounds', None, 'Convert between tons and pounds', 'measurement', False),
+ # Batch 6: Lessons 51-60
+ ('SX870261', 'sci-two-way', None, 'Scientific notation and standard form for large numbers', 'scientific-notation', False),
+ ('SN870321', 'to-sci', None, 'Write a large number in scientific notation', 'scientific-notation', False),
+ ('SN870322', 'to-sci', 'context', 'Write a measurement in scientific notation', 'scientific-notation', False),
+ ('SX870263', 'order-ops', None, 'Order of operations', 'expressions', False),
+ ('SX870320', 'order-ops', 'square', 'Order of operations with powers', 'expressions', False),
+ ('SX870301', 'order-ops', 'variables', 'Evaluate with the order of operations', 'expressions', False),
+ ('SN870266', 'order-ops', 'divide-multiply', 'Order of operations: divide and multiply left to right', 'expressions', False),
+ ('SX870275', 'seed-cost', None, 'Cost at the same rate', 'rates', True),
+ ('SX870276', 'taffy', None, 'Length at the same rate', 'rates', False),
+ ('SX870279', 'nut-price', None, 'Price per pound and total cost', 'rates', False),
+ ('SN870269', 'beanstalk', None, 'Growth at the same rate in feet and inches', 'rates', False),
+ ('SXA10204', 'ratio-find', 'people', 'Use a ratio to find a quantity', 'ratio-proportion', True),
+ ('SX870277', 'recipe-ratio', None, 'Use a ratio in a recipe', 'ratio-proportion', True),
+ ('SX870281', 'ratio-chain', None, 'Combine two ratios', 'ratio-proportion', True),
+ ('SN870274', 'ratio-find', None, 'Use a ratio to find a quantity', 'ratio-proportion', True),
+ ('SX870283', 'combined-average', None, 'Average of two groups of tests', 'statistics', True),
+ ('SX870284', 'race-time', None, 'Missing value from an average', 'statistics', False),
+ ('SX870286', 'wage-average', None, 'Average earnings per hour', 'statistics', True),
+ ('SX870287', 'subtract-measures', 'time', 'Subtract hours, minutes and seconds', 'measurement', False),
+ ('SN870280', 'subtract-measures', None, 'Subtract yards, feet and inches', 'measurement', False),
+ ('SN870282', 'subtract-measures', 'inches', 'Subtract inches from yards, feet and inches', 'measurement', False),
+ ('SN870334', 'negative-exponent', None, 'Simplify a negative exponent', 'powers-roots', False),
+ ('SN870615', 'negative-exponent', 'table', 'Simplify a negative exponent', 'powers-roots', False),
+ ('BMPA0207', 'ten-negative-power', None, 'A negative power of ten as a fraction and a decimal', 'powers-roots', False),
+ ('SX870290', 'sci-two-way', 'small', 'Scientific notation and standard form for small numbers', 'scientific-notation', False),
+ ('SX870289', 'sci-two-way', 'small', 'Scientific notation and standard form for small numbers', 'scientific-notation', False),
+ ('SN870286', 'to-sci', 'small', 'Write a small number in scientific notation', 'scientific-notation', False),
+ ('SN870288', 'symmetric-vertex', 'large', 'Vertex of a triangle symmetric about the y-axis', 'transformations', False),
+ ('SN870289', 'polygon-symmetry', None, 'Lines of symmetry of a regular polygon', 'geometry-properties', False),
+ ('SX870291', 'function-table', None, 'Missing output in a function table (add)', 'functions', False),
+ ('SN870617', 'function-table', 'multiply', 'Missing output in a function table (multiply)', 'functions', False),
+ ('SN870351', 'number-machine', None, 'Missing output from a number machine', 'functions', False),
+ ('SX870501', 'integer-line-add', None, 'Show integer addition on a number line', 'integers', False),
+ ('SN870353', 'integer-line-add', None, 'Show integer addition on a number line', 'integers', False),
+ ('SN870324', 'integer-line-add', 'wide', 'Show integer addition on a number line and give the sum', 'integers', False),
+ ('SN870323', 'integer-line-add', 'choose', 'Choose the number line that shows an integer sum', 'integers', False),
+ ('SX650094', 'fraction-of-group', None, 'A unit fraction of a group', 'ratio-proportion', False),
+ ('SN870292', 'fraction-of-group', 'product', 'A fraction of a fraction of a group', 'ratio-proportion', False),
+ ('SN870326', 'fraction-of-group', 'twelfths', 'A unit fraction of a group', 'ratio-proportion', False),
+ ('SX870370', 'percent-of', 'tens', 'Percent of a number', 'percent', False),
+ ('SX760175', 'percent-of', 'money', 'Percent of an amount of money', 'percent', False),
+ ('SX870372', 'percent-of', None, 'Percent of a number', 'percent', False),
+ # Batch 7: Lessons 61-70
+ ('SX870519', 'parallelogram-area', 'labelled', 'Area of a parallelogram', 'area', False),
+ ('SN870297', 'parallelogram-area', None, 'Area of a parallelogram', 'area', False),
+ ('SN870327', 'parallelogram-area', 'upright', 'Area of a parallelogram with the height outside', 'area', True),
+ ('SX870317', 'parallelogram-angle', None, 'Find an angle of a parallelogram', 'angles', False),
+ ('SN870602', 'parallelogram-angle', 'three', 'Find an angle of a parallelogram', 'angles', False),
+ ('SN870355', 'parallelogram-missing', None, 'Missing sides and angles of a parallelogram', 'geometry-properties', False),
+ ('SMAH0349', 'triangle-definitions', None, 'Define triangles by sides and by angles', 'geometry-properties', False),
+ ('SN870339', 'triangle-classify', None, 'Classify a triangle by sides and by angles', 'geometry-properties', False),
+ ('SX870321', 'inclusion', 'bracket', 'Simplify with brackets', 'expressions', False),
+ ('SX870322', 'inclusion', 'brace', 'Simplify with braces and brackets', 'expressions', False),
+ ('SX870323', 'inclusion', 'nested', 'Simplify with braces, brackets and a power', 'expressions', False),
+ ('SN870303', 'inclusion', None, 'Simplify with symbols of inclusion', 'expressions', False),
+ ('SX870328', 'signed-sum', 'four', 'Add four signed numbers', 'integers', False),
+ ('SN870305', 'signed-sum', 'three', 'Add three signed numbers', 'integers', False),
+ ('SN870331', 'signed-sum', None, 'Add three signed numbers', 'integers', False),
+ ('SX870324', 'ratio-games', None, 'Games lost from a ratio of games won to games played', 'ratio-proportion', True),
+ ('SX870325', 'ratio-club', None, 'Ratio from a part and a total', 'ratio-proportion', True),
+ ('SX870330', 'ratio-total', None, 'Use a ratio and a total', 'ratio-proportion', True),
+ ('SN870309', 'ratio-total', 'large', 'Use a ratio and a total', 'ratio-proportion', True),
+ ('SX870333', 'circumference-pair', '314', 'Circumference with 3.14 and in terms of pi', 'circle-measurement', False),
+ ('SX870334', 'circumference-pair', None, 'Circumference with 22/7 and in terms of pi', 'circle-measurement', False),
+ ('SX870327', 'solid-counts', None, 'Faces, edges and vertices of a solid', 'geometry-properties', False),
+ ('SN870313', 'solid-object', None, 'Name the solid an object resembles', 'geometry-properties', False),
+ ('SN870610', 'solid-picture', None, 'Name a geometric solid from a picture', 'geometry-properties', False),
+ ('SN870366', 'signed-subtract', 'pos-neg', 'Subtract a negative number', 'integers', False),
+ ('SN870367', 'signed-subtract', 'neg-minus', 'Subtract a signed number', 'integers', False),
+ ('SN870363', 'signed-subtract', None, 'Add and subtract signed numbers', 'integers', False),
+ ('SX870337', 'sci-renormalize', 'two-digit', 'Rewrite a number in scientific notation', 'scientific-notation', False),
+ ('SN870384', 'sci-renormalize', 'hundredths', 'Rewrite a number in scientific notation', 'scientific-notation', False),
+ ('SN870386', 'sci-renormalize', None, 'Rewrite a number in scientific notation', 'scientific-notation', False),
+ ('SN870540', 'cube-volume', None, 'Volume of a prism built of cubes', 'volume', False),
+ ('SN870377', 'prism-cubes', None, 'Cubes needed to build a rectangular prism', 'volume', False),
+ ('SN870379', 'prism-volume', None, 'Volume of a rectangular prism', 'volume', True),
+ # Batch 8: Lessons 71-80
+ ('SN870381', 'whole-from-fraction', None, 'Find the whole group from a unit fraction', 'fractions', False),
+ ('SN870372', 'whole-from-fraction', 'string', 'Find the whole from a fraction used', 'fractions', True),
+ ('SN870392', 'implied-ratio', None, 'Implied ratio: is to as', 'ratio-proportion', False),
+ ('SN870389', 'implied-ratio', 'gas', 'Gallons needed at the same rate', 'rates', False),
+ ('SN870437', 'signed-product', None, 'Multiply signed numbers', 'integers', False),
+ ('SN870438', 'signed-product', 'quotient', 'Divide signed numbers', 'integers', False),
+ ('SX870344', 'signed-four', None, 'Multiply and divide signed numbers', 'integers', False),
+ ('SX870349', 'whole-from-part', 'words', 'A number is a fraction of what number', 'fractions', False),
+ ('SX870348', 'whole-from-part', 'named', 'A fraction of what number is a given number', 'fractions', False),
+ ('SN870460', 'part-of-whole', None, 'What fraction of a number is another', 'fractions', True),
+ ('SN870464', 'part-of-whole', 'decimal', 'What decimal part of a number is another', 'fraction-decimal-percent', True),
+ ('SN870466', 'whole-from-part', None, 'A number is a decimal part of what number', 'fraction-decimal-percent', False),
+ ('SX870352', 'complex-area', None, 'Area of a figure made of a rectangle and a triangle', 'area', False),
+ ('SN870468', 'complex-area', 'trapezoid', 'Area of a figure made of a rectangle and a trapezoid', 'area', False),
+ ('SN870471', 'complex-area', 'rect', 'Area of a figure made of two rectangles', 'area', False),
+ ('SX870351', 'trapezoid-area', 'right', 'Area of a right trapezoid', 'area', True),
+ ('SN870443', 'trapezoid-area', None, 'Area of a trapezoid', 'area', False),
+ ('SN870476', 'trapezoid-area', 'down', 'Area of a trapezoid', 'area', False),
+ ('SX870355', 'complex-fraction', 'over-whole', 'Simplify a complex fraction', 'fractions', False),
+ ('SN870481', 'complex-fraction', 'whole-over', 'Simplify a complex fraction', 'fractions', False),
+ ('SN870483', 'complex-fraction', None, 'Simplify a complex fraction', 'fractions', False),
+ ('SN870485', 'percent-of-what', 'money', 'What percent one amount of money is of another', 'percent', False),
+ ('SN870486', 'percent-of-what', None, 'A percent of what number', 'percent', True),
+ ('SX870497', 'inequality-graph', 'symbol', 'Graph an inequality on a number line', 'inequalities', False),
+ ('SN870500', 'inequality-graph', 'symbol2', 'Graph an inequality on a number line', 'inequalities', False),
+ ('SN870510', 'inequality-graph', None, 'Graph the numbers greater or less than a number', 'inequalities', False),
+ ('SX870498', 'inequality-choose', None, 'Choose the graph of an inequality', 'inequalities', False),
+ ('SN870537', 'missing-info', None, 'What more do you need to know', 'reasoning', False),
+ ('SN870539', 'missing-info', 'hours', 'What more do you need to know', 'reasoning', True),
+ ('SN870796', 'enough-info', None, 'Is there enough information', 'reasoning', False),
+ ('SX870363', 'compare-quantities', 'square', 'Compare a number and its square', 'reasoning', False),
+ ('SX870364', 'compare-quantities', 'conditions', 'Compare two quantities from a condition', 'reasoning', False),
+ ('SN870535', 'compare-quantities', None, 'Compare two quantities from a condition', 'reasoning', False),
+ ('SN870554', 'transform-graph', None, 'Graph a translation', 'transformations', True),
+ ('SN870555', 'transform-graph', 'reflect', 'Graph a reflection across the x-axis', 'transformations', True),
+ ('SN870547', 'transform-graph', 'rotate', 'Graph a rotation about the origin', 'transformations', False),
+ ('SN870556', 'rotation-choose', None, 'Choose the graph of a rotation', 'transformations', True),
+ # Batch 9: Lessons 81-90
+ ('SX870390', 'percent-rest', 'fans', 'Find the whole from the percent not in a group', 'percent', False),
+ ('SN870526', 'percent-rest', None, 'Percent not in a group', 'percent', True),
+ ('SN870529', 'circle-area', None, 'Area of a circle with 3.14', 'circle-measurement', False),
+ ('SN870533', 'circle-area', 'pi', 'Area of a circle in terms of pi', 'circle-measurement', False),
+ ('SN870415', 'power-ten', 'a', 'Multiply powers of 10', 'powers-roots', False),
+ ('SN870419', 'power-ten', 'b', 'Multiply powers of 10', 'powers-roots', False),
+ ('SN870422', 'power-ten', None, 'Multiply powers of 10', 'powers-roots', False),
+ ('SN870434', 'sci-product', 'decimal', 'Multiply numbers in scientific notation', 'scientific-notation', True),
+ ('SN870432', 'sci-product', None, 'Multiply numbers in scientific notation', 'scientific-notation', False),
+ ('SN870429', 'sci-product', 'negative', 'Multiply numbers in scientific notation', 'scientific-notation', False),
+ ('SN870798', 'classify-poly', None, 'Monomial, binomial or trinomial', 'polynomials', False),
+ ('SN870441', 'like-terms', None, 'Collect like terms after subtracting', 'polynomials', False),
+ ('SN870449', 'like-terms', 'two-var', 'Collect like terms with two variables', 'polynomials', False),
+ ('SN870455', 'signed-order', 'bracket', 'Order of operations with signed numbers', 'integers', False),
+ ('SX870397', 'signed-order', 'products', 'Order of operations with signed numbers', 'integers', False),
+ ('SN870459', 'signed-order', None, 'Order of operations with signed numbers', 'integers', False),
+ ('SN870473', 'rule-table', None, 'Complete a table from a function rule', 'functions', False),
+ ('SX870400', 'rule-table', 'linear', 'Complete a table from a function rule', 'functions', False),
+ ('SN870463', 'rule-table', 'half', 'Complete a table from a function rule', 'functions', False),
+ ('SN870477', 'integer-graph', 'describe', 'Describe a graph of integers', 'number-order', False),
+ ('SX870403', 'integer-graph', 'negative', 'Graph negative integers greater than a number', 'number-order', False),
+ ('SX870402', 'integer-graph', None, 'Graph whole numbers less than a number', 'number-order', False),
+ ('SN870484', 'integer-graph', 'choose', 'Choose the graph of whole numbers less than a number', 'number-order', False),
+ ('SX870405', 'mono-product', 'pair', 'Multiply algebraic terms', 'polynomials', False),
+ ('SX870406', 'mono-product', 'three', 'Multiply algebraic terms', 'polynomials', False),
+ ('SN870396', 'mono-product', None, 'Multiply algebraic terms', 'polynomials', False),
+ ('SN870408', 'unit-convert', 'ml', 'Convert milliliters to liters', 'measurement', False),
+ ('SN870410', 'unit-convert', 'inch-mile', 'Convert between inches and miles with unit multipliers', 'measurement', False),
+ ('SN870412', 'unit-convert', 'three', 'Convert with three unit multipliers', 'measurement', False),
+ ('SX870411', 'unit-convert', 'sqft-sqin', 'Convert square feet to square inches', 'measurement', False),
+ ('SN870405', 'unit-convert', 'metric-area', 'Convert metric units of area', 'measurement', False),
+ ('SX870413', 'polygon-angles', 'diagonals', 'Diagonals from one vertex', 'geometry-properties', False),
+ ('SN870445', 'polygon-angles', 'inscribed', 'Each angle of a regular polygon in a circle', 'angles', False),
+ ('SN870427', 'polygon-angles', None, 'Exterior angle of a regular polygon', 'angles', False),
+ ('SX870384', 'coef-equation', 'mixed', 'Solve with a mixed-number coefficient', 'equations', False),
+ ('SN870585', 'coef-equation', 'fraction', 'Solve with a fraction coefficient', 'equations', False),
+ ('SN870491', 'coef-equation', 'mixed-proper', 'Solve with a mixed-number coefficient', 'equations', False),
+ ('SN870490', 'coef-equation', 'mixed-improper', 'Solve with a mixed-number coefficient', 'equations', False),
+ ('SN870492', 'coef-equation', 'decimal', 'Solve with a negative decimal coefficient', 'equations', False),
+ ('SX870416', 'coef-equation', 'tenths', 'Solve with a negative coefficient', 'equations', False),
+ ('SN870494', 'coef-equation', None, 'Solve with a negative coefficient', 'equations', False),
+ # Batch 10: Lessons 91-100
+ ('SX870419', 'signed-eval', 'linear', 'Evaluate with signed numbers', 'integers', False),
+ ('SN870501', 'signed-eval', 'fraction', 'Evaluate a fraction with signed numbers', 'integers', False),
+ ('SN870499', 'signed-eval', None, 'Evaluate with signed numbers', 'integers', False),
+ ('SN870504', 'signed-chain', 'four', 'Signed numbers without parentheses', 'integers', False),
+ ('SN870508', 'signed-chain', 'double', 'Signed numbers without parentheses', 'integers', False),
+ ('SN870509', 'signed-chain', None, 'Order of operations with signed numbers', 'integers', False),
+ ('SX870430', 'percent-change', None, 'Original price before a percent increase', 'percent', True),
+ ('SN870513', 'percent-change', 'sale', 'Sale price after a percent discount', 'percent', False),
+ ('SN870517', 'two-step', 'decimal', 'Two-step equation with decimals', 'equations', False),
+ ('SN870518', 'two-step', 'mixed', 'Two-step equation with a mixed-number coefficient', 'equations', False),
+ ('SN870516', 'two-step', None, 'Solve and graph an inequality', 'inequalities', False),
+ ('SN870519', 'two-step', 'choose', 'Choose the solution and graph of an inequality', 'inequalities', False),
+ ('SX870438', 'spinner-twice', None, 'Probability of the same result on two spins', 'probability', False),
+ ('SN870546', 'solid-volume', None, 'Volume of a rectangular prism', 'volume', False),
+ ('SN870542', 'solid-volume', 'cylinder', 'Volume of a cylinder', 'volume', True),
+ ('SN870544', 'solid-volume', 'triangle', 'Volume of a triangular prism', 'volume', False),
+ ('SN870562', 'angle-estimate', 'complement', 'Find an angle from a right angle', 'angles', False),
+ ('SN870563', 'angle-estimate', 'truefalse', 'Estimate an angle measure', 'angles', False),
+ ('SN870564', 'angle-estimate', None, 'Measure an angle greater than 180 degrees', 'angles', False),
+ ('SN870551', 'distribute-terms', 'letter', 'Distributive property with algebraic terms', 'polynomials', False),
+ ('SN870550', 'distribute-terms', 'common', 'Distributive property with algebraic terms', 'polynomials', False),
+ ('SN870560', 'distribute-terms', None, 'Distributive property with algebraic terms', 'polynomials', True),
+ ('SN870369', 'similar-sides', 'letters', 'Find a side of similar triangles', 'similarity-scale', False),
+ ('SN870580', 'similar-sides', 'abc', 'Find a side of similar triangles', 'similarity-scale', False),
+ ('SN870567', 'similar-sides', None, 'Use similar triangles to find x', 'similarity-scale', False),
+ ('SN870370', 'indirect', 'ladders', 'Indirect measure with ladders', 'similarity-scale', False),
+ ('SN870571', 'indirect', 'sight', 'Indirect measure along a line of sight', 'similarity-scale', False),
+ ('SN870371', 'indirect', None, 'Indirect measure with shadows', 'similarity-scale', False),
+ ('SN870574', 'scale', 'bridge', 'Length on a scale drawing', 'similarity-scale', False),
+ ('SN870576', 'scale', 'map', 'Distance from a map scale', 'similarity-scale', False),
+ ('SN870398', 'scale', None, 'Height of a scale model', 'similarity-scale', False),
+ ('SN870587', 'scale-factor', 'triangles', 'Scale factor of similar triangles', 'similarity-scale', False),
+ ('SN870401', 'scale-factor', 'prisms', 'Scale factor, area and volume of similar prisms', 'similarity-scale', False),
+ ('SN870402', 'scale-factor', None, 'Scale factor from a ratio', 'ratio-proportion', False),
+ ('SX870506', 'pythagorean', None, 'Use the Pythagorean theorem to find a side', 'pythagorean', False),
+ ('AXG80580', 'pythagorean', 'perimeter', 'Perimeter of a right triangle', 'pythagorean', False),
+ ('SN870430', 'pythagorean', 'area', 'Area and hypotenuse of a right triangle', 'pythagorean', True),
+ ('SN870823', 'root-between', 'closest', 'Whole numbers closest to a square root', 'powers-roots', False),
+ ('SN870452', 'root-between', 'small', 'Consecutive whole numbers around a square root', 'powers-roots', False),
+ ('SN870454', 'root-between', None, 'Consecutive whole numbers around a square root', 'powers-roots', False),
+ ('SN870548', 'irrational-graph', 'locate', 'Locate a number on a number line', 'number-order', False),
+ ('SN870583', 'irrational-graph', 'pair', 'Graph two irrational numbers', 'number-order', False),
+ ('SN870552', 'irrational-graph', None, 'Graph a square root and a fraction', 'number-order', False),
+ ('SN870588', 'irrational-graph', 'choose', 'Choose the graph of a square root and a fraction', 'number-order', False),
+ # Batch 11: Lessons 101-110
+ ('SN870620', 'translate-eq', None, 'Translate a statement into an equation and solve', 'word-equations', False),
+ ('SN870622', 'translate-eq', 'half', 'Translate a statement about half a number and solve', 'word-equations', False),
+ ('SN870624', 'translate-eq', 'angles', 'Solve for angles written as multiples of x', 'angles', False),
+ ('SN870636', 'transversal', 'pairs', 'Name pairs of angles formed by a transversal', 'angles', False),
+ ('SN870633', 'transversal', 'others', 'Find all angles formed by a transversal', 'angles', False),
+ ('SN870638', 'transversal', 'difference', 'Difference of angles formed by a transversal', 'angles', False),
+ ('SN870627', 'simplify-solve', 'both', 'Solve with the variable on both sides', 'equations', False),
+ ('SN870626', 'simplify-solve', 'collect', 'Collect like terms and solve', 'equations', False),
+ ('SN870635', 'simplify-solve', 'twice', 'Collect like terms and constants and solve', 'equations', False),
+ ('SN870629', 'simplify-solve', 'paren', 'Distribute and solve', 'equations', False),
+ ('SN870642', 'neg-power', 'even', 'Even powers of negative numbers', 'powers-roots', False),
+ ('SN870643', 'neg-power', 'odd', 'Odd powers of negative numbers', 'powers-roots', False),
+ ('SN870644', 'neg-power', 'product', 'Multiply five signed numbers', 'integers', False),
+ ('SN870648', 'divide-terms', 'one', 'Divide algebraic terms', 'polynomials', False),
+ ('SX870449', 'divide-terms', 'product', 'Multiply and divide algebraic terms', 'polynomials', False),
+ ('SN870650', 'divide-terms', 'fraction', 'Simplify a quotient of terms to lowest terms', 'polynomials', False),
+ ('SX870452', 'semicircle-figure', 'perimeter', 'Perimeter of a rectangle with a semicircle', 'circle-measurement', False),
+ ('SN870656', 'semicircle-figure', 'area', 'Area of a rectangle with a semicircle', 'circle-measurement', False),
+ ('SN870651', 'sector', 'area', 'Area of a sector', 'circle-measurement', False),
+ ('SN870652', 'sector', 'perimeter', 'Perimeter of a sector', 'circle-measurement', False),
+ ('SN870654', 'sector', 'arc', 'Length of an arc', 'circle-measurement', False),
+ ('SN870672', 'surface-area', 'prism', 'Surface area of a rectangular prism', 'area', True),
+ ('SXA10099', 'surface-area', 'triangle', 'Surface area of a right triangular prism', 'area', False),
+ ('SN870671', 'surface-area', 'can', 'Surface area of a can and its label', 'area', False),
+ ('SN870665', 'sphere-area', 'inches', 'Surface area of a sphere', 'area', False),
+ ('SN870666', 'sphere-area', 'ball', 'Surface area of a ball from its diameter', 'area', False),
+ ('SX870456', 'roots-more', 'two', 'The two square roots of a number', 'powers-roots', False),
+ ('SN870659', 'roots-more', 'cube', 'Cube root of a perfect cube', 'powers-roots', False),
+ ('SN870660', 'roots-more', 'cubeneg', 'Cube root of a negative perfect cube', 'powers-roots', False),
+ ('SN870675', 'literal', 'product', 'Solve a literal equation (product)', 'equations', False),
+ ('SN870676', 'literal', 'sum', 'Solve a literal equation (sum or difference)', 'equations', False),
+ ('MOOR0907', 'literal', 'fraction', 'Solve a literal equation with a fraction', 'equations', False),
+ ('SN870681', 'transform-formula', None, 'Transform an area or perimeter formula', 'equations', True),
+ ('SN870682', 'transform-formula', 'half', 'Transform the triangle area formula', 'equations', False),
+ ('SN870683', 'transform-formula', 'circle', 'Transform a circle formula', 'equations', False),
+ ('SN870687', 'slope', 'special', 'Slope of a horizontal or vertical line', 'functions', False),
+ ('SN870685', 'slope', 'integer', 'Slope of a graphed line (whole number)', 'functions', False),
+ ('SN870686', 'slope', None, 'Slope of a graphed line', 'functions', False),
+ ('SN870692', 'formula-sub', 'rect', 'Use A = bh to find a dimension', 'equations', False),
+ ('SX870460', 'formula-sub', 'tri', 'Use A = 1/2 bh to find a dimension', 'equations', False),
+ ('SN870690', 'formula-sub', 'temp', 'Use F = 1.8C + 32', 'equations', False),
+ ('SN870694', 'square-eq', 'coef', 'Solve ax^2 = n', 'powers-roots', False),
+ ('SN870698', 'square-eq', 'shift', 'Solve bx^2 + c = n', 'powers-roots', False),
+ ('SN870699', 'square-eq', 'proportion', 'Solve x/a = b/x', 'powers-roots', False),
+ ('SN870700', 'square-eq', 'words', 'Translate and solve an equation with a square', 'word-equations', False),
+ ('SN870704', 'interest', 'table', 'Table of compound interest', 'percent', False),
+ ('SN870826', 'interest', 'simple', 'Balance with simple interest', 'percent', False),
+ ('SN870705', 'discounts', 'clearance', 'Successive discounts', 'percent', False),
+ ('SN870706', 'discounts', 'coupon-percent', 'A percent coupon on a sale price', 'percent', False),
+ ('SN870828', 'discounts', 'coupon', 'A sale price and a dollar coupon', 'percent', False),
+ # Batch 12: Lessons 111-120
+ ('SX870468', 'sci-divide', 'default', 'Divide in scientific notation', 'scientific-notation', True),
+ ('SN870709', 'sci-divide', 'positive', 'Divide in scientific notation (positive exponents)', 'scientific-notation', False),
+ ('SN870710', 'sci-divide', 'negative', 'Divide in scientific notation (negative exponents)', 'scientific-notation', False),
+ ('SN870712', 'pythag-apps', 'shorter', 'How much shorter is the direct route', 'pythagorean', False),
+ ('SN870716', 'pythag-apps', 'walk', 'Total distance with a shortcut', 'pythagorean', False),
+ ('SN870717', 'pythag-apps', 'kite', 'Kite string and height', 'pythagorean', False),
+ ('SN870721', 'solid-volume2', 'default', 'Volume of a pyramid, cone or sphere', 'volume', True),
+ ('SN870722', 'solid-volume2', 'cone-hole', 'Volume of a cube with a cone-shaped hole', 'volume', False),
+ ('SN870723', 'solid-volume2', 'pyramid-cube', 'Cube minus a pyramid', 'volume', False),
+ ('SN870724', 'solid-volume2', 'sphere-cyl', 'Cylinder minus a sphere', 'volume', False),
+ ('SN870739', 'inequality-plane', 'sum', 'Write and graph a sum inequality', 'inequalities', False),
+ ('SN870740', 'inequality-plane', 'minutes', 'Write and graph an at least or at most inequality', 'inequalities', False),
+ ('SN870741', 'inequality-plane', 'band', 'Write and graph two inequalities', 'inequalities', False),
+ ('SN870738', 'inequality-plane', 'choose', 'Choose the inequalities and graph', 'inequalities', False),
+ ('SX870475', 'metric-capacity', 'aquarium', 'Liters and kilograms of water in an aquarium', 'measurement', False),
+ ('SN870731', 'metric-capacity', 'vase', 'Volume and mass of a vase of water', 'measurement', False),
+ ('SN870726', 'metric-capacity', 'balloons', 'Water balloons from a half-meter cube', 'measurement', False),
+ ('SN870758', 'factor-gcf', 'primes', 'Factor a term completely', 'polynomials', False),
+ ('SX870481', 'factor-gcf', 'binomial', 'Factor the greatest common factor from a binomial', 'polynomials', False),
+ ('SN870765', 'factor-gcf', 'trinomial', 'Factor the greatest common factor from a trinomial', 'polynomials', False),
+ ('SN870766', 'slope-intercept', 'default', 'Write ax + by = c in slope-intercept form', 'functions', False),
+ ('SN870767', 'slope-intercept', 'rearranged', 'Write an equation in slope-intercept form', 'functions', False),
+ ('SN870768', 'slope-intercept', 'graph', 'Graph a line in slope-intercept form', 'functions', False),
+ ('SN870761', 'slope-intercept', 'choose', 'Choose the graph of a line', 'functions', False),
+ ('SX870483', 'copy-construct', 'angle', 'Draw and copy an acute angle', 'angles', False),
+ ('SN870802', 'copy-construct', 'obtuse', 'Draw and copy an obtuse angle', 'angles', False),
+ ('SX870484', 'copy-construct', 'triangle', 'Draw and copy a triangle', 'angles', False),
+ ('SN870789', 'copy-construct', 'choose', 'Choose a correct triangle copy', 'angles', False),
+ ('SN870794', 'zero-divide', 'fact', 'Why division by zero is not a fact', 'reasoning', False),
+ ('SN870792', 'zero-divide', 'linear', 'Excluded value of a rational expression', 'expressions', False),
+ ('SN870790', 'zero-divide', 'simple', 'Excluded value of a simple fraction', 'expressions', False),
+ ('SN870786', 'zero-divide', 'quadratic', 'Excluded values of a fraction', 'expressions', False),
+ ('SN870783', 'nonlinear-graph', 'inverse', 'Graph y = a/x', 'functions', False),
+ ('SN870781', 'nonlinear-graph', 'shifted', 'Graph y = bx^2 + a', 'functions', False),
+ ('SN870785', 'nonlinear-graph', 'parabola', 'Graph y = ax^2', 'functions', False),
+ ('SX870489', 'nonlinear-graph', 'choose', 'Choose the graph of y = ax^2', 'functions', False),
+ # Batch 13: investigations (scope 201-213)
+ ('SX870315', 'inv-fractions', 'of', 'A fraction of a fraction', 'fractions', False),
+ ('SN870730', 'inv-fractions', 'circle', 'Add parts of a circle as a percent', 'fraction-decimal-percent', True),
+ ('SX870105', 'inv-construct', 'circle', 'Construct a hexagon, triangle or circle divisions', 'angles', False),
+ ('SX870106', 'inv-circle-parts', 'chords', 'Diameters and inscribed and central angles', 'circle-measurement', False),
+ ('SN870805', 'inv-coordinates', 'graph', 'Graph three points', 'functions', False),
+ ('AXA10097', 'inv-coordinates', 'locate', 'Quadrant or axis of a point', 'functions', False),
+ ('SN870742', 'inv-stem-leaf', 'read', 'Read a stem-and-leaf plot', 'data-displays', True),
+ ('SN870812', 'inv-stem-leaf', 'stats', 'Median, mode and range from a stem-and-leaf plot', 'statistics', True),
+ ('SN870838', 'inv-box-plot', 'draw', 'Draw a box-and-whisker plot', 'data-displays', True),
+ ('SN870744', 'inv-box-plot', 'range', 'Range and interquartile range from a box plot', 'statistics', True),
+ ('SN870806', 'inv-box-plot', 'five', 'Five-number summary from a box plot', 'statistics', True),
+ ('SN870831', 'inv-graphs', 'histogram', 'Read a histogram', 'data-displays', False),
+ ('SN870833', 'inv-graphs', 'double-line', 'Read a double-line graph', 'data-displays', False),
+ ('AXG70450', 'inv-graphs', 'circle', 'Make a circle graph from a budget', 'data-displays', False),
+ ('AXG70449', 'inv-graphs', 'choose', 'Choose the circle graph for a budget', 'data-displays', False),
+ ('SX870477', 'inv-quadrilaterals', 'name', 'Name a quadrilateral from its properties', 'geometry-properties', False),
+ ('SX870296', 'inv-quadrilaterals', 'explain', 'Name a quadrilateral and explain', 'geometry-properties', False),
+ ('SN870748', 'inv-quadrilaterals', 'symmetry', 'Lines of symmetry of a quadrilateral', 'geometry-properties', False),
+ ('SX870378', 'inv-balanced', 'plus', 'Solve a + x = b with decimals', 'equations', False),
+ ('SX870379', 'inv-balanced', 'minus', 'Solve a = x - b with decimals', 'equations', False),
+ ('SX870380', 'inv-balanced', 'times', 'Solve a = bx with decimals', 'equations', False),
+ ('SN870753', 'inv-construct', 'segment', 'Construct a segment bisector', 'angles', False),
+ ('SN870841', 'inv-construct', 'angle', 'Construct an angle bisector', 'angles', False),
+ ('SN870770', 'inv-circle-parts', 'square', 'Central angles and area of an inscribed square', 'circle-measurement', False),
+ ('SN870771', 'inv-circle-parts', 'octagon', 'Angles in an inscribed octagon', 'circle-measurement', False),
+ ('SN870808', 'inv-functions', 'table', 'Complete a function table and graph', 'functions', False),
+ ('SN870763', 'inv-functions', 'trend', 'Graph a table and describe the trend', 'functions', False),
+ ('SN870772', 'inv-functions', 'rule', 'Write and graph a function rule', 'functions', False),
+ ('SN870807', 'inv-functions', 'choose', 'Choose the graph and rule for a table', 'functions', False),
+ ('SN870774', 'inv-probability', 'raffle', 'Probability from odds', 'probability', True),
+ ('SN870834', 'inv-probability', 'odds', 'Probability that an event will or will not occur from odds', 'probability', True),
+ ('SN870816', 'inv-probability', 'marbles', 'Probability of drawing a color', 'probability', True),
+ ('SN870775', 'inv-scale-solids', 'surface', 'Compare surface areas of cubes', 'similarity-scale', False),
+ ('SX870466', 'inv-scale-solids', 'cube-volume', 'Volume ratio of two cubes', 'similarity-scale', True),
+ ('SN870818', 'inv-scale-solids', 'cabin', 'Volume from a scale model', 'similarity-scale', False),
+ ('SN870778', 'inv-pythagoras', 'proof', 'Prove the Pythagorean theorem', 'pythagorean', False),
+ ('SMAH0406', 'inv-pythagoras', 'find-c', 'Find the hypotenuse in radical form', 'pythagorean', False),
+ ('SN870780', 'inv-pythagoras', 'find-m', 'Find a side of a right triangle', 'pythagorean', False),
+ ('SMAH0535', 'inv-numerals', 'to-ten', 'Base 2 to base 10', 'number-representation', False),
+ ('SMAH0446', 'inv-numerals', 'six-bit', 'Six-digit base 2 to base 10', 'number-representation', False),
+ ('SMAH0451', 'inv-numerals', 'to-two', 'Base 10 to base 2', 'number-representation', False),
+ ('SMAH0365', 'inv-numerals', 'roman', 'Write a Roman numeral', 'number-representation', False),
+ ('SMAH0367', 'inv-numerals', 'roman-large', 'Write a Roman numeral for a large number', 'number-representation', False),
+ ('SMAH0366', 'inv-numerals', 'roman-from', 'Read a Roman numeral', 'number-representation', False),
+]
+
+def c1_record(rec):
+    return 'course-1-en:bank:C1_Section%s:item:%s' % (rec[4:6], rec)
+
+
+def emit(path, text):
+    """Write a generated file, or in --check mode record whether the committed file differs."""
+    if CHECK:
+        current = path.read_text() if path.exists() else None
+        if current != text:
+            STALE.append(str(path.relative_to(root)))
+    else:
+        path.write_text(text)
+
+
+def main():
+    from port_c1_tasks import TASKS_C1
+    inv = json.loads((root / 'curriculum/course-inventory/v0.1/course-87-en.json').read_text())
+    inv += json.loads((root / 'curriculum/course-inventory/v0.1/course-1-en.json').read_text())
+    lesson = {r['id']: r['lessonId'] for r in inv}
+    mapping_path = root / 'curriculum/source-mappings/port87-v0.1.json'
+    old = {m['sourceRecord']: m['sourceBlockSha256'] for m in json.loads(mapping_path.read_text())} if mapping_path.exists() else {}
+    hashes = {}
+    zpath = os.environ.get('SAXON_SOURCE_ZIP')
+    if zpath:
+        z = zipfile.ZipFile(zpath)
+        items = json.loads(z.read('course-87-en.json'))['items']
+        hashes = {i['id']: [b['sha256'] for b in i['blocks'] if b['type'] in (1, 3, 4, 5, 6, 8)] for i in items}
+        # ExamView records: the dynamic-data and rich-question segments.
+        hashes.update({i['id']: [i['dynamic_data_sha256'], i['question_rich_data_sha256']] for i in json.loads(z.read('course-1-en.json'))['items']})
+    entries, mapping = [], []
+    rows = [('course-87-en:item:' + t[0], COURSE) + t[1:] for t in TASKS] + [(c1_record(t[0]), 'Course 1') + t[1:] for t in TASKS_C1]
+    for record, course, recipe, variant, title, topic, replaces in rows:
+        sid = record  # a replacement takes over the record's ID; course-banks drops the earlier entry
+        e = dict(sourceId=sid, sourceRecord=record, lessonId=lesson[record], course=course, family='structured-port87',
+                 recipe=recipe, title=title, topic=topic, origin='original-source-informed-port', exactLegacyReproduction=False)
+        if variant:
+            e['variant'] = variant
+        if replaces:
+            e['replacesEarlierAdaptation'] = True
+        entries.append(e)
+        h = hashes.get(record) or old.get(record)
+        assert h, 'no block hashes for ' + record + ' (set SAXON_SOURCE_ZIP)'
+        mapping.append(dict(sourceId=sid, sourceRecord=record, lessonId=lesson[record], course=course, family='structured-port87',
+                            recipe=recipe, variant=variant, title=title, relationship='original-source-informed-port',
+                            exactLegacyReproduction=False, sourceBlockSha256=h))
+    assert len({e['sourceId'] for e in entries}) == len(entries)
+    emit(root / 'src/port87-map.js', '(function(root){const data=' + json.dumps(entries, ensure_ascii=False, separators=(',', ':')) +
+        ';if(typeof module!=="undefined"&&module.exports)module.exports=data;root.MathPort87Map=data;})(typeof globalThis!=="undefined"?globalThis:this);\n')
+    emit(mapping_path, json.dumps(mapping, indent=1, ensure_ascii=False) + '\n')
+    print('port tasks:', len(entries), '(8/7:', len(TASKS), '· Course 1:', len(TASKS_C1), ')')
+
+
+# ---------- parallel courses (coverage-parallel-courses-v0.1) ----------
+# key, task module, list name, course label (as in course-banks), inventory bank, recipe prefix, browser global.
+# Registered once here; a course adds tasks only in its own task list.
+PARALLEL = [
+    ('intermediate-4', 'port_i4_tasks', 'TASKS_I4', 'Intermediate 4', 'intermediate-4-en', 'i4-', 'MathPortIntermediate4Map'),
+    ('algebra-half', 'port_ah_tasks', 'TASKS_AH', 'Algebra 1/2', 'algebra-half-en', 'ah-', 'MathPortAlgebraHalfMap'),
+    ('algebra-1', 'port_a1_tasks', 'TASKS_A1', 'Algebra 1', 'algebra-1-en', 'a1-', 'MathPortAlgebra1Map'),
+    ('algebra-2', 'port_a2_tasks', 'TASKS_A2', 'Algebra 2', 'algebra-2-en', 'a2-', 'MathPortAlgebra2Map'),
+]
+
+
+def zip_hashes(bank):
+    """Block hashes for one bank from the private ZIP: ExamView items give their dynamic-data and rich-question
+    hashes (as Course 1 does); generator-script items give their script, question and answer block hashes (as 8/7)."""
+    zpath = os.environ.get('SAXON_SOURCE_ZIP')
+    if not zpath:
+        return {}
+    items = json.loads(zipfile.ZipFile(zpath).read(bank + '.json'))['items']
+    return {i['id']: ([i['dynamic_data_sha256'], i['question_rich_data_sha256']] if 'dynamic_data_sha256' in i
+                      else [b['sha256'] for b in i['blocks'] if b['type'] in (1, 3, 4, 5, 6, 8)]) for i in items}
+
+
+def build_course(key, module, listname, course, bank, prefix, glob_name):
+    import importlib
+    tasks = getattr(importlib.import_module(module), listname)
+    lesson = {r['id']: r['lessonId'] for r in json.loads((root / 'curriculum/course-inventory/v0.1' / (bank + '.json')).read_text())}
+    mapping_path = root / ('curriculum/source-mappings/port-%s-v0.1.json' % key)
+    old = {m['sourceRecord']: m['sourceBlockSha256'] for m in json.loads(mapping_path.read_text())} if mapping_path.exists() else {}
+    hashes = zip_hashes(bank) if tasks else {}
+    entries, mapping = [], []
+    for t in tasks:
+        assert len(t) == 6, '%s: each task is (record, recipe, variant, title, topic, replaces): %r' % (key, t)
+        record, recipe, variant, title, topic, replaces = t
+        assert record in lesson, '%s: %s is not a record in %s.json (use the full source ID)' % (key, record, bank)
+        assert recipe.startswith(prefix), '%s: recipe %s must start with %s' % (key, recipe, prefix)
+        assert title and topic and isinstance(replaces, bool), '%s: %s needs a title, a topic and True/False' % (key, record)
+        e = dict(sourceId=record, sourceRecord=record, lessonId=lesson[record], course=course, family='structured-port87',
+                 recipe=recipe, title=title, topic=topic, origin='original-source-informed-port', exactLegacyReproduction=False)
+        if variant:
+            e['variant'] = variant
+        if replaces:
+            e['replacesEarlierAdaptation'] = True
+        entries.append(e)
+        h = hashes.get(record) or old.get(record)
+        assert h, 'no block hashes for ' + record + ' (set SAXON_SOURCE_ZIP)'
+        mapping.append(dict(sourceId=record, sourceRecord=record, lessonId=lesson[record], course=course, family='structured-port87',
+                            recipe=recipe, variant=variant, title=title, relationship='original-source-informed-port',
+                            exactLegacyReproduction=False, sourceBlockSha256=h))
+    assert len({e['sourceId'] for e in entries}) == len(entries), key + ': a record is listed twice'
+    emit(root / ('src/port-%s-map.js' % key), '(function(root){const data=' + json.dumps(entries, ensure_ascii=False, separators=(',', ':')) +
+         ';if(typeof module!=="undefined"&&module.exports)module.exports=data;root.%s=data;})(typeof globalThis!=="undefined"?globalThis:this);\n' % glob_name)
+    # The source-mapping file exists only once the course has tasks (the coverage ledger reads every mapping file).
+    if entries:
+        emit(mapping_path, json.dumps(mapping, indent=1, ensure_ascii=False) + '\n')
+    elif mapping_path.exists():
+        if CHECK:
+            STALE.append(str(mapping_path.relative_to(root)))
+        else:
+            mapping_path.unlink()
+    print('port tasks (%s): %d' % (course, len(entries)))
+
+
+args = sys.argv[1:]
+CHECK = '--check' in args
+STALE = []
+only = args[args.index('--course') + 1] if '--course' in args else None
+assert only is None or only in [p[0] for p in PARALLEL], 'unknown course ' + str(only)
+if only is None:
+    main()
+for spec in PARALLEL:
+    if only in (None, spec[0]):
+        build_course(*spec)
+if CHECK:
+    if STALE:
+        sys.exit('Out of date (run the builder): ' + ', '.join(STALE))
+    print('port maps are up to date')

@@ -41,5 +41,7 @@ for line in p.stdout:
  b=ev(tree['left'],F(0))-ev(tree['right'],F(0));a=ev(tree['left'],F(1))-ev(tree['right'],F(1))-b
  assert a!=0 and -b/a==answer
  seen.add(q['sourceId']);count+=1
-assert p.wait()==0 and seen==set(rows) and count==len(rows)*2000
+moved=set(rows)-seen  # a row may leave the linear family only when a course port task serves that record (owner decision, 2026-10-16)
+ported=set(json.loads(subprocess.run(['node','-e',"const E=require('./src/course-banks.js');console.log(JSON.stringify(E.catalog.filter(x=>x.family!=='structured-linear').map(x=>x.sourceId)))"],cwd=root,capture_output=True,text=True,check=True).stdout))
+assert p.wait()==0 and moved<=ported and seen<=set(rows) and count==len(seen)*2000
 print(json.dumps({'result':'passed','templates':len(seen),'independentVariants':count}))

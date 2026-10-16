@@ -4,7 +4,7 @@ from fractions import Fraction as F
 from statistics import median,multimode
 import subprocess,json,math,re,xml.etree.ElementTree as ET
 root=Path(__file__).resolve().parents[1]
-js="""const E=require('./src/course-banks'),C=require('./src/reasoning-bank-map');for(const c of C)for(let index=0;index<200;index++){const q=E.generate(c.sourceId,{seed:'independent-reasoning',index});if(!E.checkAnswer(q,E.answerText(q)).answerCorrect)throw Error(c.recipe);if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'independent-reasoning',index})))throw Error('Replay');console.log(JSON.stringify({recipe:c.recipe,q,html:index<5?E.renderQuestion(q):null}));}"""
+js="""const E=require('./src/course-banks'),C=require('./src/reasoning-bank-map');for(const c of C.filter(c=>E.catalog.find(x=>x.sourceId===c.sourceId).family===c.family))/* entries replaced by a coverage port are audited by tests/port87.cjs */for(let index=0;index<200;index++){const q=E.generate(c.sourceId,{seed:'independent-reasoning',index});if(!E.checkAnswer(q,E.answerText(q)).answerCorrect)throw Error(c.recipe);if(JSON.stringify(q)!==JSON.stringify(E.generate(c.sourceId,{seed:'independent-reasoning',index})))throw Error('Replay');console.log(JSON.stringify({recipe:c.recipe,q,html:index<5?E.renderQuestion(q):null}));}"""
 lines=subprocess.check_output(['node','-e',js],cwd=root,text=True).splitlines()
 def rnd(x,k):return F(math.floor(x*10**k+.5),10**k)
 def squarefree(n):return all(n%(d*d) for d in range(2,math.isqrt(n)+1))
