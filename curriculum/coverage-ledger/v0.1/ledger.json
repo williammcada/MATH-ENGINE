@@ -75,6 +75,7 @@
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-16-i4-batch7-L41-45.json": "9f4d40d01471529fd0b616729f0df6c990f8fd06ac173bf0e3492008ad0a6475",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-16-i4-batch8-L46-52-I5.json": "9406cc7a628d122291d4c4b163402ee7448048706a553fac48821d2ca2ab5534",
 "curriculum/coverage-ledger/v0.1/decisions/2026-10-16-i4-batch9-L53-59.json": "4b16984205fbfe37c3a504fc17ec82cc5f45badf9a885d59f0235a028cc20fc7",
+"curriculum/coverage-ledger/v0.1/decisions/2026-10-17-i4-batch16-requests-R3.json": "11233f8d20ba626cb12e5aa33e84fc413f832a7358de2e03f7bf8b5bd9081523",
 "curriculum/source-mappings/advanced-v0.1.json": "740f9d6e25483a2838d5561a85c66c9eb3f67b7505a8ab9004353e5eb6883aa7",
 "curriculum/source-mappings/algebra-review-v0.1.json": "a4956b61d8353d4258097f2ea5ca8d7baf4031fdd9c090e344ca2ce366a29a0e",
 "curriculum/source-mappings/breadth-v0.1.json": "d8255409d16dcc8db7b45244ab1239896d13ac56ffe4f3eb2ecdd8778f5e4996",
@@ -86,7 +87,7 @@
 "curriculum/source-mappings/measurement-v0.1.json": "3ca7cc1cdb74fb6e1bf8741beea9c2787fe122befe28499e75bfd6d803409451",
 "curriculum/source-mappings/port-algebra-1-v0.1.json": "a2624146520b5043c3ea7e83fc4988b0a9ba87c6850cca276da16dd426487316",
 "curriculum/source-mappings/port-algebra-half-v0.1.json": "2ea688eb8df6e7a4ec592878fe0b10081386a29af8376575a4c694dc6beaafd8",
-"curriculum/source-mappings/port-intermediate-4-v0.1.json": "b6b10e5ca1f10c018afa70afe8be8375949127842d2eca1dbbbc38f48b65dea9",
+"curriculum/source-mappings/port-intermediate-4-v0.1.json": "89bbe3e1ee69f44fda9e9556d1ebf31ba10d5e8c35b9c46589f3c5ea5b5cd19a",
 "curriculum/source-mappings/port87-v0.1.json": "8e8d4d046b43e45b8f66e8ffafa35eeb2fa031a47859bd5dad25e0b74382e77b",
 "curriculum/source-mappings/proportions-v0.1.json": "85db6cf773c6c1a6bbad37f83cf3724becf552fee4bbf4154e2ade0bae7751af",
 "curriculum/source-mappings/quadratic-equations-v0.1.json": "51b5a6c7221720481df7ac7a3cf9b4561744ef910fee5427c8cd73d6c027f4a6",
@@ -98,12 +99,12 @@
 },
 "totals": {
 "open": 481,
-"covered-provisional": 138,
-"covered": 3363,
+"covered-provisional": 111,
+"covered": 3390,
 "consolidated": 1443,
 "retired": 0,
 "records": 5425,
-"percentComplete": 88.6,
+"percentComplete": 89.1,
 "percentIncludingProvisional": 91.1
 },
 "banks": {
@@ -159,12 +160,12 @@
 },
 "intermediate-4-en": {
 "open": 0,
-"covered-provisional": 27,
-"covered": 756,
+"covered-provisional": 0,
+"covered": 783,
 "consolidated": 605,
 "retired": 0,
 "records": 1388,
-"percentComplete": 98.1,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 }
 },
@@ -7949,12 +7950,12 @@
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:3823a1a809c4be66",
 "open": 0,
-"covered-provisional": 3,
-"covered": 5,
+"covered-provisional": 0,
+"covered": 8,
 "consolidated": 9,
 "retired": 0,
 "records": 17,
-"percentComplete": 82.4,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
@@ -8033,12 +8034,12 @@
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:c09706cbb249e88f",
 "open": 0,
-"covered-provisional": 3,
-"covered": 17,
+"covered-provisional": 0,
+"covered": 20,
 "consolidated": 8,
 "retired": 0,
 "records": 28,
-"percentComplete": 89.3,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
@@ -8081,12 +8082,12 @@
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:474c99a813241532",
 "open": 0,
-"covered-provisional": 2,
-"covered": 9,
+"covered-provisional": 0,
+"covered": 11,
 "consolidated": 10,
 "retired": 0,
 "records": 21,
-"percentComplete": 90.5,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
@@ -8117,12 +8118,12 @@
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:812c8c07c4ce487c",
 "open": 0,
-"covered-provisional": 1,
-"covered": 4,
+"covered-provisional": 0,
+"covered": 5,
 "consolidated": 6,
 "retired": 0,
 "records": 11,
-"percentComplete": 90.9,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
@@ -8141,12 +8142,12 @@
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:9881235c5b34faed",
 "open": 0,
-"covered-provisional": 2,
-"covered": 5,
+"covered-provisional": 0,
+"covered": 7,
 "consolidated": 10,
 "retired": 0,
 "records": 17,
-"percentComplete": 88.2,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
@@ -8165,12 +8166,12 @@
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:d8374ddfbb8a16e2",
 "open": 0,
-"covered-provisional": 1,
-"covered": 6,
+"covered-provisional": 0,
+"covered": 7,
 "consolidated": 5,
 "retired": 0,
 "records": 12,
-"percentComplete": 91.7,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
@@ -8249,12 +8250,12 @@
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section03:scope:55c0a1c1ef4f50e6",
 "open": 0,
-"covered-provisional": 1,
-"covered": 14,
+"covered-provisional": 0,
+"covered": 15,
 "consolidated": 3,
 "retired": 0,
 "records": 18,
-"percentComplete": 94.4,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
@@ -8285,12 +8286,12 @@
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section03:scope:a9aad0f657e900cb",
 "open": 0,
-"covered-provisional": 1,
-"covered": 7,
+"covered-provisional": 0,
+"covered": 8,
 "consolidated": 8,
 "retired": 0,
 "records": 16,
-"percentComplete": 93.8,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
@@ -8489,36 +8490,36 @@
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:36877bcb0f821f00",
 "open": 0,
-"covered-provisional": 3,
-"covered": 4,
+"covered-provisional": 0,
+"covered": 7,
 "consolidated": 17,
 "retired": 0,
 "records": 24,
-"percentComplete": 87.5,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4a14c65f2abdd241",
 "open": 0,
-"covered-provisional": 2,
-"covered": 4,
+"covered-provisional": 0,
+"covered": 6,
 "consolidated": 4,
 "retired": 0,
 "records": 10,
-"percentComplete": 80.0,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4bc3eaf0e220524d",
 "open": 0,
-"covered-provisional": 1,
-"covered": 21,
+"covered-provisional": 0,
+"covered": 22,
 "consolidated": 9,
 "retired": 0,
 "records": 31,
-"percentComplete": 96.8,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
@@ -8549,12 +8550,12 @@
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
 "open": 0,
-"covered-provisional": 3,
-"covered": 8,
+"covered-provisional": 0,
+"covered": 11,
 "consolidated": 13,
 "retired": 0,
 "records": 24,
-"percentComplete": 87.5,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
@@ -8645,12 +8646,12 @@
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:968fd080061b71aa",
 "open": 0,
-"covered-provisional": 1,
-"covered": 7,
+"covered-provisional": 0,
+"covered": 8,
 "consolidated": 8,
 "retired": 0,
 "records": 16,
-"percentComplete": 93.8,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
@@ -8789,12 +8790,12 @@
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:58a28320f52ecff5",
 "open": 0,
-"covered-provisional": 2,
-"covered": 5,
+"covered-provisional": 0,
+"covered": 7,
 "consolidated": 1,
 "retired": 0,
 "records": 8,
-"percentComplete": 75.0,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
@@ -9233,12 +9234,12 @@
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section10:scope:80cdbc7d73373392",
 "open": 0,
-"covered-provisional": 1,
-"covered": 4,
+"covered-provisional": 0,
+"covered": 5,
 "consolidated": 6,
 "retired": 0,
 "records": 11,
-"percentComplete": 90.9,
+"percentComplete": 100.0,
 "percentIncludingProvisional": 100.0
 },
 {
@@ -54510,12 +54511,13 @@
 "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00104",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:c09706cbb249e88f",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Add six one-digit numbers in a row, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00104"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00105",
@@ -54533,12 +54535,13 @@
 "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:c09706cbb249e88f",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Add seven one-digit numbers in a row, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00107",
@@ -54580,12 +54583,13 @@
 "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00110",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:c09706cbb249e88f",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Add seven one-digit numbers in a row, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00110"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00111",
@@ -54623,12 +54627,13 @@
 "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:3823a1a809c4be66",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Missing addend that makes a total of 100, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00115",
@@ -54644,12 +54649,13 @@
 "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:3823a1a809c4be66",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Missing two-digit addend among two-digit addends, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00117",
@@ -54679,12 +54685,13 @@
 "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:3823a1a809c4be66",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Missing addend among nine addends, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00120",
@@ -56084,12 +56091,13 @@
 "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00072",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:d8374ddfbb8a16e2",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Add a two-digit number to a three-digit number, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00072"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00073",
@@ -56105,12 +56113,13 @@
 "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00074",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:9881235c5b34faed",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Subtract dollar amounts in tens, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00074"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00075",
@@ -56148,12 +56157,13 @@
 "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00078",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:812c8c07c4ce487c",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Subtract a dollar amount from whole hundreds, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00078"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00079",
@@ -56189,12 +56199,13 @@
 "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00082",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:474c99a813241532",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Expanded form using multiplication, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00082"
-],
-"basis": "representations-v0.1.json",
-"family": "structured-representations"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00083",
@@ -56654,12 +56665,13 @@
 "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00125",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:9881235c5b34faed",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Subtract three-digit multiples of ten, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00125"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00126",
@@ -56887,12 +56899,13 @@
 "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00147",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:474c99a813241532",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Expanded form using multiplication, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00147"
-],
-"basis": "representations-v0.1.json",
-"family": "structured-representations"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00148",
@@ -57550,12 +57563,13 @@
 "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00054",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section03:scope:a9aad0f657e900cb",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Elapsed time from p.m. to a.m., with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00054"
-],
-"basis": "breadth-v0.1.json",
-"family": "structured-breadth"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00055",
@@ -57795,12 +57809,13 @@
 "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section03:scope:55c0a1c1ef4f50e6",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Name the type of an angle, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076"
-],
-"basis": "representations-v0.1.json",
-"family": "structured-representations"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00077",
@@ -59982,12 +59997,13 @@
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4a14c65f2abdd241",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Subtract whole dollars from a money amount, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00040",
@@ -60375,12 +60391,13 @@
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4a14c65f2abdd241",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Subtract whole dollars from a money amount, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00075",
@@ -60432,12 +60449,13 @@
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00079",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4bc3eaf0e220524d",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Subtract a difference in parentheses, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00079"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00080",
@@ -60529,12 +60547,13 @@
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00088",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:36877bcb0f821f00",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): A decimal minus a sum of decimals in parentheses, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00088"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00089",
@@ -60648,34 +60667,37 @@
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00099",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Missing factor with a product in tens, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00099"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00100",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Missing two-digit factor, product written first, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00100"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00101",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Missing factor with a product in tens, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00101"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00102",
@@ -61065,12 +61087,13 @@
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00139",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:36877bcb0f821f00",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): A decimal minus a sum of decimals in parentheses, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00139"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00140",
@@ -61106,12 +61129,13 @@
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00143",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:36877bcb0f821f00",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Whole dollars minus a money difference in parentheses, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00143"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00144",
@@ -61875,12 +61899,13 @@
 "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:968fd080061b71aa",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): The month between two months, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054"
-],
-"basis": "reasoning-v0.1.json",
-"family": "structured-reasoning"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00055",
@@ -63868,23 +63893,25 @@
 "id": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:58a28320f52ecff5",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Missing factor with a two-digit answer, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:58a28320f52ecff5",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): Missing factor with a two-digit answer, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-equation"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00087",
@@ -66944,12 +66971,13 @@
 "id": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00080",
 "bank": "intermediate-4-en",
 "lessonId": "intermediate-4-en:bank:Int4_Section10:scope:80cdbc7d73373392",
-"state": "covered-provisional",
+"state": "covered",
+"batch": "I4-16 intermediate-4 integration of request R3",
+"reviewed": "2026-10-17",
+"note": "Replaces the earlier adaptation (owner-approved request R3, 2026-10-17): A decimal minus a sum of decimals in parentheses, with the source's structure, ranges and named distractors, in original wording.",
 "by": [
 "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00080"
-],
-"basis": "examview-arithmetic-v0.1.json",
-"family": "structured-arithmetic"
+]
 },
 {
 "id": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00081",

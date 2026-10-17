@@ -39,5 +39,6 @@ for line in p.stdout:
  if q['answer']['mode']=='money':assert (answer*100).denominator==1
  ids.add(q['sourceId']);count+=1
 # Six of the 100 ExamView arithmetic entries were replaced by Course 1 port tasks (Batch C1-1); tests/port87.cjs audits those.
-assert p.wait()==0;assert count==len(ids)*1000 and len(ids)==94
+# 22 more were replaced by Intermediate 4 port tasks (owner-approved request R3, 2026-10-17); tests/port-intermediate-4.cjs audits those.
+assert p.wait()==0;assert count==len(ids)*1000 and len(ids)==72
 print(json.dumps({'passed':True,'sourceMappings':len(ids),'independentFractionChecks':count}))

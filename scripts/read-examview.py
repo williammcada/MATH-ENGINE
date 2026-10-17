@@ -14,6 +14,8 @@ For each record it shows:
   - T1,131077 is a stacked (vertical) arithmetic layout;
   - T1,458753 is a long-division bracket;
   - T1,0 is a plain row;
+- ExamView's native drawing objects (shapes, circles, lines and drawn labels that are not bitmaps), one
+  `drawing:` line each: [display condition] name or label (coordinate and size slots, as stored);
 - the source key;
 - the algorithmic variables and constraints, as name := formula [sample value].
 
@@ -70,8 +72,8 @@ def runs(r, lo, hi):
         if r[p] == 0x09 and p + 13 <= hi and r[p + 9:p + 13] == b'\x00\x00\x00\x00' and r[p + 4] in (0, 0xff):
             p += 13
             s = ''
-            while p < hi and r[p] >= 0x20:
-                s += SYM.get(r[p], chr(r[p]))
+            while p < hi and (r[p] >= 0x20 or r[p] == 0x0d):
+                s += ' / ' if r[p] == 0x0d else SYM.get(r[p], chr(r[p]))
                 p += 1
             if s:
                 out.append(s)
@@ -84,8 +86,8 @@ def runs(r, lo, hi):
             out.append('{' + n + '}')
             p = q + 2
             s = ''
-            while p < hi and r[p] >= 0x20:
-                s += SYM.get(r[p], chr(r[p]))
+            while p < hi and (r[p] >= 0x20 or r[p] == 0x0d):
+                s += ' / ' if r[p] == 0x0d else SYM.get(r[p], chr(r[p]))
                 p += 1
             if s:
                 out.append(s)
@@ -130,6 +132,51 @@ def bitmaps(r):
     return out
 
 
+FONTS = {'Times New Roman', 'FSC Symbol', 'Arial', 'Symbol'}
+SLOT = re.compile(rb'((?:[\x20-\x7e]\x00)+)\x00\x00')
+NUMLIKE = re.compile(r'^[-+*/().\d\s]*\d[-+*/().\w\s]*$')
+
+
+def drawings(r, skip):
+    """ExamView native drawing records. Each record stores its strings in fixed UTF-16 slots: an optional display
+    condition (such as show_a=1), a shape name or drawn label, then coordinate and size slots (numbers or formulas
+    in the item's variables). Strings closer than 1000 bytes belong to one record; records are about 1800 bytes
+    apart. Font names, the question and choice text (skip) and variable fields (shown under fields:) are left out."""
+    recs, last = [], -10 ** 9
+    for m in SLOT.finditer(r):
+        t = m.group(1).decode('utf-16le')
+        if t in FONTS or t.strip() in skip or r[m.start() - 4:m.start()] == b'X\x00\x00\x00':
+            continue
+        if r[m.start() - 2:m.start()] != b'\x00\x00' or (len(t) > 2 and len(set(t.split())) * 2 > len(t)):
+            continue  # bytes inside a bitmap or other binary data, not a slot
+        if any(t and t in x for x in skip) and len(t) > 3:
+            continue
+        if m.start() - last > 1000:
+            recs.append([])
+        recs[-1].append(t)
+        last = m.end()
+    out = []
+    for rec in recs:
+        if len(rec) < 2 and NUMLIKE.match(rec[0]):
+            continue  # a lone number: object metadata, not a drawing
+        cond = [t for t in rec if re.match(r'^[A-Za-z_]\w*\s*(<>|<=|>=|=|<|>)\s*\S+$', t)]
+        name = [t for t in rec if t not in cond and not NUMLIKE.match(t)]
+        coords = [t for t in rec if t not in cond and t not in name]
+        # Single stray letters or punctuation come from binary data between slots; a drawn label has a word, a digit
+        # or is one operation sign.
+        name = [t for t in name if re.search(r'[A-Za-z]{2}|\d', t) or t.strip() in ('+', '-', '=', '<', '>', '×', '÷')]
+        if len(name) > 1 and not any(re.search(r'[A-Za-z0-9]', t) for t in name):
+            name = []  # several bare signs in a row: binary data, not a label
+        bare = not name or (len(name) == 1 and not re.search(r'[A-Za-z0-9]', name[0]))
+        if bare and (len(coords) > 6 or all(re.fullmatch(r'\d', c) for c in coords)):
+            continue
+        line = ('[%s] ' % ', '.join(cond) if cond else '') + (' '.join(name) or 'shape')
+        if coords:
+            line += ' (' + ', '.join(coords) + ')'
+        out.append(line)
+    return out
+
+
 def variables(d):
     groups, last = [], -10
     for m in re.finditer(rb'((?:[\x20-\x7e]\x00)+)\x00\x00', d):
@@ -157,6 +204,9 @@ def show(bank, sid, pics):
     x = xrefs(r)
     if x:
         print('  fields:', ', '.join(x))
+    skip = set(re.split(r'[\x0f\x10\x11]', i['question_text_with_controls'])) | set(x)
+    for d in drawings(r, {t.strip() for t in skip if t.strip()}):
+        print('  drawing:', d[:300])
     a = i['answer']
     print('A: %s %s' % (a.get('label', ''), a.get('text_with_controls', '').replace('\x0f', '▣')))
     end = bank.next.get(sid, o + n + 200000)
@@ -180,6 +230,7 @@ def show(bank, sid, pics):
 
 
 def main():
+    sys.stdout.reconfigure(errors='replace')  # some variable names decode to lone surrogates
     a = sys.argv[1:]
     if len(a) < 2:
         sys.exit(__doc__)

@@ -1,5 +1,5 @@
 {
-  "engine": "0.65.0",
+  "engine": "0.66.0-rc.1",
   "bankVersion": "0.33.0-rc.1",
   "seedsPerItem": 50,
   "checks": {
@@ -9,7 +9,7 @@
     },
     "catalog": {
       "status": "Passed",
-      "total": 4147,
+      "total": 4148,
       "k7Skills": 312,
       "k7ByGrade": {
         "1": 19,
@@ -21,7 +21,7 @@
         "7": 33,
         "K": 20
       },
-      "autoCheckedBankEntries": 3825,
+      "autoCheckedBankEntries": 3826,
       "continuitySkills": 10,
       "courses": [
         {
@@ -30,8 +30,8 @@
           "localGrade": 3,
           "placement": "grade-assigned",
           "teacherReviewedExcluded": 80,
-          "multiPartExcluded": 69,
-          "count": 867
+          "multiPartExcluded": 68,
+          "count": 868
         },
         {
           "bankId": "course-1-en",
@@ -82,29 +82,29 @@
     },
     "lesson-labels": {
       "status": "Passed",
-      "entries": 3825,
+      "entries": 3826,
       "lessons": 785,
       "source": "williammcada/test-and-practice-studio@16685a8"
     },
     "generate-all-seeds": {
       "status": "Passed",
-      "count": 207350
+      "count": 207400
     },
     "deterministic": {
       "status": "Passed",
-      "count": 207350
+      "count": 207400
     },
     "own-answer-accepted": {
       "status": "Passed",
-      "count": 207350
+      "count": 207400
     },
     "json-round-trip": {
       "status": "Passed",
-      "count": 207350
+      "count": 207400
     },
     "evaluate-own-answer-valid-and-correct": {
       "status": "Passed",
-      "count": 207350
+      "count": 207400
     },
     "unsimplified-fraction-feedback": {
       "status": "Passed",
@@ -117,27 +117,27 @@
     },
     "perturbed-answer-rejected": {
       "status": "Passed",
-      "count": 207350
+      "count": 207400
     },
     "single-answer-only": {
       "status": "Passed",
-      "count": 207350
+      "count": 207400
     },
     "keypad-keys-cover-answer": {
       "status": "Passed",
-      "count": 207350
+      "count": 207400
     },
     "answer-pad-uniform": {
       "status": "Passed",
-      "count": 162030
+      "count": 162031
     },
     "pad-typed-answers-accepted": {
       "status": "Passed",
-      "count": 162030
+      "count": 162031
     },
     "studio-items-identical": {
       "status": "Passed",
-      "count": 191250
+      "count": 191300
     },
     "teacher-variant-redraws": {
       "status": "Informational",
@@ -146,7 +146,7 @@
     },
     "bank-input-modes": {
       "status": "Informational",
-      "keypad": 2937,
+      "keypad": 2938,
       "keyboard": 888
     },
     "continuity-independent-oracle": {
@@ -182,20 +182,20 @@
     },
     "multi-part-tags": {
       "status": "Passed",
-      "tagged": 519,
-      "absent": 519,
-      "explained": 519,
-      "refused": 519,
-      "confirmed": 519,
+      "tagged": 518,
+      "absent": 518,
+      "explained": 518,
+      "refused": 518,
+      "confirmed": 518,
       "teacherReviewed": 891,
-      "gameBankEntries": 3825,
+      "gameBankEntries": 3826,
       "bankEntries": 5235
     },
     "related-links": {
       "status": "Passed",
-      "links": 8833,
-      "itemsWithEasier": 729,
-      "itemsWithHarder": 768
+      "links": 8922,
+      "itemsWithEasier": 735,
+      "itemsWithHarder": 781
     },
     "practice-gates": {
       "status": "Passed",
@@ -205,15 +205,15 @@
     },
     "bank-standards": {
       "status": "Passed",
-      "bankRows": 3825,
+      "bankRows": 3826,
       "withStandard": 185,
       "g96Samples": 2000,
       "g96NonPositive": 0
     },
     "bundle-provenance": {
       "status": "Passed",
-      "bundleSha256": "87901436ff078e46247af49eef02bbc86e1d0f2eb918d667676ee1b31e13fbca",
-      "contentHash": "2b2bd8f4599cf19ed292f12a70e6a0ce"
+      "bundleSha256": "3cdc2d68b2cc8ec1533455a0079f2f3d98b507e20a18459d81a95f800652f974",
+      "contentHash": "ed3fa9b8dc39780d604237ef85565630"
     }
   },
   "failures": [],

@@ -122,5 +122,7 @@ assert proc.wait()==0
 # 376 (prime-factorization), 570 (system-substitution), 690 (factor-trinomial), 742 (scientific-normalize), 752 (line-graph-choice),
 # 820 (polynomial-division), 859 (inequality-graph-choice, the only entry that exercised the eight inequality signs), 905 (slope-points),
 # 948 (line-points) and 955 (line-point-slope).
-assert count==12400 and len(recipes)==57 and len(domains)==4 and len(classes)==3 and len(letters)==4
+# Served by an Intermediate 4 port task instead (owner-approved request R3, 2026-10-17): TX4_S03_00054 (elapsed-overnight, the only
+# entry of that recipe); tests/port-intermediate-4.cjs audits it.
+assert count==12200 and len(recipes)==56 and len(domains)==4 and len(classes)==3 and len(letters)==4
 print(f'PASS: {count} independent generated cases, {len(recipes)} task recipes, {svgs} parsed SVGs; domain and system branches, inequality signs, unique graph choices, replay and answer checks')
