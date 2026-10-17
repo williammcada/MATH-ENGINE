@@ -1,6 +1,6 @@
-## Current release candidate — Engine 0.65.0 (2026-10-17)
+## Current release — Engine 0.65.0, verified (2026-10-17)
 
-U-18 layout amendment: AM, PM, $ and % move from the Algebra tab to a sixth row of the 123 tab, so time, money and percent answers need no tab switch. The owner found this when Mega Man Math's time questions seemed to lack AM/PM. Keys and checking are unchanged. Practice, main and phase-2 tests pass. See [change spec](change-specs/v0.65.0-pad-123-row.md). First built as 0.64.0-rc.1 on v0.63.0; renumbered 0.65.0 after v0.64.0 (Intermediate 4) was released, and rebuilt on it. Handbook `ca9877c` (v0.1.14). Release candidate; verification: `docs/verification/v0.65.0-release-verify.md`.
+U-18 layout amendment: AM, PM, $ and % move from the Algebra tab to a sixth row of the 123 tab, so time, money and percent answers need no tab switch. The owner found this when Mega Man Math's time questions seemed to lack AM/PM. Keys and checking are unchanged. Practice, main and phase-2 tests pass. See [change spec](change-specs/v0.65.0-pad-123-row.md). First built as 0.64.0-rc.1 on v0.63.0; renumbered 0.65.0 after v0.64.0 (Intermediate 4) was released, and rebuilt on it. Handbook `ca9877c` (v0.1.14). Verified release; verification: `docs/verification/v0.65.0-release-verify.md`.
 
 ## Previous checkpoint — Engine 0.37.0-rc.1 implementation checkpoint (2026-10-16)
 
