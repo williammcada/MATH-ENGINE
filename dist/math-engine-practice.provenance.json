@@ -1,10 +1,10 @@
 {
   "module": "dist/math-engine-practice.js",
-  "engineVersion": "0.65.1",
+  "engineVersion": "0.66.1",
   "bankVersion": "0.33.0-rc.1",
   "k7Version": "megaman-v0.7",
-  "bundleSha256": "cdf5bb180e8a54479c38a812036e0c8e08bae2269d64ed8d9c01c9c5765f6a4b",
-  "contentHash": "d087ef267c7ce6121b0c1f7c33640971",
+  "bundleSha256": "7dc00118a28cb78dca47e747496d835a947c49ba01eb17ce9daf1828223b1413",
+  "contentHash": "b056fb9669574fda02747c6d35187590",
   "baseline": "baselines/megaman-v0.7/shared-math.js",
   "baselineSha256": "78841274e50b07c6640913bb84fdd821247ed47030b575feb27760d35fcff1a0",
   "sources": [
@@ -96,12 +96,12 @@
   ],
   "gameExcluded": {
     "teacher-reviewed": 891,
-    "multi-part": 519
+    "multi-part": 518
   },
   "catalog": {
-    "total": 4147,
+    "total": 4148,
     "k7": 312,
-    "bank": 3825,
+    "bank": 3826,
     "continuity": 10
   }
 }

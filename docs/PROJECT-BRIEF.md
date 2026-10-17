@@ -1,8 +1,12 @@
-## Current checkpoint — Engine 0.65.1 implementation checkpoint (2026-10-17)
+## Current checkpoint — Engine 0.66.1 implementation checkpoint (2026-10-17)
 
-8/7 objective 21.6 (sum of primes): about half the items now contain 49, 51 and 57; every item has 2–6 primes. See [change spec](change-specs/v0.65.1-prime-sum.md). Not yet a verified release; hosts not yet updated.
+8/7 objective 21.6 (sum of primes): about half the items now contain 49, 51 and 57; every item has 2–6 primes. See [change spec](change-specs/v0.66.1-prime-sum.md). Not yet a verified release; hosts not yet updated.
 
-## Current release — Engine 0.65.0, verified (2026-10-17)
+## Current release — Engine 0.66.0, verified (2026-10-17)
+
+Intermediate 4 requests R1, R2 and R3, approved by the owner 2026-10-17. R1 and R2: the private ExamView reader keeps the row breaks of stacked arithmetic and lists native drawing objects. R3: 27 faithful Intermediate 4 ports replace the earlier structured adaptations, so Intermediate 4 is 100% complete (1,388 records: 783 covered, 605 consolidated). See [change spec](change-specs/v0.66.0-i4-requests.md). Handbook `7b11826` (v0.1.16). Verified release (candidate `e9f6f1f`); verification: `docs/verification/v0.66.0-release-verify.md`.
+
+## Previous release — Engine 0.65.0, verified (2026-10-17)
 
 U-18 layout amendment: AM, PM, $ and % move from the Algebra tab to a sixth row of the 123 tab, so time, money and percent answers need no tab switch. The owner found this when Mega Man Math's time questions seemed to lack AM/PM. Keys and checking are unchanged. Practice, main and phase-2 tests pass. See [change spec](change-specs/v0.65.0-pad-123-row.md). First built as 0.64.0-rc.1 on v0.63.0; renumbered 0.65.0 after v0.64.0 (Intermediate 4) was released, and rebuilt on it. Handbook `ca9877c` (v0.1.14). Verified release; verification: `docs/verification/v0.65.0-release-verify.md`.
 
@@ -243,3 +247,7 @@ Release that brings the parallel-course work onto `main`: the course setup, Alge
 ## v0.64.0 (2026-10-16)
 
 Release that brings Intermediate 4 onto `main`: all 15 coverage batches (I4-1 to I4-15, verified on `claude/coverage-intermediate-4` through `d2b97ad`), merged with v0.63.0. Intermediate 4 is 98.1% complete (1,388 records: 756 covered, 605 consolidated, none open); 27 records stay covered-provisional on their earlier adaptations until request R3 in `docs/change-specs/coverage-i4-pending-requests-v0.1.md` is decided. No other changes. Verification: `docs/verification/v0.64.0-release-verify.md`.
+
+## v0.66.0 (2026-10-17)
+
+Intermediate 4 requests R1–R3 (owner-approved 2026-10-17): reader row breaks and drawing objects, and 27 ports replacing the earlier structured adaptations (new variants in `i4-sub`, `i4-sub-zero`, `i4-paren`, `i4-missing-factor`, `i4-dec-add` and `i4-dates`). Intermediate 4 is 100% complete. The structured and breadth audit counts and three progression selectors follow the replacement. Change spec: `docs/change-specs/v0.66.0-i4-requests.md`. Verification: `docs/verification/v0.66.0-release-verify.md`.

@@ -1512,206 +1512,6 @@
     "samplePrompt": "Find n. Give an exact whole-number answer."
   },
   {
-    "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00104",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00104",
-    "bankId": "intermediate-4-en",
-    "topic": "whole-arithmetic",
-    "action": "Calculate an exact expression",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact expression",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:c09706cbb249e88f",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "whole-sum-formats",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "related: Add three or more whole-number operands. More addends but varied digit ranges; no blanket difficulty order."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Calculate. Give an exact integer answer."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106",
-    "bankId": "intermediate-4-en",
-    "topic": "whole-arithmetic",
-    "action": "Calculate an exact expression",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact expression",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:c09706cbb249e88f",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "whole-sum-formats",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "related: Add three or more whole-number operands. More addends but varied digit ranges; no blanket difficulty order."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Calculate. Give an exact integer answer."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00110",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00110",
-    "bankId": "intermediate-4-en",
-    "topic": "whole-arithmetic",
-    "action": "Calculate an exact expression",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact expression",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:c09706cbb249e88f",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "whole-sum-formats",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "related: Add three or more whole-number operands. More addends but varied digit ranges; no blanket difficulty order."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Calculate. Give an exact integer answer."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116",
-    "bankId": "intermediate-4-en",
-    "topic": "equations",
-    "action": "Find a missing number",
-    "recipe": "structured-equation",
-    "family": "structured-equation",
-    "title": "Find a missing number",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:3823a1a809c4be66",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "unknown-sum-length",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 2,
-      "status": "reviewed",
-      "reason": "related: Find a missing addend with three or four known addends. Collect more known terms; some templates use two-digit values. Number ranges and denominator structures overlap; the stages organize these contracts without a universal difficulty order."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Find n. Give an exact whole-number answer."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114",
-    "bankId": "intermediate-4-en",
-    "topic": "equations",
-    "action": "Find a missing number",
-    "recipe": "structured-equation",
-    "family": "structured-equation",
-    "title": "Find a missing number",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:3823a1a809c4be66",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "unknown-sum-length",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 2,
-      "status": "reviewed",
-      "reason": "related: Find a missing addend with three or four known addends. Collect more known terms; some templates use two-digit values. Number ranges and denominator structures overlap; the stages organize these contracts without a universal difficulty order."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Find F. Give an exact whole-number answer."
-  },
-  {
     "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00111",
     "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00111",
     "bankId": "intermediate-4-en",
@@ -1745,46 +1545,6 @@
       "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
     },
     "samplePrompt": "Find w. Give an exact whole-number answer."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119",
-    "bankId": "intermediate-4-en",
-    "topic": "equations",
-    "action": "Find a missing number",
-    "recipe": "structured-equation",
-    "family": "structured-equation",
-    "title": "Find a missing number",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:3823a1a809c4be66",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "unknown-sum-length",
-        "level": 3
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 2,
-      "status": "reviewed",
-      "reason": "related: Find a missing addend among eight known single-digit addends. Maintain a longer addition total before isolating the unknown. Number ranges and denominator structures overlap; the stages organize these contracts without a universal difficulty order."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Find q. Give an exact whole-number answer."
   },
   {
     "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00145",
@@ -1857,46 +1617,6 @@
     "samplePrompt": "Find b. Give an exact whole-number answer."
   },
   {
-    "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00072",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00072",
-    "bankId": "intermediate-4-en",
-    "topic": "whole-arithmetic",
-    "action": "Calculate an exact expression",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact expression",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:d8374ddfbb8a16e2",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "whole-addition",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Two whole operands with three or more digits; align places. Money template 37 draws whole amounts."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained similar demand"
-    },
-    "samplePrompt": "Calculate. Give an exact integer answer."
-  },
-  {
     "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00073",
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00073",
     "bankId": "intermediate-4-en",
@@ -1933,41 +1653,6 @@
       "chunk": 4,
       "status": "reconciled",
       "disposition": "retained similar demand"
-    },
-    "samplePrompt": "Calculate the amount in dollars. Every number shown is a dollar amount or a numerical multiplier; no rounding is needed."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00074",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00074",
-    "bankId": "intermediate-4-en",
-    "topic": "decimal-arithmetic",
-    "action": "Calculate an exact money amount",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact money amount",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:9881235c5b34faed",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "whole-subtraction",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Two-digit whole subtraction, nonnegative final result; money mode does not introduce fractional inputs."
     },
     "samplePrompt": "Calculate the amount in dollars. Every number shown is a dollar amount or a numerical multiplier; no rounding is needed."
   },
@@ -2040,41 +1725,6 @@
       "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
     },
     "samplePrompt": "Find d. Give an exact whole-number answer."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00078",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00078",
-    "bankId": "intermediate-4-en",
-    "topic": "decimal-arithmetic",
-    "action": "Calculate an exact money amount",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact money amount",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:812c8c07c4ce487c",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "whole-subtraction",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Three-digit minuend with two/three-digit whole subtrahend, nonnegative result."
-    },
-    "samplePrompt": "Calculate the amount in dollars. Every number shown is a dollar amount or a numerical multiplier; no rounding is needed."
   },
   {
     "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00079",
@@ -2258,41 +1908,6 @@
       "chunk": 1,
       "status": "reviewed",
       "reason": "Two-digit whole subtraction, nonnegative final result; money mode does not introduce fractional inputs."
-    },
-    "samplePrompt": "Calculate. Give an exact integer answer."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00125",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00125",
-    "bankId": "intermediate-4-en",
-    "topic": "whole-arithmetic",
-    "action": "Calculate an exact expression",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact expression",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:9881235c5b34faed",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "whole-subtraction",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Three-digit minuend with two/three-digit whole subtrahend, nonnegative result."
     },
     "samplePrompt": "Calculate. Give an exact integer answer."
   },
@@ -2577,116 +2192,6 @@
     "samplePrompt": "Calculate the amount in dollars. Every number shown is a dollar amount or a numerical multiplier; no rounding is needed."
   },
   {
-    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074",
-    "bankId": "intermediate-4-en",
-    "topic": "decimal-arithmetic",
-    "action": "Calculate an exact money amount",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact money amount",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4a14c65f2abdd241",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "decimal-operations",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Two-operand decimal or money addition/subtraction; align up to three decimal places, nonnegative final result. AST fractional zero-integer ranges remain variable."
-    },
-    "samplePrompt": "Calculate the amount in dollars. Every number shown is a dollar amount or a numerical multiplier; no rounding is needed."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00079",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00079",
-    "bankId": "intermediate-4-en",
-    "topic": "whole-arithmetic",
-    "action": "Calculate an exact expression",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact expression",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4bc3eaf0e220524d",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "whole-subtraction-grouping",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "extension: Subtract a parenthesized whole-number difference. Evaluate the inner difference before outer subtraction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained similar demand"
-    },
-    "samplePrompt": "Calculate. Give an exact integer answer."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00088",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00088",
-    "bankId": "intermediate-4-en",
-    "topic": "decimal-arithmetic",
-    "action": "Calculate an exact expression",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact expression",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:36877bcb0f821f00",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "decimal-subtraction-grouping",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction."
-    },
-    "samplePrompt": "Calculate. Give an exact decimal answer."
-  },
-  {
     "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00089",
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00089",
     "bankId": "intermediate-4-en",
@@ -2790,146 +2295,6 @@
       "reason": "Two-operand decimal or money addition/subtraction; align up to three decimal places, nonnegative final result. AST fractional zero-integer ranges remain variable."
     },
     "samplePrompt": "Calculate. Give an exact decimal answer."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039",
-    "bankId": "intermediate-4-en",
-    "topic": "decimal-arithmetic",
-    "action": "Calculate an exact money amount",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact money amount",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4a14c65f2abdd241",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "decimal-operations",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Two-operand decimal or money addition/subtraction; align up to three decimal places, nonnegative final result. AST fractional zero-integer ranges remain variable."
-    },
-    "samplePrompt": "Calculate the amount in dollars. Every number shown is a dollar amount or a numerical multiplier; no rounding is needed."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00099",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00099",
-    "bankId": "intermediate-4-en",
-    "topic": "equations",
-    "action": "Find a missing number",
-    "recipe": "structured-equation",
-    "family": "structured-equation",
-    "title": "Find a missing number",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "linear-equations",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 2,
-      "status": "reviewed",
-      "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
-    },
-    "samplePrompt": "Find a. Give an exact whole-number answer."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00100",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00100",
-    "bankId": "intermediate-4-en",
-    "topic": "equations",
-    "action": "Find a missing number",
-    "recipe": "structured-equation",
-    "family": "structured-equation",
-    "title": "Find a missing number",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "linear-equations",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 2,
-      "status": "reviewed",
-      "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
-    },
-    "samplePrompt": "Find k. Give an exact whole-number answer."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00101",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00101",
-    "bankId": "intermediate-4-en",
-    "topic": "equations",
-    "action": "Find a missing number",
-    "recipe": "structured-equation",
-    "family": "structured-equation",
-    "title": "Find a missing number",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "linear-equations",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 2,
-      "status": "reviewed",
-      "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
-    },
-    "samplePrompt": "Find m. Give an exact whole-number answer."
   },
   {
     "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00103",
@@ -3212,41 +2577,6 @@
     "samplePrompt": "Calculate. Give an exact decimal answer."
   },
   {
-    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00139",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00139",
-    "bankId": "intermediate-4-en",
-    "topic": "decimal-arithmetic",
-    "action": "Calculate an exact expression",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact expression",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:36877bcb0f821f00",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "decimal-subtraction-grouping",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction."
-    },
-    "samplePrompt": "Calculate. Give an exact decimal answer."
-  },
-  {
     "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00141",
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00141",
     "bankId": "intermediate-4-en",
@@ -3315,41 +2645,6 @@
       "reason": "Two-operand decimal or money addition/subtraction; align up to three decimal places, nonnegative final result. AST fractional zero-integer ranges remain variable."
     },
     "samplePrompt": "Calculate. Give an exact decimal answer."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00143",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00143",
-    "bankId": "intermediate-4-en",
-    "topic": "decimal-arithmetic",
-    "action": "Calculate an exact money amount",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact money amount",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:36877bcb0f821f00",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "decimal-subtraction-grouping",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction."
-    },
-    "samplePrompt": "Calculate the amount in dollars. Every number shown is a dollar amount or a numerical multiplier; no rounding is needed."
   },
   {
     "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00144",
@@ -3687,76 +2982,6 @@
     "samplePrompt": "Calculate. Give an exact integer answer."
   },
   {
-    "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085",
-    "bankId": "intermediate-4-en",
-    "topic": "equations",
-    "action": "Find a missing number",
-    "recipe": "structured-equation",
-    "family": "structured-equation",
-    "title": "Find a missing number",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:58a28320f52ecff5",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "linear-equations",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 2,
-      "status": "reviewed",
-      "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
-    },
-    "samplePrompt": "Find r. Give an exact whole-number answer."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086",
-    "bankId": "intermediate-4-en",
-    "topic": "equations",
-    "action": "Find a missing number",
-    "recipe": "structured-equation",
-    "family": "structured-equation",
-    "title": "Find a missing number",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:58a28320f52ecff5",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "linear-equations",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 2,
-      "status": "reviewed",
-      "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
-    },
-    "samplePrompt": "Find s. Give an exact whole-number answer."
-  },
-  {
     "sourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00077",
     "providerSourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00077",
     "bankId": "intermediate-4-en",
@@ -3823,41 +3048,6 @@
       "chunk": 1,
       "status": "reviewed",
       "reason": "Two-operand decimal or money addition/subtraction; align up to three decimal places, nonnegative final result. AST fractional zero-integer ranges remain variable."
-    },
-    "samplePrompt": "Calculate. Give an exact decimal answer."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00080",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00080",
-    "bankId": "intermediate-4-en",
-    "topic": "decimal-arithmetic",
-    "action": "Calculate an exact expression",
-    "recipe": "structured-arithmetic",
-    "family": "structured-arithmetic",
-    "title": "Calculate an exact expression",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section10:scope:80cdbc7d73373392",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "decimal-subtraction-grouping",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "structured"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction."
     },
     "samplePrompt": "Calculate. Give an exact decimal answer."
   },
@@ -10721,36 +9911,6 @@
     "samplePrompt": "Find the perimeter of this rectangle in centimeters. Use exact fractions or terminating decimals, without units."
   },
   {
-    "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00054",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00054",
-    "bankId": "intermediate-4-en",
-    "topic": "calendar-time",
-    "action": "Find elapsed time overnight",
-    "recipe": "elapsed-overnight",
-    "family": "structured-breadth",
-    "title": "Find elapsed time overnight",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section03:scope:a9aad0f657e900cb",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "clock-time",
-        "level": 3
-      }
-    ],
-    "answerKinds": [
-      "numbers"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "samplePrompt": "Find the elapsed time from 2:55 PM to 1:15 AM the next day. Enter whole hours; remaining minutes, in that order. Enter 2 values separated by semicolons. Use exact fractions or terminating decimals, without units."
-  },
-  {
     "sourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00071",
     "providerSourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00071",
     "bankId": "intermediate-4-en",
@@ -12155,126 +11315,6 @@
     "samplePrompt": "Write 402 in words."
   },
   {
-    "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00082",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00082",
-    "bankId": "intermediate-4-en",
-    "topic": "number-representation",
-    "action": "Write a three-digit number in expanded form",
-    "recipe": "expanded-small",
-    "family": "structured-representations",
-    "title": "Write a three-digit number in expanded form",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:474c99a813241532",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "number-notation-forms",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "expanded"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Expanded sums of place values; expanded-large has only two nonzero places and is not automatically harder than dense shorter numbers."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Write 839 in expanded form as a sum of its nonzero place values, greatest to least. For example, 205 is 200 + 5. Use + between addends; do not use multiplication."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00147",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00147",
-    "bankId": "intermediate-4-en",
-    "topic": "number-representation",
-    "action": "Expand a number with a zero tens digit",
-    "recipe": "expanded-zero",
-    "family": "structured-representations",
-    "title": "Expand a number with a zero tens digit",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:474c99a813241532",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "number-notation-forms",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "expanded"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 1,
-      "status": "reviewed",
-      "reason": "Expanded sums of place values; expanded-large has only two nonzero places and is not automatically harder than dense shorter numbers."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Write 901 in expanded form as a sum of its nonzero place values, greatest to least. For example, 205 is 200 + 5. Use + between addends; do not use multiplication."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076",
-    "bankId": "intermediate-4-en",
-    "topic": "angles",
-    "action": "Classify an angle",
-    "recipe": "angle-kind",
-    "family": "structured-representations",
-    "title": "Classify an angle",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section03:scope:55c0a1c1ef4f50e6",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "angle-classification-work",
-        "level": 2
-      }
-    ],
-    "answerKinds": [
-      "text"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Classify a displayed angle from 30 through 180 degrees as acute, right, obtuse or straight. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained similar demand"
-    },
-    "samplePrompt": "Classify the smaller angle shown: acute, right, obtuse or straight."
-  },
-  {
     "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00078",
     "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00078",
     "bankId": "intermediate-4-en",
@@ -13111,46 +12151,6 @@
       "reason": "Organize fifteen two-digit values into the supplied stems two through five with sorted leaves and duplicates; the stems and key are already provided. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
     },
     "samplePrompt": "Make a stem-and-leaf plot for 53, 47, 56, 28, 36, 30, 44, 48, 31, 51, 29, 43, 27, 35, 23. Stems are tens and leaves are ones; 2 | 7 means 27. Enter the leaves in ascending order for stems 2, 3, 4, 5, with spaces between leaves and semicolons between rows. Keep repeated leaves."
-  },
-  {
-    "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054",
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054",
-    "bankId": "intermediate-4-en",
-    "topic": "calendar-time",
-    "action": "Find the intervening month",
-    "recipe": "calendar-month",
-    "family": "structured-reasoning",
-    "title": "Find the intervening month",
-    "course": "Intermediate 4",
-    "localGrade": 3,
-    "placement": "grade-assigned",
-    "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:968fd080061b71aa",
-    "standard": null,
-    "alias": null,
-    "memberships": [
-      {
-        "trackId": "calendar-month-relations",
-        "level": 1
-      }
-    ],
-    "answerKinds": [
-      "text"
-    ],
-    "representations": [
-      "text or symbolic expression"
-    ],
-    "comparisonStatus": "reviewed progression",
-    "review": {
-      "chunk": 3,
-      "status": "reviewed",
-      "reason": "Name the month between two stated months in the same year; this recipe never crosses December. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
-    },
-    "crossCourseReview": {
-      "chunk": 4,
-      "status": "reconciled",
-      "disposition": "retained related-only cross-course evidence"
-    },
-    "samplePrompt": "Which month comes between February and April in the same calendar year?"
   },
   {
     "sourceId": "algebra-2-en:node:777",
@@ -117553,14 +116553,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:49c151eb795256bf",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-addition",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Jade spent $365 on new clothes and $89 on school supplies. How much money did Jade spend altogether? Enter exact numerical answers without units."
   },
   {
@@ -117678,14 +116683,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:d8374ddfbb8a16e2",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-addition",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Add: $775 + $370 + $150. Enter exact numerical answers without units."
   },
   {
@@ -117703,14 +116713,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:d8374ddfbb8a16e2",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-addition",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Add: $135 + $177 + $248. Enter exact numerical answers without units."
   },
   {
@@ -117728,14 +116743,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:d8374ddfbb8a16e2",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-addition",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Add. Enter exact numerical answers without units."
   },
   {
@@ -117753,14 +116773,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:d8374ddfbb8a16e2",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-addition",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Add. Enter exact numerical answers without units."
   },
   {
@@ -117778,14 +116803,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:d8374ddfbb8a16e2",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-addition",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Omar had $354. For winning a race, Omar was paid $216. Then how much money did Omar have? Enter exact numerical answers without units."
   },
   {
@@ -117803,14 +116833,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:d8374ddfbb8a16e2",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-addition",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Add. Enter exact numerical answers without units."
   },
   {
@@ -117828,14 +116863,23 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:9881235c5b34faed",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction",
+        "level": 1
+      },
+      {
+        "trackId": "whole-subtraction",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Subtract: 526 \u2212 414. Enter exact numerical answers without units."
   },
   {
@@ -117853,14 +116897,23 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:9881235c5b34faed",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction",
+        "level": 1
+      },
+      {
+        "trackId": "whole-subtraction",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Subtract. Enter exact numerical answers without units."
   },
   {
@@ -117878,14 +116931,23 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:9881235c5b34faed",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction",
+        "level": 1
+      },
+      {
+        "trackId": "whole-subtraction",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Subtract. Enter exact numerical answers without units."
   },
   {
@@ -117953,14 +117015,23 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:812c8c07c4ce487c",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction",
+        "level": 1
+      },
+      {
+        "trackId": "whole-subtraction",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Omar earned $40 walking dogs and spent $12 on a new toy. How much money did Omar have left? Enter exact numerical answers without units."
   },
   {
@@ -117978,14 +117049,23 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:812c8c07c4ce487c",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction",
+        "level": 1
+      },
+      {
+        "trackId": "whole-subtraction",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Subtract. Enter exact numerical answers without units."
   },
   {
@@ -118003,14 +117083,23 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:812c8c07c4ce487c",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction",
+        "level": 1
+      },
+      {
+        "trackId": "whole-subtraction",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Subtract. Enter exact numerical answers without units."
   },
   {
@@ -118028,14 +117117,23 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:812c8c07c4ce487c",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction",
+        "level": 1
+      },
+      {
+        "trackId": "whole-subtraction",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Subtract: 51 \u2212 44. Enter exact numerical answers without units."
   },
   {
@@ -118053,14 +117151,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:474c99a813241532",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "number-notation-forms",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "i4-expanded-sum"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Write 217 in expanded form."
   },
   {
@@ -118078,14 +117181,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:474c99a813241532",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "number-notation-forms",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "i4-expanded-sum"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Write 2,192 in expanded form."
   },
   {
@@ -118103,14 +117211,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:474c99a813241532",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "number-notation-forms",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Write the number for 100 + 90 + 8. Enter exact numerical answers without units."
   },
   {
@@ -120253,14 +119366,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section03:scope:a9aad0f657e900cb",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "clock-time",
+        "level": 3
+      }
+    ],
     "answerKinds": [
       "i4-time"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "If it is evening, what time was it 2 hours and 45 minutes ago, according to this clock? Write the time with a.m. or p.m."
   },
   {
@@ -120278,14 +119396,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section03:scope:a9aad0f657e900cb",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "clock-time",
+        "level": 3
+      }
+    ],
     "answerKinds": [
       "i4-time"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "If it is afternoon, what time will it be 5 hours and 30 minutes from now, according to this clock? Write the time with a.m. or p.m."
   },
   {
@@ -120303,14 +119426,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section03:scope:a9aad0f657e900cb",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "clock-time",
+        "level": 3
+      }
+    ],
     "answerKinds": [
       "i4-time"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "If it is a quarter to nine in the morning, what time will it be in 3 hours and 45 minutes? Write the time with a.m. or p.m."
   },
   {
@@ -120328,14 +119456,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section03:scope:a9aad0f657e900cb",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "clock-time",
+        "level": 3
+      }
+    ],
     "answerKinds": [
       "i4-time"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "It takes Wes 40 minutes to ride a bike to work. At what time should Wes start riding to arrive at 12:30 p.m.? Write the time with a.m. or p.m."
   },
   {
@@ -120478,14 +119611,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section03:scope:1465d0a6fa1ed212",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "clock-time",
+        "level": 3
+      }
+    ],
     "answerKinds": [
       "i4-time"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "The clock shows the end of soccer practice in the afternoon. If practice lasts 45 minutes, at what time does practice start? Write the time with a.m. or p.m."
   },
   {
@@ -122778,14 +121916,23 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "decimal"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Subtract. Use a dollar sign and a decimal point."
   },
   {
@@ -122803,14 +121950,23 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "decimal"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Subtract. Use a dollar sign and a decimal point."
   },
   {
@@ -122828,14 +121984,23 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Subtract. Enter exact numerical answers without units."
   },
   {
@@ -122853,14 +122018,23 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "decimal"
     ],
     "representations": [
       "diagram and text"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Subtract. Use a dollar sign and a decimal point."
   },
   {
@@ -122878,14 +122052,23 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "decimal"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Omar paid $10.00 for an item that cost $7.40. How much money should Omar get back?"
   },
   {
@@ -123228,14 +122411,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4bc3eaf0e220524d",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Solve: 19 \u2212 (4 + 5) Enter exact numerical answers without units."
   },
   {
@@ -123253,14 +122441,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4bc3eaf0e220524d",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Solve: (19 \u2212 2) \u2212 5 Enter exact numerical answers without units."
   },
   {
@@ -123278,14 +122471,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4bc3eaf0e220524d",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Solve: 451 \u2212 (7 \u00d7 12) Enter exact numerical answers without units."
   },
   {
@@ -123303,14 +122501,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4bc3eaf0e220524d",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Solve: 3006 \u2212 (328 \u00d7 5) Enter exact numerical answers without units."
   },
   {
@@ -123328,14 +122531,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4bc3eaf0e220524d",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Solve: 46 + (4 \u00d7 8) Enter exact numerical answers without units."
   },
   {
@@ -123353,14 +122561,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4bc3eaf0e220524d",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Solve: 5 \u00d7 (2 + 2) Enter exact numerical answers without units."
   },
   {
@@ -123378,14 +122591,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4bc3eaf0e220524d",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Solve: 6 \u00d7 (6 \u2212 2) + 2 Enter exact numerical answers without units."
   },
   {
@@ -123403,14 +122621,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4bc3eaf0e220524d",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Solve: 400 \u00f7 (32 \u00f7 8) Enter exact numerical answers without units."
   },
   {
@@ -123428,14 +122651,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4bc3eaf0e220524d",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Solve: \u221a81 + 30 \u00f7 6 Enter exact numerical answers without units."
   },
   {
@@ -123778,14 +123006,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:2d8c9121ee7a7dfa",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "whole-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "numbers"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Solve: \u221a36 \u00f7 3 Enter exact numerical answers without units."
   },
   {
@@ -124103,14 +123336,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:36877bcb0f821f00",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "decimal-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "decimal"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Add: 15 + 19.04 + 16.4"
   },
   {
@@ -124128,14 +123366,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:36877bcb0f821f00",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "decimal-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "decimal"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Subtract: 22.66 \u2212 5.8"
   },
   {
@@ -124153,14 +123396,19 @@
     "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:36877bcb0f821f00",
     "standard": null,
     "alias": null,
-    "memberships": [],
+    "memberships": [
+      {
+        "trackId": "decimal-subtraction-grouping",
+        "level": 2
+      }
+    ],
     "answerKinds": [
       "i4-num-unit"
     ],
     "representations": [
       "text or symbolic expression"
     ],
-    "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
+    "comparisonStatus": "reviewed progression",
     "samplePrompt": "Each block weighs 0.5 pound. How many pounds do 9 blocks weigh?"
   },
   {
@@ -133713,6 +132961,1030 @@
     ],
     "comparisonStatus": "topic reviewed; no validated harder/easier comparison",
     "samplePrompt": "(a) What is XIV in our number system? (b) What is 1718 in Roman numerals? Write the two answers, separated by a semicolon."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00104",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00104",
+    "bankId": "intermediate-4-en",
+    "topic": "whole-arithmetic",
+    "action": "Add six one-digit numbers in a row",
+    "recipe": "i4-add-row",
+    "family": "structured-port87",
+    "title": "Add six one-digit numbers in a row",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:c09706cbb249e88f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-sum-formats",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "related: Add three or more whole-number operands. More addends but varied digit ranges; no blanket difficulty order."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "Add: 7 + 9 + 2 + 2 + 1 + 2. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106",
+    "bankId": "intermediate-4-en",
+    "topic": "whole-arithmetic",
+    "action": "Add seven one-digit numbers in a row",
+    "recipe": "i4-add-row",
+    "family": "structured-port87",
+    "title": "Add seven one-digit numbers in a row",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:c09706cbb249e88f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-sum-formats",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "related: Add three or more whole-number operands. More addends but varied digit ranges; no blanket difficulty order."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "Add: 1 + 2 + 3 + 7 + 2 + 1 + 3. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00110",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00110",
+    "bankId": "intermediate-4-en",
+    "topic": "whole-arithmetic",
+    "action": "Add seven one-digit numbers in a row",
+    "recipe": "i4-add-row",
+    "family": "structured-port87",
+    "title": "Add seven one-digit numbers in a row",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:c09706cbb249e88f",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-sum-formats",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "related: Add three or more whole-number operands. More addends but varied digit ranges; no blanket difficulty order."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "Add: 8 + 5 + 7 + 3 + 5 + 7 + 5. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114",
+    "bankId": "intermediate-4-en",
+    "topic": "equations",
+    "action": "Missing addend that makes a total of 100",
+    "recipe": "i4-missing-row",
+    "family": "structured-port87",
+    "title": "Missing addend that makes a total of 100",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:3823a1a809c4be66",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 2,
+      "status": "reviewed",
+      "reason": "related: Find a missing addend with three or four known addends. Collect more known terms; some templates use two-digit values. Number ranges and denominator structures overlap; the stages organize these contracts without a universal difficulty order."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "Find the missing addend: 18 + 17 + 12 + 21 + y = 100. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116",
+    "bankId": "intermediate-4-en",
+    "topic": "equations",
+    "action": "Missing two-digit addend among two-digit addends",
+    "recipe": "i4-missing-row",
+    "family": "structured-port87",
+    "title": "Missing two-digit addend among two-digit addends",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:3823a1a809c4be66",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "unknown-sum-length",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 2,
+      "status": "reviewed",
+      "reason": "related: Find a missing addend with three or four known addends. Collect more known terms; some templates use two-digit values. Number ranges and denominator structures overlap; the stages organize these contracts without a universal difficulty order."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "If 71 + 70 + 30 + 84 + p = 328, then what number is p? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119",
+    "bankId": "intermediate-4-en",
+    "topic": "equations",
+    "action": "Missing addend among nine addends",
+    "recipe": "i4-missing-row",
+    "family": "structured-port87",
+    "title": "Missing addend among nine addends",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section01:scope:3823a1a809c4be66",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "unknown-sum-length",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 2,
+      "status": "reviewed",
+      "reason": "related: Find a missing addend among eight known single-digit addends. Maintain a longer addition total before isolating the unknown. Number ranges and denominator structures overlap; the stages organize these contracts without a universal difficulty order."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "If 2 + 7 + 2 + 8 + 6 + b + 2 + 8 + 4 = 58, then what number is b? Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00072",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00072",
+    "bankId": "intermediate-4-en",
+    "topic": "whole-arithmetic",
+    "action": "Add a two-digit number to a three-digit number",
+    "recipe": "i4-add-3digit",
+    "family": "structured-port87",
+    "title": "Add a two-digit number to a three-digit number",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:d8374ddfbb8a16e2",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-addition",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Two whole operands with three or more digits; align places. Money template 37 draws whole amounts."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained similar demand"
+    },
+    "samplePrompt": "Add: 446 + 89. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00074",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00074",
+    "bankId": "intermediate-4-en",
+    "topic": "whole-arithmetic",
+    "action": "Subtract dollar amounts in tens",
+    "recipe": "i4-sub",
+    "family": "structured-port87",
+    "title": "Subtract dollar amounts in tens",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:9881235c5b34faed",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-subtraction",
+        "level": 1
+      },
+      {
+        "trackId": "whole-subtraction",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Two-digit whole subtraction, nonnegative final result; money mode does not introduce fractional inputs."
+    },
+    "samplePrompt": "Subtract: $590 \u2212 $270. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00125",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00125",
+    "bankId": "intermediate-4-en",
+    "topic": "whole-arithmetic",
+    "action": "Subtract three-digit multiples of ten",
+    "recipe": "i4-sub",
+    "family": "structured-port87",
+    "title": "Subtract three-digit multiples of ten",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:9881235c5b34faed",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-subtraction",
+        "level": 1
+      },
+      {
+        "trackId": "whole-subtraction",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Three-digit minuend with two/three-digit whole subtrahend, nonnegative result."
+    },
+    "samplePrompt": "Subtract: 690 \u2212 290. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00078",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00078",
+    "bankId": "intermediate-4-en",
+    "topic": "whole-arithmetic",
+    "action": "Subtract a dollar amount from whole hundreds",
+    "recipe": "i4-sub",
+    "family": "structured-port87",
+    "title": "Subtract a dollar amount from whole hundreds",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:812c8c07c4ce487c",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-subtraction",
+        "level": 1
+      },
+      {
+        "trackId": "whole-subtraction",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Three-digit minuend with two/three-digit whole subtrahend, nonnegative result."
+    },
+    "samplePrompt": "Subtract: $500 \u2212 $143. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00147",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00147",
+    "bankId": "intermediate-4-en",
+    "topic": "number-representation",
+    "action": "Expanded form using multiplication",
+    "recipe": "i4-expanded-form",
+    "family": "structured-port87",
+    "title": "Expanded form using multiplication",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:474c99a813241532",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "number-notation-forms",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "i4-expanded-products"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Expanded sums of place values; expanded-large has only two nonzero places and is not automatically harder than dense shorter numbers."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "Write 904 in expanded form, using multiplication, for example (3 \u00d7 100) + (5 \u00d7 10) + 2."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00082",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00082",
+    "bankId": "intermediate-4-en",
+    "topic": "number-representation",
+    "action": "Expanded form using multiplication",
+    "recipe": "i4-expanded-form",
+    "family": "structured-port87",
+    "title": "Expanded form using multiplication",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section02:scope:474c99a813241532",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "number-notation-forms",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "i4-expanded-products"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Expanded sums of place values; expanded-large has only two nonzero places and is not automatically harder than dense shorter numbers."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "Write 834 in expanded form, using multiplication, for example (3 \u00d7 100) + (5 \u00d7 10) + 2."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076",
+    "bankId": "intermediate-4-en",
+    "topic": "angles",
+    "action": "Name the type of an angle",
+    "recipe": "i4-angle-name",
+    "family": "structured-port87",
+    "title": "Name the type of an angle",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section03:scope:55c0a1c1ef4f50e6",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "angle-classification-work",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "diagram and text"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Classify a displayed angle from 30 through 180 degrees as acute, right, obtuse or straight. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained similar demand"
+    },
+    "samplePrompt": "What type of angle is shown below: acute, right, obtuse or straight?"
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00054",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00054",
+    "bankId": "intermediate-4-en",
+    "topic": "calendar-time",
+    "action": "Elapsed time from p.m. to a.m.",
+    "recipe": "i4-clock2",
+    "family": "structured-port87",
+    "title": "Elapsed time from p.m. to a.m.",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section03:scope:a9aad0f657e900cb",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "clock-time",
+        "level": 3
+      }
+    ],
+    "answerKinds": [
+      "duration"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "samplePrompt": "Find the elapsed time from 5:21 p.m. to 2:44 a.m."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039",
+    "bankId": "intermediate-4-en",
+    "topic": "decimal-arithmetic",
+    "action": "Subtract whole dollars from a money amount",
+    "recipe": "i4-sub-zero",
+    "family": "structured-port87",
+    "title": "Subtract whole dollars from a money amount",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4a14c65f2abdd241",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-subtraction-grouping",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Two-operand decimal or money addition/subtraction; align up to three decimal places, nonnegative final result. AST fractional zero-integer ranges remain variable."
+    },
+    "samplePrompt": "Subtract: $3.68 \u2212 $2"
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074",
+    "bankId": "intermediate-4-en",
+    "topic": "decimal-arithmetic",
+    "action": "Subtract whole dollars from a money amount",
+    "recipe": "i4-sub-zero",
+    "family": "structured-port87",
+    "title": "Subtract whole dollars from a money amount",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4a14c65f2abdd241",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-subtraction-grouping",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "Two-operand decimal or money addition/subtraction; align up to three decimal places, nonnegative final result. AST fractional zero-integer ranges remain variable."
+    },
+    "samplePrompt": "Subtract: $6.76 \u2212 $1"
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00079",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00079",
+    "bankId": "intermediate-4-en",
+    "topic": "expressions",
+    "action": "Subtract a difference in parentheses",
+    "recipe": "i4-paren",
+    "family": "structured-port87",
+    "title": "Subtract a difference in parentheses",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:4bc3eaf0e220524d",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "whole-subtraction-grouping",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "extension: Subtract a parenthesized whole-number difference. Evaluate the inner difference before outer subtraction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained similar demand"
+    },
+    "samplePrompt": "Solve: 10 \u2212 (4 \u2212 1) Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00099",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00099",
+    "bankId": "intermediate-4-en",
+    "topic": "equations",
+    "action": "Missing factor with a product in tens",
+    "recipe": "i4-missing-factor",
+    "family": "structured-port87",
+    "title": "Missing factor with a product in tens",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 2,
+      "status": "reviewed",
+      "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
+    },
+    "samplePrompt": "Find the missing factor: 4w = 80. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00100",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00100",
+    "bankId": "intermediate-4-en",
+    "topic": "equations",
+    "action": "Missing two-digit factor, product written first",
+    "recipe": "i4-missing-factor",
+    "family": "structured-port87",
+    "title": "Missing two-digit factor, product written first",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 2,
+      "status": "reviewed",
+      "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
+    },
+    "samplePrompt": "Find the missing factor: 208 = 8d. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00101",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00101",
+    "bankId": "intermediate-4-en",
+    "topic": "equations",
+    "action": "Missing factor with a product in tens",
+    "recipe": "i4-missing-factor",
+    "family": "structured-port87",
+    "title": "Missing factor with a product in tens",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:947dbaa533a4cd95",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 2,
+      "status": "reviewed",
+      "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
+    },
+    "samplePrompt": "Find the missing factor: 7x = 210. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00088",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00088",
+    "bankId": "intermediate-4-en",
+    "topic": "decimal-arithmetic",
+    "action": "A decimal minus a sum of decimals in parentheses",
+    "recipe": "i4-dec-add",
+    "family": "structured-port87",
+    "title": "A decimal minus a sum of decimals in parentheses",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:36877bcb0f821f00",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-subtraction-grouping",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction."
+    },
+    "samplePrompt": "7.62 \u2212 (2.3 + 2.92) equals"
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00139",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00139",
+    "bankId": "intermediate-4-en",
+    "topic": "decimal-arithmetic",
+    "action": "A decimal minus a sum of decimals in parentheses",
+    "recipe": "i4-dec-add",
+    "family": "structured-port87",
+    "title": "A decimal minus a sum of decimals in parentheses",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:36877bcb0f821f00",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-subtraction-grouping",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction."
+    },
+    "samplePrompt": "4.65 \u2212 (1.4 + 1.42) equals"
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00080",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00080",
+    "bankId": "intermediate-4-en",
+    "topic": "decimal-arithmetic",
+    "action": "A decimal minus a sum of decimals in parentheses",
+    "recipe": "i4-dec-add",
+    "family": "structured-port87",
+    "title": "A decimal minus a sum of decimals in parentheses",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section10:scope:80cdbc7d73373392",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-subtraction-grouping",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction."
+    },
+    "samplePrompt": "4.99 \u2212 (1.3 + 0.76) equals"
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00143",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00143",
+    "bankId": "intermediate-4-en",
+    "topic": "decimal-arithmetic",
+    "action": "Whole dollars minus a money difference in parentheses",
+    "recipe": "i4-sub-zero",
+    "family": "structured-port87",
+    "title": "Whole dollars minus a money difference in parentheses",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section05:scope:36877bcb0f821f00",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "decimal-operations",
+        "level": 1
+      },
+      {
+        "trackId": "decimal-subtraction-grouping",
+        "level": 2
+      }
+    ],
+    "answerKinds": [
+      "decimal"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 1,
+      "status": "reviewed",
+      "reason": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction."
+    },
+    "samplePrompt": "$30 \u2212 ($27.11 \u2212 61\u00a2)"
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054",
+    "bankId": "intermediate-4-en",
+    "topic": "calendar-time",
+    "action": "The month between two months",
+    "recipe": "i4-dates",
+    "family": "structured-port87",
+    "title": "The month between two months",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section06:scope:968fd080061b71aa",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "calendar-month-relations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "text"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 3,
+      "status": "reviewed",
+      "reason": "Name the month between two stated months in the same year; this recipe never crosses December. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction."
+    },
+    "crossCourseReview": {
+      "chunk": 4,
+      "status": "reconciled",
+      "disposition": "retained related-only cross-course evidence"
+    },
+    "samplePrompt": "Think about a calendar. What month comes between September and November?"
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085",
+    "bankId": "intermediate-4-en",
+    "topic": "equations",
+    "action": "Missing factor with a two-digit answer",
+    "recipe": "i4-missing-factor",
+    "family": "structured-port87",
+    "title": "Missing factor with a two-digit answer",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:58a28320f52ecff5",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 2,
+      "status": "reviewed",
+      "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
+    },
+    "samplePrompt": "Find the missing factor: 3t = 36. Enter exact numerical answers without units."
+  },
+  {
+    "sourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086",
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086",
+    "bankId": "intermediate-4-en",
+    "topic": "equations",
+    "action": "Missing factor with a two-digit answer",
+    "recipe": "i4-missing-factor",
+    "family": "structured-port87",
+    "title": "Missing factor with a two-digit answer",
+    "course": "Intermediate 4",
+    "localGrade": 3,
+    "placement": "grade-assigned",
+    "lessonId": "intermediate-4-en:bank:Int4_Section07:scope:58a28320f52ecff5",
+    "standard": null,
+    "alias": null,
+    "memberships": [
+      {
+        "trackId": "linear-equations",
+        "level": 1
+      }
+    ],
+    "answerKinds": [
+      "numbers"
+    ],
+    "representations": [
+      "text or symbolic expression"
+    ],
+    "comparisonStatus": "reviewed progression",
+    "review": {
+      "chunk": 2,
+      "status": "reviewed",
+      "reason": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence."
+    },
+    "samplePrompt": "Find the missing factor: 3m = 39. Enter exact numerical answers without units."
   },
   {
     "sourceId": "algebra-half-en:node:4",

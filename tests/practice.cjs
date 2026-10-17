@@ -235,7 +235,7 @@ pass('related-links', { links: relatedLinks, itemsWithEasier: withEasier, itemsW
   pass('bank-standards', { bankRows: rows.length, withStandard: withStd.length, g96Samples: 2000, g96NonPositive: nonPositive });
 }
 
-// 5z. Engine 0.65.1: 8/7 21.6 sum of primes — half the items include 49, 51 and 57; 2–6 primes each
+// 5z. Engine 0.66.1: 8/7 21.6 sum of primes — half the items include 49, 51 and 57; 2–6 primes each
 {
   const id = 'bank:course-87-en:authored:MCADA-21.6', isPrime = x => x > 1 && Array.from({ length: Math.floor(Math.sqrt(x)) - 1 }, (_, i) => i + 2).every(d => x % d);
   const audit = get => { let traps = 0, bad = 0; for (let i = 0; i < 2000; i++) { const q = get(i), m = q.prompt.match(/between (\d+) and (\d+)/), a = +m[1], b = +m[2];
