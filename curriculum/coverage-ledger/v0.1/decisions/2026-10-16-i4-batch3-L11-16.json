@@ -1,0 +1,553 @@
+{
+ "batch": "I4-3 intermediate-4 lessons 11-16",
+ "date": "2026-10-16",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00111",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00011",
+   "note": "Same demand as the port task it points to (Missing two-digit addend without regrouping): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00008",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00008"
+   ],
+   "note": "Ported: Missing three-digit addend in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00009",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00009"
+   ],
+   "note": "Ported: Expanded form of a four-digit number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00010",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00010"
+   ],
+   "note": "Ported: Subtract two-digit numbers in a column with regrouping."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00011",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00011"
+   ],
+   "note": "Ported: Missing two-digit addend without regrouping."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00012",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00012"
+   ],
+   "note": "Ported: Subtract three-digit numbers without regrouping."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00013",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00013"
+   ],
+   "note": "Ported: Add three dollar amounts with a total over $1000."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00014",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00014"
+   ],
+   "note": "Ported: Missing two-digit number subtracted, in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00015",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00015"
+   ],
+   "note": "Ported: Missing addend in a story (totals to 31)."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00016",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00016"
+   ],
+   "note": "Ported: Subtract two-digit numbers in a column without regrouping."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00017",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00012",
+   "note": "Same demand as the port task it points to (Subtract three-digit numbers without regrouping): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00018",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00018"
+   ],
+   "note": "Ported: Subtract two-digit numbers in a column with regrouping."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00033",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00033"
+   ],
+   "note": "Ported: Missing three-digit number subtracted."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00034",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00034"
+   ],
+   "note": "Ported: Missing number subtracted from, with two-digit parts."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00035",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00008",
+   "note": "Same demand as the port task it points to (Missing three-digit addend in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00036",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00036"
+   ],
+   "note": "Ported: The number for an expanded form."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00037",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00010",
+   "note": "Same demand as the port task it points to (Subtract two-digit numbers in a column with regrouping): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00038",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00010",
+   "note": "Same demand as the port task it points to (Subtract two-digit numbers in a column with regrouping): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00039",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00039"
+   ],
+   "note": "Ported: Two-digit subtraction with a one-digit difference."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00040",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00011",
+   "note": "Same demand as the port task it points to (Missing two-digit addend without regrouping): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00041",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00011",
+   "note": "Same demand as the port task it points to (Missing two-digit addend without regrouping): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00042",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00126",
+   "note": "Same demand as the port task it points to (Missing two-digit addend in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00043",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00043"
+   ],
+   "note": "Ported: Add three-digit numbers in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00044",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00044"
+   ],
+   "note": "Ported: Add three-digit dollar amounts in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00045",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00045"
+   ],
+   "note": "Ported: Add three three-digit dollar amounts."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00046",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00046"
+   ],
+   "note": "Ported: Missing two-digit number subtracted from, in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00047",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00047"
+   ],
+   "note": "Ported: Missing number subtracted from, in a sentence."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00048",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00014",
+   "note": "Same demand as the port task it points to (Missing two-digit number subtracted, in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00049",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00015",
+   "note": "Same demand as the port task it points to (Missing addend in a story (totals to 31)): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00050",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00015",
+   "note": "Same demand as the port task it points to (Missing addend in a story (totals to 31)): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00051",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00051"
+   ],
+   "note": "Ported: Missing addend in a story (totals 35 to 46)."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00052",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00009",
+   "note": "Same demand as the port task it points to (Expanded form of a four-digit number): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00053",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00053"
+   ],
+   "note": "Ported: Expanded form of a three-digit number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00065",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00015",
+   "note": "Same demand as the port task it points to (Missing addend in a story (totals to 31)): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00066",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00066"
+   ],
+   "note": "Ported: How much more money is needed (amounts in words)."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00067",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00015",
+   "note": "Same demand as the port task it points to (Missing addend in a story (totals to 31)): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00068",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00015",
+   "note": "Same demand as the port task it points to (Missing addend in a story (totals to 31)): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00069",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00069"
+   ],
+   "note": "Ported: How many are left after two amounts are given away."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00070",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00070"
+   ],
+   "note": "Ported: Add a two-digit amount to a three-digit amount in a story."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00071",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00137",
+   "note": "Same demand as the port task it points to (Missing number subtracted from a teen number): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00073",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00044",
+   "note": "Same demand as the port task it points to (Add three-digit dollar amounts in a column): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00075",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00126",
+   "note": "Same demand as the port task it points to (Missing two-digit addend in a column): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00076",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00126",
+   "note": "Same demand as the port task it points to (Missing two-digit addend in a column): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00077",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00077"
+   ],
+   "note": "Ported: Subtract dollar amounts in a story, with regrouping."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00079",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00131",
+   "note": "Same demand as the port task it points to (Subtract two-digit dollar amounts in a column, with regrouping): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00080",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00025",
+   "note": "Same demand as the port task it points to (Write a three-digit number from words): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00081",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00127",
+   "note": "Same demand as the port task it points to (Missing two-digit number subtracted, in a column): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00107",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00015",
+   "note": "Same demand as the port task it points to (Missing addend in a story (totals to 31)): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00108",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00108"
+   ],
+   "note": "Ported: Missing two-digit addend in a story in words."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00109",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00066",
+   "note": "Same demand as the port task it points to (How much more money is needed (amounts in words)): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00110",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00110"
+   ],
+   "note": "Ported: Missing addend with a three-digit total in words."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00111",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00111"
+   ],
+   "note": "Ported: Distance between two towns west of a third."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00112",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00110",
+   "note": "Same demand as the port task it points to (Missing addend with a three-digit total in words): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00113",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00044",
+   "note": "Same demand as the port task it points to (Add three-digit dollar amounts in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00114",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00114"
+   ],
+   "note": "Ported: Add two three-digit dollar amounts in a story."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00115",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00043",
+   "note": "Same demand as the port task it points to (Add three-digit numbers in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00116",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00043",
+   "note": "Same demand as the port task it points to (Add three-digit numbers in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00117",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00014",
+   "note": "Same demand as the port task it points to (Missing two-digit number subtracted, in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00118",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00012",
+   "note": "Same demand as the port task it points to (Subtract three-digit numbers without regrouping): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00119",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00010",
+   "note": "Same demand as the port task it points to (Subtract two-digit numbers in a column with regrouping): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00120",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00126",
+   "note": "Same demand as the port task it points to (Missing two-digit addend in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00122",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00122"
+   ],
+   "note": "Ported: Add three-digit numbers with a sum over 1000."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00123",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00045",
+   "note": "Same demand as the port task it points to (Add three three-digit dollar amounts): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00124",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00016",
+   "note": "Same demand as the port task it points to (Subtract two-digit numbers in a column without regrouping): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00126",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00126"
+   ],
+   "note": "Ported: Missing two-digit addend in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00127",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00127"
+   ],
+   "note": "Ported: Missing two-digit number subtracted, in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00128",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00046",
+   "note": "Same demand as the port task it points to (Missing two-digit number subtracted from, in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00129",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00127",
+   "note": "Same demand as the port task it points to (Missing two-digit number subtracted, in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00130",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00010",
+   "note": "Same demand as the port task it points to (Subtract two-digit numbers in a column with regrouping): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00131",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00131"
+   ],
+   "note": "Ported: Subtract two-digit dollar amounts in a column, with regrouping."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00132",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00010",
+   "note": "Same demand as the port task it points to (Subtract two-digit numbers in a column with regrouping): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00133",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00133"
+   ],
+   "note": "Ported: Missing three-digit number subtracted, in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00134",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00134"
+   ],
+   "note": "Ported: Missing three-digit number subtracted from, in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00135",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00133",
+   "note": "Same demand as the port task it points to (Missing three-digit number subtracted, in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00136",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00134",
+   "note": "Same demand as the port task it points to (Missing three-digit number subtracted from, in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00137",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00137"
+   ],
+   "note": "Ported: Missing number subtracted from a teen number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00138",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00047",
+   "note": "Same demand as the port task it points to (Missing number subtracted from, in a sentence): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00139",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00126",
+   "note": "Same demand as the port task it points to (Missing two-digit addend in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00140",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00133",
+   "note": "Same demand as the port task it points to (Missing three-digit number subtracted, in a column): choice-only twin or repeated fixed item."
+  }
+ ]
+}

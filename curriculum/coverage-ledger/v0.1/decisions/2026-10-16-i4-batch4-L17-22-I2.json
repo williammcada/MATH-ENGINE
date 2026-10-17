@@ -1,0 +1,677 @@
+{
+ "batch": "I4-4 intermediate-4 lessons 17-20, investigation 2, lessons 21-22",
+ "date": "2026-10-16",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00001",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00060",
+   "note": "Same demand as the port task it points to (What represents the perimeter): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00002",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00058",
+   "note": "Same demand as the port task it points to (Measure an object in inches, centimeters and millimeters): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00003",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00003"
+   ],
+   "note": "Ported: Round hundreds of dollars and cents to the nearest dollar."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00004",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00026",
+   "note": "Same demand as the port task it points to (Round a three-digit number to the nearest ten): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00005",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00148",
+   "note": "Same demand as the port task it points to (Read a clock to the minute, with a.m. or p.m.): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00006",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00006"
+   ],
+   "note": "Ported: Read a speedometer marked in fives."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00007",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00007"
+   ],
+   "note": "Ported: Add a three-, a two- and a one-digit dollar amount."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00019",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00019"
+   ],
+   "note": "Ported: Perimeter of a rectangle."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00020",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00020"
+   ],
+   "note": "Ported: Perimeter of a triangle."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00021",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00095",
+   "note": "Same demand as the port task it points to (Unit equivalents for length): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00022",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00024",
+   "note": "Same demand as the port task it points to (Round dollars and cents to the nearest dollar): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00023",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00003",
+   "note": "Same demand as the port task it points to (Round hundreds of dollars and cents to the nearest dollar): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00024",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00024"
+   ],
+   "note": "Ported: Round dollars and cents to the nearest dollar."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00025",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00025"
+   ],
+   "note": "Ported: Round a two-digit number to the nearest ten."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00026",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00026"
+   ],
+   "note": "Ported: Round a three-digit number to the nearest ten."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00027",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00027"
+   ],
+   "note": "Ported: Round cents to the nearest ten cents."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00028",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00028"
+   ],
+   "note": "Ported: Read a Fahrenheit thermometer near freezing."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00029",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00006",
+   "note": "Same demand as the port task it points to (Read a speedometer marked in fives): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00030",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00030"
+   ],
+   "note": "Ported: Add four two-digit numbers in a row."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00031",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00007",
+   "note": "Same demand as the port task it points to (Add a three-, a two- and a one-digit dollar amount): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00032",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00032"
+   ],
+   "note": "Ported: Add a column of four two-digit numbers."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00054",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00054"
+   ],
+   "note": "Ported: Read a Celsius thermometer."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00055",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00148",
+   "note": "Same demand as the port task it points to (Read a clock to the minute, with a.m. or p.m.): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00056",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00056"
+   ],
+   "note": "Ported: Read a clock."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00057",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00056",
+   "note": "Same demand as the port task it points to (Read a clock): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00058",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00058"
+   ],
+   "note": "Ported: Measure an object in inches, centimeters and millimeters."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00059",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00059"
+   ],
+   "note": "Ported: The most appropriate unit of length."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00060",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00060"
+   ],
+   "note": "Ported: What represents the perimeter."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00061",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00093",
+   "note": "Same demand as the port task it points to (Measure an object with a centimeter ruler): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00062",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00020",
+   "note": "Same demand as the port task it points to (Perimeter of a triangle): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00063",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00105",
+   "note": "Same demand as the port task it points to (Side of a square from its perimeter): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00064",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00019",
+   "note": "Same demand as the port task it points to (Perimeter of a rectangle): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00083",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00007",
+   "note": "Same demand as the port task it points to (Add a three-, a two- and a one-digit dollar amount): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00084",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00084"
+   ],
+   "note": "Ported: Add four class sizes in a story."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00085",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00085"
+   ],
+   "note": "Ported: Read a Fahrenheit thermometer marked in 2s."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00086",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00086"
+   ],
+   "note": "Ported: How much warmer it became."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00087",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00087"
+   ],
+   "note": "Ported: The time some minutes after a clock time."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00088",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00024",
+   "note": "Same demand as the port task it points to (Round dollars and cents to the nearest dollar): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00089",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00089"
+   ],
+   "note": "Ported: Elapsed time between two clocks."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00090",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00026",
+   "note": "Same demand as the port task it points to (Round a three-digit number to the nearest ten): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00091",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00024",
+   "note": "Same demand as the port task it points to (Round dollars and cents to the nearest dollar): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00092",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00019",
+   "note": "Same demand as the port task it points to (Perimeter of a rectangle): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00093",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00093"
+   ],
+   "note": "Ported: Measure an object with a centimeter ruler."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00094",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00019",
+   "note": "Same demand as the port task it points to (Perimeter of a rectangle): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00095",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00095"
+   ],
+   "note": "Ported: Unit equivalents for length."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00096",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00093",
+   "note": "Same demand as the port task it points to (Measure an object with a centimeter ruler): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00097",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00020",
+   "note": "Same demand as the port task it points to (Perimeter of a triangle): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00098",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00098"
+   ],
+   "note": "Ported: Meters to centimeters."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00099",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00019",
+   "note": "Same demand as the port task it points to (Perimeter of a rectangle): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00100",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00100"
+   ],
+   "note": "Ported: Perimeter of a six-sided shape."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00101",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00101"
+   ],
+   "note": "Ported: Yards to feet."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00102",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00102"
+   ],
+   "note": "Ported: Perimeter of a regular polygon."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00103",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00019",
+   "note": "Same demand as the port task it points to (Perimeter of a rectangle): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00104",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00098",
+   "note": "Same demand as the port task it points to (Meters to centimeters): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00105",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00105"
+   ],
+   "note": "Ported: Side of a square from its perimeter."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00106",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00105",
+   "note": "Same demand as the port task it points to (Side of a square from its perimeter): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00121",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00030",
+   "note": "Same demand as the port task it points to (Add four two-digit numbers in a row): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00141",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00032",
+   "note": "Same demand as the port task it points to (Add a column of four two-digit numbers): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00142",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00085",
+   "note": "Same demand as the port task it points to (Read a Fahrenheit thermometer marked in 2s): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00143",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00025",
+   "note": "Same demand as the port task it points to (Round a two-digit number to the nearest ten): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00144",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00024",
+   "note": "Same demand as the port task it points to (Round dollars and cents to the nearest dollar): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00145",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00025",
+   "note": "Same demand as the port task it points to (Round a two-digit number to the nearest ten): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00146",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00024",
+   "note": "Same demand as the port task it points to (Round dollars and cents to the nearest dollar): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00148",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00148"
+   ],
+   "note": "Ported: Read a clock to the minute, with a.m. or p.m.."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00149",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00148",
+   "note": "Same demand as the port task it points to (Read a clock to the minute, with a.m. or p.m.): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00150",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00150"
+   ],
+   "note": "Ported: Round two numbers to tens and add."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00151",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00150",
+   "note": "Same demand as the port task it points to (Round two numbers to tens and add): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00011",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00034",
+   "note": "Same demand as the port task it points to (Add dollars and cents in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00012",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00012"
+   ],
+   "note": "Ported: Dimes as a fraction of a dollar."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00013",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00013"
+   ],
+   "note": "Ported: Diameter from a radius."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00034",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00034"
+   ],
+   "note": "Ported: Add dollars and cents in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00035",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00035"
+   ],
+   "note": "Ported: Add dollars and cents in a row."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00036",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00034",
+   "note": "Same demand as the port task it points to (Add dollars and cents in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00037",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00037"
+   ],
+   "note": "Ported: Pennies as a fraction of a dollar."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00038",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00038"
+   ],
+   "note": "Ported: Fraction of a rectangle shaded."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00039",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00013",
+   "note": "Same demand as the port task it points to (Diameter from a radius): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00040",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00040"
+   ],
+   "note": "Ported: Draw a triangle with equal sides."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00041",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00040",
+   "note": "Same demand as the port task it points to (Draw a triangle with equal sides): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00068",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00068"
+   ],
+   "note": "Ported: Diameter in yards from a radius in feet."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00069",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00069"
+   ],
+   "note": "Ported: Add dollars and cents in a story."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00070",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00070"
+   ],
+   "note": "Ported: Estimate a total of dollars and cents."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00071",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00038",
+   "note": "Same demand as the port task it points to (Fraction of a rectangle shaded): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00072",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00104",
+   "note": "Same demand as the port task it points to (Add tens of dollars and cents in a column): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00073",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00102",
+   "note": "Same demand as the port task it points to (Fraction of a circle shaded): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00074",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00105",
+   "note": "Same demand as the port task it points to (Add hundreds of dollars and cents in a column): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00075",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00038",
+   "note": "Same demand as the port task it points to (Fraction of a rectangle shaded): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00100",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00100"
+   ],
+   "note": "Ported: Diameter in feet from a radius in yards."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00101",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00101"
+   ],
+   "note": "Ported: Fraction of a square grid shaded."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00102",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00102"
+   ],
+   "note": "Ported: Fraction of a circle shaded."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00103",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00038",
+   "note": "Same demand as the port task it points to (Fraction of a rectangle shaded): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00104",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00104"
+   ],
+   "note": "Ported: Add tens of dollars and cents in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00105",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00105"
+   ],
+   "note": "Ported: Add hundreds of dollars and cents in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00106",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00104",
+   "note": "Same demand as the port task it points to (Add tens of dollars and cents in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00107",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00105",
+   "note": "Same demand as the port task it points to (Add hundreds of dollars and cents in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00117",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00034",
+   "note": "Same demand as the port task it points to (Add dollars and cents in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00126",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00126"
+   ],
+   "note": "Ported: Correct a price sign that mixes dollars and cents."
+  }
+ ]
+}
