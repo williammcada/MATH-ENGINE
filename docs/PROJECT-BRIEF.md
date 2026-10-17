@@ -1,6 +1,6 @@
-## Current release — Engine 0.66.0, release candidate (2026-10-17)
+## Current release — Engine 0.66.0, verified (2026-10-17)
 
-Intermediate 4 requests R1, R2 and R3, approved by the owner 2026-10-17. R1 and R2: the private ExamView reader keeps the row breaks of stacked arithmetic and lists native drawing objects. R3: 27 faithful Intermediate 4 ports replace the earlier structured adaptations, so Intermediate 4 is 100% complete (1,388 records: 783 covered, 605 consolidated). See [change spec](change-specs/v0.66.0-i4-requests.md). Handbook `7b11826` (v0.1.16). Release candidate until `node scripts/verify-course.cjs all` passes on it; the verification record will be `docs/verification/v0.66.0-release-verify.md`.
+Intermediate 4 requests R1, R2 and R3, approved by the owner 2026-10-17. R1 and R2: the private ExamView reader keeps the row breaks of stacked arithmetic and lists native drawing objects. R3: 27 faithful Intermediate 4 ports replace the earlier structured adaptations, so Intermediate 4 is 100% complete (1,388 records: 783 covered, 605 consolidated). See [change spec](change-specs/v0.66.0-i4-requests.md). Handbook `7b11826` (v0.1.16). Verified release (candidate `e9f6f1f`); verification: `docs/verification/v0.66.0-release-verify.md`.
 
 ## Previous release — Engine 0.65.0, verified (2026-10-17)
 
@@ -246,4 +246,4 @@ Release that brings Intermediate 4 onto `main`: all 15 coverage batches (I4-1 to
 
 ## v0.66.0 (2026-10-17)
 
-Intermediate 4 requests R1–R3 (owner-approved 2026-10-17): reader row breaks and drawing objects, and 27 ports replacing the earlier structured adaptations (new variants in `i4-sub`, `i4-sub-zero`, `i4-paren`, `i4-missing-factor`, `i4-dec-add` and `i4-dates`). Intermediate 4 is 100% complete. The structured and breadth audit counts and three progression selectors follow the replacement. Change spec: `docs/change-specs/v0.66.0-i4-requests.md`.
+Intermediate 4 requests R1–R3 (owner-approved 2026-10-17): reader row breaks and drawing objects, and 27 ports replacing the earlier structured adaptations (new variants in `i4-sub`, `i4-sub-zero`, `i4-paren`, `i4-missing-factor`, `i4-dec-add` and `i4-dates`). Intermediate 4 is 100% complete. The structured and breadth audit counts and three progression selectors follow the replacement. Change spec: `docs/change-specs/v0.66.0-i4-requests.md`. Verification: `docs/verification/v0.66.0-release-verify.md`.
