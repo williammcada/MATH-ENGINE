@@ -231,3 +231,7 @@ This commit documents design only. No executable implementation, verified releas
 ## v0.63.0 (2026-10-16)
 
 Release that brings the parallel-course work onto `main`: the course setup, Algebra 1 (all 679 records decided; requests R1–R5 integrated) and Algebra 1/2, merged with v0.36.0's universal answer pad and v0.37.0's single-answer games. Bank answers are now checked on the pad-normalized answer and, if that fails, as typed (so ÷ answers work). Intermediate 4 follows in a later release. Verification: `docs/verification/v0.63.0-release-verify.md`.
+
+## v0.64.0 (2026-10-16)
+
+Release that brings Intermediate 4 onto `main`: all 15 coverage batches (I4-1 to I4-15, verified on `claude/coverage-intermediate-4` through `d2b97ad`), merged with v0.63.0. Intermediate 4 is 98.1% complete (1,388 records: 756 covered, 605 consolidated, none open); 27 records stay covered-provisional on their earlier adaptations until request R3 in `docs/change-specs/coverage-i4-pending-requests-v0.1.md` is decided. No other changes. Verification: `docs/verification/v0.64.0-release-verify.md`.

@@ -1,0 +1,481 @@
+{
+ "batch": "I4-15 intermediate-4 lessons 111-120, investigation 12 and appendices A and B",
+ "date": "2026-10-16",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00002",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00002"
+   ],
+   "note": "Ported: A Roman numeral to a number, and a number to Roman numerals."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00003",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00003"
+   ],
+   "note": "Ported: Write a number through 39 in Roman numerals."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00004",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00012",
+   "note": "Same demand as the port task it points to (Multiply an amount of money by a two-digit number): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00005",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00005"
+   ],
+   "note": "Ported: Solve an equation with a fraction coefficient."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00006",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00006"
+   ],
+   "note": "Ported: Subtract mixed numbers with different denominators."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00007",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00007"
+   ],
+   "note": "Ported: Subtract fractions with different denominators."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00008",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00008"
+   ],
+   "note": "Ported: Divide by a two-digit number: a two-digit quotient and a remainder."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00009",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00009"
+   ],
+   "note": "Ported: Round to the nearest hundred million."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00010",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00010"
+   ],
+   "note": "Ported: Which two fractions are equivalent to a unit fraction."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00011",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00011"
+   ],
+   "note": "Ported: Subtract mixed numbers and simplify."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00012",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00012"
+   ],
+   "note": "Ported: Multiply an amount of money by a two-digit number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00013",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00013"
+   ],
+   "note": "Ported: Which fraction simplifies to a unit fraction."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00014",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00014"
+   ],
+   "note": "Ported: The area of a figure drawn on a grid."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00016",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00016"
+   ],
+   "note": "Ported: Add mixed numbers whose fractions make 1."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00017",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00015",
+   "note": "Same demand as the port task it points to (Complete an equivalent fraction): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00018",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00018"
+   ],
+   "note": "Ported: Reduce three fractions."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00019",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00019"
+   ],
+   "note": "Ported: Solve an equation with a whole-number coefficient."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00020",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00005",
+   "note": "Same demand as the port task it points to (Solve an equation with a fraction coefficient): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00021",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00019",
+   "note": "Same demand as the port task it points to (Solve an equation with a whole-number coefficient): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00022",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00022"
+   ],
+   "note": "Ported: Add two unit fractions with different denominators."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00023",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00023"
+   ],
+   "note": "Ported: Subtract from an improper fraction with a different denominator."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00024",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00007",
+   "note": "Same demand as the port task it points to (Subtract fractions with different denominators): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00025",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00025"
+   ],
+   "note": "Ported: Divide by a two-digit number with no remainder."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00026",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00026"
+   ],
+   "note": "Ported: Round to the nearest hundred thousand."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00027",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00027"
+   ],
+   "note": "Ported: Round to the nearest ten million."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00028",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00028"
+   ],
+   "note": "Ported: Round to the nearest ten thousand."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00029",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00010",
+   "note": "Same demand as the port task it points to (A fraction equal to a unit fraction with a given denominator): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00030",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section11:item:TX4_S11_00015",
+   "note": "Same demand as the port task it points to (Complete an equivalent fraction): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00031",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00031"
+   ],
+   "note": "Ported: Subtract fractions and simplify."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00032",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00032"
+   ],
+   "note": "Ported: Add two mixed numbers with halves."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00033",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00033"
+   ],
+   "note": "Ported: Multiply a three-digit number by a two-digit number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00034",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00034"
+   ],
+   "note": "Ported: Multiply a three-digit number by a two-digit number in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00035",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00012",
+   "note": "Same demand as the port task it points to (Multiply an amount of money by a two-digit number): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00036",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00067",
+   "note": "Same demand as the port task it points to (Reduce a fraction to lowest terms): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00037",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00067",
+   "note": "Same demand as the port task it points to (Reduce a fraction to lowest terms): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00038",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00014",
+   "note": "Same demand as the port task it points to (The area of a figure drawn on a grid): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00039",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00069",
+   "note": "Same demand as the port task it points to (Estimate the area of a triangle on a grid): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00040",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00040"
+   ],
+   "note": "Ported: The number a Roman numeral represents."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00041",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00041"
+   ],
+   "note": "Ported: Estimate the area of a circle on a grid."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00042",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00042"
+   ],
+   "note": "Ported: A fraction that simplifies to a given fraction."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00043",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00043"
+   ],
+   "note": "Ported: Add fractions and write the sum as a mixed number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00044",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00011",
+   "note": "Same demand as the port task it points to (Subtract mixed numbers and simplify): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00045",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00045"
+   ],
+   "note": "Ported: Whether two fractions are equivalent."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00046",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00046"
+   ],
+   "note": "Ported: Rename two fractions with a common denominator."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00047",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00046",
+   "note": "Same demand as the port task it points to (Rename two fractions with a common denominator): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00048",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00046",
+   "note": "Same demand as the port task it points to (Rename two fractions with a common denominator): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00049",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00008",
+   "note": "Same demand as the port task it points to (Divide by a two-digit number: a two-digit quotient and a remainder): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00050",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00050"
+   ],
+   "note": "Ported: Divide by a two-digit number: a one-digit quotient and a remainder."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00051",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00008",
+   "note": "Same demand as the port task it points to (Divide by a two-digit number: a two-digit quotient and a remainder): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00052",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00006",
+   "note": "Same demand as the port task it points to (Subtract mixed numbers with different denominators): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00053",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00006",
+   "note": "Same demand as the port task it points to (Subtract mixed numbers with different denominators): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00054",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00054"
+   ],
+   "note": "Ported: Add mixed numbers with different denominators."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00055",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00055"
+   ],
+   "note": "Ported: The value of a Roman numeral letter."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00056",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00003",
+   "note": "Same demand as the port task it points to (Write a number through 39 in Roman numerals): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00057",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00003",
+   "note": "Same demand as the port task it points to (Write a number through 39 in Roman numerals): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00058",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00058"
+   ],
+   "note": "Ported: Write a number through 1999 in Roman numerals."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00059",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00002",
+   "note": "Same demand as the port task it points to (A Roman numeral to a number, and a number to Roman numerals): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00062",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00062"
+   ],
+   "note": "Ported: Which division is equivalent to another."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00063",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00063"
+   ],
+   "note": "Ported: Whether dividing both numbers keeps the quotient."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00064",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00064"
+   ],
+   "note": "Ported: A number to divide both numbers by, then the quotient."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00065",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00065"
+   ],
+   "note": "Ported: The fastest way to add two easy fractions."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00066",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00066"
+   ],
+   "note": "Ported: Whether to multiply mentally or with a calculator."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00067",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00067"
+   ],
+   "note": "Ported: Reduce a fraction to lowest terms."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00068",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00040",
+   "note": "Same demand as the port task it points to (The number a Roman numeral represents): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00069",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00069"
+   ],
+   "note": "Ported: Estimate the area of a triangle on a grid."
+  }
+ ]
+}

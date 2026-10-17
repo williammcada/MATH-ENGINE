@@ -1,0 +1,715 @@
+{
+ "batch": "I4-8 intermediate-4 lessons 46-50, investigation 5 and lessons 51-52",
+ "date": "2026-10-16",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00001",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00001"
+   ],
+   "note": "Ported: Estimate the percent of a square a figure encloses."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002"
+   ],
+   "note": "Ported: Add three decimal numbers."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00003",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00003"
+   ],
+   "note": "Ported: Distance from hours and miles per hour."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00004",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00004"
+   ],
+   "note": "Ported: Multiply a number from 25 to 40 by a one-digit number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00005",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00005"
+   ],
+   "note": "Ported: Divide, written with a division box."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00015",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00015"
+   ],
+   "note": "Ported: Pennies as a percent of a dollar."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00016",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00016"
+   ],
+   "note": "Ported: The digit in a place of a decimal number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00017",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002",
+   "note": "Same demand as the port task it points to (Add three decimal numbers): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00018",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00018"
+   ],
+   "note": "Ported: Subtract decimals with different numbers of places."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00019",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00019"
+   ],
+   "note": "Ported: How many in all, equal groups."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00020",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00003",
+   "note": "Same demand as the port task it points to (Distance from hours and miles per hour): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00021",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00019",
+   "note": "Same demand as the port task it points to (How many in all, equal groups): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00022",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00005",
+   "note": "Same demand as the port task it points to (Divide, written with a division box): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00023",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00023"
+   ],
+   "note": "Ported: Divide, written with a division sign."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00024",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00024"
+   ],
+   "note": "Ported: Divide, written as a fraction."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00025",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00025"
+   ],
+   "note": "Ported: Which form does not mean the same division."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00026",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00005",
+   "note": "Same demand as the port task it points to (Divide, written with a division box): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00027",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00005",
+   "note": "Same demand as the port task it points to (Divide, written with a division box): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00028",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00005",
+   "note": "Same demand as the port task it points to (Divide, written with a division box): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00053",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00053"
+   ],
+   "note": "Ported: Multiply a number from 51 to 71 by 7, 8 or 9."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00054",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00004",
+   "note": "Same demand as the port task it points to (Multiply a number from 25 to 40 by a one-digit number): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00055",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00055"
+   ],
+   "note": "Ported: Multiply dollars by a one-digit number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00061",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00061"
+   ],
+   "note": "Ported: Multiplication and division facts for three numbers."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00062",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00001",
+   "note": "Same demand as the port task it points to (Estimate the percent of a square a figure encloses): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00063",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00063"
+   ],
+   "note": "Ported: Compare a percent and a fraction."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00064",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00064"
+   ],
+   "note": "Ported: More boys or more girls, from a percent."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00066",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00066"
+   ],
+   "note": "Ported: The weight of some blocks in tenths of a pound."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00067",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00067"
+   ],
+   "note": "Ported: A percent of an hour in minutes."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00080",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00080"
+   ],
+   "note": "Ported: A square root divided by a number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00081",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00024",
+   "note": "Same demand as the port task it points to (Divide, written as a fraction): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00082",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00082"
+   ],
+   "note": "Ported: How many in each equal group."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00083",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00028",
+   "note": "Same demand as the port task it points to (How many laps in some minutes): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00084",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00055",
+   "note": "Same demand as the port task it points to (Multiply dollars by a one-digit number): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00085",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00019",
+   "note": "Same demand as the port task it points to (How many in all, equal groups): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00086",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00019",
+   "note": "Same demand as the port task it points to (How many in all, equal groups): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00087",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00087"
+   ],
+   "note": "Ported: Dozens, weeks, years or feet in smaller units."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00089",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002",
+   "note": "Same demand as the port task it points to (Add three decimal numbers): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00090",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00084",
+   "note": "Same demand as the port task it points to (The place of a digit in a four-digit number): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00091",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00018",
+   "note": "Same demand as the port task it points to (Subtract decimals with different numbers of places): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00092",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002",
+   "note": "Same demand as the port task it points to (Add three decimal numbers): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00093",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00093"
+   ],
+   "note": "Ported: The percent that is left."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00094",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00093",
+   "note": "Same demand as the port task it points to (The percent that is left): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00095",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00095"
+   ],
+   "note": "Ported: A coin as a percent of a dollar."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00114",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00034",
+   "note": "Same demand as the port task it points to (Multiply a two-digit number by a one-digit number in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00115",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002",
+   "note": "Same demand as the port task it points to (Add three decimal numbers): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00116",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00018",
+   "note": "Same demand as the port task it points to (Subtract decimals with different numbers of places): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00128",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00080",
+   "note": "Same demand as the port task it points to (A square root divided by a number): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00129",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00126",
+   "note": "Same demand as the port task it points to (Divide by a quotient in parentheses): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00130",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00034",
+   "note": "Same demand as the port task it points to (Multiply a two-digit number by a one-digit number in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00131",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00019",
+   "note": "Same demand as the port task it points to (How many in all, equal groups): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00132",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00019",
+   "note": "Same demand as the port task it points to (How many in all, equal groups): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00133",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00019",
+   "note": "Same demand as the port task it points to (How many in all, equal groups): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00134",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00087",
+   "note": "Same demand as the port task it points to (Dozens, weeks, years or feet in smaller units): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00135",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00019",
+   "note": "Same demand as the port task it points to (How many in all, equal groups): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00136",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00019",
+   "note": "Same demand as the port task it points to (How many in all, equal groups): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00137",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002",
+   "note": "Same demand as the port task it points to (Add three decimal numbers): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00138",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00016",
+   "note": "Same demand as the port task it points to (The digit in a place of a decimal number): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00140",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00017",
+   "note": "Same demand as the port task it points to (Subtract cents from dollars): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00141",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002",
+   "note": "Same demand as the port task it points to (Add three decimal numbers): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00142",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00018",
+   "note": "Same demand as the port task it points to (Subtract decimals with different numbers of places): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00144",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002",
+   "note": "Same demand as the port task it points to (Add three decimal numbers): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00145",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002",
+   "note": "Same demand as the port task it points to (Add three decimal numbers): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00146",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002",
+   "note": "Same demand as the port task it points to (Add three decimal numbers): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00147",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002",
+   "note": "Same demand as the port task it points to (Add three decimal numbers): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00148",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002",
+   "note": "Same demand as the port task it points to (Add three decimal numbers): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00149",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00149"
+   ],
+   "note": "Ported: Draw a rectangle and shade a percent of it."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00150",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00149",
+   "note": "Same demand as the port task it points to (Draw a rectangle and shade a percent of it): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00153",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00153"
+   ],
+   "note": "Ported: Divide, written three ways."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00154",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00063",
+   "note": "Same demand as the port task it points to (Compare a percent and a fraction): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00155",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00155"
+   ],
+   "note": "Ported: Compare a percent of a number with a product."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00012",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00012"
+   ],
+   "note": "Ported: How many groups of a given size."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00013",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00013"
+   ],
+   "note": "Ported: Add four numbers of different sizes."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00014",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00014"
+   ],
+   "note": "Ported: Subtract a five-digit number from a six-digit number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00015",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00015"
+   ],
+   "note": "Ported: Divide and check by multiplying."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00017",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00017"
+   ],
+   "note": "Ported: Subtract money from whole dollars in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00018",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00018"
+   ],
+   "note": "Ported: Subtract six-digit numbers."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00019",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00014",
+   "note": "Same demand as the port task it points to (Subtract a five-digit number from a six-digit number): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00020",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00020"
+   ],
+   "note": "Ported: Subtract a three-digit number from a five-digit number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00021",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00021"
+   ],
+   "note": "Ported: Subtract dollars and cents."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00022",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00022"
+   ],
+   "note": "Ported: Add five-digit numbers in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00023",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00013",
+   "note": "Same demand as the port task it points to (Add four numbers of different sizes): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00024",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00024"
+   ],
+   "note": "Ported: Add four-digit numbers in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00025",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00015",
+   "note": "Same demand as the port task it points to (Divide and check by multiplying): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00026",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00015",
+   "note": "Same demand as the port task it points to (Divide and check by multiplying): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00027",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00015",
+   "note": "Same demand as the port task it points to (Divide and check by multiplying): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00028",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00028"
+   ],
+   "note": "Ported: How many laps in some minutes."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00029",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00012",
+   "note": "Same demand as the port task it points to (How many groups of a given size): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00030",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00030"
+   ],
+   "note": "Ported: How many ants from the number of legs."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00071",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00071"
+   ],
+   "note": "Ported: Add the counts for five days."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00072",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00018",
+   "note": "Same demand as the port task it points to (Subtract six-digit numbers): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00073",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00028",
+   "note": "Same demand as the port task it points to (How many laps in some minutes): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00074",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00020",
+   "note": "Same demand as the port task it points to (Subtract a three-digit number from a five-digit number): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00100",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00024",
+   "note": "Same demand as the port task it points to (Add four-digit numbers in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00101",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00022",
+   "note": "Same demand as the port task it points to (Add five-digit numbers in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00102",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00022",
+   "note": "Same demand as the port task it points to (Add five-digit numbers in a column): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00103",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00103"
+   ],
+   "note": "Ported: The sum of two numbers written in words."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00104",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00082",
+   "note": "Same demand as the port task it points to (How many in each equal group): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00105",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00105"
+   ],
+   "note": "Ported: Subtract five-digit numbers in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00106",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00105",
+   "note": "Same demand as the port task it points to (Subtract five-digit numbers in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00107",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00012",
+   "note": "Same demand as the port task it points to (How many groups of a given size): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00108",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00082",
+   "note": "Same demand as the port task it points to (How many in each equal group): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00109",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00020",
+   "note": "Same demand as the port task it points to (Subtract a three-digit number from a five-digit number): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00110",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00082",
+   "note": "Same demand as the port task it points to (How many in each equal group): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00111",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00105",
+   "note": "Same demand as the port task it points to (Subtract five-digit numbers in a column): choice-only twin or repeated fixed item."
+  }
+ ]
+}

@@ -1,0 +1,703 @@
+{
+ "batch": "I4-12 intermediate-4 lessons 78-80, investigation 8 and lessons 81-89",
+ "date": "2026-10-16",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00001",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00001"
+   ],
+   "note": "Ported: Continue a pattern in a table."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00002",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00002"
+   ],
+   "note": "Ported: A quotient ending in zero, with a remainder."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00003",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00003"
+   ],
+   "note": "Ported: Which figure has no line of symmetry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00004",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00004"
+   ],
+   "note": "Ported: Classify a triangle by sides and angles."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00012",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00012"
+   ],
+   "note": "Ported: A zero at the end of a three-digit quotient."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00013",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00012",
+   "note": "Same demand as the port task it points to (A zero at the end of a three-digit quotient): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00041",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00041"
+   ],
+   "note": "Ported: Classify a triangle by its angles."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00042",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00042"
+   ],
+   "note": "Ported: The word for a kind of triangle."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00043",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00004",
+   "note": "Same demand as the port task it points to (Classify a triangle by sides and angles): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00044",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00044"
+   ],
+   "note": "Ported: Does a letter have a line of symmetry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00045",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00091",
+   "note": "Same demand as the port task it points to (Draw a figure and its line of symmetry): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00046",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00003",
+   "note": "Same demand as the port task it points to (Which figure has no line of symmetry): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00047",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00002",
+   "note": "Same demand as the port task it points to (A quotient ending in zero, with a remainder): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00048",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00048"
+   ],
+   "note": "Ported: Graph pairs and describe the trend."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00049",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00049"
+   ],
+   "note": "Ported: The letter at an ordered pair."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00050",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00001",
+   "note": "Same demand as the port task it points to (Continue a pattern in a table): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00051",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00051"
+   ],
+   "note": "Ported: Which graph shows letters and their positions."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00058",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00058"
+   ],
+   "note": "Ported: Which data is missing from a chart."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00066",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00066"
+   ],
+   "note": "Ported: Which triangle is scalene, equilateral or isosceles."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00067",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00066",
+   "note": "Same demand as the port task it points to (Which triangle is scalene, equilateral or isosceles): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00068",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00068"
+   ],
+   "note": "Ported: Which letter has no line of symmetry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00069",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00069"
+   ],
+   "note": "Ported: Divide money with a zero in the answer."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00070",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00070"
+   ],
+   "note": "Ported: A zero in the middle of the quotient."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00082",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00070",
+   "note": "Same demand as the port task it points to (A zero in the middle of the quotient): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00083",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00069",
+   "note": "Same demand as the port task it points to (Divide money with a zero in the answer): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00084",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00012",
+   "note": "Same demand as the port task it points to (A zero at the end of a three-digit quotient): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00085",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00085"
+   ],
+   "note": "Ported: Divide by a square."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00086",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00069",
+   "note": "Same demand as the port task it points to (Divide money with a zero in the answer): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00091",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00091"
+   ],
+   "note": "Ported: Draw a figure and its line of symmetry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00092",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section08:item:TX4_S08_00091",
+   "note": "Same demand as the port task it points to (Draw a figure and its line of symmetry): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00003",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00003"
+   ],
+   "note": "Ported: An improper fraction and a mixed number for shaded parts."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00004",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00004"
+   ],
+   "note": "Ported: Full stacks, extras and a short stack."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00005",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00005"
+   ],
+   "note": "Ported: The angle between clock hands and a time after a turn."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00006",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00006"
+   ],
+   "note": "Ported: Multiply two two-digit numbers."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00007",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00007"
+   ],
+   "note": "Ported: Tens times whole dollars."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00008",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00008"
+   ],
+   "note": "Ported: Money times 1000."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00009",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00009"
+   ],
+   "note": "Ported: Thousandths as a decimal and in words."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00010",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00010"
+   ],
+   "note": "Ported: Change after a price and tax."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00011",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00011"
+   ],
+   "note": "Ported: Sales tax from a rate in cents per dollar."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00012",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00012"
+   ],
+   "note": "Ported: Which figure tessellates."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00014",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00014"
+   ],
+   "note": "Ported: A whole number times 10."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00015",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00015"
+   ],
+   "note": "Ported: Money times 10."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00016",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00010",
+   "note": "Same demand as the port task it points to (Change after a price and tax): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00017",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00010",
+   "note": "Same demand as the port task it points to (Change after a price and tax): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00018",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00010",
+   "note": "Same demand as the port task it points to (Change after a price and tax): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00019",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00021",
+   "note": "Same demand as the port task it points to (The total for several items and tax): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00020",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00011",
+   "note": "Same demand as the port task it points to (Sales tax from a rate in cents per dollar): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00021",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00021"
+   ],
+   "note": "Ported: The total for several items and tax."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00022",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00022"
+   ],
+   "note": "Ported: Multiples of 10 and 100."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00023",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00007",
+   "note": "Same demand as the port task it points to (Tens times whole dollars): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00024",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00024"
+   ],
+   "note": "Ported: Hundreds times hundreds."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00025",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00026",
+   "note": "Same demand as the port task it points to (Multiply two two-digit numbers in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00026",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00026"
+   ],
+   "note": "Ported: Multiply two two-digit numbers in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00027",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00006",
+   "note": "Same demand as the port task it points to (Multiply two two-digit numbers): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00033",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00005",
+   "note": "Same demand as the port task it points to (The angle between clock hands and a time after a turn): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00034",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00034"
+   ],
+   "note": "Ported: Where the minute hand points after a turn."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00035",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00035"
+   ],
+   "note": "Ported: Estimate an angle."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00036",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00036"
+   ],
+   "note": "Ported: Does a figure tessellate."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00037",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00036",
+   "note": "Same demand as the port task it points to (Does a figure tessellate): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00038",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00036",
+   "note": "Same demand as the port task it points to (Does a figure tessellate): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00039",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00039"
+   ],
+   "note": "Ported: Write thousandths as a decimal and in words."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00040",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00039",
+   "note": "Same demand as the port task it points to (Write thousandths as a decimal and in words): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00041",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00041"
+   ],
+   "note": "Ported: A decimal as a fraction and in words."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00042",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00041",
+   "note": "Same demand as the port task it points to (A decimal as a fraction and in words): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00043",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00043"
+   ],
+   "note": "Ported: Cents times 100."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00044",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00044"
+   ],
+   "note": "Ported: Packages filled and left over."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00045",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00004",
+   "note": "Same demand as the port task it points to (Full stacks, extras and a short stack): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00046",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00046"
+   ],
+   "note": "Ported: Cars filled and cars needed."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00047",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00047"
+   ],
+   "note": "Ported: Draw a mixed number and an improper fraction."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00048",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00003",
+   "note": "Same demand as the port task it points to (An improper fraction and a mixed number for shaded parts): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00049",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00049"
+   ],
+   "note": "Ported: Write an improper fraction and a mixed number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00052",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00052"
+   ],
+   "note": "Ported: Which division equals another."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00053",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00053"
+   ],
+   "note": "Ported: Which angle is 90 degrees."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00054",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00053",
+   "note": "Same demand as the port task it points to (Which angle is 90 degrees): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00055",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00055"
+   ],
+   "note": "Ported: A cost from a dollar and the change."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00056",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00010",
+   "note": "Same demand as the port task it points to (Change after a price and tax): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00057",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00015",
+   "note": "Same demand as the port task it points to (Money times 10): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00058",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00022",
+   "note": "Same demand as the port task it points to (Multiples of 10 and 100): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00059",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00015",
+   "note": "Same demand as the port task it points to (Money times 10): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00060",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00060"
+   ],
+   "note": "Ported: Groups as even as possible."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00061",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00061"
+   ],
+   "note": "Ported: What shaded circles show."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00064",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00055",
+   "note": "Same demand as the port task it points to (A cost from a dollar and the change): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00065",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00065"
+   ],
+   "note": "Ported: Change for several items and tax."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00066",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00065",
+   "note": "Same demand as the port task it points to (Change for several items and tax): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00067",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00067"
+   ],
+   "note": "Ported: Thousandths as a decimal."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00068",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00068"
+   ],
+   "note": "Ported: A decimal in thousandths as a fraction."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00069",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00014",
+   "note": "Same demand as the port task it points to (A whole number times 10): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00070",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00015",
+   "note": "Same demand as the port task it points to (Money times 10): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00071",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00022",
+   "note": "Same demand as the port task it points to (Multiples of 10 and 100): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00072",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00022",
+   "note": "Same demand as the port task it points to (Multiples of 10 and 100): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00073",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00022",
+   "note": "Same demand as the port task it points to (Multiples of 10 and 100): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00074",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00022",
+   "note": "Same demand as the port task it points to (Multiples of 10 and 100): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00075",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00075"
+   ],
+   "note": "Ported: How many are left without a place."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00080",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00080"
+   ],
+   "note": "Ported: Total price and change."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00081",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00060",
+   "note": "Same demand as the port task it points to (Groups as even as possible): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00082",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00060",
+   "note": "Same demand as the port task it points to (Groups as even as possible): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00083",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00047",
+   "note": "Same demand as the port task it points to (Draw a mixed number and an improper fraction): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00084",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section09:item:TX4_S09_00047",
+   "note": "Same demand as the port task it points to (Draw a mixed number and an improper fraction): choice-only twin or repeated fixed item."
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "entries": 4479,
-  "providers": 3834,
+  "entries": 5235,
+  "providers": 4590,
   "concepts": 475,
   "edges": 164,
   "unmappedEntries": 0,
@@ -10,8 +10,8 @@
       "bankId": "intermediate-4-en",
       "localGrade": 3,
       "placement": "grade-assigned",
-      "entries": 260,
-      "providers": 256
+      "entries": 1016,
+      "providers": 1012
     },
     {
       "bankId": "course-1-en",
@@ -50,7 +50,7 @@
     }
   ],
   "evidence": {
-    "crossCourseMapSha256": "6027eea22b8fbc4ec92cdb6e9f8c751dd7a7c5885bc882522b771ea35621e7a5",
+    "crossCourseMapSha256": "a39531758c3f2885ff4d679595f7d5e96a885ef86bba634ef325aee1ee2fe187",
     "linksSha256": "2d8c6192fedf4c9357435f77581c042c0fb051c1169be1e7c27e0fbe4f26551d",
     "focusLinksSha256": "de64125000b582fea93c85a3f47886c656d3c40bdc7e40fe0bf7149d8f85d6bd"
   },

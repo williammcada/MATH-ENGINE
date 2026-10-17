@@ -1,5 +1,5 @@
 {
-  "engine": "0.63.0",
+  "engine": "0.64.0",
   "bankVersion": "0.33.0-rc.1",
   "seedsPerItem": 50,
   "checks": {
@@ -9,7 +9,7 @@
     },
     "catalog": {
       "status": "Passed",
-      "total": 3476,
+      "total": 4147,
       "k7Skills": 312,
       "k7ByGrade": {
         "1": 19,
@@ -21,7 +21,7 @@
         "7": 33,
         "K": 20
       },
-      "autoCheckedBankEntries": 3154,
+      "autoCheckedBankEntries": 3825,
       "continuitySkills": 10,
       "courses": [
         {
@@ -29,9 +29,9 @@
           "course": "Intermediate 4",
           "localGrade": 3,
           "placement": "grade-assigned",
-          "teacherReviewedExcluded": 50,
-          "multiPartExcluded": 14,
-          "count": 196
+          "teacherReviewedExcluded": 80,
+          "multiPartExcluded": 69,
+          "count": 867
         },
         {
           "bankId": "course-1-en",
@@ -82,62 +82,62 @@
     },
     "lesson-labels": {
       "status": "Passed",
-      "entries": 3154,
+      "entries": 3825,
       "lessons": 785,
       "source": "williammcada/test-and-practice-studio@16685a8"
     },
     "generate-all-seeds": {
       "status": "Passed",
-      "count": 173800
+      "count": 207350
     },
     "deterministic": {
       "status": "Passed",
-      "count": 173800
+      "count": 207350
     },
     "own-answer-accepted": {
       "status": "Passed",
-      "count": 173800
+      "count": 207350
     },
     "json-round-trip": {
       "status": "Passed",
-      "count": 173800
+      "count": 207350
     },
     "evaluate-own-answer-valid-and-correct": {
       "status": "Passed",
-      "count": 173800
+      "count": 207350
     },
     "unsimplified-fraction-feedback": {
       "status": "Passed",
-      "count": 16362,
-      "simplestFormRequiredAndFlagged": 14625,
+      "count": 18012,
+      "simplestFormRequiredAndFlagged": 14825,
       "equivalentFormsAllowedByPrompt": {
-        "items": 1737,
-        "entries": 56
+        "items": 3187,
+        "entries": 85
       }
     },
     "perturbed-answer-rejected": {
       "status": "Passed",
-      "count": 173800
+      "count": 207350
     },
     "single-answer-only": {
       "status": "Passed",
-      "count": 173800
+      "count": 207350
     },
     "keypad-keys-cover-answer": {
       "status": "Passed",
-      "count": 173800
+      "count": 207350
     },
     "answer-pad-uniform": {
       "status": "Passed",
-      "count": 136838
+      "count": 162030
     },
     "pad-typed-answers-accepted": {
       "status": "Passed",
-      "count": 136838
+      "count": 162030
     },
     "studio-items-identical": {
       "status": "Passed",
-      "count": 157700
+      "count": 191250
     },
     "teacher-variant-redraws": {
       "status": "Informational",
@@ -146,8 +146,8 @@
     },
     "bank-input-modes": {
       "status": "Informational",
-      "keypad": 2433,
-      "keyboard": 721
+      "keypad": 2937,
+      "keyboard": 888
     },
     "continuity-independent-oracle": {
       "status": "Passed",
@@ -175,14 +175,14 @@
     },
     "multi-part-tags": {
       "status": "Passed",
-      "tagged": 464,
-      "absent": 464,
-      "explained": 464,
-      "refused": 464,
-      "confirmed": 464,
-      "teacherReviewed": 861,
-      "gameBankEntries": 3154,
-      "bankEntries": 4479
+      "tagged": 519,
+      "absent": 519,
+      "explained": 519,
+      "refused": 519,
+      "confirmed": 519,
+      "teacherReviewed": 891,
+      "gameBankEntries": 3825,
+      "bankEntries": 5235
     },
     "related-links": {
       "status": "Passed",
@@ -198,15 +198,15 @@
     },
     "bank-standards": {
       "status": "Passed",
-      "bankRows": 3154,
+      "bankRows": 3825,
       "withStandard": 185,
       "g96Samples": 2000,
       "g96NonPositive": 0
     },
     "bundle-provenance": {
       "status": "Passed",
-      "bundleSha256": "b79c4eae4ea31489159b9e7a5ca69c6f6e3ebd16373949095069e032bbc7f865",
-      "contentHash": "4c46d4bdd9c86d8e1ff530eba0bfd847"
+      "bundleSha256": "d291372303b22b3d1f07924a4af90cc083534439d80ef74c85b9822e6ca170af",
+      "contentHash": "9458705c7b7aeed1aeb312a111e05658"
     }
   },
   "failures": [],

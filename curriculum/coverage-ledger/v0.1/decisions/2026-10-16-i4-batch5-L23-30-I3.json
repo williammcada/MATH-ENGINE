@@ -1,0 +1,789 @@
+{
+ "batch": "I4-5 intermediate-4 lessons 23-30 and investigation 3",
+ "date": "2026-10-16",
+ "reviewer": "Claude (porting session), owner-approved protocol",
+ "decisions": [
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00001",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00001"
+   ],
+   "note": "Ported: Side of a square from its area."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00002",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00002"
+   ],
+   "note": "Ported: Area of a rectangle on a centimeter grid."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00003",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00003"
+   ],
+   "note": "Ported: Rows, columns and the fact for an array."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00004",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00021",
+   "note": "Same demand as the port task it points to (Multiply by zero): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00005",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00025",
+   "note": "Same demand as the port task it points to (A missing number in the multiplication table): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00006",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00006"
+   ],
+   "note": "Ported: The time some hours and minutes ago."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00007",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00051",
+   "note": "Same demand as the port task it points to (Write repeated addition as multiplication and solve): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00008",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00008"
+   ],
+   "note": "Ported: Which circle has all but a fraction shaded."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00009",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00046",
+   "note": "Same demand as the port task it points to (Three more facts from an addition fact with a letter): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00010",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00045",
+   "note": "Same demand as the port task it points to (Count the right, acute and obtuse angles of a figure): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00014",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00014"
+   ],
+   "note": "Ported: Square root of a perfect square."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00015",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00001",
+   "note": "Same demand as the port task it points to (Side of a square from its area): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00016",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00002",
+   "note": "Same demand as the port task it points to (Area of a rectangle on a centimeter grid): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00017",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00017"
+   ],
+   "note": "Ported: Area of a labelled rectangle."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00018",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00018"
+   ],
+   "note": "Ported: Subtract three-digit numbers in a column, regrouping twice."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00019",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00019"
+   ],
+   "note": "Ported: Subtract dollars and cents with regrouping."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00020",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00020"
+   ],
+   "note": "Ported: Subtract three-digit numbers, regrouping twice."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00021",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00021"
+   ],
+   "note": "Ported: Multiply by zero."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00022",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00022"
+   ],
+   "note": "Ported: Multiply by one."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00023",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00023"
+   ],
+   "note": "Ported: Multiply by two."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00024",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00024"
+   ],
+   "note": "Ported: Multiply by five."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00025",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00025"
+   ],
+   "note": "Ported: A missing number in the multiplication table."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00026",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00026"
+   ],
+   "note": "Ported: The product of two numbers."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00027",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00027"
+   ],
+   "note": "Ported: How much a number of nines is."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00028",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00028"
+   ],
+   "note": "Ported: Fraction of a rectangle not shaded."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00029",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00029"
+   ],
+   "note": "Ported: How many are left."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00030",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00030"
+   ],
+   "note": "Ported: How many were lost."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00031",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00031"
+   ],
+   "note": "Ported: How many there were at first."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00032",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00032"
+   ],
+   "note": "Ported: Missing addend with a sum to 21."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00033",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00033"
+   ],
+   "note": "Ported: Number in the circle: a missing number subtracted from."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00042",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00042"
+   ],
+   "note": "Ported: Line, ray or segment."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00043",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00042",
+   "note": "Same demand as the port task it points to (Line, ray or segment): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00044",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00044"
+   ],
+   "note": "Ported: Draw a right angle."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00045",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00045"
+   ],
+   "note": "Ported: Count the right, acute and obtuse angles of a figure."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00046",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00046"
+   ],
+   "note": "Ported: Three more facts from an addition fact with a letter."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00047",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00047"
+   ],
+   "note": "Ported: Three more facts from a subtraction fact with a letter."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00048",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00048"
+   ],
+   "note": "Ported: Draw a square and shade a fraction."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00049",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00049"
+   ],
+   "note": "Ported: Draw a rectangle and shade a fraction."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00050",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00134",
+   "note": "Same demand as the port task it points to (Write repeated addition as multiplication): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00051",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00051"
+   ],
+   "note": "Ported: Write repeated addition as multiplication and solve."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00052",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00052"
+   ],
+   "note": "Ported: The time some hours and minutes from now."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00053",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00006",
+   "note": "Same demand as the port task it points to (The time some hours and minutes ago): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00055",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00025",
+   "note": "Same demand as the port task it points to (A missing number in the multiplication table): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00056",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00056"
+   ],
+   "note": "Ported: The multiplication fact for an array."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00057",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00003",
+   "note": "Same demand as the port task it points to (Rows, columns and the fact for an array): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00058",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00058"
+   ],
+   "note": "Ported: Whether an array with a number of rows can be drawn."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00059",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00002",
+   "note": "Same demand as the port task it points to (Area of a rectangle on a centimeter grid): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00060",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00060"
+   ],
+   "note": "Ported: Next four square numbers."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00061",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00061"
+   ],
+   "note": "Ported: Which figure has perpendicular sides."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00062",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00062"
+   ],
+   "note": "Ported: Which figure has parallel sides."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00063",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00063"
+   ],
+   "note": "Ported: Name a quadrilateral from its properties."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00064",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00064"
+   ],
+   "note": "Ported: Is a statement about even numbers always true."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00065",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00065"
+   ],
+   "note": "Ported: Judge a claim about angles and lines."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00066",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00066"
+   ],
+   "note": "Ported: The flaw in calling two edge lines of a cube parallel."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00067",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00017",
+   "note": "Same demand as the port task it points to (Area of a labelled rectangle): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00077",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00077"
+   ],
+   "note": "Ported: Which letter has no parallel segments."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00078",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00079",
+   "note": "Same demand as the port task it points to (Which angle is a right angle): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00079",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00079"
+   ],
+   "note": "Ported: Which angle is a right angle."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00080",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00108",
+   "note": "Same demand as the port task it points to (Missing three-digit addend in a column): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00081",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00029",
+   "note": "Same demand as the port task it points to (How many are left): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00082",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00082"
+   ],
+   "note": "Ported: Which circle has a fraction shaded."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00083",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00083"
+   ],
+   "note": "Ported: The time later than a time in words."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00084",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00134",
+   "note": "Same demand as the port task it points to (Write repeated addition as multiplication): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00085",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00134",
+   "note": "Same demand as the port task it points to (Write repeated addition as multiplication): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00086",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00086"
+   ],
+   "note": "Ported: Start time from an end time and a length of time."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00087",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00087"
+   ],
+   "note": "Ported: Name the property an expression shows."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00088",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00138",
+   "note": "Same demand as the port task it points to (Write a sentence about multiplying by 0 or 1 with symbols): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00089",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00089"
+   ],
+   "note": "Ported: Which product does not equal a number."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00090",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00090"
+   ],
+   "note": "Ported: Estimate a sum by rounding to thousands."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00091",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00091"
+   ],
+   "note": "Ported: Which product is greatest."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00092",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00092"
+   ],
+   "note": "Ported: Change after a sale price."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00093",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00002",
+   "note": "Same demand as the port task it points to (Area of a rectangle on a centimeter grid): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00094",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00014",
+   "note": "Same demand as the port task it points to (Square root of a perfect square): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00095",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00014",
+   "note": "Same demand as the port task it points to (Square root of a perfect square): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00096",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00096"
+   ],
+   "note": "Ported: Sum of two square roots."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00097",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00097"
+   ],
+   "note": "Ported: Area of a square."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00098",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00017",
+   "note": "Same demand as the port task it points to (Area of a labelled rectangle): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00099",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00017",
+   "note": "Same demand as the port task it points to (Area of a labelled rectangle): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00108",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00108"
+   ],
+   "note": "Ported: Missing three-digit addend in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00109",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00108",
+   "note": "Same demand as the port task it points to (Missing three-digit addend in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00110",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00110"
+   ],
+   "note": "Ported: Missing number subtracted from, three or four digits."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00111",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00111"
+   ],
+   "note": "Ported: Missing addend among three three-digit addends."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00112",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00112"
+   ],
+   "note": "Ported: Missing addend among three four-digit addends."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00113",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00113"
+   ],
+   "note": "Ported: Missing four-digit addend in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00114",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00110",
+   "note": "Same demand as the port task it points to (Missing number subtracted from, three or four digits): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00115",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00108",
+   "note": "Same demand as the port task it points to (Missing three-digit addend in a column): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00116",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00116"
+   ],
+   "note": "Ported: Subtract dollars and cents in a column."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00118",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00029",
+   "note": "Same demand as the port task it points to (How many are left): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00119",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00030",
+   "note": "Same demand as the port task it points to (How many were lost): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00120",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00020",
+   "note": "Same demand as the port task it points to (Subtract three-digit numbers, regrouping twice): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00121",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00018",
+   "note": "Same demand as the port task it points to (Subtract three-digit numbers in a column, regrouping twice): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00122",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00019",
+   "note": "Same demand as the port task it points to (Subtract dollars and cents with regrouping): choice-only twin or repeated fixed item. Its earlier adaptation stays as a working entry."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00123",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00123"
+   ],
+   "note": "Ported: Draw an array of dots for a product."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00124",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00124"
+   ],
+   "note": "Ported: Squares of three numbers."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00125",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00125"
+   ],
+   "note": "Ported: Perimeter and area of a rectangle."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00127",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00127"
+   ],
+   "note": "Ported: Perpendicular and parallel streets on a map."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00128",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00128"
+   ],
+   "note": "Ported: Draw two perpendicular lines."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00129",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00129"
+   ],
+   "note": "Ported: Which letter has a right angle."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00130",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00130"
+   ],
+   "note": "Ported: Which sides of a quadrilateral are parallel."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00131",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00131"
+   ],
+   "note": "Ported: Draw a circle and shade a fraction."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00132",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00131",
+   "note": "Same demand as the port task it points to (Draw a circle and shade a fraction): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00133",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00052",
+   "note": "Same demand as the port task it points to (The time some hours and minutes from now): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00134",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00134"
+   ],
+   "note": "Ported: Write repeated addition as multiplication."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00135",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00134",
+   "note": "Same demand as the port task it points to (Write repeated addition as multiplication): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00136",
+   "state": "consolidated",
+   "into": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00006",
+   "note": "Same demand as the port task it points to (The time some hours and minutes ago): choice-only twin or repeated fixed item."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00137",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00137"
+   ],
+   "note": "Ported: When to start so as to arrive at a time after noon."
+  },
+  {
+   "id": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00138",
+   "state": "covered",
+   "by": [
+    "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00138"
+   ],
+   "note": "Ported: Write a sentence about multiplying by 0 or 1 with symbols."
+  }
+ ]
+}
