@@ -2,6 +2,8 @@
 
 Started 2026-10-16 (Asia/Shanghai) on branch `claude/coverage-intermediate-4`.
 
+**Resolved 2026-10-17:** the owner approved R1, R2 and R3 ("Approve all; proceed"). They are implemented in Engine 0.66.0; see `v0.66.0-i4-requests.md`. The tables below are kept as the record of what was asked.
+
 The owner's instruction for the overnight Intermediate 4 run: a shared-file change is not made, and a record that should be retired is not retired. Each is written here, the affected records stay open, and the run continues. This replaces the "stop and ask" of `coverage-parallel-courses-v0.1.md` §e for this run only.
 
 ## Shared-file change requests

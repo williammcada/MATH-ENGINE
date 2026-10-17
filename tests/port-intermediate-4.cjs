@@ -34,6 +34,8 @@ const oracle={
   if(v==='three-hundreds')return [p.a,p.b,p.c].every(x=>x%100===0)&&s<=900&&is(q,s);
   return inRange(p.a,501,899)&&inRange(p.b,501,899)&&s>1000&&is(q,s);},
  'i4-missing-addend':(q,p)=>is(q,p.s-p.a)&&p.s-p.a>0&&(q.prompt.includes(p.letter)||/missing addend/.test(q.prompt)),
+ // Request R3 (v0.66.0): the addends shown in the prompt match the parameters, and the key is their sum.
+ 'i4-add-row':(q,p)=>promptNums(q).join()===p.addends.join()&&p.addends.length===(variantOf(q)==='six'?6:7)&&p.addends.every(x=>inRange(x,1,9))&&is(q,total(p.addends)),
  'i4-missing-row':(q,p)=>{const x=p.total-total(p.known);return x>0&&is(q,x)&&q.prompt.includes(p.letter);},
  'i4-column-missing':(q,p)=>{const x=p.total-total(p.known);return x>0&&is(q,x)&&q.givens.svg.includes('>'+p.total+'<');},
  'i4-column-add':(q,p)=>p.addends.length===4&&is(q,total(p.addends)),
@@ -61,6 +63,7 @@ const oracle={
  'i4-order-least':(q,p)=>is(q,Math.min(...p.nums)),
  'i4-dates':(q,p)=>{const v=E.catalog.find(c=>c.sourceId===q.sourceId).variant;
   if(v==='month')return key(q)===MONTHS[p.m-1];
+  if(v==='between')return key(q)===MONTHS[p.first]&&q.prompt.includes(MONTHS[p.first-1]+' and '+MONTHS[p.first+1]);
   if(v==='month-year')return E.checkAnswer(q,`(a) ${MONTHS[p.m-1]} (b) ${1900+p.y}`).answerCorrect&&!E.checkAnswer(q,`${MONTHS[p.m%12]}; ${1900+p.y}`).answerCorrect;
   if(v==='days')return is(q,new Date(2001,p.m,0).getDate());
   let n=0;for(let m=1;m<=12;m++)if(new Date(2001,m,0).getDate()===p.days)n++;return is(q,n);},
@@ -203,7 +206,7 @@ const oracle={
  'i4-decimal-order':(q,p)=>E.checkAnswer(q,[p.a/100,p.b/10,p.c/100].sort((x,y)=>y-x).join(', ')).answerCorrect,
  // Batch I4-7
  'i4-missing-factor':(q,p)=>p.p%p.a===0&&is(q,p.p/p.a)&&q.prompt.includes(String(p.p))+(q.givens.svg||'').includes('>'+p.p+'<')>0,
- 'i4-sub-zero':(q,p)=>{const v=variantOf(q);if(v==='whole')return is(q,p.a-p.b)&&String(p.a).includes('0');return Math.round(numKey(q)*100)===p.a-p.b&&p.a%100<p.b%100;},
+ 'i4-sub-zero':(q,p)=>{const v=variantOf(q);if(v==='whole-dollars')return p.b%100===0&&p.b<p.a&&Math.round(numKey(q)*100)===p.a-p.b;if(v==='whole-minus-diff')return p.a%100===0&&p.c<100&&p.b-p.c<p.a&&Math.round(numKey(q)*100)===p.a-(p.b-p.c);if(v==='whole')return is(q,p.a-p.b)&&String(p.a).includes('0');return Math.round(numKey(q)*100)===p.a-p.b&&p.a%100<p.b%100;},
  'i4-round100':(q,p)=>{const r=x=>100*Math.floor((x+50)/100);return variantOf(q)==='add'?is(q,r(p.a)+r(p.b)):is(q,r(p.n))&&p.n%100!==50;},
  'i4-mult-tens':(q,p)=>variantOf(q)==='three'?E.checkAnswer(q,`${p.a*p.b}; ${p.a*p.b}0; ${p.a*p.b}00`).answerCorrect:is(q,p.a*p.b)&&(p.a%10===0||p.b%100===0),
  'i4-add-money':(q,p)=>Math.round(numKey(q)*100)===(variantOf(q)==='three'?p.a+p.b+p.c:p.a+100*p.d+p.c),
@@ -223,7 +226,7 @@ const oracle={
  'i4-share-story':(q,p)=>p.n%p.d===0&&is(q,p.n/p.d)&&q.prompt.includes(String(p.n)),
  'i4-fact-family-x':(q,p)=>{const c=p.a*p.b;return E.checkAnswer(q,`${c}/${p.b}=${p.a}; ${p.b}x${p.a}=${c}; ${c}÷${p.a}=${p.b}; ${p.a}*${p.b}=${c}`).answerCorrect&&!E.checkAnswer(q,`${p.a}x${p.b}=${c}; ${p.b}x${p.a}=${c}; ${c}÷${p.a}=${p.b}`).answerCorrect;},
  'i4-mult-story':(q,p)=>is(q,p.a*p.b),
- 'i4-dec-add':(q,p)=>{const v=variantOf(q);if(v==='times')return Math.round(numKey(q)*10)===p.w*p.n;if(v==='sub')return Math.round(Number(key(q))*100)===p.a-p.b;return Math.round(Number(key(q))*100)===p.a+p.b+p.c;},
+ 'i4-dec-add':(q,p)=>{const v=variantOf(q);if(v==='minus-sum')return p.a>p.b+p.c&&Math.round(Number(key(q))*100)===p.a-(p.b+p.c);if(v==='times')return Math.round(numKey(q)*10)===p.w*p.n;if(v==='sub')return Math.round(Number(key(q))*100)===p.a-p.b;return Math.round(Number(key(q))*100)===p.a+p.b+p.c;},
  'i4-dec-place':(q,p)=>{const i=['hundreds','tens','ones','tenths','hundredths'].indexOf(p.place);return is(q,p.d[i])&&q.prompt.includes(`${p.d[0]}${p.d[1]}${p.d[2]}.${p.d[3]}${p.d[4]}`);},
  'i4-percent':(q,p)=>{const v=variantOf(q);
   if(v==='figure'){const out=2*p.c*p.c;return E.checkAnswer(q,String(p.not?out:100-out)).answerCorrect&&!E.checkAnswer(q,String(p.not?100-out:out)).answerCorrect;}

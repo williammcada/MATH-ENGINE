@@ -931,6 +931,35 @@ TASKS_I4 = [
     _t('TX4_S12_00040', 'i4-roman', 'from', 'The number a Roman numeral represents', 'number-representation'),
     _t('TX4_S12_00058', 'i4-roman', 'to', 'Write a number through 1999 in Roman numerals', 'number-representation'),
     _t('TX4_S12_00002', 'i4-roman', 'both', 'A Roman numeral to a number, and a number to Roman numerals', 'number-representation'),
+    # Request R3 (owner-approved 2026-10-17, Engine v0.66.0): these tasks replace the earlier structured adaptations
+    # (docs/change-specs/v0.66.0-i4-requests.md). Each record keeps its own task; none is consolidated.
+    _t('TX4_S01_00104', 'i4-add-row', 'six', 'Add six one-digit numbers in a row', 'whole-arithmetic', True),
+    _t('TX4_S01_00106', 'i4-add-row', 'seven', 'Add seven one-digit numbers in a row', 'whole-arithmetic', True),
+    _t('TX4_S01_00110', 'i4-add-row', 'seven', 'Add seven one-digit numbers in a row', 'whole-arithmetic', True),
+    _t('TX4_S01_00114', 'i4-missing-row', 'to-100', 'Missing addend that makes a total of 100', 'equations', True),
+    _t('TX4_S01_00116', 'i4-missing-row', 'big', 'Missing two-digit addend among two-digit addends', 'equations', True),
+    _t('TX4_S01_00119', 'i4-missing-row', 'nine', 'Missing addend among nine addends', 'equations', True),
+    _t('TX4_S02_00072', 'i4-add-3digit', 'plus-2digit', 'Add a two-digit number to a three-digit number', 'whole-arithmetic', True),
+    _t('TX4_S02_00074', 'i4-sub', 'tens-money', 'Subtract dollar amounts in tens', 'whole-arithmetic', True),
+    _t('TX4_S02_00125', 'i4-sub', 'tens', 'Subtract three-digit multiples of ten', 'whole-arithmetic', True),
+    _t('TX4_S02_00078', 'i4-sub', 'from-hundreds', 'Subtract a dollar amount from whole hundreds', 'whole-arithmetic', True),
+    _t('TX4_S02_00147', 'i4-expanded-form', 'products', 'Expanded form using multiplication', 'number-representation', True),
+    _t('TX4_S02_00082', 'i4-expanded-form', 'products', 'Expanded form using multiplication', 'number-representation', True),
+    _t('TX4_S03_00076', 'i4-angle-name', 'type', 'Name the type of an angle', 'angles', True),
+    _t('TX4_S03_00054', 'i4-clock2', 'overnight', 'Elapsed time from p.m. to a.m.', 'calendar-time', True),
+    _t('TX4_S05_00039', 'i4-sub-zero', 'whole-dollars', 'Subtract whole dollars from a money amount', 'decimal-arithmetic', True),
+    _t('TX4_S05_00074', 'i4-sub-zero', 'whole-dollars', 'Subtract whole dollars from a money amount', 'decimal-arithmetic', True),
+    _t('TX4_S05_00079', 'i4-paren', 'minus-diff', 'Subtract a difference in parentheses', 'expressions', True),
+    _t('TX4_S05_00099', 'i4-missing-factor', 'tens-product', 'Missing factor with a product in tens', 'equations', True),
+    _t('TX4_S05_00100', 'i4-missing-factor', 'two-digit-left', 'Missing two-digit factor, product written first', 'equations', True),
+    _t('TX4_S05_00101', 'i4-missing-factor', 'tens-product', 'Missing factor with a product in tens', 'equations', True),
+    _t('TX4_S05_00088', 'i4-dec-add', 'minus-sum', 'A decimal minus a sum of decimals in parentheses', 'decimal-arithmetic', True),
+    _t('TX4_S05_00139', 'i4-dec-add', 'minus-sum', 'A decimal minus a sum of decimals in parentheses', 'decimal-arithmetic', True),
+    _t('TX4_S10_00080', 'i4-dec-add', 'minus-sum', 'A decimal minus a sum of decimals in parentheses', 'decimal-arithmetic', True),
+    _t('TX4_S05_00143', 'i4-sub-zero', 'whole-minus-diff', 'Whole dollars minus a money difference in parentheses', 'decimal-arithmetic', True),
+    _t('TX4_S06_00054', 'i4-dates', 'between', 'The month between two months', 'calendar-time', True),
+    _t('TX4_S07_00085', 'i4-missing-factor', 'two-digit', 'Missing factor with a two-digit answer', 'equations', True),
+    _t('TX4_S07_00086', 'i4-missing-factor', 'two-digit', 'Missing factor with a two-digit answer', 'equations', True),
 ]
 
 # Records consolidated into a port task above (same demand: a choice-only twin or a repeated fixed item).
@@ -1160,23 +1189,5 @@ CONSOLIDATED_I4 = {
 # Records left as they are (covered-provisional, served by an earlier adaptation) because porting them would need a
 # shared-file change: see docs/change-specs/coverage-i4-pending-requests-v0.1.md. Not read by the map builder.
 PENDING_I4 = {
-    # Batch I4-1 (request R3: replacing these earlier adaptations changes the count in tests/structured-bank-audit.py)
-    'TX4_S01_00104': 'R3', 'TX4_S01_00106': 'R3', 'TX4_S01_00110': 'R3',
-    'TX4_S01_00114': 'R3', 'TX4_S01_00116': 'R3', 'TX4_S01_00119': 'R3',
-    # Batch I4-3 (request R3)
-    'TX4_S02_00072': 'R3', 'TX4_S02_00074': 'R3', 'TX4_S02_00125': 'R3', 'TX4_S02_00078': 'R3',
-    'TX4_S02_00147': 'R3', 'TX4_S02_00082': 'R3',
-    # Batch I4-5 (request R3)
-    'TX4_S03_00076': 'R3', 'TX4_S03_00054': 'R3',
-    # Batch I4-7 (request R3)
-    'TX4_S05_00099': 'R3', 'TX4_S05_00100': 'R3', 'TX4_S05_00101': 'R3',
-    'TX4_S05_00074': 'R3', 'TX4_S05_00039': 'R3', 'TX4_S05_00079': 'R3',
-    # Batch I4-8 (request R3)
-    'TX4_S05_00088': 'R3', 'TX4_S05_00139': 'R3', 'TX4_S05_00143': 'R3',
-    # Batch I4-9 (request R3)
-    'TX4_S06_00054': 'R3',
-    # Batch I4-10 (request R3)
-    'TX4_S07_00085': 'R3', 'TX4_S07_00086': 'R3',
-    # Batch I4-13 (request R3)
-    'TX4_S10_00080': 'R3',
+    # Empty since v0.66.0: the 27 records of request R3 are ported above (Request R3 block).
 }

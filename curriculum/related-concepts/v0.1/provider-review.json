@@ -592,76 +592,6 @@
     ]
   },
   {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00104",
-    "conceptIds": [
-      "whole-arithmetic",
-      "focus:whole-sum-formats"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "df230b01cbc94137d92a22f85ab0eb1efa769571208f140cf3f90e8571c1bfa1",
-    "limits": "related: Add three or more whole-number operands. More addends but varied digit ranges; no blanket difficulty order.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00104"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106",
-    "conceptIds": [
-      "whole-arithmetic",
-      "focus:whole-sum-formats"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "3585c1df7f5fba918ae17af491b7fdb58e1f5094888b11b0f15282aeeed603cd",
-    "limits": "related: Add three or more whole-number operands. More addends but varied digit ranges; no blanket difficulty order.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00110",
-    "conceptIds": [
-      "whole-arithmetic",
-      "focus:whole-sum-formats"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "b70c38bf77c90ee51b28b1bff15afc0211d00e5a6f0c868e6b84760fcfc52e4b",
-    "limits": "related: Add three or more whole-number operands. More addends but varied digit ranges; no blanket difficulty order.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00110"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116",
-    "conceptIds": [
-      "equations",
-      "focus:unknown-sum-length"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "9b1049cb6efe28384dd5a9806deeec531774ff8bb5e5268d557546cc583e2cfe",
-    "limits": "related: Find a missing addend with three or four known addends. Collect more known terms; some templates use two-digit values. Number ranges and denominator structures overlap; the stages organize these contracts without a universal difficulty order.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114",
-    "conceptIds": [
-      "equations",
-      "focus:unknown-sum-length"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "2ddb324d213c294a5bb12f87c2a949ca06ca61cc8634c45e661092b5172bf1bb",
-    "limits": "related: Find a missing addend with three or four known addends. Collect more known terms; some templates use two-digit values. Number ranges and denominator structures overlap; the stages organize these contracts without a universal difficulty order.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114"
-    ]
-  },
-  {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00111",
     "conceptIds": [
       "equations",
@@ -673,20 +603,6 @@
     "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00111"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119",
-    "conceptIds": [
-      "equations",
-      "focus:unknown-sum-length"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "ad80aaf40ffe07c382052b25a8c341e903843b450dfddd3631a1df703e942111",
-    "limits": "related: Find a missing addend among eight known single-digit addends. Maintain a longer addition total before isolating the unknown. Number ranges and denominator structures overlap; the stages organize these contracts without a universal difficulty order.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119"
     ]
   },
   {
@@ -719,20 +635,6 @@
     ]
   },
   {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00072",
-    "conceptIds": [
-      "whole-arithmetic",
-      "focus:whole-addition"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "0936bda723c38b8d85a013bcad4a369a4d666273f21077b734e3eadb24e50ade",
-    "limits": "Two whole operands with three or more digits; align places. Money template 37 draws whole amounts.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00072"
-    ]
-  },
-  {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00073",
     "conceptIds": [
       "decimal-arithmetic",
@@ -745,21 +647,6 @@
     "limits": "Two whole operands with three or more digits; align places. Money template 37 draws whole amounts.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00073"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00074",
-    "conceptIds": [
-      "decimal-arithmetic",
-      "whole-arithmetic",
-      "focus:whole-subtraction"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "ecbcb1a6522abbc7b16482a68ef390865a67784c6ce855514ea67c975f58153f",
-    "limits": "Two-digit whole subtraction, nonnegative final result; money mode does not introduce fractional inputs.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00074"
     ]
   },
   {
@@ -788,21 +675,6 @@
     "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00076"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00078",
-    "conceptIds": [
-      "decimal-arithmetic",
-      "whole-arithmetic",
-      "focus:whole-subtraction"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "9002ff7c49683693913239ef2c025183ad792718bc2035a13a29d4de231f3eef",
-    "limits": "Three-digit minuend with two/three-digit whole subtrahend, nonnegative result.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00078"
     ]
   },
   {
@@ -875,20 +747,6 @@
     "limits": "Two-digit whole subtraction, nonnegative final result; money mode does not introduce fractional inputs.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00124"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00125",
-    "conceptIds": [
-      "whole-arithmetic",
-      "focus:whole-subtraction"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "a42e21ffa5bce8b4f2ceb0e6570d96970ecd9950bda16ddbd314317f89d9d364",
-    "limits": "Three-digit minuend with two/three-digit whole subtrahend, nonnegative result.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00125"
     ]
   },
   {
@@ -1004,48 +862,6 @@
     ]
   },
   {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074",
-    "conceptIds": [
-      "decimal-arithmetic",
-      "focus:decimal-operations"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "08cf0ecc6bcbd439727d37d8e4b99dff659d2ffae6b962666a4a50a10247dcc5",
-    "limits": "Two-operand decimal or money addition/subtraction; align up to three decimal places, nonnegative final result. AST fractional zero-integer ranges remain variable.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00079",
-    "conceptIds": [
-      "whole-arithmetic",
-      "focus:whole-subtraction-grouping"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "d801b4dd03fe662ee83cf4721fb02d33361efbf7ea3945cac68f66344fcff2ba",
-    "limits": "extension: Subtract a parenthesized whole-number difference. Evaluate the inner difference before outer subtraction.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00079"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00088",
-    "conceptIds": [
-      "decimal-arithmetic",
-      "focus:decimal-subtraction-grouping"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "3ab3417082152b0c455c24b91fb797cac3dd1f6d49db053b5dc68e0cc61abc90",
-    "limits": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00088"
-    ]
-  },
-  {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00089",
     "conceptIds": [
       "decimal-arithmetic",
@@ -1085,62 +901,6 @@
     "limits": "Two-operand decimal or money addition/subtraction; align up to three decimal places, nonnegative final result. AST fractional zero-integer ranges remain variable.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00092"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039",
-    "conceptIds": [
-      "decimal-arithmetic",
-      "focus:decimal-operations"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "e7d17f86c8d1d6cd2ea86ff5686a90cde9e03add895b894b02c9eebce01dee9a",
-    "limits": "Two-operand decimal or money addition/subtraction; align up to three decimal places, nonnegative final result. AST fractional zero-integer ranges remain variable.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00099",
-    "conceptIds": [
-      "equations",
-      "focus:linear-equations"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "91f5caf9dccb39ee85c95f8e8fdc7453d5bb379ddfdd27b9e8353aba50cf9793",
-    "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00099"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00100",
-    "conceptIds": [
-      "equations",
-      "focus:linear-equations"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "8bb20dacbc64f109e14f4c6b8190c53e6b614e886aa903e96bac7885e94e190c",
-    "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00100"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00101",
-    "conceptIds": [
-      "equations",
-      "focus:linear-equations"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "c5e0eff5dd237f3d4a5d37d3163f359102132cbbecfb79654cd958f4803c5f2f",
-    "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00101"
     ]
   },
   {
@@ -1256,20 +1016,6 @@
     ]
   },
   {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00139",
-    "conceptIds": [
-      "decimal-arithmetic",
-      "focus:decimal-subtraction-grouping"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "1f9fdc8e69faa0c005952e80b89399c4007386644e1c13e4d7fe872b83d369e4",
-    "limits": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00139"
-    ]
-  },
-  {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00141",
     "conceptIds": [
       "decimal-arithmetic",
@@ -1295,20 +1041,6 @@
     "limits": "Two-operand decimal or money addition/subtraction; align up to three decimal places, nonnegative final result. AST fractional zero-integer ranges remain variable.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00142"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00143",
-    "conceptIds": [
-      "decimal-arithmetic",
-      "focus:decimal-subtraction-grouping"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "5e11f494a52b1bcb2432d8c42b005be0bc08875dd218eb285c54bdeffc1db739",
-    "limits": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00143"
     ]
   },
   {
@@ -1438,34 +1170,6 @@
     ]
   },
   {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085",
-    "conceptIds": [
-      "equations",
-      "focus:linear-equations"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "b0699b54b048973cfad95a23a58acd4ad405eb2d21ca44c38f1e5c9ce8d5a510",
-    "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086",
-    "conceptIds": [
-      "equations",
-      "focus:linear-equations"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "97a3b03f9792247c06cf7076f51d051021a81b89f0f75e40c0dce189ac86a50b",
-    "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086"
-    ]
-  },
-  {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00077",
     "conceptIds": [
       "decimal-arithmetic",
@@ -1491,20 +1195,6 @@
     "limits": "Two-operand decimal or money addition/subtraction; align up to three decimal places, nonnegative final result. AST fractional zero-integer ranges remain variable.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00079"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00080",
-    "conceptIds": [
-      "decimal-arithmetic",
-      "focus:decimal-subtraction-grouping"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "e1ecb6ea00908fa5ae901e7f04278cb606054b2df38c1b40a03e25d74f05b721",
-    "limits": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00080"
     ]
   },
   {
@@ -4132,20 +3822,6 @@
     ]
   },
   {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00054",
-    "conceptIds": [
-      "calendar-time",
-      "focus:clock-time"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "135256430536a36636c96f031036a15e8a2dc743013237f43ffa597d013366ad",
-    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00054"
-    ]
-  },
-  {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00071",
     "conceptIds": [
       "statistics",
@@ -4683,48 +4359,6 @@
     ]
   },
   {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00082",
-    "conceptIds": [
-      "number-representation",
-      "focus:number-notation-forms"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "f151d00a6e443f31540e32794e74f5092318da4f233755cf4fdc0a035f2ea3a0",
-    "limits": "Expanded sums of place values; expanded-large has only two nonzero places and is not automatically harder than dense shorter numbers.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00082"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00147",
-    "conceptIds": [
-      "number-representation",
-      "focus:number-notation-forms"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "b46d29e6b30a800467c115925fd04c33d15d7464c238827bdac44856df774022",
-    "limits": "Expanded sums of place values; expanded-large has only two nonzero places and is not automatically harder than dense shorter numbers.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00147"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076",
-    "conceptIds": [
-      "angles",
-      "focus:angle-classification-work"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "65f2e362c23484d5c2c5442d6ef523c6caed5455a72ad6406f6648805619dea6",
-    "limits": "Classify a displayed angle from 30 through 180 degrees as acute, right, obtuse or straight. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076"
-    ]
-  },
-  {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00078",
     "conceptIds": [
       "angles",
@@ -5048,20 +4682,6 @@
     "limits": "Organize fifteen two-digit values into the supplied stems two through five with sorted leaves and duplicates; the stems and key are already provided. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
     "sourceIds": [
       "course-87-en:item:SN870810"
-    ]
-  },
-  {
-    "providerSourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054",
-    "conceptIds": [
-      "calendar-time",
-      "focus:calendar-month-relations"
-    ],
-    "status": "reconciled-existing-reviewed-evidence",
-    "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "86b9f60c03e74113dcf2651a5d21a279fcd0413b2b7825f397e05f8cd8d7939e",
-    "limits": "Name the month between two stated months in the same year; this recipe never crosses December. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
-    "sourceIds": [
-      "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054"
     ]
   },
   {
@@ -41495,11 +41115,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00070",
     "conceptIds": [
-      "whole-arithmetic"
+      "whole-arithmetic",
+      "focus:whole-addition"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "c12cebc772699df0f6901649725396656cacbd2d3cb79524b0d39b8b8666af9f",
+    "evidenceSha256": "41a233b2be483fc0741f54b2cae1e52750d270cb958cf6f15c9a7b1a074fc01b",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00070"
@@ -41560,11 +41181,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00013",
     "conceptIds": [
-      "whole-arithmetic"
+      "whole-arithmetic",
+      "focus:whole-addition"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "81260699c8dba95c2aa3e05fd890083839ea63e0d4c28ac8b0ab236943550cff",
+    "evidenceSha256": "7bcd435c1f323d8d8ab70b5e35d973502ba02b77a7f94a2b8d6d00bba5143415",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00013"
@@ -41573,11 +41195,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00045",
     "conceptIds": [
-      "whole-arithmetic"
+      "whole-arithmetic",
+      "focus:whole-addition"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "9ffd545d675265b0bdff2033d768fa409f769273a83b59e96ef7aeef628ca4dd",
+    "evidenceSha256": "bef9d81404b33c9ead857d627a95a1a9484d6575a3a07093f215fa9f69e259f8",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00045"
@@ -41586,11 +41209,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00043",
     "conceptIds": [
-      "whole-arithmetic"
+      "whole-arithmetic",
+      "focus:whole-addition"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "bdb8e7d50f984f79a5042eec1b00cc403dde250805ca3b6adc8af61f976834e4",
+    "evidenceSha256": "0c2d5b1c2700162290553c98fca1f33372d91fd25f76328271a8670e1813052c",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00043"
@@ -41599,11 +41223,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00044",
     "conceptIds": [
-      "whole-arithmetic"
+      "whole-arithmetic",
+      "focus:whole-addition"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "e13a44ead83174d5dbbcfa9b8e5b72531e9342a54307c4e66725104c646b620a",
+    "evidenceSha256": "47071afb59b0d678da6319791d28da07b8b34e451a113bd5bce3e8f26c4c0936",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00044"
@@ -41612,11 +41237,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00114",
     "conceptIds": [
-      "whole-arithmetic"
+      "whole-arithmetic",
+      "focus:whole-addition"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "bb5a2106afe35c81f2dab4ffbc5b0193441503d1e3ab5f964009aa27a47f03f5",
+    "evidenceSha256": "d7c4119fb1b247867673f7fbf509c4277c33c8b7585073cb5b8eddc10492d5f6",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00114"
@@ -41625,11 +41251,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00122",
     "conceptIds": [
-      "whole-arithmetic"
+      "whole-arithmetic",
+      "focus:whole-addition"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "88e3931ac127c30ea9c82f9558978ed2709cc5d2dca26b92b90b1ef8d4233a16",
+    "evidenceSha256": "699b6b3c925454cead465486aafd5d3f58258fa852a1f3a55413795ac6cb7a94",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00122"
@@ -41638,11 +41265,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00012",
     "conceptIds": [
-      "whole-arithmetic"
+      "whole-arithmetic",
+      "focus:whole-subtraction"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "9270b628ddf64c1fab50d575808c74d7a875a376979799bd5f423ca9ebd1ea43",
+    "evidenceSha256": "2a2e22d359309aa0a199d6902181470e06908ccb231a5b18cadeedec6b065ad3",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00012"
@@ -41651,11 +41279,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00016",
     "conceptIds": [
-      "whole-arithmetic"
+      "whole-arithmetic",
+      "focus:whole-subtraction"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "6b4ac224ad0cf9e62dec85b874047fc0eee9ae0b666d975c166bfda096a81d9c",
+    "evidenceSha256": "1eb1910e0cdf06256671852dc5925bfc9fb70d2e6904e5e2a7c83356e0d74cb9",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00016"
@@ -41664,11 +41293,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00018",
     "conceptIds": [
-      "whole-arithmetic"
+      "whole-arithmetic",
+      "focus:whole-subtraction"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "a0585f4df131b6399e49a89951cb9bb66648168e0c05b0abdba9b96c78ae8f79",
+    "evidenceSha256": "8645da3edd9571e2b80c1f494de11114735e65e9ffb84e7f59518ba41da75be9",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00018"
@@ -41703,11 +41333,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00077",
     "conceptIds": [
-      "whole-arithmetic"
+      "whole-arithmetic",
+      "focus:whole-subtraction"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "0c92f88dfc77b24f661f24645b129516d0036287996f6a6714ff3e7efcd127c1",
+    "evidenceSha256": "e24a3f361d2de3d899fdd65ec30bd5c12ba48e23c437ae814d3e5a6db702d74b",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00077"
@@ -41716,11 +41347,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00131",
     "conceptIds": [
-      "whole-arithmetic"
+      "whole-arithmetic",
+      "focus:whole-subtraction"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "382f02b4b0a4ed6213e7917f7e839b64fd01129cc04ee2bcc60b75dc5279c213",
+    "evidenceSha256": "57273b78f98a505425ced9076b6ad9f11ef5c150d30309b29d63190395d983be",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00131"
@@ -41729,11 +41361,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00010",
     "conceptIds": [
-      "whole-arithmetic"
+      "whole-arithmetic",
+      "focus:whole-subtraction"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "21b54a3c112a121688b62fdd9a5cb1ab16664bee9cc4dbcdaddb0fb2658caa9a",
+    "evidenceSha256": "402fdca4a258b0a8eac8ded551ffdf4a16853b42b22ca6847c39fc8b36b3e956",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00010"
@@ -41742,11 +41375,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00039",
     "conceptIds": [
-      "whole-arithmetic"
+      "whole-arithmetic",
+      "focus:whole-subtraction"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "f69522b96aac460421df311c83d14e2da6d7bafeebdb616cf0f5cd5398cf4a72",
+    "evidenceSha256": "14699531a8118bd8615a35f26eb8ce3147fbd1f1f6e27ec496d11e01f58f563d",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00039"
@@ -41755,11 +41389,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00053",
     "conceptIds": [
-      "number-representation"
+      "number-representation",
+      "focus:number-notation-forms"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "80d8bbafb6eb89af043a58998de4bc87e7208c9b98f78d6288ec7857d86157c0",
+    "evidenceSha256": "96bdda6df749584cf5561bee814cca3a722f441c72d2f272d392e1b4606430ff",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00053"
@@ -41768,11 +41403,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00009",
     "conceptIds": [
-      "number-representation"
+      "number-representation",
+      "focus:number-notation-forms"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "1ed6bc2ea101e6687672445f3e363dd299500b5c9aae7323c5e1e88a8a83894b",
+    "evidenceSha256": "c7783b3976ecd03d22947c51f6b4a7d8dbe573d881afd8f261a91835a7de69d9",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00009"
@@ -41781,11 +41417,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00036",
     "conceptIds": [
-      "number-representation"
+      "number-representation",
+      "focus:number-notation-forms"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "dd8cc58e11dcbaa0c8df273d7c6bc4581384bcd2caf53d13ec4ad589e69347f4",
+    "evidenceSha256": "2f686ef2c845cea55dfed626d6f6adf999b35d1457482f0829d3aab664c7dadb",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00036"
@@ -42899,11 +42536,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00006",
     "conceptIds": [
-      "calendar-time"
+      "calendar-time",
+      "focus:clock-time"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "988fdf3efb6302a4649c936ee0280bb90e610d57cdeec8aebff2582837ffa078",
+    "evidenceSha256": "2b97feb50dc8039c2a71a411451a9207d4f0d8e873da208597cbc1f378471de9",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00006"
@@ -42912,11 +42550,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00052",
     "conceptIds": [
-      "calendar-time"
+      "calendar-time",
+      "focus:clock-time"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "7d2384ddd5136678d8777e8594bb73ec5f8ec5af4f51b6aef5691e363d697297",
+    "evidenceSha256": "b9035c7bf331eef13fe0dd090493c15747d854a9b96d7872872303d35adee269",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00052"
@@ -42925,11 +42564,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00083",
     "conceptIds": [
-      "calendar-time"
+      "calendar-time",
+      "focus:clock-time"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "5d84567c3148f049bfcb6a99736d9bebabf72db6a5ef0d9648363bfb75805bd3",
+    "evidenceSha256": "ac7115ea73c8b83d2e12dbfcf8f6b6b576e2c306cf7d5a6768485e26de0dcf03",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00083"
@@ -42938,11 +42578,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00137",
     "conceptIds": [
-      "calendar-time"
+      "calendar-time",
+      "focus:clock-time"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "3f1a3c61771abb0aa8301961c29e9e3d0ab56514ac5e4dbefc5e57dbb63afb24",
+    "evidenceSha256": "2f9c6c441675d57382e7a788de7884a62596b4d3554c3084f900ae8b81cb89d0",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00137"
@@ -43016,11 +42657,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00086",
     "conceptIds": [
-      "calendar-time"
+      "calendar-time",
+      "focus:clock-time"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "a1dd4a30c05e40095f490a7e36585051a06f8cfafb73407c1e9fd147569bfdfa",
+    "evidenceSha256": "fcb123b31b7e0399cd4a63b8cedb500ffc265b6ab2d1fe3ebccb7d0b93758919",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00086"
@@ -44212,11 +43854,13 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00013",
     "conceptIds": [
-      "decimal-arithmetic"
+      "decimal-arithmetic",
+      "focus:decimal-operations",
+      "focus:decimal-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "3a01a0728332fbbf6abece7e6d2edabb10a6a918cc382342e6791fbbb409500f",
+    "evidenceSha256": "d1b1824a6634d2cd29a15fab8e78e4935c5e90a6c458fdd5db43e140ec52831a",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00013"
@@ -44225,11 +43869,13 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00047",
     "conceptIds": [
-      "decimal-arithmetic"
+      "decimal-arithmetic",
+      "focus:decimal-operations",
+      "focus:decimal-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "f46606e05e62bd60889e30fcbfd01a9c77e0c6ae9ef799af4132ac603bd60769",
+    "evidenceSha256": "0590abf97f38ff5c13d7bcea51fc76a0e5370658fe5705f1a792ed8871a249e1",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00047"
@@ -44238,11 +43884,14 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00049",
     "conceptIds": [
-      "whole-arithmetic"
+      "decimal-arithmetic",
+      "whole-arithmetic",
+      "focus:decimal-operations",
+      "focus:decimal-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "857778f79915e214af66c84e4720d9e3ba8032381f6834ebba2ac75cea9c3ff4",
+    "evidenceSha256": "3cc936fead3a753efa99d3db37cc9c430050cd3d9883120984294d3fc1b4e479",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00049"
@@ -44251,11 +43900,13 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00096",
     "conceptIds": [
-      "decimal-arithmetic"
+      "decimal-arithmetic",
+      "focus:decimal-operations",
+      "focus:decimal-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "13fbd04e8ac377cc9585ec14fec3ec2391df1c1cd148f281487c9e663f7df620",
+    "evidenceSha256": "737542f94b42b5c46f9056c8c93e3222d7d22e47d5ca701d10a13f42673ded0d",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00096"
@@ -44264,11 +43915,13 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00097",
     "conceptIds": [
-      "decimal-arithmetic"
+      "decimal-arithmetic",
+      "focus:decimal-operations",
+      "focus:decimal-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "e370839ca836bbaf7be18d69dea7988630a7f14845f2cc405f9bbea6b73f20de",
+    "evidenceSha256": "2db0723c91959bc9369ec1361428d9956f871cab50186e51a44f99195b7bd9a5",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00097"
@@ -44446,11 +44099,13 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00008",
     "conceptIds": [
-      "expressions"
+      "expressions",
+      "whole-arithmetic",
+      "focus:whole-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "721a91bd1ace49f2c5094745b3a8987d534d86812cc88db56cf801375c94b67a",
+    "evidenceSha256": "64816f6ca836a0ad2e840bebe52ea56b64c723cf49182b619250628f86a4b722",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00008"
@@ -44459,11 +44114,13 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00033",
     "conceptIds": [
-      "expressions"
+      "expressions",
+      "whole-arithmetic",
+      "focus:whole-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "05c018c36b396445e5c990d1b2394d8134be125f1f5b20f14e056b1cd65e3895",
+    "evidenceSha256": "5b627b7a2db00e1195e626f00857c923393a5d32fcedb84695d71d55b113196e",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00033"
@@ -44472,11 +44129,13 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00031",
     "conceptIds": [
-      "expressions"
+      "expressions",
+      "whole-arithmetic",
+      "focus:whole-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "089b4840134eb4afabc1d020c782c19bdba12756f094e810494f072116d05104",
+    "evidenceSha256": "62a2ed75a56d571dea6d0f892d6fb3b4da4da737438ee41a514cf47fb3ce4fa9",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00031"
@@ -44485,11 +44144,13 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00125",
     "conceptIds": [
-      "expressions"
+      "expressions",
+      "whole-arithmetic",
+      "focus:whole-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "5bafdcf57a2b54fb325b8229746b036a3d7b22325bdf029f517ae9bcff141da1",
+    "evidenceSha256": "d31e85bd33c50fba366c98342d167eeba7bddb86f09d6d6c90637e95e021ab70",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00125"
@@ -44498,11 +44159,13 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00121",
     "conceptIds": [
-      "expressions"
+      "expressions",
+      "whole-arithmetic",
+      "focus:whole-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "808fe354706fa7e063ba73c579aa38dbdea615f2073bc65bbeae5493c7f3978d",
+    "evidenceSha256": "8420433a8f472a10bb978b767adc2c92874fc08a649ed25eebe255c145a0b1d9",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00121"
@@ -44511,11 +44174,13 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00122",
     "conceptIds": [
-      "expressions"
+      "expressions",
+      "whole-arithmetic",
+      "focus:whole-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "fcc57ed7bfc796d39bb0f7be31ef09d0960e8c36ae31552035fb4e8fbdd6f24c",
+    "evidenceSha256": "c8861f3c4c3af604d8c2abd2d07288fff3db371a52a9f53f506b27e9b037ad0b",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00122"
@@ -44524,11 +44189,13 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00077",
     "conceptIds": [
-      "expressions"
+      "expressions",
+      "whole-arithmetic",
+      "focus:whole-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "881bc845d4e25f2fbfdf07998e36d5d790d25f2bbcf208d0bef21bf5357383b1",
+    "evidenceSha256": "7b7e05c2e6f3703886008546819ee4ffb483203617e975f3d7b188d009c228f9",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00077"
@@ -44537,11 +44204,13 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00126",
     "conceptIds": [
-      "expressions"
+      "expressions",
+      "whole-arithmetic",
+      "focus:whole-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "926c3ead80d3a9aa2fdcbac2eedaefeaed6c34f9a43358b53df724af4ceff2b6",
+    "evidenceSha256": "8c329c26f046f6ad20009a3ec718a9fad82829defbaea698b146292589f91a67",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00126"
@@ -44550,11 +44219,13 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00120",
     "conceptIds": [
-      "expressions"
+      "expressions",
+      "whole-arithmetic",
+      "focus:whole-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "ee1180c4f5809648f5d8292a28cf4631a71afde68c2284c87775193d53721d96",
+    "evidenceSha256": "325ca7a9114eec73eae9a61fae14649826358f617f4a3827350be7ab3af611c1",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00120"
@@ -44732,11 +44403,13 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00080",
     "conceptIds": [
-      "expressions"
+      "expressions",
+      "whole-arithmetic",
+      "focus:whole-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "fa3664a7d68cc9c395ec33df64fda78d7b1e7026e3ac718e0a09f62fb1b6be4a",
+    "evidenceSha256": "910c6fa6b3b7af02f7d176cacb667cef0c42bdec402bef6189fac5bd4739b290",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00080"
@@ -44901,11 +44574,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002",
     "conceptIds": [
-      "decimal-arithmetic"
+      "decimal-arithmetic",
+      "focus:decimal-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "c642abc7affc67af137aff6aa34c9a387df3cfc71a6b983843dd728393652c9c",
+    "evidenceSha256": "c9792aadb6ef0e4dc095d295746134e470d66d5f6d8408f1b9356704f4fcbdad",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00002"
@@ -44914,11 +44588,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00018",
     "conceptIds": [
-      "decimal-arithmetic"
+      "decimal-arithmetic",
+      "focus:decimal-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "c9933be9b3543c10642cea24e76e2f325aaa765f5bd545392d81375ff797cdcb",
+    "evidenceSha256": "ef9ea05310521e5a03a4e45749b6b5bca9a4b87a92e9969bb1cebcf0b81073cb",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00018"
@@ -44927,11 +44602,12 @@
   {
     "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00066",
     "conceptIds": [
-      "decimal-arithmetic"
+      "decimal-arithmetic",
+      "focus:decimal-subtraction-grouping"
     ],
     "status": "reconciled-existing-reviewed-evidence",
     "basis": "curriculum/cross-course/v0.6; full prior review retained",
-    "evidenceSha256": "09840e8d3f8b8a590d9a540a477a352fa8a17aa42ec822fd87eeb216f9703fbb",
+    "evidenceSha256": "3028b8a926490707556e9f578ec9069a51e97933f8476eecfc8e86e9ec21f6a9",
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00066"
@@ -49901,6 +49577,388 @@
     "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
     "sourceIds": [
       "intermediate-4-en:bank:Int4_Section12:item:TX4_S12_00002"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00104",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:whole-sum-formats"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "df230b01cbc94137d92a22f85ab0eb1efa769571208f140cf3f90e8571c1bfa1",
+    "limits": "related: Add three or more whole-number operands. More addends but varied digit ranges; no blanket difficulty order.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00104"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:whole-sum-formats"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "3585c1df7f5fba918ae17af491b7fdb58e1f5094888b11b0f15282aeeed603cd",
+    "limits": "related: Add three or more whole-number operands. More addends but varied digit ranges; no blanket difficulty order.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00106"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00110",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:whole-sum-formats"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "b70c38bf77c90ee51b28b1bff15afc0211d00e5a6f0c868e6b84760fcfc52e4b",
+    "limits": "related: Add three or more whole-number operands. More addends but varied digit ranges; no blanket difficulty order.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00110"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114",
+    "conceptIds": [
+      "equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "2ddb324d213c294a5bb12f87c2a949ca06ca61cc8634c45e661092b5172bf1bb",
+    "limits": "related: Find a missing addend with three or four known addends. Collect more known terms; some templates use two-digit values. Number ranges and denominator structures overlap; the stages organize these contracts without a universal difficulty order.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00114"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116",
+    "conceptIds": [
+      "equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "9b1049cb6efe28384dd5a9806deeec531774ff8bb5e5268d557546cc583e2cfe",
+    "limits": "related: Find a missing addend with three or four known addends. Collect more known terms; some templates use two-digit values. Number ranges and denominator structures overlap; the stages organize these contracts without a universal difficulty order.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00116"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119",
+    "conceptIds": [
+      "equations",
+      "focus:unknown-sum-length"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "ad80aaf40ffe07c382052b25a8c341e903843b450dfddd3631a1df703e942111",
+    "limits": "related: Find a missing addend among eight known single-digit addends. Maintain a longer addition total before isolating the unknown. Number ranges and denominator structures overlap; the stages organize these contracts without a universal difficulty order.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section01:item:TX4_S01_00119"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00072",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:whole-addition"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "0936bda723c38b8d85a013bcad4a369a4d666273f21077b734e3eadb24e50ade",
+    "limits": "Two whole operands with three or more digits; align places. Money template 37 draws whole amounts.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00072"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00074",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:whole-subtraction"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "d4fe4920649923d279a0699935c1dbf3f0f8b09b59dc6f1693366bd89c8dbf50",
+    "limits": "Two-digit whole subtraction, nonnegative final result; money mode does not introduce fractional inputs.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00074"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00125",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:whole-subtraction"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "bf7d00bb0db057a6a43441b403e982b1516cfc402e53cb7da3fddb82517c6c4a",
+    "limits": "Three-digit minuend with two/three-digit whole subtrahend, nonnegative result.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00125"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00078",
+    "conceptIds": [
+      "whole-arithmetic",
+      "focus:whole-subtraction"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "029873253c128309a4a28d6fa8550493d6eb1767aec5682df0811a08e2bc972d",
+    "limits": "Three-digit minuend with two/three-digit whole subtrahend, nonnegative result.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00078"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00147",
+    "conceptIds": [
+      "number-representation",
+      "focus:number-notation-forms"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "b46d29e6b30a800467c115925fd04c33d15d7464c238827bdac44856df774022",
+    "limits": "Expanded sums of place values; expanded-large has only two nonzero places and is not automatically harder than dense shorter numbers.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00147"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00082",
+    "conceptIds": [
+      "number-representation",
+      "focus:number-notation-forms"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "f151d00a6e443f31540e32794e74f5092318da4f233755cf4fdc0a035f2ea3a0",
+    "limits": "Expanded sums of place values; expanded-large has only two nonzero places and is not automatically harder than dense shorter numbers.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section02:item:TX4_S02_00082"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076",
+    "conceptIds": [
+      "angles",
+      "focus:angle-classification-work"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "65f2e362c23484d5c2c5442d6ef523c6caed5455a72ad6406f6648805619dea6",
+    "limits": "Classify a displayed angle from 30 through 180 degrees as acute, right, obtuse or straight. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00076"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00054",
+    "conceptIds": [
+      "calendar-time",
+      "focus:clock-time"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "135256430536a36636c96f031036a15e8a2dc743013237f43ffa597d013366ad",
+    "limits": "Shared focus may cover several forms or branches. Preview the generated task; related concepts are not a difficulty or equivalence claim.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section03:item:TX4_S03_00054"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "focus:decimal-operations",
+      "focus:decimal-subtraction-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "c5bd95b4ad66dcf6d7fd27b42ed4c6b346a66a2e5d3e355639127f1dac9da91f",
+    "limits": "Two-operand decimal or money addition/subtraction; align up to three decimal places, nonnegative final result. AST fractional zero-integer ranges remain variable.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00039"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "focus:decimal-operations",
+      "focus:decimal-subtraction-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "4bd8cca99ce9bf266ee3e21d087cb6139b259d82a3759ae56b7f892273cf9334",
+    "limits": "Two-operand decimal or money addition/subtraction; align up to three decimal places, nonnegative final result. AST fractional zero-integer ranges remain variable.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00074"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00079",
+    "conceptIds": [
+      "expressions",
+      "whole-arithmetic",
+      "focus:whole-subtraction-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "d801b4dd03fe662ee83cf4721fb02d33361efbf7ea3945cac68f66344fcff2ba",
+    "limits": "extension: Subtract a parenthesized whole-number difference. Evaluate the inner difference before outer subtraction.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00079"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00099",
+    "conceptIds": [
+      "equations",
+      "focus:linear-equations"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "91f5caf9dccb39ee85c95f8e8fdc7453d5bb379ddfdd27b9e8353aba50cf9793",
+    "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00099"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00100",
+    "conceptIds": [
+      "equations",
+      "focus:linear-equations"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "8bb20dacbc64f109e14f4c6b8190c53e6b614e886aa903e96bac7885e94e190c",
+    "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00100"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00101",
+    "conceptIds": [
+      "equations",
+      "focus:linear-equations"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "c5e0eff5dd237f3d4a5d37d3163f359102132cbbecfb79654cd958f4803c5f2f",
+    "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00101"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00088",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "focus:decimal-subtraction-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "3ab3417082152b0c455c24b91fb797cac3dd1f6d49db053b5dc68e0cc61abc90",
+    "limits": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00088"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00139",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "focus:decimal-subtraction-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "1f9fdc8e69faa0c005952e80b89399c4007386644e1c13e4d7fe872b83d369e4",
+    "limits": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00139"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00080",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "focus:decimal-subtraction-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "e1ecb6ea00908fa5ae901e7f04278cb606054b2df38c1b40a03e25d74f05b721",
+    "limits": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section10:item:TX4_S10_00080"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00143",
+    "conceptIds": [
+      "decimal-arithmetic",
+      "focus:decimal-operations",
+      "focus:decimal-subtraction-grouping"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "09810c97caa0e19e588c639cb3e6e21e270168afcac129f4507a2cecfe52c9f0",
+    "limits": "extension: Subtract a grouped decimal sum or difference. Respect the group before outer subtraction.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section05:item:TX4_S05_00143"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054",
+    "conceptIds": [
+      "calendar-time",
+      "focus:calendar-month-relations"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "86b9f60c03e74113dcf2651a5d21a279fcd0413b2b7825f397e05f8cd8d7939e",
+    "limits": "Name the month between two stated months in the same year; this recipe never crosses December. Reviewed paths distinguish task demand, response and method; only explicitly staged non-related paths assert direction.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section06:item:TX4_S06_00054"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085",
+    "conceptIds": [
+      "equations",
+      "focus:linear-equations"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "b0699b54b048973cfad95a23a58acd4ad405eb2d21ca44c38f1e5c9ce8d5a510",
+    "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00085"
+    ]
+  },
+  {
+    "providerSourceId": "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086",
+    "conceptIds": [
+      "equations",
+      "focus:linear-equations"
+    ],
+    "status": "reconciled-existing-reviewed-evidence",
+    "basis": "curriculum/cross-course/v0.6; full prior review retained",
+    "evidenceSha256": "97a3b03f9792247c06cf7076f51d051021a81b89f0f75e40c0dce189ac86a50b",
+    "limits": "One-operation equation: isolate either operand or factor by its inverse. Whole/finite-decimal parameters and reversed equality retain the same operation structure; preserve each template range and positive-answer filter. This broad path describes operation count, not number-size equivalence.",
+    "sourceIds": [
+      "intermediate-4-en:bank:Int4_Section07:item:TX4_S07_00086"
     ]
   },
   {
