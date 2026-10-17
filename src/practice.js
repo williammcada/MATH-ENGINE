@@ -19,7 +19,7 @@ const CONT = require('./continuity-skills.js');
 const PAD = require('./answer-pad.js');
 const SHAPE = require('./answer-shape.js');
 
-const version = '0.65.0-rc.1';
+const version = '0.65.0';
 const freeze = Object.freeze;
 
 // ---------- deterministic randomness ----------
