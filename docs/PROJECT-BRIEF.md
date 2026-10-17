@@ -1,3 +1,7 @@
+## Current checkpoint — Engine 0.66.1 implementation checkpoint (2026-10-17)
+
+8/7 objective 21.6 (sum of primes): about half the items now contain 49, 51 and 57; every item has 2–6 primes. See [change spec](change-specs/v0.66.1-prime-sum.md). Not yet a verified release; hosts not yet updated.
+
 ## Current release — Engine 0.66.0, verified (2026-10-17)
 
 Intermediate 4 requests R1, R2 and R3, approved by the owner 2026-10-17. R1 and R2: the private ExamView reader keeps the row breaks of stacked arithmetic and lists native drawing objects. R3: 27 faithful Intermediate 4 ports replace the earlier structured adaptations, so Intermediate 4 is 100% complete (1,388 records: 783 covered, 605 consolidated). See [change spec](change-specs/v0.66.0-i4-requests.md). Handbook `7b11826` (v0.1.16). Verified release (candidate `e9f6f1f`); verification: `docs/verification/v0.66.0-release-verify.md`.

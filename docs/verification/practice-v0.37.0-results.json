@@ -1,5 +1,5 @@
 {
-  "engine": "0.66.0-rc.1",
+  "engine": "0.66.1",
   "bankVersion": "0.33.0-rc.1",
   "seedsPerItem": 50,
   "checks": {
@@ -210,10 +210,17 @@
       "g96Samples": 2000,
       "g96NonPositive": 0
     },
+    "prime-sum-21.6": {
+      "status": "Passed",
+      "samples": 2000,
+      "numberedWith495157": 1000,
+      "liveWith495157": 980,
+      "primeCount": "2-6"
+    },
     "bundle-provenance": {
       "status": "Passed",
-      "bundleSha256": "3cdc2d68b2cc8ec1533455a0079f2f3d98b507e20a18459d81a95f800652f974",
-      "contentHash": "ed3fa9b8dc39780d604237ef85565630"
+      "bundleSha256": "7dc00118a28cb78dca47e747496d835a947c49ba01eb17ce9daf1828223b1413",
+      "contentHash": "b056fb9669574fda02747c6d35187590"
     }
   },
   "failures": [],
