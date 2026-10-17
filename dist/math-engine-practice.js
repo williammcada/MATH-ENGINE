@@ -23,7 +23,7 @@ const CONT = __req(82);
 const PAD = __req(83);
 const SHAPE = __req(84);
 
-const version = '0.66.0-rc.1';
+const version = '0.66.0';
 const freeze = Object.freeze;
 
 // ---------- deterministic randomness ----------
