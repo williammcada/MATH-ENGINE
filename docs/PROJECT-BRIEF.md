@@ -1,4 +1,8 @@
-## Current checkpoint — Engine 0.37.0-rc.1 implementation checkpoint (2026-10-16)
+## Current release — Engine 0.65.0, verified (2026-10-17)
+
+U-18 layout amendment: AM, PM, $ and % move from the Algebra tab to a sixth row of the 123 tab, so time, money and percent answers need no tab switch. The owner found this when Mega Man Math's time questions seemed to lack AM/PM. Keys and checking are unchanged. Practice, main and phase-2 tests pass. See [change spec](change-specs/v0.65.0-pad-123-row.md). First built as 0.64.0-rc.1 on v0.63.0; renumbered 0.65.0 after v0.64.0 (Intermediate 4) was released, and rebuilt on it. Handbook `ca9877c` (v0.1.14). Verified release; verification: `docs/verification/v0.65.0-release-verify.md`.
+
+## Previous checkpoint — Engine 0.37.0-rc.1 implementation checkpoint (2026-10-16)
 
 Games now receive only questions with one discrete answer. `src/answer-shape.js` tags bank entries whose answer is several parts (lists, every solution, set members, "a; n"); 283 are tagged and removed from the game index (bank game entries 1,441 → 1,158). Tags are recorded in `curriculum/answer-shape/v0.1/answer-shape.json`; Studio packets are unaffected. Hosts can call `gameExclusion(id)` to prune saved selections. MathQuest and Math Arcade get this only when each syncs. See [change spec](change-specs/v0.37.0-single-answer-games.md) and [verification](verification/single-answer-games-v0.37.0.md). Not yet a verified release. Handbook consulted: v0.1.12 `9d9c80f`.
 

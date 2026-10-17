@@ -1,5 +1,5 @@
 /*
- * The universal answer pad (handbook U-18, Engine 0.36.0).
+ * The universal answer pad (handbook U-18, Engine 0.36.0; AM, PM, $ and % on the 123 tab since Engine 0.65.0).
  *
  * Every math answer pad in every product is this pad. It always shows the full key set,
  * whatever the question; the keys never depend on the correct answer. Two tabs, 123 first.
@@ -19,15 +19,15 @@ const tabs = freeze([
     freeze(['4', '5', '6', CLEAR]),
     freeze(['1', '2', '3', '/']),
     freeze(['0', '.', '−', 'R']),
-    freeze([':', ';', ',', SPACE])
+    freeze([':', ';', ',', SPACE]),
+    freeze(['AM', 'PM', '$', '%'])   // times, money and percents stay on the first tab (U-18 amended 2026-10-16)
   ]) }),
   freeze({ id: 'algebra', label: 'Algebra', rows: freeze([
     freeze(['x', 'y', '^', BACK]),
     freeze(['+', '−', '×', '÷']),
     freeze(['(', ')', '√', CLEAR]),
-    freeze(['=', '<', '>', '%']),
-    freeze(['≤', '≥', '{', '}']),
-    freeze(['$', 'AM', 'PM', SPACE])
+    freeze(['=', '<', '>', SPACE]),
+    freeze(['≤', '≥', '{', '}'])
   ]) })
 ]);
 
